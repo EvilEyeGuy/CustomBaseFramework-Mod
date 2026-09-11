@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>Marketstall_CheeseA</defName>
+    <label>Marketstall_CheeseA</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>Market</li>
+    </categories>
+    <style>Standard</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_MarketTent_1c</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_HideoutStallMarket_Dairy</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+    </legend>
+
+    <mask>
+      <li>###</li>
+      <li>###</li>
+    </mask>
+
+    <terrain>
+      <li>WWW</li>
+      <li>TWT</li>
+    </terrain>
+
+    <things>
+      <li>...</li>
+      <li>B..</li>
+    </things>
+
+    <!-- Das Zelt. Es ankert in derselben Zelle wie der Stand, deshalb steht es
+         in der zweiten Dingebene. Beim alten Export gab es die noch nicht, das
+         Zelt wurde ueberschrieben und kam im Spiel nie an. -->
+    <things2>
+      <li>...</li>
+      <li>D..</li>
+    </things2>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

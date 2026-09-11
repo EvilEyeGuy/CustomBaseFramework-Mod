@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>Wall_Pallisade</defName>
+    <label>Wall_Pallisade</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallSegment</li>
+    </categories>
+    <type>WallPart</type>
+    <style>Rustical</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+    </legend>
+
+    <mask>
+      <li>#</li>
+    </mask>
+
+    <things>
+      <li>W</li>
+    </things>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

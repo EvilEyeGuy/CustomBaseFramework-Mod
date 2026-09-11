@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>LargeTower</defName>
+    <label>LargeTower</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallTower</li>
+    </categories>
+    <type>WallPart</type>
+    <style>Standard</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_CastleWallEmbrasures</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_Crate1x1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>L</symbol><anchor>Wall</anchor></li>
+      <li><symbol>S</symbol><anchor>Guard</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Neu2</pawnList></li>
+    </legend>
+
+    <mask>
+      <li>..#####..</li>
+      <li>.#######.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.#######.</li>
+      <li>..#####..</li>
+    </mask>
+
+    <terrain>
+      <li>..WWWWW..</li>
+      <li>.WWWWWWW.</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>.WWWWWWW.</li>
+      <li>..WWWWW..</li>
+    </terrain>
+
+    <things>
+      <li>..TBBBT..</li>
+      <li>.TT...TT.</li>
+      <li>TTC...FTT</li>
+      <li>B.......B</li>
+      <li>B.......B</li>
+      <li>B..P....B</li>
+      <li>TT....RTT</li>
+      <li>.TT...TT.</li>
+      <li>..TBBBT..</li>
+    </things>
+
+    <roof>
+      <li>..DDDDD..</li>
+      <li>.DDDDDDD.</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>.DDDDDDD.</li>
+      <li>..DDDDD..</li>
+    </roof>
+
+    <anchors>
+      <li>....L....</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>........L</li>
+      <li>......S..</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>....L....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

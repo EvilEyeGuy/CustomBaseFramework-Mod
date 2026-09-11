@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>Tower</defName>
+    <label>Tower</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallTower</li>
+    </categories>
+    <type>WallPart</type>
+    <style>Standard</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_CastleWallEmbrasures</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>P</symbol><anchor>Pawn</anchor><anchorKind>Fill</anchorKind></li>
+      <li><symbol>R</symbol><anchor>Wall</anchor></li>
+    </legend>
+
+    <mask>
+      <li>.#####.</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>.#####.</li>
+    </mask>
+
+    <terrain>
+      <li>.WWWWW.</li>
+      <li>WWWWWWW</li>
+      <li>WWWWWWW</li>
+      <li>WWWWWWW</li>
+      <li>WWWWWWW</li>
+      <li>WWWWWWW</li>
+      <li>.WWWWW.</li>
+    </terrain>
+
+    <things>
+      <li>.TBTBT.</li>
+      <li>TT...TT</li>
+      <li>BC....B</li>
+      <li>T.....T</li>
+      <li>B....FB</li>
+      <li>TT...TT</li>
+      <li>.TBTBT.</li>
+    </things>
+
+    <roof>
+      <li>.DDDDD.</li>
+      <li>DDDDDDD</li>
+      <li>DDDDDDD</li>
+      <li>DDDDDDD</li>
+      <li>DDDDDDD</li>
+      <li>DDDDDDD</li>
+      <li>.DDDDD.</li>
+    </roof>
+
+    <anchors>
+      <li>...R...</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>R..P..R</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>...R...</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

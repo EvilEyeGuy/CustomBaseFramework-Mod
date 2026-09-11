@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>TudorHouseB</defName>
+    <label>TudorHouseB</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>HouseLarge</li>
+    </categories>
+    <style>Standard</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_WoodBurningStove</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RusticCloset1x2c</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>L</symbol><thing>FueledStove</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_RusticChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_ReinforcedRusticTable1x1c</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_RusticChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_Bed_RusticDouble_Blue</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_RusticEndTable</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_Candle</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_RusticEndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>V</symbol><anchor>Pawn</anchor><anchorKind>Spawn</anchorKind></li>
+    </legend>
+
+    <mask>
+      <li>############</li>
+      <li>############</li>
+      <li>############</li>
+      <li>############</li>
+      <li>############</li>
+      <li>############</li>
+    </mask>
+
+    <terrain>
+      <li>WWWWWWWWWWWW</li>
+      <li>WWWWWWWWWWWW</li>
+      <li>WWWWWWWWWWWW</li>
+      <li>WWWWWWWWWWWW</li>
+      <li>WWWWWWWWWWWW</li>
+      <li>WWWWWWWWWWWW</li>
+    </terrain>
+
+    <things>
+      <li>TTBTTTTTTTTT</li>
+      <li>T...CFTPR..T</li>
+      <li>T..........T</li>
+      <li>T..SGHT....T</li>
+      <li>TL.M..TNK.UT</li>
+      <li>TTTTTTTTTTTT</li>
+    </things>
+
+    <things2>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+      <li>.......Q....</li>
+      <li>............</li>
+    </things2>
+
+    <roof>
+      <li>DDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDD</li>
+    </roof>
+
+    <anchors>
+      <li>............</li>
+      <li>............</li>
+      <li>...V........</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

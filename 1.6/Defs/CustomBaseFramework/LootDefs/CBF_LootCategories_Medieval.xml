@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Ungeziefer</defName>
+    <label>Ungeziefer</label>
+    <rolle>Zivil</rolle>
+    <radius>6</radius>
+    <members>
+      <li><kind>Rat</kind><weight>10</weight></li>
+      <li><kind>Squirrel</kind><weight>3</weight></li>
+      <li><kind>Boomrat</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Pawns_Mimik</defName>
+    <label>Mimik</label>
+    <rolle>Wache</rolle>
+    <radius>0</radius>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_RusticMimic_WoodLog</kind><weight>10</weight></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_RoyalMimic</kind><weight>4</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Versteckt</defName>
+    <label>Versteckter</label>
+    <rolle>Zivil</rolle>
+    <radius>8</radius>
+    <members>
+      <li><kind>Villager</kind><weight>10</weight></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Peasant</kind><weight>10</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_OffenesRegal</defName>
+    <label>Offenes Regal</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LargeShelfEmpty</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_RackEmpty</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_ShelfEmpty</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_RusticCupboardEmpty</thing><bleibt>true</bleibt></li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+      <li><thing>ShelfSmall</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_OffenerKarren</defName>
+    <label>Offener Karren</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Storage_Cart_Empty</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Stall_Empty</thing><bleibt>true</bleibt></li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Kraeuterregal</defName>
+    <label>Kraeuterregal</label>
+    <pawnList>CBF_Pawns_Ungeziefer</pawnList>
+    <pawnChance>0.08</pawnChance>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_AssortedHerbs</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_GreenHerbs</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_RedHerbs</li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Alchemieregal</defName>
+    <label>Alchemieregal</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_AssortedDrugsA</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_AssortedDrugsB</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_BattleElixir</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_HappyPowder</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Luhix</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Paregoric</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Stardust</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_VigorPill</li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Buecherregal</defName>
+    <label>Buecherregal</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Book</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutShelfFilledBook</li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Edelsteinregal</defName>
+    <label>Edelsteinregal</label>
+    <pawnList>CBF_Pawns_Mimik</pawnList>
+    <pawnChance>0.05</pawnChance>
+    <pawnFeindlich>true</pawnFeindlich>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Ruby</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Sapphire</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Emerald</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutShelfFilledRuby</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutShelfFilledSapphire</li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Silberregal</defName>
+    <label>Silberregal</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_ChaliceSilver</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Bowl</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutShelfFilledChaliceSilver</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutShelfFilledSilverware</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutShelfFilledGoldware</li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Vorratsregal</defName>
+    <label>Vorratsregal</label>
+    <pawnList>CBF_Pawns_Ungeziefer</pawnList>
+    <pawnChance>0.12</pawnChance>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Rations</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutShelfFilledFood</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutLargeShelf_Bread</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutLargeShelf_Cheese</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutLargeShelf_Grain</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutLargeShelf_Meats</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutLargeShelf_Vegetables</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutRusticCupboardBread</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutRusticCupboardCheese</li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Weinregal</defName>
+    <label>Weinregal</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutShelfFilledWine</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutRusticCupboardWine</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutLargeShelf_Mead</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutLargeShelf_Wine</li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Waffenstaender</defName>
+    <label>Waffenstaender</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Lootable_RackMix</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Lootable_RackSword</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Lootable_RackSpear</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutRackMixed</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutRackSword</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutRackSpear</li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Barrenregal</defName>
+    <label>Barrenregal</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_IronIngot</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutShelfFilledIngot</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_IngotStack1x1_Iron</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_IngotStack1x1_Steel</li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Cat_Truhe</defName>
+    <label>Truhe</label>
+    <pawnList>CBF_Pawns_Mimik</pawnList>
+    <pawnChance>0.12</pawnChance>
+    <pawnFeindlich>true</pawnFeindlich>
+    <members>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableChest_RoyalChest</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableChest_RusticChest</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_RusticChest</thing><bleibt>true</bleibt></li>
+      </members>
+    </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Cat_Kiste</defName>
+    <label>Kiste</label>
+    <pawnList>CBF_Pawns_Ungeziefer</pawnList>
+    <pawnChance>0.08</pawnChance>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableCrate_Bones</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableCrate_Lindwurm</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableCrate_Unhold</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutCrate1x2c</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutCrate1x1c</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Cat_Fass</defName>
+    <label>Fass</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutRusticBarrelBigClosed</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutRusticBarrelClosed</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutRusticBarrelStack</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutBarrelIronOre</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutBarrelCoalOre</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutBarrelTextiles</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutBarrelLeather</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Cat_Sack</defName>
+    <label>Sack</label>
+    <pawnList>CBF_Pawns_Ungeziefer</pawnList>
+    <pawnChance>0.15</pawnChance>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutSackClosed</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutSackFlour</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutSackWheat</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutSackPotato</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutSackApple</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Cat_Karren</defName>
+    <label>Karren</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideOutBuildingBase_Cart_Assorted</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideOutBuildingBase_Cart_Ore</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideOutBuildingBase_Cart_PlantRaw</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideOutBuildingBase_Cart_Textiles</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideOutBuildingBase_Cart_Empty</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Cat_Marktstand</defName>
+    <label>Marktstand</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutStallMarket_Bread</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutStallMarket_Dairy</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutStallMarket_Meats</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutStallMarket_Herb</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutStallMarket_Bow</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutStallMarket_Melee</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutTableMarket_Bread</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutTableMarket_Dairy</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutTableMarket_Meats</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HideoutTableMarket_Herb</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Cat_Ruinenrest</defName>
+    <label>Ruinenrest</label>
+    <pawnList>CBF_Pawns_Ungeziefer</pawnList>
+    <pawnChance>0.2</pawnChance>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_AncientRuinedCrate</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_AncientRuinedBarrel</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_AncientRuinedCart</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_AncientFootman</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_RuinedBonePile1x2c</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_RustedSwords</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_RustedHauberk</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_RustedHelmet</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Beh_Regal</defName>
+    <label>Beutebehaelter Regal</label>
+    <members>
+      <li>CBF_Behaelter_Regal</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Cat_Beh_Kraeuterregal</defName>
+    <label>Beutebehaelter Kraeuterregal</label>
+    <pawnList>CBF_Pawns_Ungeziefer</pawnList>
+    <pawnChance>0.1</pawnChance>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">CBF_Behaelter_Kraeuterregal</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Cat_Beh_Ruinenkiste</defName>
+    <label>Beutebehaelter Ruinenkiste</label>
+    <pawnList>CBF_Pawns_Ungeziefer</pawnList>
+    <pawnChance>0.15</pawnChance>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">CBF_Behaelter_Ruinenkiste</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Cat_Beh_Truhe</defName>
+    <label>Beutebehaelter Truhe</label>
+    <pawnList>CBF_Pawns_Mimik</pawnList>
+    <pawnChance>0.5</pawnChance>
+    <pawnFeindlich>true</pawnFeindlich>
+    <pawnFraktion>DankPyon_ShadowSect</pawnFraktion>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">CBF_Behaelter_Truhe</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+</Defs>

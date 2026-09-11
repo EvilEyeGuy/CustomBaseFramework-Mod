@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>SmallHouseC</defName>
+    <label>SmallHouseC</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>HouseSmall</li>
+    </categories>
+    <style>Rustical</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_LogWall</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_RusticCookingTools</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticTable1x1c</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_WoodBurningStove</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_StrawBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_StrawBed</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_RusticEndTable</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff></li>
+    </legend>
+
+    <mask>
+      <li>.#####</li>
+      <li>.#####</li>
+      <li>.#####</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+    </mask>
+
+    <terrain>
+      <li>.WWWWW</li>
+      <li>.WWWWW</li>
+      <li>.WWWWW</li>
+      <li>WWWWWW</li>
+      <li>WWWWWW</li>
+      <li>WWWWWW</li>
+      <li>WWWWWW</li>
+    </terrain>
+
+    <things>
+      <li>.TTTTT</li>
+      <li>.B...T</li>
+      <li>.TF.CT</li>
+      <li>TTP.RT</li>
+      <li>T....T</li>
+      <li>TL.GST</li>
+      <li>TTTTTT</li>
+    </things>
+
+    <things2>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>..H...</li>
+    </things2>
+
+    <roof>
+      <li>.DDDDD</li>
+      <li>.DDDDD</li>
+      <li>.DDDDD</li>
+      <li>DDDDDD</li>
+      <li>DDDDDD</li>
+      <li>DDDDDD</li>
+      <li>DDDDDD</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

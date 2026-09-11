@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CBF_Editor>Editor</CBF_Editor>
+  <CBF_TabPieces>Bausteine</CBF_TabPieces>
+  <CBF_TabStylesTags>Stile und Tags</CBF_TabStylesTags>
+  <CBF_TabPalettes>Paletten</CBF_TabPalettes>
+  <CBF_TabPawns>Einheiten</CBF_TabPawns>
+  <CBF_TabAudit>Pruefung</CBF_TabAudit>
+  <CBF_Check>Pruefen</CBF_Check>
+  <CBF_SaveAll>Alles speichern</CBF_SaveAll>
+  <CBF_TargetPrefix>Ziel: </CBF_TargetPrefix>
+  <CBF_FactionPrefix>Fraktion: </CBF_FactionPrefix>
+  <CBF_NoFaction>keine Fraktion</CBF_NoFaction>
+  <CBF_NotCheckedYet>noch nicht geprueft</CBF_NotCheckedYet>
+  <CBF_CheckClean>Pruefung: ohne Befund</CBF_CheckClean>
+  <CBF_CheckPrefix>Pruefung: </CBF_CheckPrefix>
+  <CBF_Errors> Fehler</CBF_Errors>
+  <CBF_Hints> Hinweise</CBF_Hints>
+  <CBF_PiecesChecked> Bausteine geprueft.</CBF_PiecesChecked>
+  <CBF_AuditClean>Ohne Befund. Der Katalog ist vollstaendig.</CBF_AuditClean>
+  <CBF_NoPieces>Kein Baustein vorhanden. Markiere eine Flaeche auf der Karte und exportiere sie.</CBF_NoPieces>
+  <CBF_StampOnMap>Auf Karte stempeln</CBF_StampOnMap>
+  <CBF_PlacePiece>Baustein setzen: </CBF_PlacePiece>
+  <CBF_Size>Groesse</CBF_Size>
+  <CBF_Rotatable>Drehbar</CBF_Rotatable>
+  <CBF_Sockets>Sockel</CBF_Sockets>
+  <CBF_Symbol>Zeichen</CBF_Symbol>
+  <CBF_Name>Name</CBF_Name>
+  <CBF_Style>Stil</CBF_Style>
+  <CBF_Styles>Stile</CBF_Styles>
+  <CBF_Tags>Tags</CBF_Tags>
+  <CBF_NewStyle>Neuer Stil</CBF_NewStyle>
+  <CBF_NewTag>Neuer Tag</CBF_NewTag>
+  <CBF_NoStyle>ohne Stil</CBF_NoStyle>
+  <CBF_NoTag>ohne Tag</CBF_NoTag>
+  <CBF_NoFallbackStyle>kein Ersatzstil</CBF_NoFallbackStyle>
+  <CBF_FallbackPrefix>Ersatz: </CBF_FallbackPrefix>
+  <CBF_ColSymbol>ZEICHEN</CBF_ColSymbol>
+  <CBF_ColRole>ROLLE</CBF_ColRole>
+  <CBF_ColResolvedTo>AUFGELOEST ZU</CBF_ColResolvedTo>
+  <CBF_ColStage>AUFLOESUNG</CBF_ColStage>
+  <CBF_ColChance>CHANCE</CBF_ColChance>
+  <CBF_ColCriticality>WICHTIGKEIT</CBF_ColCriticality>
+  <CBF_FixedDef>fester Def</CBF_FixedDef>
+  <CBF_NoPaletteForRole>keine Palette bedient diese Rolle</CBF_NoPaletteForRole>
+  <CBF_NoFallbackFound>kein Ersatz gefunden</CBF_NoFallbackFound>
+  <CBF_NoPalette>keine Palette</CBF_NoPalette>
+  <CBF_Critical>kritisch</CBF_Critical>
+  <CBF_Optional>optional</CBF_Optional>
+  <CBF_Missing>fehlt</CBF_Missing>
+  <CBF_Empty>leer</CBF_Empty>
+  <CBF_Unknown>unbekannt</CBF_Unknown>
+  <CBF_No>nein</CBF_No>
+  <CBF_Error>Fehler</CBF_Error>
+  <CBF_UndoBoundary>Alles an {0} ist zurueckgenommen. Ein weiterer Schritt bringt dich zu {1}.</CBF_UndoBoundary>
+  <CBF_ExportedAlso>{0} neu angelegte Definitionen wurden mit exportiert.</CBF_ExportedAlso>
+  <CBF_UnsavedWarning>{0} hat nicht exportierte Aenderungen.</CBF_UnsavedWarning>
+  <CBF_Hint>Hinweis</CBF_Hint>
+  <CBF_ZoneInside>innerhalb der Mauern, an der Strasse</CBF_ZoneInside>
+  <CBF_ZoneOutside>nur ausserhalb, ohne Strasse</CBF_ZoneOutside>
+  <CBF_ZoneCenter>Zentrum, an der Strasse</CBF_ZoneCenter>
+  <CBF_ZoneAny>innen oder aussen, an der Strasse</CBF_ZoneAny>
+  <CBF_ShowAllKinds>alle Arten zeigen</CBF_ShowAllKinds>
+  <CBF_NoKindSelected>keine Art gewaehlt</CBF_NoKindSelected>
+  <CBF_PickFactionFirst>Keine Fraktion gewaehlt. Oben in der Titelzeile eine waehlen.</CBF_PickFactionFirst>
+  <CBF_Count>Anzahl</CBF_Count>
+  <CBF_Points>Punkte</CBF_Points>
+  <CBF_StayAndDefend>bleiben und verteidigen (eigener Lord)</CBF_StayAndDefend>
+  <CBF_PlaceOnCell>Auf Zelle setzen</CBF_PlaceOnCell>
+  <CBF_PlaceGroup>Gruppe setzen</CBF_PlaceGroup>
+  <CBF_WholeFactionGroup>Ganze Gruppe der Fraktion</CBF_WholeFactionGroup>
+  <CBF_CombatPower>Kampfwert </CBF_CombatPower>
+  <CBF_DefPrefix>Def: </CBF_DefPrefix>
+  <CBF_NoMapOpen>Keine Karte offen.</CBF_NoMapOpen>
+  <CBF_FactionHasNoKinds>Diese Fraktion stellt hier keine Einheiten.</CBF_FactionHasNoKinds>
+  <CBF_PlaceFailed>Setzen gescheitert, siehe Log.</CBF_PlaceFailed>
+  <CBF_PawnsPlaced> Einheiten gesetzt.</CBF_PawnsPlaced>
+  <CBF_LordExplain>Mit Lord bekommen die Einheiten LordJob_DefendPoint ohne Fluchtschritt und canFleeIndividual aus. Sie verlassen die Karte dann nicht.</CBF_LordExplain>
+  <CBF_GroupExplain>Dasselbe Verfahren, das der Generator fuer Bewohner nutzt: die Gruppenmacher der Fraktion, nach Punkten bemessen.</CBF_GroupExplain>
+  <CBF_PawnsCouldNotBePlaced>Einheiten konnten nicht gesetzt werden.</CBF_PawnsCouldNotBePlaced>
+  <CBF_Create>Anlegen</CBF_Create>
+  <CBF_Cancel>Abbrechen</CBF_Cancel>
+  <CBF_EnterAName>Bitte einen Namen eingeben.</CBF_EnterAName>
+  <CBF_ExampleTag>Zum Beispiel HouseSmall, Stable oder Church.</CBF_ExampleTag>
+  <CBF_ExampleStyle>Zum Beispiel Rustical oder Noble.</CBF_ExampleStyle>
+  <CBF_ExportFolder>Zielordner fuer den Export</CBF_ExportFolder>
+  <CBF_ExportFolderHelp>Wurzel des Mods, in den Bausteine, Stile und Tags geschrieben werden. Leer lassen, um in diesen Mod zu schreiben.</CBF_ExportFolderHelp>
+  <CBF_ActiveTarget>Aktives Ziel: </CBF_ActiveTarget>
+  <CBF_FolderMissing>Dieser Ordner existiert nicht.</CBF_FolderMissing>
+
+  <CBF_CheckRoles>Rollen pruefen</CBF_CheckRoles>
+  <CBF_Yes>ja</CBF_Yes>
+
+  <CBF_ZonePiece>Baustein</CBF_ZonePiece>
+  <CBF_ZonePieceDesc>Flaeche markieren, aus der ein Baustein exportiert wird. Angrenzende Markierungen verschmelzen zu einer.</CBF_ZonePieceDesc>
+  <CBF_EditorCategory>base editor</CBF_EditorCategory>
+
+  <CBF_Export>Exportieren</CBF_Export>
+  <CBF_ExportAll>Alle exportieren</CBF_ExportAll>
+  <CBF_ExportDesc>Schreibt diesen Baustein als XML in den Zielmod.</CBF_ExportDesc>
+  <CBF_ExportAllDesc>Schreibt jeden Baustein dieser Karte in den Zielmod, einen pro Datei.</CBF_ExportAllDesc>
+  <CBF_PieceName>Name des Bausteins</CBF_PieceName>
+  <CBF_PieceNameDesc>Name des Bausteins. Wird ueber der Flaeche angezeigt und als defName benutzt.</CBF_PieceNameDesc>
+  <CBF_StyleDesc>In welcher Machart dieser Baustein gezeichnet wurde.</CBF_StyleDesc>
+  <CBF_StylePrefix>Stil: </CBF_StylePrefix>
+  <CBF_TagPrefix>Tag: </CBF_TagPrefix>
+  <CBF_NoPieceMarked>Auf dieser Karte ist kein Baustein markiert.</CBF_NoPieceMarked>
+  <CBF_NeedTagAndStyle>Tag und Stil muessen gesetzt sein.</CBF_NeedTagAndStyle>
+  <CBF_BadDefName>Der Name ergibt keinen gueltigen defName.</CBF_BadDefName>
+  <CBF_PieceTooSparse>Ein Teil des Bausteins fehlt. Kleiner aufteilen.</CBF_PieceTooSparse>
+  <CBF_WriteFailed>Schreiben fehlgeschlagen, siehe Log.</CBF_WriteFailed>
+
+  <CBF_NewPiece>Neuer Baustein</CBF_NewPiece>
+  <CBF_OnThisMap>auf dieser Karte</CBF_OnThisMap>
+  <CBF_Saved>gespeichert</CBF_Saved>
+  <CBF_Cells>Zellen</CBF_Cells>
+  <CBF_Pick>waehlen</CBF_Pick>
+  <CBF_JumpTo>Hinspringen</CBF_JumpTo>
+  <CBF_AddMore>Flaeche erweitern</CBF_AddMore>
+  <CBF_DragOnMap>Jetzt auf der Karte eine Flaeche ziehen. Angrenzende Markierungen verschmelzen zu einem Baustein.</CBF_DragOnMap>
+  <CBF_ZoneHelp>In der markierten Flaeche ganz normal bauen. Export schreibt sie als Baustein in den Zielmod, benannt nach dem Namen. Erneutes Exportieren ueberschreibt die Datei.</CBF_ZoneHelp>
+
+  <CBF_Rename>Umbenennen</CBF_Rename>
+  <CBF_TagDesc>Was dieser Baustein ist. Bestimmt, wo der Generator ihn spaeter hinstellt.</CBF_TagDesc>
+  <CBF_CreateNew>neu anlegen ...</CBF_CreateNew>
+  <CBF_ExamplePieceName>Zum Beispiel Cottage_Small_A.</CBF_ExamplePieceName>
+  <CBF_ExpandZone>Baustein erweitern</CBF_ExpandZone>
+  <CBF_ExpandZoneDesc>Waehlt das Markierwerkzeug erneut, damit du weitere Felder an diesen Baustein ziehen kannst.</CBF_ExpandZoneDesc>
+
+  <CBF_RegionRemove>Felder abziehen</CBF_RegionRemove>
+  <CBF_RegionRemoveDesc>Ueber Felder ziehen, um sie wieder aus einem Baustein herauszunehmen.</CBF_RegionRemoveDesc>
+  <CBF_RemoveArea>Felder abziehen</CBF_RemoveArea>
+  <CBF_DeleteRegion>Baustein loeschen</CBF_DeleteRegion>
+
+  <CBF_ExportLayers>Was mitgeht</CBF_ExportLayers>
+  <CBF_LayerFloor>Boden</CBF_LayerFloor>
+  <CBF_LayerRoof>Dach</CBF_LayerRoof>
+  <CBF_LayerPlants>Pflanzen</CBF_LayerPlants>
+  <CBF_OverwriteAsk>{0} gibt es schon. Wirklich ueberschreiben?</CBF_OverwriteAsk>
+
+  <CBF_PlaceToEditBtn>Zum Bearbeiten setzen</CBF_PlaceToEditBtn>
+  <CBF_PlaceToEdit>Zum Bearbeiten setzen: </CBF_PlaceToEdit>
+  <CBF_PlacedToEdit>{0} gesetzt, Bausteinflaeche liegt darueber. Bearbeiten und neu ausgeben.</CBF_PlacedToEdit>
+
+  <CBF_Area_Pieces>Bausteine</CBF_Area_Pieces>
+  <CBF_Area_Categories>Kategorien</CBF_Area_Categories>
+  <CBF_Area_Styles>Stile</CBF_Area_Styles>
+  <CBF_Area_Settlements>Orte</CBF_Area_Settlements>
+  <CBF_Area_Dungeons>Verliese</CBF_Area_Dungeons>
+  <CBF_Area_Loot>Beute</CBF_Area_Loot>
+  <CBF_Area_Pawns>Einheiten</CBF_Area_Pawns>
+  <CBF_Area_Factions>Fraktionen</CBF_Area_Factions>
+  <CBF_NotYet>{0} haengt noch an nichts.</CBF_NotYet>
+  <CBF_NothingOpen>Nichts offen. Waehle etwas zum Bearbeiten.</CBF_NothingOpen>
+  <CBF_OpenDoc>In Arbeit: {0} {1}</CBF_OpenDoc>
+  <CBF_Unsaved>nicht exportierte Aenderungen</CBF_Unsaved>
+  <CBF_AllSaved>alles exportiert</CBF_AllSaved>
+  <CBF_None>(keiner)</CBF_None>
+  <CBF_NoFieldsYet>Fuer diese Art gibt es noch keine Felder.</CBF_NoFieldsYet>
+  <CBF_Effective>WIRKSAM, AUFGELOEST</CBF_Effective>
+  <CBF_Field_defName>Name</CBF_Field_defName>
+  <CBF_FieldDesc_defName>Der Bezeichner, unter dem dieser Baustein angesprochen wird. Nach dem Export nicht mehr aenderbar, ohne Verweise zu brechen.</CBF_FieldDesc_defName>
+  <CBF_Field_size>Groesse</CBF_Field_size>
+  <CBF_FieldDesc_size>Breite mal Hoehe in Feldern, aus der gezeichneten Flaeche.</CBF_FieldDesc_size>
+  <CBF_Field_style>Stil</CBF_Field_style>
+  <CBF_FieldDesc_style>Zu welchem Aussehen dieser Baustein gehoert. Der Ortstyp nennt, welche Stile er erlaubt.</CBF_FieldDesc_style>
+  <CBF_Field_categories>Kategorien</CBF_Field_categories>
+  <CBF_FieldDesc_categories>Was dieser Baustein ist. Die erste ist die primaere: bei Widerspruch gewinnen ihre Regeln, Feld fuer Feld, dann ihre Eltern, dann die naechste Kategorie.</CBF_FieldDesc_categories>
+  <CBF_Field_allowRotation>Drehbar</CBF_Field_allowRotation>
+  <CBF_FieldDesc_allowRotation>Darf der Generator diesen Baustein drehen. Aus fuer Bausteine, die nur richtig herum lesbar sind.</CBF_FieldDesc_allowRotation>
+  <CBF_Field_clearFootprint>Boden raeumen</CBF_Field_clearFootprint>
+  <CBF_FieldDesc_clearFootprint>Vor dem Stempeln wegraeumen, was auf den Feldern steht.</CBF_FieldDesc_clearFootprint>
+  <CBF_Field_atWall>An der Mauer</CBF_Field_atWall>
+  <CBF_FieldDesc_atWall>Wie sehr dieser Baustein die Stadtmauer beruehren will. Aufgeloest ueber Baustein, dann Kategorien.</CBF_FieldDesc_atWall>
+  <CBF_Field_type>Typ</CBF_Field_type>
+  <CBF_FieldDesc_type>Wer diesen Baustein verbraucht: der Siedlungsgenerator, das Mauerprofil oder der Verliesgenerator.</CBF_FieldDesc_type>
+  <CBF_ExportHasErrors>{0} hat {1} Fehler. Trotzdem zu exportieren schreibt einen Baustein, den die Erzeugung nicht benutzen kann. Trotzdem exportieren?</CBF_ExportHasErrors>
+  <CBF_ExportWithHints>{0} exportiert. {1} Hinweise, siehe Pruefung.</CBF_ExportWithHints>
+  <CBF_StillUsedBy>{0} wird noch von {1} Definitionen benutzt: {2}</CBF_StillUsedBy>
+  <CBF_NameTaken>Eine Definition namens {0} gibt es schon.</CBF_NameTaken>
+  <CBF_NoSourceFile>Zu {0} ist keine Quelldatei zu finden, es laesst sich deshalb nicht duplizieren.</CBF_NoSourceFile>
+  <CBF_DuplicateUnreadable>Die Kopie {0} liess sich nicht zuruecklesen und wurde wieder entfernt.</CBF_DuplicateUnreadable>
+  <CBF_Browser>Bausteine</CBF_Browser>
+  <CBF_Search>Suchen...</CBF_Search>
+  <CBF_ByCategory>Kategorie</CBF_ByCategory>
+  <CBF_ByStyle>Stil</CBF_ByStyle>
+  <CBF_All>Alle</CBF_All>
+  <CBF_ShowTemplates>Vorlagen zeigen</CBF_ShowTemplates>
+  <CBF_Template>Vorlage</CBF_Template>
+  <CBF_NoCategory>(ohne Kategorie)</CBF_NoCategory>
+  <CBF_UsedByN>von {0} Definitionen benutzt</CBF_UsedByN>
+  <CBF_Open>Oeffnen</CBF_Open>
+  <CBF_Duplicate>Duplizieren</CBF_Duplicate>
+  <CBF_Delete>Loeschen</CBF_Delete>
+  <CBF_MarkTemplate>Als Vorlage markieren</CBF_MarkTemplate>
+  <CBF_UnmarkTemplate>Keine Vorlage mehr</CBF_UnmarkTemplate>
+  <CBF_DuplicateAs>{0} duplizieren als:</CBF_DuplicateAs>
+  <CBF_RenameTo>{0} umbenennen in:</CBF_RenameTo>
+  <CBF_Duplicated>{0} als {1} dupliziert.</CBF_Duplicated>
+  <CBF_Renamed>Umbenannt in {0}.</CBF_Renamed>
+  <CBF_DeleteAsk>{0} loeschen? Die Datei geht weg, aus der Datenbank verschwindet es erst beim naechsten Start.</CBF_DeleteAsk>
+  <CBF_Deleted>{0} geloescht.</CBF_Deleted>
+  <CBF_Incomplete>unvollstaendig</CBF_Incomplete>
+  <CBF_IncompleteWhy>Kein Legendeneintrag zu: {0}. Meist fehlt der Mod, aus dem sie stammen. Dieser Baustein wird nicht gesetzt.</CBF_IncompleteWhy>
+  <CBF_Inherited>geerbt</CBF_Inherited>
+  <CBF_InheritedFrom>von {0}</CBF_InheritedFrom>
+  <CBF_Field_parent>Elternteil</CBF_Field_parent>
+  <CBF_FieldDesc_parent>Die Kategorie, von der geerbt wird. Was hier nicht gesetzt ist, kommt von dort.</CBF_FieldDesc_parent>
+  <CBF_Field_chain>Erbt von</CBF_Field_chain>
+  <CBF_FieldDesc_chain>Die ganze Kette, vom naechsten Elternteil nach aussen.</CBF_FieldDesc_chain>
+  <CBF_Field_pieceCount>Bausteine</CBF_Field_pieceCount>
+  <CBF_FieldDesc_pieceCount>Wie viele Bausteine dazugehoeren, ueber die ganze Kette gezaehlt.</CBF_FieldDesc_pieceCount>
+  <CBF_Field_palette>Palette</CBF_Field_palette>
+  <CBF_FieldDesc_palette>Welche Palette die Rollen dieses Stils zu Dingen und Boden aufloest.</CBF_FieldDesc_palette>
+  <CBF_Field_fallback>Faellt zurueck auf</CBF_Field_fallback>
+  <CBF_FieldDesc_fallback>Wird benutzt, wenn dieser Stil zu einer Rolle nichts hat.</CBF_FieldDesc_fallback>
+  <CBF_Field_needsRoadAccess>Braucht Strasse</CBF_Field_needsRoadAccess>
+  <CBF_FieldDesc_needsRoadAccess>Muss vom Wegenetz aus erreichbar sein.</CBF_FieldDesc_needsRoadAccess>
+  <CBF_Field_unique>Nur einmal</CBF_Field_unique>
+  <CBF_FieldDesc_unique>Hoechstens eines je Siedlung.</CBF_FieldDesc_unique>
+  <CBF_Field_outsideOnly>Nur draussen</CBF_Field_outsideOnly>
+  <CBF_FieldDesc_outsideOnly>Niemals innerhalb der Mauern.</CBF_FieldDesc_outsideOnly>
+  <CBF_Field_outsideOk>Draussen erlaubt</CBF_Field_outsideOk>
+  <CBF_FieldDesc_outsideOk>Darf ausserhalb der Mauern stehen.</CBF_FieldDesc_outsideOk>
+  <CBF_Field_landmark>Wahrzeichen</CBF_Field_landmark>
+  <CBF_FieldDesc_landmark>Wird frueh und auffaellig gesetzt.</CBF_FieldDesc_landmark>
+  <CBF_Field_wallContact>An der Mauer</CBF_Field_wallContact>
+  <CBF_FieldDesc_wallContact>Muss an der Stadtmauer stehen.</CBF_FieldDesc_wallContact>
+  <CBF_Field_prefGate>Zum Tor</CBF_Field_prefGate>
+  <CBF_FieldDesc_prefGate>Wie stark es ans Tor moechte.</CBF_FieldDesc_prefGate>
+  <CBF_Field_prefCenter>Zur Mitte</CBF_Field_prefCenter>
+  <CBF_FieldDesc_prefCenter>Wie stark es in die Mitte moechte.</CBF_FieldDesc_prefCenter>
+  <CBF_Field_prefWall>Zur Mauer</CBF_Field_prefWall>
+  <CBF_FieldDesc_prefWall>Wie stark es an die Mauer moechte.</CBF_FieldDesc_prefWall>
+  <CBF_Field_prefMain>An die Hauptstrasse</CBF_Field_prefMain>
+  <CBF_FieldDesc_prefMain>Wie stark es an die Hauptstrasse moechte.</CBF_FieldDesc_prefMain>
+  <CBF_Field_prefSpread>Auseinander</CBF_Field_prefSpread>
+  <CBF_FieldDesc_prefSpread>Wie stark diese einander ausweichen.</CBF_FieldDesc_prefSpread>
+  <CBF_TopLevel>(oberste Ebene)</CBF_TopLevel>
+  <CBF_Field_mask>Umriss</CBF_Field_mask>
+  <CBF_FieldDesc_mask>Welche Zellen ueberhaupt zum Baustein gehoeren. Alles ausserhalb bleibt unberuehrt.</CBF_FieldDesc_mask>
+  <CBF_Field_terrain>Boden</CBF_Field_terrain>
+  <CBF_FieldDesc_terrain>Die Bodenebene. Ein Zeichen je Zelle, aufgeloest ueber die Legende.</CBF_FieldDesc_terrain>
+  <CBF_Field_things>Objekte</CBF_Field_things>
+  <CBF_FieldDesc_things>Die tragende Ebene: Mauern, Tueren, alles, woraus eine Zelle gebaut ist.</CBF_FieldDesc_things>
+  <CBF_Field_things2>Objekte, zweite Ebene</CBF_Field_things2>
+  <CBF_FieldDesc_things2>Was an der ersten haengt, etwa eine Wandfackel. RimWorld laesst in einer Zelle eine Mauer und ein daran haengendes Ding zu; mit nur einer Ebene bekaeme die Mauer ein Loch.</CBF_FieldDesc_things2>
+  <CBF_Field_things3>Objekte, dritte Ebene</CBF_Field_things3>
+  <CBF_FieldDesc_things3>Ein dritter Durchgang fuer die seltene Zelle mit drei Dingen.</CBF_FieldDesc_things3>
+  <CBF_Field_plants>Pflanzen</CBF_Field_plants>
+  <CBF_FieldDesc_plants>Die Pflanzenebene, fuer Gaerten und Aecker.</CBF_FieldDesc_plants>
+  <CBF_Field_roof>Dach</CBF_Field_roof>
+  <CBF_FieldDesc_roof>Wo ein Dach gebaut wird.</CBF_FieldDesc_roof>
+  <CBF_Field_anchors>Anker</CBF_Field_anchors>
+  <CBF_FieldDesc_anchors>Zellen, die auf der Stadtmauer liegen muessen. Eine Kaserne ankert hier und verschmilzt so mit der Mauer, statt davor zu stehen.</CBF_FieldDesc_anchors>
+  <CBF_Field_content>Inhaltszonen</CBF_Field_content>
+  <CBF_FieldDesc_content>Zellen, die beim Erzeugen Beute bekommen. Moebel werden nie automatisch gewaehlt, nur Beute.</CBF_FieldDesc_content>
+  <CBF_Field_contentZones>Regeln der Inhaltszonen</CBF_Field_contentZones>
+  <CBF_FieldDesc_contentZones>Was in welche Inhaltszone kommt: welche Beutetabelle, welche Gebaeudekategorie.</CBF_FieldDesc_contentZones>
+  <CBF_Field_legend>Legende</CBF_Field_legend>
+  <CBF_FieldDesc_legend>Was jedes Zeichen in den Ebenen bedeutet: ein Ding, ein Boden, eine Rolle.</CBF_FieldDesc_legend>
+  <CBF_Field_sockets>Anschluesse</CBF_Field_sockets>
+  <CBF_FieldDesc_sockets>Benannte Stellen, an die andere Bausteine andocken koennen.</CBF_FieldDesc_sockets>
+  <CBF_Field_placement>Platzierungsregeln</CBF_Field_placement>
+  <CBF_FieldDesc_placement>Uebersteuert die Regeln der Kategorie fuer diesen einen Baustein. Ohne den Block entscheidet die Kategorie.</CBF_FieldDesc_placement>
+  <CBF_Field_schemaVersion>Schemaversion</CBF_Field_schemaVersion>
+  <CBF_FieldDesc_schemaVersion>In welchem Format diese Datei geschrieben wurde. Aeltere werden beim Laden umgestellt.</CBF_FieldDesc_schemaVersion>
+  <CBF_Field_template>Vorlage</CBF_Field_template>
+  <CBF_FieldDesc_template>Ein Baustein zum Abschreiben. Er selbst wird nie gesetzt.</CBF_FieldDesc_template>
+  <CBF_Field_tag>Kategorie (alt)</CBF_Field_tag>
+  <CBF_FieldDesc_tag>Die erste Kategorie. Bleibt, damit alte Dateien noch laden; schreibe stattdessen categories.</CBF_FieldDesc_tag>
+  <CBF_Field_zones>Zonen</CBF_Field_zones>
+  <CBF_FieldDesc_zones>Wo in der Siedlung das stehen darf: Inside, Outside, Center.</CBF_FieldDesc_zones>
+  <CBF_Field_countPerSettlement>Anzahl je Siedlung</CBF_Field_countPerSettlement>
+  <CBF_FieldDesc_countPerSettlement>Wie viele davon eine Siedlung haben moechte, als Spanne.</CBF_FieldDesc_countPerSettlement>
+  <CBF_Field_weight>Gewicht</CBF_Field_weight>
+  <CBF_FieldDesc_weight>Wie wahrscheinlich das gegenueber seinesgleichen gezogen wird. Gehoert an die Siedlung, nicht an den Baustein.</CBF_FieldDesc_weight>
+  <CBF_Field_mapSize>Kartengroesse</CBF_Field_mapSize>
+  <CBF_FieldDesc_mapSize>Wie gross die Karte ist, auf der diese Siedlung entsteht.</CBF_FieldDesc_mapSize>
+  <CBF_Field_wallDepth>Mauerdicke</CBF_Field_wallDepth>
+  <CBF_FieldDesc_wallDepth>0 keine Mauer, 1 Palisade, 3 Wand mit Wehrgang zwischen zwei Waenden, 5 breite Festungsmauer.</CBF_FieldDesc_wallDepth>
+  <CBF_Field_towerCorner>Groesse der Ecktuerme</CBF_Field_towerCorner>
+  <CBF_FieldDesc_towerCorner>Kantenlaenge eines Eckturms, gemessen auf der Mittellinie des Mauerbands.</CBF_FieldDesc_towerCorner>
+  <CBF_Field_towerCurtain>Groesse der Kurtinentuerme</CBF_Field_towerCurtain>
+  <CBF_FieldDesc_towerCurtain>Kantenlaenge der Tuerme zwischen den Ecken.</CBF_FieldDesc_towerCurtain>
+  <CBF_Field_towerSpacing>Turmabstand</CBF_Field_towerSpacing>
+  <CBF_FieldDesc_towerSpacing>Wie weit Kurtinentuerme auseinander stehen. Groesser heisst weniger Tuerme.</CBF_FieldDesc_towerSpacing>
+  <CBF_Field_towerCapTotal>Turmobergrenze</CBF_Field_towerCapTotal>
+  <CBF_FieldDesc_towerCapTotal>Obergrenze fuer Tuerme. 0 heisst: so viele wie es Ecken gibt.</CBF_FieldDesc_towerCapTotal>
+  <CBF_Field_towerRun>Gerader Lauf vor einem Turm</CBF_Field_towerRun>
+  <CBF_FieldDesc_towerRun>Wie viel gerade Mauer laufen muss, bevor ein Turm gesetzt werden darf.</CBF_FieldDesc_towerRun>
+  <CBF_Field_gates>Tore</CBF_Field_gates>
+  <CBF_FieldDesc_gates>Wie viele Tore die Mauer bekommt, als Spanne.</CBF_FieldDesc_gates>
+  <CBF_Field_embrasureEvery>Schiessscharten alle</CBF_Field_embrasureEvery>
+  <CBF_FieldDesc_embrasureEvery>Alle wie viele Zellen die Mauer eine Schiessscharte bekommt. 0 heisst keine. Fehlt die Rolle EMBRASURE, wird normale Mauer gesetzt.</CBF_FieldDesc_embrasureEvery>
+  <CBF_Field_kerbeMax>Groesste Kerbe</CBF_Field_kerbeMax>
+  <CBF_FieldDesc_kerbeMax>Wie tief der Umriss nach innen schneiden darf, wo das Gelaende es nahelegt.</CBF_FieldDesc_kerbeMax>
+  <CBF_Field_wallGap>Abstand zur Mauer</CBF_Field_wallGap>
+  <CBF_FieldDesc_wallGap>Wie viel Platz innen an der Mauer frei bleibt. Naeher duerfen nur Bausteine mit wallContact.</CBF_FieldDesc_wallGap>
+  <CBF_Field_minLobe>Kleinste Ausbuchtung</CBF_Field_minLobe>
+  <CBF_FieldDesc_minLobe>Kleinste nutzbare Ausbuchtung des Umrisses. 0 schaltet die Pruefung ab.</CBF_FieldDesc_minLobe>
+  <CBF_Field_laufMin>Kuerzester Mauerlauf</CBF_Field_laufMin>
+  <CBF_FieldDesc_laufMin>Kuerzestes gerades Mauerstueck, bevor sie abbiegen darf.</CBF_FieldDesc_laufMin>
+  <CBF_Field_laufMax>Laengster Mauerlauf</CBF_Field_laufMax>
+  <CBF_FieldDesc_laufMax>Laengstes gerades Mauerstueck, bevor sie eine Stufe machen muss.</CBF_FieldDesc_laufMax>
+  <CBF_Field_stufeMax>Groesste Stufe</CBF_Field_stufeMax>
+  <CBF_FieldDesc_stufeMax>Wie weit die Mauer auf einmal seitlich versetzen darf.</CBF_FieldDesc_stufeMax>
+  <CBF_Field_buchtHaus>Kleinstes Haus</CBF_Field_buchtHaus>
+  <CBF_FieldDesc_buchtHaus>Kantenlaenge des kleinsten Hauses. Buchten darunter fallen weg.</CBF_FieldDesc_buchtHaus>
+  <CBF_Field_minFuellgrad>Kleinster Fuellgrad</CBF_Field_minFuellgrad>
+  <CBF_FieldDesc_minFuellgrad>Wie voll der Umriss gegen seine konvexe Huelle sein muss. Kleiner erlaubt zerklueftetere Formen.</CBF_FieldDesc_minFuellgrad>
+  <CBF_Field_bergSog>Bergsog</CBF_Field_bergSog>
+  <CBF_FieldDesc_bergSog>Wie stark die Siedlung an den Berg rueckt. Hoeher spart Mauer, niedriger gibt mehr freie Flaeche.</CBF_FieldDesc_bergSog>
+  <CBF_Field_roadMain>Breite der Hauptstrasse</CBF_Field_roadMain>
+  <CBF_FieldDesc_roadMain>Breite der Hauptstrasse. Es gibt bewusst nur zwei Breiten, mehr zerschneidet die Karte optisch.</CBF_FieldDesc_roadMain>
+  <CBF_Field_roadLane>Breite der Gassen</CBF_Field_roadLane>
+  <CBF_FieldDesc_roadLane>Breite der Nebengassen.</CBF_FieldDesc_roadLane>
+  <CBF_Field_widenings>Aufweitungen</CBF_Field_widenings>
+  <CBF_FieldDesc_widenings>An wie vielen Stellen sich der Weg zu einem Platz weitet.</CBF_FieldDesc_widenings>
+  <CBF_Field_coverageBuild>Bebauungsanteil</CBF_Field_coverageBuild>
+  <CBF_FieldDesc_coverageBuild>Wie viel der nutzbaren Flaeche Gebaeude bekommt.</CBF_FieldDesc_coverageBuild>
+  <CBF_Field_gardenShare>Gartenanteil</CBF_Field_gardenShare>
+  <CBF_FieldDesc_gardenShare>0 laesst blanken Hof, 1 gibt jeder freien Flaeche Beete.</CBF_FieldDesc_gardenShare>
+  <CBF_Field_minBuildingGap>Kleinster Gebaeudeabstand</CBF_Field_minBuildingGap>
+  <CBF_FieldDesc_minBuildingGap>0 laesst das Framework aus den geladenen Mods entscheiden.</CBF_FieldDesc_minBuildingGap>
+  <CBF_Field_maxBuildingGap>Groesster Gebaeudeabstand</CBF_Field_maxBuildingGap>
+  <CBF_FieldDesc_maxBuildingGap>Laesst zwischen den Haeusern Platz fuer einen Weg.</CBF_FieldDesc_maxBuildingGap>
+  <CBF_Field_targetBuilt>Ziel-Bebauungsgrad</CBF_Field_targetBuilt>
+  <CBF_FieldDesc_targetBuilt>Wie dicht bebaut sich die Siedlung anfuehlen soll. Handgebaute MO-Siedlungen liegen bei 0,61.</CBF_FieldDesc_targetBuilt>
+  <CBF_Field_budget>Budget</CBF_Field_budget>
+  <CBF_FieldDesc_budget>Welche Kategorien die Siedlung will, wie viele davon und welchen Flaechenanteil.</CBF_FieldDesc_budget>
+  <CBF_Field_styles>Stile</CBF_Field_styles>
+  <CBF_FieldDesc_styles>Welche Stile hier vorkommen duerfen. Der erste, der etwas hat, gewinnt.</CBF_FieldDesc_styles>
+  <CBF_Field_emplacements>Verteidigungsstellungen</CBF_Field_emplacements>
+  <CBF_FieldDesc_emplacements>Welche Bausteine als Tuerme, Geschuetzstellungen und dergleichen dienen duerfen.</CBF_FieldDesc_emplacements>
+  <CBF_Field_gatehouses>Torhaeuser</CBF_Field_gatehouses>
+  <CBF_FieldDesc_gatehouses>Welche Bausteine als Torhaeuser dienen duerfen.</CBF_FieldDesc_gatehouses>
+  <CBF_Field_defenderPoints>Verteidigerstaerke</CBF_Field_defenderPoints>
+  <CBF_FieldDesc_defenderPoints>Wie stark die Verteidiger sind, als Punktespanne.</CBF_FieldDesc_defenderPoints>
+  <CBF_Field_assaultDelayTicks>Angriffsverzoegerung</CBF_Field_assaultDelayTicks>
+  <CBF_FieldDesc_assaultDelayTicks>Wie lange die Verteidiger warten, bevor sie angreifen, in Ticks.</CBF_FieldDesc_assaultDelayTicks>
+  <CBF_Field_weightNearRoad>Naehe zur Strasse</CBF_Field_weightNearRoad>
+  <CBF_FieldDesc_weightNearRoad>Wie stark dieser Ortstyp auf der Weltkarte an eine Strasse moechte.</CBF_FieldDesc_weightNearRoad>
+  <CBF_Field_weightNearWater>Naehe zum Wasser</CBF_Field_weightNearWater>
+  <CBF_FieldDesc_weightNearWater>Wie stark dieser Ortstyp ans Wasser moechte.</CBF_FieldDesc_weightNearWater>
+  <CBF_Field_weightHilly>Naehe zu Huegeln</CBF_Field_weightHilly>
+  <CBF_FieldDesc_weightHilly>Wie stark dieser Ortstyp huegeliges Gelaende moechte.</CBF_FieldDesc_weightHilly>
+  <CBF_Field_factionTags>Fraktionen</CBF_Field_factionTags>
+  <CBF_FieldDesc_factionTags>Welche Fraktionen diesen Ortstyp benutzen duerfen.</CBF_FieldDesc_factionTags>
+  <CBF_Field_share>Flaechenanteil</CBF_Field_share>
+  <CBF_FieldDesc_share>Welchen Anteil der bebauten Flaeche dieser Budgetposten bekommen soll.</CBF_FieldDesc_share>
+  <CBF_Field_count>Anzahl</CBF_Field_count>
+  <CBF_FieldDesc_count>Wie viele davon die Siedlung will, als Spanne.</CBF_FieldDesc_count>
+  <CBF_Field_coreSize>Groesse des Ortskerns</CBF_Field_coreSize>
+  <CBF_FieldDesc_coreSize>Kantenlaenge des Ortskerns, als Spanne. Alles andere waechst darum herum.</CBF_FieldDesc_coreSize>
+  <CBF_Field_defendersOnWall>Verteidiger auf der Mauer</CBF_Field_defendersOnWall>
+  <CBF_FieldDesc_defendersOnWall>Welcher Anteil der Verteidiger auf dem Wehrgang steht statt am Boden.</CBF_FieldDesc_defendersOnWall>
+  <CBF_Field_defenderGroupKind>Verteidigergruppe</CBF_Field_defenderGroupKind>
+  <CBF_FieldDesc_defenderGroupKind>Aus welcher Gruppenart die Verteidiger kommen. Leer heisst Settlement, dann Combat.</CBF_FieldDesc_defenderGroupKind>
+  <CBF_Field_roles>Rollen</CBF_Field_roles>
+  <CBF_FieldDesc_roles>Welche Rolle diese Palette zu welchem Ding oder Boden aufloest.</CBF_FieldDesc_roles>
+  <CBF_Field_members>Mitglieder</CBF_Field_members>
+  <CBF_FieldDesc_members>Welche Gebaeude zu dieser Lootkategorie gehoeren.</CBF_FieldDesc_members>
+  <CBF_Districts>Viertel</CBF_Districts>
+  <CBF_PickASettlement>Waehle im Browser einen Ortstyp, um seine Viertel zu bearbeiten.</CBF_PickASettlement>
+  <CBF_AddDistrict>+ Viertel</CBF_AddDistrict>
+  <CBF_AddEntry>+ Neu</CBF_AddEntry>
+  <CBF_Remove>Entfernen</CBF_Remove>
+  <CBF_Category>Kategorie</CBF_Category>
+  <CBF_DistrictEmpty>Hier ist noch nichts drin.</CBF_DistrictEmpty>
+  <CBF_DistrictSummary>{0} Viertel, {1} Eintraege</CBF_DistrictSummary>
+  <CBF_NewDistrict>Name des neuen Viertels:</CBF_NewDistrict>
+  <CBF_AddedDistrict>Viertel {0} angelegt</CBF_AddedDistrict>
+  <CBF_RemovedDistrict>Viertel {0} entfernt</CBF_RemovedDistrict>
+  <CBF_DeleteDistrictAsk>Viertel {0} mit seinen {1} Eintraegen loeschen?</CBF_DeleteDistrictAsk>
+  <CBF_LastDistrict>Das letzte Viertel bleibt. Ohne eines gibt es nichts zu bauen.</CBF_LastDistrict>
+  <CBF_AddCategory>Eine ganze Kategorie...</CBF_AddCategory>
+  <CBF_AddPiece>Ein genaues Gebaeude...</CBF_AddPiece>
+  <CBF_AddedTo>{0} zu {1} hinzugefuegt</CBF_AddedTo>
+  <CBF_RemovedFrom>{0} aus {1} entfernt</CBF_RemovedFrom>
+  <CBF_EntryPieceTip>{0}: genau dieses Gebaeude. Min und Max sagen wie viele, das Gewicht entscheidet gegen seinesgleichen in derselben Kategorie.</CBF_EntryPieceTip>
+  <CBF_EntryCategoryTip>{0}: die ganze Kategorie. Min und Max sagen wie viele. Welches Gebaeude gezogen wird, richtet sich nach den Gewichten der Bausteine selbst.</CBF_EntryCategoryTip>
+  <CBF_Field_min>Min</CBF_Field_min>
+  <CBF_FieldDesc_min>Wie viele die Siedlung mindestens haben soll.</CBF_FieldDesc_min>
+  <CBF_Field_max>Max</CBF_Field_max>
+  <CBF_FieldDesc_max>Wie viele die Siedlung hoechstens haben darf.</CBF_FieldDesc_max>
+  <CBF_SizeSmall>Klein</CBF_SizeSmall>
+  <CBF_SizeMedium>Mittel</CBF_SizeMedium>
+  <CBF_SizeLarge>Gross</CBF_SizeLarge>
+  <CBF_OpenDistricts>Viertel...</CBF_OpenDistricts>
+  <CBF_Field_districts>Viertel</CBF_Field_districts>
+  <CBF_FieldDesc_districts>Wie viele Viertel dieser Ort hat und wie viele Eintraege insgesamt.</CBF_FieldDesc_districts>
+  <CBF_AddFaction>+ Fraktion oder Sammelbegriff</CBF_AddFaction>
+  <CBF_FactionsAll>Kein Eintrag, also darf jede Fraktion. Das sind gerade {0}.</CBF_FactionsAll>
+  <CBF_FactionsMatch>Trifft {0} Fraktionen in der aktuellen Modliste.</CBF_FactionsMatch>
+  <CBF_TakeoverOn>Fraktionsbasen: uebernommen</CBF_TakeoverOn>
+  <CBF_TakeoverOff>Fraktionsbasen: RimWorld baut sie</CBF_TakeoverOff>
+  <CBF_TakeoverChanged>Geaendert. Wirkt nach einem Neustart.</CBF_TakeoverChanged>
+  <CBF_TakeoverOnHint>CBF baut Fraktionsbasen dort, wo ein Ortstyp passt. Alle anderen bekommen RimWorlds eigene Siedlung, keine leere Karte.</CBF_TakeoverOnHint>
+  <CBF_TakeoverOffHint>Solange das nicht eingeschaltet ist, wirkt hier im Spiel gar nichts.</CBF_TakeoverOffHint>
+  <CBF_ChooseSettlement>Ortstyp waehlen...</CBF_ChooseSettlement>
+  <CBF_ChangeSettlement>Wechseln...</CBF_ChangeSettlement>
+  <CBF_T_new>Neu</CBF_T_new>
+  <CBF_TDesc_new>Etwas Neues in diesem Bereich anlegen.</CBF_TDesc_new>
+  <CBF_T_open>Oeffnen</CBF_T_open>
+  <CBF_TDesc_open>Etwas zum Bearbeiten waehlen. Das Auswahlfenster geht danach wieder zu.</CBF_TDesc_open>
+  <CBF_T_export>Export</CBF_T_export>
+  <CBF_TDesc_export>Die markierte Flaeche zurueck in ihre Datei schreiben.</CBF_TDesc_export>
+  <CBF_T_edit>Edit</CBF_T_edit>
+  <CBF_TDesc_edit>Place to Edit: setzt den Baustein auf die Karte, damit sich seine Struktur aendern laesst. Ohne das gehen nur die Einzelheiten.</CBF_TDesc_edit>
+  <CBF_T_area>Flaeche</CBF_T_area>
+  <CBF_TDesc_area>Zellen als zum Baustein gehoerig markieren.</CBF_TDesc_area>
+  <CBF_T_cut>Abzug</CBF_T_cut>
+  <CBF_TDesc_cut>Zellen wieder aus dem Baustein herausnehmen.</CBF_TDesc_cut>
+  <CBF_T_anchor>Anker</CBF_T_anchor>
+  <CBF_TDesc_anchor>Zellen markieren, die auf der Stadtmauer liegen muessen.</CBF_TDesc_anchor>
+  <CBF_T_spawn>Spawn</CBF_T_spawn>
+  <CBF_TDesc_spawn>Einen Spawnpunkt fuer eine Einheit setzen.</CBF_TDesc_spawn>
+  <CBF_T_roof>Dach</CBF_T_roof>
+  <CBF_TDesc_roof>Die Dachebene malen.</CBF_TDesc_roof>
+  <CBF_T_preview>Vorschau</CBF_T_preview>
+  <CBF_TDesc_preview>Hier eine Siedlung erzeugen und ansehen.</CBF_TDesc_preview>
+  <CBF_T_seed>Neue Saat</CBF_T_seed>
+  <CBF_TDesc_seed>Neue Saat, gleiche Einstellungen.</CBF_TDesc_seed>
+  <CBF_ToolNeedsPlaced>Braucht einen platzierten Baustein. Erst Edit druecken.</CBF_ToolNeedsPlaced>
+  <CBF_NeedAPiece>Erst einen Baustein oeffnen.</CBF_NeedAPiece>
+  <CBF_NeedARegion>Erst eine Flaeche auf der Karte markieren.</CBF_NeedARegion>
+  <CBF_NewCategory>Name der neuen Kategorie:</CBF_NewCategory>
+  <CBF_NewPieceHint>Ein neuer Baustein wird gezeichnet, nicht benannt: Flaeche auf der Karte markieren, dann Export.</CBF_NewPieceHint>
+  <CBF_ShowPanel>Leiste ausklappen</CBF_ShowPanel>
+  <CBF_HidePanel>Leiste einklappen</CBF_HidePanel>
+  <CBF_L_Boden>Boden</CBF_L_Boden>
+  <CBF_L_Mauer>Mauer</CBF_L_Mauer>
+  <CBF_L_Tuer>Tuer</CBF_L_Tuer>
+  <CBF_L_Moebel>Moebel</CBF_L_Moebel>
+  <CBF_L_Pflanze>Pflanze</CBF_L_Pflanze>
+  <CBF_L_Kaputt>ungeklaert</CBF_L_Kaputt>
+  <CBF_L_Anchor>Anker</CBF_L_Anchor>
+  <CBF_MissingSymbols>Kein Legendeneintrag fuer: {0}. Dieser Baustein wird nicht gesetzt.</CBF_MissingSymbols>
+  <CBF_IsTemplate>Vorlage. Dient anderen Bausteinen als Quelle und wird selbst nie gesetzt.</CBF_IsTemplate>
+  <CBF_MenuNew>Neu: {0}</CBF_MenuNew>
+  <CBF_MenuOpen>{0} oeffnen</CBF_MenuOpen>
+  <CBF_MenuExport>{0} ausgeben</CBF_MenuExport>
+  <CBF_MenuEdit>Zum Bearbeiten setzen</CBF_MenuEdit>
+  <CBF_One_Pieces>Baustein</CBF_One_Pieces>
+  <CBF_One_Categories>Kategorie</CBF_One_Categories>
+  <CBF_One_Styles>Stil</CBF_One_Styles>
+  <CBF_One_Settlements>Ortstyp</CBF_One_Settlements>
+  <CBF_One_Dungeons>Verlies</CBF_One_Dungeons>
+  <CBF_One_Loot>Beutetabelle</CBF_One_Loot>
+  <CBF_One_Pawns>Besatzung</CBF_One_Pawns>
+  <CBF_One_Factions>Fraktion</CBF_One_Factions>
+  <CBF_ActiveRegion>Gewaehlt: {0}, {1}</CBF_ActiveRegion>
+  <CBF_NoRegion>Keine Flaeche gewaehlt. Mit Area eine aufziehen, oder einen Baustein zum Bearbeiten setzen.</CBF_NoRegion>
+  <CBF_PickToPreview>Links etwas anklicken, dann steht es hier.</CBF_PickToPreview>
+  <CBF_More>Mehr</CBF_More>
+  <CBF_Area_None>Editor</CBF_Area_None>
+  <CBF_One_None>Eintrag</CBF_One_None>
+  <CBF_PlaceBtn>Setzen</CBF_PlaceBtn>
+  <CBF_PlaceBtnTip>Eine Kopie auf die Karte setzen. Spielarten und Chancen werden ausgewuerfelt, man sieht also, was der Generator bauen wuerde. Zum erneuten Ausgeben nicht geeignet.</CBF_PlaceBtnTip>
+  <CBF_NeedAMap>Keine Karte offen.</CBF_NeedAMap>
+  <CBF_PickAnArea>Oben in der Menueleiste einen Bereich waehlen.</CBF_PickAnArea>
+  <CBF_Anchors>Anker</CBF_Anchors>
+  <CBF_AddAnchor>Neuer Anker</CBF_AddAnchor>
+  <CBF_NoAnchors>Noch keine. Neuer Anker, dann mit dem Ankerwerkzeug malen.</CBF_NoAnchors>
+  <CBF_AndMore>{0} weitere</CBF_AndMore>
+  <CBF_AnchorPick>In diesen Anker malen.</CBF_AnchorPick>
+  <CBF_AnchorKindTip>Connect dockt an einen Anker gleichen Namens an, und seine Laenge ist die Bedingung: dreizehn Felder Kaserne suchen dreizehn Felder Mauer. Fill stellt ein Objekt aus einer Liste hinein. Spawn setzt Einheiten.</CBF_AnchorKindTip>
+  <CBF_AnchorRequiredTip>Pflicht: ohne diesen Anschluss wird der Baustein gar nicht gesetzt. Das ist es, was einen Turm an der Mauer haelt und ein Keep mit derselben Ankerart trotzdem frei stehen laesst.</CBF_AnchorRequiredTip>
+  <CBF_AnchorPaint>Anker malen</CBF_AnchorPaint>
+  <CBF_AnchorPaintDesc>Felder als den gewaehlten Anker der aktiven Bausteinflaeche markieren.</CBF_AnchorPaintDesc>
+  <CBF_AnchorErase>Anker loeschen</CBF_AnchorErase>
+  <CBF_AnchorEraseDesc>Felder aus allen Ankern der aktiven Bausteinflaeche herausnehmen.</CBF_AnchorEraseDesc>
+  <CBF_AnchorOutside>Ausserhalb der Bausteinflaeche.</CBF_AnchorOutside>
+  <CBF_AnchorObjects>Objekte</CBF_AnchorObjects>
+  <CBF_AnchorPickObjects>Liste waehlen</CBF_AnchorPickObjects>
+  <CBF_AnchorLoot>Beute</CBF_AnchorLoot>
+  <CBF_AnchorLootNone>nur Deko</CBF_AnchorLootNone>
+  <CBF_AnchorPawn>Einheit</CBF_AnchorPawn>
+  <CBF_AnchorPawnDefault>Besatzung des Ortstyps</CBF_AnchorPawnDefault>
+  <CBF_AnchorChance>Chance</CBF_AnchorChance>
+  <CBF_Objects>Objekte</CBF_Objects>
+  <CBF_NewObjectList>Neue Liste anlegen</CBF_NewObjectList>
+  <CBF_EditObjectList>Objektliste bearbeiten</CBF_EditObjectList>
+  <CBF_ObjectsChosen>{0} gewaehlt, {1} angezeigt</CBF_ObjectsChosen>
+  <CBF_ObjectsNeedOne>Mindestens ein Objekt waehlen. Eine leere Liste ist ein Anker, der nie etwas hinstellt.</CBF_ObjectsNeedOne>
+  <CBF_ObjectListSaved>Objektliste {0} mit {1} Objekten gespeichert.</CBF_ObjectListSaved>
+  <CBF_ToolPutDown>Werkzeug weglegen. Ein Rechtsklick tut dasselbe.</CBF_ToolPutDown>
+  <CBF_Clear>Leeren</CBF_Clear>
+  <CBF_Save>Speichern</CBF_Save>
+  <CBF_AnchorOnlyWall>Benutzt wird heute nur der Name Wall, daran dockt die Stadtmauer an. Andere Namen werden gespeichert und ausgegeben, aber noch von niemandem gelesen.</CBF_AnchorOnlyWall>
+  <CBF_Min>min</CBF_Min>
+  <CBF_Max>max</CBF_Max>
+  <CBF_Weight>Gewicht</CBF_Weight>
+  <CBF_Fortification>Mauer und Tuerme</CBF_Fortification>
+  <CBF_NoWallProfile>keines fuer diesen Stil und diese Tiefe</CBF_NoWallProfile>
+  <CBF_Field_wallProfile>Mauerprofil</CBF_Field_wallProfile>
+  <CBF_Field_segments>Abschnitte</CBF_Field_segments>
+  <CBF_AddEmplacement>Turm oder Kategorie dazu</CBF_AddEmplacement>
+  <CBF_AddGatehouse>Torhaus dazu</CBF_AddGatehouse>
+  <CBF_ListEmpty>leer, dann entscheidet das Mauerprofil</CBF_ListEmpty>
+  <CBF_RemovedFromList>{0} aus {1} entfernt</CBF_RemovedFromList>
+  <CBF_AddedToList>{0} zu {1} hinzugefuegt</CBF_AddedToList>
+  <CBF_T_build>Bauen</CBF_T_build>
+  <CBF_TDesc_build>Diese Siedlung auf der aktuellen Karte bauen, genau hier. Dasselbe wie ein erzeugter Ort, nur ohne Hinreisen.</CBF_TDesc_build>
+  <CBF_NeedAPlan>Erst einen Ortstyp oeffnen.</CBF_NeedAPlan>
+  <CBF_T_save>Speichern</CBF_T_save>
+  <CBF_TDesc_save>Den Ortstyp zurueck in seine Datei schreiben. Viertel, Stile, Tuerme, Torhaeuser und Fraktionen. Alles andere in der Datei bleibt unberuehrt.</CBF_TDesc_save>
+  <CBF_PlanSaved>{0} gespeichert.</CBF_PlanSaved>
+  <CBF_CategoryWith>{0} Bausteine</CBF_CategoryWith>
+  <CBF_PreviewReroll>Neue Saat</CBF_PreviewReroll>
+  <CBF_PreviewAgain>Neu rechnen</CBF_PreviewAgain>
+  <CBF_PreviewFailed>Das Layout kam nicht zustande. Siehe Log.</CBF_PreviewFailed>
+  <CBF_PreviewNone>nichts gerechnet</CBF_PreviewNone>
+  <CBF_PreviewFooter>{0} x {0} Felder, {1} ms, Saat {2}</CBF_PreviewFooter>
+  <CBF_CG_5>Mauer</CBF_CG_5>
+  <CBF_CG_8>Turm</CBF_CG_8>
+  <CBF_CG_9>Tor</CBF_CG_9>
+  <CBF_CG_15>Hauswand</CBF_CG_15>
+  <CBF_CG_10>Gebaeude</CBF_CG_10>
+  <CBF_CG_2>Gasse</CBF_CG_2>
+  <CBF_CG_3>Platz</CBF_CG_3>
+  <CBF_CG_13>Acker</CBF_CG_13>
+  <CBF_CG_16>gesperrt</CBF_CG_16>
+  <CBF_Categories>Kategorien</CBF_Categories>
+  <CBF_Buildings>Gebaeude</CBF_Buildings>
+  <CBF_ShowingN>{0} gezeigt</CBF_ShowingN>
+  <CBF_EmptyTool>Leerfeld</CBF_EmptyTool>
+  <CBF_MergePatches>Patches zusammenfassen</CBF_MergePatches>
+  <CBF_AnchorPawnList>Einheitenliste</CBF_AnchorPawnList>
+  <CBF_AnchorPawnListNone>keine, einzelne Art unten</CBF_AnchorPawnListNone>
+  <CBF_AnchorPawnCount>Anzahl</CBF_AnchorPawnCount>
+  <CBF_RoleGuard>Wache</CBF_RoleGuard>
+  <CBF_RoleCivilian>Zivil</CBF_RoleCivilian>
+  <CBF_RolePost>haelt die Stellung</CBF_RolePost>
+  <CBF_RoleCrew>bedient Geschuetze</CBF_RoleCrew>
+  <CBF_RoleGuardDesc>Geht in die Besatzung des Ortes. Flieht nicht einzeln und zieht mit zum Angriff.</CBF_RoleGuardDesc>
+  <CBF_RolePostDesc>Haelt diese Stelle und verteidigt sie. Zieht nicht mit und raeumt sie nicht. Fuer Tuerme und Torhaeuser.</CBF_RolePostDesc>
+  <CBF_RoleCrewDesc>Bedient das naechste bedienbare Geschuetz und bleibt dort. Beduerfnisse ziehen ihn nicht weg.</CBF_RoleCrewDesc>
+  <CBF_RoleCivilianDesc>Bleibt in der Naehe und laeuft weg, wenn es gefaehrlich wird. Fuer Wirte, Marktvolk, Bauern.</CBF_RoleCivilianDesc>
+  <CBF_NewPawnList>Neue Einheitenliste</CBF_NewPawnList>
+  <CBF_EditPawnList>Einheitenliste bearbeiten</CBF_EditPawnList>
+  <CBF_PawnListSaved>Einheitenliste {0} gesichert, {1} Arten.</CBF_PawnListSaved>
+  <CBF_PawnsChosen>{0} gewaehlt von {1} gezeigten</CBF_PawnsChosen>
+  <CBF_PawnsNeedOne>Waehle mindestens eine Art.</CBF_PawnsNeedOne>
+  <CBF_NoPreview>kein Bild</CBF_NoPreview>
+  <CBF_Role>Rolle</CBF_Role>
+  <CBF_Radius>Radius</CBF_Radius>
+  <CBF_MergePatchesAsk>{0} vom Editor geschriebene Patchdateien zu einer zusammenfassen, mit {1} Operationen?
+
+{2}
+
+Die Einzeldateien werden danach geloescht. Dateien anderer Mods und handgeschriebene bleiben liegen.</CBF_MergePatchesAsk>
+  <CBF_EmptyDesc>Felder markieren, die zum Baustein gehoeren, aber leer bleiben. Dort wird nichts gebaut, und die Karte behaelt ihren eigenen Boden. Die Marke liegt obenauf, der Boden darunter kommt beim Wegnehmen zurueck.</CBF_EmptyDesc>
+  <CBF_EmptyRemove>Leerfeld wegnehmen</CBF_EmptyRemove>
+  <CBF_EmptyRemoveDesc>Die Leerfeldmarke wieder entfernen. Der Boden darunter kommt zurueck.</CBF_EmptyRemoveDesc>
+  <CBF_EmptyMissing>Der Leerfeldboden fehlt.</CBF_EmptyMissing>
+  <CBF_EmptyPainted>{0} Felder als leer markiert.</CBF_EmptyPainted>
+  <CBF_ShellOuter>Aussenschale</CBF_ShellOuter>
+  <CBF_ShellWalk>Wehrgang</CBF_ShellWalk>
+  <CBF_ShellInner>Innenschale</CBF_ShellInner>
+  <CBF_ShellOnly>die Mauer</CBF_ShellOnly>
+  <CBF_PickWallPiece>Mauerteil waehlen</CBF_PickWallPiece>
+  <CBF_Field_tower>Turm</CBF_Field_tower>
+  <CBF_Field_gatehouse>Torhaus</CBF_Field_gatehouse>
+  <CBF_SaveWallProfile>Mauerprofil speichern</CBF_SaveWallProfile>
+  <CBF_WallProfileSaved>{0} gespeichert.</CBF_WallProfileSaved>
+  <CBF_WallProfileShared>Das Profil gehoert zu einem Stil und einer Tiefe, nicht zu diesem Ortstyp. Wer es aendert, aendert jede Siedlung, die genauso baut.</CBF_WallProfileShared>
+  <CBF_SegmentsHint>Das Muster entlang der Mauer, wiederholt. Jeder Eintrag ist ein Streifen von einem Feld Breite und {0} Feldern Tiefe. Der Querschnitt steckt im Baustein selbst.</CBF_SegmentsHint>
+  <CBF_AddSegment>Abschnitt dazu</CBF_AddSegment>
+  <CBF_LastSegment>Der letzte Abschnitt bleibt. Eine Mauer ohne Abschnitt ist keine Mauer.</CBF_LastSegment>
+  <CBF_NoWallPieces>Kein Baustein in der Kategorie {0}. Erst einen zeichnen.</CBF_NoWallPieces>
+  <CBF_Walls>Mauern</CBF_Walls>
+  <CBF_AddWallEntry>Kategorie oder Baustein dazu</CBF_AddWallEntry>
+  <CBF_WallsFromProfile>Leer, also entscheidet das Mauerprofil {0}: {1}</CBF_WallsFromProfile>
+  <CBF_WallsNoProfile>Leer, und es gibt kein Mauerprofil fuer diesen Stil und diese Tiefe. Die Siedlung bekommt die allgemeine Mauer.</CBF_WallsNoProfile>
+  <CBF_MenuExportAll>Alle Flaechen ausgeben ({0})</CBF_MenuExportAll>
+  <CBF_NeedTwoRegions>weniger als zwei Flaechen auf der Karte</CBF_NeedTwoRegions>
+  <CBF_MakePackage>Inhaltspaket bauen</CBF_MakePackage>
+  <CBF_OpenPackageFolder>Paketordner oeffnen</CBF_OpenPackageFolder>
+  <CBF_CloseEditor>Editor schliessen</CBF_CloseEditor>
+  <CBF_PackageDone>Paket gebaut.
+
+{0}
+
+Es liegt hier:
+{1}
+
+Den Ordner CustomBaseFramework in einen anderen Mod unter 1.6/Defs kopieren, Patches unter 1.6/Patches. Die LIESMICH.txt daneben sagt dasselbe und nennt die noetigen Mods.</CBF_PackageDone>
+  <CBF_AnchorToolTip>Malt in den Anker {0}, innerhalb der Flaeche {1}. Felder ausserhalb dieser Flaeche werden abgelehnt.</CBF_AnchorToolTip>
+  <CBF_AnchorNewOnUse>einen neuen</CBF_AnchorNewOnUse>
+  <CBF_Field_outward>Aussenseite</CBF_Field_outward>
+  <CBF_FromProfile>vom Mauerprofil</CBF_FromProfile>
+  <CBF_OutwardLow>Anfang des Streifens</CBF_OutwardLow>
+  <CBF_OutwardHigh>Ende des Streifens</CBF_OutwardHigh>
+  <CBF_Dir_South>gezeichnet mit dem Aussen unten</CBF_Dir_South>
+  <CBF_Dir_North>gezeichnet mit dem Aussen oben</CBF_Dir_North>
+  <CBF_Dir_West>gezeichnet mit dem Aussen links</CBF_Dir_West>
+  <CBF_Dir_East>gezeichnet mit dem Aussen rechts</CBF_Dir_East>
+  <CBF_OutwardTip>Welches Ende des gezeichneten Streifens von der Stadt wegzeigt. Der Mauerbauer dreht den Streifen fuer jede Himmelsrichtung, deshalb zaehlen nur die beiden Enden. Eine Schiessscharte braucht das: ihre Oeffnung gehoert nach aussen.</CBF_OutwardTip>
+  <!-- Stadtteile -->
+  <CBF_Wards>Stadtteile</CBF_Wards>
+  <CBF_AddWard>+ Stadtteil</CBF_AddWard>
+  <CBF_AddedWard>Stadtteil {0} angelegt</CBF_AddedWard>
+  <CBF_RemovedWard>Stadtteil {0} entfernt</CBF_RemovedWard>
+  <CBF_WardWall>Mauer {0}</CBF_WardWall>
+  <CBF_WardNoWall>ohne Mauer</CBF_WardNoWall>
+  <CBF_NoWardsHint>Ohne Stadtteile hat der Ort eine Mauer und ein Bauprogramm. Mit Stadtteilen bekommt jeder Teil seine eigene Mauer und seine eigenen Bezirke. Der erste Stadtteil nimmt alles Vorhandene mit, der Ort sieht danach zunaechst gleich aus.</CBF_NoWardsHint>
+  <CBF_Field_name>Name</CBF_Field_name>
+  <CBF_Field_art>Art</CBF_Field_art>
+  <CBF_Field_ground>Boden</CBF_Field_ground>
+  <CBF_FieldDesc_ground>Der Boden zwischen den Haeusern. Leer heisst: die Karte bleibt, wie sie ist. Gassen, Plaetze und Aecker haben ihren eigenen Belag und bleiben unberuehrt.</CBF_FieldDesc_ground>
+  <CBF_AddGround>+ Boden</CBF_AddGround>
+  <CBF_GroundNatural>Leer, also bleibt der Grund der Karte stehen.</CBF_GroundNatural>
+  <CBF_GroundNaturalGroup>gewachsen</CBF_GroundNaturalGroup>
+  <CBF_GroundBuiltGroup>gebaut</CBF_GroundBuiltGroup>
+  <CBF_ClickToEdit>Klicken zum Aendern</CBF_ClickToEdit>
+  <CBF_WardStats>Kennzahlen</CBF_WardStats>
+  <CBF_Field_roads>Wege</CBF_Field_roads>
+  <CBF_FieldDesc_roads>Der Belag der Gassen, Plaetze und Tordurchfahrten in diesem Stadtteil. Leer heisst: es bleibt beim Belag der Palette.</CBF_FieldDesc_roads>
+  <CBF_AddRoad>+ Weg</CBF_AddRoad>
+  <CBF_RoadsDefault>Leer, also bleibt der Belag der Palette.</CBF_RoadsDefault>
+  <CBF_NewPieceReady>Neuer Baustein: zieh die Flaeche auf der Karte auf.</CBF_NewPieceReady>
+  <CBF_NewProject>Neues Projekt</CBF_NewProject>
+  <CBF_OpenProject>Projekt oeffnen</CBF_OpenProject>
+  <CBF_ShowProjectFolder>Projektordner zeigen</CBF_ShowProjectFolder>
+  <CBF_ProjectCurrent>Projekt: {0} ({1})</CBF_ProjectCurrent>
+  <CBF_ProjectName>Name</CBF_ProjectName>
+  <CBF_ProjectAuthor>Autor</CBF_ProjectAuthor>
+  <CBF_ProjectCreate>Anlegen</CBF_ProjectCreate>
+  <CBF_ProjectCancel>Abbrechen</CBF_ProjectCancel>
+  <CBF_ProjectNewHint>Legt einen neuen Mod im Mods-Ordner an, mit den Ordnern, die RimWorld braucht. Alles, was du ab jetzt speicherst, landet dort.</CBF_ProjectNewHint>
+  <CBF_ProjectNeedsName>Das Projekt braucht einen Namen.</CBF_ProjectNeedsName>
+  <CBF_ProjectExists>Einen Ordner namens {0} gibt es schon.</CBF_ProjectExists>
+  <CBF_ProjectGone>Diesen Ordner gibt es nicht mehr.</CBF_ProjectGone>
+  <CBF_ProjectCreated>Projekt {0} fuer {1} angelegt. Es ist aktiviert und laedt beim naechsten Start.</CBF_ProjectCreated>
+  <CBF_ProjectOpened>Projekt {0} geoeffnet, {1} Definitionen geladen.</CBF_ProjectOpened>
+  <CBF_ProjectPickTitle>Projekt oeffnen</CBF_ProjectPickTitle>
+  <CBF_ProjectFramework>Framework</CBF_ProjectFramework>
+  <CBF_ProjectOwn>Projekte</CBF_ProjectOwn>
+  <CBF_ProjectFiles>{0} Dateien</CBF_ProjectFiles>
+  <CBF_ProjectInactive>nicht aktiviert</CBF_ProjectInactive>
+  <CBF_ProjectNoneFound>Kein Projekt gefunden. Leg zuerst eines an.</CBF_ProjectNoneFound>
+  <CBF_GroupLootTables>Beutetabellen</CBF_GroupLootTables>
+  <CBF_GroupObjectLists>Objektlisten</CBF_GroupObjectLists>
+  <CBF_GroupPawnLists>Einheitenlisten</CBF_GroupPawnLists>
+  <CBF_ModUnknown>Unbekannter Mod</CBF_ModUnknown>
+  <CBF_LootAlways>Immer</CBF_LootAlways>
+  <CBF_LootEntries>Gewichtet</CBF_LootEntries>
+  <CBF_LootEntryDead>Hinter diesem Eintrag steht kein Ding, er faellt weg.</CBF_LootEntryDead>
+  <CBF_LootEntryTable>Zieht die Tabelle {0}.</CBF_LootEntryTable>
+  <CBF_ByDepth>nach Tiefe</CBF_ByDepth>
+  <CBF_ListMembers>{0} von {1} vorhanden</CBF_ListMembers>
+  <CBF_ListMemberGone>{0} gibt es nicht, der Eintrag faellt weg.</CBF_ListMemberGone>
+  <CBF_EditMembers>Mitglieder bearbeiten</CBF_EditMembers>
+  <CBF_Field_lootArt>Darstellung</CBF_Field_lootArt>
+  <CBF_FieldDesc_lootArt>Auto liest es am Gebaeude ab: ein Lagergebaeude zeigt seinen Inhalt, ein Behaelter verbirgt ihn. Sichtbar oder Verborgen schraenkt die Liste auf Gebaeude ein, die das koennen.</CBF_FieldDesc_lootArt>
+  <CBF_Field_lootRolls>Wuerfe</CBF_Field_lootRolls>
+  <CBF_Field_rollChance>Wurfchance</CBF_Field_rollChance>
+  <CBF_Field_emptyFallback>Rueckfall</CBF_Field_emptyFallback>
+  <CBF_Field_usedByPieces>Bausteine damit</CBF_Field_usedByPieces>
+  <CBF_Field_pawnList>Einheitenliste</CBF_Field_pawnList>
+  <CBF_Field_pawnChance>Einheitenchance</CBF_Field_pawnChance>
+  <CBF_Field_rolle>Rolle</CBF_Field_rolle>
+  <CBF_Field_radius>Radius</CBF_Field_radius>
+  <CBF_Field_sourceMod>Aus</CBF_Field_sourceMod>
+  <CBF_Field_race>Art</CBF_Field_race>
+  <CBF_Field_combatPower>Kampfwert</CBF_Field_combatPower>
+  <CBF_Field_faction>Fraktion</CBF_Field_faction>
+  <CBF_PawnOwn>Diese Art gehoert zu deinem Projekt. Was du hier aenderst, aendert die Definition selbst.</CBF_PawnOwn>
+  <CBF_PawnForeign>Diese Art kommt aus einem anderen Mod. Nimm sie ins Projekt, um sie zu aendern.</CBF_PawnForeign>
+  <CBF_PawnCopy>Ins Projekt uebernehmen</CBF_PawnCopy>
+  <CBF_PawnCopyTitle>{0} uebernehmen</CBF_PawnCopyTitle>
+  <CBF_PawnCopyHint>Es wird die ganze Definition kopiert, nicht nur die Felder, die der Editor kennt.</CBF_PawnCopyHint>
+  <CBF_PawnCopied>{0} liegt jetzt in deinem Projekt.</CBF_PawnCopied>
+  <CBF_PawnCopyFailed>{0} liess sich nicht uebernehmen.</CBF_PawnCopyFailed>
+  <CBF_PawnNeedsName>Die Art braucht einen Namen.</CBF_PawnNeedsName>
+  <CBF_PawnNameTaken>{0} gibt es schon.</CBF_PawnNameTaken>
+  <CBF_PawnFileExists>Eine Datei namens {0}.xml gibt es schon.</CBF_PawnFileExists>
+  <CBF_PawnFromSelection>Gewaehlten Pawn uebernehmen</CBF_PawnFromSelection>
+  <CBF_PawnNoneSelected>Waehl zuerst einen Pawn auf der Karte.</CBF_PawnNoneSelected>
+  <CBF_LootTableTitle>Beutetabelle</CBF_LootTableTitle>
+  <CBF_LootEdit>Tabelle bearbeiten</CBF_LootEdit>
+  <CBF_LootSave>Tabelle sichern</CBF_LootSave>
+  <CBF_LootSaved>{0} gesichert, {1} Eintraege.</CBF_LootSaved>
+  <CBF_LootNeedsName>Die Tabelle braucht einen Namen.</CBF_LootNeedsName>
+  <CBF_LootNameTaken>{0} gibt es schon.</CBF_LootNameTaken>
+  <CBF_LootEntryCount>{0} Eintraege</CBF_LootEntryCount>
+  <CBF_LootAddThing>Gegenstand dazu</CBF_LootAddThing>
+  <CBF_LootAddTable>Tabelle dazu</CBF_LootAddTable>
+  <CBF_LootUnique>Ohne Wiederholung</CBF_LootUnique>
+  <CBF_NewLootTable>Neue Beutetabelle</CBF_NewLootTable>
+  <CBF_UsedByNobody>Niemand nennt diese Liste, sie wird also nie gezogen.</CBF_UsedByNobody>
+  <CBF_AndNMore>   und {0} weitere</CBF_AndNMore>
+  <CBF_PawnToList>In eine Einheitenliste</CBF_PawnToList>
+  <CBF_PawnAddToList>{0} in eine Liste aufnehmen</CBF_PawnAddToList>
+  <CBF_PawnListNew>Neue Einheitenliste</CBF_PawnListNew>
+  <CBF_PawnListEntries>Eintraege</CBF_PawnListEntries>
+  <CBF_PawnListAlready>schon drin</CBF_PawnListAlready>
+  <CBF_PawnAddedToList>{0} steht jetzt in {1}.</CBF_PawnAddedToList>
+  <CBF_PawnAlreadyInList>{0} steht schon in {1}.</CBF_PawnAlreadyInList>
+  <CBF_PawnEdit>Art bearbeiten</CBF_PawnEdit>
+  <CBF_PawnSaveDef>Aus deinem Projekt ({0}). Sichern aendert die Definition selbst.</CBF_PawnSaveDef>
+  <CBF_PawnSaveChanges>Aenderungen sichern</CBF_PawnSaveChanges>
+  <CBF_PawnChangedFields>{0} Felder geaendert</CBF_PawnChangedFields>
+  <CBF_PawnSaved>{0} gesichert nach {1}.</CBF_PawnSaved>
+  <CBF_PawnFileGone>Die Datei zu {0} wurde nicht gefunden.</CBF_PawnFileGone>
+  <CBF_PawnNodeGone>{0} steht nicht mehr in seiner Datei.</CBF_PawnNodeGone>
+  <CBF_MarkAdd>{0} dazu</CBF_MarkAdd>
+  <CBF_MarkRemove>{0} weg</CBF_MarkRemove>
+  <CBF_Field_label>Anzeigename</CBF_Field_label>
+  <CBF_Field_isFighter>Kaempft</CBF_Field_isFighter>
+  <CBF_Field_factionLeader>Anfuehrer</CBF_Field_factionLeader>
+  <CBF_Field_defaultFactionDef>Fraktion</CBF_Field_defaultFactionDef>
+  <CBF_Field_itemQuality>Ausruestungsguete</CBF_Field_itemQuality>
+  <CBF_Field_gearHealthRange>Zustand der Sachen</CBF_Field_gearHealthRange>
+  <CBF_Field_weaponMoney>Waffenbudget</CBF_Field_weaponMoney>
+  <CBF_Field_apparelMoney>Kleiderbudget</CBF_Field_apparelMoney>
+  <CBF_Field_weaponTags>Waffenmarken</CBF_Field_weaponTags>
+  <CBF_Field_apparelTags>Kleidermarken</CBF_Field_apparelTags>
+  <CBF_Field_minGenerationAge>Mindestalter</CBF_Field_minGenerationAge>
+  <CBF_Field_maxGenerationAge>Hoechstalter</CBF_Field_maxGenerationAge>
+  <CBF_Field_invNutrition>Wegzehrung</CBF_Field_invNutrition>
+  <CBF_FieldDesc_weaponTags>Welche Waffen diese Art bekommen kann. Eine Marke, die niemand traegt, laesst sie mit blossen Haenden dastehen.</CBF_FieldDesc_weaponTags>
+  <CBF_FieldDesc_apparelTags>Welche Kleidung diese Art bekommen kann, zusaetzlich zu dem, was das Budget kauft.</CBF_FieldDesc_apparelTags>
+  <CBF_FieldDesc_gearHealthRange>Wie abgetragen die Sachen sind, 1 heisst neuwertig.</CBF_FieldDesc_gearHealthRange>
+  <CBF_ArtLeer>Leer</CBF_ArtLeer>
+  <CBF_Field_leer>Leeres Gebaeude</CBF_Field_leer>
+  <CBF_FieldDesc_leer>Tritt an die Stelle des Behaelters, sobald ein Spieler ihn ausgeraeumt hat. Waehlbar sind nur Gebaeude mit derselben Grundflaeche.</CBF_FieldDesc_leer>
+  <CBF_BehaelterDurchsucht>Schon durchsucht.</CBF_BehaelterDurchsucht>
+  <CBF_NewContainer>Neuer Beutebehaelter</CBF_NewContainer>
+  <CBF_BehaelterTitle>Beutebehaelter</CBF_BehaelterTitle>
+  <CBF_BehaelterFromDef>Von einem Gebaeude abnehmen</CBF_BehaelterFromDef>
+  <CBF_BehaelterFromDefHint>Uebernimmt Textur, Groesse und Zeichengroesse. Sonst nichts.</CBF_BehaelterFromDefHint>
+  <CBF_BehaelterWhat>Was es ist</CBF_BehaelterWhat>
+  <CBF_BehaelterFull>Voll</CBF_BehaelterFull>
+  <CBF_BehaelterEmpty>Nach dem Durchsuchen</CBF_BehaelterEmpty>
+  <CBF_BehaelterDefault>Wenn niemand etwas zuweist</CBF_BehaelterDefault>
+  <CBF_BehaelterSave>Behaelter anlegen</CBF_BehaelterSave>
+  <CBF_BehaelterSaved>{0} angelegt.</CBF_BehaelterSaved>
+  <CBF_BehaelterNeedsName>Der Behaelter braucht einen Namen.</CBF_BehaelterNeedsName>
+  <CBF_BehaelterNeedsTexture>Name und Textur muessen dastehen.</CBF_BehaelterNeedsTexture>
+  <CBF_BehaelterFileExists>Eine Datei fuer {0} gibt es schon.</CBF_BehaelterFileExists>
+  <CBF_BehaelterFailed>{0} liess sich nicht anlegen.</CBF_BehaelterFailed>
+  <CBF_BehaelterPickImage>Bild waehlen</CBF_BehaelterPickImage>
+  <CBF_BehaelterNoImages>Unter {0} liegt kein Bild.</CBF_BehaelterNoImages>
+  <CBF_Field_texPath>Textur</CBF_Field_texPath>
+  <CBF_Field_leerGrafik>Bild danach</CBF_Field_leerGrafik>
+  <CBF_Field_drawSize>Zeichengroesse</CBF_Field_drawSize>
+  <CBF_Field_leerGebaeude>Wird zu</CBF_Field_leerGebaeude>
+  <CBF_Field_zerstoerenWennLeer>Verschwindet wenn leer</CBF_Field_zerstoerenWennLeer>
+  <CBF_Field_standardTabelle>Standardtabelle</CBF_Field_standardTabelle>
+  <CBF_Field_standardEinheiten>Standardeinheiten</CBF_Field_standardEinheiten>
+  <CBF_Field_einheitenChance>Einheitenchance</CBF_Field_einheitenChance>
+  <CBF_Field_einheitenFeindlich>Einheit wird feindlich</CBF_Field_einheitenFeindlich>
+  <CBF_FieldDesc_standardTabelle>Gilt, wenn sonst niemand eine Beutetabelle zuweist, etwa wenn der Behaelter von Hand gesetzt wird statt ueber einen Anker.</CBF_FieldDesc_standardTabelle>
+  <CBF_FieldDesc_zerstoerenWennLeer>Es verschwindet nach dem Durchsuchen und hinterlaesst kein Baumaterial. Greift nur, wenn oben kein Gebaeude steht.</CBF_FieldDesc_zerstoerenWennLeer>
+  <CBF_GroupContainers>Beutebehaelter</CBF_GroupContainers>
+  <CBF_BehaelterEdit>Behaelter bearbeiten</CBF_BehaelterEdit>
+  <CBF_BehaelterUpdate>Aenderungen sichern</CBF_BehaelterUpdate>
+  <CBF_BehaelterNoExt>Diesem Behaelter fehlt der Einstellungsblock, er kann also nie gefuellt werden.</CBF_BehaelterNoExt>
+  <CBF_Field_pawnCount>Anzahl</CBF_Field_pawnCount>
+  <CBF_Field_pawnFeindlich>Wird feindlich</CBF_Field_pawnFeindlich>
+  <CBF_FieldDesc_pawnList>Wer darin stecken kann. Wirkt nur in Behaeltern mit Innenraum, nicht auf offenen Regalen.</CBF_FieldDesc_pawnList>
+  <CBF_FieldDesc_pawnFeindlich>Die Einheit greift an, sobald der Behaelter geoeffnet wird. Tiere werden Manhunter, Leute rasten aus.</CBF_FieldDesc_pawnFeindlich>
+  <CBF_Field_hitPoints>Zustand %</CBF_Field_hitPoints>
+  <CBF_Field_depthRange>Tiefe</CBF_Field_depthRange>
+  <CBF_Field_stuff>Material</CBF_Field_stuff>
+  <CBF_Field_onMissing>Wenn es fehlt</CBF_Field_onMissing>
+  <CBF_BehaelterWaechter>{0} steckte darin und bewacht den Rest.</CBF_BehaelterWaechter>
+  <CBF_BehaelterBewacht>Von {0} bewacht. Vorher laesst sich hier nichts durchsuchen.</CBF_BehaelterBewacht>
+  <CBF_Field_einheitenFraktion>Fraktion der Einheit</CBF_Field_einheitenFraktion>
+  <CBF_FieldDesc_einheitenFraktion>Zu welcher Fraktion der Insasse gehoert. Ohne eine geht er stattdessen berserk, und das wirkt wie ein eingesperrtes Tier statt wie ein Hinterhalt.</CBF_FieldDesc_einheitenFraktion>
+  <CBF_ArtFuellen>Fuellen</CBF_ArtFuellen>
+  <CBF_PawnGroupWer>Wer es ist</CBF_PawnGroupWer>
+  <CBF_PawnGroupKampf>Kampf</CBF_PawnGroupKampf>
+  <CBF_PawnGroupWaffe>Waffe</CBF_PawnGroupWaffe>
+  <CBF_PawnGroupKleidung>Kleidung</CBF_PawnGroupKleidung>
+  <CBF_PawnGroupGuete>Guete</CBF_PawnGroupGuete>
+  <CBF_PawnGroupAussehen>Aussehen</CBF_PawnGroupAussehen>
+  <CBF_PawnGroupKoerper>Implantate</CBF_PawnGroupKoerper>
+  <CBF_PawnGroupWesen>Wesen</CBF_PawnGroupWesen>
+  <CBF_PawnReroll>Neu wuerfeln</CBF_PawnReroll>
+  <CBF_PawnNoPreview>Kein Bild</CBF_PawnNoPreview>
+  <CBF_PawnPreviewRough>Diese Art arbeitet mit Marken und Budgets, es kommt also jedes Mal etwas anderes heraus. Das Bild ist ein Beispiel, keine Zusage.</CBF_PawnPreviewRough>
+  <CBF_PawnPreviewFixed>Diese Art traegt feste Stuecke, sie sieht also jedes Mal so aus.</CBF_PawnPreviewFixed>
+  <CBF_PawnHasWeapon>Traegt {0}</CBF_PawnHasWeapon>
+  <CBF_PawnAge>Alter {0}</CBF_PawnAge>
+  <CBF_PawnPickColor>Farbe waehlen</CBF_PawnPickColor>
+  <CBF_PawnTakeColor>Diese Farbe nehmen</CBF_PawnTakeColor>
+  <CBF_ListAdd>Etwas hinzufuegen</CBF_ListAdd>
+  <CBF_ListNothingToAdd>Hier gibt es nichts zur Auswahl.</CBF_ListNothingToAdd>
+  <CBF_Field_labelPlural>Mehrzahl</CBF_Field_labelPlural>
+  <CBF_Field_description>Beschreibung</CBF_Field_description>
+  <CBF_Field_fixedGender>Geschlecht</CBF_Field_fixedGender>
+  <CBF_Field_canBeSapper>Untergraebt</CBF_Field_canBeSapper>
+  <CBF_Field_isGoodBreacher>Bricht durch</CBF_Field_isGoodBreacher>
+  <CBF_Field_aiAvoidCover>Meidet Deckung</CBF_Field_aiAvoidCover>
+  <CBF_Field_hostileToAll>Allen feindlich</CBF_Field_hostileToAll>
+  <CBF_Field_canArriveManhunter>Kann rasend kommen</CBF_Field_canArriveManhunter>
+  <CBF_Field_maxPerGroup>Hoechstens je Gruppe</CBF_Field_maxPerGroup>
+  <CBF_Field_weaponStuffOverride>Waffenmaterial</CBF_Field_weaponStuffOverride>
+  <CBF_Field_forceWeaponQuality>Waffenguete</CBF_Field_forceWeaponQuality>
+  <CBF_Field_apparelRequired>Traegt immer</CBF_Field_apparelRequired>
+  <CBF_Field_apparelDisallowTags>Traegt nie</CBF_Field_apparelDisallowTags>
+  <CBF_Field_apparelColor>Kleiderfarbe</CBF_Field_apparelColor>
+  <CBF_Field_apparelAllowHeadgearChance>Kopfbedeckung</CBF_Field_apparelAllowHeadgearChance>
+  <CBF_Field_apparelIgnoreSeasons>Jahreszeit egal</CBF_Field_apparelIgnoreSeasons>
+  <CBF_Field_ignoreFactionApparelStuffRequirements>Fraktionsmaterial egal</CBF_Field_ignoreFactionApparelStuffRequirements>
+  <CBF_Field_forceNormalGearQuality>Immer normale Guete</CBF_Field_forceNormalGearQuality>
+  <CBF_Field_destroyGearOnDrop>Ausruestung zerfaellt</CBF_Field_destroyGearOnDrop>
+  <CBF_Field_canStrip>Laesst sich ausziehen</CBF_Field_canStrip>
+  <CBF_Field_forcedHair>Haar</CBF_Field_forcedHair>
+  <CBF_Field_forcedHairColor>Haarfarbe</CBF_Field_forcedHairColor>
+  <CBF_Field_skinColorOverride>Hautfarbe</CBF_Field_skinColorOverride>
+  <CBF_Field_favoriteColor>Lieblingsfarbe</CBF_Field_favoriteColor>
+  <CBF_Field_techHediffsRequired>Hat immer</CBF_Field_techHediffsRequired>
+  <CBF_Field_techHediffsMoney>Implantatbudget</CBF_Field_techHediffsMoney>
+  <CBF_Field_techHediffsTags>Implantatmarken</CBF_Field_techHediffsTags>
+  <CBF_Field_forcedTraits>Feste Eigenschaften</CBF_Field_forcedTraits>
+  <CBF_Field_disallowedTraits>Verbotene Eigenschaften</CBF_Field_disallowedTraits>
+  <CBF_Field_abilities>Faehigkeiten</CBF_Field_abilities>
+  <CBF_Field_initialResistanceRange>Widerstand</CBF_Field_initialResistanceRange>
+  <CBF_Field_royalTitleChance>Titelchance</CBF_Field_royalTitleChance>
+  <CBF_Field_titleRequired>Verlangter Titel</CBF_Field_titleRequired>
+  <CBF_FieldDesc_apparelRequired>Diese Stuecke werden immer getragen, zusaetzlich zu dem, was das Budget kauft.</CBF_FieldDesc_apparelRequired>
+  <CBF_FieldDesc_apparelColor>Wirkt nur auf Kleidung, die sich faerben laesst.</CBF_FieldDesc_apparelColor>
+  <CBF_FieldDesc_weaponStuffOverride>Erzwingt das Material der Waffe, etwa Plastahl.</CBF_FieldDesc_weaponStuffOverride>
+  <CBF_FieldDesc_maxPerGroup>Wieviele dieser Art hoechstens in einer Gruppe vorkommen.</CBF_FieldDesc_maxPerGroup>
+  <CBF_PawnUnsaved>{0} Felder geaendert, noch nicht gesichert</CBF_PawnUnsaved>
+  <CBF_ApparelClash>{0} und {1} belegen dieselbe Koerperstelle, das laesst sich nicht zusammen tragen.</CBF_ApparelClash>
+  <CBF_PawnFaults>{0} Maengel</CBF_PawnFaults>
+  <CBF_PawnReadOnly>Aus {0}. Wird gezeigt, aber nicht geaendert.</CBF_PawnReadOnly>
+  <CBF_PawnReadOnlyHint>Zum Aendern abschreiben.</CBF_PawnReadOnlyHint>
+  <CBF_PawnCopyToEdit>Abschreiben und dann aendern</CBF_PawnCopyToEdit>
+  <CBF_MemberDestroyed>zerstoert</CBF_MemberDestroyed>
+  <CBF_MemberDestroyedTip>Nichts gesetzt, also wird es nach dem Ausraeumen zerstoert. Baumaterial bleibt keines zurueck.</CBF_MemberDestroyedTip>
+  <CBF_MemberBecomes>Wird nach dem Ausraeumen zu {0}.</CBF_MemberBecomes>
+  <CBF_MemberSizeClash>{0} hat eine andere Grundflaeche, der Tausch geht nicht. Nimm eines derselben Groesse.</CBF_MemberSizeClash>
+  <CBF_MemberBecomesWhat>Was wird aus {0}?</CBF_MemberBecomesWhat>
+  <CBF_MemberStays>bleibt</CBF_MemberStays>
+  <CBF_MemberStaysTip>Es bleibt nach dem Ausraeumen einfach stehen. Richtig fuer gewoehnliche Moebel, und fuer Gebaeude, die sich selbst tauschen.</CBF_MemberStaysTip>
+  <CBF_FieldDesc_leerGrafik>Dasselbe Gebaeude, anderes Bild. Es bleibt dieser Behaelter, behaelt seinen Namen und bleibt Deko: einlagern kann niemand etwas darin. Das Bild wechselt, sobald durchsucht wurde, nicht wenn nichts mehr drin ist, denn ein Behaelter, aus dem nichts kam, ist trotzdem durchsucht.</CBF_FieldDesc_leerGrafik>
+  <CBF_FieldDesc_leerGebaeude>Dieser Behaelter verschwindet, und ein anderes Gebaeude steht an seiner Stelle. Nimm das, wenn danach etwas Richtiges dastehen soll, etwa eine gewoehnliche Truhe, in der die Kolonie lagern kann. Geht nur bei gleicher Grundflaeche, sonst bleibt dieser einfach stehen. Steht hier etwas, bekommt man das Bild darueber nie zu sehen.</CBF_FieldDesc_leerGebaeude>
+  <CBF_FieldDesc_einheitenChance>Wie wahrscheinlich jemand darin wartet, je Behaelter. 0 heisst nie.</CBF_FieldDesc_einheitenChance>
+  <CBF_OnlyContainers>Meine Behaelter</CBF_OnlyContainers>
+  <CBF_OnlyContainersTip>Nur die Beutebehaelter, die du selbst gebaut hast. Sie sind gewoehnliche Gebaeude und laegen sonst irgendwo zwischen zweitausend anderen, unter dem Namen dessen, was sie darstellen.</CBF_OnlyContainersTip>
+  <CBF_Field_pawnFraktion>Fraktion</CBF_Field_pawnFraktion>
+  <CBF_FieldDesc_pawnFraktion>Zu welcher Fraktion der Bewohner gehoert. Ohne eine geht er stattdessen berserk, was wie ein eingesperrtes Tier wirkt statt wie ein Hinterhalt, und sie greifen dann auch einander an.</CBF_FieldDesc_pawnFraktion>
+  <CBF_FieldDesc_pawnFraktionNone>Keine Fraktion: er geht stattdessen berserk.</CBF_FieldDesc_pawnFraktionNone>
+  <CBF_AnchorNameAuto>Der Name kommt aus der Art. Nur ein Anschluss braucht einen eigenen: zwei Bausteine finden sich ueber ihn. Was ein Fuell- oder Spawnanker tut, sagen seine Objekt- und Einheitenliste, nach seinem Namen sucht niemand.</CBF_AnchorNameAuto>
+  <CBF_DevFill>Aus Tabelle fuellen</CBF_DevFill>
+  <CBF_DevFillTip>Nur im Entwicklermodus. Weil die Beutetabelle am Anker steht, bleibt ein von Hand gesetzter Behaelter leer. Hiermit weist du ihm eine zu, um sie zu pruefen. In eine Datei kommt davon nichts.</CBF_DevFillTip>
+  <CBF_DevFilled>Gefuellt: {0} Stapel.</CBF_DevFilled>
+  <CBF_NoLootTables>Keine Beutetabellen geladen</CBF_NoLootTables>
+  <CBF_BehaelterFromDefTip>Liest Werte von einem vorhandenen Gebaeude ab und schreibt sie in deine Definition: Textur, Groesse, Zeichengroesse, Trefferpunkte, Baustoff.\n\nGeerbt wird nichts. Dein Behaelter ist ein eigenes Ding und behaelt keine Verbindung zum Original. Ein Lootable von Medieval Overhaul gibt weder seine Beute noch sein leeres Bild noch seine Ratten weiter.\n\nEines folgt doch: nimmst du eine Textur aus einem Mod ab, braucht dein Behaelter diesen Mod, denn ohne ihn fehlt das Bild. Leg eine eigene PNG unter Textures in dein Projekt, wenn du das nicht willst.</CBF_BehaelterFromDefTip>
+  <CBF_BehaelterNextStepTitle>Ein Schritt fehlt noch</CBF_BehaelterNextStepTitle>
+  <CBF_BehaelterNextStep>{0} gibt es jetzt, aber noch setzt ihn niemand.\n\nEin Behaelter kommt auf genau einem Weg auf die Karte: eine Objektliste nennt ihn, und ein Fuellanker waehlt diese Liste. Was hineinkommt, entscheidet die Beutetabelle am selben Anker.\n\nGleich in eine Liste aufnehmen?</CBF_BehaelterNextStep>
+  <CBF_BehaelterPutInList>In eine Objektliste aufnehmen</CBF_BehaelterPutInList>
+  <CBF_Later>Spaeter</CBF_Later>
+  <CBF_BehaelterAdded>{0} in {1} aufgenommen.</CBF_BehaelterAdded>
+  <CBF_BehaelterAlreadyIn>{0} enthaelt ihn schon.</CBF_BehaelterAlreadyIn>
+  <CBF_PawnParentLost>{0}: die Vorlage erbt von einem Def, das sich nicht aufloesen liess. Die Kopie steht allein, es fehlt also alles, was nur in der Basis stand. Pruefe Ausruestung und Kleidung, bevor du sie verwendest.</CBF_PawnParentLost>
+  <CBF_MemberTable>Beutetabelle fuer dieses Stueck</CBF_MemberTable>
+  <CBF_MemberTableFromAnchor>vom Anker</CBF_MemberTableFromAnchor>
+  <CBF_MemberTableTip>Womit sich dieses Stueck fuellt. Ohne eigene gilt die Tabelle am Anker.\n\nGib jedem Stueck seine eigene, dann gibt das Weinregal Wein und der Waffenstaender daneben Waffen. Laesst du sie leer, deckt eine Tabelle am Anker die ganze Liste ab.</CBF_MemberTableTip>
+  <CBF_MemberOpen>offen</CBF_MemberOpen>
+  <CBF_MemberOpenTip>Das Stueck selbst wird gesetzt, und die Beute liegt sichtbar darauf. Es bleibt, wie es ist, denn ein Regal, das verschwindet, liesse fallen, was darauf steht.\n\nSonst wird eine Huelle gesetzt, die aussieht wie dieses Stueck, die Beute innen haelt und geoeffnet werden muss.</CBF_MemberOpenTip>
+</LanguageData>

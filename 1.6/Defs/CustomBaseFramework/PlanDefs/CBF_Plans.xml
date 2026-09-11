@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Ortstypen. Hier steht der Unterschied zwischen Weiler, Dorf, Stadt und
+       Festung, und nur hier.
+
+       wallDepth: 0 keine Mauer, 1 Palisade, 3 Wand/Wehrgang/Wand,
+                  5 breite Festungsmauer mit drei Feldern Wehrgang.
+       towerCorner ist der Durchmesser des runden Eckturms. Sein Mittelpunkt
+       liegt auf der Mittellinie des Mauerbands, die Mauer laeuft also mittig
+       in den Turm hinein. Er sollte groesser sein als wallDepth.
+       Wege gibt es nur in zwei Breiten, mehr zerschneidet die Karte optisch. -->
+
+  <!-- ==================================================================
+       Verliesprofile. corridorShare unter 0,35 laesst die Raeume zu einem
+       Grundriss zusammenwachsen, deshalb prueft der Code das.
+       ================================================================== -->
+
+  <CustomBaseFramework.DungeonProfileDef>
+    <defName>CBF_Dungeon_Gruft</defName>
+    <label>Gruft</label>
+    <style>Fancy</style>
+    <mapSize>175</mapSize>
+    <levels>1~2</levels>
+    <roomDensity>0.34</roomDensity>
+    <corridorShare>0.55</corridorShare>
+    <loopTarget>0.22</loopTarget>
+    <deadEndBand>0.10~0.20</deadEndBand>
+    <roomTags>
+      <li>DungeonRoom</li>
+    </roomTags>
+    <lootTable>CBF_Loot_Gruft</lootTable>
+    <bossLootTable>CBF_Loot_Gruft</bossLootTable>
+    <monsterKinds>
+      <li>Rat</li>
+      <li>Megascarab</li>
+    </monsterKinds>
+  </CustomBaseFramework.DungeonProfileDef>
+
+  <CustomBaseFramework.DungeonProfileDef>
+    <defName>CBF_Dungeon_Verlies</defName>
+    <label>Verlies</label>
+    <style>Rustical</style>
+    <mapSize>175</mapSize>
+    <levels>2~3</levels>
+    <roomDensity>0.36</roomDensity>
+    <corridorShare>0.50</corridorShare>
+    <loopTarget>0.26</loopTarget>
+    <deadEndBand>0.10~0.18</deadEndBand>
+    <roomTags>
+      <li>DungeonRoom</li>
+    </roomTags>
+    <lootTable>CBF_Loot_Gruft</lootTable>
+    <monsterKinds>
+      <li>Rat</li>
+    </monsterKinds>
+  </CustomBaseFramework.DungeonProfileDef>
+
+</Defs>

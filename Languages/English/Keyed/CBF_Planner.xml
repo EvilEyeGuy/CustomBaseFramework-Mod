@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <CBF_Build_Prepare>Preparing</CBF_Build_Prepare>
+  <CBF_Build_Done>Settlement completed</CBF_Build_Done>
+  <CBF_Build_Failed>Settlement construction stopped</CBF_Build_Failed>
+  <CBF_Build_Title>Generating settlement</CBF_Build_Title>
+  <CBF_Build_Finished>Completed</CBF_Build_Finished>
+  <CBF_Build_Close>Close</CBF_Build_Close>
+  <CBF_Build_Clear>Preparing building ground</CBF_Build_Clear>
+  <CBF_Build_Roads>Laying roads and floors</CBF_Build_Roads>
+  <CBF_Build_Walls>Building walls and fences</CBF_Build_Walls>
+  <CBF_Build_Profiles>Building wall profiles, towers and gatehouses</CBF_Build_Profiles>
+  <CBF_Build_Report>Checking settlement and writing report</CBF_Build_Report>
+  <CBF_Build_Read>Reading settlement settings and terrain</CBF_Build_Read>
+  <CBF_Build_Plan>Planning settlement</CBF_Build_Plan>
+  <CBF_Build_Pawns>Generating inhabitants and defenders</CBF_Build_Pawns>
+  <CBF_Build_BadPlan>Settlement type is invalid. See its validation report.</CBF_Build_BadPlan>
+  <CBF_Build_NoPalette>No usable palette.</CBF_Build_NoPalette>
+  <CBF_Build_NoInput>Terrain or building catalogue is missing.</CBF_Build_NoInput>
+  <CBF_Planner_Terrain>Checking terrain and building site</CBF_Planner_Terrain>
+  <CBF_Planner_Boundary>Planning boundaries, mountain connections and gates</CBF_Planner_Boundary>
+  <CBF_Planner_Towers>Connecting towers to their wall anchors</CBF_Planner_Towers>
+  <CBF_Planner_StageSite>Site search</CBF_Planner_StageSite>
+  <CBF_Planner_StageWalls>Fortifications and gate access</CBF_Planner_StageWalls>
+  <CBF_Planner_StageTowers>Tower connections</CBF_Planner_StageTowers>
+  <CBF_Planner_StageBuildings>Buildings and fields</CBF_Planner_StageBuildings>
+  <CBF_Planner_NoWall>The fortified city requires a wall template.</CBF_Planner_NoWall>
+  <CBF_Planner_BadSettings>Invalid spacing, gate or road settings.</CBF_Planner_BadSettings>
+  <CBF_Planner_BadCount>Invalid building count or layer.</CBF_Planner_BadCount>
+  <CBF_Planner_BadMask>Invalid building mask.</CBF_Planner_BadMask>
+  <CBF_Planner_BadTerrain>Invalid terrain data.</CBF_Planner_BadTerrain>
+  <CBF_Planner_BadSize>City size or wall depth is outside the supported range.</CBF_Planner_BadSize>
+  <CBF_Planner_NoSite>No suitable site was found within the terrain constraints.</CBF_Planner_NoSite>
+  <CBF_Planner_NoConstruction>Buildings and fields were not started at this site. Gate access or fortifications are invalid; terrain will remain unchanged.</CBF_Planner_NoConstruction>
+  <CBF_Planner_MissingTowers>Required towers are missing. No terrain changes will be made for further buildings at this site.</CBF_Planner_MissingTowers>
+  <CBF_Planner_LittleLand>This site has little free building ground. Terrain changes are limited to required buildings and the configured budget.</CBF_Planner_LittleLand>
+  <CBF_Planner_NoHub>A layer has no walkable hub.</CBF_Planner_NoHub>
+  <CBF_Planner_Disconnected>The city and suburb are not fully connected.</CBF_Planner_Disconnected>
+  <CBF_Planner_GateUnreachable>A gate cannot be reached from inside the city.</CBF_Planner_GateUnreachable>
+  <CBF_Planner_NoField>No available field template in the catalogue.</CBF_Planner_NoField>
+  <CBF_Planner_Exits>Not all outer gates reach the map edge through the connected road network.</CBF_Planner_Exits>
+  <CBF_Planner_OpenWall>The defensive line has a walkable gap. This plan is not approved.</CBF_Planner_OpenWall>
+  <CBF_Planner_MissingFields>Not all requested fields fit outside the walls with the configured clearance.</CBF_Planner_MissingFields>
+  <CBF_Planner_MissingMinimum>Some minimum building counts are not met. See the remaining entries in the building list.</CBF_Planner_MissingMinimum>
+  <CBF_Planner_Density>The target density does not override building limits or secured access.</CBF_Planner_Density>
+  <CBF_Build_Elapsed>Elapsed: {0} seconds  {1}</CBF_Build_Elapsed>
+  <CBF_Build_Piece>Placing buildings: {0} of {1}</CBF_Build_Piece>
+  <CBF_Build_NoLayout>No complete plan was found ({0}). The map was not changed.</CBF_Build_NoLayout>
+  <CBF_Planner_Attempt>Site {0} (up to 96): {1}</CBF_Planner_Attempt>
+  <CBF_Planner_Piece>Fitting building: {0} ({1} placed)</CBF_Planner_Piece>
+  <CBF_Planner_MissingWard>Ward definition is missing for layer {0}.</CBF_Planner_MissingWard>
+  <CBF_Planner_MissingWall>No wall template is available for layer {0}.</CBF_Planner_MissingWall>
+  <CBF_Planner_WallShape>Wall template {0} requires a defined outside and cross section. Automatic substitution is not allowed.</CBF_Planner_WallShape>
+  <CBF_Planner_WallDepth>Unsupported wall depth in {0}.</CBF_Planner_WallDepth>
+  <CBF_Planner_WallProfile>Wall profile must consist of walls and a parapet walkway: {0}.</CBF_Planner_WallProfile>
+  <CBF_Planner_WallEdge>Wall profile needs a closed outer edge: {0}.</CBF_Planner_WallEdge>
+  <CBF_Planner_NoAllowedGate>No available permitted gatehouse template for layer {0}.</CBF_Planner_NoAllowedGate>
+  <CBF_Planner_NoGateSite>No permitted gatehouse template fits layer {0} at this site.</CBF_Planner_NoGateSite>
+  <CBF_Planner_NoFarmPlot>No farm plot with at least 100 growing cells fits rural house {0} at this site.</CBF_Planner_NoFarmPlot>
+  <CBF_Planner_Maximum>Hard upper limit exceeded: {0}.</CBF_Planner_Maximum>
+  <CBF_Planner_UnservedCorner>A major wall corner has no suitable tower with complete anchor connections. Another site will be tried.</CBF_Planner_UnservedCorner>
+  <CBF_Build_Summary>{0}: {1} structures, {2} percent built, {3} percent terrain blocked.</CBF_Build_Summary>
+  <CBF_Planner_RescueTerrain>Planning additional building space in the mountain</CBF_Planner_RescueTerrain>
+  <CBF_Planner_TerrainClearance>Building clearance with a natural rock edge</CBF_Planner_TerrainClearance>
+  <CBF_Planner_SuburbGateLink>The outer and inner gates need a continuous main road through the suburb.</CBF_Planner_SuburbGateLink>
+  <CBF_Planner_SuburbWidth>Parallel inner and outer walls leave too little usable space for the suburb.</CBF_Planner_SuburbWidth>
+  <CBF_RuralPlots>Rural plots</CBF_RuralPlots>
+  <CBF_RuralCrop>Fenced crop plot</CBF_RuralCrop>
+  <CBF_RuralPen>Animal pen</CBF_RuralPen>
+  <CBF_RuralCount>Plots (min~max)</CBF_RuralCount>
+  <CBF_RuralHerd>Animals (min~max)</CBF_RuralHerd>
+  <CBF_RuralChoosePlant>Choose crop</CBF_RuralChoosePlant>
+  <CBF_RuralChooseAnimals>Choose animal list</CBF_RuralChooseAnimals>
+  <CBF_RuralAddCrop>Add crop plot</CBF_RuralAddCrop>
+  <CBF_RuralAddPen>Add animal pen</CBF_RuralAddPen>
+  <CBF_RuralAnimalsHint>Define species and weights in the pawn list. Only animals spawn in pens.</CBF_RuralAnimalsHint>
+  <CBF_Pen_NoSpace>No enclosed space with road access was found for pen {0}.</CBF_Pen_NoSpace>
+  <CBF_ChoosePlants>Choose crops</CBF_ChoosePlants>
+  <CBF_ChoosePlantsHint>{0} selected. Click a tile to add or remove it.</CBF_ChoosePlantsHint>
+  <CBF_Apply>Apply</CBF_Apply>
+  <CBF_RuralAnyHouse>Any small house or farmstead</CBF_RuralAnyHouse>
+  <CBF_Build_ReportWritten>Generation failed. A report with terrain and log is in {0}</CBF_Build_ReportWritten>
+  <CBF_UploadBusy>An upload is already running.</CBF_UploadBusy>
+  <CBF_UploadNoReport>No error report found yet.</CBF_UploadNoReport>
+  <CBF_UploadDone>Report uploaded. The links are in the log:</CBF_UploadDone>
+  <CBF_PlanKind>Kind</CBF_PlanKind>
+  <CBF_Kind_Mittelalterstadt>Medieval town</CBF_Kind_Mittelalterstadt>
+  <CBF_Kind_Modernestadt>Modern town</CBF_Kind_Modernestadt>
+  <CBF_Kind_Lager>Camp</CBF_Kind_Lager>
+  <CBF_Kind_Verlies>Dungeon</CBF_Kind_Verlies>
+  <CBF_UploadConfirmTitle>Upload error report?</CBF_UploadConfirmTitle>
+  <CBF_UploadConfirm>The terrain sample and the text report from
+{1}
+will be uploaded to {0}.
+
+The link is PUBLIC: anyone who has it can read both files, and they cannot be deleted there. The report contains your active mod list.
+
+Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
+  <CBF_HelpEmpty>No description has been written for this section yet.</CBF_HelpEmpty>
+  <CBF_NavHouse>Project, packaging and closing the editor.</CBF_NavHouse>
+  <CBF_NavClose>Close the editor.</CBF_NavClose>
+  <CBF_NavPanel>Show or hide the side panel.</CBF_NavPanel>
+  <CBF_NavFloat>Detach the side panel into a window you can move.</CBF_NavFloat>
+  <CBF_NavRedo>Redo the last undone step.</CBF_NavRedo>
+  <CBF_NavUndo>Undo the last step.</CBF_NavUndo>
+  <CBF_Area_Factions>Factions</CBF_Area_Factions>
+  <CBF_FactionFrom>From {0}</CBF_FactionFrom>
+  <CBF_FactionPlans>Settlement plans</CBF_FactionPlans>
+  <CBF_FactionNoPlan>No plan is assigned to this faction.</CBF_FactionNoPlan>
+  <CBF_FactionAssign>Assign a plan</CBF_FactionAssign>
+  <CBF_FactionServesAll>(currently serves every faction)</CBF_FactionServesAll>
+  <CBF_FactionAllAssigned>Every plan is already assigned to this faction.</CBF_FactionAllAssigned>
+  <CBF_FactionUntagged>{0} plan(s) name no faction at all. Those serve every faction, including this one.</CBF_FactionUntagged>
+  <CBF_FactionByCategory>{0} is attached through the faction category {1}, not by name. Remove the category tag in the plan itself.</CBF_FactionByCategory>
+  <CBF_FactionTakeover>Takeover</CBF_FactionTakeover>
+  <CBF_TakeoverOn>RimWorld hands faction bases to the CBF generator.</CBF_TakeoverOn>
+  <CBF_TakeoverOff>Faction bases are still built by RimWorld. Nothing you assign here will show up.</CBF_TakeoverOff>
+  <CBF_TakeoverEnable>Take over faction bases</CBF_TakeoverEnable>
+  <CBF_TakeoverDisable>Hand faction bases back</CBF_TakeoverDisable>
+  <CBF_TakeoverPath>Written to {0} in the current project.</CBF_TakeoverPath>
+  <CBF_PatchUnreadable>{0} could not be read and was left untouched: {1}</CBF_PatchUnreadable>
+  <CBF_PatchNotAPatch>{0} is not a Patch file and was left untouched.</CBF_PatchNotAPatch>
+  <CBF_AddBuilding>Building or category...</CBF_AddBuilding>
+  <CBF_NewPlan>Name the settlement</CBF_NewPlan>
+  <CBF_NewPlanHint>A def name, letters and digits only. It starts with one ward and one district; walls and pieces are up to you.</CBF_NewPlanHint>
+  <CBF_PlanExists>A settlement named {0} already exists.</CBF_PlanExists>
+  <CBF_PlanCreated>Settlement {0} created.</CBF_PlanCreated>
+  <CBF_RoadEdgesDefault>Empty, so the whole road uses the surface above.</CBF_RoadEdgesDefault>
+  <CBF_AddRoadEdge>Add kerb surface</CBF_AddRoadEdge>
+  <CBF_Field_roadEdges>Kerb</CBF_Field_roadEdges>
+  <CBF_FactionOwn>CBF builds the bases of this faction, from {0} plan(s). RimWorld's own settlement generator is not used here.</CBF_FactionOwn>
+  <CBF_FactionVanilla>RimWorld builds the bases of this faction. Assign a plan above and CBF takes over, for this faction only.</CBF_FactionVanilla>
+</LanguageData>

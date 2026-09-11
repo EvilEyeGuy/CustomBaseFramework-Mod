@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Beutetabellen. Zwei getrennte Listen, weil Chance und Gewicht in
+       derselben Liste mehrdeutig waeren:
+         <always>  prueft jeden Eintrag einzeln mit seiner <chance>
+         <entries> zieht <rolls> mal genau einen Eintrag nach Gewicht
+
+       Alle Verweise sind Zeichenketten. Fehlt ein Eintrag, entscheidet
+       <onMissing>, was passiert: Skip, Fallback oder Silver. Die Generierung
+       bricht nie ab. -->
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Minimal</defName>
+    <label>Notfallbeute</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>WoodLog</thing><count>10~30</count></li>
+      <li><weight>6</weight><thing>Steel</thing><count>5~20</count></li>
+      <li><weight>3</weight><thing>Silver</thing><count>10~40</count></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <!-- Was in einem Wohnhaus steht -->
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Haushalt</defName>
+    <label>Hausrat</label>
+    <rolls>2~4</rolls>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <always>
+      <li>
+        <thing>Silver</thing>
+        <chance>0.35</chance>
+        <count>8~40</count>
+      </li>
+    </always>
+    <entries>
+      <li><weight>30</weight><thing>MealSimple</thing><count>2~6</count></li>
+      <li><weight>22</weight><thing>Cloth</thing><count>10~35</count></li>
+      <li><weight>18</weight><thing>WoodLog</thing><count>15~45</count></li>
+      <li><weight>14</weight><thing>Beer</thing><count>2~8</count></li>
+      <li><weight>10</weight><thing>MedicineHerbal</thing><count>1~4</count>
+          <weightOverWealth>
+            <points>
+              <li>(0, 1.0)</li>
+              <li>(200000, 0.6)</li>
+              <li>(800000, 0.25)</li>
+            </points>
+          </weightOverWealth>
+      </li>
+      <li><weight>6</weight><thing>Apparel_Parka</thing><count>1~1</count>
+          <quality>Awful~Good</quality>
+          <hitPoints>0.4~0.9</hitPoints>
+          <onMissing>Skip</onMissing>
+      </li>
+      <!-- Beispiel fuer einen Eintrag, den es nur mit einem bestimmten Mod gibt.
+           packageId, nicht Anzeigename. Fehlt der Mod, faellt der Eintrag weg. -->
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>12</weight><thing>DankPyon_Linen</thing><count>5~20</count>
+          <requiresAnyMod><li>dankpyon.medieval.overhaul</li></requiresAnyMod>
+          <onMissing>Skip</onMissing>
+      </li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <!-- Was in einer Werkstatt liegt -->
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Werkstatt</defName>
+    <label>Werkstattbestand</label>
+    <rolls>2~5</rolls>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>28</weight><thing>Steel</thing><count>20~70</count></li>
+      <li><weight>24</weight><thing>WoodLog</thing><count>25~80</count></li>
+      <li><weight>16</weight><thing>Leather_Plain</thing><count>10~40</count></li>
+      <li><weight>12</weight><thing>DankPyon_ComponentBasic</thing><count>1~4</count><fallbackThings><li>ComponentIndustrial</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li><weight>10</weight>
+          <thing>MeleeWeapon_Knife</thing>
+          <count>1~1</count>
+          <quality>Poor~Good</quality>
+          <fallbackThings>
+            <li>MeleeWeapon_Club</li>
+          </fallbackThings>
+          <onMissing>Fallback</onMissing>
+      </li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <!-- Verliesbeute, waechst mit der Tiefe -->
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Gruft</defName>
+    <label>Gruftbeute</label>
+    <rolls>2~4</rolls>
+    <rollsOverDepth>
+      <points>
+        <li>(1, 2)</li>
+        <li>(3, 3)</li>
+        <li>(5, 4)</li>
+      </points>
+    </rollsOverDepth>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <always>
+      <li>
+        <thing>Silver</thing>
+        <chance>0.85</chance>
+        <count>25~90</count>
+        <countOverDepth>
+          <points>
+            <li>(1, 1.0)</li>
+            <li>(3, 1.8)</li>
+            <li>(5, 3.0)</li>
+          </points>
+        </countOverDepth>
+      </li>
+    </always>
+    <entries>
+      <li><weight>26</weight><thing>Cloth</thing><count>10~40</count></li>
+      <li><weight>18</weight><thing>Gold</thing><count>5~25</count>
+          <depthRange>2~5</depthRange>
+      </li>
+      <li><weight>14</weight><table>CBF_Loot_Werkstatt</table><tableRolls>1~2</tableRolls></li>
+      <li>
+        <weightOverDepth>
+          <points>
+            <li>(1, 0)</li>
+            <li>(2, 12)</li>
+            <li>(4, 18)</li>
+            <li>(5, 8)</li>
+          </points>
+        </weightOverDepth>
+        <thing>MeleeWeapon_LongSword</thing>
+        <count>1~1</count>
+        <quality>Poor~Excellent</quality>
+        <hitPoints>0.35~0.85</hitPoints>
+        <fallbackThings>
+          <li>MeleeWeapon_Gladius</li>
+          <li>MeleeWeapon_Knife</li>
+        </fallbackThings>
+        <onMissing>Fallback</onMissing>
+      </li>
+      <li><weight>8</weight><thing>ComponentIndustrial</thing><count>1~3</count>
+          <onMissing>Silver</onMissing>
+      </li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <!-- ==================================================================
+       Lootkategorien. Sie sagen, welche Gebaeude in einer Inhaltszone
+       stehen duerfen. Reine Zeichenketten, damit keine fremden Defs
+       gepatcht werden muessen und ein fehlender Eintrag einfach wegfaellt.
+       ================================================================== -->
+
+  <!-- Lootkategorien. Nur Behaelter mit freiem Filter, sonst legt RimWorld die
+       Beute neben den Behaelter statt hinein. Ein Eintrag je Groesse, denn der
+       Placer nimmt den groessten, der passt, und wuerfelt unter gleich grossen.
+       Vanilla Shelf steht immer zuletzt als Rueckfall. -->
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Kueche</defName>
+    <label>Kueche</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LargeShelfEmpty</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_RusticCupboardEmpty</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_ShelfEmpty</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_RusticBarrelClosed</thing><bleibt>true</bleibt></li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Vorrat</defName>
+    <label>Vorrat</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Crate2x2c</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_RusticBarrelStack</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Crate1x2c</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_SackClosed</thing><bleibt>true</bleibt></li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Werkstatt</defName>
+    <label>Werkstatt</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Storage_Cart_Empty</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Stall_Empty</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_ShelfEmpty</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Crate1x1c</thing><bleibt>true</bleibt></li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Gruft</defName>
+    <label>Gruft</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Crate2x2_Bones</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Crate1x2c</thing><bleibt>true</bleibt></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_RusticChest</thing><bleibt>true</bleibt></li>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+</Defs>

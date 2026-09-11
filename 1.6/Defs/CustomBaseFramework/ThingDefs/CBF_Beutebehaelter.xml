@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef Name="CBF_BeutebehaelterBase" Abstract="True">
+    <thingClass>CustomBaseFramework.Building_Beutebehaelter</thingClass>
+    <category>Building</category>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <useHitPoints>true</useHitPoints>
+    <tickerType>Never</tickerType>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <rotatable>true</rotatable>
+    <passability>PassThroughOnly</passability>
+    <blockWind>false</blockWind>
+    <canOverlapZones>false</canOverlapZones>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>500</WorkToBuild>
+      <Mass>10</Mass>
+    </statBases>
+    <building>
+      <isInert>true</isInert>
+      <deconstructible>true</deconstructible>
+      <claimable>true</claimable>
+    </building>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_ContentsCasket</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef ParentName="CBF_BeutebehaelterBase">
+    <defName>CBF_Behaelter_Regal</defName>
+    <label>stocked shelf</label>
+    <description>A shelf someone left behind, still holding what its owner kept there. Once emptied, it is just a shelf again.</description>
+    <size>(2,1)</size>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+
+    <modExtensions>
+      <li Class="CustomBaseFramework.BeutebehaelterExtension">
+        <leerGebaeude>Shelf</leerGebaeude>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Behaelter_Kraeuterregal</defName>
+    <label>herb shelf</label>
+    <description>Bundles and jars line the boards. What is left of them is worth a look.</description>
+    <size>(2,1)</size>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <graphicData>
+      <texPath>Things/Building/Storage/Alchemy/Shelf_AssortedHerbs</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+    </graphicData>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>65</costStuffCount>
+
+    <modExtensions>
+      <li Class="CustomBaseFramework.BeutebehaelterExtension">
+        <leerGrafik>
+          <texPath>Things/Building/Ruin/RuinedShelf</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(2.75,2.75)</drawSize>
+        </leerGrafik>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Behaelter_Ruinenkiste</defName>
+    <label>ruined crate</label>
+    <description>A crate that has stood here for a long time. Whatever is left inside falls apart with it.</description>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/Ruins/RuinedCrate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <color>(119,94,75)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+    </statBases>
+
+    <modExtensions>
+      <li Class="CustomBaseFramework.BeutebehaelterExtension">
+        <zerstoerenWennLeer>true</zerstoerenWennLeer>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Behaelter_Truhe</defName>
+    <label>locked chest</label>
+    <description>A chest that has not been opened in a long while. Something may have made a home of it.</description>
+    <size>(1,1)</size>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <fillPercent>0.3</fillPercent>
+    <pathCost>30</pathCost>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <graphicData>
+      <texPath>Things/Building/Furniture/RusticChest</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <Beauty>3</Beauty>
+    </statBases>
+
+    <modExtensions>
+      <li Class="CustomBaseFramework.BeutebehaelterExtension">
+        <leerGrafik>
+          <texPath>Things/Building/Ruin/RusticChestOpened</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(2,2)</drawSize>
+        </leerGrafik>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

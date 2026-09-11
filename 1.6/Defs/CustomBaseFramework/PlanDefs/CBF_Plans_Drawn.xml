@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Ortstypen, die ausschliesslich selbst gezeichnete Bausteine anfordern.
+       Kein Tag steht hier, fuer den es kein Piece gibt: sonst bleiben Luecken,
+       die man spaeter faelschlich fuer einen Fehler des Generators haelt. -->
+
+  <CustomBaseFramework.SettlementPlanDef>
+    <defName>CBF_Plan_Marktstadt</defName>
+    <label>Marktstadt</label>
+
+    <!-- Erlaubte Stile, in dieser Reihenfolge. Der erste, der etwas hat,
+         gewinnt. Ersetzt den frueheren Einzelstil. -->
+    <styles>
+      <li>Rustical</li>
+      <li>Standard</li>
+    </styles>
+
+    <!-- Was an Verteidigungsstellungen und Torhaeusern vorkommen darf. Ein Eintrag ist eine
+         Kategorie ODER ein einzelner Baustein. Frueher stand genau ein Turm
+         im Mauerprofil, deshalb hatte jede Stadt acht Mal denselben.
+
+         Gefiltert wird auf towerCorner: das Layout raeumt genau diese Groesse
+         frei. Von den drei gezeichneten Tuermen passt bei 9 nur LargeTower,
+         bei 7 nur Tower, bei 5 nur PalisadeTower. -->
+
+    <!-- Platz rechnen, nicht schaetzen. Acht Haeuser zu je rund 49 Feldern,
+         drei Werkstaetten zu 56, ein Wirtshaus mit 90 und der Bergfried mit
+         247 ergeben rund 900 belegte Felder. Jeder Baustein bekommt zusaetzlich
+         eine Fuge ringsum, das sind grob 1450. Dazu Strassen und der freie
+         Streifen an der Mauer. Die Innenflaeche muss also gegen 2800 gehen,
+         und die liefert erst ein Kern um 68. Mit 50 bis 58 belegte allein der
+         Bergfried ein Fuenftel der Stadt und es blieb nichts mehr uebrig. -->
+    <coreSize>78~90</coreSize>
+    <mapSize>200</mapSize>
+
+    <!-- Mauer ein mal drei mit Tuermen und Torhaus. Greift auf
+         WallProfile_Stein_3 zu: TownWall, Tower, GateHouse. -->
+    <wallDepth>3</wallDepth>
+    <!-- Ecke und Kurtine duerfen verschieden gross sein. Die Liste oben
+         liefert dann je Platz den passenden Baustein: 7 ist Tower,
+         5 ist PalisadeTower. Groesser als hier angegeben wird nie
+         gestempelt, sonst reicht der Mindestabstand nicht. -->
+    <towerCorner>7</towerCorner>
+    <towerCurtain>7</towerCurtain>
+    <towerCapTotal>0</towerCapTotal>
+    <gates>2~2</gates>
+    <wallGap>1</wallGap>
+
+    <roadMain>2</roadMain>
+    <!-- Nebengassen zwei Felder breit. Bei 1 kommen zwei Pawns nicht
+         aneinander vorbei, und im Bild sieht es aus wie ein Trampelpfad. -->
+    <roadLane>2</roadLane>
+    <!-- Keine Strassenaufweitung mehr. Sie erzeugte einen gepflasterten Platz
+         irgendwo am Hauptweg, ohne Bezug zu dem, was dort steht. Ein Markt
+         gehoert an die Grenze zwischen Wirtschaft und Wohnen, und die gibt es
+         erst mit den Bezirken. -->
+    <widenings>0</widenings>
+    <!-- Fuge zwischen zwei Bauten schwankt zwischen 1 und 4 Feldern, klein
+         gewichtet. Sonst steht die Stadt im Raster und es passt kein Weg
+         zwischen die Haeuser. -->
+    <minBuildingGap>1</minBuildingGap>
+    <maxBuildingGap>4</maxBuildingGap>
+    <!-- Angestrebter Anteil bebauter Flaeche. Gemessen an den handgebauten
+         MO-Siedlungen: 61 Prozent. Die Stueckzahlen im Budget sind ab hier
+         nur noch die Untergrenze, darueber hinaus wird bis zu diesem Anteil
+         weitergebaut. Damit skaliert die Stadt mit ihrer Flaeche. -->
+    <targetBuilt>0.55</targetBuilt>
+    <coverageBuild>0.42</coverageBuild>
+    <weightNearRoad>1.4</weightNearRoad>
+    <!-- Keine Beete innerhalb der Mauern. Restflaechen werden Hof, nicht
+         Acker. Aecker gehoeren vor die Stadt, nicht zwischen die Haeuser. -->
+    <gardenShare>0</gardenShare>
+    <defenderPoints>260~480</defenderPoints>
+    <defendersOnWall>0.28</defendersOnWall>
+
+    <!-- Nur Tags, fuer die es wirklich gezeichnete Bausteine gibt. Storage,
+         Stable, HouseLarge und Farm haben bisher nur Testbausteine, die
+         gehoeren nicht in eine Siedlung, die jemand zu sehen bekommt.
+
+         Market steht im Budget, weil eine Marktstadt ohne Marktstaende keine
+         ist. Die Staende ziehen zur Mitte, das regelt der Tag ueber die Zone
+         Center. Military zieht an die Mauer und ist der einzige Tag mit
+         wallContact, fuellt also den Streifen, der sonst brachliegt. -->
+  
+    <wards>
+      <li>
+        <art>Stadt</art>
+        <name>Altstadt</name>
+        <size>1</size>
+        <wallDepth>3</wallDepth>
+        <gates>2~2</gates>
+        <versorgung>1.2</versorgung>
+        <walls>
+          <li>TownWall</li>
+        </walls>
+        <emplacements>
+          <li><piece>Tower</piece><count>3~3</count></li>
+          <li><piece>LargeTower</piece><count>2~2</count></li>
+        </emplacements>
+        <gatehouses>
+          <li><piece>GateHouse</piece><count>1~2</count></li>
+        </gatehouses>
+        <districts>
+          <li>
+            <name>Default</name>
+            <entries>
+              <li><tag>Keep</tag><count>1~1</count><unique>true</unique><lootTable>CBF_Loot_Haushalt</lootTable></li>
+              <li><tag>Inn</tag><count>1~1</count><unique>true</unique><lootTable>CBF_Loot_Haushalt</lootTable></li>
+              <li><tag>Military</tag><count>2~3</count><lootTable>CBF_Loot_Werkstatt</lootTable></li>
+              <li><piece>TudorHouseA</piece><count>2~3</count></li>
+              <li><piece>TudorHouseB</piece><count>2~3</count></li>
+              <li><piece>TudorHouseC</piece><count>2~3</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <art>Vorstadt</art>
+        <name>Neustadt</name>
+        <size>0.6</size>
+        <wallDepth>1</wallDepth>
+        <gates>1~1</gates>
+        <versorgung>1.2</versorgung>
+        <walls>
+          <li>Palisade</li>
+        </walls>
+        <emplacements>
+          <li><piece>PalisadeTower</piece><count>2~3</count></li>
+        </emplacements>
+        <gatehouses>
+          <li><piece>Pallisader_GateHouse</piece><count>1~1</count></li>
+        </gatehouses>
+        <districts>
+          <li>
+            <name>Test</name>
+            <entries>
+              <li><tag>HouseSmall</tag><count>14~20</count></li>
+              <li><piece>Social_Inn</piece><count>1~1</count></li>
+            </entries>
+          </li>
+          <li>
+            <name>Workshop</name>
+            <entries>
+              <li><piece>Workshop_Baker</piece><count>1~1</count></li>
+              <li><piece>Workshop_Butcher</piece><count>1~1</count></li>
+              <li><piece>Workshop_Tailor</piece><count>1~1</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <art>Umland</art>
+        <name>Umland</name>
+        <size>2.2</size>
+        <wallDepth>0</wallDepth>
+        <gates>0~0</gates>
+        <versorgung>1.2</versorgung><fields><li>
+            <name>Acker</name>
+            <count>2~3</count>
+            <fence>true</fence>
+            <weight>1</weight><plants>
+              <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
+             </plants></li></fields><pens><li>
+            <name>Gehege</name>
+            <count>1~1</count>
+            <herd>3~7</herd>
+            <pawns>Hardanimals_1</pawns>
+            <fence>true</fence>
+            <weight>1</weight></li></pens>
+        <districts>
+          <li>
+            <name>Umland</name>
+            <entries>
+              <li><piece>Social_Inn</piece><count>1~1</count></li>
+            </entries>
+          </li>
+          <li>
+            <name>Farming</name><fields><li>
+              <name>Acker</name>
+              <count>3~3</count>
+              <fence>true</fence>
+              <weight>1</weight><plants>
+                <li>Plant_Haygrass</li>
+               </plants>
+              <tags>
+                <li>HouseSmall</li>
+              </tags></li></fields><pens><li>
+              <name>Gehege</name>
+              <count>1~1</count>
+              <herd>3~7</herd>
+              <pawns>CBF_Pawns_Neu3</pawns>
+              <fence>true</fence>
+              <weight>1</weight></li></pens>
+            <entries>
+              <li><tag>HouseSmall</tag><count>4~6</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </wards>
+  
+    <kind>Mittelalterstadt</kind>
+  
+    <factionTags>
+      <li>DankPyon_NobleHouseSavage</li>
+      <li>DankPyon_NobleHouseFierce</li>
+    </factionTags>
+  
+    <anteil>0</anteil>
+    <suburbIslands>2</suburbIslands>
+  </CustomBaseFramework.SettlementPlanDef>
+
+</Defs>

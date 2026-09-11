@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Die Palette ist eine Ersatztabelle. Sie beantwortet genau eine Frage:
+       das gezeichnete Ding gibt es hier nicht, was nehme ich stattdessen.
+       Alle Eintraege sind Zeichenketten, deshalb kann kein Querverweis brechen,
+       egal welche Mods fehlen.
+
+       Vier Ersatzstufen, in dieser Reihenfolge:
+         1. exakter defName aus der Kette
+         2. Merkmalssuche ueber tagSearch
+         3. eingebauter Vanilla-Kern
+         4. weglassen, nur bei criticality Optional
+
+       MapStone und MapWood loesen sich aus der Karte auf, also aus dem Gestein
+       der Weltkachel und dem Holz des Bioms. -->
+
+  <CustomBaseFramework.PaletteDef>
+    <defName>CBF_Palette_Base</defName>
+    <label>Basis</label>
+    <style>Standard</style>
+    <roles>
+
+      <!-- Die Rolle WALL fuellt JEDE Mauerzelle, die kein Baustein abdeckt,
+           und ausserdem die Tuerme: Materialize bildet MauerA, MauerI und Turm
+           alle auf sie ab.
+
+           Bis zum 5.9. stand hier WoodLog an erster Stelle. Die Folge war die
+           Holzmauer, die der Autor sechsmal gemeldet hat, und die Holztuerme
+           dazu: die gezeichneten Bausteine setzten DankPyon_CastleWall aus
+           Granit, und jede Luecke dazwischen fuellte die Palette mit einer
+           Holzwand. Nicht die Bausteine waren falsch, sondern der Ersatz.
+
+           Diese Palette gehoert zum Stil Standard, und dessen Bausteine sind
+           die Steinburgmauer. Der Ersatz muss dasselbe bauen, sonst ist er
+           kein Ersatz. Holz bleibt als letztes Glied stehen, fuer den Fall
+           dass eine Karte weder Gestein noch Medieval Overhaul hat.
+
+           Wer eine Holzmauer will, nimmt den Stil Rustical: CBF_Palette_Rustic
+           baut absichtlich aus Holz. -->
+      <li>
+        <role>WALL</role>
+        <criticality>Critical</criticality>
+        <chain>
+          <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_CastleWall</li>
+          <li>Wall</li>
+        </chain>
+        <stuffChain><li>MapStone</li><li>BlocksGranite</li><li>WoodLog</li></stuffChain>
+        <tagSearch>AnyWall</tagSearch>
+      </li>
+      <li>
+        <role>WALL_INNER</role>
+        <chain>
+          <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_CastleWall</li>
+          <li>Wall</li>
+        </chain>
+        <stuffChain><li>MapStone</li><li>BlocksGranite</li><li>WoodLog</li></stuffChain>
+        <tagSearch>AnyWall</tagSearch>
+      </li>
+      <li>
+        <role>DOOR</role>
+        <criticality>Critical</criticality>
+        <chain><li>DankPyon_RusticDoor</li><li>Door</li></chain>
+        <stuffChain><li>WoodLog</li><li>MapWood</li></stuffChain>
+        <tagSearch>AnyDoor</tagSearch>
+      </li>
+      <li>
+        <!-- Ein Tor, keine Haustuer.
+
+             Bis zum 4.9. stand hier nur Door, und in einem Palisadendorf ist
+             eine Holztuer im Zaun auch richtig. In einer Steinstadt aber
+             nicht, und die erbte diesen Eintrag: siehe die Rolle GATE in
+             CBF_Palette_Fancy weiter unten.
+
+             DankPyon_Gate nimmt Metallic und Woody, kein Gestein. Fuer die
+             Grundpalette ist Holz genau richtig. Fehlt Medieval Overhaul,
+             faellt die Kette auf Door zurueck, das ist der ganze Zweck der
+             Kette. -->
+        <role>GATE</role>
+        <chain>
+          <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Gate</li>
+          <li>Door</li>
+        </chain>
+        <stuffChain><li>WoodLog</li><li>MapWood</li></stuffChain>
+        <tagSearch>AnyDoor</tagSearch>
+      </li>
+      <li>
+        <role>PILLAR</role>
+        <chain><li>Wall</li></chain>
+        <stuffChain><li>MapStone</li><li>BlocksGranite</li></stuffChain>
+      </li>
+      <li>
+        <role>WINDOW</role>
+        <chain><li>Wall</li></chain>
+        <stuffChain><li>WoodLog</li><li>MapWood</li></stuffChain>
+      </li>
+
+      <li>
+        <role>FLOOR_INTERIOR</role>
+        <criticality>Critical</criticality>
+        <terrainChain><li>WoodPlankFloor</li><li>Concrete</li></terrainChain>
+        <tagSearch>AnyHardFloor</tagSearch>
+      </li>
+      <li>
+        <role>FLOOR_FINE</role>
+        <terrainChain><li>FlagstoneGranite</li><li>TileSandstone</li><li>Concrete</li></terrainChain>
+        <tagSearch>AnyHardFloor</tagSearch>
+      </li>
+      <li>
+        <!-- Bodenmischung. Steht terrainMix drin, wird je Feld gewuerfelt statt
+             ueberall derselbe Boden gesetzt. Dadurch wirkt ein Turm oder ein
+             Wehrgang nicht wie aus einem Guss. Fehlende Eintraege fallen
+             einfach weg, die Gewichte sind relativ zueinander. -->
+        <role>FLOOR_ROUGH</role>
+        <terrainMix>
+          <li><terrain>StrawMatting</terrain><weight>3</weight></li>
+          <li><terrain>PackedDirt</terrain><weight>3</weight></li>
+          <li><terrain>Gravel</terrain><weight>1</weight></li>
+        </terrainMix>
+        <terrainChain><li>StrawMatting</li><li>PackedDirt</li></terrainChain>
+      </li>
+      <li>
+        <role>FLOOR_DIRT</role>
+        <terrainChain><li>Soil</li></terrainChain>
+        <tagSearch>AnySoil</tagSearch>
+      </li>
+      <li>
+        <role>FLOOR_ROAD</role>
+        <terrainChain><li>PackedDirt</li><li>Gravel</li><li>Soil</li></terrainChain>
+      </li>
+      <li>
+        <role>FLOOR_ROAD_EDGE</role>
+        <terrainChain><li>Gravel</li><li>Soil</li></terrainChain>
+      </li>
+      <li>
+        <role>FLOOR_FIELD</role>
+        <terrainChain><li>SoilRich</li><li>Soil</li></terrainChain>
+        <tagSearch>AnySoil</tagSearch>
+      </li>
+
+      <li>
+        <role>ROOF</role>
+        <roofChain><li>RoofConstructed</li></roofChain>
+      </li>
+      <li>
+        <role>ROOF_THIN</role>
+        <roofChain><li>RoofConstructed</li></roofChain>
+      </li>
+
+      <li>
+        <role>LIGHT</role>
+        <chain><li>TorchLamp</li></chain>
+        <tagSearch>AnyLight</tagSearch>
+      </li>
+      <li>
+        <role>FURNITURE</role>
+        <chain><li>DiningChair</li></chain>
+        <stuffChain><li>WoodLog</li><li>MapWood</li></stuffChain>
+      </li>
+      <li>
+        <role>CONTAINER</role>
+        <chain><li>Shelf</li></chain>
+        <stuffChain><li>WoodLog</li><li>MapWood</li></stuffChain>
+        <tagSearch>AnyContainer</tagSearch>
+      </li>
+      <li>
+        <role>FENCE</role>
+        <chain><li>Fence</li><li>FenceWood</li></chain>
+        <stuffChain><li>WoodLog</li><li>MapWood</li></stuffChain>
+      </li>
+      <li>
+        <role>FENCE_GATE</role>
+        <chain><li>FenceGate</li><li>Door</li></chain>
+        <stuffChain><li>WoodLog</li><li>MapWood</li></stuffChain>
+      </li>
+      <li>
+        <role>PEN_MARKER</role>
+        <chain><li>PenMarker</li></chain>
+      </li>
+      <li>
+        <role>CROP</role>
+        <chain><li>Plant_Potato</li><li>Plant_Corn</li></chain>
+        <growth>0.4~0.95</growth>
+      </li>
+
+      <!-- Zusatzrollen der Beispielbausteine -->
+      <li>
+        <role>FURNITURE_TABLE</role>
+        <chain><li>Table2x2c</li></chain>
+        <stuffChain><li>WoodLog</li><li>MapWood</li></stuffChain>
+      </li>
+      <li>
+        <role>FURNITURE_BED</role>
+        <chain><li>Bed</li></chain>
+        <stuffChain><li>WoodLog</li><li>MapWood</li></stuffChain>
+      </li>
+
+    </roles>
+  </CustomBaseFramework.PaletteDef>
+
+  <!-- Rustikal: Holz. Erbt alles Nichtgenannte von der Basis. -->
+  <CustomBaseFramework.PaletteDef>
+    <defName>CBF_Palette_Rustic</defName>
+    <label>rustikal</label>
+    <parent>CBF_Palette_Base</parent>
+    <style>Rustical</style>
+    <roles>
+      <li>
+        <role>WALL</role>
+        <criticality>Critical</criticality>
+        <chain><li>Wall</li></chain>
+        <stuffChain><li>WoodLog</li><li>MapWood</li></stuffChain>
+        <tagSearch>AnyWall</tagSearch>
+      </li>
+      <li>
+        <role>FLOOR_INTERIOR</role>
+        <criticality>Critical</criticality>
+        <terrainChain><li>WoodPlankFloor</li><li>StrawMatting</li></terrainChain>
+        <tagSearch>AnyHardFloor</tagSearch>
+      </li>
+      <li>
+        <role>FLOOR_ROAD</role>
+        <terrainChain><li>PackedDirt</li><li>Soil</li></terrainChain>
+      </li>
+      <li>
+        <role>FLOOR_ROUGH</role>
+        <terrainMix>
+          <li><terrain>StrawMatting</terrain><weight>4</weight></li>
+          <li><terrain>PackedDirt</terrain><weight>3</weight></li>
+          <li><terrain>WoodPlankFloor</terrain><weight>1</weight></li>
+        </terrainMix>
+        <terrainChain><li>StrawMatting</li></terrainChain>
+      </li>
+    </roles>
+  </CustomBaseFramework.PaletteDef>
+
+  <!-- Vornehm: Stein und Fliesen. Material bevorzugt aus der Karte. -->
+  <CustomBaseFramework.PaletteDef>
+    <defName>CBF_Palette_Fancy</defName>
+    <label>vornehm</label>
+    <parent>CBF_Palette_Base</parent>
+    <style>Fancy</style>
+    <roles>
+      <li>
+        <role>WALL</role>
+        <criticality>Critical</criticality>
+        <chain><li>Wall</li></chain>
+        <stuffChain><li>MapStone</li><li>BlocksGranite</li><li>BlocksMarble</li></stuffChain>
+        <tagSearch>AnyWall</tagSearch>
+      </li>
+      <li>
+        <role>DOOR</role>
+        <criticality>Critical</criticality>
+        <chain><li>DankPyon_RusticDoor</li><li>Door</li></chain>
+        <stuffChain><li>MapStone</li><li>BlocksGranite</li></stuffChain>
+        <tagSearch>AnyDoor</tagSearch>
+      </li>
+      <li>
+        <!-- HOLZ IN DER STEINMAUER, gemeldet vom Autor am 4.9. mit Bild.
+
+             Diese Palette ueberschrieb WALL, DOOR und EMBRASURE, aber nicht
+             GATE. Ueber parent landete man deshalb bei der Grundpalette, und
+             die gab eine Door aus WoodLog. Ergebnis: zwei Holzbalken quer in
+             einer Granitmauer, an jedem Tor, das kein Torhaus abdeckt.
+
+             Wichtig ist der Werkstoff. MapStone waere hier falsch:
+             DankPyon_Gate laesst nur Metallic und Woody zu, und die
+             Werkstoffkette prueft NICHT, ob der Werkstoff zum Ding passt, sie
+             nimmt den ersten, der ueberhaupt ein Werkstoff ist. Steel passt zu
+             beiden Gliedern der Kette, und es ist auch das, was der Autor im
+             gezeichneten Torhaus GateHouse selbst verwendet. -->
+        <role>GATE</role>
+        <chain>
+          <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Gate</li>
+          <li>Door</li>
+        </chain>
+        <stuffChain><li>Steel</li></stuffChain>
+        <tagSearch>AnyDoor</tagSearch>
+      </li>
+      <li>
+        <role>FLOOR_INTERIOR</role>
+        <criticality>Critical</criticality>
+        <terrainChain><li>TileMarble</li><li>TileGranite</li><li>Concrete</li></terrainChain>
+        <tagSearch>AnyHardFloor</tagSearch>
+      </li>
+      <li>
+        <role>FLOOR_ROAD</role>
+        <terrainChain><li>PavedTile</li><li>Concrete</li><li>PackedDirt</li></terrainChain>
+      </li>
+      <li>
+        <role>FLOOR_ROAD_EDGE</role>
+        <terrainChain><li>FlagstoneGranite</li><li>Gravel</li></terrainChain>
+      </li>
+      <li>
+        <!-- Schiessscharte. Der Generator setzt sie auf gerade Stuecke der
+             Aussenschale. Gibt es den Def nicht, wird an dieser Stelle normale
+             Mauer gesetzt, es entsteht also nie ein Loch. Rustikal bekommt
+             bewusst keine, eine Holzpalisade hat keine Scharten. -->
+        <role>EMBRASURE</role>
+        <chain><li>DankPyon_CastleWallEmbrasures</li></chain>
+        <stuffChain><li>MapStone</li><li>BlocksGranite</li></stuffChain>
+      </li>
+      <li>
+        <role>FLOOR_ROUGH</role>
+        <terrainMix>
+          <li><terrain>FlagstoneGranite</terrain><weight>4</weight></li>
+          <li><terrain>FlagstoneSlate</terrain><weight>3</weight></li>
+          <li><terrain>FlagstoneSandstone</terrain><weight>2</weight></li>
+          <li><terrain>FlagstoneLimestone</terrain><weight>2</weight></li>
+          <li><terrain>FlagstoneMarble</terrain><weight>1</weight></li>
+        </terrainMix>
+        <terrainChain><li>FlagstoneGranite</li><li>Concrete</li></terrainChain>
+      </li>
+    </roles>
+  </CustomBaseFramework.PaletteDef>
+
+</Defs>

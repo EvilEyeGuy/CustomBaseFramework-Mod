@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>Baracks</defName>
+    <label>Baracks</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>Military</li>
+    </categories>
+    <style>Standard</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>TileGranite</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_BedWicker</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RusticEndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_BedWicker</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_RusticTable1x2c</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_RackEmpty</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_HideoutSackPotato</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_WallLamp</thing><stuff>Steel</stuff><rotation>South</rotation></li>
+      <!-- Anschluss an die Stadtmauer. Diese Felder muessen auf der
+           inneren Schale des Mauerbands liegen. Unsichtbar im Spiel. -->
+      <li><symbol>A</symbol><anchor>Wall</anchor></li>
+    </legend>
+
+    <mask>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>.###########.</li>
+    </mask>
+
+    <terrain>
+      <li>WWWWWWWWWWWWW</li>
+      <li>WWWWWWWWWWWWW</li>
+      <li>WWWWWWWWWWWWW</li>
+      <li>WWWWWWWWWWWWW</li>
+      <li>WWWWWWWWWWWWW</li>
+      <li>WWWWWWWWWWWWW</li>
+      <li>.WWWWWWWWWWW.</li>
+    </terrain>
+
+    <things>
+      <li>TTTTTTCTTTTTT</li>
+      <li>T.P..R.L..R.T</li>
+      <li>TF.FF...FF.FT</li>
+      <li>T...........T</li>
+      <li>C.H.H......GT</li>
+      <li>TTHKH.M.GGNTT</li>
+      <li>.TTTTTTTTTTT.</li>
+    </things>
+
+    <anchors>
+      <li>AAAAAAAAAAAAA</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+    </anchors>
+
+    <things2>
+      <li>...B.....B...</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>S............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.....BQB.....</li>
+    </things2>
+
+
+    <roof>
+      <li>DDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDD</li>
+      <li>.DDDDDDDDDDD.</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

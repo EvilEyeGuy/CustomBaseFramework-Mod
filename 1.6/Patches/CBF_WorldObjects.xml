@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Der Ortstyp haengt am Weltobjekt, nicht an der Karte. Dadurch steht schon
+       auf der Weltkarte fest, ob dort ein Weiler oder eine Festungsstadt liegt,
+       und beim zweiten Betreten sieht der Ort wieder gleich aus.
+
+       Der Anhang speichert nur einen Defnamen und eine Zahl. Er greift nicht in
+       das Spiel ein, solange die Kartenerzeugung nicht umgestellt ist. -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/WorldObjectDef[defName="Settlement"]/comps</xpath>
+    <value>
+      <li Class="CustomBaseFramework.WorldObjectCompProperties_Plan" />
+    </value>
+  </Operation>
+
+</Patch>

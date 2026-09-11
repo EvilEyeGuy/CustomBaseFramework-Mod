@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.SettlementPlanDef>
+    <defName>CBF_Plan_Lager</defName>
+    <label>Befestigtes Lager</label>
+    <kind>Lager</kind>
+
+    <styles>
+      <li>Rustical</li>
+      <li>Standard</li>
+    </styles>
+
+    <coreSize>34~44</coreSize>
+    <mapSize>225</mapSize>
+    <wallDepth>1</wallDepth>
+    <gates>1~1</gates>
+    <minBuildingGap>2</minBuildingGap>
+
+    <wards>
+      <li>
+        <art>Stadt</art>
+        <name>Lager</name>
+        <size>1</size>
+        <wallDepth>1</wallDepth>
+        <gates>1~1</gates>
+        <walls>
+          <li>Palisade</li>
+        </walls>
+        <emplacements>
+          <li><piece>PalisadeTower</piece><count>1~3</count></li>
+        </emplacements>
+        <gatehouses>
+          <li><piece>Pallisader_GateHouse</piece><count>1~1</count></li>
+        </gatehouses>
+        <districts>
+          <li>
+            <name>Lager</name>
+            <entries>
+              <li><tag>HouseSmall</tag><count>4~8</count></li>
+              <li><piece>Baracks</piece><count>1~2</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <art>Vorstadt</art>
+        <name>Vorfeld</name>
+        <size>0.5</size>
+        <wallDepth>0</wallDepth>
+        <gates>0~0</gates>
+        <districts>
+          <li>
+            <name>Vorfeld</name>
+            <entries>
+              <li><tag>HouseSmall</tag><count>1~3</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <art>Umland</art>
+        <name>Umland</name>
+        <size>1.4</size>
+        <wallDepth>0</wallDepth>
+        <gates>0~0</gates>
+        <districts>
+          <li>
+            <name>Umland</name>
+            <entries>
+              <li><tag>HouseSmall</tag><count>1~2</count></li>
+            </entries>
+            <fields>
+              <li>
+                <plants>
+                  <li>DankPyon_Plant_Wheat</li>
+                  <li>Plant_Potato</li>
+                </plants>
+                <count>1~2</count>
+                <fence>true</fence>
+              </li>
+            </fields>
+          </li>
+        </districts>
+      </li>
+    </wards>
+
+  </CustomBaseFramework.SettlementPlanDef>
+
+</Defs>

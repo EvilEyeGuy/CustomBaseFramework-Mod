@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Stile. Beliebig viele moeglich, im Editor anlegbar.
+       fallback greift, wenn es fuer einen Tag kein Piece in diesem Stil gibt. -->
+
+  <CustomBaseFramework.StyleDef>
+    <defName>Standard</defName>
+    <label>Standard</label>
+  </CustomBaseFramework.StyleDef>
+
+  <CustomBaseFramework.StyleDef>
+    <defName>Rustical</defName>
+    <label>rustikal</label>
+    <fallback>Standard</fallback>
+  </CustomBaseFramework.StyleDef>
+
+  <CustomBaseFramework.StyleDef>
+    <defName>Fancy</defName>
+    <label>vornehm</label>
+    <fallback>Standard</fallback>
+  </CustomBaseFramework.StyleDef>
+
+  <!-- Tags. Sagen, was ein Baustein ist, und tragen die Platzierungsregeln,
+       damit sie nicht an jedem einzelnen Piece wiederholt werden muessen. -->
+
+  <!-- Mauerstreifen. Kein Gebaeude, sondern ein Querschnitt durch die Mauer.
+       Der Generator stellt so etwas nie als Haus hin, deshalb keine Zone und
+       keine Stueckzahl. -->
+  <!-- Turm und Torhaus der Stadtmauer. Auch keine Gebaeude im Sinn des
+       Generators, sie werden vom Mauerprofil gesetzt. -->
+  <!-- Torhaus. Wie Turm und Mauerstreifen kein Gebaeude im Sinn des
+       Generators, es wird vom Mauerprofil gesetzt. -->
+  <!-- Wirtshaus. Eigener Tag, damit sich Anzahl und Vorkommen getrennt von
+       den Werkstaetten steuern lassen. -->
+</Defs>

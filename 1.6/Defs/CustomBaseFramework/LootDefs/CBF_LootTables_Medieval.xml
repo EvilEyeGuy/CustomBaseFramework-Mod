@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Speisekammer</defName>
+    <label>Speisekammer</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>24</weight><thing>DankPyon_MealBread</thing><count>2~8</count>
+          <fallbackThings><li>MealSimple</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li><weight>18</weight><thing>DankPyon_MealCheese</thing><count>2~6</count>
+          <fallbackThings><li>MealSimple</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_MealGoatCheese</thing><count>2~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_MealSheepCheese</thing><count>2~5</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>DankPyon_MealRations</thing><count>3~9</count>
+          <fallbackThings><li>Pemmican</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_MealRationsVegetarian</thing><count>3~9</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>14</weight><thing>DankPyon_Flour</thing><count>15~50</count><onMissing>Skip</onMissing></li>
+      <li><weight>12</weight><thing>DankPyon_SmokedMeat</thing><count>5~20</count>
+          <fallbackThings><li>Pemmican</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li><weight>12</weight><thing>DankPyon_DriedMeat</thing><count>5~20</count>
+          <fallbackThings><li>Pemmican</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li><weight>6</weight><thing>Milk</thing><count>5~15</count></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Weinkeller</defName>
+    <label>Weinkeller</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Speisekammer</emptyFallback>
+    <entries>
+      <li><weight>26</weight><thing>DankPyon_Wine</thing><count>4~14</count>
+          <fallbackThings><li>Beer</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Wine_Griffon</thing><count>2~8</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Wine_Mulberry</thing><count>2~8</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>DankPyon_Ale</thing><count>4~14</count>
+          <fallbackThings><li>Beer</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>12</weight><thing>DankPyon_Cider</thing><count>4~12</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_MustWine</thing><count>5~20</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_RawGrapes</thing><count>10~40</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Fleischerei</defName>
+    <label>Fleischerei</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>20</weight><thing>Meat_DankPyon_Angus</thing><count>15~60</count>
+          <fallbackThings><li>Meat_Cow</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>14</weight><thing>Meat_DankPyon_Rox</thing><count>15~60</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>14</weight><thing>Meat_DankPyon_Ravelder</thing><count>15~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>18</weight><thing>DankPyon_DriedMeat</thing><count>10~35</count>
+          <fallbackThings><li>Pemmican</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>12</weight><thing>DankPyon_SmokedMeat</thing><count>10~35</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>Leather_Plain</thing><count>10~45</count></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Bone</thing><count>4~16</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Bauernhof</defName>
+    <label>Bauernhof</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>22</weight><thing>DankPyon_RawWheat</thing><count>20~70</count>
+          <fallbackThings><li>RawRice</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>14</weight><thing>DankPyon_RawCarrots</thing><count>15~50</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>14</weight><thing>DankPyon_RawCabbages</thing><count>15~50</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_RawOnions</thing><count>15~50</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_RawPumpkins</thing><count>10~30</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_RawLentils</thing><count>15~50</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_RawGarlic</thing><count>8~25</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>RawPotatoes</thing><count>15~50</count></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>18</weight><thing>DankPyon_Straw</thing><count>25~90</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Kraeuterkammer</defName>
+    <label>Kraeuterkammer</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>26</weight><thing>MedicineHerbal</thing><count>2~9</count></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>18</weight><thing>DankPyon_Mindwort</thing><count>5~20</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>16</weight><thing>DankPyon_Fleawort</thing><count>5~20</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>14</weight><thing>DankPyon_Poppy</thing><count>5~20</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>12</weight><thing>DankPyon_FlyAgaric</thing><count>4~14</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_HerbalExtract</thing><count>2~8</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Loot_Alchemist</defName>
+    <label>Alchemistenregal</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Kraeuterkammer</emptyFallback>
+    <entries>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>20</weight><thing>DankPyon_BattleElixir</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>18</weight><thing>DankPyon_VigorPill</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>16</weight><thing>DankPyon_HappyPowder</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Paregoric</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_Stardust</thing><count>1~2</count><onMissing>Skip</onMissing>
+          <weightOverDepth><points><li>(0, 3)</li><li>(3, 8)</li><li>(5, 14)</li></points></weightOverDepth></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_Luhix</thing><count>1~2</count><onMissing>Skip</onMissing>
+          <weightOverDepth><points><li>(0, 3)</li><li>(3, 8)</li><li>(5, 14)</li></points></weightOverDepth></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_GlowingResin</thing><count>2~6</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Waffenkammer</defName>
+    <label>Waffenkammer</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>18</weight><thing>DankPyon_MeleeWeapon_ArmingSword</thing><count>1~1</count>
+          <quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints>
+          <fallbackThings><li>MeleeWeapon_Gladius</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li><weight>10</weight><thing>DankPyon_MeleeWeapon_Longsword</thing><count>1~1</count>
+          <quality>Poor~Excellent</quality><hitPoints>0.6~1.0</hitPoints>
+          <fallbackThings><li>MeleeWeapon_LongSword</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li><weight>16</weight><thing>DankPyon_MeleeWeapon_MilitiaSpear</thing><count>1~1</count>
+          <quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints>
+          <fallbackThings><li>MeleeWeapon_Spear</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_MeleeWeapon_FightingSpear</thing><count>1~1</count>
+          <quality>Poor~Good</quality><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_MeleeWeapon_Halberd</thing><count>1~1</count>
+          <quality>Poor~Good</quality><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_MeleeWeapon_Billhook</thing><count>1~1</count>
+          <quality>Awful~Normal</quality><onMissing>Skip</onMissing></li>
+      <li><weight>14</weight><thing>Bow_Recurve</thing><count>1~1</count>
+          <quality>Poor~Good</quality>
+          <fallbackThings><li>Bow_Short</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Bow_Hunting</thing><count>1~1</count>
+          <quality>Awful~Normal</quality><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>12</weight><thing>DankPyon_BrokenWeapons</thing><count>2~8</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Ruestkammer</defName>
+    <label>Ruestkammer</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Waffenkammer</emptyFallback>
+    <entries>
+      <li><weight>18</weight><thing>DankPyon_Apparel_Hauberk</thing><count>1~1</count>
+          <quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints>
+          <fallbackThings><li>Apparel_FlakVest</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_Apparel_Heavy_Hauberk</thing><count>1~1</count>
+          <quality>Poor~Excellent</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>16</weight><thing>DankPyon_Headgear_ChainCoif</thing><count>1~1</count>
+          <quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>12</weight><thing>DankPyon_Headgear_ChainNasalHelmet</thing><count>1~1</count>
+          <quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Headgear_ChainKettleHelmet</thing><count>1~1</count>
+          <quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>14</weight><thing>Leather_Plain</thing><count>10~40</count></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Schmiede</defName>
+    <label>Schmiede</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>24</weight><thing>DankPyon_IronIngot</thing><count>10~45</count>
+          <fallbackThings><li>Steel</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li><weight>20</weight><thing>DankPyon_IronOre</thing><count>15~60</count>
+          <fallbackThings><li>Steel</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>16</weight><thing>DankPyon_Coal</thing><count>15~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>12</weight><thing>Steel</thing><count>20~70</count></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_MeleeWeapon_Pickaxe</thing><count>1~1</count>
+          <quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_MeleeWeapon_Hatchet</thing><count>1~1</count>
+          <quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_MeleeWeapon_WoodcuttersAxe</thing><count>1~1</count>
+          <quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Holzlager</defName>
+    <label>Holzlager</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>24</weight><thing>DankPyon_RawWood</thing><count>25~90</count>
+          <fallbackThings><li>WoodLog</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li><weight>18</weight><thing>WoodLog</thing><count>25~90</count></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_AncientWood</thing><count>5~20</count><onMissing>Skip</onMissing>
+          <weightOverDepth><points><li>(0, 2)</li><li>(3, 8)</li><li>(5, 12)</li></points></weightOverDepth></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Weberei</defName>
+    <label>Weberei</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>24</weight><thing>DankPyon_Linen</thing><count>15~60</count>
+          <fallbackThings><li>Cloth</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li><weight>20</weight><thing>Cloth</thing><count>15~60</count></li>
+      <li><weight>16</weight><thing>Leather_Plain</thing><count>10~45</count></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_Leather_Daer</thing><count>8~30</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_Silk</thing><count>5~25</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Bibliothek</defName>
+    <label>Bibliothek</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <entries>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>26</weight><thing>DankPyon_Book</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Treatise_Melee</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Treatise_Shooting</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Treatise_Construction</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Treatise_Cooking</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Treatise_Medicine</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_TornNote_Hideout</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Silver</thing><count>20~70</count></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Loot_Schematiken</defName>
+    <label>Schematiken</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Bibliothek</emptyFallback>
+    <entries>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>12</weight><thing>DankPyon_Schematic_MilitaryBlades</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>12</weight><thing>DankPyon_Schematic_MilitaryPolearms</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Schematic_Crossbow</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_Schematic_WarBow</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_Schematic_Steel</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_Schematic_IntermediateCooking</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_Schematic_NobleBlades</thing><count>1~1</count><onMissing>Skip</onMissing>
+          <weightOverDepth><points><li>(0, 1)</li><li>(3, 6)</li><li>(5, 10)</li></points></weightOverDepth></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>2</weight><thing>DankPyon_Schematic_AncientCodex</thing><count>1~1</count><onMissing>Skip</onMissing>
+          <depthRange>2~99</depthRange></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Silberschrank</defName>
+    <label>Silberschrank</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <always>
+      <li><thing>Silver</thing><chance>0.6</chance><count>25~120</count></li>
+    </always>
+    <entries>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>26</weight><thing>DankPyon_ChaliceSilver</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>22</weight><thing>DankPyon_BowlSilver</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>10</weight><thing>DankPyon_ChaliceGold</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_BowlGold</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>Gold</thing><count>8~30</count></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef><defName>CBF_Loot_Schatzkammer</defName><label>Schatzkammer</label><rolls>2~4</rolls><rollsOverDepth><points><li>(0, 2)</li><li>(3, 4)</li><li>(5, 6)</li></points></rollsOverDepth><uniqueEntries>true</uniqueEntries><emptyFallback>CBF_Loot_Silberschrank</emptyFallback><always><li><thing>Silver</thing><chance>0.9</chance><count>50~220</count><countOverDepth><points><li>(0, 1)</li><li>(3, 1.8)</li><li>(5, 3)</li></points></countOverDepth></li></always><entries><li><thing>Gold</thing><weight>18</weight><count>10~50</count></li><li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Ruby</thing><weight>14</weight><count>1~4</count></li><li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Sapphire</thing><weight>14</weight><count>1~4</count></li><li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Emerald</thing><weight>14</weight><count>1~4</count></li><li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_SkullGold</thing><weight>8</weight></li><li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Ring_Holding</thing><weight>6</weight><depthRange>1~99</depthRange></li><li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Ring_Haste</thing><weight>6</weight><depthRange>1~99</depthRange></li><li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Ring_Tending</thing><weight>6</weight><depthRange>1~99</depthRange></li><li><table>CBF_Loot_Schematiken</table><weight>8</weight></li></entries></CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Bergwerk</defName>
+    <label>Bergwerk</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>26</weight><thing>DankPyon_IronOre</thing><count>20~80</count>
+          <fallbackThings><li>Steel</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>20</weight><thing>DankPyon_Coal</thing><count>20~80</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>DankPyon_SilverOre</thing><count>10~40</count>
+          <fallbackThings><li>Silver</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li><weight>8</weight><thing>DankPyon_GoldOre</thing><count>5~25</count>
+          <fallbackThings><li>Gold</li></fallbackThings><onMissing>Fallback</onMissing></li>
+      <li><weight>4</weight><thing>DankPyon_PlasteelOre</thing><count>5~20</count>
+          <fallbackThings><li>Plasteel</li></fallbackThings><onMissing>Fallback</onMissing>
+          <depthRange>2~99</depthRange></li>
+      <li><weight>14</weight><thing>BlocksLimestone</thing><count>15~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>14</weight><thing>BlocksGranite</thing><count>15~60</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Loot_Ruine</defName>
+    <label>Ruinenrest</label>
+    <rolls>1~3</rolls>
+    <rollChance>0.75</rollChance>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Loot_Minimal</emptyFallback>
+    <entries>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>24</weight><thing>DankPyon_BrokenWeapons</thing><count>2~10</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>18</weight><thing>DankPyon_Bone</thing><count>3~14</count><onMissing>Skip</onMissing></li>
+      <li><weight>14</weight><thing>Steel</thing><count>10~40</count></li>
+      <li><weight>12</weight><thing>Silver</thing><count>10~50</count></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_UnholdBones</thing><count>1~4</count><onMissing>Skip</onMissing>
+          <depthRange>2~99</depthRange></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_LindwurmBones</thing><count>1~4</count><onMissing>Skip</onMissing>
+          <depthRange>2~99</depthRange></li>
+      <li><weight>10</weight><thing>DankPyon_MeleeWeapon_ArmingSword</thing><count>1~1</count>
+          <quality>Awful~Normal</quality><hitPoints>0.15~0.5</hitPoints>
+          <fallbackThings><li>MeleeWeapon_Gladius</li></fallbackThings><onMissing>Fallback</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+</Defs>

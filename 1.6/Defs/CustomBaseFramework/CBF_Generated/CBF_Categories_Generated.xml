@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. Kann von Hand bearbeitet werden, wird aber
+     beim naechsten Anlegen im Spiel neu geschrieben. -->
+<Defs>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>Church</defName>
+    <label>Kirche</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <countPerSettlement>0~1</countPerSettlement>
+    <unique>true</unique>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>DungeonRoom</defName>
+    <label>Verliesraum</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>false</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>Farm</defName>
+    <label>Acker</label>
+    <zones>
+      <li>Outside</li>
+    </zones>
+    <needsRoadAccess>false</needsRoadAccess>
+    <countPerSettlement>0~4</countPerSettlement>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>HouseLarge</defName>
+    <label>grosses Haus</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <countPerSettlement>1~6</countPerSettlement>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>HouseSmall</defName>
+    <label>kleines Haus</label>
+    <zones>
+      <li>Inside</li>
+      <li>Outside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <countPerSettlement>1~8</countPerSettlement>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>Inn</defName>
+    <label>Wirtshaus</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <countPerSettlement>0~1</countPerSettlement>
+    <unique>true</unique>
+    <prefCenter>0.6</prefCenter>
+    <prefMain>0.8</prefMain>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>Keep</defName>
+    <label>Bergfried</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <countPerSettlement>0~1</countPerSettlement>
+    <unique>true</unique>
+    <landmark>true</landmark>
+    <prefCenter>0.5</prefCenter>
+    <prefMain>0.5</prefMain>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>Landmark</defName>
+    <label>Brunnen</label>
+    <zones>
+      <li>Center</li>
+    </zones>
+    <countPerSettlement>1~3</countPerSettlement>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>Market</defName>
+    <label>Marktstand</label>
+    <zones>
+      <li>Center</li>
+    </zones>
+    <countPerSettlement>0~8</countPerSettlement>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>Military</defName>
+    <label>Military</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <countPerSettlement>0~99</countPerSettlement>
+    <wallContact>true</wallContact>
+    <prefCenter>0.1</prefCenter>
+    <prefWall>0.9</prefWall>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>ModernHouseLarge</defName>
+    <label>ModernHouseLarge</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>Stable</defName>
+    <label>Stall</label>
+    <zones>
+      <li>Inside</li>
+      <li>Outside</li>
+    </zones>
+    <countPerSettlement>0~3</countPerSettlement>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>Storage</defName>
+    <label>Speicher</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <countPerSettlement>1~5</countPerSettlement>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>WallGateHouse</defName>
+    <label>Torhaus</label>
+    <needsRoadAccess>false</needsRoadAccess>
+    <countPerSettlement>0~0</countPerSettlement>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>WallSegment</defName>
+    <label>Mauerstreifen</label>
+    <needsRoadAccess>false</needsRoadAccess>
+    <countPerSettlement>0~0</countPerSettlement>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>WallTower</defName>
+    <label>Mauerturm</label>
+    <needsRoadAccess>false</needsRoadAccess>
+    <countPerSettlement>0~0</countPerSettlement>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>Workshop</defName>
+    <label>Werkstatt</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <countPerSettlement>1~4</countPerSettlement>
+  </CustomBaseFramework.PieceCategoryDef>
+
+</Defs>

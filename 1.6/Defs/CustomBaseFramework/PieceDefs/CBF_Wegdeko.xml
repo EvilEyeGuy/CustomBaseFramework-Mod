@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_PathDecor</defName>
+    <label>Wegschmuck</label>
+    <zones>
+      <li>Outside</li>
+    </zones>
+    <needsRoadAccess>false</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_PathDecorModern</defName>
+    <label>Wegschmuck modern</label>
+    <zones>
+      <li>Outside</li>
+    </zones>
+    <needsRoadAccess>false</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Deko_Fackel</defName>
+    <schemaVersion>2</schemaVersion>
+    <label>Fackel am Weg</label>
+    <categories><li>CBF_PathDecor</li></categories>
+    <style>Rustical</style>
+    <allowRotation>false</allowRotation>
+    <legend>
+      <li><symbol>t</symbol><thing>TorchLamp</thing></li>
+    </legend>
+    <mask><li>#</li></mask>
+    <things><li>t</li></things>
+  </CustomBaseFramework.PieceDef>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Deko_Baum</defName>
+    <schemaVersion>2</schemaVersion>
+    <label>Baum am Weg</label>
+    <categories><li>CBF_PathDecor</li></categories>
+    <style>Rustical</style>
+    <allowRotation>false</allowRotation>
+    <legend>
+      <li><symbol>b</symbol><thing>Plant_TreePoplar</thing></li>
+    </legend>
+    <mask><li>#</li></mask>
+    <things><li>b</li></things>
+  </CustomBaseFramework.PieceDef>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Deko_Busch</defName>
+    <schemaVersion>2</schemaVersion>
+    <label>Busch am Weg</label>
+    <categories><li>CBF_PathDecor</li></categories>
+    <style>Rustical</style>
+    <allowRotation>false</allowRotation>
+    <legend>
+      <li><symbol>b</symbol><thing>Plant_Bush</thing></li>
+    </legend>
+    <mask><li>#</li></mask>
+    <things><li>b</li></things>
+  </CustomBaseFramework.PieceDef>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Deko_Blumen</defName>
+    <schemaVersion>2</schemaVersion>
+    <label>Blumen am Weg</label>
+    <categories><li>CBF_PathDecor</li></categories>
+    <style>Rustical</style>
+    <allowRotation>false</allowRotation>
+    <legend>
+      <li><symbol>f</symbol><thing>Plant_Daylily</thing></li>
+    </legend>
+    <mask><li>##</li></mask>
+    <things><li>ff</li></things>
+  </CustomBaseFramework.PieceDef>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Deko_Statue</defName>
+    <schemaVersion>2</schemaVersion>
+    <label>Standbild</label>
+    <categories><li>CBF_PathDecor</li></categories>
+    <style>Rustical</style>
+    <allowRotation>false</allowRotation>
+    <legend>
+      <li><symbol>s</symbol><thing>SculptureSmall</thing><stuff>BlocksGranite</stuff></li>
+    </legend>
+    <mask><li>#</li></mask>
+    <things><li>s</li></things>
+  </CustomBaseFramework.PieceDef>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Deko_Laterne</defName>
+    <schemaVersion>2</schemaVersion>
+    <label>Strassenlaterne</label>
+    <categories><li>CBF_PathDecorModern</li></categories>
+    <style>CBF_ModernVanilla</style>
+    <allowRotation>false</allowRotation>
+    <legend>
+      <li><symbol>l</symbol><thing>StandingLamp</thing></li>
+    </legend>
+    <mask><li>#</li></mask>
+    <things><li>l</li></things>
+  </CustomBaseFramework.PieceDef>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Deko_Stadtbaum</defName>
+    <schemaVersion>2</schemaVersion>
+    <label>Strassenbaum</label>
+    <categories><li>CBF_PathDecorModern</li></categories>
+    <style>CBF_ModernVanilla</style>
+    <allowRotation>false</allowRotation>
+    <legend>
+      <li><symbol>b</symbol><thing>Plant_TreeMaple</thing></li>
+    </legend>
+    <mask><li>#</li></mask>
+    <things><li>b</li></things>
+  </CustomBaseFramework.PieceDef>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Deko_Kuebel</defName>
+    <schemaVersion>2</schemaVersion>
+    <label>Pflanzkuebel</label>
+    <categories><li>CBF_PathDecorModern</li></categories>
+    <style>CBF_ModernVanilla</style>
+    <allowRotation>false</allowRotation>
+    <legend>
+      <li><symbol>k</symbol><thing>PlantPot</thing></li>
+    </legend>
+    <mask><li>##</li></mask>
+    <things><li>kk</li></things>
+  </CustomBaseFramework.PieceDef>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Deko_Bank</defName>
+    <schemaVersion>2</schemaVersion>
+    <label>Sitzbank</label>
+    <categories><li>CBF_PathDecorModern</li></categories>
+    <style>CBF_ModernVanilla</style>
+    <allowRotation>true</allowRotation>
+    <legend>
+      <li><symbol>c</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff></li>
+    </legend>
+    <mask><li>##</li></mask>
+    <things><li>cc</li></things>
+  </CustomBaseFramework.PieceDef>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Deko_Denkmal</defName>
+    <schemaVersion>2</schemaVersion>
+    <label>Denkmal</label>
+    <categories><li>CBF_PathDecorModern</li></categories>
+    <style>CBF_ModernVanilla</style>
+    <allowRotation>false</allowRotation>
+    <legend>
+      <li><symbol>d</symbol><thing>SculptureLarge</thing><stuff>BlocksGranite</stuff></li>
+    </legend>
+    <mask>
+      <li>##</li>
+      <li>##</li>
+    </mask>
+    <things>
+      <li>d.</li>
+      <li>..</li>
+    </things>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

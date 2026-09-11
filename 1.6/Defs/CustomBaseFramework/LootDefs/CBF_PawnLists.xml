@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+
+
+
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Wirtsleute</defName>
+    <label>innkeepers</label>
+    <rolle>Zivil</rolle>
+    <radius>4</radius>
+    <members>
+      <li><kind>Villager</kind><weight>10</weight></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Villager</kind><weight>10</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Torwache</defName>
+    <label>gate guards</label>
+    <rolle>Wache</rolle>
+    <radius>2</radius>
+    <members>
+      <li><kind>Town_Guard</kind><weight>10</weight></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Guard</kind><weight>10</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Marktvolk</defName>
+    <label>market folk</label>
+    <rolle>Zivil</rolle>
+    <radius>6</radius>
+    <members>
+      <li><kind>Villager</kind><weight>10</weight></li>
+      <li><kind>Town_Trader</kind><weight>3</weight></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Villager</kind><weight>10</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Turmwache</defName>
+    <label>tower guards</label>
+    <rolle>Posten</rolle>
+    <radius>2</radius>
+    <members>
+      <li><kind>Town_Guard</kind><weight>10</weight></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Guard</kind><weight>10</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Geschuetzmannschaft</defName>
+    <label>artillery crew</label>
+    <rolle>Geschuetz</rolle>
+    <radius>8</radius>
+    <members>
+      <li><kind>Town_Guard</kind><weight>10</weight></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Guard</kind><weight>10</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Pawns_Neu</defName>
+    <label>CBF_Pawns_Neu</label>
+    <rolle>Zivil</rolle>
+    <radius>4</radius>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Amboisse_Archer</kind><weight>1</weight></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Soren_Archer</kind><weight>1</weight></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Oswin_Archer</kind><weight>1</weight></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Hesse_Archer</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Neu2</defName>
+    <label>CBF_Pawns_Neu2</label>
+    <rolle>Geschuetz</rolle>
+    <radius>4</radius>
+    <members>
+        <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Amboisse_Footman</kind><weight>1</weight></li>
+        <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_FootmanHesse</kind><weight>1</weight></li>
+        <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_FootmanOswin</kind><weight>1</weight></li>
+        <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_FootmanSoren</kind><weight>1</weight></li>
+        <li><kind>CustomBaseFramework_Colonist</kind><weight>1</weight></li>
+      </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>Hardanimals_1</defName>
+    <label>Hardanimals_1</label>
+    <rolle>Zivil</rolle>
+    <radius>4</radius>
+    <members>
+      <li><kind>Cow</kind><weight>1</weight></li>
+      <li><kind>Goat</kind><weight>1</weight></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Gloucestershire</kind><weight>1</weight></li>
+      <li><kind>Goose</kind><weight>1</weight></li>
+      <li><kind>Sheep</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Neu3</defName>
+    <label>CBF_Pawns_Neu3</label>
+    <rolle>Zivil</rolle>
+    <radius>4</radius>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Ravelder</kind><weight>1</weight></li>
+      <li><kind>Sheep</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Neu4</defName>
+    <label>CBF_Pawns_Neu4</label>
+    <rolle>Zivil</rolle>
+    <radius>4</radius>
+    <members>
+      <li><kind>Villager</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Neu5</defName>
+    <label>CBF_Pawns_Neu5</label>
+    <rolle>Zivil</rolle>
+    <radius>4</radius>
+    <members>
+        <li><kind>CustomBaseFramework_DankPyon_Oswin_Archer</kind><weight>1</weight></li>
+        <li><kind>CustomBaseFramework_DankPyon_FootmanOswin</kind><weight>1</weight></li>
+      </members>
+  </CustomBaseFramework.PawnListDef>
+</Defs>

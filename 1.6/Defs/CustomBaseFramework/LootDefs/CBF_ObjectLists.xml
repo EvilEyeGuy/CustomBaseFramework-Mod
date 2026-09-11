@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>MO_1x2_Shelfes</defName>
+    <members>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_ChaliceSilver</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Emerald</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Paregoric</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Stardust</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_VigorPill</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_HappyPowder</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_BattleElixir</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_ShelfFilled2c</thing><bleibt>true</bleibt></li>
+        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_ShelfFilled1c</thing><bleibt>true</bleibt></li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Book</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Bowl</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_IronIngot</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Rations</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Sapphire</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Ruby</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_AssortedHerbs</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_AssortedDrugsB</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_Luhix</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LootableShelf_AssortedDrugsA</li>
+      </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Cat_Neu</defName>
+    <members>
+      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+</Defs>

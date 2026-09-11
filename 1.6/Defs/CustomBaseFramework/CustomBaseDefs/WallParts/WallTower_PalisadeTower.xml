@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>PalisadeTower</defName>
+    <label>PalisadeTower</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallTower</li>
+    </categories>
+    <type>WallPart</type>
+    <style>Rustical</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Soil</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_ReinfocedLogGate</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_EmbPalisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_RusticTorchLamp</thing><stuff>WoodLog</stuff></li>
+    </legend>
+
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+
+    <terrain>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+    </terrain>
+
+    <things>
+      <li>DDDTD</li>
+      <li>D...D</li>
+      <li>B.C.D</li>
+      <li>D...D</li>
+      <li>DDBDD</li>
+    </things>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

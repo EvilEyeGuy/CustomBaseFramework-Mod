@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>Wall_ExpandedSegment</defName>
+    <label>Wall_ExpandedSegment</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallSegment</li>
+    </categories>
+    <type>WallPart</type>
+    <style>Standard</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>TileGranite</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_CastleWallEmbrasures</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff></li>
+    </legend>
+
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+
+    <terrain>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+    </terrain>
+
+    <things>
+      <li>TTBTT</li>
+      <li>T...T</li>
+      <li>.....</li>
+      <li>TTCTT</li>
+    </things>
+
+    <roof>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

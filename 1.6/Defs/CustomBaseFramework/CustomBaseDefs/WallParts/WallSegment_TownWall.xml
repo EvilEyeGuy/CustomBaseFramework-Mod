@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>TownWall</defName>
+    <label>TownWall</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallSegment</li>
+    </categories>
+    <type>WallPart</type>
+    <style>Standard</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+    </legend>
+
+    <mask>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+    </mask>
+
+    <terrain>
+      <li>W</li>
+      <li>W</li>
+      <li>W</li>
+    </terrain>
+
+    <things>
+      <li>T</li>
+      <li>.</li>
+      <li>T</li>
+    </things>
+
+    <roof>
+      <li>D</li>
+      <li>D</li>
+      <li>D</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

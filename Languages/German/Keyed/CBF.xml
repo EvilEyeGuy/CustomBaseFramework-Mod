@@ -525,6 +525,7 @@
   <CBF_CG_16>gesperrt</CBF_CG_16>
   <CBF_Categories>Kategorien</CBF_Categories>
   <CBF_Buildings>Gebaeude</CBF_Buildings>
+  <CBF_BeyondCategory>Ueber {0} hinaus</CBF_BeyondCategory>
   <CBF_ShowingN>{0} gezeigt</CBF_ShowingN>
   <CBF_EmptyTool>Leerfeld</CBF_EmptyTool>
   <CBF_MergePatches>Patches zusammenfassen</CBF_MergePatches>
@@ -867,4 +868,34 @@ Den Ordner CustomBaseFramework in einen anderen Mod unter 1.6/Defs kopieren, Pat
   <CBF_MemberTableTip>Womit sich dieses Stueck fuellt. Ohne eigene gilt die Tabelle am Anker.\n\nGib jedem Stueck seine eigene, dann gibt das Weinregal Wein und der Waffenstaender daneben Waffen. Laesst du sie leer, deckt eine Tabelle am Anker die ganze Liste ab.</CBF_MemberTableTip>
   <CBF_MemberOpen>offen</CBF_MemberOpen>
   <CBF_MemberOpenTip>Das Stueck selbst wird gesetzt, und die Beute liegt sichtbar darauf. Es bleibt, wie es ist, denn ein Regal, das verschwindet, liesse fallen, was darauf steht.\n\nSonst wird eine Huelle gesetzt, die aussieht wie dieses Stueck, die Beute innen haelt und geoeffnet werden muss.</CBF_MemberOpenTip>
+  <CBF_MemberForeign>vom Mod</CBF_MemberForeign>
+  <CBF_MemberForeignTip>{0} setzt dieses Stueck und laesst es danach in Ruhe. Beute, Bewohner und das leere Bild kommen alle von diesem Mod, genau so, als haette es jemand von Hand gesetzt.\n\nDafuer gedacht, dass die Moebel eines Mods weiter so laufen, wie ihr Autor sie gebaut hat, waehrend deine eigene Beutemechanik bei den Vanilla-Stuecken bleibt.</CBF_MemberForeignTip>
+  <CBF_MemberTableForeign>vom Mod</CBF_MemberTableForeign>
+  <CBF_MemberTableForeignTip>Dieses Stueck fuellt der Mod, der es mitbringt. Eine Beutetabelle haette hier keine Wirkung.</CBF_MemberTableForeignTip>
+  <CBF_EditLootTable>Diese Beutetabelle bearbeiten</CBF_EditLootTable>
+  <CBF_LootTableEmpty>leer</CBF_LootTableEmpty>
+  <CBF_ShowContents>Zeigen, was drin ist</CBF_ShowContents>
+  <CBF_Back>Zurueck</CBF_Back>
+  <CBF_LootPreviewRolls>{0} bis {1} Zuege, {2} % Chance je Zug</CBF_LootPreviewRolls>
+  <CBF_LootPreviewCount>Anzahl: {0}</CBF_LootPreviewCount>
+  <CBF_LootPreviewAlways>Immer dabei</CBF_LootPreviewAlways>
+  <CBF_LootPreviewWeight>Gewicht: {0}</CBF_LootPreviewWeight>
+  <CBF_LootPreviewChance>Erscheint in {0} % der Faelle</CBF_LootPreviewChance>
+  <CBF_LootPreviewCurves>Gewicht oder Anzahl haengt von Tiefe oder Wohlstand ab</CBF_LootPreviewCurves>
+  <CBF_LootPreviewQuality>Guete {0} bis {1}</CBF_LootPreviewQuality>
+  <CBF_LootPreviewStuff>Material: {0}</CBF_LootPreviewStuff>
+  <CBF_LootPreviewNested>Klicken, um in diese Tabelle zu sehen</CBF_LootPreviewNested>
+  <CBF_LootEntryGone>{0} gibt es nicht</CBF_LootEntryGone>
+  <CBF_Edit>Bearbeiten</CBF_Edit>
+  <CBF_ObjPreviewClosed>Verschlossen: eine Huelle sieht aus wie dieses Stueck und haelt die Beute innen.</CBF_ObjPreviewClosed>
+  <CBF_ObjPreviewTable>Beute: {0}</CBF_ObjPreviewTable>
+  <CBF_ObjPreviewTableAnchor>Beute: was der Anker sagt</CBF_ObjPreviewTableAnchor>
+  <CBF_ObjPreviewPawns>Bewohner: {0}, {1} %, {2}</CBF_ObjPreviewPawns>
+  <CBF_ObjPreviewHostile>feindlich</CBF_ObjPreviewHostile>
+  <CBF_ObjPreviewPeaceful>nicht feindlich</CBF_ObjPreviewPeaceful>
+  <CBF_AnchorsSkippedForEdit>{0} Anker wurden nicht ausgefuehrt. Zum Bearbeiten wird der Baustein gesetzt, wie er gezeichnet ist, damit der Export keine Zufallsziehung festschreibt. Nimm Platzieren, um zu sehen, was die Anker wirklich erzeugen.</CBF_AnchorsSkippedForEdit>
+  <CBF_AnchorWithoutTable>{0} Fuellanker haben keine Beutetabelle. Ihr Moebel wird gesetzt, bleibt aber leer, solange kein Mitglied der Objektliste eine eigene Tabelle mitbringt.</CBF_AnchorWithoutTable>
+  <CBF_ShowScheme>Schema</CBF_ShowScheme>
+  <CBF_ShowPhoto>Bild</CBF_ShowPhoto>
+  <CBF_SchemeTip>Zwischen der Aufnahme von der Karte und dem Grundriss wechseln.\n\nDer Grundriss lohnt einen Blick: er zeigt die Anker, die im fertigen Haus unsichtbar sind.</CBF_SchemeTip>
 </LanguageData>

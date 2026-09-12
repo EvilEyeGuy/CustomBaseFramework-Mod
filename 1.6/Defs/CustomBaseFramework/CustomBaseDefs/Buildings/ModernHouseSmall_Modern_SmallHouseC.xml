@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>Modern_SmallHouseC</defName>
+    <label>Modern_SmallHouseC</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>ModernHouseSmall</li>
+    </categories>
+    <style>Modern</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>Granite_RoughHewn</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>C</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>F</symbol><thing>Dresser</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>P</symbol><thing>Bed</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>R</symbol><thing>EndTable</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>L</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>S</symbol><terrain>TileGranite</terrain></li>
+      <li><symbol>G</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>H</symbol><terrain>FlagstoneGranite</terrain></li>
+      <li><symbol>K</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>M</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>N</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects></li>
+      <li><symbol>Q</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawns>Villager</pawns></li>
+    </legend>
+
+    <mask>
+      <li>.#####..</li>
+      <li>.#####..</li>
+      <li>.#####..</li>
+      <li>.#####..</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>...#####</li>
+    </mask>
+
+    <terrain>
+      <li>.WWWWW..</li>
+      <li>.WBBBW..</li>
+      <li>.WBBBW..</li>
+      <li>.WBBBW..</li>
+      <li>WWBBBBBW</li>
+      <li>WSHWBBBW</li>
+      <li>WHSHBBBW</li>
+      <li>WWW.BBBW</li>
+      <li>...W...W</li>
+    </terrain>
+
+    <things>
+      <li>.TTTTT..</li>
+      <li>.TCF.T..</li>
+      <li>.T...T..</li>
+      <li>.TPR.T..</li>
+      <li>TTTT.TLT</li>
+      <li>TG.T...T</li>
+      <li>T..L.KKT</li>
+      <li>TTTTCM.T</li>
+      <li>...TTTTT</li>
+    </things>
+
+    <roof>
+      <li>.DDDDD..</li>
+      <li>.DDDDD..</li>
+      <li>.DDDDD..</li>
+      <li>.DDDDD..</li>
+      <li>DDDDDDDD</li>
+      <li>DDDDDDDD</li>
+      <li>DDDDDDDD</li>
+      <li>DDDDDDDD</li>
+      <li>...DDDDD</li>
+    </roof>
+
+    <anchors>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+      <li>.NN.Q...</li>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

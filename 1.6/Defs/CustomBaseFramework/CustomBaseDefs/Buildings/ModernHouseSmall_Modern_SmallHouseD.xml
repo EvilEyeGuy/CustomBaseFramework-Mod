@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>Modern_SmallHouseD</defName>
+    <label>Modern_SmallHouseD</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>ModernHouseSmall</li>
+    </categories>
+    <style>Modern</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>Granite_RoughHewn</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>C</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>F</symbol><terrain>FlagstoneGranite</terrain></li>
+      <li><symbol>P</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>R</symbol><terrain>TileGranite</terrain></li>
+      <li><symbol>L</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>S</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>G</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>H</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>K</symbol><thing>Dresser</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>M</symbol><thing>Bed</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>N</symbol><thing>EndTable</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>Q</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects><lootTable>CBF_Loot_Vanilla_Wohnhaus</lootTable></li>
+      <li><symbol>U</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses1x1</objects><lootTable>CBF_Loot_Vanilla_Wohnhaus</lootTable></li>
+      <li><symbol>V</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Vanilla_Civil</pawnList></li>
+    </legend>
+
+    <mask>
+      <li>....####.</li>
+      <li>########.</li>
+      <li>########.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>....#####</li>
+      <li>....#####</li>
+    </mask>
+
+    <terrain>
+      <li>....WWWW.</li>
+      <li>.BBBWFRW.</li>
+      <li>.BBBWRFW.</li>
+      <li>WBBBBFRBW</li>
+      <li>WBBBBBBBW</li>
+      <li>W....BBBW</li>
+      <li>.....BBB.</li>
+      <li>.........</li>
+    </terrain>
+
+    <things>
+      <li>....TTTT.</li>
+      <li>TTCTTP.T.</li>
+      <li>TL.ST..T.</li>
+      <li>TGG.TCTTT</li>
+      <li>TH......T</li>
+      <li>TTTTT..KT</li>
+      <li>....TMNST</li>
+      <li>....TTTTT</li>
+    </things>
+
+    <roof>
+      <li>....DDDD.</li>
+      <li>DDDDDDDD.</li>
+      <li>DDDDDDDD.</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>....DDDDD</li>
+      <li>....DDDDD</li>
+    </roof>
+
+    <anchors>
+      <li>.........</li>
+      <li>.....QQ..</li>
+      <li>.U.......</li>
+      <li>.........</li>
+      <li>....V....</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -7,6 +7,7 @@
 
 
 
+
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Pawns_Wirtsleute</defName>
     <label>innkeepers</label>
@@ -41,15 +42,14 @@
     </members>
   </CustomBaseFramework.PawnListDef>
 
-  <CustomBaseFramework.PawnListDef>
+  <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Pawns_Turmwache</defName>
     <label>tower guards</label>
     <rolle>Posten</rolle>
     <radius>2</radius>
     <members>
-      <li><kind>Town_Guard</kind><weight>10</weight></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Guard</kind><weight>10</weight></li>
-    </members>
+        <li><kind>DankPyon_Medieval_Bowman</kind><weight>1</weight></li>
+      </members>
   </CustomBaseFramework.PawnListDef>
 
   <CustomBaseFramework.PawnListDef>
@@ -134,5 +134,15 @@
         <li><kind>CustomBaseFramework_DankPyon_Oswin_Archer</kind><weight>1</weight></li>
         <li><kind>CustomBaseFramework_DankPyon_FootmanOswin</kind><weight>1</weight></li>
       </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Vanilla_Civil</defName>
+    <label>CBF_Pawns_Vanilla_Civil</label>
+    <rolle>Zivil</rolle>
+    <radius>4</radius>
+    <members>
+      <li><kind>Villager</kind><weight>1</weight></li>
+    </members>
   </CustomBaseFramework.PawnListDef>
 </Defs>

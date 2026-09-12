@@ -96,7 +96,7 @@
         </walls>
         <emplacements>
           <li><piece>Tower</piece><count>3~3</count></li>
-          <li><piece>LargeTower</piece><count>2~2</count></li>
+          <li><tag>LargeTower</tag><count>2~2</count></li>
         </emplacements>
         <gatehouses>
           <li><piece>GateHouse</piece><count>1~2</count></li>
@@ -108,9 +108,7 @@
               <li><tag>Keep</tag><count>1~1</count><unique>true</unique><lootTable>CBF_Loot_Haushalt</lootTable></li>
               <li><tag>Inn</tag><count>1~1</count><unique>true</unique><lootTable>CBF_Loot_Haushalt</lootTable></li>
               <li><tag>Military</tag><count>2~3</count><lootTable>CBF_Loot_Werkstatt</lootTable></li>
-              <li><piece>TudorHouseA</piece><count>2~3</count></li>
-              <li><piece>TudorHouseB</piece><count>2~3</count></li>
-              <li><piece>TudorHouseC</piece><count>2~3</count></li>
+              <li><tag>HouseLarge</tag><count>4~8</count></li>
             </entries>
           </li>
         </districts>

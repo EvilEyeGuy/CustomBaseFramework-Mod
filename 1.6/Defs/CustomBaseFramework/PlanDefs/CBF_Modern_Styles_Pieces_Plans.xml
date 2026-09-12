@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <CustomBaseFramework.StyleDef>
     <defName>CBF_ModernVanilla</defName>
@@ -531,6 +531,7 @@
     <kind>Modernestadt</kind>
     <styles>
       <li>CBF_ModernVanilla</li>
+      <li>Modern</li>
     </styles>
     <coreSize>86~98</coreSize>
     <mapSize>225</mapSize>
@@ -543,67 +544,49 @@
     <wards>
       <li>
         <art>Stadt</art>
-        <name>Zentrum</name>
+        <name>Altstadt</name>
+        <label>Zentrum</label>
         <size>1</size>
         <wallDepth>0</wallDepth>
         <gates>0~0</gates>
+        <versorgung>1.2</versorgung>
         <roads>
           <li>Concrete</li>
         </roads>
         <roadEdges>
           <li>PavedTile</li>
         </roadEdges>
-        <decor>
-          <li><tag>CBF_PathDecorModern</tag><spacing>6~11</spacing></li>
-        </decor>
         <districts>
           <li>
             <name>Zentrum</name>
             <entries>
-              <li>
-                <piece>CBF_Modern_House</piece>
-                <count>14~22</count>
-              </li>
-              <li>
-                <piece>CBF_Modern_Workshop</piece>
-                <count>2~4</count>
-              </li>
-              <li>
-                <piece>CBF_Modern_Community</piece>
-                <count>1~2</count>
-              </li>
+              <li><tag>ModernHouseLarge</tag><count>22~22</count></li>
             </entries>
           </li>
         </districts>
-        <label>Zentrum</label>
       </li>
       <li>
         <art>Vorstadt</art>
-        <name>Wohnviertel</name>
+        <name>Neustadt</name>
+        <label>Wohnviertel</label>
         <size>0.65</size>
         <wallDepth>0</wallDepth>
         <gates>0~0</gates>
+        <versorgung>1.2</versorgung>
         <roads>
           <li>Concrete</li>
         </roads>
         <roadEdges>
           <li>PavedTile</li>
         </roadEdges>
-        <decor>
-          <li><tag>CBF_PathDecorModern</tag><spacing>6~11</spacing></li>
-        </decor>
         <districts>
           <li>
             <name>Wohnviertel</name>
             <entries>
-              <li>
-                <piece>CBF_Modern_House</piece>
-                <count>14~22</count>
-              </li>
+              <li><piece>CBF_Modern_House</piece><count>14~22</count></li>
             </entries>
           </li>
         </districts>
-        <label>Wohnviertel</label>
       </li>
       <li>
         <art>Umland</art>
@@ -611,43 +594,32 @@
         <size>1.8</size>
         <wallDepth>0</wallDepth>
         <gates>0~0</gates>
+        <versorgung>1.2</versorgung><fields><li>
+            <name>Acker</name>
+            <count>2~2</count>
+            <fence>true</fence>
+            <weight>1</weight><plants>
+              <li>Plant_Rice</li>
+             </plants>
+            <tags>
+              <li>CBF_ModernFarmHouse</li>
+            </tags></li></fields>
         <roads>
           <li>Concrete</li>
         </roads>
-        <decor>
-          <li><tag>CBF_PathDecorModern</tag><spacing>6~11</spacing></li>
-        </decor>
         <districts>
           <li>
             <name>Umland</name>
             <entries>
-              <li>
-                <piece>CBF_Modern_Farmhouse</piece>
-                <count>2~2</count>
-              </li>
-              <li>
-                <piece>CBF_Modern_Defense</piece>
-                <count>3~4</count>
-              </li>
+              <li><piece>CBF_Modern_Farmhouse</piece><count>2~2</count></li>
+              <li><piece>CBF_Modern_Defense</piece><count>3~4</count></li>
             </entries>
           </li>
         </districts>
-        <fields>
-          <li>
-            <name>Acker</name>
-            <count>2~2</count>
-            <fence>true</fence>
-            <plants>
-              <li>Plant_Rice</li>
-            </plants>
-            <tags>
-              <li>CBF_ModernFarmHouse</li>
-            </tags>
-          </li>
-        </fields>
-        <label>Umland</label>
       </li>
     </wards>
+  
+    <anteil>0</anteil>
   </CustomBaseFramework.SettlementPlanDef>
   <CustomBaseFramework.PieceDef>
     <defName>CBF_Modern_Wall</defName>

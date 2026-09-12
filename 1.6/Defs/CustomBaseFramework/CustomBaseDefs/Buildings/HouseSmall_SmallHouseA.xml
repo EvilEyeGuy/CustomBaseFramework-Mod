@@ -12,11 +12,11 @@
     <style>Rustical</style>
 
     <legend>
-      <li MayRequire="EEG.Architecture"><symbol>W</symbol><thing>AR_EaveWoody</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
-      <li><symbol>T</symbol><roof>RoofConstructed</roof></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_LogWall</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li MayRequire="EEG.Architecture"><symbol>C</symbol><thing>AR_WoodyEaveOuterCorner</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_LogWall</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="EEG.Architecture"><symbol>B</symbol><thing>AR_WoodyEaveOuterCorner</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="EEG.Architecture"><symbol>C</symbol><thing>AR_EaveWoody</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="EEG.Architecture"><symbol>F</symbol><thing>AR_WoodyEaveOuterCorner</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="EEG.Architecture"><symbol>P</symbol><thing>AR_EaveWoody</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff></li>
@@ -27,84 +27,72 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff></li>
-      <li MayRequire="EEG.Architecture"><symbol>Q</symbol><thing>AR_WoodyEaveOuterCorner</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_WoodBurningStove</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>V</symbol><thing>DankPyon_RusticCookingTools</thing><stuff>WoodLog</stuff></li>
-      <li MayRequire="EEG.Architecture"><symbol>X</symbol><thing>AR_WoodyEaveInnerCornerSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li MayRequire="EEG.Architecture"><symbol>Y</symbol><thing>AR_EaveWoody</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="EEG.Architecture"><symbol>Q</symbol><thing>AR_EaveWoody</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="EEG.Architecture"><symbol>U</symbol><thing>AR_WoodyEaveOuterCorner</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>V</symbol><thing>DankPyon_WoodBurningStove</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>X</symbol><thing>DankPyon_RusticCookingTools</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="EEG.Architecture"><symbol>Y</symbol><thing>AR_WoodyEaveInnerCornerSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="EEG.Architecture"><symbol>Z</symbol><thing>AR_WoodyEaveOuterCorner</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
     </legend>
 
     <mask>
-      <li>#########</li>
-      <li>#########</li>
-      <li>#########</li>
-      <li>#########</li>
-      <li>#########</li>
-      <li>#########</li>
-      <li>#########</li>
-      <li>#######..</li>
-      <li>#######..</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#####..</li>
+      <li>#####..</li>
     </mask>
 
     <terrain>
-      <li>.........</li>
-      <li>.DDDDDDD.</li>
-      <li>.DDDDDDD.</li>
-      <li>.DDDDDDD.</li>
-      <li>.DDDDDDD.</li>
-      <li>.DDDDDDD.</li>
-      <li>.DDDDD...</li>
-      <li>.DDDDD...</li>
-      <li>.........</li>
+      <li>WWWWWWW</li>
+      <li>WWWWWWW</li>
+      <li>WWWWWWW</li>
+      <li>WWWWWWW</li>
+      <li>WWWWWWW</li>
+      <li>WWWWW..</li>
+      <li>WWWWW..</li>
     </terrain>
 
     <things>
-      <li>..WWWWW..</li>
-      <li>.BBBBBBB.</li>
-      <li>PBR..SGBH</li>
-      <li>PB.LL.KBH</li>
-      <li>PB.....MH</li>
-      <li>PB...BBB.</li>
-      <li>PBUV.BX..</li>
-      <li>.BBBBB...</li>
-      <li>..YYY....</li>
+      <li>TTTTTTT</li>
+      <li>TR..SGT</li>
+      <li>T.LL.KT</li>
+      <li>T.....M</li>
+      <li>T...TTT</li>
+      <li>TVX.T..</li>
+      <li>TTTTT..</li>
     </things>
 
     <things2>
-      <li>.........</li>
-      <li>.C.....F.</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>.....N.Q.</li>
-      <li>......Y..</li>
-      <li>.Z...Q...</li>
-      <li>.........</li>
+      <li>BCCCCCF</li>
+      <li>P.....H</li>
+      <li>P.....H</li>
+      <li>P.....H</li>
+      <li>P...NQU</li>
+      <li>P...Y..</li>
+      <li>ZQQQU..</li>
     </things2>
 
     <things3>
-      <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>......H..</li>
-      <li>.........</li>
-      <li>.........</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>....H..</li>
+      <li>.......</li>
     </things3>
 
     <roof>
-      <li>.........</li>
-      <li>.TTTTTTT.</li>
-      <li>.TTTTTTT.</li>
-      <li>.TTTTTTT.</li>
-      <li>.TTTTTTT.</li>
-      <li>.TTTTTTT.</li>
-      <li>.TTTTT...</li>
-      <li>.TTTTT...</li>
-      <li>.........</li>
+      <li>DDDDDDD</li>
+      <li>DDDDDDD</li>
+      <li>DDDDDDD</li>
+      <li>DDDDDDD</li>
+      <li>DDDDDDD</li>
+      <li>DDDDD..</li>
+      <li>DDDDD..</li>
     </roof>
   </CustomBaseFramework.PieceDef>
 

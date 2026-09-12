@@ -525,6 +525,7 @@
   <CBF_CG_16>blocked</CBF_CG_16>
   <CBF_Categories>Categories</CBF_Categories>
   <CBF_Buildings>Buildings</CBF_Buildings>
+  <CBF_BeyondCategory>Beyond {0}</CBF_BeyondCategory>
   <CBF_ShowingN>{0} shown</CBF_ShowingN>
   <CBF_EmptyTool>Empty marker</CBF_EmptyTool>
   <CBF_MergePatches>Merge patches</CBF_MergePatches>
@@ -867,4 +868,34 @@ Copy the folder CustomBaseFramework into another mod under 1.6/Defs, and Patches
   <CBF_MemberTableTip>Which loot table fills this piece. Without one, the table on the anchor applies.\n\nGive each piece its own and a wine rack yields wine while the weapon rack beside it yields weapons. Leave them empty and one table on the anchor covers the whole list.</CBF_MemberTableTip>
   <CBF_MemberOpen>open</CBF_MemberOpen>
   <CBF_MemberOpenTip>The piece itself is placed and the loot lies visibly on it. It stays as it is, because a shelf that vanishes would drop what sits on it.\n\nOtherwise a shell is placed that looks like this piece, holds the loot inside, and has to be opened.</CBF_MemberOpenTip>
+  <CBF_MemberForeign>mod's own</CBF_MemberForeign>
+  <CBF_MemberForeignTip>{0} places this piece and then leaves it alone. Loot, occupants and the empty image all come from that mod, exactly as if someone had placed it by hand.\n\nUse this when you want a mod's own furniture to keep working the way its author built it, while your own loot mechanic stays on the vanilla pieces.</CBF_MemberForeignTip>
+  <CBF_MemberTableForeign>from the mod</CBF_MemberTableForeign>
+  <CBF_MemberTableForeignTip>This piece is filled by the mod that brings it. A loot table here would have no effect.</CBF_MemberTableForeignTip>
+  <CBF_EditLootTable>Edit this loot table</CBF_EditLootTable>
+  <CBF_LootTableEmpty>empty</CBF_LootTableEmpty>
+  <CBF_ShowContents>Show what is inside</CBF_ShowContents>
+  <CBF_Back>Back</CBF_Back>
+  <CBF_LootPreviewRolls>{0} to {1} draws, {2} % chance per draw</CBF_LootPreviewRolls>
+  <CBF_LootPreviewCount>Count: {0}</CBF_LootPreviewCount>
+  <CBF_LootPreviewAlways>Always included</CBF_LootPreviewAlways>
+  <CBF_LootPreviewWeight>Weight: {0}</CBF_LootPreviewWeight>
+  <CBF_LootPreviewChance>Appears {0} % of the time</CBF_LootPreviewChance>
+  <CBF_LootPreviewCurves>Weight or count varies with depth or wealth</CBF_LootPreviewCurves>
+  <CBF_LootPreviewQuality>Quality {0} to {1}</CBF_LootPreviewQuality>
+  <CBF_LootPreviewStuff>Material: {0}</CBF_LootPreviewStuff>
+  <CBF_LootPreviewNested>Click to look inside this table</CBF_LootPreviewNested>
+  <CBF_LootEntryGone>{0} does not exist</CBF_LootEntryGone>
+  <CBF_Edit>Edit</CBF_Edit>
+  <CBF_ObjPreviewClosed>Closed: a shell looks like this piece and holds the loot inside.</CBF_ObjPreviewClosed>
+  <CBF_ObjPreviewTable>Loot: {0}</CBF_ObjPreviewTable>
+  <CBF_ObjPreviewTableAnchor>Loot: whatever the anchor says</CBF_ObjPreviewTableAnchor>
+  <CBF_ObjPreviewPawns>Occupant: {0}, {1} %, {2}</CBF_ObjPreviewPawns>
+  <CBF_ObjPreviewHostile>hostile</CBF_ObjPreviewHostile>
+  <CBF_ObjPreviewPeaceful>not hostile</CBF_ObjPreviewPeaceful>
+  <CBF_AnchorsSkippedForEdit>{0} anchor(s) were not run. Place to Edit puts the piece down exactly as drawn, so the export does not freeze a random draw. Use Place to see what the anchors actually produce.</CBF_AnchorsSkippedForEdit>
+  <CBF_AnchorWithoutTable>{0} fill anchor(s) have no loot table. Their furniture is placed but stays empty, unless a member of the object list brings its own table.</CBF_AnchorWithoutTable>
+  <CBF_ShowScheme>Scheme</CBF_ShowScheme>
+  <CBF_ShowPhoto>Photo</CBF_ShowPhoto>
+  <CBF_SchemeTip>Switch between the photo taken on the map and the schematic plan.\n\nThe plan is worth a look: it shows the anchors, which are invisible in the finished house.</CBF_SchemeTip>
 </LanguageData>

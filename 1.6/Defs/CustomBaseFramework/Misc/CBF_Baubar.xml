@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <DesignationCategoryDef>
-    <defName>CBF_Baubar</defName>
-    <label>CBF extra</label>
-    <description>Buildings that carry no architect category of their own. Filled by Custom Base Framework while the setting "Make everything buildable" is on.</description>
-    <order>-100</order>
-    <showPowerGrid>false</showPowerGrid>
-  </DesignationCategoryDef>
-
   <CustomBaseFramework.BaubarRegelDef>
     <defName>CBF_Baubar_Deko</defName>
     <rang>10</rang>
-    <kategorie MayRequire="DankPyon.Medieval.Overhaul">DankPyon_RusticDecoration</kategorie>
+    <kategorie>DankPyon_RusticDecoration</kategorie>
+    <kategorieLabel>Rustic Deco.</kategorieLabel>
+    <ordnung>505</ordnung>
     <dateiEnthaelt>
       <li>Buildings_Rug</li>
       <li>Buildings_Art</li>
@@ -24,7 +18,9 @@
   <CustomBaseFramework.BaubarRegelDef>
     <defName>CBF_Baubar_RuinenBeute</defName>
     <rang>20</rang>
-    <kategorie MayRequire="DankPyon.Medieval.Overhaul">DankPyon_RuinLootable</kategorie>
+    <kategorie>CBF_RuinLoot</kategorie>
+    <kategorieLabel>Ruin Loot</kategorieLabel>
+    <ordnung>-101</ordnung>
     <dateiEnthaelt>
       <li>Buildings_RuinsLootable</li>
       <li>Buildings_Loot</li>
@@ -34,7 +30,9 @@
   <CustomBaseFramework.BaubarRegelDef>
     <defName>CBF_Baubar_Ruinen</defName>
     <rang>30</rang>
-    <kategorie MayRequire="DankPyon.Medieval.Overhaul">DankPyon_RuinFurniture</kategorie>
+    <kategorie>CBF_RuinFurniture</kategorie>
+    <kategorieLabel>Ruin Furn.</kategorieLabel>
+    <ordnung>-102</ordnung>
     <dateiEnthaelt>
       <li>Buildings_Ruins</li>
       <li>Buildings_Ruined</li>
@@ -44,7 +42,9 @@
   <CustomBaseFramework.BaubarRegelDef>
     <defName>CBF_Baubar_Versteck</defName>
     <rang>40</rang>
-    <kategorie MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Hideoutfurniture</kategorie>
+    <kategorie>CBF_Hideout</kategorie>
+    <kategorieLabel>Hideout</kategorieLabel>
+    <ordnung>-103</ordnung>
     <dateiEnthaelt>
       <li>Hideout</li>
     </dateiEnthaelt>

@@ -123,187 +123,6 @@
     </roof>
   </CustomBaseFramework.PieceDef>
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Modern_Workshop</defName>
-    <label>Werkstatt</label>
-    <schemaVersion>2</schemaVersion>
-    <categories>
-      <li>CBF_ModernWork</li>
-    </categories>
-    <style>CBF_ModernVanilla</style>
-    <legend>
-      <li>
-        <symbol>D</symbol>
-        <thing>Door</thing>
-        <stuff>Steel</stuff>
-      </li>
-      <li>
-        <symbol>F</symbol>
-        <terrain>Concrete</terrain>
-      </li>
-      <li>
-        <symbol>R</symbol>
-        <roof>RoofConstructed</roof>
-      </li>
-      <li>
-        <symbol>W</symbol>
-        <thing>Wall</thing>
-        <stuff>BlocksGranite</stuff>
-      </li>
-      <li>
-        <symbol>h</symbol>
-        <thing>HandTailoringBench</thing>
-        <stuff>WoodLog</stuff>
-      </li>
-      <li>
-        <symbol>l</symbol>
-        <thing>TorchLamp</thing>
-      </li>
-      <li>
-        <symbol>s</symbol>
-        <thing>FueledSmithy</thing>
-      </li>
-    </legend>
-    <mask>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-    </mask>
-    <things>
-      <li>WWWWWDWWWWW</li>
-      <li>W.........W</li>
-      <li>W.........W</li>
-      <li>W..s......W</li>
-      <li>W.........W</li>
-      <li>W......h..W</li>
-      <li>W.........W</li>
-      <li>Wl........W</li>
-      <li>WWWWWWWWWWW</li>
-    </things>
-    <terrain>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-    </terrain>
-    <roof>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-    </roof>
-  </CustomBaseFramework.PieceDef>
-  <CustomBaseFramework.PieceDef>
-    <defName>CBF_Modern_Community</defName>
-    <label>Gemeinschaftshaus</label>
-    <schemaVersion>2</schemaVersion>
-    <categories>
-      <li>CBF_ModernCivic</li>
-    </categories>
-    <style>CBF_ModernVanilla</style>
-    <legend>
-      <li>
-        <symbol>D</symbol>
-        <thing>Door</thing>
-        <stuff>Steel</stuff>
-      </li>
-      <li>
-        <symbol>F</symbol>
-        <terrain>Concrete</terrain>
-      </li>
-      <li>
-        <symbol>R</symbol>
-        <roof>RoofConstructed</roof>
-      </li>
-      <li>
-        <symbol>W</symbol>
-        <thing>Wall</thing>
-        <stuff>BlocksGranite</stuff>
-      </li>
-      <li>
-        <symbol>c</symbol>
-        <thing>DiningChair</thing>
-        <stuff>WoodLog</stuff>
-      </li>
-      <li>
-        <symbol>l</symbol>
-        <thing>TorchLamp</thing>
-      </li>
-      <li>
-        <symbol>t</symbol>
-        <thing>Table2x2c</thing>
-        <stuff>WoodLog</stuff>
-      </li>
-    </legend>
-    <mask>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-      <li>###########</li>
-    </mask>
-    <things>
-      <li>WWWWWDWWWWW</li>
-      <li>W.........W</li>
-      <li>W.........W</li>
-      <li>W.ct..ct..W</li>
-      <li>W.........W</li>
-      <li>W.........W</li>
-      <li>W.........W</li>
-      <li>W.ct..ct..W</li>
-      <li>W.........W</li>
-      <li>Wl........W</li>
-      <li>WWWWWWWWWWW</li>
-    </things>
-    <terrain>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-      <li>FFFFFFFFFFF</li>
-    </terrain>
-    <roof>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-      <li>RRRRRRRRRRR</li>
-    </roof>
-  </CustomBaseFramework.PieceDef>
-  <CustomBaseFramework.PieceDef>
     <defName>CBF_Modern_Farmhouse</defName>
     <label>Bauernhaus</label>
     <schemaVersion>2</schemaVersion>
@@ -395,47 +214,6 @@
       <li>RRRRRRR</li>
       <li>RRRRRRR</li>
     </roof>
-  </CustomBaseFramework.PieceDef>
-  <CustomBaseFramework.PieceDef>
-    <defName>CBF_Modern_Defense</defName>
-    <label>Barrikadenstellung</label>
-    <schemaVersion>2</schemaVersion>
-    <categories>
-      <li>CBF_ModernDefense</li>
-    </categories>
-    <style>CBF_ModernVanilla</style>
-    <legend>
-      <li>
-        <symbol>F</symbol>
-        <terrain>Concrete</terrain>
-      </li>
-      <li>
-        <symbol>q</symbol>
-        <thing>Barricade</thing>
-        <stuff>BlocksGranite</stuff>
-      </li>
-    </legend>
-    <mask>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-    </mask>
-    <things>
-      <li>.......</li>
-      <li>.......</li>
-      <li>.q...q.</li>
-      <li>.qqqqq.</li>
-      <li>.......</li>
-    </things>
-    <terrain>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-    </terrain>
   </CustomBaseFramework.PieceDef>
   <CustomBaseFramework.PaletteDef>
     <defName>CBF_Modern_Palette</defName>
@@ -564,6 +342,9 @@
             <name>Zentrum</name>
             <entries>
               <li><tag>ModernHouseLarge</tag><count>14~22</count></li>
+              <li><tag>CBF_ModernCivic</tag><count>1~2</count></li>
+              <li><tag>CBF_ModernWork</tag><count>2~4</count></li>
+              <li><tag>CBF_EnergyProduction</tag><count>1~2</count></li>
             </entries>
           </li>
         </districts>
@@ -614,8 +395,7 @@
           <li>
             <name>Umland</name>
             <entries>
-              <li><piece>CBF_Modern_Farmhouse</piece><count>2~2</count></li>
-              <li><piece>CBF_Modern_Defense</piece><count>3~4</count></li>
+              <li><tag>CBF_ModernDefense</tag><count>2~4</count></li>
             </entries>
           </li>
         </districts>

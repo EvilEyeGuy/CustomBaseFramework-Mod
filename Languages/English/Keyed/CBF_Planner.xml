@@ -11,6 +11,9 @@
   <CBF_Build_Walls>Building walls and fences</CBF_Build_Walls>
   <CBF_Build_Profiles>Building wall profiles, towers and gatehouses</CBF_Build_Profiles>
   <CBF_Build_Report>Checking settlement and writing report</CBF_Build_Report>
+  <CBF_AllBuildable>Make everything buildable (building aid)</CBF_AllBuildable>
+  <CBF_AllBuildableHelp>Gives every building that has no architect category of its own one, so you can place it from the architect menu instead of crafting and installing it. In Medieval Overhaul that is 258 things: rugs, statues, ruin pieces, hideout furniture. Things without build cost are skipped, they would be free. Takes effect after a restart.</CBF_AllBuildableHelp>
+  <CBF_AllBuildableRestart>Takes effect after restarting RimWorld. The architect menu is built once at startup.</CBF_AllBuildableRestart>
   <CBF_Build_Read>Reading settlement settings and terrain</CBF_Build_Read>
   <CBF_Build_Plan>Planning settlement</CBF_Build_Plan>
   <CBF_Build_Pawns>Generating inhabitants and defenders</CBF_Build_Pawns>
@@ -154,6 +157,10 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_CheckOkHints>Check passed, {0} hint(s).</CBF_CheckOkHints>
   <CBF_CheckFailed>Check failed, {0} error(s).</CBF_CheckFailed>
   <CBF_NErrors>{0} error(s)</CBF_NErrors>
+  <CBF_NeedAWorld>No world loaded.</CBF_NeedAWorld>
+  <CBF_BiomeAny>Any terrain</CBF_BiomeAny>
+  <CBF_NoTileFound>No free tile found for {0}. Try another terrain.</CBF_NoTileFound>
+  <CBF_WorldBuilt>{0} placed for {1} as {2} in {3}. Generating the map now.</CBF_WorldBuilt>
   <CBF_WorldTileBad>No usable tile under the cursor.</CBF_WorldTileBad>
   <CBF_WorldNoFaction>No faction available.</CBF_WorldNoFaction>
   <CBF_WorldVanilla>[vanilla map]</CBF_WorldVanilla>

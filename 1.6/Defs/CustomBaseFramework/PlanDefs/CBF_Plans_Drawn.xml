@@ -176,26 +176,38 @@
             </entries>
           </li>
           <li>
-            <name>Farming</name><fields><li>
+            <name>Wheat</name><fields><li>
               <name>Acker</name>
-              <count>3~3</count>
+              <count>3~4</count>
               <fence>true</fence>
               <weight>1</weight><plants>
-                <li>Plant_Haygrass</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Carrots</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Garlic</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Onions</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Pumpkins</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
+                <li>Plant_Corn</li>
                </plants>
               <tags>
-                <li>HouseSmall</li>
-              </tags></li></fields><pens><li>
+                <li>Farm</li>
+              </tags></li></fields>
+            <entries>
+              <li><tag>Farm</tag><count>2~3</count></li>
+            </entries>
+          </li>
+          <li>
+            <name>Cattle</name><pens><li>
               <name>Gehege</name>
               <count>1~1</count>
               <herd>3~7</herd>
-              <pawns>CBF_Pawns_Neu3</pawns>
-              <fence>true</fence><plants>
+              <pawns>Hardanimals_1</pawns>
+              <fence>true</fence>
+              <terrain>Soil</terrain><plants>
                 <li>Plant_Haygrass</li>
                </plants>
               <weight>1</weight></li></pens>
             <entries>
-              <li><tag>HouseSmall</tag><count>4~6</count></li>
+              <li><tag>HouseSmall</tag><count>1~2</count></li>
             </entries>
           </li>
         </districts>

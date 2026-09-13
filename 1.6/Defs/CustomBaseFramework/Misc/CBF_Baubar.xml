@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <DesignationCategoryDef>
+    <defName>CBF_Baubar</defName>
+    <label>CBF extra</label>
+    <description>Buildings that carry no architect category of their own. Filled by Custom Base Framework while the setting "Make everything buildable" is on.</description>
+    <order>-100</order>
+    <showPowerGrid>false</showPowerGrid>
+  </DesignationCategoryDef>
+
+  <CustomBaseFramework.BaubarRegelDef>
+    <defName>CBF_Baubar_Deko</defName>
+    <rang>10</rang>
+    <kategorie MayRequire="DankPyon.Medieval.Overhaul">DankPyon_RusticDecoration</kategorie>
+    <dateiEnthaelt>
+      <li>Buildings_Rug</li>
+      <li>Buildings_Art</li>
+      <li>Buildings_Banners</li>
+      <li>Buildings_Decoration</li>
+    </dateiEnthaelt>
+  </CustomBaseFramework.BaubarRegelDef>
+
+  <CustomBaseFramework.BaubarRegelDef>
+    <defName>CBF_Baubar_RuinenBeute</defName>
+    <rang>20</rang>
+    <kategorie MayRequire="DankPyon.Medieval.Overhaul">DankPyon_RuinLootable</kategorie>
+    <dateiEnthaelt>
+      <li>Buildings_RuinsLootable</li>
+      <li>Buildings_Loot</li>
+    </dateiEnthaelt>
+  </CustomBaseFramework.BaubarRegelDef>
+
+  <CustomBaseFramework.BaubarRegelDef>
+    <defName>CBF_Baubar_Ruinen</defName>
+    <rang>30</rang>
+    <kategorie MayRequire="DankPyon.Medieval.Overhaul">DankPyon_RuinFurniture</kategorie>
+    <dateiEnthaelt>
+      <li>Buildings_Ruins</li>
+      <li>Buildings_Ruined</li>
+    </dateiEnthaelt>
+  </CustomBaseFramework.BaubarRegelDef>
+
+  <CustomBaseFramework.BaubarRegelDef>
+    <defName>CBF_Baubar_Versteck</defName>
+    <rang>40</rang>
+    <kategorie MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Hideoutfurniture</kategorie>
+    <dateiEnthaelt>
+      <li>Hideout</li>
+    </dateiEnthaelt>
+  </CustomBaseFramework.BaubarRegelDef>
+
+</Defs>

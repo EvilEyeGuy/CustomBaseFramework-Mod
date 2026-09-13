@@ -14,23 +14,34 @@
 
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_ReinfocedLogGate</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
+      <li><symbol>T</symbol><anchor>Wall</anchor></li>
+      <li><symbol>B</symbol><anchor>Outside</anchor></li>
     </legend>
 
     <mask>
-      <li>#</li>
-      <li>#</li>
-      <li>#</li>
-      <li>#</li>
-      <li>#</li>
+      <li>.#.</li>
+      <li>.#.</li>
+      <li>###</li>
+      <li>.#.</li>
+      <li>.#.</li>
     </mask>
 
     <things>
-      <li>W</li>
-      <li>W</li>
-      <li>.</li>
-      <li>W</li>
-      <li>W</li>
+      <li>.W.</li>
+      <li>.W.</li>
+      <li>.D.</li>
+      <li>.W.</li>
+      <li>.W.</li>
     </things>
+
+    <anchors>
+      <li>.T.</li>
+      <li>...</li>
+      <li>B..</li>
+      <li>...</li>
+      <li>.T.</li>
+    </anchors>
   </CustomBaseFramework.PieceDef>
 
 </Defs>

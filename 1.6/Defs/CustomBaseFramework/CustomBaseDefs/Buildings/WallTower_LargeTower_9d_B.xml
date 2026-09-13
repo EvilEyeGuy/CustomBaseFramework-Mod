@@ -17,16 +17,14 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_CastleWallEmbrasures</thing><stuff>BlocksGranite</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_Turret_Scorpio</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_Crate1x1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_RusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>P</symbol><anchor>Wall4</anchor></li>
-      <li><symbol>F</symbol><anchor>Wall3</anchor></li>
-      <li><symbol>R</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList></li>
-      <li><symbol>C</symbol><anchor>Wall2</anchor></li>
-      <li><symbol>L</symbol><anchor>Spawn2</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList></li>
-      <li><symbol>S</symbol><anchor>Wall</anchor></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_Turret_Scorpio</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_Crate1x1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_ScorpioBolt</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_RusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>L</symbol><anchor>Wall</anchor></li>
+      <li><symbol>S</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList></li>
+      <li><symbol>G</symbol><anchor>Spawn2</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList></li>
     </legend>
 
     <mask>
@@ -55,13 +53,13 @@
 
     <things>
       <li>DDBBBBBDD</li>
-      <li>DG......D</li>
+      <li>DC......D</li>
       <li>B.......B</li>
-      <li>B....H..B</li>
+      <li>B....F..B</li>
       <li>B...D...B</li>
-      <li>B..HG...B</li>
+      <li>B..FC...B</li>
       <li>B.......B</li>
-      <li>DK.....MD</li>
+      <li>DPR...RHD</li>
       <li>DDBBBBBDD</li>
     </things>
 
@@ -78,15 +76,15 @@
     </roof>
 
     <anchors>
-      <li>....S....</li>
+      <li>....L....</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>...S.....</li>
+      <li>L.......L</li>
+      <li>.....G...</li>
       <li>.........</li>
       <li>.........</li>
       <li>....L....</li>
-      <li>F....R..C</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>....P....</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

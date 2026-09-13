@@ -4,7 +4,7 @@
 
   <CustomBaseFramework.PieceDef>
     <defName>Pallisader_GateHouse</defName>
-    <label>Pallisader-GateHouse</label>
+    <label>Pallisader_GateHouse</label>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>WallGateHouse</li>
@@ -17,6 +17,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_EmbPalisade</thing><stuff>DankPyon_RawWood</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_RusticTorchLamp</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_ReinfocedLogGate</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>C</symbol><anchor>Wall</anchor></li>
+      <li><symbol>F</symbol><anchor>Outside</anchor></li>
     </legend>
 
     <mask>
@@ -34,6 +36,14 @@
       <li>W...WBW...W</li>
       <li>WWBWW.WWBWW</li>
     </things>
+
+    <anchors>
+      <li>.....F.....</li>
+      <li>...........</li>
+      <li>C.........C</li>
+      <li>...........</li>
+      <li>...........</li>
+    </anchors>
   </CustomBaseFramework.PieceDef>
 
 </Defs>

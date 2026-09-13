@@ -98,6 +98,7 @@ Der Link ist OEFFENTLICH: jeder, der ihn hat, kann beide Dateien lesen, und gelo
 Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_ReserveGround>Baugrund vor dem Berg reservieren</CBF_ReserveGround>
   <CBF_ReserveGroundHelp>Bevor RimWorld den Fels setzt, weicht der Rand des Bergs dort zurueck, wo die Siedlung stehen soll, und nur so weit, bis sie hineinpasst. Die Form des Bergs bleibt erhalten, der Rest der Karte bleibt unberuehrt. Aus heisst: der Ort muss mit dem gewachsenen Gelaende auskommen und kann auf steinigen Kacheln scheitern.</CBF_ReserveGroundHelp>
+  <CBF_OneConnectOnly>Es gibt schon einen Anschluss. Die Mauer sucht genau einen Anker namens Wall, und dessen Felder gehoeren alle in diese eine Flaeche. Waehl den vorhandenen und zeichne dazu.</CBF_OneConnectOnly>
   <CBF_LabTitle>Versuchsstand</CBF_LabTitle>
   <CBF_LabHelp>Unfertige Arbeit. Schalte das nur ein, wenn du mittesten willst, und rechne damit, dass es falsch aussieht.</CBF_LabHelp>
   <CBF_LabEaves>Traufen an fertigen Haeusern</CBF_LabEaves>
@@ -107,6 +108,15 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_WorldPlanClear>Vergessen, beim naechsten Hinsehen neu wuerfeln</CBF_WorldPlanClear>
   <CBF_WorldPlanCleared>{0} hat keinen Ortstyp mehr.</CBF_WorldPlanCleared>
   <CBF_WorldPlanFixed>{0} ist jetzt {1}, im Spielstand gemerkt.</CBF_WorldPlanFixed>
+  <CBF_CheckBtn>Pruefen</CBF_CheckBtn>
+  <CBF_TDesc_check>Laesst die volle Exportpruefung ueber diese Flaeche laufen, ohne etwas zu schreiben. Solange Fehler dastehen, verweigert der Export.</CBF_TDesc_check>
+  <CBF_ExportBlocked>{0} hat {1} Fehler und wurde nicht ausgegeben. Behebe sie und pruefe erneut.</CBF_ExportBlocked>
+  <CBF_ExportNeedsCheck>Die letzte Pruefung fand {0} Fehler. Behebe sie und druecke nochmal auf Pruefen.</CBF_ExportNeedsCheck>
+  <CBF_CheckOk>{0}: Pruefung bestanden.</CBF_CheckOk>
+  <CBF_CheckClean>Pruefung bestanden, keine Befunde.</CBF_CheckClean>
+  <CBF_CheckOkHints>Pruefung bestanden, {0} Hinweis(e).</CBF_CheckOkHints>
+  <CBF_CheckFailed>Pruefung gescheitert, {0} Fehler.</CBF_CheckFailed>
+  <CBF_NErrors>{0} Fehler</CBF_NErrors>
   <CBF_WorldTileBad>Unter dem Zeiger liegt keine brauchbare Kachel.</CBF_WorldTileBad>
   <CBF_WorldNoFaction>Keine Fraktion vorhanden.</CBF_WorldNoFaction>
   <CBF_WorldVanilla>[Karte vom Spiel]</CBF_WorldVanilla>

@@ -24,11 +24,13 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_WoodBurningStove</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
       <li><symbol>H</symbol><thing>TableButcher</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_RusticChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_RusticTable1x1c</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_RusticChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>U</symbol><anchor>PawnsA</anchor><anchorKind>Spawn</anchorKind></li>
-      <li><symbol>V</symbol><anchor>PawnsB</anchor><anchorKind>Spawn</anchorKind></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_ShelfEmpty</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_RusticChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_RusticTable1x1c</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_RusticChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>U</symbol><anchor>PawnsA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Neu4</pawnList></li>
+      <li><symbol>V</symbol><anchor>PawnsB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Neu4</pawnList></li>
+      <li><symbol>X</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Shelf_1x2</objects></li>
     </legend>
 
     <mask>
@@ -63,7 +65,7 @@
       <li>TPR.L...ST</li>
       <li>TTTTTG...T</li>
       <li>...T.....T</li>
-      <li>...T.KMNHT</li>
+      <li>...TKMNQHT</li>
       <li>...TTTTTTT</li>
     </things>
 
@@ -86,8 +88,8 @@
       <li>...V......</li>
       <li>..........</li>
       <li>......U...</li>
-      <li>..........</li>
-      <li>..........</li>
+      <li>....X.....</li>
+      <li>....X.....</li>
       <li>..........</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

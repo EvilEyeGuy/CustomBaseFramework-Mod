@@ -132,6 +132,7 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_FactionVanilla>RimWorld builds the bases of this faction. Assign a plan above and CBF takes over, for this faction only.</CBF_FactionVanilla>
   <CBF_ReserveGround>Reserve building ground before the rock</CBF_ReserveGround>
   <CBF_ReserveGroundHelp>Before RimWorld places the rock, the edge of the mountain recedes where the settlement will stand, and only far enough for it to fit. The shape of the mountain is kept, the rest of the map is untouched. Off means the settlement has to make do with the terrain as grown and can fail on rocky tiles.</CBF_ReserveGroundHelp>
+  <CBF_OneConnectOnly>There already is a connection. The wall looks for exactly one anchor named Wall, and all its cells belong to that one area. Pick the existing one and paint onto it.</CBF_OneConnectOnly>
   <CBF_LabTitle>Test bench</CBF_LabTitle>
   <CBF_LabHelp>Unfinished work. Switch these on only if you want to help test them, and expect them to look wrong.</CBF_LabHelp>
   <CBF_LabEaves>Eaves on finished houses</CBF_LabEaves>
@@ -141,6 +142,15 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_WorldPlanClear>Forget, roll again on next look</CBF_WorldPlanClear>
   <CBF_WorldPlanCleared>{0} has no settlement type any more.</CBF_WorldPlanCleared>
   <CBF_WorldPlanFixed>{0} is now {1}, stored in the save.</CBF_WorldPlanFixed>
+  <CBF_CheckBtn>Check</CBF_CheckBtn>
+  <CBF_TDesc_check>Runs the full export check on this area without writing anything. Export refuses while errors remain.</CBF_TDesc_check>
+  <CBF_ExportBlocked>{0} has {1} error(s) and was not exported. Fix them and check again.</CBF_ExportBlocked>
+  <CBF_ExportNeedsCheck>The last check found {0} error(s). Fix them and press Check again.</CBF_ExportNeedsCheck>
+  <CBF_CheckOk>{0}: check passed.</CBF_CheckOk>
+  <CBF_CheckClean>Check passed, no findings.</CBF_CheckClean>
+  <CBF_CheckOkHints>Check passed, {0} hint(s).</CBF_CheckOkHints>
+  <CBF_CheckFailed>Check failed, {0} error(s).</CBF_CheckFailed>
+  <CBF_NErrors>{0} error(s)</CBF_NErrors>
   <CBF_WorldTileBad>No usable tile under the cursor.</CBF_WorldTileBad>
   <CBF_WorldNoFaction>No faction available.</CBF_WorldNoFaction>
   <CBF_WorldVanilla>[vanilla map]</CBF_WorldVanilla>

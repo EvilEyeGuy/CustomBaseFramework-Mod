@@ -16,20 +16,24 @@
       <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_WoodBurningStove</thing><stuff>BlocksGranite</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_WoodBurningStove</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_ShelfEmpty</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RusticCloset1x2c</thing><stuff>WoodLog</stuff></li>
       <li><symbol>L</symbol><thing>FueledStove</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_RusticChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_ReinforcedRusticTable1x1c</thing><stuff>WoodLog</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_RusticChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_Bed_RusticDouble_Blue</thing><stuff>WoodLog</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_RusticEndTable</thing><stuff>WoodLog</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_Candle</thing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_RusticEndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_Frame_Log</thing><stuff>DankPyon_RawWood</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_RusticChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_ReinforcedRusticTable1x1c</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_RusticChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_Bed_RusticDouble_Blue</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_RusticEndTable</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_Candle</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_RusticEndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>V</symbol><anchor>Pawn</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>X</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>Z</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Shelf_1x2</objects></li>
     </legend>
 
     <mask>
@@ -52,10 +56,10 @@
 
     <things>
       <li>TTBTTTTTTTTT</li>
-      <li>T...CFTPR..T</li>
-      <li>T..........T</li>
-      <li>T..SGHT....T</li>
-      <li>TL.M..TNK.UT</li>
+      <li>TC..F.TPR..T</li>
+      <li>T.....S....T</li>
+      <li>T..GHKT....T</li>
+      <li>TL.N.QTUM.aT</li>
       <li>TTTTTTTTTTTT</li>
     </things>
 
@@ -64,7 +68,7 @@
       <li>............</li>
       <li>............</li>
       <li>............</li>
-      <li>.......Q....</li>
+      <li>.......Y....</li>
       <li>............</li>
     </things2>
 
@@ -79,8 +83,8 @@
 
     <anchors>
       <li>............</li>
-      <li>............</li>
-      <li>...V........</li>
+      <li>....ZZ......</li>
+      <li>...V...X....</li>
       <li>............</li>
       <li>............</li>
       <li>............</li>

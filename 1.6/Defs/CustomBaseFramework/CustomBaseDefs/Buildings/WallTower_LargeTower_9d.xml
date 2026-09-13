@@ -15,14 +15,11 @@
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_CastleWallEmbrasures</thing><stuff>BlocksGranite</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li><symbol>B</symbol><anchor>Wall</anchor></li>
-      <li><symbol>C</symbol><anchor>Wall2</anchor></li>
-      <li><symbol>F</symbol><anchor>Wall3</anchor></li>
-      <li><symbol>P</symbol><anchor>Wall4</anchor></li>
-      <li><symbol>R</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList></li>
-      <li><symbol>L</symbol><anchor>Spawn2</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Turmwache</pawnList></li>
-      <li><symbol>S</symbol><anchor>Wall5</anchor></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_BallistaBolt</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_RusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>F</symbol><anchor>Wall</anchor></li>
+      <li><symbol>P</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList></li>
     </legend>
 
     <mask>
@@ -52,25 +49,25 @@
     <things>
       <li>..DDDDD..</li>
       <li>.DD...DD.</li>
-      <li>DD.....DD</li>
+      <li>DD...TBDD</li>
+      <li>D....TT.D</li>
       <li>D.......D</li>
-      <li>D.......D</li>
-      <li>D..T....D</li>
+      <li>D..C....D</li>
       <li>DD.....DD</li>
       <li>.DD...DD.</li>
       <li>..DDDDD..</li>
     </things>
 
     <anchors>
-      <li>....B....</li>
-      <li>.........</li>
-      <li>......S..</li>
-      <li>....L....</li>
-      <li>F....R..C</li>
+      <li>....F....</li>
       <li>.........</li>
       <li>.........</li>
       <li>.........</li>
-      <li>....P....</li>
+      <li>F.......F</li>
+      <li>.....P...</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>....F....</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

@@ -906,4 +906,13 @@ Copy the folder CustomBaseFramework into another mod under 1.6/Defs, and Patches
   <CBF_RuralAsIs>as the map has it</CBF_RuralAsIs>
   <CBF_RuralAsIsTip>Leave whatever the map already has there. Pick something else to force it, for example packed dirt for a trampled pen.</CBF_RuralAsIsTip>
   <CBF_BehaelterOwnImages>Your own images</CBF_BehaelterOwnImages>
+  <CBF_ObjPreviewClickToChange>Click to change what happens to this piece.</CBF_ObjPreviewClickToChange>
+  <CBF_ObjPreviewClosedShort>closed, filled by CBF</CBF_ObjPreviewClosedShort>
+  <CBF_AnchorLootAsIs>unchanged, whatever the mod gives them</CBF_AnchorLootAsIs>
+  <CBF_AnchorLootAsIsTip>CBF places the furniture and then leaves it alone. Loot, occupants and the empty image all come from the mod that brings it, exactly as if someone had placed it by hand.\n\nFor Medieval Overhaul's lootable shelves and crates this is usually what you want.</CBF_AnchorLootAsIsTip>
+  <CBF_AnchorLootNoneTip>Nothing goes inside. The furniture is decoration.</CBF_AnchorLootNoneTip>
+  <CBF_AnchorListGone>{0} does not exist</CBF_AnchorListGone>
+  <CBF_AnchorListGoneTip>This anchor names the object list {0}, but there is no such list. The anchor places nothing.
+
+Either the name is misspelled, or the list lives in a different project that is not active.</CBF_AnchorListGoneTip>
 </LanguageData>

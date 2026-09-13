@@ -107,9 +107,10 @@
             <entries>
               <li><tag>Keep</tag><count>1~1</count><unique>true</unique><lootTable>CBF_Loot_Haushalt</lootTable></li>
               <li><tag>Inn</tag><count>1~1</count><unique>true</unique><lootTable>CBF_Loot_Haushalt</lootTable></li>
-              <li><tag>Military</tag><count>2~3</count><lootTable>CBF_Loot_Werkstatt</lootTable></li>
-              <li><tag>HouseLarge</tag><count>4~8</count></li>
+              <li><tag>Military</tag><count>2~2</count><lootTable>CBF_Loot_Werkstatt</lootTable></li>
+              <li><tag>HouseLarge</tag><count>7~8</count></li>
               <li><piece>Military_Trebuchets</piece><count>1~1</count></li>
+              <li><piece>Military_Baracks</piece><count>1~1</count></li>
             </entries>
           </li>
         </districts>
@@ -189,7 +190,9 @@
               <count>1~1</count>
               <herd>3~7</herd>
               <pawns>CBF_Pawns_Neu3</pawns>
-              <fence>true</fence>
+              <fence>true</fence><plants>
+                <li>Plant_Haygrass</li>
+               </plants>
               <weight>1</weight></li></pens>
             <entries>
               <li><tag>HouseSmall</tag><count>4~6</count></li>

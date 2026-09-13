@@ -114,14 +114,14 @@
     </members>
   </CustomBaseFramework.PawnListDef>
 
-  <CustomBaseFramework.PawnListDef>
+  <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Pawns_Neu4</defName>
     <label>CBF_Pawns_Neu4</label>
     <rolle>Zivil</rolle>
     <radius>4</radius>
     <members>
-      <li><kind>Villager</kind><weight>1</weight></li>
-    </members>
+        <li><kind>DankPyon_Medieval_Peasant</kind><weight>1</weight></li>
+      </members>
   </CustomBaseFramework.PawnListDef>
 
   <CustomBaseFramework.PawnListDef>

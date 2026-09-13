@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>Camp_GateHouse</defName>
+    <label>Camp_GateHouse</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallGateHouse</li>
+    </categories>
+    <type>WallPart</type>
+    <style>Rustical</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+    </legend>
+
+    <mask>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+    </mask>
+
+    <things>
+      <li>W</li>
+      <li>W</li>
+      <li>.</li>
+      <li>W</li>
+      <li>W</li>
+    </things>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

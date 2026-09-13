@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>TentViking</defName>
+    <label>TentViking</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Tent</li>
+    </categories>
+    <style>Standard</style>
+
+    <legend>
+      <li MayRequire="Aoba.Tent"><symbol>W</symbol><thing>VikingTent</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
+    </legend>
+
+    <mask>
+      <li>##</li>
+      <li>##</li>
+    </mask>
+
+    <things>
+      <li>..</li>
+      <li>W.</li>
+    </things>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

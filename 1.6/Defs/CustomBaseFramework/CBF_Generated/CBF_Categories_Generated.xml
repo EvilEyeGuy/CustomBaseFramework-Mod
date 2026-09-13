@@ -4,8 +4,26 @@
 <Defs>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Camping</defName>
+    <label>CBF_Camping</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_EnergyProduction</defName>
     <label>CBF_EnergyProduction</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Tent</defName>
+    <label>CBF_Tent</label>
     <zones>
       <li>Inside</li>
     </zones>

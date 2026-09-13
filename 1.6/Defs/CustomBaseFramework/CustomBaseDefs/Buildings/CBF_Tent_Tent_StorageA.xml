@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>Tent_StorageA</defName>
+    <label>Tent_StorageA</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Tent</li>
+    </categories>
+    <style>Standard</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_MarketTent_6c</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_Crate1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_WoodLogs1x1c</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_RusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+    </legend>
+
+    <mask>
+      <li>###</li>
+      <li>###</li>
+    </mask>
+
+    <things>
+      <li>...</li>
+      <li>WDB</li>
+    </things>
+
+    <things2>
+      <li>...</li>
+      <li>T..</li>
+    </things2>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

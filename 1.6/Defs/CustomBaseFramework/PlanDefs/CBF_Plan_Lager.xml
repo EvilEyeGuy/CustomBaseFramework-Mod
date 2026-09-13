@@ -20,39 +20,42 @@
     <wards>
       <li>
         <art>Stadt</art>
-        <name>Lager</name>
+        <name>Altstadt</name>
         <size>1</size>
         <wallDepth>1</wallDepth>
         <gates>1~1</gates>
+        <versorgung>1.2</versorgung>
         <walls>
           <li>Palisade</li>
         </walls>
         <emplacements>
-          <li><piece>PalisadeTower</piece><count>1~3</count></li>
+          <li>PalisadeTower</li>
         </emplacements>
         <gatehouses>
-          <li><piece>Pallisader_GateHouse</piece><count>1~1</count></li>
+          <li>Pallisader_GateHouse</li>
         </gatehouses>
         <districts>
           <li>
             <name>Lager</name>
             <entries>
-              <li><tag>HouseSmall</tag><count>4~8</count></li>
+              <li><piece>Camp_FoodArea</piece><count>1~1</count></li>
+              <li><piece>Tent_StorageA</piece><count>2~4</count></li>
+              <li><piece>TentViking</piece><count>9~12</count></li>
             </entries>
           </li>
         </districts>
       </li>
       <li>
         <art>Vorstadt</art>
-        <name>Vorfeld</name>
+        <name>Neustadt</name>
         <size>0.5</size>
         <wallDepth>0</wallDepth>
         <gates>0~0</gates>
+        <versorgung>1.2</versorgung>
         <districts>
           <li>
             <name>Vorfeld</name>
             <entries>
-              <li><tag>HouseSmall</tag><count>1~3</count></li>
             </entries>
           </li>
         </districts>
@@ -63,27 +66,19 @@
         <size>1.4</size>
         <wallDepth>0</wallDepth>
         <gates>0~0</gates>
+        <versorgung>1.2</versorgung>
         <districts>
           <li>
             <name>Umland</name>
             <entries>
-              <li><tag>HouseSmall</tag><count>1~2</count></li>
             </entries>
-            <fields>
-              <li>
-                <plants>
-                  <li>DankPyon_Plant_Wheat</li>
-                  <li>Plant_Potato</li>
-                </plants>
-                <count>1~2</count>
-                <fence>true</fence>
-              </li>
-            </fields>
           </li>
         </districts>
       </li>
     </wards>
 
+  
+    <anteil>0</anteil>
   </CustomBaseFramework.SettlementPlanDef>
 
 </Defs>

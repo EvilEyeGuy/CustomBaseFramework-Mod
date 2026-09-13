@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>Camp_FoodArea</defName>
+    <label>Camp_FoodArea</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Camping</li>
+    </categories>
+    <style>Rustical</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_LogChair</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_LogBench1x2c</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_LogTable1x2c</thing><stuff>DankPyon_RawWood</stuff></li>
+    </legend>
+
+    <mask>
+      <li>.#.</li>
+      <li>###</li>
+      <li>###</li>
+      <li>.#.</li>
+    </mask>
+
+    <things>
+      <li>.W.</li>
+      <li>...</li>
+      <li>DTD</li>
+      <li>.W.</li>
+    </things>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -30,190 +30,114 @@
     <blockMax>3</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Modern_House</defName>
-    <label>Wohnhaus</label>
-    <schemaVersion>2</schemaVersion>
-    <categories>
-      <li>CBF_ModernHomes</li>
-    </categories>
-    <style>CBF_ModernVanilla</style>
-    <legend>
-      <li>
-        <symbol>D</symbol>
-        <thing>Door</thing>
-        <stuff>Steel</stuff>
-      </li>
-      <li>
-        <symbol>F</symbol>
-        <terrain>Concrete</terrain>
-      </li>
-      <li>
-        <symbol>R</symbol>
-        <roof>RoofConstructed</roof>
-      </li>
-      <li>
-        <symbol>W</symbol>
-        <thing>Wall</thing>
-        <stuff>BlocksGranite</stuff>
-      </li>
-      <li>
-        <symbol>b</symbol>
-        <thing>Bed</thing>
-        <stuff>WoodLog</stuff>
-        <rotation>North</rotation>
-      </li>
-      <li>
-        <symbol>c</symbol>
-        <thing>DiningChair</thing>
-        <stuff>WoodLog</stuff>
-      </li>
-      <li>
-        <symbol>l</symbol>
-        <thing>TorchLamp</thing>
-      </li>
-      <li>
-        <symbol>t</symbol>
-        <thing>Table2x2c</thing>
-        <stuff>WoodLog</stuff>
-      </li>
-    </legend>
-    <mask>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-    </mask>
-    <things>
-      <li>WWWDWWW</li>
-      <li>W.....W</li>
-      <li>Wb...bW</li>
-      <li>W.....W</li>
-      <li>W.....W</li>
-      <li>Wct.c.W</li>
-      <li>W.....W</li>
-      <li>W....lW</li>
-      <li>WWWWWWW</li>
-    </things>
-    <terrain>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-    </terrain>
-    <roof>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-    </roof>
-  </CustomBaseFramework.PieceDef>
-  <CustomBaseFramework.PieceDef>
     <defName>CBF_Modern_Farmhouse</defName>
-    <label>Bauernhaus</label>
+    <label>CBF_Modern_Farmhouse</label>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_ModernFarmHouse</li>
     </categories>
     <style>CBF_ModernVanilla</style>
+
     <legend>
-      <li>
-        <symbol>D</symbol>
-        <thing>Door</thing>
-        <stuff>Steel</stuff>
-      </li>
-      <li>
-        <symbol>F</symbol>
-        <terrain>Concrete</terrain>
-      </li>
-      <li>
-        <symbol>R</symbol>
-        <roof>RoofConstructed</roof>
-      </li>
-      <li>
-        <symbol>W</symbol>
-        <thing>Wall</thing>
-        <stuff>BlocksGranite</stuff>
-      </li>
-      <li>
-        <symbol>b</symbol>
-        <thing>Bed</thing>
-        <stuff>WoodLog</stuff>
-        <rotation>North</rotation>
-      </li>
-      <li>
-        <symbol>c</symbol>
-        <thing>DiningChair</thing>
-        <stuff>WoodLog</stuff>
-      </li>
-      <li>
-        <symbol>l</symbol>
-        <thing>TorchLamp</thing>
-      </li>
-      <li>
-        <symbol>t</symbol>
-        <thing>Table2x2c</thing>
-        <stuff>WoodLog</stuff>
-      </li>
+      <li><symbol>W</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>C</symbol><thing>Door</thing><stuff>Steel</stuff></li>
+      <li><symbol>F</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>P</symbol><thing>ElectricStove</thing><rotation>East</rotation></li>
+      <li><symbol>R</symbol><terrain>Granite_RoughHewn</terrain></li>
+      <li><symbol>L</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>S</symbol><thing>Column</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>G</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>H</symbol><thing>WallLamp</thing><rotation>East</rotation></li>
+      <li><symbol>K</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>M</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>N</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>Q</symbol><thing>WallLamp</thing><rotation>West</rotation></li>
+      <li><symbol>U</symbol><thing>Couch</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
+      <li><symbol>V</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>X</symbol><thing>DoubleBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>Y</symbol><thing>WallLamp</thing></li>
+      <li><symbol>Z</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>a</symbol><thing>TubeTelevision</thing></li>
+      <li><symbol>e</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>b</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects><lootTable>CBF_Loot_Vanilla_Wohnhaus</lootTable></li>
+      <li><symbol>d</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses1x1</objects><lootTable>CBF_Loot_Vanilla_Wohnhaus</lootTable></li>
+      <li><symbol>f</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects></li>
     </legend>
+
     <mask>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
+      <li>#######...</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
     </mask>
-    <things>
-      <li>WWWDWWW</li>
-      <li>W.....W</li>
-      <li>Wb...bW</li>
-      <li>W.....W</li>
-      <li>W.....W</li>
-      <li>Wct...W</li>
-      <li>W.....W</li>
-      <li>W....lW</li>
-      <li>WWWWWWW</li>
-    </things>
+
     <terrain>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
+      <li>WWWWWWW...</li>
+      <li>WWWWWWWRRR</li>
+      <li>WWWWWWWRRR</li>
+      <li>WWWWWWWRRR</li>
+      <li>WWWWWWWWWW</li>
+      <li>WWWWWWWWWW</li>
+      <li>WWWWWWWWWW</li>
+      <li>WWWWWWWWWW</li>
+      <li>WWWWWWWWWW</li>
     </terrain>
+
+    <things>
+      <li>TTTCTTT...</li>
+      <li>TFF...TL.S</li>
+      <li>TG...HT...</li>
+      <li>TNN..PTK.M</li>
+      <li>TQ..TTTTTT</li>
+      <li>TU..V.Y.ZT</li>
+      <li>T.....X..T</li>
+      <li>Ta.e.....T</li>
+      <li>TTTTTTTTTT</li>
+    </things>
+
+    <things2>
+      <li>BBBBBBB...</li>
+      <li>B.....B...</li>
+      <li>B.....B...</li>
+      <li>B.....B...</li>
+      <li>B...BBBBBB</li>
+      <li>B........B</li>
+      <li>B........B</li>
+      <li>B........B</li>
+      <li>BBBBBBBBBB</li>
+    </things2>
+
     <roof>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
-      <li>RRRRRRR</li>
+      <li>DDDDDDD...</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDD.</li>
     </roof>
+
+    <anchors>
+      <li>..........</li>
+      <li>..........</li>
+      <li>.......f..</li>
+      <li>.......f..</li>
+      <li>..........</li>
+      <li>....d.....</li>
+      <li>..........</li>
+      <li>...bb.....</li>
+      <li>..........</li>
+    </anchors>
   </CustomBaseFramework.PieceDef>
   <CustomBaseFramework.PaletteDef>
     <defName>CBF_Modern_Palette</defName>
@@ -269,6 +193,13 @@
         <role>PEN_MARKER</role>
         <chain>
           <li>PenMarker</li>
+        </chain>
+      </li>
+      <li>
+        <role>CONDUIT</role>
+        <chain>
+          <li>HiddenConduit</li>
+          <li>PowerConduit</li>
         </chain>
       </li>
       <li>
@@ -334,9 +265,12 @@
         <roadEdges>
           <li>PavedTile</li>
         </roadEdges>
-        <emplacements>
-          <li>CBF_ModernDefense</li>
-        </emplacements>
+        <walls>
+          <li>CBF_ModernWall</li>
+        </walls>
+        <gatehouses>
+          <li>CBF_Modern_Gatehouse</li>
+        </gatehouses>
         <districts>
           <li>
             <name>Zentrum</name>
@@ -367,7 +301,7 @@
           <li>
             <name>Wohnviertel</name>
             <entries>
-              <li><piece>CBF_Modern_House</piece><count>14~22</count></li>
+              <li><tag>ModernHouseSmall</tag><count>20~30</count></li>
             </entries>
           </li>
         </districts>
@@ -395,7 +329,25 @@
           <li>
             <name>Umland</name>
             <entries>
-              <li><tag>CBF_ModernDefense</tag><count>2~4</count></li>
+              <li><tag>CBF_ModernDefense</tag><count>4~4</count></li>
+            </entries>
+          </li>
+          <li>
+            <name>Farming</name><fields><li>
+              <name>Acker</name>
+              <count>2~3</count>
+              <fence>true</fence>
+              <weight>1</weight><plants>
+                <li>Plant_Rice</li>
+               </plants></li></fields><pens><li>
+              <name>Gehege</name>
+              <count>1~2</count>
+              <herd>3~7</herd>
+              <pawns>Hardanimals_1</pawns>
+              <fence>true</fence>
+              <weight>1</weight></li></pens>
+            <entries>
+              <li><piece>CBF_Modern_Farmhouse</piece><count>2~4</count></li>
             </entries>
           </li>
         </districts>
@@ -451,68 +403,89 @@
   </CustomBaseFramework.PieceDef>
   <CustomBaseFramework.PieceDef>
     <defName>CBF_Modern_Gatehouse</defName>
-    <label>Torhaus (Vanilla)</label>
+    <label>CBF_Modern_Gatehouse</label>
     <schemaVersion>2</schemaVersion>
-    <style>CBF_ModernVanilla</style>
     <categories>
       <li>WallGateHouse</li>
     </categories>
+    <type>WallPart</type>
+    <style>CBF_ModernVanilla</style>
+
     <legend>
-      <li>
-        <symbol>W</symbol>
-        <thing>Wall</thing>
-        <stuff>BlocksGranite</stuff>
-      </li>
-      <li>
-        <symbol>D</symbol>
-        <thing>Door</thing>
-        <stuff>Steel</stuff>
-      </li>
-      <li>
-        <symbol>F</symbol>
-        <terrain>Concrete</terrain>
-      </li>
-      <li>
-        <symbol>A</symbol>
-        <anchor>Wall</anchor>
-        <anchorKind>Connect</anchorKind>
-      </li>
+      <li><symbol>W</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Barricade</thing><stuff>Steel</stuff></li>
+      <li><symbol>B</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>C</symbol><terrain>PavedTile</terrain></li>
+      <li><symbol>F</symbol><thing>Turret_MiniTurret</thing><stuff>Steel</stuff></li>
+      <li><symbol>P</symbol><thing>FloodLight</thing></li>
+      <li><symbol>R</symbol><thing>WallLamp</thing><rotation>West</rotation></li>
+      <li><symbol>L</symbol><thing>WallLamp</thing><rotation>East</rotation></li>
+      <li><symbol>S</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>G</symbol><thing>Door</thing><stuff>Steel</stuff></li>
+      <li><symbol>H</symbol><thing>ChemfuelPoweredGenerator</thing></li>
+      <li><symbol>K</symbol><anchor>Wall</anchor></li>
+      <li><symbol>M</symbol><anchor>Outside</anchor></li>
     </legend>
+
     <mask>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
-      <li>#######</li>
+      <li>#####################</li>
+      <li>#####################</li>
+      <li>#####################</li>
+      <li>#####################</li>
+      <li>#####################</li>
+      <li>#####################</li>
+      <li>#####################</li>
     </mask>
-    <things>
-      <li>WWWDWWW</li>
-      <li>W.....W</li>
-      <li>W.....W</li>
-      <li>W.....W</li>
-      <li>W.....W</li>
-      <li>W.....W</li>
-      <li>WWWDWWW</li>
-    </things>
+
     <terrain>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
-      <li>FFFFFFF</li>
+      <li>WWWWWWWWWWCWWWWWWWWWW</li>
+      <li>WWWWWWWWWWCWWWWWWWWWW</li>
+      <li>WWWWWWWWWWCWWWWWWWWWW</li>
+      <li>WWWWWWWWWWCWWWWWWWWWW</li>
+      <li>WWWWWWWWWWCWWWWWWWWWW</li>
+      <li>WWWWWWWWWWCWWWWWWWWWW</li>
+      <li>WWWWWWWWWWCWWWWWWWWWW</li>
     </terrain>
+
+    <things>
+      <li>TTTBTTT...B...TTTBTTT</li>
+      <li>BFTPTFBR..T..LBFTPTFB</li>
+      <li>BBBGBBBSSSBSSSBBBGBBB</li>
+      <li>B.....B...T...B.....B</li>
+      <li>B...H.B...B...BH....B</li>
+      <li>B.....B...T...B.....B</li>
+      <li>BBBGBBBSSSBSSSBBBGBBB</li>
+    </things>
+
+    <things2>
+      <li>.....................</li>
+      <li>.....................</li>
+      <li>SSSSSSS..LSR..SSSSSSS</li>
+      <li>S.....S.......S.....S</li>
+      <li>S.....S.......S.....S</li>
+      <li>S.....S.......S.....S</li>
+      <li>SSSSSSS..LSR..SSSSSSS</li>
+    </things2>
+
+    <roof>
+      <li>DDDDDDDDDDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDDDDDDDDDD</li>
+    </roof>
+
     <anchors>
-      <li>.......</li>
-      <li>.......</li>
-      <li>.......</li>
-      <li>A.....A</li>
-      <li>.......</li>
-      <li>.......</li>
-      <li>.......</li>
+      <li>..........M..........</li>
+      <li>.....................</li>
+      <li>.....................</li>
+      <li>K...................K</li>
+      <li>.....................</li>
+      <li>.....................</li>
+      <li>.....................</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 </Defs>

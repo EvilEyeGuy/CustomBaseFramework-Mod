@@ -15,22 +15,23 @@
       <li><symbol>W</symbol><terrain>Granite_RoughHewn</terrain></li>
       <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>B</symbol><terrain>WoodPlankFloor</terrain></li>
-      <li><symbol>C</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>F</symbol><thing>DoubleBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>P</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>R</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>L</symbol><thing>StandingLamp</thing></li>
-      <li><symbol>S</symbol><thing>Dresser</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>G</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>H</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>K</symbol><terrain>FlagstoneGranite</terrain></li>
-      <li><symbol>M</symbol><thing>PlantPot</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>N</symbol><terrain>TileGranite</terrain></li>
-      <li><symbol>Q</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>C</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>F</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>P</symbol><thing>DoubleBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>R</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>L</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>S</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>G</symbol><thing>Dresser</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>H</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>K</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>M</symbol><terrain>FlagstoneGranite</terrain></li>
+      <li><symbol>N</symbol><thing>PlantPot</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>Q</symbol><terrain>TileGranite</terrain></li>
+      <li><symbol>Y</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>V</symbol><anchor>Loot</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects><lootTable>CBF_Loot_Haushalt</lootTable></li>
       <li><symbol>U</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Neu4</pawnList></li>
-      <li><symbol>V</symbol><anchor>Loot</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_Neu</objects><lootTable>CBF_Loot_Haushalt</lootTable></li>
-      <li><symbol>X</symbol><anchor>Loot1x1</anchor><anchorKind>Fill</anchorKind><objects>RW_1x1</objects><lootTable>CBF_Loot_Haushalt</lootTable></li>
+      <li><symbol>X</symbol><anchor>Loot1x1</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses1x1</objects><lootTable>CBF_Loot_Vanilla_Wohnhaus</lootTable></li>
     </legend>
 
     <mask>
@@ -47,27 +48,39 @@
 
     <terrain>
       <li>....WWWWWW</li>
-      <li>....WBBBBW</li>
-      <li>WWBWWBBBBW</li>
-      <li>WBBBBBBBBW</li>
-      <li>WBBBBBBBBW</li>
-      <li>WBBBBWKWWW</li>
-      <li>WBBBBWNKW.</li>
-      <li>WWWWWWKNW.</li>
+      <li>....WCCCCW</li>
+      <li>WWCWWCCCCW</li>
+      <li>WCCCCCCCCW</li>
+      <li>WCCCCCCCCW</li>
+      <li>WCCCCWMWWW</li>
+      <li>WCCCCWQMW.</li>
+      <li>WWWWWWMQW.</li>
       <li>.....WWWW.</li>
     </terrain>
 
     <things>
       <li>....TTTTTT</li>
-      <li>....TC..CT</li>
-      <li>TTPTT.F..T</li>
-      <li>TR.......T</li>
-      <li>T....L.S.T</li>
-      <li>T...HTPTTT</li>
-      <li>TM.GHT..T.</li>
-      <li>TTTTTTQ.T.</li>
+      <li>....TF..FT</li>
+      <li>TTRTTBP..T</li>
+      <li>TL...B...T</li>
+      <li>T....S.G.T</li>
+      <li>T...KTRTTT</li>
+      <li>TN.HKT..T.</li>
+      <li>TTTTTTY.T.</li>
       <li>.....TTTT.</li>
     </things>
+
+    <things2>
+      <li>....BBBBBB</li>
+      <li>....B....B</li>
+      <li>BBBBB....B</li>
+      <li>B........B</li>
+      <li>B....B...B</li>
+      <li>B....BBBBB</li>
+      <li>B....B..B.</li>
+      <li>BBBBBB..B.</li>
+      <li>.....BBBB.</li>
+    </things2>
 
     <roof>
       <li>....DDDDDD</li>

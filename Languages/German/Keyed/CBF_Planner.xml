@@ -124,6 +124,41 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_CheckFailed>Pruefung gescheitert, {0} Fehler.</CBF_CheckFailed>
   <CBF_NErrors>{0} Fehler</CBF_NErrors>
   <CBF_NeedAWorld>Keine Welt geladen.</CBF_NeedAWorld>
+  <CBF_BuildTitle>{0} bauen</CBF_BuildTitle>
+  <CBF_Field_faction>Fraktion</CBF_Field_faction>
+  <CBF_Field_biome>Biom</CBF_Field_biome>
+  <CBF_Field_hilliness>Gelaende</CBF_Field_hilliness>
+  <CBF_Field_river>Fluss</CBF_Field_river>
+  <CBF_Field_coast>Kueste</CBF_Field_coast>
+  <CBF_WantYes>Ja</CBF_WantYes>
+  <CBF_WantNo>Nein</CBF_WantNo>
+  <CBF_TilesMatching>{0} passende Felder gefunden</CBF_TilesMatching>
+  <CBF_TilesNoneHelp>Auf dieser Welt erfuellt kein Feld alles zugleich. Lockere eine Bedingung.</CBF_TilesNoneHelp>
+  <CBF_T_leer>Leer</CBF_T_leer>
+  <CBF_TDesc_leer>Leerfelder malen: die Zelle gehoert zum Baustein, gebaut wird dort aber nichts.</CBF_TDesc_leer>
+  <CBF_T_leerweg>Leer weg</CBF_T_leerweg>
+  <CBF_TDesc_leerweg>Nimmt Leerfelder wieder weg und legt den zugedeckten Boden zurueck.</CBF_TDesc_leerweg>
+  <CBF_OpenEditorTool>Editor oeffnen</CBF_OpenEditorTool>
+  <CBF_OpenEditorToolDesc>Oeffnet den Editor des Custom Base Framework. Nochmal druecken schliesst ihn. Alle Zeichenwerkzeuge stehen im Editorfenster selbst.</CBF_OpenEditorToolDesc>
+  <CBF_AnchorCopy>Kopieren</CBF_AnchorCopy>
+  <CBF_AnchorCopyTip>Legt eine Kopie dieses Ankers an, mit denselben Einstellungen und derselben Form, und gibt dir gleich das Versetzwerkzeug in die Hand.</CBF_AnchorCopyTip>
+  <CBF_AnchorCopied>{0} kopiert. Klick auf die Karte, um sie hinzusetzen.</CBF_AnchorCopied>
+  <CBF_AnchorMove>Versetzen</CBF_AnchorMove>
+  <CBF_AnchorMoveDesc>Versetzt den gewaehlten Anker im Ganzen. Klick auf eine Zelle, dort landet seine Mitte.</CBF_AnchorMoveDesc>
+  <CBF_AnchorMoveTip>Klick auf eine Zelle im Baustein, dann wandert der ganze Anker dorthin und behaelt seine Form.</CBF_AnchorMoveTip>
+  <CBF_AnchorPaintShort>Malen</CBF_AnchorPaintShort>
+  <CBF_AnchorPickFirst>Waehle zuerst einen Anker.</CBF_AnchorPickFirst>
+  <CBF_AnchorEmpty>Dieser Anker hat noch keine Zellen. Mal ihn zuerst.</CBF_AnchorEmpty>
+  <CBF_AnchorWontFit>Hier wuerde der Anker aus dem Baustein ragen.</CBF_AnchorWontFit>
+  <CBF_WardDistricts>{0} Bezirk(e), {1} Eintraege</CBF_WardDistricts>
+  <CBF_WardLand>{0} Acker, {1} Gehege</CBF_WardLand>
+  <CBF_StateUnsaved>ungesichert *</CBF_StateUnsaved>
+  <CBF_StateSaved>gesichert</CBF_StateSaved>
+  <CBF_StateChecked>geprueft</CBF_StateChecked>
+  <CBF_StateErrors>{0} Fehler</CBF_StateErrors>
+  <CBF_StateTip>Zustand von {0}. Die Fehlerzahl stammt aus der letzten Pruefung; der Export prueft ohnehin noch einmal.</CBF_StateTip>
+  <CBF_PreviewPhoto>Bild</CBF_PreviewPhoto>
+  <CBF_PreviewGrid>Raster</CBF_PreviewGrid>
   <CBF_BiomeAny>Gelaende egal</CBF_BiomeAny>
   <CBF_NoTileFound>Kein freies Feld fuer {0} gefunden. Nimm ein anderes Gelaende.</CBF_NoTileFound>
   <CBF_WorldBuilt>{0} fuer {1} als {2} in {3} gesetzt. Die Karte wird jetzt erzeugt.</CBF_WorldBuilt>
@@ -136,6 +171,7 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_WorldPlaced>{0} fuer {1} gesetzt. Ortstyp: {2}</CBF_WorldPlaced>
   <CBF_WorldPlan>Ortstyp: {0}</CBF_WorldPlan>
   <CBF_WorldParts>{0} Stadtteil(e), {1}</CBF_WorldParts>
+  <CBF_WorldPalette>Palette: {0}</CBF_WorldPalette>
   <CBF_WorldWalled>ummauert</CBF_WorldWalled>
   <CBF_WorldOpen>offen</CBF_WorldOpen>
   <CBF_ExportHasErrors>{0} hat {1} Fehler. Trotzdem exportieren?

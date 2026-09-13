@@ -158,6 +158,41 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_CheckFailed>Check failed, {0} error(s).</CBF_CheckFailed>
   <CBF_NErrors>{0} error(s)</CBF_NErrors>
   <CBF_NeedAWorld>No world loaded.</CBF_NeedAWorld>
+  <CBF_BuildTitle>Build {0}</CBF_BuildTitle>
+  <CBF_Field_faction>Faction</CBF_Field_faction>
+  <CBF_Field_biome>Biome</CBF_Field_biome>
+  <CBF_Field_hilliness>Terrain</CBF_Field_hilliness>
+  <CBF_Field_river>River</CBF_Field_river>
+  <CBF_Field_coast>Coast</CBF_Field_coast>
+  <CBF_WantYes>Yes</CBF_WantYes>
+  <CBF_WantNo>No</CBF_WantNo>
+  <CBF_TilesMatching>{0} matching tiles found</CBF_TilesMatching>
+  <CBF_TilesNoneHelp>No tile on this world meets all of these at once. Loosen one condition.</CBF_TilesNoneHelp>
+  <CBF_T_leer>Blank</CBF_T_leer>
+  <CBF_TDesc_leer>Paint blank cells: the cell belongs to the piece, but nothing is built there.</CBF_TDesc_leer>
+  <CBF_T_leerweg>Unblank</CBF_T_leerweg>
+  <CBF_TDesc_leerweg>Removes blank cells and puts the covered floor back.</CBF_TDesc_leerweg>
+  <CBF_OpenEditorTool>Open editor</CBF_OpenEditorTool>
+  <CBF_OpenEditorToolDesc>Opens the Custom Base Framework editor. Press again to close it. All drawing tools live inside the editor panel.</CBF_OpenEditorToolDesc>
+  <CBF_AnchorCopy>Copy</CBF_AnchorCopy>
+  <CBF_AnchorCopyTip>Makes a copy of this anchor with the same settings and the same shape, and puts the move tool in your hand right away.</CBF_AnchorCopyTip>
+  <CBF_AnchorCopied>{0} copied. Click on the map to place it.</CBF_AnchorCopied>
+  <CBF_AnchorMove>Move</CBF_AnchorMove>
+  <CBF_AnchorMoveDesc>Moves the selected anchor as a whole. Click a cell and its centre lands there.</CBF_AnchorMoveDesc>
+  <CBF_AnchorMoveTip>Click a cell inside the piece and the whole anchor moves there, keeping its shape.</CBF_AnchorMoveTip>
+  <CBF_AnchorPaintShort>Paint</CBF_AnchorPaintShort>
+  <CBF_AnchorPickFirst>Pick an anchor first.</CBF_AnchorPickFirst>
+  <CBF_AnchorEmpty>This anchor has no cells yet. Paint it first.</CBF_AnchorEmpty>
+  <CBF_AnchorWontFit>The anchor would stick out of the piece here.</CBF_AnchorWontFit>
+  <CBF_WardDistricts>{0} district(s), {1} entries</CBF_WardDistricts>
+  <CBF_WardLand>{0} field(s), {1} pen(s)</CBF_WardLand>
+  <CBF_StateUnsaved>unsaved *</CBF_StateUnsaved>
+  <CBF_StateSaved>saved</CBF_StateSaved>
+  <CBF_StateChecked>checked</CBF_StateChecked>
+  <CBF_StateErrors>{0} error(s)</CBF_StateErrors>
+  <CBF_StateTip>State of {0}. Errors come from the last check; the export runs it again anyway.</CBF_StateTip>
+  <CBF_PreviewPhoto>Image</CBF_PreviewPhoto>
+  <CBF_PreviewGrid>Grid</CBF_PreviewGrid>
   <CBF_BiomeAny>Any terrain</CBF_BiomeAny>
   <CBF_NoTileFound>No free tile found for {0}. Try another terrain.</CBF_NoTileFound>
   <CBF_WorldBuilt>{0} placed for {1} as {2} in {3}. Generating the map now.</CBF_WorldBuilt>
@@ -170,6 +205,7 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_WorldPlaced>{0} placed for {1}. Type: {2}</CBF_WorldPlaced>
   <CBF_WorldPlan>Settlement type: {0}</CBF_WorldPlan>
   <CBF_WorldParts>{0} district(s), {1}</CBF_WorldParts>
+  <CBF_WorldPalette>Palette: {0}</CBF_WorldPalette>
   <CBF_WorldWalled>walled</CBF_WorldWalled>
   <CBF_WorldOpen>open</CBF_WorldOpen>
   <CBF_ExportHasErrors>{0} has {1} error(s). Export anyway?

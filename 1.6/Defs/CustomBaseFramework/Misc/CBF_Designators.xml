@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Eigener Reiter in der Baumenue-Leiste, damit die Editorwerkzeuge nicht
-       zwischen den normalen Zonen liegen. -->
   <DesignationCategoryDef>
     <defName>CBF_Editor</defName>
     <label>CBF base editor</label>
-    <description>Werkzeuge, um Bausteine fuer das Custom Base Framework zu markieren und zu exportieren.</description>
-    <!-- Vanilla reicht von 25 bis 900, hoeher heisst weiter oben. Mit 5 stand
-         der Reiter unter allem, was Mods noch dazulegen, und war praktisch
-         unauffindbar. 950 setzt ihn an die Spitze, sichtbar ist er ohnehin nur
-         im Entwicklermodus. -->
+    <description>Opens the Custom Base Framework editor. The drawing tools live inside the editor panel.</description>
     <order>950</order>
-    <!-- 1.6 heisst das Feld specialDesignatorClasses und nimmt Typnamen,
-         keine Class-Attribute. -->
     <specialDesignatorClasses>
-      <li>CustomBaseFramework.Designator_PieceRegion</li>
-      <li>CustomBaseFramework.Designator_PieceRegionRemove</li>
-      <li>CustomBaseFramework.Designator_Leerfeld</li>
-      <li>CustomBaseFramework.Designator_LeerfeldWeg</li>
+      <li>CustomBaseFramework.Designator_EditorOeffnen</li>
     </specialDesignatorClasses>
   </DesignationCategoryDef>
 

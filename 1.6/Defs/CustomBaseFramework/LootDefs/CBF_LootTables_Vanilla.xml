@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Loot_Vanilla_Wohnhaus</defName>
-    <label>Wohnhaus</label>
-    <rolls>2~4</rolls>
-    <uniqueEntries>true</uniqueEntries>
-    <entries>
-      <li><weight>20</weight><thing>MealSimple</thing><count>1~4</count></li>
-      <li><weight>10</weight><thing>MealNutrientPaste</thing><count>1~4</count></li>
-      <li><weight>14</weight><thing>Pemmican</thing><count>5~20</count></li>
-      <li><weight>16</weight><thing>RawPotatoes</thing><count>10~35</count></li>
-      <li><weight>14</weight><thing>RawRice</thing><count>10~35</count></li>
-      <li><weight>12</weight><thing>RawCorn</thing><count>10~30</count></li>
-      <li><weight>10</weight><thing>RawBerries</thing><count>5~20</count></li>
-      <li><weight>16</weight><thing>Cloth</thing><count>10~40</count></li>
-      <li><weight>14</weight><thing>WoodLog</thing><count>20~60</count></li>
-      <li><weight>12</weight><thing>Silver</thing><count>10~60</count></li>
-      <li><weight>10</weight><thing>Beer</thing><count>3~12</count></li>
-      <li><weight>8</weight><thing>Chocolate</thing><count>2~8</count></li>
-      <li><weight>10</weight><thing>MedicineHerbal</thing><count>1~4</count></li>
-      <li><weight>6</weight><thing>Novel</thing><count>1</count></li>
-      <li><weight>6</weight><thing>Kibble</thing><count>10~30</count></li>
-      <li MayRequire="Ludeon.RimWorld.Biotech"><weight>6</weight><thing>BabyFood</thing><count>2~8</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="Ludeon.RimWorld.Odyssey"><weight>5</weight><thing>Drug_Psilocap</thing><count>1~4</count><onMissing>Skip</onMissing></li>
-    </entries>
-  </CustomBaseFramework.LootTableDef>
+  <CustomBaseFramework.LootTableDef><defName>CBF_Loot_Vanilla_Wohnhaus</defName><label>Wohnhaus</label><rolls>2~4</rolls><uniqueEntries>true</uniqueEntries><entries><li><thing>MealSimple</thing><weight>20</weight><count>1~4</count></li><li><thing>MealNutrientPaste</thing><weight>10</weight><count>1~4</count></li><li><thing>Pemmican</thing><weight>14</weight><count>5~20</count></li><li><thing>RawPotatoes</thing><weight>16</weight><count>10~35</count></li><li><thing>RawRice</thing><weight>14</weight><count>10~35</count></li><li><thing>RawCorn</thing><weight>12</weight><count>10~30</count></li><li><thing>RawBerries</thing><weight>10</weight><count>5~20</count></li><li><thing>Cloth</thing><weight>16</weight><count>10~40</count></li><li><thing>Silver</thing><weight>12</weight><count>10~60</count></li><li><thing>Beer</thing><weight>10</weight><count>3~12</count></li><li><thing>Chocolate</thing><weight>8</weight><count>2~8</count></li><li><thing>MedicineHerbal</thing><weight>10</weight><count>1~4</count></li><li><thing>Novel</thing><weight>6</weight></li><li><thing>Kibble</thing><weight>6</weight><count>10~30</count></li><li><thing>Apparel_Parka</thing><weight>20</weight></li><li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_Apparel_Trousers</thing><weight>20</weight></li><li><thing>Gun_Autopistol</thing><weight>5</weight></li><li><thing>Apparel_BasicShirt</thing><weight>20</weight></li><li><thing>Gold</thing><weight>3</weight><count>5~30</count></li><li><thing>Silver</thing><weight>4</weight><count>9~50</count></li></entries></CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_Loot_Vanilla_Schlafstelle</defName>

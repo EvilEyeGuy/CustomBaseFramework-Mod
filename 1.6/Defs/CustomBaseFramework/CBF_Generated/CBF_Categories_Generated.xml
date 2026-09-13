@@ -22,8 +22,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Tent</defName>
-    <label>CBF_Tent</label>
+    <defName>CBF_ModernHouseLarge</defName>
+    <label>CBF_ModernHouseLarge</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -31,13 +31,12 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>Church</defName>
-    <label>Kirche</label>
+    <defName>CBF_Tent</defName>
+    <label>CBF_Tent</label>
     <zones>
       <li>Inside</li>
     </zones>
-    <countPerSettlement>0~1</countPerSettlement>
-    <unique>true</unique>
+    <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>

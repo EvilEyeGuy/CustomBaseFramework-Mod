@@ -62,6 +62,7 @@
   <CBF_Planner_WallEdge>Mauerprofil braucht eine geschlossene Außenkante: {0}.</CBF_Planner_WallEdge>
   <CBF_Planner_NoAllowedGate>Keine verfügbare, im Stadtteil erlaubte Torhausvorlage für Ebene {0}.</CBF_Planner_NoAllowedGate>
   <CBF_Planner_NoGateSite>Keine passende erlaubte Torhausvorlage für Ebene {0} an dieser Lage.</CBF_Planner_NoGateSite>
+  <CBF_Planner_GateHole>Fuer Ebene {0} passte kein Torhaus. Die Mauer bekommt dort einen offenen Durchgang.</CBF_Planner_GateHole>
   <CBF_Planner_NoFarmPlot>Für Umlandhaus {0} passt hier keine Farmparzelle mit mindestens 100 Anbauzellen.</CBF_Planner_NoFarmPlot>
   <CBF_Planner_Maximum>Harte Obergrenze verletzt: {0}.</CBF_Planner_Maximum>
   <CBF_Planner_UnservedCorner>Eine längere Mauerecke hat keinen passenden Turm mit vollständigen Ankeranschlüssen. Es wird eine andere Lage gesucht.</CBF_Planner_UnservedCorner>
@@ -159,6 +160,21 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_StateTip>Zustand von {0}. Die Fehlerzahl stammt aus der letzten Pruefung; der Export prueft ohnehin noch einmal.</CBF_StateTip>
   <CBF_PreviewPhoto>Bild</CBF_PreviewPhoto>
   <CBF_PreviewGrid>Raster</CBF_PreviewGrid>
+  <CBF_PreviewConfig>Dieser Ortstyp kann so nicht aufgehen:</CBF_PreviewConfig>
+  <CBF_Planner_ExitsBlocked>Die Tore erreichen den Kartenrand nicht.</CBF_Planner_ExitsBlocked>
+  <CBF_ShowPiecesTip>Zeigt, welche Bausteine {0} bedient. Ein Klick oeffnet einen davon.</CBF_ShowPiecesTip>
+  <CBF_NoPiecesInCategory>Zu {0} gehoert kein Baustein.</CBF_NoPiecesInCategory>
+  <CBF_CategoryPieceCount>{0} Baustein(e)</CBF_CategoryPieceCount>
+  <CBF_CategoryClickToOpen>Klick oeffnet diesen Baustein.</CBF_CategoryClickToOpen>
+  <CBF_CardImage>Vorschau</CBF_CardImage>
+  <CBF_CardBasics>Stammdaten</CBF_CardBasics>
+  <CBF_CardWallSide>Mauerseite</CBF_CardWallSide>
+  <CBF_AnchorNoCopyConnect>Ein Anschluss laesst sich nicht kopieren. Je Baustein gibt es hoechstens einen Wall und einen Outside; ein zweiter mit demselben Namen taete nichts.</CBF_AnchorNoCopyConnect>
+  <CBF_PartGeneral>Allgemein</CBF_PartGeneral>
+  <CBF_PartArea>Flaeche</CBF_PartArea>
+  <CBF_PartAnchors>Anker</CBF_PartAnchors>
+  <CBF_NoRegionShort>keine</CBF_NoRegionShort>
+  <CBF_AnchorSelected>Anker {0}</CBF_AnchorSelected>
   <CBF_BiomeAny>Gelaende egal</CBF_BiomeAny>
   <CBF_NoTileFound>Kein freies Feld fuer {0} gefunden. Nimm ein anderes Gelaende.</CBF_NoTileFound>
   <CBF_WorldBuilt>{0} fuer {1} als {2} in {3} gesetzt. Die Karte wird jetzt erzeugt.</CBF_WorldBuilt>

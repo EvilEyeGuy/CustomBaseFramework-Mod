@@ -62,6 +62,7 @@
   <CBF_Planner_WallEdge>Wall profile needs a closed outer edge: {0}.</CBF_Planner_WallEdge>
   <CBF_Planner_NoAllowedGate>No available permitted gatehouse template for layer {0}.</CBF_Planner_NoAllowedGate>
   <CBF_Planner_NoGateSite>No permitted gatehouse template fits layer {0} at this site.</CBF_Planner_NoGateSite>
+  <CBF_Planner_GateHole>No gatehouse fitted layer {0}. The wall gets an open passage there instead.</CBF_Planner_GateHole>
   <CBF_Planner_NoFarmPlot>No farm plot with at least 100 growing cells fits rural house {0} at this site.</CBF_Planner_NoFarmPlot>
   <CBF_Planner_Maximum>Hard upper limit exceeded: {0}.</CBF_Planner_Maximum>
   <CBF_Planner_UnservedCorner>A major wall corner has no suitable tower with complete anchor connections. Another site will be tried.</CBF_Planner_UnservedCorner>
@@ -193,6 +194,21 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_StateTip>State of {0}. Errors come from the last check; the export runs it again anyway.</CBF_StateTip>
   <CBF_PreviewPhoto>Image</CBF_PreviewPhoto>
   <CBF_PreviewGrid>Grid</CBF_PreviewGrid>
+  <CBF_PreviewConfig>This settlement type cannot work as configured:</CBF_PreviewConfig>
+  <CBF_Planner_ExitsBlocked>The gates do not reach the map edge.</CBF_Planner_ExitsBlocked>
+  <CBF_ShowPiecesTip>Shows which pieces {0} covers. Click one to open it.</CBF_ShowPiecesTip>
+  <CBF_NoPiecesInCategory>No piece belongs to {0}.</CBF_NoPiecesInCategory>
+  <CBF_CategoryPieceCount>{0} piece(s)</CBF_CategoryPieceCount>
+  <CBF_CategoryClickToOpen>Click to open this piece.</CBF_CategoryClickToOpen>
+  <CBF_CardImage>Preview</CBF_CardImage>
+  <CBF_CardBasics>Basics</CBF_CardBasics>
+  <CBF_CardWallSide>Wall side</CBF_CardWallSide>
+  <CBF_AnchorNoCopyConnect>A connect anchor cannot be copied. A piece has at most one Wall and one Outside; a second one with the same name would do nothing.</CBF_AnchorNoCopyConnect>
+  <CBF_PartGeneral>General</CBF_PartGeneral>
+  <CBF_PartArea>Area</CBF_PartArea>
+  <CBF_PartAnchors>Anchors</CBF_PartAnchors>
+  <CBF_NoRegionShort>none</CBF_NoRegionShort>
+  <CBF_AnchorSelected>Anchor {0}</CBF_AnchorSelected>
   <CBF_BiomeAny>Any terrain</CBF_BiomeAny>
   <CBF_NoTileFound>No free tile found for {0}. Try another terrain.</CBF_NoTileFound>
   <CBF_WorldBuilt>{0} placed for {1} as {2} in {3}. Generating the map now.</CBF_WorldBuilt>

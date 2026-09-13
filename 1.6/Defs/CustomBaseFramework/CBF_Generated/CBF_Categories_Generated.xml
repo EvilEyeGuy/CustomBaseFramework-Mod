@@ -4,6 +4,15 @@
 <Defs>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_EnergyProduction</defName>
+    <label>CBF_EnergyProduction</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>Church</defName>
     <label>Kirche</label>
     <zones>

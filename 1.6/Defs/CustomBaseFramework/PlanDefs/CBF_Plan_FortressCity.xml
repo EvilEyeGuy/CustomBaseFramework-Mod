@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Dupliziert aus CBF_Plan_Marktstadt. -->
 <Defs>
 
-  <!-- Ortstypen, die ausschliesslich selbst gezeichnete Bausteine anfordern.
-       Kein Tag steht hier, fuer den es kein Piece gibt: sonst bleiben Luecken,
-       die man spaeter faelschlich fuer einen Fehler des Generators haelt. -->
-
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_Marktstadt</defName>
-    <label>Marktstadt</label>
+    <defName>CBF_Plan_FortressCity</defName>
+    <label>CBF_Plan_FortressCity</label>
 
     <!-- Erlaubte Stile, in dieser Reihenfolge. Der erste, der etwas hat,
          gewinnt. Ersetzt den frueheren Einzelstil. -->
@@ -92,11 +89,11 @@
         <gates>2~2</gates>
         <versorgung>1.2</versorgung>
         <walls>
-          <li>TownWall</li>
+          <li>TownWall_1x5</li>
         </walls>
         <emplacements>
-          <li><piece>Tower</piece><count>3~3</count></li>
           <li>LargeTower_9d</li>
+          <li>LargeTower_9d_B</li>
         </emplacements>
         <gatehouses>
           <li><piece>GateHouse</piece><count>1~2</count></li>
@@ -121,13 +118,13 @@
         <gates>1~1</gates>
         <versorgung>1.2</versorgung>
         <walls>
-          <li>Palisade</li>
+          <li>TownWall</li>
         </walls>
         <emplacements>
-          <li><piece>PalisadeTower</piece><count>2~3</count></li>
+          <li>Tower</li>
         </emplacements>
         <gatehouses>
-          <li><piece>Pallisader_GateHouse</piece><count>1~1</count></li>
+          <li>GateHouse</li>
         </gatehouses>
         <districts>
           <li>

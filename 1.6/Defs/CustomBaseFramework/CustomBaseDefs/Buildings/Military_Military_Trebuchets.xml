@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>Military_Trebuchets</defName>
+    <label>Military_Trebuchets</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>Military</li>
+    </categories>
+    <style>Standard</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>TileGranite</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_MarketTent_4c</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_Crate1x2c</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_RusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_Crate1x1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_Turret_Trebuchet</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_StoneBoulderTarred</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_StoneBoulder</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_ReinfocedLogGate</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>Q</symbol><anchor>Wall</anchor></li>
+      <li><symbol>U</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList></li>
+      <li><symbol>V</symbol><anchor>Spawn2</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList></li>
+    </legend>
+
+    <mask>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+    </mask>
+
+    <terrain>
+      <li>WWWWWWWWWWWWW</li>
+      <li>FFFFFFFFFFFFF</li>
+      <li>FFFFFFFFFFFFF</li>
+      <li>FFFFFFFFFFFFF</li>
+      <li>FFFFFFFFFFFFF</li>
+      <li>FFFFFFFFFFFFF</li>
+      <li>FFFFFFFFFFFFF</li>
+      <li>FFFFFFFFFFFFF</li>
+    </terrain>
+
+    <things>
+      <li>TTTTTTBTTTTTT</li>
+      <li>P...R...LCSGP</li>
+      <li>P..........KP</li>
+      <li>P...........P</li>
+      <li>P.H.........P</li>
+      <li>PM......H...P</li>
+      <li>PK.........MP</li>
+      <li>PPPPPPNPPPPPP</li>
+    </things>
+
+    <things2>
+      <li>.............</li>
+      <li>........R....</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+    </things2>
+
+    <roof>
+      <li>DDDDDDDDDDDDD</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+    </roof>
+
+    <anchors>
+      <li>.QQQQQQQQQQQ.</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.......V.....</li>
+      <li>......U......</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

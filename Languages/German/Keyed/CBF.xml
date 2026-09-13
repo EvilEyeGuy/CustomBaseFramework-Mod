@@ -335,6 +335,7 @@
   <CBF_Field_emplacements>Verteidigungsstellungen</CBF_Field_emplacements>
   <CBF_FieldDesc_emplacements>Welche Bausteine als Tuerme, Geschuetzstellungen und dergleichen dienen duerfen.</CBF_FieldDesc_emplacements>
   <CBF_Field_gatehouses>Torhaeuser</CBF_Field_gatehouses>
+  <CBF_WallNeededForWallParts>Ohne Mauer gibt es kein Tor, in das ein Torhaus passt. Verteidigungsstellungen gehen trotzdem, die setzt der Planer auf den Umriss der Stadt.</CBF_WallNeededForWallParts>
   <CBF_FieldDesc_gatehouses>Welche Bausteine als Torhaeuser dienen duerfen.</CBF_FieldDesc_gatehouses>
   <CBF_Field_defenderPoints>Verteidigerstaerke</CBF_Field_defenderPoints>
   <CBF_FieldDesc_defenderPoints>Wie stark die Verteidiger sind, als Punktespanne.</CBF_FieldDesc_defenderPoints>
@@ -465,6 +466,7 @@
   <CBF_AddAnchor>Neuer Anker</CBF_AddAnchor>
   <CBF_NoAnchors>Noch keine. Neuer Anker, dann mit dem Ankerwerkzeug malen.</CBF_NoAnchors>
   <CBF_AndMore>{0} weitere</CBF_AndMore>
+  <CBF_ShowFewer>weniger zeigen</CBF_ShowFewer>
   <CBF_AnchorPick>In diesen Anker malen.</CBF_AnchorPick>
   <CBF_AnchorKindTip>Connect dockt an einen Anker gleichen Namens an, und seine Laenge ist die Bedingung: dreizehn Felder Kaserne suchen dreizehn Felder Mauer. Fill stellt ein Objekt aus einer Liste hinein. Spawn setzt Einheiten.</CBF_AnchorKindTip>
   <CBF_AnchorRequiredTip>Pflicht: ohne diesen Anschluss wird der Baustein gar nicht gesetzt. Das ist es, was einen Turm an der Mauer haelt und ein Keep mit derselben Ankerart trotzdem frei stehen laesst.</CBF_AnchorRequiredTip>
@@ -711,6 +713,7 @@ Den Ordner CustomBaseFramework in einen anderen Mod unter 1.6/Defs kopieren, Pat
   <CBF_MarkAdd>{0} dazu</CBF_MarkAdd>
   <CBF_MarkRemove>{0} weg</CBF_MarkRemove>
   <CBF_Field_label>Anzeigename</CBF_Field_label>
+  <CBF_FieldDesc_label>Der Name, der auf der Weltkarte und im Siedlungstext steht. Der defName bleibt, wie er ist.</CBF_FieldDesc_label>
   <CBF_Field_isFighter>Kaempft</CBF_Field_isFighter>
   <CBF_Field_factionLeader>Anfuehrer</CBF_Field_factionLeader>
   <CBF_Field_defaultFactionDef>Fraktion</CBF_Field_defaultFactionDef>
@@ -898,4 +901,9 @@ Den Ordner CustomBaseFramework in einen anderen Mod unter 1.6/Defs kopieren, Pat
   <CBF_ShowScheme>Schema</CBF_ShowScheme>
   <CBF_ShowPhoto>Bild</CBF_ShowPhoto>
   <CBF_SchemeTip>Zwischen der Aufnahme von der Karte und dem Grundriss wechseln.\n\nDer Grundriss lohnt einen Blick: er zeigt die Anker, die im fertigen Haus unsichtbar sind.</CBF_SchemeTip>
+  <CBF_RuralGrowth>Bewuchs</CBF_RuralGrowth>
+  <CBF_RuralGround>Boden</CBF_RuralGround>
+  <CBF_RuralAsIs>wie die Karte ihn hat</CBF_RuralAsIs>
+  <CBF_RuralAsIsTip>Laesst stehen, was dort ohnehin waechst oder liegt. Waehle etwas anderes, um es zu erzwingen, etwa gestampfte Erde fuer einen festgetretenen Pferch.</CBF_RuralAsIsTip>
+  <CBF_BehaelterOwnImages>Eigene Bilder</CBF_BehaelterOwnImages>
 </LanguageData>

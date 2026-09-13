@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>Modern_ElectricSmithy</defName>
+    <label>Modern_ElectricSmithy</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_ModernWork</li>
+    </categories>
+    <style>Modern</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>Granite_RoughHewn</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>C</symbol><terrain>TileGranite</terrain></li>
+      <li><symbol>F</symbol><terrain>FlagstoneGranite</terrain></li>
+      <li><symbol>P</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>R</symbol><thing>Table1x2c</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
+      <li><symbol>L</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>S</symbol><thing>ElectricSmithy</thing><rotation>East</rotation></li>
+      <li><symbol>G</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>H</symbol><thing>ToolCabinet</thing><rotation>South</rotation></li>
+      <li><symbol>K</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>M</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>N</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects><lootTable>CBF_Loot_Vanilla_Schmiede</lootTable></li>
+      <li><symbol>Q</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects><lootTable>CBF_Loot_Vanilla_Schmiede</lootTable></li>
+      <li><symbol>U</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses1x1</objects><lootTable>CBF_Loot_Vanilla_Schmiede</lootTable></li>
+      <li><symbol>V</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Neu4</pawnList></li>
+    </legend>
+
+    <mask>
+      <li>..######.</li>
+      <li>..#######</li>
+      <li>..#######</li>
+      <li>..#######</li>
+      <li>..#######</li>
+      <li>#########</li>
+      <li>########.</li>
+      <li>#####....</li>
+      <li>#####....</li>
+    </mask>
+
+    <terrain>
+      <li>..WCFCCC.</li>
+      <li>..WFFCCCW</li>
+      <li>..WCCCCCW</li>
+      <li>..WCFFFFW</li>
+      <li>..WCFFCCW</li>
+      <li>WWWCFCCWW</li>
+      <li>WCCFWWWW.</li>
+      <li>WCFCW....</li>
+      <li>WWWWW....</li>
+    </terrain>
+
+    <things>
+      <li>..TTPTTT.</li>
+      <li>..T..R.TT</li>
+      <li>..T.....T</li>
+      <li>..TLBGBBT</li>
+      <li>..T....ST</li>
+      <li>TTTPTH.TT</li>
+      <li>T...TTTT.</li>
+      <li>TKM.T....</li>
+      <li>TTTTT....</li>
+    </things>
+
+    <things2>
+      <li>..BBBBBB.</li>
+      <li>..B....BB</li>
+      <li>..B.....B</li>
+      <li>..BB.B..B</li>
+      <li>..B.....B</li>
+      <li>BBB....BB</li>
+      <li>B...BBBB.</li>
+      <li>B...B....</li>
+      <li>BBBBB....</li>
+    </things2>
+
+    <roof>
+      <li>..DDDDDD.</li>
+      <li>..DDDDDDD</li>
+      <li>..DDDDDDD</li>
+      <li>..DDDDDDD</li>
+      <li>..DDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDD.</li>
+      <li>DDDDD....</li>
+      <li>DDDDD....</li>
+    </roof>
+
+    <anchors>
+      <li>.........</li>
+      <li>.........</li>
+      <li>...N.....</li>
+      <li>...NV....</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.UQQ.....</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

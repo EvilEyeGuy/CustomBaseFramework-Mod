@@ -52,15 +52,14 @@
       </members>
   </CustomBaseFramework.PawnListDef>
 
-  <CustomBaseFramework.PawnListDef>
+  <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Pawns_Geschuetzmannschaft</defName>
     <label>artillery crew</label>
     <rolle>Geschuetz</rolle>
     <radius>8</radius>
     <members>
-      <li><kind>Town_Guard</kind><weight>10</weight></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Guard</kind><weight>10</weight></li>
-    </members>
+        <li><kind>DankPyon_Medieval_Billman</kind><weight>1</weight></li>
+      </members>
   </CustomBaseFramework.PawnListDef>
 
   <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">

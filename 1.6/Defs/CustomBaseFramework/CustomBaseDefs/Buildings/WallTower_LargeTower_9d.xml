@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>LargeTower_9d</defName>
+    <label>LargeTower_9d</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallTower</li>
+    </categories>
+    <type>WallPart</type>
+    <style>Standard</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_CastleWallEmbrasures</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>B</symbol><anchor>Wall</anchor></li>
+      <li><symbol>C</symbol><anchor>Wall2</anchor></li>
+      <li><symbol>F</symbol><anchor>Wall3</anchor></li>
+      <li><symbol>P</symbol><anchor>Wall4</anchor></li>
+      <li><symbol>R</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList></li>
+      <li><symbol>L</symbol><anchor>Spawn2</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Turmwache</pawnList></li>
+      <li><symbol>S</symbol><anchor>Wall5</anchor></li>
+    </legend>
+
+    <mask>
+      <li>..#####..</li>
+      <li>.#######.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.#######.</li>
+      <li>..#####..</li>
+    </mask>
+
+    <terrain>
+      <li>..WWWWW..</li>
+      <li>.WWWWWWW.</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>.WWWWWWW.</li>
+      <li>..WWWWW..</li>
+    </terrain>
+
+    <things>
+      <li>..DDDDD..</li>
+      <li>.DD...DD.</li>
+      <li>DD.....DD</li>
+      <li>D.......D</li>
+      <li>D.......D</li>
+      <li>D..T....D</li>
+      <li>DD.....DD</li>
+      <li>.DD...DD.</li>
+      <li>..DDDDD..</li>
+    </things>
+
+    <anchors>
+      <li>....B....</li>
+      <li>.........</li>
+      <li>......S..</li>
+      <li>....L....</li>
+      <li>F....R..C</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>....P....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

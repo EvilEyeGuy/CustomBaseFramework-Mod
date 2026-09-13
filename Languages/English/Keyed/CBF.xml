@@ -335,6 +335,7 @@
   <CBF_Field_emplacements>Defensive positions</CBF_Field_emplacements>
   <CBF_FieldDesc_emplacements>Which pieces may serve as towers, gun batteries and the like.</CBF_FieldDesc_emplacements>
   <CBF_Field_gatehouses>Gatehouses</CBF_Field_gatehouses>
+  <CBF_WallNeededForWallParts>Without a wall there is no gate for a gatehouse to sit in. Emplacements still work, the planner puts them on the outline of the settlement.</CBF_WallNeededForWallParts>
   <CBF_FieldDesc_gatehouses>Which pieces may serve as gatehouses.</CBF_FieldDesc_gatehouses>
   <CBF_Field_defenderPoints>Defender strength</CBF_Field_defenderPoints>
   <CBF_FieldDesc_defenderPoints>How strong the defenders are, as a point range.</CBF_FieldDesc_defenderPoints>
@@ -465,6 +466,7 @@
   <CBF_AddAnchor>New anchor</CBF_AddAnchor>
   <CBF_NoAnchors>None yet. New anchor, then paint with the Anchor tool.</CBF_NoAnchors>
   <CBF_AndMore>{0} more</CBF_AndMore>
+  <CBF_ShowFewer>show fewer</CBF_ShowFewer>
   <CBF_AnchorPick>Paint into this anchor.</CBF_AnchorPick>
   <CBF_AnchorKindTip>Connect docks onto an anchor of the same name, and its length is the condition: thirteen cells of barracks look for thirteen cells of wall. Fill puts an object from a list here. Spawn puts units here.</CBF_AnchorKindTip>
   <CBF_AnchorRequiredTip>Required: without this connection the piece is not placed at all. That is what keeps a tower on the wall and lets a keep stand free with the same kind of anchor.</CBF_AnchorRequiredTip>
@@ -711,6 +713,7 @@ Copy the folder CustomBaseFramework into another mod under 1.6/Defs, and Patches
   <CBF_MarkAdd>Add {0}</CBF_MarkAdd>
   <CBF_MarkRemove>Remove {0}</CBF_MarkRemove>
   <CBF_Field_label>Label</CBF_Field_label>
+  <CBF_FieldDesc_label>The name shown on the world map and in the settlement tooltip. The defName stays as it is.</CBF_FieldDesc_label>
   <CBF_Field_isFighter>Fights</CBF_Field_isFighter>
   <CBF_Field_factionLeader>Faction leader</CBF_Field_factionLeader>
   <CBF_Field_defaultFactionDef>Faction</CBF_Field_defaultFactionDef>
@@ -898,4 +901,9 @@ Copy the folder CustomBaseFramework into another mod under 1.6/Defs, and Patches
   <CBF_ShowScheme>Scheme</CBF_ShowScheme>
   <CBF_ShowPhoto>Photo</CBF_ShowPhoto>
   <CBF_SchemeTip>Switch between the photo taken on the map and the schematic plan.\n\nThe plan is worth a look: it shows the anchors, which are invisible in the finished house.</CBF_SchemeTip>
+  <CBF_RuralGrowth>Growth</CBF_RuralGrowth>
+  <CBF_RuralGround>Ground</CBF_RuralGround>
+  <CBF_RuralAsIs>as the map has it</CBF_RuralAsIs>
+  <CBF_RuralAsIsTip>Leave whatever the map already has there. Pick something else to force it, for example packed dirt for a trampled pen.</CBF_RuralAsIsTip>
+  <CBF_BehaelterOwnImages>Your own images</CBF_BehaelterOwnImages>
 </LanguageData>

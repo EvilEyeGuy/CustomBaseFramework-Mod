@@ -2,7 +2,7 @@
 <!-- Vom Editor erzeugt. -->
 <Defs>
 
-  <CustomBaseFramework.PieceDef>
+  <CustomBaseFramework.PieceDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>LargeTower_9d</defName>
     <label>LargeTower_9d</label>
     <schemaVersion>2</schemaVersion>
@@ -13,11 +13,11 @@
     <style>Standard</style>
 
     <legend>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_CastleWallEmbrasures</thing><stuff>BlocksGranite</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_BallistaBolt</thing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_RusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>W</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li><symbol>D</symbol><thing>DankPyon_CastleWallEmbrasures</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>T</symbol><thing>DankPyon_BallistaBolt</thing></li>
+      <li><symbol>B</symbol><thing>DankPyon_RusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>C</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff></li>
       <li><symbol>F</symbol><anchor>Wall</anchor></li>
       <li><symbol>P</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList></li>
     </legend>

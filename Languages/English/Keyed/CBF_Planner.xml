@@ -125,6 +125,10 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_TakeoverEnable>Take over faction bases</CBF_TakeoverEnable>
   <CBF_TakeoverDisable>Hand faction bases back</CBF_TakeoverDisable>
   <CBF_TakeoverPath>Written to {0} in the current project.</CBF_TakeoverPath>
+  <CBF_AboutAdded>About.xml updated. loadAfter now lists {0}.</CBF_AboutAdded>
+  <CBF_AboutConflict>Left out, because these already sit under loadBefore: {0}</CBF_AboutConflict>
+  <CBF_AboutMissing>There is no About.xml in {0}, so no load order was written.</CBF_AboutMissing>
+  <CBF_AboutNotMeta>{0} is not a ModMetaData file and was left untouched.</CBF_AboutNotMeta>
   <CBF_PatchUnreadable>{0} could not be read and was left untouched: {1}</CBF_PatchUnreadable>
   <CBF_PatchNotAPatch>{0} is not a Patch file and was left untouched.</CBF_PatchNotAPatch>
   <CBF_AddBuilding>Building or category...</CBF_AddBuilding>
@@ -209,6 +213,7 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_PartAnchors>Anchors</CBF_PartAnchors>
   <CBF_NoRegionShort>none</CBF_NoRegionShort>
   <CBF_AnchorSelected>Anchor {0}</CBF_AnchorSelected>
+  <CBF_AnchorOpenTip>Opens this anchor below and picks up the brush.</CBF_AnchorOpenTip>
   <CBF_BiomeAny>Any terrain</CBF_BiomeAny>
   <CBF_NoTileFound>No free tile found for {0}. Try another terrain.</CBF_NoTileFound>
   <CBF_WorldBuilt>{0} placed for {1} as {2} in {3}. Generating the map now.</CBF_WorldBuilt>

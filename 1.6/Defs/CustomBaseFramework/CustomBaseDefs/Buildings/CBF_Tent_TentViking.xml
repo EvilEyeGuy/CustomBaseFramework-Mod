@@ -2,7 +2,7 @@
 <!-- Vom Editor erzeugt. -->
 <Defs>
 
-  <CustomBaseFramework.PieceDef>
+  <CustomBaseFramework.PieceDef MayRequire="Aoba.Tent">
     <defName>TentViking</defName>
     <label>TentViking</label>
     <schemaVersion>2</schemaVersion>
@@ -12,7 +12,7 @@
     <style>Standard</style>
 
     <legend>
-      <li MayRequire="Aoba.Tent"><symbol>W</symbol><thing>VikingTent</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
+      <li><symbol>W</symbol><thing>VikingTent</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
     </legend>
 
     <mask>

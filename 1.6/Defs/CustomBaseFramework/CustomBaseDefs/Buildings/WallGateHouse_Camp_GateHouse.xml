@@ -2,7 +2,7 @@
 <!-- Vom Editor erzeugt. -->
 <Defs>
 
-  <CustomBaseFramework.PieceDef>
+  <CustomBaseFramework.PieceDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>Camp_GateHouse</defName>
     <label>Camp_GateHouse</label>
     <schemaVersion>2</schemaVersion>
@@ -13,8 +13,8 @@
     <style>Rustical</style>
 
     <legend>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_ReinfocedLogGate</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
+      <li><symbol>W</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>D</symbol><thing>DankPyon_ReinfocedLogGate</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li><symbol>T</symbol><anchor>Wall</anchor></li>
       <li><symbol>B</symbol><anchor>Outside</anchor></li>
     </legend>

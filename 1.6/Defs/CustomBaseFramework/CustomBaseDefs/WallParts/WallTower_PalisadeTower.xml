@@ -2,7 +2,7 @@
 <!-- Vom Editor erzeugt. -->
 <Defs>
 
-  <CustomBaseFramework.PieceDef>
+  <CustomBaseFramework.PieceDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>PalisadeTower</defName>
     <label>PalisadeTower</label>
     <schemaVersion>2</schemaVersion>
@@ -13,11 +13,11 @@
     <style>Rustical</style>
 
     <legend>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Soil</terrain></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_ReinfocedLogGate</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_EmbPalisade</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_RusticTorchLamp</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>W</symbol><terrain>DankPyon_Floor_Soil</terrain></li>
+      <li><symbol>D</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>T</symbol><thing>DankPyon_ReinfocedLogGate</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>B</symbol><thing>DankPyon_EmbPalisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>C</symbol><thing>DankPyon_RusticTorchLamp</thing><stuff>WoodLog</stuff></li>
     </legend>
 
     <mask>

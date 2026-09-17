@@ -2,7 +2,7 @@
 <!-- Vom Editor erzeugt. -->
 <Defs>
 
-  <CustomBaseFramework.PieceDef>
+  <CustomBaseFramework.PieceDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>Marketstall_CheeseA</defName>
     <label>Marketstall_CheeseA</label>
     <schemaVersion>2</schemaVersion>
@@ -12,10 +12,10 @@
     <style>Standard</style>
 
     <legend>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_MarketTent_1c</thing><stuff>WoodLog</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_HideoutStallMarket_Dairy</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>W</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li><symbol>D</symbol><thing>DankPyon_MarketTent_1c</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>T</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
+      <li><symbol>B</symbol><thing>DankPyon_HideoutStallMarket_Dairy</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
 
     <mask>

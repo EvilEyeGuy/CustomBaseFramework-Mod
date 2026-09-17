@@ -175,6 +175,7 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_PartAnchors>Anker</CBF_PartAnchors>
   <CBF_NoRegionShort>keine</CBF_NoRegionShort>
   <CBF_AnchorSelected>Anker {0}</CBF_AnchorSelected>
+  <CBF_AnchorOpenTip>Klappt diesen Anker unten auf und nimmt den Pinsel in die Hand.</CBF_AnchorOpenTip>
   <CBF_BiomeAny>Gelaende egal</CBF_BiomeAny>
   <CBF_NoTileFound>Kein freies Feld fuer {0} gefunden. Nimm ein anderes Gelaende.</CBF_NoTileFound>
   <CBF_WorldBuilt>{0} fuer {1} als {2} in {3} gesetzt. Die Karte wird jetzt erzeugt.</CBF_WorldBuilt>
@@ -194,4 +195,8 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
 
 </CBF_ExportHasErrors>
   <CBF_ExportWithHints>{0} exportiert, {1} Hinweis(e), vollstaendig im Log:</CBF_ExportWithHints>
+  <CBF_AboutAdded>About.xml ergaenzt. Unter loadAfter steht jetzt {0}.</CBF_AboutAdded>
+  <CBF_AboutConflict>Ausgelassen, weil sie schon unter loadBefore stehen: {0}</CBF_AboutConflict>
+  <CBF_AboutMissing>In {0} gibt es keine About.xml, also wurde keine Ladereihenfolge geschrieben.</CBF_AboutMissing>
+  <CBF_AboutNotMeta>{0} ist keine ModMetaData-Datei und wurde nicht angefasst.</CBF_AboutNotMeta>
 </LanguageData>

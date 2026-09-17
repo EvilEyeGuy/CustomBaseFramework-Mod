@@ -24,18 +24,18 @@
         <wallDepth>1</wallDepth>
         <versorgung>1.2</versorgung>
         <walls>
-          <li>Palisade</li>
+          <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
         </walls>
         <gatehouses>
-          <li>Camp_GateHouse</li>
+          <li MayRequire="DankPyon.Medieval.Overhaul">Camp_GateHouse</li>
         </gatehouses>
         <districts>
           <li>
             <name>Lager</name>
             <entries>
-              <li><piece>Camp_FoodArea</piece><count>1~1</count></li>
-              <li><piece>Tent_StorageA</piece><count>2~4</count></li>
-              <li><piece>TentViking</piece><count>9~12</count></li>
+              <li MayRequire="DankPyon.Medieval.Overhaul"><piece>Camp_FoodArea</piece><count>1~1</count></li>
+              <li MayRequire="DankPyon.Medieval.Overhaul"><piece>Tent_StorageA</piece><count>2~4</count></li>
+              <li MayRequire="Aoba.Tent"><piece>TentViking</piece><count>9~12</count></li>
             </entries>
           </li>
         </districts>

@@ -2,7 +2,7 @@
 <!-- Vom Editor erzeugt. -->
 <Defs>
 
-  <CustomBaseFramework.PieceDef>
+  <CustomBaseFramework.PieceDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>Palisade</defName>
     <label>Palisade</label>
     <schemaVersion>2</schemaVersion>
@@ -13,8 +13,8 @@
     <style>Rustical</style>
 
     <legend>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Soil</terrain></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>W</symbol><terrain>DankPyon_Floor_Soil</terrain></li>
+      <li><symbol>D</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
     </legend>
 
     <mask>

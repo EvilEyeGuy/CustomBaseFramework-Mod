@@ -214,7 +214,11 @@
               <fence>true</fence>
               <weight>1</weight></li></pens>
             <entries>
-              <li><tag>HouseSmall</tag><count>4~6</count></li>
+              <!-- Drei statt vier. Im Umland zaehlt nur, was ans Wegenetz
+                   angebunden ist; der vierte Hof fand dort keine Zufahrt mehr
+                   und hielt damit jeden Anlauf ungueltig. Die Obergrenze bleibt,
+                   die Verdichtung baut weiter, wenn Platz und Weg da sind. -->
+              <li><tag>HouseSmall</tag><count>3~6</count></li>
             </entries>
           </li>
         </districts>

@@ -56,6 +56,7 @@
     </zones>
     <needsRoadAccess>false</needsRoadAccess>
     <countPerSettlement>0~4</countPerSettlement>
+    <blockMax>1</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -65,6 +66,7 @@
       <li>Inside</li>
     </zones>
     <countPerSettlement>1~6</countPerSettlement>
+    <blockMax>2</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -76,6 +78,7 @@
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
     <countPerSettlement>1~8</countPerSettlement>
+    <blockMax>3</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -89,6 +92,7 @@
     <unique>true</unique>
     <prefCenter>0.6</prefCenter>
     <prefMain>0.8</prefMain>
+    <blockMax>1</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -102,6 +106,7 @@
     <landmark>true</landmark>
     <prefCenter>0.5</prefCenter>
     <prefMain>0.5</prefMain>
+    <blockMax>1</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -111,6 +116,7 @@
       <li>Center</li>
     </zones>
     <countPerSettlement>1~3</countPerSettlement>
+    <blockMax>1</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -120,6 +126,7 @@
       <li>Center</li>
     </zones>
     <countPerSettlement>0~8</countPerSettlement>
+    <blockMax>2</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -133,6 +140,7 @@
     <wallContact>true</wallContact>
     <prefCenter>0.1</prefCenter>
     <prefWall>0.9</prefWall>
+    <blockMax>2</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -161,6 +169,7 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
+    <blockMax>1</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -171,6 +180,7 @@
       <li>Outside</li>
     </zones>
     <countPerSettlement>0~3</countPerSettlement>
+    <blockMax>1</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -180,6 +190,7 @@
       <li>Inside</li>
     </zones>
     <countPerSettlement>1~5</countPerSettlement>
+    <blockMax>2</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -210,6 +221,7 @@
       <li>Inside</li>
     </zones>
     <countPerSettlement>1~4</countPerSettlement>
+    <blockMax>2</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
 
 </Defs>

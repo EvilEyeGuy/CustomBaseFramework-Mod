@@ -27,7 +27,20 @@
          eine Fuge ringsum, das sind grob 1450. Dazu Strassen und der freie
          Streifen an der Mauer. Die Innenflaeche muss also gegen 2800 gehen,
          und die liefert erst ein Kern um 68. Mit 50 bis 58 belegte allein der
-         Bergfried ein Fuenftel der Stadt und es blieb nichts mehr uebrig. -->
+         Bergfried ein Fuenftel der Stadt und es blieb nichts mehr uebrig.
+
+         Nachgemessen am 18.9. an einer fertigen Stadt: nutzbare Stadtflaeche
+         2492 Felder, davon 403 Wege, bleiben 2089. Das Pflichtprogramm stand
+         zu dem Zeitpunkt bei 24 Bauten und 1621 Feldern, ohne die Fugen. Es
+         passte also nicht in seinen eigenen Kern, kein einziger Anlauf wurde
+         gueltig, und die Schleife lief jedes Mal alle 43 Lagen durch: hundert
+         Sekunden je Ort.
+
+         Die Untergrenzen stehen deshalb jetzt auf dem, was sicher hineingeht.
+         Die Obergrenzen bleiben, wo sie waren, und targetBuilt fuellt bis 0,55
+         auf. Die Stadt wird dadurch nicht leerer, sondern voller: die dreissig
+         Verdichtungsrunden entfielen bisher vollstaendig, weil sie erst nach
+         der letzten erfuellten Mindestzahl beginnen. -->
     <coreSize>78~90</coreSize>
     <mapSize>200</mapSize>
 
@@ -86,11 +99,18 @@
         <size>1</size>
         <wallDepth>3</wallDepth>
         <versorgung>1.2</versorgung>
+        <!-- Strassenlaternen an den Wegraendern dieses Stadtteils. Der erste
+             Eintrag, den es gibt, gewinnt; fehlt MO, bleibt es dunkel statt zu
+             brechen. -->
+        <lanterns>
+          <li>DankPyon_LampPost</li>
+        </lanterns>
+        <lanternGap>9</lanternGap>
         <walls>
           <li>TownWall_1x5</li>
         </walls>
         <emplacements>
-          <li>LargeTower_9d</li>
+          <li MayRequire="DankPyon.Medieval.Overhaul">LargeTower_9d</li>
           <li>LargeTower_9d_B</li>
         </emplacements>
         <gatehouses>
@@ -102,8 +122,10 @@
             <entries>
               <li><tag>Keep</tag><count>1~1</count><unique>true</unique><lootTable>CBF_Loot_Haushalt</lootTable></li>
               <li><tag>Inn</tag><count>1~1</count><unique>true</unique><lootTable>CBF_Loot_Haushalt</lootTable></li>
-              <li><tag>Military</tag><count>2~3</count><lootTable>CBF_Loot_Werkstatt</lootTable></li>
-              <li><tag>HouseLarge</tag><count>4~8</count></li>
+              <li><tag>Military</tag><count>2~6</count><lootTable>CBF_Loot_Werkstatt</lootTable></li>
+              <li><tag>HouseLarge</tag><count>5~16</count></li>
+              <li><tag>HouseSmall</tag><count>3~10</count></li>
+              <li><tag>Workshop</tag><count>1~4</count><lootTable>CBF_Loot_Werkstatt</lootTable></li>
             </entries>
           </li>
         </districts>
@@ -114,6 +136,13 @@
         <size>0.6</size>
         <wallDepth>1</wallDepth>
         <versorgung>1.2</versorgung>
+        <!-- Strassenlaternen an den Wegraendern dieses Stadtteils. Der erste
+             Eintrag, den es gibt, gewinnt; fehlt MO, bleibt es dunkel statt zu
+             brechen. -->
+        <lanterns>
+          <li>DankPyon_RusticTorchLamp</li>
+        </lanterns>
+        <lanternGap>13</lanternGap>
         <walls>
           <li>TownWall</li>
         </walls>
@@ -127,8 +156,9 @@
           <li>
             <name>Test</name>
             <entries>
-              <li><tag>HouseSmall</tag><count>14~20</count></li>
-              <li><piece>Social_Inn</piece><count>1~1</count></li>
+              <li><tag>HouseSmall</tag><count>20~28</count></li>
+              <li><piece>Social_Inn</piece><count>1~2</count></li>
+              <li><piece>Military_Baracks</piece><count>3~3</count><lootTable>CBF_Loot_Werkstatt</lootTable></li>
             </entries>
           </li>
           <li>
@@ -191,7 +221,7 @@
       </li>
     </wards>
   
-    <kind>Mittelalterstadt</kind>
+    <kind>Festungsstadt</kind>
   
     <factionTags>
       <li>DankPyon_NobleHouseSavage</li>

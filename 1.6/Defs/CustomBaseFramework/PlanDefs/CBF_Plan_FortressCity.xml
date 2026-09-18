@@ -120,12 +120,12 @@
           <li>
             <name>Default</name>
             <entries>
-              <li><tag>Keep</tag><count>1~1</count><unique>true</unique><lootTable>CBF_Loot_Haushalt</lootTable></li>
-              <li><tag>Inn</tag><count>1~1</count><unique>true</unique><lootTable>CBF_Loot_Haushalt</lootTable></li>
-              <li><tag>Military</tag><count>2~6</count><lootTable>CBF_Loot_Werkstatt</lootTable></li>
-              <li><tag>HouseLarge</tag><count>5~16</count></li>
-              <li><tag>HouseSmall</tag><count>3~10</count></li>
-              <li><tag>Workshop</tag><count>1~4</count><lootTable>CBF_Loot_Werkstatt</lootTable></li>
+              <li><tag>Keep</tag><count>1~1</count><unique>true</unique><lootTable>CBF_MO_Loot_Bergfried</lootTable></li>
+              <li><tag>Inn</tag><count>1~1</count><unique>true</unique><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
+              <li><tag>Military</tag><count>2~6</count><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
+              <li><tag>HouseLarge</tag><count>5~16</count><lootTable>CBF_MO_Loot_Herrenhaus</lootTable></li>
+              <li><tag>HouseSmall</tag><count>3~10</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+              <li><tag>Workshop</tag><count>1~4</count><lootTable>CBF_MO_Loot_Werkstatt</lootTable></li>
             </entries>
           </li>
         </districts>
@@ -156,17 +156,17 @@
           <li>
             <name>Test</name>
             <entries>
-              <li><tag>HouseSmall</tag><count>20~28</count></li>
-              <li><piece>Social_Inn</piece><count>1~2</count></li>
-              <li><piece>Military_Baracks</piece><count>3~3</count><lootTable>CBF_Loot_Werkstatt</lootTable></li>
+              <li><tag>HouseSmall</tag><count>20~28</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+              <li><piece>Social_Inn</piece><count>1~2</count><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
+              <li><piece>Military_Baracks</piece><count>3~3</count><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
             </entries>
           </li>
           <li>
             <name>Workshop</name>
             <entries>
-              <li><piece>Workshop_Baker</piece><count>1~1</count></li>
-              <li><piece>Workshop_Butcher</piece><count>1~1</count></li>
-              <li><piece>Workshop_Tailor</piece><count>1~1</count></li>
+              <li><piece>Workshop_Baker</piece><count>1~1</count><lootTable>CBF_MO_Loot_Baeckerei</lootTable></li>
+              <li><piece>Workshop_Butcher</piece><count>1~1</count><lootTable>CBF_MO_Loot_Metzgerei</lootTable></li>
+              <li><piece>Workshop_Tailor</piece><count>1~1</count><lootTable>CBF_MO_Loot_Schneiderei</lootTable></li>
             </entries>
           </li>
         </districts>
@@ -193,7 +193,7 @@
           <li>
             <name>Umland</name>
             <entries>
-              <li><piece>Social_Inn</piece><count>1~1</count></li>
+              <li><piece>Social_Inn</piece><count>1~1</count><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
             </entries>
           </li>
           <li>
@@ -218,7 +218,7 @@
                    angebunden ist; der vierte Hof fand dort keine Zufahrt mehr
                    und hielt damit jeden Anlauf ungueltig. Die Obergrenze bleibt,
                    die Verdichtung baut weiter, wenn Platz und Weg da sind. -->
-              <li><tag>HouseSmall</tag><count>3~6</count></li>
+              <li><tag>HouseSmall</tag><count>3~6</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
             </entries>
           </li>
         </districts>

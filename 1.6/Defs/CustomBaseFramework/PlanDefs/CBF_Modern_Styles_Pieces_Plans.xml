@@ -62,8 +62,8 @@
       <li><symbol>Z</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>a</symbol><thing>TubeTelevision</thing></li>
       <li><symbol>e</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>b</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects><lootTable>CBF_Loot_Vanilla_Wohnhaus</lootTable></li>
-      <li><symbol>d</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses1x1</objects><lootTable>CBF_Loot_Vanilla_Wohnhaus</lootTable></li>
+      <li><symbol>b</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>d</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses1x1</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
       <li><symbol>f</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects></li>
     </legend>
 
@@ -236,7 +236,7 @@
   </CustomBaseFramework.PaletteDef>
   <CustomBaseFramework.SettlementPlanDef>
     <defName>CBF_Plan_Modernestadt</defName>
-    <label>Moderne Stadt (Vanilla)</label>
+    <label>Moderne Stadt</label>
     <kind>Modernestadt</kind>
     <styles>
       <li>CBF_ModernVanilla</li>
@@ -263,20 +263,12 @@
         <roadEdges>
           <li>PavedTile</li>
         </roadEdges>
-        <walls>
-          <li>CBF_ModernWall</li>
-        </walls>
-        <gatehouses>
-          <li>CBF_Modern_Gatehouse</li>
-        </gatehouses>
         <districts>
           <li>
             <name>Zentrum</name>
             <entries>
-              <li><tag>ModernHouseLarge</tag><count>14~22</count></li>
-              <li><tag>CBF_ModernCivic</tag><count>1~2</count></li>
-              <li><tag>CBF_ModernWork</tag><count>2~4</count></li>
-              <li><tag>CBF_EnergyProduction</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_HouseSmall</tag><count>14~22</count></li>
+              <li><tag>CBF_Vanilla_Defense_Small</tag><count>2~4</count></li>
             </entries>
           </li>
         </districts>
@@ -298,7 +290,8 @@
           <li>
             <name>Wohnviertel</name>
             <entries>
-              <li><tag>ModernHouseSmall</tag><count>20~30</count></li>
+              <li><tag>CBF_Vanilla_HouseLarge</tag><count>14~28</count></li>
+              <li><tag>CBF_ModernDefense</tag><count>1~2</count></li>
             </entries>
           </li>
         </districts>
@@ -331,17 +324,21 @@
           <li>
             <name>Farming</name><fields><li>
               <name>Acker</name>
-              <count>2~3</count>
+              <count>1~2</count>
               <fence>true</fence>
               <weight>1</weight><plants>
-                <li>Plant_Rice</li>
-               </plants></li></fields><pens><li>
-              <name>Gehege</name>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Carrots</li>
+               </plants></li><li>
+              <name>Acker</name>
               <count>1~2</count>
-              <herd>3~7</herd>
-              <pawns>Hardanimals_1</pawns>
               <fence>true</fence>
-              <weight>1</weight></li></pens>
+              <weight>1</weight><plants>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Carrots</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Fleawort</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Onions</li>
+                <li>Plant_Corn</li>
+                <li>Plant_Healroot</li>
+               </plants></li></fields>
             <entries>
               <li><piece>CBF_Modern_Farmhouse</piece><count>2~4</count></li>
             </entries>
@@ -354,48 +351,36 @@
   </CustomBaseFramework.SettlementPlanDef>
   <CustomBaseFramework.PieceDef>
     <defName>CBF_Modern_Wall</defName>
-    <label>Mauerprofil (Vanilla)</label>
+    <label>CBF_Modern_Wall</label>
     <schemaVersion>2</schemaVersion>
-    <style>CBF_ModernVanilla</style>
     <categories>
       <li>WallSegment</li>
     </categories>
+    <type>WallPart</type>
+    <style>CBF_ModernVanilla</style>
+
     <legend>
-      <li>
-        <symbol>W</symbol>
-        <thing>Wall</thing>
-        <stuff>BlocksGranite</stuff>
-      </li>
-      <li>
-        <symbol>D</symbol>
-        <thing>Door</thing>
-        <stuff>Steel</stuff>
-      </li>
-      <li>
-        <symbol>F</symbol>
-        <terrain>Concrete</terrain>
-      </li>
-      <li>
-        <symbol>A</symbol>
-        <anchor>Wall</anchor>
-        <anchorKind>Connect</anchorKind>
-      </li>
+      <li><symbol>W</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>D</symbol><thing>Wall</thing><stuff>Steel</stuff></li>
     </legend>
+
     <mask>
       <li>#</li>
       <li>#</li>
       <li>#</li>
     </mask>
-    <things>
-      <li>W</li>
-      <li>.</li>
-      <li>W</li>
-    </things>
+
     <terrain>
-      <li>F</li>
-      <li>F</li>
-      <li>F</li>
+      <li>W</li>
+      <li>W</li>
+      <li>W</li>
     </terrain>
+
+    <things>
+      <li>D</li>
+      <li>.</li>
+      <li>D</li>
+    </things>
   </CustomBaseFramework.PieceDef>
   <CustomBaseFramework.PieceDef>
     <defName>CBF_Modern_Gatehouse</defName>
@@ -449,7 +434,7 @@
       <li>BFTPTFBR..T..LBFTPTFB</li>
       <li>BBBGBBBSSSBSSSBBBGBBB</li>
       <li>B.....B...T...B.....B</li>
-      <li>B...H.B...B...BH....B</li>
+      <li>B...H.BBGBBBGBBH....B</li>
       <li>B.....B...T...B.....B</li>
       <li>BBBGBBBSSSBSSSBBBGBBB</li>
     </things>

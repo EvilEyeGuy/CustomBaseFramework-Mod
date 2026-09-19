@@ -61,6 +61,28 @@
   <CBF_Planner_WallProfile>Wall profile must consist of walls and a parapet walkway: {0}.</CBF_Planner_WallProfile>
   <CBF_Planner_WallEdge>Wall profile needs a closed outer edge: {0}.</CBF_Planner_WallEdge>
   <CBF_Planner_NoAllowedGate>No available permitted gatehouse template for layer {0}.</CBF_Planner_NoAllowedGate>
+  <CBF_WallOrderTip>The order in which wall pieces are built. The strip always shows the same number of cells, whatever the percentages.</CBF_WallOrderTip>
+  <CBF_Machbar_DenseOk>Layer {0}: mandatory buildings take {1} percent of the buildable area ({2} of {3} cells).</CBF_Machbar_DenseOk>
+  <CBF_Machbar_Dense>Layer {0}: mandatory buildings take {1} percent of the buildable area ({2} of {3} cells). That does not work out.</CBF_Machbar_Dense>
+  <CBF_Machbar_DenseTight>Layer {0}: mandatory buildings take {1} percent of the buildable area ({2} of {3} cells). On rough terrain space runs short.</CBF_Machbar_DenseTight>
+  <CBF_Machbar_Head>Feasibility</CBF_Machbar_Head>
+  <CBF_Machbar_Ok>The orders fit on a map of this size.</CBF_Machbar_Ok>
+  <CBF_Machbar_NoRequest>No request can be built from this plan. Missing styles or catalog?</CBF_Machbar_NoRequest>
+  <CBF_Machbar_Failed>The check failed: {0}</CBF_Machbar_Failed>
+  <CBF_Machbar_TooBig>The orders need {0} cells of edge length, {1} are possible at mapSize {2}. Whatever does not fit will not be built.</CBF_Machbar_TooBig>
+  <CBF_Machbar_Tight>The orders need {0} of {1} possible cells of edge length. On rough terrain this gets tight.</CBF_Machbar_Tight>
+  <CBF_Machbar_NoPiece>{0} in layer {1}: there is no piece for it with this plan's styles.</CBF_Machbar_NoPiece>
+  <CBF_Machbar_PieceTooBig>{0} in layer {1}: the smallest matching piece is {2} cells wide, the ward offers {3}.</CBF_Machbar_PieceTooBig>
+  <CBF_Machbar_PieceTight>{0} in layer {1}: the smallest matching piece is {2} cells wide with {3} available. On rough terrain it often finds no spot.</CBF_Machbar_PieceTight>
+  <CBF_StressIdle>No stress test is running.</CBF_StressIdle>
+  <CBF_StressHead>Stress test</CBF_StressHead>
+  <CBF_StressHelp>Generates several settlements in a row with exactly these settings. Each one is captured as an image; terrain file and image land together in one folder under CBF-Stresstest.</CBF_StressHelp>
+  <CBF_StressCount>How many settlements (at most {0})</CBF_StressCount>
+  <CBF_StressStart>Start stress test</CBF_StressStart>
+  <CBF_StressRunning>Stress test running</CBF_StressRunning>
+  <CBF_StressBuilding>Stress test: building settlement</CBF_StressBuilding>
+  <CBF_StressDone>Stress test done: {0} built, {1} failed. Folder: {2}</CBF_StressDone>
+  <CBF_Planner_GateNoPassage>Gatehouse {0} has no passage: no door with a clear run out of the piece in both opposite directions. It can never be placed as a gate.</CBF_Planner_GateNoPassage>
   <CBF_Planner_NoGateSite>No permitted gatehouse template fits layer {0} at this site.</CBF_Planner_NoGateSite>
   <CBF_Planner_GateHole>No gatehouse fitted layer {0}. The wall gets an open passage there instead.</CBF_Planner_GateHole>
   <CBF_Planner_NoFarmPlot>No farm plot with at least 100 growing cells fits rural house {0} at this site.</CBF_Planner_NoFarmPlot>
@@ -125,6 +147,14 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_TakeoverEnable>Take over faction bases</CBF_TakeoverEnable>
   <CBF_TakeoverDisable>Hand faction bases back</CBF_TakeoverDisable>
   <CBF_TakeoverPath>Written to {0} in the current project.</CBF_TakeoverPath>
+  <CBF_Field_requiredMods>Needs these mods</CBF_Field_requiredMods>
+  <CBF_ModsNone>Runs without any other mod.</CBF_ModsNone>
+  <CBF_ModEither>one of these is enough</CBF_ModEither>
+  <CBF_ModByHand>added by hand</CBF_ModByHand>
+  <CBF_ModAutoTip>Worked out from the content, not chosen. Without this mod nothing is left of: {0}</CBF_ModAutoTip>
+  <CBF_ModByHandTip>Added by hand. Click the cross to take it out again.</CBF_ModByHandTip>
+  <CBF_AddMod>Add a mod</CBF_AddMod>
+  <CBF_ExportWouldDrop>has {0} legend line(s) that need {1}. That mod is off, so the lines are not loaded, and exporting now would delete them. Switch the mod on and export again.</CBF_ExportWouldDrop>
   <CBF_AboutAdded>About.xml updated. loadAfter now lists {0}.</CBF_AboutAdded>
   <CBF_AboutConflict>Left out, because these already sit under loadBefore: {0}</CBF_AboutConflict>
   <CBF_AboutMissing>There is no About.xml in {0}, so no load order was written.</CBF_AboutMissing>
@@ -214,6 +244,19 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_NoRegionShort>none</CBF_NoRegionShort>
   <CBF_AnchorSelected>Anchor {0}</CBF_AnchorSelected>
   <CBF_AnchorOpenTip>Opens this anchor below and picks up the brush.</CBF_AnchorOpenTip>
+  <CBF_NewPieceFillIn>New piece. Give it a name, a category and a style, then draw it with Area. Export writes the file.</CBF_NewPieceFillIn>
+  <CBF_Field_cells>Cells</CBF_Field_cells>
+  <CBF_Field_additionalCategories>Additional categories</CBF_Field_additionalCategories>
+  <CBF_FieldDesc_additionalCategories>Categories beyond the one set on the area above. The export writes the area's category as the first entry.</CBF_FieldDesc_additionalCategories>
+  <CBF_AnchorFromPiece>From another piece</CBF_AnchorFromPiece>
+  <CBF_AnchorCountShort>{0} anchor(s)</CBF_AnchorCountShort>
+  <CBF_AnchorNameTaken>[taken]</CBF_AnchorNameTaken>
+  <CBF_NoPieceWithAnchors>No piece has anchors yet.</CBF_NoPieceWithAnchors>
+  <CBF_AnchorsTaken>{0} anchor(s) taken from {1}, {2} skipped. Paint them where they belong.</CBF_AnchorsTaken>
+  <CBF_AnchorFromPieceDesc>Click another piece area on the map. Its anchors come over with all their settings, without their shape.</CBF_AnchorFromPieceDesc>
+  <CBF_PickAPieceArea>No piece area under the cursor.</CBF_PickAPieceArea>
+  <CBF_PickAnotherArea>That is the area you are editing.</CBF_PickAnotherArea>
+  <CBF_AreaHasNoAnchors>{0} has no anchors.</CBF_AreaHasNoAnchors>
   <CBF_BiomeAny>Any terrain</CBF_BiomeAny>
   <CBF_NoTileFound>No free tile found for {0}. Try another terrain.</CBF_NoTileFound>
   <CBF_WorldBuilt>{0} placed for {1} as {2} in {3}. Generating the map now.</CBF_WorldBuilt>

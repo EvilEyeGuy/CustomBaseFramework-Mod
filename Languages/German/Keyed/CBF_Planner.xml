@@ -61,6 +61,28 @@
   <CBF_Planner_WallProfile>Mauerprofil muss aus Wand und Wehrgang bestehen: {0}.</CBF_Planner_WallProfile>
   <CBF_Planner_WallEdge>Mauerprofil braucht eine geschlossene Außenkante: {0}.</CBF_Planner_WallEdge>
   <CBF_Planner_NoAllowedGate>Keine verfügbare, im Stadtteil erlaubte Torhausvorlage für Ebene {0}.</CBF_Planner_NoAllowedGate>
+  <CBF_WallOrderTip>In dieser Reihenfolge entstehen die Mauerteile. Der Streifen zeigt immer gleich viele Felder, unabhaengig von den Prozenten.</CBF_WallOrderTip>
+  <CBF_Machbar_DenseOk>Ebene {0}: die Pflichtbauten belegen {1} Prozent der bebaubaren Flaeche ({2} von {3} Feldern).</CBF_Machbar_DenseOk>
+  <CBF_Machbar_Dense>Ebene {0}: die Pflichtbauten belegen {1} Prozent der bebaubaren Flaeche ({2} von {3} Feldern). Das geht sich nicht aus.</CBF_Machbar_Dense>
+  <CBF_Machbar_DenseTight>Ebene {0}: die Pflichtbauten belegen {1} Prozent der bebaubaren Flaeche ({2} von {3} Feldern). Auf engem Gelaende fehlt dann Platz.</CBF_Machbar_DenseTight>
+  <CBF_Machbar_Head>Machbarkeit</CBF_Machbar_Head>
+  <CBF_Machbar_Ok>Die Bestellungen passen auf eine Karte dieser Groesse.</CBF_Machbar_Ok>
+  <CBF_Machbar_NoRequest>Aus diesem Ortstyp laesst sich keine Anfrage bauen. Fehlen Stile oder Katalog?</CBF_Machbar_NoRequest>
+  <CBF_Machbar_Failed>Die Pruefung ist gescheitert: {0}</CBF_Machbar_Failed>
+  <CBF_Machbar_TooBig>Die Bestellungen brauchen {0} Felder Kantenlaenge, moeglich sind {1} bei mapSize {2}. Was nicht hineinpasst, wird nicht gebaut.</CBF_Machbar_TooBig>
+  <CBF_Machbar_Tight>Die Bestellungen brauchen {0} von {1} moeglichen Feldern Kantenlaenge. Auf engem Gelaende wird das knapp.</CBF_Machbar_Tight>
+  <CBF_Machbar_NoPiece>{0} in Ebene {1}: dazu gibt es keinen Baustein mit den Stilen dieses Ortstyps.</CBF_Machbar_NoPiece>
+  <CBF_Machbar_PieceTooBig>{0} in Ebene {1}: der kleinste passende Baustein ist {2} Felder breit, das Viertel bietet {3}.</CBF_Machbar_PieceTooBig>
+  <CBF_Machbar_PieceTight>{0} in Ebene {1}: der kleinste passende Baustein ist {2} Felder breit bei {3} verfuegbaren. Auf zerklueftetem Gelaende findet er oft keinen Platz.</CBF_Machbar_PieceTight>
+  <CBF_StressIdle>Es laeuft kein Stresstest.</CBF_StressIdle>
+  <CBF_StressHead>Stresstest</CBF_StressHead>
+  <CBF_StressHelp>Erzeugt nacheinander mehrere Siedlungen mit genau diesen Einstellungen. Nach jeder wird ein Bild aufgenommen; Gelaendedatei und Bild landen gemeinsam in einem Ordner unter CBF-Stresstest.</CBF_StressHelp>
+  <CBF_StressCount>Wie viele Siedlungen (hoechstens {0})</CBF_StressCount>
+  <CBF_StressStart>Stresstest starten</CBF_StressStart>
+  <CBF_StressRunning>Stresstest laeuft</CBF_StressRunning>
+  <CBF_StressBuilding>Stresstest: Siedlung wird gebaut</CBF_StressBuilding>
+  <CBF_StressDone>Stresstest fertig: {0} gebaut, {1} gescheitert. Ablage: {2}</CBF_StressDone>
+  <CBF_Planner_GateNoPassage>Das Torhaus {0} hat keine Durchfahrt: keine Tuer mit freiem Lauf nach beiden Seiten aus dem Bauteil hinaus. Es kann deshalb nie als Tor gesetzt werden.</CBF_Planner_GateNoPassage>
   <CBF_Planner_NoGateSite>Keine passende erlaubte Torhausvorlage für Ebene {0} an dieser Lage.</CBF_Planner_NoGateSite>
   <CBF_Planner_GateHole>Fuer Ebene {0} passte kein Torhaus. Die Mauer bekommt dort einen offenen Durchgang.</CBF_Planner_GateHole>
   <CBF_Planner_NoFarmPlot>Für Umlandhaus {0} passt hier keine Farmparzelle mit mindestens 100 Anbauzellen.</CBF_Planner_NoFarmPlot>
@@ -176,6 +198,19 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_NoRegionShort>keine</CBF_NoRegionShort>
   <CBF_AnchorSelected>Anker {0}</CBF_AnchorSelected>
   <CBF_AnchorOpenTip>Klappt diesen Anker unten auf und nimmt den Pinsel in die Hand.</CBF_AnchorOpenTip>
+  <CBF_NewPieceFillIn>Neuer Baustein. Gib ihm Namen, Kategorie und Stil, dann zeichne ihn mit Flaeche. Der Export schreibt die Datei.</CBF_NewPieceFillIn>
+  <CBF_Field_cells>Zellen</CBF_Field_cells>
+  <CBF_Field_additionalCategories>Weitere Kategorien</CBF_Field_additionalCategories>
+  <CBF_FieldDesc_additionalCategories>Kategorien ueber die hinaus, die oben an der Flaeche steht. Der Export schreibt die Kategorie der Flaeche als ersten Eintrag.</CBF_FieldDesc_additionalCategories>
+  <CBF_AnchorFromPiece>Von anderem Baustein</CBF_AnchorFromPiece>
+  <CBF_AnchorCountShort>{0} Anker</CBF_AnchorCountShort>
+  <CBF_AnchorNameTaken>[belegt]</CBF_AnchorNameTaken>
+  <CBF_NoPieceWithAnchors>Noch kein Baustein hat Anker.</CBF_NoPieceWithAnchors>
+  <CBF_AnchorsTaken>{0} Anker von {1} uebernommen, {2} ausgelassen. Mal sie dorthin, wo sie hingehoeren.</CBF_AnchorsTaken>
+  <CBF_AnchorFromPieceDesc>Klick auf eine andere Bausteinflaeche auf der Karte. Ihre Anker kommen mit allen Einstellungen herueber, ohne ihre Form.</CBF_AnchorFromPieceDesc>
+  <CBF_PickAPieceArea>Unter dem Zeiger liegt keine Bausteinflaeche.</CBF_PickAPieceArea>
+  <CBF_PickAnotherArea>Das ist die Flaeche, an der du gerade arbeitest.</CBF_PickAnotherArea>
+  <CBF_AreaHasNoAnchors>{0} hat keine Anker.</CBF_AreaHasNoAnchors>
   <CBF_BiomeAny>Gelaende egal</CBF_BiomeAny>
   <CBF_NoTileFound>Kein freies Feld fuer {0} gefunden. Nimm ein anderes Gelaende.</CBF_NoTileFound>
   <CBF_WorldBuilt>{0} fuer {1} als {2} in {3} gesetzt. Die Karte wird jetzt erzeugt.</CBF_WorldBuilt>
@@ -195,6 +230,14 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
 
 </CBF_ExportHasErrors>
   <CBF_ExportWithHints>{0} exportiert, {1} Hinweis(e), vollstaendig im Log:</CBF_ExportWithHints>
+  <CBF_Field_requiredMods>Braucht diese Mods</CBF_Field_requiredMods>
+  <CBF_ModsNone>Laeuft ohne weiteren Mod.</CBF_ModsNone>
+  <CBF_ModEither>einer von diesen genuegt</CBF_ModEither>
+  <CBF_ModByHand>von Hand</CBF_ModByHand>
+  <CBF_ModAutoTip>Aus dem Inhalt ermittelt, nicht gewaehlt. Ohne diesen Mod bleibt nichts uebrig von: {0}</CBF_ModAutoTip>
+  <CBF_ModByHandTip>Von Hand eingetragen. Das Kreuz nimmt ihn wieder heraus.</CBF_ModByHandTip>
+  <CBF_AddMod>Mod hinzufuegen</CBF_AddMod>
+  <CBF_ExportWouldDrop>hat {0} Legendenzeile(n), die {1} brauchen. Der Mod ist aus, die Zeilen sind deshalb nicht geladen, und ein Export jetzt wuerde sie loeschen. Mod einschalten und noch einmal exportieren.</CBF_ExportWouldDrop>
   <CBF_AboutAdded>About.xml ergaenzt. Unter loadAfter steht jetzt {0}.</CBF_AboutAdded>
   <CBF_AboutConflict>Ausgelassen, weil sie schon unter loadBefore stehen: {0}</CBF_AboutConflict>
   <CBF_AboutMissing>In {0} gibt es keine About.xml, also wurde keine Ladereihenfolge geschrieben.</CBF_AboutMissing>

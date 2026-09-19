@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <DutyDef>
+    <defName>CBF_Halten</defName>
+    <alwaysShowWeapon>false</alwaysShowWeapon>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="JobGiver_TakeCombatEnhancingDrug">
+          <onlyIfInDanger>true</onlyIfInDanger>
+        </li>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Abilities_Aggressive</treeDef>
+        </li>
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>50</targetAcquireRadius>
+          <targetKeepRadius>60</targetKeepRadius>
+        </li>
+        <li Class="JobGiver_AIDefendPoint">
+          <targetAcquireRadius>50</targetAcquireRadius>
+          <targetKeepRadius>60</targetKeepRadius>
+        </li>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>SatisfyBasicNeeds</treeDef>
+        </li>
+        <li Class="JobGiver_ManTurretsNearSelf">
+          <maxDistFromPoint>20</maxDistFromPoint>
+        </li>
+        <li Class="JobGiver_SeekSafeTemperature" />
+        <li Class="ThinkNode_ConditionalCloseToDutyTarget">
+          <maxDistToDutyTarget>12</maxDistToDutyTarget>
+          <subNodes>
+            <li Class="JobGiver_WanderAnywhere">
+              <wanderRadius>12</wanderRadius>
+            </li>
+          </subNodes>
+        </li>
+        <li Class="JobGiver_WanderNearDutyLocation" />
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+  <DutyDef>
+    <defName>CBF_Wehrgang</defName>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Abilities_Aggressive</treeDef>
+        </li>
+        <li Class="CustomBaseFramework.JobGiver_CBFWehrgang">
+          <targetAcquireRadius>60</targetAcquireRadius>
+          <targetKeepRadius>70</targetKeepRadius>
+        </li>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>SatisfyBasicNeeds</treeDef>
+        </li>
+        <li Class="JobGiver_ManTurretsNearSelf">
+          <maxDistFromPoint>10</maxDistFromPoint>
+        </li>
+        <li Class="JobGiver_SeekSafeTemperature" />
+        <li Class="JobGiver_WanderNearDutyLocation" />
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+</Defs>

@@ -3,13 +3,13 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>Modern_SmallHouseD</defName>
-    <label>Modern_SmallHouseD</label>
+    <defName>CBF_Vanilla_HouseSmall_D</defName>
+    <label>CBF_Vanilla_HouseSmall_D</label>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>ModernHouseSmall</li>
+      <li>CBF_Vanilla_HouseSmall</li>
     </categories>
-    <style>Modern</style>
+    <style>CBF_ModernVanilla</style>
 
     <legend>
       <li><symbol>W</symbol><terrain>Granite_RoughHewn</terrain></li>
@@ -27,9 +27,9 @@
       <li><symbol>K</symbol><thing>Dresser</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li><symbol>M</symbol><thing>Bed</thing><stuff>WoodLog</stuff></li>
       <li><symbol>N</symbol><thing>EndTable</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>Q</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects><lootTable>CBF_Loot_Vanilla_Wohnhaus</lootTable></li>
-      <li><symbol>U</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses1x1</objects><lootTable>CBF_Loot_Vanilla_Wohnhaus</lootTable></li>
-      <li><symbol>V</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Vanilla_Civil</pawnList></li>
+      <li><symbol>Q</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>U</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList></li>
+      <li><symbol>V</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
     </legend>
 
     <mask>
@@ -79,9 +79,9 @@
     <anchors>
       <li>.........</li>
       <li>.....QQ..</li>
-      <li>.U.......</li>
+      <li>.V.......</li>
       <li>.........</li>
-      <li>....V....</li>
+      <li>...U.....</li>
       <li>.........</li>
       <li>.........</li>
       <li>.........</li>

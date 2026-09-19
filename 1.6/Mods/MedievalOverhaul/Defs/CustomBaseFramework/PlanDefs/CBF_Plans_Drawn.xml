@@ -89,13 +89,6 @@
         <size>1</size>
         <wallDepth>3</wallDepth>
         <versorgung>1.2</versorgung>
-        <!-- Strassenlaternen an den Wegraendern dieses Stadtteils. Der erste
-             Eintrag, den es gibt, gewinnt; fehlt MO, bleibt es dunkel statt zu
-             brechen. -->
-        <lanterns>
-          <li>DankPyon_LampPost</li>
-        </lanterns>
-        <lanternGap>9</lanternGap>
         <walls>
           <li>TownWall</li>
         </walls>
@@ -113,7 +106,7 @@
               <li><tag>Keep</tag><count>1~1</count><unique>true</unique><lootTable>CBF_MO_Loot_Bergfried</lootTable></li>
               <li><tag>Inn</tag><count>1~1</count><unique>true</unique><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
               <li><tag>Military</tag><count>2~2</count><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
-              <li><tag>HouseLarge</tag><count>7~8</count><lootTable>CBF_MO_Loot_Herrenhaus</lootTable></li>
+              <li><tag>HouseLarge</tag><count>10~14</count><lootTable>CBF_MO_Loot_Herrenhaus</lootTable></li>
               <li><piece>Military_Trebuchets</piece><count>1~1</count><lootTable>CBF_MO_Loot_Geschuetzstand</lootTable></li>
               <li><piece>Military_Baracks</piece><count>1~1</count><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
             </entries>
@@ -126,13 +119,6 @@
         <size>0.6</size>
         <wallDepth>1</wallDepth>
         <versorgung>1.2</versorgung>
-        <!-- Strassenlaternen an den Wegraendern dieses Stadtteils. Der erste
-             Eintrag, den es gibt, gewinnt; fehlt MO, bleibt es dunkel statt zu
-             brechen. -->
-        <lanterns>
-          <li>DankPyon_RusticTorchLamp</li>
-        </lanterns>
-        <lanternGap>13</lanternGap>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
         </walls>
@@ -146,8 +132,8 @@
           <li>
             <name>Test</name>
             <entries>
-              <li><tag>HouseSmall</tag><count>14~20</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
-              <li><piece>Social_Inn</piece><count>1~1</count><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
+              <li><tag>HouseSmall</tag><count>18~25</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+              <li><piece>Social_Inn</piece><count>1~2</count><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
             </entries>
           </li>
           <li>

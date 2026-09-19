@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Warensorten. Sie ziehen ein Stueck und werden von den
+       Raumtabellen darunter verwendet. -->
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Mahlzeit</defName>
+    <label>Mahlzeiten</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>20</weight><thing>MealSimple</thing><count>4~14</count><onMissing>Skip</onMissing></li>
+      <li><weight>12</weight><thing>MealFine</thing><count>2~8</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>MealNutrientPaste</thing><count>4~12</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>MealSurvivalPack</thing><count>3~10</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>MealLavish</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li><weight>14</weight><thing>Pemmican</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech"><weight>6</weight><thing>BabyFood</thing><count>4~14</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Gemuese</defName>
+    <label>Gemuese</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>20</weight><thing>RawPotatoes</thing><count>30~90</count><onMissing>Skip</onMissing></li>
+      <li><weight>18</weight><thing>RawRice</thing><count>30~90</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>RawCorn</thing><count>30~80</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>RawFungus</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>RawAgave</thing><count>15~45</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Obst</defName>
+    <label>Obst</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>20</weight><thing>RawBerries</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Chocolate</thing><count>4~14</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Fleisch</defName>
+    <label>Fleisch</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>16</weight><thing>Pemmican</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>Kibble</thing><count>30~80</count><onMissing>Skip</onMissing></li>
+      <li><weight>5</weight><thing>InsectJelly</thing><count>4~14</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Hof</defName>
+    <label>Hoferzeugnis</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>18</weight><thing>Milk</thing><count>15~45</count><onMissing>Skip</onMissing></li>
+      <li><weight>14</weight><thing>EggChickenUnfertilized</thing><count>6~20</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>Hay</thing><count>40~120</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>Kibble</thing><count>30~80</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Textil</defName>
+    <label>Textil</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>22</weight><thing>Cloth</thing><count>40~120</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>Leather_Plain</thing><count>25~80</count><onMissing>Skip</onMissing></li>
+      <li><weight>12</weight><thing>Leather_Light</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>Leather_Heavy</thing><count>15~50</count><onMissing>Skip</onMissing></li>
+      <li><weight>12</weight><thing>WoolSheep</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>WoolMuffalo</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>WoolAlpaca</thing><count>15~50</count><onMissing>Skip</onMissing></li>
+      <li><weight>5</weight><thing>Synthread</thing><count>10~35</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>DevilstrandCloth</thing><count>8~25</count><onMissing>Skip</onMissing></li>
+      <li><weight>2</weight><thing>Hyperweave</thing><count>5~18</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly"><weight>3</weight><thing>Leather_Dread</thing><count>10~30</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey"><weight>6</weight><thing>WoolMuskox</thing><count>15~50</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Holz</defName>
+    <label>Holz</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>1</weight><thing>WoodLog</thing><count>60~200</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Stein</defName>
+    <label>Steinbloecke</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>20</weight><thing>BlocksGranite</thing><count>40~120</count><onMissing>Skip</onMissing></li>
+      <li><weight>20</weight><thing>BlocksSandstone</thing><count>40~120</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>BlocksLimestone</thing><count>35~110</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>BlocksSlate</thing><count>35~110</count><onMissing>Skip</onMissing></li>
+      <li><weight>12</weight><thing>BlocksMarble</thing><count>30~90</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey"><weight>4</weight><thing>BlocksVacstone</thing><count>30~90</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey"><weight>6</weight><thing>Obsidian</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Erz</defName>
+    <label>Erz und Metall</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>24</weight><thing>Steel</thing><count>60~200</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>Silver</thing><count>40~160</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Gold</thing><count>10~45</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Plasteel</thing><count>10~35</count><onMissing>Skip</onMissing></li>
+      <li><weight>2</weight><thing>Uranium</thing><count>5~20</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Jade</thing><count>10~40</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Komponent</defName>
+    <label>Komponenten</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>20</weight><thing>ComponentIndustrial</thing><count>4~16</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>ComponentSpacer</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech"><weight>4</weight><thing>SignalChip</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech"><weight>3</weight><thing>PowerfocusChip</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech"><weight>2</weight><thing>NanostructuringChip</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech"><weight>4</weight><thing>SubcoreBasic</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey"><weight>4</weight><thing>GravlitePanel</thing><count>3~10</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Chemie</defName>
+    <label>Chemikalien</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>20</weight><thing>Chemfuel</thing><count>30~120</count><onMissing>Skip</onMissing></li>
+      <li><weight>12</weight><thing>Neutroamine</thing><count>10~40</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly"><weight>8</weight><thing>Bioferrite</thing><count>15~50</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech"><weight>4</weight><thing>Wastepack</thing><count>2~8</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Medizin</defName>
+    <label>Medizin</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>20</weight><thing>MedicineIndustrial</thing><count>4~14</count><onMissing>Skip</onMissing></li>
+      <li><weight>18</weight><thing>MedicineHerbal</thing><count>6~20</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>MedicineUltratech</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>Penoxycyline</thing><count>3~12</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech"><weight>8</weight><thing>HemogenPack</thing><count>3~12</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly"><weight>2</weight><thing>MetalbloodSerum</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly"><weight>2</weight><thing>MindNumbSerum</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly"><weight>1</weight><thing>GhoulResurrectionSerum</thing><count>1</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Droge</defName>
+    <label>Drogen</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>18</weight><thing>PsychoidLeaves</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>SmokeleafLeaves</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>12</weight><thing>Flake</thing><count>5~18</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>Yayo</thing><count>4~14</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>PsychiteTea</thing><count>4~14</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>WakeUp</thing><count>3~12</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>SmokeleafJoint</thing><count>5~18</count><onMissing>Skip</onMissing></li>
+      <li><weight>5</weight><thing>GoJuice</thing><count>2~7</count><onMissing>Skip</onMissing></li>
+      <li><weight>2</weight><thing>Luciferium</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey"><weight>8</weight><thing>Drug_Psilocap</thing><count>4~14</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Bier</defName>
+    <label>Bier und Wuerze</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>22</weight><thing>Beer</thing><count>8~30</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>Wort</thing><count>15~50</count><onMissing>Skip</onMissing></li>
+      <li><weight>14</weight><thing>RawHops</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Ambrosia</thing><count>3~10</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Buecher</defName>
+    <label>Buecher</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>14</weight><thing>TextBook</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li><weight>12</weight><thing>Schematic</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>Novel</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey"><weight>6</weight><thing>Map</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly"><weight>3</weight><thing>Tome</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Schatz</defName>
+    <label>Schatz</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>20</weight><thing>Gold</thing><count>15~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>Silver</thing><count>60~220</count><onMissing>Skip</onMissing></li>
+      <li><weight>12</weight><thing>Jade</thing><count>15~50</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Plasteel</thing><count>10~35</count><onMissing>Skip</onMissing></li>
+      <li><weight>1</weight><thing>AIPersonaCore</thing><count>1</count><onMissing>Skip</onMissing></li>
+      <li><weight>1</weight><thing>TechprofSubpersonaCore</thing><count>1</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>PsychicSoothePulser</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>PsychicAnimalPulser</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech"><weight>4</weight><thing>Genepack</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly"><weight>4</weight><thing>Shard</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Ideology"><weight>3</weight><thing>RelicInertCup</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Ideology"><weight>3</weight><thing>RelicInertPendant</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey"><weight>1</weight><thing>Gravcore</thing><count>1</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Munition</defName>
+    <label>Munition</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>16</weight><thing>Shell_HighExplosive</thing><count>4~14</count><onMissing>Skip</onMissing></li>
+      <li><weight>12</weight><thing>Shell_Incendiary</thing><count>3~10</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>ReinforcedBarrel</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li><weight>14</weight><thing>Steel</thing><count>40~120</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Gewand</defName>
+    <label>Gewand</label>
+    <rolls>1~2</rolls>
+    <entries>
+      <li><weight>20</weight><thing>Apparel_BasicShirt</thing><count>1~3</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>20</weight><thing>Apparel_Pants</thing><count>1~3</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>12</weight><thing>Apparel_Jacket</thing><count>1~2</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>Apparel_Duster</thing><count>1~2</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>Apparel_Tuque</thing><count>1~2</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>Apparel_CowboyHat</thing><count>1~2</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Apparel_Parka</thing><count>1</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>5</weight><thing>Apparel_Robe</thing><count>1</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>2</weight><thing>Apparel_Corset</thing><count>1</count><quality>Normal~Excellent</quality><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Muenzen</defName>
+    <label>Gold und Silber</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>24</weight><thing>Silver</thing><count>40~220</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>Gold</thing><count>8~40</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Jade</thing><count>8~30</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Ware_Pistole</defName>
+    <label>Faustfeuerwaffe</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>20</weight><thing>Gun_Revolver</thing><count>1</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>16</weight><thing>Gun_Autopistol</thing><count>1</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>Gun_MachinePistol</thing><count>1</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Gun_HeavySMG</thing><count>1</count><quality>Awful~Normal</quality><hitPoints>0.4~0.8</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <!-- Raumtabellen. Sie ziehen Warensorten, nicht Stuecke. -->
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Wohnhaus</defName>
+    <label>Wohnhaus</label>
+    <rolls>3~6</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>20</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Ware_Gewand</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Ware_Gemuese</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Ware_Textil</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Ware_Holz</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Ware_Muenzen</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Obst</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Ware_Buecher</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Ware_Bier</table></li>
+      <li><weight>2</weight><table>CBF_Vanilla_Ware_Pistole</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Schlafstelle</defName>
+    <label>Schlafstelle</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>22</weight><table>CBF_Vanilla_Ware_Textil</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Ware_Gewand</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Muenzen</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Ware_Buecher</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Ware_Droge</table></li>
+      <li><weight>3</weight><table>CBF_Vanilla_Ware_Schatz</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Kueche</defName>
+    <label>Kueche</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>22</weight><table>CBF_Vanilla_Ware_Gemuese</table></li>
+      <li><weight>20</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Ware_Hof</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Ware_Fleisch</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Obst</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Lager</defName>
+    <label>Lager</label>
+    <rolls>3~5</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>18</weight><table>CBF_Vanilla_Ware_Erz</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Ware_Holz</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Ware_Textil</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Chemie</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Ware_Stein</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Werkstatt</defName>
+    <label>Werkstatt</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>20</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Ware_Erz</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Ware_Holz</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Ware_Chemie</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Textil</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Ware_Stein</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Schmiede</defName>
+    <label>Schmiede</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>26</weight><table>CBF_Vanilla_Ware_Erz</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Ware_Stein</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Holz</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Ware_Munition</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Schneiderei</defName>
+    <label>Schneiderei</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>30</weight><table>CBF_Vanilla_Ware_Textil</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Ware_Holz</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Steinmetz</defName>
+    <label>Steinmetz</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>28</weight><table>CBF_Vanilla_Ware_Stein</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Erz</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Spital</defName>
+    <label>Spital</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>30</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Ware_Textil</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Ware_Droge</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Drogenlabor</defName>
+    <label>Drogenlabor</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>30</weight><table>CBF_Vanilla_Ware_Droge</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Ware_Chemie</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Brauerei</defName>
+    <label>Brauerei</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>30</weight><table>CBF_Vanilla_Ware_Bier</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Gemuese</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Ware_Holz</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Forschung</defName>
+    <label>Forschungsgebaeude</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>22</weight><table>CBF_Vanilla_Ware_Buecher</table></li>
+      <li><weight>20</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Ware_Erz</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Ware_Schatz</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Generator</defName>
+    <label>Generatoranlage</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>28</weight><table>CBF_Vanilla_Ware_Chemie</table></li>
+      <li><weight>20</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Ware_Erz</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Holz</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Waffenkammer</defName>
+    <label>Waffenkammer</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>26</weight><table>CBF_Vanilla_Ware_Munition</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Ware_Erz</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Ware_Textil</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Bauernhof</defName>
+    <label>Bauernhof</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>24</weight><table>CBF_Vanilla_Ware_Hof</table></li>
+      <li><weight>20</weight><table>CBF_Vanilla_Ware_Gemuese</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Ware_Obst</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Ware_Holz</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Ware_Textil</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Schatzkammer</defName>
+    <label>Schatzkammer</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>30</weight><table>CBF_Vanilla_Ware_Schatz</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Ware_Erz</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Ware_Buecher</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Minimal</defName>
+    <label>Wenig</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <entries>
+      <li><weight>22</weight><table>CBF_Vanilla_Ware_Holz</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Ware_Erz</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Ware_Textil</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+</Defs>

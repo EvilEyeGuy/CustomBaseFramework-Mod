@@ -8,6 +8,7 @@
 
 
 
+
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Pawns_Wirtsleute</defName>
     <label>innkeepers</label>
@@ -140,6 +141,16 @@
     <label>CBF_Pawns_Vanilla_Civil</label>
     <rolle>Zivil</rolle>
     <radius>4</radius>
+    <members>
+      <li><kind>Villager</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Vanilla_Villager</defName>
+    <label>CBF_Vanilla_Villager</label>
+    <rolle>Zivil</rolle>
+    <radius>2</radius>
     <members>
       <li><kind>Villager</kind><weight>1</weight></li>
     </members>

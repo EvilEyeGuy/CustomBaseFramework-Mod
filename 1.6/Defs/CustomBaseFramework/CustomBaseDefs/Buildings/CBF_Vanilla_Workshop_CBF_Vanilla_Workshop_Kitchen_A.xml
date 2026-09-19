@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Workshop_Kitchen_A</defName>
+    <label>CBF_Vanilla_Workshop_Kitchen_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_Workshop</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>Granite_RoughHewn</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>C</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>F</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>P</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>R</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>L</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>S</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>G</symbol><terrain>SilverTile</terrain></li>
+      <li><symbol>H</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>K</symbol><thing>Cooler</thing><rotation>South</rotation></li>
+      <li><symbol>M</symbol><thing>DiningChair</thing><stuff>Steel</stuff><rotation>South</rotation></li>
+      <li><symbol>N</symbol><thing>ElectricStove</thing><rotation>South</rotation></li>
+      <li><symbol>Q</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kueche</lootTable></li>
+      <li><symbol>U</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kueche</lootTable></li>
+      <li><symbol>V</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kueche</lootTable></li>
+      <li><symbol>X</symbol><anchor>Fill4</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kueche</lootTable></li>
+      <li><symbol>Y</symbol><anchor>Fill5</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kueche</lootTable></li>
+      <li><symbol>Z</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Vanilla_Civil</pawnList></li>
+    </legend>
+
+    <mask>
+      <li>#####....</li>
+      <li>#######..</li>
+      <li>#######..</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>....#####</li>
+      <li>....#####</li>
+    </mask>
+
+    <terrain>
+      <li>WWWWW....</li>
+      <li>WCCCWWW..</li>
+      <li>WCCCCCW..</li>
+      <li>WCCCWCWGW</li>
+      <li>WCCCWGGGW</li>
+      <li>WCCCWGGGW</li>
+      <li>WWWWWGGGW</li>
+      <li>....WGGGW</li>
+      <li>....WWWWW</li>
+    </terrain>
+
+    <things>
+      <li>TTTTT....</li>
+      <li>TFP.TTT..</li>
+      <li>T...L.T..</li>
+      <li>TR.STLTLT</li>
+      <li>T...T.F.T</li>
+      <li>TR.HT...T</li>
+      <li>TTKTT.M.T</li>
+      <li>....TN..T</li>
+      <li>....TTTTT</li>
+    </things>
+
+    <things2>
+      <li>BBBBB....</li>
+      <li>B...BBB..</li>
+      <li>B.....B..</li>
+      <li>B.....BBB</li>
+      <li>B.......B</li>
+      <li>B.......B</li>
+      <li>BBBBB...B</li>
+      <li>....B...B</li>
+      <li>....BBBBB</li>
+    </things2>
+
+    <roof>
+      <li>DDDDD....</li>
+      <li>DDDDDDD..</li>
+      <li>DDDDDDD..</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>....DDDDD</li>
+      <li>....DDDDD</li>
+    </roof>
+
+    <anchors>
+      <li>.........</li>
+      <li>..UU.....</li>
+      <li>.Q.......</li>
+      <li>.Q.Y.....</li>
+      <li>.V.X.....</li>
+      <li>.V.X..Z..</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

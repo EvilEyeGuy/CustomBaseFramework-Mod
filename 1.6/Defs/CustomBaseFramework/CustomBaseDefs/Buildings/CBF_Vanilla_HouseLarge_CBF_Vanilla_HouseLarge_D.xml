@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_HouseLarge_D</defName>
+    <label>CBF_Vanilla_HouseLarge_D</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_HouseLarge</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>Granite_RoughHewn</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>C</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>F</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>P</symbol><thing>DoubleBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>R</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>L</symbol><thing>Dresser</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>S</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>G</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>H</symbol><terrain>FlagstoneGranite</terrain></li>
+      <li><symbol>K</symbol><terrain>TileGranite</terrain></li>
+      <li><symbol>M</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>N</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>Q</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>U</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>V</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>X</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList></li>
+      <li><symbol>Y</symbol><anchor>Spawn2</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList></li>
+    </legend>
+
+    <mask>
+      <li>...######</li>
+      <li>...######</li>
+      <li>...######</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+    </mask>
+
+    <terrain>
+      <li>...WWWWWW</li>
+      <li>...WCCCCW</li>
+      <li>...WCCCCW</li>
+      <li>WWCWCCCCW</li>
+      <li>WCCCCCCCW</li>
+      <li>WCCCCWWWW</li>
+      <li>WCCCCHKHW</li>
+      <li>WCCCCWHKW</li>
+      <li>WWWWWWWWW</li>
+    </terrain>
+
+    <things>
+      <li>...TTTTTT</li>
+      <li>...TF..FT</li>
+      <li>...T.P..T</li>
+      <li>TTRT....T</li>
+      <li>T.....L.T</li>
+      <li>T...STTTT</li>
+      <li>TGG..R..T</li>
+      <li>TN.Q.T.MT</li>
+      <li>TTTTTTTTT</li>
+    </things>
+
+    <things2>
+      <li>...BBBBBB</li>
+      <li>...B....B</li>
+      <li>...B....B</li>
+      <li>BBBB....B</li>
+      <li>B.......B</li>
+      <li>B.......B</li>
+      <li>B.......B</li>
+      <li>B.......B</li>
+      <li>BBBBBBBBB</li>
+    </things2>
+
+    <roof>
+      <li>...DDDDDD</li>
+      <li>...DDDDDD</li>
+      <li>...DDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+    </roof>
+
+    <anchors>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.....X...</li>
+      <li>.........</li>
+      <li>...Y.....</li>
+      <li>.......U.</li>
+      <li>...VV..U.</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

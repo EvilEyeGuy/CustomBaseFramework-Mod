@@ -3,13 +3,13 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>Modern_LargeHouseB</defName>
-    <label>Modern_LargeHouseB</label>
+    <defName>CBF_Vanilla_HouseLarge_B</defName>
+    <label>CBF_Vanilla_HouseLarge_B</label>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_ModernHouseLarge</li>
+      <li>CBF_Vanilla_HouseLarge</li>
     </categories>
-    <style>Modern</style>
+    <style>CBF_ModernVanilla</style>
 
     <legend>
       <li><symbol>W</symbol><terrain>Granite_RoughHewn</terrain></li>
@@ -28,9 +28,11 @@
       <li><symbol>M</symbol><terrain>FlagstoneGranite</terrain></li>
       <li><symbol>N</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
       <li><symbol>Q</symbol><thing>DoubleBed</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>X</symbol><thing>EndTable</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>U</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>V</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>U</symbol><thing>EndTable</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>V</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>X</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>Y</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList></li>
+      <li><symbol>Z</symbol><anchor>Spawn2</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList></li>
     </legend>
 
     <mask>
@@ -68,7 +70,7 @@
       <li>TTTT.H.ST</li>
       <li>T..F....T</li>
       <li>TN.T....T</li>
-      <li>TTTTXQ.XT</li>
+      <li>TTTTUQ.UT</li>
       <li>...TTTTTT</li>
     </things>
 
@@ -100,13 +102,13 @@
 
     <anchors>
       <li>.........</li>
-      <li>.UU......</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
       <li>.VV......</li>
+      <li>.........</li>
+      <li>...Z.....</li>
+      <li>....Y....</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.XX......</li>
       <li>.........</li>
       <li>.........</li>
     </anchors>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_DefenseSmall_Turret</defName>
+    <label>CBF_Vanilla_DefenseSmall_Turret</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_Defense_Small</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>PavedTile</terrain></li>
+      <li><symbol>D</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>T</symbol><thing>Barricade</thing><stuff>Steel</stuff></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>C</symbol><thing>Sandbags</thing><stuff>Cloth</stuff></li>
+      <li><symbol>F</symbol><thing>Turret_MiniTurret</thing><stuff>Steel</stuff></li>
+    </legend>
+
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+
+    <terrain>
+      <li>WWWWW</li>
+      <li>WDDDW</li>
+      <li>WDDDW</li>
+      <li>WDDDW</li>
+      <li>WWWWW</li>
+    </terrain>
+
+    <things>
+      <li>.....</li>
+      <li>.TCT.</li>
+      <li>.CFC.</li>
+      <li>.TCT.</li>
+      <li>.....</li>
+    </things>
+
+    <things2>
+      <li>.....</li>
+      <li>.BBB.</li>
+      <li>.B.B.</li>
+      <li>.BBB.</li>
+      <li>.....</li>
+    </things2>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

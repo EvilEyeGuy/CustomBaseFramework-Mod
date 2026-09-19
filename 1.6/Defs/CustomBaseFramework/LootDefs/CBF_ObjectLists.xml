@@ -3,101 +3,17 @@
 <Defs>
 
 
-
-
-
-
-
-
-
-
-  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>MO_1x2_Shelfes</defName>
-    <members>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_ChaliceSilver</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_Emerald</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_Paregoric</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_Stardust</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_VigorPill</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_HappyPowder</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_BattleElixir</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_ShelfFilled2c</thing><bleibt>true</bleibt></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_ShelfFilled1c</thing><bleibt>true</bleibt></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_Book</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_Bowl</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_IronIngot</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_Rations</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_Sapphire</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_Ruby</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_AssortedHerbs</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_AssortedDrugsB</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_Luhix</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_LootableShelf_AssortedDrugsA</thing><fremd>true</fremd></li>
-      </members>
-  </CustomBaseFramework.LootBuildingCategoryDef>
-
   <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_Cat_Neu</defName>
-    <members>
-      <li><thing>Shelf</thing><bleibt>true</bleibt></li>
-    </members>
-  </CustomBaseFramework.LootBuildingCategoryDef>
-
-  <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_Cat_ModernHouses</defName>
-    <members>
-      <li>Shelf</li>
-    </members>
-  </CustomBaseFramework.LootBuildingCategoryDef>
-
-  <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_Cat_ModernHouses1x1</defName>
+    <defName>CBF_Vanilla_1x1_Shelf</defName>
     <members>
       <li>ShelfSmall</li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
-  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Shelf_1x2</defName>
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Vanilla_1x2_Shelf</defName>
     <members>
-      <li>DankPyon_HideoutLargeShelf_FilledA_Amboise</li>
-      <li>DankPyon_HideoutLargeShelf_FilledB_Amboise</li>
-      <li>DankPyon_HideoutLargeShelf_FilledA_Hesse</li>
-      <li>DankPyon_HideoutLargeShelf_FilledB_Hesse</li>
-      <li>DankPyon_HideoutLargeShelf_FilledA_Oswin</li>
-      <li>DankPyon_HideoutLargeShelf_FilledB_Oswin</li>
-      <li>DankPyon_HideoutLargeShelf_FilledA_Soren</li>
-      <li>DankPyon_HideoutLargeShelf_FilledB_Soren</li>
-    </members>
-  </CustomBaseFramework.LootBuildingCategoryDef>
-
-  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_ScienceLab</defName>
-    <members>
-      <li><thing>DankPyon_LootableShelf_ChaliceSilver</thing><fremd>true</fremd></li>
-      <li><thing>DankPyon_LootableShelf_Book</thing><fremd>true</fremd></li>
-      <li><thing>DankPyon_LootableShelf_Emerald</thing><fremd>true</fremd></li>
-    </members>
-  </CustomBaseFramework.LootBuildingCategoryDef>
-
-  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_1x3_Breadshelf</defName>
-    <members>
-      <li><thing>DankPyon_HideoutRusticCupboardBread</thing><fremd>true</fremd></li>
-    </members>
-  </CustomBaseFramework.LootBuildingCategoryDef>
-
-  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_2x2_Veg</defName>
-    <members>
-      <li><thing>DankPyon_HideoutLargeShelf_Vegetables</thing><fremd>true</fremd></li>
-    </members>
-  </CustomBaseFramework.LootBuildingCategoryDef>
-
-  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_Cat_1x2_Straw</defName>
-    <members>
-      <li><thing>DankPyon_HideoutStrawPile</thing><fremd>true</fremd></li>
+      <li>Shelf</li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 </Defs>

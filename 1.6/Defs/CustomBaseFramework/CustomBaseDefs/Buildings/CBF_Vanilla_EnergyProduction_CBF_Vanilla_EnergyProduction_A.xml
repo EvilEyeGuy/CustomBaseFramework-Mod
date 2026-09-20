@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_EnergyProduction_A</defName>
+    <label>CBF_Vanilla_EnergyProduction_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_EnergyProduction</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>Fence</thing><stuff>Steel</stuff></li>
+      <li><symbol>C</symbol><thing>ChemfuelPoweredGenerator</thing></li>
+      <li><symbol>F</symbol><thing>Autodoor</thing><stuff>Steel</stuff></li>
+      <li><symbol>P</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>R</symbol><thing>Shelf</thing><stuff>Steel</stuff><rotation>East</rotation></li>
+      <li><symbol>L</symbol><thing>ShelfSmall</thing><stuff>Steel</stuff><rotation>South</rotation></li>
+      <li><symbol>S</symbol><thing>Shelf</thing><stuff>Steel</stuff><rotation>West</rotation></li>
+      <li><symbol>G</symbol><thing>WallLamp</thing><rotation>South</rotation></li>
+      <li><symbol>H</symbol><thing>BiofuelRefinery</thing><rotation>South</rotation></li>
+    </legend>
+
+    <mask>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>..#####..</li>
+      <li>..#####..</li>
+    </mask>
+
+    <terrain>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWWWWW</li>
+      <li>..WWWWW..</li>
+      <li>..WWWWW..</li>
+    </terrain>
+
+    <things>
+      <li>TBBT.TBBT</li>
+      <li>T..TFT..T</li>
+      <li>TC.T.TC.T</li>
+      <li>TTFT.TFTT</li>
+      <li>T..L.L..T</li>
+      <li>TRGP.PGST</li>
+      <li>TTTPPPTTT</li>
+      <li>..TH..T..</li>
+      <li>..TTTTT..</li>
+    </things>
+
+    <things2>
+      <li>.........</li>
+      <li>.........</li>
+      <li>...P.P...</li>
+      <li>...P.P...</li>
+      <li>...P.P...</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </things2>
+
+    <roof>
+      <li>DDDD.DDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>..DDDDD..</li>
+      <li>..DDDDD..</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -19,11 +19,16 @@
       <li><symbol>C</symbol><thing>ChemfuelPoweredGenerator</thing></li>
       <li><symbol>F</symbol><thing>Autodoor</thing><stuff>Steel</stuff></li>
       <li><symbol>P</symbol><thing>HiddenConduit</thing></li>
-      <li><symbol>R</symbol><thing>Shelf</thing><stuff>Steel</stuff><rotation>East</rotation></li>
-      <li><symbol>L</symbol><thing>ShelfSmall</thing><stuff>Steel</stuff><rotation>South</rotation></li>
-      <li><symbol>S</symbol><thing>Shelf</thing><stuff>Steel</stuff><rotation>West</rotation></li>
-      <li><symbol>G</symbol><thing>WallLamp</thing><rotation>South</rotation></li>
-      <li><symbol>H</symbol><thing>BiofuelRefinery</thing><rotation>South</rotation></li>
+      <li><symbol>R</symbol><thing>Cooler</thing><rotation>West</rotation></li>
+      <li><symbol>L</symbol><thing>Shelf</thing><stuff>Steel</stuff><rotation>East</rotation></li>
+      <li><symbol>S</symbol><thing>ShelfSmall</thing><stuff>Steel</stuff><rotation>South</rotation></li>
+      <li><symbol>G</symbol><thing>Shelf</thing><stuff>Steel</stuff><rotation>West</rotation></li>
+      <li><symbol>H</symbol><thing>Cooler</thing><rotation>East</rotation></li>
+      <li><symbol>K</symbol><thing>WallLamp</thing><rotation>South</rotation></li>
+      <li><symbol>M</symbol><thing>BiofuelRefinery</thing><rotation>South</rotation></li>
+      <li><symbol>N</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Ware_Chemie</lootTable></li>
+      <li><symbol>Q</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Ware_Chemie</lootTable></li>
+      <li><symbol>U</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_Vanilla_Ware_Fleisch</lootTable></li>
     </legend>
 
     <mask>
@@ -55,10 +60,10 @@
       <li>T..TFT..T</li>
       <li>TC.T.TC.T</li>
       <li>TTFT.TFTT</li>
-      <li>T..L.L..T</li>
-      <li>TRGP.PGST</li>
+      <li>R..S.S..H</li>
+      <li>TLKP.PKGT</li>
       <li>TTTPPPTTT</li>
-      <li>..TH..T..</li>
+      <li>..TM..T..</li>
       <li>..TTTTT..</li>
     </things>
 
@@ -85,6 +90,18 @@
       <li>..DDDDD..</li>
       <li>..DDDDD..</li>
     </roof>
+
+    <anchors>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.N.U...Q.</li>
+      <li>.N.....Q.</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </anchors>
   </CustomBaseFramework.PieceDef>
 
 </Defs>

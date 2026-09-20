@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_EnergyProduction_B</defName>
+    <label>CBF_Vanilla_EnergyProduction_B</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_EnergyProduction</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>C</symbol><thing>ChemfuelPoweredGenerator</thing></li>
+      <li><symbol>F</symbol><thing>Fence</thing><stuff>Steel</stuff></li>
+      <li><symbol>P</symbol><thing>WallLamp</thing><rotation>East</rotation></li>
+      <li><symbol>R</symbol><thing>BiofuelRefinery</thing><rotation>East</rotation></li>
+      <li><symbol>L</symbol><thing>Autodoor</thing><stuff>Steel</stuff></li>
+      <li><symbol>S</symbol><thing>Cooler</thing><rotation>West</rotation></li>
+      <li><symbol>G</symbol><thing>Shelf</thing><stuff>Steel</stuff><rotation>East</rotation></li>
+      <li><symbol>H</symbol><thing>Cooler</thing><rotation>South</rotation></li>
+      <li><symbol>K</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Ware_Chemie</lootTable></li>
+      <li><symbol>M</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Ware_Fleisch</lootTable></li>
+    </legend>
+
+    <mask>
+      <li>...#####</li>
+      <li>...#####</li>
+      <li>...#####</li>
+      <li>...#####</li>
+      <li>...#####</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+    </mask>
+
+    <terrain>
+      <li>...WWWWW</li>
+      <li>...WWWWW</li>
+      <li>...WWWWW</li>
+      <li>...WWWWW</li>
+      <li>...WWWWW</li>
+      <li>WWWWWWWW</li>
+      <li>WWWWWWWW</li>
+      <li>WWWWWWWW</li>
+      <li>WWWWWWWW</li>
+      <li>WWWWWWWW</li>
+      <li>WWWWWWWW</li>
+    </terrain>
+
+    <things>
+      <li>...TTTTT</li>
+      <li>...T...F</li>
+      <li>...T.C.F</li>
+      <li>...T.PTT</li>
+      <li>...T...F</li>
+      <li>TTLT...F</li>
+      <li>S..T.R.F</li>
+      <li>TG.L.PTT</li>
+      <li>T..T...F</li>
+      <li>TG.T.C.F</li>
+      <li>TTHTFFFT</li>
+    </things>
+
+    <things2>
+      <li>...BBB..</li>
+      <li>...B....</li>
+      <li>...B...B</li>
+      <li>...B...B</li>
+      <li>...B...B</li>
+      <li>BBBB...B</li>
+      <li>B......B</li>
+      <li>B......B</li>
+      <li>B......B</li>
+      <li>B.......</li>
+      <li>BBBBBB..</li>
+    </things2>
+
+    <roof>
+      <li>...DDDDD</li>
+      <li>...DDDDD</li>
+      <li>...DDDDD</li>
+      <li>...DDDDD</li>
+      <li>...DDDDD</li>
+      <li>DDDDDDDD</li>
+      <li>DDDDDDDD</li>
+      <li>DDDDDDDD</li>
+      <li>DDDDDDDD</li>
+      <li>DDDDDDDD</li>
+      <li>DDDDDDDD</li>
+    </roof>
+
+    <anchors>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+      <li>.K......</li>
+      <li>.K......</li>
+      <li>.M......</li>
+      <li>.M......</li>
+      <li>........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

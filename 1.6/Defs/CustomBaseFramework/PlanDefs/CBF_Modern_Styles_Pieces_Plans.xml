@@ -203,6 +203,20 @@
         </chain>
       </li>
       <li>
+        <role>CONDUIT_ROAD</role>
+        <chain>
+          <li>PowerConduit</li>
+          <li>HiddenConduit</li>
+        </chain>
+      </li>
+      <li>
+        <role>CONDUIT_WATER</role>
+        <chain>
+          <li>WaterproofConduit</li>
+          <li>PowerConduit</li>
+        </chain>
+      </li>
+      <li>
         <role>FLOOR_INTERIOR</role>
         <terrainChain>
           <li>Concrete</li>
@@ -301,16 +315,7 @@
         <name>Umland</name>
         <size>1.8</size>
         <wallDepth>0</wallDepth>
-        <versorgung>1.2</versorgung><fields><li>
-            <name>Acker</name>
-            <count>2~2</count>
-            <fence>true</fence>
-            <weight>1</weight><plants>
-              <li>Plant_Rice</li>
-             </plants>
-            <tags>
-              <li>CBF_ModernFarmHouse</li>
-            </tags></li></fields>
+        <versorgung>1.2</versorgung>
         <roads>
           <li>Concrete</li>
         </roads>

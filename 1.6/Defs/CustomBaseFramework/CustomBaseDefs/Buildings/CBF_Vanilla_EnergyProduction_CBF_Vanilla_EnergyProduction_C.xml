@@ -17,16 +17,20 @@
       <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>C</symbol><thing>Autodoor</thing><stuff>Steel</stuff></li>
-      <li><symbol>F</symbol><thing>Cooler</thing><rotation>West</rotation></li>
+      <li><symbol>F</symbol><thing>Cooler</thing><rotation>West</rotation><temperatur>-9</temperatur></li>
       <li><symbol>P</symbol><thing>ShelfSmall</thing><stuff>Steel</stuff><rotation>East</rotation></li>
       <li><symbol>R</symbol><thing>Shelf</thing><stuff>Steel</stuff><rotation>West</rotation></li>
-      <li><symbol>L</symbol><thing>Cooler</thing><rotation>East</rotation></li>
+      <li><symbol>L</symbol><thing>Cooler</thing><rotation>East</rotation><temperatur>-9</temperatur></li>
       <li><symbol>S</symbol><thing>Shelf</thing><stuff>Steel</stuff><rotation>East</rotation></li>
       <li><symbol>G</symbol><thing>Fence</thing><stuff>Steel</stuff></li>
       <li><symbol>H</symbol><thing>ShelfSmall</thing><stuff>Steel</stuff><rotation>West</rotation></li>
       <li><symbol>K</symbol><thing>ChemfuelPoweredGenerator</thing></li>
       <li><symbol>M</symbol><thing>WallLamp</thing></li>
       <li><symbol>N</symbol><thing>BiofuelRefinery</thing><rotation>South</rotation></li>
+      <li><symbol>Q</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Ware_Chemie</lootTable></li>
+      <li><symbol>U</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Ware_Fleisch</lootTable></li>
+      <li><symbol>V</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_MO_Ware_Fleisch</lootTable></li>
+      <li><symbol>X</symbol><anchor>Fill4</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_Vanilla_Ware_Chemie</lootTable></li>
     </legend>
 
     <mask>
@@ -88,6 +92,18 @@
       <li>.DDDDDDDDD.</li>
       <li>...DDDDD...</li>
     </roof>
+
+    <anchors>
+      <li>...........</li>
+      <li>....V.X....</li>
+      <li>....Q.U....</li>
+      <li>....Q.U....</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </anchors>
   </CustomBaseFramework.PieceDef>
 
 </Defs>

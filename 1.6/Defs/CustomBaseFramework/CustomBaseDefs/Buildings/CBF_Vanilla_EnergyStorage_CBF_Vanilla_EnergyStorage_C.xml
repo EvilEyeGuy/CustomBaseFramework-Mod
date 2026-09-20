@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_EnergyStorage_C</defName>
+    <label>CBF_Vanilla_EnergyStorage_C</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_EnergyStorage</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>Granite_RoughHewn</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>C</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>F</symbol><thing>Battery</thing><rotation>West</rotation></li>
+      <li><symbol>P</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>R</symbol><thing>FirefoamPopper</thing></li>
+      <li><symbol>L</symbol><thing>Battery</thing></li>
+      <li><symbol>S</symbol><thing>Battery</thing><rotation>East</rotation></li>
+    </legend>
+
+    <mask>
+      <li>#####......</li>
+      <li>#####......</li>
+      <li>#####......</li>
+      <li>#####......</li>
+      <li>#####.#####</li>
+      <li>......#####</li>
+      <li>......#####</li>
+      <li>......#####</li>
+      <li>......#####</li>
+    </mask>
+
+    <terrain>
+      <li>WWWWW......</li>
+      <li>WCCCW......</li>
+      <li>WCCCC......</li>
+      <li>WCCCW......</li>
+      <li>WWWWW.WWCWW</li>
+      <li>......WCCCW</li>
+      <li>......WCCCW</li>
+      <li>......WCCCW</li>
+      <li>......WWWWW</li>
+    </terrain>
+
+    <things>
+      <li>TTTTT......</li>
+      <li>TF..T......</li>
+      <li>TF..P......</li>
+      <li>TF.RT......</li>
+      <li>TTTTT.TTPTT</li>
+      <li>......TR..T</li>
+      <li>......T..LT</li>
+      <li>......TLS.T</li>
+      <li>......TTTTT</li>
+    </things>
+
+    <things2>
+      <li>..BBB......</li>
+      <li>....B......</li>
+      <li>....B......</li>
+      <li>....B......</li>
+      <li>..BBB.BBBB.</li>
+      <li>......B....</li>
+      <li>......B....</li>
+      <li>...........</li>
+      <li>...........</li>
+    </things2>
+
+    <roof>
+      <li>DDDDD......</li>
+      <li>DDDDD......</li>
+      <li>DDDDD......</li>
+      <li>DDDDD......</li>
+      <li>DDDDD.DDDDD</li>
+      <li>......DDDDD</li>
+      <li>......DDDDD</li>
+      <li>......DDDDD</li>
+      <li>......DDDDD</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

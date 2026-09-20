@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_GateHouse_Small</defName>
+    <label>CBF_MO_GateHouse_Small</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_WallGateHouse</li>
+    </categories>
+    <style>CBF_Medieval</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_CastleWallEmbrasures</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_WallLamp</thing><stuff>Steel</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_Gate</thing><stuff>Steel</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_RusticTable1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_Candle</thing><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>K</symbol><anchor>Wall</anchor></li>
+      <li><symbol>M</symbol><anchor>Outside</anchor></li>
+      <li><symbol>N</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_BarrelClosed</objects></li>
+      <li><symbol>Q</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList></li>
+      <li><symbol>U</symbol><anchor>Spawn2</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList></li>
+      <li><symbol>V</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_BarrelClosed</objects></li>
+    </legend>
+
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+
+    <terrain>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>.....</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+    </terrain>
+
+    <things>
+      <li>TTBTT</li>
+      <li>TC.FT</li>
+      <li>B...P</li>
+      <li>TR..T</li>
+      <li>TTBTT</li>
+      <li>...L.</li>
+      <li>TTBTT</li>
+      <li>TRSGT</li>
+      <li>B..HP</li>
+      <li>TF..T</li>
+      <li>TTBTT</li>
+    </things>
+
+    <roof>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+    </roof>
+
+    <anchors>
+      <li>..K..</li>
+      <li>...V.</li>
+      <li>...U.</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>M....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>...Q.</li>
+      <li>.N...</li>
+      <li>..K..</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

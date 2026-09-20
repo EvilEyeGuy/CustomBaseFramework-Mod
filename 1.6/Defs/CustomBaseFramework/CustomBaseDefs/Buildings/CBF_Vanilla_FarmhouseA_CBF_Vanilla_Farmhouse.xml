@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Farmhouse</defName>
+    <label>CBF_Vanilla_Farmhouse</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_FarmhouseA</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>C</symbol><thing>Door</thing><stuff>Steel</stuff></li>
+      <li><symbol>F</symbol><terrain>CarpetRed</terrain></li>
+      <li><symbol>P</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>R</symbol><thing>ElectricStove</thing><rotation>East</rotation></li>
+      <li><symbol>L</symbol><terrain>Granite_RoughHewn</terrain></li>
+      <li><symbol>S</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>G</symbol><thing>Column</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>H</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>K</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>M</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>N</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>Q</symbol><thing>WallLamp</thing><rotation>West</rotation></li>
+      <li><symbol>U</symbol><thing>Couch</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
+      <li><symbol>V</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>X</symbol><thing>WallLamp</thing></li>
+      <li><symbol>Y</symbol><thing>DoubleBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>Z</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>a</symbol><thing>TubeTelevision</thing></li>
+      <li><symbol>e</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>b</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>d</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>f</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects></li>
+      <li><symbol>g</symbol><anchor>Fill4</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects></li>
+      <li><symbol>h</symbol><anchor>Fill5</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+    </legend>
+
+    <mask>
+      <li>#######...</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+    </mask>
+
+    <terrain>
+      <li>WWWWWWW...</li>
+      <li>WFFWWWWLLL</li>
+      <li>WFFWWWWLLL</li>
+      <li>WFFWWWWLLL</li>
+      <li>WWWWWWWWWW</li>
+      <li>WWWWWWWWWW</li>
+      <li>WWWWWWWWWW</li>
+      <li>WWWWWWWWWW</li>
+      <li>WWWWWWWWWW</li>
+    </terrain>
+
+    <things>
+      <li>TTTCTTT...</li>
+      <li>TPP...TS.G</li>
+      <li>TH....T...</li>
+      <li>TNN..RTK.M</li>
+      <li>TQ..TTTTTT</li>
+      <li>TU..VX..ZT</li>
+      <li>T.....Y..T</li>
+      <li>Ta.e.....T</li>
+      <li>TTTTTTTTTT</li>
+    </things>
+
+    <things2>
+      <li>BBBBBBB...</li>
+      <li>B.....B...</li>
+      <li>B.....B...</li>
+      <li>B.....B...</li>
+      <li>B...BBBBBB</li>
+      <li>B........B</li>
+      <li>B........B</li>
+      <li>B........B</li>
+      <li>BBBBBBBBBB</li>
+    </things2>
+
+    <roof>
+      <li>DDDDDDD...</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+    </roof>
+
+    <anchors>
+      <li>..........</li>
+      <li>.......h..</li>
+      <li>.......f.g</li>
+      <li>.......f.g</li>
+      <li>..........</li>
+      <li>....d.....</li>
+      <li>..........</li>
+      <li>...bb.....</li>
+      <li>..........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

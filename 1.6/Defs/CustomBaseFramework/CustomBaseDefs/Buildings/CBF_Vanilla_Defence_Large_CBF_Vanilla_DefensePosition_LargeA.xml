@@ -3,28 +3,29 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>Modern_DefensePositionA</defName>
-    <label>Modern_DefensePositionA</label>
+    <defName>CBF_Vanilla_DefensePosition_LargeA</defName>
+    <label>CBF_Vanilla_DefensePosition_LargeA</label>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_ModernDefense</li>
+      <li>CBF_Vanilla_Defence_Large</li>
     </categories>
-    <style>Modern</style>
+    <style>CBF_ModernVanilla</style>
 
     <legend>
       <li><symbol>W</symbol><terrain>PavedTile</terrain></li>
       <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>T</symbol><thing>Barricade</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>T</symbol><thing>Barricade</thing><stuff>Steel</stuff></li>
       <li><symbol>B</symbol><terrain>Concrete</terrain></li>
       <li><symbol>C</symbol><thing>Sandbags</thing><stuff>Cloth</stuff></li>
       <li><symbol>F</symbol><thing>Turret_MiniTurret</thing><stuff>Plasteel</stuff></li>
       <li><symbol>P</symbol><thing>Turret_Autocannon</thing></li>
       <li><symbol>R</symbol><terrain>Granite_RoughHewn</terrain></li>
-      <li><symbol>L</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>S</symbol><thing>Door</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>G</symbol><thing>Battery</thing><rotation>South</rotation></li>
-      <li><symbol>H</symbol><thing>StandingLamp</thing></li>
-      <li><symbol>K</symbol><thing>ChemfuelPoweredGenerator</thing></li>
+      <li><symbol>L</symbol><thing>Wall</thing><stuff>Steel</stuff></li>
+      <li><symbol>S</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>G</symbol><thing>Door</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>H</symbol><thing>Battery</thing><rotation>South</rotation></li>
+      <li><symbol>K</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>M</symbol><thing>ChemfuelPoweredGenerator</thing></li>
     </legend>
 
     <mask>
@@ -59,15 +60,29 @@
       <li>...........</li>
       <li>...TT.CCCC.</li>
       <li>...TF.C..C.</li>
-      <li>.TTLLSLP.C.</li>
+      <li>.TTLLGLP.C.</li>
       <li>.TFL..LLCC.</li>
-      <li>..HLG..LH..</li>
-      <li>.CCLLK.LFT.</li>
+      <li>..KLH..LK..</li>
+      <li>.CCLLM.LFT.</li>
       <li>.C..LLLLTT.</li>
-      <li>.CP.CHFT...</li>
+      <li>.CP.CKFT...</li>
       <li>.CCCC.TT...</li>
       <li>...........</li>
     </things>
+
+    <things2>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...SSSS....</li>
+      <li>...S..SS...</li>
+      <li>...S...S...</li>
+      <li>...SS..S...</li>
+      <li>....SSSS...</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </things2>
 
     <roof>
       <li>...........</li>

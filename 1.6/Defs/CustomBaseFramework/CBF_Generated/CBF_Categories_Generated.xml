@@ -22,6 +22,15 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_WallGateHouse</defName>
+    <label>CBF_MO_WallGateHouse</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_ModernHouseLarge</defName>
     <label>CBF_ModernHouseLarge</label>
     <zones>
@@ -40,8 +49,26 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Defence_Large</defName>
+    <label>CBF_Vanilla_Defence_Large</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_Defense_Small</defName>
     <label>CBF_Vanilla_Defense_Small</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_FarmhouseA</defName>
+    <label>CBF_Vanilla_FarmhouseA</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -59,12 +86,12 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_HouseSmall</defName>
-    <verschmelzen>true</verschmelzen>
     <label>CBF_Vanilla_HouseSmall</label>
     <zones>
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
+    <verschmelzen>true</verschmelzen>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>

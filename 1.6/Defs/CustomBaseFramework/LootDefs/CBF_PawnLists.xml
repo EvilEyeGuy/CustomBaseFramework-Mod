@@ -9,6 +9,7 @@
 
 
 
+
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Pawns_Wirtsleute</defName>
     <label>innkeepers</label>
@@ -154,5 +155,15 @@
     <members>
       <li><kind>Villager</kind><weight>1</weight></li>
     </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Tower</defName>
+    <label>CBF_MO_Tower</label>
+    <rolle>Posten</rolle>
+    <radius>4</radius>
+    <members>
+        <li><kind>DankPyon_Medieval_Bowman</kind><weight>1</weight></li>
+      </members>
   </CustomBaseFramework.PawnListDef>
 </Defs>

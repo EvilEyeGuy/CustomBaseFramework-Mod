@@ -4,6 +4,7 @@
 
 
 
+
   <CustomBaseFramework.LootBuildingCategoryDef>
     <defName>CBF_Vanilla_1x1_Shelf</defName>
     <members>
@@ -35,5 +36,13 @@
         <li MayRequire="Accurex.MedievalEmpireOverhaul"><thing>Lootable_ShelfFilledGoldware</thing><fremd>true</fremd></li>
         <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_HideoutShelfFilledGoldware</thing><fremd>true</fremd></li>
       </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_BarrelClosed</defName>
+    <members>
+      <li><thing>DankPyon_HideoutRusticBarrelClosed</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutCrate1x1c</thing><fremd>true</fremd></li>
+    </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 </Defs>

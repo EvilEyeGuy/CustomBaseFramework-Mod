@@ -3,24 +3,24 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>Modern_DefensePositionC</defName>
-    <label>Modern_DefensePositionC</label>
+    <defName>CBF_Vanilla_DefensePosition_LargeC</defName>
+    <label>CBF_Vanilla_DefensePosition_LargeC</label>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_ModernDefense</li>
+      <li>CBF_Vanilla_Defence_Large</li>
     </categories>
-    <style>Modern</style>
+    <style>CBF_ModernVanilla</style>
 
     <legend>
       <li><symbol>W</symbol><terrain>PavedTile</terrain></li>
       <li><symbol>D</symbol><terrain>Concrete</terrain></li>
       <li><symbol>T</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>B</symbol><thing>Barricade</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>Barricade</thing><stuff>Steel</stuff></li>
       <li><symbol>C</symbol><thing>Turret_MiniTurret</thing><stuff>Plasteel</stuff></li>
       <li><symbol>F</symbol><thing>StandingLamp</thing></li>
-      <li><symbol>P</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>P</symbol><thing>Wall</thing><stuff>Steel</stuff></li>
       <li><symbol>R</symbol><thing>PowerConduit</thing></li>
-      <li><symbol>L</symbol><thing>Door</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>L</symbol><thing>Autodoor</thing><stuff>Steel</stuff></li>
       <li><symbol>S</symbol><thing>FirefoamPopper</thing></li>
       <li><symbol>G</symbol><thing>Battery</thing><rotation>South</rotation></li>
       <li><symbol>H</symbol><thing>ChemfuelPoweredGenerator</thing></li>

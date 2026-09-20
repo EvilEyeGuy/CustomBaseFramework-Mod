@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vom Editor erzeugt. -->
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Workshop_Tailor_A</defName>
+    <label>CBF_Vanilla_Workshop_Tailor_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_Workshop</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+
+    <legend>
+      <li><symbol>W</symbol><terrain>Granite_RoughHewn</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>C</symbol><terrain>TileGranite</terrain></li>
+      <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>P</symbol><terrain>FlagstoneGranite</terrain></li>
+      <li><symbol>R</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>L</symbol><thing>Table1x2c</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>S</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>G</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>H</symbol><thing>ToolCabinet</thing><rotation>West</rotation></li>
+      <li><symbol>K</symbol><thing>ElectricTailoringBench</thing><stuff>Steel</stuff><rotation>East</rotation></li>
+      <li><symbol>M</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>N</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Loot_Schneiderei</lootTable></li>
+      <li><symbol>Q</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Ware_Textil</lootTable></li>
+      <li><symbol>U</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_Vanilla_Ware_Gewand</lootTable></li>
+      <li><symbol>V</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind></li>
+    </legend>
+
+    <mask>
+      <li>..#####.</li>
+      <li>..#####.</li>
+      <li>..######</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+    </mask>
+
+    <terrain>
+      <li>..WWCWW.</li>
+      <li>..WPCPW.</li>
+      <li>..WCCPWW</li>
+      <li>WWWWPPCW</li>
+      <li>WCCWCPCW</li>
+      <li>WPCWCCPW</li>
+      <li>WCPCPPCW</li>
+      <li>WWWWWWWW</li>
+    </terrain>
+
+    <things>
+      <li>..TTFTT.</li>
+      <li>..T...T.</li>
+      <li>..TR.LTT</li>
+      <li>TTTT..ST</li>
+      <li>TG.T...T</li>
+      <li>T..TH..T</li>
+      <li>TM.F..KT</li>
+      <li>TTTTTTTT</li>
+    </things>
+
+    <things2>
+      <li>..BBBBB.</li>
+      <li>..B...B.</li>
+      <li>..B...BB</li>
+      <li>BBB....B</li>
+      <li>B......B</li>
+      <li>B......B</li>
+      <li>B......B</li>
+      <li>BBBBBBBB</li>
+    </things2>
+
+    <roof>
+      <li>..DDDDD.</li>
+      <li>..DDDDD.</li>
+      <li>..DDDDDD</li>
+      <li>DDDDDDDD</li>
+      <li>DDDDDDDD</li>
+      <li>DDDDDDDD</li>
+      <li>DDDDDDDD</li>
+      <li>DDDDDDDD</li>
+    </roof>
+
+    <anchors>
+      <li>........</li>
+      <li>...Q....</li>
+      <li>...Q....</li>
+      <li>....V...</li>
+      <li>.NN.....</li>
+      <li>........</li>
+      <li>.U......</li>
+      <li>........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

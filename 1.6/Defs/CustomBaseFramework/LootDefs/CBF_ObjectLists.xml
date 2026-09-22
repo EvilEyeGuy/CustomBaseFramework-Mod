@@ -3,6 +3,7 @@
 
 
 
+
   <CustomBaseFramework.LootBuildingCategoryDef>
     <defName>CBF_Vanilla_1x1_Shelf</defName>
     <members>
@@ -80,6 +81,20 @@
       <li><thing>DankPyon_HideoutStallMarket_Bow</thing><fremd>true</fremd></li>
       <li><thing>DankPyon_HideoutTableMarket_Melee</thing><fremd>true</fremd></li>
       <li><thing>DankPyon_HideoutStallMarket_Melee</thing><fremd>true</fremd></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_1x2_LootableShelfes</defName>
+    <members>
+      <li><thing>DankPyon_HideoutLargeShelf_FilledA_Amboise</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutLargeShelf_FilledB_Amboise</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutLargeShelf_FilledA_Hesse</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutLargeShelf_FilledB_Hesse</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutLargeShelf_FilledA_Oswin</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutLargeShelf_FilledB_Oswin</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutLargeShelf_FilledA_Soren</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutLargeShelf_FilledB_Soren</thing><fremd>true</fremd></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 </Defs>

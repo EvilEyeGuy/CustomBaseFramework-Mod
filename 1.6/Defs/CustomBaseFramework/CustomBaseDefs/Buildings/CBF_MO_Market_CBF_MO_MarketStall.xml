@@ -14,7 +14,7 @@
       <li><symbol>W</symbol><thing>DankPyon_MarketTent_1c</thing><stuff>WoodLog</stuff></li>
       <li><symbol>D</symbol><thing>DankPyon_Stall_Empty</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>T</symbol><anchor>Object</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_MarketStall</objects></li>
-      <li><symbol>B</symbol><anchor>Loot</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Market</objects></li>
+      <li><symbol>B</symbol><anchor>Loot</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Market</objects><lootFremd>true</lootFremd></li>
     </legend>
 
     <mask>
@@ -32,9 +32,14 @@
       <li>D..</li>
     </things2>
 
+    <anchorsOver>
+      <li>...</li>
+      <li>BBB</li>
+    </anchorsOver>
+
     <anchors>
       <li>TTT</li>
-      <li>BBB</li>
+      <li>TTT</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

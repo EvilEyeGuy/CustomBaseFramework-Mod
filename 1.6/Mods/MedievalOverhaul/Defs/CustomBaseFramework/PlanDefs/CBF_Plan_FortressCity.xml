@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Plan_FortressCity</defName>
-    <label>CBF_Plan_FortressCity</label>
+    <label>Fortress City</label>
 
     <styles>
       <li>Rustical</li>
@@ -57,8 +57,8 @@
               <li><tag>Keep</tag><count>1~1</count><unique>true</unique><lootTable>CBF_MO_Loot_Bergfried</lootTable></li>
               <li><tag>Inn</tag><count>1~1</count><unique>true</unique><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
               <li><tag>Military</tag><count>2~6</count><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
-              <li><tag>HouseLarge</tag><filler>true</filler><count>10~16</count><lootTable>CBF_MO_Loot_Herrenhaus</lootTable></li>
-              <li><tag>HouseSmall</tag><filler>true</filler><count>10~14</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+              <li><tag>HouseLarge</tag><count>10~16</count><filler>true</filler><lootTable>CBF_MO_Loot_Herrenhaus</lootTable></li>
+              <li><tag>HouseSmall</tag><count>10~14</count><filler>true</filler><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
               <li><tag>Workshop</tag><count>1~4</count><lootTable>CBF_MO_Loot_Werkstatt</lootTable></li>
             </entries>
           </li>
@@ -83,7 +83,7 @@
           <li>
             <name>Test</name>
             <entries>
-              <li><tag>HouseSmall</tag><filler>true</filler><count>20~28</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+              <li><tag>HouseSmall</tag><count>20~28</count><filler>true</filler><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
               <li><piece>Social_Inn</piece><count>1~2</count><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
               <li><piece>Military_Baracks</piece><count>3~3</count><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
             </entries>
@@ -129,7 +129,7 @@
               <fence>true</fence>
               <weight>1</weight></li></pens>
             <entries>
-              <li><tag>HouseSmall</tag><filler>true</filler><count>3~6</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+              <li><tag>HouseSmall</tag><count>3~6</count><filler>true</filler><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
             </entries>
           </li>
         </districts>
@@ -143,8 +143,10 @@
       <li>DankPyon_NobleHouseFierce</li>
     </factionTags>
   
-    <anteil>0</anteil>
+    <anteil>10</anteil>
     <suburbIslands>2</suburbIslands>
+  
+    <worldTexture>World/WorldObjects/CBF/CBF_FortressTown</worldTexture>
   </CustomBaseFramework.SettlementPlanDef>
 
 </Defs>

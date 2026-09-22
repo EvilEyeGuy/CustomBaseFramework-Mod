@@ -145,7 +145,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_TakeoverPath>Written to {0} in the current project.</CBF_TakeoverPath>
   <CBF_Field_requiredMods>Needs these mods</CBF_Field_requiredMods>
   <CBF_ModsNone>Runs without any other mod.</CBF_ModsNone>
-  <CBF_ModEither>one of these is enough</CBF_ModEither>
   <CBF_ModByHand>added by hand</CBF_ModByHand>
   <CBF_ModAutoTip>Worked out from the content, not chosen. Without this mod nothing is left of: {0}</CBF_ModAutoTip>
   <CBF_ModByHandTip>Added by hand. Click the cross to take it out again.</CBF_ModByHandTip>
@@ -367,4 +366,44 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_AnchorKind_Object>Object</CBF_AnchorKind_Object>
   <CBF_AnchorKind_Spawn>Pawn</CBF_AnchorKind_Spawn>
   <CBF_AnchorPawnCountTip>How many pawns stand here, from and to. Works with a single kind, a pawn list and the house inhabitants.</CBF_AnchorPawnCountTip>
+  <CBF_LootAddCategory>Add category</CBF_LootAddCategory>
+  <CBF_LootCategoryRow>Category {0}, {1} items</CBF_LootCategoryRow>
+  <CBF_LootCategoryCount>{0} items</CBF_LootCategoryCount>
+  <CBF_LootAndMore>and {0} more</CBF_LootAndMore>
+  <CBF_Field_maxTechLevel>Tech level at most</CBF_Field_maxTechLevel>
+  <CBF_Field_techLevels>Tech levels</CBF_Field_techLevels>
+  <CBF_TechLevelsTip>Which ages this settlement fits. Pawn lists draw at this level first and step down one level at a time if nobody fits.</CBF_TechLevelsTip>
+  <CBF_TechLevelButtonTip>Click switches this level. Right click selects this level and all above.</CBF_TechLevelButtonTip>
+  <CBF_Field_fuerAlleFraktionen>For every faction of these levels</CBF_Field_fuerAlleFraktionen>
+  <CBF_ForAllTip>This plan applies to every faction whose tech level is ticked, unless that faction has plans of its own through faction tags. Its own plans always win.</CBF_ForAllTip>
+  <CBF_ForAllNeedsLevel>Pick at least one tech level first.</CBF_ForAllNeedsLevel>
+  <CBF_PawnTechLevel>Tech level</CBF_PawnTechLevel>
+  <CBF_PawnTechAny>any, no gear with a level</CBF_PawnTechAny>
+  <CBF_FactionOverview>Faction overview</CBF_FactionOverview>
+  <CBF_FactionOverviewHint>Every faction in this game and the settlements it really gets. Click a row to edit it in the side panel.</CBF_FactionOverviewHint>
+  <CBF_FactionOverviewVanilla>none, RimWorld builds its own bases</CBF_FactionOverviewVanilla>
+  <CBF_FactionOverviewByLevel>by tech level:</CBF_FactionOverviewByLevel>
+  <CBF_FactionOverviewForeign>(other mod, saved as patch)</CBF_FactionOverviewForeign>
+  <CBF_PlanForeignTip>This plan comes from another mod. Saving writes a patch into your project instead of touching that mod.</CBF_PlanForeignTip>
+  <CBF_PlanOwnTip>This plan belongs to your project. Saving changes its file directly.</CBF_PlanOwnTip>
+  <CBF_PlanPatched>{0} plan(s) from other mods saved as patch in {1}.</CBF_PlanPatched>
+  <CBF_PlanPatchNoSource>The file of {0} was not found, so no patch could be written.</CBF_PlanPatchNoSource>
+  <CBF_FactionOverviewOpen>Open {0} in the side panel</CBF_FactionOverviewOpen>
+  <CBF_FactionOverviewBuilt>CBF builds</CBF_FactionOverviewBuilt>
+  <CBF_FactionOverviewVanillaShort>RimWorld builds</CBF_FactionOverviewVanillaShort>
+  <CBF_FactionOverviewNone>No faction matches the search.</CBF_FactionOverviewNone>
+  <CBF_FactionOverviewChance>Weight {0} of {1} across all settlements of this faction. Change it in the faction panel.</CBF_FactionOverviewChance>
+  <CBF_Field_anteil>Weight</CBF_Field_anteil>
+  <CBF_WeightTip>How often this settlement is picked among all settlements a faction can get. 0 counts as 1.</CBF_WeightTip>
+  <CBF_WeightHint>The faction overview shows what this means in percent per faction.</CBF_WeightHint>
+  <CBF_Field_excludeFactions>Excluded factions</CBF_Field_excludeFactions>
+  <CBF_ExcludeTip>These factions never get this settlement, not even through its tech levels. Every other settlement stays allowed for them.</CBF_ExcludeTip>
+  <CBF_ExcludeAdd>Exclude a faction</CBF_ExcludeAdd>
+  <CBF_ExcludeNobody>No faction gets this settlement right now, so there is nobody to exclude.</CBF_ExcludeNobody>
+  <CBF_ExcludeMissing>{0} (not loaded)</CBF_ExcludeMissing>
+  <CBF_FactionUnassignTip>Take this settlement away from this faction.</CBF_FactionUnassignTip>
+  <CBF_FactionExcludeTip>This settlement reaches the faction through its tech level. Remove excludes the faction from this settlement.</CBF_FactionExcludeTip>
+  <CBF_TechNone>no tech level</CBF_TechNone>
+  <CBF_TechRange>{0} to {1}</CBF_TechRange>
+  <CBF_PawnCellBlocked>{0} on {1} is blocked by: {2}\nClick to select it.</CBF_PawnCellBlocked>
 </LanguageData>

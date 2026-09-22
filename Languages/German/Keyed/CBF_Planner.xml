@@ -216,7 +216,6 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_ExportWithHints>{0} exportiert, {1} Hinweis(e), vollstaendig im Log:</CBF_ExportWithHints>
   <CBF_Field_requiredMods>Braucht diese Mods</CBF_Field_requiredMods>
   <CBF_ModsNone>Laeuft ohne weiteren Mod.</CBF_ModsNone>
-  <CBF_ModEither>einer von diesen genuegt</CBF_ModEither>
   <CBF_ModByHand>von Hand</CBF_ModByHand>
   <CBF_ModAutoTip>Aus dem Inhalt ermittelt, nicht gewaehlt. Ohne diesen Mod bleibt nichts uebrig von: {0}</CBF_ModAutoTip>
   <CBF_ModByHandTip>Von Hand eingetragen. Das Kreuz nimmt ihn wieder heraus.</CBF_ModByHandTip>
@@ -334,4 +333,44 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_AnchorKind_Object>Object</CBF_AnchorKind_Object>
   <CBF_AnchorKind_Spawn>Pawn</CBF_AnchorKind_Spawn>
   <CBF_AnchorPawnCountTip>Wie viele Pawns hier stehen, von und bis. Gilt fuer eine einzelne Art, eine Einheitenliste und die Hausbewohner.</CBF_AnchorPawnCountTip>
+  <CBF_LootAddCategory>Kategorie dazu</CBF_LootAddCategory>
+  <CBF_LootCategoryRow>Kategorie {0}, {1} Gegenstaende</CBF_LootCategoryRow>
+  <CBF_LootCategoryCount>{0} Gegenstaende</CBF_LootCategoryCount>
+  <CBF_LootAndMore>und {0} weitere</CBF_LootAndMore>
+  <CBF_Field_maxTechLevel>Techstufe hoechstens</CBF_Field_maxTechLevel>
+  <CBF_Field_techLevels>Techstufen</CBF_Field_techLevels>
+  <CBF_TechLevelsTip>Zu welchen Zeitaltern diese Siedlung passt. Einheitenlisten ziehen zuerst auf dieser Stufe und gehen Stufe fuer Stufe nach unten, bis jemand passt.</CBF_TechLevelsTip>
+  <CBF_TechLevelButtonTip>Klick schaltet diese Stufe. Rechtsklick waehlt diese und alle darueber.</CBF_TechLevelButtonTip>
+  <CBF_Field_fuerAlleFraktionen>Fuer alle Fraktionen dieser Stufen</CBF_Field_fuerAlleFraktionen>
+  <CBF_ForAllTip>Der Plan gilt fuer jede Fraktion, deren Techstufe angekreuzt ist, ausser sie hat ueber Fraktionsmarken eigene Plaene. Eigene Plaene gehen immer vor.</CBF_ForAllTip>
+  <CBF_ForAllNeedsLevel>Zuerst mindestens eine Techstufe waehlen.</CBF_ForAllNeedsLevel>
+  <CBF_PawnTechLevel>Techstufe</CBF_PawnTechLevel>
+  <CBF_PawnTechAny>beliebig, keine Ausruestung mit Stufe</CBF_PawnTechAny>
+  <CBF_FactionOverview>Fraktionsuebersicht</CBF_FactionOverview>
+  <CBF_FactionOverviewHint>Alle Fraktionen dieses Spiels und die Siedlungen, die sie wirklich bekommen. Ein Klick oeffnet die Fraktion zum Bearbeiten im Seitenpanel.</CBF_FactionOverviewHint>
+  <CBF_FactionOverviewVanilla>keine, RimWorld baut seine eigenen Basen</CBF_FactionOverviewVanilla>
+  <CBF_FactionOverviewByLevel>ueber die Techstufe:</CBF_FactionOverviewByLevel>
+  <CBF_FactionOverviewForeign>(fremder Mod, wird als Patch gespeichert)</CBF_FactionOverviewForeign>
+  <CBF_PlanForeignTip>Dieser Plan kommt aus einem anderen Mod. Speichern schreibt einen Patch in dein Projekt, statt den Mod anzufassen.</CBF_PlanForeignTip>
+  <CBF_PlanOwnTip>Dieser Plan gehoert zu deinem Projekt. Speichern aendert seine Datei direkt.</CBF_PlanOwnTip>
+  <CBF_PlanPatched>{0} Plan/Plaene aus fremden Mods als Patch gespeichert in {1}.</CBF_PlanPatched>
+  <CBF_PlanPatchNoSource>Die Datei von {0} wurde nicht gefunden, deshalb liess sich kein Patch schreiben.</CBF_PlanPatchNoSource>
+  <CBF_FactionOverviewOpen>{0} im Seitenpanel oeffnen</CBF_FactionOverviewOpen>
+  <CBF_FactionOverviewBuilt>CBF baut</CBF_FactionOverviewBuilt>
+  <CBF_FactionOverviewVanillaShort>RimWorld baut</CBF_FactionOverviewVanillaShort>
+  <CBF_FactionOverviewNone>Keine Fraktion passt zur Suche.</CBF_FactionOverviewNone>
+  <CBF_FactionOverviewChance>Gewicht {0} von {1} ueber alle Siedlungen dieser Fraktion. Aendern im Fraktionspanel.</CBF_FactionOverviewChance>
+  <CBF_Field_anteil>Gewicht</CBF_Field_anteil>
+  <CBF_WeightTip>Wie oft diese Siedlung unter allen Siedlungen gezogen wird, die eine Fraktion bekommen kann. 0 zaehlt als 1.</CBF_WeightTip>
+  <CBF_WeightHint>Die Fraktionsuebersicht zeigt, was das je Fraktion in Prozent heisst.</CBF_WeightHint>
+  <CBF_Field_excludeFactions>Ausgeschlossene Fraktionen</CBF_Field_excludeFactions>
+  <CBF_ExcludeTip>Diese Fraktionen bekommen diese Siedlung nie, auch nicht ueber ihre Techstufe. Alle anderen Siedlungen bleiben ihnen erlaubt.</CBF_ExcludeTip>
+  <CBF_ExcludeAdd>Fraktion ausschliessen</CBF_ExcludeAdd>
+  <CBF_ExcludeNobody>Diese Siedlung bekommt gerade keine Fraktion, es gibt also niemanden zum Ausschliessen.</CBF_ExcludeNobody>
+  <CBF_ExcludeMissing>{0} (nicht geladen)</CBF_ExcludeMissing>
+  <CBF_FactionUnassignTip>Diese Siedlung der Fraktion wieder wegnehmen.</CBF_FactionUnassignTip>
+  <CBF_FactionExcludeTip>Diese Siedlung erreicht die Fraktion ueber ihre Techstufe. Entfernen schliesst die Fraktion von dieser Siedlung aus.</CBF_FactionExcludeTip>
+  <CBF_TechNone>ohne Techstufe</CBF_TechNone>
+  <CBF_TechRange>{0} bis {1}</CBF_TechRange>
+  <CBF_PawnCellBlocked>{0} an {1} ist belegt durch: {2}\nKlick waehlt es aus.</CBF_PawnCellBlocked>
 </LanguageData>

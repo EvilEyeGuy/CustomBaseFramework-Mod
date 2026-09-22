@@ -93,16 +93,13 @@
   <CBF_Planner_TerrainClearance>Baugrund mit natürlichem Felssaum</CBF_Planner_TerrainClearance>
   <CBF_Planner_SuburbGateLink>Vorstadttor und Stadttor brauchen eine durchgehende Hauptstraße innerhalb der Vorstadt.</CBF_Planner_SuburbGateLink>
   <CBF_Planner_SuburbWidth>Zwischen parallelen Stadt- und Vorstadtmauern fehlt nutzbarer Raum.</CBF_Planner_SuburbWidth>
-  <CBF_RuralPlots>Umlandflächen</CBF_RuralPlots>
   <CBF_RuralCrop>Acker (eingefasst)</CBF_RuralCrop>
   <CBF_RuralPen>Tiergehege</CBF_RuralPen>
-  <CBF_RuralCount>Flächen (min~max)</CBF_RuralCount>
   <CBF_RuralHerd>Tiere (min~max)</CBF_RuralHerd>
   <CBF_RuralChoosePlant>Pflanze auswählen</CBF_RuralChoosePlant>
   <CBF_RuralChooseAnimals>Tierliste auswählen</CBF_RuralChooseAnimals>
   <CBF_RuralAddCrop>Acker hinzufügen</CBF_RuralAddCrop>
   <CBF_RuralAddPen>Gehege hinzufügen</CBF_RuralAddPen>
-  <CBF_RuralAnimalsHint>Tierarten und Gewichte werden in der Einheitenliste definiert. In Gehegen erscheinen nur Tiere.</CBF_RuralAnimalsHint>
   <CBF_Pen_NoSpace>Für das Gehege {0} wurde kein geschlossener Platz mit Wegzugang gefunden.</CBF_Pen_NoSpace>
   <CBF_ChoosePlants>Feldfruechte waehlen</CBF_ChoosePlants>
   <CBF_ChoosePlantsHint>{0} gewaehlt. Kachel anklicken zum Hinzufuegen oder Entfernen.</CBF_ChoosePlantsHint>
@@ -127,7 +124,6 @@ Der Link ist OEFFENTLICH: jeder, der ihn hat, kann beide Dateien lesen, und gelo
 Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_ReserveGround>Baugrund vor dem Berg reservieren</CBF_ReserveGround>
   <CBF_ReserveGroundHelp>Bevor RimWorld den Fels setzt, weicht der Rand des Bergs dort zurueck, wo die Siedlung stehen soll, und nur so weit, bis sie hineinpasst. Die Form des Bergs bleibt erhalten, der Rest der Karte bleibt unberuehrt. Aus heisst: der Ort muss mit dem gewachsenen Gelaende auskommen und kann auf steinigen Kacheln scheitern.</CBF_ReserveGroundHelp>
-  <CBF_OneConnectOnly>Es gibt schon einen Anschluss. Die Mauer sucht genau einen Anker namens Wall, und dessen Felder gehoeren alle in diese eine Flaeche. Waehl den vorhandenen und zeichne dazu.</CBF_OneConnectOnly>
   <CBF_LabTitle>Versuchsstand</CBF_LabTitle>
   <CBF_LabHelp>Unfertige Arbeit. Schalte das nur ein, wenn du mittesten willst, und rechne damit, dass es falsch aussieht.</CBF_LabHelp>
   <CBF_LabEaves>Traufen an fertigen Haeusern</CBF_LabEaves>
@@ -148,7 +144,6 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_NErrors>{0} Fehler</CBF_NErrors>
   <CBF_NeedAWorld>Keine Welt geladen.</CBF_NeedAWorld>
   <CBF_BuildTitle>{0} bauen</CBF_BuildTitle>
-  <CBF_Field_faction>Fraktion</CBF_Field_faction>
   <CBF_Field_biome>Biom</CBF_Field_biome>
   <CBF_Field_hilliness>Gelaende</CBF_Field_hilliness>
   <CBF_Field_river>Fluss</CBF_Field_river>
@@ -163,13 +158,9 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_TDesc_leerweg>Nimmt Leerfelder wieder weg und legt den zugedeckten Boden zurueck.</CBF_TDesc_leerweg>
   <CBF_OpenEditorTool>Editor oeffnen</CBF_OpenEditorTool>
   <CBF_OpenEditorToolDesc>Oeffnet den Editor des Custom Base Framework. Nochmal druecken schliesst ihn. Alle Zeichenwerkzeuge stehen im Editorfenster selbst.</CBF_OpenEditorToolDesc>
-  <CBF_AnchorCopy>Kopieren</CBF_AnchorCopy>
   <CBF_AnchorCopyTip>Legt eine Kopie dieses Ankers an, mit denselben Einstellungen und derselben Form, und gibt dir gleich das Versetzwerkzeug in die Hand.</CBF_AnchorCopyTip>
-  <CBF_AnchorCopied>{0} kopiert. Klick auf die Karte, um sie hinzusetzen.</CBF_AnchorCopied>
   <CBF_AnchorMove>Versetzen</CBF_AnchorMove>
   <CBF_AnchorMoveDesc>Versetzt den gewaehlten Anker im Ganzen. Klick auf eine Zelle, dort landet seine Mitte.</CBF_AnchorMoveDesc>
-  <CBF_AnchorMoveTip>Klick auf eine Zelle im Baustein, dann wandert der ganze Anker dorthin und behaelt seine Form.</CBF_AnchorMoveTip>
-  <CBF_AnchorPaintShort>Malen</CBF_AnchorPaintShort>
   <CBF_AnchorPickFirst>Waehle zuerst einen Anker.</CBF_AnchorPickFirst>
   <CBF_AnchorEmpty>Dieser Anker hat noch keine Zellen. Mal ihn zuerst.</CBF_AnchorEmpty>
   <CBF_AnchorWontFit>Hier wuerde der Anker aus dem Baustein ragen.</CBF_AnchorWontFit>
@@ -187,7 +178,6 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_ShowPiecesTip>Zeigt, welche Bausteine {0} bedient. Ein Klick oeffnet einen davon.</CBF_ShowPiecesTip>
   <CBF_NoPiecesInCategory>Zu {0} gehoert kein Baustein.</CBF_NoPiecesInCategory>
   <CBF_CategoryPieceCount>{0} Baustein(e)</CBF_CategoryPieceCount>
-  <CBF_CategoryClickToOpen>Klick oeffnet diesen Baustein.</CBF_CategoryClickToOpen>
   <CBF_CardImage>Vorschau</CBF_CardImage>
   <CBF_CardBasics>Stammdaten</CBF_CardBasics>
   <CBF_CardWallSide>Mauerseite</CBF_CardWallSide>
@@ -195,7 +185,6 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_PartGeneral>Allgemein</CBF_PartGeneral>
   <CBF_PartArea>Flaeche</CBF_PartArea>
   <CBF_PartAnchors>Anker</CBF_PartAnchors>
-  <CBF_NoRegionShort>keine</CBF_NoRegionShort>
   <CBF_AnchorSelected>Anker {0}</CBF_AnchorSelected>
   <CBF_AnchorOpenTip>Klappt diesen Anker unten auf und nimmt den Pinsel in die Hand.</CBF_AnchorOpenTip>
   <CBF_NewPieceFillIn>Neuer Baustein. Gib ihm Namen, Kategorie und Stil, dann zeichne ihn mit Flaeche. Der Export schreibt die Datei.</CBF_NewPieceFillIn>
@@ -203,9 +192,7 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_Field_additionalCategories>Weitere Kategorien</CBF_Field_additionalCategories>
   <CBF_FieldDesc_additionalCategories>Kategorien ueber die hinaus, die oben an der Flaeche steht. Der Export schreibt die Kategorie der Flaeche als ersten Eintrag.</CBF_FieldDesc_additionalCategories>
   <CBF_AnchorFromPiece>Von anderem Baustein</CBF_AnchorFromPiece>
-  <CBF_AnchorCountShort>{0} Anker</CBF_AnchorCountShort>
   <CBF_AnchorNameTaken>[belegt]</CBF_AnchorNameTaken>
-  <CBF_NoPieceWithAnchors>Noch kein Baustein hat Anker.</CBF_NoPieceWithAnchors>
   <CBF_AnchorsTaken>{0} Anker von {1} uebernommen, {2} ausgelassen. Mal sie dorthin, wo sie hingehoeren.</CBF_AnchorsTaken>
   <CBF_AnchorFromPieceDesc>Klick auf eine andere Bausteinflaeche auf der Karte. Ihre Anker kommen mit allen Einstellungen herueber, ohne ihre Form.</CBF_AnchorFromPieceDesc>
   <CBF_PickAPieceArea>Unter dem Zeiger liegt keine Bausteinflaeche.</CBF_PickAPieceArea>
@@ -213,7 +200,6 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_AreaHasNoAnchors>{0} hat keine Anker.</CBF_AreaHasNoAnchors>
   <CBF_AnchorSizeMismatch>{0} ist {1}, diese Ankerflaeche ist {2}. Es wird nicht gesetzt.</CBF_AnchorSizeMismatch>
   <CBF_BiomeAny>Gelaende egal</CBF_BiomeAny>
-  <CBF_NoTileFound>Kein freies Feld fuer {0} gefunden. Nimm ein anderes Gelaende.</CBF_NoTileFound>
   <CBF_WorldBuilt>{0} fuer {1} als {2} in {3} gesetzt. Die Karte wird jetzt erzeugt.</CBF_WorldBuilt>
   <CBF_WorldTileBad>Unter dem Zeiger liegt keine brauchbare Kachel.</CBF_WorldTileBad>
   <CBF_WorldNoFaction>Keine Fraktion vorhanden.</CBF_WorldNoFaction>
@@ -227,9 +213,6 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_WorldPalette>Palette: {0}</CBF_WorldPalette>
   <CBF_WorldWalled>ummauert</CBF_WorldWalled>
   <CBF_WorldOpen>offen</CBF_WorldOpen>
-  <CBF_ExportHasErrors>{0} hat {1} Fehler. Trotzdem exportieren?
-
-</CBF_ExportHasErrors>
   <CBF_ExportWithHints>{0} exportiert, {1} Hinweis(e), vollstaendig im Log:</CBF_ExportWithHints>
   <CBF_Field_requiredMods>Braucht diese Mods</CBF_Field_requiredMods>
   <CBF_ModsNone>Laeuft ohne weiteren Mod.</CBF_ModsNone>
@@ -267,7 +250,6 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_PawnGearClash>Beisst sich mit einem anderen Stueck auf derselben Schicht und demselben Koerperteil.</CBF_PawnGearClash>
   <CBF_PawnNoStuff>kein Material</CBF_PawnNoStuff>
   <CBF_PawnNoStuffTip>Dieses Kleidungsstueck wird nicht aus einem Material gefertigt.</CBF_PawnNoStuffTip>
-  <CBF_PawnColor>Farbe</CBF_PawnColor>
   <CBF_PawnPickStuff>Material</CBF_PawnPickStuff>
   <CBF_PawnStuffValue>Wert {0}</CBF_PawnStuffValue>
   <CBF_PawnAllFields>Alle Felder</CBF_PawnAllFields>
@@ -284,9 +266,6 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_NewPawnNeedsPower>Die Kampfkraft muss eine Zahl sein und mindestens 0.</CBF_NewPawnNeedsPower>
   <CBF_NewPawnCreated>{0} angelegt. Die Werkstatt ist offen.</CBF_NewPawnCreated>
   <CBF_NewPawnFailed>{0} wurde geschrieben, laedt aber nicht.</CBF_NewPawnFailed>
-  <CBF_Cancel>Abbrechen</CBF_Cancel>
-  <CBF_Field_label>Label</CBF_Field_label>
-  <CBF_Field_defaultFactionDef>Fraktion</CBF_Field_defaultFactionDef>
   <CBF_PawnWorkshopAll>Alle Pawns, auch fremde</CBF_PawnWorkshopAll>
   <CBF_PawnColorTip>Klick waehlt eine Farbe, Rechtsklick stellt auf beliebig zurueck.</CBF_PawnColorTip>
   <CBF_PawnPartsAll>Alle</CBF_PawnPartsAll>
@@ -304,9 +283,6 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_PawnNoWeapon>Noch keine Marke, dieser Pawn bleibt unbewaffnet.</CBF_PawnNoWeapon>
   <CBF_PawnAddTag>Marke dazu</CBF_PawnAddTag>
   <CBF_PawnFromWeapon>Von einer Waffe ausgehen</CBF_PawnFromWeapon>
-  <CBF_Field_weaponMoney>Waffenbudget</CBF_Field_weaponMoney>
-  <CBF_Field_forceWeaponQuality>Waffenqualitaet</CBF_Field_forceWeaponQuality>
-  <CBF_Field_weaponStuffOverride>Waffenmaterial</CBF_Field_weaponStuffOverride>
   <CBF_PawnSkillHead>FAEHIGKEITEN</CBF_PawnSkillHead>
   <CBF_PawnNoSkills>Keine feste Faehigkeit, alles wird gewuerfelt.</CBF_PawnNoSkills>
   <CBF_PawnAddSkill>Faehigkeit dazu</CBF_PawnAddSkill>
@@ -334,13 +310,9 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_PawnAddImplant>Implantat dazu</CBF_PawnAddImplant>
   <CBF_PawnAddImplantTag>Marke dazu</CBF_PawnAddImplantTag>
   <CBF_Field_techHediffsChance>Chance</CBF_Field_techHediffsChance>
-  <CBF_Field_techHediffsMoney>Budget</CBF_Field_techHediffsMoney>
   <CBF_Field_techHediffsMaxAmount>Hoechstens</CBF_Field_techHediffsMaxAmount>
   <CBF_PawnImplantNoPath>laesst sich bei {0} nicht einbauen</CBF_PawnImplantNoPath>
   <CBF_PawnImplantNoPathTip>RimWorld baut ein Implantat ueber ein Operationsrezept der Rasse ein, oder ueber ein Install-Comp am Gegenstand. Dieses hat beides nicht und wird beim Spawnen stillschweigend uebersprungen.</CBF_PawnImplantNoPathTip>
-  <CBF_Planner_Attempt2>Standort {0}, weitere Lagen werden geprüft: {1}</CBF_Planner_Attempt2>
-  <CBF_Planner_Attempt3>Standort {0}, der Platz ist knapp, Suche geht weiter: {1}</CBF_Planner_Attempt3>
-  <CBF_Planner_Attempt4>Standort {0}, letzte Versuche: {1}</CBF_Planner_Attempt4>
   <CBF_Planner_Zeitgrenze>Zeitgrenze erreicht nach {0} Lagen, die beste bisherige Lage wird genommen.</CBF_Planner_Zeitgrenze>
   <CBF_Planner_Laune1_0>Der Baumeister entrollt seine Pläne. ({1})</CBF_Planner_Laune1_0>
   <CBF_Planner_Laune1_1>Die Landvermesser schlagen die ersten Pflöcke ein. ({1})</CBF_Planner_Laune1_1>
@@ -354,4 +326,12 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_Planner_Laune4_0>Der Bürgermeister droht mit einer Zeltstadt. ({1})</CBF_Planner_Laune4_0>
   <CBF_Planner_Laune4_1>Entwurf {0}. Die Tinte wird knapp. ({1})</CBF_Planner_Laune4_1>
   <CBF_Planner_Laune4_2>Man einigt sich darauf, es irgendwie hinzubekommen. ({1})</CBF_Planner_Laune4_2>
+  <CBF_RemoveTip>Entfernen</CBF_RemoveTip>
+  <CBF_FillerHead>Filler</CBF_FillerHead>
+  <CBF_CategoryPieces>{0} Bausteine</CBF_CategoryPieces>
+  <CBF_AnchorKind_Connect>Connect</CBF_AnchorKind_Connect>
+  <CBF_AnchorKind_Fill>Loot</CBF_AnchorKind_Fill>
+  <CBF_AnchorKind_Object>Object</CBF_AnchorKind_Object>
+  <CBF_AnchorKind_Spawn>Pawn</CBF_AnchorKind_Spawn>
+  <CBF_AnchorPawnCountTip>Wie viele Pawns hier stehen, von und bis. Gilt fuer eine einzelne Art, eine Einheitenliste und die Hausbewohner.</CBF_AnchorPawnCountTip>
 </LanguageData>

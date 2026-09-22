@@ -93,16 +93,13 @@
   <CBF_Planner_TerrainClearance>Building clearance with a natural rock edge</CBF_Planner_TerrainClearance>
   <CBF_Planner_SuburbGateLink>The outer and inner gates need a continuous main road through the suburb.</CBF_Planner_SuburbGateLink>
   <CBF_Planner_SuburbWidth>Parallel inner and outer walls leave too little usable space for the suburb.</CBF_Planner_SuburbWidth>
-  <CBF_RuralPlots>Rural plots</CBF_RuralPlots>
   <CBF_RuralCrop>Fenced crop plot</CBF_RuralCrop>
   <CBF_RuralPen>Animal pen</CBF_RuralPen>
-  <CBF_RuralCount>Plots (min~max)</CBF_RuralCount>
   <CBF_RuralHerd>Animals (min~max)</CBF_RuralHerd>
   <CBF_RuralChoosePlant>Choose crop</CBF_RuralChoosePlant>
   <CBF_RuralChooseAnimals>Choose animal list</CBF_RuralChooseAnimals>
   <CBF_RuralAddCrop>Add crop plot</CBF_RuralAddCrop>
   <CBF_RuralAddPen>Add animal pen</CBF_RuralAddPen>
-  <CBF_RuralAnimalsHint>Define species and weights in the pawn list. Only animals spawn in pens.</CBF_RuralAnimalsHint>
   <CBF_Pen_NoSpace>No enclosed space with road access was found for pen {0}.</CBF_Pen_NoSpace>
   <CBF_ChoosePlants>Choose crops</CBF_ChoosePlants>
   <CBF_ChoosePlantsHint>{0} selected. Click a tile to add or remove it.</CBF_ChoosePlantsHint>
@@ -132,7 +129,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_NavFloat>Detach the side panel into a window you can move.</CBF_NavFloat>
   <CBF_NavRedo>Redo the last undone step.</CBF_NavRedo>
   <CBF_NavUndo>Undo the last step.</CBF_NavUndo>
-  <CBF_Area_Factions>Factions</CBF_Area_Factions>
   <CBF_FactionFrom>From {0}</CBF_FactionFrom>
   <CBF_FactionPlans>Settlement plans</CBF_FactionPlans>
   <CBF_FactionNoPlan>No plan is assigned to this faction.</CBF_FactionNoPlan>
@@ -173,7 +169,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_FactionVanilla>RimWorld builds the bases of this faction. Assign a plan above and CBF takes over, for this faction only.</CBF_FactionVanilla>
   <CBF_ReserveGround>Reserve building ground before the rock</CBF_ReserveGround>
   <CBF_ReserveGroundHelp>Before RimWorld places the rock, the edge of the mountain recedes where the settlement will stand, and only far enough for it to fit. The shape of the mountain is kept, the rest of the map is untouched. Off means the settlement has to make do with the terrain as grown and can fail on rocky tiles.</CBF_ReserveGroundHelp>
-  <CBF_OneConnectOnly>There already is a connection. The wall looks for exactly one anchor named Wall, and all its cells belong to that one area. Pick the existing one and paint onto it.</CBF_OneConnectOnly>
   <CBF_LabTitle>Test bench</CBF_LabTitle>
   <CBF_LabHelp>Unfinished work. Switch these on only if you want to help test them, and expect them to look wrong.</CBF_LabHelp>
   <CBF_LabEaves>Eaves on finished houses</CBF_LabEaves>
@@ -194,7 +189,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_NErrors>{0} error(s)</CBF_NErrors>
   <CBF_NeedAWorld>No world loaded.</CBF_NeedAWorld>
   <CBF_BuildTitle>Build {0}</CBF_BuildTitle>
-  <CBF_Field_faction>Faction</CBF_Field_faction>
   <CBF_Field_biome>Biome</CBF_Field_biome>
   <CBF_Field_hilliness>Terrain</CBF_Field_hilliness>
   <CBF_Field_river>River</CBF_Field_river>
@@ -209,13 +203,9 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_TDesc_leerweg>Removes blank cells and puts the covered floor back.</CBF_TDesc_leerweg>
   <CBF_OpenEditorTool>Open editor</CBF_OpenEditorTool>
   <CBF_OpenEditorToolDesc>Opens the Custom Base Framework editor. Press again to close it. All drawing tools live inside the editor panel.</CBF_OpenEditorToolDesc>
-  <CBF_AnchorCopy>Copy</CBF_AnchorCopy>
   <CBF_AnchorCopyTip>Makes a copy of this anchor with the same settings and the same shape, and puts the move tool in your hand right away.</CBF_AnchorCopyTip>
-  <CBF_AnchorCopied>{0} copied. Click on the map to place it.</CBF_AnchorCopied>
   <CBF_AnchorMove>Move</CBF_AnchorMove>
   <CBF_AnchorMoveDesc>Moves the selected anchor as a whole. Click a cell and its centre lands there.</CBF_AnchorMoveDesc>
-  <CBF_AnchorMoveTip>Click a cell inside the piece and the whole anchor moves there, keeping its shape.</CBF_AnchorMoveTip>
-  <CBF_AnchorPaintShort>Paint</CBF_AnchorPaintShort>
   <CBF_AnchorPickFirst>Pick an anchor first.</CBF_AnchorPickFirst>
   <CBF_AnchorEmpty>This anchor has no cells yet. Paint it first.</CBF_AnchorEmpty>
   <CBF_AnchorWontFit>The anchor would stick out of the piece here.</CBF_AnchorWontFit>
@@ -233,7 +223,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_ShowPiecesTip>Shows which pieces {0} covers. Click one to open it.</CBF_ShowPiecesTip>
   <CBF_NoPiecesInCategory>No piece belongs to {0}.</CBF_NoPiecesInCategory>
   <CBF_CategoryPieceCount>{0} piece(s)</CBF_CategoryPieceCount>
-  <CBF_CategoryClickToOpen>Click to open this piece.</CBF_CategoryClickToOpen>
   <CBF_CardImage>Preview</CBF_CardImage>
   <CBF_CardBasics>Basics</CBF_CardBasics>
   <CBF_CardWallSide>Wall side</CBF_CardWallSide>
@@ -241,7 +230,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_PartGeneral>General</CBF_PartGeneral>
   <CBF_PartArea>Area</CBF_PartArea>
   <CBF_PartAnchors>Anchors</CBF_PartAnchors>
-  <CBF_NoRegionShort>none</CBF_NoRegionShort>
   <CBF_AnchorSelected>Anchor {0}</CBF_AnchorSelected>
   <CBF_AnchorOpenTip>Opens this anchor below and picks up the brush.</CBF_AnchorOpenTip>
   <CBF_NewPieceFillIn>New piece. Give it a name, a category and a style, then draw it with Area. Export writes the file.</CBF_NewPieceFillIn>
@@ -249,9 +237,7 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_Field_additionalCategories>Additional categories</CBF_Field_additionalCategories>
   <CBF_FieldDesc_additionalCategories>Categories beyond the one set on the area above. The export writes the area's category as the first entry.</CBF_FieldDesc_additionalCategories>
   <CBF_AnchorFromPiece>From another piece</CBF_AnchorFromPiece>
-  <CBF_AnchorCountShort>{0} anchor(s)</CBF_AnchorCountShort>
   <CBF_AnchorNameTaken>[taken]</CBF_AnchorNameTaken>
-  <CBF_NoPieceWithAnchors>No piece has anchors yet.</CBF_NoPieceWithAnchors>
   <CBF_AnchorsTaken>{0} anchor(s) taken from {1}, {2} skipped. Paint them where they belong.</CBF_AnchorsTaken>
   <CBF_AnchorFromPieceDesc>Click another piece area on the map. Its anchors come over with all their settings, without their shape.</CBF_AnchorFromPieceDesc>
   <CBF_PickAPieceArea>No piece area under the cursor.</CBF_PickAPieceArea>
@@ -259,7 +245,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_AreaHasNoAnchors>{0} has no anchors.</CBF_AreaHasNoAnchors>
   <CBF_AnchorSizeMismatch>{0} is {1}, this anchor area is {2}. It will not be placed.</CBF_AnchorSizeMismatch>
   <CBF_BiomeAny>Any terrain</CBF_BiomeAny>
-  <CBF_NoTileFound>No free tile found for {0}. Try another terrain.</CBF_NoTileFound>
   <CBF_WorldBuilt>{0} placed for {1} as {2} in {3}. Generating the map now.</CBF_WorldBuilt>
   <CBF_WorldTileBad>No usable tile under the cursor.</CBF_WorldTileBad>
   <CBF_WorldNoFaction>No faction available.</CBF_WorldNoFaction>
@@ -273,9 +258,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_WorldPalette>Palette: {0}</CBF_WorldPalette>
   <CBF_WorldWalled>walled</CBF_WorldWalled>
   <CBF_WorldOpen>open</CBF_WorldOpen>
-  <CBF_ExportHasErrors>{0} has {1} error(s). Export anyway?
-
-</CBF_ExportHasErrors>
   <CBF_ExportWithHints>{0} exported, {1} hint(s), full list in the log:</CBF_ExportWithHints>
   <CBF_Field_anchorKind>Kind</CBF_Field_anchorKind>
   <CBF_Field_required>Required</CBF_Field_required>
@@ -301,7 +283,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_PawnGearClash>Clashes with another piece on the same layer and body part.</CBF_PawnGearClash>
   <CBF_PawnNoStuff>no material</CBF_PawnNoStuff>
   <CBF_PawnNoStuffTip>This apparel is not made from a material.</CBF_PawnNoStuffTip>
-  <CBF_PawnColor>Colour</CBF_PawnColor>
   <CBF_PawnPickStuff>Material</CBF_PawnPickStuff>
   <CBF_PawnStuffValue>value {0}</CBF_PawnStuffValue>
   <CBF_PawnAllFields>All fields</CBF_PawnAllFields>
@@ -318,9 +299,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_NewPawnNeedsPower>Combat power must be a number and at least 0.</CBF_NewPawnNeedsPower>
   <CBF_NewPawnCreated>{0} created. The workshop is open.</CBF_NewPawnCreated>
   <CBF_NewPawnFailed>{0} was written but did not load.</CBF_NewPawnFailed>
-  <CBF_Cancel>Cancel</CBF_Cancel>
-  <CBF_Field_label>Label</CBF_Field_label>
-  <CBF_Field_defaultFactionDef>Faction</CBF_Field_defaultFactionDef>
   <CBF_PawnWorkshopAll>All pawns, also foreign ones</CBF_PawnWorkshopAll>
   <CBF_PawnColorTip>Click picks a colour, right click sets it back to any.</CBF_PawnColorTip>
   <CBF_PawnPartsAll>All</CBF_PawnPartsAll>
@@ -338,9 +316,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_PawnNoWeapon>No tag yet, this pawn stays unarmed.</CBF_PawnNoWeapon>
   <CBF_PawnAddTag>Add tag</CBF_PawnAddTag>
   <CBF_PawnFromWeapon>Start from a weapon</CBF_PawnFromWeapon>
-  <CBF_Field_weaponMoney>Weapon budget</CBF_Field_weaponMoney>
-  <CBF_Field_forceWeaponQuality>Weapon quality</CBF_Field_forceWeaponQuality>
-  <CBF_Field_weaponStuffOverride>Weapon material</CBF_Field_weaponStuffOverride>
   <CBF_PawnSkillHead>SKILLS</CBF_PawnSkillHead>
   <CBF_PawnNoSkills>No fixed skill, everything is rolled.</CBF_PawnNoSkills>
   <CBF_PawnAddSkill>Add skill</CBF_PawnAddSkill>
@@ -368,13 +343,9 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_PawnAddImplant>Add implant</CBF_PawnAddImplant>
   <CBF_PawnAddImplantTag>Add tag</CBF_PawnAddImplantTag>
   <CBF_Field_techHediffsChance>Chance</CBF_Field_techHediffsChance>
-  <CBF_Field_techHediffsMoney>Budget</CBF_Field_techHediffsMoney>
   <CBF_Field_techHediffsMaxAmount>At most</CBF_Field_techHediffsMaxAmount>
   <CBF_PawnImplantNoPath>cannot be installed on {0}</CBF_PawnImplantNoPath>
   <CBF_PawnImplantNoPathTip>RimWorld installs an implant through a surgery recipe of the race, or through an install comp on the item. This one has neither, so it is silently skipped at spawn.</CBF_PawnImplantNoPathTip>
-  <CBF_Planner_Attempt2>Site {0}, checking further layouts: {1}</CBF_Planner_Attempt2>
-  <CBF_Planner_Attempt3>Site {0}, space is tight, still searching: {1}</CBF_Planner_Attempt3>
-  <CBF_Planner_Attempt4>Site {0}, final attempts: {1}</CBF_Planner_Attempt4>
   <CBF_Planner_Zeitgrenze>Time limit reached after {0} layouts, the best layout so far is used.</CBF_Planner_Zeitgrenze>
   <CBF_Planner_Laune1_0>The master builder unrolls his plans. ({1})</CBF_Planner_Laune1_0>
   <CBF_Planner_Laune1_1>The surveyors drive in the first stakes. ({1})</CBF_Planner_Laune1_1>
@@ -388,4 +359,12 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_Planner_Laune4_0>The mayor threatens to settle for a tent city. ({1})</CBF_Planner_Laune4_0>
   <CBF_Planner_Laune4_1>Draft {0}. The ink is running low. ({1})</CBF_Planner_Laune4_1>
   <CBF_Planner_Laune4_2>Everyone agrees to somehow make it work. ({1})</CBF_Planner_Laune4_2>
+  <CBF_RemoveTip>Remove</CBF_RemoveTip>
+  <CBF_FillerHead>Filler</CBF_FillerHead>
+  <CBF_CategoryPieces>{0} pieces</CBF_CategoryPieces>
+  <CBF_AnchorKind_Connect>Connect</CBF_AnchorKind_Connect>
+  <CBF_AnchorKind_Fill>Loot</CBF_AnchorKind_Fill>
+  <CBF_AnchorKind_Object>Object</CBF_AnchorKind_Object>
+  <CBF_AnchorKind_Spawn>Pawn</CBF_AnchorKind_Spawn>
+  <CBF_AnchorPawnCountTip>How many pawns stand here, from and to. Works with a single kind, a pawn list and the house inhabitants.</CBF_AnchorPawnCountTip>
 </LanguageData>

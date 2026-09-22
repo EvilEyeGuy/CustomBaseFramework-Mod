@@ -13,7 +13,6 @@
   <CBF_FactionPrefix>Faction: </CBF_FactionPrefix>
   <CBF_NoFaction>no faction</CBF_NoFaction>
   <CBF_NotCheckedYet>not checked yet</CBF_NotCheckedYet>
-  <CBF_CheckClean>Check: no findings</CBF_CheckClean>
   <CBF_CheckPrefix>Check: </CBF_CheckPrefix>
   <CBF_Errors> errors</CBF_Errors>
   <CBF_Hints> hints</CBF_Hints>
@@ -176,7 +175,6 @@
   <CBF_Field_type>Type</CBF_Field_type>
   <CBF_FieldDesc_type>Who consumes this piece: the settlement generator, the wall profile, or the dungeon generator.</CBF_FieldDesc_type>
   <CBF_ExportHasErrors>{0} has {1} error(s). Exporting it anyway will write a piece the generator cannot use. Export anyway?</CBF_ExportHasErrors>
-  <CBF_ExportWithHints>{0} exported. {1} hint(s), see the check view.</CBF_ExportWithHints>
   <CBF_StillUsedBy>{0} is still used by {1} definition(s): {2}</CBF_StillUsedBy>
   <CBF_NameTaken>A definition named {0} already exists.</CBF_NameTaken>
   <CBF_NoSourceFile>No source file found for {0}, so it cannot be duplicated.</CBF_NoSourceFile>
@@ -395,8 +393,6 @@
   <CBF_AddFaction>+ Faction or category</CBF_AddFaction>
   <CBF_FactionsAll>No entry, so every faction may use it. That is {0} right now.</CBF_FactionsAll>
   <CBF_FactionsMatch>Matches {0} faction(s) in the current mod list.</CBF_FactionsMatch>
-  <CBF_TakeoverOn>Faction bases: taken over</CBF_TakeoverOn>
-  <CBF_TakeoverOff>Faction bases: RimWorld builds them</CBF_TakeoverOff>
   <CBF_TakeoverChanged>Changed. Takes effect after a restart.</CBF_TakeoverChanged>
   <CBF_TakeoverOnHint>CBF builds faction bases where a settlement type matches. All others get RimWorlds own settlement, not an empty map.</CBF_TakeoverOnHint>
   <CBF_TakeoverOffHint>Nothing here has any effect in game until this is switched on.</CBF_TakeoverOffHint>
@@ -916,4 +912,10 @@ Copy the folder CustomBaseFramework into another mod under 1.6/Defs, and Patches
 
 Either the name is misspelled, or the list lives in a different project that is not active.</CBF_AnchorListGoneTip>
   <CBF_FillerTip>Filler: may be partly missing, at least half is required.</CBF_FillerTip>
+  <CBF_Field_worldTexture>World map icon</CBF_Field_worldTexture>
+  <CBF_FieldDesc_worldTexture>Image of this settlement on the world map when zoomed in. It is tinted in the faction colour.
+
+All images in Textures/World/WorldObjects/CBF can be chosen, including those of other mods.</CBF_FieldDesc_worldTexture>
+  <CBF_WorldIconVanilla>Vanilla: faction image</CBF_WorldIconVanilla>
+  <CBF_WorldIconVanillaTip>No own image. The settlement shows the image of its faction.</CBF_WorldIconVanillaTip>
 </LanguageData>

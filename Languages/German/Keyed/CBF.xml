@@ -13,7 +13,6 @@
   <CBF_FactionPrefix>Fraktion: </CBF_FactionPrefix>
   <CBF_NoFaction>keine Fraktion</CBF_NoFaction>
   <CBF_NotCheckedYet>noch nicht geprueft</CBF_NotCheckedYet>
-  <CBF_CheckClean>Pruefung: ohne Befund</CBF_CheckClean>
   <CBF_CheckPrefix>Pruefung: </CBF_CheckPrefix>
   <CBF_Errors> Fehler</CBF_Errors>
   <CBF_Hints> Hinweise</CBF_Hints>
@@ -176,7 +175,6 @@
   <CBF_Field_type>Typ</CBF_Field_type>
   <CBF_FieldDesc_type>Wer diesen Baustein verbraucht: der Siedlungsgenerator, das Mauerprofil oder der Verliesgenerator.</CBF_FieldDesc_type>
   <CBF_ExportHasErrors>{0} hat {1} Fehler. Trotzdem zu exportieren schreibt einen Baustein, den die Erzeugung nicht benutzen kann. Trotzdem exportieren?</CBF_ExportHasErrors>
-  <CBF_ExportWithHints>{0} exportiert. {1} Hinweise, siehe Pruefung.</CBF_ExportWithHints>
   <CBF_StillUsedBy>{0} wird noch von {1} Definitionen benutzt: {2}</CBF_StillUsedBy>
   <CBF_NameTaken>Eine Definition namens {0} gibt es schon.</CBF_NameTaken>
   <CBF_NoSourceFile>Zu {0} ist keine Quelldatei zu finden, es laesst sich deshalb nicht duplizieren.</CBF_NoSourceFile>
@@ -395,8 +393,6 @@
   <CBF_AddFaction>+ Fraktion oder Sammelbegriff</CBF_AddFaction>
   <CBF_FactionsAll>Kein Eintrag, also darf jede Fraktion. Das sind gerade {0}.</CBF_FactionsAll>
   <CBF_FactionsMatch>Trifft {0} Fraktionen in der aktuellen Modliste.</CBF_FactionsMatch>
-  <CBF_TakeoverOn>Fraktionsbasen: uebernommen</CBF_TakeoverOn>
-  <CBF_TakeoverOff>Fraktionsbasen: RimWorld baut sie</CBF_TakeoverOff>
   <CBF_TakeoverChanged>Geaendert. Wirkt nach einem Neustart.</CBF_TakeoverChanged>
   <CBF_TakeoverOnHint>CBF baut Fraktionsbasen dort, wo ein Ortstyp passt. Alle anderen bekommen RimWorlds eigene Siedlung, keine leere Karte.</CBF_TakeoverOnHint>
   <CBF_TakeoverOffHint>Solange das nicht eingeschaltet ist, wirkt hier im Spiel gar nichts.</CBF_TakeoverOffHint>
@@ -916,4 +912,10 @@ Den Ordner CustomBaseFramework in einen anderen Mod unter 1.6/Defs kopieren, Pat
 
 Entweder ist der Name vertippt, oder die Liste liegt in einem anderen Projekt, das nicht aktiv ist.</CBF_AnchorListGoneTip>
   <CBF_FillerTip>Filler: darf teilweise fehlen, mindestens die Hälfte muss stehen.</CBF_FillerTip>
+  <CBF_Field_worldTexture>Weltkartensymbol</CBF_Field_worldTexture>
+  <CBF_FieldDesc_worldTexture>Bild dieser Siedlung auf der Weltkarte in der Nahansicht. Es wird in der Farbe der Fraktion eingefärbt.
+
+Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die anderer Mods.</CBF_FieldDesc_worldTexture>
+  <CBF_WorldIconVanilla>Vanilla: Bild der Fraktion</CBF_WorldIconVanilla>
+  <CBF_WorldIconVanillaTip>Kein eigenes Bild. Die Siedlung zeigt das Bild ihrer Fraktion.</CBF_WorldIconVanillaTip>
 </LanguageData>

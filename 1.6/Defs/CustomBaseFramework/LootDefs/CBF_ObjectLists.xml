@@ -4,6 +4,7 @@
 
 
 
+
   <CustomBaseFramework.LootBuildingCategoryDef>
     <defName>CBF_Vanilla_1x1_Shelf</defName>
     <members>
@@ -95,6 +96,15 @@
       <li><thing>DankPyon_HideoutLargeShelf_FilledB_Oswin</thing><fremd>true</fremd></li>
       <li><thing>DankPyon_HideoutLargeShelf_FilledA_Soren</thing><fremd>true</fremd></li>
       <li><thing>DankPyon_HideoutLargeShelf_FilledB_Soren</thing><fremd>true</fremd></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_2x2_Beds</defName>
+    <members>
+      <li>DankPyon_Bed_RusticDouble_Blue</li>
+      <li>DankPyon_Bed_RusticDouble_Green</li>
+      <li>DankPyon_Bed_RusticDouble_Red</li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 </Defs>

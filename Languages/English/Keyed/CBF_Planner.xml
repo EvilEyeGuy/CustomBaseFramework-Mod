@@ -288,4 +288,104 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_ConnectNamesTaken>Wall and Outside are both taken already.</CBF_ConnectNamesTaken>
   <CBF_NoWallsModern>No fortifications: the place kind is {0}.</CBF_NoWallsModern>
   <CBF_NoWallsUmland>No fortifications: the countryside lies outside the wall.</CBF_NoWallsUmland>
+  <CBF_PawnWorkshop>Edit pawn</CBF_PawnWorkshop>
+  <CBF_PawnFront>Front</CBF_PawnFront>
+  <CBF_PawnSide>Side</CBF_PawnSide>
+  <CBF_PawnBack>Back</CBF_PawnBack>
+  <CBF_PawnLayerGrid>LAYERS AND BODY PARTS   -   an empty field is free, click it to put something there</CBF_PawnLayerGrid>
+  <CBF_PawnCellFree>{0} on {1} is still free.</CBF_PawnCellFree>
+  <CBF_PawnNothingFits>Nothing fits there that does not clash with what is already worn.</CBF_PawnNothingFits>
+  <CBF_PawnPickApparel>Apparel for this slot</CBF_PawnPickApparel>
+  <CBF_PawnGearList>FIXED GEAR</CBF_PawnGearList>
+  <CBF_PawnNoGear>No fixed gear yet. Click a free field above.</CBF_PawnNoGear>
+  <CBF_PawnGearClash>Clashes with another piece on the same layer and body part.</CBF_PawnGearClash>
+  <CBF_PawnNoStuff>no material</CBF_PawnNoStuff>
+  <CBF_PawnNoStuffTip>This apparel is not made from a material.</CBF_PawnNoStuffTip>
+  <CBF_PawnColor>Colour</CBF_PawnColor>
+  <CBF_PawnPickStuff>Material</CBF_PawnPickStuff>
+  <CBF_PawnStuffValue>value {0}</CBF_PawnStuffValue>
+  <CBF_PawnAllFields>All fields</CBF_PawnAllFields>
+  <CBF_PawnUnsavedGear>Gear has changed and is not written yet.</CBF_PawnUnsavedGear>
+  <CBF_PawnGearSaved>Gear matches the file.</CBF_PawnGearSaved>
+  <CBF_PawnGearWritten>{0} written to {1}.</CBF_PawnGearWritten>
+  <CBF_PawnWornNow>worn in this example</CBF_PawnWornNow>
+  <CBF_Any>any</CBF_Any>
+  <CBF_NewPawnTitle>New pawn</CBF_NewPawnTitle>
+  <CBF_NewPawnCreate>Create</CBF_NewPawnCreate>
+  <CBF_NewPawnReady>Everything needed is there.</CBF_NewPawnReady>
+  <CBF_NewPawnNeedsLabel>The label is missing. It is what the game shows the player.</CBF_NewPawnNeedsLabel>
+  <CBF_NewPawnNeedsRace>A race is missing.</CBF_NewPawnNeedsRace>
+  <CBF_NewPawnNeedsPower>Combat power must be a number and at least 0.</CBF_NewPawnNeedsPower>
+  <CBF_NewPawnCreated>{0} created. The workshop is open.</CBF_NewPawnCreated>
+  <CBF_NewPawnFailed>{0} was written but did not load.</CBF_NewPawnFailed>
+  <CBF_Cancel>Cancel</CBF_Cancel>
+  <CBF_Field_label>Label</CBF_Field_label>
+  <CBF_Field_defaultFactionDef>Faction</CBF_Field_defaultFactionDef>
+  <CBF_PawnWorkshopAll>All pawns, also foreign ones</CBF_PawnWorkshopAll>
+  <CBF_PawnColorTip>Click picks a colour, right click sets it back to any.</CBF_PawnColorTip>
+  <CBF_PawnPartsAll>All</CBF_PawnPartsAll>
+  <CBF_PawnPartsCore>Vanilla</CBF_PawnPartsCore>
+  <CBF_PawnPartsMods>Mods</CBF_PawnPartsMods>
+  <CBF_PawnSecGear>Gear</CBF_PawnSecGear>
+  <CBF_PawnSecWeapon>Weapon</CBF_PawnSecWeapon>
+  <CBF_PawnSecSkills>Skills</CBF_PawnSecSkills>
+  <CBF_PawnSecNature>Nature</CBF_PawnSecNature>
+  <CBF_PawnWeaponHead>WEAPON TAGS</CBF_PawnWeaponHead>
+  <CBF_PawnWeaponHint>RimWorld picks weapons by tag, not by name. Pick the tag that only your weapon carries, or start from a weapon and take one of its tags.</CBF_PawnWeaponHint>
+  <CBF_PawnTagEmpty>no weapon carries this tag</CBF_PawnTagEmpty>
+  <CBF_PawnTagCount>{0} weapons: {1}</CBF_PawnTagCount>
+  <CBF_PawnTagSpan>{0} weapons</CBF_PawnTagSpan>
+  <CBF_PawnNoWeapon>No tag yet, this pawn stays unarmed.</CBF_PawnNoWeapon>
+  <CBF_PawnAddTag>Add tag</CBF_PawnAddTag>
+  <CBF_PawnFromWeapon>Start from a weapon</CBF_PawnFromWeapon>
+  <CBF_Field_weaponMoney>Weapon budget</CBF_Field_weaponMoney>
+  <CBF_Field_forceWeaponQuality>Weapon quality</CBF_Field_forceWeaponQuality>
+  <CBF_Field_weaponStuffOverride>Weapon material</CBF_Field_weaponStuffOverride>
+  <CBF_PawnSkillHead>SKILLS</CBF_PawnSkillHead>
+  <CBF_PawnNoSkills>No fixed skill, everything is rolled.</CBF_PawnNoSkills>
+  <CBF_PawnAddSkill>Add skill</CBF_PawnAddSkill>
+  <CBF_Field_extraSkillLevels>Extra levels</CBF_Field_extraSkillLevels>
+  <CBF_Field_minTotalSkillLevels>Minimum total</CBF_Field_minTotalSkillLevels>
+  <CBF_Field_minBestSkillLevel>Minimum best</CBF_Field_minBestSkillLevel>
+  <CBF_PawnNatureHead>EXCLUDED TRAITS</CBF_PawnNatureHead>
+  <CBF_PawnNatureHint>A trait listed here never appears on this pawn.</CBF_PawnNatureHint>
+  <CBF_PawnNoTraits>Nothing excluded.</CBF_PawnNoTraits>
+  <CBF_PawnAddTrait>Exclude trait</CBF_PawnAddTrait>
+  <CBF_PawnForcedTraits>Forced traits: {0}. Change them under All fields.</CBF_PawnForcedTraits>
+  <CBF_PawnSpawn>Spawn pawn</CBF_PawnSpawn>
+  <CBF_PawnPlace>Place {0}</CBF_PawnPlace>
+  <CBF_PawnPlaceDesc>Click a cell to put one pawn of this kind there. Click again for another.</CBF_PawnPlaceDesc>
+  <CBF_PawnPlaceNoKind>No pawn kind.</CBF_PawnPlaceNoKind>
+  <CBF_PawnPlaceFogged>This cell is not discovered.</CBF_PawnPlaceFogged>
+  <CBF_PawnPlaceBlocked>Nothing can stand here.</CBF_PawnPlaceBlocked>
+  <CBF_PawnPlaced>{0} placed for {1}.</CBF_PawnPlaced>
+  <CBF_PawnNoFaction>no faction</CBF_PawnNoFaction>
+  <CBF_PawnSecImplants>Implants</CBF_PawnSecImplants>
+  <CBF_PawnImplantHead>IMPLANTS</CBF_PawnImplantHead>
+  <CBF_PawnImplantHint>Named implants are always installed. Tags let the generator pick within the budget. Implants from a DLC or mod get a MayRequire, so they are skipped when it is not loaded.</CBF_PawnImplantHint>
+  <CBF_PawnImplantGated>only with {0}</CBF_PawnImplantGated>
+  <CBF_PawnNoImplants>No implants.</CBF_PawnNoImplants>
+  <CBF_PawnAddImplant>Add implant</CBF_PawnAddImplant>
+  <CBF_PawnAddImplantTag>Add tag</CBF_PawnAddImplantTag>
+  <CBF_Field_techHediffsChance>Chance</CBF_Field_techHediffsChance>
+  <CBF_Field_techHediffsMoney>Budget</CBF_Field_techHediffsMoney>
+  <CBF_Field_techHediffsMaxAmount>At most</CBF_Field_techHediffsMaxAmount>
+  <CBF_PawnImplantNoPath>cannot be installed on {0}</CBF_PawnImplantNoPath>
+  <CBF_PawnImplantNoPathTip>RimWorld installs an implant through a surgery recipe of the race, or through an install comp on the item. This one has neither, so it is silently skipped at spawn.</CBF_PawnImplantNoPathTip>
+  <CBF_Planner_Attempt2>Site {0}, checking further layouts: {1}</CBF_Planner_Attempt2>
+  <CBF_Planner_Attempt3>Site {0}, space is tight, still searching: {1}</CBF_Planner_Attempt3>
+  <CBF_Planner_Attempt4>Site {0}, final attempts: {1}</CBF_Planner_Attempt4>
+  <CBF_Planner_Zeitgrenze>Time limit reached after {0} layouts, the best layout so far is used.</CBF_Planner_Zeitgrenze>
+  <CBF_Planner_Laune1_0>The master builder unrolls his plans. ({1})</CBF_Planner_Laune1_0>
+  <CBF_Planner_Laune1_1>The surveyors drive in the first stakes. ({1})</CBF_Planner_Laune1_1>
+  <CBF_Planner_Laune1_2>The town council debates the best building site. ({1})</CBF_Planner_Laune1_2>
+  <CBF_Planner_Laune2_0>The master builder discards draft number {0}. ({1})</CBF_Planner_Laune2_0>
+  <CBF_Planner_Laune2_1>The council cannot agree on the market square. ({1})</CBF_Planner_Laune2_1>
+  <CBF_Planner_Laune2_2>A surveyor vanished in the swamp. A replacement is sought. ({1})</CBF_Planner_Laune2_2>
+  <CBF_Planner_Laune3_0>The mountain refuses to make room. ({1})</CBF_Planner_Laune3_0>
+  <CBF_Planner_Laune3_1>The masons ask whether the wall really has to go around the river. ({1})</CBF_Planner_Laune3_1>
+  <CBF_Planner_Laune3_2>Draft {0}. The master builder has switched to strong ale. ({1})</CBF_Planner_Laune3_2>
+  <CBF_Planner_Laune4_0>The mayor threatens to settle for a tent city. ({1})</CBF_Planner_Laune4_0>
+  <CBF_Planner_Laune4_1>Draft {0}. The ink is running low. ({1})</CBF_Planner_Laune4_1>
+  <CBF_Planner_Laune4_2>Everyone agrees to somehow make it work. ({1})</CBF_Planner_Laune4_2>
 </LanguageData>

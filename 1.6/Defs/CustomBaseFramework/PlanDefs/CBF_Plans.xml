@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Ortstypen. Hier steht der Unterschied zwischen Weiler, Dorf, Stadt und
-       Festung, und nur hier.
-
-       wallDepth: 0 keine Mauer, 1 Palisade, 3 Wand/Wehrgang/Wand,
-                  5 breite Festungsmauer mit drei Feldern Wehrgang.
-       towerCorner ist der Durchmesser des runden Eckturms. Sein Mittelpunkt
-       liegt auf der Mittellinie des Mauerbands, die Mauer laeuft also mittig
-       in den Turm hinein. Er sollte groesser sein als wallDepth.
-       Wege gibt es nur in zwei Breiten, mehr zerschneidet die Karte optisch. -->
-
-  <!-- ==================================================================
-       Verliesprofile. corridorShare unter 0,35 laesst die Raeume zu einem
-       Grundriss zusammenwachsen, deshalb prueft der Code das.
-       ================================================================== -->
-
   <CustomBaseFramework.DungeonProfileDef>
     <defName>CBF_Dungeon_Gruft</defName>
     <label>Gruft</label>

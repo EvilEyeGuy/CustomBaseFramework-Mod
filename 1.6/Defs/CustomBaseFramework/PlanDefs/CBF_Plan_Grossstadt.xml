@@ -8,7 +8,7 @@
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
-    <coreSize>86~98</coreSize>
+    <coreSize>100~112</coreSize>
     <mapSize>225</mapSize>
     <wallDepth>0</wallDepth>
     <roadMain>6</roadMain>
@@ -29,12 +29,19 @@
         <roadEdges>
           <li>PavedTile</li>
         </roadEdges>
+        <garrison>
+          <li>
+            <list>CBF_Vanilla_Garrison</list>
+            <count>10~20</count>
+            <posten>Innen</posten>
+          </li>
+        </garrison>
         <districts>
           <li>
             <name>Zentrum</name>
             <entries>
-              <li><tag>CBF_Vanilla_HouseSmall</tag><count>22~44</count></li>
-              <li><tag>CBF_Vanilla_Workshop</tag><count>4~12</count></li>
+              <li><tag>CBF_Vanilla_HouseSmall</tag><count>12~44</count><filler>true</filler></li>
+              <li><tag>CBF_Vanilla_Workshop</tag><count>2~12</count><filler>true</filler></li>
               <li><tag>CBF_Vanilla_Inn</tag><count>0~1</count></li>
               <li><tag>CBF_Vanilla_EnergyProduction</tag><count>4~5</count></li>
               <li><tag>CBF_Vanilla_EnergyStorage</tag><count>1~2</count></li>
@@ -55,12 +62,19 @@
         <roadEdges>
           <li>PavedTile</li>
         </roadEdges>
+        <garrison>
+          <li>
+            <list>CBF_Vanilla_Garrison</list>
+            <count>5~10</count>
+            <posten>Innen</posten>
+          </li>
+        </garrison>
         <districts>
           <li>
             <name>Wohnviertel</name>
             <entries>
-              <li><tag>CBF_Vanilla_HouseLarge</tag><count>22~56</count></li>
-              <li><tag>CBF_ModernDefense</tag><count>2~4</count></li>
+              <li><tag>CBF_Vanilla_HouseLarge</tag><count>12~56</count><filler>true</filler></li>
+              <li><tag>CBF_ModernDefense</tag><count>0~4</count></li>
               <li><tag>CBF_Vanilla_EnergyProduction</tag><count>3~5</count></li>
               <li><tag>CBF_Vanilla_Solarpark</tag><count>0~2</count></li>
               <li><tag>CBF_Vanilla_Defense_Small</tag><count>4~8</count></li>
@@ -77,7 +91,7 @@
         <versorgung>1.2</versorgung><fields><li>
             <name>Acker</name>
             <count>3~4</count>
-            <fence>true</fence>
+            <fence>false</fence>
             <weight>1</weight><plants>
               <li>Plant_Rice</li>
              </plants>
@@ -91,28 +105,34 @@
           <li>
             <name>Umland</name>
             <entries>
-              <li><tag>CBF_Vanilla_Windpark</tag><count>4~6</count></li>
-              <li><tag>CBF_Vanilla_Defence_Large</tag><count>4~8</count></li>
+              <li><tag>CBF_Vanilla_Windpark</tag><count>2~6</count></li>
+              <li><tag>CBF_Vanilla_Defence_Large</tag><count>2~8</count></li>
             </entries>
           </li>
           <li>
             <name>Farming</name><fields><li>
               <name>Acker</name>
               <count>2~4</count>
-              <fence>true</fence>
+              <fence>false</fence>
               <weight>1</weight><plants>
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Carrots</li>
-               </plants></li><li>
+               </plants>
+              <tags>
+                <li>CBF_ModernFarmHouse</li>
+              </tags></li><li>
               <name>Acker</name>
               <count>2~4</count>
-              <fence>true</fence>
+              <fence>false</fence>
               <weight>1</weight><plants>
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Carrots</li>
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Fleawort</li>
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Onions</li>
                 <li>Plant_Corn</li>
                 <li>Plant_Healroot</li>
-               </plants></li></fields>
+               </plants>
+              <tags>
+                <li>CBF_ModernFarmHouse</li>
+              </tags></li></fields>
             <entries>
               <li><piece>CBF_Modern_Farmhouse</piece><count>3~8</count></li>
             </entries>

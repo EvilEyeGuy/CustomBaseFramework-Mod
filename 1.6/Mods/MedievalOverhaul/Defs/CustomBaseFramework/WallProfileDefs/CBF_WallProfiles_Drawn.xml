@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Mauerprofile aus den selbst gezeichneten Teilen.
-
-       Steinstadt: TownWall als Querschnitt, Tower als Eckturm, GateHouse als
-       Torhaus. Das Torhaus ist so gezeichnet, dass die Mauer senkrecht
-       hindurchlaeuft und die Durchfahrt quer, deshalb West als Aussenrichtung.
-
-       Palisadendorf: Palisade ein Feld tief, PalisadeTower als Eckturm. -->
-
   <CustomBaseFramework.WallProfileDef>
     <defName>WallProfile_Stein_3</defName>
     <label>Steinmauer, gezeichnet</label>
     <style>Standard</style>
     <depth>3</depth>
-    <!-- Die Streifen werden der Reihe nach entlang des Mauerlaufs
-         gestempelt. Drei glatte Zellen, dann eine mit Schiessscharte. Ohne
-         Scharte kann aus der Kurtine niemand schiessen, nur aus den Tuermen,
-         und dann ist ein langer Mauerlauf militaerisch wertlos. -->
     <segments>
       <li>TownWall</li>
       <li>TownWall</li>

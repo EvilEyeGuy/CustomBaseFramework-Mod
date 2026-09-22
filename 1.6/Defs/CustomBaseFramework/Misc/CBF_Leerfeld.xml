@@ -7,8 +7,6 @@
     <description>A marker for the settlement editor. A cell painted with it belongs to the piece, but nothing is built there and the existing ground stays untouched. It never appears in a generated settlement.</description>
     <texturePath>CBF/Terrain/Leerfeld</texturePath>
     <edgeType>Hard</edgeType>
-    <!-- Ueberlagernd: der Boden darunter bleibt erhalten und kommt beim
-         Wegnehmen zurueck. Wer sich vermalt, verliert nicht seine Dielen. -->
     <layerable>true</layerable>
     <renderPrecedence>250</renderPrecedence>
     <pathCost>0</pathCost>

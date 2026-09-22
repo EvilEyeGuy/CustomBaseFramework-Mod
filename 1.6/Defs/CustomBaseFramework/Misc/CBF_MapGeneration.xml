@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Der Anschluss an RimWorlds Kartenerzeugung.
-
-       CBF_Settlement ist der Schritt, der einen Ort baut. Er liest den Ortstyp
-       vom Weltobjekt, wenn dort einer steht, sonst waehlt er einen passenden
-       aus. Er wirft nie: findet er nichts, bleibt die Karte leer, statt dass
-       das Spiel abbricht.
-
-       Wer eigene Weltobjekte hat, setzt bei ihnen
-         <mapGenerator>CBF_Base_Faction</mapGenerator>
-       Wer stattdessen alle Fraktionsbasen umstellen will, patcht die genSteps
-       von Base_Faction. Das Beispiel dafuer steht in Patches. -->
-
   <GenStepDef>
     <defName>CBF_Settlement</defName>
     <order>400</order>
@@ -21,7 +9,6 @@
     </genStep>
   </GenStepDef>
 
-  <!-- Wie CBF_Settlement, aber ohne Bewohner. Fuer Ruinen und Questorte. -->
   <GenStepDef>
     <defName>CBF_SettlementEmpty</defName>
     <order>400</order>

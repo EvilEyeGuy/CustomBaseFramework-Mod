@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Warensorten. Sie ziehen ein Stueck und werden von den
-       Raumtabellen darunter verwendet. -->
-
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_Vanilla_Ware_Mahlzeit</defName>
     <label>Mahlzeiten</label>
@@ -281,8 +278,6 @@
       <li><weight>3</weight><thing>Gun_HeavySMG</thing><count>1</count><quality>Awful~Normal</quality><hitPoints>0.4~0.8</hitPoints><onMissing>Skip</onMissing></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
-
-  <!-- Raumtabellen. Sie ziehen Warensorten, nicht Stuecke. -->
 
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_Vanilla_Loot_Wohnhaus</defName>

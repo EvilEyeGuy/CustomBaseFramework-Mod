@@ -254,4 +254,104 @@ Ohne deine Bestaetigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_ConnectNamesTaken>Wall und Outside sind beide schon vergeben.</CBF_ConnectNamesTaken>
   <CBF_NoWallsModern>Keine Befestigung: der Ortstyp ist {0}.</CBF_NoWallsModern>
   <CBF_NoWallsUmland>Keine Befestigung: das Umland liegt vor der Mauer.</CBF_NoWallsUmland>
+  <CBF_PawnWorkshop>Pawn bearbeiten</CBF_PawnWorkshop>
+  <CBF_PawnFront>Vorne</CBF_PawnFront>
+  <CBF_PawnSide>Seite</CBF_PawnSide>
+  <CBF_PawnBack>Hinten</CBF_PawnBack>
+  <CBF_PawnLayerGrid>SCHICHTEN UND KOERPERTEILE   -   ein leeres Feld ist frei, ein Klick setzt dort etwas ein</CBF_PawnLayerGrid>
+  <CBF_PawnCellFree>{0} an {1} ist noch frei.</CBF_PawnCellFree>
+  <CBF_PawnNothingFits>Dort passt nichts mehr, was sich nicht mit dem Getragenen beisst.</CBF_PawnNothingFits>
+  <CBF_PawnPickApparel>Ausruestung fuer dieses Feld</CBF_PawnPickApparel>
+  <CBF_PawnGearList>FESTE AUSRUESTUNG</CBF_PawnGearList>
+  <CBF_PawnNoGear>Noch keine feste Ausruestung. Klick oben auf ein freies Feld.</CBF_PawnNoGear>
+  <CBF_PawnGearClash>Beisst sich mit einem anderen Stueck auf derselben Schicht und demselben Koerperteil.</CBF_PawnGearClash>
+  <CBF_PawnNoStuff>kein Material</CBF_PawnNoStuff>
+  <CBF_PawnNoStuffTip>Dieses Kleidungsstueck wird nicht aus einem Material gefertigt.</CBF_PawnNoStuffTip>
+  <CBF_PawnColor>Farbe</CBF_PawnColor>
+  <CBF_PawnPickStuff>Material</CBF_PawnPickStuff>
+  <CBF_PawnStuffValue>Wert {0}</CBF_PawnStuffValue>
+  <CBF_PawnAllFields>Alle Felder</CBF_PawnAllFields>
+  <CBF_PawnUnsavedGear>Die Ausruestung ist geaendert und noch nicht geschrieben.</CBF_PawnUnsavedGear>
+  <CBF_PawnGearSaved>Die Ausruestung steht so in der Datei.</CBF_PawnGearSaved>
+  <CBF_PawnGearWritten>{0} in {1} geschrieben.</CBF_PawnGearWritten>
+  <CBF_PawnWornNow>in diesem Beispiel getragen</CBF_PawnWornNow>
+  <CBF_Any>beliebig</CBF_Any>
+  <CBF_NewPawnTitle>Neuer Pawn</CBF_NewPawnTitle>
+  <CBF_NewPawnCreate>Anlegen</CBF_NewPawnCreate>
+  <CBF_NewPawnReady>Alles Noetige ist da.</CBF_NewPawnReady>
+  <CBF_NewPawnNeedsLabel>Das Label fehlt. Es ist das, was der Spieler zu sehen bekommt.</CBF_NewPawnNeedsLabel>
+  <CBF_NewPawnNeedsRace>Eine Rasse fehlt.</CBF_NewPawnNeedsRace>
+  <CBF_NewPawnNeedsPower>Die Kampfkraft muss eine Zahl sein und mindestens 0.</CBF_NewPawnNeedsPower>
+  <CBF_NewPawnCreated>{0} angelegt. Die Werkstatt ist offen.</CBF_NewPawnCreated>
+  <CBF_NewPawnFailed>{0} wurde geschrieben, laedt aber nicht.</CBF_NewPawnFailed>
+  <CBF_Cancel>Abbrechen</CBF_Cancel>
+  <CBF_Field_label>Label</CBF_Field_label>
+  <CBF_Field_defaultFactionDef>Fraktion</CBF_Field_defaultFactionDef>
+  <CBF_PawnWorkshopAll>Alle Pawns, auch fremde</CBF_PawnWorkshopAll>
+  <CBF_PawnColorTip>Klick waehlt eine Farbe, Rechtsklick stellt auf beliebig zurueck.</CBF_PawnColorTip>
+  <CBF_PawnPartsAll>Alle</CBF_PawnPartsAll>
+  <CBF_PawnPartsCore>Vanilla</CBF_PawnPartsCore>
+  <CBF_PawnPartsMods>Mods</CBF_PawnPartsMods>
+  <CBF_PawnSecGear>Ausruestung</CBF_PawnSecGear>
+  <CBF_PawnSecWeapon>Waffe</CBF_PawnSecWeapon>
+  <CBF_PawnSecSkills>Faehigkeiten</CBF_PawnSecSkills>
+  <CBF_PawnSecNature>Wesen</CBF_PawnSecNature>
+  <CBF_PawnWeaponHead>WAFFENMARKEN</CBF_PawnWeaponHead>
+  <CBF_PawnWeaponHint>RimWorld waehlt Waffen ueber Marken, nicht ueber den Namen. Nimm die Marke, die nur deine Waffe traegt, oder geh von einer Waffe aus und such dir eine ihrer Marken.</CBF_PawnWeaponHint>
+  <CBF_PawnTagEmpty>keine Waffe traegt diese Marke</CBF_PawnTagEmpty>
+  <CBF_PawnTagCount>{0} Waffen: {1}</CBF_PawnTagCount>
+  <CBF_PawnTagSpan>{0} Waffen</CBF_PawnTagSpan>
+  <CBF_PawnNoWeapon>Noch keine Marke, dieser Pawn bleibt unbewaffnet.</CBF_PawnNoWeapon>
+  <CBF_PawnAddTag>Marke dazu</CBF_PawnAddTag>
+  <CBF_PawnFromWeapon>Von einer Waffe ausgehen</CBF_PawnFromWeapon>
+  <CBF_Field_weaponMoney>Waffenbudget</CBF_Field_weaponMoney>
+  <CBF_Field_forceWeaponQuality>Waffenqualitaet</CBF_Field_forceWeaponQuality>
+  <CBF_Field_weaponStuffOverride>Waffenmaterial</CBF_Field_weaponStuffOverride>
+  <CBF_PawnSkillHead>FAEHIGKEITEN</CBF_PawnSkillHead>
+  <CBF_PawnNoSkills>Keine feste Faehigkeit, alles wird gewuerfelt.</CBF_PawnNoSkills>
+  <CBF_PawnAddSkill>Faehigkeit dazu</CBF_PawnAddSkill>
+  <CBF_Field_extraSkillLevels>Zusatzstufen</CBF_Field_extraSkillLevels>
+  <CBF_Field_minTotalSkillLevels>Mindestsumme</CBF_Field_minTotalSkillLevels>
+  <CBF_Field_minBestSkillLevel>Mindestens beste</CBF_Field_minBestSkillLevel>
+  <CBF_PawnNatureHead>AUSGESCHLOSSENE TRAITS</CBF_PawnNatureHead>
+  <CBF_PawnNatureHint>Was hier steht, bekommt dieser Pawn nie.</CBF_PawnNatureHint>
+  <CBF_PawnNoTraits>Nichts ausgeschlossen.</CBF_PawnNoTraits>
+  <CBF_PawnAddTrait>Trait ausschliessen</CBF_PawnAddTrait>
+  <CBF_PawnForcedTraits>Erzwungene Traits: {0}. Aendern unter Alle Felder.</CBF_PawnForcedTraits>
+  <CBF_PawnSpawn>Pawn setzen</CBF_PawnSpawn>
+  <CBF_PawnPlace>{0} setzen</CBF_PawnPlace>
+  <CBF_PawnPlaceDesc>Klick auf ein Feld setzt einen Pawn dieser Art dorthin. Noch ein Klick, noch einer.</CBF_PawnPlaceDesc>
+  <CBF_PawnPlaceNoKind>Keine Pawn-Art.</CBF_PawnPlaceNoKind>
+  <CBF_PawnPlaceFogged>Dieses Feld ist noch unentdeckt.</CBF_PawnPlaceFogged>
+  <CBF_PawnPlaceBlocked>Hier kann niemand stehen.</CBF_PawnPlaceBlocked>
+  <CBF_PawnPlaced>{0} gesetzt, fuer {1}.</CBF_PawnPlaced>
+  <CBF_PawnNoFaction>keine Fraktion</CBF_PawnNoFaction>
+  <CBF_PawnSecImplants>Implantate</CBF_PawnSecImplants>
+  <CBF_PawnImplantHead>IMPLANTATE</CBF_PawnImplantHead>
+  <CBF_PawnImplantHint>Namentlich genannte Implantate kommen immer. Ueber Marken sucht der Generator im Rahmen des Budgets. Implantate aus einem DLC oder Mod bekommen ein MayRequire und fallen weg, wenn es nicht geladen ist.</CBF_PawnImplantHint>
+  <CBF_PawnImplantGated>nur mit {0}</CBF_PawnImplantGated>
+  <CBF_PawnNoImplants>Keine Implantate.</CBF_PawnNoImplants>
+  <CBF_PawnAddImplant>Implantat dazu</CBF_PawnAddImplant>
+  <CBF_PawnAddImplantTag>Marke dazu</CBF_PawnAddImplantTag>
+  <CBF_Field_techHediffsChance>Chance</CBF_Field_techHediffsChance>
+  <CBF_Field_techHediffsMoney>Budget</CBF_Field_techHediffsMoney>
+  <CBF_Field_techHediffsMaxAmount>Hoechstens</CBF_Field_techHediffsMaxAmount>
+  <CBF_PawnImplantNoPath>laesst sich bei {0} nicht einbauen</CBF_PawnImplantNoPath>
+  <CBF_PawnImplantNoPathTip>RimWorld baut ein Implantat ueber ein Operationsrezept der Rasse ein, oder ueber ein Install-Comp am Gegenstand. Dieses hat beides nicht und wird beim Spawnen stillschweigend uebersprungen.</CBF_PawnImplantNoPathTip>
+  <CBF_Planner_Attempt2>Standort {0}, weitere Lagen werden geprüft: {1}</CBF_Planner_Attempt2>
+  <CBF_Planner_Attempt3>Standort {0}, der Platz ist knapp, Suche geht weiter: {1}</CBF_Planner_Attempt3>
+  <CBF_Planner_Attempt4>Standort {0}, letzte Versuche: {1}</CBF_Planner_Attempt4>
+  <CBF_Planner_Zeitgrenze>Zeitgrenze erreicht nach {0} Lagen, die beste bisherige Lage wird genommen.</CBF_Planner_Zeitgrenze>
+  <CBF_Planner_Laune1_0>Der Baumeister entrollt seine Pläne. ({1})</CBF_Planner_Laune1_0>
+  <CBF_Planner_Laune1_1>Die Landvermesser schlagen die ersten Pflöcke ein. ({1})</CBF_Planner_Laune1_1>
+  <CBF_Planner_Laune1_2>Der Stadtrat berät über den besten Bauplatz. ({1})</CBF_Planner_Laune1_2>
+  <CBF_Planner_Laune2_0>Der Baumeister verwirft Entwurf Nummer {0}. ({1})</CBF_Planner_Laune2_0>
+  <CBF_Planner_Laune2_1>Der Stadtrat ist sich über den Marktplatz uneinig. ({1})</CBF_Planner_Laune2_1>
+  <CBF_Planner_Laune2_2>Ein Landvermesser ist im Sumpf verschwunden. Man sucht Ersatz. ({1})</CBF_Planner_Laune2_2>
+  <CBF_Planner_Laune3_0>Der Berg weigert sich, Platz zu machen. ({1})</CBF_Planner_Laune3_0>
+  <CBF_Planner_Laune3_1>Die Maurer fragen, ob die Mauer wirklich um den Fluss herum muss. ({1})</CBF_Planner_Laune3_1>
+  <CBF_Planner_Laune3_2>Entwurf {0}. Der Baumeister trinkt mittlerweile Starkbier. ({1})</CBF_Planner_Laune3_2>
+  <CBF_Planner_Laune4_0>Der Bürgermeister droht mit einer Zeltstadt. ({1})</CBF_Planner_Laune4_0>
+  <CBF_Planner_Laune4_1>Entwurf {0}. Die Tinte wird knapp. ({1})</CBF_Planner_Laune4_1>
+  <CBF_Planner_Laune4_2>Man einigt sich darauf, es irgendwie hinzubekommen. ({1})</CBF_Planner_Laune4_2>
 </LanguageData>

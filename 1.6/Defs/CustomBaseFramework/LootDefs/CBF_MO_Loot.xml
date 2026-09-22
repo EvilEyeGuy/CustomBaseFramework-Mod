@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- ERZEUGT, NICHT VON HAND PFLEGEN.
-
-       Quelle: Medieval Overhaul, die BuildingLootableExtension aller 124
-       Lootables. Erzeuger: Werkzeug/baueloot.py, bei einem MO-Update neu
-       laufen lassen.
-
-       Zwei Ebenen. Unten die Warentabellen: eine je Warengruppe, Gegenstaende
-       und Stueckzahlen woertlich aus MO. Oben die Gebaeudetabellen: eine je
-       Gebaeudeart, die nur noch auf Waren verweist. Wer eine Ware aendern
-       will, aendert sie an genau einer Stelle. -->
-
-  <!-- ==================== Gebaeude ==================== -->
-
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_MO_Loot_Wohnhaus</defName>
     <label>Wohnhaus</label>
@@ -311,8 +298,6 @@
       <li><weight>6</weight><table>CBF_MO_Ware_Stein</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
-
-  <!-- ==================== Waren ==================== -->
 
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_MO_Ware_Brot</defName>

@@ -1,43 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Die Palette ist eine Ersatztabelle. Sie beantwortet genau eine Frage:
-       das gezeichnete Ding gibt es hier nicht, was nehme ich stattdessen.
-       Alle Eintraege sind Zeichenketten, deshalb kann kein Querverweis brechen,
-       egal welche Mods fehlen.
-
-       Vier Ersatzstufen, in dieser Reihenfolge:
-         1. exakter defName aus der Kette
-         2. Merkmalssuche ueber tagSearch
-         3. eingebauter Vanilla-Kern
-         4. weglassen, nur bei criticality Optional
-
-       MapStone und MapWood loesen sich aus der Karte auf, also aus dem Gestein
-       der Weltkachel und dem Holz des Bioms. -->
-
   <CustomBaseFramework.PaletteDef>
     <defName>CBF_Palette_Base</defName>
     <label>Basis</label>
     <style>Standard</style>
     <roles>
 
-      <!-- Die Rolle WALL fuellt JEDE Mauerzelle, die kein Baustein abdeckt,
-           und ausserdem die Tuerme: Materialize bildet MauerA, MauerI und Turm
-           alle auf sie ab.
-
-           Bis zum 5.9. stand hier WoodLog an erster Stelle. Die Folge war die
-           Holzmauer, die der Autor sechsmal gemeldet hat, und die Holztuerme
-           dazu: die gezeichneten Bausteine setzten DankPyon_CastleWall aus
-           Granit, und jede Luecke dazwischen fuellte die Palette mit einer
-           Holzwand. Nicht die Bausteine waren falsch, sondern der Ersatz.
-
-           Diese Palette gehoert zum Stil Standard, und dessen Bausteine sind
-           die Steinburgmauer. Der Ersatz muss dasselbe bauen, sonst ist er
-           kein Ersatz. Holz bleibt als letztes Glied stehen, fuer den Fall
-           dass eine Karte weder Gestein noch Medieval Overhaul hat.
-
-           Wer eine Holzmauer will, nimmt den Stil Rustical: CBF_Palette_Rustic
-           baut absichtlich aus Holz. -->
       <li>
         <role>WALL</role>
         <criticality>Critical</criticality>
@@ -65,17 +34,6 @@
         <tagSearch>AnyDoor</tagSearch>
       </li>
       <li>
-        <!-- Ein Tor, keine Haustuer.
-
-             Bis zum 4.9. stand hier nur Door, und in einem Palisadendorf ist
-             eine Holztuer im Zaun auch richtig. In einer Steinstadt aber
-             nicht, und die erbte diesen Eintrag: siehe die Rolle GATE in
-             CBF_Palette_Fancy weiter unten.
-
-             DankPyon_Gate nimmt Metallic und Woody, kein Gestein. Fuer die
-             Grundpalette ist Holz genau richtig. Fehlt Medieval Overhaul,
-             faellt die Kette auf Door zurueck, das ist der ganze Zweck der
-             Kette. -->
         <role>GATE</role>
         <chain>
           <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Gate</li>
@@ -107,10 +65,6 @@
         <tagSearch>AnyHardFloor</tagSearch>
       </li>
       <li>
-        <!-- Bodenmischung. Steht terrainMix drin, wird je Feld gewuerfelt statt
-             ueberall derselbe Boden gesetzt. Dadurch wirkt ein Turm oder ein
-             Wehrgang nicht wie aus einem Guss. Fehlende Eintraege fallen
-             einfach weg, die Gewichte sind relativ zueinander. -->
         <role>FLOOR_ROUGH</role>
         <terrainMix>
           <li><terrain>StrawMatting</terrain><weight>3</weight></li>
@@ -183,7 +137,6 @@
         <growth>0.4~0.95</growth>
       </li>
 
-      <!-- Zusatzrollen der Beispielbausteine -->
       <li>
         <role>FURNITURE_TABLE</role>
         <chain><li>Table2x2c</li></chain>
@@ -198,7 +151,6 @@
     </roles>
   </CustomBaseFramework.PaletteDef>
 
-  <!-- Rustikal: Holz. Erbt alles Nichtgenannte von der Basis. -->
   <CustomBaseFramework.PaletteDef>
     <defName>CBF_Palette_Rustic</defName>
     <label>rustikal</label>
@@ -234,7 +186,6 @@
     </roles>
   </CustomBaseFramework.PaletteDef>
 
-  <!-- Vornehm: Stein und Fliesen. Material bevorzugt aus der Karte. -->
   <CustomBaseFramework.PaletteDef>
     <defName>CBF_Palette_Fancy</defName>
     <label>vornehm</label>
@@ -256,19 +207,6 @@
         <tagSearch>AnyDoor</tagSearch>
       </li>
       <li>
-        <!-- HOLZ IN DER STEINMAUER, gemeldet vom Autor am 4.9. mit Bild.
-
-             Diese Palette ueberschrieb WALL, DOOR und EMBRASURE, aber nicht
-             GATE. Ueber parent landete man deshalb bei der Grundpalette, und
-             die gab eine Door aus WoodLog. Ergebnis: zwei Holzbalken quer in
-             einer Granitmauer, an jedem Tor, das kein Torhaus abdeckt.
-
-             Wichtig ist der Werkstoff. MapStone waere hier falsch:
-             DankPyon_Gate laesst nur Metallic und Woody zu, und die
-             Werkstoffkette prueft NICHT, ob der Werkstoff zum Ding passt, sie
-             nimmt den ersten, der ueberhaupt ein Werkstoff ist. Steel passt zu
-             beiden Gliedern der Kette, und es ist auch das, was der Autor im
-             gezeichneten Torhaus GateHouse selbst verwendet. -->
         <role>GATE</role>
         <chain>
           <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Gate</li>
@@ -292,10 +230,6 @@
         <terrainChain><li>FlagstoneGranite</li><li>Gravel</li></terrainChain>
       </li>
       <li>
-        <!-- Schiessscharte. Der Generator setzt sie auf gerade Stuecke der
-             Aussenschale. Gibt es den Def nicht, wird an dieser Stelle normale
-             Mauer gesetzt, es entsteht also nie ein Loch. Rustikal bekommt
-             bewusst keine, eine Holzpalisade hat keine Scharten. -->
         <role>EMBRASURE</role>
         <chain><li>DankPyon_CastleWallEmbrasures</li></chain>
         <stuffChain><li>MapStone</li><li>BlocksGranite</li></stuffChain>

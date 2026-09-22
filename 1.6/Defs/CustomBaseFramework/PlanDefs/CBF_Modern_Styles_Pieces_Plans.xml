@@ -229,6 +229,13 @@
         </terrainChain>
       </li>
       <li>
+        <role>BRIDGE</role>
+        <terrainChain>
+          <li MayRequire="Ludeon.RimWorld.Odyssey">HeavyBridge</li>
+          <li>Bridge</li>
+        </terrainChain>
+      </li>
+      <li>
         <role>FLOOR_DIRT</role>
         <terrainChain>
           <li>Soil</li>
@@ -280,7 +287,7 @@
           <li>
             <name>Zentrum</name>
             <entries>
-              <li><tag>CBF_Vanilla_HouseSmall</tag><count>14~22</count></li>
+              <li><tag>CBF_Vanilla_HouseSmall</tag><count>14~22</count><filler>true</filler></li>
               <li><tag>CBF_Vanilla_Defense_Small</tag><count>2~4</count></li>
             </entries>
           </li>
@@ -303,7 +310,7 @@
           <li>
             <name>Wohnviertel</name>
             <entries>
-              <li><tag>CBF_Vanilla_HouseLarge</tag><count>14~28</count></li>
+              <li><tag>CBF_Vanilla_HouseLarge</tag><count>14~28</count><filler>true</filler></li>
               <li><tag>CBF_Vanilla_Defence_Large</tag><count>2~4</count></li>
               <li><tag>CBF_Vanilla_Defense_Small</tag><count>4~8</count></li>
             </entries>
@@ -323,27 +330,33 @@
           <li>
             <name>Umland</name>
             <entries>
-              <li><tag>CBF_ModernDefense</tag><count>4~4</count></li>
+              <li><tag>CBF_ModernDefense</tag><count>0~4</count></li>
             </entries>
           </li>
           <li>
             <name>Farming</name><fields><li>
               <name>Acker</name>
               <count>1~2</count>
-              <fence>true</fence>
+              <fence>false</fence>
               <weight>1</weight><plants>
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Carrots</li>
-               </plants></li><li>
+               </plants>
+              <tags>
+                <li>CBF_ModernFarmHouse</li>
+              </tags></li><li>
               <name>Acker</name>
               <count>1~2</count>
-              <fence>true</fence>
+              <fence>false</fence>
               <weight>1</weight><plants>
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Carrots</li>
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Fleawort</li>
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Onions</li>
                 <li>Plant_Corn</li>
                 <li>Plant_Healroot</li>
-               </plants></li></fields>
+               </plants>
+              <tags>
+                <li>CBF_ModernFarmHouse</li>
+              </tags></li></fields>
             <entries>
               <li><piece>CBF_Modern_Farmhouse</piece><count>2~4</count></li>
             </entries>

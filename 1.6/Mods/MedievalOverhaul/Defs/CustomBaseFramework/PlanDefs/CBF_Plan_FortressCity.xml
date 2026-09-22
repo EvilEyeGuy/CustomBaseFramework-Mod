@@ -1,96 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Dupliziert aus CBF_Plan_Marktstadt. -->
 <Defs>
 
   <CustomBaseFramework.SettlementPlanDef>
     <defName>CBF_Plan_FortressCity</defName>
     <label>CBF_Plan_FortressCity</label>
 
-    <!-- Erlaubte Stile, in dieser Reihenfolge. Der erste, der etwas hat,
-         gewinnt. Ersetzt den frueheren Einzelstil. -->
     <styles>
       <li>Rustical</li>
       <li>Standard</li>
     </styles>
 
-    <!-- Was an Verteidigungsstellungen und Torhaeusern vorkommen darf. Ein Eintrag ist eine
-         Kategorie ODER ein einzelner Baustein. Frueher stand genau ein Turm
-         im Mauerprofil, deshalb hatte jede Stadt acht Mal denselben.
-
-         Gefiltert wird auf towerCorner: das Layout raeumt genau diese Groesse
-         frei. Von den drei gezeichneten Tuermen passt bei 9 nur LargeTower,
-         bei 7 nur Tower, bei 5 nur PalisadeTower. -->
-
-    <!-- Platz rechnen, nicht schaetzen. Acht Haeuser zu je rund 49 Feldern,
-         drei Werkstaetten zu 56, ein Wirtshaus mit 90 und der Bergfried mit
-         247 ergeben rund 900 belegte Felder. Jeder Baustein bekommt zusaetzlich
-         eine Fuge ringsum, das sind grob 1450. Dazu Strassen und der freie
-         Streifen an der Mauer. Die Innenflaeche muss also gegen 2800 gehen,
-         und die liefert erst ein Kern um 68. Mit 50 bis 58 belegte allein der
-         Bergfried ein Fuenftel der Stadt und es blieb nichts mehr uebrig.
-
-         Nachgemessen am 18.9. an einer fertigen Stadt: nutzbare Stadtflaeche
-         2492 Felder, davon 403 Wege, bleiben 2089. Das Pflichtprogramm stand
-         zu dem Zeitpunkt bei 24 Bauten und 1621 Feldern, ohne die Fugen. Es
-         passte also nicht in seinen eigenen Kern, kein einziger Anlauf wurde
-         gueltig, und die Schleife lief jedes Mal alle 43 Lagen durch: hundert
-         Sekunden je Ort.
-
-         Die Untergrenzen stehen deshalb jetzt auf dem, was sicher hineingeht.
-         Die Obergrenzen bleiben, wo sie waren, und targetBuilt fuellt bis 0,55
-         auf. Die Stadt wird dadurch nicht leerer, sondern voller: die dreissig
-         Verdichtungsrunden entfielen bisher vollstaendig, weil sie erst nach
-         der letzten erfuellten Mindestzahl beginnen. -->
-    <coreSize>78~90</coreSize>
+    <coreSize>100~115</coreSize>
     <mapSize>200</mapSize>
 
-    <!-- Mauer ein mal drei mit Tuermen und Torhaus. Greift auf
-         WallProfile_Stein_3 zu: TownWall, Tower, GateHouse. -->
     <wallDepth>3</wallDepth>
-    <!-- Ecke und Kurtine duerfen verschieden gross sein. Die Liste oben
-         liefert dann je Platz den passenden Baustein: 7 ist Tower,
-         5 ist PalisadeTower. Groesser als hier angegeben wird nie
-         gestempelt, sonst reicht der Mindestabstand nicht. -->
     <towerCorner>7</towerCorner>
     <towerCurtain>7</towerCurtain>
     <towerCapTotal>0</towerCapTotal>
     <wallGap>1</wallGap>
 
     <roadMain>2</roadMain>
-    <!-- Nebengassen zwei Felder breit. Bei 1 kommen zwei Pawns nicht
-         aneinander vorbei, und im Bild sieht es aus wie ein Trampelpfad. -->
     <roadLane>2</roadLane>
-    <!-- Keine Strassenaufweitung mehr. Sie erzeugte einen gepflasterten Platz
-         irgendwo am Hauptweg, ohne Bezug zu dem, was dort steht. Ein Markt
-         gehoert an die Grenze zwischen Wirtschaft und Wohnen, und die gibt es
-         erst mit den Bezirken. -->
     <widenings>0</widenings>
-    <!-- Fuge zwischen zwei Bauten schwankt zwischen 1 und 4 Feldern, klein
-         gewichtet. Sonst steht die Stadt im Raster und es passt kein Weg
-         zwischen die Haeuser. -->
     <minBuildingGap>1</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
-    <!-- Angestrebter Anteil bebauter Flaeche. Gemessen an den handgebauten
-         MO-Siedlungen: 61 Prozent. Die Stueckzahlen im Budget sind ab hier
-         nur noch die Untergrenze, darueber hinaus wird bis zu diesem Anteil
-         weitergebaut. Damit skaliert die Stadt mit ihrer Flaeche. -->
     <targetBuilt>0.55</targetBuilt>
     <coverageBuild>0.42</coverageBuild>
     <weightNearRoad>1.4</weightNearRoad>
-    <!-- Keine Beete innerhalb der Mauern. Restflaechen werden Hof, nicht
-         Acker. Aecker gehoeren vor die Stadt, nicht zwischen die Haeuser. -->
     <gardenShare>0</gardenShare>
     <defenderPoints>260~480</defenderPoints>
     <defendersOnWall>0.28</defendersOnWall>
 
-    <!-- Nur Tags, fuer die es wirklich gezeichnete Bausteine gibt. Storage,
-         Stable, HouseLarge und Farm haben bisher nur Testbausteine, die
-         gehoeren nicht in eine Siedlung, die jemand zu sehen bekommt.
-
-         Market steht im Budget, weil eine Marktstadt ohne Marktstaende keine
-         ist. Die Staende ziehen zur Mitte, das regelt der Tag ueber die Zone
-         Center. Military zieht an die Mauer und ist der einzige Tag mit
-         wallContact, fuellt also den Streifen, der sonst brachliegt. -->
   
     <wards>
       <li>
@@ -99,13 +39,6 @@
         <size>1</size>
         <wallDepth>3</wallDepth>
         <versorgung>1.2</versorgung>
-        <!-- Strassenlaternen an den Wegraendern dieses Stadtteils. Der erste
-             Eintrag, den es gibt, gewinnt; fehlt MO, bleibt es dunkel statt zu
-             brechen. -->
-        <lanterns>
-          <li>DankPyon_LampPost</li>
-        </lanterns>
-        <lanternGap>9</lanternGap>
         <walls>
           <li>TownWall_1x5</li>
         </walls>
@@ -115,6 +48,7 @@
         </emplacements>
         <gatehouses>
           <li><piece>GateHouse</piece><count>1~2</count></li>
+          <li>CBF_MO_GateHouse_Small</li>
         </gatehouses>
         <districts>
           <li>
@@ -123,8 +57,8 @@
               <li><tag>Keep</tag><count>1~1</count><unique>true</unique><lootTable>CBF_MO_Loot_Bergfried</lootTable></li>
               <li><tag>Inn</tag><count>1~1</count><unique>true</unique><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
               <li><tag>Military</tag><count>2~6</count><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
-              <li><tag>HouseLarge</tag><count>5~16</count><lootTable>CBF_MO_Loot_Herrenhaus</lootTable></li>
-              <li><tag>HouseSmall</tag><count>3~10</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+              <li><tag>HouseLarge</tag><filler>true</filler><count>10~16</count><lootTable>CBF_MO_Loot_Herrenhaus</lootTable></li>
+              <li><tag>HouseSmall</tag><filler>true</filler><count>10~14</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
               <li><tag>Workshop</tag><count>1~4</count><lootTable>CBF_MO_Loot_Werkstatt</lootTable></li>
             </entries>
           </li>
@@ -136,13 +70,6 @@
         <size>0.6</size>
         <wallDepth>1</wallDepth>
         <versorgung>1.2</versorgung>
-        <!-- Strassenlaternen an den Wegraendern dieses Stadtteils. Der erste
-             Eintrag, den es gibt, gewinnt; fehlt MO, bleibt es dunkel statt zu
-             brechen. -->
-        <lanterns>
-          <li>DankPyon_RusticTorchLamp</li>
-        </lanterns>
-        <lanternGap>13</lanternGap>
         <walls>
           <li>TownWall</li>
         </walls>
@@ -156,7 +83,7 @@
           <li>
             <name>Test</name>
             <entries>
-              <li><tag>HouseSmall</tag><count>20~28</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+              <li><tag>HouseSmall</tag><filler>true</filler><count>20~28</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
               <li><piece>Social_Inn</piece><count>1~2</count><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
               <li><piece>Military_Baracks</piece><count>3~3</count><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
             </entries>
@@ -202,11 +129,7 @@
               <fence>true</fence>
               <weight>1</weight></li></pens>
             <entries>
-              <!-- Drei statt vier. Im Umland zaehlt nur, was ans Wegenetz
-                   angebunden ist; der vierte Hof fand dort keine Zufahrt mehr
-                   und hielt damit jeden Anlauf ungueltig. Die Obergrenze bleibt,
-                   die Verdichtung baut weiter, wenn Platz und Weg da sind. -->
-              <li><tag>HouseSmall</tag><count>3~6</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+              <li><tag>HouseSmall</tag><filler>true</filler><count>3~6</count><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
             </entries>
           </li>
         </districts>

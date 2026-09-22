@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef><defName>CBF_Vanilla_Rifleman</defName><label>Marksman</label><race>Human</race><combatPower>50</combatPower><initialWillRange>0~1</initialWillRange><initialResistanceRange>10~17</initialResistanceRange><apparelRequired><li>Apparel_ArmorHelmetRecon</li><li>Apparel_ArmorRecon</li><li>Apparel_BasicShirt</li><li>Apparel_Pants</li></apparelRequired><weaponTags><li>SniperRifle</li></weaponTags><weaponMoney>530~795</weaponMoney><forceWeaponQuality>Good</forceWeaponQuality><skills><li><skill>Shooting</skill><range>15~20</range></li></skills><extraSkillLevels>0</extraSkillLevels><minTotalSkillLevels>0</minTotalSkillLevels><minBestSkillLevel>0</minBestSkillLevel><disallowedTraits><li>Wimp</li><li>Nudist</li></disallowedTraits><specificApparelRequirements>
+      <li>
+        <apparelDef>Apparel_ArmorHelmetRecon</apparelDef>
+        <quality>Good</quality>
+        <color>(0.349, 0.412, 0.243)</color></li>
+      <li>
+        <apparelDef>Apparel_ArmorRecon</apparelDef>
+        <quality>Good</quality>
+        <color>(0.349, 0.412, 0.243)</color></li>
+      <li>
+        <apparelDef>Apparel_BasicShirt</apparelDef>
+        <stuff>DevilstrandCloth</stuff>
+        <quality>Good</quality>
+        <color>(0.357, 0.161, 0.176)</color></li>
+      <li>
+        <apparelDef>Apparel_Pants</apparelDef>
+        <stuff>DevilstrandCloth</stuff>
+        <color>(0.357, 0.161, 0.176)</color></li>
+    </specificApparelRequirements>
+    <techHediffsRequired><li>BionicEye</li><li>DeathAcidifier</li></techHediffsRequired>
+  
+    <techHediffsMoney>0~0</techHediffsMoney>
+  
+    <techHediffsChance>0</techHediffsChance>
+  
+    <techHediffsMaxAmount>1</techHediffsMaxAmount>
+  </PawnKindDef>
+</Defs>

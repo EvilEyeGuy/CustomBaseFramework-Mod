@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Vom Editor erzeugt. -->
 <Defs>
-
-
-
 
   <CustomBaseFramework.LootBuildingCategoryDef>
     <defName>CBF_Vanilla_1x1_Shelf</defName>
@@ -43,6 +39,13 @@
     <members>
       <li><thing>DankPyon_HideoutRusticBarrelClosed</thing><fremd>true</fremd></li>
       <li><thing>DankPyon_HideoutCrate1x1c</thing><fremd>true</fremd></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Vanilla_1x1_Turret</defName>
+    <members>
+      <li>Turret_MiniTurret</li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 </Defs>

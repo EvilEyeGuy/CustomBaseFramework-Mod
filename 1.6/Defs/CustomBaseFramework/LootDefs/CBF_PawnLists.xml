@@ -10,6 +10,7 @@
 
 
 
+
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Pawns_Wirtsleute</defName>
     <label>innkeepers</label>
@@ -164,6 +165,17 @@
     <radius>4</radius>
     <members>
         <li><kind>DankPyon_Medieval_Bowman</kind><weight>1</weight></li>
+      </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Vanilla_Garrison</defName>
+    <label>CBF_Vanilla_Garrison</label>
+    <rolle>Wache</rolle>
+    <radius>10</radius>
+    <members>
+        <li><kind>CBF_Vanilla_Marksman</kind><weight>1</weight></li>
+        <li><kind>CBF_Vanilla_Rifleman</kind><weight>1</weight></li>
       </members>
   </CustomBaseFramework.PawnListDef>
 </Defs>

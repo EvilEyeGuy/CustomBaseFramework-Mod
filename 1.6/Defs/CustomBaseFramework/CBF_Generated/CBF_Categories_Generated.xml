@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Defs>
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Camping</defName>
@@ -13,6 +12,15 @@
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_EnergyProduction</defName>
     <label>CBF_EnergyProduction</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Market</defName>
+    <label>CBF_MO_Market</label>
     <zones>
       <li>Inside</li>
     </zones>

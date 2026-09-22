@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Plan_VillageMedium</defName>
+  
+    <label>Village (Medium)</label>
+  
+    <kind>Mittelalterstadt</kind>
+  
+    <anteil>80</anteil>
+  
+    <wards>
+      <li>
+        <art>Stadt</art>
+        <name>Altstadt</name>
+        <size>1</size>
+        <wallDepth>3</wallDepth>
+        <versorgung>1.2</versorgung>
+        <walls>
+          <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
+        </walls>
+        <emplacements>
+          <li MayRequire="DankPyon.Medieval.Overhaul">PalisadeTower</li>
+        </emplacements>
+        <gatehouses>
+          <li MayRequire="DankPyon.Medieval.Overhaul">Pallisader_GateHouse</li>
+        </gatehouses>
+        <districts>
+          <li>
+            <name>Default</name>
+            <entries>
+              <li><tag>HouseLarge</tag><count>4~6</count></li>
+              <li><tag>HouseSmall</tag><count>6~12</count></li>
+              <li><tag>Inn</tag><count>1~2</count></li>
+              <li><tag>Workshop</tag><count>3~6</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <art>Vorstadt</art>
+        <name>Neustadt</name>
+        <size>0.6</size>
+        <wallDepth>1</wallDepth>
+        <versorgung>1.2</versorgung>
+        <districts>
+          <li>
+            <name>Default</name><fields><li>
+              <name>Acker</name>
+              <count>2~4</count>
+              <fence>true</fence>
+              <weight>1</weight><plants>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Carrots</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Garlic</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Grape</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Lentils</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Onions</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Pumpkins</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
+                <li>Plant_Astragalus</li>
+                <li>Plant_Corn</li>
+                <li>Plant_Dandelion</li>
+                <li>Plant_Hops</li>
+                <li>Plant_Potato</li>
+                <li>Plant_Rice</li>
+               </plants></li></fields>
+            <entries>
+              <li><tag>HouseSmall</tag><count>4~8</count></li>
+              <li><tag>Farm</tag><count>2~4</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <art>Umland</art>
+        <name>Umland</name>
+        <size>2.2</size>
+        <wallDepth>0</wallDepth>
+        <versorgung>1.2</versorgung>
+        <districts>
+          <li>
+            <name>Default</name>
+            <entries>
+              <li><tag>HouseSmall</tag><count>0~4</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </wards>
+  
+    <techLevels>
+      <li>Medieval</li>
+    </techLevels>
+  
+    <worldTexture>World/WorldObjects/CBF/CBF_VillagePalisade</worldTexture>
+  </CustomBaseFramework.SettlementPlanDef>
+
+</Defs>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+
+
   <CustomBaseFramework.LootBuildingCategoryDef>
     <defName>CBF_Vanilla_1x1_Shelf</defName>
     <members>
@@ -46,6 +48,38 @@
     <defName>CBF_Vanilla_1x1_Turret</defName>
     <members>
       <li>Turret_MiniTurret</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_MarketStall</defName>
+    <members>
+      <li>DankPyon_MarketTent_4c</li>
+      <li>DankPyon_MarketTent_5c</li>
+      <li>DankPyon_MarketTent_2c</li>
+      <li>DankPyon_MarketTent_3c</li>
+      <li>DankPyon_MarketTent_1c</li>
+      <li>DankPyon_MarketTent_7c</li>
+      <li>DankPyon_MarketTent_6c</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Market</defName>
+    <members>
+      <li><thing>DankPyon_HideoutTableMarket_Bread</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutStallMarket_Bread</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutTableMarket_Dairy</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutStallMarket_Dairy</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutTableMarket_Herb</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutStallMarket_Herb</thing><fremd>true</fremd></li>
+      <li>DankPyon_Stall_Bread</li>
+      <li><thing>DankPyon_HideoutTableMarket_Meats</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutStallMarket_Meats</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutTableMarket_Bow</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutStallMarket_Bow</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutTableMarket_Melee</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutStallMarket_Melee</thing><fremd>true</fremd></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 </Defs>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>Pallisader_GateHouse</defName>
+    <label>Pallisader_GateHouse</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallGateHouse</li>
+    </categories>
+    <type>WallPart</type>
+    <style>Rustical</style>
+
+    <legend>
+      <li><symbol>W</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>D</symbol><thing>DankPyon_EmbPalisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>T</symbol><thing>DankPyon_RusticTorchLamp</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>B</symbol><thing>DankPyon_ReinfocedLogGate</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
+      <li><symbol>C</symbol><anchor>Wall</anchor></li>
+      <li><symbol>F</symbol><anchor>Outside</anchor></li>
+    </legend>
+
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+
+    <things>
+      <li>WWWWW</li>
+      <li>W...W</li>
+      <li>D.T.B</li>
+      <li>W...W</li>
+      <li>WWDWW</li>
+      <li>...B.</li>
+      <li>WWDWW</li>
+      <li>W...W</li>
+      <li>D.T.B</li>
+      <li>W...W</li>
+      <li>WWWWW</li>
+    </things>
+
+    <anchors>
+      <li>..C..</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>F....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>..C..</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -91,6 +91,9 @@
   <CBF_Planner_RescueTerrain>Planning additional building space in the mountain</CBF_Planner_RescueTerrain>
   <CBF_Planner_TerrainClearance>Building clearance with a natural rock edge</CBF_Planner_TerrainClearance>
   <CBF_Planner_SuburbGateLink>The outer and inner gates need a continuous main road through the suburb.</CBF_Planner_SuburbGateLink>
+  <CBF_Planner_Vorstadtteiltor>A cut-off part of the suburb with {0} cells got its own gate.</CBF_Planner_Vorstadtteiltor>
+  <CBF_Planner_VorstadtteilOhneTor>A cut-off part of the suburb with {0} cells found no place for a gate.</CBF_Planner_VorstadtteilOhneTor>
+  <CBF_Planner_VorstadtAbgehaengt>{0} suburb cells cannot be reached on foot from the city.</CBF_Planner_VorstadtAbgehaengt>
   <CBF_Planner_SuburbWidth>Parallel inner and outer walls leave too little usable space for the suburb.</CBF_Planner_SuburbWidth>
   <CBF_RuralChoosePlant>Choose crop</CBF_RuralChoosePlant>
   <CBF_RuralChooseAnimals>Choose animal list</CBF_RuralChooseAnimals>
@@ -198,7 +201,7 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_WorldParts>{0} district(s), {1}</CBF_WorldParts>
   <CBF_WorldPalette>Palette: {0}</CBF_WorldPalette>
   <CBF_WorldWalled>walled</CBF_WorldWalled>
-  <CBF_WorldOpen>open</CBF_WorldOpen>
+  <CBF_IsOpen>open</CBF_IsOpen>
   <CBF_ExportWithHints>{0} exported, {1} hint(s), full list in the log:</CBF_ExportWithHints>
   <CBF_Field_anchorKind>Kind</CBF_Field_anchorKind>
   <CBF_Field_required>Required</CBF_Field_required>
@@ -212,14 +215,13 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_PawnGearClash>Clashes with another piece on the same layer and body part.</CBF_PawnGearClash>
   <CBF_PawnNoStuff>no material</CBF_PawnNoStuff>
   <CBF_PawnNoStuffTip>This apparel is not made from a material.</CBF_PawnNoStuffTip>
-  <CBF_PawnPickStuff>Material</CBF_PawnPickStuff>
+  <CBF_Material>Material</CBF_Material>
   <CBF_PawnStuffValue>value {0}</CBF_PawnStuffValue>
   <CBF_PawnAllFields>All fields</CBF_PawnAllFields>
   <CBF_PawnGearWritten>{0} written to {1}.</CBF_PawnGearWritten>
   <CBF_PawnWornNow>worn in this example</CBF_PawnWornNow>
   <CBF_Any>any</CBF_Any>
   <CBF_NewPawnTitle>New pawn</CBF_NewPawnTitle>
-  <CBF_NewPawnCreate>Create</CBF_NewPawnCreate>
   <CBF_NewPawnReady>Everything needed is there.</CBF_NewPawnReady>
   <CBF_NewPawnNeedsLabel>The label is missing. It is what the game shows the player.</CBF_NewPawnNeedsLabel>
   <CBF_NewPawnNeedsRace>A race is missing.</CBF_NewPawnNeedsRace>
@@ -267,9 +269,8 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_Planner_Laune4_0>The mayor threatens to settle for a tent city. ({1})</CBF_Planner_Laune4_0>
   <CBF_Planner_Laune4_1>Draft {0}. The ink is running low. ({1})</CBF_Planner_Laune4_1>
   <CBF_Planner_Laune4_2>Everyone agrees to somehow make it work. ({1})</CBF_Planner_Laune4_2>
-  <CBF_RemoveTip>Remove</CBF_RemoveTip>
+  <CBF_Remove>Remove</CBF_Remove>
   <CBF_FillerHead>Filler</CBF_FillerHead>
-  <CBF_CategoryPieces>{0} pieces</CBF_CategoryPieces>
   <CBF_AnchorKind_Connect>Connect</CBF_AnchorKind_Connect>
   <CBF_AnchorKind_Fill>Loot</CBF_AnchorKind_Fill>
   <CBF_AnchorKind_Object>Object</CBF_AnchorKind_Object>
@@ -312,6 +313,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_FactionUnassignTip>Take this settlement away from this faction.</CBF_FactionUnassignTip>
   <CBF_FactionExcludeTip>This settlement reaches the faction through its tech level. Remove excludes the faction from this settlement.</CBF_FactionExcludeTip>
   <CBF_TechNone>no tech level</CBF_TechNone>
-  <CBF_TechRange>{0} to {1}</CBF_TechRange>
+  <CBF_Range>{0} to {1}</CBF_Range>
   <CBF_PawnCellBlocked>{0} on {1} is blocked by: {2}\nClick to select it.</CBF_PawnCellBlocked>
 </LanguageData>

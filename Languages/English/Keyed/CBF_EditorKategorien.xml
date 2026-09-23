@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CBF_K_Used>Used</CBF_K_Used>
-  <CBF_K_Empty>Empty</CBF_K_Empty>
   <CBF_K_NewTip>Create a new category. It goes into the project's category file.</CBF_K_NewTip>
   <CBF_K_PickOne>Pick a category on the left.</CBF_K_PickOne>
   <CBF_K_OpenFileTip>Opens the category's file in your text editor. The editor reloads changes made there on its own.</CBF_K_OpenFileTip>
@@ -11,13 +10,13 @@
   <CBF_K_NotUsed>No settlement uses this category directly.</CBF_K_NotUsed>
   <CBF_K_UsedInDistrict>{0}, district {1}, {2} to {3}</CBF_K_UsedInDistrict>
   <CBF_K_UsedInWalls>{0}, fortification</CBF_K_UsedInWalls>
-  <CBF_K_Category>Category</CBF_K_Category>
+  <CBF_Category>Category</CBF_Category>
   <CBF_K_Parent>Parent</CBF_K_Parent>
   <CBF_K_ParentTip>The category this one inherits from. Whatever is not set here comes from there.</CBF_K_ParentTip>
   <CBF_K_Placement>Placement</CBF_K_Placement>
   <CBF_K_RoadAccess>Road access</CBF_K_RoadAccess>
   <CBF_K_RoadAccessTip>Must be reachable from the road network.</CBF_K_RoadAccessTip>
-  <CBF_K_Unique>Unique</CBF_K_Unique>
+  <CBF_Unique>Unique</CBF_Unique>
   <CBF_K_UniqueTip>At most one per settlement.</CBF_K_UniqueTip>
   <CBF_K_OutsideOnly>Outside only</CBF_K_OutsideOnly>
   <CBF_K_OutsideOnlyTip>Never stands inside the walls.</CBF_K_OutsideOnlyTip>
@@ -44,8 +43,6 @@
   <CBF_K_BlockMaxTip>How many buildings of this category at most form one block wall to wall. Empty means the planner uses its default of 3.</CBF_K_BlockMaxTip>
   <CBF_K_Merge>Merge</CBF_K_Merge>
   <CBF_K_MergeTip>Whether buildings of this category join their neighbors into one block. Yes forces it, No forbids it.</CBF_K_MergeTip>
-  <CBF_K_Yes>Yes</CBF_K_Yes>
-  <CBF_K_No>No</CBF_K_No>
   <CBF_K_Inherits>inherits</CBF_K_Inherits>
   <CBF_K_InheritsFrom>Without a value of its own, {0} applies, from {1}.</CBF_K_InheritsFrom>
   <CBF_K_InheritsValue>inherits {0}</CBF_K_InheritsValue>

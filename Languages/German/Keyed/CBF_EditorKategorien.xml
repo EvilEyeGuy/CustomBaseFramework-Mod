@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CBF_K_Used>Benutzt</CBF_K_Used>
-  <CBF_K_Empty>Leer</CBF_K_Empty>
   <CBF_K_NewTip>Neue Kategorie anlegen. Sie landet in der Kategoriendatei des Projekts.</CBF_K_NewTip>
   <CBF_K_PickOne>Links eine Kategorie wählen.</CBF_K_PickOne>
   <CBF_K_OpenFileTip>Öffnet die Datei der Kategorie im Texteditor. Änderungen dort liest der Editor selbst ein.</CBF_K_OpenFileTip>
@@ -11,13 +10,13 @@
   <CBF_K_NotUsed>Keine Siedlung verwendet diese Kategorie direkt.</CBF_K_NotUsed>
   <CBF_K_UsedInDistrict>{0}, Bezirk {1}, {2} bis {3}</CBF_K_UsedInDistrict>
   <CBF_K_UsedInWalls>{0}, Befestigung</CBF_K_UsedInWalls>
-  <CBF_K_Category>Kategorie</CBF_K_Category>
+  <CBF_Category>Kategorie</CBF_Category>
   <CBF_K_Parent>Übergeordnet</CBF_K_Parent>
   <CBF_K_ParentTip>Die Kategorie, von der diese erbt. Was hier nicht gesetzt ist, kommt von dort.</CBF_K_ParentTip>
   <CBF_K_Placement>Lage</CBF_K_Placement>
   <CBF_K_RoadAccess>Straßenzugang</CBF_K_RoadAccess>
   <CBF_K_RoadAccessTip>Muss vom Wegenetz aus erreichbar sein.</CBF_K_RoadAccessTip>
-  <CBF_K_Unique>Einmalig</CBF_K_Unique>
+  <CBF_Unique>Einmalig</CBF_Unique>
   <CBF_K_UniqueTip>Höchstens eines je Siedlung.</CBF_K_UniqueTip>
   <CBF_K_OutsideOnly>Nur außerhalb</CBF_K_OutsideOnly>
   <CBF_K_OutsideOnlyTip>Steht nie innerhalb der Mauern.</CBF_K_OutsideOnlyTip>
@@ -44,8 +43,6 @@
   <CBF_K_BlockMaxTip>Wie viele Gebäude dieser Kategorie höchstens Wand an Wand einen Block bilden. Leer heißt, der Planer nimmt seine Vorgabe von 3.</CBF_K_BlockMaxTip>
   <CBF_K_Merge>Verschmelzen</CBF_K_Merge>
   <CBF_K_MergeTip>Ob Gebäude dieser Kategorie mit ihren Nachbarn zu einem Block zusammenrücken. Ja erzwingt es, Nein verbietet es.</CBF_K_MergeTip>
-  <CBF_K_Yes>Ja</CBF_K_Yes>
-  <CBF_K_No>Nein</CBF_K_No>
   <CBF_K_Inherits>erbt</CBF_K_Inherits>
   <CBF_K_InheritsFrom>Ohne eigenen Wert gilt {0}, von {1}.</CBF_K_InheritsFrom>
   <CBF_K_InheritsValue>erbt {0}</CBF_K_InheritsValue>

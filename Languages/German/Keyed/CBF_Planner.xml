@@ -91,6 +91,9 @@
   <CBF_Planner_RescueTerrain>Zusätzlichen Baugrund im Berg planen</CBF_Planner_RescueTerrain>
   <CBF_Planner_TerrainClearance>Baugrund mit natürlichem Felssaum</CBF_Planner_TerrainClearance>
   <CBF_Planner_SuburbGateLink>Vorstadttor und Stadttor brauchen eine durchgehende Hauptstraße innerhalb der Vorstadt.</CBF_Planner_SuburbGateLink>
+  <CBF_Planner_Vorstadtteiltor>Ein abgeschnittenes Vorstadtstück mit {0} Feldern bekam ein eigenes Tor.</CBF_Planner_Vorstadtteiltor>
+  <CBF_Planner_VorstadtteilOhneTor>Ein abgeschnittenes Vorstadtstück mit {0} Feldern fand keinen Platz für ein Tor.</CBF_Planner_VorstadtteilOhneTor>
+  <CBF_Planner_VorstadtAbgehaengt>{0} Vorstadtfelder sind von der Stadt aus nicht zu Fuß erreichbar.</CBF_Planner_VorstadtAbgehaengt>
   <CBF_Planner_SuburbWidth>Zwischen parallelen Stadt- und Vorstadtmauern fehlt nutzbarer Raum.</CBF_Planner_SuburbWidth>
   <CBF_RuralChoosePlant>Pflanze auswählen</CBF_RuralChoosePlant>
   <CBF_RuralChooseAnimals>Tierliste auswählen</CBF_RuralChooseAnimals>
@@ -164,7 +167,7 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_WorldParts>{0} Stadtteil(e), {1}</CBF_WorldParts>
   <CBF_WorldPalette>Palette: {0}</CBF_WorldPalette>
   <CBF_WorldWalled>ummauert</CBF_WorldWalled>
-  <CBF_WorldOpen>offen</CBF_WorldOpen>
+  <CBF_IsOpen>offen</CBF_IsOpen>
   <CBF_ExportWithHints>{0} exportiert, {1} Hinweis(e), vollständig im Log:</CBF_ExportWithHints>
   <CBF_Field_requiredMods>Braucht diese Mods</CBF_Field_requiredMods>
   <CBF_ModsNone>Läuft ohne weiteren Mod.</CBF_ModsNone>
@@ -187,14 +190,13 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_PawnGearClash>Beißt sich mit einem anderen Stück auf derselben Schicht und demselben Körperteil.</CBF_PawnGearClash>
   <CBF_PawnNoStuff>kein Material</CBF_PawnNoStuff>
   <CBF_PawnNoStuffTip>Dieses Kleidungsstück wird nicht aus einem Material gefertigt.</CBF_PawnNoStuffTip>
-  <CBF_PawnPickStuff>Material</CBF_PawnPickStuff>
+  <CBF_Material>Material</CBF_Material>
   <CBF_PawnStuffValue>Wert {0}</CBF_PawnStuffValue>
   <CBF_PawnAllFields>Alle Felder</CBF_PawnAllFields>
   <CBF_PawnGearWritten>{0} in {1} geschrieben.</CBF_PawnGearWritten>
   <CBF_PawnWornNow>in diesem Beispiel getragen</CBF_PawnWornNow>
   <CBF_Any>beliebig</CBF_Any>
   <CBF_NewPawnTitle>Neuer Pawn</CBF_NewPawnTitle>
-  <CBF_NewPawnCreate>Anlegen</CBF_NewPawnCreate>
   <CBF_NewPawnReady>Alles Nötige ist da.</CBF_NewPawnReady>
   <CBF_NewPawnNeedsLabel>Das Label fehlt. Es ist das, was der Spieler zu sehen bekommt.</CBF_NewPawnNeedsLabel>
   <CBF_NewPawnNeedsRace>Eine Rasse fehlt.</CBF_NewPawnNeedsRace>
@@ -242,9 +244,8 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_Planner_Laune4_0>Der Bürgermeister droht mit einer Zeltstadt. ({1})</CBF_Planner_Laune4_0>
   <CBF_Planner_Laune4_1>Entwurf {0}. Die Tinte wird knapp. ({1})</CBF_Planner_Laune4_1>
   <CBF_Planner_Laune4_2>Man einigt sich darauf, es irgendwie hinzubekommen. ({1})</CBF_Planner_Laune4_2>
-  <CBF_RemoveTip>Entfernen</CBF_RemoveTip>
+  <CBF_Remove>Entfernen</CBF_Remove>
   <CBF_FillerHead>Filler</CBF_FillerHead>
-  <CBF_CategoryPieces>{0} Stücke</CBF_CategoryPieces>
   <CBF_AnchorKind_Connect>Connect</CBF_AnchorKind_Connect>
   <CBF_AnchorKind_Fill>Loot</CBF_AnchorKind_Fill>
   <CBF_AnchorKind_Object>Object</CBF_AnchorKind_Object>
@@ -287,7 +288,7 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_FactionUnassignTip>Diese Siedlung der Fraktion wieder wegnehmen.</CBF_FactionUnassignTip>
   <CBF_FactionExcludeTip>Diese Siedlung erreicht die Fraktion über ihre Techstufe. Entfernen schließt die Fraktion von dieser Siedlung aus.</CBF_FactionExcludeTip>
   <CBF_TechNone>ohne Techstufe</CBF_TechNone>
-  <CBF_TechRange>{0} bis {1}</CBF_TechRange>
+  <CBF_Range>{0} bis {1}</CBF_Range>
   <CBF_PawnCellBlocked>{0} an {1} ist belegt durch: {2}\nKlick wählt es aus.</CBF_PawnCellBlocked>
   <CBF_FactionFrom>Aus {0}</CBF_FactionFrom>
   <CBF_FactionPlans>Siedlungspläne</CBF_FactionPlans>
@@ -307,4 +308,5 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_PlanCreated>Siedlung {0} angelegt.</CBF_PlanCreated>
   <CBF_FactionOwn>CBF baut die Basen dieser Fraktion aus {0} Plan/Plänen. RimWorlds eigener Siedlungsgenerator kommt hier nicht zum Zug.</CBF_FactionOwn>
   <CBF_FactionVanilla>Die Basen dieser Fraktion baut RimWorld. Weist du oben einen Plan zu, übernimmt CBF, nur für diese Fraktion.</CBF_FactionVanilla>
+  <CBF_HelpEmpty>Zu diesem Abschnitt gibt es noch keine Beschreibung.</CBF_HelpEmpty>
 </LanguageData>

@@ -2,7 +2,6 @@
 <LanguageData>
   <CBF_P_New>+ New</CBF_P_New>
   <CBF_P_NewTip>New piece: the window folds away and you paint the area on the map.</CBF_P_NewTip>
-  <CBF_P_OpenFile>Open</CBF_P_OpenFile>
   <CBF_P_OpenFileTip>Opens the file of the selected piece in your text editor. The editor reloads changes made there on its own.</CBF_P_OpenFileTip>
   <CBF_P_PickOne>Pick a piece on the left.</CBF_P_PickOne>
   <CBF_P_SizeTipSmall>Longest side up to 8 cells</CBF_P_SizeTipSmall>
@@ -22,10 +21,8 @@
   <CBF_P_NewNeedsMap>A new piece needs an open map.</CBF_P_NewNeedsMap>
   <CBF_P_Basics>Basics</CBF_P_Basics>
   <CBF_P_DefName>defName</CBF_P_DefName>
-  <CBF_P_Size>Size</CBF_P_Size>
-  <CBF_P_Categories>Categories</CBF_P_Categories>
+  <CBF_Size>Size</CBF_Size>
   <CBF_P_AddCategory>Add category</CBF_P_AddCategory>
-  <CBF_P_RemoveCategory>Remove</CBF_P_RemoveCategory>
   <CBF_P_AllowRotation>Rotation allowed</CBF_P_AllowRotation>
   <CBF_P_ClearFootprint>Clear footprint</CBF_P_ClearFootprint>
   <CBF_P_Eaves>Eaves</CBF_P_Eaves>
@@ -38,7 +35,6 @@
   <CBF_P_NoCells>no area yet</CBF_P_NoCells>
   <CBF_P_AnchorArea>Area</CBF_P_AnchorArea>
   <CBF_P_AnchorAreaTip>Select this anchor and drag its area in the image.</CBF_P_AnchorAreaTip>
-  <CBF_P_AnchorCopy>Copy</CBF_P_AnchorCopy>
   <CBF_P_AnchorCopyTip>Adds a copy with the same settings but without an area. Drag the area in the image afterwards.</CBF_P_AnchorCopyTip>
   <CBF_P_AnchorRemove>Remove anchor</CBF_P_AnchorRemove>
   <CBF_P_AddAnchor>+ Anchor</CBF_P_AddAnchor>
@@ -49,19 +45,17 @@
   <CBF_P_AnchorsTaken>{0} anchors taken from {1}, {2} skipped.</CBF_P_AnchorsTaken>
   <CBF_P_NAnchors>{0} anchors</CBF_P_NAnchors>
   <CBF_P_AnchorNamed>Anchor {0}</CBF_P_AnchorNamed>
-  <CBF_P_AnchorName>Name</CBF_P_AnchorName>
   <CBF_P_Required>Required</CBF_P_Required>
   <CBF_P_ObjectList>Object list</CBF_P_ObjectList>
   <CBF_P_Structures>{0} structures</CBF_P_Structures>
   <CBF_P_Loot>Loot</CBF_P_Loot>
   <CBF_P_LootNone>decoration only</CBF_P_LootNone>
   <CBF_P_LootAsIs>unchanged</CBF_P_LootAsIs>
-  <CBF_P_PawnList>Pawn list</CBF_P_PawnList>
   <CBF_P_SingleKind>Single kind</CBF_P_SingleKind>
   <CBF_P_SingleKindOff>Only used without a pawn list.</CBF_P_SingleKindOff>
   <CBF_P_FactionDefault>Faction default</CBF_P_FactionDefault>
-  <CBF_P_Count>Count</CBF_P_Count>
-  <CBF_P_Chance>Chance</CBF_P_Chance>
+  <CBF_Count>Count</CBF_Count>
+  <CBF_Chance>Chance</CBF_Chance>
   <CBF_P_None>none</CBF_P_None>
   <CBF_P_ListGone>{0} no longer exists.</CBF_P_ListGone>
   <CBF_P_CheckNone>Check: no errors</CBF_P_CheckNone>
@@ -70,19 +64,13 @@
   <CBF_P_Check>Check</CBF_P_Check>
   <CBF_P_CheckTip>Checks the piece. On the map this runs the full export check, otherwise the check of the file.</CBF_P_CheckTip>
   <CBF_P_Checked>{0} checked, no errors.</CBF_P_Checked>
-  <CBF_P_Export>Export</CBF_P_Export>
   <CBF_P_ExportNeedsMap>Export only works while the piece is placed on the map for editing.</CBF_P_ExportNeedsMap>
-  <CBF_P_Save>Save</CBF_P_Save>
   <CBF_P_NothingToSave>Nothing to save.</CBF_P_NothingToSave>
-  <CBF_P_Saved>{0} saved.</CBF_P_Saved>
   <CBF_P_UnsavedSwitch>{0} has unsaved changes. Switch anyway? Unsaved anchors will be lost.</CBF_P_UnsavedSwitch>
   <CBF_BK_Title>Piece on the map</CBF_BK_Title>
   <CBF_BK_NewPiece>New piece</CBF_BK_NewPiece>
-  <CBF_BK_Name>Name</CBF_BK_Name>
-  <CBF_BK_Category>Category</CBF_BK_Category>
   <CBF_BK_Pick>pick</CBF_BK_Pick>
   <CBF_BK_NeedCategory>The piece cannot be exported without a category.</CBF_BK_NeedCategory>
-  <CBF_BK_Size>Size</CBF_BK_Size>
   <CBF_BK_SizeCells>{0}, {1} cells</CBF_BK_SizeCells>
   <CBF_BK_Tools>Tools</CBF_BK_Tools>
   <CBF_BK_Paint>Paint area</CBF_BK_Paint>
@@ -107,7 +95,7 @@
   <CBF_AnchorOverlaps>Anchor {0} overlaps {1}. Only one anchor per cell is possible. Move the copy first or adjust the area.</CBF_AnchorOverlaps>
   <CBF_NowTemplate>{0} is now a template.</CBF_NowTemplate>
   <CBF_NowNormal>{0} is no longer a template.</CBF_NowNormal>
-  <CBF_CopySuffix>Copy</CBF_CopySuffix>
+  <CBF_Copy>Copy</CBF_Copy>
   <CBF_P_ShowObjectsTip>Shows which objects {0} contains.</CBF_P_ShowObjectsTip>
   <CBF_P_ShowLootTip>Shows what the loot table {0} gives.</CBF_P_ShowLootTip>
   <CBF_P_ShowPawnsTip>Opens the pawn list {0} in the Pawn tab. The arrow at the top left brings you back.</CBF_P_ShowPawnsTip>

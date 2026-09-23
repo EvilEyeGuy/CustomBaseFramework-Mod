@@ -4,8 +4,7 @@
   <CBF_Lo_ListsShort>Listen</CBF_Lo_ListsShort>
   <CBF_Lo_Tables>Beutetabellen</CBF_Lo_Tables>
   <CBF_Lo_TablesShort>Tabellen</CBF_Lo_TablesShort>
-  <CBF_Lo_Containers>Behälter</CBF_Lo_Containers>
-  <CBF_Lo_ContainersShort>Behälter</CBF_Lo_ContainersShort>
+  <CBF_Containers>Behälter</CBF_Containers>
   <CBF_Lo_Crops>Pflanzenlisten</CBF_Lo_Crops>
   <CBF_Lo_CropsShort>Pflanzen</CBF_Lo_CropsShort>
   <CBF_Lo_NewTip0>Neue Objektliste anlegen. Du wählst dafür die Strukturen aus.</CBF_Lo_NewTip0>
@@ -16,17 +15,11 @@
   <CBF_Lo_ListHintTables>Rot heißt: In der Tabelle steht nichts, was es im Spiel gibt.</CBF_Lo_ListHintTables>
   <CBF_Lo_OneRoll>1 Zug</CBF_Lo_OneRoll>
   <CBF_Lo_NRolls>{0} Züge</CBF_Lo_NRolls>
-  <CBF_Lo_OneEntry>1 Eintrag</CBF_Lo_OneEntry>
-  <CBF_Lo_NEntries>{0} Einträge</CBF_Lo_NEntries>
-  <CBF_Lo_Range>{0} bis {1}</CBF_Lo_Range>
   <CBF_Lo_RangePct>{0} bis {1} %</CBF_Lo_RangePct>
-  <CBF_Lo_Always>Immer dabei</CBF_Lo_Always>
   <CBF_Lo_AlwaysShort>immer</CBF_Lo_AlwaysShort>
   <CBF_Lo_Weighted>Gezogen nach Gewicht</CBF_Lo_Weighted>
-  <CBF_Lo_Item>Gegenstand</CBF_Lo_Item>
-  <CBF_Lo_Chance>Chance</CBF_Lo_Chance>
+  <CBF_Item>Gegenstand</CBF_Item>
   <CBF_Lo_Share>Anteil</CBF_Lo_Share>
-  <CBF_Lo_Count>Anzahl</CBF_Lo_Count>
   <CBF_Lo_Quality>Qualität</CBF_Lo_Quality>
   <CBF_Lo_Condition>Zustand</CBF_Lo_Condition>
   <CBF_Lo_AddItem>+ Gegenstand</CBF_Lo_AddItem>
@@ -39,22 +32,16 @@
   <CBF_Lo_ThroughPlans>Über Stücke in Siedlungen</CBF_Lo_ThroughPlans>
   <CBF_Lo_NoPlans>Keine Siedlung kommt an diese Tabelle.</CBF_Lo_NoPlans>
   <CBF_Lo_WeightN>Gew. {0}</CBF_Lo_WeightN>
-  <CBF_Lo_Table>Tabelle</CBF_Lo_Table>
-  <CBF_Lo_Name>Name</CBF_Lo_Name>
+  <CBF_Table>Tabelle</CBF_Table>
   <CBF_Lo_Rolls>Züge</CBF_Lo_Rolls>
   <CBF_Lo_RollChance>Chance je Zug</CBF_Lo_RollChance>
-  <CBF_Lo_Unique>Einmalig</CBF_Lo_Unique>
   <CBF_Lo_UniqueHint>jeder Eintrag höchstens einmal</CBF_Lo_UniqueHint>
   <CBF_Lo_Fallback>Wenn leer</CBF_Lo_Fallback>
   <CBF_Lo_FallbackTip>Kommt aus dieser Tabelle nichts heraus, wird stattdessen aus der hier gewählten gezogen.</CBF_Lo_FallbackTip>
   <CBF_Lo_Entry>Gewählter Eintrag</CBF_Lo_Entry>
   <CBF_Lo_Kind>Art</CBF_Lo_Kind>
-  <CBF_Lo_KindItem>Gegenstand</CBF_Lo_KindItem>
-  <CBF_Lo_KindTable>Tabelle</CBF_Lo_KindTable>
-  <CBF_Lo_KindCategory>Kategorie</CBF_Lo_KindCategory>
   <CBF_Lo_To>bis</CBF_Lo_To>
   <CBF_Lo_MaxTech>Höchstens bis</CBF_Lo_MaxTech>
-  <CBF_Lo_Stuff>Material</CBF_Lo_Stuff>
   <CBF_Lo_AnyStuff>Beliebig</CBF_Lo_AnyStuff>
   <CBF_Lo_Depth>Tiefe</CBF_Lo_Depth>
   <CBF_Lo_DepthTip>Nur in dieser Tiefe eines Dungeons. 0 bis 99 heißt überall.</CBF_Lo_DepthTip>
@@ -76,7 +63,6 @@
   <CBF_Lo_Faction>Fraktion</CBF_Lo_Faction>
   <CBF_Lo_AnyHostile>Irgendeine feindliche</CBF_Lo_AnyHostile>
   <CBF_Lo_ImageFull>Voll</CBF_Lo_ImageFull>
-  <CBF_Lo_ImageEmpty>Leer</CBF_Lo_ImageEmpty>
   <CBF_Lo_InLists>In Objektlisten</CBF_Lo_InLists>
   <CBF_Lo_InNoList>Steht in keiner Objektliste.</CBF_Lo_InNoList>
   <CBF_Lo_Container>Behälter</CBF_Lo_Container>
@@ -88,7 +74,7 @@
   <CBF_Lo_EditContainer>Behälter bearbeiten</CBF_Lo_EditContainer>
   <CBF_Lo_EditContainerTip>Öffnet das Fenster für Behälter mit diesem hier als Vorlage.</CBF_Lo_EditContainerTip>
   <CBF_Lo_FooterHint>Änderungen gehen erst mit Speichern in die Datei.</CBF_Lo_FooterHint>
-  <CBF_Lo_Sample>Probe ziehen</CBF_Lo_Sample>
+  <CBF_Lo_Sample>Testen</CBF_Lo_Sample>
   <CBF_Lo_SampleTip>Zieht die gespeicherte Tabelle ein paar Mal und zeigt, was herauskommt.</CBF_Lo_SampleTip>
   <CBF_Lo_NewTip3>Neue Pflanzenliste anlegen. Sie landet erst mit Speichern in der Datei.</CBF_Lo_NewTip3>
   <CBF_Lo_CropCount>{0} Pflanzen</CBF_Lo_CropCount>
@@ -99,7 +85,6 @@
   <CBF_Lo_CropUnused>Kein Acker und kein Gehege nennt diese Liste.</CBF_Lo_CropUnused>
   <CBF_Lo_CropFieldIn>Acker in {0}</CBF_Lo_CropFieldIn>
   <CBF_Lo_CropPenIn>Gehege in {0}</CBF_Lo_CropPenIn>
-  <CBF_Lo_CropList>Pflanzenliste</CBF_Lo_CropList>
   <CBF_Lo_CropRightHint>Im Reiter Siedlung wählst du die Liste bei jedem Acker und Gehege. Ohne Liste gelten dort die einzeln gewählten Pflanzen.</CBF_Lo_CropRightHint>
   <CBF_Lo_CropSaved>{0} gespeichert, {1} Pflanzen.</CBF_Lo_CropSaved>
   <CBF_Lo_CropNone>Keine Pflanzenliste.</CBF_Lo_CropNone>

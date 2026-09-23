@@ -23,7 +23,7 @@
 
   <CBF_Yes>yes</CBF_Yes>
 
-  <CBF_ZonePiece>Piece</CBF_ZonePiece>
+  <CBF_PieceLabel>Piece</CBF_PieceLabel>
   <CBF_ZonePieceDesc>Mark an area that a piece is exported from. Adjacent marks merge into one.</CBF_ZonePieceDesc>
 
   <CBF_Export>Export</CBF_Export>
@@ -291,8 +291,8 @@
   <CBF_TDesc_build>Build this settlement on the current map, right here. Same as generating it, only without travelling.</CBF_TDesc_build>
   <CBF_NeedAPlan>Open a settlement first.</CBF_NeedAPlan>
   <CBF_TDesc_save>Write the settlement back into its file. Districts, styles, towers, gatehouses and factions. Everything else in the file stays untouched.</CBF_TDesc_save>
-  <CBF_PlanSaved>{0} saved.</CBF_PlanSaved>
-  <CBF_CategoryWith>{0} pieces</CBF_CategoryWith>
+  <CBF_Saved>{0} saved.</CBF_Saved>
+  <CBF_NPieces>{0} pieces</CBF_NPieces>
   <CBF_PreviewReroll>New seed</CBF_PreviewReroll>
   <CBF_PreviewAgain>Recalculate</CBF_PreviewAgain>
   <CBF_PreviewFailed>The layout did not come out. See the log.</CBF_PreviewFailed>
@@ -382,17 +382,13 @@ Copy the folder CustomBaseFramework into another mod under 1.6/Defs, and Patches
   <CBF_NewProject>New project</CBF_NewProject>
   <CBF_OpenProject>Open project</CBF_OpenProject>
   <CBF_ShowProjectFolder>Show project folder</CBF_ShowProjectFolder>
-  <CBF_ProjectName>Name</CBF_ProjectName>
   <CBF_ProjectAuthor>Author</CBF_ProjectAuthor>
-  <CBF_ProjectCreate>Create</CBF_ProjectCreate>
-  <CBF_ProjectCancel>Cancel</CBF_ProjectCancel>
   <CBF_ProjectNewHint>Creates a new mod in your Mods folder, with the folders RimWorld needs. Everything you save from now on goes there.</CBF_ProjectNewHint>
   <CBF_ProjectNeedsName>The project needs a name.</CBF_ProjectNeedsName>
   <CBF_ProjectExists>A folder called {0} already exists.</CBF_ProjectExists>
   <CBF_ProjectGone>That folder is gone.</CBF_ProjectGone>
   <CBF_ProjectCreated>Project {0} created for {1}. It is enabled and will load on the next start.</CBF_ProjectCreated>
   <CBF_ProjectOpened>Project {0} opened, {1} definitions loaded.</CBF_ProjectOpened>
-  <CBF_ProjectPickTitle>Open project</CBF_ProjectPickTitle>
   <CBF_ProjectFramework>Framework</CBF_ProjectFramework>
   <CBF_ProjectOwn>Projects</CBF_ProjectOwn>
   <CBF_ProjectFiles>{0} files</CBF_ProjectFiles>
@@ -424,15 +420,14 @@ Copy the folder CustomBaseFramework into another mod under 1.6/Defs, and Patches
   <CBF_PawnCopied>{0} created in your project.</CBF_PawnCopied>
   <CBF_PawnCopyFailed>{0} could not be copied.</CBF_PawnCopyFailed>
   <CBF_PawnNeedsName>The kind needs a name.</CBF_PawnNeedsName>
-  <CBF_PawnNameTaken>{0} already exists.</CBF_PawnNameTaken>
   <CBF_PawnFileExists>A file called {0}.xml already exists.</CBF_PawnFileExists>
   <CBF_PawnNoneSelected>Select a pawn on the map first.</CBF_PawnNoneSelected>
   <CBF_LootTableTitle>Loot table</CBF_LootTableTitle>
   <CBF_LootSave>Save table</CBF_LootSave>
   <CBF_LootSaved>{0} saved, {1} entries.</CBF_LootSaved>
   <CBF_LootNeedsName>The table needs a name.</CBF_LootNeedsName>
-  <CBF_LootNameTaken>{0} already exists.</CBF_LootNameTaken>
-  <CBF_LootEntryCount>{0} entries</CBF_LootEntryCount>
+  <CBF_AlreadyExists>{0} already exists.</CBF_AlreadyExists>
+  <CBF_NEntries>{0} entries</CBF_NEntries>
   <CBF_LootAddThing>Add item</CBF_LootAddThing>
   <CBF_LootAddTable>Add table</CBF_LootAddTable>
   <CBF_LootUnique>No repeats</CBF_LootUnique>
@@ -440,7 +435,6 @@ Copy the folder CustomBaseFramework into another mod under 1.6/Defs, and Patches
   <CBF_UsedByNobody>Nothing names this list, so it is never rolled.</CBF_UsedByNobody>
   <CBF_AndNMore>   and {0} more</CBF_AndNMore>
   <CBF_PawnAddToList>Add {0} to a list</CBF_PawnAddToList>
-  <CBF_PawnListNew>New pawn list</CBF_PawnListNew>
   <CBF_PawnListEntries>entries</CBF_PawnListEntries>
   <CBF_PawnListAlready>already in</CBF_PawnListAlready>
   <CBF_PawnAddedToList>{0} added to {1}.</CBF_PawnAddedToList>
@@ -466,7 +460,7 @@ Copy the folder CustomBaseFramework into another mod under 1.6/Defs, and Patches
   <CBF_FieldDesc_weaponTags>Which weapons this kind can be given. A tag nothing carries leaves them barehanded.</CBF_FieldDesc_weaponTags>
   <CBF_FieldDesc_apparelTags>Which apparel this kind can be given, on top of what the budget buys.</CBF_FieldDesc_apparelTags>
   <CBF_FieldDesc_gearHealthRange>How worn the gear is, 1 means untouched.</CBF_FieldDesc_gearHealthRange>
-  <CBF_ArtLeer>Empty</CBF_ArtLeer>
+  <CBF_Empty>Empty</CBF_Empty>
   <CBF_Field_leer>Empty building</CBF_Field_leer>
   <CBF_FieldDesc_leer>Takes the place of the container once a player has cleared it out. Only buildings of the same footprint can be chosen.</CBF_FieldDesc_leer>
   <CBF_BehaelterDurchsucht>Already searched.</CBF_BehaelterDurchsucht>
@@ -593,7 +587,6 @@ Copy the folder CustomBaseFramework into another mod under 1.6/Defs, and Patches
   <CBF_MemberTable>Loot table for this piece</CBF_MemberTable>
   <CBF_MemberTableFromAnchor>from anchor</CBF_MemberTableFromAnchor>
   <CBF_MemberTableTip>Which loot table fills this piece. Without one, the table on the anchor applies.\n\nGive each piece its own and a wine rack yields wine while the weapon rack beside it yields weapons. Leave them empty and one table on the anchor covers the whole list.</CBF_MemberTableTip>
-  <CBF_MemberOpen>open</CBF_MemberOpen>
   <CBF_MemberOpenTip>The piece itself is placed and the loot lies visibly on it. It stays as it is, because a shelf that vanishes would drop what sits on it.\n\nOtherwise a shell is placed that looks like this piece, holds the loot inside, and has to be opened.</CBF_MemberOpenTip>
   <CBF_MemberForeign>mod's own</CBF_MemberForeign>
   <CBF_MemberForeignTip>{0} places this piece and then leaves it alone. Loot, occupants and the empty image all come from that mod, exactly as if someone had placed it by hand.\n\nUse this when you want a mod's own furniture to keep working the way its author built it, while your own loot mechanic stays on the vanilla pieces.</CBF_MemberForeignTip>
@@ -604,7 +597,7 @@ Copy the folder CustomBaseFramework into another mod under 1.6/Defs, and Patches
   <CBF_Back>Back</CBF_Back>
   <CBF_LootPreviewRolls>{0} to {1} draws, {2} % chance per draw</CBF_LootPreviewRolls>
   <CBF_LootPreviewCount>Count: {0}</CBF_LootPreviewCount>
-  <CBF_LootPreviewAlways>Always included</CBF_LootPreviewAlways>
+  <CBF_Always>Always included</CBF_Always>
   <CBF_LootPreviewWeight>Weight: {0}</CBF_LootPreviewWeight>
   <CBF_LootPreviewChance>Appears {0} % of the time</CBF_LootPreviewChance>
   <CBF_LootPreviewCurves>Weight or count varies with depth or wealth</CBF_LootPreviewCurves>
@@ -648,11 +641,8 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_MassRiver>River</CBF_MassRiver>
   <CBF_MassCoast>Coast</CBF_MassCoast>
   <CBF_MassAny>any</CBF_MassAny>
-  <CBF_MassYes>yes</CBF_MassYes>
-  <CBF_MassNo>no</CBF_MassNo>
   <CBF_MassCount>Settlements per type ({0} matching tiles)</CBF_MassCount>
   <CBF_MassQuit>Quit RimWorld afterwards</CBF_MassQuit>
-  <CBF_MassAll>All</CBF_MassAll>
   <CBF_MassNone>None</CBF_MassNone>
   <CBF_MassStart>Test {0} types with {1} settlements each</CBF_MassStart>
   <CBF_MassDone>Mass stress test finished.</CBF_MassDone>

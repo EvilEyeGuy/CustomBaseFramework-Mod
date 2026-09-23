@@ -63,7 +63,11 @@
                 <li>Plant_Hops</li>
                 <li>Plant_Potato</li>
                 <li>Plant_Rice</li>
-               </plants></li></fields>
+               </plants>
+              <tags>
+                <li>HouseSmall</li>
+                <li>Farm</li>
+              </tags></li></fields>
             <entries>
               <li><tag>HouseSmall</tag><count>4~8</count></li>
               <li><tag>Farm</tag><count>2~4</count></li>
@@ -93,6 +97,8 @@
     </techLevels>
   
     <worldTexture>World/WorldObjects/CBF/CBF_VillagePalisade</worldTexture>
+  
+    <fuerAlleFraktionen>true</fuerAlleFraktionen>
   </CustomBaseFramework.SettlementPlanDef>
 
 </Defs>

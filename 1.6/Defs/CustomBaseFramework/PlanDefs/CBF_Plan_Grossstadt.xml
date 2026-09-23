@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Plan_Grossstadt</defName>
     <label>Grossstadt</label>
     <kind>Modernestadt</kind>
@@ -142,5 +142,15 @@
     </wards>
   
     <anteil>0</anteil>
+  
+    <techLevels>
+      <li>Industrial</li>
+      <li>Spacer</li>
+      <li>Ultra</li>
+    </techLevels>
+  
+    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+  
+    <worldTexture>World/WorldObjects/CBF/CBF_City</worldTexture>
   </CustomBaseFramework.SettlementPlanDef>
 </Defs>

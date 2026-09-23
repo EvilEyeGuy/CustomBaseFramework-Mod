@@ -38,7 +38,6 @@
   <CBF_Planner_BadSize>City size or wall depth is outside the supported range.</CBF_Planner_BadSize>
   <CBF_Planner_NoSite>No suitable site was found within the terrain constraints.</CBF_Planner_NoSite>
   <CBF_Planner_NoConstruction>Buildings and fields were not started at this site. Gate access or fortifications are invalid; terrain will remain unchanged.</CBF_Planner_NoConstruction>
-  <CBF_Planner_MissingTowers>Required towers are missing. No terrain changes will be made for further buildings at this site.</CBF_Planner_MissingTowers>
   <CBF_Planner_LittleLand>This site has little free building ground. Terrain changes are limited to required buildings and the configured budget.</CBF_Planner_LittleLand>
   <CBF_Planner_NoHub>A layer has no walkable hub.</CBF_Planner_NoHub>
   <CBF_Planner_Disconnected>The city and suburb are not fully connected.</CBF_Planner_Disconnected>
@@ -93,13 +92,8 @@
   <CBF_Planner_TerrainClearance>Building clearance with a natural rock edge</CBF_Planner_TerrainClearance>
   <CBF_Planner_SuburbGateLink>The outer and inner gates need a continuous main road through the suburb.</CBF_Planner_SuburbGateLink>
   <CBF_Planner_SuburbWidth>Parallel inner and outer walls leave too little usable space for the suburb.</CBF_Planner_SuburbWidth>
-  <CBF_RuralCrop>Fenced crop plot</CBF_RuralCrop>
-  <CBF_RuralPen>Animal pen</CBF_RuralPen>
-  <CBF_RuralHerd>Animals (min~max)</CBF_RuralHerd>
   <CBF_RuralChoosePlant>Choose crop</CBF_RuralChoosePlant>
   <CBF_RuralChooseAnimals>Choose animal list</CBF_RuralChooseAnimals>
-  <CBF_RuralAddCrop>Add crop plot</CBF_RuralAddCrop>
-  <CBF_RuralAddPen>Add animal pen</CBF_RuralAddPen>
   <CBF_Pen_NoSpace>No enclosed space with road access was found for pen {0}.</CBF_Pen_NoSpace>
   <CBF_ChoosePlants>Choose crops</CBF_ChoosePlants>
   <CBF_ChoosePlantsHint>{0} selected. Click a tile to add or remove it.</CBF_ChoosePlantsHint>
@@ -109,7 +103,6 @@
   <CBF_UploadBusy>An upload is already running.</CBF_UploadBusy>
   <CBF_UploadNoReport>No error report found yet.</CBF_UploadNoReport>
   <CBF_UploadDone>Report uploaded. The links are in the log:</CBF_UploadDone>
-  <CBF_PlanKind>Kind</CBF_PlanKind>
   <CBF_Kind_Mittelalterstadt>Medieval town</CBF_Kind_Mittelalterstadt>
   <CBF_Kind_Modernestadt>Modern town</CBF_Kind_Modernestadt>
   <CBF_Kind_Lager>Camp</CBF_Kind_Lager>
@@ -123,19 +116,12 @@ The link is PUBLIC: anyone who has it can read both files, and they cannot be de
 
 Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_HelpEmpty>No description has been written for this section yet.</CBF_HelpEmpty>
-  <CBF_NavHouse>Project, packaging and closing the editor.</CBF_NavHouse>
   <CBF_NavClose>Close the editor.</CBF_NavClose>
-  <CBF_NavPanel>Show or hide the side panel.</CBF_NavPanel>
-  <CBF_NavFloat>Detach the side panel into a window you can move.</CBF_NavFloat>
-  <CBF_NavRedo>Redo the last undone step.</CBF_NavRedo>
-  <CBF_NavUndo>Undo the last step.</CBF_NavUndo>
   <CBF_FactionFrom>From {0}</CBF_FactionFrom>
   <CBF_FactionPlans>Settlement plans</CBF_FactionPlans>
   <CBF_FactionNoPlan>No plan is assigned to this faction.</CBF_FactionNoPlan>
   <CBF_FactionAssign>Assign a plan</CBF_FactionAssign>
-  <CBF_FactionServesAll>(currently serves every faction)</CBF_FactionServesAll>
   <CBF_FactionAllAssigned>Every plan is already assigned to this faction.</CBF_FactionAllAssigned>
-  <CBF_FactionUntagged>{0} plan(s) name no faction at all. Those serve every faction, including this one.</CBF_FactionUntagged>
   <CBF_FactionByCategory>{0} is attached through the faction category {1}, not by name. Remove the category tag in the plan itself.</CBF_FactionByCategory>
   <CBF_FactionTakeover>Takeover</CBF_FactionTakeover>
   <CBF_TakeoverOn>RimWorld hands faction bases to the CBF generator.</CBF_TakeoverOn>
@@ -146,9 +132,7 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_Field_requiredMods>Needs these mods</CBF_Field_requiredMods>
   <CBF_ModsNone>Runs without any other mod.</CBF_ModsNone>
   <CBF_ModByHand>added by hand</CBF_ModByHand>
-  <CBF_ModAutoTip>Worked out from the content, not chosen. Without this mod nothing is left of: {0}</CBF_ModAutoTip>
   <CBF_ModByHandTip>Added by hand. Click the cross to take it out again.</CBF_ModByHandTip>
-  <CBF_AddMod>Add a mod</CBF_AddMod>
   <CBF_ExportWouldDrop>has {0} legend line(s) that need {1}. That mod is off, so the lines are not loaded, and exporting now would delete them. Switch the mod on and export again.</CBF_ExportWouldDrop>
   <CBF_AboutAdded>About.xml updated. loadAfter now lists {0}.</CBF_AboutAdded>
   <CBF_AboutConflict>Left out, because these already sit under loadBefore: {0}</CBF_AboutConflict>
@@ -156,7 +140,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_AboutNotMeta>{0} is not a ModMetaData file and was left untouched.</CBF_AboutNotMeta>
   <CBF_PatchUnreadable>{0} could not be read and was left untouched: {1}</CBF_PatchUnreadable>
   <CBF_PatchNotAPatch>{0} is not a Patch file and was left untouched.</CBF_PatchNotAPatch>
-  <CBF_AddBuilding>Building or category...</CBF_AddBuilding>
   <CBF_NewPlan>Name the settlement</CBF_NewPlan>
   <CBF_NewPlanHint>A def name, letters and digits only. It starts with one ward and one district; walls and pieces are up to you.</CBF_NewPlanHint>
   <CBF_PlanExists>A settlement named {0} already exists.</CBF_PlanExists>
@@ -168,23 +151,14 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_FactionVanilla>RimWorld builds the bases of this faction. Assign a plan above and CBF takes over, for this faction only.</CBF_FactionVanilla>
   <CBF_ReserveGround>Reserve building ground before the rock</CBF_ReserveGround>
   <CBF_ReserveGroundHelp>Before RimWorld places the rock, the edge of the mountain recedes where the settlement will stand, and only far enough for it to fit. The shape of the mountain is kept, the rest of the map is untouched. Off means the settlement has to make do with the terrain as grown and can fail on rocky tiles.</CBF_ReserveGroundHelp>
-  <CBF_LabTitle>Test bench</CBF_LabTitle>
-  <CBF_LabHelp>Unfinished work. Switch these on only if you want to help test them, and expect them to look wrong.</CBF_LabHelp>
-  <CBF_LabEaves>Eaves on finished houses</CBF_LabEaves>
-  <CBF_LabEavesHelp>Needs Architecture of the Rim. Places eaves along the outer walls of generated houses, with corner pieces.</CBF_LabEavesHelp>
-  <CBF_LabEavesWarn>This is a test. Corners and inner corners are still wrong in places.</CBF_LabEavesWarn>
   <CBF_WorldNoObject>No settlement on that tile.</CBF_WorldNoObject>
   <CBF_WorldPlanClear>Forget, roll again on next look</CBF_WorldPlanClear>
   <CBF_WorldPlanCleared>{0} has no settlement type any more.</CBF_WorldPlanCleared>
   <CBF_WorldPlanFixed>{0} is now {1}, stored in the save.</CBF_WorldPlanFixed>
-  <CBF_CheckBtn>Check</CBF_CheckBtn>
   <CBF_TDesc_check>Runs the full export check on this area without writing anything. Export refuses while errors remain.</CBF_TDesc_check>
   <CBF_ExportBlocked>{0} has {1} error(s) and was not exported. Fix them and check again.</CBF_ExportBlocked>
   <CBF_ExportNeedsCheck>The last check found {0} error(s). Fix them and press Check again.</CBF_ExportNeedsCheck>
   <CBF_CheckOk>{0}: check passed.</CBF_CheckOk>
-  <CBF_CheckClean>Check passed, no findings.</CBF_CheckClean>
-  <CBF_CheckOkHints>Check passed, {0} hint(s).</CBF_CheckOkHints>
-  <CBF_CheckFailed>Check failed, {0} error(s).</CBF_CheckFailed>
   <CBF_NErrors>{0} error(s)</CBF_NErrors>
   <CBF_NeedAWorld>No world loaded.</CBF_NeedAWorld>
   <CBF_BuildTitle>Build {0}</CBF_BuildTitle>
@@ -196,52 +170,20 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_WantNo>No</CBF_WantNo>
   <CBF_TilesMatching>{0} matching tiles found</CBF_TilesMatching>
   <CBF_TilesNoneHelp>No tile on this world meets all of these at once. Loosen one condition.</CBF_TilesNoneHelp>
-  <CBF_T_leer>Blank</CBF_T_leer>
   <CBF_TDesc_leer>Paint blank cells: the cell belongs to the piece, but nothing is built there.</CBF_TDesc_leer>
-  <CBF_T_leerweg>Unblank</CBF_T_leerweg>
   <CBF_TDesc_leerweg>Removes blank cells and puts the covered floor back.</CBF_TDesc_leerweg>
   <CBF_OpenEditorTool>Open editor</CBF_OpenEditorTool>
   <CBF_OpenEditorToolDesc>Opens the Custom Base Framework editor. Press again to close it. All drawing tools live inside the editor panel.</CBF_OpenEditorToolDesc>
-  <CBF_AnchorCopyTip>Makes a copy of this anchor with the same settings and the same shape, and puts the move tool in your hand right away.</CBF_AnchorCopyTip>
-  <CBF_AnchorMove>Move</CBF_AnchorMove>
-  <CBF_AnchorMoveDesc>Moves the selected anchor as a whole. Click a cell and its centre lands there.</CBF_AnchorMoveDesc>
-  <CBF_AnchorPickFirst>Pick an anchor first.</CBF_AnchorPickFirst>
-  <CBF_AnchorEmpty>This anchor has no cells yet. Paint it first.</CBF_AnchorEmpty>
-  <CBF_AnchorWontFit>The anchor would stick out of the piece here.</CBF_AnchorWontFit>
-  <CBF_WardDistricts>{0} district(s), {1} entries</CBF_WardDistricts>
-  <CBF_WardLand>{0} field(s), {1} pen(s)</CBF_WardLand>
-  <CBF_StateUnsaved>unsaved *</CBF_StateUnsaved>
-  <CBF_StateSaved>saved</CBF_StateSaved>
-  <CBF_StateChecked>checked</CBF_StateChecked>
-  <CBF_StateErrors>{0} error(s)</CBF_StateErrors>
-  <CBF_StateTip>State of {0}. Errors come from the last check; the export runs it again anyway.</CBF_StateTip>
-  <CBF_PreviewPhoto>Image</CBF_PreviewPhoto>
-  <CBF_PreviewGrid>Grid</CBF_PreviewGrid>
   <CBF_PreviewConfig>This settlement type cannot work as configured:</CBF_PreviewConfig>
   <CBF_Planner_ExitsBlocked>The gates do not reach the map edge.</CBF_Planner_ExitsBlocked>
   <CBF_ShowPiecesTip>Shows which pieces {0} covers. Click one to open it.</CBF_ShowPiecesTip>
   <CBF_NoPiecesInCategory>No piece belongs to {0}.</CBF_NoPiecesInCategory>
   <CBF_CategoryPieceCount>{0} piece(s)</CBF_CategoryPieceCount>
-  <CBF_CardImage>Preview</CBF_CardImage>
-  <CBF_CardBasics>Basics</CBF_CardBasics>
-  <CBF_CardWallSide>Wall side</CBF_CardWallSide>
   <CBF_AnchorNoCopyConnect>A connect anchor cannot be copied. A piece has at most one Wall and one Outside; a second one with the same name would do nothing.</CBF_AnchorNoCopyConnect>
-  <CBF_PartGeneral>General</CBF_PartGeneral>
-  <CBF_PartArea>Area</CBF_PartArea>
-  <CBF_PartAnchors>Anchors</CBF_PartAnchors>
-  <CBF_AnchorSelected>Anchor {0}</CBF_AnchorSelected>
-  <CBF_AnchorOpenTip>Opens this anchor below and picks up the brush.</CBF_AnchorOpenTip>
-  <CBF_NewPieceFillIn>New piece. Give it a name and a category, then draw it with Area. Export writes the file.</CBF_NewPieceFillIn>
   <CBF_Field_cells>Cells</CBF_Field_cells>
   <CBF_Field_additionalCategories>Additional categories</CBF_Field_additionalCategories>
   <CBF_FieldDesc_additionalCategories>Categories beyond the one set on the area above. The export writes the area's category as the first entry.</CBF_FieldDesc_additionalCategories>
-  <CBF_AnchorFromPiece>From another piece</CBF_AnchorFromPiece>
   <CBF_AnchorNameTaken>[taken]</CBF_AnchorNameTaken>
-  <CBF_AnchorsTaken>{0} anchor(s) taken from {1}, {2} skipped. Paint them where they belong.</CBF_AnchorsTaken>
-  <CBF_AnchorFromPieceDesc>Click another piece area on the map. Its anchors come over with all their settings, without their shape.</CBF_AnchorFromPieceDesc>
-  <CBF_PickAPieceArea>No piece area under the cursor.</CBF_PickAPieceArea>
-  <CBF_PickAnotherArea>That is the area you are editing.</CBF_PickAnotherArea>
-  <CBF_AreaHasNoAnchors>{0} has no anchors.</CBF_AreaHasNoAnchors>
   <CBF_AnchorSizeMismatch>{0} is {1}, this anchor area is {2}. It will not be placed.</CBF_AnchorSizeMismatch>
   <CBF_BiomeAny>Any terrain</CBF_BiomeAny>
   <CBF_WorldBuilt>{0} placed for {1} as {2} in {3}. Generating the map now.</CBF_WorldBuilt>
@@ -260,33 +202,19 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_ExportWithHints>{0} exported, {1} hint(s), full list in the log:</CBF_ExportWithHints>
   <CBF_Field_anchorKind>Kind</CBF_Field_anchorKind>
   <CBF_Field_required>Required</CBF_Field_required>
-  <CBF_AnchorNoCells>no area yet</CBF_AnchorNoCells>
-  <CBF_AnchorSize>Size: {0}</CBF_AnchorSize>
-  <CBF_AnchorCells>{0} cells</CBF_AnchorCells>
-  <CBF_AnchorArea>Area</CBF_AnchorArea>
-  <CBF_AnchorAreaPaintTip>Paint the area of this anchor.</CBF_AnchorAreaPaintTip>
-  <CBF_AnchorCopyShort>Copy</CBF_AnchorCopyShort>
   <CBF_ConnectNamesTaken>Wall and Outside are both taken already.</CBF_ConnectNamesTaken>
-  <CBF_NoWallsModern>No fortifications: the place kind is {0}.</CBF_NoWallsModern>
-  <CBF_NoWallsUmland>No fortifications: the countryside lies outside the wall.</CBF_NoWallsUmland>
-  <CBF_PawnWorkshop>Edit pawn</CBF_PawnWorkshop>
   <CBF_PawnFront>Front</CBF_PawnFront>
   <CBF_PawnSide>Side</CBF_PawnSide>
   <CBF_PawnBack>Back</CBF_PawnBack>
-  <CBF_PawnLayerGrid>LAYERS AND BODY PARTS   -   an empty field is free, click it to put something there</CBF_PawnLayerGrid>
   <CBF_PawnCellFree>{0} on {1} is still free.</CBF_PawnCellFree>
   <CBF_PawnNothingFits>Nothing fits there that does not clash with what is already worn.</CBF_PawnNothingFits>
   <CBF_PawnPickApparel>Apparel for this slot</CBF_PawnPickApparel>
-  <CBF_PawnGearList>FIXED GEAR</CBF_PawnGearList>
-  <CBF_PawnNoGear>No fixed gear yet. Click a free field above.</CBF_PawnNoGear>
   <CBF_PawnGearClash>Clashes with another piece on the same layer and body part.</CBF_PawnGearClash>
   <CBF_PawnNoStuff>no material</CBF_PawnNoStuff>
   <CBF_PawnNoStuffTip>This apparel is not made from a material.</CBF_PawnNoStuffTip>
   <CBF_PawnPickStuff>Material</CBF_PawnPickStuff>
   <CBF_PawnStuffValue>value {0}</CBF_PawnStuffValue>
   <CBF_PawnAllFields>All fields</CBF_PawnAllFields>
-  <CBF_PawnUnsavedGear>Gear has changed and is not written yet.</CBF_PawnUnsavedGear>
-  <CBF_PawnGearSaved>Gear matches the file.</CBF_PawnGearSaved>
   <CBF_PawnGearWritten>{0} written to {1}.</CBF_PawnGearWritten>
   <CBF_PawnWornNow>worn in this example</CBF_PawnWornNow>
   <CBF_Any>any</CBF_Any>
@@ -298,35 +226,20 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_NewPawnNeedsPower>Combat power must be a number and at least 0.</CBF_NewPawnNeedsPower>
   <CBF_NewPawnCreated>{0} created. The workshop is open.</CBF_NewPawnCreated>
   <CBF_NewPawnFailed>{0} was written but did not load.</CBF_NewPawnFailed>
-  <CBF_PawnWorkshopAll>All pawns, also foreign ones</CBF_PawnWorkshopAll>
   <CBF_PawnColorTip>Click picks a colour, right click sets it back to any.</CBF_PawnColorTip>
-  <CBF_PawnPartsAll>All</CBF_PawnPartsAll>
-  <CBF_PawnPartsCore>Vanilla</CBF_PawnPartsCore>
-  <CBF_PawnPartsMods>Mods</CBF_PawnPartsMods>
   <CBF_PawnSecGear>Gear</CBF_PawnSecGear>
   <CBF_PawnSecWeapon>Weapon</CBF_PawnSecWeapon>
   <CBF_PawnSecSkills>Skills</CBF_PawnSecSkills>
   <CBF_PawnSecNature>Nature</CBF_PawnSecNature>
-  <CBF_PawnWeaponHead>WEAPON TAGS</CBF_PawnWeaponHead>
-  <CBF_PawnWeaponHint>RimWorld picks weapons by tag, not by name. Pick the tag that only your weapon carries, or start from a weapon and take one of its tags.</CBF_PawnWeaponHint>
   <CBF_PawnTagEmpty>no weapon carries this tag</CBF_PawnTagEmpty>
   <CBF_PawnTagCount>{0} weapons: {1}</CBF_PawnTagCount>
   <CBF_PawnTagSpan>{0} weapons</CBF_PawnTagSpan>
-  <CBF_PawnNoWeapon>No tag yet, this pawn stays unarmed.</CBF_PawnNoWeapon>
-  <CBF_PawnAddTag>Add tag</CBF_PawnAddTag>
   <CBF_PawnFromWeapon>Start from a weapon</CBF_PawnFromWeapon>
-  <CBF_PawnSkillHead>SKILLS</CBF_PawnSkillHead>
-  <CBF_PawnNoSkills>No fixed skill, everything is rolled.</CBF_PawnNoSkills>
   <CBF_PawnAddSkill>Add skill</CBF_PawnAddSkill>
   <CBF_Field_extraSkillLevels>Extra levels</CBF_Field_extraSkillLevels>
   <CBF_Field_minTotalSkillLevels>Minimum total</CBF_Field_minTotalSkillLevels>
   <CBF_Field_minBestSkillLevel>Minimum best</CBF_Field_minBestSkillLevel>
-  <CBF_PawnNatureHead>EXCLUDED TRAITS</CBF_PawnNatureHead>
-  <CBF_PawnNatureHint>A trait listed here never appears on this pawn.</CBF_PawnNatureHint>
-  <CBF_PawnNoTraits>Nothing excluded.</CBF_PawnNoTraits>
   <CBF_PawnAddTrait>Exclude trait</CBF_PawnAddTrait>
-  <CBF_PawnForcedTraits>Forced traits: {0}. Change them under All fields.</CBF_PawnForcedTraits>
-  <CBF_PawnSpawn>Spawn pawn</CBF_PawnSpawn>
   <CBF_PawnPlace>Place {0}</CBF_PawnPlace>
   <CBF_PawnPlaceDesc>Click a cell to put one pawn of this kind there. Click again for another.</CBF_PawnPlaceDesc>
   <CBF_PawnPlaceNoKind>No pawn kind.</CBF_PawnPlaceNoKind>
@@ -335,12 +248,8 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_PawnPlaced>{0} placed for {1}.</CBF_PawnPlaced>
   <CBF_PawnNoFaction>no faction</CBF_PawnNoFaction>
   <CBF_PawnSecImplants>Implants</CBF_PawnSecImplants>
-  <CBF_PawnImplantHead>IMPLANTS</CBF_PawnImplantHead>
-  <CBF_PawnImplantHint>Named implants are always installed. Tags let the generator pick within the budget. Implants from a DLC or mod get a MayRequire, so they are skipped when it is not loaded.</CBF_PawnImplantHint>
   <CBF_PawnImplantGated>only with {0}</CBF_PawnImplantGated>
-  <CBF_PawnNoImplants>No implants.</CBF_PawnNoImplants>
   <CBF_PawnAddImplant>Add implant</CBF_PawnAddImplant>
-  <CBF_PawnAddImplantTag>Add tag</CBF_PawnAddImplantTag>
   <CBF_Field_techHediffsChance>Chance</CBF_Field_techHediffsChance>
   <CBF_Field_techHediffsMaxAmount>At most</CBF_Field_techHediffsMaxAmount>
   <CBF_PawnImplantNoPath>cannot be installed on {0}</CBF_PawnImplantNoPath>
@@ -398,7 +307,6 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_WeightHint>The faction overview shows what this means in percent per faction.</CBF_WeightHint>
   <CBF_Field_excludeFactions>Excluded factions</CBF_Field_excludeFactions>
   <CBF_ExcludeTip>These factions never get this settlement, not even through its tech levels. Every other settlement stays allowed for them.</CBF_ExcludeTip>
-  <CBF_ExcludeAdd>Exclude a faction</CBF_ExcludeAdd>
   <CBF_ExcludeNobody>No faction gets this settlement right now, so there is nobody to exclude.</CBF_ExcludeNobody>
   <CBF_ExcludeMissing>{0} (not loaded)</CBF_ExcludeMissing>
   <CBF_FactionUnassignTip>Take this settlement away from this faction.</CBF_FactionUnassignTip>

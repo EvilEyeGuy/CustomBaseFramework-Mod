@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CBF_K_Used>Used</CBF_K_Used>
+  <CBF_K_Empty>Empty</CBF_K_Empty>
+  <CBF_K_NewTip>Create a new category. It goes into the project's category file.</CBF_K_NewTip>
+  <CBF_K_PickOne>Pick a category on the left.</CBF_K_PickOne>
+  <CBF_K_OpenFileTip>Opens the category's file in your text editor. The editor reloads changes made there on its own.</CBF_K_OpenFileTip>
+  <CBF_K_OnePiece>1 piece</CBF_K_OnePiece>
+  <CBF_K_TileTip>Click opens the piece in the Piece tab. Back returns here.</CBF_K_TileTip>
+  <CBF_K_UsedIn>Used in:</CBF_K_UsedIn>
+  <CBF_K_NotUsed>No settlement uses this category directly.</CBF_K_NotUsed>
+  <CBF_K_UsedInDistrict>{0}, district {1}, {2} to {3}</CBF_K_UsedInDistrict>
+  <CBF_K_UsedInWalls>{0}, fortification</CBF_K_UsedInWalls>
+  <CBF_K_Category>Category</CBF_K_Category>
+  <CBF_K_Parent>Parent</CBF_K_Parent>
+  <CBF_K_ParentTip>The category this one inherits from. Whatever is not set here comes from there.</CBF_K_ParentTip>
+  <CBF_K_Placement>Placement</CBF_K_Placement>
+  <CBF_K_RoadAccess>Road access</CBF_K_RoadAccess>
+  <CBF_K_RoadAccessTip>Must be reachable from the road network.</CBF_K_RoadAccessTip>
+  <CBF_K_Unique>Unique</CBF_K_Unique>
+  <CBF_K_UniqueTip>At most one per settlement.</CBF_K_UniqueTip>
+  <CBF_K_OutsideOnly>Outside only</CBF_K_OutsideOnly>
+  <CBF_K_OutsideOnlyTip>Never stands inside the walls.</CBF_K_OutsideOnlyTip>
+  <CBF_K_OutsideOk>Outside allowed</CBF_K_OutsideOk>
+  <CBF_K_OutsideOkTip>May also stand outside the walls.</CBF_K_OutsideOkTip>
+  <CBF_K_Landmark>Landmark</CBF_K_Landmark>
+  <CBF_K_LandmarkTip>Placed early and in plain view.</CBF_K_LandmarkTip>
+  <CBF_K_WallContact>Wall contact</CBF_K_WallContact>
+  <CBF_K_WallContactTip>Must stand against the town wall.</CBF_K_WallContactTip>
+  <CBF_K_Preferences>Preferences</CBF_K_Preferences>
+  <CBF_K_ZeroToOne>0 to 1</CBF_K_ZeroToOne>
+  <CBF_K_PrefGate>Near the gate</CBF_K_PrefGate>
+  <CBF_K_PrefGateTip>How strongly this wants to be near the gate.</CBF_K_PrefGateTip>
+  <CBF_K_PrefCenter>Near the center</CBF_K_PrefCenter>
+  <CBF_K_PrefCenterTip>How strongly this wants to be near the center.</CBF_K_PrefCenterTip>
+  <CBF_K_PrefWall>Near the wall</CBF_K_PrefWall>
+  <CBF_K_PrefWallTip>How strongly this wants to be near the wall.</CBF_K_PrefWallTip>
+  <CBF_K_PrefMain>Main road</CBF_K_PrefMain>
+  <CBF_K_PrefMainTip>How strongly this wants to be on the main road.</CBF_K_PrefMainTip>
+  <CBF_K_PrefSpread>Spread</CBF_K_PrefSpread>
+  <CBF_K_PrefSpreadTip>How strongly buildings of this category avoid each other.</CBF_K_PrefSpreadTip>
+  <CBF_K_Blocks>Blocks</CBF_K_Blocks>
+  <CBF_K_BlockMax>Block limit</CBF_K_BlockMax>
+  <CBF_K_BlockMaxTip>How many buildings of this category at most form one block wall to wall. Empty means the planner uses its default of 3.</CBF_K_BlockMaxTip>
+  <CBF_K_Merge>Merge</CBF_K_Merge>
+  <CBF_K_MergeTip>Whether buildings of this category join their neighbors into one block. Yes forces it, No forbids it.</CBF_K_MergeTip>
+  <CBF_K_Yes>Yes</CBF_K_Yes>
+  <CBF_K_No>No</CBF_K_No>
+  <CBF_K_Inherits>inherits</CBF_K_Inherits>
+  <CBF_K_InheritsFrom>Without a value of its own, {0} applies, from {1}.</CBF_K_InheritsFrom>
+  <CBF_K_InheritsValue>inherits {0}</CBF_K_InheritsValue>
+  <CBF_K_Default>the default</CBF_K_Default>
+  <CBF_K_NoParentChain>Chain: no parent category</CBF_K_NoParentChain>
+  <CBF_K_Chain>Chain: {0}</CBF_K_Chain>
+  <CBF_K_Foreign>{0} belongs to the mod {1}. The editor does not save changes to it.</CBF_K_Foreign>
+</LanguageData>

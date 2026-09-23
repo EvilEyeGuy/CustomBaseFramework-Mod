@@ -43,7 +43,7 @@
           <li>TownWall_1x5</li>
         </walls>
         <emplacements>
-          <li MayRequire="DankPyon.Medieval.Overhaul">LargeTower_9d</li>
+          <li>LargeTower_9d</li>
           <li>LargeTower_9d_B</li>
         </emplacements>
         <gatehouses>
@@ -54,12 +54,12 @@
           <li>
             <name>Default</name>
             <entries>
-              <li><tag>Keep</tag><count>1~1</count><unique>true</unique><lootTable>CBF_MO_Loot_Bergfried</lootTable></li>
+              <li><tag>Keep</tag><count>1~3</count><unique>true</unique><lootTable>CBF_MO_Loot_Bergfried</lootTable></li>
               <li><tag>Inn</tag><count>1~1</count><unique>true</unique><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
               <li><tag>Military</tag><count>2~6</count><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
-              <li><tag>HouseLarge</tag><count>10~16</count><filler>true</filler><lootTable>CBF_MO_Loot_Herrenhaus</lootTable></li>
-              <li><tag>HouseSmall</tag><count>10~14</count><filler>true</filler><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
               <li><tag>Workshop</tag><count>1~4</count><lootTable>CBF_MO_Loot_Werkstatt</lootTable></li>
+              <li><tag>CBF_MO_TudorHouse</tag><count>10~14</count><filler>true</filler></li>
+              <li><tag>CBF_MO_MilitaryWallAttachment</tag><count>2~4</count></li>
             </entries>
           </li>
         </districts>

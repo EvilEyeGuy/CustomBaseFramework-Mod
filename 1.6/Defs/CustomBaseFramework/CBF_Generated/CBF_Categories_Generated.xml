@@ -29,6 +29,15 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_MilitaryWallAttachment</defName>
+    <label>CBF_MO_MilitaryWallAttachment</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_TudorHouse</defName>
     <label>CBF_MO_TudorHouse</label>
     <zones>
@@ -347,6 +356,15 @@
     </zones>
     <countPerSettlement>1~4</countPerSettlement>
     <blockMax>2</blockMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Military</defName>
+    <label>CBF_MO_Military</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
 </Defs>

@@ -11,6 +11,7 @@
 
 
 
+
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Pawns_Wirtsleute</defName>
     <label>innkeepers</label>
@@ -177,5 +178,18 @@
         <li><kind>CBF_Vanilla_Marksman</kind><weight>1</weight></li>
         <li><kind>CBF_Vanilla_Rifleman</kind><weight>1</weight></li>
       </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Guard</defName>
+    <label>CBF_MO_Guard</label>
+    <rolle>Wache</rolle>
+    <radius>4</radius>
+    <members>
+      <li><kind>DankPyon_Medieval_Arbalester</kind><weight>1</weight></li>
+      <li><kind>DankPyon_Medieval_Bowman</kind><weight>1</weight></li>
+      <li><kind>DankPyon_FootmanHesse</kind><weight>1</weight></li>
+      <li><kind>DankPyon_ZweihanderAmboise</kind><weight>1</weight></li>
+    </members>
   </CustomBaseFramework.PawnListDef>
 </Defs>

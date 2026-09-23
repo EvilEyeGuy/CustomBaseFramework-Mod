@@ -163,7 +163,7 @@
   <CBF_Field_size>Groesse</CBF_Field_size>
   <CBF_FieldDesc_size>Breite mal Hoehe in Feldern, aus der gezeichneten Flaeche.</CBF_FieldDesc_size>
   <CBF_Field_style>Stil</CBF_Field_style>
-  <CBF_FieldDesc_style>Zu welchem Aussehen dieser Baustein gehoert. Der Ortstyp nennt, welche Stile er erlaubt.</CBF_FieldDesc_style>
+  <CBF_FieldDesc_style>Alte Zuordnung fuer Paletten und Mauerprofile. Beschraenkt die Bausteinauswahl nicht.</CBF_FieldDesc_style>
   <CBF_Field_categories>Kategorien</CBF_Field_categories>
   <CBF_FieldDesc_categories>Was dieser Baustein ist. Die erste ist die primaere: bei Widerspruch gewinnen ihre Regeln, Feld fuer Feld, dann ihre Eltern, dann die naechste Kategorie.</CBF_FieldDesc_categories>
   <CBF_Field_allowRotation>Drehbar</CBF_Field_allowRotation>
@@ -329,7 +329,7 @@
   <CBF_Field_budget>Budget</CBF_Field_budget>
   <CBF_FieldDesc_budget>Welche Kategorien die Siedlung will, wie viele davon und welchen Flaechenanteil.</CBF_FieldDesc_budget>
   <CBF_Field_styles>Stile</CBF_Field_styles>
-  <CBF_FieldDesc_styles>Welche Stile hier vorkommen duerfen. Der erste, der etwas hat, gewinnt.</CBF_FieldDesc_styles>
+  <CBF_FieldDesc_styles>Alte Zuordnung fuer Paletten und Mauerprofile; kein Filter fuer Bausteine.</CBF_FieldDesc_styles>
   <CBF_Field_emplacements>Verteidigungsstellungen</CBF_Field_emplacements>
   <CBF_FieldDesc_emplacements>Welche Bausteine als Tuerme, Geschuetzstellungen und dergleichen dienen duerfen.</CBF_FieldDesc_emplacements>
   <CBF_Field_gatehouses>Torhaeuser</CBF_Field_gatehouses>
@@ -916,4 +916,8 @@ Entweder ist der Name vertippt, oder die Liste liegt in einem anderen Projekt, d
 Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die anderer Mods.</CBF_FieldDesc_worldTexture>
   <CBF_WorldIconVanilla>Vanilla: Bild der Fraktion</CBF_WorldIconVanilla>
   <CBF_WorldIconVanillaTip>Kein eigenes Bild. Die Siedlung zeigt das Bild ihrer Fraktion.</CBF_WorldIconVanillaTip>
+  <CBF_NeedTag>Eine Kategorie muss gesetzt sein.</CBF_NeedTag>
+  <CBF_ExportDeleted>Die Vorlage {0} wurde geloescht. Fuer einen neuen Baustein bitte eine neue Flaeche anlegen.</CBF_ExportDeleted>
+  <CBF_ExportReloadFailed>Die Datei fuer {0} wurde gespeichert, konnte aber nicht ins laufende Spiel uebernommen werden. Die Konsole zeigt den Ladefehler; der Editor bleibt ungesichert.</CBF_ExportReloadFailed>
+  <CBF_AnchorPawnListGoneTip>Die zugewiesene Einheitenliste {0} wurde nicht gefunden. Pruefe, ob das zugehoerige Projekt oder der Mod aktiv ist, oder waehle die Liste erneut aus.</CBF_AnchorPawnListGoneTip>
 </LanguageData>

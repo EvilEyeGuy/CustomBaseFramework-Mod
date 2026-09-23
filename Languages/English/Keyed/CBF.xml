@@ -163,7 +163,7 @@
   <CBF_Field_size>Size</CBF_Field_size>
   <CBF_FieldDesc_size>Width by height in cells, taken from the drawn area.</CBF_FieldDesc_size>
   <CBF_Field_style>Style</CBF_Field_style>
-  <CBF_FieldDesc_style>The look this piece belongs to. A settlement lists which styles it allows.</CBF_FieldDesc_style>
+  <CBF_FieldDesc_style>Legacy palette and wall profile association. Does not restrict piece selection.</CBF_FieldDesc_style>
   <CBF_Field_categories>Categories</CBF_Field_categories>
   <CBF_FieldDesc_categories>What this piece is. The first one is the primary: on conflict its rules win, field by field, then its parents, then the next category.</CBF_FieldDesc_categories>
   <CBF_Field_allowRotation>Rotatable</CBF_Field_allowRotation>
@@ -329,7 +329,7 @@
   <CBF_Field_budget>Budget</CBF_Field_budget>
   <CBF_FieldDesc_budget>Which categories the settlement wants, how many of each, and what share of the area.</CBF_FieldDesc_budget>
   <CBF_Field_styles>Styles</CBF_Field_styles>
-  <CBF_FieldDesc_styles>Which styles may appear here. The first one that has something wins.</CBF_FieldDesc_styles>
+  <CBF_FieldDesc_styles>Legacy palette and wall profile association; does not filter pieces.</CBF_FieldDesc_styles>
   <CBF_Field_emplacements>Defensive positions</CBF_Field_emplacements>
   <CBF_FieldDesc_emplacements>Which pieces may serve as towers, gun batteries and the like.</CBF_FieldDesc_emplacements>
   <CBF_Field_gatehouses>Gatehouses</CBF_Field_gatehouses>
@@ -916,4 +916,8 @@ Either the name is misspelled, or the list lives in a different project that is 
 All images in Textures/World/WorldObjects/CBF can be chosen, including those of other mods.</CBF_FieldDesc_worldTexture>
   <CBF_WorldIconVanilla>Vanilla: faction image</CBF_WorldIconVanilla>
   <CBF_WorldIconVanillaTip>No own image. The settlement shows the image of its faction.</CBF_WorldIconVanillaTip>
+  <CBF_NeedTag>A category must be set.</CBF_NeedTag>
+  <CBF_ExportDeleted>Template {0} was deleted. Create a new region for a new piece.</CBF_ExportDeleted>
+  <CBF_ExportReloadFailed>The file for {0} was saved, but could not be reloaded into the running game. See the console for the loading error; the editor remains unsaved.</CBF_ExportReloadFailed>
+  <CBF_AnchorPawnListGoneTip>The assigned pawn list {0} could not be found. Check whether its project or mod is active, or select the list again.</CBF_AnchorPawnListGoneTip>
 </LanguageData>

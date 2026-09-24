@@ -7,10 +7,12 @@
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_MO_Gerberei</li>
+      <li>CBF_MO_Werkstatt</li>
     </categories>
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>Lederfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stofffass</objects></li>
       <li><symbol>2</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Schneiderei</lootTable></li>
       <li><symbol>3</symbol><anchor>Stoffwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stoffwagen</objects></li>
@@ -74,10 +76,10 @@
       <li>...........</li>
     </roof>
     <anchors>
-      <li>...........</li>
+      <li>...+.......</li>
       <li>...........</li>
       <li>...4.......</li>
-      <li>...........</li>
+      <li>+..........</li>
       <li>..........1</li>
       <li>.55.2......</li>
       <li>...........</li>

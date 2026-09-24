@@ -7,11 +7,13 @@
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_MO_Schreibstube</li>
+      <li>CBF_MO_Werkstatt</li>
     </categories>
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Scribe</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>Saaltruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Schreibstube</lootTable></li>
       <li><symbol>2</symbol><anchor>Archivtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Schreibstube</lootTable></li>
       <li><symbol>8</symbol><anchor>Schreiber</anchor><anchorKind>Spawn</anchorKind></li>
@@ -103,10 +105,10 @@
     <anchors>
       <li>............</li>
       <li>.......rrz..</li>
-      <li>.........z..</li>
+      <li>...+.....z+.</li>
       <li>....1....2..</li>
       <li>............</li>
-      <li>.....qq.....</li>
+      <li>+....qq.....</li>
       <li>....8.......</li>
       <li>.....bb.....</li>
       <li>............</li>

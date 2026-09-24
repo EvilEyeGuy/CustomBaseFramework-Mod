@@ -20,24 +20,6 @@
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
-  <CustomBaseFramework.LootBuildingCategoryDef MayRequireAnyOf="Accurex.MedievalEmpireOverhaul,DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Keep</defName>
-    <members>
-        <li MayRequire="Accurex.MedievalEmpireOverhaul"><thing>Lootable_ShelfFilledChaliceGold</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_HideoutShelfFilledChaliceSilver</thing><fremd>true</fremd></li>
-        <li MayRequire="Accurex.MedievalEmpireOverhaul"><thing>Lootable_ShelfFilledSapphire</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_HideoutShelfFilledSapphire</thing><fremd>true</fremd></li>
-        <li MayRequire="Accurex.MedievalEmpireOverhaul"><thing>Lootable_ShelfFilledRuby</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_HideoutShelfFilledRuby</thing><fremd>true</fremd></li>
-        <li MayRequire="Accurex.MedievalEmpireOverhaul"><thing>Lootable_ShelfFilledChaliceSilver</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_HideoutShelfFilledSilverware</thing><fremd>true</fremd></li>
-        <li MayRequire="Accurex.MedievalEmpireOverhaul"><thing>Lootable_ShelfFilledSilverware</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_HideoutShelfFilledWine</thing><fremd>true</fremd></li>
-        <li MayRequire="Accurex.MedievalEmpireOverhaul"><thing>Lootable_ShelfFilledWine</thing><fremd>true</fremd></li>
-        <li MayRequire="Accurex.MedievalEmpireOverhaul"><thing>Lootable_ShelfFilledGoldware</thing><fremd>true</fremd></li>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_HideoutShelfFilledGoldware</thing><fremd>true</fremd></li>
-      </members>
-  </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_BarrelClosed</defName>

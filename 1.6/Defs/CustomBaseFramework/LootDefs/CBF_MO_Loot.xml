@@ -160,19 +160,6 @@
     </entries>
   </CustomBaseFramework.LootTableDef>
 
-  <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Geschuetzstand</defName>
-    <label>Geschuetzstand</label>
-    <rolls>1~3</rolls>
-    <uniqueEntries>true</uniqueEntries>
-    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
-    <entries>
-      <li><weight>26</weight><table>CBF_MO_Ware_Holz</table></li>
-      <li><weight>20</weight><table>CBF_MO_Ware_Stein</table></li>
-      <li><weight>14</weight><table>CBF_MO_Ware_Werkzeug</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Komponent</table></li>
-    </entries>
-  </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_MO_Loot_Marktstand_Kaese</defName>

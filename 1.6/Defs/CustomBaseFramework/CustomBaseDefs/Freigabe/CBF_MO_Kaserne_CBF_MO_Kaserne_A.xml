@@ -11,6 +11,7 @@
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>SpindA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
       <li><symbol>2</symbol><anchor>SpindB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
       <li><symbol>3</symbol><anchor>SpindC</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
@@ -106,11 +107,11 @@
       <li>.............</li>
     </roof>
     <anchors>
-      <li>.............</li>
+      <li>....+........</li>
       <li>..1...2......</li>
-      <li>..........8..</li>
+      <li>..........8.+</li>
       <li>..k........5.</li>
-      <li>.....l.......</li>
+      <li>+....l.......</li>
       <li>...........6.</li>
       <li>..3...4.rrss.</li>
       <li>.............</li>

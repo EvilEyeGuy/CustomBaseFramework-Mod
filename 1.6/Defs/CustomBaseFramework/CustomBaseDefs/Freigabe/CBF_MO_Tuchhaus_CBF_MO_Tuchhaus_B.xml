@@ -7,11 +7,13 @@
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_MO_Tuchhaus</li>
+      <li>CBF_MO_Werkstatt</li>
     </categories>
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Tailor</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Schneiderei</lootTable></li>
       <li><symbol>8</symbol><anchor>Weber</anchor><anchorKind>Spawn</anchorKind></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_Bed_Rustic_Blue</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
@@ -72,15 +74,15 @@
       <li>^^^^.......</li>
     </roof>
     <anchors>
-      <li>...........</li>
+      <li>....+......</li>
       <li>......s....</li>
       <li>...8.......</li>
       <li>.....k.....</li>
-      <li>...........</li>
+      <li>+..........</li>
       <li>...........</li>
       <li>.....JJ....</li>
       <li>..1..JJ.u..</li>
-      <li>...........</li>
+      <li>.+.........</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

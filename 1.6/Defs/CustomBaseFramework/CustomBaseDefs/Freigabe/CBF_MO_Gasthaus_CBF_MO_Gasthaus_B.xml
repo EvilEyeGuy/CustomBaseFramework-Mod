@@ -12,6 +12,7 @@
     <traufen>true</traufen>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Tavern</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>Wirtstruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
       <li><symbol>8</symbol><anchor>Wirt</anchor><anchorKind>Spawn</anchorKind></li>
       <li><symbol>9</symbol><anchor>Gast</anchor><anchorKind>Spawn</anchorKind></li>
@@ -98,10 +99,10 @@
     </roof>
     <anchors>
       <li>............</li>
-      <li>............</li>
-      <li>.....fff....</li>
+      <li>....+.......</li>
+      <li>.....fff...+</li>
       <li>......8...1.</li>
-      <li>............</li>
+      <li>+...........</li>
       <li>.....9......</li>
       <li>............</li>
       <li>............</li>

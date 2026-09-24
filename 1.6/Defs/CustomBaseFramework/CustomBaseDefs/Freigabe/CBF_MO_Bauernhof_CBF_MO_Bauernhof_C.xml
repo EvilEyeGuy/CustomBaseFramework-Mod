@@ -11,6 +11,7 @@
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Bauernhof</lootTable></li>
       <li><symbol>8</symbol><anchor>Bauer</anchor><anchorKind>Spawn</anchorKind></li>
       <li><symbol>9</symbol><anchor>Magd</anchor><anchorKind>Spawn</anchorKind></li>
@@ -104,10 +105,10 @@
       <li>..............</li>
     </roof>
     <anchors>
-      <li>..............</li>
+      <li>..+...........</li>
       <li>.......gg.....</li>
       <li>..........k...</li>
-      <li>..8...........</li>
+      <li>+.8...........</li>
       <li>.1f...........</li>
       <li>..............</li>
       <li>..............</li>

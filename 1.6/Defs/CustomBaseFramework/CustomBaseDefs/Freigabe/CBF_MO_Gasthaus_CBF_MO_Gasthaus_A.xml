@@ -12,6 +12,7 @@
     <traufen>true</traufen>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Tavern</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>TruheA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
       <li><symbol>2</symbol><anchor>Weinregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Weinregal</objects></li>
       <li><symbol>3</symbol><anchor>Schankfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
@@ -124,14 +125,14 @@
       <li>.................</li>
     </roof>
     <anchors>
-      <li>.................</li>
-      <li>...1.7...........</li>
+      <li>..+..............</li>
+      <li>...1.7......+....</li>
       <li>.................</li>
       <li>.uu...yy.........</li>
       <li>.................</li>
       <li>.......6..3......</li>
       <li>..gg......22.....</li>
-      <li>..gg......22...5.</li>
+      <li>+.gg......22...5.</li>
       <li>.................</li>
       <li>..............88.</li>
       <li>..............88.</li>

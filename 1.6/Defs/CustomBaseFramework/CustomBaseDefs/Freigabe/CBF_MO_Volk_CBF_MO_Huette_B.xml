@@ -12,6 +12,7 @@
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Huette</lootTable></li>
       <li><symbol>2</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Huette</lootTable></li>
       <li><symbol>8</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind></li>
@@ -71,9 +72,9 @@
       <li>........</li>
     </roof>
     <anchors>
-      <li>........</li>
+      <li>...+....</li>
       <li>..12..g.</li>
-      <li>......g.</li>
+      <li>+.....g.</li>
       <li>...8....</li>
       <li>........</li>
       <li>........</li>

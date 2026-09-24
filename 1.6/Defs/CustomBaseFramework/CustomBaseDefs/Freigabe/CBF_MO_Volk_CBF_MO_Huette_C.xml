@@ -12,6 +12,7 @@
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>TruheLinks</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Huette</lootTable></li>
       <li><symbol>2</symbol><anchor>SackLinks</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Huette</lootTable></li>
       <li><symbol>3</symbol><anchor>TruheRechts</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Huette</lootTable></li>
@@ -76,10 +77,10 @@
       <li>.........</li>
     </roof>
     <anchors>
+      <li>..+......</li>
       <li>.........</li>
-      <li>.........</li>
-      <li>..8......</li>
-      <li>.1.2..9..</li>
+      <li>+.8......</li>
+      <li>.1.2..9.+</li>
       <li>.......3.</li>
       <li>.........</li>
       <li>.........</li>

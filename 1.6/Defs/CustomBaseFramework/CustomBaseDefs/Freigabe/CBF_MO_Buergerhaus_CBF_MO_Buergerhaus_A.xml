@@ -11,6 +11,7 @@
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>Bett</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_2x2_Beds</objects></li>
       <li><symbol>2</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Buergerhaus</lootTable></li>
       <li><symbol>3</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
@@ -86,16 +87,16 @@
       <li>.^^^^^^...</li>
     </roof>
     <anchors>
-      <li>..........</li>
+      <li>..+.......</li>
       <li>.11.......</li>
-      <li>.112......</li>
+      <li>+112......</li>
       <li>.....3.4..</li>
       <li>..........</li>
       <li>..........</li>
       <li>..gg.6....</li>
       <li>..gg..55..</li>
       <li>..........</li>
-      <li>..........</li>
+      <li>...+......</li>
     </anchors>
     <anchorsOver>
       <li>..........</li>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Anbau_Schiessstand</defName>
+    <label>CBF_MO_Anbau_Schiessstand</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Anbau_Militaer</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_HayBale2x2c</thing><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>q</symbol><anchor>Bogenregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
+    </legend>
+    <mask>
+      <li>.#######</li>
+      <li>.#######</li>
+      <li>.#######</li>
+      <li>.#######</li>
+    </mask>
+    <terrain>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+    </terrain>
+    <things>
+      <li>........</li>
+      <li>........</li>
+      <li>......A.</li>
+      <li>........</li>
+    </things>
+    <roof>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+    </roof>
+    <anchors>
+      <li>........</li>
+      <li>+.......</li>
+      <li>........</li>
+      <li>.qq.....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

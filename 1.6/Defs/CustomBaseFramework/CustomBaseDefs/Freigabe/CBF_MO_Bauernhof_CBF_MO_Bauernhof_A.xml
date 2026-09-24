@@ -11,6 +11,7 @@
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Bauernhof</lootTable></li>
       <li><symbol>3</symbol><anchor>SackA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Bauernhof</lootTable></li>
       <li><symbol>4</symbol><anchor>Erntewagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Erntewagen</objects></li>
@@ -79,10 +80,10 @@
       <li>............</li>
     </roof>
     <anchors>
-      <li>............</li>
+      <li>..+.........</li>
       <li>............</li>
       <li>.....9......</li>
-      <li>..5.........</li>
+      <li>+.5.........</li>
       <li>..........44</li>
       <li>.1...3....44</li>
       <li>............</li>

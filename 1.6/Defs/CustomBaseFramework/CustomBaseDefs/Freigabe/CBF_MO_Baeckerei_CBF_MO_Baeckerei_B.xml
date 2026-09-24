@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Baeckerei_B</defName>
+    <label>CBF_MO_Baeckerei_B</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Baeckerei</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Bread</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>1</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Baeckerei</lootTable></li>
+      <li><symbol>3</symbol><anchor>MehlA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Baeckerei</lootTable></li>
+      <li><symbol>4</symbol><anchor>MehlB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Baeckerei</lootTable></li>
+      <li><symbol>8</symbol><anchor>Baecker</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>A</symbol><anchor>Brotstand</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Brotstand</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_TableBaking</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_StoneOven</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_StoneOvenLarge</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>f</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
+      <li><symbol>g</symbol><anchor>Brennholz</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Holzstapel</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
+      <li><symbol>k</symbol><anchor>Zelt</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_MarketStall</objects><obenauf>true</obenauf></li>
+      <li><symbol>q</symbol><anchor>Brotregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Brotregal</objects></li>
+    </legend>
+    <mask>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+    </mask>
+    <terrain>
+      <li>hhhhhhh....</li>
+      <li>hhhhhhh....</li>
+      <li>hhhhhhh....</li>
+      <li>hhhhhhh....</li>
+      <li>hhhhhhh....</li>
+      <li>hhhhhhh....</li>
+      <li>...........</li>
+      <li>...........</li>
+    </terrain>
+    <things>
+      <li>OOOOOOOSSSS</li>
+      <li>O.....O.K..</li>
+      <li>OZ....F....</li>
+      <li>O.....O....</li>
+      <li>OB....OI..I</li>
+      <li>OOOFOOO....</li>
+      <li>.!.........</li>
+      <li>...........</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^....</li>
+      <li>...........</li>
+      <li>...........</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>....34.....</li>
+      <li>...8.......</li>
+      <li>.1..qq.f.gg</li>
+      <li>....qq.....</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>....AAA....</li>
+    </anchors>
+    <anchorsOver>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>....kkk....</li>
+      <li>....kkk....</li>
+    </anchorsOver>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

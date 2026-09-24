@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Gerberei_B</defName>
+    <label>CBF_MO_Gerberei_B</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Gerberei</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>1</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Schneiderei</lootTable></li>
+      <li><symbol>8</symbol><anchor>Gerber</anchor><anchorKind>Spawn</anchorKind></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_StrawBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_TanningDrum</thing><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_DryingRack_Big</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_RawhideRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>J</symbol><anchor>Stoffwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stoffwagen</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_MendingBench</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_TanningRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>Z</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>f</symbol><anchor>Lederfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stofffass</objects></li>
+      <li><symbol>s</symbol><anchor>StofffassA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stofffass</objects></li>
+      <li><symbol>t</symbol><anchor>StofffassB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stofffass</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+      <li><symbol>z</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>
+    </legend>
+    <mask>
+      <li>##########..</li>
+      <li>############</li>
+      <li>############</li>
+      <li>############</li>
+      <li>############</li>
+      <li>############</li>
+      <li>############</li>
+      <li>############</li>
+      <li>############</li>
+    </mask>
+    <terrain>
+      <li>wwwww.......</li>
+      <li>wwwww.......</li>
+      <li>wwwww.......</li>
+      <li>wwwww.......</li>
+      <li>wwwww.......</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+    </terrain>
+    <things>
+      <li>OOOOOZZZZZ..</li>
+      <li>O.M.O.N..ZZZ</li>
+      <li>OB..F......Z</li>
+      <li>O...O.D..H.Z</li>
+      <li>OOOOO......Z</li>
+      <li>....Z......Z</li>
+      <li>....ZG...N.Z</li>
+      <li>....ZZZZzZZZ</li>
+      <li>............</li>
+    </things>
+    <roof>
+      <li>^^^^^.......</li>
+      <li>^^^^^.......</li>
+      <li>^^^^^.......</li>
+      <li>^^^^^.......</li>
+      <li>^^^^^.......</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+    </roof>
+    <anchors>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+      <li>.1.f........</li>
+      <li>.......8....</li>
+      <li>.........st.</li>
+      <li>............</li>
+      <li>.JJ.........</li>
+      <li>.JJ.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

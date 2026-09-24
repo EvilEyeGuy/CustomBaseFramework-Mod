@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Schatzkammer</defName>
+    <label>Schatzkammer</label>
+    <rolls>3~6</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>20</weight><table>CBF_MO_Ware_Schatz</table></li>
+      <li><weight>18</weight><table>CBF_MO_Ware_Edelstein</table></li>
+      <li><weight>16</weight><table>CBF_MO_Ware_Geschirr</table></li>
+      <li><weight>12</weight><table>CBF_MO_Ware_Barren</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Buecher</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Gildenkasse</defName>
+    <label>Gildenkasse</label>
+    <rolls>2~5</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>16</weight><table>CBF_MO_Ware_Barren</table></li>
+      <li><weight>12</weight><table>CBF_MO_Ware_Schatz</table></li>
+      <li><weight>10</weight><table>CBF_MO_Ware_Schema</table></li>
+      <li><weight>10</weight><table>CBF_MO_Ware_Buecher</table></li>
+      <li><weight>10</weight><table>CBF_MO_Ware_Werkzeug</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Textil</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Edelstein</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Buergerhaus</defName>
+    <label>Buergerhaus</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>14</weight><table>CBF_MO_Ware_Brot</table></li>
+      <li><weight>12</weight><table>CBF_MO_Ware_Kaese</table></li>
+      <li><weight>12</weight><table>CBF_MO_Ware_Wein</table></li>
+      <li><weight>12</weight><table>CBF_MO_Ware_Textil</table></li>
+      <li><weight>10</weight><table>CBF_MO_Ware_Fleisch</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Werkzeug</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Buecher</table></li>
+      <li><weight>4</weight><table>CBF_MO_Ware_Geschirr</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Kate</defName>
+    <label>Kate</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>16</weight><table>CBF_MO_Ware_Brot</table></li>
+      <li><weight>16</weight><table>CBF_MO_Ware_Gemuese</table></li>
+      <li><weight>12</weight><table>CBF_MO_Ware_Holz</table></li>
+      <li><weight>10</weight><table>CBF_MO_Ware_Stroh</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Obst</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Textil</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Kraeuter</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Huette</defName>
+    <label>Huette</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>16</weight><table>CBF_MO_Ware_Brot</table></li>
+      <li><weight>14</weight><table>CBF_MO_Ware_Gemuese</table></li>
+      <li><weight>12</weight><table>CBF_MO_Ware_Holz</table></li>
+      <li><weight>12</weight><table>CBF_MO_Ware_Stroh</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Textil</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Obst</table></li>
+      <li><weight>4</weight><table>CBF_MO_Ware_Werkzeug</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Speisekammer</defName>
+    <label>Speisekammer</label>
+    <rolls>3~5</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>18</weight><table>CBF_MO_Ware_Brot</table></li>
+      <li><weight>14</weight><table>CBF_MO_Ware_Kaese</table></li>
+      <li><weight>14</weight><table>CBF_MO_Ware_Fleisch</table></li>
+      <li><weight>12</weight><table>CBF_MO_Ware_Gemuese</table></li>
+      <li><weight>10</weight><table>CBF_MO_Ware_Obst</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Wein</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Getreide</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Weinkeller</defName>
+    <label>Weinkeller</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>30</weight><table>CBF_MO_Ware_Wein</table></li>
+      <li><weight>16</weight><table>CBF_MO_Ware_Trauben</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Kaese</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+</Defs>

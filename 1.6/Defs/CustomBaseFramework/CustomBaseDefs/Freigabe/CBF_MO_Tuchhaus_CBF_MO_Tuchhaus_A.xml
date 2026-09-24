@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Tuchhaus_A</defName>
+    <label>CBF_MO_Tuchhaus_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Tuchhaus</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Tailor</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>1</symbol><anchor>Stofffass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stofffass</objects></li>
+      <li><symbol>2</symbol><anchor>Stoffwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stoffwagen</objects></li>
+      <li><symbol>3</symbol><anchor>Tuchmacher</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>5</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Schneiderei</lootTable></li>
+      <li><symbol>6</symbol><anchor>Ladenfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stofffass</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_RusticEndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_LogColumn</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_MendingBench</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_LampPost</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_RugLoot_Striped_BlueLime2x4c</thing><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_SpinningWheel</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_StrawBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>k</symbol><anchor>Tuchkiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Schneiderei</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+    </legend>
+    <mask>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+    </mask>
+    <terrain>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>..........</li>
+      <li>..........</li>
+    </terrain>
+    <things>
+      <li>TTTTTTTTTT</li>
+      <li>TW..W....T</li>
+      <li>T........T</li>
+      <li>T.......ET</li>
+      <li>TM.......T</li>
+      <li>T...U...YT</li>
+      <li>TTTTTTFTTT</li>
+      <li>.....!....</li>
+      <li>L...L..P.L</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>..........</li>
+      <li>.......11.</li>
+      <li>........5.</li>
+      <li>...3......</li>
+      <li>.......kk.</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>.22.....6.</li>
+      <li>.22.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

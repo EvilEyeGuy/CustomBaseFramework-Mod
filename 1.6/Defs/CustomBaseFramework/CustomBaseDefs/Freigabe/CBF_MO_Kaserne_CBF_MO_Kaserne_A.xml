@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Kaserne_A</defName>
+    <label>CBF_MO_Kaserne_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Kaserne</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>1</symbol><anchor>SpindA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>2</symbol><anchor>SpindB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>3</symbol><anchor>SpindC</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>4</symbol><anchor>SpindD</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>5</symbol><anchor>Hauptmannstruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>6</symbol><anchor>Ruesttruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>8</symbol><anchor>Hauptmann</anchor><anchorKind>Spawn</anchorKind></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_BedWicker</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_RusticChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RugPatched_Cloth1x2c</thing><stuff>Cloth</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_Bed_Rustic_Red</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_ArmorStatue</thing><stuff>Steel</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>X</symbol><thing>DankPyon_RusticTable1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_LogBench1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><anchor>Schreibzeug</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Schreibzeug</objects><chance>0.9</chance><obenauf>true</obenauf></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
+      <li><symbol>k</symbol><anchor>SchlafsaalA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Guard</pawnList><pawnCount>2~3</pawnCount></li>
+      <li><symbol>l</symbol><anchor>SchlafsaalB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Guard</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>m</symbol><anchor>Hof</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Guard</pawnList><pawnCount>1~2</pawnCount></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_Well</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>q</symbol><anchor>Hofregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
+      <li><symbol>r</symbol><anchor>WaffenregalA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
+      <li><symbol>s</symbol><anchor>WaffenregalB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
+    </legend>
+    <mask>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+    </mask>
+    <terrain>
+      <li>hhhhhhhhhhhhh</li>
+      <li>hhhhhhhhhhhhh</li>
+      <li>hhhhhhhhhhhhh</li>
+      <li>hhhhhhhhhhhhh</li>
+      <li>hhhhhhhhhhhhh</li>
+      <li>hhhhhhhhhhhhh</li>
+      <li>hhhhhhhhhhhhh</li>
+      <li>hhhhhhhhhhhhh</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+    </terrain>
+    <things>
+      <li>SSSSSSSSSSSSS</li>
+      <li>S...W..SR...S</li>
+      <li>SB.B.B.S...US</li>
+      <li>S......F....S</li>
+      <li>S......SSFSSS</li>
+      <li>S......S....S</li>
+      <li>SB..WB.S....S</li>
+      <li>SSSFSSSSSSSSS</li>
+      <li>I...Z.I......</li>
+      <li>..........o..</li>
+      <li>Q............</li>
+    </things>
+    <things2>
+      <li>.............</li>
+      <li>........X....</li>
+      <li>........N....</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+    </things2>
+    <roof>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^......</li>
+      <li>.............</li>
+      <li>.............</li>
+    </roof>
+    <anchors>
+      <li>.............</li>
+      <li>..1...2......</li>
+      <li>..........8..</li>
+      <li>..k........5.</li>
+      <li>.....l.......</li>
+      <li>...........6.</li>
+      <li>..3...4.rrss.</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.....m.......</li>
+      <li>.......qq....</li>
+    </anchors>
+    <anchorsOver>
+      <li>.............</li>
+      <li>........a....</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+    </anchorsOver>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

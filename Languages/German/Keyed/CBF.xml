@@ -347,24 +347,14 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_WallsNoProfile>Leer, und es gibt kein Mauerprofil für diesen Stil und diese Tiefe. Die Siedlung bekommt die allgemeine Mauer.</CBF_WallsNoProfile>
   <CBF_MenuExportAll>Alle Flächen ausgeben ({0})</CBF_MenuExportAll>
   <CBF_NeedTwoRegions>weniger als zwei Flächen auf der Karte</CBF_NeedTwoRegions>
-  <CBF_MakePackage>Inhaltspaket bauen</CBF_MakePackage>
-  <CBF_OpenPackageFolder>Paketordner öffnen</CBF_OpenPackageFolder>
-  <CBF_PackageDone>Paket gebaut.
-
-{0}
-
-Es liegt hier:
-{1}
-
-Den Ordner CustomBaseFramework in einen anderen Mod unter 1.6/Defs kopieren, Patches unter 1.6/Patches. Die LIESMICH.txt daneben sagt dasselbe und nennt die nötigen Mods.</CBF_PackageDone>
   <CBF_Field_outward>Außenseite</CBF_Field_outward>
   <CBF_FromProfile>vom Mauerprofil</CBF_FromProfile>
   <CBF_OutwardLow>Anfang des Streifens</CBF_OutwardLow>
   <CBF_OutwardHigh>Ende des Streifens</CBF_OutwardHigh>
-  <CBF_Dir_South>gezeichnet mit dem Außen unten</CBF_Dir_South>
-  <CBF_Dir_North>gezeichnet mit dem Außen oben</CBF_Dir_North>
-  <CBF_Dir_West>gezeichnet mit dem Außen links</CBF_Dir_West>
-  <CBF_Dir_East>gezeichnet mit dem Außen rechts</CBF_Dir_East>
+  <CBF_Dir_South>unten</CBF_Dir_South>
+  <CBF_Dir_North>oben</CBF_Dir_North>
+  <CBF_Dir_West>links</CBF_Dir_West>
+  <CBF_Dir_East>rechts</CBF_Dir_East>
   <CBF_OutwardTip>Welches Ende des gezeichneten Streifens von der Stadt wegzeigt. Der Mauerbauer dreht den Streifen für jede Himmelsrichtung, deshalb zählen nur die beiden Enden. Eine Schießscharte braucht das: ihre Öffnung gehört nach außen.</CBF_OutwardTip>
   <!-- Stadtteile -->
   <CBF_Field_name>Name</CBF_Field_name>
@@ -379,21 +369,21 @@ Den Ordner CustomBaseFramework in einen anderen Mod unter 1.6/Defs kopieren, Pat
   <CBF_FieldDesc_roads>Der Belag der Gassen, Plätze und Tordurchfahrten in diesem Stadtteil. Leer heißt: es bleibt beim Belag der Palette.</CBF_FieldDesc_roads>
   <CBF_AddRoad>+ Weg</CBF_AddRoad>
   <CBF_RoadsDefault>Leer, also bleibt der Belag der Palette.</CBF_RoadsDefault>
-  <CBF_NewProject>Neues Projekt</CBF_NewProject>
-  <CBF_OpenProject>Projekt öffnen</CBF_OpenProject>
-  <CBF_ShowProjectFolder>Projektordner zeigen</CBF_ShowProjectFolder>
+  <CBF_NewProject>Neuer Mod</CBF_NewProject>
+  <CBF_OpenProject>Mod öffnen</CBF_OpenProject>
+  <CBF_ShowProjectFolder>Modordner zeigen</CBF_ShowProjectFolder>
   <CBF_ProjectAuthor>Autor</CBF_ProjectAuthor>
   <CBF_ProjectNewHint>Legt einen neuen Mod im Mods-Ordner an, mit den Ordnern, die RimWorld braucht. Alles, was du ab jetzt speicherst, landet dort.</CBF_ProjectNewHint>
-  <CBF_ProjectNeedsName>Das Projekt braucht einen Namen.</CBF_ProjectNeedsName>
+  <CBF_ProjectNeedsName>Der Mod braucht einen Namen.</CBF_ProjectNeedsName>
   <CBF_ProjectExists>Einen Ordner namens {0} gibt es schon.</CBF_ProjectExists>
   <CBF_ProjectGone>Diesen Ordner gibt es nicht mehr.</CBF_ProjectGone>
-  <CBF_ProjectCreated>Projekt {0} für {1} angelegt. Es ist aktiviert und lädt beim nächsten Start.</CBF_ProjectCreated>
-  <CBF_ProjectOpened>Projekt {0} geöffnet, {1} Definitionen geladen.</CBF_ProjectOpened>
+  <CBF_ProjectCreated>Mod {0} für {1} angelegt. Er ist aktiviert und lädt beim nächsten Start.</CBF_ProjectCreated>
+  <CBF_ProjectOpened>Mod {0} geöffnet, {1} Definitionen geladen.</CBF_ProjectOpened>
   <CBF_ProjectFramework>Framework</CBF_ProjectFramework>
-  <CBF_ProjectOwn>Projekte</CBF_ProjectOwn>
+  <CBF_ProjectOwn>Eigene Mods</CBF_ProjectOwn>
   <CBF_ProjectFiles>{0} Dateien</CBF_ProjectFiles>
   <CBF_ProjectInactive>nicht aktiviert</CBF_ProjectInactive>
-  <CBF_ProjectNoneFound>Kein Projekt gefunden. Leg zuerst eines an.</CBF_ProjectNoneFound>
+  <CBF_ProjectNoneFound>Kein eigener Mod gefunden. Leg zuerst einen an.</CBF_ProjectNoneFound>
   <CBF_ModUnknown>Unbekannter Mod</CBF_ModUnknown>
   <CBF_LootAlways>Immer</CBF_LootAlways>
   <CBF_LootEntries>Gewichtet</CBF_LootEntries>
@@ -414,10 +404,10 @@ Den Ordner CustomBaseFramework in einen anderen Mod unter 1.6/Defs kopieren, Pat
   <CBF_Field_race>Art</CBF_Field_race>
   <CBF_Field_combatPower>Kampfwert</CBF_Field_combatPower>
   <CBF_Field_faction>Fraktion</CBF_Field_faction>
-  <CBF_PawnForeign>Diese Art kommt aus einem anderen Mod. Nimm sie ins Projekt, um sie zu ändern.</CBF_PawnForeign>
+  <CBF_PawnForeign>Diese Art kommt aus einem anderen Mod. Nimm sie in deinen Mod, um sie zu ändern.</CBF_PawnForeign>
   <CBF_PawnCopyTitle>{0} übernehmen</CBF_PawnCopyTitle>
   <CBF_PawnCopyHint>Es wird die ganze Definition kopiert, nicht nur die Felder, die der Editor kennt.</CBF_PawnCopyHint>
-  <CBF_PawnCopied>{0} liegt jetzt in deinem Projekt.</CBF_PawnCopied>
+  <CBF_PawnCopied>{0} liegt jetzt in deinem Mod.</CBF_PawnCopied>
   <CBF_PawnCopyFailed>{0} ließ sich nicht übernehmen.</CBF_PawnCopyFailed>
   <CBF_PawnNeedsName>Die Art braucht einen Namen.</CBF_PawnNeedsName>
   <CBF_PawnFileExists>Eine Datei namens {0}.xml gibt es schon.</CBF_PawnFileExists>
@@ -576,7 +566,7 @@ Den Ordner CustomBaseFramework in einen anderen Mod unter 1.6/Defs kopieren, Pat
   <CBF_DevFillTip>Nur im Entwicklermodus. Weil die Beutetabelle am Anker steht, bleibt ein von Hand gesetzter Behälter leer. Hiermit weist du ihm eine zu, um sie zu prüfen. In eine Datei kommt davon nichts.</CBF_DevFillTip>
   <CBF_DevFilled>Gefüllt: {0} Stapel.</CBF_DevFilled>
   <CBF_NoLootTables>Keine Beutetabellen geladen</CBF_NoLootTables>
-  <CBF_BehaelterFromDefTip>Liest Werte von einem vorhandenen Gebäude ab und schreibt sie in deine Definition: Textur, Größe, Zeichengröße, Trefferpunkte, Baustoff.\n\nGeerbt wird nichts. Dein Behälter ist ein eigenes Ding und behält keine Verbindung zum Original. Ein Lootable von Medieval Overhaul gibt weder seine Beute noch sein leeres Bild noch seine Ratten weiter.\n\nEines folgt doch: nimmst du eine Textur aus einem Mod ab, braucht dein Behälter diesen Mod, denn ohne ihn fehlt das Bild. Leg eine eigene PNG unter Textures in dein Projekt, wenn du das nicht willst.</CBF_BehaelterFromDefTip>
+  <CBF_BehaelterFromDefTip>Liest Werte von einem vorhandenen Gebäude ab und schreibt sie in deine Definition: Textur, Größe, Zeichengröße, Trefferpunkte, Baustoff.\n\nGeerbt wird nichts. Dein Behälter ist ein eigenes Ding und behält keine Verbindung zum Original. Ein Lootable von Medieval Overhaul gibt weder seine Beute noch sein leeres Bild noch seine Ratten weiter.\n\nEines folgt doch: nimmst du eine Textur aus einem Mod ab, braucht dein Behälter diesen Mod, denn ohne ihn fehlt das Bild. Leg eine eigene PNG unter Textures in deinen Mod, wenn du das nicht willst.</CBF_BehaelterFromDefTip>
   <CBF_BehaelterNextStepTitle>Ein Schritt fehlt noch</CBF_BehaelterNextStepTitle>
   <CBF_BehaelterNextStep>{0} gibt es jetzt, aber noch setzt ihn niemand.\n\nEin Behälter kommt auf genau einem Weg auf die Karte: eine Objektliste nennt ihn, und ein Füllanker wählt diese Liste. Was hineinkommt, entscheidet die Beutetabelle am selben Anker.\n\nGleich in eine Liste aufnehmen?</CBF_BehaelterNextStep>
   <CBF_BehaelterPutInList>In eine Objektliste aufnehmen</CBF_BehaelterPutInList>
@@ -646,4 +636,5 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_MassNone>Keine</CBF_MassNone>
   <CBF_MassStart>{0} Ortstypen mit je {1} Siedlungen testen</CBF_MassStart>
   <CBF_MassDone>Massenstresstest fertig.</CBF_MassDone>
+  <CBF_OutwardGateTip>Welche Seite des gezeichneten Torhauses nach außen zeigt, also von der Stadt weg. Oben, unten, links und rechts meinen das Bild im Editor. Der Mauerbauer dreht das Torhaus danach, damit das Tor richtig herum in der Mauer sitzt.</CBF_OutwardGateTip>
 </LanguageData>

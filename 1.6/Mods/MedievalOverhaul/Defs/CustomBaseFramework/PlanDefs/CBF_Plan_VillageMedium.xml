@@ -88,6 +88,21 @@
               <li><tag>HouseSmall</tag><count>0~4</count></li>
             </entries>
           </li>
+          <li>
+            <name>Muehle</name><fields><li>
+              <name>Acker</name>
+              <count>2~3</count>
+              <fence>false</fence>
+              <weight>1</weight><plants>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
+               </plants>
+              <tags>
+                <li>CBF_MO_Muehle</li>
+              </tags></li></fields>
+            <entries>
+              <li><tag>CBF_MO_Muehle</tag><count>1~1</count></li>
+            </entries>
+          </li>
         </districts>
       </li>
     </wards>

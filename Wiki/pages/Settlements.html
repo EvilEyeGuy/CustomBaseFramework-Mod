@@ -1,0 +1,105 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Settlements · Custom Base Framework</title><style>
+:root{--grund:#f4f3ef;--karte:#ffffff;--linie:#e3e0d8;--text:#1f2124;--leise:#63676e;--akzent:#2f6f60;--akzentweich:#e3efeb;--ocker:#b27a17;--code:#f0eee8;--schatten:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06)}
+@media (prefers-color-scheme: dark){:root{--grund:#121417;--karte:#1a1d22;--linie:#2c3139;--text:#e6e4df;--leise:#99a0aa;--akzent:#7cc0aa;--akzentweich:#1f2f2b;--ocker:#d9ab55;--code:#24282f;--schatten:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--grund);color:var(--text);font:16px/1.65 "Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--akzent);text-underline-offset:3px}
+.inhalt h1{font-size:2.1rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.inhalt h2{font-size:1.35rem;letter-spacing:-.01em;margin:44px 0 10px}
+.inhalt h3{font-size:1.08rem;margin:28px 0 8px}
+.inhalt p,.inhalt li{max-width:74ch}
+.inhalt>p:first-of-type{font-size:1.08rem;color:var(--leise)}
+code{font-family:"Cascadia Mono",Consolas,monospace;font-size:.86em;background:var(--code);padding:2px 6px;border-radius:5px}
+.bild{display:block;margin:18px 0 22px}
+.bild img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--linie);box-shadow:var(--schatten)}
+.bild:hover img{border-color:var(--akzent)}
+.inhalt ol{list-style:none;padding:0;counter-reset:n;margin:12px 0 18px}
+.inhalt ol>li{counter-increment:n;position:relative;padding-left:40px;margin:10px 0}
+.inhalt ol>li::before{content:counter(n);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--ocker);color:#1b1b1b;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.inhalt ul{padding-left:20px}
+.inhalt ul>li{margin:6px 0}
+.inhalt ul>li::marker{color:var(--akzent)}
+table{border-collapse:separate;border-spacing:0;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto;border:1px solid var(--linie);border-radius:10px}
+th,td{padding:8px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--linie)}
+tr:last-child td{border-bottom:0}
+th{background:var(--code);font-weight:600;position:sticky;top:0}
+td code{white-space:nowrap}
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:56px;padding-top:20px;border-top:1px solid var(--linie)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--linie);background:var(--karte);border-radius:10px;padding:12px 16px;color:var(--text)}
+.schritte a:hover{border-color:var(--akzent)}
+.schritte span{display:block;font-size:12px;color:var(--leise);text-transform:uppercase;letter-spacing:.06em}
+.schritte .weiter{text-align:right;margin-left:auto}
+.home .inhalt ol{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;max-width:none}
+.home .inhalt ol>li{margin:0;background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:14px 16px 14px 54px;max-width:none;box-shadow:var(--schatten)}
+.home .inhalt ol>li::before{left:16px;top:16px}
+.home .inhalt ol>li a{font-weight:600}
+.home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
+.pfad{font-size:13px;color:var(--leise);margin-bottom:6px}
+.pfad a{color:var(--leise)}
+.aufseite{font-size:13px}
+.aufseite b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--leise);margin-bottom:8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:4px 0 4px 12px;border-left:2px solid var(--linie)}
+.aufseite a:hover{color:var(--akzent);border-left-color:var(--akzent)}
+
+.rahmen{display:grid;grid-template-columns:260px minmax(0,1fr) 200px;gap:0;max-width:1400px;margin:0 auto}
+.leiste{position:sticky;top:0;height:100vh;overflow:auto;padding:22px 18px;border-right:1px solid var(--linie)}
+.marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
+.marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
+.marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
+.gruppe{margin:0 0 16px}
+.gruppe b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--leise);margin:0 0 4px 10px}
+.gruppe a{display:block;padding:6px 10px;border-radius:8px;color:var(--text);text-decoration:none;font-size:15px}
+.gruppe a:hover{background:var(--akzentweich)}
+.gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
+main{padding:40px 48px 80px;min-width:0}
+.inhalt{max-width:860px}
+.rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
+@media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
+@media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html">Pieces</a><a href="Categories.html">Categories</a><a href="Settlements.html" class="hier">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="settlements">Settlements</h1>
+<p>A settlement plan describes one kind of place: a market town, a fortress city, a village, a camp. The generator builds it fresh for every faction base, so no two look the same.</p>
+<a class="bild" href="images/settlement-tab.png" target="_blank"><img alt="The Settlement tab" src="images/settlement-tab.png" loading="lazy"></a>
+<ol>
+<li><strong>List</strong> grouped by tech level. The number is the weight, a red row has an error that stops the plan from being built.</li>
+<li><strong>Preview.</strong> Off by default, because planning a large town takes a few seconds. <strong>Show preview</strong> draws the plan on a flat map, <strong>Reroll</strong> tries a new seed.</li>
+<li><strong>General</strong>: name, kind, tech levels, factions and more.</li>
+<li><strong>Wards</strong> on the right: one tab per ring of the settlement.</li>
+<li><strong>Faction overview</strong> below the list shows which faction gets which settlement, see <a href="Factions.html">Factions</a>.</li>
+</ol>
+<h2 id="general">General</h2>
+<a class="bild" href="images/settlement-general.png" target="_blank"><img alt="The General section" src="images/settlement-general.png" loading="lazy"></a>
+<ul>
+<li><strong>Label</strong>: the name players see.</li>
+<li><strong>Kind of place</strong>: medieval town, modern town or camp. Click to switch.</li>
+<li><strong>Weight</strong>: how often this plan is drawn against other plans of the same faction.</li>
+<li><strong>Tech levels</strong>: which ages the plan fits. Click switches one level, right-click picks this level and all above. Pawn lists draw at this level first and step down if nobody fits.</li>
+<li><strong>For all factions of these levels</strong>: the plan serves every faction of a ticked tech level, unless that faction has plans of its own.</li>
+<li><strong>Factions</strong>: factions or faction categories that get this plan in any case.</li>
+<li><strong>Excluded</strong>: factions that never get it.</li>
+<li><strong>Takeover</strong>: switches the generator on for faction bases, see <a href="Factions.html#takeover">Factions</a>.</li>
+<li><strong>Mods</strong>: the mods the plan needs. Most are found automatically, <strong>+ by hand</strong> adds more.</li>
+<li><strong>World map icon</strong>: the symbol of this place on the world map, tinted in the faction color.</li>
+</ul>
+<h2 id="wards">Wards</h2>
+<p>A ward is one ring: the old town behind the high wall, the suburb behind a lighter one, the countryside around them. The innermost ward is protected best and filled first.</p>
+<a class="bild" href="images/settlement-ward.png" target="_blank"><img alt="A ward with fortification, garrison and districts" src="images/settlement-ward.png" loading="lazy"></a>
+<h3 id="fortification">Fortification</h3>
+<ul>
+<li><strong>Walls</strong>: the wall pieces of this ring. Several entries give a wall that varies along its length.</li>
+<li><strong>Emplacements</strong>: towers and other works in the ring. The generator spaces them itself, corners first.</li>
+<li><strong>Gatehouses</strong>: built wherever a road crosses the wall.</li>
+<li><strong>Gate</strong>: the thing that closes the passages. Empty uses the gate of the palette.</li>
+</ul>
+<p>Modern towns and the countryside have no fortification.</p>
+<h3 id="garrison">Garrison</h3>
+<p>Pawn lists that defend this ward, with a count and a post: <strong>Inside</strong>, <strong>Wall</strong> or <strong>Gate</strong>. Without entries the ward takes its share of the faction's defender points.</p>
+<h3 id="districts">Districts</h3>
+<p>A district is a building programme. Districts without a name of their own are numbered, District 1, District 2 and so on.</p>
+<a class="bild" href="images/settlement-district.png" target="_blank"><img alt="A district with buildings, a field and a pen" src="images/settlement-district.png" loading="lazy"></a>
+<ol>
+<li><strong>Buildings</strong>: a category or one specific piece, with min, max and weight. <strong>Filler</strong> entries fill the space left at the end.</li>
+<li><strong>Field</strong>: a crop plot grown around the buildings named under <strong>Farmsteads</strong>. The plants come from single plants or from a <strong>Crop list</strong>, see <a href="Loot.html#crop-lists">Loot</a>.</li>
+<li><strong>Pen</strong>: animals from a pawn list, the herd size, and what grows inside.</li>
+</ol>
+<p><strong>+ Building</strong>, <strong>+ Field</strong> and <strong>+ Pen</strong> add rows. The <strong>...</strong> button next to a category shows the pieces it covers.</p><div class="schritte"><a href="Categories.html"><span>Previous</span>Categories</a><a class="weiter" href="Loot.html"><span>Next</span>Loot</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#general">General</a><a href="#wards">Wards</a></div></aside></div></body></html>

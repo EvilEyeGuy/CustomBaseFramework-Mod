@@ -8,6 +8,7 @@
     <categories>
       <li>CBF_MO_Anbau_Gasthaus</li>
     </categories>
+    <placement><weight>2</weight></placement>
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
@@ -15,13 +16,13 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_LampPost</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_LogTable1x3c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_OnTop_Kitchen_Plate</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>x</symbol><anchor>FassA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
       <li><symbol>y</symbol><anchor>FassB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
     </legend>
     <mask>
-      <li>.#####</li>
       <li>.#####</li>
       <li>.#####</li>
       <li>.#####</li>
@@ -32,34 +33,35 @@
       <li>......</li>
       <li>......</li>
       <li>......</li>
-      <li>......</li>
     </terrain>
     <things>
-      <li>......</li>
-      <li>..L..P</li>
-      <li>..Q...</li>
+      <li>....bb</li>
       <li>..L...</li>
-      <li>......</li>
+      <li>..Q..P</li>
+      <li>..L...</li>
     </things>
-    <roof>
+    <things2>
       <li>......</li>
+      <li>......</li>
+      <li>...f..</li>
+      <li>......</li>
+    </things2>
+    <roof>
       <li>......</li>
       <li>......</li>
       <li>......</li>
       <li>......</li>
     </roof>
     <anchors>
-      <li>......</li>
+      <li>....xy</li>
       <li>......</li>
       <li>+.....</li>
       <li>......</li>
-      <li>.xy...</li>
     </anchors>
     <anchorsOver>
       <li>......</li>
       <li>......</li>
       <li>...a..</li>
-      <li>......</li>
       <li>......</li>
     </anchorsOver>
   </CustomBaseFramework.PieceDef>

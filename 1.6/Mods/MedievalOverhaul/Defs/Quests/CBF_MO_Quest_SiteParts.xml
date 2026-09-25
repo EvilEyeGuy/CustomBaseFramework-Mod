@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SitePartDef>
+    <defName>CBF_MO_Quest_UeberfallenerOrt</defName>
+    <label>raided settlement</label>
+    <description>A settlement recently overrun by bandits. Parts of it are burnt and the walls are breached.</description>
+    <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>true</showFactionInInspectString>
+    <requiresFaction>true</requiresFaction>
+    <approachOrderString>Attack {0}</approachOrderString>
+    <approachingReportString>Attacking {0}.</approachingReportString>
+    <arrivedLetter>Bandits hold the settlement.</arrivedLetter>
+    <arrivedLetterDef>NegativeEvent</arrivedLetterDef>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <minThreatPoints>300</minThreatPoints>
+    <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+    <tags>
+      <li>CBF_MO_Quest_UeberfallenerOrt</li>
+    </tags>
+    <modExtensions>
+      <li Class="CustomBaseFramework.CBFOrtExtension">
+        <ruin>CBF_MO_Quest_Ruin_Ueberfallen</ruin>
+        <planTags>
+          <li>Dorf</li>
+          <li>Marktstadt</li>
+        </planTags>
+      </li>
+      <li Class="CustomBaseFramework.CBFBesatzerExtension">
+        <besatzer>
+          <li>DankPyon_BrigandFaction</li>
+        </besatzer>
+      </li>
+    </modExtensions>
+  </SitePartDef>
+
+  <SitePartDef>
+    <defName>CBF_MO_Quest_UmkaempfterOrt</defName>
+    <label>settlement under attack</label>
+    <description>A settlement under attack by bandits. The defenders are holding out, but not for long.</description>
+    <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>true</showFactionInInspectString>
+    <requiresFaction>true</requiresFaction>
+    <considerEnteringAsAttack>false</considerEnteringAsAttack>
+    <arrivedLetter>Bandits are storming the settlement. Its defenders are still fighting.</arrivedLetter>
+    <arrivedLetterDef>ThreatBig</arrivedLetterDef>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <minThreatPoints>300</minThreatPoints>
+    <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+    <tags>
+      <li>CBF_MO_Quest_UmkaempfterOrt</li>
+    </tags>
+    <modExtensions>
+      <li Class="CustomBaseFramework.CBFOrtExtension">
+        <ruin>CBF_MO_Quest_Ruin_Schlacht</ruin>
+        <planTags>
+          <li>Dorf</li>
+          <li>Marktstadt</li>
+        </planTags>
+      </li>
+      <li Class="CustomBaseFramework.CBFBesatzerExtension">
+        <besatzer>
+          <li>DankPyon_BrigandFaction</li>
+        </besatzer>
+      </li>
+    </modExtensions>
+  </SitePartDef>
+
+</Defs>

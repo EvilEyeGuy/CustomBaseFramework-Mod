@@ -8,6 +8,7 @@
     <categories>
       <li>CBF_MO_Anbau_Laendlich</li>
     </categories>
+    <placement><weight>0.3</weight></placement>
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
@@ -16,6 +17,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>V</symbol><thing>DankPyon_WoodLogs2x2c</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideoutWoodLogs1x2c</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li><symbol>g</symbol><anchor>Holzstapel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Holzstapel</objects></li>
     </legend>
@@ -37,7 +39,7 @@
       <li>O.I</li>
       <li>O..</li>
       <li>OV.</li>
-      <li>O..</li>
+      <li>Oa.</li>
       <li>O.I</li>
     </things>
     <roof>

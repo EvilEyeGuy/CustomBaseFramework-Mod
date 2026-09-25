@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Schrein_A</defName>
+    <label>CBF_MO_Schrein_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Schrein</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>A</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_RoyalColumn</thing><stuff>BlocksMarble</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+    </legend>
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+    <terrain>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+    </terrain>
+    <things>
+      <li>SSSSS</li>
+      <li>SYAYS</li>
+      <li>.I.I.</li>
+    </things>
+    <roof>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>.^^^.</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

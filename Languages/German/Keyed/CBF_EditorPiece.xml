@@ -66,6 +66,7 @@
   <CBF_P_CheckHints>Prüfung: {0} Hinweise</CBF_P_CheckHints>
   <CBF_P_Check>Prüfen</CBF_P_Check>
   <CBF_P_CheckTip>Prüft das Stück. Liegt es auf der Karte, läuft die volle Exportprüfung, sonst die Prüfung der Datei.</CBF_P_CheckTip>
+  <CBF_P_CheckFindings>Prüfergebnis</CBF_P_CheckFindings>
   <CBF_P_Checked>{0} geprüft, keine Fehler.</CBF_P_Checked>
   <CBF_P_ExportNeedsMap>Exportieren geht nur, wenn das Stück zum Bearbeiten auf der Karte liegt.</CBF_P_ExportNeedsMap>
   <CBF_P_NothingToSave>Nichts zu speichern.</CBF_P_NothingToSave>
@@ -102,4 +103,17 @@
   <CBF_P_ShowObjectsTip>Zeigt, welche Objekte in {0} stecken.</CBF_P_ShowObjectsTip>
   <CBF_P_ShowLootTip>Zeigt, was die Beutetabelle {0} ausgibt.</CBF_P_ShowLootTip>
   <CBF_P_ShowPawnsTip>Öffnet die Einheitenliste {0} im Reiter Pawn. Der Pfeil oben links führt zurück.</CBF_P_ShowPawnsTip>
+  <CBF_P_AtWallInherit>aus der Kategorie: {0}</CBF_P_AtWallInherit>
+  <CBF_P_AtWallFromCategory>aus der Kategorie</CBF_P_AtWallFromCategory>
+  <CBF_P_AtWallTip>Wie sehr dieses Stück an der Stadtmauer stehen will. Pflicht erzwingt den Kontakt, Verboten schließt ihn aus. Ohne eigenen Wert gilt Mauerkontakt der Kategorie.</CBF_P_AtWallTip>
+  <CBF_P_WeightTip>Wie oft dieses Stück gezogen wird, wenn mehrere passen. Leer übernimmt das Gewicht der Kategorie.</CBF_P_WeightTip>
+  <CBF_Tend_Forbidden>Verboten</CBF_Tend_Forbidden>
+  <CBF_Tend_Avoid>Meiden</CBF_Tend_Avoid>
+  <CBF_Tend_Allowed>Erlaubt</CBF_Tend_Allowed>
+  <CBF_Tend_Preferred>Bevorzugt</CBF_Tend_Preferred>
+  <CBF_Tend_StronglyPreferred>Stark bevorzugt</CBF_Tend_StronglyPreferred>
+  <CBF_Tend_Required>Pflicht</CBF_Tend_Required>
+  <CBF_AnchorConnect_Wall>Hier dockt die Stadtmauer an. Ein Torhaus braucht mindestens zwei Felder davon.</CBF_AnchorConnect_Wall>
+  <CBF_AnchorConnect_Outside>Zeigt, welche Seite des Stücks nach draußen weist. Ein Torhaus braucht ihn, sonst dreht der Generator das Tor falsch herum.</CBF_AnchorConnect_Outside>
+  <CBF_AnchorConnect_Anbau>Hier setzt der Generator Anbauten an. Im Haus liegt der Anker auf der Außenwand, im Anbau auf der geteilten Wand oder ein Feld außerhalb der Form.</CBF_AnchorConnect_Anbau>
 </LanguageData>

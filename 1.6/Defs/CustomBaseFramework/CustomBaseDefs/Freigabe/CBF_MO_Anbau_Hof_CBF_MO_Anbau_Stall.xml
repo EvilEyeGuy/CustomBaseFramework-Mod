@@ -8,53 +8,50 @@
     <categories>
       <li>CBF_MO_Anbau_Hof</li>
     </categories>
+    <placement><weight>2</weight></placement>
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
       <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_HayBale2x2c</thing><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_Gate1x2c</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_Gate</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_HayPile1x2c</thing><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li><symbol>s</symbol><anchor>Futtersack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Stall</lootTable></li>
     </legend>
     <mask>
-      <li>######</li>
-      <li>######</li>
-      <li>######</li>
-      <li>######</li>
-      <li>######</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
     </mask>
     <terrain>
-      <li>eeeeee</li>
-      <li>eeeeee</li>
-      <li>eeeeee</li>
-      <li>eeeeee</li>
-      <li>eeeeee</li>
+      <li>eeeeeeee</li>
+      <li>eeeeeeee</li>
+      <li>eeeeeeee</li>
+      <li>eeeeeeee</li>
     </terrain>
     <things>
-      <li>OOOOOO</li>
-      <li>O..Y.O</li>
-      <li>OA...O</li>
-      <li>O...QO</li>
-      <li>OOK.OO</li>
+      <li>OOOOOOOO</li>
+      <li>O...Y.QO</li>
+      <li>OA.a...K</li>
+      <li>OOOOOOOO</li>
     </things>
     <roof>
-      <li>^^^^^^</li>
-      <li>^^^^^^</li>
-      <li>^^^^^^</li>
-      <li>^^^^^^</li>
-      <li>^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
     </roof>
     <anchors>
-      <li>......</li>
-      <li>......</li>
-      <li>+.....</li>
-      <li>.s....</li>
-      <li>......</li>
+      <li>........</li>
+      <li>+.......</li>
+      <li>...s....</li>
+      <li>........</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

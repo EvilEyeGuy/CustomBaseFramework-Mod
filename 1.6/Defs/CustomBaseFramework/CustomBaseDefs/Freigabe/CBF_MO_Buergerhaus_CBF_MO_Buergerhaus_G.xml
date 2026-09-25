@@ -14,10 +14,9 @@
       <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Buergerhaus</lootTable></li>
       <li><symbol>2</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
-      <li><symbol>8</symbol><anchor>Handwerker</anchor><anchorKind>Spawn</anchorKind></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_SawTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>8</symbol><anchor>Handwerker</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_RusticHearth</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_RusticHearth</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>WoodLog</stuff></li>
       <li><symbol>J</symbol><anchor>Holzwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Holzwagen</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RugPatched_Leather2x4c</thing><stuff>Leather_Plain</stuff><rotation>East</rotation></li>
@@ -30,7 +29,13 @@
       <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
       <li><symbol>b</symbol><anchor>Bett</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_2x2_Beds</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_SawTable</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Bed_RusticDouble_Blue</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutCrate1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>k</symbol><anchor>Werkkiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Werkstatt</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideOutBuildingBase_Cart_RawWood</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>r</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
     </legend>
@@ -59,13 +64,13 @@
     <things>
       <li>..TTT.......</li>
       <li>TTTYTTTTTTTT</li>
-      <li>T.....TA..W.</li>
-      <li>T.....T.....</li>
-      <li>TTTFTTT.....</li>
+      <li>T....iTf..W.</li>
+      <li>Tg....T.....</li>
+      <li>TTTFTTTj....</li>
       <li>T.....F..V..</li>
       <li>THR...T.I..I</li>
       <li>TTTTFTT.....</li>
-      <li>............</li>
+      <li>........m...</li>
     </things>
     <things2>
       <li>............</li>
@@ -74,7 +79,7 @@
       <li>............</li>
       <li>............</li>
       <li>............</li>
-      <li>..rX........</li>
+      <li>..rX.l......</li>
       <li>............</li>
       <li>............</li>
     </things2>

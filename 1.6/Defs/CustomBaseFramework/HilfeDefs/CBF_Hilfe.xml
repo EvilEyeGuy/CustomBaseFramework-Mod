@@ -56,11 +56,13 @@ A piece used here needs a passable opening. Without one the ward is sealed and t
   <CustomBaseFramework.HilfeDef>
     <defName>CBF_Help_Anchors</defName>
     <label>Anchors</label>
-    <description>An anchor is a marked cell inside a piece where something appears once the piece is placed.
+    <description>An anchor is a marked area inside a piece where something happens once the piece is placed.
 
-Object anchors spawn furniture and containers from an object list. Spawn anchors bring in people from a unit list, with a role that decides whether they stay and fight or run. Fill anchors scatter something across the free floor around them.
+Connect anchors tie the piece to its surroundings. Wall is where the town wall docks, Outside tells which side faces out, Anbau is where annexes attach.
 
-An anchor without a list attached stays empty, and the log says so by name when it does.</description>
+Loot anchors place objects from an object list and fill them from a loot table. Object anchors place objects from an object list with a chance, without loot. Pawn anchors bring in people or animals from a pawn list, with a role that decides whether they stay and fight or run.
+
+An anchor whose list does not exist marks the piece red in the editor.</description>
   </CustomBaseFramework.HilfeDef>
 
   <CustomBaseFramework.HilfeDef>
@@ -93,11 +95,45 @@ Removing works only for plans attached by faction name. A plan attached through 
     <label>Takeover</label>
     <description>Nothing you assign here shows up until RimWorld actually hands faction bases to this generator. That is what the takeover switch does.
 
-It writes one patch file into the Patches folder of the current project. The patch swaps a single generation step, Settlement for CBF_Settlement, and leaves everything else in place, so faction bases keep their rocks and their power lines.
+It writes one patch file into the Patches folder of the current mod. The patch swaps a single generation step, Settlement for CBF_Settlement, and leaves everything else in place, so faction bases keep their rocks and their power lines.
 
 If a patch file is already there, the operation is added to it and the rest of the file is kept. Switching the takeover off removes only that operation, not the file, unless nothing else is left in it.
 
 A faction with no matching plan falls back to RimWorld's own settlement, never to an empty map.</description>
+  </CustomBaseFramework.HilfeDef>
+
+  <CustomBaseFramework.HilfeDef>
+    <defName>CBF_Help_Annexes</defName>
+    <label>Annexes</label>
+    <description>An annex is a small piece that attaches to a house: a stable, a woodshed, a beer garden. Everything about it is data in the categories and pieces, nothing is fixed in code.
+
+Annex categories on the house's category say which annexes may attach to it. An empty list takes the list of the parent category.
+
+Chance per anchor is the chance that an annex is built at one annex anchor of the house, default 0.6. At most caps the number of annexes per house, default 2.
+
+Repeatable belongs on the category of the annex itself. Yes allows the same annex several times on one house.
+
+Weight decides which annex is picked when several fit. For annexes, a weight below 1 is also the chance that this annex is tried at all.
+
+The anchor is a Connect anchor named Anbau. On the house it lies on the outer wall. On the annex it lies either on its outer wall, when both share that wall, or one cell outside its shape, when the annex only touches the house.</description>
+  </CustomBaseFramework.HilfeDef>
+
+  <CustomBaseFramework.HilfeDef>
+    <defName>CBF_Help_WallContact</defName>
+    <label>At the wall</label>
+    <description>How much a piece wants to stand against the town wall. The planner reads it when it places buildings.
+
+Forbidden keeps the piece away from the wall. Avoid, Allowed, Preferred and Strongly preferred weigh the spots along the wall lower or higher. Required forces contact: the piece is only placed where it touches the wall.
+
+A piece without a value of its own takes the wall contact of its category. Yes there means Preferred.</description>
+  </CustomBaseFramework.HilfeDef>
+
+  <CustomBaseFramework.HilfeDef>
+    <defName>CBF_Help_WardGate</defName>
+    <label>Ward gate</label>
+    <description>The thing that closes the passages through this ward's wall, for example a wooden gate for a palisade and an iron gate for the town wall.
+
+Empty uses the gate of the palette, which is what most wards want.</description>
   </CustomBaseFramework.HilfeDef>
 
 </Defs>

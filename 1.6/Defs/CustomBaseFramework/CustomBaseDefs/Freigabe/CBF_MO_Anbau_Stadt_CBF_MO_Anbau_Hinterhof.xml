@@ -14,46 +14,41 @@
       <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
       <li><symbol>Z</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_Well</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Well</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>x</symbol><anchor>FassA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li><symbol>y</symbol><anchor>FassB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
       <li><symbol>z</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>
     </legend>
     <mask>
-      <li>.#####</li>
-      <li>.#####</li>
-      <li>.#####</li>
-      <li>.#####</li>
-      <li>.#####</li>
+      <li>.######</li>
+      <li>.######</li>
+      <li>.######</li>
+      <li>.######</li>
     </mask>
     <terrain>
-      <li>......</li>
-      <li>......</li>
-      <li>......</li>
-      <li>......</li>
-      <li>......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
     </terrain>
     <things>
-      <li>.ZZZZZ</li>
-      <li>.Zo.QZ</li>
-      <li>.Z...Z</li>
-      <li>.Z...Z</li>
-      <li>.ZZzZZ</li>
+      <li>.ZZZZZZ</li>
+      <li>.Z.bbQZ</li>
+      <li>.Za...z</li>
+      <li>.ZZZZZZ</li>
     </things>
     <roof>
-      <li>......</li>
-      <li>......</li>
-      <li>......</li>
-      <li>......</li>
-      <li>......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
     </roof>
     <anchors>
-      <li>......</li>
-      <li>......</li>
-      <li>+.....</li>
-      <li>..x.y.</li>
-      <li>......</li>
+      <li>.......</li>
+      <li>+..xy..</li>
+      <li>.......</li>
+      <li>.......</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

@@ -62,9 +62,9 @@
       <li><symbol>Z</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>a</symbol><thing>TubeTelevision</thing></li>
       <li><symbol>e</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>b</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>d</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses1x1</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>f</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Cat_ModernHouses</objects></li>
+      <li><symbol>b</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>d</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>f</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects></li>
     </legend>
 
     <mask>
@@ -288,15 +288,20 @@
             <name>Zentrum</name>
             <entries>
               <li><tag>CBF_Vanilla_HouseSmall</tag><count>14~22</count><filler>true</filler></li>
-              <li><tag>CBF_Vanilla_Defense_Small</tag><count>2~4</count></li>
             </entries>
           </li>
         </districts>
+        <defenses>
+          <li><tag>CBF_Vanilla_Defense_Small</tag><count>3~4</count></li>
+        </defenses>
       </li>
       <li>
         <art>Vorstadt</art>
         <name>Neustadt</name>
         <label>Wohnviertel</label>
+        <defenses>
+          <li><tag>CBF_Vanilla_Defense_Small</tag><count>2~3</count></li>
+        </defenses>
         <size>0.65</size>
         <wallDepth>0</wallDepth>
         <versorgung>1.2</versorgung>
@@ -311,6 +316,12 @@
             <name>Wohnviertel</name>
             <entries>
               <li><tag>CBF_Vanilla_HouseLarge</tag><count>14~28</count><filler>true</filler></li>
+              <li><tag>CBF_Vanilla_Lager</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Hydrokultur</tag><count>0~2</count></li>
+              <li><tag>CBF_Vanilla_Handelsposten</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Kaserne</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Waffenkammer</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Gefaengnis</tag><count>0~1</count></li>
               <li><tag>CBF_Vanilla_Defence_Large</tag><count>2~4</count></li>
               <li><tag>CBF_Vanilla_Defense_Small</tag><count>4~8</count></li>
             </entries>

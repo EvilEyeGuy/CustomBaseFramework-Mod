@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Palisadentorhaus_A</defName>
+    <label>CBF_MO_Palisadentorhaus_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallGateHouse</li>
+      <li>CBF_MO_Palisadentorhaus</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>7</symbol><anchor>WacheSued</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>8</symbol><anchor>WacheNord</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>9</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList><pawnCount>1</pawnCount></li>
+      <li><symbol>A</symbol><anchor>Outside</anchor></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_ScorpioBolt</thing><count>10</count></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_EmbPalisade</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_ReinfocedLogGate</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>K</symbol><anchor>Wall</anchor></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_Palisade</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_Turret_Scorpio</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
+      <li><symbol>f</symbol><anchor>FassNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_Turret_Scorpio</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>x</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList><pawnCount>1</pawnCount></li>
+    </legend>
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+    <terrain>
+      <li>eeeee</li>
+      <li>eeeee</li>
+      <li>eeeee</li>
+      <li>eeeee</li>
+      <li>eeeee</li>
+      <li>eeeee</li>
+      <li>eeeee</li>
+      <li>eeeee</li>
+      <li>eeeee</li>
+    </terrain>
+    <things>
+      <li>PPEPP</li>
+      <li>Pi.jP</li>
+      <li>E...F</li>
+      <li>PPEPP</li>
+      <li>.G.G.</li>
+      <li>PPEPP</li>
+      <li>E...F</li>
+      <li>PY.DP</li>
+      <li>PPEPP</li>
+    </things>
+    <roof>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+    </roof>
+    <anchors>
+      <li>..K..</li>
+      <li>..8f.</li>
+      <li>.9...</li>
+      <li>.....</li>
+      <li>A....</li>
+      <li>.....</li>
+      <li>.x...</li>
+      <li>..7..</li>
+      <li>..K..</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

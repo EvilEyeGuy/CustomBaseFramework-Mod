@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CBF_Tab_Swap>Unit swap</CBF_Tab_Swap>
+  <CBF_Sw_WithSwap>With swap</CBF_Sw_WithSwap>
+  <CBF_Sw_NoSwap>no swap</CBF_Sw_NoSwap>
+  <CBF_Sw_DefLine>{0} from {1}, priority {2}, {3} units, {4} things</CBF_Sw_DefLine>
+  <CBF_Sw_OwnMod>your mod</CBF_Sw_OwnMod>
+  <CBF_Sw_PickFaction>Pick a faction on the left.</CBF_Sw_PickFaction>
+  <CBF_Sw_FactionInfo>{0} · {1} own units</CBF_Sw_FactionInfo>
+  <CBF_Sw_Units>Units ({0})</CBF_Sw_Units>
+  <CBF_Sw_Things>Things ({0})</CBF_Sw_Things>
+  <CBF_Sw_OnlyWithRule>Only with rule</CBF_Sw_OnlyWithRule>
+  <CBF_Sw_UnitsHint>All units from pawn lists and pieces. For each row, pick who this faction sends instead. Several targets are drawn by weight.</CBF_Sw_UnitsHint>
+  <CBF_Sw_ThingsHint>All things from pieces and object lists, such as banners. For each row, pick what this faction places instead.</CBF_Sw_ThingsHint>
+  <CBF_Sw_From>General</CBF_Sw_From>
+  <CBF_Sw_To>Becomes for this faction</CBF_Sw_To>
+  <CBF_Sw_WithoutRule>Without rule</CBF_Sw_WithoutRule>
+  <CBF_Sw_WithoutRuleTip>What this faction would get without a rule of its own, by the framework's fallback rule.</CBF_Sw_WithoutRuleTip>
+  <CBF_Sw_Nothing>Nothing found.</CBF_Sw_Nothing>
+  <CBF_Sw_Share>{0} % of cases</CBF_Sw_Share>
+  <CBF_Sw_WeightTip>Weight against the other targets of this row.</CBF_Sw_WeightTip>
+  <CBF_Sw_FromOther>{0} (from {1})</CBF_Sw_FromOther>
+  <CBF_Sw_FromOtherTip>Rule {0} from {1}, priority {2}. View only. A rule of your own with higher priority wins.</CBF_Sw_FromOtherTip>
+  <CBF_Sw_PickUnitTip>Add a target</CBF_Sw_PickUnitTip>
+  <CBF_Sw_PickThingTip>Pick a target</CBF_Sw_PickThingTip>
+  <CBF_Sw_Stays>stays</CBF_Sw_Stays>
+  <CBF_Sw_PickThing>Pick a thing</CBF_Sw_PickThing>
+  <CBF_Sw_PickUnit>Pick a unit</CBF_Sw_PickUnit>
+  <CBF_Sw_PickUnitMore>Pick another target</CBF_Sw_PickUnitMore>
+  <CBF_Sw_AnyUnit>Unit from all mods …</CBF_Sw_AnyUnit>
+  <CBF_Sw_OwnRule>Your rule</CBF_Sw_OwnRule>
+  <CBF_Sw_NoOwnYet>Your mod has no rule for this faction yet. It is created in a file of its own on the first save.</CBF_Sw_NoOwnYet>
+  <CBF_Sw_Priority>Priority</CBF_Sw_Priority>
+  <CBF_Sw_PriorityTip>If several rules exist for the same faction, the one with the highest priority applies per unit or thing.</CBF_Sw_PriorityTip>
+  <CBF_Sw_TargetMod>Saved in</CBF_Sw_TargetMod>
+  <CBF_Sw_Rules>Rules</CBF_Sw_Rules>
+  <CBF_Sw_RuleCount>{0} units, {1} things</CBF_Sw_RuleCount>
+  <CBF_Sw_OtherRules>Rules of other mods</CBF_Sw_OtherRules>
+  <CBF_Sw_NoOther>None.</CBF_Sw_NoOther>
+  <CBF_Sw_OtherLine>{0}, priority {1}, {2} units, {3} things</CBF_Sw_OtherLine>
+  <CBF_Sw_OtherHint>Rules of other mods are only shown, never changed. To override one, give your rule a higher priority.</CBF_Sw_OtherHint>
+  <CBF_Sw_FooterHint>Saving writes a file of its own into your mod.</CBF_Sw_FooterHint>
+  <CBF_Sw_NothingToWrite>Nothing to write.</CBF_Sw_NothingToWrite>
+  <CBF_Sw_ForeignFile>{0} is not in your mod and is not changed.</CBF_Sw_ForeignFile>
+  <CBF_Sw_Animals>Animals</CBF_Sw_Animals>
+  <CBF_Sw_AnimalsTip>Also shows animals from pens and vermin. The fallback rule always leaves them unchanged.</CBF_Sw_AnimalsTip>
+</LanguageData>

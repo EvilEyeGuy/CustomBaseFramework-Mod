@@ -16,11 +16,11 @@
       <li><symbol>1</symbol><anchor>TruheLinks</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Huette</lootTable></li>
       <li><symbol>2</symbol><anchor>SackLinks</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Huette</lootTable></li>
       <li><symbol>3</symbol><anchor>TruheRechts</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Huette</lootTable></li>
-      <li><symbol>8</symbol><anchor>BewohnerLinks</anchor><anchorKind>Spawn</anchorKind></li>
-      <li><symbol>9</symbol><anchor>BewohnerRechts</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>8</symbol><anchor>BewohnerLinks</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>9</symbol><anchor>BewohnerRechts</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_StrawBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_RusticHearth</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_RusticHearth</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RugPatched_Cloth1x2c</thing><stuff>Cloth</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>X</symbol><thing>DankPyon_RusticTable1x1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
@@ -28,6 +28,8 @@
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><anchor>GeschirrLinks</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
       <li><symbol>b</symbol><anchor>GeschirrRechts</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
     </legend>
@@ -53,8 +55,8 @@
       <li>OOOOO....</li>
       <li>O.Y.OOOOO</li>
       <li>OB.ROH..O</li>
-      <li>O...O..BO</li>
-      <li>OOFOOR..O</li>
+      <li>Of.gO..BO</li>
+      <li>OOFOOR.fO</li>
       <li>....OOFOO</li>
       <li>.........</li>
     </things>
@@ -62,8 +64,8 @@
       <li>.........</li>
       <li>...X.....</li>
       <li>...n.....</li>
-      <li>.....X...</li>
-      <li>.....n...</li>
+      <li>......X..</li>
+      <li>.........</li>
       <li>.........</li>
       <li>.........</li>
     </things2>
@@ -80,8 +82,8 @@
       <li>..+......</li>
       <li>.........</li>
       <li>+.8......</li>
-      <li>.1.2..9.+</li>
-      <li>.......3.</li>
+      <li>.1.2....+</li>
+      <li>......93.</li>
       <li>.........</li>
       <li>.........</li>
     </anchors>
@@ -89,7 +91,7 @@
       <li>.........</li>
       <li>...a.....</li>
       <li>.........</li>
-      <li>.....b...</li>
+      <li>......b..</li>
       <li>.........</li>
       <li>.........</li>
       <li>.........</li>

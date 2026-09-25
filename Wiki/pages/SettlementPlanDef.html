@@ -1,0 +1,398 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SettlementPlanDef · Custom Base Framework</title><style>
+:root{--grund:#f4f3ef;--karte:#ffffff;--linie:#e3e0d8;--text:#1f2124;--leise:#63676e;--akzent:#2f6f60;--akzentweich:#e3efeb;--ocker:#b27a17;--code:#f0eee8;--schatten:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06)}
+@media (prefers-color-scheme: dark){:root{--grund:#121417;--karte:#1a1d22;--linie:#2c3139;--text:#e6e4df;--leise:#99a0aa;--akzent:#7cc0aa;--akzentweich:#1f2f2b;--ocker:#d9ab55;--code:#24282f;--schatten:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--grund);color:var(--text);font:16px/1.65 "Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--akzent);text-underline-offset:3px}
+.inhalt h1{font-size:2.1rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.inhalt h2{font-size:1.35rem;letter-spacing:-.01em;margin:44px 0 10px}
+.inhalt h3{font-size:1.08rem;margin:28px 0 8px}
+.inhalt p,.inhalt li{max-width:74ch}
+.inhalt>p:first-of-type{font-size:1.08rem;color:var(--leise)}
+code{font-family:"Cascadia Mono",Consolas,monospace;font-size:.86em;background:var(--code);padding:2px 6px;border-radius:5px}
+.bild{display:block;margin:18px 0 22px}
+.bild img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--linie);box-shadow:var(--schatten)}
+.bild:hover img{border-color:var(--akzent)}
+.inhalt ol{list-style:none;padding:0;counter-reset:n;margin:12px 0 18px}
+.inhalt ol>li{counter-increment:n;position:relative;padding-left:40px;margin:10px 0}
+.inhalt ol>li::before{content:counter(n);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--ocker);color:#1b1b1b;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.inhalt ul{padding-left:20px}
+.inhalt ul>li{margin:6px 0}
+.inhalt ul>li::marker{color:var(--akzent)}
+table{border-collapse:separate;border-spacing:0;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto;border:1px solid var(--linie);border-radius:10px}
+th,td{padding:8px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--linie)}
+tr:last-child td{border-bottom:0}
+th{background:var(--code);font-weight:600;position:sticky;top:0}
+td code{white-space:nowrap}
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:56px;padding-top:20px;border-top:1px solid var(--linie)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--linie);background:var(--karte);border-radius:10px;padding:12px 16px;color:var(--text)}
+.schritte a:hover{border-color:var(--akzent)}
+.schritte span{display:block;font-size:12px;color:var(--leise);text-transform:uppercase;letter-spacing:.06em}
+.schritte .weiter{text-align:right;margin-left:auto}
+.home .inhalt ol{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;max-width:none}
+.home .inhalt ol>li{margin:0;background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:14px 16px 14px 54px;max-width:none;box-shadow:var(--schatten)}
+.home .inhalt ol>li::before{left:16px;top:16px}
+.home .inhalt ol>li a{font-weight:600}
+.home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
+.pfad{font-size:13px;color:var(--leise);margin-bottom:6px}
+.pfad a{color:var(--leise)}
+.aufseite{font-size:13px}
+.aufseite b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--leise);margin-bottom:8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:4px 0 4px 12px;border-left:2px solid var(--linie)}
+.aufseite a:hover{color:var(--akzent);border-left-color:var(--akzent)}
+
+.rahmen{display:grid;grid-template-columns:260px minmax(0,1fr) 200px;gap:0;max-width:1400px;margin:0 auto}
+.leiste{position:sticky;top:0;height:100vh;overflow:auto;padding:22px 18px;border-right:1px solid var(--linie)}
+.marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
+.marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
+.marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
+.gruppe{margin:0 0 16px}
+.gruppe b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--leise);margin:0 0 4px 10px}
+.gruppe a{display:block;padding:6px 10px;border-radius:8px;color:var(--text);text-decoration:none;font-size:15px}
+.gruppe a:hover{background:var(--akzentweich)}
+.gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
+main{padding:40px 48px 80px;min-width:0}
+.inhalt{max-width:860px}
+.rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
+@media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
+@media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html">Pieces</a><a href="Categories.html">Categories</a><a href="Settlements.html">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / SettlementPlanDef</div><h1 id="settlementplandef">SettlementPlanDef</h1>
+<p>XML node: <code>&lt;CustomBaseFramework.SettlementPlanDef&gt;</code>. Also takes the common fields <code>defName</code>, <code>label</code> and <code>description</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>anteil</code><br>Weight</td>
+<td>number</td>
+<td><code>0</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>assaultDelayTicks</code><br>Assault delay</td>
+<td>whole number</td>
+<td><code>25000</code></td>
+<td>How long the defenders wait before they attack, in ticks.</td>
+</tr>
+<tr>
+<td><code>bebauung</code></td>
+<td>Bebauungsart (Gewachsen, Raster, Locker)</td>
+<td><code>Gewachsen</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bergabtrag</code></td>
+<td>number</td>
+<td><code>0.08</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bergSog</code><br>Pull toward the mountain</td>
+<td>number</td>
+<td><code>0.22</code></td>
+<td>How strongly the settlement moves toward rock. Higher saves wall, lower gives more open ground.</td>
+</tr>
+<tr>
+<td><code>buchtHaus</code><br>Smallest house</td>
+<td>whole number</td>
+<td><code>5</code></td>
+<td>Edge length of the smallest house. Bays narrower than this are dropped.</td>
+</tr>
+<tr>
+<td><code>budget</code></td>
+<td>list of <a href="BudgetEntry.html">BudgetEntry</a></td>
+<td>none</td>
+<td>Which categories the settlement wants, how many of each, and what share of the area.</td>
+</tr>
+<tr>
+<td><code>coreSize</code><br>Core size</td>
+<td>IntRange</td>
+<td><code>66~74</code></td>
+<td>Edge length of the settlement core, as a range. Everything else grows around it.</td>
+</tr>
+<tr>
+<td><code>coverageBuild</code><br>Built share</td>
+<td>number</td>
+<td><code>0.4</code></td>
+<td>How much of the usable area gets buildings.</td>
+</tr>
+<tr>
+<td><code>defenderGroupKind</code><br>Defender group</td>
+<td>text</td>
+<td>none</td>
+<td>Which group kind the defenders come from. Empty means Settlement, then Combat.</td>
+</tr>
+<tr>
+<td><code>defenderPoints</code><br>Defender strength</td>
+<td>FloatRange</td>
+<td><code>180~420</code></td>
+<td>How strong the defenders are, as a point range.</td>
+</tr>
+<tr>
+<td><code>defendersOnWall</code><br>Defenders on the wall</td>
+<td>number</td>
+<td><code>0.25</code></td>
+<td>What share of the defenders stands on the walkway rather than on the ground.</td>
+</tr>
+<tr>
+<td><code>districts</code></td>
+<td>list of <a href="DistrictSpec.html">DistrictSpec</a></td>
+<td>none</td>
+<td>How many districts this settlement has, and how many entries in total.</td>
+</tr>
+<tr>
+<td><code>embrasureEvery</code><br>Embrasure spacing</td>
+<td>whole number</td>
+<td><code>5</code></td>
+<td>Every how many cells the wall gets an embrasure. 0 means none. Without the EMBRASURE role plain wall is used.</td>
+</tr>
+<tr>
+<td><code>emplacements</code><br>Defensive positions</td>
+<td>list of <a href="WallEntry.html">WallEntry</a></td>
+<td>none</td>
+<td>Which pieces may serve as towers, gun batteries and the like.</td>
+</tr>
+<tr>
+<td><code>excludeFactions</code><br>Excluded factions</td>
+<td>list of text</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>factionTags</code><br>Factions</td>
+<td>list of text</td>
+<td>none</td>
+<td>Which factions may use this settlement type.</td>
+</tr>
+<tr>
+<td><code>fillWith</code></td>
+<td>text</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>fuerAlleFraktionen</code><br>For every faction of these levels</td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gardenShare</code><br>Garden share</td>
+<td>number</td>
+<td><code>0.3</code></td>
+<td>0 leaves a bare yard, 1 gives every free area beds.</td>
+</tr>
+<tr>
+<td><code>gatehouses</code></td>
+<td>list of <a href="WallEntry.html">WallEntry</a></td>
+<td>none</td>
+<td>Which pieces may serve as gatehouses.</td>
+</tr>
+<tr>
+<td><code>gelaendeOeffnen</code></td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>kerbeMax</code><br>Maximum notch</td>
+<td>whole number</td>
+<td><code>6</code></td>
+<td>How deep the outline may cut inwards where the terrain calls for it.</td>
+</tr>
+<tr>
+<td><code>kind</code></td>
+<td>Ortsart (Mittelalterstadt, Modernestadt, Lager, Verlies)</td>
+<td><code>Mittelalterstadt</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>laufMax</code><br>Longest wall run</td>
+<td>whole number</td>
+<td><code>6</code></td>
+<td>Longest straight piece of wall before it must step.</td>
+</tr>
+<tr>
+<td><code>laufMin</code><br>Shortest wall run</td>
+<td>whole number</td>
+<td><code>1</code></td>
+<td>Shortest straight piece of wall before it may turn.</td>
+</tr>
+<tr>
+<td><code>mapSize</code><br>Map size</td>
+<td>whole number</td>
+<td><code>175</code></td>
+<td>How large the map is that this settlement is generated on.</td>
+</tr>
+<tr>
+<td><code>maxBuildingGap</code><br>Largest gap between buildings</td>
+<td>whole number</td>
+<td><code>0</code></td>
+<td>Keeps enough room between houses for a path.</td>
+</tr>
+<tr>
+<td><code>minBuildingGap</code><br>Smallest gap between buildings</td>
+<td>whole number</td>
+<td><code>0</code></td>
+<td>0 lets the framework decide from the loaded mods.</td>
+</tr>
+<tr>
+<td><code>minFuellgrad</code><br>Minimum fill</td>
+<td>number</td>
+<td><code>0.85</code></td>
+<td>How full the outline must be against its convex hull. Lower allows more ragged shapes.</td>
+</tr>
+<tr>
+<td><code>minLobe</code><br>Smallest bulge</td>
+<td>whole number</td>
+<td><code>5</code></td>
+<td>Smallest usable bulge of the outline. 0 turns the check off.</td>
+</tr>
+<tr>
+<td><code>requiredMods</code><br>Needs these mods</td>
+<td>list of text</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>roadLane</code><br>Lane width</td>
+<td>whole number</td>
+<td><code>1</code></td>
+<td>Width of the side lanes.</td>
+</tr>
+<tr>
+<td><code>roadMain</code><br>Main road width</td>
+<td>whole number</td>
+<td><code>2</code></td>
+<td>Width of the main road. There are only two widths on purpose; more cuts the map up visually.</td>
+</tr>
+<tr>
+<td><code>stufeMax</code><br>Largest step</td>
+<td>whole number</td>
+<td><code>3</code></td>
+<td>How far the wall may step sideways at once.</td>
+</tr>
+<tr>
+<td><code>style</code></td>
+<td><a href="StyleDef.html">StyleDef</a></td>
+<td>none</td>
+<td>Legacy palette and wall profile association. Does not restrict piece selection.</td>
+</tr>
+<tr>
+<td><code>styles</code></td>
+<td>list of <a href="StyleDef.html">StyleDef</a></td>
+<td>none</td>
+<td>Legacy palette and wall profile association; does not filter pieces.</td>
+</tr>
+<tr>
+<td><code>suburbIslands</code></td>
+<td>whole number</td>
+<td><code>0</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>targetBuilt</code><br>Target built share</td>
+<td>number</td>
+<td><code>0</code></td>
+<td>How densely built the settlement should feel. Hand-built MO settlements sit at 0.61.</td>
+</tr>
+<tr>
+<td><code>techLevels</code><br>Tech levels</td>
+<td>list of TechLevel (Undefined, Animal, Neolithic, Medieval, Industrial, Spacer, Ultra, Archotech)</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>towerCapTotal</code><br>Tower limit</td>
+<td>whole number</td>
+<td><code>0</code></td>
+<td>Upper limit on towers. 0 means as many as there are corners.</td>
+</tr>
+<tr>
+<td><code>towerCorner</code><br>Corner tower size</td>
+<td>whole number</td>
+<td><code>7</code></td>
+<td>Edge length of a corner tower, measured on the centre line of the wall band.</td>
+</tr>
+<tr>
+<td><code>towerCurtain</code><br>Curtain tower size</td>
+<td>whole number</td>
+<td><code>7</code></td>
+<td>Edge length of the towers that sit between the corners.</td>
+</tr>
+<tr>
+<td><code>towerRun</code><br>Straight run before a tower</td>
+<td>whole number</td>
+<td><code>6</code></td>
+<td>How much straight wall must run before a tower may be placed.</td>
+</tr>
+<tr>
+<td><code>towerSpacing</code><br>Tower spacing</td>
+<td>whole number</td>
+<td><code>24</code></td>
+<td>How far apart curtain towers stand. Larger means fewer towers.</td>
+</tr>
+<tr>
+<td><code>wallDepth</code><br>Wall thickness</td>
+<td>whole number</td>
+<td><code>0</code></td>
+<td>0 no wall, 1 palisade, 3 wall with a walkway between two walls, 5 a broad fortress wall.</td>
+</tr>
+<tr>
+<td><code>wallGap</code><br>Gap to the wall</td>
+<td>whole number</td>
+<td><code>1</code></td>
+<td>How much room stays free inside the wall. Only pieces with wallContact may come closer.</td>
+</tr>
+<tr>
+<td><code>walls</code></td>
+<td>list of <a href="WallEntry.html">WallEntry</a></td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>wards</code></td>
+<td>list of <a href="Stadtteil.html">Stadtteil</a></td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>weightHilly</code><br>Prefers hills</td>
+<td>number</td>
+<td><code>0</code></td>
+<td>How strongly this settlement type wants hilly terrain.</td>
+</tr>
+<tr>
+<td><code>weightNearRoad</code><br>Prefers roads</td>
+<td>number</td>
+<td><code>1</code></td>
+<td>How strongly this settlement type wants to sit near a road on the world map.</td>
+</tr>
+<tr>
+<td><code>weightNearWater</code><br>Prefers water</td>
+<td>number</td>
+<td><code>0</code></td>
+<td>How strongly this settlement type wants to sit near water.</td>
+</tr>
+<tr>
+<td><code>widenings</code></td>
+<td>whole number</td>
+<td><code>1</code></td>
+<td>How many places the road widens into a square.</td>
+</tr>
+<tr>
+<td><code>worldTexture</code><br>World map icon</td>
+<td>text</td>
+<td>none</td>
+<td>Image of this settlement on the world map when zoomed in. It is tinted in the faction colour.<br><br>All images in Textures/World/WorldObjects/CBF can be chosen, including those of other mods.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="Field-Reference.html">Back to the field reference</a></p></div></main><aside class="rechts"></aside></div></body></html>

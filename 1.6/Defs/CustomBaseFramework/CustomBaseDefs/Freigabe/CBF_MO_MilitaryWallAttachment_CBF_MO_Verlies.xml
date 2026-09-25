@@ -13,7 +13,7 @@
     <legend>
       <li><symbol>1</symbol><anchor>Gefangenenhabe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li><symbol>2</symbol><anchor>Kerkermeister</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>8</symbol><anchor>Kerkermeister</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>8</symbol><anchor>Kerkermeister</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>A</symbol><anchor>Wall</anchor></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_Brazier1x1c</thing><stuff>BlocksGranite</stuff></li>
@@ -24,7 +24,10 @@
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_EmptyBucket</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>k</symbol><anchor>Wachregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>r</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
     </legend>
@@ -51,11 +54,11 @@
     <things>
       <li>SSSSSSSSSS</li>
       <li>SY.SY.SY.S</li>
-      <li>Sb.Sb.S..S</li>
+      <li>Sb.Sb.Sf.S</li>
       <li>SSFSSFSSFS</li>
       <li>S........S</li>
-      <li>SQ.......S</li>
-      <li>S.....R..S</li>
+      <li>SQ......gS</li>
+      <li>Si....R..S</li>
       <li>SSSSFSSSSS</li>
     </things>
     <things2>

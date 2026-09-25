@@ -8,6 +8,7 @@
     <categories>
       <li>CBF_MO_Anbau_Gasthaus</li>
     </categories>
+    <placement><weight>2</weight></placement>
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
@@ -16,43 +17,40 @@
       <li><symbol>J</symbol><anchor>Erntewagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Erntewagen</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutRusticBarrelStack</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li><symbol>f</symbol><anchor>Fassreihe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fassreihe</objects><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
     </legend>
     <mask>
-      <li>#####</li>
-      <li>#####</li>
-      <li>#####</li>
-      <li>#####</li>
-      <li>#####</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
     </mask>
     <terrain>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
+      <li>eeeeee</li>
+      <li>eeeeee</li>
+      <li>eeeeee</li>
+      <li>eeeeee</li>
     </terrain>
     <things>
-      <li>TTTTT</li>
-      <li>T....</li>
-      <li>T....</li>
-      <li>T....</li>
-      <li>T.I.I</li>
+      <li>TTTTTT</li>
+      <li>T.....</li>
+      <li>T...a.</li>
+      <li>T.Ib..</li>
     </things>
     <roof>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
     </roof>
     <anchors>
-      <li>.....</li>
-      <li>.fff.</li>
-      <li>+.JJ.</li>
-      <li>..JJ.</li>
-      <li>.....</li>
+      <li>......</li>
+      <li>+...JJ</li>
+      <li>....JJ</li>
+      <li>...fff</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

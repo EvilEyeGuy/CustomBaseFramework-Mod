@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.StyleDef>
+    <defName>CBF_VFEM2</defName>
+    <label>Medieval 2</label>
+  </CustomBaseFramework.StyleDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_VFEM2_Bewohner</defName>
+    <label>residents</label>
+    <rolle>Zivil</rolle>
+    <radius>4</radius>
+    <members>
+      <li><kind>VFEM2_Peasant</kind><weight>10</weight></li>
+      <li><kind>VFEM2_Trader</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_VFEM2_Garnison_Wehrgang</defName>
+    <label>wall garrison</label>
+    <rolle>Posten</rolle>
+    <radius>4</radius>
+    <members>
+      <li><kind>VFEM2_Archer</kind><weight>2</weight></li>
+      <li><kind>VFEM2_Crossbowman</kind><weight>2</weight></li>
+      <li><kind>VFEM2_HeavyArcher</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_VFEM2_Garnison_Tor</defName>
+    <label>gate garrison</label>
+    <rolle>Wache</rolle>
+    <radius>4</radius>
+    <members>
+      <li><kind>VFEM2_Halberdier</kind><weight>2</weight></li>
+      <li><kind>VFEM2_ManAtArms</kind><weight>1</weight></li>
+      <li><kind>VFEM2_Knight</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_VFEM2_Garnison_Innen</defName>
+    <label>inner garrison</label>
+    <rolle>Wache</rolle>
+    <radius>4</radius>
+    <members>
+      <li><kind>VFEM2_Knight</kind><weight>1</weight></li>
+      <li><kind>VFEM2_ManAtArms</kind><weight>2</weight></li>
+      <li><kind>VFEM2_Halberdier</kind><weight>1</weight></li>
+      <li><kind>VFEM2_Crossbowman</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+</Defs>

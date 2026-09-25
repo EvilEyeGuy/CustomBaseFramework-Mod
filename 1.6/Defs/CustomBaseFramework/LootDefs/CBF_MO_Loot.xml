@@ -141,7 +141,7 @@
       <li><weight>10</weight><table>CBF_MO_Ware_Nahkampf</table></li>
       <li><weight>10</weight><table>CBF_MO_Ware_Edelstein</table></li>
       <li><weight>8</weight><table>CBF_MO_Ware_Schatz</table></li>
-      <li><weight>6</weight><table>CBF_MO_Ware_Ruestung</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Harnisch</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
@@ -156,7 +156,7 @@
       <li><weight>18</weight><table>CBF_MO_Ware_Stangen</table></li>
       <li><weight>12</weight><table>CBF_MO_Ware_Bogen</table></li>
       <li><weight>10</weight><table>CBF_MO_Ware_Rationen</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Ruestung</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Harnisch</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
@@ -291,7 +291,7 @@
     <label>Brot</label>
     <rolls>1~1</rolls>
     <entries>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealBread</thing><count>20~80</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealBread</thing><count>2~8</count><onMissing>Skip</onMissing></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
@@ -310,12 +310,12 @@
     <label>Kaese und Milch</label>
     <rolls>1~1</rolls>
     <entries>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealCheese</thing><count>20~120</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealGoatCheese</thing><count>20~120</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealSheepCheese</thing><count>20~120</count><onMissing>Skip</onMissing></li>
-      <li><weight>1</weight><thing>Milk</thing><count>20~120</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_GoatMilk</thing><count>20~120</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_SheepMilk</thing><count>20~120</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealCheese</thing><count>2~12</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealGoatCheese</thing><count>2~12</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealSheepCheese</thing><count>2~12</count><onMissing>Skip</onMissing></li>
+      <li><weight>1</weight><thing>Milk</thing><count>2~12</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_GoatMilk</thing><count>2~12</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_SheepMilk</thing><count>2~12</count><onMissing>Skip</onMissing></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
@@ -325,7 +325,7 @@
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_DriedMeat</thing><count>20~120</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_SmokedMeat</thing><count>20~120</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_SmokedMeat</thing><count>2~12</count><onMissing>Skip</onMissing></li>
       <li><weight>1</weight><thing>Meat_Cow</thing><count>20~120</count><onMissing>Skip</onMissing></li>
       <li><weight>1</weight><thing>Meat_DankPyon_Rox</thing><count>20~120</count><onMissing>Skip</onMissing></li>
       <li><weight>1</weight><thing>Meat_DankPyon_Daer</thing><count>20~120</count><onMissing>Skip</onMissing></li>
@@ -365,9 +365,9 @@
     <label>Rationen</label>
     <rolls>1~1</rolls>
     <entries>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealRations</thing><count>1~40</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealRationsVegetarian</thing><count>1~40</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_DriedMeat</thing><count>1~40</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealRations</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealRationsVegetarian</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_DriedMeat</thing><count>1~4</count><onMissing>Skip</onMissing></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
@@ -376,11 +376,11 @@
     <label>Wein, Ale und Cider</label>
     <rolls>1~1</rolls>
     <entries>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Wine</thing><count>20~80</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Wine_Griffon</thing><count>20~80</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Wine_Mulberry</thing><count>20~80</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Ale</thing><count>20~80</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Cider</thing><count>20~80</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Wine</thing><count>10~40</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Wine_Griffon</thing><count>10~40</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Wine_Mulberry</thing><count>10~40</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Ale</thing><count>10~40</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Cider</thing><count>10~40</count><onMissing>Skip</onMissing></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
@@ -400,12 +400,12 @@
     <label>Kraeuter</label>
     <rolls>1~1</rolls>
     <entries>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Mindwort</thing><count>1~10</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Poppy</thing><count>1~10</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Fleawort</thing><count>1~10</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_FlyAgaric</thing><count>1~10</count><onMissing>Skip</onMissing></li>
-      <li><weight>1</weight><thing>MedicineHerbal</thing><count>1~10</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_HerbalExtract</thing><count>1~10</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Mindwort</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Poppy</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Fleawort</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_FlyAgaric</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li><weight>1</weight><thing>MedicineHerbal</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_HerbalExtract</thing><count>1~5</count><onMissing>Skip</onMissing></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
@@ -414,12 +414,12 @@
     <label>Elixiere und Pulver</label>
     <rolls>1~1</rolls>
     <entries>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_BattleElixir</thing><count>1~10</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_HappyPowder</thing><count>1~10</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_VigorPill</thing><count>1~10</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Stardust</thing><count>1~10</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Luhix</thing><count>1~10</count><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Paregoric</thing><count>1~10</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_BattleElixir</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_HappyPowder</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_VigorPill</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Stardust</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Luhix</thing><count>1~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Paregoric</thing><count>1~5</count><onMissing>Skip</onMissing></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
@@ -531,49 +531,49 @@
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_MO_Ware_Nahkampf</defName>
     <label>Nahkampfwaffen</label>
-    <rolls>1~1</rolls>
+    <rolls>1~1</rolls><rollChance>0.5</rollChance>
     <entries>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Falchion</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_ArmingSword</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_FencingSword</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_NobleSword</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Longsword</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Greatsword</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_MilitiaSpear</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_BoarSpear</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_FightingSpear</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Warfork</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Spetum</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Pitchfork</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_HookedBlade</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Billhook</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Pike</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Halberd</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Hatchet</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Handaxe</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_FightingAxe</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_WoodcuttersAxe</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Bardiche</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Greataxe</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Longaxe</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Falchion</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_ArmingSword</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_FencingSword</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_NobleSword</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Longsword</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Greatsword</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_MilitiaSpear</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_BoarSpear</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_FightingSpear</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Warfork</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Spetum</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Pitchfork</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_HookedBlade</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Billhook</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Pike</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Halberd</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Hatchet</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Handaxe</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_FightingAxe</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_WoodcuttersAxe</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Bardiche</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Greataxe</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Longaxe</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_MO_Ware_Stangen</defName>
     <label>Stangenwaffen</label>
-    <rolls>1~1</rolls>
+    <rolls>1~1</rolls><rollChance>0.5</rollChance>
     <entries>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_MilitiaSpear</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_BoarSpear</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_FightingSpear</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Warfork</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Spetum</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Pitchfork</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_HookedBlade</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Billhook</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Pike</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Halberd</thing><count>2~8</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_MilitiaSpear</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_BoarSpear</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_FightingSpear</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Warfork</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Spetum</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Pitchfork</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_HookedBlade</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Billhook</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Pike</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Halberd</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
@@ -592,13 +592,13 @@
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_MO_Ware_Werkzeug</defName>
     <label>Werkzeug</label>
-    <rolls>1~1</rolls>
+    <rolls>1~1</rolls><rollChance>0.15</rollChance>
     <entries>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_ArmingSword</thing><count>1~2</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_HookedBlade</thing><count>1~2</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Pickaxe</thing><count>1~2</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Hatchet</thing><count>1~2</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_WoodcuttersAxe</thing><count>1~2</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_ArmingSword</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_HookedBlade</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Pickaxe</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Hatchet</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_WoodcuttersAxe</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 

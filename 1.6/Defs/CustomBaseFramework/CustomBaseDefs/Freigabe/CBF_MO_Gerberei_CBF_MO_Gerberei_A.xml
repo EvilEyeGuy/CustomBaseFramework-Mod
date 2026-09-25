@@ -7,7 +7,6 @@
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_MO_Gerberei</li>
-      <li>CBF_MO_Werkstatt</li>
     </categories>
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
@@ -16,19 +15,23 @@
       <li><symbol>1</symbol><anchor>Lederfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stofffass</objects></li>
       <li><symbol>2</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Schneiderei</lootTable></li>
       <li><symbol>3</symbol><anchor>Stoffwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stoffwagen</objects></li>
-      <li><symbol>4</symbol><anchor>Gerber</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>4</symbol><anchor>Gerber</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>5</symbol><anchor>Stofffass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stofffass</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_DryingRack_Big</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_TanningDrum</thing><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_MendingBench</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_TanningRack</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_RugPatched_Leather2x2c</thing><stuff>Leather_Plain</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_RawhideRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_Bed_Rustic_Green</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_RawhideRack</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_MendingBench</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_HideoutBarrelTextiles</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutBarrelTextiles</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideOutBuildingBase_Cart_Textiles</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
     </legend>
     <mask>
@@ -55,14 +58,14 @@
     </terrain>
     <things>
       <li>TTTTTTT....</li>
-      <li>TW..M.T....</li>
+      <li>Ta..b.T....</li>
       <li>T.....F.ND.</li>
       <li>T.....T....</li>
-      <li>TU...YT....</li>
-      <li>T.....T.N..</li>
+      <li>TU...YT...f</li>
+      <li>Tg..i.T.N..</li>
       <li>TTTFTTT....</li>
       <li>........G..</li>
-      <li>...........</li>
+      <li>....j......</li>
     </things>
     <roof>
       <li>^^^^^^^....</li>

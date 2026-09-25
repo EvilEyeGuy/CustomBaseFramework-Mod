@@ -14,7 +14,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Winery</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>1</symbol><anchor>Kellerfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Weinkeller</lootTable></li>
       <li><symbol>7</symbol><anchor>Erntewagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Erntewagen</objects></li>
-      <li><symbol>8</symbol><anchor>Winzer</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>8</symbol><anchor>Winzer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_RusticBarrelBigGrape</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_LogColumn</thing><stuff>WoodLog</stuff></li>
@@ -23,11 +23,16 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>V</symbol><anchor>Weinregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Weinregal</objects></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>b</symbol><anchor>Grossfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Grossfass</objects><lootTable>CBF_MO_Loot_Weinkeller</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li><symbol>f</symbol><anchor>Hoffass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_BarrelGrape</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutLargeShelf_Wine</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutRusticBarrelBigClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_HideoutRusticBarrelStack</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>###########</li>
@@ -51,13 +56,13 @@
     </terrain>
     <things>
       <li>SSSSSSSSSSS</li>
-      <li>SP....S...S</li>
-      <li>S...G.S...S</li>
+      <li>SP....Sa..S</li>
+      <li>S...G.S.i.S</li>
       <li>S.....F...S</li>
-      <li>Sg....S...S</li>
-      <li>L..L..SSSSS</li>
-      <li>..!........</li>
-      <li>...........</li>
+      <li>Sg....Sk..S</li>
+      <li>L..Lj.SSSSS</li>
+      <li>..!......a.</li>
+      <li>......l....</li>
     </things>
     <roof>
       <li>^^^^^^^^^^^</li>

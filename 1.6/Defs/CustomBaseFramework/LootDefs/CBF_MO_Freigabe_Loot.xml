@@ -2,6 +2,137 @@
 <Defs>
 
   <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Ware_Harnisch</defName>
+    <label>Harnisch und Helme</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_Apparel_Padded_Surcoat</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_Apparel_Padded_Leather</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>8</weight><thing>DankPyon_Apparel_Hauberk</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_Apparel_Heavy_Hauberk</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_Apparel_Brigandine</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_Apparel_Light_Lamellar</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_Apparel_Breast_Plate</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>2</weight><thing>DankPyon_Apparel_FullPlate</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_Apparel_ChaussesPadded</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Apparel_ChaussesSplinted</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_Headgear_ChainCoif</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_Headgear_ChainNasalHelmet</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_Headgear_ChainKettleHelmet</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_Headgear_PaddedKettleHelmet</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_Headgear_OpenBascinet</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_Headgear_SalletHelmet</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Headgear_KlappvisorBascinet</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Headgear_HounskullHelmet</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Headgear_GreatHelm</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Ware_Benannt</defName>
+    <label>Benannte Waffen und Prunkruestungen</label>
+    <rolls>1~1</rolls><rollChance>0.5</rollChance>
+    <entries>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_Apparel_FullPlateNamed</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_Headgear_ArmetNamed</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_MeleeWeapon_NamedGreatsword</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_MeleeWeapon_NamedGreataxe</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_MeleeWeapon_NamedHalberd</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_MeleeWeapon_NamedTwoHandedHammer</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_MeleeWeapon_NamedTwoHandedFlangedMace</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Apparel_AdornedWarriorArmor</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Apparel_AdornedHeavyPlate</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Apparel_FullPlateGilded</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Headgear_ArmetGilded</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Kirchenschatz</defName>
+    <label>Kirchenschatz</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>18</weight><table>CBF_MO_Ware_Geschirr</table></li>
+      <li><weight>14</weight><table>CBF_MO_Ware_Schatz</table></li>
+      <li><weight>14</weight><table>CBF_MO_Ware_Buecher</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Edelstein</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Kraeuter</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Ruestung</defName>
+    <label>Ruestung</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>30</weight><table>CBF_MO_Ware_Harnisch</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Ruestkammer</defName>
+    <label>Ruestkammer</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>24</weight><table>CBF_MO_Ware_Benannt</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Harnisch</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Mine</defName>
+    <label>Mine</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>26</weight><table>CBF_MO_Ware_Erz</table></li>
+      <li><weight>10</weight><table>CBF_MO_Ware_Stein</table></li>
+      <li><weight>10</weight><table>CBF_MO_Ware_Werkzeug</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Barren</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Rationen</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Brot</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Steinbruch</defName>
+    <label>Steinbruch</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>26</weight><table>CBF_MO_Ware_Stein</table></li>
+      <li><weight>12</weight><table>CBF_MO_Ware_Werkzeug</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Holz</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Brot</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Rationen</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Waffenhaendler</defName>
+    <label>Waffenhaendler</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>22</weight><table>CBF_MO_Ware_Nahkampf</table></li>
+      <li><weight>14</weight><table>CBF_MO_Ware_Stangen</table></li>
+      <li><weight>12</weight><table>CBF_MO_Ware_Bogen</table></li>
+      <li><weight>10</weight><table>CBF_MO_Ware_Harnisch</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Barren</table></li>
+      <li><weight>4</weight><table>CBF_MO_Ware_Schatz</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
     <defName>CBF_MO_Loot_Schatzkammer</defName>
     <label>Schatzkammer</label>
     <rolls>3~6</rolls>

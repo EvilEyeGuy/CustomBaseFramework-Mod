@@ -17,7 +17,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Anbau_Gasthaus</defName>
-    <label>CBF_MO_Anbau_Gasthaus</label>
+    <label>Anbau Gasthaus</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -26,7 +26,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Anbau_Hof</defName>
-    <label>CBF_MO_Anbau_Hof</label>
+    <label>Anbau Hof</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -35,7 +35,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Anbau_Laendlich</defName>
-    <label>CBF_MO_Anbau_Laendlich</label>
+    <label>Anbau ländlich</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -44,7 +44,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Anbau_Militaer</defName>
-    <label>CBF_MO_Anbau_Militaer</label>
+    <label>Anbau Militär</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -53,7 +53,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Anbau_Schmiede</defName>
-    <label>CBF_MO_Anbau_Schmiede</label>
+    <label>Anbau Schmiede</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -62,7 +62,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Anbau_Stadt</defName>
-    <label>CBF_MO_Anbau_Stadt</label>
+    <label>Anbau Stadt</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -71,7 +71,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Apotheke</defName>
-    <label>Apotheke</label>
+    <label>Apotheke</label><parent>CBF_MO_Werkstatt</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -85,7 +85,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Baeckerei</defName>
-    <label>Bäckerei</label>
+    <label>Bäckerei</label><parent>CBF_MO_Werkstatt</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -122,6 +122,15 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Brauerei</defName>
+    <label>Brauerei</label><parent>CBF_MO_Werkstatt</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Brunnen</defName>
     <label>Brunnen</label>
     <zones>
@@ -145,6 +154,51 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Denkmal</defName>
+    <label>Denkmal</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Festungsbergfried</defName>
+    <label>Festungsbergfried</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Festungstor</defName>
+    <label>Festungstor</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Festungsturm</defName>
+    <label>Festungsturm</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Friedhof</defName>
+    <label>Friedhof</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Gasthaus</defName>
     <label>Gasthaus</label>
     <zones>
@@ -161,7 +215,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Gerberei</defName>
-    <label>Gerberei</label>
+    <label>Gerberei</label><parent>CBF_MO_Werkstatt</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -217,12 +271,30 @@
       <li>CBF_MO_Anbau_Militaer</li>
     </anbauten>
     <anbauChance>0.8</anbauChance>
-    <anbauMax>2</anbauMax>
+    <anbauMax>2</anbauMax><mauerzugang>true</mauerzugang>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Katapultstellung</defName>
+    <label>Katapultstellung</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Kate</defName>
     <label>Kate</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Kirche</defName>
+    <label>Kirche</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -257,8 +329,17 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Mauerzugang</defName>
+    <label>Mauerzugang</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess><mauerzugang>true</mauerzugang>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Metzgerei</defName>
-    <label>Metzgerei</label>
+    <label>Metzgerei</label><parent>CBF_MO_Werkstatt</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -290,8 +371,35 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Palisadentorhaus</defName>
+    <label>Palisadentorhaus</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Palisadenturm</defName>
+    <label>Palisadenturm</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Platzdeko</defName>
     <label>Platzdeko</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Ruestkammer</defName>
+    <label>Rüstkammer</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -310,7 +418,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Schmiede</defName>
-    <label>Schmiede</label>
+    <label>Schmiede</label><parent>CBF_MO_Werkstatt</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -324,8 +432,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_MO_Schreibstube</defName>
-    <label>Schreibstube</label>
+    <defName>CBF_MO_Schneiderei</defName>
+    <label>Schneiderei</label><parent>CBF_MO_Werkstatt</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -335,11 +443,43 @@
     </anbauten>
     <anbauChance>0.5</anbauChance>
     <anbauMax>2</anbauMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Schreibstube</defName>
+    <label>Schreibstube</label><parent>CBF_MO_Werkstatt</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <anbauten>
+      <li>CBF_MO_Anbau_Stadt</li>
+    </anbauten>
+    <anbauChance>0.5</anbauChance>
+    <anbauMax>2</anbauMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Schrein</defName>
+    <label>Schrein</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Stadtturm</defName>
+    <label>Stadtturm</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Tischlerei</defName>
-    <label>Tischlerei</label>
+    <label>Tischlerei</label><parent>CBF_MO_Werkstatt</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -352,17 +492,21 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_MO_Tuchhaus</defName>
-    <label>Tuchhaus</label>
+    <defName>CBF_MO_Torhaus</defName>
+    <label>Torhaus</label>
     <zones>
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
-      <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.5</anbauChance>
-    <anbauMax>2</anbauMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Turnierplatz</defName>
+    <label>Turnierplatz</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -372,6 +516,21 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess><verschmelzen>true</verschmelzen>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Waffenhaendler</defName>
+    <label>Waffenhändler</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <anbauten>
+      <li>CBF_MO_Anbau_Schmiede</li>
+      <li>CBF_MO_Anbau_Stadt</li>
+    </anbauten>
+    <anbauChance>0.6</anbauChance>
+    <anbauMax>2</anbauMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -400,6 +559,15 @@
     </zones>
     <needsRoadAccess>false</needsRoadAccess>
     <blockMax>1</blockMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Zelt</defName>
+    <label>CBF_MO_Zelt</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
 </Defs>

@@ -44,8 +44,8 @@
           <li><piece>CBF_MO_Stadtmauer_Scharte</piece><weight>0.25</weight></li>
         </walls>
         <emplacements>
-          <li><piece>Tower</piece><count>3~3</count></li>
-          <li>LargeTower_9d</li>
+          <li><tag>CBF_MO_Stadtturm</tag><count>3~3</count></li>
+          <li>CBF_MO_Stadtturm_A</li>
         </emplacements>
         <gatehouses>
           <li><piece>CBF_MO_GateHouse_Small</piece><count>1~2</count></li>
@@ -55,6 +55,7 @@
             <name>Default</name>
             <entries>
               <li><tag>CBF_MO_Bergfried</tag><count>1~1</count><unique>true</unique></li>
+              <li><tag>CBF_MO_Katapultstellung</tag><count>1~2</count></li>
               <li><tag>CBF_MO_Gasthaus</tag><count>1~1</count><unique>true</unique></li>
               <li><tag>CBF_MO_Kaserne</tag><count>1~1</count></li>
               <li><tag>CBF_MO_Waffenkammer</tag><count>0~1</count></li>
@@ -67,6 +68,7 @@
       <li>
         <art>Vorstadt</art>
         <name>Neustadt</name>
+        <tor>DankPyon_ReinfocedLogGate</tor>
         <size>0.6</size>
         <wallDepth>1</wallDepth>
         <versorgung>1.2</versorgung>
@@ -74,7 +76,7 @@
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
         </walls>
         <emplacements>
-          <li MayRequire="DankPyon.Medieval.Overhaul"><piece>PalisadeTower</piece><count>2~3</count></li>
+          <li MayRequire="DankPyon.Medieval.Overhaul"><tag>CBF_MO_Palisadenturm</tag><count>2~3</count></li>
         </emplacements>
         <gatehouses>
           <li MayRequire="DankPyon.Medieval.Overhaul"><piece>Pallisader_GateHouse</piece><count>1~1</count></li>
@@ -92,7 +94,7 @@
             <entries>
               <li><tag>CBF_MO_Baeckerei</tag><count>1~1</count></li>
               <li><tag>CBF_MO_Metzgerei</tag><count>1~1</count></li>
-              <li><tag>CBF_MO_Tuchhaus</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Schneiderei</tag><count>1~1</count></li>
             </entries>
           </li>
         </districts>

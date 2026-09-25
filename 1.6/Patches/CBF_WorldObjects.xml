@@ -8,4 +8,22 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/WorldObjectDef[defName="Site"]/comps</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/WorldObjectDef[defName="Site"]/comps</xpath>
+      <value>
+        <li Class="CustomBaseFramework.WorldObjectCompProperties_Plan" />
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/WorldObjectDef[defName="Site"]</xpath>
+      <value>
+        <comps>
+          <li Class="CustomBaseFramework.WorldObjectCompProperties_Plan" />
+        </comps>
+      </value>
+    </nomatch>
+  </Operation>
+
 </Patch>

@@ -65,6 +65,7 @@
   <CBF_P_CheckHints>Check: {0} notes</CBF_P_CheckHints>
   <CBF_P_Check>Check</CBF_P_Check>
   <CBF_P_CheckTip>Checks the piece. On the map this runs the full export check, otherwise the check of the file.</CBF_P_CheckTip>
+  <CBF_P_CheckFindings>Check results</CBF_P_CheckFindings>
   <CBF_P_Checked>{0} checked, no errors.</CBF_P_Checked>
   <CBF_P_ExportNeedsMap>Export only works while the piece is placed on the map for editing.</CBF_P_ExportNeedsMap>
   <CBF_P_NothingToSave>Nothing to save.</CBF_P_NothingToSave>
@@ -101,4 +102,17 @@
   <CBF_P_ShowObjectsTip>Shows which objects {0} contains.</CBF_P_ShowObjectsTip>
   <CBF_P_ShowLootTip>Shows what the loot table {0} gives.</CBF_P_ShowLootTip>
   <CBF_P_ShowPawnsTip>Opens the pawn list {0} in the Pawn tab. The arrow at the top left brings you back.</CBF_P_ShowPawnsTip>
+  <CBF_P_AtWallInherit>from category: {0}</CBF_P_AtWallInherit>
+  <CBF_P_AtWallFromCategory>from the category</CBF_P_AtWallFromCategory>
+  <CBF_P_AtWallTip>How much this piece wants to stand at the town wall. Required forces contact, Forbidden rules it out. Without a value of its own, the category's wall contact applies.</CBF_P_AtWallTip>
+  <CBF_P_WeightTip>How often this piece is drawn when several fit. Empty takes the weight of the category.</CBF_P_WeightTip>
+  <CBF_Tend_Forbidden>Forbidden</CBF_Tend_Forbidden>
+  <CBF_Tend_Avoid>Avoid</CBF_Tend_Avoid>
+  <CBF_Tend_Allowed>Allowed</CBF_Tend_Allowed>
+  <CBF_Tend_Preferred>Preferred</CBF_Tend_Preferred>
+  <CBF_Tend_StronglyPreferred>Strongly preferred</CBF_Tend_StronglyPreferred>
+  <CBF_Tend_Required>Required</CBF_Tend_Required>
+  <CBF_AnchorConnect_Wall>The town wall docks here. A gatehouse needs at least two cells of it.</CBF_AnchorConnect_Wall>
+  <CBF_AnchorConnect_Outside>Shows which side of the piece faces outward. A gatehouse needs it, otherwise the generator turns the gate the wrong way round.</CBF_AnchorConnect_Outside>
+  <CBF_AnchorConnect_Anbau>The generator attaches annexes here. On the house the anchor lies on the outer wall, on the annex on the shared wall or one cell outside its shape.</CBF_AnchorConnect_Anbau>
 </LanguageData>

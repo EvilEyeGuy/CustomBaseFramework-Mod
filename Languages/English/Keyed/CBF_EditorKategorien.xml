@@ -25,7 +25,7 @@
   <CBF_K_Landmark>Landmark</CBF_K_Landmark>
   <CBF_K_LandmarkTip>Placed early and in plain view.</CBF_K_LandmarkTip>
   <CBF_K_WallContact>Wall contact</CBF_K_WallContact>
-  <CBF_K_WallContactTip>Must stand against the town wall.</CBF_K_WallContactTip>
+  <CBF_K_WallContactTip>Yes: pieces of this category prefer to stand at the town wall. The piece field "At the wall" controls it more finely and wins.</CBF_K_WallContactTip>
   <CBF_K_Preferences>Preferences</CBF_K_Preferences>
   <CBF_K_ZeroToOne>0 to 1</CBF_K_ZeroToOne>
   <CBF_K_PrefGate>Near the gate</CBF_K_PrefGate>
@@ -51,4 +51,18 @@
   <CBF_K_Chain>Chain: {0}</CBF_K_Chain>
   <CBF_K_Foreign>{0} belongs to the mod {1}. The editor does not save changes to it.</CBF_K_Foreign>
   <CBF_K_UsedInJump>Opens the settlement.</CBF_K_UsedInJump>
+  <CBF_K_Weight>Weight</CBF_K_Weight>
+  <CBF_K_WeightTip>How often pieces of this category are drawn when several fit. 1 is normal. For annexes, a value below 1 also acts as the chance that the annex is tried at all.</CBF_K_WeightTip>
+  <CBF_K_Annexes>Annexes</CBF_K_Annexes>
+  <CBF_K_AnnexCategories>Annex categories</CBF_K_AnnexCategories>
+  <CBF_K_AnnexCategoriesTip>Which annexes may attach to pieces of this category. Empty takes the list of the parent category.</CBF_K_AnnexCategoriesTip>
+  <CBF_K_AnnexRemoveTip>Click removes the category.</CBF_K_AnnexRemoveTip>
+  <CBF_K_AnnexNone>none</CBF_K_AnnexNone>
+  <CBF_K_AnnexAdd>Add annex category</CBF_K_AnnexAdd>
+  <CBF_K_AnnexChance>Chance per anchor</CBF_K_AnnexChance>
+  <CBF_K_AnnexChanceTip>Chance that an annex is built at an annex anchor of the house. Default 0.6.</CBF_K_AnnexChanceTip>
+  <CBF_K_AnnexMax>At most</CBF_K_AnnexMax>
+  <CBF_K_AnnexMaxTip>At most this many annexes per house. Default 2.</CBF_K_AnnexMaxTip>
+  <CBF_K_AnnexMultiple>Repeatable</CBF_K_AnnexMultiple>
+  <CBF_K_AnnexMultipleTip>Applies to the category of the annex. Yes allows the same annex several times on the same house.</CBF_K_AnnexMultipleTip>
 </LanguageData>

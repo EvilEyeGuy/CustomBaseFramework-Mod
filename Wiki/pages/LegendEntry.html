@@ -1,0 +1,205 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LegendEntry · Custom Base Framework</title><style>
+:root{--grund:#f4f3ef;--karte:#ffffff;--linie:#e3e0d8;--text:#1f2124;--leise:#63676e;--akzent:#2f6f60;--akzentweich:#e3efeb;--ocker:#b27a17;--code:#f0eee8;--schatten:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06)}
+@media (prefers-color-scheme: dark){:root{--grund:#121417;--karte:#1a1d22;--linie:#2c3139;--text:#e6e4df;--leise:#99a0aa;--akzent:#7cc0aa;--akzentweich:#1f2f2b;--ocker:#d9ab55;--code:#24282f;--schatten:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--grund);color:var(--text);font:16px/1.65 "Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--akzent);text-underline-offset:3px}
+.inhalt h1{font-size:2.1rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.inhalt h2{font-size:1.35rem;letter-spacing:-.01em;margin:44px 0 10px}
+.inhalt h3{font-size:1.08rem;margin:28px 0 8px}
+.inhalt p,.inhalt li{max-width:74ch}
+.inhalt>p:first-of-type{font-size:1.08rem;color:var(--leise)}
+code{font-family:"Cascadia Mono",Consolas,monospace;font-size:.86em;background:var(--code);padding:2px 6px;border-radius:5px}
+.bild{display:block;margin:18px 0 22px}
+.bild img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--linie);box-shadow:var(--schatten)}
+.bild:hover img{border-color:var(--akzent)}
+.inhalt ol{list-style:none;padding:0;counter-reset:n;margin:12px 0 18px}
+.inhalt ol>li{counter-increment:n;position:relative;padding-left:40px;margin:10px 0}
+.inhalt ol>li::before{content:counter(n);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--ocker);color:#1b1b1b;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.inhalt ul{padding-left:20px}
+.inhalt ul>li{margin:6px 0}
+.inhalt ul>li::marker{color:var(--akzent)}
+table{border-collapse:separate;border-spacing:0;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto;border:1px solid var(--linie);border-radius:10px}
+th,td{padding:8px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--linie)}
+tr:last-child td{border-bottom:0}
+th{background:var(--code);font-weight:600;position:sticky;top:0}
+td code{white-space:nowrap}
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:56px;padding-top:20px;border-top:1px solid var(--linie)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--linie);background:var(--karte);border-radius:10px;padding:12px 16px;color:var(--text)}
+.schritte a:hover{border-color:var(--akzent)}
+.schritte span{display:block;font-size:12px;color:var(--leise);text-transform:uppercase;letter-spacing:.06em}
+.schritte .weiter{text-align:right;margin-left:auto}
+.home .inhalt ol{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;max-width:none}
+.home .inhalt ol>li{margin:0;background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:14px 16px 14px 54px;max-width:none;box-shadow:var(--schatten)}
+.home .inhalt ol>li::before{left:16px;top:16px}
+.home .inhalt ol>li a{font-weight:600}
+.home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
+.pfad{font-size:13px;color:var(--leise);margin-bottom:6px}
+.pfad a{color:var(--leise)}
+.aufseite{font-size:13px}
+.aufseite b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--leise);margin-bottom:8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:4px 0 4px 12px;border-left:2px solid var(--linie)}
+.aufseite a:hover{color:var(--akzent);border-left-color:var(--akzent)}
+
+.rahmen{display:grid;grid-template-columns:260px minmax(0,1fr) 200px;gap:0;max-width:1400px;margin:0 auto}
+.leiste{position:sticky;top:0;height:100vh;overflow:auto;padding:22px 18px;border-right:1px solid var(--linie)}
+.marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
+.marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
+.marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
+.gruppe{margin:0 0 16px}
+.gruppe b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--leise);margin:0 0 4px 10px}
+.gruppe a{display:block;padding:6px 10px;border-radius:8px;color:var(--text);text-decoration:none;font-size:15px}
+.gruppe a:hover{background:var(--akzentweich)}
+.gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
+main{padding:40px 48px 80px;min-width:0}
+.inhalt{max-width:860px}
+.rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
+@media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
+@media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html">Pieces</a><a href="Categories.html">Categories</a><a href="Settlements.html">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / LegendEntry</div><h1 id="legendentry">LegendEntry</h1>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>anchor</code></td>
+<td>text</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>anchorKind</code><br>Kind</td>
+<td>AnchorKind (Connect, Fill, Spawn, Object)</td>
+<td><code>Connect</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>chance</code></td>
+<td>number</td>
+<td><code>1</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>count</code></td>
+<td>IntRange</td>
+<td><code>1</code></td>
+<td>How many of these the settlement wants, as a range.</td>
+</tr>
+<tr>
+<td><code>lootFremd</code></td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>lootTable</code></td>
+<td>text</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>obenauf</code></td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>objects</code></td>
+<td>text</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>pawnCount</code><br>Pawn count</td>
+<td>IntRange</td>
+<td><code>1</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>pawnKind</code></td>
+<td>PawnKindDef</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>pawnList</code><br>Pawn list</td>
+<td>text</td>
+<td>none</td>
+<td>Who can be hiding inside. Only works in containers with an inside, not on open shelves.</td>
+</tr>
+<tr>
+<td><code>pawns</code></td>
+<td>text</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>required</code></td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>role</code></td>
+<td>text</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>roof</code></td>
+<td>RoofDef</td>
+<td>none</td>
+<td>Where a roof is built.</td>
+</tr>
+<tr>
+<td><code>rotation</code></td>
+<td>text</td>
+<td><code>North</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>stuff</code><br>Material</td>
+<td>ThingDef</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>symbol</code></td>
+<td>text</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>temperatur</code></td>
+<td>number</td>
+<td><code>-9999</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>terrain</code><br>Floor</td>
+<td>TerrainDef</td>
+<td>none</td>
+<td>The floor layer. One character per cell, resolved through the legend.</td>
+</tr>
+<tr>
+<td><code>thing</code></td>
+<td>ThingDef</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td><code>variants</code></td>
+<td>list of <a href="LegendVariant.html">LegendVariant</a></td>
+<td>none</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a href="Field-Reference.html">Back to the field reference</a></p></div></main><aside class="rechts"></aside></div></body></html>

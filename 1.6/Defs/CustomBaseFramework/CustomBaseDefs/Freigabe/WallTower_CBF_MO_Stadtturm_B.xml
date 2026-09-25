@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Stadtturm_B</defName>
+    <label>CBF_MO_Stadtturm_B</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallTower</li>
+      <li>CBF_MO_Stadtturm</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>1</symbol><anchor>Turmtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>8</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>9</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList><pawnCount>1</pawnCount></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_BallistaBolt</thing><count>10</count></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_CastleWallEmbrasures</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>R</symbol><anchor>Wall</anchor></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
+      <li><symbol>q</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
+    </legend>
+    <mask>
+      <li>..###..</li>
+      <li>.#####.</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>.#####.</li>
+      <li>..###..</li>
+    </mask>
+    <terrain>
+      <li>..hhh..</li>
+      <li>.hhhhh.</li>
+      <li>hhhhhhh</li>
+      <li>hhhhhhh</li>
+      <li>hhhhhhh</li>
+      <li>.hhhhh.</li>
+      <li>..hhh..</li>
+    </terrain>
+    <things>
+      <li>..SSS..</li>
+      <li>.SMbMS.</li>
+      <li>SSC..SS</li>
+      <li>S..a..S</li>
+      <li>SSg..SS</li>
+      <li>.SM.MS.</li>
+      <li>..SSS..</li>
+    </things>
+    <roof>
+      <li>..^^^..</li>
+      <li>.^^^^^.</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>.^^^^^.</li>
+      <li>..^^^..</li>
+    </roof>
+    <anchors>
+      <li>...R...</li>
+      <li>...1...</li>
+      <li>.......</li>
+      <li>R8...9R</li>
+      <li>..qq...</li>
+      <li>.......</li>
+      <li>...R...</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

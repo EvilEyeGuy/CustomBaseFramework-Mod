@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <WorldObjectDef ParentName="Site">
+    <defName>CBF_MO_Quest_UeberfallenerOrt</defName>
+    <label>raided settlement</label>
+    <mapGenerator>CBF_Base_Faction</mapGenerator>
+    <comps>
+      <li Class="CustomBaseFramework.WorldObjectCompProperties_CBFOrtsgut">
+        <ansehenJe1000Silber>1.5</ansehenJe1000Silber>
+      </li>
+    </comps>
+  </WorldObjectDef>
+
+  <WorldObjectDef ParentName="Site">
+    <defName>CBF_MO_Quest_UmkaempfterOrt</defName>
+    <label>settlement under attack</label>
+    <mapGenerator>CBF_Base_Faction</mapGenerator>
+    <comps>
+      <li Class="CustomBaseFramework.WorldObjectCompProperties_CBFOrtsgut">
+        <ansehenJe1000Silber>1.5</ansehenJe1000Silber>
+        <vonAnfangEigen>true</vonAnfangEigen>
+      </li>
+      <li Class="CustomBaseFramework.WorldObjectCompProperties_CBFAngriff" />
+    </comps>
+  </WorldObjectDef>
+
+</Defs>

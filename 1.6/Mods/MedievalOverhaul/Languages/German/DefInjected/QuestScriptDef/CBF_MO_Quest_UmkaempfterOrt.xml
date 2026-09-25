@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CBF_MO_Quest_UmkaempfterOrt.questNameRules.rulesStrings>
+    <li>questName->Die Belagerung von [asker_nameDef]s [place_neu]</li>
+    <li>questName->Das umkämpfte [place_neu]</li>
+    <li>questName->Entsatz für [asker_nameDef]</li>
+    <li>place_neu->Dorf</li>
+    <li>place_neu->Städtchen</li>
+  </CBF_MO_Quest_UmkaempfterOrt.questNameRules.rulesStrings>
+
+  <CBF_MO_Quest_UmkaempfterOrt.questDescriptionRules.rulesStrings>
+    <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] der Fraktion [asker_faction_name], bittet dringend um Hilfe. [angreiferFaction_pawnsPlural] der Fraktion [angreiferFaction_name] stürmen einen Ort von [asker_nameDef]. Die Mauern haben Breschen, Teile brennen. Die Verteidiger halten noch, allein aber nicht mehr lange.\n\nHilf ihnen, die Angreifer zu vertreiben. Fallen die Verteidiger, bevor die Angreifer besiegt sind, ist der Ort verloren.</li>
+  </CBF_MO_Quest_UmkaempfterOrt.questDescriptionRules.rulesStrings>
+
+  <CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterLabelZuSpaet.slateRef>Quest gescheitert: [resolvedQuestName]</CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterLabelZuSpaet.slateRef>
+  <CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterTextZuSpaet.slateRef>Wir sind nicht rechtzeitig angekommen. Der Ort ist an die Angreifer gefallen. Die Quest '[resolvedQuestName]' ist gescheitert.</CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterTextZuSpaet.slateRef>
+  <CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterLabelGefallen.slateRef>Quest gescheitert: [resolvedQuestName]</CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterLabelGefallen.slateRef>
+  <CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterTextGefallen.slateRef>Die letzten Verteidiger sind gefallen. Der Ort ist verloren. Die Quest '[resolvedQuestName]' ist gescheitert.</CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterTextGefallen.slateRef>
+  <CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterLabelVerlassen.slateRef>Quest gescheitert: [resolvedQuestName]</CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterLabelVerlassen.slateRef>
+  <CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterTextVerlassen.slateRef>Wir haben den Ort verlassen, während die Angreifer noch da waren. Die Quest '[resolvedQuestName]' ist beendet.</CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterTextVerlassen.slateRef>
+  <CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterLabelLohn.slateRef>Bezahlung eingetroffen</CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterLabelLohn.slateRef>
+  <CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterTextLohn.slateRef>Die Angreifer sind geschlagen, der Ort ist gerettet.\n\nDie Bezahlung der Fraktion [asker_faction_name] ist eingetroffen.</CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterTextLohn.slateRef>
+  <CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterLabelGunst.slateRef>[asker_faction_royalFavorLabel]</CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterLabelGunst.slateRef>
+  <CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterTextGunst.slateRef>Diese Kolonisten haben am Kampf um [resolvedQuestName] teilgenommen. [asker_definite] möchte wissen, wer die [royalFavorReward_amount] [asker_faction_royalFavorLabel] für diesen Dienst erhalten soll.</CBF_MO_Quest_UmkaempfterOrt.CBF_Quest_LetterTextGunst.slateRef>
+
+</LanguageData>

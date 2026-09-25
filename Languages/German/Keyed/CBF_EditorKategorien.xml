@@ -25,7 +25,7 @@
   <CBF_K_Landmark>Wahrzeichen</CBF_K_Landmark>
   <CBF_K_LandmarkTip>Wird früh und gut sichtbar gesetzt.</CBF_K_LandmarkTip>
   <CBF_K_WallContact>Mauerkontakt</CBF_K_WallContact>
-  <CBF_K_WallContactTip>Muss an der Stadtmauer stehen.</CBF_K_WallContactTip>
+  <CBF_K_WallContactTip>Ja: Stücke dieser Kategorie stehen bevorzugt an der Stadtmauer. Genauer regelt es das Feld „An der Mauer“ am Stück, das geht vor.</CBF_K_WallContactTip>
   <CBF_K_Preferences>Vorlieben</CBF_K_Preferences>
   <CBF_K_ZeroToOne>0 bis 1</CBF_K_ZeroToOne>
   <CBF_K_PrefGate>Nähe Tor</CBF_K_PrefGate>
@@ -51,4 +51,18 @@
   <CBF_K_Chain>Kette: {0}</CBF_K_Chain>
   <CBF_K_Foreign>{0} gehört zum Mod {1}. Änderungen daran speichert der Editor nicht.</CBF_K_Foreign>
   <CBF_K_UsedInJump>Öffnet die Siedlung.</CBF_K_UsedInJump>
+  <CBF_K_Weight>Gewicht</CBF_K_Weight>
+  <CBF_K_WeightTip>Wie oft Stücke dieser Kategorie gezogen werden, wenn mehrere passen. 1 ist normal. Bei Anbauten wirkt ein Wert unter 1 zusätzlich als Chance, dass der Anbau überhaupt versucht wird.</CBF_K_WeightTip>
+  <CBF_K_Annexes>Anbauten</CBF_K_Annexes>
+  <CBF_K_AnnexCategories>Anbau-Kategorien</CBF_K_AnnexCategories>
+  <CBF_K_AnnexCategoriesTip>Welche Anbauten an Stücke dieser Kategorie dürfen. Leer übernimmt die Liste der Elternkategorie.</CBF_K_AnnexCategoriesTip>
+  <CBF_K_AnnexRemoveTip>Klick entfernt die Kategorie.</CBF_K_AnnexRemoveTip>
+  <CBF_K_AnnexNone>keine</CBF_K_AnnexNone>
+  <CBF_K_AnnexAdd>Anbau-Kategorie hinzufügen</CBF_K_AnnexAdd>
+  <CBF_K_AnnexChance>Chance je Anker</CBF_K_AnnexChance>
+  <CBF_K_AnnexChanceTip>Chance, dass an einem Anbau-Anker des Hauses ein Anbau entsteht. Vorgabe 0,6.</CBF_K_AnnexChanceTip>
+  <CBF_K_AnnexMax>Höchstens</CBF_K_AnnexMax>
+  <CBF_K_AnnexMaxTip>Höchstens so viele Anbauten pro Haus. Vorgabe 2.</CBF_K_AnnexMaxTip>
+  <CBF_K_AnnexMultiple>Mehrfach</CBF_K_AnnexMultiple>
+  <CBF_K_AnnexMultipleTip>Gilt an der Kategorie des Anbaus. Ja erlaubt denselben Anbau mehrfach am selben Haus.</CBF_K_AnnexMultipleTip>
 </LanguageData>

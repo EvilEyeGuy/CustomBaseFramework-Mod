@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.RuinDef Name="CBF_Ruin_Basis" Abstract="True">
+    <besatzung>Besatzer</besatzung>
+  </CustomBaseFramework.RuinDef>
+
+  <CustomBaseFramework.RuinDef ParentName="CBF_Ruin_Basis">
+    <defName>CBF_Ruin_Ueberfallen</defName>
+    <label>raided</label>
+    <wandAbriss>0.15</wandAbriss>
+    <haeufung>0.7</haeufung>
+    <breschen>1~3</breschen>
+    <torZerstoert>0.5</torZerstoert>
+    <gebaeudeSchaden>0.1~0.5</gebaeudeSchaden>
+    <geschuetzeZerstoert>0.5</geschuetzeZerstoert>
+    <brandstellen>0.2</brandstellen>
+    <feuer>0~3</feuer>
+    <schutt>0.3</schutt>
+    <beuteFaktor>0.4</beuteFaktor>
+    <beuteBeiBesatzern>0.5</beuteBeiBesatzern>
+    <leichenBewohner>4~10</leichenBewohner>
+    <leichenAngreifer>2~6</leichenAngreifer>
+    <verwesungTage>0.5~3</verwesungTage>
+    <gefangene>0~3</gefangene>
+    <felderVerwuestet>0.3</felderVerwuestet>
+    <viehWeg>0.6</viehWeg>
+  </CustomBaseFramework.RuinDef>
+
+</Defs>

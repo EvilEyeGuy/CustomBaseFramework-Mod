@@ -7,7 +7,6 @@
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_MO_Apotheke</li>
-      <li>CBF_MO_Werkstatt</li>
     </categories>
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
@@ -15,8 +14,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Apothecary</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>2</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Apotheke</lootTable></li>
-      <li><symbol>8</symbol><anchor>Apotheker</anchor><anchorKind>Spawn</anchorKind></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_AlchemyBench</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>8</symbol><anchor>Apotheker</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_DryingRack_Small</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_RusticEndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
@@ -27,6 +25,10 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_Cauldron</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_AlchemyBench</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_LootableShelf_AssortedHerbs</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_LootableShelf_AssortedHerbs</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
       <li><symbol>k</symbol><anchor>Laborregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kraeuterregal</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_OnTop_Alchemy_MortarAndPestle</thing><rotation>South</rotation></li>
@@ -58,11 +60,11 @@
     <things>
       <li>TTTTTTTT...</li>
       <li>T....HUT...</li>
-      <li>TA.....TD..</li>
+      <li>Ta..b..TD..</li>
       <li>T......F...</li>
       <li>TTFTTFTT...</li>
       <li>T..ET..TD..</li>
-      <li>TG..T..T...</li>
+      <li>TG.gT.fT...</li>
       <li>TTTTTFTT.B.</li>
       <li>....!.P....</li>
     </things>
@@ -90,9 +92,9 @@
     </roof>
     <anchors>
       <li>....+......</li>
+      <li>....k......</li>
+      <li>+...k8.....</li>
       <li>...........</li>
-      <li>+....8.....</li>
-      <li>...kk......</li>
       <li>...........</li>
       <li>......q....</li>
       <li>...2..q....</li>

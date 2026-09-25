@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PawnKindDef Name="CBF_MO_NeutralerSoldatBasis" Abstract="True">
+    <race>Human</race>
+    <backstoryCategories>
+      <li>Tribal</li>
+    </backstoryCategories>
+    <maxGenerationAge>60</maxGenerationAge>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <invNutrition>2.55</invNutrition>
+    <invFoodDef>DankPyon_MealBread</invFoodDef>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution>true</apparelIgnorePollution>
+    <disallowedTraits>
+      <li>Wimp</li>
+      <li>Nudist</li>
+    </disallowedTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <isFighter>true</isFighter>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>14~22</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_MO_NeutralerSoldatBasis">
+    <defName>CBF_MO_Pikenier</defName>
+    <label>pikeman</label>
+    <combatPower>70</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.6~1.8</gearHealthRange>
+    <apparelMoney>900~1200</apparelMoney>
+    <apparelTags>
+      <li>DankPyon_Footman</li>
+      <li>DankPyon_BillmanHelmet</li>
+    </apparelTags>
+    <weaponMoney>250~400</weaponMoney>
+    <weaponTags>
+      <li>DankPyon_Pike</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_MO_NeutralerSoldatBasis">
+    <defName>CBF_MO_Ritter</defName>
+    <label>knight</label>
+    <combatPower>110</combatPower>
+    <gearHealthRange>0.8~1.8</gearHealthRange>
+    <apparelMoney>1000~1600</apparelMoney>
+    <apparelTags>
+      <li>DankPyon_Knight</li>
+      <li>DankPyon_KnightHelmet</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>DankPyon_Apparel_FullPlate</li>
+      <li>DankPyon_Footwear_BootsPlate</li>
+      <li>DankPyon_Handwear_GlovesPlate</li>
+    </apparelRequired>
+    <weaponMoney>300~500</weaponMoney>
+    <weaponTags>
+      <li>DankPyon_Greatsword</li>
+      <li>DankPyon_TwoHandedHammer</li>
+      <li>DankPyon_Longsword</li>
+    </weaponTags>
+    <initialResistanceRange>17~25</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>12~18</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+</Defs>

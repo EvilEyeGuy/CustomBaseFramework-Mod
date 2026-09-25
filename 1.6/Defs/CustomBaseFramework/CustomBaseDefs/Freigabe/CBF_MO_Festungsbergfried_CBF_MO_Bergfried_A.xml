@@ -6,11 +6,16 @@
     <label>CBF_MO_Bergfried_A</label>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_MO_Bergfried</li>
+      <li>CBF_MO_Festungsbergfried</li>
     </categories>
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_HideoutShelfFilledIngot</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>#</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>$</symbol><thing>DankPyon_HideoutShelfFilledChaliceSilver</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>%</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>*</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>0</symbol><anchor>Saaltruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Adelstruhe</objects><lootTable>CBF_MO_Loot_Bergfried</lootTable></li>
       <li><symbol>1</symbol><anchor>SchatzA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Schatzregal</objects></li>
       <li><symbol>2</symbol><anchor>SchatzB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Schatzregal</objects></li>
@@ -19,17 +24,23 @@
       <li><symbol>5</symbol><anchor>TurmtruheB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Adelstruhe</objects><lootTable>CBF_MO_Loot_Schatzkammer</lootTable></li>
       <li><symbol>6</symbol><anchor>Ruesttruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
       <li><symbol>7</symbol><anchor>Schlaftruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Adelstruhe</objects><lootTable>CBF_MO_Loot_Bergfried</lootTable></li>
-      <li><symbol>8</symbol><anchor>Burgherr</anchor><anchorKind>Spawn</anchorKind></li>
-      <li><symbol>9</symbol><anchor>Hofwache</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>8</symbol><anchor>Burgherr</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>9</symbol><anchor>Hofwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>=</symbol><thing>DankPyon_ArmorStatue</thing><stuff>DankPyon_IronIngot</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>?</symbol><thing>DankPyon_HideoutCrate1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>@</symbol><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_HayBale2x2c</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_RoyalTudorBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>C</symbol><anchor>Prunkruestung4</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Prunkstaender</objects><lootTable>CBF_MO_Loot_Ruestkammer</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_RoyalDresser</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_RoyalEndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_RugRoyal_GrandCross3x3c</thing><rotation>East</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_RusticHearth</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_RusticHearth</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_HideoutShelfFilledChaliceSilver</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>J</symbol><anchor>Erntewagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Erntewagen</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_Gate1x2c</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_ArmorStatue</thing><stuff>DankPyon_IronIngot</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_CastleWallEmbrasures</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_RusticNobleChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_LampPost</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
@@ -37,7 +48,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RoyalThrone</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_RusticNobleChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_ArmorStatue</thing><stuff>Steel</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>V</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>X</symbol><thing>DankPyon_RoyalTable2x4c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
@@ -49,8 +61,9 @@
       <li><symbol>g</symbol><anchor>FassB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
       <li><symbol>i</symbol><anchor>GeschirrC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>j</symbol><anchor>Ruestung1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Ruestungsstaender</objects><lootTable>CBF_MO_Loot_Ruestung</lootTable></li>
       <li><symbol>k</symbol><anchor>Barren</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrenregal</objects></li>
-      <li><symbol>l</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>l</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_RusticNobleChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_RusticNobleChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_Well</thing><stuff>BlocksGranite</stuff></li>
@@ -58,9 +71,11 @@
       <li><symbol>q</symbol><anchor>Hofregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li><symbol>r</symbol><anchor>WaffenregalA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li><symbol>s</symbol><anchor>WaffenregalB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
+      <li><symbol>t</symbol><anchor>Ruestung2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Ruestungsstaender</objects><lootTable>CBF_MO_Loot_Ruestung</lootTable></li>
       <li><symbol>u</symbol><anchor>Flankenregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li><symbol>x</symbol><anchor>KisteA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li><symbol>y</symbol><anchor>KisteB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
+      <li><symbol>z</symbol><anchor>Prunkruestung3</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Prunkstaender</objects><lootTable>CBF_MO_Loot_Ruestkammer</lootTable></li>
     </legend>
     <mask>
       <li>#######...............</li>
@@ -108,21 +123,21 @@
     </terrain>
     <things>
       <li>SSSSSSS...............</li>
-      <li>S.....SSSSSSSSSSSSSS..</li>
-      <li>S.....SW...R..WS...S..</li>
-      <li>S.....S........F.B.SSS</li>
+      <li>SI..I.SSSSSSSSSSSSSS..</li>
+      <li>S.....SLV..R..LSV..S..</li>
+      <li>SW.V..S........F.B.SSS</li>
       <li>S.....F........S....ES</li>
-      <li>S.....S........S.....S</li>
+      <li>S!..$.S........S.....S</li>
       <li>SSSSSSSH.......S....YS</li>
-      <li>S.....S.G......S...SSS</li>
-      <li>S.....SY......YSYD.S..</li>
+      <li>S%.*%.S.G......S...SSS</li>
+      <li>S=...=SY......YSYD.S..</li>
       <li>SSSFSSSSSSSFSSSSSSSS..</li>
-      <li>SQ.................S..</li>
-      <li>M................A.M..</li>
+      <li>SQ...........?.....S..</li>
+      <li>M.....%......?...A.M..</li>
       <li>SSS.........o....SSSS.</li>
-      <li>..S.Z............S..M.</li>
+      <li>..S.Z............S%.M.</li>
       <li>..SMS............F..S.</li>
-      <li>....S..P..P......SSSS.</li>
+      <li>....S##P..P...@..SSSS.</li>
       <li>....SSSS..SSSSSSSS....</li>
       <li>.....SSM..MSS.........</li>
       <li>.....SSS..SSS.........</li>
@@ -175,13 +190,13 @@
     <anchors>
       <li>......................</li>
       <li>.11.22................</li>
-      <li>........0.......7.....</li>
+      <li>.......j0.....t.7.....</li>
       <li>.4.5.......8..........</li>
       <li>......................</li>
       <li>.kk.33................</li>
       <li>......................</li>
       <li>.rr6ss................</li>
-      <li>......................</li>
+      <li>.z...C................</li>
       <li>......................</li>
       <li>.............xx.......</li>
       <li>......qq.....yy.......</li>

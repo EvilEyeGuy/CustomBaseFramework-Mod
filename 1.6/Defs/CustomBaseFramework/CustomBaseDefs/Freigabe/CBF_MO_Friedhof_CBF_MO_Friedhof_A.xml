@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Friedhof_A</defName>
+    <label>CBF_MO_Friedhof_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Friedhof</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>B</symbol><thing>Plant_TreeOak</thing></li>
+      <li><symbol>C</symbol><thing>Plant_TreeCypress</thing></li>
+      <li><symbol>E</symbol><thing>Grave</thing><rotation>East</rotation></li>
+      <li><symbol>G</symbol><thing>Grave</thing><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_RuinedColumn</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>Q</symbol><thing>SculptureLarge</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>W</symbol><thing>Grave</thing><rotation>West</rotation></li>
+      <li><symbol>X</symbol><thing>Sarcophagus</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>Z</symbol><thing>Fence</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>z</symbol><thing>FenceGate</thing><stuff>BlocksGranite</stuff></li>
+    </legend>
+    <mask>
+      <li>....#######....</li>
+      <li>..###########..</li>
+      <li>#############..</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>.##############</li>
+      <li>.#############.</li>
+      <li>.#############.</li>
+      <li>...#########...</li>
+      <li>...######......</li>
+    </mask>
+    <terrain>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+    </terrain>
+    <things>
+      <li>....ZZZZZZZ....</li>
+      <li>..ZZZ...I.ZZZ..</li>
+      <li>ZZZ...Y...C.Z..</li>
+      <li>Z..B...Q....ZZZ</li>
+      <li>ZG......Y....CZ</li>
+      <li>Z..B.G.....X..Z</li>
+      <li>ZZ..........B.Z</li>
+      <li>.Z.G....E....ZZ</li>
+      <li>.Z...G.....W.Z.</li>
+      <li>.ZZZ....E..ZZZ.</li>
+      <li>...Z....ZZZZ...</li>
+      <li>...ZZzZZZ......</li>
+    </things>
+    <roof>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

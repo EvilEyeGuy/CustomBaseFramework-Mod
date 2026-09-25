@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Ruestungsstaender_Weiss</defName>
+    <label>armor stand</label>
+    <description>A stand with a suit of armor and a helmet. Someone could make use of them.</description>
+    <size>(1,1)</size>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <graphicData>
+      <texPath>Things/Building/Art/ArmorStatue</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <DankPyon_IronIngot>40</DankPyon_IronIngot>
+    </costList>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <modExtensions>
+      <li Class="CustomBaseFramework.BeutebehaelterExtension">
+        <leerGrafik>
+          <texPath>Things/Building/CBF/SockelWeiss</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(2,2)</drawSize>
+        </leerGrafik>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Ruestungsstaender_Rot</defName>
+    <label>ornate armor stand</label>
+    <description>A stand draped in red, holding arms and armor of some renown.</description>
+    <size>(1,1)</size>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <graphicData>
+      <texPath>Things/Building/Art/ArmorStatueNamed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <DankPyon_IronIngot>60</DankPyon_IronIngot>
+      <Cloth>20</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+    </statBases>
+    <modExtensions>
+      <li Class="CustomBaseFramework.BeutebehaelterExtension">
+        <leerGrafik>
+          <texPath>Things/Building/Ruin/ArmorStatueNamedEmpty</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(2,2)</drawSize>
+        </leerGrafik>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

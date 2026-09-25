@@ -208,6 +208,43 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Reliquienschrein</defName>
+    <members>
+      <li><thing>DankPyon_AncientReliquary</thing><fremd>true</fremd></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Ruestungsstaender</defName>
+    <members>
+      <li>CBF_MO_Ruestungsstaender_Weiss</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Waffenstand</defName>
+    <members>
+      <li><thing>DankPyon_HideoutTableMarket_Melee</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutStallMarket_Melee</thing><fremd>true</fremd></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Bogenstand</defName>
+    <members>
+      <li><thing>DankPyon_HideoutTableMarket_Bow</thing><fremd>true</fremd></li>
+      <li><thing>DankPyon_HideoutStallMarket_Bow</thing><fremd>true</fremd></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Prunkstaender</defName>
+    <members>
+      <li>CBF_MO_Ruestungsstaender_Rot</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_Fell_2x2</defName>
     <members>
       <li><thing>DankPyon_RugCougar2x2c</thing><bleibt>true</bleibt></li>

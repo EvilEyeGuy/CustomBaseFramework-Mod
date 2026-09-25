@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HistoryEventDef>
+    <defName>CBF_Quest_OrtsgutGenommen</defName>
+    <label>took goods from their settlement</label>
+  </HistoryEventDef>
+
+  <LetterDef ParentName="CustomChoiceLetterBase">
+    <defName>CBF_Quest_Wahl</defName>
+    <letterClass>CustomBaseFramework.ChoiceLetter_CBFWahl</letterClass>
+  </LetterDef>
+
+</Defs>

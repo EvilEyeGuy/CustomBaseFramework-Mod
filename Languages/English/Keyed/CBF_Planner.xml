@@ -51,7 +51,6 @@
   <CBF_Build_Elapsed>Elapsed: {0} seconds  {1}</CBF_Build_Elapsed>
   <CBF_Build_Piece>Placing buildings: {0} of {1}</CBF_Build_Piece>
   <CBF_Build_NoLayout>No complete plan was found ({0}). The map was not changed.</CBF_Build_NoLayout>
-  <CBF_Planner_Attempt>Site {0} (up to 96): {1}</CBF_Planner_Attempt>
   <CBF_Planner_Piece>Fitting building: {0} ({1} placed)</CBF_Planner_Piece>
   <CBF_Planner_MissingWard>Ward definition is missing for layer {0}.</CBF_Planner_MissingWard>
   <CBF_Planner_MissingWall>No wall template is available for layer {0}.</CBF_Planner_MissingWall>
@@ -106,6 +105,10 @@
   <CBF_UploadBusy>An upload is already running.</CBF_UploadBusy>
   <CBF_UploadNoReport>No error report found yet.</CBF_UploadNoReport>
   <CBF_UploadDone>Report uploaded. The links are in the log:</CBF_UploadDone>
+  <CBF_UploadFailed>Upload failed:</CBF_UploadFailed>
+  <CBF_UploadPartReport>Report:</CBF_UploadPartReport>
+  <CBF_UploadPartTerrain>Terrain:</CBF_UploadPartTerrain>
+  <CBF_UploadPartFailed>failed:</CBF_UploadPartFailed>
   <CBF_Kind_Mittelalterstadt>Medieval town</CBF_Kind_Mittelalterstadt>
   <CBF_Kind_Modernestadt>Modern town</CBF_Kind_Modernestadt>
   <CBF_Kind_Lager>Camp</CBF_Kind_Lager>
@@ -115,7 +118,7 @@
 {1}
 will be uploaded to {0}.
 
-The link is PUBLIC: anyone who has it can read both files, and they cannot be deleted there. The report contains your active mod list.
+The link is PUBLIC: anyone who has it can read both files, and they are deleted automatically after {2} days. The report contains your active mod list.
 
 Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_HelpEmpty>No description has been written for this section yet.</CBF_HelpEmpty>
@@ -316,4 +319,55 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_TechNone>no tech level</CBF_TechNone>
   <CBF_Range>{0} to {1}</CBF_Range>
   <CBF_PawnCellBlocked>{0} on {1} is blocked by: {2}\nClick to select it.</CBF_PawnCellBlocked>
+
+  <CBF_Planner_Abtragrueckbau>Earlier rock removal outside the city undone, {0} cells stay rock.</CBF_Planner_Abtragrueckbau>
+  <CBF_Planner_Anbauten>{0} annexes attached to buildings.</CBF_Planner_Anbauten>
+  <CBF_Planner_Aufgeschuettet>{0} marsh cells filled in inside the settlement and under roads, walls and fences.</CBF_Planner_Aufgeschuettet>
+  <CBF_Planner_AusgangUeberWasser>No exit at the {0} edge: the road there would cross water.</CBF_Planner_AusgangUeberWasser>
+  <CBF_Planner_Bergraeumen>Layer {0}: {1} rock cells cleared.</CBF_Planner_Bergraeumen>
+  <CBF_Planner_Bezirke>Buildings are split into {0} districts.</CBF_Planner_Bezirke>
+  <CBF_Planner_Blockdichte>Layer {0}: the orders need {1} percent of the free area. Layout: {2}.</CBF_Planner_Blockdichte>
+  <CBF_Planner_Blockdichte_Dicht>dense</CBF_Planner_Blockdichte_Dicht>
+  <CBF_Planner_Blockdichte_Einzeln>detached</CBF_Planner_Blockdichte_Einzeln>
+  <CBF_Planner_Brueckenbreite>{0} road cells over water got a bridge.</CBF_Planner_Brueckenbreite>
+  <CBF_Planner_Brueckentor>Suburb bridgeheads: {0} with a gate, {1} without.</CBF_Planner_Brueckentor>
+  <CBF_Planner_Buchtfuellen>{0} water cells in bays near the city filled in.</CBF_Planner_Buchtfuellen>
+  <CBF_Planner_CoreShapeFallback>The city shape could not be fitted to the terrain and is used unchanged.</CBF_Planner_CoreShapeFallback>
+  <CBF_Planner_Feinraster>Layer {0}: outline squared off for the wall walk, {1} cells adjusted.</CBF_Planner_Feinraster>
+  <CBF_Planner_Flussuebergang>{0} river crossing(s) planned. The suburb gets {1} extra cells for them.</CBF_Planner_Flussuebergang>
+  <CBF_Planner_Gasse>{0} could not reach the road network and got a lane of {1} cells.</CBF_Planner_Gasse>
+  <CBF_Planner_GateHoleInstead>Layer {0}: still no room for a gatehouse after many layouts. The wall gets an open passage there instead.</CBF_Planner_GateHoleInstead>
+  <CBF_Planner_GateMinimum>Every walled layer needs at least one gatehouse. An open passage does not count.</CBF_Planner_GateMinimum>
+  <CBF_Planner_GateMissing>Layer {0}: the listed gatehouse {1} is not available or not allowed there.</CBF_Planner_GateMissing>
+  <CBF_Planner_IslandDropped>A detached part of the city or suburb was dropped.</CBF_Planner_IslandDropped>
+  <CBF_Planner_IslandEmpty>Layer {0}: a detached part with {1} cells has no room for any building.</CBF_Planner_IslandEmpty>
+  <CBF_Planner_Kantenglaetten>Layer {0}: outline smoothed with window width {1}, {2} cells added, {3} removed.</CBF_Planner_Kantenglaetten>
+  <CBF_Planner_Marge>{0} in layer {1}: {2} of {3} placed. The shortfall is within tolerance.</CBF_Planner_Marge>
+  <CBF_Planner_Mauerversatz>Layer {0}: wall line staggered in sections, {1} cells taken back.</CBF_Planner_Mauerversatz>
+  <CBF_Planner_Nachschlag>{0} was below its minimum. More were placed using terrain changes, {1} cells changed.</CBF_Planner_Nachschlag>
+  <CBF_Planner_NoSpot>No room for {0}. Checked: {1} spots with enough ground, {2} of them with road access, {3} of them fully fitting.</CBF_Planner_NoSpot>
+  <CBF_Planner_Seefuellen>{0} lake cells inside the settlement area filled in.</CBF_Planner_Seefuellen>
+  <CBF_Planner_Sickerstelle>The fortification leaks: {0} cells in the city or suburb can be reached from outside.</CBF_Planner_Sickerstelle>
+  <CBF_Planner_StadtGeteilt>The city is split: {0} cells are not connected to its largest part.</CBF_Planner_StadtGeteilt>
+  <CBF_Planner_Sumpfbruecke>{0} road cells over marsh got a bridge.</CBF_Planner_Sumpfbruecke>
+  <CBF_Planner_TrotzdemGebaut>Last attempt: building despite the problems with walls or gates.</CBF_Planner_TrotzdemGebaut>
+  <CBF_Planner_Uferbruecke>Bridge laid across the water between city and suburb, {0} cells.</CBF_Planner_Uferbruecke>
+  <CBF_Planner_Uferenge>Bridge ends: {0} water cells at the bank filled in.</CBF_Planner_Uferenge>
+  <CBF_Planner_Ufertor>Layer {0}: gate placed at the bridge across the water.</CBF_Planner_Ufertor>
+  <CBF_Planner_Uferwahl>Suburb land: {0} cells on the city bank, {1} on the far bank. {2} percent of the suburb goes to the far bank.</CBF_Planner_Uferwahl>
+  <CBF_Planner_Unerfuellbar>{0} in layer {1}: {2} of {3} placed. No layout managed more, so the minimum was dropped.</CBF_Planner_Unerfuellbar>
+  <CBF_Planner_VorstadtAngeschlossen>{0} cells between city and suburb added to the suburb so both touch.</CBF_Planner_VorstadtAngeschlossen>
+  <CBF_Planner_VorstadtHinterFels>{0} suburb cells behind rock could not be reached and were removed.</CBF_Planner_VorstadtHinterFels>
+  <CBF_Planner_Vorstadtrechteck>Suburb reshaped into {0} rectangle(s): {1} cells before, {2} now.</CBF_Planner_Vorstadtrechteck>
+  <CBF_Planner_Vorstadtring>Suburb laid out as a ring around the city: {0} cells requested, {1} laid out, ring width {2}, {3} bulge(s).</CBF_Planner_Vorstadtring>
+  <CBF_Planner_WallAcrossWater>The wall would have to cross open water. This site is discarded.</CBF_Planner_WallAcrossWater>
+  <CBF_Planner_WallOpen>The wall is not closed.</CBF_Planner_WallOpen>
+  <CBF_Planner_WardEroded>Layer {0}: {1} cells in narrow offshoots dropped.</CBF_Planner_WardEroded>
+  <CBF_Planner_ZwickelGefuellt>Enclosed gaps filled: {0} cells to the city, {1} to the suburb.</CBF_Planner_ZwickelGefuellt>
+  <CBF_Planner_IslandUnlinked>A suburb part with {0} cells has no path to the city.</CBF_Planner_IslandUnlinked>
+  <CBF_Planner_NoEscape>A suburb part ({0}, {1} cells) got neither a gatehouse nor a passage.</CBF_Planner_NoEscape>
+  <CBF_Planner_NoFrontage>Layer {0}: no gate forecourt found for a part of size {1}.</CBF_Planner_NoFrontage>
+  <CBF_Planner_SuburbBoxed>Suburb parts reshaped into rectangles: {0} reshaped, {1} dropped.</CBF_Planner_SuburbBoxed>
+  <CBF_Planner_WardNarrowed>Layer {0}: the wall grid takes away more than half of the area.</CBF_Planner_WardNarrowed>
+
 </LanguageData>

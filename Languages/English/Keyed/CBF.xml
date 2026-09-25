@@ -29,6 +29,7 @@
   <CBF_Export>Export</CBF_Export>
   <CBF_NoPieceMarked>No piece is marked on this map.</CBF_NoPieceMarked>
   <CBF_BadDefName>The name does not make a valid defName.</CBF_BadDefName>
+  <CBF_BadDefNameChars>Only letters A to Z, digits, underscore and hyphen are allowed. The name must not start with a digit.</CBF_BadDefNameChars>
   <CBF_PieceTooSparse>Part of the piece is missing. Split it into smaller pieces.</CBF_PieceTooSparse>
   <CBF_WriteFailed>Writing failed, see log.</CBF_WriteFailed>
 
@@ -188,8 +189,6 @@
   <CBF_FieldDesc_buchtHaus>Edge length of the smallest house. Bays narrower than this are dropped.</CBF_FieldDesc_buchtHaus>
   <CBF_Field_minFuellgrad>Minimum fill</CBF_Field_minFuellgrad>
   <CBF_FieldDesc_minFuellgrad>How full the outline must be against its convex hull. Lower allows more ragged shapes.</CBF_FieldDesc_minFuellgrad>
-  <CBF_Field_bergSog>Pull toward the mountain</CBF_Field_bergSog>
-  <CBF_FieldDesc_bergSog>How strongly the settlement moves toward rock. Higher saves wall, lower gives more open ground.</CBF_FieldDesc_bergSog>
   <CBF_Field_roadMain>Main road width</CBF_Field_roadMain>
   <CBF_FieldDesc_roadMain>Width of the main road. There are only two widths on purpose; more cuts the map up visually.</CBF_FieldDesc_roadMain>
   <CBF_Field_roadLane>Lane width</CBF_Field_roadLane>
@@ -465,6 +464,9 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_BehaelterNeedsName>The container needs a name.</CBF_BehaelterNeedsName>
   <CBF_BehaelterNeedsTexture>A name and a texture are required.</CBF_BehaelterNeedsTexture>
   <CBF_BehaelterFileExists>A file for {0} already exists.</CBF_BehaelterFileExists>
+  <CBF_BehaelterBadName>"{0}" is not a valid defName. Use letters, digits, _ and -, starting with a letter or _.</CBF_BehaelterBadName>
+  <CBF_BehaelterNameTaken>{0} is already used by another thing. Choose a different name.</CBF_BehaelterNameTaken>
+  <CBF_BehaelterForeign>{0} belongs to {1}. Containers from other mods cannot be changed here.</CBF_BehaelterForeign>
   <CBF_BehaelterFailed>{0} could not be created.</CBF_BehaelterFailed>
   <CBF_BehaelterPickImage>Pick an image</CBF_BehaelterPickImage>
   <CBF_BehaelterNoImages>No images found under {0}.</CBF_BehaelterNoImages>
@@ -562,7 +564,7 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_FieldDesc_pawnFraktion>Which faction the occupant belongs to. Without one it goes berserk instead, which reads as a trapped animal rather than an ambush, and they attack each other too.</CBF_FieldDesc_pawnFraktion>
   <CBF_FieldDesc_pawnFraktionNone>No faction: it goes berserk instead.</CBF_FieldDesc_pawnFraktionNone>
   <CBF_DevFill>Fill from table</CBF_DevFill>
-  <CBF_DevFillTip>Dev mode only. Since the loot table lives on the anchor, a container placed by hand stays empty. This assigns one by hand so you can test it. Nothing is written to a file.</CBF_DevFillTip>
+  <CBF_DevFillTip>Dev mode with god mode only. Since the loot table lives on the anchor, a container placed by hand stays empty. This assigns one by hand so you can test it. Nothing is written to a file.</CBF_DevFillTip>
   <CBF_DevFilled>Filled: {0} stacks.</CBF_DevFilled>
   <CBF_NoLootTables>No loot tables loaded</CBF_NoLootTables>
   <CBF_BehaelterFromDefTip>Reads values off an existing building and writes them into your definition: texture, size, draw size, hit points, stuff.\n\nNothing is inherited. Your container is a thing of its own and keeps no tie to the original. A Medieval Overhaul lootable does not pass on its loot, its empty graphic or its rats.\n\nOne thing does follow: if you take a texture from a mod, your container needs that mod, because without it the image is missing. Put your own PNG under Textures in your mod to avoid that.</CBF_BehaelterFromDefTip>
@@ -654,4 +656,21 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_FactionSwitchByName>Sorted by name</CBF_FactionSwitchByName>
   <CBF_FactionSwitchAllOn>All on</CBF_FactionSwitchAllOn>
   <CBF_FactionSwitchAllOff>All off</CBF_FactionSwitchAllOff>
+  <CBF_ReportHead>Error report</CBF_ReportHead>
+  <CBF_ReportHelp>If a settlement could not be generated, CBF writes a report with the terrain and the log. You can upload the latest report here and post the link with your bug report.</CBF_ReportHelp>
+  <CBF_ReportUpload>Upload latest error report</CBF_ReportUpload>
+  <CBF_ReportLinks>Links to the uploaded report:</CBF_ReportLinks>
+  <CBF_ReportCopy>Copy links</CBF_ReportCopy>
+  <CBF_ReportCopied>Links copied.</CBF_ReportCopied>
+  <CBF_ErrWin_Title>A settlement could not be generated</CBF_ErrWin_Title>
+  <CBF_ErrWin_What>A vanilla settlement was placed instead. Your game continues normally.</CBF_ErrWin_What>
+  <CBF_ErrWin_Upload>You can help find the cause. Upload sends two files to {0}:\n- Bericht.txt: mod list, settlement type, seed and an excerpt of the log\n- Gelaende.gel: the terrain of the map\nNo save games are uploaded. The link is public, the files are deleted automatically after {1} days.</CBF_ErrWin_Upload>
+  <CBF_ErrWin_UploadButton>Upload</CBF_ErrWin_UploadButton>
+  <CBF_ErrWin_Done>Uploaded. Copy the link and post it in a comment on the Custom Base Framework Steam Workshop page.</CBF_ErrWin_Done>
+  <CBF_UninstallHead>Remove CBF from this save</CBF_UninstallHead>
+  <CBF_UninstallHelp>Removes all CBF data from the loaded game so the mod can be uninstalled safely. Settlements remain, containers are emptied onto the ground.</CBF_UninstallHelp>
+  <CBF_UninstallButton>Remove CBF data from this save</CBF_UninstallButton>
+  <CBF_UninstallNeedGame>Only available in a loaded game.</CBF_UninstallNeedGame>
+  <CBF_UninstallConfirm>This removes all CBF data from the loaded game: quests, map data, containers and settlement plans. It cannot be undone.\n\nAfterwards save immediately, quit the game and then remove the mod. As long as CBF stays active, the world map and new maps bring CBF data back.</CBF_UninstallConfirm>
+  <CBF_UninstallDone>CBF data removed from {0} places.\n\nSave now, quit the game and remove the mod.</CBF_UninstallDone>
 </LanguageData>

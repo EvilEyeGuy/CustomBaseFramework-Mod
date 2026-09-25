@@ -29,6 +29,7 @@
   <CBF_Export>Exportieren</CBF_Export>
   <CBF_NoPieceMarked>Auf dieser Karte ist kein Stück markiert.</CBF_NoPieceMarked>
   <CBF_BadDefName>Der Name ergibt keinen gültigen defName.</CBF_BadDefName>
+  <CBF_BadDefNameChars>Erlaubt sind nur Buchstaben A bis Z ohne Umlaute, Ziffern, Unterstrich und Bindestrich. Am Anfang steht keine Ziffer.</CBF_BadDefNameChars>
   <CBF_PieceTooSparse>Ein Teil des Stücks fehlt. Kleiner aufteilen.</CBF_PieceTooSparse>
   <CBF_WriteFailed>Schreiben fehlgeschlagen, siehe Log.</CBF_WriteFailed>
 
@@ -188,8 +189,6 @@
   <CBF_FieldDesc_buchtHaus>Kantenlänge des kleinsten Hauses. Buchten darunter fallen weg.</CBF_FieldDesc_buchtHaus>
   <CBF_Field_minFuellgrad>Kleinster Füllgrad</CBF_Field_minFuellgrad>
   <CBF_FieldDesc_minFuellgrad>Wie voll der Umriss gegen seine konvexe Hülle sein muss. Kleiner erlaubt zerklüftetere Formen.</CBF_FieldDesc_minFuellgrad>
-  <CBF_Field_bergSog>Bergsog</CBF_Field_bergSog>
-  <CBF_FieldDesc_bergSog>Wie stark die Siedlung an den Berg rückt. Höher spart Mauer, niedriger gibt mehr freie Fläche.</CBF_FieldDesc_bergSog>
   <CBF_Field_roadMain>Breite der Hauptstraße</CBF_Field_roadMain>
   <CBF_FieldDesc_roadMain>Breite der Hauptstraße. Es gibt bewusst nur zwei Breiten, mehr zerschneidet die Karte optisch.</CBF_FieldDesc_roadMain>
   <CBF_Field_roadLane>Breite der Gassen</CBF_Field_roadLane>
@@ -465,6 +464,9 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_BehaelterNeedsName>Der Behälter braucht einen Namen.</CBF_BehaelterNeedsName>
   <CBF_BehaelterNeedsTexture>Name und Textur müssen dastehen.</CBF_BehaelterNeedsTexture>
   <CBF_BehaelterFileExists>Eine Datei für {0} gibt es schon.</CBF_BehaelterFileExists>
+  <CBF_BehaelterBadName>„{0}“ ist kein gültiger defName. Erlaubt sind Buchstaben, Ziffern, _ und -, am Anfang ein Buchstabe oder _.</CBF_BehaelterBadName>
+  <CBF_BehaelterNameTaken>Den Namen {0} trägt schon ein anderes Ding. Wähle einen anderen.</CBF_BehaelterNameTaken>
+  <CBF_BehaelterForeign>{0} gehört zu {1}. Fremde Behälter lassen sich hier nicht ändern.</CBF_BehaelterForeign>
   <CBF_BehaelterFailed>{0} ließ sich nicht anlegen.</CBF_BehaelterFailed>
   <CBF_BehaelterPickImage>Bild wählen</CBF_BehaelterPickImage>
   <CBF_BehaelterNoImages>Unter {0} liegt kein Bild.</CBF_BehaelterNoImages>
@@ -562,7 +564,7 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_FieldDesc_pawnFraktion>Zu welcher Fraktion der Bewohner gehört. Ohne eine geht er stattdessen berserk, was wie ein eingesperrtes Tier wirkt statt wie ein Hinterhalt, und sie greifen dann auch einander an.</CBF_FieldDesc_pawnFraktion>
   <CBF_FieldDesc_pawnFraktionNone>Keine Fraktion: er geht stattdessen berserk.</CBF_FieldDesc_pawnFraktionNone>
   <CBF_DevFill>Aus Tabelle füllen</CBF_DevFill>
-  <CBF_DevFillTip>Nur im Entwicklermodus. Weil die Beutetabelle am Anker steht, bleibt ein von Hand gesetzter Behälter leer. Hiermit weist du ihm eine zu, um sie zu prüfen. In eine Datei kommt davon nichts.</CBF_DevFillTip>
+  <CBF_DevFillTip>Nur im Entwicklermodus mit God Mode. Weil die Beutetabelle am Anker steht, bleibt ein von Hand gesetzter Behälter leer. Hiermit weist du ihm eine zu, um sie zu prüfen. In eine Datei kommt davon nichts.</CBF_DevFillTip>
   <CBF_DevFilled>Gefüllt: {0} Stapel.</CBF_DevFilled>
   <CBF_NoLootTables>Keine Beutetabellen geladen</CBF_NoLootTables>
   <CBF_BehaelterFromDefTip>Liest Werte von einem vorhandenen Gebäude ab und schreibt sie in deine Definition: Textur, Größe, Zeichengröße, Trefferpunkte, Baustoff.\n\nGeerbt wird nichts. Dein Behälter ist ein eigenes Ding und behält keine Verbindung zum Original. Ein Lootable von Medieval Overhaul gibt weder seine Beute noch sein leeres Bild noch seine Ratten weiter.\n\nEines folgt doch: nimmst du eine Textur aus einem Mod ab, braucht dein Behälter diesen Mod, denn ohne ihn fehlt das Bild. Leg eine eigene PNG unter Textures in deinen Mod, wenn du das nicht willst.</CBF_BehaelterFromDefTip>
@@ -654,4 +656,21 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_FactionSwitchByName>Nach Name sortiert</CBF_FactionSwitchByName>
   <CBF_FactionSwitchAllOn>Alle an</CBF_FactionSwitchAllOn>
   <CBF_FactionSwitchAllOff>Alle aus</CBF_FactionSwitchAllOff>
+  <CBF_ReportHead>Fehlerbericht</CBF_ReportHead>
+  <CBF_ReportHelp>Scheitert eine Siedlung, schreibt CBF einen Bericht mit Gelände und Log. Hier kannst du den neuesten Bericht hochladen und den Link zu deiner Fehlermeldung dazugeben.</CBF_ReportHelp>
+  <CBF_ReportUpload>Neuesten Fehlerbericht hochladen</CBF_ReportUpload>
+  <CBF_ReportLinks>Links zum hochgeladenen Bericht:</CBF_ReportLinks>
+  <CBF_ReportCopy>Links kopieren</CBF_ReportCopy>
+  <CBF_ReportCopied>Links kopiert.</CBF_ReportCopied>
+  <CBF_ErrWin_Title>Eine Siedlung konnte nicht erzeugt werden</CBF_ErrWin_Title>
+  <CBF_ErrWin_What>Stattdessen steht eine Vanilla-Siedlung. Dein Spiel läuft normal weiter.</CBF_ErrWin_What>
+  <CBF_ErrWin_Upload>Du kannst helfen, die Ursache zu finden. Hochladen schickt zwei Dateien zu {0}:\n- Bericht.txt: Modliste, Ortstyp, Seed und ein Auszug aus dem Log\n- Gelaende.gel: das Gelände der Karte\nSpielstände werden nicht hochgeladen. Der Link ist öffentlich, die Dateien werden nach {1} Tagen automatisch gelöscht.</CBF_ErrWin_Upload>
+  <CBF_ErrWin_UploadButton>Hochladen</CBF_ErrWin_UploadButton>
+  <CBF_ErrWin_Done>Hochgeladen. Kopier den Link und poste ihn als Kommentar auf der Steam-Workshop-Seite von Custom Base Framework.</CBF_ErrWin_Done>
+  <CBF_UninstallHead>CBF aus diesem Spielstand entfernen</CBF_UninstallHead>
+  <CBF_UninstallHelp>Entfernt alle CBF-Daten aus dem geladenen Spiel, damit du den Mod danach gefahrlos entfernen kannst. Siedlungen bleiben bestehen, Behälter werden auf den Boden ausgeleert.</CBF_UninstallHelp>
+  <CBF_UninstallButton>CBF-Daten aus diesem Spielstand entfernen</CBF_UninstallButton>
+  <CBF_UninstallNeedGame>Nur in einem geladenen Spiel möglich.</CBF_UninstallNeedGame>
+  <CBF_UninstallConfirm>Das entfernt alle CBF-Daten aus dem geladenen Spiel: Quests, Kartendaten, Behälter und Siedlungspläne. Rückgängig machen geht nicht.\n\nDanach sofort speichern, das Spiel beenden und erst dann den Mod entfernen. Solange CBF aktiv bleibt, holen die Weltkarte und neue Karten wieder CBF-Daten herein.</CBF_UninstallConfirm>
+  <CBF_UninstallDone>CBF-Daten aus {0} Orten entfernt.\n\nJetzt speichern, das Spiel beenden und den Mod entfernen.</CBF_UninstallDone>
 </LanguageData>

@@ -51,7 +51,6 @@
   <CBF_Build_Elapsed>Dauer: {0} Sekunden  {1}</CBF_Build_Elapsed>
   <CBF_Build_Piece>Gebäude setzen: {0} von {1}</CBF_Build_Piece>
   <CBF_Build_NoLayout>Kein vollständiger Entwurf gefunden ({0}). Die Karte wurde nicht verändert.</CBF_Build_NoLayout>
-  <CBF_Planner_Attempt>Standort {0} (höchstens 96): {1}</CBF_Planner_Attempt>
   <CBF_Planner_Piece>Gebäude einpassen: {0} ({1} platziert)</CBF_Planner_Piece>
   <CBF_Planner_MissingWard>Stadtteildefinition fehlt für Ebene {0}.</CBF_Planner_MissingWard>
   <CBF_Planner_MissingWall>Keine verfügbare Mauervorlage für Ebene {0}.</CBF_Planner_MissingWall>
@@ -106,6 +105,10 @@
   <CBF_UploadBusy>Es läuft schon ein Upload.</CBF_UploadBusy>
   <CBF_UploadNoReport>Es gibt noch keinen Fehlerbericht.</CBF_UploadNoReport>
   <CBF_UploadDone>Bericht hochgeladen. Die Links stehen im Log:</CBF_UploadDone>
+  <CBF_UploadFailed>Hochladen fehlgeschlagen:</CBF_UploadFailed>
+  <CBF_UploadPartReport>Bericht:</CBF_UploadPartReport>
+  <CBF_UploadPartTerrain>Gelände:</CBF_UploadPartTerrain>
+  <CBF_UploadPartFailed>fehlgeschlagen:</CBF_UploadPartFailed>
   <CBF_Kind_Mittelalterstadt>Mittelalterstadt</CBF_Kind_Mittelalterstadt>
   <CBF_Kind_Modernestadt>Moderne Stadt</CBF_Kind_Modernestadt>
   <CBF_Kind_Lager>Lager</CBF_Kind_Lager>
@@ -115,7 +118,7 @@
 {1}
 werden zu {0} hochgeladen.
 
-Der Link ist OEFFENTLICH: jeder, der ihn hat, kann beide Dateien lesen, und gelöscht werden können sie dort nicht. Im Bericht steht deine aktive Modliste.
+Der Link ist OEFFENTLICH: jeder, der ihn hat, kann beide Dateien lesen, nach {2} Tagen werden sie automatisch gelöscht. Im Bericht steht deine aktive Modliste.
 
 Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_ReserveGround>Baugrund vor dem Berg reservieren</CBF_ReserveGround>
@@ -310,4 +313,55 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_FactionOwn>CBF baut die Basen dieser Fraktion aus {0} Plan/Plänen. RimWorlds eigener Siedlungsgenerator kommt hier nicht zum Zug.</CBF_FactionOwn>
   <CBF_FactionVanilla>Die Basen dieser Fraktion baut RimWorld. Weist du oben einen Plan zu, übernimmt CBF, nur für diese Fraktion.</CBF_FactionVanilla>
   <CBF_HelpEmpty>Zu diesem Abschnitt gibt es noch keine Beschreibung.</CBF_HelpEmpty>
+
+  <CBF_Planner_Abtragrueckbau>Frühere Felsabtragungen außerhalb der Stadt zurückgenommen, {0} Felder bleiben Fels.</CBF_Planner_Abtragrueckbau>
+  <CBF_Planner_Anbauten>{0} Anbauten an Gebäude gesetzt.</CBF_Planner_Anbauten>
+  <CBF_Planner_Aufgeschuettet>{0} Sumpffelder in der Siedlung und unter Wegen, Mauern und Zäunen aufgeschüttet.</CBF_Planner_Aufgeschuettet>
+  <CBF_Planner_AusgangUeberWasser>Kein Ausgang nach {0}: der Weg zum Kartenrand führt dort über Wasser.</CBF_Planner_AusgangUeberWasser>
+  <CBF_Planner_Bergraeumen>Ebene {0}: {1} Felsfelder abgetragen.</CBF_Planner_Bergraeumen>
+  <CBF_Planner_Bezirke>Die Bebauung ist in {0} Bezirke aufgeteilt.</CBF_Planner_Bezirke>
+  <CBF_Planner_Blockdichte>Ebene {0}: die Bestellungen brauchen {1} Prozent der freien Fläche. Bauweise: {2}.</CBF_Planner_Blockdichte>
+  <CBF_Planner_Blockdichte_Dicht>dicht bebaut</CBF_Planner_Blockdichte_Dicht>
+  <CBF_Planner_Blockdichte_Einzeln>einzeln stehend</CBF_Planner_Blockdichte_Einzeln>
+  <CBF_Planner_Brueckenbreite>{0} Wegfelder über Wasser bekamen eine Brücke.</CBF_Planner_Brueckenbreite>
+  <CBF_Planner_Brueckentor>Brückenköpfe in der Vorstadt: {0} mit Tor, {1} ohne.</CBF_Planner_Brueckentor>
+  <CBF_Planner_Buchtfuellen>{0} Wasserfelder in Buchten nahe der Stadt aufgeschüttet.</CBF_Planner_Buchtfuellen>
+  <CBF_Planner_CoreShapeFallback>Die Stadtform ließ sich nicht an das Gelände anpassen und wird unverändert verwendet.</CBF_Planner_CoreShapeFallback>
+  <CBF_Planner_Feinraster>Ebene {0}: Umriss für die Mauer mit Wehrgang begradigt, {1} Felder angepasst.</CBF_Planner_Feinraster>
+  <CBF_Planner_Flussuebergang>{0} Brücke(n) über den Fluss geplant. Die Vorstadt bekommt dafür {1} Felder mehr.</CBF_Planner_Flussuebergang>
+  <CBF_Planner_Gasse>{0} erreichte das Wegenetz nicht und bekam eine Gasse mit {1} Feldern.</CBF_Planner_Gasse>
+  <CBF_Planner_GateHoleInstead>Ebene {0}: auch nach vielen Lagen kein Platz für ein Torhaus. Die Mauer bekommt dort einen offenen Durchgang.</CBF_Planner_GateHoleInstead>
+  <CBF_Planner_GateMinimum>Jede ummauerte Ebene braucht mindestens ein Torhaus. Ein offener Durchgang zählt nicht.</CBF_Planner_GateMinimum>
+  <CBF_Planner_GateMissing>Ebene {0}: das eingetragene Torhaus {1} ist nicht verfügbar oder dort nicht erlaubt.</CBF_Planner_GateMissing>
+  <CBF_Planner_IslandDropped>Ein abgetrenntes Stück Stadt oder Vorstadt wurde aufgegeben.</CBF_Planner_IslandDropped>
+  <CBF_Planner_IslandEmpty>Ebene {0}: ein abgetrenntes Stück mit {1} Feldern bietet keinem Gebäude Platz.</CBF_Planner_IslandEmpty>
+  <CBF_Planner_Kantenglaetten>Ebene {0}: Umriss mit Fensterbreite {1} geglättet, {2} Felder dazu, {3} weg.</CBF_Planner_Kantenglaetten>
+  <CBF_Planner_Marge>{0} in Ebene {1}: {2} von {3} gesetzt. Der Rest liegt in der Toleranz.</CBF_Planner_Marge>
+  <CBF_Planner_Mauerversatz>Ebene {0}: Mauerlinie abschnittsweise versetzt, {1} Felder zurückgenommen.</CBF_Planner_Mauerversatz>
+  <CBF_Planner_Nachschlag>{0} lag unter der Mindestzahl. Mit Geländeeingriffen kamen weitere dazu, {1} Felder verändert.</CBF_Planner_Nachschlag>
+  <CBF_Planner_NoSpot>Kein Platz für {0}. Geprüft: {1} Stellen mit genug Baufläche, davon {2} mit Wegzugang, davon {3} ganz passend.</CBF_Planner_NoSpot>
+  <CBF_Planner_Seefuellen>{0} Seefelder im Siedlungsgebiet aufgeschüttet.</CBF_Planner_Seefuellen>
+  <CBF_Planner_Sickerstelle>Die Befestigung ist undicht: {0} Felder in Stadt oder Vorstadt sind von außen erreichbar.</CBF_Planner_Sickerstelle>
+  <CBF_Planner_StadtGeteilt>Die Stadt ist geteilt: {0} Felder hängen nicht am größten zusammenhängenden Teil.</CBF_Planner_StadtGeteilt>
+  <CBF_Planner_Sumpfbruecke>{0} Wegfelder über Sumpf bekamen eine Brücke.</CBF_Planner_Sumpfbruecke>
+  <CBF_Planner_TrotzdemGebaut>Letzte Lage: trotz der Mängel an Mauer oder Toren wird gebaut.</CBF_Planner_TrotzdemGebaut>
+  <CBF_Planner_Uferbruecke>Brücke zwischen Stadt und Vorstadt über das Wasser gelegt, {0} Felder.</CBF_Planner_Uferbruecke>
+  <CBF_Planner_Uferenge>Brückenenden: {0} Wasserfelder am Ufer aufgeschüttet.</CBF_Planner_Uferenge>
+  <CBF_Planner_Ufertor>Ebene {0}: Tor an der Brücke über das Wasser gesetzt.</CBF_Planner_Ufertor>
+  <CBF_Planner_Uferwahl>Bauland für die Vorstadt: {0} Felder diesseits, {1} jenseits des Flusses. {2} Prozent der Vorstadt gehen ans andere Ufer.</CBF_Planner_Uferwahl>
+  <CBF_Planner_Unerfuellbar>{0} in Ebene {1}: {2} von {3} gesetzt. Keine Lage schaffte mehr, die Mindestzahl ist aufgegeben.</CBF_Planner_Unerfuellbar>
+  <CBF_Planner_VorstadtAngeschlossen>{0} Felder zwischen Stadt und Vorstadt zur Vorstadt geschlagen, damit beide aneinanderliegen.</CBF_Planner_VorstadtAngeschlossen>
+  <CBF_Planner_VorstadtHinterFels>{0} Vorstadtfelder hinter Fels waren nicht erreichbar und fallen weg.</CBF_Planner_VorstadtHinterFels>
+  <CBF_Planner_Vorstadtrechteck>Vorstadt in {0} Rechteck(e) gefasst: vorher {1} Felder, jetzt {2}.</CBF_Planner_Vorstadtrechteck>
+  <CBF_Planner_Vorstadtring>Vorstadt als Ring um die Stadt: {0} Felder verlangt, {1} angelegt, Ringbreite {2}, {3} Ausbuchtung(en).</CBF_Planner_Vorstadtring>
+  <CBF_Planner_WallAcrossWater>Die Mauer müsste über offenes Wasser führen. Diese Lage wird verworfen.</CBF_Planner_WallAcrossWater>
+  <CBF_Planner_WallOpen>Die Mauer ist nicht geschlossen.</CBF_Planner_WallOpen>
+  <CBF_Planner_WardEroded>Ebene {0}: {1} Felder in zu schmalen Ausläufern aufgegeben.</CBF_Planner_WardEroded>
+  <CBF_Planner_ZwickelGefuellt>Eingeschlossene Lücken gefüllt: {0} Felder zur Stadt, {1} zur Vorstadt.</CBF_Planner_ZwickelGefuellt>
+  <CBF_Planner_IslandUnlinked>Ein Vorstadtstück mit {0} Feldern hat keinen Weg zur Stadt.</CBF_Planner_IslandUnlinked>
+  <CBF_Planner_NoEscape>Ein Vorstadtstück ({0}, {1} Felder) bekam weder Torhaus noch Durchgang.</CBF_Planner_NoEscape>
+  <CBF_Planner_NoFrontage>Ebene {0}: für ein Stück der Größe {1} fand sich kein Torvorplatz.</CBF_Planner_NoFrontage>
+  <CBF_Planner_SuburbBoxed>Vorstadtstücke in Rechtecke gefasst: {0} umgeformt, {1} aufgegeben.</CBF_Planner_SuburbBoxed>
+  <CBF_Planner_WardNarrowed>Ebene {0}: das Mauerraster nimmt mehr als die Hälfte der Fläche weg.</CBF_Planner_WardNarrowed>
+
 </LanguageData>

@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Vanilla_Regal</defName>
+    <members>
+      <li>Shelf</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Vanilla_Regal_Klein</defName>
+    <members>
+      <li>ShelfSmall</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Vanilla_Schildgenerator_Hoch</defName>
+    <members>
+      <li><thing>ShieldGeneratorMortar</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Vanilla_Schildgenerator_Nieder</defName>
+    <members>
+      <li><thing>ShieldGeneratorBullets</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
 </Defs>

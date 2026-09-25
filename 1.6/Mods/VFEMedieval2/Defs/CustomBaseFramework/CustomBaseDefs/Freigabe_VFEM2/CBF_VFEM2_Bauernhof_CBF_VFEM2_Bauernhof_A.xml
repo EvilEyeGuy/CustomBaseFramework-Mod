@@ -12,18 +12,18 @@
     <traufen>true</traufen>
     <legend>
       <li><symbol>!</symbol><thing>VFEM2_HeraldicRugNarrow</thing><rotation>South</rotation></li>
-      <li><symbol>0</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>1</symbol><anchor>Haus</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>2</symbol><anchor>HausB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_VFEM2_Loot_Huette</lootTable></li>
-      <li><symbol>3</symbol><anchor>Scheune</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Huette</lootTable></li>
-      <li><symbol>4</symbol><anchor>ScheuneB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>5</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>6</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>7</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>0</symbol><thing>FueledStove</thing><rotation>North</rotation></li>
+      <li><symbol>1</symbol><anchor>Haus</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>2</symbol><anchor>HausB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Huette</lootTable></li>
+      <li><symbol>3</symbol><anchor>Scheune</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Huette</lootTable></li>
+      <li><symbol>4</symbol><anchor>ScheuneB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>5</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>6</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>7</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li><symbol>8</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>9</symbol><anchor>BewohnerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>=</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>K</symbol><thing>FueledStove</thing><rotation>South</rotation></li>
       <li><symbol>L</symbol><thing>TorchLamp</thing></li>
       <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>T</symbol><thing>VFEM2_TimberedWall</thing><stuff>BlocksLimestone</stuff></li>
@@ -66,11 +66,11 @@
     </terrain>
     <things>
       <li>TTTTTTTOOOOOOOOO</li>
-      <li>TK..L0.O.fff.5.O</li>
+      <li>T0..L5.O.fff.6.O</li>
       <li>T.....YO.......O</li>
       <li>T.n....O.f.....O</li>
-      <li>T.n....O......6O</li>
-      <li>T7.!..YO.......O</li>
+      <li>T.n....O......7O</li>
+      <li>T=.!..YO.......O</li>
       <li>TTTTFTTO.......O</li>
       <li>.......OOOOFFOOO</li>
       <li>................</li>

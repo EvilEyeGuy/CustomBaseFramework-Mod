@@ -11,8 +11,8 @@
     <style>CBF_VFEM2</style>
     <traufen>true</traufen>
     <legend>
-      <li><symbol>1</symbol><anchor>Schmiede</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Schmiede</lootTable></li>
-      <li><symbol>2</symbol><anchor>Hof</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_VFEM2_Loot_Schmiede</lootTable></li>
+      <li><symbol>1</symbol><anchor>Schmiede</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schmiede</lootTable></li>
+      <li><symbol>2</symbol><anchor>Hof</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schmiede</lootTable></li>
       <li><symbol>8</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>9</symbol><anchor>BewohnerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>A</symbol><thing>VFEM2_SmithingAnvil</thing></li>
@@ -22,11 +22,11 @@
       <li><symbol>L</symbol><thing>TorchLamp</thing></li>
       <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>X</symbol><thing>WoodLog</thing><count>60</count></li>
-      <li><symbol>Z</symbol><thing>FueledSmithy</thing><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>a</symbol><thing>FueledSmithy</thing><rotation>North</rotation></li>
       <li><symbol>c</symbol><terrain>FlagstoneSlate</terrain></li>
-      <li><symbol>f</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>f</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>x</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>
       <li><symbol>z</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
     </legend>
@@ -54,10 +54,10 @@
     </terrain>
     <things>
       <li>SSSSSSSSzzzz</li>
-      <li>SZ..AB.S..az</li>
+      <li>Sa..AB.S..fz</li>
       <li>S......F.X.z</li>
       <li>S......S...z</li>
-      <li>Sf....LS...z</li>
+      <li>Si....LS...z</li>
       <li>SSSSFSSS..Xz</li>
       <li>.......zI..z</li>
       <li>.......z...z</li>

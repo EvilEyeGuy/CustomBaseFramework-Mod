@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Lueckenhof_B</defName>
+    <label>CBF_MO_Lueckenhof_B</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Lueckenhof</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <legend>
+      <li><symbol>2</symbol><anchor>Kiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_WoodLogs1x2c</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_HayPile1x2c</thing><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideoutCrate1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+    </legend>
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+    <terrain>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+    </terrain>
+    <things>
+      <li>.....</li>
+      <li>.Qa..</li>
+      <li>.....</li>
+      <li>.L.Y.</li>
+      <li>.....</li>
+    </things>
+    <roof>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+    </roof>
+    <anchors>
+      <li>.....</li>
+      <li>..22.</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

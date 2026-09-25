@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_VFEM2_Mauerzugang_A</defName>
+    <label>CBF_VFEM2_Mauerzugang_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_VFEM2_Mauerzugang</li>
+    </categories>
+    <style>CBF_VFEM2</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><anchor>Wachregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>b</symbol><anchor>Wachtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>f</symbol><anchor>Mauerwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>g</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>h</symbol><terrain>TileLimestone</terrain></li>
+      <li><symbol>i</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+    </legend>
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+    <terrain>
+      <li>hhhhh</li>
+      <li>hhhhh</li>
+      <li>hhhhh</li>
+      <li>hhhhh</li>
+    </terrain>
+    <things>
+      <li>S...S</li>
+      <li>Sg.iS</li>
+      <li>S...S</li>
+      <li>SSFSS</li>
+    </things>
+    <roof>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.....</li>
+      <li>.aab.</li>
+      <li>.f...</li>
+      <li>.....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -137,6 +137,24 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Spacer_Defence_Large</defName>
+    <label>Spacer-Bunker</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Spacer_Defence_Small</defName>
+    <label>Spacer-Stellung</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_Spital</defName>
     <label>Spital</label><parent>CBF_Vanilla_Workshop</parent>
     <zones>

@@ -6,8 +6,8 @@
     <label>Vorraete</label>
     <rolls>1~1</rolls>
     <entries>
-      <li><weight>10</weight><thing>MealSimple</thing><count>4~12</count><onMissing>Skip</onMissing></li>
-      <li><weight>8</weight><thing>Pemmican</thing><count>20~50</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>MealSimple</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>Pemmican</thing><count>2~6</count><onMissing>Skip</onMissing></li>
       <li><weight>10</weight><thing>RawPotatoes</thing><count>30~80</count><onMissing>Skip</onMissing></li>
       <li><weight>8</weight><thing>RawCorn</thing><count>30~70</count><onMissing>Skip</onMissing></li>
       <li><weight>8</weight><thing>RawRice</thing><count>30~70</count><onMissing>Skip</onMissing></li>
@@ -15,7 +15,7 @@
       <li><weight>5</weight><thing>Milk</thing><count>15~40</count><onMissing>Skip</onMissing></li>
       <li><weight>5</weight><thing>EggChickenUnfertilized</thing><count>6~18</count><onMissing>Skip</onMissing></li>
       <li><weight>4</weight><thing>VFEM2_Honey</thing><count>10~30</count><onMissing>Skip</onMissing></li>
-      <li><weight>4</weight><thing>VFEM2_Sweetroll</thing><count>4~12</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>VFEM2_Sweetroll</thing><count>1~3</count><onMissing>Skip</onMissing></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
@@ -24,10 +24,10 @@
     <label>Getraenke</label>
     <rolls>1~1</rolls>
     <entries>
-      <li><weight>10</weight><thing>Beer</thing><count>8~25</count><onMissing>Skip</onMissing></li>
-      <li><weight>8</weight><thing>VFEM2_Mead</thing><count>6~20</count><onMissing>Skip</onMissing></li>
-      <li><weight>8</weight><thing>VFEM2_Wine</thing><count>6~20</count><onMissing>Skip</onMissing></li>
-      <li><weight>4</weight><thing>VFEM2_Must</thing><count>15~40</count><onMissing>Skip</onMissing></li>
+      <li><weight>10</weight><thing>Beer</thing><count>4~12</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>VFEM2_Mead</thing><count>3~10</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>VFEM2_Wine</thing><count>3~10</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>VFEM2_Must</thing><count>8~20</count><onMissing>Skip</onMissing></li>
       <li><weight>4</weight><thing>RawHops</thing><count>20~50</count><onMissing>Skip</onMissing></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
@@ -86,7 +86,7 @@
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_VFEM2_Ware_Waffe</defName>
     <label>Mittelalterwaffen</label>
-    <rolls>1~1</rolls>
+    <rolls>1~1</rolls><rollChance>0.5</rollChance>
     <entries>
       <li><weight>8</weight><thing>VFEM2_MeleeWeapon_Shortsword</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
       <li><weight>5</weight><thing>VFEM2_MeleeWeapon_HeavyMace</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
@@ -217,6 +217,37 @@
       <li><weight>20</weight><table>CBF_VFEM2_Ware_Waffe</table></li>
       <li><weight>14</weight><table>CBF_VFEM2_Ware_Ruestung</table></li>
       <li><weight>6</weight><table>CBF_VFEM2_Ware_Heilung</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_VFEM2_Loot_Markt</defName>
+    <label>Markt</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>16</weight><table>CBF_VFEM2_Ware_Vorrat</table></li>
+      <li><weight>12</weight><table>CBF_VFEM2_Ware_Stoff</table></li>
+      <li><weight>10</weight><table>CBF_VFEM2_Ware_Getraenk</table></li>
+      <li><weight>8</weight><table>CBF_VFEM2_Ware_Kleidung</table></li>
+      <li><weight>4</weight><table>CBF_VFEM2_Ware_Heilung</table></li>
+      <li><weight>3</weight><table>CBF_VFEM2_Ware_Geld</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_VFEM2_Loot_Schatz</defName>
+    <label>Schatz</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>20</weight><table>CBF_VFEM2_Ware_Geld</table></li>
+      <li><weight>5</weight><table>CBF_VFEM2_Ware_Waffe</table></li>
+      <li><weight>5</weight><table>CBF_VFEM2_Ware_Ruestung</table></li>
+      <li><weight>6</weight><table>CBF_VFEM2_Ware_Getraenk</table></li>
+      <li><weight>6</weight><table>CBF_VFEM2_Ware_Kleidung</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 

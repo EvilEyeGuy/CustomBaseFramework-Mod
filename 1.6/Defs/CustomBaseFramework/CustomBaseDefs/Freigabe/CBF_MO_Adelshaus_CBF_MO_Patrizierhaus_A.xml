@@ -20,7 +20,7 @@
       <li><symbol>6</symbol><anchor>Turmtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Adelstruhe</objects><lootTable>CBF_MO_Loot_Schatzkammer</lootTable></li>
       <li><symbol>7</symbol><anchor>Hausherr</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>8</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_RoyalArmchair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_RoyalArmchair</thing><stuff>Cloth</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_RoyalTudorBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_RoyalColumn</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_RoyalEndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
@@ -37,7 +37,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_ArmorStatue</thing><stuff>Steel</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>X</symbol><thing>DankPyon_RoyalTable2x4c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><anchor>GeschirrA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
       <li><symbol>b</symbol><anchor>GeschirrB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
@@ -53,7 +53,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_RusticNobleChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>West</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_HideoutShelfFilledBook</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>q</symbol><anchor>Weinregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Weinregal</objects></li>
+      <li><symbol>q</symbol><anchor>Weinregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Weinregal_1x2</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>r</symbol><thing>DankPyon_HideoutShelfFilledIngot</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>s</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>t</symbol><thing>DankPyon_RugGrizzlyBear3x3c</thing><rotation>South</rotation></li>

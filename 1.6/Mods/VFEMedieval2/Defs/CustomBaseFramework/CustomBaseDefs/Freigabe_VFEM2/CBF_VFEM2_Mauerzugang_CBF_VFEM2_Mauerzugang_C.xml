@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_VFEM2_Mauerzugang_C</defName>
+    <label>CBF_VFEM2_Mauerzugang_C</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_VFEM2_Mauerzugang</li>
+    </categories>
+    <style>CBF_VFEM2</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>T</symbol><thing>VFEM2_TimberedWall</thing><stuff>BlocksLimestone</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>b</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>f</symbol><anchor>Mauerwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>g</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
+      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+    </legend>
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+    <terrain>
+      <li>wwwww</li>
+      <li>wwwgw</li>
+      <li>wwwww</li>
+      <li>wwwww</li>
+    </terrain>
+    <things>
+      <li>T...T</li>
+      <li>T...T</li>
+      <li>T...T</li>
+      <li>TTFTT</li>
+    </things>
+    <things2>
+      <li>.....</li>
+      <li>..ab.</li>
+      <li>.....</li>
+      <li>.....</li>
+    </things2>
+    <roof>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.....</li>
+      <li>.....</li>
+      <li>...f.</li>
+      <li>.....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

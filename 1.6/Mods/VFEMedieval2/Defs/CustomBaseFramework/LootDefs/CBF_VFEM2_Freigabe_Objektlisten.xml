@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_VFEM2_Regal</defName>
+    <members>
+      <li>Shelf</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_VFEM2_Regal_Klein</defName>
+    <members>
+      <li>ShelfSmall</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_VFEM2_Autoregal</defName>
+    <members>
+      <li><thing>VFEM2_AutofillShelf</thing><fremd>true</fremd></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
 </Defs>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_VFEM2_Denkmal_A</defName>
+    <label>CBF_VFEM2_Denkmal_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_VFEM2_Denkmal</li>
+    </categories>
+    <style>CBF_VFEM2</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>a</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
+      <li><symbol>b</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>f</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff></li>
+    </legend>
+    <mask>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </terrain>
+    <things>
+      <li>a.....a</li>
+      <li>..bbb..</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>...f...</li>
+      <li>..bbb..</li>
+      <li>a.....a</li>
+    </things>
+    <roof>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

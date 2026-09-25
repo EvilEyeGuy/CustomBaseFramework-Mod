@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_VFEM2_Mauerzugang_B</defName>
+    <label>CBF_VFEM2_Mauerzugang_B</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_VFEM2_Mauerzugang</li>
+    </categories>
+    <style>CBF_VFEM2</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>T</symbol><thing>VFEM2_TimberedWall</thing><stuff>BlocksLimestone</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+    </legend>
+    <mask>
+      <li>###</li>
+      <li>###</li>
+      <li>###</li>
+      <li>###</li>
+    </mask>
+    <terrain>
+      <li>www</li>
+      <li>www</li>
+      <li>www</li>
+      <li>www</li>
+    </terrain>
+    <things>
+      <li>T.T</li>
+      <li>T.T</li>
+      <li>T.T</li>
+      <li>TFT</li>
+    </things>
+    <roof>
+      <li>^^^</li>
+      <li>^^^</li>
+      <li>^^^</li>
+      <li>^^^</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

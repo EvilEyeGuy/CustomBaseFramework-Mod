@@ -11,23 +11,23 @@
     <style>CBF_VFEM2</style>
     <traufen>true</traufen>
     <legend>
-      <li><symbol>1</symbol><anchor>Kueche</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>2</symbol><anchor>Kammer</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>3</symbol><anchor>Vorrat</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_1x1_Shelf</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>1</symbol><anchor>Kueche</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>2</symbol><anchor>Kammer</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>3</symbol><anchor>Vorrat</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
       <li><symbol>8</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>9</symbol><anchor>BewohnerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>E</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>H</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksLimestone</stuff><rotation>South</rotation></li>
-      <li><symbol>K</symbol><thing>FueledStove</thing><rotation>South</rotation></li>
       <li><symbol>L</symbol><thing>TorchLamp</thing></li>
       <li><symbol>N</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>T</symbol><thing>VFEM2_TimberedWall</thing><stuff>BlocksLimestone</stuff></li>
       <li><symbol>Y</symbol><thing>VFEM2_FurBed</thing><stuff>Leather_Plain</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>a</symbol><thing>FueledStove</thing><rotation>North</rotation></li>
       <li><symbol>c</symbol><terrain>FlagstoneSlate</terrain></li>
-      <li><symbol>f</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>f</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>i</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>r</symbol><thing>VFEM2_HeraldicRugNarrow</thing><rotation>East</rotation></li>
       <li><symbol>t</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
@@ -56,13 +56,13 @@
     </terrain>
     <things>
       <li>TTTTTTTTT...</li>
-      <li>TK..TH..T...</li>
+      <li>Ta..TH..T...</li>
       <li>T...T..LTTTT</li>
-      <li>Ta..F...T..T</li>
+      <li>Tf..F...T..T</li>
       <li>T..LTr..TYYT</li>
-      <li>Tf..T...F..T</li>
+      <li>Ti..T...F..T</li>
       <li>TTFTTTTTT.ET</li>
-      <li>........Tf.T</li>
+      <li>........Ti.T</li>
       <li>........TTTT</li>
     </things>
     <things2>

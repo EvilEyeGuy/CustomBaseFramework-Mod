@@ -12,9 +12,9 @@
     <traufen>true</traufen>
     <legend>
       <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>1</symbol><anchor>Bett</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_2x2_Beds</objects></li>
+      <li><symbol>1</symbol><anchor>Bett</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Doppelbett</objects></li>
       <li><symbol>2</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Buergerhaus</lootTable></li>
-      <li><symbol>3</symbol><anchor>Regal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_1x2_LootableShelfes</objects><lootFremd>true</lootFremd></li>
+      <li><symbol>3</symbol><anchor>Regal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Wappenregal</objects><lootFremd>true</lootFremd></li>
       <li><symbol>4</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_RusticChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>

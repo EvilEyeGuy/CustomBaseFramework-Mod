@@ -13,7 +13,7 @@
     <legend>
       <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>2</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Buergerhaus</lootTable></li>
-      <li><symbol>3</symbol><anchor>Regal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_1x2_LootableShelfes</objects><lootFremd>true</lootFremd></li>
+      <li><symbol>3</symbol><anchor>Regal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Wappenregal</objects><lootFremd>true</lootFremd></li>
       <li><symbol>4</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
       <li><symbol>5</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
@@ -34,7 +34,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_HideoutLargeShelf_FilledA_Amboise</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_OnTop_Kitchen_Plate</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_LogBench1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_LogBench1x2c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
     </legend>
     <mask>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_VFEM2_Palisadenturm_B</defName>
+    <label>CBF_VFEM2_Palisadenturm_B</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallTower</li>
+      <li>CBF_VFEM2_Palisadenturm</li>
+    </categories>
+    <style>CBF_VFEM2</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
+      <li><symbol>f</symbol><thing>WoodLog</thing><count>30</count></li>
+      <li><symbol>g</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>i</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>j</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>k</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
+      <li><symbol>l</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+    </legend>
+    <mask>
+      <li>.###.</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>.###.</li>
+    </mask>
+    <terrain>
+      <li>.eee.</li>
+      <li>eeeee</li>
+      <li>eeeee</li>
+      <li>eeeee</li>
+      <li>.eee.</li>
+    </terrain>
+    <things>
+      <li>.aaa.</li>
+      <li>aalaa</li>
+      <li>a.k.a</li>
+      <li>aafaa</li>
+      <li>.aaa.</li>
+    </things>
+    <roof>
+      <li>.^^^.</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>.^^^.</li>
+    </roof>
+    <anchors>
+      <li>.....</li>
+      <li>..g..</li>
+      <li>.i.j.</li>
+      <li>.....</li>
+      <li>.....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

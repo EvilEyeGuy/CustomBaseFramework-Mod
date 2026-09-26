@@ -280,6 +280,29 @@
             </entries>
           </li>
           <li>
+            <name>Muehle</name>
+            <fields>
+              <li>
+                <name>Acker</name>
+                <count>2~3</count>
+                <fence>false</fence>
+                <weight>1</weight>
+                <plants>
+                  <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
+                </plants>
+                <tags>
+                  <li>CBF_VFEM2_Bauernhof</li>
+                </tags>
+              </li>
+            </fields>
+            <entries>
+              <li>
+                <tag>CBF_VFEM2_Bauernhof</tag>
+                <count>1~1</count>
+              </li>
+            </entries>
+          </li>
+          <li>
             <name>Weide</name>
             <pens>
               <li>
@@ -298,7 +321,7 @@
             <entries>
               <li>
                 <tag>CBF_VFEM2_Scheune</tag>
-                <count>1~1</count>
+                <count>0~1</count>
               </li>
               <li>
                 <tag>CBF_VFEM2_Huette</tag>

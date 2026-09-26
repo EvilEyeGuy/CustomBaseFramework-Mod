@@ -3,7 +3,7 @@
 
   <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Plan_Marktstadt_Neu</defName>
-    <label>Marktstadt (neu)</label>
+    <label>market town (new)</label>
 
     <styles>
       <li>Rustical</li>
@@ -50,9 +50,9 @@
           <li><tag>CBF_MO_Torhaus</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garnison_Wehrgang</list><posten>Wehrgang</posten><count>5~8</count></li>
+          <li><list>CBF_MO_Garnison_Wehrgang</list><posten>Wehrgang</posten><count>6~9</count></li>
           <li><list>CBF_MO_Garnison_Tor</list><posten>Tor</posten><count>3~4</count></li>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>3~4</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>4~5</count></li>
         </garrison>
         <districts>
           <li>
@@ -98,9 +98,9 @@
           <li><tag>CBF_MO_Palisadentorhaus</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garnison_Wehrgang</list><posten>Wehrgang</posten><count>3~4</count></li>
+          <li><list>CBF_MO_Garnison_Wehrgang</list><posten>Wehrgang</posten><count>4~5</count></li>
           <li><list>CBF_MO_Garnison_Tor</list><posten>Tor</posten><count>1~3</count></li>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>1~3</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>3~4</count></li>
         </garrison>
         <districts>
           <li>
@@ -133,7 +133,7 @@
         <wallDepth>0</wallDepth>
         <versorgung>1.2</versorgung>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>1~3</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>3~4</count></li>
         </garrison>
         <districts>
           <li>
@@ -216,6 +216,8 @@
     <factionTags>
       <li>DankPyon_NobleHouseSavage</li>
       <li>DankPyon_NobleHouseFierce</li>
+      <li>DankPyon_NobleHouseCivil</li>
+      <li>DankPyon_NobleHouseCivil2</li>
     </factionTags>
 
     <anteil>70</anteil>

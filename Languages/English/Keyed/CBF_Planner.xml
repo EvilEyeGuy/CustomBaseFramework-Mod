@@ -12,8 +12,18 @@
   <CBF_Build_Profiles>Building wall profiles, towers and gatehouses</CBF_Build_Profiles>
   <CBF_Build_Report>Checking settlement and writing report</CBF_Build_Report>
   <CBF_AllBuildable>Make everything buildable (building aid)</CBF_AllBuildable>
-  <CBF_AllBuildableHelp>Gives every building that has no architect category of its own one, so you can place it from the architect menu instead of crafting and installing it. In Medieval Overhaul that is 258 things: rugs, statues, ruin pieces, hideout furniture. Things without build cost are skipped, they would be free. Takes effect after a restart.</CBF_AllBuildableHelp>
+  <CBF_AllBuildableHelp>Gives every building that has no architect category of its own one, so you can place it from the architect menu instead of crafting and installing it. In Medieval Overhaul that is 258 things: rugs, statues, ruin pieces, hideout furniture. Things without build cost are skipped, they would be free. Takes effect after a restart. Open build orders for these buildings are cancelled when you switch this off or remove CBF, and the materials are returned.</CBF_AllBuildableHelp>
   <CBF_AllBuildableRestart>Takes effect after restarting RimWorld. The architect menu is built once at startup.</CBF_AllBuildableRestart>
+  <CBF_AllBuildableCancelled>{0} open build orders for added buildings were cancelled. The materials are back.</CBF_AllBuildableCancelled>
+  <CBF_Cfg_RoadWidth>Roads may be at most {0} cells wide.</CBF_Cfg_RoadWidth>
+  <CBF_Cfg_MapSize>A map size below 150 leaves attackers no edge.</CBF_Cfg_MapSize>
+  <CBF_Cfg_NoBudget>The settlement type has no building program.</CBF_Cfg_NoBudget>
+  <CBF_Cfg_Range>{0} must be between {1} and {2}.</CBF_Cfg_Range>
+  <CBF_Cfg_Corridor>A corridor share below 0.35 merges the rooms into one floor plan.</CBF_Cfg_Corridor>
+  <CBF_Cfg_NoRoomTags>The dungeon profile has no room tags.</CBF_Cfg_NoRoomTags>
+  <CBF_Cfg_NoPlants>The crop list contains no plants.</CBF_Cfg_NoPlants>
+  <CBF_Cfg_EntryNoPlant>An entry has no plant.</CBF_Cfg_EntryNoPlant>
+  <CBF_Cfg_NoWeight>{0} has no positive weight.</CBF_Cfg_NoWeight>
   <CBF_Build_Read>Reading settlement settings and terrain</CBF_Build_Read>
   <CBF_Build_Plan>Planning settlement</CBF_Build_Plan>
   <CBF_Build_Pawns>Generating inhabitants and defenders</CBF_Build_Pawns>
@@ -260,7 +270,7 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_Field_techHediffsMaxAmount>At most</CBF_Field_techHediffsMaxAmount>
   <CBF_PawnImplantNoPath>cannot be installed on {0}</CBF_PawnImplantNoPath>
   <CBF_PawnImplantNoPathTip>RimWorld installs an implant through a surgery recipe of the race, or through an install comp on the item. This one has neither, so it is silently skipped at spawn.</CBF_PawnImplantNoPathTip>
-  <CBF_Planner_Zeitgrenze>Time limit reached after {0} layouts, the best layout so far is used.</CBF_Planner_Zeitgrenze>
+  <CBF_Planner_Zeitgrenze>Search limit reached after {0} layouts, the best layout so far is used.</CBF_Planner_Zeitgrenze>
   <CBF_Planner_Laune1_0>The master builder unrolls his plans. ({1})</CBF_Planner_Laune1_0>
   <CBF_Planner_Laune1_1>The surveyors drive in the first stakes. ({1})</CBF_Planner_Laune1_1>
   <CBF_Planner_Laune1_2>The town council debates the best building site. ({1})</CBF_Planner_Laune1_2>
@@ -370,4 +380,5 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_Planner_SuburbBoxed>Suburb parts reshaped into rectangles: {0} reshaped, {1} dropped.</CBF_Planner_SuburbBoxed>
   <CBF_Planner_WardNarrowed>Layer {0}: the wall grid takes away more than half of the area.</CBF_Planner_WardNarrowed>
 
+  <CBF_Planner_Uhrbremse>Safety clock stopped the search after {0} layouts on this computer, the best layout so far is used. The result may differ on other computers.</CBF_Planner_Uhrbremse>
 </LanguageData>

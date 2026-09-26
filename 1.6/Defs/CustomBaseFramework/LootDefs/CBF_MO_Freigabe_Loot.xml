@@ -133,6 +133,37 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Hafen</defName>
+    <label>Hafen</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>12</weight><table>CBF_MO_Ware_Textil</table></li>
+      <li><weight>10</weight><table>CBF_MO_Ware_Holz</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Wein</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Rationen</table></li>
+      <li><weight>8</weight><table>CBF_MO_Ware_Getreide</table></li>
+      <li><weight>4</weight><table>CBF_MO_Ware_Werkzeug</table></li>
+      <li><weight>3</weight><table>CBF_MO_Ware_Komponent</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Fischer</defName>
+    <label>Fischer</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>14</weight><table>CBF_MO_Ware_Rationen</table></li>
+      <li><weight>10</weight><table>CBF_MO_Ware_Fleisch</table></li>
+      <li><weight>6</weight><table>CBF_MO_Ware_Stroh</table></li>
+      <li><weight>4</weight><table>CBF_MO_Ware_Werkzeug</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
     <defName>CBF_MO_Loot_Schatzkammer</defName>
     <label>Schatzkammer</label>
     <rolls>3~6</rolls>

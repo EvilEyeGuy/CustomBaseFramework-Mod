@@ -18,14 +18,14 @@
   <CustomBaseFramework.LootBuildingCategoryDef>
     <defName>CBF_Vanilla_Schildgenerator_Hoch</defName>
     <members>
-      <li><thing>ShieldGeneratorMortar</thing><bleibt>true</bleibt></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><thing>ShieldGeneratorMortar</thing><bleibt>true</bleibt></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef>
     <defName>CBF_Vanilla_Schildgenerator_Nieder</defName>
     <members>
-      <li><thing>ShieldGeneratorBullets</thing><bleibt>true</bleibt></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><thing>ShieldGeneratorBullets</thing><bleibt>true</bleibt></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 

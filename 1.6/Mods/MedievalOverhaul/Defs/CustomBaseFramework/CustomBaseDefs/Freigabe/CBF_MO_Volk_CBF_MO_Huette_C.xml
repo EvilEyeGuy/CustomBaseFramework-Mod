@@ -27,9 +27,11 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><anchor>GeschirrLinks</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
-      <li><symbol>b</symbol><anchor>GeschirrRechts</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
+      <li><symbol>f</symbol><anchor>Bett1</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Bett_Einfach</objects></li>
+      <li><symbol>g</symbol><anchor>Bett2</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Bett_Einfach</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
     </legend>
@@ -55,8 +57,8 @@
       <li>OOOOO....</li>
       <li>O.Y.OOOOO</li>
       <li>OB.ROH..O</li>
-      <li>Of.gO..BO</li>
-      <li>OOFOOR.fO</li>
+      <li>Oi.jO.kBO</li>
+      <li>OOFOOR..O</li>
       <li>....OOFOO</li>
       <li>.........</li>
     </things>
@@ -64,7 +66,7 @@
       <li>.........</li>
       <li>...X.....</li>
       <li>...n.....</li>
-      <li>......X..</li>
+      <li>.........</li>
       <li>.........</li>
       <li>.........</li>
       <li>.........</li>
@@ -80,10 +82,10 @@
     </roof>
     <anchors>
       <li>..+......</li>
-      <li>.........</li>
-      <li>+.8......</li>
-      <li>.1.2....+</li>
-      <li>......93.</li>
+      <li>.f.......</li>
+      <li>+f8....g.</li>
+      <li>.1.2..3g+</li>
+      <li>......9..</li>
       <li>.........</li>
       <li>.........</li>
     </anchors>
@@ -91,7 +93,7 @@
       <li>.........</li>
       <li>...a.....</li>
       <li>.........</li>
-      <li>......b..</li>
+      <li>.........</li>
       <li>.........</li>
       <li>.........</li>
       <li>.........</li>

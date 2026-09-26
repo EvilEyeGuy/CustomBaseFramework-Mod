@@ -23,9 +23,10 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_TanningRack</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>DankPyon_RawWood</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>a</symbol><anchor>Bett1</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Bett_Einfach</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
     </legend>
     <mask>
@@ -50,10 +51,10 @@
     </terrain>
     <things>
       <li>OOOOOOOO.</li>
-      <li>O.N.H.aO.</li>
+      <li>O.N.H.bO.</li>
       <li>OB.....O.</li>
       <li>O......O.</li>
-      <li>Ob.G...O.</li>
+      <li>Of.G...O.</li>
       <li>OOOOOOFO.</li>
       <li>.D.....L.</li>
       <li>.........</li>
@@ -70,8 +71,8 @@
     </roof>
     <anchors>
       <li>.........</li>
-      <li>......2..</li>
-      <li>.........</li>
+      <li>.a....2..</li>
+      <li>.a.......</li>
       <li>..3......</li>
       <li>.11......</li>
       <li>.........</li>

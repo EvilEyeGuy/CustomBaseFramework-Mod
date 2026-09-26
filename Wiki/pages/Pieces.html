@@ -57,15 +57,15 @@ main{padding:40px 48px 80px;min-width:0}
 .rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
 @media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
 @media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
-</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html" class="hier">Pieces</a><a href="Categories.html">Categories</a><a href="Settlements.html">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="pieces">Pieces</h1>
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html" class="hier">Pieces</a><a href="Categories.html">Categories</a><a href="Settlements.html">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Play</b><a href="Mod-Settings.html">Mod settings</a><a href="Compatibility.html">Compatibility</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="pieces">Pieces</h1>
 <p>A piece is one building or one stretch of wall, drawn on the map and saved as a PieceDef. Houses, workshops, towers, gatehouses and wall segments are all pieces.</p>
 <a class="bild" href="images/piece-tab.png" target="_blank"><img alt="The Piece tab" src="images/piece-tab.png" loading="lazy"></a>
 <ol>
-<li><strong>List</strong> grouped by category. The chips filter by size (small up to 8 cells, medium 9 to 14, large 15 and more) or show templates only. Right-click an entry to rename, duplicate, mark as template or delete it.</li>
+<li><strong>List</strong> grouped by category. The chips filter by size (small up to 8 cells, medium 9 to 14, large 15 and more) or show templates only. <strong>All mods</strong> below them shows only the pieces of one mod; pieces from a subfolder such as <code>Mods/MedievalOverhaul</code> are listed separately. Right-click an entry to rename, duplicate, mark as template or delete it.</li>
 <li><strong>Image</strong> drawn from the piece's data: floor, walls, furniture and the anchors on top. The dashed line is the outline of the piece.</li>
 <li><strong>Basics.</strong> Size, categories, rotation, clearing the footprint, and for buildings <strong>At the wall</strong> and <strong>Weight</strong>.</li>
 <li><strong>Anchors</strong> of the piece and the details of the selected one.</li>
-<li><strong>Check</strong> runs the same check the game runs on load. <strong>Save</strong> writes the piece back into its file.</li>
+<li><strong>Check</strong> runs the same check the game runs on load. Click the result at the bottom left to see every finding. <strong>Save</strong> writes the piece back into its file.</li>
 </ol>
 <h2 id="draw-a-new-piece">Draw a new piece</h2>
 <a class="bild" href="images/piece-toolbox.png" target="_blank"><img alt="The toolbox on the map" src="images/piece-toolbox.png" loading="lazy"></a>
@@ -105,4 +105,14 @@ main{padding:40px 48px 80px;min-width:0}
 <li><strong>Object</strong> places objects from an object list with a chance, without loot.</li>
 <li><strong>Pawn</strong> places pawns from a pawn list, or a single pawn kind, with a count and a chance.</li>
 </ul>
-<p>The <strong>...</strong> button in front of a list opens a preview of what is in it. An anchor whose list does not exist marks the piece red in the list.</p><div class="schritte"><a href="Getting-Started.html"><span>Previous</span>Getting started</a><a class="weiter" href="Categories.html"><span>Next</span>Categories</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#draw-a-new-piece">Draw a new piece</a><a href="#change-an-existing-piece">Change an existing piece</a><a href="#anchors">Anchors</a></div></aside></div></body></html>
+<p>The <strong>...</strong> button in front of a list opens a preview of what is in it.</p>
+<ul>
+<li>An anchor whose list does not exist, or whose list holds nothing that fits the anchor area, marks the piece red in the list.</li>
+<li>If only some objects of the list are too large for the area, the anchor shows a yellow note. Only what fits is placed.</li>
+</ul>
+<h3 id="things-from-other-mods">Things from other mods</h3>
+<ul>
+<li>A thing drawn directly into the piece is required. If its mod or DLC is missing, the generator does not use the piece at all, because a missing wall or door would leave a hole.</li>
+<li>A thing placed through an object list is optional. Entries whose mod is missing drop out. If nothing is left, nothing appears at the anchor and the rest of the piece is built. The placeholder drawn under the anchor may come from that mod; it does not block the piece.</li>
+<li>So: draw walls, doors and anything the building needs directly. Put devices, furniture and decoration that only some mods bring into an object list.</li>
+</ul><div class="schritte"><a href="Getting-Started.html"><span>Previous</span>Getting started</a><a class="weiter" href="Categories.html"><span>Next</span>Categories</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#draw-a-new-piece">Draw a new piece</a><a href="#change-an-existing-piece">Change an existing piece</a><a href="#anchors">Anchors</a></div></aside></div></body></html>

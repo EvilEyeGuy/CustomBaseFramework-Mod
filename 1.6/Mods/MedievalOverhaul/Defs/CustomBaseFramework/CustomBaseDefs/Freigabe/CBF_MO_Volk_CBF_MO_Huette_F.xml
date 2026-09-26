@@ -26,7 +26,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_LogBench1x2c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>b</symbol><anchor>Bett1</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Bett_Einfach</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>r</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
     </legend>
@@ -50,7 +51,7 @@
     </terrain>
     <things>
       <li>OOOOOO</li>
-      <li>OH.b.O</li>
+      <li>OH.f.O</li>
       <li>O...BO</li>
       <li>O.R..O</li>
       <li>OFOOOO</li>
@@ -77,8 +78,8 @@
     </roof>
     <anchors>
       <li>...+..</li>
-      <li>...1..</li>
-      <li>+.8..+</li>
+      <li>...1b.</li>
+      <li>+.8.b+</li>
       <li>......</li>
       <li>......</li>
       <li>......</li>

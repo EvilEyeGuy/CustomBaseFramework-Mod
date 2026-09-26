@@ -286,7 +286,7 @@
   <CBF_RemovedFromList>removed {0} from {1}</CBF_RemovedFromList>
   <CBF_AddedToList>added {0} to {1}</CBF_AddedToList>
   <CBF_T_build>Build</CBF_T_build>
-  <CBF_TDesc_build>Build this settlement on the current map, right here. Same as generating it, only without travelling.</CBF_TDesc_build>
+  <CBF_TDesc_build>Finds a matching tile on the world map and places a settlement from this plan there.</CBF_TDesc_build>
   <CBF_NeedAPlan>Open a settlement first.</CBF_NeedAPlan>
   <CBF_TDesc_save>Write the settlement back into its file. Districts, styles, towers, gatehouses and factions. Everything else in the file stays untouched.</CBF_TDesc_save>
   <CBF_Saved>{0} saved.</CBF_Saved>
@@ -673,4 +673,111 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_UninstallNeedGame>Only available in a loaded game.</CBF_UninstallNeedGame>
   <CBF_UninstallConfirm>This removes all CBF data from the loaded game: quests, map data, containers and settlement plans. It cannot be undone.\n\nAfterwards save immediately, quit the game and then remove the mod. As long as CBF stays active, the world map and new maps bring CBF data back.</CBF_UninstallConfirm>
   <CBF_UninstallDone>CBF data removed from {0} places.\n\nSave now, quit the game and remove the mod.</CBF_UninstallDone>
+  <CBF_CloseUnsaved>Unsaved changes to {0}. Closing discards them and reloads the values from the files.</CBF_CloseUnsaved>
+  <CBF_CloseDiscard>Discard and close</CBF_CloseDiscard>
+
+  <CBF_PreviewBuildHere>Build here</CBF_PreviewBuildHere>
+  <CBF_PreviewBuildHereTip>Builds the settlement on the current map. The site area is cleared first.</CBF_PreviewBuildHereTip>
+  <CBF_PreviewBuildHereAsk>Build {0} on the map {1}? The site area and its edge are cleared. Buildings and items there are lost, pawns stay.</CBF_PreviewBuildHereAsk>
+  <CBF_RegionIncomplete>{0} (incomplete)</CBF_RegionIncomplete>
+  <CBF_PawnPlaceFailed>{0} could not be placed. Details are in the log.</CBF_PawnPlaceFailed>
+  <CBF_GelaendeProbeAbgelegt>Terrain sample in {0} (image, list and .gel)</CBF_GelaendeProbeAbgelegt>
+  <CBF_NothingSelected>Nothing selected.</CBF_NothingSelected>
+  <CBF_WriteFailedReason>Writing failed: {0}</CBF_WriteFailedReason>
+  <CBF_FileNoRoot>The file {0} has no root node.</CBF_FileNoRoot>
+  <CBF_ProjectFolderMissing>The project folder was not found.</CBF_ProjectFolderMissing>
+  <CBF_ReplaceSameAsTarget>Replacement and target are the same.</CBF_ReplaceSameAsTarget>
+  <CBF_DeleteSourceStuck>The source file of {0} could not be removed. Nothing was deleted.</CBF_DeleteSourceStuck>
+  <CBF_NameTableLocked>The name table could not be changed. Nothing was changed.</CBF_NameTableLocked>
+  <CBF_PlanFileMissing>The file for {0} was not found.</CBF_PlanFileMissing>
+  <CBF_NoPatchFolder>There is no patch folder yet.</CBF_NoPatchFolder>
+  <CBF_TagMissing>{0} (category missing)</CBF_TagMissing>
+  <CBF_AndMore>and {0} more</CBF_AndMore>
+  <CBF_Auftrag_Bild>Creating picture</CBF_Auftrag_Bild>
+  <CBF_TagCreated>Category {0} created.</CBF_TagCreated>
+  <CBF_GraphicMulti>Four sides</CBF_GraphicMulti>
+  <CBF_GraphicSingle>Single image</CBF_GraphicSingle>
+  <CBF_Huelle_Label>container</CBF_Huelle_Label>
+  <CBF_Huelle_Desc>A container placed by Custom Base Framework. How it looks and what it holds comes from the object list that placed it.</CBF_Huelle_Desc>
+  <CBF_AuthorMode>Author mode: the editor may write into Custom Base Framework itself</CBF_AuthorMode>
+  <CBF_AuthorModeTip>Only for developing the framework itself. Everyone else creates their own project. Not available when the framework comes from the Workshop.</CBF_AuthorModeTip>
+  <CBF_NeedOwnProject>The editor does not write into Custom Base Framework itself. Create or open your own project.</CBF_NeedOwnProject>
+  <CBF_BehaelterStandardText>A container waiting to be searched.</CBF_BehaelterStandardText>
+  <CBF_PlanReadOnlyHint>This settlement type belongs to another mod and is read only. Copy it into your own mod to change it.</CBF_PlanReadOnlyHint>
+  <CBF_PlanCopyToMine>Copy into my mod</CBF_PlanCopyToMine>
+  <CBF_PlanCopyTitle>Copy {0} into your own mod</CBF_PlanCopyTitle>
+  <CBF_PlanCopyHint>Name of the copy (defName)</CBF_PlanCopyHint>
+  <CBF_PlanCopied>{0} is now in your own mod.</CBF_PlanCopied>
+  <CBF_UniqueTip>The piece appears at most once per settlement.</CBF_UniqueTip>
+  <CBF_K_InheritsFromParent>Without its own value the value of {0} applies.</CBF_K_InheritsFromParent>
+  <CBF_Type_PieceDef>Piece</CBF_Type_PieceDef>
+  <CBF_Type_SettlementPlanDef>Settlement type</CBF_Type_SettlementPlanDef>
+  <CBF_Type_LootBuildingCategoryDef>Object list</CBF_Type_LootBuildingCategoryDef>
+  <CBF_Type_LootTableDef>Loot table</CBF_Type_LootTableDef>
+  <CBF_Type_PawnListDef>Unit list</CBF_Type_PawnListDef>
+  <CBF_Type_PieceCategoryDef>Category</CBF_Type_PieceCategoryDef>
+  <CBF_Type_EinheitentauschDef>Swap rule</CBF_Type_EinheitentauschDef>
+  <CBF_Type_RuinDef>Ruin</CBF_Type_RuinDef>
+  <CBF_Type_WallProfileDef>Wall profile</CBF_Type_WallProfileDef>
+  <CBF_Type_DungeonProfileDef>Dungeon profile</CBF_Type_DungeonProfileDef>
+  <CBF_Field_fields>Fields</CBF_Field_fields>
+  <CBF_Field_pens>Pens</CBF_Field_pens>
+  <CBF_Field_crops>Crop list</CBF_Field_crops>
+  <CBF_Field_tags>Categories</CBF_Field_tags>
+  <CBF_Field_pawns>Animals</CBF_Field_pawns>
+  <CBF_Field_garrison>Garrison</CBF_Field_garrison>
+  <CBF_Field_kind>Settlement kind</CBF_Field_kind>
+  <CBF_Au_S_Role>Role {0}</CBF_Au_S_Role>
+  <CBF_Au_RoleUnserved>served by no palette, used by {0}</CBF_Au_RoleUnserved>
+  <CBF_Au_S_Style>Style {0}</CBF_Au_S_Style>
+  <CBF_Au_NoPalette>finds no usable palette.</CBF_Au_NoPalette>
+  <CBF_Au_S_LootTable>Loot table {0}</CBF_Au_S_LootTable>
+  <CBF_Au_LootNoEntry>has no usable entry left.</CBF_Au_LootNoEntry>
+  <CBF_Au_LootDead>{0} entries were dropped.</CBF_Au_LootDead>
+  <CBF_Au_S_ObjectList>Object list {0}</CBF_Au_S_ObjectList>
+  <CBF_Au_ListEmpty>not a single existing building.</CBF_Au_ListEmpty>
+  <CBF_Au_ListMissing>{0} of {1} are missing.</CBF_Au_ListMissing>
+  <CBF_Au_S_Plan>Settlement type {0}</CBF_Au_S_Plan>
+  <CBF_Au_NoPieceWithTag>not a single piece with category {0}.</CBF_Au_NoPieceWithTag>
+  <CBF_Au_S_Dungeon>Dungeon profile {0}</CBF_Au_S_Dungeon>
+  <CBF_Au_NoRoomWithTag>no room module with category {0}, the dungeon stays unused.</CBF_Au_NoRoomWithTag>
+  <CBF_Au_LootTableGone>The loot table {0} does not exist.</CBF_Au_LootTableGone>
+  <CBF_Au_S_WallProfile>Wall profile {0}</CBF_Au_S_WallProfile>
+  <CBF_Au_WallNoStrip>has no usable strip, the wall is built from roles.</CBF_Au_WallNoStrip>
+  <CBF_Au_WallStripHole>Strip {0} has no thing in the outer shell. The wall gets a hole there.</CBF_Au_WallStripHole>
+  <CBF_Au_WallStripDepth>Strip {0} is {1} cells deep, the profile wants {2}.</CBF_Au_WallStripDepth>
+  <CBF_Au_WallUnused>no settlement type has wall depth {0} in a matching style, the profile is never used.</CBF_Au_WallUnused>
+  <CBF_Au_Anchor>Anchor {0}</CBF_Au_Anchor>
+  <CBF_Au_AnchorNoCellRequired>Anchor {0} (symbol {1}) has no cell. It is required, so the piece is never placed.</CBF_Au_AnchorNoCellRequired>
+  <CBF_Au_AnchorNoCell>Anchor {0} (symbol {1}) has no cell. It has no effect.</CBF_Au_AnchorNoCell>
+  <CBF_Au_FillNoList>Anchor {0} is a fill anchor without an object list. It stays empty.</CBF_Au_FillNoList>
+  <CBF_Au_AnchorListGone>Anchor {0} names the object list {1}, which does not exist. Usually the mod it comes from is missing.</CBF_Au_AnchorListGone>
+  <CBF_Au_AnchorTableGone>Anchor {0} names the loot table {1}, which does not exist. It stays decoration.</CBF_Au_AnchorTableGone>
+  <CBF_Au_SpawnListGone>Spawn anchor {0} names the unit list {1}, which was not found. Check the list or pick a new one.</CBF_Au_SpawnListGone>
+  <CBF_Au_RequiredKind>Anchor {0} is required but of type {1}. Required only works for Connect: a fill or spawn anchor that fails leaves a corner empty and is no reason to drop the house.</CBF_Au_RequiredKind>
+  <CBF_Au_AnchorSymbolUnknown>The anchor layer contains the symbol {0}, which has no legend entry with an anchor.</CBF_Au_AnchorSymbolUnknown>
+  <CBF_Au_GateNoWallAnchor>is a gatehouse but has no anchor named {0}. It needs at least two where the wall docks.</CBF_Au_GateNoWallAnchor>
+  <CBF_Au_GateOneWallAnchor>is a gatehouse but has only one anchor named {0}. It needs at least two where the wall docks.</CBF_Au_GateOneWallAnchor>
+  <CBF_Au_GateNoOutside>is a gatehouse without an anchor named {0}. Without it the generator does not know which side faces outward and turns the gate the wrong way.</CBF_Au_GateNoOutside>
+  <CBF_Au_NoCategory>has no category.</CBF_Au_NoCategory>
+  <CBF_Au_NoGrid>has no grid.</CBF_Au_NoGrid>
+  <CBF_Au_MissingSymbols>The symbols {0} have no legend entry. Usually the mod they come from is missing. The piece is therefore not placed.</CBF_Au_MissingSymbols>
+  <CBF_Au_RoleNotServed>uses the role {0}, which no palette serves.</CBF_Au_RoleNotServed>
+  <CBF_Au_ZoneListGone>Content zone {0} names the object list {1}, which does not exist.</CBF_Au_ZoneListGone>
+  <CBF_Au_ZoneListEmpty>Content zone {0} uses {1}, which no longer contains any building.</CBF_Au_ZoneListEmpty>
+  <CBF_Au_ZoneTableGone>Content zone {0} names the loot table {1}, which does not exist.</CBF_Au_ZoneTableGone>
+  <CBF_Au_ZoneNoLayer>Content zone {0} is described, but there is no content layer.</CBF_Au_ZoneNoLayer>
+  <CBF_Au_LayerNoZone>has a content layer but no content zone.</CBF_Au_LayerNoZone>
+  <CBF_Au_LegendUnused>Legend symbol {0} ({1}) is in no layer and is therefore never placed.</CBF_Au_LegendUnused>
+  <CBF_Au_CoreSizeSwapped>The core size is reversed: {0} to {1}.</CBF_Au_CoreSizeSwapped>
+  <CBF_Au_AnEntry>an entry</CBF_Au_AnEntry>
+  <CBF_Au_CountSwapped>In ward {0}, district {1} the count of {2} is reversed: {3} to {4}.</CBF_Au_CountSwapped>
+  <CBF_Au_S_Category>Category {0}</CBF_Au_S_Category>
+  <CBF_Au_CategoryDeep>is {0} levels deep, at the limit of {1}. Probably a loop in the parent chain.</CBF_Au_CategoryDeep>
+  <CBF_Au_CategoryEmptyAll>has no piece, not even through its subcategories.</CBF_Au_CategoryEmptyAll>
+  <CBF_Au_CategoryEmpty>has no piece.</CBF_Au_CategoryEmpty>
+  <CBF_Au_Draft>Draft</CBF_Au_Draft>
+  <CBF_Au_Unreadable>cannot be read as a definition. Details are in the log.</CBF_Au_Unreadable>
+  <CBF_Au_S_Palettes>Palettes</CBF_Au_S_Palettes>
+  <CBF_Au_NoPaletteAtAll>not a single usable palette, nothing is generated.</CBF_Au_NoPaletteAtAll>
 </LanguageData>

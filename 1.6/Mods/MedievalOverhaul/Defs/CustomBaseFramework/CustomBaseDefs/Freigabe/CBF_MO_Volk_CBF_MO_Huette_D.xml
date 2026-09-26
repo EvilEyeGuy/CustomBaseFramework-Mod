@@ -26,8 +26,9 @@
       <li><symbol>Z</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>b</symbol><anchor>Bett1</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Bett_Einfach</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>r</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>s</symbol><anchor>Futtersack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Stall</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
@@ -51,8 +52,8 @@
     </terrain>
     <things>
       <li>OOOOO....</li>
-      <li>O.bfOZZZZ</li>
-      <li>OB..ObY.Z</li>
+      <li>O.fgOZZZZ</li>
+      <li>OB..OfY.Z</li>
       <li>O.R.O...Z</li>
       <li>OFOOO..QZ</li>
       <li>....ZZzZZ</li>
@@ -75,8 +76,8 @@
     </roof>
     <anchors>
       <li>..+......</li>
-      <li>..21.....</li>
-      <li>+.8..s...</li>
+      <li>.b21.....</li>
+      <li>+b8..s...</li>
       <li>.........</li>
       <li>.........</li>
       <li>.........</li>

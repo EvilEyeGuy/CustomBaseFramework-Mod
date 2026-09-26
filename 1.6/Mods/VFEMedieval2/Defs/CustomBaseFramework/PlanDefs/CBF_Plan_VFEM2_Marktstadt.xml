@@ -2,7 +2,7 @@
 <Defs>
   <CustomBaseFramework.SettlementPlanDef>
     <defName>CBF_Plan_VFEM2_Marktstadt</defName>
-    <label>Marktstadt (VFE Medieval 2)</label>
+    <label>market town (VFE Medieval 2)</label>
     <styles>
       <li>CBF_VFEM2</li>
     </styles>
@@ -32,11 +32,11 @@
         <wallDepth>3</wallDepth>
         <versorgung>1.2</versorgung>
         <roads>
-          <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Floor_Cobblestone_Granite</li>
+          <li>FlagstoneGranite</li>
         </roads>
         <walls>
           <li>
-            <piece>TownWall</piece>
+            <piece>CBF_VFEM2_Stadtmauer</piece>
             <weight>0.75</weight>
           </li>
         </walls>
@@ -56,7 +56,7 @@
           <li>
             <list>CBF_VFEM2_Garnison_Wehrgang</list>
             <posten>Wehrgang</posten>
-            <count>5~8</count>
+            <count>6~9</count>
           </li>
           <li>
             <list>CBF_VFEM2_Garnison_Tor</list>
@@ -66,7 +66,7 @@
           <li>
             <list>CBF_VFEM2_Garnison_Innen</list>
             <posten>Innen</posten>
-            <count>3~4</count>
+            <count>4~5</count>
           </li>
         </garrison>
         <districts>
@@ -148,7 +148,7 @@
         <wallDepth>1</wallDepth>
         <versorgung>1.2</versorgung>
         <walls>
-          <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
+          <li>CBF_VFEM2_Palisade</li>
         </walls>
         <emplacements>
           <li>
@@ -166,7 +166,7 @@
           <li>
             <list>CBF_VFEM2_Garnison_Wehrgang</list>
             <posten>Wehrgang</posten>
-            <count>3~4</count>
+            <count>4~5</count>
           </li>
           <li>
             <list>CBF_VFEM2_Garnison_Tor</list>
@@ -176,7 +176,7 @@
           <li>
             <list>CBF_VFEM2_Garnison_Innen</list>
             <posten>Innen</posten>
-            <count>1~3</count>
+            <count>3~4</count>
           </li>
         </garrison>
         <districts>
@@ -247,7 +247,7 @@
           <li>
             <list>CBF_VFEM2_Garnison_Innen</list>
             <posten>Innen</posten>
-            <count>1~3</count>
+            <count>3~4</count>
           </li>
         </garrison>
         <districts>

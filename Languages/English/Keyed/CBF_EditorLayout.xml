@@ -28,6 +28,10 @@
   <CBF_PieceFileMissing>The file of {0} was not found.</CBF_PieceFileMissing>
   <CBF_PieceWriteFailed>{0} could not be written, the old file stays.</CBF_PieceWriteFailed>
   <CBF_FileReloaded>{0} was changed and has been reloaded.</CBF_FileReloaded>
+  <CBF_FileChangedUnsaved>{0} was changed outside the editor. You have unsaved changes in this file. Reload discards them, Keep leaves your state in place; saving will then overwrite the outside change.</CBF_FileChangedUnsaved>
+  <CBF_FileReload>Reload</CBF_FileReload>
+  <CBF_FileKeepMine>Keep my state</CBF_FileKeepMine>
+  <CBF_CheckFailed>Check failed: {0}</CBF_CheckFailed>
   <CBF_H_Undo>Undo</CBF_H_Undo>
   <CBF_H_Redo>Redo</CBF_H_Redo>
   <CBF_H_UndoTip>Undoes: {0}. Keyboard: Ctrl+Z.</CBF_H_UndoTip>

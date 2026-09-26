@@ -188,8 +188,9 @@
     <rolle>Zivil</rolle>
     <radius>4</radius>
     <members>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Ravelder</kind><weight>1</weight></li>
-      <li><kind>Sheep</kind><weight>1</weight></li>
-    </members>
+        <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Ravelder</kind><weight>1</weight></li>
+        <li><kind>Sheep</kind><weight>1</weight></li>
+        <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Angus</kind><weight>1</weight></li>
+      </members>
   </CustomBaseFramework.PawnListDef>
 </Defs>

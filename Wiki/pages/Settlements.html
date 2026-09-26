@@ -57,7 +57,7 @@ main{padding:40px 48px 80px;min-width:0}
 .rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
 @media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
 @media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
-</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html">Pieces</a><a href="Categories.html">Categories</a><a href="Settlements.html" class="hier">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="settlements">Settlements</h1>
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html">Pieces</a><a href="Categories.html">Categories</a><a href="Settlements.html" class="hier">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Play</b><a href="Mod-Settings.html">Mod settings</a><a href="Compatibility.html">Compatibility</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="settlements">Settlements</h1>
 <p>A settlement plan describes one kind of place: a market town, a fortress city, a village, a camp. The generator builds it fresh for every faction base, so no two look the same.</p>
 <a class="bild" href="images/settlement-tab.png" target="_blank"><img alt="The Settlement tab" src="images/settlement-tab.png" loading="lazy"></a>
 <ol>
@@ -67,6 +67,7 @@ main{padding:40px 48px 80px;min-width:0}
 <li><strong>Wards</strong> on the right: one tab per ring of the settlement.</li>
 <li><strong>Faction overview</strong> below the list shows which faction gets which settlement, see <a href="Factions.html">Factions</a>.</li>
 </ol>
+<p>Settlement types from other mods are read only. <strong>Copy into my mod</strong> at the bottom puts a copy into your mod and opens it. <strong>Build</strong> and the preview still work on the original.</p>
 <h2 id="general">General</h2>
 <a class="bild" href="images/settlement-general.png" target="_blank"><img alt="The General section" src="images/settlement-general.png" loading="lazy"></a>
 <ul>
@@ -77,7 +78,6 @@ main{padding:40px 48px 80px;min-width:0}
 <li><strong>For all factions of these levels</strong>: the plan serves every faction of a ticked tech level, unless that faction has plans of its own.</li>
 <li><strong>Factions</strong>: factions or faction categories that get this plan in any case.</li>
 <li><strong>Excluded</strong>: factions that never get it.</li>
-<li><strong>Takeover</strong>: switches the generator on for faction bases, see <a href="Factions.html#takeover">Factions</a>.</li>
 <li><strong>Mods</strong>: the mods the plan needs. Most are found automatically, <strong>+ by hand</strong> adds more.</li>
 <li><strong>World map icon</strong>: the symbol of this place on the world map, tinted in the faction color.</li>
 </ul>
@@ -94,6 +94,8 @@ main{padding:40px 48px 80px;min-width:0}
 <p>Modern towns and the countryside have no fortification.</p>
 <h3 id="garrison">Garrison</h3>
 <p>Pawn lists that defend this ward, with a count and a post: <strong>Inside</strong>, <strong>Wall</strong> or <strong>Gate</strong>. Without entries the ward takes its share of the faction's defender points.</p>
+<h3 id="defences">Defences</h3>
+<p>Defences spread over the whole ward: turret posts, sandbag nests, bunkers. Each entry names a category or one piece and a count. The first one stands at a random spot along a road; every further one goes where it is farthest from those already placed. Use districts instead when a defence belongs to one district only.</p>
 <h3 id="districts">Districts</h3>
 <p>A district is a building programme. Districts without a name of their own are numbered, District 1, District 2 and so on.</p>
 <a class="bild" href="images/settlement-district.png" target="_blank"><img alt="A district with buildings, a field and a pen" src="images/settlement-district.png" loading="lazy"></a>
@@ -101,5 +103,6 @@ main{padding:40px 48px 80px;min-width:0}
 <li><strong>Buildings</strong>: a category or one specific piece, with min, max and weight. <strong>Filler</strong> entries fill the space left at the end.</li>
 <li><strong>Field</strong>: a crop plot grown around the buildings named under <strong>Farmsteads</strong>. The plants come from single plants or from a <strong>Crop list</strong>, see <a href="Loot.html#crop-lists">Loot</a>.</li>
 <li><strong>Pen</strong>: animals from a pawn list, the herd size, and what grows inside.</li>
+<li><strong>Location of the district</strong>: how strongly the district wants to lie near the center, the gate, the wall or the main road, 0 to 1 each. All 0 means a random spot.</li>
 </ol>
 <p><strong>+ Building</strong>, <strong>+ Field</strong> and <strong>+ Pen</strong> add rows. The <strong>...</strong> button next to a category shows the pieces it covers.</p><div class="schritte"><a href="Categories.html"><span>Previous</span>Categories</a><a class="weiter" href="Loot.html"><span>Next</span>Loot</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#general">General</a><a href="#wards">Wards</a></div></aside></div></body></html>

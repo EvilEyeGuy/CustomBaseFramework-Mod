@@ -274,6 +274,26 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Bett_Einfach</defName>
+    <members>
+      <li><thing>DankPyon_StrawBed</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BedFur</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BedWicker</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BedLog</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Bett_Doppel</defName>
+    <members>
+      <li><thing>DankPyon_StrawBedDouble</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BedFurDouble</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BedWickerDouble</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BedLogDouble</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_Doppelbett</defName>
     <members>
       <li><thing>DankPyon_Bed_RusticDouble_Blue</thing><bleibt>true</bleibt></li>

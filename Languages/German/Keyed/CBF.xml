@@ -286,7 +286,7 @@
   <CBF_RemovedFromList>{0} aus {1} entfernt</CBF_RemovedFromList>
   <CBF_AddedToList>{0} zu {1} hinzugefügt</CBF_AddedToList>
   <CBF_T_build>Bauen</CBF_T_build>
-  <CBF_TDesc_build>Diese Siedlung auf der aktuellen Karte bauen, genau hier. Dasselbe wie ein erzeugter Ort, nur ohne Hinreisen.</CBF_TDesc_build>
+  <CBF_TDesc_build>Sucht ein passendes Feld auf der Weltkarte und legt dort eine Siedlung nach diesem Plan an.</CBF_TDesc_build>
   <CBF_NeedAPlan>Erst einen Ortstyp öffnen.</CBF_NeedAPlan>
   <CBF_TDesc_save>Den Ortstyp zurück in seine Datei schreiben. Bezirke, Türme, Torhäuser und Fraktionen. Alles andere in der Datei bleibt unberührt.</CBF_TDesc_save>
   <CBF_Saved>{0} gespeichert.</CBF_Saved>
@@ -673,4 +673,111 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_UninstallNeedGame>Nur in einem geladenen Spiel möglich.</CBF_UninstallNeedGame>
   <CBF_UninstallConfirm>Das entfernt alle CBF-Daten aus dem geladenen Spiel: Quests, Kartendaten, Behälter und Siedlungspläne. Rückgängig machen geht nicht.\n\nDanach sofort speichern, das Spiel beenden und erst dann den Mod entfernen. Solange CBF aktiv bleibt, holen die Weltkarte und neue Karten wieder CBF-Daten herein.</CBF_UninstallConfirm>
   <CBF_UninstallDone>CBF-Daten aus {0} Orten entfernt.\n\nJetzt speichern, das Spiel beenden und den Mod entfernen.</CBF_UninstallDone>
+  <CBF_CloseUnsaved>Ungesicherte Änderungen an {0}. Beim Schließen gehen sie verloren, die Werte werden aus den Dateien neu gelesen.</CBF_CloseUnsaved>
+  <CBF_CloseDiscard>Verwerfen und schließen</CBF_CloseDiscard>
+
+  <CBF_PreviewBuildHere>Hier bauen</CBF_PreviewBuildHere>
+  <CBF_PreviewBuildHereTip>Baut die Siedlung auf der angezeigten Karte. Die Ortsfläche wird vorher geräumt.</CBF_PreviewBuildHereTip>
+  <CBF_PreviewBuildHereAsk>{0} auf der Karte {1} bauen? Die Ortsfläche samt Rand wird geräumt. Gebäude und Gegenstände dort gehen verloren, Figuren bleiben.</CBF_PreviewBuildHereAsk>
+  <CBF_RegionIncomplete>{0} (unvollständig)</CBF_RegionIncomplete>
+  <CBF_PawnPlaceFailed>{0} ließ sich nicht setzen. Details stehen im Log.</CBF_PawnPlaceFailed>
+  <CBF_GelaendeProbeAbgelegt>Geländeprobe in {0} (Bild, Liste und .gel)</CBF_GelaendeProbeAbgelegt>
+  <CBF_NothingSelected>Nichts ausgewählt.</CBF_NothingSelected>
+  <CBF_WriteFailedReason>Schreiben fehlgeschlagen: {0}</CBF_WriteFailedReason>
+  <CBF_FileNoRoot>Die Datei {0} hat keinen Wurzelknoten.</CBF_FileNoRoot>
+  <CBF_ProjectFolderMissing>Der Projektordner wurde nicht gefunden.</CBF_ProjectFolderMissing>
+  <CBF_ReplaceSameAsTarget>Ersatz und Ziel sind dasselbe.</CBF_ReplaceSameAsTarget>
+  <CBF_DeleteSourceStuck>Die Quelldatei von {0} ließ sich nicht entfernen. Es wurde nichts gelöscht.</CBF_DeleteSourceStuck>
+  <CBF_NameTableLocked>Die Namenstabelle ließ sich nicht ändern. Es wurde nichts geändert.</CBF_NameTableLocked>
+  <CBF_PlanFileMissing>Die Datei zu {0} wurde nicht gefunden.</CBF_PlanFileMissing>
+  <CBF_NoPatchFolder>Es gibt noch keinen Patchordner.</CBF_NoPatchFolder>
+  <CBF_TagMissing>{0} (Kategorie fehlt)</CBF_TagMissing>
+  <CBF_AndMore>und {0} weitere</CBF_AndMore>
+  <CBF_Auftrag_Bild>Bild wird erstellt</CBF_Auftrag_Bild>
+  <CBF_TagCreated>Kategorie {0} angelegt.</CBF_TagCreated>
+  <CBF_GraphicMulti>Vier Seiten</CBF_GraphicMulti>
+  <CBF_GraphicSingle>Ein Bild</CBF_GraphicSingle>
+  <CBF_Huelle_Label>Behälter</CBF_Huelle_Label>
+  <CBF_Huelle_Desc>Ein Behälter, den Custom Base Framework gesetzt hat. Aussehen und Inhalt kommen aus der Objektliste, die ihn gesetzt hat.</CBF_Huelle_Desc>
+  <CBF_AuthorMode>Autorenmodus: Der Editor darf in Custom Base Framework selbst schreiben</CBF_AuthorMode>
+  <CBF_AuthorModeTip>Nur für die Entwicklung des Frameworks. Alle anderen legen ein eigenes Projekt an. Aus dem Workshop ist diese Einstellung nicht verfügbar.</CBF_AuthorModeTip>
+  <CBF_NeedOwnProject>Der Editor schreibt nicht in Custom Base Framework selbst. Lege ein eigenes Projekt an oder öffne eines.</CBF_NeedOwnProject>
+  <CBF_BehaelterStandardText>Ein Behälter, der noch nicht durchsucht wurde.</CBF_BehaelterStandardText>
+  <CBF_PlanReadOnlyHint>Dieser Ortstyp gehört zu einem anderen Mod und ist nur lesbar. Zum Ändern in den eigenen Mod übernehmen.</CBF_PlanReadOnlyHint>
+  <CBF_PlanCopyToMine>In meinen Mod übernehmen</CBF_PlanCopyToMine>
+  <CBF_PlanCopyTitle>{0} in den eigenen Mod übernehmen</CBF_PlanCopyTitle>
+  <CBF_PlanCopyHint>Name der Kopie (defName)</CBF_PlanCopyHint>
+  <CBF_PlanCopied>{0} liegt jetzt im eigenen Mod.</CBF_PlanCopied>
+  <CBF_UniqueTip>Das Stück kommt je Ort höchstens einmal vor.</CBF_UniqueTip>
+  <CBF_K_InheritsFromParent>Ohne eigenen Wert gilt der Wert von {0}.</CBF_K_InheritsFromParent>
+  <CBF_Type_PieceDef>Stück</CBF_Type_PieceDef>
+  <CBF_Type_SettlementPlanDef>Ortstyp</CBF_Type_SettlementPlanDef>
+  <CBF_Type_LootBuildingCategoryDef>Objektliste</CBF_Type_LootBuildingCategoryDef>
+  <CBF_Type_LootTableDef>Beutetabelle</CBF_Type_LootTableDef>
+  <CBF_Type_PawnListDef>Einheitenliste</CBF_Type_PawnListDef>
+  <CBF_Type_PieceCategoryDef>Kategorie</CBF_Type_PieceCategoryDef>
+  <CBF_Type_EinheitentauschDef>Tauschregel</CBF_Type_EinheitentauschDef>
+  <CBF_Type_RuinDef>Ruine</CBF_Type_RuinDef>
+  <CBF_Type_WallProfileDef>Mauerprofil</CBF_Type_WallProfileDef>
+  <CBF_Type_DungeonProfileDef>Verliesprofil</CBF_Type_DungeonProfileDef>
+  <CBF_Field_fields>Äcker</CBF_Field_fields>
+  <CBF_Field_pens>Gehege</CBF_Field_pens>
+  <CBF_Field_crops>Pflanzenliste</CBF_Field_crops>
+  <CBF_Field_tags>Kategorien</CBF_Field_tags>
+  <CBF_Field_pawns>Tiere</CBF_Field_pawns>
+  <CBF_Field_garrison>Garnison</CBF_Field_garrison>
+  <CBF_Field_kind>Ortsart</CBF_Field_kind>
+  <CBF_Au_S_Role>Rolle {0}</CBF_Au_S_Role>
+  <CBF_Au_RoleUnserved>von keiner Palette bedient, genutzt von {0}</CBF_Au_RoleUnserved>
+  <CBF_Au_S_Style>Stil {0}</CBF_Au_S_Style>
+  <CBF_Au_NoPalette>findet keine brauchbare Palette.</CBF_Au_NoPalette>
+  <CBF_Au_S_LootTable>Beutetabelle {0}</CBF_Au_S_LootTable>
+  <CBF_Au_LootNoEntry>hat keinen brauchbaren Eintrag mehr.</CBF_Au_LootNoEntry>
+  <CBF_Au_LootDead>{0} Einträge sind weggefallen.</CBF_Au_LootDead>
+  <CBF_Au_S_ObjectList>Objektliste {0}</CBF_Au_S_ObjectList>
+  <CBF_Au_ListEmpty>kein einziges vorhandenes Gebäude.</CBF_Au_ListEmpty>
+  <CBF_Au_ListMissing>{0} von {1} fehlen.</CBF_Au_ListMissing>
+  <CBF_Au_S_Plan>Ortstyp {0}</CBF_Au_S_Plan>
+  <CBF_Au_NoPieceWithTag>kein einziges Stück mit Kategorie {0}.</CBF_Au_NoPieceWithTag>
+  <CBF_Au_S_Dungeon>Verliesprofil {0}</CBF_Au_S_Dungeon>
+  <CBF_Au_NoRoomWithTag>kein Raummodul mit Kategorie {0}, das Verlies bleibt ungenutzt.</CBF_Au_NoRoomWithTag>
+  <CBF_Au_LootTableGone>Die Beutetabelle {0} gibt es nicht.</CBF_Au_LootTableGone>
+  <CBF_Au_S_WallProfile>Mauerprofil {0}</CBF_Au_S_WallProfile>
+  <CBF_Au_WallNoStrip>hat keinen brauchbaren Streifen, die Mauer entsteht aus Rollen.</CBF_Au_WallNoStrip>
+  <CBF_Au_WallStripHole>Streifen {0} hat kein Ding in der Außenschale. Die Mauer bekommt dort ein Loch.</CBF_Au_WallStripHole>
+  <CBF_Au_WallStripDepth>Streifen {0} ist {1} Felder tief, das Profil will {2}.</CBF_Au_WallStripDepth>
+  <CBF_Au_WallUnused>kein Ortstyp hat Mauertiefe {0} in einem passenden Stil, das Profil wird nie verwendet.</CBF_Au_WallUnused>
+  <CBF_Au_Anchor>Anker {0}</CBF_Au_Anchor>
+  <CBF_Au_AnchorNoCellRequired>Anker {0} (Zeichen {1}) hat kein einziges Feld. Er ist Pflicht, das Stück wird also nie gesetzt.</CBF_Au_AnchorNoCellRequired>
+  <CBF_Au_AnchorNoCell>Anker {0} (Zeichen {1}) hat kein einziges Feld. Er bewirkt nichts.</CBF_Au_AnchorNoCell>
+  <CBF_Au_FillNoList>Anker {0} ist ein Füllanker ohne Objektliste. Er bleibt leer.</CBF_Au_FillNoList>
+  <CBF_Au_AnchorListGone>Anker {0} nennt die Objektliste {1}, die es nicht gibt. Meist fehlt der Mod, aus dem sie stammt.</CBF_Au_AnchorListGone>
+  <CBF_Au_AnchorTableGone>Anker {0} nennt die Beutetabelle {1}, die es nicht gibt. Es bleibt bei Deko.</CBF_Au_AnchorTableGone>
+  <CBF_Au_SpawnListGone>Spawnanker {0} nennt die Einheitenliste {1}, die nicht gefunden wurde. Die Liste prüfen oder neu wählen.</CBF_Au_SpawnListGone>
+  <CBF_Au_RequiredKind>Anker {0} ist Pflicht, aber vom Typ {1}. Pflicht wirkt nur bei Connect: ein Füll- oder Spawnanker, der ausfällt, lässt eine Ecke leer und ist kein Grund, das Haus wegzulassen.</CBF_Au_RequiredKind>
+  <CBF_Au_AnchorSymbolUnknown>In der Ankerebene steht das Zeichen {0}, zu dem es keinen Legendeneintrag mit Anker gibt.</CBF_Au_AnchorSymbolUnknown>
+  <CBF_Au_GateNoWallAnchor>ist ein Torhaus, hat aber keinen Anker namens {0}. Es braucht mindestens zwei, dort wo die Mauer andockt.</CBF_Au_GateNoWallAnchor>
+  <CBF_Au_GateOneWallAnchor>ist ein Torhaus, hat aber nur einen Anker namens {0}. Es braucht mindestens zwei, dort wo die Mauer andockt.</CBF_Au_GateOneWallAnchor>
+  <CBF_Au_GateNoOutside>ist ein Torhaus ohne Anker namens {0}. Ohne ihn weiß der Generator nicht, welche Seite nach draußen zeigt, und dreht das Tor falsch herum.</CBF_Au_GateNoOutside>
+  <CBF_Au_NoCategory>hat keine einzige Kategorie.</CBF_Au_NoCategory>
+  <CBF_Au_NoGrid>hat kein Raster.</CBF_Au_NoGrid>
+  <CBF_Au_MissingSymbols>Zu den Zeichen {0} gibt es keinen Legendeneintrag. Meist fehlt der Mod, aus dem sie stammen. Das Stück wird deshalb nicht gesetzt.</CBF_Au_MissingSymbols>
+  <CBF_Au_RoleNotServed>nutzt die Rolle {0}, die keine Palette bedient.</CBF_Au_RoleNotServed>
+  <CBF_Au_ZoneListGone>Inhaltszone {0} nennt die Objektliste {1}, die es nicht gibt.</CBF_Au_ZoneListGone>
+  <CBF_Au_ZoneListEmpty>Inhaltszone {0} nutzt {1}, darin gibt es kein einziges Gebäude mehr.</CBF_Au_ZoneListEmpty>
+  <CBF_Au_ZoneTableGone>Inhaltszone {0} nennt die Beutetabelle {1}, die es nicht gibt.</CBF_Au_ZoneTableGone>
+  <CBF_Au_ZoneNoLayer>Inhaltszone {0} ist beschrieben, aber es gibt keine Inhaltsebene.</CBF_Au_ZoneNoLayer>
+  <CBF_Au_LayerNoZone>hat eine Inhaltsebene, aber keine einzige Inhaltszone.</CBF_Au_LayerNoZone>
+  <CBF_Au_LegendUnused>Legendenzeichen {0} ({1}) steht in keiner Ebene und wird deshalb nie gesetzt.</CBF_Au_LegendUnused>
+  <CBF_Au_CoreSizeSwapped>Die Kerngröße ist verdreht: {0} bis {1}.</CBF_Au_CoreSizeSwapped>
+  <CBF_Au_AnEntry>ein Eintrag</CBF_Au_AnEntry>
+  <CBF_Au_CountSwapped>Im Stadtteil {0}, Bezirk {1} ist die Stückzahl von {2} verdreht: {3} bis {4}.</CBF_Au_CountSwapped>
+  <CBF_Au_S_Category>Kategorie {0}</CBF_Au_S_Category>
+  <CBF_Au_CategoryDeep>hängt {0} Ebenen tief, das ist an der Grenze von {1}. Wahrscheinlich ein Ring in der Elternkette.</CBF_Au_CategoryDeep>
+  <CBF_Au_CategoryEmptyAll>hat kein Stück, auch nicht über ihre Unterkategorien.</CBF_Au_CategoryEmptyAll>
+  <CBF_Au_CategoryEmpty>hat kein einziges Stück.</CBF_Au_CategoryEmpty>
+  <CBF_Au_Draft>Entwurf</CBF_Au_Draft>
+  <CBF_Au_Unreadable>lässt sich nicht als Definition lesen. Einzelheiten stehen im Log.</CBF_Au_Unreadable>
+  <CBF_Au_S_Palettes>Paletten</CBF_Au_S_Palettes>
+  <CBF_Au_NoPaletteAtAll>keine einzige brauchbare Palette, es wird nichts erzeugt.</CBF_Au_NoPaletteAtAll>
 </LanguageData>

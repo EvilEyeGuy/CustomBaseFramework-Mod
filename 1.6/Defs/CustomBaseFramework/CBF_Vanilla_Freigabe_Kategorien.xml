@@ -29,6 +29,15 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Forschungszentrum</defName>
+    <label>Forschungszentrum</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_Friedhof</defName>
     <label>Friedhof</label>
     <zones>
@@ -92,6 +101,24 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Kommandozentrale</defName>
+    <label>Kommandozentrale</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Kontrollpunkt</defName>
+    <label>Kontrollpunkt</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_Kueche</defName>
     <label>Küche</label><parent>CBF_Vanilla_Workshop</parent>
     <zones>
@@ -110,8 +137,53 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Lagerhalle</defName>
+    <label>Lagerhalle</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_Maschinenbau</defName>
     <label>Maschinenbau</label><parent>CBF_Vanilla_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Mauerturm</defName>
+    <label>Mauerturm</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Parlament</defName>
+    <label>Parlament</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Polizei</defName>
+    <label>Polizeistation</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Sandsackstellung</defName>
+    <label>Sandsackstellung</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -182,8 +254,26 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Tresor</defName>
+    <label>Tresor</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_Waffenkammer</defName>
     <label>Waffenkammer</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Wohnblock</defName>
+    <label>Wohnblock</label>
     <zones>
       <li>Inside</li>
     </zones>

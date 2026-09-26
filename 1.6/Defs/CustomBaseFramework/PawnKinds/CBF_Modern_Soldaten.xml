@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PawnKindDef Name="CBF_Modern_SoldatBasis" Abstract="True">
+    <race>Human</race>
+    <backstoryCategories>
+      <li>Outlander</li>
+    </backstoryCategories>
+    <maxGenerationAge>55</maxGenerationAge>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution>true</apparelIgnorePollution>
+    <gearHealthRange>0.8~2.5</gearHealthRange>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+    <apparelMoney>900~1500</apparelMoney>
+    <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+    <disallowedTraits>
+      <li>Wimp</li>
+      <li>Nudist</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <isFighter>true</isFighter>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>12~20</initialResistanceRange>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Schuetze</defName>
+    <label>rifleman</label>
+    <combatPower>85</combatPower>
+    <weaponMoney>500~1400</weaponMoney>
+    <weaponTags>
+      <li>AssaultRifle</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>7~13</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Scharfschuetze</defName>
+    <label>sniper</label>
+    <combatPower>110</combatPower>
+    <apparelMoney>700~1200</apparelMoney>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <weaponMoney>650~1500</weaponMoney>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Stuermer</defName>
+    <label>breacher</label>
+    <combatPower>85</combatPower>
+    <isGoodBreacher>true</isGoodBreacher>
+    <apparelMoney>1200~1900</apparelMoney>
+    <weaponMoney>300~1200</weaponMoney>
+    <weaponTags>
+      <li>PumpShotgun</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_MGSchuetze</defName>
+    <label>heavy gunner</label>
+    <combatPower>140</combatPower>
+    <apparelMoney>1200~1900</apparelMoney>
+    <weaponMoney>1200~2400</weaponMoney>
+    <weaponTags>
+      <li>Minigun</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Grenadier</defName>
+    <label>grenadier</label>
+    <combatPower>70</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+    <weaponMoney>300~650</weaponMoney>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~10</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Polizist</defName>
+    <label>police officer</label>
+    <combatPower>55</combatPower>
+    <apparelMoney>500~900</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <weaponMoney>150~500</weaponMoney>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~10</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Offizier</defName>
+    <label>officer</label>
+    <combatPower>130</combatPower>
+    <apparelMoney>1800~2800</apparelMoney>
+    <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+    <weaponMoney>600~1600</weaponMoney>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <initialResistanceRange>18~26</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~15</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Elitesoldat</defName>
+    <label>elite trooper</label>
+    <combatPower>180</combatPower>
+    <apparelTags>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <apparelMoney>2800~4000</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponMoney>1100~2500</weaponMoney>
+    <weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <initialResistanceRange>20~30</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>11~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+</Defs>

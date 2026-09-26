@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Linie_Barrikade</defName>
+    <label>CBF_Vanilla_Linie_Barrikade</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallSegment</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_ModernVanilla</style>
+    <legend>
+      <li><symbol>C</symbol><thing>Barricade</thing><stuff>Steel</stuff></li>
+      <li><symbol>d</symbol><terrain>Concrete</terrain></li>
+    </legend>
+    <mask>
+      <li>#</li>
+    </mask>
+    <terrain>
+      <li>d</li>
+    </terrain>
+    <things>
+      <li>C</li>
+    </things>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

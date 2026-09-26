@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Tresor</defName>
+    <label>Tresor</label>
+    <rolls>3~5</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>20</weight><table>CBF_Vanilla_Ware_Muenzen</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Ware_Schatz</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Ware_Erz</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Ware_Gewehr</table></li>
+      <li><weight>4</weight><table>CBF_Vanilla_Ware_Schutz</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
 </Defs>

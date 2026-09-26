@@ -3,7 +3,7 @@
 
   <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Plan_FortressCity_Neu</defName>
-    <label>fortress city (new)</label>
+    <label>fortress city (MO)</label>
 
     <styles>
       <li>Rustical</li>
@@ -37,7 +37,7 @@
         <wallDepth>3</wallDepth>
         <versorgung>1.2</versorgung>
         <roads>
-          <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Floor_Cobblestone_Granite</li>
+          <li>DankPyon_Floor_Cobblestone_Granite</li>
         </roads>
         <walls>
           <li><piece>TownWall_1x5</piece><weight>0.75</weight></li>
@@ -50,9 +50,21 @@
           <li><tag>CBF_MO_Festungstor</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garnison_Wehrgang</list><posten>Wehrgang</posten><count>16~21</count></li>
-          <li><list>CBF_MO_Garnison_Tor</list><posten>Tor</posten><count>5~8</count></li>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>8~13</count></li>
+          <li>
+            <list>CBF_MO_Garnison_Wehrgang</list>
+            <count>16~21</count>
+            <posten>Wehrgang</posten>
+          </li>
+          <li>
+            <list>CBF_MO_Garnison_Tor</list>
+            <count>5~8</count>
+            <posten>Tor</posten>
+          </li>
+          <li>
+            <list>CBF_MO_Garnison_Innen</list>
+            <count>8~13</count>
+            <posten>Innen</posten>
+          </li>
         </garrison>
         <districts>
           <li>
@@ -101,9 +113,21 @@
           <li><tag>CBF_MO_Torhaus</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garnison_Wehrgang</list><posten>Wehrgang</posten><count>5~8</count></li>
-          <li><list>CBF_MO_Garnison_Tor</list><posten>Tor</posten><count>3~3</count></li>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>3~4</count></li>
+          <li>
+            <list>CBF_MO_Garnison_Wehrgang</list>
+            <count>5~8</count>
+            <posten>Wehrgang</posten>
+          </li>
+          <li>
+            <list>CBF_MO_Garnison_Tor</list>
+            <count>3~3</count>
+            <posten>Tor</posten>
+          </li>
+          <li>
+            <list>CBF_MO_Garnison_Innen</list>
+            <count>3~4</count>
+            <posten>Innen</posten>
+          </li>
         </garrison>
         <districts>
           <li>
@@ -134,7 +158,11 @@
         <wallDepth>0</wallDepth>
         <versorgung>1.2</versorgung>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>3~5</count></li>
+          <li>
+            <list>CBF_MO_Garnison_Innen</list>
+            <count>3~5</count>
+            <posten>Innen</posten>
+          </li>
         </garrison>
         <districts>
           <li>
@@ -229,6 +257,8 @@
     </techLevels>
 
     <worldTexture>World/WorldObjects/CBF/CBF_FortressTown</worldTexture>
+  
+    <fuerAlleFraktionen>true</fuerAlleFraktionen>
   </CustomBaseFramework.SettlementPlanDef>
 
 </Defs>

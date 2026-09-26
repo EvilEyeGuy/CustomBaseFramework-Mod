@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Sandsackstellung_B</defName>
+    <label>CBF_Vanilla_Sandsackstellung_B</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallTower</li>
+      <li>CBF_Vanilla_Sandsackstellung</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_ModernVanilla</style>
+    <legend>
+      <li><symbol>1</symbol><anchor>Munitionskiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>8</symbol><anchor>Stellungswache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Modern_Garnison_Wehrgang</pawnList><pawnCount>2~3</pawnCount></li>
+      <li><symbol>R</symbol><anchor>Wall</anchor></li>
+      <li><symbol>C</symbol><thing>Sandbags</thing><stuff>Cloth</stuff></li>
+      <li><symbol>T</symbol><thing>Barricade</thing><stuff>Steel</stuff></li>
+      <li><symbol>f</symbol><thing>ShelfSmall</thing><stuff>Steel</stuff><rotation>South</rotation></li>
+      <li><symbol>d</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>e</symbol><terrain>PavedTile</terrain></li>
+      <li><symbol>k</symbol><thing>Turret_Autocannon</thing></li>
+    </legend>
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+    <terrain>
+      <li>ddddd</li>
+      <li>ddddd</li>
+      <li>ddddd</li>
+      <li>ddddd</li>
+      <li>ddddd</li>
+    </terrain>
+    <things>
+      <li>TCCCT</li>
+      <li>Cf..C</li>
+      <li>C...C</li>
+      <li>C.k.C</li>
+      <li>TCCCT</li>
+    </things>
+    <anchors>
+      <li>..R..</li>
+      <li>.1...</li>
+      <li>R8..R</li>
+      <li>.....</li>
+      <li>..R..</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

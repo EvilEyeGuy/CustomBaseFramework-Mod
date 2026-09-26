@@ -23,19 +23,16 @@
         <size>1</size>
         <wallDepth>0</wallDepth>
         <versorgung>1.2</versorgung>
+        <garrison>
+          <li><list>CBF_Modern_Garnison_Innen</list><posten>Innen</posten><count>14~20</count></li>
+          <li><list>CBF_Modern_Garnison_Elite</list><posten>Innen</posten><count>2~4</count></li>
+        </garrison>
         <roads>
           <li>Concrete</li>
         </roads>
         <roadEdges>
           <li>PavedTile</li>
         </roadEdges>
-        <garrison>
-          <li>
-            <list>CBF_Vanilla_Garrison</list>
-            <count>10~20</count>
-            <posten>Innen</posten>
-          </li>
-        </garrison>
         <districts>
           <li>
             <name>Zentrum</name>
@@ -57,19 +54,15 @@
         <size>0.65</size>
         <wallDepth>0</wallDepth>
         <versorgung>1.2</versorgung>
+        <garrison>
+          <li><list>CBF_Modern_Garnison_Innen</list><posten>Innen</posten><count>8~12</count></li>
+        </garrison>
         <roads>
           <li>Concrete</li>
         </roads>
         <roadEdges>
           <li>PavedTile</li>
         </roadEdges>
-        <garrison>
-          <li>
-            <list>CBF_Vanilla_Garrison</list>
-            <count>5~10</count>
-            <posten>Innen</posten>
-          </li>
-        </garrison>
         <districts>
           <li>
             <name>Wohnviertel</name>
@@ -95,7 +88,10 @@
         <name>Umland</name>
         <size>1.8</size>
         <wallDepth>0</wallDepth>
-        <versorgung>1.2</versorgung><fields><li>
+        <versorgung>1.2</versorgung>
+        <garrison>
+          <li><list>CBF_Modern_Garnison_Innen</list><posten>Innen</posten><count>3~5</count></li>
+        </garrison><fields><li>
             <name>Acker</name>
             <count>3~4</count>
             <fence>false</fence>

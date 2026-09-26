@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Mauerturm_B</defName>
+    <label>CBF_Vanilla_Mauerturm_B</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallTower</li>
+      <li>CBF_Vanilla_Mauerturm</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_ModernVanilla</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>1</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>8</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>R</symbol><anchor>Wall</anchor></li>
+      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>e</symbol><terrain>MetalTile</terrain></li>
+      <li><symbol>f</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>g</symbol><thing>Turret_MiniTurret</thing><stuff>Plasteel</stuff></li>
+    </legend>
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+    <terrain>
+      <li>eeeee</li>
+      <li>eeeee</li>
+      <li>eeeee</li>
+      <li>eeeee</li>
+      <li>eeeee</li>
+    </terrain>
+    <things>
+      <li>SSSSS</li>
+      <li>Sg.gS</li>
+      <li>S...S</li>
+      <li>Sf..S</li>
+      <li>SSSSS</li>
+    </things>
+    <roof>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+    </roof>
+    <anchors>
+      <li>..R..</li>
+      <li>.....</li>
+      <li>R.8.R</li>
+      <li>.11..</li>
+      <li>..R..</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

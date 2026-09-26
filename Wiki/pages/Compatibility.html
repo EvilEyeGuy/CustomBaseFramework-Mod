@@ -92,12 +92,19 @@ main{padding:40px 48px 80px;min-width:0}
 <h2 id="mods-that-reshape-the-map">Mods that reshape the map</h2>
 <p>Map Designer and Geological Landforms work together with CBF. They shape every other map as usual, but they do not act while CBF generates a settlement, so rivers, cliffs and terrain features do not cut through the town.</p>
 <h2 id="mods-with-settlements-of-their-own">Mods with settlements of their own</h2>
-<p>Empire and World Domination 2.0 manage settlements of their own. CBF does not change them:</p>
+<h3 id="world-domination-20">World Domination 2.0</h3>
+<p>World Domination sorts settlements into tiers 1 to 4. By default CBF builds these settlements and picks the settlement type by tier:</p>
 <ul>
-<li>With World Domination 2.0 active, settlements of factions without layouts of their own stay with World Domination and keep its tiered layouts. CBF then also leaves their map size and world map icon alone.</li>
-<li>Factions that bring their own layouts, such as the noble houses of Medieval Overhaul, are still built by CBF, with or without World Domination.</li>
-<li>Vassal colonies of Empire get no CBF settlements, are no quest givers for CBF quests and are not listed under settlements per faction.</li>
+<li>Among the settlement types the faction may get anyway (tech level and faction rules unchanged), CBF takes the one whose <strong>WD tier</strong> matches, otherwise the closest one.</li>
+<li>If a settlement grows to a higher tier in World Domination, its type changes as long as its map has not been generated yet.</li>
+<li>Settlement types assigned by hand in the world editor stay as they are.</li>
 </ul>
-<p>The setting is <strong>Leave settlements of other settlement mods alone</strong> in the <a href="Mod-Settings.html#other-settlement-mods">mod settings</a>. It is on by default.</p>
+<p>The shipped types: village 1, market town 2, large market town 3, fortress city 4, for Medieval Overhaul and VFE Medieval 2 alike. Modern town 1 to 2, large town 3, metropolis 4, spacer town 1 to 3.</p>
+<p><strong>Build World Domination settlements with CBF</strong> in the <a href="Mod-Settings.html#other-settlement-mods">mod settings</a> switches this. Off: CBF leaves World Domination settlements of factions without layouts of their own alone. The setting and the <strong>WD tier</strong> field in the Settlement tab only appear when World Domination is active.</p>
+<h3 id="empire">Empire</h3>
+<p>Vassal colonies of Empire get no CBF settlements, are no quest givers for CBF quests and are not listed under settlements per faction.</p>
+<h3 id="other-mods-with-their-own-map-generator">Other mods with their own map generator</h3>
+<p>Settlements that another mod builds with its own map generator keep it. CBF then also leaves their map size and world map icon alone.</p>
+<p>Both are part of <strong>Leave settlements of other settlement mods alone</strong> in the mod settings, on by default.</p>
 <h2 id="credits">Credits</h2>
 <p>Thanks to Fabricator General (Blackrussian) for testing the mod and for many compatibility hints from his large mod list.</p><div class="schritte"><a href="Mod-Settings.html"><span>Previous</span>Mod settings</a><a class="weiter" href="Field-Reference.html"><span>Next</span>Field reference</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#content-for-other-mods">Content for other mods</a><a href="#multiplayer">Multiplayer</a><a href="#mods-that-reshape-the-map">Mods that reshape the map</a><a href="#mods-with-settlements-of-their-own">Mods with settlements of their own</a><a href="#credits">Credits</a></div></aside></div></body></html>

@@ -3,7 +3,7 @@
 
   <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Plan_Village_Neu</defName>
-    <label>village (MO)</label>
+    <label>village (new)</label>
 
     <styles>
       <li>Rustical</li>
@@ -32,10 +32,10 @@
     <wards>
       <li>
         <art>Stadt</art>
-        <name>Altstadt</name>
+        <name>Dorfkern</name>
+        <tor>DankPyon_ReinfocedLogGate</tor>
         <size>1</size>
         <wallDepth>1</wallDepth>
-        <tor>DankPyon_ReinfocedLogGate</tor>
         <versorgung>1.2</versorgung>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
@@ -47,21 +47,9 @@
           <li><tag>CBF_MO_Palisadentorhaus</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
-          <li>
-            <list>CBF_MO_Garnison_Wehrgang</list>
-            <count>3~5</count>
-            <posten>Wehrgang</posten>
-          </li>
-          <li>
-            <list>CBF_MO_Garnison_Tor</list>
-            <count>1~3</count>
-            <posten>Tor</posten>
-          </li>
-          <li>
-            <list>CBF_MO_Garnison_Innen</list>
-            <count>1~3</count>
-            <posten>Innen</posten>
-          </li>
+          <li><list>CBF_MO_Garnison_Wehrgang</list><posten>Wehrgang</posten><count>3~5</count></li>
+          <li><list>CBF_MO_Garnison_Tor</list><posten>Tor</posten><count>1~3</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>1~3</count></li>
         </garrison>
         <districts>
           <li>
@@ -79,16 +67,12 @@
       </li>
       <li>
         <art>Vorstadt</art>
-        <name>Neustadt</name>
+        <name>Aussenhoefe</name>
         <size>0.6</size>
         <wallDepth>1</wallDepth>
         <versorgung>1.2</versorgung>
         <garrison>
-          <li>
-            <list>CBF_MO_Garnison_Innen</list>
-            <count>1~3</count>
-            <posten>Innen</posten>
-          </li>
+          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>1~3</count></li>
         </garrison>
         <districts>
           <li>
@@ -122,11 +106,7 @@
         <wallDepth>0</wallDepth>
         <versorgung>1.2</versorgung>
         <garrison>
-          <li>
-            <list>CBF_MO_Garnison_Innen</list>
-            <count>1~3</count>
-            <posten>Innen</posten>
-          </li>
+          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>1~3</count></li>
         </garrison>
         <districts>
           <li>

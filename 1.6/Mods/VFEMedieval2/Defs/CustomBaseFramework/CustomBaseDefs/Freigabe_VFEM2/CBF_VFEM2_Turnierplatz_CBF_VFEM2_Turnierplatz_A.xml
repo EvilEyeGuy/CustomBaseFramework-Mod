@@ -11,10 +11,12 @@
     <style>CBF_VFEM2</style>
     <traufen>true</traufen>
     <legend>
-      <li><symbol>A</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>A</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>B</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>b</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
       <li><symbol>f</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
       <li><symbol>g</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
       <li><symbol>i</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
@@ -32,8 +34,8 @@
       <li><symbol>u</symbol><anchor>RegalOst</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
       <li><symbol>x</symbol><thing>Beer</thing><count>10</count></li>
-      <li><symbol>y</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
-      <li><symbol>z</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>y</symbol><terrain>PackedDirt</terrain></li>
+      <li><symbol>z</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
     </legend>
     <mask>
       <li>......####################......</li>
@@ -55,23 +57,23 @@
       <li>################################</li>
     </mask>
     <terrain>
-      <li>................................</li>
-      <li>.......wwwwwwwwyywwwwwwww.......</li>
-      <li>.......wwwwwwwwyywwwwwwww.......</li>
-      <li>.......wwwwwwwwyywwwwwwww.......</li>
-      <li>................................</li>
-      <li>................................</li>
-      <li>................................</li>
-      <li>................................</li>
-      <li>................................</li>
-      <li>................................</li>
-      <li>................................</li>
-      <li>................................</li>
-      <li>................................</li>
-      <li>................................</li>
-      <li>................................</li>
-      <li>................................</li>
-      <li>................................</li>
+      <li>......yyyyyyyyyyyyyyyyyyyy......</li>
+      <li>......ywwwwwwwwzzwwwwwwwwy......</li>
+      <li>......ywwwwwwwwzzwwwwwwwwy......</li>
+      <li>......ywwwwwwwwzzwwwwwwwwy......</li>
+      <li>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</li>
+      <li>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</li>
+      <li>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</li>
+      <li>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</li>
+      <li>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</li>
+      <li>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</li>
+      <li>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</li>
+      <li>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</li>
+      <li>eeeeeeyyyyyyyyyyyyyyyyyyyyeeeeee</li>
+      <li>eeeeeeyyyyyyyyyyyyyyyyyyyyeeeeee</li>
+      <li>eeeeeeyyyyyyyyyyyyyyyyyyyyeeeeee</li>
+      <li>eeeeeeyyyyyyyyyyyyyyyyyyyyeeeeee</li>
+      <li>eeeeeeyyyyyyyyyyyyyyyyyyyyeeeeee</li>
     </terrain>
     <things>
       <li>......aaaaaaaaaaaaaaaaaaaa......</li>
@@ -87,9 +89,9 @@
       <li>j..i........................i.k.</li>
       <li>...iiiiiiiiiiiiiiiiiiiiiiiiii...</li>
       <li>mmmmmm....................mmmmmm</li>
-      <li>mj.z.m..bbbb..bbbb..bbbb..m.z.jm</li>
+      <li>mj.A.m..bbbb..bbbb..bbbb..m.A.jm</li>
       <li>m....n....................n....m</li>
-      <li>mA...m....................m..A.m</li>
+      <li>mB...m....................m..B.m</li>
       <li>mmmmmm....x.........x.....mmmmmm</li>
     </things>
     <things2>

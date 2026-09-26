@@ -3,7 +3,7 @@
 
   <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Plan_Grossmarktstadt_Neu</defName>
-    <label>large market town (new)</label>
+    <label>large market town (MO)</label>
 
     <styles>
       <li>Rustical</li>
@@ -37,7 +37,7 @@
         <wallDepth>3</wallDepth>
         <versorgung>1.2</versorgung>
         <roads>
-          <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Floor_Cobblestone_Granite</li>
+          <li>DankPyon_Floor_Cobblestone_Granite</li>
         </roads>
         <walls>
           <li><piece>TownWall</piece><weight>0.75</weight></li>
@@ -50,9 +50,21 @@
           <li><tag>CBF_MO_Torhaus</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garnison_Wehrgang</list><posten>Wehrgang</posten><count>12~14</count></li>
-          <li><list>CBF_MO_Garnison_Tor</list><posten>Tor</posten><count>4~6</count></li>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>6~9</count></li>
+          <li>
+            <list>CBF_MO_Garnison_Wehrgang</list>
+            <count>12~14</count>
+            <posten>Wehrgang</posten>
+          </li>
+          <li>
+            <list>CBF_MO_Garnison_Tor</list>
+            <count>4~6</count>
+            <posten>Tor</posten>
+          </li>
+          <li>
+            <list>CBF_MO_Garnison_Innen</list>
+            <count>6~9</count>
+            <posten>Innen</posten>
+          </li>
         </garrison>
         <districts>
           <li>
@@ -94,9 +106,9 @@
       <li>
         <art>Vorstadt</art>
         <name>Neustadt</name>
-        <tor>DankPyon_ReinfocedLogGate</tor>
         <size>0.6</size>
         <wallDepth>1</wallDepth>
+        <tor>DankPyon_ReinfocedLogGate</tor>
         <versorgung>1.2</versorgung>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
@@ -108,9 +120,21 @@
           <li><tag>CBF_MO_Palisadentorhaus</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garnison_Wehrgang</list><posten>Wehrgang</posten><count>5~8</count></li>
-          <li><list>CBF_MO_Garnison_Tor</list><posten>Tor</posten><count>3~4</count></li>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>4~5</count></li>
+          <li>
+            <list>CBF_MO_Garnison_Wehrgang</list>
+            <count>5~8</count>
+            <posten>Wehrgang</posten>
+          </li>
+          <li>
+            <list>CBF_MO_Garnison_Tor</list>
+            <count>3~4</count>
+            <posten>Tor</posten>
+          </li>
+          <li>
+            <list>CBF_MO_Garnison_Innen</list>
+            <count>4~5</count>
+            <posten>Innen</posten>
+          </li>
         </garrison>
         <districts>
           <li>
@@ -144,7 +168,11 @@
         <wallDepth>0</wallDepth>
         <versorgung>1.2</versorgung>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>4~5</count></li>
+          <li>
+            <list>CBF_MO_Garnison_Innen</list>
+            <count>4~5</count>
+            <posten>Innen</posten>
+          </li>
         </garrison>
         <districts>
           <li>

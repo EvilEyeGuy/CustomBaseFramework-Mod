@@ -9,6 +9,7 @@
       <li>WallTower</li>
       <li>CBF_VFEM2_Palisadenturm</li>
     </categories>
+    <type>WallPart</type>
     <style>CBF_VFEM2</style>
     <traufen>true</traufen>
     <legend>
@@ -16,11 +17,12 @@
       <li><symbol>a</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
       <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
       <li><symbol>f</symbol><thing>WoodLog</thing><count>30</count></li>
-      <li><symbol>g</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>i</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>j</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>k</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
-      <li><symbol>l</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>g</symbol><anchor>Wall</anchor></li>
+      <li><symbol>i</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>j</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>k</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>l</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
+      <li><symbol>m</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>.###.</li>
@@ -38,8 +40,8 @@
     </terrain>
     <things>
       <li>.aaa.</li>
-      <li>aalaa</li>
-      <li>a.k.a</li>
+      <li>aamaa</li>
+      <li>a.l.a</li>
       <li>aafaa</li>
       <li>.aaa.</li>
     </things>
@@ -51,11 +53,11 @@
       <li>.^^^.</li>
     </roof>
     <anchors>
+      <li>..g..</li>
+      <li>..i..</li>
+      <li>gj.kg</li>
       <li>.....</li>
       <li>..g..</li>
-      <li>.i.j.</li>
-      <li>.....</li>
-      <li>.....</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

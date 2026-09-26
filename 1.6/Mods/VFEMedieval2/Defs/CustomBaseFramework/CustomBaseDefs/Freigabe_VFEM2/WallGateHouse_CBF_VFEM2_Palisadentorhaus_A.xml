@@ -9,6 +9,7 @@
       <li>WallGateHouse</li>
       <li>CBF_VFEM2_Palisadentorhaus</li>
     </categories>
+    <type>WallPart</type>
     <style>CBF_VFEM2</style>
     <traufen>true</traufen>
     <legend>
@@ -19,13 +20,15 @@
       <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
       <li><symbol>f</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>g</symbol><thing>WoodLog</thing><count>30</count></li>
-      <li><symbol>i</symbol><anchor>WacheNord</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>j</symbol><anchor>FassNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>k</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>l</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>m</symbol><anchor>WacheSued</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>n</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
-      <li><symbol>o</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><anchor>Wall</anchor></li>
+      <li><symbol>j</symbol><anchor>WacheNord</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>k</symbol><anchor>FassNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>l</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>m</symbol><anchor>Outside</anchor></li>
+      <li><symbol>n</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>o</symbol><anchor>WacheSued</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>p</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
+      <li><symbol>q</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>#####</li>
@@ -51,7 +54,7 @@
     </terrain>
     <things>
       <li>aaaaa</li>
-      <li>an.oa</li>
+      <li>ap.qa</li>
       <li>a...F</li>
       <li>aaaaa</li>
       <li>.f.f.</li>
@@ -72,15 +75,15 @@
       <li>^^^^^</li>
     </roof>
     <anchors>
-      <li>.....</li>
-      <li>..ij.</li>
-      <li>.k...</li>
-      <li>.....</li>
-      <li>.....</li>
-      <li>.....</li>
+      <li>..i..</li>
+      <li>..jk.</li>
       <li>.l...</li>
-      <li>..m..</li>
       <li>.....</li>
+      <li>m....</li>
+      <li>.....</li>
+      <li>.n...</li>
+      <li>..o..</li>
+      <li>..i..</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

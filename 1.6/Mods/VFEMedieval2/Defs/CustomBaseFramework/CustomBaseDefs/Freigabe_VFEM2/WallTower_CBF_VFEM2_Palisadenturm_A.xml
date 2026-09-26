@@ -9,6 +9,7 @@
       <li>WallTower</li>
       <li>CBF_VFEM2_Palisadenturm</li>
     </categories>
+    <type>WallPart</type>
     <style>CBF_VFEM2</style>
     <traufen>true</traufen>
     <legend>
@@ -17,12 +18,13 @@
       <li><symbol>b</symbol><thing>WoodLog</thing><count>30</count></li>
       <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
       <li><symbol>f</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
-      <li><symbol>g</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>i</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>j</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>k</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>l</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>m</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>g</symbol><anchor>Wall</anchor></li>
+      <li><symbol>i</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>j</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>k</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>l</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>m</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>n</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>#####</li>
@@ -40,9 +42,9 @@
     </terrain>
     <things>
       <li>aaaaa</li>
-      <li>ab.la</li>
+      <li>ab.ma</li>
       <li>a.f.a</li>
-      <li>am..a</li>
+      <li>an..a</li>
       <li>aaaaa</li>
     </things>
     <roof>
@@ -53,11 +55,11 @@
       <li>^^^^^</li>
     </roof>
     <anchors>
-      <li>.....</li>
-      <li>...g.</li>
-      <li>.i.j.</li>
-      <li>.kk..</li>
-      <li>.....</li>
+      <li>..g..</li>
+      <li>...i.</li>
+      <li>gj.kg</li>
+      <li>.ll..</li>
+      <li>..g..</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

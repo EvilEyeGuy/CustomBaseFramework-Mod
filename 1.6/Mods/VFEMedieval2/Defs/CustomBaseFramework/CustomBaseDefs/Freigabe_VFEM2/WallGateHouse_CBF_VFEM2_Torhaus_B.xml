@@ -9,6 +9,7 @@
       <li>WallGateHouse</li>
       <li>CBF_VFEM2_Torhaus</li>
     </categories>
+    <type>WallPart</type>
     <style>CBF_VFEM2</style>
     <traufen>true</traufen>
     <legend>
@@ -21,19 +22,21 @@
       <li><symbol>g</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>h</symbol><terrain>TileLimestone</terrain></li>
       <li><symbol>i</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>j</symbol><anchor>RegalNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>k</symbol><anchor>TruheNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>l</symbol><anchor>FassNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>m</symbol><anchor>WacheNord</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>n</symbol><anchor>FassSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>o</symbol><anchor>WacheSued</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>p</symbol><anchor>RegalSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>q</symbol><anchor>TruheSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>r</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
-      <li><symbol>s</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>t</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>u</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>x</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>j</symbol><anchor>Wall</anchor></li>
+      <li><symbol>k</symbol><anchor>RegalNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>l</symbol><anchor>TruheNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>m</symbol><anchor>FassNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>n</symbol><anchor>WacheNord</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>o</symbol><anchor>Outside</anchor></li>
+      <li><symbol>p</symbol><anchor>FassSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>q</symbol><anchor>WacheSued</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>r</symbol><anchor>RegalSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>s</symbol><anchor>TruheSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>t</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
+      <li><symbol>u</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>x</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>y</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>z</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>#######</li>
@@ -52,29 +55,29 @@
     <terrain>
       <li>hhhhhhh</li>
       <li>hhhhhhh</li>
-      <li>hhrrhhh</li>
+      <li>hhtthhh</li>
       <li>hhhhhhh</li>
       <li>hhhhhhh</li>
       <li>hhhhhhh</li>
       <li>hhhhhhh</li>
       <li>hhhhhhh</li>
       <li>hhhhhhh</li>
-      <li>hhrrhhh</li>
+      <li>hhtthhh</li>
       <li>hhhhhhh</li>
       <li>hhhhhhh</li>
     </terrain>
     <things>
       <li>SSSaSSS</li>
-      <li>Ss...tS</li>
+      <li>Su...xS</li>
       <li>a.....F</li>
-      <li>Su....S</li>
+      <li>Sy....S</li>
       <li>SSSaSSS</li>
       <li>.b...b.</li>
       <li>.b...b.</li>
       <li>SSSaSSS</li>
-      <li>St....S</li>
+      <li>Sx....S</li>
       <li>a.....F</li>
-      <li>Sx...uS</li>
+      <li>Sz...yS</li>
       <li>SSSaSSS</li>
     </things>
     <things2>
@@ -106,18 +109,18 @@
       <li>^^^^^^^</li>
     </roof>
     <anchors>
+      <li>...j...</li>
+      <li>.kk..l.</li>
       <li>.......</li>
-      <li>.jj..k.</li>
+      <li>.m..n..</li>
       <li>.......</li>
-      <li>.l..m..</li>
-      <li>.......</li>
-      <li>.......</li>
+      <li>o......</li>
       <li>.......</li>
       <li>.......</li>
-      <li>.n..o..</li>
+      <li>.p..q..</li>
       <li>.......</li>
-      <li>.pp..q.</li>
-      <li>.......</li>
+      <li>.rr..s.</li>
+      <li>...j...</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

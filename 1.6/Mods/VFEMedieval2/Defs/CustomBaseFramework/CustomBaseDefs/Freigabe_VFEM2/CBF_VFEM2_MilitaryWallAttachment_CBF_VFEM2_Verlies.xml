@@ -19,14 +19,15 @@
       <li><symbol>g</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>h</symbol><terrain>TileLimestone</terrain></li>
       <li><symbol>i</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>j</symbol><anchor>Gefangenenhabe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>k</symbol><anchor>Kerkermeister</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>l</symbol><anchor>Kerkermeister2</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>m</symbol><anchor>Wachregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>n</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
-      <li><symbol>o</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>q</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>j</symbol><anchor>Wall</anchor></li>
+      <li><symbol>k</symbol><anchor>Gefangenenhabe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>l</symbol><anchor>Kerkermeister</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>m</symbol><anchor>Kerkermeister2</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>n</symbol><anchor>Wachregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>o</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
+      <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>q</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>r</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>##########</li>
@@ -45,17 +46,17 @@
       <li>hhhhhhhhhh</li>
       <li>hhhhhhhhhh</li>
       <li>hhhhhhhhhh</li>
-      <li>hhhhhhnnhh</li>
+      <li>hhhhhhoohh</li>
       <li>hhhhhhhhhh</li>
     </terrain>
     <things>
       <li>SSSSSSSSSS</li>
       <li>Sa.Sa.Sa.S</li>
-      <li>S..S..So.S</li>
+      <li>S..S..Sp.S</li>
       <li>SSbSSbSSbS</li>
       <li>S........S</li>
-      <li>Sf......pS</li>
-      <li>Sq.......S</li>
+      <li>Sf......qS</li>
+      <li>Sr.......S</li>
       <li>SSSSbSSSSS</li>
     </things>
     <things2>
@@ -79,13 +80,13 @@
       <li>^^^^^^^^^^</li>
     </roof>
     <anchors>
+      <li>jjjjjjjjjj</li>
+      <li>..........</li>
+      <li>.......k..</li>
       <li>..........</li>
       <li>..........</li>
-      <li>.......j..</li>
-      <li>..........</li>
-      <li>..........</li>
-      <li>....k...l.</li>
-      <li>.mm.......</li>
+      <li>....l...m.</li>
+      <li>.nn.......</li>
       <li>..........</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

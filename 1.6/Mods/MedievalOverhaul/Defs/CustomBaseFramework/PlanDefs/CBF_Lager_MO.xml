@@ -186,7 +186,7 @@
 
   <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Plan_Lager_MO_Bergbau</defName>
-    <label>mining site (MO)</label>
+    <label>iron mine (MO)</label>
     <materialList>CBF_MO_Materialliste</materialList>
     <kind>Lager</kind>
     <styles>
@@ -208,7 +208,23 @@
         <versorgung>1.2</versorgung>
         <districts>
           <li>
-            <name>Lager</name>
+            <name>Lager</name><mines><li>
+              <name>Eisenmine</name>
+              <count>1~2</count>
+              <tags><li>CBF_MO_Huette</li><li>CBF_MO_Baracke</li></tags>
+              <laenge>25~45</laenge>
+              <breite>1~2</breite>
+              <kammern>2~3</kammern>
+              <kammerGroesse>5~7</kammerGroesse>
+              <ader>DankPyon_MineableIron</ader>
+              <aderAnteil>0.06</aderAnteil>
+              <brocken>3~6</brocken>
+              <dinge>
+                  <li><thing>DankPyon_MineShaft</thing><count>1~1</count></li>
+                  <li><thing>DankPyon_Storage_Cart_Ore</thing><count>0~1</count><ort>Gang</ort></li>
+                  <li><thing>DankPyon_RusticTorchLamp</thing><count>1~3</count></li>
+                  <li><thing>DankPyon_BarrelIronOre</thing><count>2~4</count><inhalt>DankPyon_IronOre</inhalt><menge>20~60</menge></li>
+              </dinge></li></mines>
             <entries>
               <li><tag>CBF_MO_Baracke</tag><count>1~1</count></li>
               <li><tag>CBF_MO_Schmelze</tag><count>0~1</count></li>
@@ -226,6 +242,150 @@
             <name>Umland</name>
             <entries>
               <li><tag>CBF_MO_Erzlager</tag><count>1~2</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </wards>
+    <lagerArten>
+      <li>WorkSite_Mining</li>
+    </lagerArten>
+    <anteil>0</anteil>
+    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    <techLevels>
+      <li>Medieval</li>
+    </techLevels>
+    <worldTexture>World/WorldObjects/CBF/CBF_Camp</worldTexture>
+  </CustomBaseFramework.SettlementPlanDef>
+
+  <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Plan_Lager_MO_Kohlemine</defName>
+    <label>coal mine (MO)</label>
+    <materialList>CBF_MO_Materialliste</materialList>
+    <kind>Lager</kind>
+    <styles>
+      <li>Rustical</li>
+    </styles>
+    <coreSize>30~38</coreSize>
+    <mapSize>200</mapSize>
+    <roadMain>1</roadMain>
+    <roadLane>1</roadLane>
+    <minBuildingGap>2</minBuildingGap>
+    <maxBuildingGap>4</maxBuildingGap>
+    <targetBuilt>0.3</targetBuilt>
+    <baumanteil>0.15</baumanteil>
+    <defenderPoints>150~300</defenderPoints>
+    <wards>
+      <li>
+        <art>Stadt</art>
+        <name>Lager</name>
+        <versorgung>1.2</versorgung>
+        <districts>
+          <li>
+            <name>Lager</name><mines><li>
+              <name>Kohlemine</name>
+              <count>1~2</count>
+              <tags><li>CBF_MO_Huette</li><li>CBF_MO_Baracke</li></tags>
+              <laenge>25~45</laenge>
+              <breite>1~2</breite>
+              <kammern>2~3</kammern>
+              <kammerGroesse>5~7</kammerGroesse>
+              <ader>DankPyon_MineableCoal</ader>
+              <aderAnteil>0.06</aderAnteil>
+              <brocken>3~6</brocken>
+              <dinge>
+                  <li><thing>DankPyon_MineShaft</thing><count>1~1</count></li>
+                  <li><thing>DankPyon_Storage_Cart_Ore</thing><count>0~1</count><ort>Gang</ort></li>
+                  <li><thing>DankPyon_RusticTorchLamp</thing><count>1~3</count></li>
+                  <li><thing>DankPyon_BarrelCoalOre</thing><count>2~4</count><inhalt>DankPyon_Coal</inhalt><menge>20~60</menge></li>
+              </dinge></li></mines>
+            <entries>
+              <li><tag>CBF_MO_Baracke</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Koehlerei</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Huette</tag><count>2~4</count><filler>true</filler></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <art>Umland</art>
+        <name>Umland</name>
+        <versorgung>1.2</versorgung>
+        <districts>
+          <li>
+            <name>Umland</name>
+            <entries>
+              <li><tag>CBF_MO_Erzlager</tag><count>0~1</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </wards>
+    <lagerArten>
+      <li>WorkSite_Mining</li>
+    </lagerArten>
+    <anteil>0</anteil>
+    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    <techLevels>
+      <li>Medieval</li>
+    </techLevels>
+    <worldTexture>World/WorldObjects/CBF/CBF_Camp</worldTexture>
+  </CustomBaseFramework.SettlementPlanDef>
+
+  <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Plan_Lager_MO_Steinbruch</defName>
+    <label>stone mine (MO)</label>
+    <materialList>CBF_MO_Materialliste</materialList>
+    <kind>Lager</kind>
+    <styles>
+      <li>Rustical</li>
+    </styles>
+    <coreSize>30~38</coreSize>
+    <mapSize>200</mapSize>
+    <roadMain>1</roadMain>
+    <roadLane>1</roadLane>
+    <minBuildingGap>2</minBuildingGap>
+    <maxBuildingGap>4</maxBuildingGap>
+    <targetBuilt>0.3</targetBuilt>
+    <baumanteil>0.15</baumanteil>
+    <defenderPoints>150~300</defenderPoints>
+    <wards>
+      <li>
+        <art>Stadt</art>
+        <name>Lager</name>
+        <versorgung>1.2</versorgung>
+        <districts>
+          <li>
+            <name>Lager</name><mines><li>
+              <name>Steinmine</name>
+              <count>1~2</count>
+              <tags><li>CBF_MO_Huette</li><li>CBF_MO_Baracke</li></tags>
+              <laenge>25~45</laenge>
+              <breite>1~2</breite>
+              <kammern>2~3</kammern>
+              <kammerGroesse>5~7</kammerGroesse>
+              <brocken>10~18</brocken>
+              <dinge>
+                  <li><thing>DankPyon_MineShaft</thing><count>1~1</count></li>
+                  <li><thing>DankPyon_Storage_Cart_Ore</thing><count>0~1</count><ort>Gang</ort></li>
+                  <li><thing>DankPyon_RusticTorchLamp</thing><count>1~3</count></li>
+              </dinge></li></mines>
+            <entries>
+              <li><tag>CBF_MO_Baracke</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Huette</tag><count>2~4</count><filler>true</filler></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <art>Umland</art>
+        <name>Umland</name>
+        <versorgung>1.2</versorgung>
+        <districts>
+          <li>
+            <name>Umland</name>
+            <entries>
+              <li><tag>CBF_MO_Erzlager</tag><count>0~1</count></li>
             </entries>
           </li>
         </districts>

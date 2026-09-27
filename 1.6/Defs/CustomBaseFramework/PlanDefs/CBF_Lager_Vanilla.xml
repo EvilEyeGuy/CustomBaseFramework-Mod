@@ -213,7 +213,22 @@
         <versorgung>1.2</versorgung>
         <districts>
           <li>
-            <name>Lager</name>
+            <name>Lager</name><mines><li>
+              <name>Stahlmine</name>
+              <count>1~2</count>
+              <tags><li>CBF_Vanilla_Bohrbaracke</li><li>CBF_Vanilla_Posten_Baracke</li></tags>
+              <laenge>25~45</laenge>
+              <breite>1~2</breite>
+              <kammern>2~3</kammern>
+              <kammerGroesse>5~7</kammerGroesse>
+              <ader>MineableSteel</ader>
+              <aderAnteil>0.06</aderAnteil>
+              <brocken>3~6</brocken>
+              <dinge>
+                  <li><thing>DeepDrill</thing><count>1~1</count></li>
+                  <li><thing>StandingLamp</thing><count>1~2</count></li>
+                  <li><thing>Shelf</thing><count>1~2</count><inhalt>Steel</inhalt><menge>30~75</menge></li>
+              </dinge></li></mines>
             <entries>
               <li><tag>CBF_Vanilla_Bohrbaracke</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_Posten_Baracke</tag><count>0~2</count><filler>true</filler></li>

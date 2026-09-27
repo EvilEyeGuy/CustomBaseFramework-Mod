@@ -1,67 +1,124 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dekospec · Custom Base Framework</title><style>
-:root{--grund:#f4f3ef;--karte:#ffffff;--linie:#e3e0d8;--text:#1f2124;--leise:#63676e;--akzent:#2f6f60;--akzentweich:#e3efeb;--ocker:#b27a17;--code:#f0eee8;--schatten:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06)}
-@media (prefers-color-scheme: dark){:root{--grund:#121417;--karte:#1a1d22;--linie:#2c3139;--text:#e6e4df;--leise:#99a0aa;--akzent:#7cc0aa;--akzentweich:#1f2f2b;--ocker:#d9ab55;--code:#24282f;--schatten:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}}
+<!doctype html><html lang="en" data-look="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dekospec · Custom Base Framework</title><style>
+:root,[data-look="dark"]{--grund:#151b1e;--fenster:#1c1b1d;--leiste:#0f1416;--spalte:#25282a;--rand:#3b3f41;--linie:#2c2f31;
+--text:#d8d6d0;--kopf:#e6d7b4;--titel:#efe9dc;--leise:#9a9c9b;--blass:#6c706f;--akzent:#d2a44e;--wahl:#4a4a32;--wahlrand:#b58a45;
+--wahltext:#f0dcae;--code:#121212;--codetext:#f0dcae;--feld:#121212;--schrift:Arial,"Segoe UI",sans-serif;--lese:Arial,"Segoe UI",sans-serif;
+--lesegroesse:15px;--h1:26px;--h2:20px;--kachel:transparent;--knopf:#4a3b22;--xt:#e6b866;--xa:#9fb7c9;--xw:#a9c98a}
+[data-look="bright"]{--grund:#e9e5dc;--fenster:#f7f4ee;--leiste:#efeae0;--spalte:#f7f4ee;--rand:#cfc6b4;--linie:#d8d0c0;
+--text:#26231e;--kopf:#26231e;--titel:#26231e;--leise:#4a4439;--blass:#7a7263;--akzent:#8a5a14;--wahl:#f7f4ee;--wahlrand:#a8741f;
+--wahltext:#8a5a14;--code:#e9e3d6;--codetext:#26231e;--feld:#fbf9f5;--schrift:Arial,"Segoe UI",sans-serif;--lese:Arial,"Segoe UI",sans-serif;
+--lesegroesse:15px;--h1:26px;--h2:20px;--kachel:#3a3631;--knopf:#efe0c2;--xt:#8a4a14;--xa:#2f5f7f;--xw:#3f6f2a}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{margin:0;background:var(--grund);color:var(--text);font:16px/1.65 "Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:var(--akzent);text-underline-offset:3px}
-.inhalt h1{font-size:2.1rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
-.inhalt h2{font-size:1.35rem;letter-spacing:-.01em;margin:44px 0 10px}
-.inhalt h3{font-size:1.08rem;margin:28px 0 8px}
-.inhalt p,.inhalt li{max-width:74ch}
-.inhalt>p:first-of-type{font-size:1.08rem;color:var(--leise)}
-code{font-family:"Cascadia Mono",Consolas,monospace;font-size:.86em;background:var(--code);padding:2px 6px;border-radius:5px}
-.bild{display:block;margin:18px 0 22px}
-.bild img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--linie);box-shadow:var(--schatten)}
-.bild:hover img{border-color:var(--akzent)}
-.inhalt ol{list-style:none;padding:0;counter-reset:n;margin:12px 0 18px}
-.inhalt ol>li{counter-increment:n;position:relative;padding-left:40px;margin:10px 0}
-.inhalt ol>li::before{content:counter(n);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--ocker);color:#1b1b1b;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
-.inhalt ul{padding-left:20px}
-.inhalt ul>li{margin:6px 0}
-.inhalt ul>li::marker{color:var(--akzent)}
-table{border-collapse:separate;border-spacing:0;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto;border:1px solid var(--linie);border-radius:10px}
-th,td{padding:8px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--linie)}
-tr:last-child td{border-bottom:0}
-th{background:var(--code);font-weight:600;position:sticky;top:0}
-td code{white-space:nowrap}
-.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:56px;padding-top:20px;border-top:1px solid var(--linie)}
-.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--linie);background:var(--karte);border-radius:10px;padding:12px 16px;color:var(--text)}
-.schritte a:hover{border-color:var(--akzent)}
-.schritte span{display:block;font-size:12px;color:var(--leise);text-transform:uppercase;letter-spacing:.06em}
-.schritte .weiter{text-align:right;margin-left:auto}
-.home .inhalt ol{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;max-width:none}
-.home .inhalt ol>li{margin:0;background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:14px 16px 14px 54px;max-width:none;box-shadow:var(--schatten)}
-.home .inhalt ol>li::before{left:16px;top:16px}
-.home .inhalt ol>li a{font-weight:600}
+html{scroll-padding-top:56px}
+body{margin:0;background:var(--grund);color:var(--text);font-family:var(--schrift);scrollbar-color:var(--rand) var(--grund)}
+nav.leiste,aside.rechts{scrollbar-color:var(--rand) var(--leiste);scrollbar-width:thin}
+.fenster{max-width:1760px;margin:0 auto;min-height:100vh;display:grid;grid-template-columns:240px minmax(0,1fr) 220px;
+grid-template-rows:auto 1fr;border-left:1px solid var(--rand);border-right:1px solid var(--rand);background:var(--fenster)}
+.kopf{grid-column:1/-1;position:sticky;top:0;z-index:5;background:var(--leiste);border-bottom:1px solid var(--rand);
+display:flex;align-items:center;gap:14px;padding:0 14px;height:42px;font-size:13px}
+.marke{color:var(--titel);text-decoration:none;font-size:15px;white-space:nowrap}
+.pfad{color:var(--leise);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pfad a{color:var(--leise);text-decoration:none}
+.suche{margin-left:auto;min-width:230px;display:flex;justify-content:space-between;gap:10px;background:var(--feld);
+border:1px solid var(--rand);color:var(--blass);padding:4px 8px;font:12px var(--schrift);cursor:pointer}
+.suche kbd{font:11px var(--schrift);border:1px solid var(--rand);padding:0 4px}
+.look{background:none;border:1px solid var(--wahlrand);color:var(--wahltext);font:12px var(--schrift);padding:3px 10px;cursor:pointer}
+.look{background:var(--knopf)}
+nav.leiste{background:var(--leiste);border-right:1px solid var(--rand);padding:10px 8px 40px;position:sticky;top:42px;
+height:calc(100vh - 42px);overflow:auto}
+.gruppe{margin:0 0 8px}
+.gruppe b{display:flex;align-items:center;gap:9px;color:var(--kopf);font-size:14px;padding:6px 6px 3px}
+.gruppe b i{display:inline-flex;width:24px;height:24px;align-items:center;justify-content:center;background:var(--kachel)}
+.gruppe b img{width:18px;height:18px}
+.gruppe a{display:block;color:var(--leise);text-decoration:none;font-size:13px;padding:3px 8px 3px 39px;border:1px solid transparent}
+.gruppe a:hover{color:var(--titel);background:var(--linie)}
+.gruppe a.hier{background:var(--wahl);border-color:var(--wahlrand);color:var(--wahltext)}
+.gruppe.modding{margin-top:14px;padding-top:10px;border-top:1px solid var(--rand)}
+main{padding:30px 46px 90px;min-width:0;font-family:var(--lese);font-size:var(--lesegroesse);line-height:1.65}
+.inhalt{max-width:1180px;margin:0 auto}
+.inhalt h1{color:var(--titel);font-weight:normal;font-size:var(--h1);line-height:1.12;margin:0 0 6px}
+.unter{font:12px var(--schrift);color:var(--blass);margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid var(--rand)}
+.inhalt h2{color:var(--kopf);font-weight:normal;font-size:var(--h2);margin:38px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--rand)}
+.inhalt h3{color:var(--kopf);font:bold 16px var(--schrift);margin:26px 0 8px;padding-bottom:3px;border-bottom:1px solid var(--linie)}
+.inhalt h4{color:var(--kopf);font:bold 14px var(--schrift);margin:20px 0 6px}
+.inhalt a{color:var(--akzent)}
+.inhalt strong{color:var(--titel)}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.86em;background:var(--code);color:var(--codetext);padding:1px 5px;border:1px solid var(--linie)}
+pre{background:var(--code);border:1px solid var(--rand);padding:12px 14px;overflow-x:auto;font-size:13px;line-height:1.5}
+pre code{border:0;padding:0}
+.xt{color:var(--xt)}.xa{color:var(--xa)}.xw{color:var(--xw)}.xk{color:var(--blass)}
+table{border-collapse:collapse;font:13px/1.5 var(--schrift);margin:14px 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--rand);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:var(--spalte);color:var(--kopf);font-weight:normal}
+.bild{display:block;margin:16px 0 20px}
+.bild img{display:block;max-width:100%;height:auto;border:1px solid var(--rand)}
+.inhalt ol{padding-left:26px}
+.inhalt li{margin:4px 0}
 .home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
-.pfad{font-size:13px;color:var(--leise);margin-bottom:6px}
-.pfad a{color:var(--leise)}
-.aufseite{font-size:13px}
-.aufseite b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--leise);margin-bottom:8px}
-.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:4px 0 4px 12px;border-left:2px solid var(--linie)}
-.aufseite a:hover{color:var(--akzent);border-left-color:var(--akzent)}
-
-.rahmen{display:grid;grid-template-columns:260px minmax(0,1fr) 200px;gap:0;max-width:1400px;margin:0 auto}
-.leiste{position:sticky;top:0;height:100vh;overflow:auto;padding:22px 18px;border-right:1px solid var(--linie)}
-.marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
-.marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
-.marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
-.gruppe{margin:0 0 18px}
-.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
-.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
-.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
-.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
-.gruppe b i img{width:20px;height:20px;object-fit:contain}
-.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
-.gruppe a:hover{background:var(--akzentweich)}
-.gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
-main{padding:40px 48px 80px;min-width:0}
-.inhalt{max-width:860px}
-.rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
-@media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
-@media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
-</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / Dekospec</div><h1 id="dekospec">Dekospec</h1>
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:50px;padding-top:16px;border-top:1px solid var(--rand);font-family:var(--schrift)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--rand);padding:10px 14px;color:var(--text)}
+.schritte a:hover{border-color:var(--wahlrand)}
+.schritte span{display:block;font-size:11px;color:var(--blass)}
+.schritte .weiter{text-align:right;margin-left:auto}
+aside.rechts{background:var(--spalte);border-left:1px solid var(--rand);padding:24px 12px;font-size:13px}
+.aufseite{position:sticky;top:66px}
+.aufseite b{display:block;color:var(--blass);font-size:12px;font-weight:normal;margin:0 0 8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:3px 6px 3px 10px;border-left:2px solid var(--rand)}
+.aufseite a.t3{padding-left:22px;font-size:12px}
+.aufseite a:hover{color:var(--titel)}
+.aufseite a.an{color:var(--wahltext);border-left-color:var(--wahlrand)}
+.fund{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:flex-start;justify-content:center;padding-top:12vh;z-index:20}
+.fund.offen{display:flex}
+.fundbox{width:min(640px,92vw);background:var(--fenster);border:1px solid var(--wahlrand)}
+.fundbox input{width:100%;border:0;border-bottom:1px solid var(--rand);background:var(--feld);color:var(--text);padding:12px 14px;font:15px var(--schrift);outline:none}
+.fundliste{max-height:55vh;overflow:auto;margin:0;padding:4px;list-style:none;font-family:var(--schrift)}
+.fundliste li{padding:8px 10px;cursor:pointer;border:1px solid transparent}
+.fundliste li.an{background:var(--wahl);border-color:var(--wahlrand)}
+.fundliste .t{color:var(--titel);font-size:14px}
+.fundliste .s{color:var(--blass);font-size:12px;margin-top:2px}
+.fundliste mark{background:var(--wahlrand);color:#1b1b1b}
+@media (max-width:1180px){.fenster{grid-template-columns:230px minmax(0,1fr)}aside.rechts{display:none}}
+@media (max-width:820px){.fenster{grid-template-columns:1fr}nav.leiste{position:static;height:auto}.pfad{display:none}.suche{min-width:0}main{padding:22px 16px 60px}}
+</style><script>
+(function(){
+var w=document.documentElement;
+try{var g=localStorage.getItem('cbf-look');if(g==='dark'||g==='bright')w.setAttribute('data-look',g);}catch(e){}
+function knopf(){var b=document.getElementById('look');if(b)b.textContent=w.getAttribute('data-look')==='bright'?'Dark':'Bright';}
+document.addEventListener('DOMContentLoaded',function(){
+knopf();
+document.getElementById('look').addEventListener('click',function(){
+var n=w.getAttribute('data-look')==='bright'?'dark':'bright';w.setAttribute('data-look',n);
+try{localStorage.setItem('cbf-look',n);}catch(e){}knopf();});
+var links=[].slice.call(document.querySelectorAll('.aufseite a'));
+if(links.length&&'IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('an',a.getAttribute('href')==='#'+e.target.id);});});},{rootMargin:'0px 0px -70% 0px'});
+document.querySelectorAll('.inhalt h2[id],.inhalt h3[id]').forEach(function(h){io.observe(h);});}
+var fund=document.getElementById('fund'),ein=document.getElementById('fundein'),liste=document.getElementById('fundliste'),treffer=[],wahl=0;
+var basis=document.body.getAttribute('data-basis')||'';
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+function markiere(s,t){if(!t)return esc(s);var i=s.toLowerCase().indexOf(t);if(i<0)return esc(s);return esc(s.slice(0,i))+'<mark>'+esc(s.slice(i,i+t.length))+'</mark>'+esc(s.slice(i+t.length));}
+function suchen(){var t=ein.value.trim().toLowerCase();var idx=window.CBF_SUCHE||[];
+treffer=idx.map(function(p){var s=0,ti=p.t.toLowerCase(),x=p.x.toLowerCase(),i=x.indexOf(t),aus='';
+if(!t)s=1;else{if(ti.indexOf(t)===0)s=3;else if(ti.indexOf(t)>=0)s=2;if(i>=0){if(!s)s=1;var a=Math.max(0,i-50);aus=(a?'... ':'')+p.x.slice(a,i+t.length+80)+' ...';}}
+return{p:p,s:s,aus:aus};}).filter(function(r){return r.s;}).sort(function(a,b){return b.s-a.s;}).slice(0,40);
+wahl=0;zeichnen(t);}
+function zeichnen(t){liste.innerHTML=treffer.length?treffer.map(function(r,i){return '<li data-i="'+i+'"'+(i===wahl?' class="an"':'')+'><div class="t">'+markiere(r.p.t,t)+'</div>'+(r.aus?'<div class="s">'+markiere(r.aus,t)+'</div>':'')+'</li>';}).join(''):'<li><div class="s">No page found.</div></li>';
+var a=liste.querySelector('.an');if(a)a.scrollIntoView({block:'nearest'});}
+function gehe(i){var r=treffer[i];if(r)location.href=basis+r.p.u;}
+function auf(){fund.classList.add('offen');ein.value='';suchen();ein.focus();}
+function zu(){fund.classList.remove('offen');}
+document.getElementById('suche').addEventListener('click',auf);
+ein.addEventListener('input',suchen);
+ein.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();wahl=Math.min(wahl+1,treffer.length-1);zeichnen(ein.value.trim().toLowerCase());}
+else if(e.key==='ArrowUp'){e.preventDefault();wahl=Math.max(wahl-1,0);zeichnen(ein.value.trim().toLowerCase());}
+else if(e.key==='Enter'){e.preventDefault();gehe(wahl);}});
+liste.addEventListener('click',function(e){var li=e.target.closest('li[data-i]');if(li)gehe(+li.getAttribute('data-i'));});
+fund.addEventListener('click',function(e){if(e.target===fund)zu();});
+document.addEventListener('keydown',function(e){var tippt=/INPUT|TEXTAREA/.test(document.activeElement.tagName);
+if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();fund.classList.contains('offen')?zu():auf();}
+else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')zu();});
+});
+})();
+</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Dekospec</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / Dekospec</div><h1 id="dekospec">Dekospec</h1><p class="unter">Modding</p>
 <table>
 <thead>
 <tr>
@@ -110,4 +167,4 @@ main{padding:40px 48px 80px;min-width:0}
 </tr>
 </tbody>
 </table>
-<p><a href="Field-Reference.html">Back to the field reference</a></p></div></main><aside class="rechts"></aside></div></body></html>
+<p><a href="Field-Reference.html">Back to the field reference</a></p></div></main><aside class="rechts"></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

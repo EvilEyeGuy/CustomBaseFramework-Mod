@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Beuteplatz_A</defName>
+    <label>CBF_MO_Beuteplatz_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Beuteplatz</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <legend>
+      <li><symbol>1</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>2</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
+      <li><symbol>3</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
+      <li><symbol>9</symbol><anchor>Kiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_Storage_Cart_Empty</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideoutCrate1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
+    </legend>
+    <mask>
+      <li>..######....</li>
+      <li>.##########.</li>
+      <li>############</li>
+      <li>############</li>
+      <li>.##########.</li>
+      <li>...######...</li>
+    </mask>
+    <terrain>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+    </terrain>
+    <things>
+      <li>..I....I....</li>
+      <li>...a..f.....</li>
+      <li>..i....i....</li>
+      <li>..I....I..C.</li>
+      <li>.j.....i....</li>
+      <li>............</li>
+    </things>
+    <roof>
+      <li>..^^^^^^....</li>
+      <li>..^^^^^^....</li>
+      <li>..^^^^^^....</li>
+      <li>..^^^^^^....</li>
+      <li>............</li>
+      <li>............</li>
+    </roof>
+    <anchors>
+      <li>............</li>
+      <li>...99.1.....</li>
+      <li>..3....3....</li>
+      <li>............</li>
+      <li>.22....33...</li>
+      <li>............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

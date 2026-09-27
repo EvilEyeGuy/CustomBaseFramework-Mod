@@ -620,7 +620,7 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_EditorInArchitectHelp>Shows the editor as a category of its own in the architect menu. Without the tick it can only be reached in development mode through the debug menu, entry Open editor.</CBF_EditorInArchitectHelp>
   <CBF_Guide>Guide</CBF_Guide>
   <CBF_GuideOpen>Open editor guide</CBF_GuideOpen>
-  <CBF_GuideTip>Opens the guide to the editor in your browser. It is in English.</CBF_GuideTip>
+  <CBF_GuideTip>Opens the guide page for this tab in your browser. It is in English.</CBF_GuideTip>
   <CBF_GuideMissing>The guide was not found: {0}</CBF_GuideMissing>
   <CBF_FactionSwitchHead>Settlements per faction</CBF_FactionSwitchHead>
   <CBF_FactionSwitchHelp>These factions get their bases from Custom Base Framework. Untick a faction to give it RimWorld's own bases again. Bases that were already visited stay as they are.</CBF_FactionSwitchHelp>
@@ -764,6 +764,8 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_LeaveForeignSettlementsHelp>Settlements that another mod builds with its own map generator keep it. Vassal colonies of Empire get no CBF settlements and no CBF quests.</CBF_LeaveForeignSettlementsHelp>
   <CBF_WdTakeOver>Build World Domination settlements with CBF</CBF_WdTakeOver>
   <CBF_WdTakeOverHelp>CBF replaces the layouts of World Domination 2.0 and picks the settlement type by the World Domination tier. Off: CBF leaves World Domination settlements alone.</CBF_WdTakeOverHelp>
+  <CBF_CampsTakeOver>Build camps and work sites with CBF</CBF_CampsTakeOver>
+  <CBF_CampsTakeOverHelp>CBF builds bandit camps, outposts, raid sources and work sites from quests when a matching camp plan exists. The stockpile and workers of work sites stay as in the base game. Off: RimWorld builds these sites itself.</CBF_CampsTakeOverHelp>
   <CBF_S_FieldsNoEffect>Fields only take effect in the suburb and the countryside. They are not placed in this ward.</CBF_S_FieldsNoEffect>
   <CBF_S_PensNoEffect>Pens only take effect in the countryside. They are not placed in this ward.</CBF_S_PensNoEffect>
   <CBF_SearchSite>Search site</CBF_SearchSite>
@@ -772,4 +774,5 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_SearchSiteDone>{0} containers marked for opening.</CBF_SearchSiteDone>
   <CBF_SearchSiteNone>No closed containers left to mark.</CBF_SearchSiteNone>
   <CBF_SearchSiteFog>{0} more lie in unexplored rooms. Press again once they are explored.</CBF_SearchSiteFog>
+  <CBF_WikiSectionTip>Opens the part of the guide that explains this section.</CBF_WikiSectionTip>
 </LanguageData>

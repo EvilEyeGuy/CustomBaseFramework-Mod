@@ -15,10 +15,12 @@
       <li><symbol>b</symbol><anchor>StandA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
       <li><symbol>f</symbol><anchor>StandB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
       <li><symbol>g</symbol><thing>Beer</thing><count>10</count></li>
-      <li><symbol>i</symbol><thing>RawCorn</thing><count>30</count></li>
-      <li><symbol>j</symbol><anchor>Haendler</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>k</symbol><thing>Cloth</thing><count>20</count></li>
-      <li><symbol>l</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
+      <li><symbol>j</symbol><thing>RawCorn</thing><count>30</count></li>
+      <li><symbol>k</symbol><anchor>Haendler</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>l</symbol><thing>Cloth</thing><count>20</count></li>
+      <li><symbol>m</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>n</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>.########.</li>
@@ -42,13 +44,13 @@
     </terrain>
     <things>
       <li>..........</li>
-      <li>.l....l...</li>
+      <li>.m....m...</li>
       <li>..........</li>
-      <li>g....a...i</li>
+      <li>g....a...j</li>
       <li>..........</li>
-      <li>..........</li>
-      <li>.i.....k..</li>
-      <li>.i.....k..</li>
+      <li>......n...</li>
+      <li>.j.....l..</li>
+      <li>.j.....l..</li>
     </things>
     <roof>
       <li>..........</li>
@@ -64,9 +66,9 @@
       <li>..........</li>
       <li>.bbb..fff.</li>
       <li>..........</li>
-      <li>..........</li>
-      <li>..........</li>
-      <li>...j......</li>
+      <li>......iii.</li>
+      <li>......iii.</li>
+      <li>...k..iii.</li>
       <li>..........</li>
       <li>..........</li>
     </anchors>

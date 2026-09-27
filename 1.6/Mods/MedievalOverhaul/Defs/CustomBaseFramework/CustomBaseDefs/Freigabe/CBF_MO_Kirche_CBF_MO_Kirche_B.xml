@@ -12,19 +12,17 @@
     <traufen>true</traufen>
     <legend>
       <li><symbol>1</symbol><anchor>Opfertruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Kirchenschatz</lootTable></li>
-      <li><symbol>8</symbol><anchor>Priester</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_LogTable1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>H</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_CultPedestal</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RugRoyal_Lys2x3c</thing><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>Altargefaess</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><obenauf>true</obenauf></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>b</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
     </legend>
     <mask>
@@ -57,9 +55,9 @@
       <li>..TTT..</li>
       <li>..TCT..</li>
       <li>TTT.TTT</li>
-      <li>TP...bT</li>
-      <li>T.R...T</li>
-      <li>T.B...T</li>
+      <li>TP...fT</li>
+      <li>T.....T</li>
+      <li>T.b...T</li>
       <li>T.B...T</li>
       <li>T.B...T</li>
       <li>TY...YT</li>
@@ -70,7 +68,7 @@
       <li>.......</li>
       <li>.......</li>
       <li>.......</li>
-      <li>..A....</li>
+      <li>.......</li>
       <li>.......</li>
       <li>.......</li>
       <li>.......</li>
@@ -96,9 +94,9 @@
       <li>.......</li>
       <li>.......</li>
       <li>.......</li>
-      <li>.....1.</li>
-      <li>...8...</li>
-      <li>.......</li>
+      <li>..HHH1.</li>
+      <li>..HHH..</li>
+      <li>..HHH..</li>
       <li>.......</li>
       <li>.......</li>
       <li>.......</li>
@@ -109,7 +107,7 @@
       <li>.......</li>
       <li>.......</li>
       <li>.......</li>
-      <li>...a...</li>
+      <li>.......</li>
       <li>.......</li>
       <li>.......</li>
       <li>.......</li>

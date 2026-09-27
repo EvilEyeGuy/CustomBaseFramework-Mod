@@ -451,6 +451,16 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Heiligtum</defName>
+    <members>
+      <li><thing>SculptureGrand</thing><bleibt>true</bleibt></li>
+      <li><thing>SculptureLarge</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_ArchonSculpture2x2c</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_Obelisk2x2c</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_Weinregal_1x2</defName>
     <members>
       <li><thing>DankPyon_HideoutShelfFilledWine</thing><fremd>true</fremd></li>

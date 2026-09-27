@@ -157,4 +157,13 @@
   <CBF_FieldDesc_stadtteil>Stadtteil, für den dieser Rolleneintrag gedacht ist: Stadt, Burg, Vorstadt oder Umland. Leer gilt überall.</CBF_FieldDesc_stadtteil>
   <CBF_FieldDesc_wdTyp>World-Domination-Ortsarten, für die dieser Plan steht, etwa Mining oder Slavery. Leer heißt jede Art. Nur mit World Domination 2.0.</CBF_FieldDesc_wdTyp>
   <CBF_FieldDesc_PawnListDef_stufe>Die Techstufe, als die diese Liste gilt. Gesetzt zieht der Ort aus der ganzen Liste, ohne Stufen aus der Ausrüstung zu ermitteln. Leer ermittelt die Stufe je Mitglied.</CBF_FieldDesc_PawnListDef_stufe>
+  <CBF_FieldDesc_mitIdeologie>Meme oder Gebote (defNames). Der Eintrag wird nur gebaut, wenn die Ideologie der Fraktion mindestens eines davon hat. Braucht Ideology.</CBF_FieldDesc_mitIdeologie>
+  <CBF_FieldDesc_ohneIdeologie>Meme oder Gebote (defNames). Der Eintrag wird nicht gebaut, wenn die Ideologie der Fraktion eines davon hat. Braucht Ideology.</CBF_FieldDesc_ohneIdeologie>
+  <CBF_FieldDesc_biomLeder>An einem Ding-Eintrag: Der Stoff wird durch das Leder eines Wildtiers aus dem Biom ersetzt, einmal gewählt je Stück.</CBF_FieldDesc_biomLeder>
+  <CBF_FieldDesc_ideologieGebaeude>An einem Objekt-Anker: stellt ein Gebäude der Ideologie der Fraktion auf, etwa einen Altar oder Ritualplatz. Braucht Ideology.</CBF_FieldDesc_ideologieGebaeude>
+  <CBF_FieldDesc_wdBudget>Mit World Domination 2.0 werden Behälter mit dieser Tabelle aus dem Beutebudget des Orts gefüllt statt aus der Tabelle.</CBF_FieldDesc_wdBudget>
+  <CBF_FieldDesc_ideologieStil>Möbel bekommen den Stil der Ideologie der Fraktion. Braucht Ideology.</CBF_FieldDesc_ideologieStil>
+  <CBF_FieldDesc_lagerArten>Namen von SitePartDefs, etwa BanditCamp oder Outpost. Dieser Lagerplan baut diese Quest-Orte. Nur für die Ortsart Lager.</CBF_FieldDesc_lagerArten>
+  <CBF_FieldDesc_ohneWdBeute>Schaltet das Beutebudget von World Domination für diesen Ortstyp ab.</CBF_FieldDesc_ohneWdBeute>
+  <CBF_FieldDesc_ideologieRolle>Rolle der Ideologie der Fraktion für Einheiten dieses Eintrags: leer, Kampf (Schützen- oder Nahkampfspezialist nach Waffe) oder der defName eines Rollen-Gebots. Braucht Ideology.</CBF_FieldDesc_ideologieRolle>
 </LanguageData>

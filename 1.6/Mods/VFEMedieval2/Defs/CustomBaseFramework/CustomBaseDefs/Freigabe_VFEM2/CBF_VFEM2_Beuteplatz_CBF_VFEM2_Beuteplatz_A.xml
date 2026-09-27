@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_VFEM2_Beuteplatz_A</defName>
+    <label>CBF_VFEM2_Beuteplatz_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_VFEM2_Beuteplatz</li>
+    </categories>
+    <style>CBF_VFEM2</style>
+    <legend>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>b</symbol><anchor>Kiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
+      <li><symbol>f</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>g</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>i</symbol><thing>RawCorn</thing><count>30</count></li>
+      <li><symbol>j</symbol><thing>Beer</thing><count>10</count></li>
+      <li><symbol>k</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>l</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+    </legend>
+    <mask>
+      <li>..######....</li>
+      <li>.##########.</li>
+      <li>############</li>
+      <li>############</li>
+      <li>.##########.</li>
+      <li>...######...</li>
+    </mask>
+    <terrain>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+    </terrain>
+    <things>
+      <li>..a....a....</li>
+      <li>...k..l.....</li>
+      <li>..l....l....</li>
+      <li>..a....a....</li>
+      <li>.ii....jj...</li>
+      <li>............</li>
+    </things>
+    <roof>
+      <li>..^^^^^^....</li>
+      <li>..^^^^^^....</li>
+      <li>..^^^^^^....</li>
+      <li>..^^^^^^....</li>
+      <li>............</li>
+      <li>............</li>
+    </roof>
+    <anchors>
+      <li>............</li>
+      <li>...bb.f.....</li>
+      <li>..g....g....</li>
+      <li>............</li>
+      <li>............</li>
+      <li>............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

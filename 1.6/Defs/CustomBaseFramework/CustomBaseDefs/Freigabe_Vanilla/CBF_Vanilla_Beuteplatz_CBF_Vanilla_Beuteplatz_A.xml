@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Beuteplatz_A</defName>
+    <label>CBF_Vanilla_Beuteplatz_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_Beuteplatz</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+    <legend>
+      <li><symbol>1</symbol><anchor>RegalA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
+      <li><symbol>2</symbol><anchor>RegalB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
+      <li><symbol>3</symbol><anchor>Waffen</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>I</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>V</symbol><thing>WoodLog</thing><count>75</count></li>
+      <li><symbol>X</symbol><thing>Steel</thing><count>60</count></li>
+      <li><symbol>Y</symbol><thing>Cloth</thing><count>40</count></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+    </legend>
+    <mask>
+      <li>#######...</li>
+      <li>#######...</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>.#########</li>
+      <li>...####...</li>
+    </mask>
+    <terrain>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+    </terrain>
+    <things>
+      <li>Ia..a.I...</li>
+      <li>..........</li>
+      <li>.......a..</li>
+      <li>I.....I...</li>
+      <li>...V..X.Y.</li>
+      <li>..........</li>
+    </things>
+    <roof>
+      <li>^^^^^^^...</li>
+      <li>^^^^^^^...</li>
+      <li>^^^^^^^...</li>
+      <li>^^^^^^^...</li>
+      <li>..........</li>
+      <li>..........</li>
+    </roof>
+    <anchors>
+      <li>.11.22....</li>
+      <li>..........</li>
+      <li>.......33.</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

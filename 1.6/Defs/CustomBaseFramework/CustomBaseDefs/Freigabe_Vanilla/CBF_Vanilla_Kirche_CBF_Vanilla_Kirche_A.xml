@@ -15,19 +15,20 @@
       <li><symbol>2</symbol><anchor>Pfarrhaus</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
       <li><symbol>8</symbol><anchor>Pfarrer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>9</symbol><anchor>Besucher</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
-      <li><symbol>A</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>C</symbol><thing>Column</thing><stuff>BlocksMarble</stuff></li>
       <li><symbol>D</symbol><thing>Table2x2c</thing><stuff>BlocksMarble</stuff></li>
       <li><symbol>E</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>H</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
       <li><symbol>L</symbol><thing>StandingLamp</thing></li>
       <li><symbol>N</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>Y</symbol><thing>Bed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>b</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>a</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
+      <li><symbol>b</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>f</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>h</symbol><terrain>TileGranite</terrain></li>
       <li><symbol>k</symbol><thing>BookcaseSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>p</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
@@ -71,14 +72,14 @@
     </terrain>
     <things>
       <li>..SSSSSS......</li>
-      <li>..SL..LS......</li>
-      <li>..SpA.pS......</li>
-      <li>SSS....SSS....</li>
+      <li>..S...LS......</li>
+      <li>..S...pS......</li>
+      <li>SSSa...SSS....</li>
       <li>Sp.......SSSSS</li>
       <li>S.L.D..L.F...S</li>
       <li>SC......CSk.YS</li>
-      <li>S.NN..NN.Sa.ES</li>
-      <li>SLNN..NNLS..bS</li>
+      <li>S.NN..NN.Sb.ES</li>
+      <li>SLNN..NNLS..fS</li>
       <li>S.NN..NN.SSFSS</li>
       <li>SC......CS....</li>
       <li>S.NN..NN.S....</li>
@@ -122,9 +123,9 @@
     </roof>
     <anchors>
       <li>..............</li>
-      <li>..............</li>
-      <li>..............</li>
-      <li>..............</li>
+      <li>...HHH........</li>
+      <li>...HHH........</li>
+      <li>...HHH........</li>
       <li>......8.......</li>
       <li>..............</li>
       <li>..............</li>

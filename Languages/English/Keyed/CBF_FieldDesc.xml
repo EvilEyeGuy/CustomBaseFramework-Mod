@@ -157,4 +157,13 @@
   <CBF_FieldDesc_stadtteil>Ward this role entry is meant for: Stadt, Burg, Vorstadt or Umland. Empty applies everywhere.</CBF_FieldDesc_stadtteil>
   <CBF_FieldDesc_wdTyp>World Domination settlement types this plan stands for, such as Mining or Slavery. Empty means any type. Only used with World Domination 2.0.</CBF_FieldDesc_wdTyp>
   <CBF_FieldDesc_PawnListDef_stufe>The tech level this list counts as. Set, the settlement draws from the whole list without working out levels from the gear. Empty works the level out per member.</CBF_FieldDesc_PawnListDef_stufe>
+  <CBF_FieldDesc_mitIdeologie>Memes or precepts (defNames). The entry is only built when the owning faction's ideoligion has at least one of them. Needs Ideology.</CBF_FieldDesc_mitIdeologie>
+  <CBF_FieldDesc_ohneIdeologie>Memes or precepts (defNames). The entry is not built when the owning faction's ideoligion has one of them. Needs Ideology.</CBF_FieldDesc_ohneIdeologie>
+  <CBF_FieldDesc_biomLeder>On a thing entry: the stuff is replaced by the leather of a wild animal of the biome, chosen once per piece.</CBF_FieldDesc_biomLeder>
+  <CBF_FieldDesc_ideologieGebaeude>On an Object anchor: places a building of the faction's ideoligion, such as an altar or ritual spot. Needs Ideology.</CBF_FieldDesc_ideologieGebaeude>
+  <CBF_FieldDesc_wdBudget>With World Domination 2.0 active, containers with this table are filled from the World Domination loot budget of the settlement instead of the table.</CBF_FieldDesc_wdBudget>
+  <CBF_FieldDesc_ideologieStil>Furniture gets the style of the owning faction's ideoligion. Needs Ideology.</CBF_FieldDesc_ideologieStil>
+  <CBF_FieldDesc_lagerArten>SitePartDef names, such as BanditCamp or Outpost. This camp plan builds these quest sites. Only for the kind Lager.</CBF_FieldDesc_lagerArten>
+  <CBF_FieldDesc_ohneWdBeute>Switches off the World Domination loot budget for this settlement type.</CBF_FieldDesc_ohneWdBeute>
+  <CBF_FieldDesc_ideologieRolle>Role of the faction's ideoligion for pawns of this entry: empty, Kampf (shooting or melee specialist by weapon) or a role precept defName. Needs Ideology.</CBF_FieldDesc_ideologieRolle>
 </LanguageData>

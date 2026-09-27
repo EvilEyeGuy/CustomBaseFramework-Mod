@@ -13,7 +13,8 @@
     <legend>
       <li><symbol>a</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
       <li><symbol>b</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>f</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>f</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
+      <li><symbol>g</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>#######</li>
@@ -38,7 +39,7 @@
       <li>..bbb..</li>
       <li>.......</li>
       <li>.......</li>
-      <li>...f...</li>
+      <li>...g...</li>
       <li>..bbb..</li>
       <li>a.....a</li>
     </things>
@@ -51,6 +52,15 @@
       <li>.......</li>
       <li>.......</li>
     </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.......</li>
+      <li>...fff.</li>
+      <li>...fff.</li>
+      <li>...fff.</li>
+      <li>.......</li>
+      <li>.......</li>
+    </anchors>
   </CustomBaseFramework.PieceDef>
 
 </Defs>

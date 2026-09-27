@@ -11,9 +11,10 @@
     <style>CBF_Medieval</style>
     <traufen>true</traufen>
     <legend>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_ArchonSculpture2x2c</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>H</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_LogBench1x2c</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
       <li><symbol>T</symbol><thing>SculptureLarge</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>a</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>#######</li>
@@ -37,8 +38,8 @@
       <li>T.....T</li>
       <li>.......</li>
       <li>.L...L.</li>
-      <li>...A...</li>
       <li>.......</li>
+      <li>..a....</li>
       <li>.......</li>
       <li>T.....T</li>
     </things>
@@ -51,6 +52,15 @@
       <li>.......</li>
       <li>.......</li>
     </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.......</li>
+      <li>..HHH..</li>
+      <li>..HHH..</li>
+      <li>..HHH..</li>
+      <li>.......</li>
+      <li>.......</li>
+    </anchors>
   </CustomBaseFramework.PieceDef>
 
 </Defs>

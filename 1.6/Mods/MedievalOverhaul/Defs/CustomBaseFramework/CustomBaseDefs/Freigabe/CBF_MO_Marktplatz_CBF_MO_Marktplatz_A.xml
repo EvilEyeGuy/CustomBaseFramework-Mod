@@ -20,6 +20,7 @@
       <li><symbol>D</symbol><anchor>StandD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktstand</objects></li>
       <li><symbol>E</symbol><anchor>FassA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li><symbol>G</symbol><anchor>FassB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
+      <li><symbol>H</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_LampPost</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_Fountain2x2c</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
@@ -27,12 +28,13 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_HideoutTableMarket_Bread</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideOutBuildingBase_Cart_Textiles</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>j</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
       <li><symbol>k</symbol><anchor>ZeltA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
       <li><symbol>l</symbol><anchor>ZeltB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
       <li><symbol>m</symbol><anchor>ZeltC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
       <li><symbol>n</symbol><anchor>ZeltD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_MarketTent_1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_HideOutBuildingBase_Cart_Textiles</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_MarketTent_1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>u</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
     </legend>
     <mask>
@@ -73,21 +75,21 @@
       <li>......W...P..i</li>
       <li>..............</li>
       <li>..............</li>
-      <li>.f........f...</li>
+      <li>.f....j...f...</li>
       <li>..............</li>
-      <li>.......j......</li>
+      <li>.......o......</li>
     </things>
     <things2>
       <li>..............</li>
       <li>..............</li>
-      <li>.o........o...</li>
+      <li>.p........p...</li>
       <li>..............</li>
       <li>..............</li>
       <li>..............</li>
       <li>..............</li>
       <li>..............</li>
       <li>..............</li>
-      <li>.o........o...</li>
+      <li>.p........p...</li>
       <li>..............</li>
       <li>..............</li>
     </things2>
@@ -113,9 +115,9 @@
       <li>........9.....</li>
       <li>E.............</li>
       <li>.............G</li>
-      <li>..............</li>
-      <li>..............</li>
-      <li>.CCC......DDD.</li>
+      <li>......HHH.....</li>
+      <li>......HHH.....</li>
+      <li>.CCC..HHH.DDD.</li>
       <li>.......88.....</li>
       <li>.......88.....</li>
     </anchors>

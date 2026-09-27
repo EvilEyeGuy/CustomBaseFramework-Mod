@@ -2,6 +2,24 @@
 <Defs>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Anfuehrerzelt</defName>
+    <label>CBF_Vanilla_Anfuehrerzelt</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Beuteplatz</defName>
+    <label>CBF_Vanilla_Beuteplatz</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_Brauerei</defName>
     <label>Brauerei</label><parent>CBF_Vanilla_Workshop</parent>
     <zones>
@@ -283,6 +301,15 @@
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_Sandsackstellung</defName>
     <label>Sandsackstellung</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Schlafzelt</defName>
+    <label>CBF_Vanilla_Schlafzelt</label>
     <zones>
       <li>Inside</li>
     </zones>

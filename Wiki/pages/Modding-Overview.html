@@ -1,73 +1,130 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Modding overview · Custom Base Framework</title><style>
-:root{--grund:#f4f3ef;--karte:#ffffff;--linie:#e3e0d8;--text:#1f2124;--leise:#63676e;--akzent:#2f6f60;--akzentweich:#e3efeb;--ocker:#b27a17;--code:#f0eee8;--schatten:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06)}
-@media (prefers-color-scheme: dark){:root{--grund:#121417;--karte:#1a1d22;--linie:#2c3139;--text:#e6e4df;--leise:#99a0aa;--akzent:#7cc0aa;--akzentweich:#1f2f2b;--ocker:#d9ab55;--code:#24282f;--schatten:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}}
+<!doctype html><html lang="en" data-look="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Modding overview · Custom Base Framework</title><style>
+:root,[data-look="dark"]{--grund:#151b1e;--fenster:#1c1b1d;--leiste:#0f1416;--spalte:#25282a;--rand:#3b3f41;--linie:#2c2f31;
+--text:#d8d6d0;--kopf:#e6d7b4;--titel:#efe9dc;--leise:#9a9c9b;--blass:#6c706f;--akzent:#d2a44e;--wahl:#4a4a32;--wahlrand:#b58a45;
+--wahltext:#f0dcae;--code:#121212;--codetext:#f0dcae;--feld:#121212;--schrift:Arial,"Segoe UI",sans-serif;--lese:Arial,"Segoe UI",sans-serif;
+--lesegroesse:15px;--h1:26px;--h2:20px;--kachel:transparent;--knopf:#4a3b22;--xt:#e6b866;--xa:#9fb7c9;--xw:#a9c98a}
+[data-look="bright"]{--grund:#e9e5dc;--fenster:#f7f4ee;--leiste:#efeae0;--spalte:#f7f4ee;--rand:#cfc6b4;--linie:#d8d0c0;
+--text:#26231e;--kopf:#26231e;--titel:#26231e;--leise:#4a4439;--blass:#7a7263;--akzent:#8a5a14;--wahl:#f7f4ee;--wahlrand:#a8741f;
+--wahltext:#8a5a14;--code:#e9e3d6;--codetext:#26231e;--feld:#fbf9f5;--schrift:Arial,"Segoe UI",sans-serif;--lese:Arial,"Segoe UI",sans-serif;
+--lesegroesse:15px;--h1:26px;--h2:20px;--kachel:#3a3631;--knopf:#efe0c2;--xt:#8a4a14;--xa:#2f5f7f;--xw:#3f6f2a}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{margin:0;background:var(--grund);color:var(--text);font:16px/1.65 "Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:var(--akzent);text-underline-offset:3px}
-.inhalt h1{font-size:2.1rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
-.inhalt h2{font-size:1.35rem;letter-spacing:-.01em;margin:44px 0 10px}
-.inhalt h3{font-size:1.08rem;margin:28px 0 8px}
-.inhalt p,.inhalt li{max-width:74ch}
-.inhalt>p:first-of-type{font-size:1.08rem;color:var(--leise)}
-code{font-family:"Cascadia Mono",Consolas,monospace;font-size:.86em;background:var(--code);padding:2px 6px;border-radius:5px}
-.bild{display:block;margin:18px 0 22px}
-.bild img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--linie);box-shadow:var(--schatten)}
-.bild:hover img{border-color:var(--akzent)}
-.inhalt ol{list-style:none;padding:0;counter-reset:n;margin:12px 0 18px}
-.inhalt ol>li{counter-increment:n;position:relative;padding-left:40px;margin:10px 0}
-.inhalt ol>li::before{content:counter(n);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--ocker);color:#1b1b1b;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
-.inhalt ul{padding-left:20px}
-.inhalt ul>li{margin:6px 0}
-.inhalt ul>li::marker{color:var(--akzent)}
-table{border-collapse:separate;border-spacing:0;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto;border:1px solid var(--linie);border-radius:10px}
-th,td{padding:8px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--linie)}
-tr:last-child td{border-bottom:0}
-th{background:var(--code);font-weight:600;position:sticky;top:0}
-td code{white-space:nowrap}
-.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:56px;padding-top:20px;border-top:1px solid var(--linie)}
-.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--linie);background:var(--karte);border-radius:10px;padding:12px 16px;color:var(--text)}
-.schritte a:hover{border-color:var(--akzent)}
-.schritte span{display:block;font-size:12px;color:var(--leise);text-transform:uppercase;letter-spacing:.06em}
-.schritte .weiter{text-align:right;margin-left:auto}
-.home .inhalt ol{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;max-width:none}
-.home .inhalt ol>li{margin:0;background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:14px 16px 14px 54px;max-width:none;box-shadow:var(--schatten)}
-.home .inhalt ol>li::before{left:16px;top:16px}
-.home .inhalt ol>li a{font-weight:600}
+html{scroll-padding-top:56px}
+body{margin:0;background:var(--grund);color:var(--text);font-family:var(--schrift);scrollbar-color:var(--rand) var(--grund)}
+nav.leiste,aside.rechts{scrollbar-color:var(--rand) var(--leiste);scrollbar-width:thin}
+.fenster{max-width:1760px;margin:0 auto;min-height:100vh;display:grid;grid-template-columns:240px minmax(0,1fr) 220px;
+grid-template-rows:auto 1fr;border-left:1px solid var(--rand);border-right:1px solid var(--rand);background:var(--fenster)}
+.kopf{grid-column:1/-1;position:sticky;top:0;z-index:5;background:var(--leiste);border-bottom:1px solid var(--rand);
+display:flex;align-items:center;gap:14px;padding:0 14px;height:42px;font-size:13px}
+.marke{color:var(--titel);text-decoration:none;font-size:15px;white-space:nowrap}
+.pfad{color:var(--leise);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pfad a{color:var(--leise);text-decoration:none}
+.suche{margin-left:auto;min-width:230px;display:flex;justify-content:space-between;gap:10px;background:var(--feld);
+border:1px solid var(--rand);color:var(--blass);padding:4px 8px;font:12px var(--schrift);cursor:pointer}
+.suche kbd{font:11px var(--schrift);border:1px solid var(--rand);padding:0 4px}
+.look{background:none;border:1px solid var(--wahlrand);color:var(--wahltext);font:12px var(--schrift);padding:3px 10px;cursor:pointer}
+.look{background:var(--knopf)}
+nav.leiste{background:var(--leiste);border-right:1px solid var(--rand);padding:10px 8px 40px;position:sticky;top:42px;
+height:calc(100vh - 42px);overflow:auto}
+.gruppe{margin:0 0 8px}
+.gruppe b{display:flex;align-items:center;gap:9px;color:var(--kopf);font-size:14px;padding:6px 6px 3px}
+.gruppe b i{display:inline-flex;width:24px;height:24px;align-items:center;justify-content:center;background:var(--kachel)}
+.gruppe b img{width:18px;height:18px}
+.gruppe a{display:block;color:var(--leise);text-decoration:none;font-size:13px;padding:3px 8px 3px 39px;border:1px solid transparent}
+.gruppe a:hover{color:var(--titel);background:var(--linie)}
+.gruppe a.hier{background:var(--wahl);border-color:var(--wahlrand);color:var(--wahltext)}
+.gruppe.modding{margin-top:14px;padding-top:10px;border-top:1px solid var(--rand)}
+main{padding:30px 46px 90px;min-width:0;font-family:var(--lese);font-size:var(--lesegroesse);line-height:1.65}
+.inhalt{max-width:1180px;margin:0 auto}
+.inhalt h1{color:var(--titel);font-weight:normal;font-size:var(--h1);line-height:1.12;margin:0 0 6px}
+.unter{font:12px var(--schrift);color:var(--blass);margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid var(--rand)}
+.inhalt h2{color:var(--kopf);font-weight:normal;font-size:var(--h2);margin:38px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--rand)}
+.inhalt h3{color:var(--kopf);font:bold 16px var(--schrift);margin:26px 0 8px;padding-bottom:3px;border-bottom:1px solid var(--linie)}
+.inhalt h4{color:var(--kopf);font:bold 14px var(--schrift);margin:20px 0 6px}
+.inhalt a{color:var(--akzent)}
+.inhalt strong{color:var(--titel)}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.86em;background:var(--code);color:var(--codetext);padding:1px 5px;border:1px solid var(--linie)}
+pre{background:var(--code);border:1px solid var(--rand);padding:12px 14px;overflow-x:auto;font-size:13px;line-height:1.5}
+pre code{border:0;padding:0}
+.xt{color:var(--xt)}.xa{color:var(--xa)}.xw{color:var(--xw)}.xk{color:var(--blass)}
+table{border-collapse:collapse;font:13px/1.5 var(--schrift);margin:14px 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--rand);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:var(--spalte);color:var(--kopf);font-weight:normal}
+.bild{display:block;margin:16px 0 20px}
+.bild img{display:block;max-width:100%;height:auto;border:1px solid var(--rand)}
+.inhalt ol{padding-left:26px}
+.inhalt li{margin:4px 0}
 .home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
-.pfad{font-size:13px;color:var(--leise);margin-bottom:6px}
-.pfad a{color:var(--leise)}
-.aufseite{font-size:13px}
-.aufseite b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--leise);margin-bottom:8px}
-.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:4px 0 4px 12px;border-left:2px solid var(--linie)}
-.aufseite a:hover{color:var(--akzent);border-left-color:var(--akzent)}
-
-.rahmen{display:grid;grid-template-columns:260px minmax(0,1fr) 200px;gap:0;max-width:1400px;margin:0 auto}
-.leiste{position:sticky;top:0;height:100vh;overflow:auto;padding:22px 18px;border-right:1px solid var(--linie)}
-.marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
-.marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
-.marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
-.gruppe{margin:0 0 18px}
-.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
-.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
-.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
-.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
-.gruppe b i img{width:20px;height:20px;object-fit:contain}
-.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
-.gruppe a:hover{background:var(--akzentweich)}
-.gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
-main{padding:40px 48px 80px;min-width:0}
-.inhalt{max-width:860px}
-.rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
-@media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
-@media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
-</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html" class="hier">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="modding-overview">Modding overview</h1>
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:50px;padding-top:16px;border-top:1px solid var(--rand);font-family:var(--schrift)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--rand);padding:10px 14px;color:var(--text)}
+.schritte a:hover{border-color:var(--wahlrand)}
+.schritte span{display:block;font-size:11px;color:var(--blass)}
+.schritte .weiter{text-align:right;margin-left:auto}
+aside.rechts{background:var(--spalte);border-left:1px solid var(--rand);padding:24px 12px;font-size:13px}
+.aufseite{position:sticky;top:66px}
+.aufseite b{display:block;color:var(--blass);font-size:12px;font-weight:normal;margin:0 0 8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:3px 6px 3px 10px;border-left:2px solid var(--rand)}
+.aufseite a.t3{padding-left:22px;font-size:12px}
+.aufseite a:hover{color:var(--titel)}
+.aufseite a.an{color:var(--wahltext);border-left-color:var(--wahlrand)}
+.fund{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:flex-start;justify-content:center;padding-top:12vh;z-index:20}
+.fund.offen{display:flex}
+.fundbox{width:min(640px,92vw);background:var(--fenster);border:1px solid var(--wahlrand)}
+.fundbox input{width:100%;border:0;border-bottom:1px solid var(--rand);background:var(--feld);color:var(--text);padding:12px 14px;font:15px var(--schrift);outline:none}
+.fundliste{max-height:55vh;overflow:auto;margin:0;padding:4px;list-style:none;font-family:var(--schrift)}
+.fundliste li{padding:8px 10px;cursor:pointer;border:1px solid transparent}
+.fundliste li.an{background:var(--wahl);border-color:var(--wahlrand)}
+.fundliste .t{color:var(--titel);font-size:14px}
+.fundliste .s{color:var(--blass);font-size:12px;margin-top:2px}
+.fundliste mark{background:var(--wahlrand);color:#1b1b1b}
+@media (max-width:1180px){.fenster{grid-template-columns:230px minmax(0,1fr)}aside.rechts{display:none}}
+@media (max-width:820px){.fenster{grid-template-columns:1fr}nav.leiste{position:static;height:auto}.pfad{display:none}.suche{min-width:0}main{padding:22px 16px 60px}}
+</style><script>
+(function(){
+var w=document.documentElement;
+try{var g=localStorage.getItem('cbf-look');if(g==='dark'||g==='bright')w.setAttribute('data-look',g);}catch(e){}
+function knopf(){var b=document.getElementById('look');if(b)b.textContent=w.getAttribute('data-look')==='bright'?'Dark':'Bright';}
+document.addEventListener('DOMContentLoaded',function(){
+knopf();
+document.getElementById('look').addEventListener('click',function(){
+var n=w.getAttribute('data-look')==='bright'?'dark':'bright';w.setAttribute('data-look',n);
+try{localStorage.setItem('cbf-look',n);}catch(e){}knopf();});
+var links=[].slice.call(document.querySelectorAll('.aufseite a'));
+if(links.length&&'IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('an',a.getAttribute('href')==='#'+e.target.id);});});},{rootMargin:'0px 0px -70% 0px'});
+document.querySelectorAll('.inhalt h2[id],.inhalt h3[id]').forEach(function(h){io.observe(h);});}
+var fund=document.getElementById('fund'),ein=document.getElementById('fundein'),liste=document.getElementById('fundliste'),treffer=[],wahl=0;
+var basis=document.body.getAttribute('data-basis')||'';
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+function markiere(s,t){if(!t)return esc(s);var i=s.toLowerCase().indexOf(t);if(i<0)return esc(s);return esc(s.slice(0,i))+'<mark>'+esc(s.slice(i,i+t.length))+'</mark>'+esc(s.slice(i+t.length));}
+function suchen(){var t=ein.value.trim().toLowerCase();var idx=window.CBF_SUCHE||[];
+treffer=idx.map(function(p){var s=0,ti=p.t.toLowerCase(),x=p.x.toLowerCase(),i=x.indexOf(t),aus='';
+if(!t)s=1;else{if(ti.indexOf(t)===0)s=3;else if(ti.indexOf(t)>=0)s=2;if(i>=0){if(!s)s=1;var a=Math.max(0,i-50);aus=(a?'... ':'')+p.x.slice(a,i+t.length+80)+' ...';}}
+return{p:p,s:s,aus:aus};}).filter(function(r){return r.s;}).sort(function(a,b){return b.s-a.s;}).slice(0,40);
+wahl=0;zeichnen(t);}
+function zeichnen(t){liste.innerHTML=treffer.length?treffer.map(function(r,i){return '<li data-i="'+i+'"'+(i===wahl?' class="an"':'')+'><div class="t">'+markiere(r.p.t,t)+'</div>'+(r.aus?'<div class="s">'+markiere(r.aus,t)+'</div>':'')+'</li>';}).join(''):'<li><div class="s">No page found.</div></li>';
+var a=liste.querySelector('.an');if(a)a.scrollIntoView({block:'nearest'});}
+function gehe(i){var r=treffer[i];if(r)location.href=basis+r.p.u;}
+function auf(){fund.classList.add('offen');ein.value='';suchen();ein.focus();}
+function zu(){fund.classList.remove('offen');}
+document.getElementById('suche').addEventListener('click',auf);
+ein.addEventListener('input',suchen);
+ein.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();wahl=Math.min(wahl+1,treffer.length-1);zeichnen(ein.value.trim().toLowerCase());}
+else if(e.key==='ArrowUp'){e.preventDefault();wahl=Math.max(wahl-1,0);zeichnen(ein.value.trim().toLowerCase());}
+else if(e.key==='Enter'){e.preventDefault();gehe(wahl);}});
+liste.addEventListener('click',function(e){var li=e.target.closest('li[data-i]');if(li)gehe(+li.getAttribute('data-i'));});
+fund.addEventListener('click',function(e){if(e.target===fund)zu();});
+document.addEventListener('keydown',function(e){var tippt=/INPUT|TEXTAREA/.test(document.activeElement.tagName);
+if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();fund.classList.contains('offen')?zu():auf();}
+else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')zu();});
+});
+})();
+</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Your own content mod</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html" class="hier">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="modding-overview">Modding overview</h1><p class="unter">Modding</p>
 <p>This page is for modders who write XML for Custom Base Framework (CBF) by hand or want to know what the editor writes. It covers the folder layout of a content mod, how the defs connect, and the def types that have no page of their own in the guide: wall profiles, styles, ruins, map steps, buildability rules, help texts and dungeon profiles. The last sections explain how CBF takes over faction bases and draws world icons.</p>
 <p>Every field is listed in the <a href="Field-Reference.html">Field reference</a>. This page shows how the fields are used.</p>
 <h2 id="your-own-content-mod">Your own content mod</h2>
 <p>A content mod for CBF is a normal RimWorld mod. It needs no C# and no patches.</p>
 <h3 id="folder-layout">Folder layout</h3>
-<p><code>MyCBFContent/
+<pre><code>MyCBFContent/
   About/
     About.xml
   LoadFolders.xml
@@ -89,55 +146,52 @@ main{padding:40px 48px 80px;min-width:0}
     World/
       WorldObjects/
         CBF/
-          MyTown.png</code></p>
+          MyTown.png
+</code></pre>
 <p>Only <code>About/About.xml</code> and one <code>Defs</code> folder are required. The subfolder names under <code>Defs</code> are a convention. RimWorld reads every XML file under <code>Defs</code>, whatever the folder is called.</p>
 <h3 id="aboutxml">About.xml</h3>
 <p>The mod depends on CBF and loads after it:</p>
-<p>```xml</p>
-<?xml version="1.0" encoding="utf-8"?>
-<p><ModMetaData>
-  <name>My CBF Content</name>
-  <author>Me</author>
-  <packageId>Me.MyCBFContent</packageId>
-  <supportedVersions>
-    <li>1.6</li>
-  </supportedVersions>
-  <modDependencies>
-    <li>
-      <packageId>EvilEyeGuy.CustomBaseFramework</packageId>
-      <displayName>Custom Base Framework</displayName>
-    </li>
-  </modDependencies>
-  <loadAfter>
-    <li>EvilEyeGuy.CustomBaseFramework</li>
-  </loadAfter>
-  <description>Content for Custom Base Framework.</description>
-</ModMetaData>
-```</p>
+<pre><code class="language-xml">&lt;?xml <span class="xa">version</span>=<span class="xw">&quot;1.0&quot;</span> <span class="xa">encoding</span>=<span class="xw">&quot;utf-8&quot;</span>?&gt;
+&lt;<span class="xt">ModMetaData</span>&gt;
+  &lt;<span class="xt">name</span>&gt;My CBF Content&lt;/<span class="xt">name</span>&gt;
+  &lt;<span class="xt">author</span>&gt;Me&lt;/<span class="xt">author</span>&gt;
+  &lt;<span class="xt">packageId</span>&gt;Me.MyCBFContent&lt;/<span class="xt">packageId</span>&gt;
+  &lt;<span class="xt">supportedVersions</span>&gt;
+    &lt;<span class="xt">li</span>&gt;1.6&lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">supportedVersions</span>&gt;
+  &lt;<span class="xt">modDependencies</span>&gt;
+    &lt;<span class="xt">li</span>&gt;
+      &lt;<span class="xt">packageId</span>&gt;EvilEyeGuy.CustomBaseFramework&lt;/<span class="xt">packageId</span>&gt;
+      &lt;<span class="xt">displayName</span>&gt;Custom Base Framework&lt;/<span class="xt">displayName</span>&gt;
+    &lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">modDependencies</span>&gt;
+  &lt;<span class="xt">loadAfter</span>&gt;
+    &lt;<span class="xt">li</span>&gt;EvilEyeGuy.CustomBaseFramework&lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">loadAfter</span>&gt;
+  &lt;<span class="xt">description</span>&gt;Content for Custom Base Framework.&lt;/<span class="xt">description</span>&gt;
+&lt;/<span class="xt">ModMetaData</span>&gt;
+</code></pre>
 <p><code>loadAfter</code> matters. A def can only inherit with <code>ParentName</code> from a parent in a mod that loads earlier. CBF's abstract parents, such as <code>CBF_Ruin_Basis</code>, are only usable when your mod loads after CBF.</p>
 <h3 id="loadfoldersxml-for-other-mods">LoadFolders.xml for other mods</h3>
 <p>Content that needs another mod can go into a subfolder that only loads when that mod is active. CBF does this for Medieval Overhaul and Vanilla Factions Expanded - Medieval 2:</p>
-<p>```xml</p>
-<?xml version="1.0" encoding="utf-8"?>
-<p><loadFolders>
-  <v1.6>
-    <li>/</li>
-    <li>1.6</li>
-    <li IfModActive="DankPyon.Medieval.Overhaul">1.6/Mods/MedievalOverhaul</li>
-    <li IfModActive="OskarPotocki.VFE.Medieval2">1.6/Mods/VFEMedieval2</li>
-  </v1.6>
-</loadFolders>
-```</p>
+<pre><code class="language-xml">&lt;?xml <span class="xa">version</span>=<span class="xw">&quot;1.0&quot;</span> <span class="xa">encoding</span>=<span class="xw">&quot;utf-8&quot;</span>?&gt;
+&lt;<span class="xt">loadFolders</span>&gt;
+  &lt;<span class="xt">v1.6</span>&gt;
+    &lt;<span class="xt">li</span>&gt;/&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;1.6&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span> <span class="xa">IfModActive</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;1.6/Mods/MedievalOverhaul&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span> <span class="xa">IfModActive</span>=<span class="xw">&quot;OskarPotocki.VFE.Medieval2&quot;</span>&gt;1.6/Mods/VFEMedieval2&lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">v1.6</span>&gt;
+&lt;/<span class="xt">loadFolders</span>&gt;
+</code></pre>
 <p><code>/</code> loads <code>Textures</code> and <code>Languages</code> from the mod root. <code>1.6</code> loads <code>1.6/Defs</code> and <code>1.6/Patches</code>. Each conditional line loads its own <code>Defs</code> and <code>Languages</code> folders.</p>
 <h3 id="mayrequire">MayRequire</h3>
 <p>For single defs or single list entries, RimWorld's <code>MayRequire</code> attribute is enough. On a def node it skips the whole def when the mod is missing. On a list item it skips only that item, for example a member of an object list:</p>
-<p>```xml
-<members>
-<br />
-<li MayRequire="DankPyon.Medieval.Overhaul"><thing>DankPyon_RusticShelf</thing></li></p>
-<li><thing>Shelf</thing></li>
-<p></members>
-```</p>
+<pre><code class="language-xml">&lt;<span class="xt">members</span>&gt;
+  &lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;&lt;<span class="xt">thing</span>&gt;DankPyon_RusticShelf&lt;/<span class="xt">thing</span>&gt;&lt;/<span class="xt">li</span>&gt;
+  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">thing</span>&gt;Shelf&lt;/<span class="xt">thing</span>&gt;&lt;/<span class="xt">li</span>&gt;
+&lt;/<span class="xt">members</span>&gt;
+</code></pre>
 <p>See <a href="Modding-Settlements.html">Modding-Settlements</a> for <code>MayRequire</code> on settlement types.</p>
 <h3 id="world-icons">World icons</h3>
 <p>World map icons go into <code>Textures/World/WorldObjects/CBF/</code> of your mod. A settlement type names one in <code>worldTexture</code>. The editor lists every texture in that folder from all active mods. See <a href="#world-icons">World icons</a> below.</p>
@@ -151,7 +205,7 @@ main{padding:40px 48px 80px;min-width:0}
 </ul>
 <p>The editor does not write <code>LoadFolders.xml</code> and does not copy world icon images. Add those by hand.</p>
 <h2 id="how-the-defs-connect">How the defs connect</h2>
-<p><code>SettlementPlanDef (settlement type)
+<pre><code>SettlementPlanDef (settlement type)
   worldTexture ............ world icon
   styles .................. StyleDef -&gt; WallProfileDef
   techLevels, factionTags . which factions use it
@@ -160,7 +214,8 @@ main{padding:40px 48px 80px;min-width:0}
     districts ............. building programme of the ring
       categories .......... PieceCategoryDef
         pieces ............ PieceDef
-          anchors ......... object lists, LootTableDef, PawnListDef</code></p>
+          anchors ......... object lists, LootTableDef, PawnListDef
+</code></pre>
 <ul>
 <li>Settlement types, wards and districts: <a href="Modding-Settlements.html">Modding-Settlements</a></li>
 <li>Pieces, categories and anchors: <a href="Modding-Pieces.html">Modding-Pieces</a></li>
@@ -173,35 +228,33 @@ main{padding:40px 48px 80px;min-width:0}
 <p>A <code>WallProfileDef</code> describes a wall ring as a cross section. Each segment is a piece one cell wide or one cell high. The generator builds the wall line from these segments. A profile can also name a tower and a gatehouse piece.</p>
 <h3 id="example">Example</h3>
 <p>From CBF's Medieval Overhaul folder, labels translated:</p>
-<p>```xml
-<CustomBaseFramework.WallProfileDef>
-  <defName>WallProfile_Stein_3</defName>
-  <label>stone wall, drawn</label>
-<br />
-<style>Standard</style></p>
-<p><depth>3</depth>
-  <segments>
-    <li>TownWall</li>
-    <li>TownWall</li>
-    <li>TownWall</li>
-    <li>TownWall_Scharte</li>
-  </segments>
-  <tower>Tower</tower>
-  <gatehouse>CBF_MO_GateHouse_Small</gatehouse>
-  <gatehouseOutward>West</gatehouseOutward>
-</CustomBaseFramework.WallProfileDef></p>
-<p><CustomBaseFramework.WallProfileDef>
-  <defName>WallProfile_Palisade_1</defName>
-  <label>palisade, drawn</label>
-<br />
-<style>Rustical</style></p>
-<p><depth>1</depth>
-  <segments>
-    <li>Palisade</li>
-  </segments>
-  <tower>PalisadeTower</tower>
-</CustomBaseFramework.WallProfileDef>
-```</p>
+<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.WallProfileDef</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;WallProfile_Stein_3&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">label</span>&gt;stone wall, drawn&lt;/<span class="xt">label</span>&gt;
+  &lt;<span class="xt">style</span>&gt;Standard&lt;/<span class="xt">style</span>&gt;
+  &lt;<span class="xt">depth</span>&gt;3&lt;/<span class="xt">depth</span>&gt;
+  &lt;<span class="xt">segments</span>&gt;
+    &lt;<span class="xt">li</span>&gt;TownWall&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;TownWall&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;TownWall&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;TownWall_Scharte&lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">segments</span>&gt;
+  &lt;<span class="xt">tower</span>&gt;Tower&lt;/<span class="xt">tower</span>&gt;
+  &lt;<span class="xt">gatehouse</span>&gt;CBF_MO_GateHouse_Small&lt;/<span class="xt">gatehouse</span>&gt;
+  &lt;<span class="xt">gatehouseOutward</span>&gt;West&lt;/<span class="xt">gatehouseOutward</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.WallProfileDef</span>&gt;
+
+&lt;<span class="xt">CustomBaseFramework.WallProfileDef</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;WallProfile_Palisade_1&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">label</span>&gt;palisade, drawn&lt;/<span class="xt">label</span>&gt;
+  &lt;<span class="xt">style</span>&gt;Rustical&lt;/<span class="xt">style</span>&gt;
+  &lt;<span class="xt">depth</span>&gt;1&lt;/<span class="xt">depth</span>&gt;
+  &lt;<span class="xt">segments</span>&gt;
+    &lt;<span class="xt">li</span>&gt;Palisade&lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">segments</span>&gt;
+  &lt;<span class="xt">tower</span>&gt;PalisadeTower&lt;/<span class="xt">tower</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.WallProfileDef</span>&gt;
+</code></pre>
 <h3 id="nodes">Nodes</h3>
 <table>
 <thead>
@@ -256,74 +309,72 @@ main{padding:40px 48px 80px;min-width:0}
 <h2 id="styles">Styles</h2>
 <h3 id="styledef">StyleDef</h3>
 <p>A style is only a name with an optional fallback:</p>
-<p>```xml
-<CustomBaseFramework.StyleDef>
-  <defName>Standard</defName>
-  <label>standard</label>
-</CustomBaseFramework.StyleDef></p>
-<p><CustomBaseFramework.StyleDef>
-  <defName>Rustical</defName>
-  <label>rustic</label>
-  <fallback>Standard</fallback>
-</CustomBaseFramework.StyleDef>
-```</p>
+<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.StyleDef</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;Standard&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">label</span>&gt;standard&lt;/<span class="xt">label</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.StyleDef</span>&gt;
+
+&lt;<span class="xt">CustomBaseFramework.StyleDef</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;Rustical&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">label</span>&gt;rustic&lt;/<span class="xt">label</span>&gt;
+  &lt;<span class="xt">fallback</span>&gt;Standard&lt;/<span class="xt">fallback</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.StyleDef</span>&gt;
+</code></pre>
 <p><code>fallback</code> is used when nothing is found for this style. The chain may not loop and may not be deeper than 16 steps.</p>
 <h3 id="what-a-style-decides-today">What a style decides today</h3>
 <p>A style only picks the wall profile of a settlement type. It does not restrict which pieces are built, and it has nothing to do with materials.</p>
 <p>Which factions use a settlement type is decided by <code>factionTags</code> and <code>techLevels</code> on the SettlementPlanDef, not by the style. See <a href="#how-cbf-takes-over-faction-bases">How CBF takes over faction bases</a>.</p>
 <p>A settlement type lists its styles in order:</p>
-<p>```xml
-<styles>
-<br />
-<li>Rustical</li></p>
-<li>Standard</li>
-<p></styles>
-```</p>
+<pre><code class="language-xml">&lt;<span class="xt">styles</span>&gt;
+  &lt;<span class="xt">li</span>&gt;Rustical&lt;/<span class="xt">li</span>&gt;
+  &lt;<span class="xt">li</span>&gt;Standard&lt;/<span class="xt">li</span>&gt;
+&lt;/<span class="xt">styles</span>&gt;
+</code></pre>
 <p>The older single field <code>style</code> still loads. If <code>styles</code> is empty, <code>style</code> is used as its only entry.</p>
 <h2 id="material-lists">Material lists</h2>
 <p>A <code>MaterialListDef</code> decides what the generator uses for the parts it builds itself: walls, doors, gates, fences, roads, bridges, roofs and so on. Every settlement type must name one in <code>materialList</code>. There is no hidden default: without a usable list the settlement type is not built. The editor has its own part for them, see <a href="Material-Lists.html">Material lists</a>.</p>
 <p>Trimmed from the shipped base list:</p>
-<p><code>xml
-&lt;CustomBaseFramework.MaterialListDef&gt;
-  &lt;defName&gt;CBF_Materialliste_Basis&lt;/defName&gt;
-  &lt;label&gt;base&lt;/label&gt;
-  &lt;roles&gt;
-    &lt;li&gt;
-      &lt;role&gt;WALL&lt;/role&gt;
-      &lt;criticality&gt;Critical&lt;/criticality&gt;
-      &lt;chain&gt;
-        &lt;li MayRequire="DankPyon.Medieval.Overhaul"&gt;DankPyon_CastleWall&lt;/li&gt;
-        &lt;li&gt;Wall&lt;/li&gt;
-      &lt;/chain&gt;
-      &lt;stuffChain&gt;&lt;li&gt;MapStone&lt;/li&gt;&lt;li&gt;BlocksGranite&lt;/li&gt;&lt;li&gt;WoodLog&lt;/li&gt;&lt;/stuffChain&gt;
-      &lt;tagSearch&gt;AnyWall&lt;/tagSearch&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;role&gt;BRIDGE&lt;/role&gt;
-      &lt;terrainChain&gt;&lt;li&gt;Bridge&lt;/li&gt;&lt;/terrainChain&gt;
-    &lt;/li&gt;
-  &lt;/roles&gt;
-&lt;/CustomBaseFramework.MaterialListDef&gt;</code></p>
+<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.MaterialListDef</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Materialliste_Basis&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">label</span>&gt;base&lt;/<span class="xt">label</span>&gt;
+  &lt;<span class="xt">roles</span>&gt;
+    &lt;<span class="xt">li</span>&gt;
+      &lt;<span class="xt">role</span>&gt;WALL&lt;/<span class="xt">role</span>&gt;
+      &lt;<span class="xt">criticality</span>&gt;Critical&lt;/<span class="xt">criticality</span>&gt;
+      &lt;<span class="xt">chain</span>&gt;
+        &lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;DankPyon_CastleWall&lt;/<span class="xt">li</span>&gt;
+        &lt;<span class="xt">li</span>&gt;Wall&lt;/<span class="xt">li</span>&gt;
+      &lt;/<span class="xt">chain</span>&gt;
+      &lt;<span class="xt">stuffChain</span>&gt;&lt;<span class="xt">li</span>&gt;MapStone&lt;/<span class="xt">li</span>&gt;&lt;<span class="xt">li</span>&gt;BlocksGranite&lt;/<span class="xt">li</span>&gt;&lt;<span class="xt">li</span>&gt;WoodLog&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">stuffChain</span>&gt;
+      &lt;<span class="xt">tagSearch</span>&gt;AnyWall&lt;/<span class="xt">tagSearch</span>&gt;
+    &lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;
+      &lt;<span class="xt">role</span>&gt;BRIDGE&lt;/<span class="xt">role</span>&gt;
+      &lt;<span class="xt">terrainChain</span>&gt;&lt;<span class="xt">li</span>&gt;Bridge&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">terrainChain</span>&gt;
+    &lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">roles</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.MaterialListDef</span>&gt;
+</code></pre>
 <p>A list for your own mod usually inherits from the base list and only overrides what differs. This example is not shipped:</p>
-<p><code>xml
-&lt;CustomBaseFramework.MaterialListDef&gt;
-  &lt;defName&gt;MyMod_Materials&lt;/defName&gt;
-  &lt;label&gt;my mod&lt;/label&gt;
-  &lt;parent&gt;CBF_Materialliste_Basis&lt;/parent&gt;
-  &lt;roles&gt;
-    &lt;li&gt;
-      &lt;role&gt;DOOR&lt;/role&gt;
-      &lt;fuer&gt;&lt;li&gt;Wall_Pallisade&lt;/li&gt;&lt;li&gt;CBF_MO_Palisadenturm_A&lt;/li&gt;&lt;/fuer&gt;
-      &lt;chain&gt;&lt;li&gt;DankPyon_RusticDoor&lt;/li&gt;&lt;/chain&gt;
-      &lt;stuffChain&gt;&lt;li&gt;WoodLog&lt;/li&gt;&lt;/stuffChain&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;role&gt;FLOOR_ROAD&lt;/role&gt;
-      &lt;stadtteil&gt;Umland&lt;/stadtteil&gt;
-      &lt;terrainChain&gt;&lt;li&gt;PackedDirt&lt;/li&gt;&lt;/terrainChain&gt;
-    &lt;/li&gt;
-  &lt;/roles&gt;
-&lt;/CustomBaseFramework.MaterialListDef&gt;</code></p>
+<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.MaterialListDef</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;MyMod_Materials&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">label</span>&gt;my mod&lt;/<span class="xt">label</span>&gt;
+  &lt;<span class="xt">parent</span>&gt;CBF_Materialliste_Basis&lt;/<span class="xt">parent</span>&gt;
+  &lt;<span class="xt">roles</span>&gt;
+    &lt;<span class="xt">li</span>&gt;
+      &lt;<span class="xt">role</span>&gt;DOOR&lt;/<span class="xt">role</span>&gt;
+      &lt;<span class="xt">fuer</span>&gt;&lt;<span class="xt">li</span>&gt;Wall_Pallisade&lt;/<span class="xt">li</span>&gt;&lt;<span class="xt">li</span>&gt;CBF_MO_Palisadenturm_A&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">fuer</span>&gt;
+      &lt;<span class="xt">chain</span>&gt;&lt;<span class="xt">li</span>&gt;DankPyon_RusticDoor&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">chain</span>&gt;
+      &lt;<span class="xt">stuffChain</span>&gt;&lt;<span class="xt">li</span>&gt;WoodLog&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">stuffChain</span>&gt;
+    &lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;
+      &lt;<span class="xt">role</span>&gt;FLOOR_ROAD&lt;/<span class="xt">role</span>&gt;
+      &lt;<span class="xt">stadtteil</span>&gt;Umland&lt;/<span class="xt">stadtteil</span>&gt;
+      &lt;<span class="xt">terrainChain</span>&gt;&lt;<span class="xt">li</span>&gt;PackedDirt&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">terrainChain</span>&gt;
+    &lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">roles</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.MaterialListDef</span>&gt;
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -386,22 +437,22 @@ main{padding:40px 48px 80px;min-width:0}
 <h2 id="ruins">Ruins</h2>
 <p>A <code>RuinDef</code> turns a generated settlement into a raided or destroyed one: breaches, burnt rooms, corpses, reduced loot. CBF uses ruins for quest sites. A ruin reaches a map either from a quest node or from a <code>CustomBaseFramework.CBFOrtExtension</code> on a SitePartDef. See <a href="Modding-Quests.html">Modding-Quests</a>.</p>
 <p>CBF's shipped ruin inherits from the abstract <code>CBF_Ruin_Basis</code>, which only sets <code>besatzung</code> to <code>Besatzer</code>. Some fields are left out here:</p>
-<p><code>xml
-&lt;CustomBaseFramework.RuinDef ParentName="CBF_Ruin_Basis"&gt;
-  &lt;defName&gt;CBF_Ruin_Ueberfallen&lt;/defName&gt;
-  &lt;label&gt;raided&lt;/label&gt;
-  &lt;wandAbriss&gt;0.15&lt;/wandAbriss&gt;
-  &lt;haeufung&gt;0.7&lt;/haeufung&gt;
-  &lt;breschen&gt;1~3&lt;/breschen&gt;
-  &lt;torZerstoert&gt;0.5&lt;/torZerstoert&gt;
-  &lt;gebaeudeSchaden&gt;0.1~0.5&lt;/gebaeudeSchaden&gt;
-  &lt;feuer&gt;0~3&lt;/feuer&gt;
-  &lt;beuteFaktor&gt;0.4&lt;/beuteFaktor&gt;
-  &lt;beuteBeiBesatzern&gt;0.5&lt;/beuteBeiBesatzern&gt;
-  &lt;leichenBewohner&gt;4~10&lt;/leichenBewohner&gt;
-  &lt;leichenAngreifer&gt;2~6&lt;/leichenAngreifer&gt;
-  &lt;gefangene&gt;0~3&lt;/gefangene&gt;
-&lt;/CustomBaseFramework.RuinDef&gt;</code></p>
+<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.RuinDef</span> <span class="xa">ParentName</span>=<span class="xw">&quot;CBF_Ruin_Basis&quot;</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Ruin_Ueberfallen&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">label</span>&gt;raided&lt;/<span class="xt">label</span>&gt;
+  &lt;<span class="xt">wandAbriss</span>&gt;0.15&lt;/<span class="xt">wandAbriss</span>&gt;
+  &lt;<span class="xt">haeufung</span>&gt;0.7&lt;/<span class="xt">haeufung</span>&gt;
+  &lt;<span class="xt">breschen</span>&gt;1~3&lt;/<span class="xt">breschen</span>&gt;
+  &lt;<span class="xt">torZerstoert</span>&gt;0.5&lt;/<span class="xt">torZerstoert</span>&gt;
+  &lt;<span class="xt">gebaeudeSchaden</span>&gt;0.1~0.5&lt;/<span class="xt">gebaeudeSchaden</span>&gt;
+  &lt;<span class="xt">feuer</span>&gt;0~3&lt;/<span class="xt">feuer</span>&gt;
+  &lt;<span class="xt">beuteFaktor</span>&gt;0.4&lt;/<span class="xt">beuteFaktor</span>&gt;
+  &lt;<span class="xt">beuteBeiBesatzern</span>&gt;0.5&lt;/<span class="xt">beuteBeiBesatzern</span>&gt;
+  &lt;<span class="xt">leichenBewohner</span>&gt;4~10&lt;/<span class="xt">leichenBewohner</span>&gt;
+  &lt;<span class="xt">leichenAngreifer</span>&gt;2~6&lt;/<span class="xt">leichenAngreifer</span>&gt;
+  &lt;<span class="xt">gefangene</span>&gt;0~3&lt;/<span class="xt">gefangene</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.RuinDef</span>&gt;
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -490,19 +541,19 @@ main{padding:40px 48px 80px;min-width:0}
 </table>
 <h2 id="map-steps">Map steps</h2>
 <p><code>KartenschritteDef</code> lists vanilla or mod map generation steps that CBF skips on maps it builds itself. Only the def named <code>CBF_Kartenschritte</code> is read. To add steps, patch that def instead of writing a new one.</p>
-<p><code>xml
-&lt;CustomBaseFramework.KartenschritteDef&gt;
-  &lt;defName&gt;CBF_Kartenschritte&lt;/defName&gt;
-  &lt;unterdruecken&gt;
-    &lt;li&gt;Roads&lt;/li&gt;
-    &lt;li&gt;ScatterRuinsSimple&lt;/li&gt;
-    &lt;li&gt;AncientTurret&lt;/li&gt;
-    &lt;li&gt;DankPyon_BattlefieldRemains&lt;/li&gt;
-  &lt;/unterdruecken&gt;
-  &lt;nurAbTechstufe&gt;
-    &lt;li&gt;&lt;schritt&gt;SettlementPower&lt;/schritt&gt;&lt;techstufe&gt;Industrial&lt;/techstufe&gt;&lt;/li&gt;
-  &lt;/nurAbTechstufe&gt;
-&lt;/CustomBaseFramework.KartenschritteDef&gt;</code></p>
+<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.KartenschritteDef</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Kartenschritte&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">unterdruecken</span>&gt;
+    &lt;<span class="xt">li</span>&gt;Roads&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;ScatterRuinsSimple&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;AncientTurret&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;DankPyon_BattlefieldRemains&lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">unterdruecken</span>&gt;
+  &lt;<span class="xt">nurAbTechstufe</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">schritt</span>&gt;SettlementPower&lt;/<span class="xt">schritt</span>&gt;&lt;<span class="xt">techstufe</span>&gt;Industrial&lt;/<span class="xt">techstufe</span>&gt;&lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">nurAbTechstufe</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.KartenschritteDef</span>&gt;
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -523,29 +574,29 @@ main{padding:40px 48px 80px;min-width:0}
 </table>
 <p>The filter only applies to maps whose generator contains a <code>CBF_</code> step. If CBF then builds nothing on the map, the skipped steps are run afterwards.</p>
 <p>A patch from your own mod:</p>
-<p><code>xml
-&lt;Patch&gt;
-  &lt;Operation Class="PatchOperationAdd"&gt;
-    &lt;xpath&gt;/Defs/CustomBaseFramework.KartenschritteDef[defName="CBF_Kartenschritte"]/unterdruecken&lt;/xpath&gt;
-    &lt;value&gt;
-      &lt;li&gt;MyMod_ScatterCamps&lt;/li&gt;
-    &lt;/value&gt;
-  &lt;/Operation&gt;
-&lt;/Patch&gt;</code></p>
+<pre><code class="language-xml">&lt;<span class="xt">Patch</span>&gt;
+  &lt;<span class="xt">Operation</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationAdd&quot;</span>&gt;
+    &lt;<span class="xt">xpath</span>&gt;/Defs/CustomBaseFramework.KartenschritteDef[defName=&quot;CBF_Kartenschritte&quot;]/unterdruecken&lt;/<span class="xt">xpath</span>&gt;
+    &lt;<span class="xt">value</span>&gt;
+      &lt;<span class="xt">li</span>&gt;MyMod_ScatterCamps&lt;/<span class="xt">li</span>&gt;
+    &lt;/<span class="xt">value</span>&gt;
+  &lt;/<span class="xt">Operation</span>&gt;
+&lt;/<span class="xt">Patch</span>&gt;
+</code></pre>
 <h2 id="buildability-rules">Buildability rules</h2>
 <p><code>BaubarRegelDef</code> is only read when the mod setting <strong>Make everything buildable</strong> is on. See <a href="Mod-Settings.html">Mod settings</a>. The setting gives every building without an architect category one. The rules decide which category.</p>
-<p><code>xml
-&lt;CustomBaseFramework.BaubarRegelDef&gt;
-  &lt;defName&gt;CBF_Baubar_Ruinen&lt;/defName&gt;
-  &lt;rang&gt;30&lt;/rang&gt;
-  &lt;kategorie&gt;CBF_RuinFurniture&lt;/kategorie&gt;
-  &lt;kategorieLabel&gt;Ruin Furn.&lt;/kategorieLabel&gt;
-  &lt;ordnung&gt;-102&lt;/ordnung&gt;
-  &lt;dateiEnthaelt&gt;
-    &lt;li&gt;Buildings_Ruins&lt;/li&gt;
-    &lt;li&gt;Buildings_Ruined&lt;/li&gt;
-  &lt;/dateiEnthaelt&gt;
-&lt;/CustomBaseFramework.BaubarRegelDef&gt;</code></p>
+<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.BaubarRegelDef</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Baubar_Ruinen&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">rang</span>&gt;30&lt;/<span class="xt">rang</span>&gt;
+  &lt;<span class="xt">kategorie</span>&gt;CBF_RuinFurniture&lt;/<span class="xt">kategorie</span>&gt;
+  &lt;<span class="xt">kategorieLabel</span>&gt;Ruin Furn.&lt;/<span class="xt">kategorieLabel</span>&gt;
+  &lt;<span class="xt">ordnung</span>&gt;-102&lt;/<span class="xt">ordnung</span>&gt;
+  &lt;<span class="xt">dateiEnthaelt</span>&gt;
+    &lt;<span class="xt">li</span>&gt;Buildings_Ruins&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;Buildings_Ruined&lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">dateiEnthaelt</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.BaubarRegelDef</span>&gt;
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -579,12 +630,12 @@ main{padding:40px 48px 80px;min-width:0}
 <p>Buildings that match no rule go into the category <code>CBF_Baubar</code> (label "CBF extra"). Buildings without build cost are skipped.</p>
 <h2 id="help-texts">Help texts</h2>
 <p><code>HilfeDef</code> holds the texts behind the help buttons in the editor. Each button asks for a fixed defName, for example <code>CBF_Help_Wards</code>.</p>
-<p><code>xml
-&lt;CustomBaseFramework.HilfeDef&gt;
-  &lt;defName&gt;CBF_Help_Walls&lt;/defName&gt;
-  &lt;label&gt;Walls&lt;/label&gt;
-  &lt;description&gt;The wall pieces this ward is built from.&lt;/description&gt;
-&lt;/CustomBaseFramework.HilfeDef&gt;</code></p>
+<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.HilfeDef</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Help_Walls&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">label</span>&gt;Walls&lt;/<span class="xt">label</span>&gt;
+  &lt;<span class="xt">description</span>&gt;The wall pieces this ward is built from.&lt;/<span class="xt">description</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.HilfeDef</span>&gt;
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -629,8 +680,8 @@ main{padding:40px 48px 80px;min-width:0}
 <p>Types that list the faction in <code>excludeFactions</code> are skipped. If the faction has any own types, only those are used. General types are only used for factions without own types. CBF's modern town, for example, sets <code>fuerAlleFraktionen</code> and the tech levels <code>Industrial</code>, <code>Spacer</code> and <code>Ultra</code>, so every such faction without own types gets it. A faction with no matching type keeps its vanilla base. Details of the plan fields are on <a href="Modding-Settlements.html">Modding-Settlements</a>.</p>
 <h2 id="world-icons_1">World icons</h2>
 <p>A settlement type sets its world map icon with <code>worldTexture</code>:</p>
-<p><code>xml
-&lt;worldTexture&gt;World/WorldObjects/CBF/CBF_ModernTown&lt;/worldTexture&gt;</code></p>
+<pre><code class="language-xml">&lt;<span class="xt">worldTexture</span>&gt;World/WorldObjects/CBF/CBF_ModernTown&lt;/<span class="xt">worldTexture</span>&gt;
+</code></pre>
 <ul>
 <li>The path is relative to <code>Textures</code> and has no file extension.</li>
 <li>The icon is tinted in the faction colour.</li>
@@ -646,4 +697,4 @@ main{padding:40px 48px 80px;min-width:0}
 <li>Put <code>MayRequire</code> on every def or entry that names content from another mod, or move it into an <code>IfModActive</code> folder.</li>
 <li>Check the log after loading. CBF reports broken references once per def and says what it does instead.</li>
 <li>The full list of fields for every def type is in the <a href="Field-Reference.html">Field reference</a>.</li>
-</ul><div class="schritte"><a href="Compatibility.html"><span>Previous</span>Compatibility</a><a class="weiter" href="Modding-Settlements.html"><span>Next</span>Settlement types in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#your-own-content-mod">Your own content mod</a><a href="#how-the-defs-connect">How the defs connect</a><a href="#wall-profiles">Wall profiles</a><a href="#styles">Styles</a><a href="#material-lists">Material lists</a><a href="#ruins">Ruins</a><a href="#map-steps">Map steps</a><a href="#buildability-rules">Buildability rules</a><a href="#help-texts">Help texts</a><a href="#dungeon-profiles">Dungeon profiles</a><a href="#how-cbf-takes-over-faction-bases">How CBF takes over faction bases</a><a href="#world-icons_1">World icons</a><a href="#tips">Tips</a></div></aside></div></body></html>
+</ul><div class="schritte"><a href="Compatibility.html"><span>Previous</span>Compatibility</a><a class="weiter" href="Modding-Settlements.html"><span>Next</span>Settlement types in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#your-own-content-mod">Your own content mod</a><a class="t3" href="#folder-layout">Folder layout</a><a class="t3" href="#aboutxml">About.xml</a><a class="t3" href="#loadfoldersxml-for-other-mods">LoadFolders.xml for other mods</a><a class="t3" href="#mayrequire">MayRequire</a><a class="t3" href="#world-icons">World icons</a><a class="t3" href="#what-the-editor-writes-for-you">What the editor writes for you</a><a class="t2" href="#how-the-defs-connect">How the defs connect</a><a class="t2" href="#wall-profiles">Wall profiles</a><a class="t3" href="#example">Example</a><a class="t3" href="#nodes">Nodes</a><a class="t3" href="#how-a-profile-is-chosen">How a profile is chosen</a><a class="t2" href="#styles">Styles</a><a class="t3" href="#styledef">StyleDef</a><a class="t3" href="#what-a-style-decides-today">What a style decides today</a><a class="t2" href="#material-lists">Material lists</a><a class="t2" href="#ruins">Ruins</a><a class="t2" href="#map-steps">Map steps</a><a class="t2" href="#buildability-rules">Buildability rules</a><a class="t2" href="#help-texts">Help texts</a><a class="t2" href="#dungeon-profiles">Dungeon profiles</a><a class="t2" href="#how-cbf-takes-over-faction-bases">How CBF takes over faction bases</a><a class="t3" href="#faction-matching">Faction matching</a><a class="t2" href="#world-icons_1">World icons</a><a class="t2" href="#tips">Tips</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

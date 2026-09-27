@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Schlafzelt_B</defName>
+    <label>CBF_Vanilla_Schlafzelt_B</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_Schlafzelt</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+    <legend>
+      <li><symbol>5</symbol><anchor>Kiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
+      <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>j</symbol><thing>Barricade</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>l</symbol><thing>TorchLamp</thing></li>
+      <li><symbol>r</symbol><thing>Bedroll</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
+      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+    </legend>
+    <mask>
+      <li>#######.</li>
+      <li>#######.</li>
+      <li>#######.</li>
+      <li>########</li>
+      <li>..####..</li>
+    </mask>
+    <terrain>
+      <li>wwwwwww.</li>
+      <li>w.....w.</li>
+      <li>w.....w.</li>
+      <li>w.....w.</li>
+      <li>........</li>
+    </terrain>
+    <things>
+      <li>OOOOOOO.</li>
+      <li>O.a...O.</li>
+      <li>Or.r.rO.</li>
+      <li>O....lOj</li>
+      <li>........</li>
+    </things>
+    <roof>
+      <li>^^^^^^^.</li>
+      <li>^^^^^^^.</li>
+      <li>^^^^^^^.</li>
+      <li>^^^^^^^.</li>
+      <li>........</li>
+    </roof>
+    <anchors>
+      <li>........</li>
+      <li>..5.....</li>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

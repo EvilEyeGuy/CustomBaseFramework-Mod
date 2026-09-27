@@ -9,15 +9,17 @@
       <li>CBF_MO_Schrein</li>
     </categories>
     <style>CBF_Medieval</style>
-    <traufen>true</traufen>
     <legend>
-      <li><symbol>A</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>H</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_RoyalColumn</thing><stuff>BlocksMarble</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
+      <li>#####</li>
+      <li>#####</li>
       <li>#####</li>
       <li>#####</li>
       <li>#####</li>
@@ -26,17 +28,30 @@
       <li>.....</li>
       <li>.....</li>
       <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
     </terrain>
     <things>
       <li>SSSSS</li>
-      <li>SYAYS</li>
-      <li>.I.I.</li>
+      <li>S...S</li>
+      <li>S...S</li>
+      <li>Sa..S</li>
+      <li>YI.IY</li>
     </things>
     <roof>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
+      <li>.....</li>
+      <li>.^^^.</li>
+      <li>.^^^.</li>
+      <li>.^^^.</li>
       <li>.^^^.</li>
     </roof>
+    <anchors>
+      <li>.....</li>
+      <li>.HHH.</li>
+      <li>.HHH.</li>
+      <li>.HHH.</li>
+      <li>.....</li>
+    </anchors>
   </CustomBaseFramework.PieceDef>
 
 </Defs>

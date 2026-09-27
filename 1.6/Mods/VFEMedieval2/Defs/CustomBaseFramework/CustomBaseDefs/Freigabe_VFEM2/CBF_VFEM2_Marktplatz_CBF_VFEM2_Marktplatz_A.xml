@@ -18,10 +18,12 @@
       <li><symbol>i</symbol><anchor>StandB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
       <li><symbol>j</symbol><anchor>Haendler</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>k</symbol><thing>Beer</thing><count>10</count></li>
-      <li><symbol>l</symbol><anchor>StandC</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
-      <li><symbol>m</symbol><anchor>StandD</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
-      <li><symbol>n</symbol><thing>Cloth</thing><count>20</count></li>
-      <li><symbol>o</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>l</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
+      <li><symbol>m</symbol><anchor>StandC</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
+      <li><symbol>n</symbol><anchor>StandD</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
+      <li><symbol>o</symbol><thing>Cloth</thing><count>20</count></li>
+      <li><symbol>p</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>q</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>..##########..</li>
@@ -54,16 +56,16 @@
     <things>
       <li>.....f........</li>
       <li>.....f.......f</li>
-      <li>.o........o...</li>
+      <li>.p........p...</li>
       <li>..............</li>
       <li>..............</li>
       <li>k..a..........</li>
       <li>......b...a..k</li>
       <li>..............</li>
       <li>..............</li>
-      <li>.o........o...</li>
-      <li>.......n......</li>
-      <li>.......n......</li>
+      <li>.p....q...p...</li>
+      <li>.......o......</li>
+      <li>.......o......</li>
     </things>
     <roof>
       <li>..............</li>
@@ -87,9 +89,9 @@
       <li>........j.....</li>
       <li>..............</li>
       <li>..............</li>
-      <li>..............</li>
-      <li>..............</li>
-      <li>.lll......mmm.</li>
+      <li>......lll.....</li>
+      <li>......lll.....</li>
+      <li>.mmm..lll.nnn.</li>
       <li>..............</li>
       <li>..............</li>
     </anchors>

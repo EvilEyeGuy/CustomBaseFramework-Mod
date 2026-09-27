@@ -9,15 +9,17 @@
       <li>CBF_VFEM2_Schrein</li>
     </categories>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
     <legend>
       <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
-      <li><symbol>b</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
-      <li><symbol>f</symbol><thing>Column</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>b</symbol><thing>Column</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>f</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
+      <li><symbol>g</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
+      <li>#####</li>
+      <li>#####</li>
       <li>#####</li>
       <li>#####</li>
       <li>#####</li>
@@ -26,17 +28,30 @@
       <li>.....</li>
       <li>.....</li>
       <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
     </terrain>
     <things>
       <li>SSSSS</li>
-      <li>SabaS</li>
-      <li>.f.f.</li>
+      <li>S...S</li>
+      <li>S...S</li>
+      <li>Sg..S</li>
+      <li>ab.ba</li>
     </things>
     <roof>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
+      <li>.....</li>
+      <li>.^^^.</li>
+      <li>.^^^.</li>
+      <li>.^^^.</li>
       <li>.^^^.</li>
     </roof>
+    <anchors>
+      <li>.....</li>
+      <li>.fff.</li>
+      <li>.fff.</li>
+      <li>.fff.</li>
+      <li>.....</li>
+    </anchors>
   </CustomBaseFramework.PieceDef>
 
 </Defs>

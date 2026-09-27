@@ -12,13 +12,12 @@
     <traufen>true</traufen>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>H</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><terrain>DankPyon_Floor_Lys_White</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_CultPedestal</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_AncientReliquary</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
-      <li><symbol>r</symbol><anchor>Reliquienschrein</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Reliquienschrein</objects></li>
+      <li><symbol>a</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>#####</li>
@@ -39,8 +38,8 @@
     <things>
       <li>SSSSS</li>
       <li>S...S</li>
+      <li>S...S</li>
       <li>Sa..S</li>
-      <li>SU..S</li>
       <li>SY.YS</li>
       <li>SSFSS</li>
     </things>
@@ -54,9 +53,9 @@
     </roof>
     <anchors>
       <li>.....</li>
-      <li>.rrr.</li>
-      <li>.rrr.</li>
-      <li>.....</li>
+      <li>.HHH.</li>
+      <li>.HHH.</li>
+      <li>.HHH.</li>
       <li>.....</li>
       <li>.....</li>
     </anchors>

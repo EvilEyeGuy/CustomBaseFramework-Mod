@@ -16,10 +16,10 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_LogTable1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_Candelabra</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>H</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_RusticDoor1x2c</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><terrain>DankPyon_Floor_Lys_White</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_CultPedestal</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
-      <li><symbol>Q</symbol><thing>SculptureLarge</thing><stuff>BlocksMarble</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RugRoyal_Lys2x3c</thing><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_CultPedestal</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
@@ -27,10 +27,9 @@
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><anchor>AltargefaessA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><obenauf>true</obenauf></li>
       <li><symbol>b</symbol><anchor>AltargefaessB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><obenauf>true</obenauf></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_AncientReliquary</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>f</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutShelfFilledBook</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>r</symbol><anchor>Reliquienschrein</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Reliquienschrein</objects></li>
       <li><symbol>s</symbol><anchor>Schreibregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Schreibregal</objects></li>
     </legend>
     <mask>
@@ -76,8 +75,8 @@
       <li>....SR..S....</li>
       <li>SSSSS...SSSSS</li>
       <li>S...Y...Y..gS</li>
-      <li>Sf..........S</li>
-      <li>SQ..P....i.US</li>
+      <li>S...........S</li>
+      <li>Sf..P....i.US</li>
       <li>SSSS.....SSSS</li>
       <li>...S.B...S...</li>
       <li>...S.B...S...</li>
@@ -129,9 +128,9 @@
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
-      <li>.rrr.......1.</li>
-      <li>.rrr..8......</li>
-      <li>.........ss..</li>
+      <li>.HHH.......1.</li>
+      <li>.HHH..8......</li>
+      <li>.HHH.....ss..</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>

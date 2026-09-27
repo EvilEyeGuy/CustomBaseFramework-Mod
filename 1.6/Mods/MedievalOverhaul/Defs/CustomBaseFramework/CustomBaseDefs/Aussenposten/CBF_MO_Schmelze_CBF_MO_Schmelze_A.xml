@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Schmelze_A</defName>
+    <label>CBF_MO_Schmelze_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Schmelze</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>6</symbol><anchor>Erzfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Erzfass</objects></li>
+      <li><symbol>8</symbol><anchor>Arbeiter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>9</symbol><anchor>Werkzeug</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Werkstatt</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_Anvil</thing><stuff>Steel</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_Smelter</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Bellows</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_HideoutBarrelIronOre</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutCrate1x2c</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_BarrelIronOre</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>q</symbol><thing>DankPyon_BarrelCoalOre</thing><stuff>WoodLog</stuff></li>
+    </legend>
+    <mask>
+      <li>..#########....</li>
+      <li>..############.</li>
+      <li>..############.</li>
+      <li>##############.</li>
+      <li>##############.</li>
+      <li>##############.</li>
+      <li>#######........</li>
+      <li>#######........</li>
+      <li>.#####.........</li>
+    </mask>
+    <terrain>
+      <li>..eeeeeeeee....</li>
+      <li>..eeeeeeeee....</li>
+      <li>..eeeeeeeee....</li>
+      <li>eeeeeeeeeee....</li>
+      <li>eeeeeeeeeee....</li>
+      <li>eeeeeeeeeee....</li>
+      <li>eeeeeee........</li>
+      <li>eeeeeee........</li>
+      <li>...............</li>
+    </terrain>
+    <things>
+      <li>..SSSSSSSSS....</li>
+      <li>..S...b.q.S..I.</li>
+      <li>..S.M....AS.j..</li>
+      <li>SSS.......S.j..</li>
+      <li>S.f.......F....</li>
+      <li>S.....SSSSS..I.</li>
+      <li>Sg....S........</li>
+      <li>SSSFSSS........</li>
+      <li>...............</li>
+    </things>
+    <roof>
+      <li>..^^^^^^^^^....</li>
+      <li>..^^^^^^^^^^^^.</li>
+      <li>..^^^^^^^^^^^^.</li>
+      <li>^^^^^^^^^^^^^^.</li>
+      <li>^^^^^^^^^^^^^^.</li>
+      <li>^^^^^^^^^^^^^^.</li>
+      <li>^^^^^^^........</li>
+      <li>^^^^^^^........</li>
+      <li>...............</li>
+    </roof>
+    <anchors>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>.......8.......</li>
+      <li>..6............</li>
+      <li>...............</li>
+      <li>.99............</li>
+      <li>...............</li>
+      <li>...............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

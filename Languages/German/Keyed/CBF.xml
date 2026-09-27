@@ -48,7 +48,7 @@
   <CBF_Field_size>Größe</CBF_Field_size>
   <CBF_FieldDesc_size>Breite mal Höhe in Feldern, aus der gezeichneten Fläche.</CBF_FieldDesc_size>
   <CBF_Field_style>Stil</CBF_Field_style>
-  <CBF_FieldDesc_style>Alte Zuordnung für Paletten und Mauerprofile. Beschränkt die Auswahl der Stücke nicht.</CBF_FieldDesc_style>
+  <CBF_FieldDesc_style>Altes Feld. Wählt nur noch das Mauerprofil und die Standardmaterialien. Beschränkt die Auswahl der Stücke nicht.</CBF_FieldDesc_style>
   <CBF_Field_categories>Kategorien</CBF_Field_categories>
   <CBF_FieldDesc_categories>Was dieses Stück ist. Die erste ist die primäre: bei Widerspruch gewinnen ihre Regeln, Feld für Feld, dann ihre Eltern, dann die nächste Kategorie.</CBF_FieldDesc_categories>
   <CBF_Field_allowRotation>Drehbar</CBF_Field_allowRotation>
@@ -87,20 +87,14 @@
   <CBF_FieldDesc_chain>Die ganze Kette, vom nächsten Elternteil nach außen.</CBF_FieldDesc_chain>
   <CBF_Field_pieceCount>Stücke</CBF_Field_pieceCount>
   <CBF_FieldDesc_pieceCount>Wie viele Stücke dazugehören, über die ganze Kette gezählt.</CBF_FieldDesc_pieceCount>
-  <CBF_Field_palette>Palette</CBF_Field_palette>
-  <CBF_FieldDesc_palette>Welche Palette die Rollen dieses Stils zu Dingen und Boden auflöst.</CBF_FieldDesc_palette>
+  <CBF_Field_materialList>Materialliste</CBF_Field_materialList>
+  <CBF_FieldDesc_materialList>Welche Materialliste dieser Ortstyp für Wände, Böden, Türen, Tore und die übrigen Rollen nimmt.</CBF_FieldDesc_materialList>
   <CBF_Field_fallback>Fällt zurück auf</CBF_Field_fallback>
   <CBF_FieldDesc_fallback>Wird benutzt, wenn dieser Stil zu einer Rolle nichts hat.</CBF_FieldDesc_fallback>
   <CBF_Field_needsRoadAccess>Braucht Straße</CBF_Field_needsRoadAccess>
   <CBF_FieldDesc_needsRoadAccess>Muss vom Wegenetz aus erreichbar sein.</CBF_FieldDesc_needsRoadAccess>
   <CBF_Field_unique>Nur einmal</CBF_Field_unique>
   <CBF_FieldDesc_unique>Höchstens eines je Siedlung.</CBF_FieldDesc_unique>
-  <CBF_Field_outsideOnly>Nur draußen</CBF_Field_outsideOnly>
-  <CBF_FieldDesc_outsideOnly>Niemals innerhalb der Mauern.</CBF_FieldDesc_outsideOnly>
-  <CBF_Field_outsideOk>Draußen erlaubt</CBF_Field_outsideOk>
-  <CBF_FieldDesc_outsideOk>Darf außerhalb der Mauern stehen.</CBF_FieldDesc_outsideOk>
-  <CBF_Field_landmark>Wahrzeichen</CBF_Field_landmark>
-  <CBF_FieldDesc_landmark>Wird früh und auffällig gesetzt.</CBF_FieldDesc_landmark>
   <CBF_Field_wallContact>An der Mauer</CBF_Field_wallContact>
   <CBF_FieldDesc_wallContact>Muss an der Stadtmauer stehen.</CBF_FieldDesc_wallContact>
   <CBF_Field_prefGate>Zum Tor</CBF_Field_prefGate>
@@ -111,8 +105,6 @@
   <CBF_FieldDesc_prefWall>Wie stark es an die Mauer möchte.</CBF_FieldDesc_prefWall>
   <CBF_Field_prefMain>An die Hauptstraße</CBF_Field_prefMain>
   <CBF_FieldDesc_prefMain>Wie stark es an die Hauptstraße möchte.</CBF_FieldDesc_prefMain>
-  <CBF_Field_prefSpread>Auseinander</CBF_Field_prefSpread>
-  <CBF_FieldDesc_prefSpread>Wie stark diese einander ausweichen.</CBF_FieldDesc_prefSpread>
   <CBF_Field_mask>Umriss</CBF_Field_mask>
   <CBF_FieldDesc_mask>Welche Zellen überhaupt zum Stück gehören. Alles außerhalb bleibt unberührt.</CBF_FieldDesc_mask>
   <CBF_Field_terrain>Boden</CBF_Field_terrain>
@@ -135,8 +127,6 @@
   <CBF_FieldDesc_contentZones>Was in welche Inhaltszone kommt: welche Beutetabelle, welche Gebäudekategorie.</CBF_FieldDesc_contentZones>
   <CBF_Field_legend>Legende</CBF_Field_legend>
   <CBF_FieldDesc_legend>Was jedes Zeichen in den Ebenen bedeutet: ein Ding, ein Boden, eine Rolle.</CBF_FieldDesc_legend>
-  <CBF_Field_sockets>Anschlüsse</CBF_Field_sockets>
-  <CBF_FieldDesc_sockets>Benannte Stellen, an die andere Stücke andocken können.</CBF_FieldDesc_sockets>
   <CBF_Field_placement>Platzierungsregeln</CBF_Field_placement>
   <CBF_FieldDesc_placement>Übersteuert die Regeln der Kategorie für dieses eine Stück. Ohne den Block entscheidet die Kategorie.</CBF_FieldDesc_placement>
   <CBF_Field_schemaVersion>Schemaversion</CBF_Field_schemaVersion>
@@ -153,8 +143,6 @@
   <CBF_FieldDesc_weight>Wie wahrscheinlich das gegenüber seinesgleichen gezogen wird. Gehört an die Siedlung, nicht an das Stück.</CBF_FieldDesc_weight>
   <CBF_Field_mapSize>Kartengröße</CBF_Field_mapSize>
   <CBF_FieldDesc_mapSize>Wie groß die Karte ist, auf der diese Siedlung entsteht.</CBF_FieldDesc_mapSize>
-  <CBF_Field_wallDepth>Mauerdicke</CBF_Field_wallDepth>
-  <CBF_FieldDesc_wallDepth>0 keine Mauer, 1 Palisade, 3 Wand mit Wehrgang zwischen zwei Wänden, 5 breite Festungsmauer.</CBF_FieldDesc_wallDepth>
   <CBF_Field_towerCorner>Größe der Ecktürme</CBF_Field_towerCorner>
   <CBF_FieldDesc_towerCorner>Kantenlänge eines Eckturms, gemessen auf der Mittellinie des Mauerbands.</CBF_FieldDesc_towerCorner>
   <CBF_Field_towerCurtain>Größe der Kurtinentürme</CBF_Field_towerCurtain>
@@ -189,12 +177,6 @@
   <CBF_FieldDesc_roadMain>Breite der Hauptstraße. Es gibt bewusst nur zwei Breiten, mehr zerschneidet die Karte optisch.</CBF_FieldDesc_roadMain>
   <CBF_Field_roadLane>Breite der Gassen</CBF_Field_roadLane>
   <CBF_FieldDesc_roadLane>Breite der Nebengassen.</CBF_FieldDesc_roadLane>
-  <CBF_Field_widenings>Aufweitungen</CBF_Field_widenings>
-  <CBF_FieldDesc_widenings>An wie vielen Stellen sich der Weg zu einem Platz weitet.</CBF_FieldDesc_widenings>
-  <CBF_Field_coverageBuild>Bebauungsanteil</CBF_Field_coverageBuild>
-  <CBF_FieldDesc_coverageBuild>Wie viel der nutzbaren Fläche Gebäude bekommt.</CBF_FieldDesc_coverageBuild>
-  <CBF_Field_gardenShare>Gartenanteil</CBF_Field_gardenShare>
-  <CBF_FieldDesc_gardenShare>0 lässt blanken Hof, 1 gibt jeder freien Fläche Beete.</CBF_FieldDesc_gardenShare>
   <CBF_Field_minBuildingGap>Kleinster Gebäudeabstand</CBF_Field_minBuildingGap>
   <CBF_FieldDesc_minBuildingGap>0 lässt das Framework aus den geladenen Mods entscheiden.</CBF_FieldDesc_minBuildingGap>
   <CBF_Field_maxBuildingGap>Größter Gebäudeabstand</CBF_Field_maxBuildingGap>
@@ -204,7 +186,7 @@
   <CBF_Field_budget>Budget</CBF_Field_budget>
   <CBF_FieldDesc_budget>Welche Kategorien die Siedlung will, wie viele davon und welchen Flächenanteil.</CBF_FieldDesc_budget>
   <CBF_Field_styles>Stile</CBF_Field_styles>
-  <CBF_FieldDesc_styles>Alte Zuordnung für Paletten und Mauerprofile; kein Filter für Stücke.</CBF_FieldDesc_styles>
+  <CBF_FieldDesc_styles>Altes Feld. Wählt nur noch das Mauerprofil und die Standardmaterialien. Kein Filter für Stücke.</CBF_FieldDesc_styles>
   <CBF_Field_emplacements>Verteidigungsstellungen</CBF_Field_emplacements>
   <CBF_FieldDesc_emplacements>Welche Stücke als Türme, Geschützstellungen und dergleichen dienen dürfen.</CBF_FieldDesc_emplacements>
   <CBF_Field_gatehouses>Torhäuser</CBF_Field_gatehouses>
@@ -232,7 +214,7 @@
   <CBF_Field_defenderGroupKind>Verteidigergruppe</CBF_Field_defenderGroupKind>
   <CBF_FieldDesc_defenderGroupKind>Aus welcher Gruppenart die Verteidiger kommen. Leer heißt Settlement, dann Combat.</CBF_FieldDesc_defenderGroupKind>
   <CBF_Field_roles>Rollen</CBF_Field_roles>
-  <CBF_FieldDesc_roles>Welche Rolle diese Palette zu welchem Ding oder Boden auflöst.</CBF_FieldDesc_roles>
+  <CBF_FieldDesc_roles>Welches Ding oder welchen Boden jede Bauteil-Rolle bekommt.</CBF_FieldDesc_roles>
   <CBF_Field_members>Mitglieder</CBF_Field_members>
   <CBF_FieldDesc_members>Welche Gebäude zu dieser Lootkategorie gehören.</CBF_FieldDesc_members>
   <CBF_DistrictEmpty>Hier ist noch nichts drin.</CBF_DistrictEmpty>
@@ -360,9 +342,9 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_GroundNaturalGroup>gewachsen</CBF_GroundNaturalGroup>
   <CBF_GroundBuiltGroup>gebaut</CBF_GroundBuiltGroup>
   <CBF_Field_roads>Wege</CBF_Field_roads>
-  <CBF_FieldDesc_roads>Der Belag der Gassen, Plätze und Tordurchfahrten in diesem Stadtteil. Leer heißt: es bleibt beim Belag der Palette.</CBF_FieldDesc_roads>
+  <CBF_FieldDesc_roads>Der Belag der Gassen, Plätze und Tordurchfahrten in diesem Stadtteil. Leer heißt Standardbelag.</CBF_FieldDesc_roads>
   <CBF_AddRoad>+ Weg</CBF_AddRoad>
-  <CBF_RoadsDefault>Leer, also bleibt der Belag der Palette.</CBF_RoadsDefault>
+  <CBF_RoadsDefault>Leer, also bleibt der Standardbelag.</CBF_RoadsDefault>
   <CBF_NewProject>Neuer Mod</CBF_NewProject>
   <CBF_OpenProject>Mod öffnen</CBF_OpenProject>
   <CBF_ShowProjectFolder>Modordner zeigen</CBF_ShowProjectFolder>
@@ -724,9 +706,13 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_Field_garrison>Garnison</CBF_Field_garrison>
   <CBF_Field_kind>Ortsart</CBF_Field_kind>
   <CBF_Au_S_Role>Rolle {0}</CBF_Au_S_Role>
-  <CBF_Au_RoleUnserved>von keiner Palette bedient, genutzt von {0}</CBF_Au_RoleUnserved>
+  <CBF_Au_RoleUnserved>hat in keiner Materialliste ein Ding, genutzt von {0}</CBF_Au_RoleUnserved>
   <CBF_Au_S_Style>Stil {0}</CBF_Au_S_Style>
-  <CBF_Au_NoPalette>findet keine brauchbare Palette.</CBF_Au_NoPalette>
+  <CBF_Au_NoMaterialList>nennt keine Materialliste und ist abgeschaltet.</CBF_Au_NoMaterialList>
+  <CBF_Au_PlanListUnusable>nutzt die Materialliste {0}, die unbrauchbar ist.</CBF_Au_PlanListUnusable>
+  <CBF_Au_MaterialListUnusable>unbrauchbar, Pflichtrollen ohne vorhandenes Ding: {0}</CBF_Au_MaterialListUnusable>
+  <CBF_Au_RoleMissingInList>Rolle {0} fehlt in der Materialliste {1}, genutzt von {2}</CBF_Au_RoleMissingInList>
+  <CBF_Au_S_MaterialList>Materialliste {0}</CBF_Au_S_MaterialList>
   <CBF_Au_S_LootTable>Beutetabelle {0}</CBF_Au_S_LootTable>
   <CBF_Au_LootNoEntry>hat keinen brauchbaren Eintrag mehr.</CBF_Au_LootNoEntry>
   <CBF_Au_LootDead>{0} Einträge sind weggefallen.</CBF_Au_LootDead>
@@ -736,8 +722,6 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_Au_S_Plan>Ortstyp {0}</CBF_Au_S_Plan>
   <CBF_Au_NoPieceWithTag>kein einziges Stück mit Kategorie {0}.</CBF_Au_NoPieceWithTag>
   <CBF_Au_S_Dungeon>Verliesprofil {0}</CBF_Au_S_Dungeon>
-  <CBF_Au_NoRoomWithTag>kein Raummodul mit Kategorie {0}, das Verlies bleibt ungenutzt.</CBF_Au_NoRoomWithTag>
-  <CBF_Au_LootTableGone>Die Beutetabelle {0} gibt es nicht.</CBF_Au_LootTableGone>
   <CBF_Au_S_WallProfile>Mauerprofil {0}</CBF_Au_S_WallProfile>
   <CBF_Au_WallNoStrip>hat keinen brauchbaren Streifen, die Mauer entsteht aus Rollen.</CBF_Au_WallNoStrip>
   <CBF_Au_WallStripHole>Streifen {0} hat kein Ding in der Außenschale. Die Mauer bekommt dort ein Loch.</CBF_Au_WallStripHole>
@@ -758,7 +742,7 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_Au_NoCategory>hat keine einzige Kategorie.</CBF_Au_NoCategory>
   <CBF_Au_NoGrid>hat kein Raster.</CBF_Au_NoGrid>
   <CBF_Au_MissingSymbols>Zu den Zeichen {0} gibt es keinen Legendeneintrag. Meist fehlt der Mod, aus dem sie stammen. Das Stück wird deshalb nicht gesetzt.</CBF_Au_MissingSymbols>
-  <CBF_Au_RoleNotServed>nutzt die Rolle {0}, die keine Palette bedient.</CBF_Au_RoleNotServed>
+  <CBF_Au_RoleNotServed>nutzt die Rolle {0}, die keine Materialliste füllt.</CBF_Au_RoleNotServed>
   <CBF_Au_ZoneListGone>Inhaltszone {0} nennt die Objektliste {1}, die es nicht gibt.</CBF_Au_ZoneListGone>
   <CBF_Au_ZoneListEmpty>Inhaltszone {0} nutzt {1}, darin gibt es kein einziges Gebäude mehr.</CBF_Au_ZoneListEmpty>
   <CBF_Au_ZoneTableGone>Inhaltszone {0} nennt die Beutetabelle {1}, die es nicht gibt.</CBF_Au_ZoneTableGone>
@@ -774,10 +758,18 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_Au_CategoryEmpty>hat kein einziges Stück.</CBF_Au_CategoryEmpty>
   <CBF_Au_Draft>Entwurf</CBF_Au_Draft>
   <CBF_Au_Unreadable>lässt sich nicht als Definition lesen. Einzelheiten stehen im Log.</CBF_Au_Unreadable>
-  <CBF_Au_S_Palettes>Paletten</CBF_Au_S_Palettes>
-  <CBF_Au_NoPaletteAtAll>keine einzige brauchbare Palette, es wird nichts erzeugt.</CBF_Au_NoPaletteAtAll>
+  <CBF_Au_S_MaterialLists>Materiallisten</CBF_Au_S_MaterialLists>
+  <CBF_Au_NoMaterialListAtAll>gar keine brauchbare Materialliste, es wird nichts erzeugt.</CBF_Au_NoMaterialListAtAll>
   <CBF_LeaveForeignSettlements>Siedlungen anderer Siedlungsmods nicht anfassen</CBF_LeaveForeignSettlements>
   <CBF_LeaveForeignSettlementsHelp>Siedlungen, die ein anderer Mod mit eigenem Kartengenerator baut, behalten ihn. Vasallenkolonien von Empire bekommen keine CBF-Siedlungen und keine CBF-Quests.</CBF_LeaveForeignSettlementsHelp>
   <CBF_WdTakeOver>World-Domination-Orte mit CBF bauen</CBF_WdTakeOver>
   <CBF_WdTakeOverHelp>CBF ersetzt die Layouts von World Domination 2.0 und wählt den Ortstyp nach der World-Domination-Stufe. Aus: CBF lässt World-Domination-Orte in Ruhe.</CBF_WdTakeOverHelp>
+  <CBF_S_FieldsNoEffect>Äcker wirken nur in Vorstadt und Umland. In diesem Stadtteil werden sie nicht angelegt.</CBF_S_FieldsNoEffect>
+  <CBF_S_PensNoEffect>Gehege wirken nur im Umland. In diesem Stadtteil werden sie nicht angelegt.</CBF_S_PensNoEffect>
+  <CBF_SearchSite>Ort durchsuchen</CBF_SearchSite>
+  <CBF_SearchSiteDesc>Markiert alle geschlossenen Behälter dieses Orts zum Öffnen. Die Kolonisten öffnen sie dann einen nach dem anderen.</CBF_SearchSiteDesc>
+  <CBF_SearchSiteEnemies>Auf der Karte stehen noch Feinde.</CBF_SearchSiteEnemies>
+  <CBF_SearchSiteDone>{0} Behälter zum Öffnen markiert.</CBF_SearchSiteDone>
+  <CBF_SearchSiteNone>Keine geschlossenen Behälter mehr zum Markieren.</CBF_SearchSiteNone>
+  <CBF_SearchSiteFog>{0} weitere liegen in unerkundeten Räumen. Nach dem Erkunden erneut drücken.</CBF_SearchSiteFog>
 </LanguageData>

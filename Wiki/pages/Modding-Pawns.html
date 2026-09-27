@@ -1,0 +1,409 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Modding: pawns, garrisons and unit swap · Custom Base Framework</title><style>
+:root{--grund:#f4f3ef;--karte:#ffffff;--linie:#e3e0d8;--text:#1f2124;--leise:#63676e;--akzent:#2f6f60;--akzentweich:#e3efeb;--ocker:#b27a17;--code:#f0eee8;--schatten:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06)}
+@media (prefers-color-scheme: dark){:root{--grund:#121417;--karte:#1a1d22;--linie:#2c3139;--text:#e6e4df;--leise:#99a0aa;--akzent:#7cc0aa;--akzentweich:#1f2f2b;--ocker:#d9ab55;--code:#24282f;--schatten:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--grund);color:var(--text);font:16px/1.65 "Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--akzent);text-underline-offset:3px}
+.inhalt h1{font-size:2.1rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.inhalt h2{font-size:1.35rem;letter-spacing:-.01em;margin:44px 0 10px}
+.inhalt h3{font-size:1.08rem;margin:28px 0 8px}
+.inhalt p,.inhalt li{max-width:74ch}
+.inhalt>p:first-of-type{font-size:1.08rem;color:var(--leise)}
+code{font-family:"Cascadia Mono",Consolas,monospace;font-size:.86em;background:var(--code);padding:2px 6px;border-radius:5px}
+.bild{display:block;margin:18px 0 22px}
+.bild img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--linie);box-shadow:var(--schatten)}
+.bild:hover img{border-color:var(--akzent)}
+.inhalt ol{list-style:none;padding:0;counter-reset:n;margin:12px 0 18px}
+.inhalt ol>li{counter-increment:n;position:relative;padding-left:40px;margin:10px 0}
+.inhalt ol>li::before{content:counter(n);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--ocker);color:#1b1b1b;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.inhalt ul{padding-left:20px}
+.inhalt ul>li{margin:6px 0}
+.inhalt ul>li::marker{color:var(--akzent)}
+table{border-collapse:separate;border-spacing:0;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto;border:1px solid var(--linie);border-radius:10px}
+th,td{padding:8px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--linie)}
+tr:last-child td{border-bottom:0}
+th{background:var(--code);font-weight:600;position:sticky;top:0}
+td code{white-space:nowrap}
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:56px;padding-top:20px;border-top:1px solid var(--linie)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--linie);background:var(--karte);border-radius:10px;padding:12px 16px;color:var(--text)}
+.schritte a:hover{border-color:var(--akzent)}
+.schritte span{display:block;font-size:12px;color:var(--leise);text-transform:uppercase;letter-spacing:.06em}
+.schritte .weiter{text-align:right;margin-left:auto}
+.home .inhalt ol{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;max-width:none}
+.home .inhalt ol>li{margin:0;background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:14px 16px 14px 54px;max-width:none;box-shadow:var(--schatten)}
+.home .inhalt ol>li::before{left:16px;top:16px}
+.home .inhalt ol>li a{font-weight:600}
+.home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
+.pfad{font-size:13px;color:var(--leise);margin-bottom:6px}
+.pfad a{color:var(--leise)}
+.aufseite{font-size:13px}
+.aufseite b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--leise);margin-bottom:8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:4px 0 4px 12px;border-left:2px solid var(--linie)}
+.aufseite a:hover{color:var(--akzent);border-left-color:var(--akzent)}
+
+.rahmen{display:grid;grid-template-columns:260px minmax(0,1fr) 200px;gap:0;max-width:1400px;margin:0 auto}
+.leiste{position:sticky;top:0;height:100vh;overflow:auto;padding:22px 18px;border-right:1px solid var(--linie)}
+.marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
+.marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
+.marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
+.gruppe{margin:0 0 18px}
+.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
+.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
+.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
+.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
+.gruppe b i img{width:20px;height:20px;object-fit:contain}
+.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
+.gruppe a:hover{background:var(--akzentweich)}
+.gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
+main{padding:40px 48px 80px;min-width:0}
+.inhalt{max-width:860px}
+.rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
+@media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
+@media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html" class="hier">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="modding-pawns-garrisons-and-unit-swap">Modding: pawns, garrisons and unit swap</h1>
+<p>This page shows how to write the people and animals of a CBF settlement in XML. For the editor tabs see <a href="Pawns.html">Pawns</a>, <a href="Unit-Swap.html">Unit swap</a> and <a href="Settlements.html">Settlements</a>. Every field is listed in the <a href="Field-Reference.html">Field reference</a>.</p>
+<h2 id="who-lives-in-a-settlement">Who lives in a settlement</h2>
+<p>A CBF settlement gets its pawns from four sources.</p>
+<ul>
+<li><strong>Garrison per ward.</strong> Each ward of a settlement type can name pawn lists with a count and a post. These are the soldiers of that ward.</li>
+<li><strong>Defender points.</strong> A ward without garrison entries takes its share of the settlement type's <code>defenderPoints</code>. Those pawns come from the faction's own pawn group makers.</li>
+<li><strong>Pawn anchors in pieces.</strong> A piece can mark cells where pawns stand: a guard in a barracks, a trader at a stall, a crew at a catapult.</li>
+<li><strong>Pen animals.</strong> A pen in a ward or district names a pawn list of animals.</li>
+</ul>
+<p>All humanlike pawns pass through <a href="#unit-swap">unit swap</a> before they spawn. A neutral archer in a list can therefore become the archer of the faction that owns the settlement.</p>
+<p>Pawns are only placed for settlements of a non-player faction.</p>
+<h2 id="pawn-lists">Pawn lists</h2>
+<p>A pawn list is a weighted list of pawn kinds with a role and a radius. Garrisons, pawn anchors, pens and object lists all name pawn lists by <code>defName</code>.</p>
+<h3 id="example">Example</h3>
+<p>From <code>LootDefs/CBF_PawnLists.xml</code>:</p>
+<p><code>xml
+&lt;CustomBaseFramework.PawnListDef&gt;
+  &lt;defName&gt;CBF_Vanilla_Garrison&lt;/defName&gt;
+  &lt;label&gt;garrison&lt;/label&gt;
+  &lt;rolle&gt;Wache&lt;/rolle&gt;
+  &lt;radius&gt;10&lt;/radius&gt;
+  &lt;members&gt;
+    &lt;li&gt;&lt;kind&gt;CBF_Modern_Schuetze&lt;/kind&gt;&lt;weight&gt;4&lt;/weight&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;kind&gt;CBF_Modern_Stuermer&lt;/kind&gt;&lt;weight&gt;2&lt;/weight&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;kind&gt;CBF_Modern_Scharfschuetze&lt;/kind&gt;&lt;weight&gt;1&lt;/weight&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;kind&gt;CBF_Modern_Grenadier&lt;/kind&gt;&lt;weight&gt;1&lt;/weight&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;kind&gt;CBF_Modern_Offizier&lt;/kind&gt;&lt;weight&gt;1&lt;/weight&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;kind&gt;CBF_Modern_Spacer_Schuetze&lt;/kind&gt;&lt;weight&gt;4&lt;/weight&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;kind&gt;CBF_Modern_Spacer_Scharfschuetze&lt;/kind&gt;&lt;weight&gt;1&lt;/weight&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;kind&gt;CBF_Modern_Spacer_Stuermer&lt;/kind&gt;&lt;weight&gt;2&lt;/weight&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;kind&gt;CBF_Modern_Spacer_Grenadier&lt;/kind&gt;&lt;weight&gt;1&lt;/weight&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;kind&gt;CBF_Modern_Spacer_Offizier&lt;/kind&gt;&lt;weight&gt;1&lt;/weight&gt;&lt;/li&gt;
+  &lt;/members&gt;
+&lt;/CustomBaseFramework.PawnListDef&gt;</code></p>
+<p>A list that depends on another mod uses <code>MayRequire</code>, on the whole def or on single members:</p>
+<p><code>xml
+&lt;CustomBaseFramework.PawnListDef&gt;
+  &lt;defName&gt;CBF_Pawns_Torwache&lt;/defName&gt;
+  &lt;label&gt;gate guards&lt;/label&gt;
+  &lt;rolle&gt;Wache&lt;/rolle&gt;
+  &lt;radius&gt;2&lt;/radius&gt;
+  &lt;members&gt;
+    &lt;li&gt;&lt;kind&gt;Town_Guard&lt;/kind&gt;&lt;weight&gt;10&lt;/weight&gt;&lt;/li&gt;
+    &lt;li MayRequire="DankPyon.Medieval.Overhaul"&gt;&lt;kind&gt;DankPyon_Guard&lt;/kind&gt;&lt;weight&gt;10&lt;/weight&gt;&lt;/li&gt;
+  &lt;/members&gt;
+&lt;/CustomBaseFramework.PawnListDef&gt;</code></p>
+<h3 id="nodes">Nodes</h3>
+<p><code>members</code> holds the entries. Each <code>li</code> has:</p>
+<ul>
+<li><code>kind</code>: <code>defName</code> of a PawnKindDef. A kind that is not loaded is skipped silently.</li>
+<li><code>weight</code>: how often this kind is drawn compared to the others. Default <code>1</code>. A weight of <code>0</code> never draws.</li>
+</ul>
+<p><code>rolle</code> decides what pawns from this list do when they come from a pawn anchor. Default <code>Zivil</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Editor label</th>
+<th>Behavior at a pawn anchor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Wache</code></td>
+<td>Guard</td>
+<td>Joins the defense of the ward the anchor stands in.</td>
+</tr>
+<tr>
+<td><code>Posten</code></td>
+<td>Post</td>
+<td>Holds a post around the anchor within <code>radius</code>.</td>
+</tr>
+<tr>
+<td><code>Geschuetz</code></td>
+<td>Gunner</td>
+<td>Mans artillery around the anchor within <code>radius</code>. Crews stay at their gun.</td>
+</tr>
+<tr>
+<td><code>Zivil</code></td>
+<td>Civilian</td>
+<td>Defends the point within <code>radius</code>, but may flee on its own.</td>
+</tr>
+</tbody>
+</table>
+<p>In a garrison the role only decides one thing: pawns of all roles except <code>Zivil</code> are generated capable of violence. The post of the garrison entry decides where they stand.</p>
+<p><code>radius</code>: how far pawns from an anchor spread around it. Default <code>4</code>. Values below <code>1</code> count as <code>1</code>.</p>
+<h3 id="tech-level-of-the-settlement">Tech level of the settlement</h3>
+<p>A settlement has a tech level. It is the tech level of the owning faction if the settlement type lists it in <code>techLevels</code>. Otherwise it is the highest level in <code>techLevels</code>. A settlement type without <code>techLevels</code> has no tech level.</p>
+<p>CBF works out a tech level for each pawn kind from its gear: required apparel, required implants and the weapons its <code>weaponTags</code> and <code>weaponMoney</code> allow. The highest tech level found counts.</p>
+<p>When a garrison or a pawn anchor draws from a list:</p>
+<ol>
+<li>Members above the settlement's tech level are left out.</li>
+<li>Of the rest, only the members with the highest tech level stay in the pool.</li>
+<li>Members whose tech level cannot be determined always stay in the pool.</li>
+<li>One kind is drawn from the pool by weight.</li>
+</ol>
+<p>If no member fits, the whole list is used and the log gets a warning. Without a settlement tech level the whole list is used.</p>
+<p>In the example above, an industrial settlement draws only the <code>CBF_Modern_*</code> industrial soldiers. A spacer settlement draws only the <code>CBF_Modern_Spacer_*</code> kinds. One list therefore serves both ages.</p>
+<p>Pens and object lists draw from the whole list without this filter.</p>
+<p><code>stufe</code> on the pawn list switches the filter off. Set to a tech level such as <code>Neolithic</code>, the list counts as that level and garrisons and pawn anchors draw from the whole list. Use it when the gear gives the wrong level, for example tribal warriors wearing medieval leather. If <code>stufe</code> is above the settlement's tech level, the list is still used and the log gets a warning.</p>
+<h3 id="checks">Checks</h3>
+<ul>
+<li>A list without members is a config error.</li>
+<li>A negative <code>weight</code> or <code>radius</code> is a config error.</li>
+<li>A list whose members are all missing logs a warning. Anchors that name it stay empty.</li>
+<li>A <code>Zivil</code> list that contains a humanlike kind with combat power of 80 or more logs a warning. Fighters belong in <code>Wache</code>, <code>Posten</code> or <code>Geschuetz</code>.</li>
+</ul>
+<h2 id="garrisons">Garrisons</h2>
+<p>A garrison belongs to a ward inside <code>wards</code> of a SettlementPlanDef.</p>
+<h3 id="example_1">Example</h3>
+<p>From <code>Mods/MedievalOverhaul/.../PlanDefs/CBF_Plan_FortressCity_Neu.xml</code>, shortened:</p>
+<p><code>xml
+&lt;CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul"&gt;
+  &lt;defName&gt;CBF_Plan_FortressCity_Neu&lt;/defName&gt;
+  &lt;label&gt;fortress city (MO)&lt;/label&gt;
+  &lt;defenderPoints&gt;400~700&lt;/defenderPoints&gt;
+  &lt;defendersOnWall&gt;0.28&lt;/defendersOnWall&gt;
+  &lt;wards&gt;
+    &lt;li&gt;
+      &lt;art&gt;Stadt&lt;/art&gt;
+      &lt;name&gt;Altstadt&lt;/name&gt;
+      &lt;garrison&gt;
+        &lt;li&gt;
+          &lt;list&gt;CBF_MO_Garnison_Wehrgang&lt;/list&gt;
+          &lt;count&gt;16~21&lt;/count&gt;
+          &lt;posten&gt;Wehrgang&lt;/posten&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;list&gt;CBF_MO_Garnison_Tor&lt;/list&gt;
+          &lt;count&gt;5~8&lt;/count&gt;
+          &lt;posten&gt;Tor&lt;/posten&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;list&gt;CBF_MO_Garnison_Innen&lt;/list&gt;
+          &lt;count&gt;8~13&lt;/count&gt;
+          &lt;posten&gt;Innen&lt;/posten&gt;
+        &lt;/li&gt;
+      &lt;/garrison&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;art&gt;Umland&lt;/art&gt;
+      &lt;name&gt;Umland&lt;/name&gt;
+      &lt;garrison&gt;
+        &lt;li&gt;
+          &lt;list&gt;CBF_MO_Garnison_Innen&lt;/list&gt;
+          &lt;count&gt;3~5&lt;/count&gt;
+          &lt;posten&gt;Innen&lt;/posten&gt;
+        &lt;/li&gt;
+      &lt;/garrison&gt;
+    &lt;/li&gt;
+  &lt;/wards&gt;
+&lt;/CustomBaseFramework.SettlementPlanDef&gt;</code></p>
+<h3 id="nodes_1">Nodes</h3>
+<p>Each <code>li</code> in <code>garrison</code> has:</p>
+<ul>
+<li><code>list</code>: <code>defName</code> of a pawn list. A missing list logs a warning and the entry stays empty.</li>
+<li><code>count</code>: how many pawns, as a range. Default <code>1</code>.</li>
+<li><code>posten</code>: where they stand. Default <code>Innen</code>.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Editor label</th>
+<th>Where the pawns go</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Innen</code></td>
+<td>Inside</td>
+<td>Streets, squares and yards of the ward. They defend the ward together.</td>
+</tr>
+<tr>
+<td><code>Wehrgang</code></td>
+<td>Wall</td>
+<td>Wall walk cells next to an open embrasure. Each one guards its stretch of wall.</td>
+</tr>
+<tr>
+<td><code>Tor</code></td>
+<td>Gate</td>
+<td>Gate cells. Each one holds a post at the gate.</td>
+</tr>
+</tbody>
+</table>
+<p>If a ward has no wall walk at an open embrasure, <code>Wehrgang</code> pawns stand inside instead. The same goes for <code>Tor</code> without gate cells.</p>
+<h3 id="garrison-and-defender-points">Garrison and defender points</h3>
+<ul>
+<li>A ward with at least one garrison entry does not use the defender points. Its garrison and its anchor pawns defend it.</li>
+<li>A ward without garrison entries takes a share of <code>defenderPoints</code>, weighted by its size. Of that share, the part <code>defendersOnWall</code> goes onto the wall walk, if the ward has open embrasures.</li>
+<li>The defender pawns come from the faction's group maker named in <code>defenderGroupKind</code>. If that is empty or the faction has none, CBF tries <code>Settlement</code>, then <code>Combat</code>.</li>
+<li>Pawns from anchors that name their own list or kind come on top. They are not counted against the defender points.</li>
+</ul>
+<p>The editor shows a point value for each garrison: the average combat power of the list, weighted, times the middle of <code>count</code>. This value is for orientation only.</p>
+<h3 id="lords">Lords</h3>
+<p>Every ward defends itself. Garrison pawns on the wall and at the gate each get their own duty. All other defenders of a ward, including inside garrison, point defenders and guard pawns from anchors, share one lord for that ward. They do not gather in the center of the settlement.</p>
+<h2 id="pawn-anchors-in-pieces">Pawn anchors in pieces</h2>
+<p>A pawn anchor is a legend entry of a PieceDef with <code>anchorKind</code> set to <code>Spawn</code>. The anchor sits in the middle of the cells that carry its symbol.</p>
+<h3 id="example_2">Example</h3>
+<p>From a vanilla barracks piece:</p>
+<p>```xml</p>
+<legend>
+  <li><symbol>8</symbol><anchor>Kommandant</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>1</pawnCount></li>
+  <li><symbol>k</symbol><anchor>SoldatenA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>2~3</pawnCount></li>
+</legend>
+<p>```</p>
+<p>A house with residents:</p>
+<p>```xml</p>
+<li><symbol>Y</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList></li>
+<p>```</p>
+<h3 id="nodes_2">Nodes</h3>
+<ul>
+<li><code>anchor</code>: name of the anchor. Used in log messages.</li>
+<li><code>anchorKind</code>: <code>Spawn</code> for a pawn anchor.</li>
+<li><code>pawnList</code>: <code>defName</code> of a pawn list. The list's tech filter, role and radius apply.</li>
+<li><code>pawns</code>: <code>defName</code> of a single pawn kind. Used when <code>pawnList</code> is empty. These pawns are always capable of violence and join the defense of their ward.</li>
+<li><code>pawnCount</code>: how many pawns, as a range. Default <code>1</code>. A count below 1 counts as 1.</li>
+<li><code>chance</code>: chance that the anchor is used at all. Default <code>1</code>.</li>
+</ul>
+<p>If an anchor names neither <code>pawnList</code> nor <code>pawns</code>, it takes pawns from the settlement's defender points. It stays empty if no defender points were rolled, for example when every ward has a garrison. Such an anchor also stays empty if it lies in a room without a way outside.</p>
+<p>If <code>pawnList</code> names a list that does not exist and <code>pawns</code> is empty, the anchor stays empty and the log names it.</p>
+<h3 id="anchor-limits">Anchor limits</h3>
+<p>Two fields of the SettlementPlanDef cap the pawns from anchors:</p>
+<ul>
+<li><code>ankerZivil</code>: default <code>30</code>. Once this many non-fighters are placed, further civilian anchors are skipped.</li>
+<li><code>ankerSoldaten</code>: default <code>40</code>. Once this many fighters are placed, further fighting anchors are skipped. Gunner anchors are never skipped.</li>
+</ul>
+<p>Garrison pawns placed before count toward these limits. When a limit is active, anchors are handled in random order, gunner anchors first. <code>0</code> removes a limit.</p>
+<h3 id="single-pawns-in-the-legend">Single pawns in the legend</h3>
+<p>A normal legend entry can also carry <code>pawnKind</code> instead of <code>thing</code>. It places one pawn of that kind on each cell with the symbol, owned by the settlement's faction and passed through unit swap. It gets no role, radius or lord from CBF. For defenders, a pawn anchor is the better choice.</p>
+<h3 id="pawns-in-containers">Pawns in containers</h3>
+<p>An object list (<a href="LootBuildingCategoryDef.html">LootBuildingCategoryDef</a>) can put pawns into its containers: <code>pawnList</code>, <code>pawnChance</code>, <code>pawnCount</code>, <code>pawnFeindlich</code> and <code>pawnFraktion</code>. These draw from the whole list without the tech filter. See <a href="Loot.html">Loot</a>.</p>
+<h2 id="pen-animals">Pen animals</h2>
+<p>A pen names a pawn list in <code>pawns</code>. The list should hold animals. Humanlike kinds are not placed.</p>
+<p>```xml
+<pens>
+<br />
+<li>
+    <name>Gehege</name>
+    <count>1~1</count>
+    <herd>3~7</herd>
+    <pawns>Hardanimals_1</pawns>
+    <fence>true</fence>
+    <terrain>Soil</terrain>
+    <plants>
+      <li>Plant_Haygrass</li>
+    </plants>
+    <weight>1</weight>
+  </li></p>
+<p></pens>
+```</p>
+<p>Each pen draws one kind from the list and places <code>herd</code> animals of it. Small pens get fewer: about one animal per twelve cells of pen. The animals belong to the settlement's faction.</p>
+<h2 id="unit-swap">Unit swap</h2>
+<p>Pawn lists and pieces name general units and things. An <code>EinheitentauschDef</code> says what one faction uses instead. A noble house then sends its own knights and hangs its own banners, without a copy of each list and piece per faction.</p>
+<h3 id="example_3">Example</h3>
+<p>From <code>Einheitentausch/CBF_MO_Haus_Hesse.xml</code>, shortened:</p>
+<p><code>xml
+&lt;CustomBaseFramework.EinheitentauschDef MayRequire="DankPyon.Medieval.Overhaul"&gt;
+  &lt;defName&gt;CBF_MO_Haus_Hesse&lt;/defName&gt;
+  &lt;label&gt;Haus Hesse&lt;/label&gt;
+  &lt;faction&gt;DankPyon_NobleHouseSavage&lt;/faction&gt;
+  &lt;prioritaet&gt;0&lt;/prioritaet&gt;
+  &lt;einheiten&gt;
+    &lt;li&gt;&lt;von&gt;DankPyon_Amboisse_Knight&lt;/von&gt;&lt;zu&gt;DankPyon_Hesse_Knight&lt;/zu&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;von&gt;CBF_MO_Ritter&lt;/von&gt;&lt;zu&gt;DankPyon_KnightHesse&lt;/zu&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;von&gt;CBF_MO_Pikenier&lt;/von&gt;&lt;zu&gt;DankPyon_StandardHesse&lt;/zu&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;von&gt;DankPyon_Medieval_Arbalester&lt;/von&gt;&lt;zu&gt;DankPyon_Hesse_Archer&lt;/zu&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;von&gt;DankPyon_Medieval_Arbalester&lt;/von&gt;&lt;zu&gt;DankPyon_Medieval_Arbalester&lt;/zu&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;von&gt;Villager&lt;/von&gt;&lt;zu&gt;DankPyon_Hesse_Peasant&lt;/zu&gt;&lt;/li&gt;
+  &lt;/einheiten&gt;
+  &lt;dinge&gt;
+    &lt;li&gt;&lt;von&gt;DankPyon_BannerAmboise&lt;/von&gt;&lt;zu&gt;DankPyon_BannerHesse&lt;/zu&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;von&gt;DankPyon_ShieldHeater_Amboise&lt;/von&gt;&lt;zu&gt;DankPyon_ShieldHeater_Hesse&lt;/zu&gt;&lt;/li&gt;
+  &lt;/dinge&gt;
+&lt;/CustomBaseFramework.EinheitentauschDef&gt;</code></p>
+<p>The two lines for <code>DankPyon_Medieval_Arbalester</code> have the same weight. Half of the arbalesters become Hesse archers, the other half stay arbalesters.</p>
+<h3 id="nodes_3">Nodes</h3>
+<ul>
+<li><code>faction</code>: <code>defName</code> of the FactionDef the rule is for.</li>
+<li><code>prioritaet</code>: priority, a whole number. Default <code>0</code>.</li>
+<li><code>einheiten</code>: swaps for pawn kinds.</li>
+<li><code>dinge</code>: swaps for things placed by pieces.</li>
+<li><code>neutral</code>: pawn kinds that the fallback must not replace. See below.</li>
+</ul>
+<p>Each <code>li</code> in <code>einheiten</code> and <code>dinge</code> has:</p>
+<ul>
+<li><code>von</code>: <code>defName</code> of the unit or thing in the list or piece.</li>
+<li><code>zu</code>: <code>defName</code> of what the faction uses instead.</li>
+<li><code>gewicht</code>: weight when several targets exist for one <code>von</code>. Default <code>1</code>. Entries with <code>0</code> or less are ignored.</li>
+</ul>
+<p>A def needs <code>faction</code> or <code>neutral</code>, otherwise it is a config error.</p>
+<h3 id="priority">Priority</h3>
+<p>Several defs can bring rules for the same faction, also from several mods. For each <code>von</code>, only the entries with the highest <code>prioritaet</code> count. Entries of equal priority from different defs are merged and drawn together by weight. To override the rule of another mod, give yours a higher priority.</p>
+<p>A target that is not loaded is skipped. If no target of a rule is loaded, a unit falls back as if there were no rule, and a thing stays as it is.</p>
+<p>The editor saves each rule as its own file in <code>Defs/CustomBaseFramework/Einheitentausch</code> of the chosen mod. Files of other mods are never changed.</p>
+<h3 id="without-a-rule">Without a rule</h3>
+<p>When a faction has no rule for a humanlike unit, CBF picks a replacement itself:</p>
+<ol>
+<li>The candidates are the faction's own humanlike kinds: every kind in its pawn group makers (options, guards, traders, carriers) and its <code>basicMemberKind</code>.</li>
+<li>If the unit is already one of them, it stays.</li>
+<li>Only candidates that match the unit's <code>isFighter</code> are used.</li>
+<li>Candidates with the same way of fighting are preferred: ranged, melee or unarmed, judged by the weapons the kind can carry.</li>
+<li>Of those, the one with the closest combat power wins.</li>
+</ol>
+<p>Animals and things are never swapped without a rule. The log notes each fallback swap once.</p>
+<h3 id="neutral-units">Neutral units</h3>
+<p>Units listed in <code>neutral</code> are not touched by the fallback. Explicit rules for them still apply. CBF uses this for its own modern soldiers, so that every faction that settles in a modern settlement keeps them:</p>
+<p><code>xml
+&lt;CustomBaseFramework.EinheitentauschDef&gt;
+  &lt;defName&gt;CBF_Modern_Neutrale_Einheiten&lt;/defName&gt;
+  &lt;label&gt;neutral modern soldiers&lt;/label&gt;
+  &lt;neutral&gt;
+    &lt;li&gt;CBF_Modern_Schuetze&lt;/li&gt;
+    &lt;li&gt;CBF_Modern_Scharfschuetze&lt;/li&gt;
+    &lt;li&gt;CBF_Modern_Stuermer&lt;/li&gt;
+    &lt;li&gt;CBF_Modern_Spacer_Schuetze&lt;/li&gt;
+  &lt;/neutral&gt;
+&lt;/CustomBaseFramework.EinheitentauschDef&gt;</code></p>
+<h3 id="where-swap-applies">Where swap applies</h3>
+<ul>
+<li>Garrison pawns.</li>
+<li>Pawns from pawn anchors, both <code>pawnList</code> and <code>pawns</code>.</li>
+<li>Pawns from <code>pawnKind</code> in a legend entry.</li>
+<li>Things placed by pieces, for <code>dinge</code>.</li>
+</ul>
+<p>Defender pawns from <code>defenderPoints</code> already come from the faction's own group makers.</p>
+<h2 id="tips">Tips</h2>
+<ul>
+<li>Put all ages into one list and let the tech filter choose. A gear-less kind without weapons has no tech level and is drawn at every level.</li>
+<li>Use <code>Zivil</code> only for people who should run. Fighters in a civilian list trigger a warning.</li>
+<li>Give each ward of a big settlement its own garrison. A ward with a garrison is fully under your control; one without depends on the faction's group makers.</li>
+<li>Wall posts need open embrasures. Without them the wall garrison stands inside.</li>
+<li>Name general units in lists and pieces and write one swap rule per faction, instead of copying lists.</li>
+<li>Put <code>MayRequire</code> on lists and rules for other mods, and on single members.</li>
+<li><code>Techschritt</code> is not part of unit swap. It belongs to <a href="KartenschritteDef.html">KartenschritteDef</a> and holds back a map generation step below a tech level.</li>
+</ul>
+<h2 id="field-reference">Field reference</h2>
+<ul>
+<li><a href="PawnListDef.html">PawnListDef</a>, <a href="PawnListEntry.html">PawnListEntry</a></li>
+<li><a href="Garnisonseintrag.html">Garnisonseintrag</a>, <a href="Stadtteil.html">Stadtteil</a>, <a href="SettlementPlanDef.html">SettlementPlanDef</a></li>
+<li><a href="PieceDef.html">PieceDef</a>, <a href="LegendEntry.html">LegendEntry</a>, <a href="Gehegespec.html">Gehegespec</a></li>
+<li><a href="LootBuildingCategoryDef.html">LootBuildingCategoryDef</a></li>
+<li><a href="EinheitentauschDef.html">EinheitentauschDef</a>, <a href="Tauscheintrag.html">Tauscheintrag</a></li>
+<li><a href="KartenschritteDef.html">KartenschritteDef</a>, <a href="Techschritt.html">Techschritt</a></li>
+</ul><div class="schritte"><a href="Modding-Loot.html"><span>Previous</span>Loot in XML</a><a class="weiter" href="Modding-Quests.html"><span>Next</span>Quests in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#who-lives-in-a-settlement">Who lives in a settlement</a><a href="#pawn-lists">Pawn lists</a><a href="#garrisons">Garrisons</a><a href="#pawn-anchors-in-pieces">Pawn anchors in pieces</a><a href="#pen-animals">Pen animals</a><a href="#unit-swap">Unit swap</a><a href="#tips">Tips</a><a href="#field-reference">Field reference</a></div></aside></div></body></html>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Posten_Baracke_A</defName>
+    <label>CBF_MO_Posten_Baracke_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Posten_Baracke</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_ArmorStatue</thing><stuff>DankPyon_IronIngot</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_StrawBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>X</symbol><thing>DankPyon_RackSword</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_WoodBurningStove</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+    </legend>
+    <mask>
+      <li>#########..</li>
+      <li>#########..</li>
+      <li>#########..</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>.##########</li>
+    </mask>
+    <terrain>
+      <li>wwwwwwwww..</li>
+      <li>wwwwwwwww..</li>
+      <li>wwwwwwwww..</li>
+      <li>wwwwwwwwwww</li>
+      <li>wwwwwwwwwww</li>
+      <li>wwwwwwwwwww</li>
+      <li>.wwwwwwwwww</li>
+    </terrain>
+    <things>
+      <li>OOOOOOOOO..</li>
+      <li>O.......O..</li>
+      <li>OB.B.B.BO..</li>
+      <li>O.......OOO</li>
+      <li>O........oO</li>
+      <li>OOA...X...O</li>
+      <li>.OOOFOOOOOO</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^..</li>
+      <li>^^^^^^^^^..</li>
+      <li>^^^^^^^^^..</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>.^^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

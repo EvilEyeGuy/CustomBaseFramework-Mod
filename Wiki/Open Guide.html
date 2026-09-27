@@ -47,9 +47,13 @@ td code{white-space:nowrap}
 .marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
 .marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
 .marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
-.gruppe{margin:0 0 16px}
-.gruppe b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--leise);margin:0 0 4px 10px}
-.gruppe a{display:block;padding:6px 10px;border-radius:8px;color:var(--text);text-decoration:none;font-size:15px}
+.gruppe{margin:0 0 18px}
+.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
+.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
+.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
+.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
+.gruppe b i img{width:20px;height:20px;object-fit:contain}
+.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
 .gruppe a:hover{background:var(--akzentweich)}
 .gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
 main{padding:40px 48px 80px;min-width:0}
@@ -57,7 +61,7 @@ main{padding:40px 48px 80px;min-width:0}
 .rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
 @media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
 @media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
-</style></head><body class="home"><div class="rahmen"><nav class="leiste"><a class="marke" href="Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="Open%20Guide.html" class="hier">Overview</a><a href="pages/Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="pages/Pieces.html">Pieces</a><a href="pages/Categories.html">Categories</a><a href="pages/Annexes.html">Annexes</a><a href="pages/Settlements.html">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="pages/Loot.html">Loot</a><a href="pages/Pawns.html">Pawns</a><a href="pages/Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="pages/Factions.html">Factions</a></div><div class="gruppe"><b>Play</b><a href="pages/Mod-Settings.html">Mod settings</a><a href="pages/Settlement-Types.html">Settlement types</a></div><div class="gruppe"><b>Compatibility</b><a href="pages/Compatibility.html">Compatibility</a></div><div class="gruppe"><b>Reference</b><a href="pages/Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="custom-base-framework">Custom Base Framework</h1>
+</style></head><body class="home"><div class="rahmen"><nav class="leiste"><a class="marke" href="Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="pages/images/nav/start.png" alt=""></i>Start</b><a href="Open%20Guide.html" class="hier">Overview</a><a href="pages/Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="pages/images/nav/piece.png" alt=""></i>Piece</b><a href="pages/Pieces.html">Draw and edit pieces</a><a href="pages/Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="pages/images/nav/settlement.png" alt=""></i>Settlement</b><a href="pages/Settlements.html">Settlement types</a><a href="pages/Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="pages/images/nav/categories.png" alt=""></i>Categories</b><a href="pages/Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="pages/images/nav/loot.png" alt=""></i>Loot</b><a href="pages/Loot.html">Object lists and loot</a><a href="pages/Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="pages/images/nav/pawn.png" alt=""></i>Pawn</b><a href="pages/Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="pages/images/nav/swap.png" alt=""></i>Unit swap</b><a href="pages/Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="pages/images/nav/playing.png" alt=""></i>Playing</b><a href="pages/Settlement-Types.html">Shipped settlements</a><a href="pages/Quests.html">Quests</a><a href="pages/Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="pages/images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="pages/Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="pages/images/nav/modding.png" alt=""></i>Modding</b><a href="pages/Modding-Overview.html">Your own content mod</a><a href="pages/Modding-Settlements.html">Settlement types in XML</a><a href="pages/Modding-Pieces.html">Pieces and categories in XML</a><a href="pages/Modding-Loot.html">Loot in XML</a><a href="pages/Modding-Pawns.html">Pawns in XML</a><a href="pages/Modding-Quests.html">Quests in XML</a><a href="pages/Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="custom-base-framework">Custom Base Framework</h1>
 <p>Custom Base Framework (CBF) builds faction settlements, villages and camps from hand-drawn building pieces. A generator plans the layout on the actual map: walls, gates, roads, districts, fields and pens. The pieces fill it.</p>
 <p>Everything is data. You draw pieces on the map, group them into categories and describe settlements as rings of wards with districts inside. The generator does the rest.</p>
 <a class="bild" href="pages/images/home-town.png" target="_blank"><img alt="A generated market town" src="pages/images/home-town.png" loading="lazy"></a>
@@ -73,18 +77,32 @@ main{padding:40px 48px 80px;min-width:0}
 <li><strong>Running game:</strong> CBF can be added to a running game. Faction bases you have not visited yet are built by CBF when you first visit them. Bases you already visited stay as they are.</li>
 <li><strong>Removing:</strong> first use <strong>Remove CBF data from this save</strong> in the mod settings, then save, quit and remove the mod. See <a href="pages/Mod-Settings.html#remove-cbf-from-this-save">Mod settings</a>.</li>
 </ul>
-<h2 id="where-to-start">Where to start</h2>
+<h2 id="editor-guide">Editor guide</h2>
+<p>The guide follows the tabs of the editor.</p>
 <ol>
 <li><a href="pages/Getting-Started.html">Getting started</a>: switch the editor on, create a mod of your own, find your way around the window.</li>
-<li><a href="pages/Pieces.html">Pieces</a>: draw a building on the map, export it, set its anchors.</li>
-<li><a href="pages/Categories.html">Categories</a>: group pieces and give them placement rules. <a href="pages/Annexes.html">Annexes</a>: small pieces that dock onto houses, so no two copies look alike.</li>
-<li><a href="pages/Settlements.html">Settlements</a>: wards, walls, districts, fields and pens.</li>
-<li><a href="pages/Loot.html">Loot</a>: object lists, loot tables, containers and crop lists.</li>
-<li><a href="pages/Pawns.html">Pawns</a>: pawn kinds and pawn lists for garrisons and inhabitants.</li>
-<li><a href="pages/Unit-Swap.html">Unit swap</a>: let each faction send its own units and hang its own banners.</li>
-<li><a href="pages/Factions.html">Factions</a>: which faction gets which settlement.</li>
-<li><a href="pages/Mod-Settings.html">Mod settings</a>: settlements per faction, error reports, removing CBF from a save.</li>
-<li><a href="pages/Compatibility.html">Compatibility</a>: content for other mods, Multiplayer.</li>
-<li><a href="pages/Settlement-Types.html">Settlement types</a>: example towns, strength and performance.</li>
+<li><strong>Piece</strong>: <a href="pages/Pieces.html">draw and edit pieces</a>, set anchors, and add <a href="pages/Annexes.html">annexes</a> that dock onto houses.</li>
+<li><strong>Settlement</strong>: <a href="pages/Settlements.html">settlement types</a> with wards, walls, districts, fields and pens, and which <a href="pages/Factions.html">factions</a> get them.</li>
+<li><strong>Categories</strong>: <a href="pages/Categories.html">group pieces</a> and give them rules.</li>
+<li><strong>Loot</strong>: <a href="pages/Loot.html">object lists, loot tables, containers and crop lists</a>, and <a href="pages/Material-Lists.html">material lists</a> for walls, doors, gates and roads.</li>
+<li><strong>Pawn</strong>: <a href="pages/Pawns.html">pawn kinds and pawn lists</a> for garrisons and inhabitants.</li>
+<li><strong>Unit swap</strong>: <a href="pages/Unit-Swap.html">let each faction send its own units</a>.</li>
 </ol>
-<p>For every field you can write in XML, see the <a href="pages/Field-Reference.html">field reference</a>.</p><div class="schritte"><a class="weiter" href="pages/Getting-Started.html"><span>Next</span>Getting started</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#what-you-need">What you need</a><a href="#adding-and-removing">Adding and removing</a><a href="#where-to-start">Where to start</a></div></aside></div></body></html>
+<h2 id="playing">Playing</h2>
+<ul>
+<li><a href="pages/Settlement-Types.html">Shipped settlements</a>: example towns, strength and performance.</li>
+<li><a href="pages/Quests.html">Quests</a>: the quests that come with Medieval Overhaul.</li>
+<li><a href="pages/Mod-Settings.html">Mod settings</a>: settlements per faction, error reports, removing CBF from a save.</li>
+<li><a href="pages/Compatibility.html">Compatibility</a>: content for other mods, World Domination, Multiplayer and more.</li>
+</ul>
+<h2 id="modding">Modding</h2>
+<p>For modders who write XML by hand or want to know what the editor writes.</p>
+<ul>
+<li><a href="pages/Modding-Overview.html">Your own content mod</a>: folder layout, how the defs connect, wall profiles, styles, ruins.</li>
+<li><a href="pages/Modding-Settlements.html">Settlement types in XML</a></li>
+<li><a href="pages/Modding-Pieces.html">Pieces and categories in XML</a></li>
+<li><a href="pages/Modding-Loot.html">Loot in XML</a></li>
+<li><a href="pages/Modding-Pawns.html">Pawns in XML</a></li>
+<li><a href="pages/Modding-Quests.html">Quests in XML</a></li>
+<li><a href="pages/Field-Reference.html">Field reference</a>: every field of every def.</li>
+</ul><div class="schritte"><a class="weiter" href="pages/Getting-Started.html"><span>Next</span>Getting started</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#what-you-need">What you need</a><a href="#adding-and-removing">Adding and removing</a><a href="#editor-guide">Editor guide</a><a href="#playing">Playing</a><a href="#modding">Modding</a></div></aside></div></body></html>

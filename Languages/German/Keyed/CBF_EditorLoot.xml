@@ -35,7 +35,7 @@
   <CBF_Lo_WeightN>Gew. {0}</CBF_Lo_WeightN>
   <CBF_Table>Tabelle</CBF_Table>
   <CBF_Lo_Rolls>Züge</CBF_Lo_Rolls>
-  <CBF_Lo_RollChance>Chance je Zug</CBF_Lo_RollChance>
+  <CBF_Lo_RollChance>Chance</CBF_Lo_RollChance>
   <CBF_Lo_UniqueHint>jeder Eintrag höchstens einmal</CBF_Lo_UniqueHint>
   <CBF_Lo_Fallback>Wenn leer</CBF_Lo_Fallback>
   <CBF_Lo_FallbackTip>Kommt aus dieser Tabelle nichts heraus, wird stattdessen aus der hier gewählten gezogen.</CBF_Lo_FallbackTip>
@@ -95,4 +95,105 @@
   <CBF_PawnKindPeople>Personen</CBF_PawnKindPeople>
   <CBF_PawnKindAnimals>Tiere</CBF_PawnKindAnimals>
   <CBF_EditPawnListTip>Diese Pawn-Liste bearbeiten</CBF_EditPawnListTip>
+  <CBF_Lo_MaterialLists>Materiallisten</CBF_Lo_MaterialLists>
+  <CBF_Lo_MaterialListsShort>Material</CBF_Lo_MaterialListsShort>
+  <CBF_Lo_NewTip4>Neue Materialliste anlegen. Sie erbt von der Grundliste und landet erst mit Speichern in der Datei.</CBF_Lo_NewTip4>
+  <CBF_Mat_None>Keine Materialliste.</CBF_Mat_None>
+  <CBF_Mat_List>Materialliste</CBF_Mat_List>
+  <CBF_Mat_MapStone>Stein der Karte</CBF_Mat_MapStone>
+  <CBF_Mat_MapStoneTip>Blöcke aus dem Gestein der Kachel.</CBF_Mat_MapStoneTip>
+  <CBF_Mat_MapWood>Holz der Karte</CBF_Mat_MapWood>
+  <CBF_Mat_MapWoodTip>Holz, passend zur Karte.</CBF_Mat_MapWoodTip>
+  <CBF_Mat_AddThing>+ Ding</CBF_Mat_AddThing>
+  <CBF_Mat_AddStuff>+ Material</CBF_Mat_AddStuff>
+  <CBF_Mat_AddFloor>+ Boden</CBF_Mat_AddFloor>
+  <CBF_Mat_AddRoof>+ Dach</CBF_Mat_AddRoof>
+  <CBF_Mat_AddPiece>+ Stück</CBF_Mat_AddPiece>
+  <CBF_Mat_AddCategory>+ Kategorie</CBF_Mat_AddCategory>
+  <CBF_Mat_AddRole>Rolle hinzufügen</CBF_Mat_AddRole>
+  <CBF_Mat_Thing>Ding</CBF_Mat_Thing>
+  <CBF_Mat_Stuff>Material</CBF_Mat_Stuff>
+  <CBF_Mat_Floor>Boden</CBF_Mat_Floor>
+  <CBF_Mat_Roof>Dach</CBF_Mat_Roof>
+  <CBF_Mat_Pawn>Einheit</CBF_Mat_Pawn>
+  <CBF_Mat_AppliesTo>Gilt für</CBF_Mat_AppliesTo>
+  <CBF_Mat_FloorMix>Bodenmischung</CBF_Mat_FloorMix>
+  <CBF_Mat_FloorMixTip>Diese Böden werden nach Gewicht gemischt. Die Gewichte änderst du in der Datei.</CBF_Mat_FloorMixTip>
+  <CBF_Mat_TagSearch>Merkmalssuche</CBF_Mat_TagSearch>
+  <CBF_Mat_TagSearchTip>Gibt es keinen Eintrag der Ketten, sucht CBF ein Ding oder einen Boden mit diesem Merkmal.</CBF_Mat_TagSearchTip>
+  <CBF_Mat_Missing>{0} ist nicht geladen. Der nächste Eintrag wird versucht.</CBF_Mat_Missing>
+  <CBF_Mat_Critical>Pflicht</CBF_Mat_Critical>
+  <CBF_Mat_Optional>Optional</CBF_Mat_Optional>
+  <CBF_Mat_CriticalTip>Pflicht: Findet diese Rolle nichts, ist die ganze Liste unbrauchbar. Optional: Die Rolle bleibt einfach leer.</CBF_Mat_CriticalTip>
+  <CBF_Mat_AnyWard>Jeder Stadtteil</CBF_Mat_AnyWard>
+  <CBF_Mat_WardTip>Beschränkt diese Zeile auf eine Art von Stadtteil. Eine Zeile für den Stadtteil geht einer Zeile ohne vor.</CBF_Mat_WardTip>
+  <CBF_Mat_RoleCount>{0} Rollen</CBF_Mat_RoleCount>
+  <CBF_Mat_Hint>Stücke nennen Rollen statt Dinge. Diese Liste sagt, was jede Rolle füllt. Es gilt der erste vorhandene Eintrag einer Kette. Eine Rolle darf in mehreren Zeilen stehen, dann gilt die Zeile, die am besten zum Stück oder Stadtteil passt.</CBF_Mat_Hint>
+  <CBF_Mat_OwnRoles>Eigene Rollen</CBF_Mat_OwnRoles>
+  <CBF_Mat_Empty>Noch keine eigenen Rollen.</CBF_Mat_Empty>
+  <CBF_Mat_Inherited>Geerbt</CBF_Mat_Inherited>
+  <CBF_Mat_Override>Überschreiben</CBF_Mat_Override>
+  <CBF_Mat_OverrideTip>Kopiert die geerbten Zeilen in diese Liste, damit du sie ändern kannst.</CBF_Mat_OverrideTip>
+  <CBF_Mat_FromList>Aus {0}</CBF_Mat_FromList>
+  <CBF_Mat_Unused>Kein Ortstyp nennt diese Liste.</CBF_Mat_Unused>
+  <CBF_Mat_Parent>Erbt von</CBF_Mat_Parent>
+  <CBF_Mat_ParentTip>Rollen, die diese Liste nicht selbst nennt, kommen aus dieser Liste.</CBF_Mat_ParentTip>
+  <CBF_Mat_OpenList>Diese Materialliste öffnen</CBF_Mat_OpenList>
+  <CBF_Mat_RightHint>Im Reiter Siedlung wählt jeder Ortstyp seine Materialliste. Die Vorschau einzelner Stücke nimmt die Liste des dort gewählten Ortstyps.</CBF_Mat_RightHint>
+  <CBF_Mat_Saved>{0} gespeichert, {1} Rollen.</CBF_Mat_Saved>
+  <CBF_Role_WALL>Wand</CBF_Role_WALL>
+  <CBF_RoleTip_WALL>Außenwände der Gebäude und die Ortsmauer.</CBF_RoleTip_WALL>
+  <CBF_Role_WALL_INNER>Innenwand</CBF_Role_WALL_INNER>
+  <CBF_RoleTip_WALL_INNER>Wände im Inneren der Gebäude zwischen den Räumen.</CBF_RoleTip_WALL_INNER>
+  <CBF_Role_DOOR>Tür</CBF_Role_DOOR>
+  <CBF_RoleTip_DOOR>Türen der Gebäude und Türen in der Mauer, am Wehrgang, in Türmen und Pforten.</CBF_RoleTip_DOOR>
+  <CBF_Role_GATE>Tor</CBF_Role_GATE>
+  <CBF_RoleTip_GATE>Tor in einem Mauerdurchgang ohne Torhaus.</CBF_RoleTip_GATE>
+  <CBF_Role_PILLAR>Pfeiler</CBF_Role_PILLAR>
+  <CBF_RoleTip_PILLAR>Pfeiler und Säulen in Gebäuden.</CBF_RoleTip_PILLAR>
+  <CBF_Role_WINDOW>Fenster</CBF_Role_WINDOW>
+  <CBF_RoleTip_WINDOW>Fenster in den Gebäudewänden.</CBF_RoleTip_WINDOW>
+  <CBF_Role_EMBRASURE>Scharte</CBF_Role_EMBRASURE>
+  <CBF_RoleTip_EMBRASURE>Schießscharten in Mauern und Türmen.</CBF_RoleTip_EMBRASURE>
+  <CBF_Role_FLOOR_INTERIOR>Innenboden</CBF_Role_FLOOR_INTERIOR>
+  <CBF_RoleTip_FLOOR_INTERIOR>Üblicher Boden im Inneren der Gebäude.</CBF_RoleTip_FLOOR_INTERIOR>
+  <CBF_Role_FLOOR_FINE>Feiner Boden</CBF_Role_FLOOR_FINE>
+  <CBF_RoleTip_FLOOR_FINE>Boden für feine Räume wie Hallen und Tempel.</CBF_RoleTip_FLOOR_FINE>
+  <CBF_Role_FLOOR_ROUGH>Grober Boden</CBF_Role_FLOOR_ROUGH>
+  <CBF_RoleTip_FLOOR_ROUGH>Boden für einfache Räume wie Scheunen und Werkstätten.</CBF_RoleTip_FLOOR_ROUGH>
+  <CBF_Role_FLOOR_DIRT>Erdboden</CBF_Role_FLOOR_DIRT>
+  <CBF_RoleTip_FLOOR_DIRT>Blanker, festgetretener Boden.</CBF_RoleTip_FLOOR_DIRT>
+  <CBF_Role_FLOOR_ROAD>Straße</CBF_Role_FLOOR_ROAD>
+  <CBF_RoleTip_FLOOR_ROAD>Straßen, wenn der Stadtteil keine eigenen Straßen nennt.</CBF_RoleTip_FLOOR_ROAD>
+  <CBF_Role_FLOOR_ROAD_EDGE>Straßenrand</CBF_Role_FLOOR_ROAD_EDGE>
+  <CBF_RoleTip_FLOOR_ROAD_EDGE>Streifen entlang des Straßenrands.</CBF_RoleTip_FLOOR_ROAD_EDGE>
+  <CBF_Role_FLOOR_FIELD>Ackerboden</CBF_Role_FLOOR_FIELD>
+  <CBF_RoleTip_FLOOR_FIELD>Boden unter den Äckern.</CBF_RoleTip_FLOOR_FIELD>
+  <CBF_Role_BRIDGE>Brücke</CBF_Role_BRIDGE>
+  <CBF_RoleTip_BRIDGE>Boden für Brücken über Wasser.</CBF_RoleTip_BRIDGE>
+  <CBF_Role_ROOF>Dach</CBF_Role_ROOF>
+  <CBF_RoleTip_ROOF>Dach über den Gebäuden.</CBF_RoleTip_ROOF>
+  <CBF_Role_ROOF_THIN>Dünnes Dach</CBF_Role_ROOF_THIN>
+  <CBF_RoleTip_ROOF_THIN>Dünnes Dach, für Schuppen und offene Hallen.</CBF_RoleTip_ROOF_THIN>
+  <CBF_Role_LIGHT>Licht</CBF_Role_LIGHT>
+  <CBF_RoleTip_LIGHT>Lampen und Fackeln.</CBF_RoleTip_LIGHT>
+  <CBF_Role_FURNITURE>Möbel</CBF_Role_FURNITURE>
+  <CBF_RoleTip_FURNITURE>Allgemeine Möbel.</CBF_RoleTip_FURNITURE>
+  <CBF_Role_CONTAINER>Behälter</CBF_Role_CONTAINER>
+  <CBF_RoleTip_CONTAINER>Kisten und andere Behälter für Beute.</CBF_RoleTip_CONTAINER>
+  <CBF_Role_CROP>Feldfrucht</CBF_Role_CROP>
+  <CBF_RoleTip_CROP>Pflanze auf den Äckern.</CBF_RoleTip_CROP>
+  <CBF_Role_FENCE>Zaun</CBF_Role_FENCE>
+  <CBF_RoleTip_FENCE>Zäune um Gehege und Äcker.</CBF_RoleTip_FENCE>
+  <CBF_Role_FENCE_GATE>Zauntor</CBF_Role_FENCE_GATE>
+  <CBF_RoleTip_FENCE_GATE>Tor in einem Zaun.</CBF_RoleTip_FENCE_GATE>
+  <CBF_Role_PEN_MARKER>Gehegemarke</CBF_Role_PEN_MARKER>
+  <CBF_RoleTip_PEN_MARKER>Marke, die eine eingezäunte Fläche zum Tiergehege macht.</CBF_RoleTip_PEN_MARKER>
+  <CBF_Role_CONDUIT>Leitung</CBF_Role_CONDUIT>
+  <CBF_RoleTip_CONDUIT>Stromleitung zwischen den Gebäuden.</CBF_RoleTip_CONDUIT>
+  <CBF_Role_CONDUIT_ROAD>Leitung unter Straßen</CBF_Role_CONDUIT_ROAD>
+  <CBF_RoleTip_CONDUIT_ROAD>Leitung, wo sie unter Straßen verläuft.</CBF_RoleTip_CONDUIT_ROAD>
+  <CBF_Role_CONDUIT_WATER>Leitung unter Wasser</CBF_Role_CONDUIT_WATER>
+  <CBF_RoleTip_CONDUIT_WATER>Leitung, wo sie Wasser quert.</CBF_RoleTip_CONDUIT_WATER>
+
 </LanguageData>

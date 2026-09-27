@@ -35,7 +35,7 @@
   <CBF_Lo_WeightN>wt. {0}</CBF_Lo_WeightN>
   <CBF_Table>Table</CBF_Table>
   <CBF_Lo_Rolls>Rolls</CBF_Lo_Rolls>
-  <CBF_Lo_RollChance>Chance per roll</CBF_Lo_RollChance>
+  <CBF_Lo_RollChance>Chance</CBF_Lo_RollChance>
   <CBF_Lo_UniqueHint>each entry at most once</CBF_Lo_UniqueHint>
   <CBF_Lo_Fallback>If empty</CBF_Lo_Fallback>
   <CBF_Lo_FallbackTip>If this table yields nothing, the one picked here is drawn instead.</CBF_Lo_FallbackTip>
@@ -95,4 +95,105 @@
   <CBF_PawnKindPeople>People</CBF_PawnKindPeople>
   <CBF_PawnKindAnimals>Animals</CBF_PawnKindAnimals>
   <CBF_EditPawnListTip>Edit this pawn list</CBF_EditPawnListTip>
+  <CBF_Lo_MaterialLists>Material lists</CBF_Lo_MaterialLists>
+  <CBF_Lo_MaterialListsShort>Materials</CBF_Lo_MaterialListsShort>
+  <CBF_Lo_NewTip4>Create a new material list. It inherits from the base list and reaches the file only when you save.</CBF_Lo_NewTip4>
+  <CBF_Mat_None>No material list.</CBF_Mat_None>
+  <CBF_Mat_List>Material list</CBF_Mat_List>
+  <CBF_Mat_MapStone>Stone of the map</CBF_Mat_MapStone>
+  <CBF_Mat_MapStoneTip>Blocks from the rock of the map tile.</CBF_Mat_MapStoneTip>
+  <CBF_Mat_MapWood>Wood of the map</CBF_Mat_MapWood>
+  <CBF_Mat_MapWoodTip>Wood for the map.</CBF_Mat_MapWoodTip>
+  <CBF_Mat_AddThing>+ Thing</CBF_Mat_AddThing>
+  <CBF_Mat_AddStuff>+ Stuff</CBF_Mat_AddStuff>
+  <CBF_Mat_AddFloor>+ Floor</CBF_Mat_AddFloor>
+  <CBF_Mat_AddRoof>+ Roof</CBF_Mat_AddRoof>
+  <CBF_Mat_AddPiece>+ Piece</CBF_Mat_AddPiece>
+  <CBF_Mat_AddCategory>+ Category</CBF_Mat_AddCategory>
+  <CBF_Mat_AddRole>Add role</CBF_Mat_AddRole>
+  <CBF_Mat_Thing>Thing</CBF_Mat_Thing>
+  <CBF_Mat_Stuff>Stuff</CBF_Mat_Stuff>
+  <CBF_Mat_Floor>Floor</CBF_Mat_Floor>
+  <CBF_Mat_Roof>Roof</CBF_Mat_Roof>
+  <CBF_Mat_Pawn>Unit</CBF_Mat_Pawn>
+  <CBF_Mat_AppliesTo>Applies to</CBF_Mat_AppliesTo>
+  <CBF_Mat_FloorMix>Floor mix</CBF_Mat_FloorMix>
+  <CBF_Mat_FloorMixTip>These floors are mixed by weight. You change the weights in the file.</CBF_Mat_FloorMixTip>
+  <CBF_Mat_TagSearch>Tag search</CBF_Mat_TagSearch>
+  <CBF_Mat_TagSearchTip>When no entry of the chains exists, CBF looks for a thing or floor with this tag.</CBF_Mat_TagSearchTip>
+  <CBF_Mat_Missing>{0} is not loaded. The next entry is tried.</CBF_Mat_Missing>
+  <CBF_Mat_Critical>Critical</CBF_Mat_Critical>
+  <CBF_Mat_Optional>Optional</CBF_Mat_Optional>
+  <CBF_Mat_CriticalTip>Critical: if this role finds nothing, the whole list is unusable. Optional: the role simply stays empty.</CBF_Mat_CriticalTip>
+  <CBF_Mat_AnyWard>Any ward</CBF_Mat_AnyWard>
+  <CBF_Mat_WardTip>Limits this row to one kind of ward. A row for the ward wins over a row without one.</CBF_Mat_WardTip>
+  <CBF_Mat_RoleCount>{0} roles</CBF_Mat_RoleCount>
+  <CBF_Mat_Hint>Pieces name roles instead of things. This list says what fills each role. The first existing entry of a chain wins. A role may appear in several rows, then the row that fits the piece or ward best is used.</CBF_Mat_Hint>
+  <CBF_Mat_OwnRoles>Own roles</CBF_Mat_OwnRoles>
+  <CBF_Mat_Empty>No roles of its own yet.</CBF_Mat_Empty>
+  <CBF_Mat_Inherited>Inherited</CBF_Mat_Inherited>
+  <CBF_Mat_Override>Override</CBF_Mat_Override>
+  <CBF_Mat_OverrideTip>Copies the inherited rows into this list, so you can change them.</CBF_Mat_OverrideTip>
+  <CBF_Mat_FromList>From {0}</CBF_Mat_FromList>
+  <CBF_Mat_Unused>No settlement type names this list.</CBF_Mat_Unused>
+  <CBF_Mat_Parent>Inherits from</CBF_Mat_Parent>
+  <CBF_Mat_ParentTip>Roles this list does not name itself come from this list.</CBF_Mat_ParentTip>
+  <CBF_Mat_OpenList>Open this material list</CBF_Mat_OpenList>
+  <CBF_Mat_RightHint>In the Settlement tab every settlement type picks its material list. Previews of single pieces use the list of the settlement type selected there.</CBF_Mat_RightHint>
+  <CBF_Mat_Saved>{0} saved, {1} roles.</CBF_Mat_Saved>
+  <CBF_Role_WALL>Wall</CBF_Role_WALL>
+  <CBF_RoleTip_WALL>Outer walls of buildings and the settlement wall.</CBF_RoleTip_WALL>
+  <CBF_Role_WALL_INNER>Inner wall</CBF_Role_WALL_INNER>
+  <CBF_RoleTip_WALL_INNER>Walls inside buildings between rooms.</CBF_RoleTip_WALL_INNER>
+  <CBF_Role_DOOR>Door</CBF_Role_DOOR>
+  <CBF_RoleTip_DOOR>Doors of buildings and doors in the wall, on the walkway, in towers and posterns.</CBF_RoleTip_DOOR>
+  <CBF_Role_GATE>Gate</CBF_Role_GATE>
+  <CBF_RoleTip_GATE>Gate in a wall passage without a gatehouse.</CBF_RoleTip_GATE>
+  <CBF_Role_PILLAR>Pillar</CBF_Role_PILLAR>
+  <CBF_RoleTip_PILLAR>Pillars and columns inside buildings.</CBF_RoleTip_PILLAR>
+  <CBF_Role_WINDOW>Window</CBF_Role_WINDOW>
+  <CBF_RoleTip_WINDOW>Windows in building walls.</CBF_RoleTip_WINDOW>
+  <CBF_Role_EMBRASURE>Embrasure</CBF_Role_EMBRASURE>
+  <CBF_RoleTip_EMBRASURE>Arrow slits and embrasures in walls and towers.</CBF_RoleTip_EMBRASURE>
+  <CBF_Role_FLOOR_INTERIOR>Interior floor</CBF_Role_FLOOR_INTERIOR>
+  <CBF_RoleTip_FLOOR_INTERIOR>Usual floor inside buildings.</CBF_RoleTip_FLOOR_INTERIOR>
+  <CBF_Role_FLOOR_FINE>Fine floor</CBF_Role_FLOOR_FINE>
+  <CBF_RoleTip_FLOOR_FINE>Floor for fine rooms such as halls and temples.</CBF_RoleTip_FLOOR_FINE>
+  <CBF_Role_FLOOR_ROUGH>Rough floor</CBF_Role_FLOOR_ROUGH>
+  <CBF_RoleTip_FLOOR_ROUGH>Floor for simple rooms such as barns and workshops.</CBF_RoleTip_FLOOR_ROUGH>
+  <CBF_Role_FLOOR_DIRT>Dirt floor</CBF_Role_FLOOR_DIRT>
+  <CBF_RoleTip_FLOOR_DIRT>Bare, trodden ground.</CBF_RoleTip_FLOOR_DIRT>
+  <CBF_Role_FLOOR_ROAD>Road</CBF_Role_FLOOR_ROAD>
+  <CBF_RoleTip_FLOOR_ROAD>Roads, when the ward names no roads of its own.</CBF_RoleTip_FLOOR_ROAD>
+  <CBF_Role_FLOOR_ROAD_EDGE>Road edge</CBF_Role_FLOOR_ROAD_EDGE>
+  <CBF_RoleTip_FLOOR_ROAD_EDGE>Strip along the edge of the roads.</CBF_RoleTip_FLOOR_ROAD_EDGE>
+  <CBF_Role_FLOOR_FIELD>Field soil</CBF_Role_FLOOR_FIELD>
+  <CBF_RoleTip_FLOOR_FIELD>Soil under the fields.</CBF_RoleTip_FLOOR_FIELD>
+  <CBF_Role_BRIDGE>Bridge</CBF_Role_BRIDGE>
+  <CBF_RoleTip_BRIDGE>Floor for bridges over water.</CBF_RoleTip_BRIDGE>
+  <CBF_Role_ROOF>Roof</CBF_Role_ROOF>
+  <CBF_RoleTip_ROOF>Roof over the buildings.</CBF_RoleTip_ROOF>
+  <CBF_Role_ROOF_THIN>Thin roof</CBF_Role_ROOF_THIN>
+  <CBF_RoleTip_ROOF_THIN>Thin roof, for sheds and open halls.</CBF_RoleTip_ROOF_THIN>
+  <CBF_Role_LIGHT>Light</CBF_Role_LIGHT>
+  <CBF_RoleTip_LIGHT>Lamps and torches.</CBF_RoleTip_LIGHT>
+  <CBF_Role_FURNITURE>Furniture</CBF_Role_FURNITURE>
+  <CBF_RoleTip_FURNITURE>General furniture.</CBF_RoleTip_FURNITURE>
+  <CBF_Role_CONTAINER>Container</CBF_Role_CONTAINER>
+  <CBF_RoleTip_CONTAINER>Crates and other containers for loot.</CBF_RoleTip_CONTAINER>
+  <CBF_Role_CROP>Crop</CBF_Role_CROP>
+  <CBF_RoleTip_CROP>Plant on the fields.</CBF_RoleTip_CROP>
+  <CBF_Role_FENCE>Fence</CBF_Role_FENCE>
+  <CBF_RoleTip_FENCE>Fences around pens and fields.</CBF_RoleTip_FENCE>
+  <CBF_Role_FENCE_GATE>Fence gate</CBF_Role_FENCE_GATE>
+  <CBF_RoleTip_FENCE_GATE>Gate in a fence.</CBF_RoleTip_FENCE_GATE>
+  <CBF_Role_PEN_MARKER>Pen marker</CBF_Role_PEN_MARKER>
+  <CBF_RoleTip_PEN_MARKER>Marker that turns a fenced area into an animal pen.</CBF_RoleTip_PEN_MARKER>
+  <CBF_Role_CONDUIT>Conduit</CBF_Role_CONDUIT>
+  <CBF_RoleTip_CONDUIT>Power conduit between buildings.</CBF_RoleTip_CONDUIT>
+  <CBF_Role_CONDUIT_ROAD>Conduit under roads</CBF_Role_CONDUIT_ROAD>
+  <CBF_RoleTip_CONDUIT_ROAD>Conduit where it runs under roads.</CBF_RoleTip_CONDUIT_ROAD>
+  <CBF_Role_CONDUIT_WATER>Conduit under water</CBF_Role_CONDUIT_WATER>
+  <CBF_RoleTip_CONDUIT_WATER>Conduit where it crosses water.</CBF_RoleTip_CONDUIT_WATER>
+
 </LanguageData>

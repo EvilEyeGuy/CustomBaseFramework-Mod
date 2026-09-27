@@ -47,9 +47,13 @@ td code{white-space:nowrap}
 .marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
 .marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
 .marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
-.gruppe{margin:0 0 16px}
-.gruppe b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--leise);margin:0 0 4px 10px}
-.gruppe a{display:block;padding:6px 10px;border-radius:8px;color:var(--text);text-decoration:none;font-size:15px}
+.gruppe{margin:0 0 18px}
+.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
+.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
+.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
+.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
+.gruppe b i img{width:20px;height:20px;object-fit:contain}
+.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
 .gruppe a:hover{background:var(--akzentweich)}
 .gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
 main{padding:40px 48px 80px;min-width:0}
@@ -57,7 +61,7 @@ main{padding:40px 48px 80px;min-width:0}
 .rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
 @media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
 @media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
-</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html">Pieces</a><a href="Categories.html">Categories</a><a href="Annexes.html">Annexes</a><a href="Settlements.html" class="hier">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Play</b><a href="Mod-Settings.html">Mod settings</a><a href="Settlement-Types.html">Settlement types</a></div><div class="gruppe"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="settlements">Settlements</h1>
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html" class="hier">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="settlements">Settlements</h1>
 <p>A settlement plan describes one kind of place: a market town, a fortress city, a village, a camp. The generator builds it fresh for every faction base, so no two look the same.</p>
 <a class="bild" href="images/settlement-tab.png" target="_blank"><img alt="The Settlement tab" src="images/settlement-tab.png" loading="lazy"></a>
 <ol>
@@ -68,14 +72,29 @@ main{padding:40px 48px 80px;min-width:0}
 <li><strong>Faction overview</strong> below the list shows which faction gets which settlement, see <a href="Factions.html">Factions</a>.</li>
 </ol>
 <p>Settlement types from other mods are read only. <strong>Copy into my mod</strong> at the bottom puts a copy into your mod and opens it. <strong>Build</strong> and the preview still work on the original.</p>
+<h2 id="loot-of-a-built-settlement">Loot of a built settlement</h2>
+<p>After <strong>Build</strong>, the button <strong>Show loot</strong> at the bottom shows what the loot of the settlement built last is worth in silver: in total, per ward and per kind of goods. The value is counted while the settlement is built and saved with it. Medieval Overhaul containers that only fill when searched are not included.</p>
+<h2 id="what-the-generator-handles-by-itself">What the generator handles by itself</h2>
+<ul>
+<li>Buildings that belong at the wall, such as barracks, dock onto the town wall. The wall stays and the building gets a door onto the walkway.</li>
+<li>An open side of such a building that does not touch the wall is closed with the building's own wall.</li>
+<li>Wall parts cut off by a mountain turn into rock. Large rock pockets behind the wall get a postern. Small rock islands that touch the planned wall stay on the wall line and outside the town and replace the wall there; only the part inside the town is removed.</li>
+<li>Rubble inside the settlement is cleared.</li>
+<li>Modern towns always have wards shaped like a spider web: 7 to 10 corners with sagging sides, also with a sandbag or barricade line. They never get gatehouses; roads run through gaps.</li>
+<li>Medieval settlements at the coast or on a wide river get a harbor with jetties, fishing huts, harbor store, harbor master and boat sheds, linked to the town by a path. The settlement type lists the harbor buildings under <code>hafen</code>, see <a href="Modding-Settlements.html#harbors">Settlement types in XML</a>.</li>
+<li>Buildings whose graphic only has one direction, such as Medieval Overhaul carts, are never rotated.</li>
+<li>Stoves, ovens and workbenches face into the room, and every thing gets a stuff it can be made of.</li>
+</ul>
 <h2 id="general">General</h2>
 <a class="bild" href="images/settlement-general.png" target="_blank"><img alt="The General section" src="images/settlement-general.png" loading="lazy"></a>
 <ul>
 <li><strong>Label</strong>: the name players see.</li>
 <li><strong>Kind of place</strong>: medieval town, modern town or camp. Click to switch.</li>
 <li><strong>Weight</strong>: how often this plan is drawn against other plans of the same faction.</li>
-<li><strong>WD tier</strong>: only with World Domination 2.0 active. The World Domination tier 1 to 4 this plan stands for, see <a href="Compatibility.html#world-domination-20">Compatibility</a>.</li>
-<li><strong>Tech levels</strong>: which ages the plan fits. Click switches one level, right-click picks this level and all above. Pawn lists draw at this level first and step down if nobody fits.</li>
+<li><strong>Material list</strong>: what the generator uses for walls, doors, gates, fences, roads and roofs it builds itself, see <a href="Material-Lists.html">Material lists</a>. Required; the row is red without one.</li>
+<li><strong>WD tier</strong>: only with World Domination 2.0 active. A dropdown with the tiers of World Domination, a single tier or a range such as Tier 1 to 2. The tier this plan stands for, see <a href="Compatibility.html#world-domination-20">Compatibility</a>.</li>
+<li><strong>WD type</strong>: only with World Domination 2.0 active. The World Domination settlement types this plan stands for, such as mining camp or slave village. Only the types of the chosen tier are offered; empty means any type.</li>
+<li><strong>Tech levels</strong>: which ages the plan fits. Click switches one level, right-click picks this level and all above. Pawn lists use their members of the highest tech level at or below the settlement's level.</li>
 <li><strong>For all factions of these levels</strong>: the plan serves every faction of a ticked tech level, unless that faction has plans of its own.</li>
 <li><strong>Factions</strong>: factions or faction categories that get this plan in any case.</li>
 <li><strong>Excluded</strong>: factions that never get it.</li>
@@ -90,11 +109,18 @@ main{padding:40px 48px 80px;min-width:0}
 <li><strong>Walls</strong>: the wall pieces of this ring. Several entries give a wall that varies along its length.</li>
 <li><strong>Emplacements</strong>: towers and other works in the ring. The generator spaces them itself, corners first.</li>
 <li><strong>Gatehouses</strong>: built wherever a road crosses the wall.</li>
-<li><strong>Gate</strong>: the thing that closes the passages. Empty uses the gate of the palette.</li>
+<li><strong>Gate</strong>: the thing that closes the passages. Empty uses the gate of the <a href="Material-Lists.html">material list</a>.</li>
 </ul>
 <p>Modern towns and the countryside have no fortification.</p>
 <h3 id="garrison">Garrison</h3>
-<p>Pawn lists that defend this ward, with a count and a post: <strong>Inside</strong>, <strong>Wall</strong> or <strong>Gate</strong>. Without entries the ward takes its share of the faction's defender points.</p>
+<p>Pawn lists that defend this ward, with a count and a post: <strong>Inside</strong>, <strong>Wall</strong> or <strong>Gate</strong>. The editor shows the point value. A ward with a garrison ignores the defender points of the settlement type; without entries the ward takes its share of them.</p>
+<p>How the defenders behave:</p>
+<ul>
+<li>Every ward defends itself. Defenders do not gather in the center and do not storm out together.</li>
+<li>Guards on the wall and at the gates hold their spot, shooters stay at the embrasures.</li>
+<li>Crews of ballistas, catapults and trebuchets stay at their gun, even when many defenders have fallen.</li>
+<li>Defenders of a settlement cannot be recruited as prisoners.</li>
+</ul>
 <h3 id="defences">Defences</h3>
 <p>Defences spread over the whole ward: turret posts, sandbag nests, bunkers. Each entry names a category or one piece and a count. The first one stands at a random spot along a road; every further one goes where it is farthest from those already placed. Use districts instead when a defence belongs to one district only.</p>
 <h3 id="districts">Districts</h3>
@@ -107,4 +133,4 @@ main{padding:40px 48px 80px;min-width:0}
 <li><strong>Location of the district</strong>: how strongly the district wants to lie near the center, the gate, the wall or the main road, 0 to 1 each. All 0 means a random spot.</li>
 </ol>
 <a class="bild" href="images/settlement-district-location.png" target="_blank"><img alt="Location of the district" src="images/settlement-district-location.png" loading="lazy"></a>
-<p><strong>+ Building</strong>, <strong>+ Field</strong> and <strong>+ Pen</strong> add rows. The <strong>...</strong> button next to a category shows the pieces it covers.</p><div class="schritte"><a href="Annexes.html"><span>Previous</span>Annexes</a><a class="weiter" href="Loot.html"><span>Next</span>Loot</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#general">General</a><a href="#wards">Wards</a></div></aside></div></body></html>
+<p><strong>+ Building</strong>, <strong>+ Field</strong> and <strong>+ Pen</strong> add rows. The <strong>...</strong> button next to a category shows the pieces it covers.</p><div class="schritte"><a href="Annexes.html"><span>Previous</span>Annexes</a><a class="weiter" href="Factions.html"><span>Next</span>Factions</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#loot-of-a-built-settlement">Loot of a built settlement</a><a href="#what-the-generator-handles-by-itself">What the generator handles by itself</a><a href="#general">General</a><a href="#wards">Wards</a></div></aside></div></body></html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_VFEM2_Posten_Geschuetzstellung_A</defName>
+    <label>CBF_VFEM2_Posten_Geschuetzstellung_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_VFEM2_Posten_Geschuetzstellung</li>
+    </categories>
+    <style>CBF_VFEM2</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>b</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
+      <li><symbol>f</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
+    </legend>
+    <mask>
+      <li>..#######..</li>
+      <li>.#########.</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>..########.</li>
+      <li>...#####...</li>
+    </mask>
+    <terrain>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </terrain>
+    <things>
+      <li>..aaaaaaa..</li>
+      <li>.aa.....aa.</li>
+      <li>aa.b..b..aa</li>
+      <li>a.........a</li>
+      <li>....f......</li>
+      <li>...........</li>
+    </things>
+    <roof>
+      <li>..^^^^^^^..</li>
+      <li>.^^.....^^.</li>
+      <li>^^.^..^..^^</li>
+      <li>^.........^</li>
+      <li>...........</li>
+      <li>...........</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

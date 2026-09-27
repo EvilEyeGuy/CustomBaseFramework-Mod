@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Posten_Marktstand_A</defName>
+    <label>CBF_Vanilla_Posten_Marktstand_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_Posten_Marktstand</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+    <legend>
+      <li><symbol>I</symbol><thing>Column</thing><stuff>Steel</stuff></li>
+      <li><symbol>L</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>P</symbol><thing>Shelf</thing><stuff>Steel</stuff><rotation>North</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>t</symbol><thing>Table1x2c</thing><stuff>Steel</stuff><rotation>North</rotation></li>
+    </legend>
+    <mask>
+      <li>#######...</li>
+      <li>#######...</li>
+      <li>#########.</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>..######..</li>
+    </mask>
+    <terrain>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+    </terrain>
+    <things>
+      <li>I.....I...</li>
+      <li>.P..P.....</li>
+      <li>..........</li>
+      <li>.t...t....</li>
+      <li>I.....I.L.</li>
+      <li>..........</li>
+    </things>
+    <roof>
+      <li>^^^^^^^...</li>
+      <li>^^^^^^^...</li>
+      <li>^^^^^^^...</li>
+      <li>^^^^^^^...</li>
+      <li>^^^^^^^...</li>
+      <li>..........</li>
+    </roof>
+    <anchors>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

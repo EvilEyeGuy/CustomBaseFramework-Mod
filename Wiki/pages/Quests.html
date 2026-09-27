@@ -1,0 +1,142 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quests · Custom Base Framework</title><style>
+:root{--grund:#f4f3ef;--karte:#ffffff;--linie:#e3e0d8;--text:#1f2124;--leise:#63676e;--akzent:#2f6f60;--akzentweich:#e3efeb;--ocker:#b27a17;--code:#f0eee8;--schatten:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06)}
+@media (prefers-color-scheme: dark){:root{--grund:#121417;--karte:#1a1d22;--linie:#2c3139;--text:#e6e4df;--leise:#99a0aa;--akzent:#7cc0aa;--akzentweich:#1f2f2b;--ocker:#d9ab55;--code:#24282f;--schatten:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--grund);color:var(--text);font:16px/1.65 "Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--akzent);text-underline-offset:3px}
+.inhalt h1{font-size:2.1rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.inhalt h2{font-size:1.35rem;letter-spacing:-.01em;margin:44px 0 10px}
+.inhalt h3{font-size:1.08rem;margin:28px 0 8px}
+.inhalt p,.inhalt li{max-width:74ch}
+.inhalt>p:first-of-type{font-size:1.08rem;color:var(--leise)}
+code{font-family:"Cascadia Mono",Consolas,monospace;font-size:.86em;background:var(--code);padding:2px 6px;border-radius:5px}
+.bild{display:block;margin:18px 0 22px}
+.bild img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--linie);box-shadow:var(--schatten)}
+.bild:hover img{border-color:var(--akzent)}
+.inhalt ol{list-style:none;padding:0;counter-reset:n;margin:12px 0 18px}
+.inhalt ol>li{counter-increment:n;position:relative;padding-left:40px;margin:10px 0}
+.inhalt ol>li::before{content:counter(n);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--ocker);color:#1b1b1b;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.inhalt ul{padding-left:20px}
+.inhalt ul>li{margin:6px 0}
+.inhalt ul>li::marker{color:var(--akzent)}
+table{border-collapse:separate;border-spacing:0;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto;border:1px solid var(--linie);border-radius:10px}
+th,td{padding:8px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--linie)}
+tr:last-child td{border-bottom:0}
+th{background:var(--code);font-weight:600;position:sticky;top:0}
+td code{white-space:nowrap}
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:56px;padding-top:20px;border-top:1px solid var(--linie)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--linie);background:var(--karte);border-radius:10px;padding:12px 16px;color:var(--text)}
+.schritte a:hover{border-color:var(--akzent)}
+.schritte span{display:block;font-size:12px;color:var(--leise);text-transform:uppercase;letter-spacing:.06em}
+.schritte .weiter{text-align:right;margin-left:auto}
+.home .inhalt ol{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;max-width:none}
+.home .inhalt ol>li{margin:0;background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:14px 16px 14px 54px;max-width:none;box-shadow:var(--schatten)}
+.home .inhalt ol>li::before{left:16px;top:16px}
+.home .inhalt ol>li a{font-weight:600}
+.home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
+.pfad{font-size:13px;color:var(--leise);margin-bottom:6px}
+.pfad a{color:var(--leise)}
+.aufseite{font-size:13px}
+.aufseite b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--leise);margin-bottom:8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:4px 0 4px 12px;border-left:2px solid var(--linie)}
+.aufseite a:hover{color:var(--akzent);border-left-color:var(--akzent)}
+
+.rahmen{display:grid;grid-template-columns:260px minmax(0,1fr) 200px;gap:0;max-width:1400px;margin:0 auto}
+.leiste{position:sticky;top:0;height:100vh;overflow:auto;padding:22px 18px;border-right:1px solid var(--linie)}
+.marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
+.marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
+.marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
+.gruppe{margin:0 0 18px}
+.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
+.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
+.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
+.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
+.gruppe b i img{width:20px;height:20px;object-fit:contain}
+.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
+.gruppe a:hover{background:var(--akzentweich)}
+.gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
+main{padding:40px 48px 80px;min-width:0}
+.inhalt{max-width:860px}
+.rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
+@media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
+@media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html" class="hier">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="quests">Quests</h1>
+<p>CBF ships two quests for Medieval Overhaul. Both send you to a settlement of a friendly faction that CBF builds as a full town. For building your own quests see <a href="Modding-Quests.html">Modding quests</a>.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Medieval Overhaul must be active. The quests are in <code>1.6/Mods/MedievalOverhaul</code>.</li>
+<li>The quest giver is a faction that is not hostile to you, has a living leader and can get a CBF village or market town. In practice these are the Medieval Overhaul noble houses. With VFE Medieval 2 active, its kingdoms qualify too. Medieval factions of other mods that get the shared village plan qualify as well.</li>
+<li>The enemy is the Medieval Overhaul brigands faction. It must exist in the world and be hostile to you and to the quest giver.</li>
+<li>Factions switched off in the <a href="Mod-Settings.html">mod settings</a> and Empire vassal colonies are never quest givers.</li>
+<li>Both quests enter the normal random quest pool from 300 threat points.</li>
+</ul>
+<p>The settlement is a village or a market town in the style of the quest giver, see <a href="Settlement-Types.html">Settlement types</a>. The map is prepared in the background when you arrive by caravan, transport pod, shuttle or gravship, so the game does not freeze on arrival.</p>
+<h2 id="raided-settlement">Raided settlement</h2>
+<p>Quest names: "The Raided Village", "Bandits in [lord]'s Town", "[lord] and the Raided Settlement" and similar. On the world map the site is called "raided settlement".</p>
+<p>Brigands have overrun a settlement of the quest giver. The town is damaged: breached walls, a destroyed gate in some cases, burnt rooms, fires, rubble, dead residents and dead brigands, trampled fields and missing livestock. Part of the loot is gone or piled up with the brigands. A few residents may be held prisoner. The brigands hold the town as its garrison.</p>
+<h3 id="what-you-do">What you do</h3>
+<p>Attack the settlement and defeat all brigands. There is no fixed reward. What is left in the settlement is the reward.</p>
+<h3 id="the-choice">The choice</h3>
+<p>When the last brigand is beaten, a letter asks what to do with the settlement:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Goodwill with the quest giver</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leave it to the lord</td>
+<td>+20</td>
+<td>The settlement and its buildings go back to the quest giver. Everything still there is forbidden and belongs to them. Taking items or claiming buildings there costs goodwill.</td>
+</tr>
+<tr>
+<td>Take what is left</td>
+<td>+3</td>
+<td>The settlement stays with the brigands. You loot freely.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Items your colonists already carry when you choose the first option count as taken.</li>
+<li>If you leave the map without deciding, you take what is left (+3).</li>
+<li>Both options complete the quest.</li>
+</ul>
+<h3 id="failure">Failure</h3>
+<ul>
+<li>The site disappears after 12 to 28 days if you have not arrived. The brigands have moved on.</li>
+<li>You leave the map before all brigands are defeated.</li>
+</ul>
+<h2 id="contested-settlement">Contested settlement</h2>
+<p>Quest names: "The Siege of [lord]'s Village", "Town under Attack", "Relief for [lord]" and similar. On the world map the site is called "settlement under attack".</p>
+<p>Brigands are storming a settlement of the quest giver. The walls are breached, parts are burning. The defenders are the quest giver's own soldiers, a reduced garrison. The attackers are about three times the site threat points strong and start in front of the breaches.</p>
+<h3 id="what-you-do_1">What you do</h3>
+<p>Travel there and help the defenders drive off the attackers. Entering the map does not count as an attack on the quest giver.</p>
+<h3 id="reward">Reward</h3>
+<ul>
+<li>You choose the reward when you accept the quest, as with vanilla quests.</li>
+<li>The reward is about 1.75 times the normal value for the threat points.</li>
+<li>Item rewards are medieval only. Things above the medieval tech level are excluded, as are powered things and a fixed list such as plasteel, components, industrial medicine, drugs like go-juice and orbital targeters.</li>
+<li>Goodwill and, with Royalty, honor are possible. For honor you pick the colonist who receives it.</li>
+</ul>
+<h3 id="taking-things">Taking things</h3>
+<p>The settlement belongs to the quest giver from the start. Taking items from it or claiming its buildings costs goodwill. The same rules apply as after "Leave it to the lord" in the raided settlement, see below.</p>
+<h3 id="failure_1">Failure</h3>
+<ul>
+<li>You do not arrive within 3 to 6 days. The settlement has fallen.</li>
+<li>All defenders are dead, downed or gone while attackers are still on the map.</li>
+<li>You leave the map while attackers are still there.</li>
+</ul>
+<h2 id="goodwill-for-taken-goods">Goodwill for taken goods</h2>
+<p>Applies to the contested settlement and to a raided settlement left to the lord. Inspecting the site on the world map shows "Belongs to [faction]. Taking items costs goodwill." while it applies.</p>
+<ul>
+<li>Counted are items that lay in the settlement when the map was generated. Pawns, corpses and chunks do not count.</li>
+<li>Items that come to the map later do not count, for example the gear of dead attackers.</li>
+<li>An item counts as taken when one of your colonists picks it up, carries it, equips it or wears it.</li>
+<li>Claiming a building of the owning faction counts at its market value.</li>
+<li>The cost is 1.5 goodwill per 1000 silver of market value. Fractions add up until they reach a full point.</li>
+<li>The history entry reads "took goods from their settlement".</li>
+</ul><div class="schritte"><a href="Settlement-Types.html"><span>Previous</span>Shipped settlements</a><a class="weiter" href="Mod-Settings.html"><span>Next</span>Mod settings</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#requirements">Requirements</a><a href="#raided-settlement">Raided settlement</a><a href="#contested-settlement">Contested settlement</a><a href="#goodwill-for-taken-goods">Goodwill for taken goods</a></div></aside></div></body></html>

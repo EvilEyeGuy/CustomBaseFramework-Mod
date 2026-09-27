@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Mine_B</defName>
+    <label>CBF_MO_Mine_B</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Mine</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>2</symbol><anchor>Werkzeugtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Mine</lootTable></li>
+      <li><symbol>8</symbol><anchor>ArbeiterA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>9</symbol><anchor>ArbeiterB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>C</symbol><thing>ChunkGranite</thing><count>1</count></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_StoneDebris</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_Brazier1x1c</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li><symbol>R</symbol><thing>Granite</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
+      <li><symbol>f</symbol><anchor>ErzfassA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Erzfass</objects></li>
+      <li><symbol>g</symbol><anchor>ErzfassB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Erzfass</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_MineableIron</thing></li>
+      <li><symbol>j</symbol><anchor>Erzwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Erzwagen</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_MineableCoal</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideoutBarrelIronOre</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_IronOre</thing><count>25</count></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_HideOutBuildingBase_Cart_Ore</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>s</symbol><thing>DankPyon_StoneDebrisSmall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>t</symbol><thing>DankPyon_MiningTools</thing><stuff>Steel</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>u</symbol><thing>DankPyon_MineableGold</thing></li>
+    </legend>
+    <mask>
+      <li>.##############.</li>
+      <li>################</li>
+      <li>################</li>
+      <li>################</li>
+      <li>################</li>
+      <li>################</li>
+      <li>################</li>
+      <li>################</li>
+      <li>################</li>
+      <li>################</li>
+      <li>################</li>
+      <li>################</li>
+      <li>.##############.</li>
+    </mask>
+    <terrain>
+      <li>................</li>
+      <li>................</li>
+      <li>......eeeeeee...</li>
+      <li>......eeeeeee...</li>
+      <li>..eeeeeee.......</li>
+      <li>..eeeeeee.......</li>
+      <li>......eee.......</li>
+      <li>......eee.......</li>
+      <li>................</li>
+      <li>................</li>
+      <li>................</li>
+      <li>................</li>
+      <li>................</li>
+    </terrain>
+    <things>
+      <li>.RRRRRRRRRRRRRR.</li>
+      <li>RRRRRRRRRiRRuRRR</li>
+      <li>RRRRRR.......iRR</li>
+      <li>RRiRRR.....t.iRR</li>
+      <li>RR...sI.IiRRRRRR</li>
+      <li>Rio......RRRRRRR</li>
+      <li>RRRkkR...RRRRRRR</li>
+      <li>.RRRRRI.IRRRRRR.</li>
+      <li>..RRRR....RRRR..</li>
+      <li>..l.........l...</li>
+      <li>....t.........C.</li>
+      <li>.C....m..H..D...</li>
+      <li>.......Z..p.....</li>
+    </things>
+    <roof>
+      <li>................</li>
+      <li>................</li>
+      <li>......^^^^^^^...</li>
+      <li>......^^^^^^^...</li>
+      <li>..^^^^^^^.......</li>
+      <li>..^^^^^^^.......</li>
+      <li>......^^^.......</li>
+      <li>......^^^.......</li>
+      <li>......^^^.......</li>
+      <li>................</li>
+      <li>................</li>
+      <li>................</li>
+      <li>................</li>
+    </roof>
+    <anchors>
+      <li>................</li>
+      <li>................</li>
+      <li>................</li>
+      <li>..........8.....</li>
+      <li>................</li>
+      <li>................</li>
+      <li>................</li>
+      <li>................</li>
+      <li>................</li>
+      <li>..f.........g...</li>
+      <li>.......9........</li>
+      <li>......2...jj....</li>
+      <li>..........jj....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

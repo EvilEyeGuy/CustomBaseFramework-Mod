@@ -1,68 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <CustomBaseFramework.EinheitentauschDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Haus_Soren</defName>
-    <label>Haus Soren</label>
-    <faction>DankPyon_NobleHouseCivil2</faction>
-    <prioritaet>0</prioritaet>
-    <einheiten>
-      <li><von>DankPyon_Amboise_LocalLord</von><zu>DankPyon_Soren_LocalLord</zu></li>
-      <li><von>DankPyon_Amboisse_Archer</von><zu>DankPyon_Soren_Archer</zu></li>
-      <li><von>DankPyon_Amboisse_Footman</von><zu>DankPyon_Soren_Footman</zu></li>
-      <li><von>DankPyon_Amboisse_Knight</von><zu>DankPyon_Soren_Knight</zu></li>
-      <li><von>DankPyon_Amboisse_Peasant</von><zu>DankPyon_Soren_Peasant</zu></li>
-      <li><von>DankPyon_FootmanAmboise</von><zu>DankPyon_FootmanSoren</zu></li>
-      <li><von>DankPyon_FootmanHesse</von><zu>DankPyon_FootmanSoren</zu></li>
-      <li><von>DankPyon_FootmanOswin</von><zu>DankPyon_FootmanSoren</zu></li>
-      <li><von>DankPyon_Hesse_Archer</von><zu>DankPyon_Soren_Archer</zu></li>
-      <li><von>DankPyon_Hesse_Footman</von><zu>DankPyon_Soren_Footman</zu></li>
-      <li><von>DankPyon_Hesse_Knight</von><zu>DankPyon_Soren_Knight</zu></li>
-      <li><von>DankPyon_Hesse_LocalLord</von><zu>DankPyon_Soren_LocalLord</zu></li>
-      <li><von>DankPyon_Hesse_Peasant</von><zu>DankPyon_Soren_Peasant</zu></li>
-      <li><von>DankPyon_KnightAmboise</von><zu>DankPyon_KnightSoren</zu></li>
-      <li><von>DankPyon_KnightHesse</von><zu>DankPyon_KnightSoren</zu></li>
-      <li><von>DankPyon_KnightOswin</von><zu>DankPyon_KnightSoren</zu></li>
-      <li><von>DankPyon_Oswin_Archer</von><zu>DankPyon_Soren_Archer</zu></li>
-      <li><von>DankPyon_Oswin_Footman</von><zu>DankPyon_Soren_Footman</zu></li>
-      <li><von>DankPyon_Oswin_Knight</von><zu>DankPyon_Soren_Knight</zu></li>
-      <li><von>DankPyon_Oswin_LocalLord</von><zu>DankPyon_Soren_LocalLord</zu></li>
-      <li><von>DankPyon_Oswin_Peasant</von><zu>DankPyon_Soren_Peasant</zu></li>
-      <li><von>DankPyon_StandardAmboise</von><zu>DankPyon_StandardSoren</zu></li>
-      <li><von>DankPyon_StandardHesse</von><zu>DankPyon_StandardSoren</zu></li>
-      <li><von>DankPyon_StandardOswin</von><zu>DankPyon_StandardSoren</zu></li>
-      <li><von>DankPyon_ZweihanderAmboise</von><zu>DankPyon_ZweihanderSoren</zu></li>
-      <li><von>DankPyon_ZweihanderHesse</von><zu>DankPyon_ZweihanderSoren</zu></li>
-      <li><von>DankPyon_ZweihanderOswin</von><zu>DankPyon_ZweihanderSoren</zu></li>
-      <li><von>CBF_MO_Ritter</von><zu>DankPyon_KnightSoren</zu></li>
-      <li><von>CBF_MO_Pikenier</von><zu>DankPyon_StandardSoren</zu></li>
-      <li><von>DankPyon_Medieval_Arbalester</von><zu>DankPyon_Soren_Archer</zu></li>
-      <li><von>DankPyon_Medieval_Arbalester</von><zu>DankPyon_Medieval_Arbalester</zu></li>
-      <li><von>DankPyon_Medieval_Mercenary</von><zu>DankPyon_FootmanSoren</zu></li>
-      <li><von>DankPyon_Medieval_MercenaryHeavy</von><zu>DankPyon_FootmanSoren</zu></li>
-      <li><von>DankPyon_Medieval_Peasant</von><zu>DankPyon_Soren_Peasant</zu></li>
-      <li><von>Villager</von><zu>DankPyon_Soren_Peasant</zu></li>
-    </einheiten>
-    <dinge>
-      <li><von>DankPyon_BannerAmboise</von><zu>DankPyon_BannerSoren</zu></li>
-      <li><von>DankPyon_BannerHesse</von><zu>DankPyon_BannerSoren</zu></li>
-      <li><von>DankPyon_BannerOswin</von><zu>DankPyon_BannerSoren</zu></li>
-      <li><von>DankPyon_Headgear_ZweihanderHelmAmboise</von><zu>DankPyon_Headgear_ZweihanderHelmSoren</zu></li>
-      <li><von>DankPyon_Headgear_ZweihanderHelmHesse</von><zu>DankPyon_Headgear_ZweihanderHelmSoren</zu></li>
-      <li><von>DankPyon_Headgear_ZweihanderHelmOswin</von><zu>DankPyon_Headgear_ZweihanderHelmSoren</zu></li>
-      <li><von>DankPyon_HideoutLargeShelf_FilledA_Amboise</von><zu>DankPyon_HideoutLargeShelf_FilledA_Soren</zu></li>
-      <li><von>DankPyon_HideoutLargeShelf_FilledA_Hesse</von><zu>DankPyon_HideoutLargeShelf_FilledA_Soren</zu></li>
-      <li><von>DankPyon_HideoutLargeShelf_FilledA_Oswin</von><zu>DankPyon_HideoutLargeShelf_FilledA_Soren</zu></li>
-      <li><von>DankPyon_HideoutLargeShelf_FilledB_Amboise</von><zu>DankPyon_HideoutLargeShelf_FilledB_Soren</zu></li>
-      <li><von>DankPyon_HideoutLargeShelf_FilledB_Hesse</von><zu>DankPyon_HideoutLargeShelf_FilledB_Soren</zu></li>
-      <li><von>DankPyon_HideoutLargeShelf_FilledB_Oswin</von><zu>DankPyon_HideoutLargeShelf_FilledB_Soren</zu></li>
-      <li><von>DankPyon_MeleeWeapon_PikeAmboise</von><zu>DankPyon_MeleeWeapon_PikeSoren</zu></li>
-      <li><von>DankPyon_MeleeWeapon_PikeHesse</von><zu>DankPyon_MeleeWeapon_PikeSoren</zu></li>
-      <li><von>DankPyon_MeleeWeapon_PikeOswin</von><zu>DankPyon_MeleeWeapon_PikeSoren</zu></li>
-      <li><von>DankPyon_ShieldHeater_Amboise</von><zu>DankPyon_ShieldHeater_Soren</zu></li>
-      <li><von>DankPyon_ShieldHeater_Hesse</von><zu>DankPyon_ShieldHeater_Soren</zu></li>
-      <li><von>DankPyon_ShieldHeater_Oswin</von><zu>DankPyon_ShieldHeater_Soren</zu></li>
-    </dinge>
-  </CustomBaseFramework.EinheitentauschDef>
+  <CustomBaseFramework.EinheitentauschDef MayRequire="DankPyon.Medieval.Overhaul"><defName>CBF_MO_Haus_Soren</defName><faction>DankPyon_NobleHouseCivil2</faction><einheiten><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Amboise_LocalLord</von><zu>DankPyon_Soren_LocalLord</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Amboisse_Archer</von><zu>DankPyon_Soren_Archer</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Amboisse_Footman</von><zu>DankPyon_Soren_Footman</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Amboisse_Knight</von><zu>DankPyon_Soren_Knight</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Amboisse_Peasant</von><zu>DankPyon_Soren_Peasant</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_FootmanAmboise</von><zu>DankPyon_FootmanSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_FootmanHesse</von><zu>DankPyon_FootmanSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_FootmanOswin</von><zu>DankPyon_FootmanSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Hesse_Archer</von><zu>DankPyon_Soren_Archer</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Hesse_Footman</von><zu>DankPyon_Soren_Footman</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Hesse_Knight</von><zu>DankPyon_Soren_Knight</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Hesse_LocalLord</von><zu>DankPyon_Soren_LocalLord</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Hesse_Peasant</von><zu>DankPyon_Soren_Peasant</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_KnightAmboise</von><zu>DankPyon_KnightSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_KnightHesse</von><zu>DankPyon_KnightSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_KnightOswin</von><zu>DankPyon_KnightSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Oswin_Archer</von><zu>DankPyon_Soren_Archer</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Oswin_Footman</von><zu>DankPyon_Soren_Footman</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Oswin_Knight</von><zu>DankPyon_Soren_Knight</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Oswin_LocalLord</von><zu>DankPyon_Soren_LocalLord</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Oswin_Peasant</von><zu>DankPyon_Soren_Peasant</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_StandardAmboise</von><zu>DankPyon_StandardSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_StandardHesse</von><zu>DankPyon_StandardSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_StandardOswin</von><zu>DankPyon_StandardSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_ZweihanderAmboise</von><zu>DankPyon_ZweihanderSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_ZweihanderHesse</von><zu>DankPyon_ZweihanderSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_ZweihanderOswin</von><zu>DankPyon_ZweihanderSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>CBF_MO_Ritter</von><zu>DankPyon_KnightSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>CBF_MO_Pikenier</von><zu>DankPyon_StandardSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Medieval_Arbalester</von><zu>DankPyon_Soren_Archer</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Medieval_Arbalester</von><zu>DankPyon_Medieval_Arbalester</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Medieval_Mercenary</von><zu>DankPyon_FootmanSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Medieval_MercenaryHeavy</von><zu>DankPyon_FootmanSoren</zu></li></einheiten><dinge><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_BannerAmboise</von><zu>DankPyon_BannerSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_BannerHesse</von><zu>DankPyon_BannerSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_BannerOswin</von><zu>DankPyon_BannerSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Headgear_ZweihanderHelmAmboise</von><zu>DankPyon_Headgear_ZweihanderHelmSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Headgear_ZweihanderHelmHesse</von><zu>DankPyon_Headgear_ZweihanderHelmSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_Headgear_ZweihanderHelmOswin</von><zu>DankPyon_Headgear_ZweihanderHelmSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_HideoutLargeShelf_FilledA_Amboise</von><zu>DankPyon_HideoutLargeShelf_FilledA_Soren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_HideoutLargeShelf_FilledA_Hesse</von><zu>DankPyon_HideoutLargeShelf_FilledA_Soren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_HideoutLargeShelf_FilledA_Oswin</von><zu>DankPyon_HideoutLargeShelf_FilledA_Soren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_HideoutLargeShelf_FilledB_Amboise</von><zu>DankPyon_HideoutLargeShelf_FilledB_Soren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_HideoutLargeShelf_FilledB_Hesse</von><zu>DankPyon_HideoutLargeShelf_FilledB_Soren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_HideoutLargeShelf_FilledB_Oswin</von><zu>DankPyon_HideoutLargeShelf_FilledB_Soren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_MeleeWeapon_PikeAmboise</von><zu>DankPyon_MeleeWeapon_PikeSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_MeleeWeapon_PikeHesse</von><zu>DankPyon_MeleeWeapon_PikeSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_MeleeWeapon_PikeOswin</von><zu>DankPyon_MeleeWeapon_PikeSoren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_ShieldHeater_Amboise</von><zu>DankPyon_ShieldHeater_Soren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_ShieldHeater_Hesse</von><zu>DankPyon_ShieldHeater_Soren</zu></li><li MayRequire="DankPyon.Medieval.Overhaul"><von>DankPyon_ShieldHeater_Oswin</von><zu>DankPyon_ShieldHeater_Soren</zu></li></dinge></CustomBaseFramework.EinheitentauschDef>
 
 </Defs>

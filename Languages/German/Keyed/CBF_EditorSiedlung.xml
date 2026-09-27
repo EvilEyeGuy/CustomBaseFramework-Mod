@@ -100,10 +100,32 @@
   <CBF_S_CropListGone>Die Pflanzenliste {0} in {1} gibt es nicht.</CBF_S_CropListGone>
   <CBF_S_DistrictNr>{0}. Bezirk</CBF_S_DistrictNr>
   <CBF_S_Gate>Tor</CBF_S_Gate>
-  <CBF_S_GateFromPalette>von der Palette</CBF_S_GateFromPalette>
-  <CBF_S_GateTip>Das Tor-Ding für Durchgänge in der Mauer dieses Stadtteils. Leer nimmt das Tor der Palette.</CBF_S_GateTip>
+  <CBF_S_GateFromMaterialList>aus der Materialliste</CBF_S_GateFromMaterialList>
+  <CBF_S_GateTip>Das Tor-Ding für Durchgänge in der Mauer dieses Stadtteils. Leer nimmt das Standardtor.</CBF_S_GateTip>
   <CBF_S_DistrictPlacement>Lage des Bezirks</CBF_S_DistrictPlacement>
   <CBF_S_DistrictPlacementTip>Wo der Bezirk angelegt wird. Je 0 bis 1, sind alle 0, liegt er zufällig.</CBF_S_DistrictPlacementTip>
   <CBF_S_WdStage>WD-Stufe</CBF_S_WdStage>
   <CBF_S_WdStageTip>World-Domination-Stufe 1 bis 4, für die dieser Ortstyp steht. Ein World-Domination-Ort dieser Stufe nimmt ihn bevorzugt unter den Typen, die seine Fraktion bekommen darf. 0 heißt keine Stufe.</CBF_S_WdStageTip>
+  <CBF_S_WdStageNone>Keine Stufe</CBF_S_WdStageNone>
+  <CBF_S_WdStageRange>{0} bis {1}</CBF_S_WdStageRange>
+  <CBF_Lb_Button>Beute anzeigen</CBF_Lb_Button>
+  <CBF_Lb_ButtonTip>Beutewert des zuletzt gebauten Ortes dieses Typs.</CBF_Lb_ButtonTip>
+  <CBF_Lb_NoneYet>Zuerst einen Ort dieses Typs bauen. Seine Beute wird beim Bauen gezählt.</CBF_Lb_NoneYet>
+  <CBF_Lb_Title>Beute im Ort</CBF_Lb_Title>
+  <CBF_Lb_Silver>{0} Silber</CBF_Lb_Silver>
+  <CBF_Lb_Counts>{0} Stapel, {1} gefüllte Behälter</CBF_Lb_Counts>
+  <CBF_Lb_ByWard>Nach Stadtteil</CBF_Lb_ByWard>
+  <CBF_Lb_ByGroup>Nach Warengruppe</CBF_Lb_ByGroup>
+  <CBF_Lb_Outside>Außerhalb der Stadtteile</CBF_Lb_Outside>
+  <CBF_Lb_Other>Sonstiges</CBF_Lb_Other>
+  <CBF_Lb_Note>Marktwert von allem, was herumliegt oder in Behältern liegt. Behälter von Medieval Overhaul, die sich erst beim Durchsuchen füllen, sind nicht enthalten.</CBF_Lb_Note>
+  <CBF_S_MaterialList>Materialliste</CBF_S_MaterialList>
+  <CBF_S_MaterialListTip>Die Materialliste legt fest, welche Wände, Böden, Türen und anderen Dinge die Stücke dieses Ortstyps bekommen.</CBF_S_MaterialListTip>
+  <CBF_S_MaterialListNone>Keine Materialliste gewählt. Ohne sie ist dieser Ortstyp abgeschaltet.</CBF_S_MaterialListNone>
+  <CBF_S_MaterialListUnusable>Diese Materialliste ist unbrauchbar, Pflichtrollen finden kein Ding.</CBF_S_MaterialListUnusable>
+
+  <CBF_S_WdType>WD-Typ</CBF_S_WdType>
+  <CBF_S_WdTypeTip>World-Domination-Ortsarten, für die dieser Plan steht, etwa Minenlager oder Sklavendorf. Angeboten werden nur die Arten der gewählten Stufe. Leer heißt jede Art.</CBF_S_WdTypeTip>
+  <CBF_S_WdTypeAny>Jede Art</CBF_S_WdTypeAny>
+  <CBF_S_AddWardTip>Einen Stadtteil hinzufügen, den dieser Ortstyp noch nicht hat.</CBF_S_AddWardTip>
 </LanguageData>

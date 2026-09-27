@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Vanilla_Stamm_Bewohner</defName>
+    <label>tribespeople</label>
+    <rolle>Zivil</rolle>
+    <radius>4</radius>
+    <members>
+      <li><kind>CBF_Stammesmitglied</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Vanilla_Stamm_Krieger</defName>
+    <label>tribal warriors</label>
+    <rolle>Wache</rolle>
+    <radius>6</radius>
+    <members>
+      <li><kind>Tribal_Warrior</kind><weight>6</weight></li>
+      <li><kind>Tribal_Archer</kind><weight>4</weight></li>
+      <li><kind>Tribal_Hunter</kind><weight>3</weight></li>
+      <li><kind>Tribal_Berserker</kind><weight>2</weight></li>
+      <li><kind>Tribal_HeavyArcher</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Vanilla_Stamm_Haeuptling</defName>
+    <label>tribal chief</label>
+    <rolle>Wache</rolle>
+    <radius>3</radius>
+    <members>
+      <li><kind>Tribal_ChiefMelee</kind><weight>1</weight></li>
+      <li><kind>Tribal_ChiefRanged</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+</Defs>

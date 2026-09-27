@@ -19,8 +19,6 @@
   <CBF_Cfg_MapSize>A map size below 150 leaves attackers no edge.</CBF_Cfg_MapSize>
   <CBF_Cfg_NoBudget>The settlement type has no building program.</CBF_Cfg_NoBudget>
   <CBF_Cfg_Range>{0} must be between {1} and {2}.</CBF_Cfg_Range>
-  <CBF_Cfg_Corridor>A corridor share below 0.35 merges the rooms into one floor plan.</CBF_Cfg_Corridor>
-  <CBF_Cfg_NoRoomTags>The dungeon profile has no room tags.</CBF_Cfg_NoRoomTags>
   <CBF_Cfg_NoPlants>The crop list contains no plants.</CBF_Cfg_NoPlants>
   <CBF_Cfg_EntryNoPlant>An entry has no plant.</CBF_Cfg_EntryNoPlant>
   <CBF_Cfg_NoWeight>{0} has no positive weight.</CBF_Cfg_NoWeight>
@@ -31,7 +29,7 @@
   <CBF_Build_Place>Placing inhabitants</CBF_Build_Place>
   <CBF_Build_Handover>Settlement done, RimWorld is finishing the map</CBF_Build_Handover>
   <CBF_Build_BadPlan>Settlement type is invalid. See its validation report.</CBF_Build_BadPlan>
-  <CBF_Build_NoPalette>No usable palette.</CBF_Build_NoPalette>
+  
   <CBF_Build_NoInput>Terrain or building catalogue is missing.</CBF_Build_NoInput>
   <CBF_Planner_Terrain>Checking terrain and building site</CBF_Planner_Terrain>
   <CBF_Planner_Boundary>Planning boundaries, mountain connections and gates</CBF_Planner_Boundary>
@@ -213,7 +211,7 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_WorldPlaced>{0} placed for {1}. Type: {2}</CBF_WorldPlaced>
   <CBF_WorldPlan>Settlement type: {0}</CBF_WorldPlan>
   <CBF_WorldParts>{0} district(s), {1}</CBF_WorldParts>
-  <CBF_WorldPalette>Palette: {0}</CBF_WorldPalette>
+  <CBF_WorldMaterialList>Materials: {0}</CBF_WorldMaterialList>
   <CBF_WorldWalled>walled</CBF_WorldWalled>
   <CBF_IsOpen>open</CBF_IsOpen>
   <CBF_ExportWithHints>{0} exported, {1} hint(s), full list in the log:</CBF_ExportWithHints>
@@ -381,4 +379,5 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_Planner_WardNarrowed>Layer {0}: the wall grid takes away more than half of the area.</CBF_Planner_WardNarrowed>
 
   <CBF_Planner_Uhrbremse>Safety clock stopped the search after {0} layouts on this computer, the best layout so far is used. The result may differ on other computers.</CBF_Planner_Uhrbremse>
+  <CBF_Build_NoMaterialList>This settlement type names no material list.</CBF_Build_NoMaterialList>
 </LanguageData>

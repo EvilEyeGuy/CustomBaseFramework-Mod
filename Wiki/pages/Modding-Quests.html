@@ -1,0 +1,647 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Modding quests · Custom Base Framework</title><style>
+:root{--grund:#f4f3ef;--karte:#ffffff;--linie:#e3e0d8;--text:#1f2124;--leise:#63676e;--akzent:#2f6f60;--akzentweich:#e3efeb;--ocker:#b27a17;--code:#f0eee8;--schatten:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06)}
+@media (prefers-color-scheme: dark){:root{--grund:#121417;--karte:#1a1d22;--linie:#2c3139;--text:#e6e4df;--leise:#99a0aa;--akzent:#7cc0aa;--akzentweich:#1f2f2b;--ocker:#d9ab55;--code:#24282f;--schatten:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--grund);color:var(--text);font:16px/1.65 "Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--akzent);text-underline-offset:3px}
+.inhalt h1{font-size:2.1rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.inhalt h2{font-size:1.35rem;letter-spacing:-.01em;margin:44px 0 10px}
+.inhalt h3{font-size:1.08rem;margin:28px 0 8px}
+.inhalt p,.inhalt li{max-width:74ch}
+.inhalt>p:first-of-type{font-size:1.08rem;color:var(--leise)}
+code{font-family:"Cascadia Mono",Consolas,monospace;font-size:.86em;background:var(--code);padding:2px 6px;border-radius:5px}
+.bild{display:block;margin:18px 0 22px}
+.bild img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--linie);box-shadow:var(--schatten)}
+.bild:hover img{border-color:var(--akzent)}
+.inhalt ol{list-style:none;padding:0;counter-reset:n;margin:12px 0 18px}
+.inhalt ol>li{counter-increment:n;position:relative;padding-left:40px;margin:10px 0}
+.inhalt ol>li::before{content:counter(n);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--ocker);color:#1b1b1b;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.inhalt ul{padding-left:20px}
+.inhalt ul>li{margin:6px 0}
+.inhalt ul>li::marker{color:var(--akzent)}
+table{border-collapse:separate;border-spacing:0;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto;border:1px solid var(--linie);border-radius:10px}
+th,td{padding:8px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--linie)}
+tr:last-child td{border-bottom:0}
+th{background:var(--code);font-weight:600;position:sticky;top:0}
+td code{white-space:nowrap}
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:56px;padding-top:20px;border-top:1px solid var(--linie)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--linie);background:var(--karte);border-radius:10px;padding:12px 16px;color:var(--text)}
+.schritte a:hover{border-color:var(--akzent)}
+.schritte span{display:block;font-size:12px;color:var(--leise);text-transform:uppercase;letter-spacing:.06em}
+.schritte .weiter{text-align:right;margin-left:auto}
+.home .inhalt ol{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;max-width:none}
+.home .inhalt ol>li{margin:0;background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:14px 16px 14px 54px;max-width:none;box-shadow:var(--schatten)}
+.home .inhalt ol>li::before{left:16px;top:16px}
+.home .inhalt ol>li a{font-weight:600}
+.home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
+.pfad{font-size:13px;color:var(--leise);margin-bottom:6px}
+.pfad a{color:var(--leise)}
+.aufseite{font-size:13px}
+.aufseite b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--leise);margin-bottom:8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:4px 0 4px 12px;border-left:2px solid var(--linie)}
+.aufseite a:hover{color:var(--akzent);border-left-color:var(--akzent)}
+
+.rahmen{display:grid;grid-template-columns:260px minmax(0,1fr) 200px;gap:0;max-width:1400px;margin:0 auto}
+.leiste{position:sticky;top:0;height:100vh;overflow:auto;padding:22px 18px;border-right:1px solid var(--linie)}
+.marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
+.marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
+.marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
+.gruppe{margin:0 0 18px}
+.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
+.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
+.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
+.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
+.gruppe b i img{width:20px;height:20px;object-fit:contain}
+.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
+.gruppe a:hover{background:var(--akzentweich)}
+.gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
+main{padding:40px 48px 80px;min-width:0}
+.inhalt{max-width:860px}
+.rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
+@media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
+@media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html" class="hier">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="modding-quests">Modding quests</h1>
+<p>CBF has quest nodes and components to send the player to a CBF settlement that is built for a quest. The two shipped quests use them, see <a href="Quests.html">Quests</a>. Their files are the reference:</p>
+<ul>
+<li><code>1.6/Mods/MedievalOverhaul/Defs/Quests/CBF_MO_Quest_UeberfallenerOrt.xml</code> (raided settlement)</li>
+<li><code>1.6/Mods/MedievalOverhaul/Defs/Quests/CBF_MO_Quest_UmkaempfterOrt.xml</code> (contested settlement)</li>
+<li><code>CBF_MO_Quest_SiteParts.xml</code>, <code>CBF_MO_Quest_Orte.xml</code> and <code>CBF_MO_Quest_Ruinen.xml</code> in the same folder</li>
+</ul>
+<p>All classes are in the namespace <code>CustomBaseFramework</code>.</p>
+<h2 id="overview">Overview</h2>
+<p>A CBF quest site needs four defs:</p>
+<table>
+<thead>
+<tr>
+<th>Def</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SitePartDef</code></td>
+<td>Carries <code>CBFOrtExtension</code> (which plans, which ruin) and optionally <code>CBFBesatzerExtension</code> (which enemy factions).</td>
+</tr>
+<tr>
+<td><code>WorldObjectDef</code></td>
+<td>The site. Uses a CBF map generator and adds the quest components.</td>
+</tr>
+<tr>
+<td><a href="RuinDef.html">RuinDef</a></td>
+<td>Optional. Damage, corpses and who garrisons the settlement.</td>
+</tr>
+<tr>
+<td><code>QuestScriptDef</code></td>
+<td>The quest. Uses the <code>QuestNode_CBF*</code> nodes.</td>
+</tr>
+</tbody>
+</table>
+<p>The settlement plan must have <code>siteTags</code>, see <a href="SettlementPlanDef.html">SettlementPlanDef</a>. Plans without <code>siteTags</code> are never used for sites.</p>
+<h2 id="site-setup">Site setup</h2>
+<h3 id="worldobjectdef">WorldObjectDef</h3>
+<p><code>xml
+&lt;WorldObjectDef ParentName="Site"&gt;
+  &lt;defName&gt;CBF_MO_Quest_UmkaempfterOrt&lt;/defName&gt;
+  &lt;label&gt;settlement under attack&lt;/label&gt;
+  &lt;mapGenerator&gt;CBF_Base_Faction&lt;/mapGenerator&gt;
+  &lt;comps&gt;
+    &lt;li Class="CustomBaseFramework.WorldObjectCompProperties_CBFOrtsgut"&gt;
+      &lt;ansehenJe1000Silber&gt;1.5&lt;/ansehenJe1000Silber&gt;
+      &lt;vonAnfangEigen&gt;true&lt;/vonAnfangEigen&gt;
+    &lt;/li&gt;
+    &lt;li Class="CustomBaseFramework.WorldObjectCompProperties_CBFAngriff" /&gt;
+  &lt;/comps&gt;
+&lt;/WorldObjectDef&gt;</code></p>
+<ul>
+<li><code>mapGenerator</code> must be a CBF map generator. The shipped quests use <code>CBF_Base_Faction</code>.</li>
+<li>CBF patches <code>WorldObjectCompProperties_Plan</code> into the vanilla <code>Site</code> def. Defs with <code>ParentName="Site"</code> inherit it. Without it <code>QuestNode_CBFOrt</code> logs a warning and does nothing.</li>
+<li>Sites with a CBF map generator get the background map generation on arrival like faction settlements.</li>
+</ul>
+<h3 id="cbfortextension">CBFOrtExtension</h3>
+<p>On the <code>SitePartDef</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ruin</code></td>
+<td><a href="RuinDef.html">RuinDef</a></td>
+<td>none</td>
+<td>Ruin applied after the settlement is built. Used when <code>QuestNode_CBFOrt</code> sets no <code>ruin</code>.</td>
+</tr>
+<tr>
+<td><code>plan</code></td>
+<td><a href="SettlementPlanDef.html">SettlementPlanDef</a></td>
+<td>none</td>
+<td>A fixed plan. Used if it is <code>usable</code>.</td>
+</tr>
+<tr>
+<td><code>planTags</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>Plans whose <code>siteTags</code> contain one of these. Empty means any plan with <code>siteTags</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cbfbesatzerextension">CBFBesatzerExtension</h3>
+<p>On the <code>SitePartDef</code>. Read by <code>QuestNode_CBFBesatzer</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>besatzer</code></td>
+<td>list of FactionDef</td>
+<td>none</td>
+<td>Factions allowed as occupier or attacker. Empty means any faction hostile to the player.</td>
+</tr>
+</tbody>
+</table>
+<p><code>xml
+&lt;SitePartDef&gt;
+  &lt;defName&gt;CBF_MO_Quest_UeberfallenerOrt&lt;/defName&gt;
+  &lt;requiresFaction&gt;true&lt;/requiresFaction&gt;
+  &lt;wantsThreatPoints&gt;true&lt;/wantsThreatPoints&gt;
+  &lt;minThreatPoints&gt;300&lt;/minThreatPoints&gt;
+  &lt;modExtensions&gt;
+    &lt;li Class="CustomBaseFramework.CBFOrtExtension"&gt;
+      &lt;ruin&gt;CBF_MO_Quest_Ruin_Ueberfallen&lt;/ruin&gt;
+      &lt;planTags&gt;
+        &lt;li&gt;Dorf&lt;/li&gt;
+        &lt;li&gt;Marktstadt&lt;/li&gt;
+      &lt;/planTags&gt;
+    &lt;/li&gt;
+    &lt;li Class="CustomBaseFramework.CBFBesatzerExtension"&gt;
+      &lt;besatzer&gt;
+        &lt;li&gt;DankPyon_BrigandFaction&lt;/li&gt;
+      &lt;/besatzer&gt;
+    &lt;/li&gt;
+  &lt;/modExtensions&gt;
+&lt;/SitePartDef&gt;</code></p>
+<h3 id="ruindef-and-garrison">RuinDef and garrison</h3>
+<p>The <a href="RuinDef.html">RuinDef</a> field <code>besatzung</code> decides who garrisons the built settlement:</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Garrison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Besatzer</code></td>
+<td>The site faction, sized by the points from <code>QuestNode_CBFOrt</code>. Prisoners from <code>gefangene</code> are only placed in this mode.</td>
+</tr>
+<tr>
+<td><code>Bauherr</code></td>
+<td>The faction set as <code>bauherr</code>, scaled by <code>besatzungAnteil</code>.</td>
+</tr>
+<tr>
+<td><code>Keine</code></td>
+<td>No garrison.</td>
+</tr>
+</tbody>
+</table>
+<p>The shipped raided settlement uses <code>Besatzer</code>. The contested settlement uses <code>Bauherr</code> with <code>besatzungAnteil</code> 0.3.</p>
+<h2 id="quest-nodes">Quest nodes</h2>
+<h3 id="questnode_cbfauftraggeber">QuestNode_CBFAuftraggeber</h3>
+<p>Picks the quest giver. Fails the test run if there is no candidate, so the quest is not offered.</p>
+<p>A candidate faction is visible, not the player, not defeated, not hidden, not a permanent enemy, not hostile to the player and has a living leader. Empire vassal colonies are skipped. It also needs a plan that fits <code>sitePart</code>:</p>
+<ul>
+<li>With <code>plan</code> set in <code>CBFOrtExtension</code>, that plan only has to be <code>usable</code>.</li>
+<li>Otherwise the faction needs a plan with <code>siteTags</code> that match <code>planTags</code>. Factions switched off in the mod settings have no plans.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>storeAs</code></td>
+<td>slate name</td>
+<td>Stores the faction leader (Pawn).</td>
+</tr>
+<tr>
+<td><code>storeFactionAs</code></td>
+<td>slate name</td>
+<td>Stores the faction.</td>
+</tr>
+<tr>
+<td><code>sitePart</code></td>
+<td>SitePartDef</td>
+<td>Its <code>CBFOrtExtension</code> decides which plans fit.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="questnode_cbfbesatzer">QuestNode_CBFBesatzer</h3>
+<p>Picks the hostile faction. Fails the test run without <code>sitePart</code> or without a candidate.</p>
+<p>A candidate is not the player, not defeated, hostile to the player, listed in <code>CBFBesatzerExtension.besatzer</code> if that list is set, and hostile to <code>feindVon</code> if set.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>storeAs</code></td>
+<td>slate name</td>
+<td>Stores the faction.</td>
+</tr>
+<tr>
+<td><code>storeSitePartDefsAs</code></td>
+<td>slate name</td>
+<td>Stores a list with <code>sitePart</code> as its only entry, for <code>QuestNode_GetDefaultSitePartsParams</code>.</td>
+</tr>
+<tr>
+<td><code>sitePart</code></td>
+<td>SitePartDef</td>
+<td>Required.</td>
+</tr>
+<tr>
+<td><code>feindVon</code></td>
+<td>Faction</td>
+<td>Optional. The picked faction must be hostile to it.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="questnode_cbfort">QuestNode_CBFOrt</h3>
+<p>Tells CBF how to build the site. Place it after <code>QuestNode_GenerateSite</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>site</code></td>
+<td>Site</td>
+<td>The site.</td>
+</tr>
+<tr>
+<td><code>bauherr</code></td>
+<td>Faction</td>
+<td>Builder. The settlement is built in this faction's style, independent of the site faction.</td>
+</tr>
+<tr>
+<td><code>punkte</code></td>
+<td>number</td>
+<td>Garrison points. 0 or less means CBF's normal garrison.</td>
+</tr>
+<tr>
+<td><code>ruin</code></td>
+<td><a href="RuinDef.html">RuinDef</a></td>
+<td>Optional. Overrides <code>CBFOrtExtension.ruin</code>.</td>
+</tr>
+<tr>
+<td><code>plan</code></td>
+<td><a href="SettlementPlanDef.html">SettlementPlanDef</a></td>
+<td>Optional. A fixed plan instead of the tag selection.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="questnode_cbfangriff">QuestNode_CBFAngriff</h3>
+<p>Adds an attack on the settlement. Needs <code>WorldObjectCompProperties_CBFAngriff</code> on the <code>WorldObjectDef</code>, otherwise it logs a warning.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>site</code></td>
+<td>Site</td>
+<td>The site.</td>
+</tr>
+<tr>
+<td><code>angreifer</code></td>
+<td>Faction</td>
+<td>Attacking faction. Also used for the attacker corpses of the ruin.</td>
+</tr>
+<tr>
+<td><code>punkte</code></td>
+<td>number</td>
+<td>Points for the attacking combat group.</td>
+</tr>
+</tbody>
+</table>
+<p><code>WorldObjectCompProperties_CBFAngriff</code> has one field:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ansatzAbstand</code></td>
+<td>number</td>
+<td><code>25</code></td>
+<td>Distance in cells in front of each breach where attackers spawn.</td>
+</tr>
+</tbody>
+</table>
+<p>Behaviour of <code>WorldObjectComp_CBFAngriff</code>:</p>
+<ul>
+<li>After CBF has built the settlement, a combat group of <code>angreifer</code> with <code>punkte</code> spawns in front of the breaches of the ruin. If no cell in front is found, it spawns at the breaches. Without breaches it spawns at the map edge.</li>
+<li>Defenders are the garrison pawns CBF placed for the settlement faction. Those without a lord and able to fight get a guard duty per ward and do not flee on their own.</li>
+<li>The attackers go for the defenders. Without defenders they assault the map.</li>
+<li>Every 250 ticks it checks the defenders. When none is on the map, alive and standing while hostiles are still active, it sends the site signal <code>VerteidigerGefallen</code> once. Listen to it as <code>site.VerteidigerGefallen</code>.</li>
+<li>If the map was generated without a CBF settlement, the attack starts at the map edge and a warning is logged.</li>
+</ul>
+<h3 id="questnode_cbfwahl">QuestNode_CBFWahl</h3>
+<p>A choice letter after the fight: leave the site to a faction or take the loot.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>inSignalBesiegt</code></td>
+<td>signal</td>
+<td>Sends the letter.</td>
+</tr>
+<tr>
+<td><code>inSignalWeg</code></td>
+<td>signal</td>
+<td>After <code>inSignalBesiegt</code>: picks the loot option if no choice was made.</td>
+</tr>
+<tr>
+<td><code>outSignalFraktion</code></td>
+<td>signal</td>
+<td>Sent after "leave to faction".</td>
+</tr>
+<tr>
+<td><code>outSignalBeute</code></td>
+<td>signal</td>
+<td>Sent after "take loot".</td>
+</tr>
+<tr>
+<td><code>site</code></td>
+<td>Site</td>
+<td>The site.</td>
+</tr>
+<tr>
+<td><code>fraktion</code></td>
+<td>Faction</td>
+<td>Receives goodwill and, on "leave to faction", the site.</td>
+</tr>
+<tr>
+<td><code>lord</code></td>
+<td>Pawn</td>
+<td>Named in the letter. Falls back to the faction name.</td>
+</tr>
+<tr>
+<td><code>ansehenFraktion</code></td>
+<td>whole number</td>
+<td>Goodwill for "leave to faction".</td>
+</tr>
+<tr>
+<td><code>ansehenBeute</code></td>
+<td>whole number</td>
+<td>Goodwill for "take loot".</td>
+</tr>
+<tr>
+<td><code>schluesselLabel</code></td>
+<td>text key</td>
+<td>Letter label. Default <code>CBF_Quest_Wahl_Label</code>, argument {0} site.</td>
+</tr>
+<tr>
+<td><code>schluesselText</code></td>
+<td>text key</td>
+<td>Letter text. Default <code>CBF_Quest_Wahl_Text</code>, arguments {0} lord, {1} faction, {2} site, {3} <code>ansehenFraktion</code>, {4} <code>ansehenBeute</code>.</td>
+</tr>
+<tr>
+<td><code>schluesselFraktion</code></td>
+<td>text key</td>
+<td>Option button. Default <code>CBF_Quest_Wahl_Fraktion</code>, argument {0} goodwill.</td>
+</tr>
+<tr>
+<td><code>schluesselBeute</code></td>
+<td>text key</td>
+<td>Option button. Default <code>CBF_Quest_Wahl_Beute</code>, argument {0} goodwill.</td>
+</tr>
+</tbody>
+</table>
+<p>On "leave to faction" the site and all artificial buildings of the old site faction pass to <code>fraktion</code>. If the site has <code>WorldObjectComp_CBFOrtsgut</code>, its goods are forbidden and belong to <code>fraktion</code>. Goods already carried by player pawns are charged at once. The letter cannot be dismissed with a right click.</p>
+<h2 id="worldobjectcomp_cbfortsgut">WorldObjectComp_CBFOrtsgut</h2>
+<p>Charges goodwill for goods the player takes from the site. Added with <code>WorldObjectCompProperties_CBFOrtsgut</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ansehenJe1000Silber</code></td>
+<td>number</td>
+<td><code>1.5</code></td>
+<td>Goodwill lost per 1000 silver of market value. 0 turns the cost off.</td>
+</tr>
+<tr>
+<td><code>vonAnfangEigen</code></td>
+<td>bool</td>
+<td><code>false</code></td>
+<td>The site faction owns the goods from map generation on. Otherwise an owner is only set by <code>QuestNode_CBFWahl</code>.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>At map generation it records every haulable item on the map. Pawns, corpses and chunks are left out. Stacks split from a recorded item are recorded too.</li>
+<li>Nothing is charged while there is no owner.</li>
+<li>A recorded item counts as taken when a player pawn gets it into inventory, carry slot, equipment or apparel. Partial stack merges are charged by count.</li>
+<li>A spawned thing of the owner that changes to the player faction is charged at its market value.</li>
+<li>Fractions add up. Goodwill drops in whole points with the history event <code>CBF_Quest_OrtsgutGenommen</code>.</li>
+<li>The inspect string shows the owner with the keys <code>CBF_Quest_Ortsgut_Inspect</code> or <code>CBF_Quest_Ortsgut_Inspect_Eigen</code>.</li>
+</ul>
+<h2 id="cbfbelohnungextension">CBFBelohnungExtension</h2>
+<p>On the <code>QuestScriptDef</code>. Filters item rewards generated for this quest.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hoechsteTechstufe</code></td>
+<td>TechLevel</td>
+<td><code>Medieval</code></td>
+<td>Highest allowed tech level.</td>
+</tr>
+<tr>
+<td><code>verboteneDinge</code></td>
+<td>list of ThingDef</td>
+<td>none</td>
+<td>Always excluded.</td>
+</tr>
+</tbody>
+</table>
+<p>The tech level of a thing is the highest of its own <code>techLevel</code>, its research prerequisites and the research of its <code>recipeMaker</code>. Things with a power comp count as at least Industrial. Excluded things are added to the reward's disallowed things and removed from the market value fillers while rewards are generated.</p>
+<p><code>xml
+&lt;QuestScriptDef&gt;
+  &lt;defName&gt;CBF_MO_Quest_UmkaempfterOrt&lt;/defName&gt;
+  &lt;modExtensions&gt;
+    &lt;li Class="CustomBaseFramework.CBFBelohnungExtension"&gt;
+      &lt;hoechsteTechstufe&gt;Medieval&lt;/hoechsteTechstufe&gt;
+      &lt;verboteneDinge&gt;
+        &lt;li&gt;Plasteel&lt;/li&gt;
+        &lt;li&gt;ComponentIndustrial&lt;/li&gt;
+        &lt;li MayRequire="Ludeon.RimWorld.Biotech"&gt;PowerfocusChip&lt;/li&gt;
+      &lt;/verboteneDinge&gt;
+    &lt;/li&gt;
+  &lt;/modExtensions&gt;
+&lt;/QuestScriptDef&gt;</code></p>
+<h2 id="example-contested-settlement">Example: contested settlement</h2>
+<p>Trimmed from <code>CBF_MO_Quest_UmkaempfterOrt.xml</code>. Name rules, description rules, the timeout and the leave and reward branches are left out.</p>
+<p><code>xml
+&lt;QuestScriptDef&gt;
+  &lt;defName&gt;CBF_MO_Quest_UmkaempfterOrt&lt;/defName&gt;
+  &lt;rootSelectionWeight&gt;1.0&lt;/rootSelectionWeight&gt;
+  &lt;rootMinPoints&gt;300&lt;/rootMinPoints&gt;
+  &lt;root Class="QuestNode_Sequence"&gt;
+    &lt;nodes&gt;
+      &lt;li Class="QuestNode_GetMap" /&gt;
+      &lt;li Class="CustomBaseFramework.QuestNode_CBFAuftraggeber"&gt;
+        &lt;storeAs&gt;asker&lt;/storeAs&gt;
+        &lt;storeFactionAs&gt;askerFaction&lt;/storeFactionAs&gt;
+        &lt;sitePart&gt;CBF_MO_Quest_UmkaempfterOrt&lt;/sitePart&gt;
+      &lt;/li&gt;
+      &lt;li Class="QuestNode_GetSiteTile"&gt;
+        &lt;storeAs&gt;siteTile&lt;/storeAs&gt;
+        &lt;preferCloserTiles&gt;true&lt;/preferCloserTiles&gt;
+      &lt;/li&gt;
+      &lt;li Class="CustomBaseFramework.QuestNode_CBFBesatzer"&gt;
+        &lt;storeAs&gt;angreiferFaction&lt;/storeAs&gt;
+        &lt;storeSitePartDefsAs&gt;sitePartDefs&lt;/storeSitePartDefsAs&gt;
+        &lt;sitePart&gt;CBF_MO_Quest_UmkaempfterOrt&lt;/sitePart&gt;
+        &lt;feindVon&gt;$askerFaction&lt;/feindVon&gt;
+      &lt;/li&gt;
+      &lt;li Class="QuestNode_GetDefaultSitePartsParams"&gt;
+        &lt;tile&gt;$siteTile&lt;/tile&gt;
+        &lt;faction&gt;$askerFaction&lt;/faction&gt;
+        &lt;sitePartDefs&gt;$sitePartDefs&lt;/sitePartDefs&gt;
+        &lt;storeSitePartsParamsAs&gt;sitePartsParams&lt;/storeSitePartsParamsAs&gt;
+      &lt;/li&gt;
+      &lt;li Class="QuestNode_GetSiteThreatPoints"&gt;
+        &lt;storeAs&gt;sitePoints&lt;/storeAs&gt;
+        &lt;sitePartsParams&gt;$sitePartsParams&lt;/sitePartsParams&gt;
+      &lt;/li&gt;
+      &lt;li Class="QuestNode_Multiply"&gt;
+        &lt;value1&gt;$sitePoints&lt;/value1&gt;
+        &lt;value2&gt;3&lt;/value2&gt;
+        &lt;storeAs&gt;angreiferPunkte&lt;/storeAs&gt;
+      &lt;/li&gt;
+      &lt;li Class="QuestNode_GenerateSite"&gt;
+        &lt;sitePartsParams&gt;$sitePartsParams&lt;/sitePartsParams&gt;
+        &lt;faction&gt;$askerFaction&lt;/faction&gt;
+        &lt;tile&gt;$siteTile&lt;/tile&gt;
+        &lt;worldObjectDef&gt;CBF_MO_Quest_UmkaempfterOrt&lt;/worldObjectDef&gt;
+        &lt;storeAs&gt;site&lt;/storeAs&gt;
+      &lt;/li&gt;
+      &lt;li Class="CustomBaseFramework.QuestNode_CBFOrt"&gt;
+        &lt;site&gt;$site&lt;/site&gt;
+        &lt;bauherr&gt;$askerFaction&lt;/bauherr&gt;
+        &lt;punkte&gt;$sitePoints&lt;/punkte&gt;
+      &lt;/li&gt;
+      &lt;li Class="CustomBaseFramework.QuestNode_CBFAngriff"&gt;
+        &lt;site&gt;$site&lt;/site&gt;
+        &lt;angreifer&gt;$angreiferFaction&lt;/angreifer&gt;
+        &lt;punkte&gt;$angreiferPunkte&lt;/punkte&gt;
+      &lt;/li&gt;
+      &lt;li Class="QuestNode_SpawnWorldObjects"&gt;
+        &lt;worldObjects&gt;$site&lt;/worldObjects&gt;
+      &lt;/li&gt;
+      &lt;li Class="QuestNode_Signal"&gt;
+        &lt;inSignal&gt;site.VerteidigerGefallen&lt;/inSignal&gt;
+        &lt;node Class="QuestNode_End"&gt;
+          &lt;outcome&gt;Fail&lt;/outcome&gt;
+        &lt;/node&gt;
+      &lt;/li&gt;
+      &lt;li Class="QuestNode_End"&gt;
+        &lt;inSignal&gt;site.AllEnemiesDefeated&lt;/inSignal&gt;
+        &lt;outcome&gt;Success&lt;/outcome&gt;
+      &lt;/li&gt;
+    &lt;/nodes&gt;
+  &lt;/root&gt;
+&lt;/QuestScriptDef&gt;</code></p>
+<p>Step by step:</p>
+<ol>
+<li><code>QuestNode_CBFAuftraggeber</code> picks a friendly faction that has a village or market town plan (<code>planTags</code> of the site part) and stores it with its leader.</li>
+<li><code>QuestNode_CBFBesatzer</code> picks a brigand faction hostile to the player and to the quest giver.</li>
+<li>The site belongs to the quest giver (<code>faction</code> is <code>$askerFaction</code>). The attackers get three times the site points.</li>
+<li><code>QuestNode_CBFOrt</code> builds the settlement in the quest giver's style. The site part's ruin <code>CBF_MO_Quest_Ruin_Schlacht</code> uses <code>besatzung</code> <code>Bauherr</code>, so the defenders are the quest giver's soldiers.</li>
+<li><code>QuestNode_CBFAngriff</code> spawns the attackers in front of the breaches once the settlement is built.</li>
+<li><code>site.VerteidigerGefallen</code> fails the quest, <code>site.AllEnemiesDefeated</code> completes it.</li>
+</ol>
+<h2 id="example-the-choice">Example: the choice</h2>
+<p>From <code>CBF_MO_Quest_UeberfallenerOrt.xml</code>. Here the site belongs to the occupier (<code>QuestNode_GenerateSite</code> with <code>$siteFaction</code>), <code>QuestNode_CBFOrt</code> sets <code>bauherr</code> to the quest giver and <code>punkte</code> to 1.5 times the site points.</p>
+<p>```xml</p>
+<li Class="CustomBaseFramework.QuestNode_CBFWahl">
+  <inSignalBesiegt>site.AllEnemiesDefeated</inSignalBesiegt>
+  <inSignalWeg>site.Destroyed</inSignalWeg>
+  <outSignalFraktion>WahlFraktion</outSignalFraktion>
+  <outSignalBeute>WahlBeute</outSignalBeute>
+  <site>$site</site>
+  <fraktion>$askerFaction</fraktion>
+  <lord>$asker</lord>
+  <ansehenFraktion>20</ansehenFraktion>
+  <ansehenBeute>3</ansehenBeute>
+</li>
+<li Class="QuestNode_End">
+  <inSignal>WahlFraktion</inSignal>
+  <outcome>Success</outcome>
+</li>
+<li Class="QuestNode_End">
+  <inSignal>WahlBeute</inSignal>
+  <outcome>Success</outcome>
+</li>
+<p>```</p>
+<p>The <code>WorldObjectDef</code> of this site has <code>WorldObjectCompProperties_CBFOrtsgut</code> without <code>vonAnfangEigen</code>. Taking goods is free until the player picks "leave to faction".</p>
+<h2 id="debug-actions">Debug actions</h2>
+<p>Under "CBF Quests" in the debug menu, while on a map:</p>
+<ul>
+<li><strong>Enter raided settlement:</strong> generates the map of a site with <code>WorldObjectComp_CBFOrtsgut</code> and moves the free colonists there.</li>
+<li><strong>Defeat occupiers:</strong> kills all pawns hostile to the player on the current map.</li>
+<li><strong>Log raided settlement:</strong> writes site, plan, builder, ruin, points and recorded goods to the log.</li>
+<li><strong>Carry settlement item:</strong> a free colonist picks up the most valuable recorded item and the goodwill change is logged.</li>
+</ul><div class="schritte"><a href="Modding-Pawns.html"><span>Previous</span>Pawns in XML</a><a class="weiter" href="Field-Reference.html"><span>Next</span>Field reference</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#overview">Overview</a><a href="#site-setup">Site setup</a><a href="#quest-nodes">Quest nodes</a><a href="#worldobjectcomp_cbfortsgut">WorldObjectComp_CBFOrtsgut</a><a href="#cbfbelohnungextension">CBFBelohnungExtension</a><a href="#example-contested-settlement">Example: contested settlement</a><a href="#example-the-choice">Example: the choice</a><a href="#debug-actions">Debug actions</a></div></aside></div></body></html>

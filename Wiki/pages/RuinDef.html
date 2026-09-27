@@ -47,9 +47,13 @@ td code{white-space:nowrap}
 .marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
 .marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
 .marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
-.gruppe{margin:0 0 16px}
-.gruppe b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--leise);margin:0 0 4px 10px}
-.gruppe a{display:block;padding:6px 10px;border-radius:8px;color:var(--text);text-decoration:none;font-size:15px}
+.gruppe{margin:0 0 18px}
+.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
+.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
+.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
+.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
+.gruppe b i img{width:20px;height:20px;object-fit:contain}
+.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
 .gruppe a:hover{background:var(--akzentweich)}
 .gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
 main{padding:40px 48px 80px;min-width:0}
@@ -57,7 +61,7 @@ main{padding:40px 48px 80px;min-width:0}
 .rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
 @media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
 @media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
-</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html">Pieces</a><a href="Categories.html">Categories</a><a href="Annexes.html">Annexes</a><a href="Settlements.html">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Play</b><a href="Mod-Settings.html">Mod settings</a><a href="Settlement-Types.html">Settlement types</a></div><div class="gruppe"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / RuinDef</div><h1 id="ruindef">RuinDef</h1>
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / RuinDef</div><h1 id="ruindef">RuinDef</h1>
 <p>XML node: <code>&lt;CustomBaseFramework.RuinDef&gt;</code>. Also takes the common fields <code>defName</code>, <code>label</code> and <code>description</code>.</p>
 <table>
 <thead>
@@ -73,121 +77,121 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>angriffsseite</code></td>
 <td>Rot4</td>
 <td><code>200</code></td>
-<td></td>
+<td>Side the attackers came from: North, East, South or West. Breaches and the worst damage gather there. Empty picks a side at random.</td>
 </tr>
 <tr>
 <td><code>besatzung</code></td>
 <td>Besatzungsart (Keine, Bauherr, Besatzer)</td>
 <td><code>Besatzer</code></td>
-<td></td>
+<td>Who holds the ruin. Keine leaves it empty, Bauherr keeps the original owners, Besatzer puts the conquering faction in, drawn from raid points only, without ward garrisons or the units set on anchors.</td>
 </tr>
 <tr>
 <td><code>besatzungAnteil</code></td>
 <td>number</td>
 <td><code>1</code></td>
-<td></td>
+<td>Scales how many defenders the ruin gets. 1 is the full number, 0.5 half of it.</td>
 </tr>
 <tr>
 <td><code>beuteBeiBesatzern</code></td>
 <td>number</td>
 <td><code>0</code></td>
-<td></td>
+<td>Share of the remaining loot, 0 to 1, that is carried off and piled up on a square near the centre.</td>
 </tr>
 <tr>
 <td><code>beuteFaktor</code></td>
 <td>number</td>
 <td><code>1</code></td>
-<td></td>
+<td>How much loot remains, 1 keeps all of it. Stacks shrink by this factor, single items survive with this chance.</td>
 </tr>
 <tr>
 <td><code>brandstellen</code></td>
 <td>number</td>
 <td><code>0</code></td>
-<td></td>
+<td>How likely a room is burnt out, 0 to 1, more often near the attack. Burnt rooms get charred floors and lose flammable contents.</td>
 </tr>
 <tr>
 <td><code>breschen</code></td>
 <td>IntRange</td>
 <td><code>0</code></td>
-<td></td>
+<td>How many breaches are torn into the outer wall, as a range. They favour the attack side and the gates.</td>
 </tr>
 <tr>
 <td><code>felderVerwuestet</code></td>
 <td>number</td>
 <td><code>0</code></td>
-<td></td>
+<td>Chance per field cell that its crop is destroyed, 0 to 1.</td>
 </tr>
 <tr>
 <td><code>feuer</code></td>
 <td>IntRange</td>
 <td><code>0</code></td>
-<td></td>
+<td>How many fires still burn, as a range. They only start in burnt rooms whose walls do not burn.</td>
 </tr>
 <tr>
 <td><code>gebaeudeSchaden</code></td>
 <td>FloatRange</td>
 <td><code>0~0</code></td>
-<td></td>
+<td>Share of hit points buildings lose, as a range from 0 to 1. Buildings near the attack lose more.</td>
 </tr>
 <tr>
 <td><code>gefangene</code></td>
 <td>IntRange</td>
 <td><code>0</code></td>
-<td></td>
+<td>How many former inhabitants the occupiers hold prisoner, as a range. Only when besatzung is Besatzer.</td>
 </tr>
 <tr>
 <td><code>geschuetzeZerstoert</code></td>
 <td>number</td>
 <td><code>0</code></td>
-<td></td>
+<td>How likely a turret is destroyed, 0 to 1, more often near the attack.</td>
 </tr>
 <tr>
 <td><code>haeufung</code></td>
 <td>number</td>
 <td><code>0.6</code></td>
-<td></td>
+<td>How strongly the damage gathers around the breaches and points of attack, 0 to 1. 0 spreads it evenly.</td>
 </tr>
 <tr>
 <td><code>leichenAngreifer</code></td>
 <td>IntRange</td>
 <td><code>0</code></td>
-<td></td>
+<td>How many dead attackers lie around, as a range. They have been dead for verwesungTage.</td>
 </tr>
 <tr>
 <td><code>leichenBewohner</code></td>
 <td>IntRange</td>
 <td><code>0</code></td>
-<td></td>
+<td>How many dead inhabitants lie around, as a range. They have been dead for verwesungTage.</td>
 </tr>
 <tr>
 <td><code>schutt</code></td>
 <td>number</td>
 <td><code>0</code></td>
-<td></td>
+<td>Rubble on open ground and roads, 0 to 1, thicker near the attack.</td>
 </tr>
 <tr>
 <td><code>torZerstoert</code></td>
 <td>number</td>
 <td><code>0</code></td>
-<td></td>
+<td>Chance per gate that it is torn down, 0 to 1.</td>
 </tr>
 <tr>
 <td><code>verwesungTage</code></td>
 <td>FloatRange</td>
 <td><code>0~0</code></td>
-<td></td>
+<td>How long the bodies have been dead, in days, as a range.</td>
 </tr>
 <tr>
 <td><code>viehWeg</code></td>
 <td>number</td>
 <td><code>0</code></td>
-<td></td>
+<td>Chance per animal of the owners or occupiers that it is gone, 0 to 1.</td>
 </tr>
 <tr>
 <td><code>wandAbriss</code></td>
 <td>number</td>
 <td><code>0</code></td>
-<td></td>
+<td>How likely a building wall is torn down, 0 to 1, more often near the attack.</td>
 </tr>
 </tbody>
 </table>

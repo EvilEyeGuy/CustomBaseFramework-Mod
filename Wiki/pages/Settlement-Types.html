@@ -47,9 +47,13 @@ td code{white-space:nowrap}
 .marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
 .marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
 .marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
-.gruppe{margin:0 0 16px}
-.gruppe b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--leise);margin:0 0 4px 10px}
-.gruppe a{display:block;padding:6px 10px;border-radius:8px;color:var(--text);text-decoration:none;font-size:15px}
+.gruppe{margin:0 0 18px}
+.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
+.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
+.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
+.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
+.gruppe b i img{width:20px;height:20px;object-fit:contain}
+.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
 .gruppe a:hover{background:var(--akzentweich)}
 .gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
 main{padding:40px 48px 80px;min-width:0}
@@ -57,7 +61,7 @@ main{padding:40px 48px 80px;min-width:0}
 .rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
 @media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
 @media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
-</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html">Pieces</a><a href="Categories.html">Categories</a><a href="Annexes.html">Annexes</a><a href="Settlements.html">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Play</b><a href="Mod-Settings.html">Mod settings</a><a href="Settlement-Types.html" class="hier">Settlement types</a></div><div class="gruppe"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="settlement-types">Settlement types</h1>
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html" class="hier">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="settlement-types">Settlement types</h1>
 <p>The settlement types CBF ships with, their strength and their cost. Every settlement is planned fresh on its own map, so the pictures show one example each.</p>
 <h2 id="overview">Overview</h2>
 <table>
@@ -155,10 +159,30 @@ main{padding:40px 48px 80px;min-width:0}
 <td>Thick town wall</td>
 </tr>
 <tr>
+<td>Tribal camp</td>
+<td>Medieval Overhaul</td>
+<td>Neolithic</td>
+<td></td>
+<td></td>
+<td></td>
+<td>200</td>
+<td>Stake wall, barricade or palisade</td>
+</tr>
+<tr>
+<td>Modern village</td>
+<td>base game</td>
+<td>Industrial to Ultra</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>200</td>
+<td>open</td>
+</tr>
+<tr>
 <td>Modern town</td>
 <td>base game</td>
 <td>Industrial to Ultra</td>
-<td>1 to 2</td>
+<td>2</td>
 <td>20 to 30</td>
 <td>66 to 80</td>
 <td>225</td>
@@ -171,7 +195,7 @@ main{padding:40px 48px 80px;min-width:0}
 <td>3</td>
 <td>27 to 41</td>
 <td>113 to 118</td>
-<td>250</td>
+<td>225</td>
 <td>open</td>
 </tr>
 <tr>
@@ -188,17 +212,77 @@ main{padding:40px 48px 80px;min-width:0}
 </table>
 <ul>
 <li><strong>Garrison</strong> is the sum over all wards. Guards in towers and buildings come on top: in tests a modern town had about 40 soldiers in total, a metropolis about 100.</li>
-<li><strong>Buildings</strong> is the range from mass tests.</li>
+<li><strong>Buildings</strong> is the range from mass tests. Empty cells: not measured yet.</li>
 <li><strong>Map</strong> is the edge length the settlement asks for. The larger of this and the world setting is used.</li>
 <li><strong>WD tier</strong> only matters with World Domination 2.0, see <a href="Compatibility.html#world-domination-20">Compatibility</a>.</li>
 </ul>
+<h2 id="world-domination-outposts">World Domination outposts</h2>
+<p>These settlement types load only with World Domination 2.0. They are small camps for the World Domination types of tier 1 and 2, and war camps for vanguards at any tier. The map is 175 cells.</p>
+<table>
+<thead>
+<tr>
+<th>WD type</th>
+<th>Tier</th>
+<th>Medieval Overhaul</th>
+<th>VFE Medieval 2</th>
+<th>Modern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Farming</td>
+<td>1</td>
+<td>Farm camp</td>
+<td>Farm camp</td>
+<td>Farm outpost</td>
+</tr>
+<tr>
+<td>Logging</td>
+<td>1</td>
+<td>Logging camp</td>
+<td>Logging camp</td>
+<td>Logging outpost</td>
+</tr>
+<tr>
+<td>Mining</td>
+<td>1</td>
+<td>Mining camp</td>
+<td>none</td>
+<td>Mining outpost</td>
+</tr>
+<tr>
+<td>Production</td>
+<td>2</td>
+<td>Production village</td>
+<td>Production village</td>
+<td>Production town</td>
+</tr>
+<tr>
+<td>Slavery</td>
+<td>2</td>
+<td>Slave village</td>
+<td>Slave village</td>
+<td>Prison camp</td>
+</tr>
+<tr>
+<td>Vanguard</td>
+<td>1 to 4</td>
+<td>War camp</td>
+<td>War camp</td>
+<td>Field camp</td>
+</tr>
+</tbody>
+</table>
+<p>Tier 3 and 4 use the large market town, fortress city, large town and metropolis. A World Domination settlement without a matching outpost gets the settlement type of its tier, see <a href="Compatibility.html#world-domination-20">Compatibility</a>.</p>
 <h2 id="defenders">Defenders</h2>
 <ul>
 <li><strong>Medieval Overhaul:</strong> archers, crossbowmen, pikemen and knights.</li>
 <li><strong>VFE Medieval 2:</strong> the fighters of VFE Medieval 2.</li>
 <li><strong>Modern:</strong> riflemen, snipers, assaulters, machine gunners, grenadiers, police and officers. Spacer and ultra factions field the spacer versions of the same roles, for example charge riflemen and marine assaulters.</li>
 </ul>
-<p>The metropolis adds 42 to 59 sandbag positions with mini turrets or autocannons and uses checkpoints as gates.</p>
+<p>The metropolis adds 42 to 59 sandbag positions with mini turrets or autocannons. It has no gatehouses: roads run through gaps in the sandbag and barricade line.</p>
+<h2 id="searching-a-settlement">Searching a settlement</h2>
+<p>Once no hostile pawn is left standing on a CBF settlement, <strong>Search site</strong> under Orders marks every closed container on the map for opening. It takes one click, no area. Your colonists then open them with the normal open job. Containers in unexplored rooms are skipped; the message says how many, so press again once they are explored. The button only shows on CBF settlements and is greyed out while hostiles are still standing.</p>
 <h2 id="medieval-overhaul">Medieval Overhaul</h2>
 <table>
 <thead>
@@ -332,11 +416,11 @@ main{padding:40px 48px 80px;min-width:0}
 </tr>
 </tbody>
 </table>
-<p>Values are medians. Map generation happens once, when a caravan or a raid first arrives at the settlement.</p>
+<p>Values are medians. Map generation happens once, when you first arrive at the settlement. It runs in the background for caravans, transport pods, shuttles and gravships, so the game does not freeze on arrival.</p>
 <p>While playing:</p>
 <ul>
 <li><strong>Colony without a CBF settlement:</strong> no measurable difference.</li>
 <li><strong>On a fortress city with 121 defenders:</strong> CBF's own code takes 0.05 to 0.09 % of the tick time.</li>
 <li><strong>World map:</strong> +0.1 ms per frame.</li>
 <li><strong>Game start:</strong> about +20 MB memory.</li>
-</ul><div class="schritte"><a href="Mod-Settings.html"><span>Previous</span>Mod settings</a><a class="weiter" href="Compatibility.html"><span>Next</span>Compatibility</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#overview">Overview</a><a href="#defenders">Defenders</a><a href="#medieval-overhaul">Medieval Overhaul</a><a href="#vfe-medieval-2">VFE Medieval 2</a><a href="#modern">Modern</a><a href="#performance">Performance</a></div></aside></div></body></html>
+</ul><div class="schritte"><a href="Unit-Swap.html"><span>Previous</span>Unit swap</a><a class="weiter" href="Quests.html"><span>Next</span>Quests</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#overview">Overview</a><a href="#world-domination-outposts">World Domination outposts</a><a href="#defenders">Defenders</a><a href="#searching-a-settlement">Searching a settlement</a><a href="#medieval-overhaul">Medieval Overhaul</a><a href="#vfe-medieval-2">VFE Medieval 2</a><a href="#modern">Modern</a><a href="#performance">Performance</a></div></aside></div></body></html>

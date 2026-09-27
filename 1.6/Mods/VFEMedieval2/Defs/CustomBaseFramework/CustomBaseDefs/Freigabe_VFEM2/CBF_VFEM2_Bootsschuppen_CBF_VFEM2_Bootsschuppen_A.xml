@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_VFEM2_Bootsschuppen_A</defName>
+    <label>CBF_VFEM2_Bootsschuppen_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_VFEM2_Bootsschuppen</li>
+    </categories>
+    <style>CBF_VFEM2</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>WoodLog</thing><count>75</count></li>
+      <li><symbol>b</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>f</symbol><thing>WoodLog</thing><count>40</count></li>
+      <li><symbol>g</symbol><anchor>Wasser</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>i</symbol><terrain>Bridge</terrain></li>
+    </legend>
+    <mask>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>iiiiiii</li>
+      <li>iiiiiii</li>
+      <li>iiiiiii</li>
+      <li>iiiiiii</li>
+      <li>iiiiiii</li>
+      <li>iiiiiii</li>
+    </terrain>
+    <things>
+      <li>OOOOOOO</li>
+      <li>O...ffO</li>
+      <li>O.....O</li>
+      <li>O.....O</li>
+      <li>Oa....O</li>
+      <li>b.....b</li>
+    </things>
+    <roof>
+      <li>^^^^^^^</li>
+      <li>^.....^</li>
+      <li>^.....^</li>
+      <li>^.....^</li>
+      <li>^.....^</li>
+      <li>.......</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.ggggg.</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

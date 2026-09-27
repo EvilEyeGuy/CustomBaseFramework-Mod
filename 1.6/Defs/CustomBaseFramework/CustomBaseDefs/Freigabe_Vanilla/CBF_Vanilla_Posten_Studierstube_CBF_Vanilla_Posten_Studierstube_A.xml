@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Posten_Studierstube_A</defName>
+    <label>CBF_Vanilla_Posten_Studierstube_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_Posten_Studierstube</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>A</symbol><thing>Armchair</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
+      <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>L</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>R</symbol><thing>SimpleResearchBench</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>b</symbol><thing>Bookcase</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>o</symbol><thing>BookcaseSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+    </legend>
+    <mask>
+      <li>#######...</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>.#########</li>
+    </mask>
+    <terrain>
+      <li>wwwwwww...</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>.wwwwwwwww</li>
+    </terrain>
+    <things>
+      <li>OOOOOOO...</li>
+      <li>O.....OOOO</li>
+      <li>O.R....b.O</li>
+      <li>O........O</li>
+      <li>OOo..A..LO</li>
+      <li>.OOOFOOOOO</li>
+    </things>
+    <roof>
+      <li>^^^^^^^...</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>.^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

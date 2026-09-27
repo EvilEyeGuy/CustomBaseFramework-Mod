@@ -47,9 +47,13 @@ td code{white-space:nowrap}
 .marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
 .marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
 .marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
-.gruppe{margin:0 0 16px}
-.gruppe b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--leise);margin:0 0 4px 10px}
-.gruppe a{display:block;padding:6px 10px;border-radius:8px;color:var(--text);text-decoration:none;font-size:15px}
+.gruppe{margin:0 0 18px}
+.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
+.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
+.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
+.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
+.gruppe b i img{width:20px;height:20px;object-fit:contain}
+.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
 .gruppe a:hover{background:var(--akzentweich)}
 .gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
 main{padding:40px 48px 80px;min-width:0}
@@ -57,7 +61,7 @@ main{padding:40px 48px 80px;min-width:0}
 .rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
 @media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
 @media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
-</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html">Pieces</a><a href="Categories.html">Categories</a><a href="Annexes.html">Annexes</a><a href="Settlements.html">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Play</b><a href="Mod-Settings.html">Mod settings</a><a href="Settlement-Types.html">Settlement types</a></div><div class="gruppe"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / LegendEntry</div><h1 id="legendentry">LegendEntry</h1>
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / LegendEntry</div><h1 id="legendentry">LegendEntry</h1>
 <table>
 <thead>
 <tr>
@@ -72,61 +76,61 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>anchor</code></td>
 <td>text</td>
 <td>none</td>
-<td></td>
+<td>Name of the anchor. Wall ties the cells to the town wall, Anbau marks where an annex may attach, Outside marks the outer side of a wall strip or gatehouse. Other names only label the anchor.</td>
 </tr>
 <tr>
 <td><code>anchorKind</code><br>Kind</td>
 <td>AnchorKind (Connect, Fill, Spawn, Object)</td>
 <td><code>Connect</code></td>
-<td></td>
+<td>What the anchor does. Connect only marks cells, see anchor. Fill places a container from objects and fills it from lootTable. Object places something from objects without the anchor's loot table. Spawn places pawns.</td>
 </tr>
 <tr>
 <td><code>chance</code></td>
 <td>number</td>
 <td><code>1</code></td>
-<td></td>
+<td>Chance from 0 to 1. On a legend entry: that the thing is placed in a cell, or that the anchor is filled or manned. On a content zone: that it is filled at all. On a loot entry it only counts in always.</td>
 </tr>
 <tr>
 <td><code>count</code></td>
 <td>IntRange</td>
 <td><code>1</code></td>
-<td>How many of these the settlement wants, as a range.</td>
+<td>Stack size of the thing placed at this cell, for items. Buildings ignore it.</td>
 </tr>
 <tr>
 <td><code>lootFremd</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
-<td></td>
+<td>Leaves the loot to the mod that brings the container. The anchor's loot table is ignored. Without objects the anchor places nothing.</td>
 </tr>
 <tr>
 <td><code>lootTable</code></td>
 <td>text</td>
 <td>none</td>
-<td></td>
+<td>The loot table (LootTableDef) used here. On an anchor it fills the containers. On an object list member it replaces the anchor's table. On a content zone or a settlement budget entry it fills content zones. Not used on dungeon profiles.</td>
 </tr>
 <tr>
 <td><code>obenauf</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
-<td></td>
+<td>Places the anchor's object on top of what stands there, instead of clearing the cells first. Anchors in anchorsOver always do this.</td>
 </tr>
 <tr>
 <td><code>objects</code></td>
 <td>text</td>
 <td>none</td>
-<td></td>
+<td>The object list (LootBuildingCategoryDef) a Fill or Object anchor places its buildings from. Without it an Object anchor stays empty.</td>
 </tr>
 <tr>
 <td><code>pawnCount</code><br>Pawn count</td>
 <td>IntRange</td>
 <td><code>1</code></td>
-<td></td>
+<td>How many pawns, as a range. On a spawn anchor at least one. On an object list, how many wait in a container that has any.</td>
 </tr>
 <tr>
 <td><code>pawnKind</code></td>
 <td>PawnKindDef</td>
 <td>none</td>
-<td></td>
+<td>A pawn of this kind (PawnKindDef) is spawned in the cell instead of a thing.</td>
 </tr>
 <tr>
 <td><code>pawnList</code><br>Pawn list</td>
@@ -138,19 +142,19 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>pawns</code><br>Animals</td>
 <td>text</td>
 <td>none</td>
-<td></td>
+<td>On a spawn anchor: one pawn kind (defName) for the spot, used when pawnList is empty. With neither, a regular defender takes the spot. On a pen: the pawn list (PawnListDef) its animals come from; empty leaves the pen empty.</td>
 </tr>
 <tr>
 <td><code>required</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
-<td></td>
+<td>Only has an effect on a Connect anchor named Wall. The piece must then stand at the town wall.</td>
 </tr>
 <tr>
 <td><code>role</code></td>
 <td>text</td>
 <td>none</td>
-<td></td>
+<td>Name of a building role, such as wall, floor or door. CBF puts the matching thing from the material list there when no thing or terrain is set.</td>
 </tr>
 <tr>
 <td><code>roof</code></td>
@@ -162,25 +166,25 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>rotation</code></td>
 <td>text</td>
 <td><code>North</code></td>
-<td></td>
+<td>Facing of the thing as drawn: North, East, South or West. It turns with the piece. Default North.</td>
 </tr>
 <tr>
 <td><code>stuff</code><br>Material</td>
 <td>ThingDef</td>
 <td>none</td>
-<td></td>
+<td>Material of the thing. On a variant, empty keeps the material of the entry. Empty or unfitting material falls back to the default material.</td>
 </tr>
 <tr>
 <td><code>symbol</code></td>
 <td>text</td>
 <td>none</td>
-<td></td>
+<td>The character that stands for this entry in the layers. Only the first character counts.</td>
 </tr>
 <tr>
 <td><code>temperatur</code></td>
 <td>number</td>
 <td><code>-9999</code></td>
-<td></td>
+<td>Target temperature in degrees Celsius for things with a thermostat, such as heaters and coolers. Empty leaves their own setting.</td>
 </tr>
 <tr>
 <td><code>terrain</code><br>Floor</td>
@@ -192,13 +196,13 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>thing</code></td>
 <td>ThingDef</td>
 <td>none</td>
-<td></td>
+<td>The thing (ThingDef defName) this entry stands for: placed in the cell, given as loot, or placed as a building.</td>
 </tr>
 <tr>
 <td><code>variants</code></td>
 <td>list of <a href="LegendVariant.html">LegendVariant</a></td>
 <td>none</td>
-<td></td>
+<td>Alternatives drawn per cell by weight. The entry's own thing or terrain, if set, takes part with weight 1.</td>
 </tr>
 </tbody>
 </table>

@@ -47,9 +47,13 @@ td code{white-space:nowrap}
 .marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
 .marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
 .marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
-.gruppe{margin:0 0 16px}
-.gruppe b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--leise);margin:0 0 4px 10px}
-.gruppe a{display:block;padding:6px 10px;border-radius:8px;color:var(--text);text-decoration:none;font-size:15px}
+.gruppe{margin:0 0 18px}
+.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
+.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
+.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
+.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
+.gruppe b i img{width:20px;height:20px;object-fit:contain}
+.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
 .gruppe a:hover{background:var(--akzentweich)}
 .gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
 main{padding:40px 48px 80px;min-width:0}
@@ -57,7 +61,7 @@ main{padding:40px 48px 80px;min-width:0}
 .rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
 @media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
 @media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
-</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html">Pieces</a><a href="Categories.html">Categories</a><a href="Annexes.html">Annexes</a><a href="Settlements.html">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Play</b><a href="Mod-Settings.html">Mod settings</a><a href="Settlement-Types.html">Settlement types</a></div><div class="gruppe"><b>Compatibility</b><a href="Compatibility.html" class="hier">Compatibility</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="compatibility">Compatibility</h1>
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html" class="hier">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="compatibility">Compatibility</h1>
 <h2 id="content-for-other-mods">Content for other mods</h2>
 <p>Custom Base Framework brings its own buildings and styles for some mods. They load only when that mod is active.</p>
 <table>
@@ -72,17 +76,22 @@ main{padding:40px 48px 80px;min-width:0}
 <tr>
 <td>Medieval Overhaul</td>
 <td><code>1.6/Mods/MedievalOverhaul</code></td>
-<td>Styles, pieces, object lists and loot for medieval towns</td>
+<td>Village, market town, large market town and fortress city, and a tribal camp for neolithic factions. Houses, workshops, castle, churches, military buildings, market squares, tournament ground, small gap houses for narrow lanes. Huts get wood stoves and changing beds (straw, fur, wicker, log). Two quests, see <a href="Quests.html">Quests</a>.</td>
 </tr>
 <tr>
 <td>Vanilla Factions Expanded - Medieval 2</td>
 <td><code>1.6/Mods/VFEMedieval2</code></td>
-<td>Styles and pieces built from the base game and VFE Medieval 2</td>
+<td>The same four settlement types with their own buildings, rebuilt from the Medieval Overhaul set with base game and VFE Medieval 2 things only. Works without Medieval Overhaul. Living houses use the self-refilling shelf of VFE Medieval 2, armories and treasuries have shelves with their own loot tables.</td>
 </tr>
 <tr>
 <td>none</td>
 <td><code>1.6/Defs</code></td>
-<td>Vanilla style for modern towns, base game only</td>
+<td>Modern village, modern town, large town and metropolis from base game things only, for industrial, spacer and ultra factions. Spacer defence nests and bunkers (the mech shield only with Royalty), two fallback gatehouses of stone and wood, modern wall profiles with sandbag lines.</td>
+</tr>
+<tr>
+<td>World Domination 2.0</td>
+<td><code>1.6/Mods/WorldDomination</code>, <code>WorldDomination_MO</code>, <code>WorldDomination_VFEM2</code></td>
+<td>Outposts for the World Domination types: farm, logging and mining camps, production and slave villages, war camps. Modern ones always, medieval ones with Medieval Overhaul or VFE Medieval 2, see <a href="Settlement-Types.html#world-domination-outposts">Settlement types</a>. Their buildings (granary, sawmill, charcoal kiln, smelter, barracks, slave pen, command tent and more) also load without World Domination.</td>
 </tr>
 </tbody>
 </table>
@@ -99,20 +108,27 @@ main{padding:40px 48px 80px;min-width:0}
 <li>They gain strength every day, grow, found new settlements, build roads, send traders and raid each other and you.</li>
 <li>Under pressure, factions pack weak settlements into a T4 hub. T4 settlements can have mortars and anti-air.</li>
 <li>When you attack, the garrison scales with the current strength of the settlement.</li>
+<li>World Domination reveals the whole map of its own settlements on entry. It does not do this for CBF settlements.</li>
 <li>World Domination uses its own layouts for assault maps only for factions switched on in World Setup under Allegiances.</li>
+<li>Your own World Domination outposts (farm, mine, research and so on) have no map of their own. When one is attacked, World Domination builds a fixed defence map. CBF leaves these alone.</li>
 </ul>
 <p>By default CBF builds these settlements and picks the settlement type by tier, see <a href="Settlement-Types.html">Settlement types</a>:</p>
 <ul>
 <li>Among the settlement types the faction may get anyway (tech level and faction rules unchanged), CBF takes the one whose <strong>WD tier</strong> matches, otherwise the closest one.</li>
+<li>Every World Domination settlement also has a type that depends on its tier: tier 1 logging, mining or farming camp, tier 2 production or slave village, tier 3 town, tier 4 citadel, plus vanguard camps at any tier. Among the plans of the right tier, CBF prefers those whose <strong>WD type</strong> lists the settlement's type, then those without a type.</li>
 <li>If a settlement grows to a higher tier in World Domination, its type changes as long as its map has not been generated yet.</li>
 <li>Settlement types assigned by hand in the world editor stay as they are.</li>
+<li>The garrison of a CBF settlement follows its World Domination strength. A weakened settlement has fewer defenders, at least 50 to 90 percent depending on tier. A settlement that escalated late in the game has up to 25 percent more.</li>
 </ul>
-<p>The shipped types: village 1, market town 2, large market town 3, fortress city 4, for Medieval Overhaul and VFE Medieval 2 alike. Modern town 1 to 2, large town 3, metropolis 4. The three modern types serve industrial, spacer and ultra factions alike, the garrison picks spacer units by tech level.</p>
+<p>The shipped types: village 1, market town 2, large market town 3, fortress city 4, for Medieval Overhaul and VFE Medieval 2 alike. Modern village 1, modern town 2, large town 3, metropolis 4. Outposts for the World Domination types come on top, see <a href="Settlement-Types.html#world-domination-outposts">Settlement types</a>. The modern types serve industrial, spacer and ultra factions alike, the garrison picks spacer units by tech level.</p>
 <p><strong>Build World Domination settlements with CBF</strong> in the <a href="Mod-Settings.html#other-settlement-mods">mod settings</a> switches this. Off: CBF leaves World Domination settlements of factions without layouts of their own alone. The setting and the <strong>WD tier</strong> field in the Settlement tab only appear when World Domination is active.</p>
 <h3 id="empire">Empire</h3>
 <p>Vassal colonies of Empire get no CBF settlements, are no quest givers for CBF quests and are not listed under settlements per faction.</p>
+<h3 id="a-rim-of-ice-and-fire">A Rim of Ice and Fire</h3>
+<p>CBF builds the settlements of all factions, including the eight castle factions of A Rim of Ice and Fire. Their RIAF castles are not generated. RIAF's own places (fiefs, banner calls, duels, ruins) stay with RIAF.</p>
+<p>Only the main seat of each house, the first settlement of its faction such as Winterfell, gets a large type (large market town or fortress city). All other seats become villages or market towns. Seat names stay as they are.</p>
 <h3 id="other-mods-with-their-own-map-generator">Other mods with their own map generator</h3>
 <p>Settlements that another mod builds with its own map generator keep it. CBF then also leaves their map size and world map icon alone.</p>
 <p>Both are part of <strong>Leave settlements of other settlement mods alone</strong> in the mod settings, on by default.</p>
 <h2 id="credits">Credits</h2>
-<p>Thanks to Fabricator General (Blackrussian) for testing the mod and for many compatibility hints from his large mod list.</p><div class="schritte"><a href="Settlement-Types.html"><span>Previous</span>Settlement types</a><a class="weiter" href="Field-Reference.html"><span>Next</span>Field reference</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#content-for-other-mods">Content for other mods</a><a href="#multiplayer">Multiplayer</a><a href="#mods-that-reshape-the-map">Mods that reshape the map</a><a href="#mods-with-settlements-of-their-own">Mods with settlements of their own</a><a href="#credits">Credits</a></div></aside></div></body></html>
+<p>Thanks to Fabricator General (Blackrussian) for testing the mod and for many compatibility hints from his large mod list.</p><div class="schritte"><a href="Mod-Settings.html"><span>Previous</span>Mod settings</a><a class="weiter" href="Modding-Overview.html"><span>Next</span>Your own content mod</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#content-for-other-mods">Content for other mods</a><a href="#multiplayer">Multiplayer</a><a href="#mods-that-reshape-the-map">Mods that reshape the map</a><a href="#mods-with-settlements-of-their-own">Mods with settlements of their own</a><a href="#credits">Credits</a></div></aside></div></body></html>

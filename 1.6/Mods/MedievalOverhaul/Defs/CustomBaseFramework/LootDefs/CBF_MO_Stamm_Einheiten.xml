@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_MO_Stamm_Wache</defName>
+    <label>tribal guard</label>
+    <rolle>Wache</rolle>
+    <stufe>Neolithic</stufe>
+    <radius>6</radius>
+    <members>
+      <li><kind>CBF_MO_Stammeskrieger</kind><weight>6</weight></li>
+      <li><kind>CBF_MO_Stammesjaeger</kind><weight>4</weight></li>
+      <li><kind>CBF_MO_Stammesberserker</kind><weight>2</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_MO_Stamm_Posten</defName>
+    <label>tribal lookout</label>
+    <rolle>Posten</rolle>
+    <stufe>Neolithic</stufe>
+    <radius>4</radius>
+    <members>
+      <li><kind>CBF_MO_Stammesjaeger</kind><weight>3</weight></li>
+      <li><kind>CBF_MO_Stammesbogner</kind><weight>2</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_MO_Stamm_Bewohner</defName>
+    <label>tribespeople</label>
+    <rolle>Zivil</rolle>
+    <radius>4</radius>
+    <members>
+      <li><kind>CBF_Stammesmitglied</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_MO_Stamm_Haeuptling</defName>
+    <label>tribal chief</label>
+    <rolle>Wache</rolle>
+    <stufe>Neolithic</stufe>
+    <radius>3</radius>
+    <members>
+      <li><kind>CBF_MO_Stammeshaeuptling</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+</Defs>

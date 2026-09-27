@@ -95,10 +95,32 @@
   <CBF_S_CropListGone>The crop list {0} in {1} does not exist.</CBF_S_CropListGone>
   <CBF_S_DistrictNr>District {0}</CBF_S_DistrictNr>
   <CBF_S_Gate>Gate</CBF_S_Gate>
-  <CBF_S_GateFromPalette>from the palette</CBF_S_GateFromPalette>
-  <CBF_S_GateTip>The gate thing for passages in this ward's wall. Empty takes the gate of the palette.</CBF_S_GateTip>
+  <CBF_S_GateFromMaterialList>from material list</CBF_S_GateFromMaterialList>
+  <CBF_S_GateTip>The gate thing for passages in this ward's wall. Empty takes the standard gate.</CBF_S_GateTip>
   <CBF_S_DistrictPlacement>Location of the district</CBF_S_DistrictPlacement>
   <CBF_S_DistrictPlacementTip>Where the district is seeded. 0 to 1 each, if all are 0 it is placed at random.</CBF_S_DistrictPlacementTip>
   <CBF_S_WdStage>WD tier</CBF_S_WdStage>
   <CBF_S_WdStageTip>World Domination tier 1 to 4 this settlement type stands for. A World Domination settlement of this tier prefers it among the types its faction may get. 0 means no tier.</CBF_S_WdStageTip>
+  <CBF_S_WdStageNone>No tier</CBF_S_WdStageNone>
+  <CBF_S_WdStageRange>{0} to {1}</CBF_S_WdStageRange>
+  <CBF_Lb_Button>Show loot</CBF_Lb_Button>
+  <CBF_Lb_ButtonTip>Loot value of the settlement of this type that was built last.</CBF_Lb_ButtonTip>
+  <CBF_Lb_NoneYet>Build a settlement of this type first. Its loot is counted while it is built.</CBF_Lb_NoneYet>
+  <CBF_Lb_Title>Loot in the settlement</CBF_Lb_Title>
+  <CBF_Lb_Silver>{0} silver</CBF_Lb_Silver>
+  <CBF_Lb_Counts>{0} item stacks, {1} filled containers</CBF_Lb_Counts>
+  <CBF_Lb_ByWard>By ward</CBF_Lb_ByWard>
+  <CBF_Lb_ByGroup>By kind of goods</CBF_Lb_ByGroup>
+  <CBF_Lb_Outside>Outside the wards</CBF_Lb_Outside>
+  <CBF_Lb_Other>Other</CBF_Lb_Other>
+  <CBF_Lb_Note>Market value of everything lying around or stored in containers. Medieval Overhaul lootables that fill only when searched are not included.</CBF_Lb_Note>
+  <CBF_S_MaterialList>Material list</CBF_S_MaterialList>
+  <CBF_S_MaterialListTip>The material list decides which walls, floors, doors and other things the pieces of this settlement type get.</CBF_S_MaterialListTip>
+  <CBF_S_MaterialListNone>No material list chosen. Without one this settlement type is switched off.</CBF_S_MaterialListNone>
+  <CBF_S_MaterialListUnusable>This material list is unusable, critical roles find no thing.</CBF_S_MaterialListUnusable>
+
+  <CBF_S_WdType>WD type</CBF_S_WdType>
+  <CBF_S_WdTypeTip>World Domination settlement types this plan stands for, such as mining camp or slave village. Only types of the chosen tier are offered. Empty means any type.</CBF_S_WdTypeTip>
+  <CBF_S_WdTypeAny>Any type</CBF_S_WdTypeAny>
+  <CBF_S_AddWardTip>Add a ward this settlement type does not have yet.</CBF_S_AddWardTip>
 </LanguageData>

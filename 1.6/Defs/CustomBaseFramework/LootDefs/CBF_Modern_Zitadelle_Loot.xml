@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Modern_Loot_Zitadelle</defName>
+    <label>Zitadelle</label>
+    <rolls>4~7</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>14</weight><table>CBF_Vanilla_Ware_Schatz</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Ware_Muenzen</table></li>
+      <li><weight>10</weight><category>BuildingsArt</category><count>1~3</count><quality>Good~Legendary</quality><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><category>Artifacts</category><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><category>Neurotrainers</category><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>5</weight><category>NeurotrainersPsycast</category><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li><weight>7</weight><category>BodyPartsUltra</category><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li><weight>2</weight><category>BodyPartsArchotech</category><count>1~1</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+</Defs>

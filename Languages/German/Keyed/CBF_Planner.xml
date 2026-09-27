@@ -19,8 +19,6 @@
   <CBF_Cfg_MapSize>Eine Kartengröße unter 150 lässt Angreifern keinen Rand.</CBF_Cfg_MapSize>
   <CBF_Cfg_NoBudget>Der Ortstyp hat kein Bauprogramm.</CBF_Cfg_NoBudget>
   <CBF_Cfg_Range>{0} muss zwischen {1} und {2} liegen.</CBF_Cfg_Range>
-  <CBF_Cfg_Corridor>Ein Ganganteil unter 0,35 lässt die Räume zu einem Grundriss zusammenwachsen.</CBF_Cfg_Corridor>
-  <CBF_Cfg_NoRoomTags>Das Verliesprofil hat keine Raumtags.</CBF_Cfg_NoRoomTags>
   <CBF_Cfg_NoPlants>Die Pflanzenliste enthält keine Pflanzen.</CBF_Cfg_NoPlants>
   <CBF_Cfg_EntryNoPlant>Ein Eintrag hat keine Pflanze.</CBF_Cfg_EntryNoPlant>
   <CBF_Cfg_NoWeight>{0} hat kein positives Gewicht.</CBF_Cfg_NoWeight>
@@ -31,7 +29,7 @@
   <CBF_Build_Place>Bewohner verteilen</CBF_Build_Place>
   <CBF_Build_Handover>Ort steht, RimWorld stellt die Karte fertig</CBF_Build_Handover>
   <CBF_Build_BadPlan>Ortstyp unbrauchbar, siehe Prüfung.</CBF_Build_BadPlan>
-  <CBF_Build_NoPalette>Keine brauchbare Palette.</CBF_Build_NoPalette>
+  
   <CBF_Build_NoInput>Gelände oder Stückkatalog fehlen.</CBF_Build_NoInput>
   <CBF_Planner_Terrain>Gelände und Bauplatz prüfen</CBF_Planner_Terrain>
   <CBF_Planner_Boundary>Stadtgrenzen, Berganschlüsse und Tore</CBF_Planner_Boundary>
@@ -179,7 +177,7 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_WorldPlaced>{0} für {1} gesetzt. Ortstyp: {2}</CBF_WorldPlaced>
   <CBF_WorldPlan>Ortstyp: {0}</CBF_WorldPlan>
   <CBF_WorldParts>{0} Stadtteil(e), {1}</CBF_WorldParts>
-  <CBF_WorldPalette>Palette: {0}</CBF_WorldPalette>
+  <CBF_WorldMaterialList>Materialien: {0}</CBF_WorldMaterialList>
   <CBF_WorldWalled>ummauert</CBF_WorldWalled>
   <CBF_IsOpen>offen</CBF_IsOpen>
   <CBF_ExportWithHints>{0} exportiert, {1} Hinweis(e), vollständig im Log:</CBF_ExportWithHints>
@@ -375,4 +373,5 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_Planner_WardNarrowed>Ebene {0}: das Mauerraster nimmt mehr als die Hälfte der Fläche weg.</CBF_Planner_WardNarrowed>
 
   <CBF_Planner_Uhrbremse>Die Sicherheitsuhr hat die Suche nach {0} Lagen auf diesem Rechner beendet, die beste bisherige Lage wird genommen. Auf anderen Rechnern kann der Ort anders ausfallen.</CBF_Planner_Uhrbremse>
+  <CBF_Build_NoMaterialList>Dieser Ortstyp nennt keine Materialliste.</CBF_Build_NoMaterialList>
 </LanguageData>

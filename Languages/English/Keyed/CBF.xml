@@ -48,7 +48,7 @@
   <CBF_Field_size>Size</CBF_Field_size>
   <CBF_FieldDesc_size>Width by height in cells, taken from the drawn area.</CBF_FieldDesc_size>
   <CBF_Field_style>Style</CBF_Field_style>
-  <CBF_FieldDesc_style>Legacy palette and wall profile association. Does not restrict piece selection.</CBF_FieldDesc_style>
+  <CBF_FieldDesc_style>Old field. It only still picks the wall profile and the standard materials. Does not restrict piece selection.</CBF_FieldDesc_style>
   <CBF_Field_categories>Categories</CBF_Field_categories>
   <CBF_FieldDesc_categories>What this piece is. The first one is the primary: on conflict its rules win, field by field, then its parents, then the next category.</CBF_FieldDesc_categories>
   <CBF_Field_allowRotation>Rotatable</CBF_Field_allowRotation>
@@ -87,20 +87,14 @@
   <CBF_FieldDesc_chain>The full chain, from the nearest parent outwards.</CBF_FieldDesc_chain>
   <CBF_Field_pieceCount>Pieces</CBF_Field_pieceCount>
   <CBF_FieldDesc_pieceCount>How many pieces belong here, counted through the whole chain.</CBF_FieldDesc_pieceCount>
-  <CBF_Field_palette>Palette</CBF_Field_palette>
-  <CBF_FieldDesc_palette>Which palette resolves this style's roles to things and terrain.</CBF_FieldDesc_palette>
+  <CBF_Field_materialList>Material list</CBF_Field_materialList>
+  <CBF_FieldDesc_materialList>Which material list this settlement type uses for walls, floors, doors, gates and the other roles.</CBF_FieldDesc_materialList>
   <CBF_Field_fallback>Falls back to</CBF_Field_fallback>
   <CBF_FieldDesc_fallback>Used when this style has nothing for a role.</CBF_FieldDesc_fallback>
   <CBF_Field_needsRoadAccess>Needs a road</CBF_Field_needsRoadAccess>
   <CBF_FieldDesc_needsRoadAccess>Must be reachable from the road network.</CBF_FieldDesc_needsRoadAccess>
   <CBF_Field_unique>Only once</CBF_Field_unique>
   <CBF_FieldDesc_unique>At most one per settlement.</CBF_FieldDesc_unique>
-  <CBF_Field_outsideOnly>Outside only</CBF_Field_outsideOnly>
-  <CBF_FieldDesc_outsideOnly>Never inside the walls.</CBF_FieldDesc_outsideOnly>
-  <CBF_Field_outsideOk>Outside allowed</CBF_Field_outsideOk>
-  <CBF_FieldDesc_outsideOk>May stand outside the walls.</CBF_FieldDesc_outsideOk>
-  <CBF_Field_landmark>Landmark</CBF_Field_landmark>
-  <CBF_FieldDesc_landmark>Placed early and prominently.</CBF_FieldDesc_landmark>
   <CBF_Field_wallContact>Touches the wall</CBF_Field_wallContact>
   <CBF_FieldDesc_wallContact>Must sit against the town wall.</CBF_FieldDesc_wallContact>
   <CBF_Field_prefGate>Toward the gate</CBF_Field_prefGate>
@@ -111,8 +105,6 @@
   <CBF_FieldDesc_prefWall>How strongly this wants to be near the wall.</CBF_FieldDesc_prefWall>
   <CBF_Field_prefMain>Along the main road</CBF_Field_prefMain>
   <CBF_FieldDesc_prefMain>How strongly this wants to sit on the main road.</CBF_FieldDesc_prefMain>
-  <CBF_Field_prefSpread>Spread out</CBF_Field_prefSpread>
-  <CBF_FieldDesc_prefSpread>How strongly these avoid each other.</CBF_FieldDesc_prefSpread>
   <CBF_Field_mask>Shape</CBF_Field_mask>
   <CBF_FieldDesc_mask>Which cells belong to the piece at all. Everything outside stays untouched.</CBF_FieldDesc_mask>
   <CBF_Field_terrain>Floor</CBF_Field_terrain>
@@ -135,8 +127,6 @@
   <CBF_FieldDesc_contentZones>What goes into each content zone: which loot table, which building category.</CBF_FieldDesc_contentZones>
   <CBF_Field_legend>Legend</CBF_Field_legend>
   <CBF_FieldDesc_legend>What each character in the layers means: a thing, a terrain, a role.</CBF_FieldDesc_legend>
-  <CBF_Field_sockets>Sockets</CBF_Field_sockets>
-  <CBF_FieldDesc_sockets>Named spots other pieces can attach to.</CBF_FieldDesc_sockets>
   <CBF_Field_placement>Placement rules</CBF_Field_placement>
   <CBF_FieldDesc_placement>Overrides the rules of the category for this one piece. Leave it out and the category decides.</CBF_FieldDesc_placement>
   <CBF_Field_schemaVersion>Schema version</CBF_Field_schemaVersion>
@@ -153,8 +143,6 @@
   <CBF_FieldDesc_weight>How likely this is picked over its siblings. Belongs on the settlement, not on the piece.</CBF_FieldDesc_weight>
   <CBF_Field_mapSize>Map size</CBF_Field_mapSize>
   <CBF_FieldDesc_mapSize>How large the map is that this settlement is generated on.</CBF_FieldDesc_mapSize>
-  <CBF_Field_wallDepth>Wall thickness</CBF_Field_wallDepth>
-  <CBF_FieldDesc_wallDepth>0 no wall, 1 palisade, 3 wall with a walkway between two walls, 5 a broad fortress wall.</CBF_FieldDesc_wallDepth>
   <CBF_Field_towerCorner>Corner tower size</CBF_Field_towerCorner>
   <CBF_FieldDesc_towerCorner>Edge length of a corner tower, measured on the centre line of the wall band.</CBF_FieldDesc_towerCorner>
   <CBF_Field_towerCurtain>Curtain tower size</CBF_Field_towerCurtain>
@@ -189,12 +177,6 @@
   <CBF_FieldDesc_roadMain>Width of the main road. There are only two widths on purpose; more cuts the map up visually.</CBF_FieldDesc_roadMain>
   <CBF_Field_roadLane>Lane width</CBF_Field_roadLane>
   <CBF_FieldDesc_roadLane>Width of the side lanes.</CBF_FieldDesc_roadLane>
-  <CBF_Field_widenings>Widenings</CBF_Field_widenings>
-  <CBF_FieldDesc_widenings>How many places the road widens into a square.</CBF_FieldDesc_widenings>
-  <CBF_Field_coverageBuild>Built share</CBF_Field_coverageBuild>
-  <CBF_FieldDesc_coverageBuild>How much of the usable area gets buildings.</CBF_FieldDesc_coverageBuild>
-  <CBF_Field_gardenShare>Garden share</CBF_Field_gardenShare>
-  <CBF_FieldDesc_gardenShare>0 leaves a bare yard, 1 gives every free area beds.</CBF_FieldDesc_gardenShare>
   <CBF_Field_minBuildingGap>Smallest gap between buildings</CBF_Field_minBuildingGap>
   <CBF_FieldDesc_minBuildingGap>0 lets the framework decide from the loaded mods.</CBF_FieldDesc_minBuildingGap>
   <CBF_Field_maxBuildingGap>Largest gap between buildings</CBF_Field_maxBuildingGap>
@@ -204,7 +186,7 @@
   <CBF_Field_budget>Budget</CBF_Field_budget>
   <CBF_FieldDesc_budget>Which categories the settlement wants, how many of each, and what share of the area.</CBF_FieldDesc_budget>
   <CBF_Field_styles>Styles</CBF_Field_styles>
-  <CBF_FieldDesc_styles>Legacy palette and wall profile association; does not filter pieces.</CBF_FieldDesc_styles>
+  <CBF_FieldDesc_styles>Old field. It only still picks the wall profile and the standard materials. Does not filter pieces.</CBF_FieldDesc_styles>
   <CBF_Field_emplacements>Defensive positions</CBF_Field_emplacements>
   <CBF_FieldDesc_emplacements>Which pieces may serve as towers, gun batteries and the like.</CBF_FieldDesc_emplacements>
   <CBF_Field_gatehouses>Gatehouses</CBF_Field_gatehouses>
@@ -232,7 +214,7 @@
   <CBF_Field_defenderGroupKind>Defender group</CBF_Field_defenderGroupKind>
   <CBF_FieldDesc_defenderGroupKind>Which group kind the defenders come from. Empty means Settlement, then Combat.</CBF_FieldDesc_defenderGroupKind>
   <CBF_Field_roles>Roles</CBF_Field_roles>
-  <CBF_FieldDesc_roles>Which role this palette resolves to which thing or terrain.</CBF_FieldDesc_roles>
+  <CBF_FieldDesc_roles>Which thing or terrain each building role gets.</CBF_FieldDesc_roles>
   <CBF_Field_members>Members</CBF_Field_members>
   <CBF_FieldDesc_members>Which buildings belong to this loot category.</CBF_FieldDesc_members>
   <CBF_DistrictEmpty>Nothing in here yet.</CBF_DistrictEmpty>
@@ -360,9 +342,9 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_GroundNaturalGroup>natural</CBF_GroundNaturalGroup>
   <CBF_GroundBuiltGroup>built</CBF_GroundBuiltGroup>
   <CBF_Field_roads>Paths</CBF_Field_roads>
-  <CBF_FieldDesc_roads>The surface of lanes, squares and gate passages in this ward. Empty means the palette decides.</CBF_FieldDesc_roads>
+  <CBF_FieldDesc_roads>The surface of lanes, squares and gate passages in this ward. Empty means the standard surface.</CBF_FieldDesc_roads>
   <CBF_AddRoad>+ Path</CBF_AddRoad>
-  <CBF_RoadsDefault>Empty, so the palette decides.</CBF_RoadsDefault>
+  <CBF_RoadsDefault>Empty, so the standard surface is used.</CBF_RoadsDefault>
   <CBF_NewProject>New mod</CBF_NewProject>
   <CBF_OpenProject>Open mod</CBF_OpenProject>
   <CBF_ShowProjectFolder>Show mod folder</CBF_ShowProjectFolder>
@@ -724,9 +706,13 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_Field_garrison>Garrison</CBF_Field_garrison>
   <CBF_Field_kind>Settlement kind</CBF_Field_kind>
   <CBF_Au_S_Role>Role {0}</CBF_Au_S_Role>
-  <CBF_Au_RoleUnserved>served by no palette, used by {0}</CBF_Au_RoleUnserved>
+  <CBF_Au_RoleUnserved>has no thing in any material list, used by {0}</CBF_Au_RoleUnserved>
   <CBF_Au_S_Style>Style {0}</CBF_Au_S_Style>
-  <CBF_Au_NoPalette>finds no usable palette.</CBF_Au_NoPalette>
+  <CBF_Au_NoMaterialList>names no material list and is switched off.</CBF_Au_NoMaterialList>
+  <CBF_Au_PlanListUnusable>uses the material list {0}, which is unusable.</CBF_Au_PlanListUnusable>
+  <CBF_Au_MaterialListUnusable>unusable, critical roles without an existing thing: {0}</CBF_Au_MaterialListUnusable>
+  <CBF_Au_RoleMissingInList>role {0} is missing from the material list {1}, used by {2}</CBF_Au_RoleMissingInList>
+  <CBF_Au_S_MaterialList>Material list {0}</CBF_Au_S_MaterialList>
   <CBF_Au_S_LootTable>Loot table {0}</CBF_Au_S_LootTable>
   <CBF_Au_LootNoEntry>has no usable entry left.</CBF_Au_LootNoEntry>
   <CBF_Au_LootDead>{0} entries were dropped.</CBF_Au_LootDead>
@@ -736,8 +722,6 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_Au_S_Plan>Settlement type {0}</CBF_Au_S_Plan>
   <CBF_Au_NoPieceWithTag>not a single piece with category {0}.</CBF_Au_NoPieceWithTag>
   <CBF_Au_S_Dungeon>Dungeon profile {0}</CBF_Au_S_Dungeon>
-  <CBF_Au_NoRoomWithTag>no room module with category {0}, the dungeon stays unused.</CBF_Au_NoRoomWithTag>
-  <CBF_Au_LootTableGone>The loot table {0} does not exist.</CBF_Au_LootTableGone>
   <CBF_Au_S_WallProfile>Wall profile {0}</CBF_Au_S_WallProfile>
   <CBF_Au_WallNoStrip>has no usable strip, the wall is built from roles.</CBF_Au_WallNoStrip>
   <CBF_Au_WallStripHole>Strip {0} has no thing in the outer shell. The wall gets a hole there.</CBF_Au_WallStripHole>
@@ -758,7 +742,7 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_Au_NoCategory>has no category.</CBF_Au_NoCategory>
   <CBF_Au_NoGrid>has no grid.</CBF_Au_NoGrid>
   <CBF_Au_MissingSymbols>The symbols {0} have no legend entry. Usually the mod they come from is missing. The piece is therefore not placed.</CBF_Au_MissingSymbols>
-  <CBF_Au_RoleNotServed>uses the role {0}, which no palette serves.</CBF_Au_RoleNotServed>
+  <CBF_Au_RoleNotServed>uses the role {0}, which no material list fills.</CBF_Au_RoleNotServed>
   <CBF_Au_ZoneListGone>Content zone {0} names the object list {1}, which does not exist.</CBF_Au_ZoneListGone>
   <CBF_Au_ZoneListEmpty>Content zone {0} uses {1}, which no longer contains any building.</CBF_Au_ZoneListEmpty>
   <CBF_Au_ZoneTableGone>Content zone {0} names the loot table {1}, which does not exist.</CBF_Au_ZoneTableGone>
@@ -774,10 +758,18 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_Au_CategoryEmpty>has no piece.</CBF_Au_CategoryEmpty>
   <CBF_Au_Draft>Draft</CBF_Au_Draft>
   <CBF_Au_Unreadable>cannot be read as a definition. Details are in the log.</CBF_Au_Unreadable>
-  <CBF_Au_S_Palettes>Palettes</CBF_Au_S_Palettes>
-  <CBF_Au_NoPaletteAtAll>not a single usable palette, nothing is generated.</CBF_Au_NoPaletteAtAll>
+  <CBF_Au_S_MaterialLists>Material lists</CBF_Au_S_MaterialLists>
+  <CBF_Au_NoMaterialListAtAll>no usable material list at all, nothing is generated.</CBF_Au_NoMaterialListAtAll>
   <CBF_LeaveForeignSettlements>Leave settlements of other settlement mods alone</CBF_LeaveForeignSettlements>
   <CBF_LeaveForeignSettlementsHelp>Settlements that another mod builds with its own map generator keep it. Vassal colonies of Empire get no CBF settlements and no CBF quests.</CBF_LeaveForeignSettlementsHelp>
   <CBF_WdTakeOver>Build World Domination settlements with CBF</CBF_WdTakeOver>
   <CBF_WdTakeOverHelp>CBF replaces the layouts of World Domination 2.0 and picks the settlement type by the World Domination tier. Off: CBF leaves World Domination settlements alone.</CBF_WdTakeOverHelp>
+  <CBF_S_FieldsNoEffect>Fields only take effect in the suburb and the countryside. They are not placed in this ward.</CBF_S_FieldsNoEffect>
+  <CBF_S_PensNoEffect>Pens only take effect in the countryside. They are not placed in this ward.</CBF_S_PensNoEffect>
+  <CBF_SearchSite>Search site</CBF_SearchSite>
+  <CBF_SearchSiteDesc>Marks every closed container on this settlement for opening. Colonists then open them one by one.</CBF_SearchSiteDesc>
+  <CBF_SearchSiteEnemies>Hostiles are still standing on the map.</CBF_SearchSiteEnemies>
+  <CBF_SearchSiteDone>{0} containers marked for opening.</CBF_SearchSiteDone>
+  <CBF_SearchSiteNone>No closed containers left to mark.</CBF_SearchSiteNone>
+  <CBF_SearchSiteFog>{0} more lie in unexplored rooms. Press again once they are explored.</CBF_SearchSiteFog>
 </LanguageData>

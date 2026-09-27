@@ -70,6 +70,15 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Anbau_Zelt</defName>
+    <label>Anbau Zelt</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Apotheke</defName>
     <label>Apotheke</label><parent>CBF_MO_Werkstatt</parent>
     <zones>
@@ -115,6 +124,15 @@
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Bergfried</defName>
     <label>Bergfried</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Bootsschuppen</defName>
+    <label>CBF_MO_Bootsschuppen</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -190,6 +208,15 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Fischerhuette</defName>
+    <label>CBF_MO_Fischerhuette</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Friedhof</defName>
     <label>Friedhof</label>
     <zones>
@@ -234,6 +261,38 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Hafenlager</defName>
+    <label>CBF_MO_Hafenlager</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Hafenmeister</defName>
+    <label>CBF_MO_Hafenmeister</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Hauptzelt</defName>
+    <label>CBF_MO_Hauptzelt</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <anbauten>
+      <li>CBF_MO_Anbau_Zelt</li>
+    </anbauten>
+    <anbauChance>0.8</anbauChance>
+    <anbauMax>3</anbauMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -295,6 +354,15 @@
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Kirche</defName>
     <label>Kirche</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Lagerfeuer</defName>
+    <label>CBF_MO_Lagerfeuer</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -407,6 +475,96 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Posten_Baracke</defName>
+    <label>CBF_MO_Posten_Baracke</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Posten_Bibliothek</defName>
+    <label>CBF_MO_Posten_Bibliothek</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Posten_Gaestehaus</defName>
+    <label>CBF_MO_Posten_Gaestehaus</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Posten_Gerberei</defName>
+    <label>CBF_MO_Posten_Gerberei</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Posten_Geschuetzstellung</defName>
+    <label>CBF_MO_Posten_Geschuetzstellung</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Posten_Marktstand</defName>
+    <label>CBF_MO_Posten_Marktstand</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Posten_Sammelplatz</defName>
+    <label>CBF_MO_Posten_Sammelplatz</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Posten_Schlachthaus</defName>
+    <label>CBF_MO_Posten_Schlachthaus</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Posten_Speicher</defName>
+    <label>CBF_MO_Posten_Speicher</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Posten_Studierstube</defName>
+    <label>CBF_MO_Posten_Studierstube</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Ruestkammer</defName>
     <label>Rüstkammer</label>
     <zones>
@@ -487,6 +645,15 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Steg</defName>
+    <label>CBF_MO_Steg</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Tischlerei</defName>
     <label>Tischlerei</label><parent>CBF_MO_Werkstatt</parent>
     <zones>
@@ -516,6 +683,20 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Versammlungszelt</defName>
+    <label>CBF_MO_Versammlungszelt</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <anbauten>
+      <li>CBF_MO_Anbau_Zelt</li>
+    </anbauten>
+    <anbauChance>0.6</anbauChance>
+    <anbauMax>2</anbauMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -561,6 +742,20 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Werkzelt</defName>
+    <label>CBF_MO_Werkzelt</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <anbauten>
+      <li>CBF_MO_Anbau_Zelt</li>
+    </anbauten>
+    <anbauChance>0.6</anbauChance>
+    <anbauMax>2</anbauMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Winzerei</defName>
     <label>Winzerei</label>
     <zones>
@@ -568,6 +763,20 @@
     </zones>
     <needsRoadAccess>false</needsRoadAccess>
     <blockMax>1</blockMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Wohnzelt</defName>
+    <label>CBF_MO_Wohnzelt</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <anbauten>
+      <li>CBF_MO_Anbau_Zelt</li>
+    </anbauten>
+    <anbauChance>0.6</anbauChance>
+    <anbauMax>2</anbauMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>

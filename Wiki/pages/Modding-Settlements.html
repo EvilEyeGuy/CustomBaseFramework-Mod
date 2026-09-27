@@ -1,0 +1,939 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Writing a settlement type in XML · Custom Base Framework</title><style>
+:root{--grund:#f4f3ef;--karte:#ffffff;--linie:#e3e0d8;--text:#1f2124;--leise:#63676e;--akzent:#2f6f60;--akzentweich:#e3efeb;--ocker:#b27a17;--code:#f0eee8;--schatten:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06)}
+@media (prefers-color-scheme: dark){:root{--grund:#121417;--karte:#1a1d22;--linie:#2c3139;--text:#e6e4df;--leise:#99a0aa;--akzent:#7cc0aa;--akzentweich:#1f2f2b;--ocker:#d9ab55;--code:#24282f;--schatten:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--grund);color:var(--text);font:16px/1.65 "Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--akzent);text-underline-offset:3px}
+.inhalt h1{font-size:2.1rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.inhalt h2{font-size:1.35rem;letter-spacing:-.01em;margin:44px 0 10px}
+.inhalt h3{font-size:1.08rem;margin:28px 0 8px}
+.inhalt p,.inhalt li{max-width:74ch}
+.inhalt>p:first-of-type{font-size:1.08rem;color:var(--leise)}
+code{font-family:"Cascadia Mono",Consolas,monospace;font-size:.86em;background:var(--code);padding:2px 6px;border-radius:5px}
+.bild{display:block;margin:18px 0 22px}
+.bild img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--linie);box-shadow:var(--schatten)}
+.bild:hover img{border-color:var(--akzent)}
+.inhalt ol{list-style:none;padding:0;counter-reset:n;margin:12px 0 18px}
+.inhalt ol>li{counter-increment:n;position:relative;padding-left:40px;margin:10px 0}
+.inhalt ol>li::before{content:counter(n);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--ocker);color:#1b1b1b;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.inhalt ul{padding-left:20px}
+.inhalt ul>li{margin:6px 0}
+.inhalt ul>li::marker{color:var(--akzent)}
+table{border-collapse:separate;border-spacing:0;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto;border:1px solid var(--linie);border-radius:10px}
+th,td{padding:8px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--linie)}
+tr:last-child td{border-bottom:0}
+th{background:var(--code);font-weight:600;position:sticky;top:0}
+td code{white-space:nowrap}
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:56px;padding-top:20px;border-top:1px solid var(--linie)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--linie);background:var(--karte);border-radius:10px;padding:12px 16px;color:var(--text)}
+.schritte a:hover{border-color:var(--akzent)}
+.schritte span{display:block;font-size:12px;color:var(--leise);text-transform:uppercase;letter-spacing:.06em}
+.schritte .weiter{text-align:right;margin-left:auto}
+.home .inhalt ol{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;max-width:none}
+.home .inhalt ol>li{margin:0;background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:14px 16px 14px 54px;max-width:none;box-shadow:var(--schatten)}
+.home .inhalt ol>li::before{left:16px;top:16px}
+.home .inhalt ol>li a{font-weight:600}
+.home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
+.pfad{font-size:13px;color:var(--leise);margin-bottom:6px}
+.pfad a{color:var(--leise)}
+.aufseite{font-size:13px}
+.aufseite b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--leise);margin-bottom:8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:4px 0 4px 12px;border-left:2px solid var(--linie)}
+.aufseite a:hover{color:var(--akzent);border-left-color:var(--akzent)}
+
+.rahmen{display:grid;grid-template-columns:260px minmax(0,1fr) 200px;gap:0;max-width:1400px;margin:0 auto}
+.leiste{position:sticky;top:0;height:100vh;overflow:auto;padding:22px 18px;border-right:1px solid var(--linie)}
+.marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
+.marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
+.marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
+.gruppe{margin:0 0 18px}
+.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
+.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
+.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
+.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
+.gruppe b i img{width:20px;height:20px;object-fit:contain}
+.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
+.gruppe a:hover{background:var(--akzentweich)}
+.gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
+main{padding:40px 48px 80px;min-width:0}
+.inhalt{max-width:860px}
+.rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
+@media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
+@media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html" class="hier">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="writing-a-settlement-type-in-xml">Writing a settlement type in XML</h1>
+<p>This page is for modders who write settlement types by hand. The in-game editor writes the same XML, see <a href="Settlements.html">Settlements</a>. Every node on this page exists in the code. The full list is in the field reference, linked at the end.</p>
+<h2 id="what-a-settlement-type-is">What a settlement type is</h2>
+<p>A settlement type is a <code>CustomBaseFramework.SettlementPlanDef</code>. It does not contain a map. It is a building program: which wards the place has, which walls, towers and gates protect them, which buildings go where, and which fields and pens lie around it.</p>
+<p>When a caravan or raid first reaches a base, the generator plans the settlement on the real map of that tile:</p>
+<ol>
+<li>It picks one settlement type for the faction.</li>
+<li>It lays out the wards as rings: the town in the middle, the suburb around it, the countryside outside.</li>
+<li>It builds the walls, places towers and gatehouses, and runs the main road and lanes through the gates.</li>
+<li>It splits each ward into districts and places the buildings each district asks for.</li>
+<li>It adds fields next to farmhouses and pens in the countryside.</li>
+<li>It fills every planned spot with a piece (a PieceDef, see <a href="Pieces.html">Pieces</a>) and spawns the garrison.</li>
+</ol>
+<p>The settlement type decides what is asked for. The pieces decide what each building looks like.</p>
+<h2 id="minimal-example">Minimal example</h2>
+<p>The shortest settlement type that loads without errors and is actually used:</p>
+<p><code>xml
+&lt;Defs&gt;
+  &lt;CustomBaseFramework.SettlementPlanDef&gt;
+    &lt;defName&gt;MyMod_Plan_Hamlet&lt;/defName&gt;
+    &lt;label&gt;hamlet&lt;/label&gt;
+    &lt;kind&gt;Modernestadt&lt;/kind&gt;
+    &lt;styles&gt;
+      &lt;li&gt;CBF_ModernVanilla&lt;/li&gt;
+    &lt;/styles&gt;
+    &lt;techLevels&gt;
+      &lt;li&gt;Industrial&lt;/li&gt;
+    &lt;/techLevels&gt;
+    &lt;fuerAlleFraktionen&gt;true&lt;/fuerAlleFraktionen&gt;
+    &lt;wards&gt;
+      &lt;li&gt;
+        &lt;art&gt;Stadt&lt;/art&gt;
+        &lt;districts&gt;
+          &lt;li&gt;
+            &lt;entries&gt;
+              &lt;li&gt;&lt;tag&gt;CBF_Vanilla_HouseSmall&lt;/tag&gt;&lt;count&gt;6~10&lt;/count&gt;&lt;filler&gt;true&lt;/filler&gt;&lt;/li&gt;
+            &lt;/entries&gt;
+          &lt;/li&gt;
+        &lt;/districts&gt;
+      &lt;/li&gt;
+    &lt;/wards&gt;
+  &lt;/CustomBaseFramework.SettlementPlanDef&gt;
+&lt;/Defs&gt;</code></p>
+<ul>
+<li><code>kind</code> is set to <code>Modernestadt</code> because the default kind, <code>Mittelalterstadt</code>, needs a wall on the town ward. Without one the planner stops with "The fortified city requires a wall template".</li>
+<li><code>styles</code> names one of the shipped styles.</li>
+<li><code>materialList</code> names a material list; without one the plan is not used.</li>
+<li><code>techLevels</code> together with <code>fuerAlleFraktionen</code> makes the plan available to every industrial faction that has no plans of its own. Without faction settings the plan is only used for places that have no faction.</li>
+<li>The load check needs at least one building entry, a <code>mapSize</code> of 150 or more (default 175) and road widths within the limit of the kind.</li>
+<li>There is no garrison, so the defenders come from <code>defenderPoints</code> (default 180 to 420).</li>
+</ul>
+<h2 id="header-fields">Header fields</h2>
+<p>From <code>CBF_Plan_Village_Neu</code> (Medieval Overhaul village), trimmed:</p>
+<p><code>xml
+&lt;CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul"&gt;
+  &lt;defName&gt;CBF_Plan_Village_Neu&lt;/defName&gt;
+  &lt;label&gt;village (MO)&lt;/label&gt;
+  &lt;kind&gt;Mittelalterstadt&lt;/kind&gt;
+  &lt;styles&gt;
+    &lt;li&gt;Rustical&lt;/li&gt;
+    &lt;li&gt;Standard&lt;/li&gt;
+  &lt;/styles&gt;
+  &lt;coreSize&gt;50~60&lt;/coreSize&gt;
+  &lt;mapSize&gt;200&lt;/mapSize&gt;
+  &lt;factionTags&gt;
+    &lt;li&gt;DankPyon_NobleHouseSavage&lt;/li&gt;
+    &lt;li&gt;DankPyon_NobleHouseCivil&lt;/li&gt;
+  &lt;/factionTags&gt;
+  &lt;fuerAlleFraktionen&gt;true&lt;/fuerAlleFraktionen&gt;
+  &lt;techLevels&gt;
+    &lt;li&gt;Medieval&lt;/li&gt;
+  &lt;/techLevels&gt;
+  &lt;anteil&gt;80&lt;/anteil&gt;
+  &lt;worldTexture&gt;World/WorldObjects/CBF/CBF_VillagePalisade&lt;/worldTexture&gt;
+  &lt;wdStufe&gt;1&lt;/wdStufe&gt;
+&lt;/CustomBaseFramework.SettlementPlanDef&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Editor name</th>
+<th>What it does</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>defName</code></td>
+<td></td>
+<td>Unique name. Saved on the world object, so do not rename it after release.</td>
+<td>required</td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td>Label</td>
+<td>Name players see on the world map.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>kind</code></td>
+<td>Settlement kind</td>
+<td><code>Mittelalterstadt</code> (medieval, town ward needs a wall) or <code>Modernestadt</code> (modern, walls optional, roads up to 6 wide). <code>Lager</code> and <code>Verlies</code> exist but are never picked in the current version.</td>
+<td><code>Mittelalterstadt</code></td>
+</tr>
+<tr>
+<td><code>styles</code></td>
+<td></td>
+<td>Styles used to pick the wall profile. They do not filter which pieces are used.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>materialList</code></td>
+<td>Material list</td>
+<td>Required. The <a href="Modding-Overview.html#material-lists">material list</a> for walls, doors, gates, fences, roads and roofs the generator builds itself.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>coreSize</code></td>
+<td>Core size</td>
+<td>Smallest edge length of the settlement. If the buildings need more room the settlement grows, up to what the map allows.</td>
+<td><code>66~74</code></td>
+</tr>
+<tr>
+<td><code>mapSize</code></td>
+<td>Map size</td>
+<td>Edge length of the map this settlement asks for. The larger of this and the world setting is used. Below 150 is a load error.</td>
+<td><code>175</code></td>
+</tr>
+<tr>
+<td><code>factionTags</code></td>
+<td>Factions</td>
+<td>FactionDef defNames or faction <code>categoryTag</code> values that get this plan.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>excludeFactions</code></td>
+<td>Excluded factions</td>
+<td>FactionDef defNames that never get this plan.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>techLevels</code></td>
+<td>Tech levels</td>
+<td>Tech levels this plan fits. Only used together with <code>fuerAlleFraktionen</code>.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>fuerAlleFraktionen</code></td>
+<td>For every faction of these levels</td>
+<td>Offers the plan to every faction whose tech level is in <code>techLevels</code>, unless that faction has plans of its own.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>anteil</code></td>
+<td>Weight</td>
+<td>Chance against the other plans a faction can get. 0 counts as 1.</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>worldTexture</code></td>
+<td>World map icon</td>
+<td>Texture path of the world map icon, tinted in the faction color.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>wdStufe</code></td>
+<td>WD tier</td>
+<td>World Domination tier this plan stands for, 0 to 4, as a number or a range like <code>2~3</code>. 0 means no tier. See <a href="Compatibility.html#world-domination-20">Compatibility</a>.</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>requiredMods</code></td>
+<td>Needs these mods</td>
+<td>Read by the editor only. When the editor saves the plan, it writes these mods and the ones it detects into <code>MayRequire</code> on the def node. It does not stop a hand-written def from loading.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>siteTags</code></td>
+<td></td>
+<td>Plans with site tags are the only ones used for quest sites. Leave it empty for faction bases.</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mayrequire">MayRequire</h3>
+<p><code>MayRequire</code> is RimWorld's own attribute. On the def node it skips the whole plan when the mod is missing. On a list item it skips only that item:</p>
+<p>```xml
+<plants>
+<br />
+<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li></p>
+<li>Plant_Corn</li>
+<p></plants>
+```</p>
+<p>Put <code>MayRequire</code> on the def node whenever the plan names pieces, categories or pawn lists from another mod. <code>requiredMods</code> alone does not protect a hand-written plan.</p>
+<h2 id="wards">Wards</h2>
+<p>A ward is one ring of the settlement. There are three kinds, set with <code>art</code>:</p>
+<table>
+<thead>
+<tr>
+<th><code>art</code></th>
+<th>Editor name</th>
+<th>Layer</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Stadt</code></td>
+<td>Town</td>
+<td>inner</td>
+<td>Required. In a medieval plan it must have walls.</td>
+</tr>
+<tr>
+<td><code>Vorstadt</code></td>
+<td>Suburb</td>
+<td>middle</td>
+<td>Optional. Without walls it is an open suburb. Without the ward there is no suburb.</td>
+</tr>
+<tr>
+<td><code>Umland</code></td>
+<td>Countryside</td>
+<td>outer</td>
+<td>Optional. Never walled. Pens are only placed here.</td>
+</tr>
+</tbody>
+</table>
+<p>Write each kind once. The enum also lists <code>Burg</code>, but the planner has no layer of its own for it; do not use it.</p>
+<p>From <code>CBF_Plan_FortressCity_Neu</code>, the town ward, trimmed:</p>
+<p>```xml
+<wards>
+<br />
+<li>
+    <art>Stadt</art>
+    <label>Old town</label>
+    <roads>
+      <li>DankPyon_Floor_Cobblestone_Granite</li>
+    </roads>
+    <walls>
+      <li><piece>TownWall_1x5</piece><weight>0.75</weight></li>
+      <li><piece>CBF_MO_Stadtmauer_1x5_Scharte</piece><weight>0.25</weight></li>
+    </walls>
+    <emplacements>
+      <li><tag>CBF_MO_Festungsturm</tag><count>4~6</count></li>
+    </emplacements>
+    <gatehouses>
+      <li><tag>CBF_MO_Festungstor</tag><count>1~2</count></li>
+    </gatehouses>
+    <garrison>
+      <li><list>CBF_MO_Garnison_Wehrgang</list><count>16~21</count><posten>Wehrgang</posten></li>
+      <li><list>CBF_MO_Garnison_Tor</list><count>5~8</count><posten>Tor</posten></li>
+      <li><list>CBF_MO_Garnison_Innen</list><count>8~13</count><posten>Innen</posten></li>
+    </garrison>
+    <districts>
+      ...
+    </districts>
+  </li></p>
+<p></wards>
+```</p>
+<p>The shipped file has no <code>label</code> line; it is added here to show the node.</p>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Editor name</th>
+<th>What it does</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>art</code></td>
+<td>Kind</td>
+<td>Ward kind, see above.</td>
+<td><code>Stadt</code></td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td>Label</td>
+<td>Name shown for the ward. Empty uses the kind name.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Name</td>
+<td>Replaced by the kind at load. Use <code>label</code> instead.</td>
+<td><code>Stadt</code></td>
+</tr>
+<tr>
+<td><code>walls</code></td>
+<td>Walls</td>
+<td>Wall pieces of this ring, see below.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>emplacements</code></td>
+<td>Defensive positions</td>
+<td>Towers and other works on the wall.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>gatehouses</code></td>
+<td>Gatehouses</td>
+<td>Pieces built where a road crosses the wall. Empty takes the gatehouse of the wall profile.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>tor</code></td>
+<td>Gate</td>
+<td>ThingDef that closes the gate passages. Empty uses the gate of the material list.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>garrison</code></td>
+<td>Garrison</td>
+<td>Defenders of this ward, see below.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>ground</code></td>
+<td>Ground</td>
+<td>TerrainDefs for the open ground between the houses. Empty keeps the map terrain.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>roads</code></td>
+<td>Paths</td>
+<td>TerrainDefs for lanes, squares and gate passages. Empty uses the road of the material list.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>roadEdges</code></td>
+<td>Kerb</td>
+<td>TerrainDefs for the road edge.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>abstand</code></td>
+<td></td>
+<td>Gap between buildings in this ward, as a range. The planner uses the lower value, 0 to 4.</td>
+<td><code>0~0</code></td>
+</tr>
+<tr>
+<td><code>raeumen</code></td>
+<td></td>
+<td><code>false</code> leaves some plants and trees standing on open ground.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>size</code>, <code>wallDepth</code></td>
+<td>Size, Wall thickness</td>
+<td>Kept for the editor. The planner sizes a ward from its buildings and takes the wall thickness from the wall pieces.</td>
+<td><code>1</code>, <code>0</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="walls-emplacements-and-gatehouses">Walls, emplacements and gatehouses</h3>
+<p>All three are lists of wall entries. An entry is either plain text or a node with fields:</p>
+<p>```xml
+<walls>
+<br />
+<li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li></p>
+<p></walls>
+<emplacements>
+<br />
+<li><tag>CBF_MO_Palisadenturm</tag><count>1~2</count></li></p>
+<p></emplacements>
+```</p>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>What it does</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plain text</td>
+<td>A PieceDef or PieceCategoryDef name. CBF looks for a piece first, then a category.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>piece</code></td>
+<td>One PieceDef.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>tag</code></td>
+<td>A PieceCategoryDef. Every non-template piece in it can be used.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>weight</code></td>
+<td>Share of this entry. For walls it sets how often each piece appears along the wall.</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>count</code></td>
+<td>For emplacements and gatehouses: how many. <code>0~0</code> lets the planner place as many as the wall needs.</td>
+<td><code>0~0</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>A wall piece must be one cell wide in one direction. Its length in the other direction is the wall thickness: 1 is a palisade, 3 a wall with a walkway, 5 a broad fortress wall.</li>
+<li>Use pieces of the same thickness within one ward. The thickness comes from the wall pieces, not from any <code>wallDepth</code> node.</li>
+<li>Tower sizes are read from square pieces with an odd edge length.</li>
+</ul>
+<h3 id="garrison">Garrison</h3>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>What it does</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>list</code></td>
+<td>A PawnListDef, see <a href="Pawns.html">Pawns</a>. A missing list leaves the entry empty and logs a warning.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>count</code></td>
+<td>How many pawns from this list.</td>
+<td><code>1~1</code></td>
+</tr>
+<tr>
+<td><code>posten</code></td>
+<td>Post: <code>Innen</code> (inside), <code>Wehrgang</code> (on the wall walkway) or <code>Tor</code> (at the gates).</td>
+<td><code>Innen</code></td>
+</tr>
+</tbody>
+</table>
+<p>A ward with a garrison uses only its own entries. A ward without one takes its share of the plan's <code>defenderPoints</code>. <code>defendersOnWall</code> (default 0.25) sets how many of those point-based defenders stand on the wall.</p>
+<h2 id="districts-and-building-entries">Districts and building entries</h2>
+<p>A district is a group of buildings that stay together. Each ward has one or more districts.</p>
+<p>From <code>CBF_Plan_FortressCity_Neu</code>, town ward:</p>
+<p>```xml
+<districts>
+<br />
+<li>
+    <name>Burg</name>
+    <prefCenter>1</prefCenter>
+    <entries>
+      <li><tag>CBF_MO_Festungsbergfried</tag><count>1~1</count><unique>true</unique></li>
+      <li><tag>CBF_MO_Kaserne</tag><count>2~2</count></li>
+      <li><piece>CBF_MO_Verlies</piece><count>1~2</count></li>
+    </entries>
+  </li></p>
+<li>
+    <name>Zentrum</name>
+    <entries>
+      <li><tag>CBF_MO_Gasthaus</tag><count>1~1</count></li>
+      <li><tag>CBF_MO_Kirche</tag><count>1~1</count></li>
+      <li><tag>CBF_MO_Buergerhaus</tag><count>6~14</count><filler>true</filler></li>
+      <li><tag>CBF_MO_Lueckenhof</tag><count>0~6</count><filler>true</filler></li>
+    </entries>
+  </li>
+<p></districts>
+```</p>
+<p>The <code>prefCenter</code> line is added for this page; the shipped plan leaves the location to the planner.</p>
+<h3 id="district-nodes">District nodes</h3>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Editor name</th>
+<th>What it does</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>Name</td>
+<td>Internal name. Must be unique across the whole plan, a duplicate logs a warning. Fields and pens use it to find their buildings.</td>
+<td><code>Default</code></td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td>Label</td>
+<td>Display name.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>entries</code></td>
+<td>Buildings</td>
+<td>The building entries.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>prefCenter</code></td>
+<td>Toward the center</td>
+<td>Pull toward the center of the ward.</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>prefGate</code></td>
+<td>Toward the gate</td>
+<td>Pull toward the gates.</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>prefWall</code></td>
+<td>Toward the wall</td>
+<td>Pull toward the wall.</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>prefMain</code></td>
+<td>Along the main road</td>
+<td>Pull toward the main road.</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>fields</code>, <code>pens</code></td>
+<td>Fields, Pens</td>
+<td>See the next section.</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<p>The four location values are weighed against each other, so <code>1</code> and <code>0</code> means the same as <code>0.5</code> and <code>0</code>. When all four are 0, the district starts as far as possible from the districts already placed.</p>
+<h3 id="building-entries">Building entries</h3>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Editor name</th>
+<th>What it does</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tag</code></td>
+<td>Category</td>
+<td>A PieceCategoryDef. The planner picks pieces from this category.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>piece</code></td>
+<td></td>
+<td>One specific PieceDef.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>count</code></td>
+<td>Count</td>
+<td>How many, as a range. More than 150 is cut to 150.</td>
+<td><code>1~1</code></td>
+</tr>
+<tr>
+<td><code>unique</code></td>
+<td>Only once</td>
+<td>Sets the count to exactly 1.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>filler</code></td>
+<td>Filler</td>
+<td>After the fixed buildings are placed, filler entries fill the free space until the target built share is reached. They may go above their maximum. A filler counts as missing only below half its minimum.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>weight</code></td>
+<td>Weight</td>
+<td>Only on <code>piece</code> entries. Changes how often that piece is chosen wherever its category is drawn in this plan. <code>0</code> turns the piece off. On <code>tag</code> entries it has no effect.</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>lootTable</code></td>
+<td></td>
+<td>A LootTableDef. Used for loot spots in these pieces that name no table of their own. Only on <code>tag</code> entries. A missing table logs a warning.</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Name either <code>tag</code> or <code>piece</code>. With both, the piece wins and a warning is logged. With neither, the entry is skipped.</li>
+<li>Use <code>tag</code> for anything that should vary. Use <code>piece</code> for one building that must appear as drawn, such as a keep or a dungeon.</li>
+<li>The minimum of an entry is a wish, not a guarantee. If the space runs out, the planner reports what it could not place.</li>
+</ul>
+<h2 id="fields-and-pens">Fields and pens</h2>
+<p>Fields and pens belong to a district in the suburb or countryside ward. From <code>CBF_Plan_Village_Neu</code>:</p>
+<p>```xml</p>
+<li>
+  <art>Umland</art>
+  <districts>
+    <li>
+      <name>Muehle</name>
+      <fields>
+        <li>
+          <count>2~3</count>
+          <fence>false</fence>
+          <plants>
+            <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
+          </plants>
+          <tags>
+            <li>CBF_MO_Muehle</li>
+          </tags>
+        </li>
+      </fields>
+      <entries>
+        <li><tag>CBF_MO_Muehle</tag><count>1~1</count></li>
+      </entries>
+    </li>
+    <li>
+      <name>Weide</name>
+      <pens>
+        <li>
+          <count>1~1</count>
+          <herd>2~5</herd>
+          <pawns>Hardanimals_1</pawns>
+          <terrain>Soil</terrain>
+          <plants>
+            <li>Plant_Haygrass</li>
+          </plants>
+        </li>
+      </pens>
+      <entries>
+        <li><tag>CBF_MO_Scheune</tag><count>1~1</count></li>
+      </entries>
+    </li>
+  </districts>
+</li>
+<p>```</p>
+<h3 id="field-nodes">Field nodes</h3>
+<p>Fields are read from the <code>Vorstadt</code> and <code>Umland</code> wards. Fields in the town ward are ignored.</p>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Editor name</th>
+<th>What it does</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>count</code></td>
+<td>Count</td>
+<td>How many fields this entry adds to the ward.</td>
+<td><code>1~1</code></td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>Categories (Farmsteads)</td>
+<td>Categories whose buildings get a field next to them. Empty in a district takes the categories of the district's entries.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>plants</code></td>
+<td>Plants</td>
+<td>ThingDefs of the crops.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>crops</code></td>
+<td>Crop list</td>
+<td>A CropListDef with weighted plants. Used instead of <code>plants</code> when set, see <a href="Loot.html#crop-lists">Loot</a>.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>fence</code></td>
+<td></td>
+<td>Fence around the field.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>weight</code></td>
+<td>Weight</td>
+<td>Chance of this field kind when a district has several.</td>
+<td><code>1</code></td>
+</tr>
+</tbody>
+</table>
+<p>The field needs a building from <code>tags</code> to grow next to. List that category in the district's entries, or the field has no farmhouse.</p>
+<h3 id="pen-nodes">Pen nodes</h3>
+<p>Pens are read from the <code>Umland</code> ward only. They are placed near the buildings of their district.</p>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Editor name</th>
+<th>What it does</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>count</code></td>
+<td>Count</td>
+<td>How many pens.</td>
+<td><code>1~1</code></td>
+</tr>
+<tr>
+<td><code>pawns</code></td>
+<td>Animals</td>
+<td>A PawnListDef with the animals. A missing list gives an empty pen.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>herd</code></td>
+<td></td>
+<td>Animals per pen. Capped by the pen area.</td>
+<td><code>3~7</code></td>
+</tr>
+<tr>
+<td><code>plants</code></td>
+<td>Plants</td>
+<td>What grows inside the pen.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>crops</code></td>
+<td>Crop list</td>
+<td>A CropListDef, used instead of <code>plants</code> when set.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>terrain</code></td>
+<td>Floor</td>
+<td>TerrainDef for the pen floor. Empty keeps the map terrain.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>weight</code></td>
+<td>Weight</td>
+<td>Makes this pen larger or smaller.</td>
+<td><code>1</code></td>
+</tr>
+</tbody>
+</table>
+<p>The ward node <code>versorgung</code> (default 1.2) scales the size of all pens in the countryside.</p>
+<h2 id="harbors">Harbors</h2>
+<p>A medieval settlement at the coast or on a river of at least <code>flussbreite</code> cells gets a harbor at the shore: jetties, fishing huts, harbor store, harbor master and boat sheds, with a path to the town.</p>
+<p><code>xml
+&lt;hafen&gt;
+  &lt;entries&gt;
+    &lt;li&gt;&lt;tag&gt;CBF_MO_Hafenmeister&lt;/tag&gt;&lt;count&gt;1~1&lt;/count&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;tag&gt;CBF_MO_Hafenlager&lt;/tag&gt;&lt;count&gt;1~1&lt;/count&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;tag&gt;CBF_MO_Steg&lt;/tag&gt;&lt;count&gt;1~2&lt;/count&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;tag&gt;CBF_MO_Bootsschuppen&lt;/tag&gt;&lt;count&gt;0~1&lt;/count&gt;&lt;/li&gt;
+  &lt;/entries&gt;
+&lt;/hafen&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>What it does</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>entries</code></td>
+<td>Categories (<code>tag</code>) with a count range.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>flussbreite</code></td>
+<td>Smallest river width in cells that counts. The sea always counts.</td>
+<td><code>10</code></td>
+</tr>
+<tr>
+<td><code>reichweite</code></td>
+<td>How far from the settlement harbor pieces may stand, in cells.</td>
+<td><code>45</code></td>
+</tr>
+</tbody>
+</table>
+<p>Harbor pieces need a Connect anchor named <code>Wasser</code> on their water side, see <a href="Modding-Pieces.html#connect">Pieces and categories in XML</a>. Without suitable water no harbor is built.</p>
+<h2 id="tuning-fields">Tuning fields</h2>
+<p>These sit on the plan, next to the header fields:</p>
+<p><code>xml
+&lt;roadMain&gt;2&lt;/roadMain&gt;
+&lt;roadLane&gt;2&lt;/roadLane&gt;
+&lt;targetBuilt&gt;0.62&lt;/targetBuilt&gt;
+&lt;defenderPoints&gt;400~700&lt;/defenderPoints&gt;
+&lt;defendersOnWall&gt;0.28&lt;/defendersOnWall&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Editor name</th>
+<th>What it does</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>roadMain</code></td>
+<td>Main road width</td>
+<td>Width of the main road. At most 2 for medieval plans, 6 for modern ones. More is a load error.</td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><code>roadLane</code></td>
+<td>Lane width</td>
+<td>Width of the side lanes. Same limits.</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>targetBuilt</code></td>
+<td>Target built share</td>
+<td>Share of the town and suburb area covered by buildings. It sets how large the settlement is planned and how long filler entries keep filling. 0 uses the planner default of 0.62. Shipped medieval plans use 0.5 to 0.62.</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>defenderPoints</code></td>
+<td>Defender strength</td>
+<td>Points for wards without a garrison.</td>
+<td><code>180~420</code></td>
+</tr>
+<tr>
+<td><code>defendersOnWall</code></td>
+<td>Defenders on the wall</td>
+<td>Share of point-based defenders on the wall, 0 to 1.</td>
+<td><code>0.25</code></td>
+</tr>
+<tr>
+<td><code>assaultDelayTicks</code></td>
+<td>Assault delay</td>
+<td>Ticks before the defenders attack.</td>
+<td><code>25000</code></td>
+</tr>
+</tbody>
+</table>
+<p>Gaps between buildings are set per ward with <code>abstand</code>. The plan nodes <code>minBuildingGap</code> and <code>maxBuildingGap</code> are only used when the plan has no town ward.</p>
+<p>Use <code>targetBuilt</code> to change density.</p>
+<p>Older plans put <code>walls</code>, <code>emplacements</code>, <code>gatehouses</code> and <code>districts</code> directly on the plan. That still loads as a single town ward. Use <code>wards</code> for new plans.</p>
+<h2 id="how-cbf-picks-a-plan-for-a-faction">How CBF picks a plan for a faction</h2>
+<p>For every faction base CBF builds a pool of plans, then draws one:</p>
+<ol>
+<li><strong>Own plans.</strong> Every plan whose <code>factionTags</code> names the faction's defName or its <code>categoryTag</code>.</li>
+<li><strong>General plans.</strong> Only if step 1 found nothing: every plan with <code>fuerAlleFraktionen</code> set and the faction's tech level in <code>techLevels</code>.</li>
+<li><strong>Exclusions.</strong> A faction listed in <code>excludeFactions</code> never gets that plan, in either step.</li>
+<li><strong>Unusable plans.</strong> Plans without a usable material list and plans of the hidden kinds <code>Lager</code> and <code>Verlies</code> are left out.</li>
+<li><strong>Tier filter.</strong> With World Domination 2.0, only the plans whose <code>wdStufe</code> is closest to the base's tier stay; plans without <code>wdStufe</code> drop out as soon as one plan in the pool has one. With A Rim of Ice and Fire, the faction's main seat prefers plans with <code>wdStufe</code> 3 or more, other bases plans below 3.</li>
+<li><strong>Draw.</strong> One plan by weight, <code>anteil</code> (0 counts as 1). The draw depends on the world object, so the same base always gets the same plan.</li>
+</ol>
+<p>A faction that ends up with an empty pool keeps RimWorld's own base. A place without a faction takes the plans that have no <code>factionTags</code>.</p>
+<p>Players can switch single factions back to RimWorld's bases in the mod settings, see <a href="Mod-Settings.html#settlements-per-faction">Mod settings</a>. A switched-off faction gets no plan, whatever the XML says.</p>
+<p>Quest sites work differently. They only take plans that have <code>siteTags</code>.</p>
+<h2 id="tips">Tips</h2>
+<ul>
+<li>Start from a shipped plan. Copy it, change <code>defName</code>, <code>label</code> and <code>factionTags</code>, then change one thing at a time.</li>
+<li>Give a plan for your own faction <code>factionTags</code> and leave <code>fuerAlleFraktionen</code> off. Then it cannot spill over to other factions of the same tech level.</li>
+<li>Setting <code>fuerAlleFraktionen</code> without <code>techLevels</code> does nothing.</li>
+<li>A faction with own plans never gets the general ones. If you add one plan for a faction, it loses the shipped general plans. Add enough plans of your own, or none.</li>
+<li>Use <code>anteil</code> to make a large town rare. The Medieval Overhaul village uses 80, the fortress city 10.</li>
+<li>Every <code>tag</code> must match a category that has pieces for the loaded mods. A category without pieces places nothing.</li>
+<li>Put <code>MayRequire</code> on the def node and on every list item that names content from another mod.</li>
+<li>A very large program on a small map gets cut, and CBF logs a warning with the edge length it needed. Raise <code>mapSize</code>, lower the counts, or raise <code>targetBuilt</code>.</li>
+<li>Mark the bulk housing of each ward as <code>filler</code>. Fixed buildings are placed first, filler takes what is left.</li>
+<li>Keep <code>unique</code> for keeps, town halls and similar single buildings.</li>
+<li>Pens need an <code>Umland</code> ward. Fields need a <code>Vorstadt</code> or <code>Umland</code> ward and a farmhouse category in the same district.</li>
+<li>The editor preview shows the plan on a flat map. Build a real base afterwards; the terrain of a tile changes a lot.</li>
+<li><code>defName</code> is saved with the world. Renaming it later makes existing bases draw a new plan.</li>
+</ul>
+<h2 id="field-reference">Field reference</h2>
+<p>Every node with its type and default:</p>
+<ul>
+<li><a href="SettlementPlanDef.html">SettlementPlanDef</a></li>
+<li><a href="Stadtteil.html">Stadtteil</a> (ward)</li>
+<li><a href="WallEntry.html">WallEntry</a> (walls, emplacements, gatehouses)</li>
+<li><a href="Garnisonseintrag.html">Garnisonseintrag</a> (garrison)</li>
+<li><a href="DistrictSpec.html">DistrictSpec</a> (district)</li>
+<li><a href="BudgetEntry.html">BudgetEntry</a> (building entry)</li>
+<li><a href="Ackerspec.html">Ackerspec</a> (field)</li>
+<li><a href="Gehegespec.html">Gehegespec</a> (pen)</li>
+<li><a href="Field-Reference.html">Field reference</a> (all pages)</li>
+</ul><div class="schritte"><a href="Modding-Overview.html"><span>Previous</span>Your own content mod</a><a class="weiter" href="Modding-Pieces.html"><span>Next</span>Pieces and categories in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#what-a-settlement-type-is">What a settlement type is</a><a href="#minimal-example">Minimal example</a><a href="#header-fields">Header fields</a><a href="#wards">Wards</a><a href="#districts-and-building-entries">Districts and building entries</a><a href="#fields-and-pens">Fields and pens</a><a href="#harbors">Harbors</a><a href="#tuning-fields">Tuning fields</a><a href="#how-cbf-picks-a-plan-for-a-faction">How CBF picks a plan for a faction</a><a href="#tips">Tips</a><a href="#field-reference">Field reference</a></div></aside></div></body></html>

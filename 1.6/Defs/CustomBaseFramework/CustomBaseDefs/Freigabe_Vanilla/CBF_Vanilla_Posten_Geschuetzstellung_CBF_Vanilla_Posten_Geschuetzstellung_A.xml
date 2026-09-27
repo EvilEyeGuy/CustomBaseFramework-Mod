@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Posten_Geschuetzstellung_A</defName>
+    <label>CBF_Vanilla_Posten_Geschuetzstellung_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_Posten_Geschuetzstellung</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>L</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>g</symbol><thing>Turret_MiniTurret</thing><stuff>Steel</stuff></li>
+      <li><symbol>j</symbol><thing>Barricade</thing><stuff>Steel</stuff></li>
+      <li><symbol>s</symbol><thing>Sandbags</thing><stuff>Cloth</stuff></li>
+      <li><symbol>u</symbol><thing>Turret_Autocannon</thing></li>
+    </legend>
+    <mask>
+      <li>..#######..</li>
+      <li>.#########.</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>..#######..</li>
+      <li>...#####...</li>
+    </mask>
+    <terrain>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </terrain>
+    <things>
+      <li>..sssssss..</li>
+      <li>.ss.....ss.</li>
+      <li>ss.g...g.ss</li>
+      <li>s...u.....s</li>
+      <li>....j.j....</li>
+      <li>.....L.....</li>
+    </things>
+    <roof>
+      <li>..^^^^^^^..</li>
+      <li>.^^.....^^.</li>
+      <li>^^.......^^</li>
+      <li>^.........^</li>
+      <li>....^.^....</li>
+      <li>...........</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

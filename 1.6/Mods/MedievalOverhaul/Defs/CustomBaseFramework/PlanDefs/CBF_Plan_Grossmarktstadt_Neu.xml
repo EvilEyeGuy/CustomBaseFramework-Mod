@@ -4,6 +4,7 @@
   <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Plan_Grossmarktstadt_Neu</defName>
     <label>large market town (MO)</label>
+    <materialList>CBF_MO_Materialliste</materialList>
 
     <styles>
       <li>Rustical</li>
@@ -12,20 +13,16 @@
 
     <coreSize>90~105</coreSize>
     <mapSize>250</mapSize>
-    <wallDepth>3</wallDepth>
     <towerCorner>7</towerCorner>
     <towerCurtain>7</towerCurtain>
     <towerCapTotal>0</towerCapTotal>
     <wallGap>1</wallGap>
     <roadMain>2</roadMain>
     <roadLane>2</roadLane>
-    <widenings>0</widenings>
     <minBuildingGap>1</minBuildingGap>
     <maxBuildingGap>2</maxBuildingGap>
     <targetBuilt>0.66</targetBuilt>
-    <coverageBuild>0.42</coverageBuild>
     <weightNearRoad>1.4</weightNearRoad>
-    <gardenShare>0</gardenShare>
     <defenderPoints>260~480</defenderPoints>
     <defendersOnWall>0.28</defendersOnWall>
 
@@ -33,8 +30,6 @@
       <li>
         <art>Stadt</art>
         <name>Altstadt</name>
-        <size>1</size>
-        <wallDepth>3</wallDepth>
         <versorgung>1.2</versorgung>
         <roads>
           <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Floor_Cobblestone_Granite</li>
@@ -95,8 +90,6 @@
         <art>Vorstadt</art>
         <name>Neustadt</name>
         <tor>DankPyon_ReinfocedLogGate</tor>
-        <size>0.6</size>
-        <wallDepth>1</wallDepth>
         <versorgung>1.2</versorgung>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
@@ -140,8 +133,6 @@
       <li>
         <art>Umland</art>
         <name>Umland</name>
-        <size>2.2</size>
-        <wallDepth>0</wallDepth>
         <versorgung>1.2</versorgung>
         <garrison>
           <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>4~5</count></li>
@@ -149,7 +140,6 @@
         <districts>
           <li>
             <name>Hoefe</name><fields><li>
-              <name>Acker</name>
               <count>3~4</count>
               <fence>true</fence>
               <weight>1</weight><plants>
@@ -169,7 +159,6 @@
           </li>
           <li>
             <name>Muehle</name><fields><li>
-              <name>Acker</name>
               <count>2~3</count>
               <fence>false</fence>
               <weight>1</weight><plants>
@@ -188,7 +177,6 @@
               <count>1~1</count>
               <herd>3~7</herd>
               <pawns>Hardanimals_1</pawns>
-              <fence>true</fence>
               <terrain>Soil</terrain><plants>
                 <li>Plant_Haygrass</li>
                </plants>
@@ -204,7 +192,6 @@
               <count>1~1</count>
               <herd>3~7</herd>
               <pawns>Hardanimals_1</pawns>
-              <fence>true</fence>
               <terrain>Soil</terrain><plants>
                 <li>Plant_Haygrass</li>
                </plants>
@@ -248,6 +235,18 @@
     </factionTags>
 
     <anteil>40</anteil>
+
+    <wdStufe>3</wdStufe>
+
+    <hafen>
+      <entries>
+        <li><tag>CBF_MO_Hafenmeister</tag><count>1~1</count></li>
+        <li><tag>CBF_MO_Hafenlager</tag><count>1~2</count></li>
+        <li><tag>CBF_MO_Steg</tag><count>2~3</count></li>
+        <li><tag>CBF_MO_Fischerhuette</tag><count>1~2</count></li>
+        <li><tag>CBF_MO_Bootsschuppen</tag><count>1~1</count></li>
+      </entries>
+    </hafen>
     <suburbIslands>2</suburbIslands>
     <fuerAlleFraktionen>true</fuerAlleFraktionen>
 
@@ -256,7 +255,6 @@
     </techLevels>
 
     <worldTexture>World/WorldObjects/CBF/CBF_MarketTownLarge</worldTexture>
-    <wdStufe>3</wdStufe>
   </CustomBaseFramework.SettlementPlanDef>
 
 </Defs>

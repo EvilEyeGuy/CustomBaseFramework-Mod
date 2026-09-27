@@ -47,9 +47,13 @@ td code{white-space:nowrap}
 .marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
 .marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
 .marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
-.gruppe{margin:0 0 16px}
-.gruppe b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--leise);margin:0 0 4px 10px}
-.gruppe a{display:block;padding:6px 10px;border-radius:8px;color:var(--text);text-decoration:none;font-size:15px}
+.gruppe{margin:0 0 18px}
+.gruppe+.gruppe{padding-top:16px;border-top:1px solid var(--linie)}
+.gruppe.modding{margin-top:26px;padding-top:20px;border-top:2px solid var(--ocker)}
+.gruppe b{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);margin:0 0 6px 4px}
+.gruppe b i{flex:none;width:28px;height:28px;border-radius:7px;background:#2b3036;display:flex;align-items:center;justify-content:center}
+.gruppe b i img{width:20px;height:20px;object-fit:contain}
+.gruppe a{display:block;padding:5px 10px 5px 42px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px}
 .gruppe a:hover{background:var(--akzentweich)}
 .gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
 main{padding:40px 48px 80px;min-width:0}
@@ -57,7 +61,7 @@ main{padding:40px 48px 80px;min-width:0}
 .rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
 @media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
 @media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
-</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html">Pieces</a><a href="Categories.html">Categories</a><a href="Annexes.html">Annexes</a><a href="Settlements.html">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Play</b><a href="Mod-Settings.html">Mod settings</a><a href="Settlement-Types.html">Settlement types</a></div><div class="gruppe"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / SettlementPlanDef</div><h1 id="settlementplandef">SettlementPlanDef</h1>
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe start"><b><i><img src="images/nav/start.png" alt=""></i>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe piece"><b><i><img src="images/nav/piece.png" alt=""></i>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b><i><img src="images/nav/settlement.png" alt=""></i>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b><i><img src="images/nav/categories.png" alt=""></i>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b><i><img src="images/nav/loot.png" alt=""></i>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b><i><img src="images/nav/pawn.png" alt=""></i>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b><i><img src="images/nav/swap.png" alt=""></i>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b><i><img src="images/nav/playing.png" alt=""></i>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b><i><img src="images/nav/compatibility.png" alt=""></i>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b><i><img src="images/nav/modding.png" alt=""></i>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / SettlementPlanDef</div><h1 id="settlementplandef">SettlementPlanDef</h1>
 <p>XML node: <code>&lt;CustomBaseFramework.SettlementPlanDef&gt;</code>. Also takes the common fields <code>defName</code>, <code>label</code> and <code>description</code>.</p>
 <table>
 <thead>
@@ -73,31 +77,25 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>ankerSoldaten</code></td>
 <td>whole number</td>
 <td><code>40</code></td>
-<td></td>
+<td>Upper limit on fighters. Once the settlement has this many, further spawn anchors for fighters stay empty; gunner anchors still get theirs. 0 means no limit.</td>
 </tr>
 <tr>
 <td><code>ankerZivil</code></td>
 <td>whole number</td>
 <td><code>30</code></td>
-<td></td>
+<td>Upper limit on civilians. Once the settlement has this many pawns that are not fighters, further civilian spawn anchors stay empty. 0 means no limit.</td>
 </tr>
 <tr>
 <td><code>anteil</code><br>Weight</td>
 <td>number</td>
 <td><code>0</code></td>
-<td></td>
+<td>Weight of this settlement type against the other types the same faction may get. 0 counts as 1.</td>
 </tr>
 <tr>
 <td><code>assaultDelayTicks</code><br>Assault delay</td>
 <td>whole number</td>
 <td><code>25000</code></td>
 <td>How long the defenders wait before they attack, in ticks.</td>
-</tr>
-<tr>
-<td><code>bebauung</code></td>
-<td>Bebauungsart (Gewachsen, Raster, Locker)</td>
-<td><code>Gewachsen</code></td>
-<td></td>
 </tr>
 <tr>
 <td><code>buchtHaus</code><br>Smallest house</td>
@@ -116,12 +114,6 @@ main{padding:40px 48px 80px;min-width:0}
 <td>IntRange</td>
 <td><code>66~74</code></td>
 <td>Edge length of the settlement core, as a range. Everything else grows around it.</td>
-</tr>
-<tr>
-<td><code>coverageBuild</code><br>Built share</td>
-<td>number</td>
-<td><code>0.4</code></td>
-<td>How much of the usable area gets buildings.</td>
 </tr>
 <tr>
 <td><code>defenderGroupKind</code><br>Defender group</td>
@@ -163,7 +155,7 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>excludeFactions</code><br>Excluded factions</td>
 <td>list of text</td>
 <td>none</td>
-<td></td>
+<td>Factions (FactionDef defName) that never get this settlement type, even when their tags or tech level fit.</td>
 </tr>
 <tr>
 <td><code>factionTags</code><br>Factions</td>
@@ -172,22 +164,10 @@ main{padding:40px 48px 80px;min-width:0}
 <td>Which factions may use this settlement type.</td>
 </tr>
 <tr>
-<td><code>fillWith</code></td>
-<td>text</td>
-<td>none</td>
-<td></td>
-</tr>
-<tr>
 <td><code>fuerAlleFraktionen</code><br>For every faction of these levels</td>
 <td>true/false</td>
 <td><code>false</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>gardenShare</code><br>Garden share</td>
-<td>number</td>
-<td><code>0.3</code></td>
-<td>0 leaves a bare yard, 1 gives every free area beds.</td>
+<td>Also offers this type to factions that have no settlement type of their own, if their tech level is in techLevels.</td>
 </tr>
 <tr>
 <td><code>gatehouses</code></td>
@@ -199,7 +179,13 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>gelaendeOeffnen</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
-<td></td>
+<td>Lets the planner choose a site that needs earthwork first, such as rock cleared away. Off by default; the planner still does it as a last resort.</td>
+</tr>
+<tr>
+<td><code>hafen</code></td>
+<td><a href="HafenSpec.html">HafenSpec</a></td>
+<td>none</td>
+<td>Harbor at the coast or on a wide river: which harbor buildings the settlement gets. Only for medieval settlements.</td>
 </tr>
 <tr>
 <td><code>kerbeMax</code><br>Maximum notch</td>
@@ -211,7 +197,7 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>kind</code><br>Settlement kind</td>
 <td>Ortsart (Mittelalterstadt, Modernestadt, Lager, Verlies)</td>
 <td><code>Mittelalterstadt</code></td>
-<td></td>
+<td>On a settlement type: Mittelalterstadt or Modernestadt. Modernestadt allows roads up to 6 wide and lays power conduits. Lager and Verlies are switched off at the moment. On a pawn list entry: the pawn kind (PawnKindDef defName).</td>
 </tr>
 <tr>
 <td><code>laufMax</code><br>Longest wall run</td>
@@ -230,6 +216,12 @@ main{padding:40px 48px 80px;min-width:0}
 <td>whole number</td>
 <td><code>175</code></td>
 <td>How large the map is that this settlement is generated on.</td>
+</tr>
+<tr>
+<td><code>materialList</code><br>Material list</td>
+<td><a href="MaterialListDef.html">MaterialListDef</a></td>
+<td>none</td>
+<td>Which material list this settlement type uses for walls, floors, doors, gates and the other roles.</td>
 </tr>
 <tr>
 <td><code>maxBuildingGap</code><br>Largest gap between buildings</td>
@@ -259,7 +251,7 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>requiredMods</code><br>Needs these mods</td>
 <td>list of text</td>
 <td>none</td>
-<td></td>
+<td>Mods this settlement type needs beyond those the editor detects. The editor adds them to the dependencies when packaging. The game does not read the list.</td>
 </tr>
 <tr>
 <td><code>roadLane</code><br>Lane width</td>
@@ -277,7 +269,7 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>siteTags</code></td>
 <td>list of text</td>
 <td>none</td>
-<td></td>
+<td>Tags that make this settlement type usable for quest sites. A site that asks for tags only takes types with a matching one. Empty means it is never used for sites.</td>
 </tr>
 <tr>
 <td><code>stufeMax</code><br>Largest step</td>
@@ -289,19 +281,19 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>style</code></td>
 <td><a href="StyleDef.html">StyleDef</a></td>
 <td>none</td>
-<td>Legacy palette and wall profile association. Does not restrict piece selection.</td>
+<td>Old field. It only still picks the wall profile and the standard materials. Does not restrict piece selection.</td>
 </tr>
 <tr>
 <td><code>styles</code></td>
 <td>list of <a href="StyleDef.html">StyleDef</a></td>
 <td>none</td>
-<td>Legacy palette and wall profile association; does not filter pieces.</td>
+<td>Old field. It only still picks the wall profile and the standard materials. Does not filter pieces.</td>
 </tr>
 <tr>
 <td><code>suburbIslands</code></td>
 <td>whole number</td>
 <td><code>0</code></td>
-<td></td>
+<td>How many separate suburb areas grow outside the town, at most one per open map side. 0 turns this off.</td>
 </tr>
 <tr>
 <td><code>targetBuilt</code><br>Target built share</td>
@@ -313,7 +305,7 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>techLevels</code><br>Tech levels</td>
 <td>list of TechLevel (Undefined, Animal, Neolithic, Medieval, Industrial, Spacer, Ultra, Archotech)</td>
 <td>none</td>
-<td></td>
+<td>Tech levels this type is meant for. With fuerAlleFraktionen they decide which factions qualify. Pawns from pawn lists are capped at the faction's level if it is listed, otherwise at the highest listed one. Empty means no cap.</td>
 </tr>
 <tr>
 <td><code>towerCapTotal</code><br>Tower limit</td>
@@ -346,12 +338,6 @@ main{padding:40px 48px 80px;min-width:0}
 <td>How far apart curtain towers stand. Larger means fewer towers.</td>
 </tr>
 <tr>
-<td><code>wallDepth</code><br>Wall thickness</td>
-<td>whole number</td>
-<td><code>0</code></td>
-<td>0 no wall, 1 palisade, 3 wall with a walkway between two walls, 5 a broad fortress wall.</td>
-</tr>
-<tr>
 <td><code>wallGap</code><br>Gap to the wall</td>
 <td>whole number</td>
 <td><code>1</code></td>
@@ -361,13 +347,25 @@ main{padding:40px 48px 80px;min-width:0}
 <td><code>walls</code></td>
 <td>list of <a href="WallEntry.html">WallEntry</a></td>
 <td>none</td>
-<td></td>
+<td>Wall strips, each one cell wide or one cell high, repeated along the wall by weight. The thickest decides how deep the wall is. On a ward, empty means no wall. On the settlement type they replace the strips of the wall profile.</td>
 </tr>
 <tr>
 <td><code>wards</code></td>
 <td>list of <a href="Stadtteil.html">Stadtteil</a></td>
 <td>none</td>
-<td></td>
+<td>The parts of the settlement: Stadt, Vorstadt and Umland, each with its own wall, garrison, districts and surfaces.</td>
+</tr>
+<tr>
+<td><code>wdStufe</code></td>
+<td>IntRange</td>
+<td><code>0</code></td>
+<td>World Domination tier this type stands for, as a range from 1 to 4. A settlement with a tier prefers the types closest to it. 0 means no tier.</td>
+</tr>
+<tr>
+<td><code>wdTyp</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>World Domination settlement types this plan stands for, such as Mining or Slavery. Empty means any type. Only used with World Domination 2.0.</td>
 </tr>
 <tr>
 <td><code>weightHilly</code><br>Prefers hills</td>
@@ -386,12 +384,6 @@ main{padding:40px 48px 80px;min-width:0}
 <td>number</td>
 <td><code>0</code></td>
 <td>How strongly this settlement type wants to sit near water.</td>
-</tr>
-<tr>
-<td><code>widenings</code></td>
-<td>whole number</td>
-<td><code>1</code></td>
-<td>How many places the road widens into a square.</td>
 </tr>
 <tr>
 <td><code>worldTexture</code><br>World map icon</td>

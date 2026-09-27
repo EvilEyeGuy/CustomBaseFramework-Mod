@@ -1,0 +1,342 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Settlement types · Custom Base Framework</title><style>
+:root{--grund:#f4f3ef;--karte:#ffffff;--linie:#e3e0d8;--text:#1f2124;--leise:#63676e;--akzent:#2f6f60;--akzentweich:#e3efeb;--ocker:#b27a17;--code:#f0eee8;--schatten:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.06)}
+@media (prefers-color-scheme: dark){:root{--grund:#121417;--karte:#1a1d22;--linie:#2c3139;--text:#e6e4df;--leise:#99a0aa;--akzent:#7cc0aa;--akzentweich:#1f2f2b;--ocker:#d9ab55;--code:#24282f;--schatten:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--grund);color:var(--text);font:16px/1.65 "Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--akzent);text-underline-offset:3px}
+.inhalt h1{font-size:2.1rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.inhalt h2{font-size:1.35rem;letter-spacing:-.01em;margin:44px 0 10px}
+.inhalt h3{font-size:1.08rem;margin:28px 0 8px}
+.inhalt p,.inhalt li{max-width:74ch}
+.inhalt>p:first-of-type{font-size:1.08rem;color:var(--leise)}
+code{font-family:"Cascadia Mono",Consolas,monospace;font-size:.86em;background:var(--code);padding:2px 6px;border-radius:5px}
+.bild{display:block;margin:18px 0 22px}
+.bild img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--linie);box-shadow:var(--schatten)}
+.bild:hover img{border-color:var(--akzent)}
+.inhalt ol{list-style:none;padding:0;counter-reset:n;margin:12px 0 18px}
+.inhalt ol>li{counter-increment:n;position:relative;padding-left:40px;margin:10px 0}
+.inhalt ol>li::before{content:counter(n);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--ocker);color:#1b1b1b;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.inhalt ul{padding-left:20px}
+.inhalt ul>li{margin:6px 0}
+.inhalt ul>li::marker{color:var(--akzent)}
+table{border-collapse:separate;border-spacing:0;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto;border:1px solid var(--linie);border-radius:10px}
+th,td{padding:8px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--linie)}
+tr:last-child td{border-bottom:0}
+th{background:var(--code);font-weight:600;position:sticky;top:0}
+td code{white-space:nowrap}
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:56px;padding-top:20px;border-top:1px solid var(--linie)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--linie);background:var(--karte);border-radius:10px;padding:12px 16px;color:var(--text)}
+.schritte a:hover{border-color:var(--akzent)}
+.schritte span{display:block;font-size:12px;color:var(--leise);text-transform:uppercase;letter-spacing:.06em}
+.schritte .weiter{text-align:right;margin-left:auto}
+.home .inhalt ol{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;max-width:none}
+.home .inhalt ol>li{margin:0;background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:14px 16px 14px 54px;max-width:none;box-shadow:var(--schatten)}
+.home .inhalt ol>li::before{left:16px;top:16px}
+.home .inhalt ol>li a{font-weight:600}
+.home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
+.pfad{font-size:13px;color:var(--leise);margin-bottom:6px}
+.pfad a{color:var(--leise)}
+.aufseite{font-size:13px}
+.aufseite b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--leise);margin-bottom:8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:4px 0 4px 12px;border-left:2px solid var(--linie)}
+.aufseite a:hover{color:var(--akzent);border-left-color:var(--akzent)}
+
+.rahmen{display:grid;grid-template-columns:260px minmax(0,1fr) 200px;gap:0;max-width:1400px;margin:0 auto}
+.leiste{position:sticky;top:0;height:100vh;overflow:auto;padding:22px 18px;border-right:1px solid var(--linie)}
+.marke{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;white-space:nowrap;margin:0 0 22px;color:var(--text);text-decoration:none}
+.marke i{width:30px;height:30px;border-radius:8px;background:var(--akzent);display:inline-block;position:relative}
+.marke i::after{content:"";position:absolute;inset:8px;border:2px solid var(--karte);border-radius:3px}
+.gruppe{margin:0 0 16px}
+.gruppe b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--leise);margin:0 0 4px 10px}
+.gruppe a{display:block;padding:6px 10px;border-radius:8px;color:var(--text);text-decoration:none;font-size:15px}
+.gruppe a:hover{background:var(--akzentweich)}
+.gruppe a.hier{background:var(--akzentweich);color:var(--akzent);font-weight:600}
+main{padding:40px 48px 80px;min-width:0}
+.inhalt{max-width:860px}
+.rechts{position:sticky;top:0;height:100vh;padding:44px 18px 20px 0;overflow:auto}
+@media (max-width:1200px){.rahmen{grid-template-columns:240px minmax(0,1fr)}.rechts{display:none}}
+@media (max-width:820px){.rahmen{grid-template-columns:1fr}.leiste{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linie);display:flex;flex-wrap:wrap;gap:4px 14px}.marke{width:100%}.gruppe{margin:0}main{padding:24px 16px 60px}}
+</style></head><body class=""><div class="rahmen"><nav class="leiste"><a class="marke" href="../Open%20Guide.html"><i></i><span>Custom Base Framework</span></a><div class="gruppe"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a></div><div class="gruppe"><b>Build</b><a href="Pieces.html">Pieces</a><a href="Categories.html">Categories</a><a href="Annexes.html">Annexes</a><a href="Settlements.html">Settlements</a></div><div class="gruppe"><b>Fill</b><a href="Loot.html">Loot</a><a href="Pawns.html">Pawns</a><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe"><b>Assign</b><a href="Factions.html">Factions</a></div><div class="gruppe"><b>Play</b><a href="Mod-Settings.html">Mod settings</a><a href="Settlement-Types.html" class="hier">Settlement types</a></div><div class="gruppe"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe"><b>Reference</b><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="settlement-types">Settlement types</h1>
+<p>The settlement types CBF ships with, their strength and their cost. Every settlement is planned fresh on its own map, so the pictures show one example each.</p>
+<h2 id="overview">Overview</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Content</th>
+<th>Tech level</th>
+<th>WD tier</th>
+<th>Garrison</th>
+<th>Buildings</th>
+<th>Map</th>
+<th>Walls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Village</td>
+<td>Medieval Overhaul</td>
+<td>Medieval</td>
+<td>1</td>
+<td>7 to 17</td>
+<td>40 to 56</td>
+<td>200</td>
+<td>Palisade</td>
+</tr>
+<tr>
+<td>Market town</td>
+<td>Medieval Overhaul</td>
+<td>Medieval</td>
+<td>2</td>
+<td>24 to 34</td>
+<td>93 to 120</td>
+<td>200</td>
+<td>Town wall, suburb with palisade</td>
+</tr>
+<tr>
+<td>Large market town</td>
+<td>Medieval Overhaul</td>
+<td>Medieval</td>
+<td>3</td>
+<td>38 to 51</td>
+<td>168 to 179</td>
+<td>250</td>
+<td>Town wall</td>
+</tr>
+<tr>
+<td>Fortress city</td>
+<td>Medieval Overhaul</td>
+<td>Medieval</td>
+<td>4</td>
+<td>43 to 62</td>
+<td>129 to 155</td>
+<td>200</td>
+<td>Thick town wall</td>
+</tr>
+<tr>
+<td>Village</td>
+<td>VFE Medieval 2</td>
+<td>Medieval</td>
+<td>1</td>
+<td>7 to 17</td>
+<td>44 to 55</td>
+<td>200</td>
+<td>Palisade</td>
+</tr>
+<tr>
+<td>Market town</td>
+<td>VFE Medieval 2</td>
+<td>Medieval</td>
+<td>2</td>
+<td>24 to 34</td>
+<td>84 to 102</td>
+<td>200</td>
+<td>Town wall</td>
+</tr>
+<tr>
+<td>Large market town</td>
+<td>VFE Medieval 2</td>
+<td>Medieval</td>
+<td>3</td>
+<td>37 to 53</td>
+<td>103 to 125</td>
+<td>250</td>
+<td>Town wall</td>
+</tr>
+<tr>
+<td>Fortress city</td>
+<td>VFE Medieval 2</td>
+<td>Medieval</td>
+<td>4</td>
+<td>48 to 69</td>
+<td>124 to 158</td>
+<td>200</td>
+<td>Thick town wall</td>
+</tr>
+<tr>
+<td>Modern town</td>
+<td>base game</td>
+<td>Industrial to Ultra</td>
+<td>1 to 2</td>
+<td>20 to 30</td>
+<td>66 to 80</td>
+<td>225</td>
+<td>open</td>
+</tr>
+<tr>
+<td>Large town</td>
+<td>base game</td>
+<td>Industrial to Ultra</td>
+<td>3</td>
+<td>27 to 41</td>
+<td>113 to 118</td>
+<td>250</td>
+<td>open</td>
+</tr>
+<tr>
+<td>Metropolis</td>
+<td>base game</td>
+<td>Industrial to Ultra</td>
+<td>4</td>
+<td>50 to 71</td>
+<td>137 to 145</td>
+<td>250</td>
+<td>Sandbag and barricade line</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Garrison</strong> is the sum over all wards. Guards in towers and buildings come on top: in tests a modern town had about 40 soldiers in total, a metropolis about 100.</li>
+<li><strong>Buildings</strong> is the range from mass tests.</li>
+<li><strong>Map</strong> is the edge length the settlement asks for. The larger of this and the world setting is used.</li>
+<li><strong>WD tier</strong> only matters with World Domination 2.0, see <a href="Compatibility.html#world-domination-20">Compatibility</a>.</li>
+</ul>
+<h2 id="defenders">Defenders</h2>
+<ul>
+<li><strong>Medieval Overhaul:</strong> archers, crossbowmen, pikemen and knights.</li>
+<li><strong>VFE Medieval 2:</strong> the fighters of VFE Medieval 2.</li>
+<li><strong>Modern:</strong> riflemen, snipers, assaulters, machine gunners, grenadiers, police and officers. Spacer and ultra factions field the spacer versions of the same roles, for example charge riflemen and marine assaulters.</li>
+</ul>
+<p>The metropolis adds 42 to 59 sandbag positions with mini turrets or autocannons and uses checkpoints as gates.</p>
+<h2 id="medieval-overhaul">Medieval Overhaul</h2>
+<table>
+<thead>
+<tr>
+<th>Village</th>
+<th>Market town</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Village" src="images/town-mo-village.jpg" loading="lazy"></td>
+<td><img alt="Market town" src="images/town-mo-market.jpg" loading="lazy"></td>
+</tr>
+<tr>
+<td><strong>Large market town</strong></td>
+<td><strong>Fortress city</strong></td>
+</tr>
+<tr>
+<td><img alt="Large market town" src="images/town-mo-largemarket.jpg" loading="lazy"></td>
+<td><img alt="Fortress city" src="images/town-mo-fortress.jpg" loading="lazy"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="vfe-medieval-2">VFE Medieval 2</h2>
+<table>
+<thead>
+<tr>
+<th>Village</th>
+<th>Market town</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Village" src="images/town-vfe-village.jpg" loading="lazy"></td>
+<td><img alt="Market town" src="images/town-vfe-market.jpg" loading="lazy"></td>
+</tr>
+<tr>
+<td><strong>Large market town</strong></td>
+<td><strong>Fortress city</strong></td>
+</tr>
+<tr>
+<td><img alt="Large market town" src="images/town-vfe-largemarket.jpg" loading="lazy"></td>
+<td><img alt="Fortress city" src="images/town-vfe-fortress.jpg" loading="lazy"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="modern">Modern</h2>
+<table>
+<thead>
+<tr>
+<th>Modern town</th>
+<th>Large town</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Modern town" src="images/town-modern-town.jpg" loading="lazy"></td>
+<td><img alt="Large town" src="images/town-modern-city.jpg" loading="lazy"></td>
+</tr>
+<tr>
+<td><strong>Metropolis</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><img alt="Metropolis" src="images/town-modern-metropolis.jpg" loading="lazy"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="performance">Performance</h2>
+<p>Measured on 6 identical world tiles per type, compared with a vanilla faction base. The current version plans faster than the build these numbers come from.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Map generation</th>
+<th>Memory</th>
+<th>Save file</th>
+<th>Pawns on the map</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vanilla faction base</td>
+<td>5.6 s</td>
+<td>+136 MB</td>
+<td>+8.8 MB</td>
+<td>57</td>
+</tr>
+<tr>
+<td>Village (MO)</td>
+<td>21 s</td>
+<td>+135 MB</td>
+<td>+10 MB</td>
+<td>103</td>
+</tr>
+<tr>
+<td>Market town (MO)</td>
+<td>17 s</td>
+<td>+148 MB</td>
+<td>+13 MB</td>
+<td>150</td>
+</tr>
+<tr>
+<td>Large market town (MO)</td>
+<td>25 s</td>
+<td>+159 MB</td>
+<td>+16 MB</td>
+<td>187</td>
+</tr>
+<tr>
+<td>Fortress city (MO)</td>
+<td>30 s</td>
+<td>+158 MB</td>
+<td>+16 MB</td>
+<td>226</td>
+</tr>
+<tr>
+<td>Modern town</td>
+<td>10 s</td>
+<td>+147 MB</td>
+<td>+15 MB</td>
+<td>110</td>
+</tr>
+<tr>
+<td>Large town</td>
+<td>16 s</td>
+<td>+168 MB</td>
+<td>+20 MB</td>
+<td>157</td>
+</tr>
+</tbody>
+</table>
+<p>Values are medians. Map generation happens once, when a caravan or a raid first arrives at the settlement.</p>
+<p>While playing:</p>
+<ul>
+<li><strong>Colony without a CBF settlement:</strong> no measurable difference.</li>
+<li><strong>On a fortress city with 121 defenders:</strong> CBF's own code takes 0.05 to 0.09 % of the tick time.</li>
+<li><strong>World map:</strong> +0.1 ms per frame.</li>
+<li><strong>Game start:</strong> about +20 MB memory.</li>
+</ul><div class="schritte"><a href="Mod-Settings.html"><span>Previous</span>Mod settings</a><a class="weiter" href="Compatibility.html"><span>Next</span>Compatibility</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a href="#overview">Overview</a><a href="#defenders">Defenders</a><a href="#medieval-overhaul">Medieval Overhaul</a><a href="#vfe-medieval-2">VFE Medieval 2</a><a href="#modern">Modern</a><a href="#performance">Performance</a></div></aside></div></body></html>

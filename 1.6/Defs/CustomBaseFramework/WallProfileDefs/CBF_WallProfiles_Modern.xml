@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.WallProfileDef>
+    <defName>WallProfile_Modern_1</defName>
+    <label>sandbag line</label>
+    <style>CBF_ModernVanilla</style>
+    <depth>1</depth>
+    <segments>
+      <li>CBF_Vanilla_Linie_Sandsack</li>
+      <li>CBF_Vanilla_Linie_Barrikade</li>
+    </segments>
+    <tower>CBF_Vanilla_Sandsackstellung_A</tower>
+    <gatehouse>CBF_Vanilla_Kontrollpunkt</gatehouse>
+    <gatehouseOutward>West</gatehouseOutward>
+  </CustomBaseFramework.WallProfileDef>
+
+  <CustomBaseFramework.WallProfileDef>
+    <defName>WallProfile_Modern_3</defName>
+    <label>modern city wall</label>
+    <style>CBF_ModernVanilla</style>
+    <depth>3</depth>
+    <segments>
+      <li>CBF_Vanilla_Stadtmauer_Stein</li>
+      <li>CBF_Vanilla_Stadtmauer_Plastahl</li>
+    </segments>
+    <tower>CBF_Vanilla_Mauerturm_A</tower>
+    <gatehouse>CBF_Vanilla_Torhaus_Stein</gatehouse>
+    <gatehouseOutward>West</gatehouseOutward>
+  </CustomBaseFramework.WallProfileDef>
+
+</Defs>

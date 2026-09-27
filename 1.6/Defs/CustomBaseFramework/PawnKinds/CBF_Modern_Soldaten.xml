@@ -190,4 +190,203 @@
     </skills>
   </PawnKindDef>
 
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Spacer_Schuetze</defName>
+    <label>charge rifleman</label>
+    <combatPower>150</combatPower>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_ArmorRecon</li>
+      <li>Apparel_ArmorHelmetRecon</li>
+    </apparelRequired>
+    <apparelMoney>2500~3500</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponMoney>1100~2500</weaponMoney>
+    <weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <initialResistanceRange>18~28</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~14</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Spacer_Scharfschuetze</defName>
+    <label>recon sniper</label>
+    <combatPower>160</combatPower>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_ArmorRecon</li>
+      <li>Apparel_ArmorHelmetRecon</li>
+    </apparelRequired>
+    <apparelMoney>2500~3500</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponMoney>650~1500</weaponMoney>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <initialResistanceRange>18~28</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>11~17</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Spacer_Stuermer</defName>
+    <label>marine breacher</label>
+    <combatPower>170</combatPower>
+    <isGoodBreacher>true</isGoodBreacher>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_PowerArmor</li>
+      <li>Apparel_PowerArmorHelmet</li>
+    </apparelRequired>
+    <apparelMoney>3500~5000</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponMoney>600~1600</weaponMoney>
+    <weaponTags>
+      <li>ShortShots</li>
+    </weaponTags>
+    <initialResistanceRange>18~28</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>7~13</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Spacer_MGSchuetze</defName>
+    <label>marine heavy gunner</label>
+    <combatPower>210</combatPower>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_PowerArmor</li>
+      <li>Apparel_PowerArmorHelmet</li>
+    </apparelRequired>
+    <apparelMoney>3500~5000</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponMoney>1200~2400</weaponMoney>
+    <weaponTags>
+      <li>Minigun</li>
+    </weaponTags>
+    <initialResistanceRange>18~28</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>7~13</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Spacer_Grenadier</defName>
+    <label>recon grenadier</label>
+    <combatPower>120</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_ArmorRecon</li>
+      <li>Apparel_ArmorHelmetRecon</li>
+    </apparelRequired>
+    <apparelMoney>2500~3500</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponMoney>300~650</weaponMoney>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+    </weaponTags>
+    <initialResistanceRange>18~28</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~11</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Spacer_Wachmann</defName>
+    <label>security guard</label>
+    <combatPower>100</combatPower>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_ArmorRecon</li>
+      <li>Apparel_ArmorHelmetRecon</li>
+    </apparelRequired>
+    <apparelMoney>2500~3500</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponMoney>150~500</weaponMoney>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <initialResistanceRange>18~28</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~11</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_Modern_SoldatBasis">
+    <defName>CBF_Modern_Spacer_Offizier</defName>
+    <label>marine officer</label>
+    <combatPower>230</combatPower>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_PowerArmor</li>
+      <li>Apparel_PowerArmorHelmet</li>
+    </apparelRequired>
+    <apparelMoney>3500~5000</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponMoney>1100~2500</weaponMoney>
+    <weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <initialResistanceRange>18~28</initialResistanceRange>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>11~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
 </Defs>

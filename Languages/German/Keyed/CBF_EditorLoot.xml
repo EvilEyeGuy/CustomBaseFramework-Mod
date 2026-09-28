@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CBF_Lo_Lists>Objektlisten</CBF_Lo_Lists>
   <CBF_Lo_ListsShort>Listen</CBF_Lo_ListsShort>
@@ -126,7 +126,7 @@
   <CBF_Mat_Optional>Optional</CBF_Mat_Optional>
   <CBF_Mat_CriticalTip>Pflicht: Findet diese Rolle nichts, ist die ganze Liste unbrauchbar. Optional: Die Rolle bleibt einfach leer.</CBF_Mat_CriticalTip>
   <CBF_Mat_AnyWard>Jeder Stadtteil</CBF_Mat_AnyWard>
-  <CBF_Mat_WardTip>Beschränkt diese Zeile auf eine Art von Stadtteil. Eine Zeile für den Stadtteil geht einer Zeile ohne vor.</CBF_Mat_WardTip>
+  <CBF_Mat_WardTip>Beschränkt diese Zeile auf eine Art von Stadtteil. Eine Zeile für den Stadtteil geht einer Zeile ohne vor. Gilt nur für Mauern, Wege und Böden, die der Generator selbst zieht, nicht in Gebäuden; die nehmen, wie entworfen, das Material der Karte.</CBF_Mat_WardTip>
   <CBF_Mat_RoleCount>{0} Rollen</CBF_Mat_RoleCount>
   <CBF_Mat_Hint>Stücke nennen Rollen statt Dinge. Diese Liste sagt, was jede Rolle füllt. Es gilt der erste vorhandene Eintrag einer Kette. Eine Rolle darf in mehreren Zeilen stehen, dann gilt die Zeile, die am besten zum Stück oder Stadtteil passt.</CBF_Mat_Hint>
   <CBF_Mat_OwnRoles>Eigene Rollen</CBF_Mat_OwnRoles>
@@ -196,4 +196,5 @@
   <CBF_Role_CONDUIT_WATER>Leitung unter Wasser</CBF_Role_CONDUIT_WATER>
   <CBF_RoleTip_CONDUIT_WATER>Leitung, wo sie Wasser quert.</CBF_RoleTip_CONDUIT_WATER>
 
+  <CBF_Mat_AppliesToTip>Stücke oder Kategorien, für die diese Zeile gedacht ist. Gilt nur für Mauern, Wege und Böden, die der Generator selbst zieht, nicht in Gebäuden; die nehmen, wie entworfen, das Material der Karte.</CBF_Mat_AppliesToTip>
 </LanguageData>

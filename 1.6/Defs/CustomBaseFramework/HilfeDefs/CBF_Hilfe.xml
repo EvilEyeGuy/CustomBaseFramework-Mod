@@ -130,10 +130,10 @@ A piece without a value of its own takes the wall contact of its category. Yes t
 
   <CustomBaseFramework.HilfeDef>
     <defName>CBF_Help_WardGate</defName>
-    <label>Ward gate</label>
-    <description>The thing that closes the passages through this ward's wall, for example a wooden gate for a palisade and an iron gate for the town wall.
+    <label>Ward door</label>
+    <description>The door that closes the passages through this ward's wall, for example a wooden door for a palisade.
 
-Empty uses the gate of the material list of the settlement type, which is what most wards want.</description>
+Empty uses the door of the material list of the settlement type, which is what most wards want. The gatehouse is something else, it is set under Fortification.</description>
   </CustomBaseFramework.HilfeDef>
 
 </Defs>

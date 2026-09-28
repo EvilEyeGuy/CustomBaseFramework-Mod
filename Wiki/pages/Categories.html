@@ -138,7 +138,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <ul>
 <li><strong>Wall contact</strong>: pieces of this category prefer to stand against the town wall. The piece field <strong>At the wall</strong> controls this more finely and wins.</li>
 <li><strong>Weight</strong>: how often pieces of this category are drawn when several fit.</li>
-<li><strong>Road access</strong>: only has an effect together with the zone <strong>Outside</strong>. A category without road access that lies outside may be entered from every side.
+<li><strong>Road access</strong> and <strong>Needs no road</strong>: with Road access set to No and Needs no road ticked, buildings of this category need no road and may be entered from every side, like a farm or a market. Needs no road is the zone <code>Outside</code> in XML; <code>Inside</code> and <code>Center</code> do nothing. Where a building stands is decided by the budget of its ward, not by the category.
 How many buildings of a category a settlement gets is set by its entries in the Settlement tab, where they stand by the district.</li>
 </ul>
 <h2 id="location">Location</h2>

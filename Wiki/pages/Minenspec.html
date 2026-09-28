@@ -166,21 +166,27 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Thing replacements for this faction. Things the generator places are swapped from von to zu.</td>
 </tr>
 <tr>
+<td><code>ebenen</code></td>
+<td>IntRange</td>
+<td><code>1</code></td>
+<td>How deep the tunnels branch: 0 only the main tunnel, 1 side tunnels off it, 2 side tunnels off those.</td>
+</tr>
+<tr>
 <td><code>kammerGroesse</code></td>
 <td>IntRange</td>
-<td><code>5~7</code></td>
+<td><code>4~6</code></td>
 <td>Edge length of the chambers in cells.</td>
 </tr>
 <tr>
 <td><code>kammern</code></td>
 <td>IntRange</td>
-<td><code>2~3</code></td>
+<td><code>2</code></td>
 <td>Number of chambers along the tunnel.</td>
 </tr>
 <tr>
 <td><code>laenge</code></td>
 <td>IntRange</td>
-<td><code>25~45</code></td>
+<td><code>15~20</code></td>
 <td>Length of the tunnel in cells.</td>
 </tr>
 <tr>
@@ -188,6 +194,18 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>text</td>
 <td><code>Mine</code></td>
 <td>Name of the entry. On a district it links fields and pens to its houses and must be unique. On a pen it appears in messages. On a ward it is replaced by the ward kind, on a field it is not read, and in wall lists piece is written instead.</td>
+</tr>
+<tr>
+<td><code>stuetze</code></td>
+<td>ThingDef</td>
+<td>none</td>
+<td>Thing set as a support along the tunnels, for example a wooden pillar. Empty sets none.</td>
+</tr>
+<tr>
+<td><code>stuetzenAbstand</code></td>
+<td>IntRange</td>
+<td><code>5~8</code></td>
+<td>Distance in cells between two supports along a tunnel.</td>
 </tr>
 <tr>
 <td><code>tags</code><br>Categories</td>

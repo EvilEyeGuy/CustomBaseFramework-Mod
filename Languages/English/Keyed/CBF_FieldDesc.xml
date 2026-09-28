@@ -128,7 +128,7 @@
   <CBF_FieldDesc_terrainChain>Terrains tried in order for this role. The first one that exists is used.</CBF_FieldDesc_terrainChain>
   <CBF_FieldDesc_terrainMix>Weighted list of terrains mixed for this role. It wins over terrainChain; if none of them exists, the chains are used.</CBF_FieldDesc_terrainMix>
   <CBF_FieldDesc_thing>The thing (ThingDef defName) this entry stands for: placed in the cell, given as loot, or placed as a building.</CBF_FieldDesc_thing>
-  <CBF_FieldDesc_tor>Gate thing for the passages in this ward's wall. Empty takes the gate from the material list.</CBF_FieldDesc_tor>
+  <CBF_FieldDesc_tor>Door for the passages in this ward's wall. Empty takes it from the material list. Not the gatehouse, that is set under gatehouses.</CBF_FieldDesc_tor>
   <CBF_FieldDesc_torZerstoert>Chance per gate that it is torn down, 0 to 1.</CBF_FieldDesc_torZerstoert>
   <CBF_FieldDesc_tower>Piece used for towers. It must be square with an odd edge length. Empty lets the generator build a round tower.</CBF_FieldDesc_tower>
   <CBF_FieldDesc_traufenMaterial>Material of the eaves. Empty takes the material of the wall they sit on.</CBF_FieldDesc_traufenMaterial>
@@ -154,8 +154,8 @@
   <CBF_FieldDesc_flussbreite>Smallest river width in cells that counts for a harbor. The sea always counts.</CBF_FieldDesc_flussbreite>
   <CBF_FieldDesc_reichweite>How far from the settlement harbor pieces may stand, in cells.</CBF_FieldDesc_reichweite>
   <CBF_FieldDesc_hafen>Harbor at the coast or on a wide river: which harbor buildings the settlement gets. Only for medieval settlements.</CBF_FieldDesc_hafen>
-  <CBF_FieldDesc_fuer>Pieces or categories this role entry is meant for, for example palisade walls and palisade towers. A match beats a ward match.</CBF_FieldDesc_fuer>
-  <CBF_FieldDesc_stadtteil>Ward this role entry is meant for: Stadt, Burg, Vorstadt or Umland. Empty applies everywhere.</CBF_FieldDesc_stadtteil>
+  <CBF_FieldDesc_fuer>Pieces or categories this role entry is meant for, for example palisade walls and palisade towers. A match beats a ward match. Only for walls, roads and floors the generator draws itself, not inside buildings; buildings take the material of the map as designed.</CBF_FieldDesc_fuer>
+  <CBF_FieldDesc_stadtteil>Ward this role entry is meant for: Stadt, Vorstadt or Umland. Empty applies everywhere. Only for walls, roads and floors the generator draws itself, not inside buildings; buildings take the material of the map as designed.</CBF_FieldDesc_stadtteil>
   <CBF_FieldDesc_wdTyp>World Domination settlement types this plan stands for, such as Mining or Slavery. Empty means any type. Only used with World Domination 2.0.</CBF_FieldDesc_wdTyp>
   <CBF_FieldDesc_PawnListDef_stufe>The tech level this list counts as. Set, the settlement draws from the whole list without working out levels from the gear. Empty works the level out per member.</CBF_FieldDesc_PawnListDef_stufe>
   <CBF_FieldDesc_mitIdeologie>Memes or precepts (defNames). The entry is only built when the owning faction's ideoligion has at least one of them. Needs Ideology.</CBF_FieldDesc_mitIdeologie>
@@ -181,4 +181,9 @@
   <CBF_FieldDesc_Minenspec_laenge>Length of the tunnel in cells.</CBF_FieldDesc_Minenspec_laenge>
   <CBF_FieldDesc_anbauUeberstand>With anbauVoll: how many cells the annex must reach past the house wall at each end. 0 means flush.</CBF_FieldDesc_anbauUeberstand>
   <CBF_FieldDesc_anbauVoll>Set on the annex category. True: the annex only attaches where it covers the whole wall side of the house.</CBF_FieldDesc_anbauVoll>
+  <CBF_FieldDesc_liste>Object list (LootBuildingCategoryDef) the thing is drawn from, instead of one fixed thing.</CBF_FieldDesc_liste>
+  <CBF_FieldDesc_ebenen>How deep the tunnels branch: 0 only the main tunnel, 1 side tunnels off it, 2 side tunnels off those.</CBF_FieldDesc_ebenen>
+  <CBF_FieldDesc_stuetze>Thing set as a support along the tunnels, for example a wooden pillar. Empty sets none.</CBF_FieldDesc_stuetze>
+  <CBF_FieldDesc_stuetzenAbstand>Distance in cells between two supports along a tunnel.</CBF_FieldDesc_stuetzenAbstand>
+  <CBF_FieldDesc_anbauEckenWeg>Where an annex of this category attaches, the two inner corner wall cells at the ends of the straight house wall become floor. Used for lean-to tents.</CBF_FieldDesc_anbauEckenWeg>
 </LanguageData>

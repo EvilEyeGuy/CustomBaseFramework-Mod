@@ -136,7 +136,7 @@
   <CBF_Field_tag>Kategorie (alt)</CBF_Field_tag>
   <CBF_FieldDesc_tag>Die erste Kategorie. Bleibt, damit alte Dateien noch laden; schreibe stattdessen categories.</CBF_FieldDesc_tag>
   <CBF_Field_zones>Zonen</CBF_Field_zones>
-  <CBF_FieldDesc_zones>Wo in der Siedlung das stehen darf: Inside, Outside, Center.</CBF_FieldDesc_zones>
+  <CBF_FieldDesc_zones>Nur Outside wirkt: Zusammen mit needsRoadAccess auf false braucht das Gebäude keinen Weg und darf von allen Seiten betreten werden. Inside und Center tun nichts. Wo ein Gebäude steht, entscheidet das Budget seines Stadtteils.</CBF_FieldDesc_zones>
   <CBF_Field_countPerSettlement>Anzahl je Siedlung</CBF_Field_countPerSettlement>
   <CBF_FieldDesc_countPerSettlement>Wie viele davon eine Siedlung haben möchte, als Spanne.</CBF_FieldDesc_countPerSettlement>
   <CBF_Field_weight>Gewicht</CBF_Field_weight>

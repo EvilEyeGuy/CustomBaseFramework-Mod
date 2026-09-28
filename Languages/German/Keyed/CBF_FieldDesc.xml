@@ -128,7 +128,7 @@
   <CBF_FieldDesc_terrainChain>Böden, die für diese Rolle der Reihe nach versucht werden. Genommen wird der erste, den es gibt.</CBF_FieldDesc_terrainChain>
   <CBF_FieldDesc_terrainMix>Gewichtete Liste von Böden, die für diese Rolle gemischt werden. Sie hat Vorrang vor terrainChain; gibt es keinen davon, gelten die Ketten.</CBF_FieldDesc_terrainMix>
   <CBF_FieldDesc_thing>Das Ding (ThingDef defName), für das dieser Eintrag steht: in die Zelle gesetzt, als Beute gegeben oder als Gebäude gesetzt.</CBF_FieldDesc_thing>
-  <CBF_FieldDesc_tor>Tor für die Durchgänge in der Mauer dieses Stadtteils. Leer nimmt das Tor aus der Materialliste.</CBF_FieldDesc_tor>
+  <CBF_FieldDesc_tor>Tür für die Durchgänge in der Mauer dieses Stadtteils. Leer nimmt sie aus der Materialliste. Nicht das Torhaus, das steht unter gatehouses.</CBF_FieldDesc_tor>
   <CBF_FieldDesc_torZerstoert>Chance je Tor, dass es eingerissen ist, 0 bis 1.</CBF_FieldDesc_torZerstoert>
   <CBF_FieldDesc_tower>Stück für die Türme. Es muss quadratisch sein und eine ungerade Kantenlänge haben. Leer lässt den Generator einen runden Turm bauen.</CBF_FieldDesc_tower>
   <CBF_FieldDesc_traufenMaterial>Material der Traufen. Leer nimmt das Material der Mauer, an der sie sitzen.</CBF_FieldDesc_traufenMaterial>
@@ -154,8 +154,8 @@
   <CBF_FieldDesc_flussbreite>Kleinste Flussbreite in Feldern, die für einen Hafen zählt. Das Meer zählt immer.</CBF_FieldDesc_flussbreite>
   <CBF_FieldDesc_reichweite>Wie weit vom Ort entfernt Hafenstücke stehen dürfen, in Feldern.</CBF_FieldDesc_reichweite>
   <CBF_FieldDesc_hafen>Hafen an der Küste oder an einem breiten Fluss: welche Hafengebäude der Ort bekommt. Nur für Mittelalter-Orte.</CBF_FieldDesc_hafen>
-  <CBF_FieldDesc_fuer>Stücke oder Kategorien, für die dieser Rolleneintrag gedacht ist, etwa Palisadenwände und Palisadentürme. Ein Treffer hier schlägt einen Stadtteil-Treffer.</CBF_FieldDesc_fuer>
-  <CBF_FieldDesc_stadtteil>Stadtteil, für den dieser Rolleneintrag gedacht ist: Stadt, Burg, Vorstadt oder Umland. Leer gilt überall.</CBF_FieldDesc_stadtteil>
+  <CBF_FieldDesc_fuer>Stücke oder Kategorien, für die dieser Rolleneintrag gedacht ist, etwa Palisadenwände und Palisadentürme. Ein Treffer hier schlägt einen Stadtteil-Treffer. Gilt nur für Mauern, Wege und Böden, die der Generator selbst zieht, nicht in Gebäuden; die nehmen, wie entworfen, das Material der Karte.</CBF_FieldDesc_fuer>
+  <CBF_FieldDesc_stadtteil>Stadtteil, für den dieser Rolleneintrag gedacht ist: Stadt, Vorstadt oder Umland. Leer gilt überall. Gilt nur für Mauern, Wege und Böden, die der Generator selbst zieht, nicht in Gebäuden; die nehmen, wie entworfen, das Material der Karte.</CBF_FieldDesc_stadtteil>
   <CBF_FieldDesc_wdTyp>World-Domination-Ortsarten, für die dieser Plan steht, etwa Mining oder Slavery. Leer heißt jede Art. Nur mit World Domination 2.0.</CBF_FieldDesc_wdTyp>
   <CBF_FieldDesc_PawnListDef_stufe>Die Techstufe, als die diese Liste gilt. Gesetzt zieht der Ort aus der ganzen Liste, ohne Stufen aus der Ausrüstung zu ermitteln. Leer ermittelt die Stufe je Mitglied.</CBF_FieldDesc_PawnListDef_stufe>
   <CBF_FieldDesc_mitIdeologie>Meme oder Gebote (defNames). Der Eintrag wird nur gebaut, wenn die Ideologie der Fraktion mindestens eines davon hat. Braucht Ideology.</CBF_FieldDesc_mitIdeologie>
@@ -181,4 +181,9 @@
   <CBF_FieldDesc_Minenspec_laenge>Länge des Gangs in Feldern.</CBF_FieldDesc_Minenspec_laenge>
   <CBF_FieldDesc_anbauUeberstand>Mit anbauVoll: wie viele Felder der Anbau an jedem Ende über die Hauswand hinausreichen muss. 0 heißt bündig.</CBF_FieldDesc_anbauUeberstand>
   <CBF_FieldDesc_anbauVoll>An der Kategorie des Anbaus. Wahr: Der Anbau setzt nur dort an, wo er die ganze Wandseite des Hauses abdeckt.</CBF_FieldDesc_anbauVoll>
+  <CBF_FieldDesc_liste>Objektliste (LootBuildingCategoryDef), aus der das Ding gezogen wird, statt eines festen Dings.</CBF_FieldDesc_liste>
+  <CBF_FieldDesc_ebenen>Wie tief sich die Gänge verzweigen: 0 nur der Hauptgang, 1 Seitengänge davon, 2 Seitengänge von diesen.</CBF_FieldDesc_ebenen>
+  <CBF_FieldDesc_stuetze>Ding, das als Stütze entlang der Gänge gesetzt wird, etwa ein Holzpfeiler. Leer setzt keine.</CBF_FieldDesc_stuetze>
+  <CBF_FieldDesc_stuetzenAbstand>Abstand in Feldern zwischen zwei Stützen entlang eines Gangs.</CBF_FieldDesc_stuetzenAbstand>
+  <CBF_FieldDesc_anbauEckenWeg>Wo ein Anbau dieser Kategorie anschließt, werden die zwei inneren Eckwandfelder an den Enden der geraden Hauswand zu Boden. Für Beizelte.</CBF_FieldDesc_anbauEckenWeg>
 </LanguageData>

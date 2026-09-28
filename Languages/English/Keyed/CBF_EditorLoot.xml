@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CBF_Lo_Lists>Object lists</CBF_Lo_Lists>
   <CBF_Lo_ListsShort>Lists</CBF_Lo_ListsShort>
@@ -126,7 +126,7 @@
   <CBF_Mat_Optional>Optional</CBF_Mat_Optional>
   <CBF_Mat_CriticalTip>Critical: if this role finds nothing, the whole list is unusable. Optional: the role simply stays empty.</CBF_Mat_CriticalTip>
   <CBF_Mat_AnyWard>Any ward</CBF_Mat_AnyWard>
-  <CBF_Mat_WardTip>Limits this row to one kind of ward. A row for the ward wins over a row without one.</CBF_Mat_WardTip>
+  <CBF_Mat_WardTip>Limits this row to one kind of ward. A row for the ward wins over a row without one. Only for walls, roads and floors the generator draws itself, not inside buildings; buildings take the material of the map as designed.</CBF_Mat_WardTip>
   <CBF_Mat_RoleCount>{0} roles</CBF_Mat_RoleCount>
   <CBF_Mat_Hint>Pieces name roles instead of things. This list says what fills each role. The first existing entry of a chain wins. A role may appear in several rows, then the row that fits the piece or ward best is used.</CBF_Mat_Hint>
   <CBF_Mat_OwnRoles>Own roles</CBF_Mat_OwnRoles>
@@ -196,4 +196,5 @@
   <CBF_Role_CONDUIT_WATER>Conduit under water</CBF_Role_CONDUIT_WATER>
   <CBF_RoleTip_CONDUIT_WATER>Conduit where it crosses water.</CBF_RoleTip_CONDUIT_WATER>
 
+  <CBF_Mat_AppliesToTip>Pieces or categories this row is meant for. Only for walls, roads and floors the generator draws itself, not inside buildings; buildings take the material of the map as designed.</CBF_Mat_AppliesToTip>
 </LanguageData>

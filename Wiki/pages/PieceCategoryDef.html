@@ -137,6 +137,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Chance per annex anchor of a house that an annex is built there, 0 to 1. Empty takes the parent category, then 0.6.</td>
 </tr>
 <tr>
+<td><code>anbauEckenWeg</code></td>
+<td>true/false, optional</td>
+<td>none</td>
+<td>Where an annex of this category attaches, the two inner corner wall cells at the ends of the straight house wall become floor. Used for lean-to tents.</td>
+</tr>
+<tr>
 <td><code>anbauMax</code></td>
 <td>whole number, optional</td>
 <td>none</td>
@@ -212,7 +218,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>zones</code></td>
 <td>list of text</td>
 <td>none</td>
-<td>Where in the settlement this may stand: Inside, Outside, Center.</td>
+<td>Only Outside has an effect: together with needsRoadAccess set to false, the building needs no road and may be entered from every side. Inside and Center do nothing. Where a building stands is decided by the budget of its ward.</td>
 </tr>
 </tbody>
 </table>

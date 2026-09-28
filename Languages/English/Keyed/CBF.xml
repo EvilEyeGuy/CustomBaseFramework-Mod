@@ -136,7 +136,7 @@
   <CBF_Field_tag>Category (old)</CBF_Field_tag>
   <CBF_FieldDesc_tag>The first category. Kept so old files still load; write categories instead.</CBF_FieldDesc_tag>
   <CBF_Field_zones>Zones</CBF_Field_zones>
-  <CBF_FieldDesc_zones>Where in the settlement this may stand: Inside, Outside, Center.</CBF_FieldDesc_zones>
+  <CBF_FieldDesc_zones>Only Outside has an effect: together with needsRoadAccess set to false, the building needs no road and may be entered from every side. Inside and Center do nothing. Where a building stands is decided by the budget of its ward.</CBF_FieldDesc_zones>
   <CBF_Field_countPerSettlement>Count per settlement</CBF_Field_countPerSettlement>
   <CBF_FieldDesc_countPerSettlement>How many of these a settlement wants, as a range.</CBF_FieldDesc_countPerSettlement>
   <CBF_Field_weight>Weight</CBF_Field_weight>

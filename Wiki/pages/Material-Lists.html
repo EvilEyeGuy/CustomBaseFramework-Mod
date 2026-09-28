@@ -220,6 +220,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><strong>Ward</strong>: the row only applies in this ward, for example a different road for the old town, the suburb and the countryside.</li>
 <li><strong>Critical</strong>: if a critical role finds nothing, the whole list is unusable and marked red.</li>
 </ul>
+<p><strong>Applies to</strong> and <strong>Ward</strong> only act on walls, roads and floors the generator draws itself. Inside buildings they do nothing; buildings take the material of the map as designed.</p>
 <p>When several rows of the same role fit, the most specific one wins: a row whose <strong>Applies to</strong> matches beats a row with a matching <strong>Ward</strong>, which beats a row without conditions.</p>
 <h2 id="in-the-settlement-type">In the settlement type</h2>
 <p>The General section of the Settlement tab has the row <strong>Material list</strong>. The row turns red when the settlement type names no list or an unusable one. The <strong>...</strong> button opens the list.</p>

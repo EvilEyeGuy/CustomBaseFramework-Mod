@@ -13,6 +13,9 @@
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
       <li><symbol>b</symbol><thing>VFEM2_LeatherBoilpot</thing><rotation>North</rotation></li>
+      <li><symbol>f</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
+      <li><symbol>g</symbol><thing>VFEM2_LeatherBoilpot</thing></li>
+      <li><symbol>i</symbol><thing>VFEM2_CleaverRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>#######.....</li>
@@ -34,9 +37,9 @@
       <li>a.....a.....</li>
       <li>.b..b..b....</li>
       <li>............</li>
-      <li>a.....a.....</li>
-      <li>..b.........</li>
-      <li>............</li>
+      <li>a.....a...f.</li>
+      <li>..b.....g...</li>
+      <li>....i.......</li>
     </things>
     <roof>
       <li>^^^^^^^.....</li>

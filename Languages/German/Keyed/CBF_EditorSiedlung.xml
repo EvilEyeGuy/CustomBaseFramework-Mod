@@ -103,7 +103,7 @@
   <CBF_S_GateFromMaterialList>aus der Materialliste</CBF_S_GateFromMaterialList>
   <CBF_S_GateTip>Die Tür für die Durchgänge in der Mauer dieses Stadtteils. Leer nimmt die Tür aus der Materialliste. Torhäuser stehen unter Befestigung.</CBF_S_GateTip>
   <CBF_S_DistrictPlacement>Lage des Bezirks</CBF_S_DistrictPlacement>
-  <CBF_S_DistrictPlacementTip>Wo der Bezirk angelegt wird. Je 0 bis 1, sind alle 0, liegt er zufällig.</CBF_S_DistrictPlacementTip>
+  <CBF_S_DistrictPlacementTip>Wo der Bezirk beginnt. Anhaken, wo er liegen soll. Mehrere Haken zählen gleich, der Bezirk sucht eine Stelle, die allen passt. Kein Haken: Er beginnt an einer zufälligen Stelle abseits der anderen Bezirke.</CBF_S_DistrictPlacementTip>
   <CBF_S_WdStage>WD-Stufe</CBF_S_WdStage>
   <CBF_S_WdStageTip>World-Domination-Stufe 1 bis 4, für die dieser Ortstyp steht. Ein World-Domination-Ort dieser Stufe nimmt ihn bevorzugt unter den Typen, die seine Fraktion bekommen darf. 0 heißt keine Stufe.</CBF_S_WdStageTip>
   <CBF_S_WdStageNone>Keine Stufe</CBF_S_WdStageNone>
@@ -181,4 +181,8 @@
   <CBF_S_CoreSizeTip>Kantenlänge des Ortskerns in Feldern, als Spanne. Vorstadt und Umland wachsen darum herum.</CBF_S_CoreSizeTip>
   <CBF_FactionPickTags>Kategorie-Tags</CBF_FactionPickTags>
   <CBF_FactionPickTagInfo>{0} Fraktionen: {1}</CBF_FactionPickTagInfo>
+  <CBF_S_LocCenterTip>Der Bezirk beginnt möglichst nahe der Mitte seines Stadtteils.</CBF_S_LocCenterTip>
+  <CBF_S_LocGateTip>Der Bezirk beginnt nahe einem Tor.</CBF_S_LocGateTip>
+  <CBF_S_LocWallTip>Der Bezirk beginnt nahe der Mauer seines Stadtteils.</CBF_S_LocWallTip>
+  <CBF_S_LocMainTip>Der Bezirk beginnt an der Hauptstraße.</CBF_S_LocMainTip>
 </LanguageData>

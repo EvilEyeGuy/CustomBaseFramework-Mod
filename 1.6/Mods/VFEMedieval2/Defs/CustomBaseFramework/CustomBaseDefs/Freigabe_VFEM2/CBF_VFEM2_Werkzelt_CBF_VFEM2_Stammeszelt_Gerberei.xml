@@ -17,12 +17,13 @@
       <li><symbol>b</symbol><thing>VFEM2_ClothWall</thing><stuff>Cloth</stuff></li>
       <li><symbol>f</symbol><thing>VFEM2_LeatherBoilpot</thing><rotation>South</rotation></li>
       <li><symbol>g</symbol><thing>VFEM2_TailoringLoom</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>i</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>j</symbol><anchor>Stoff</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>k</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>l</symbol><terrain>StrawMatting</terrain></li>
-      <li><symbol>m</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>n</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>i</symbol><thing>VFEM2_CleaverRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>j</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>k</symbol><anchor>Stoff</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>l</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>m</symbol><terrain>StrawMatting</terrain></li>
+      <li><symbol>n</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>o</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>...#...#...</li>
@@ -39,15 +40,15 @@
     </mask>
     <terrain>
       <li>...........</li>
-      <li>...lllll...</li>
-      <li>..lllllll..</li>
-      <li>.lllllllll.</li>
-      <li>.lllllllll.</li>
-      <li>.lllllllll.</li>
-      <li>.lllllllll.</li>
-      <li>.lllllllll.</li>
-      <li>..lllllll..</li>
-      <li>...lllll...</li>
+      <li>...mmmmm...</li>
+      <li>..mmmmmmm..</li>
+      <li>.mmmmmmmmm.</li>
+      <li>.mmmmmmmmm.</li>
+      <li>.mmmmmmmmm.</li>
+      <li>.mmmmmmmmm.</li>
+      <li>.mmmmmmmmm.</li>
+      <li>..mmmmmmm..</li>
+      <li>...mmmmm...</li>
       <li>...........</li>
     </terrain>
     <things>
@@ -57,8 +58,8 @@
       <li>abbf..g.bba</li>
       <li>.b.......b.</li>
       <li>.b.......b.</li>
-      <li>.b.....m.b.</li>
-      <li>abb....nbba</li>
+      <li>.b.i...n.b.</li>
+      <li>abb....obba</li>
       <li>..bb...bb..</li>
       <li>...bbFbb...</li>
       <li>...a...a...</li>
@@ -82,9 +83,9 @@
       <li>...........</li>
       <li>...........</li>
       <li>...........</li>
-      <li>.....i.....</li>
-      <li>.......j...</li>
+      <li>.....j.....</li>
       <li>.......k...</li>
+      <li>.......l...</li>
       <li>...........</li>
       <li>...........</li>
       <li>...........</li>

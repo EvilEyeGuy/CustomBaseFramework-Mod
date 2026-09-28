@@ -19,17 +19,18 @@
       <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
       <li><symbol>f</symbol><thing>Hay</thing><count>30</count></li>
       <li><symbol>g</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>i</symbol><thing>VFEM2_StandingBanner</thing><rotation>North</rotation></li>
-      <li><symbol>j</symbol><anchor>SackA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>k</symbol><anchor>SackB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>l</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>m</symbol><anchor>Kiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
-      <li><symbol>n</symbol><anchor>Knecht</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>o</symbol><anchor>Erntewagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
-      <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>q</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>r</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>s</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
+      <li><symbol>j</symbol><thing>VFEM2_StandingBanner</thing><rotation>North</rotation></li>
+      <li><symbol>k</symbol><anchor>SackA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>l</symbol><anchor>SackB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>m</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>n</symbol><anchor>Kiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
+      <li><symbol>o</symbol><anchor>Knecht</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>p</symbol><anchor>Erntewagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
+      <li><symbol>q</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>r</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>s</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>t</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>############</li>
@@ -55,14 +56,14 @@
     </terrain>
     <things>
       <li>OOOOOOOOOOOO</li>
-      <li>O....a.Opp.O</li>
-      <li>Ob.b...O..qO</li>
-      <li>O......F.r.O</li>
+      <li>O....a.Oqq.O</li>
+      <li>Ob.b...O..rO</li>
+      <li>O......F.s.O</li>
       <li>Of...f.OOOOO</li>
       <li>g...........</li>
-      <li>...........g</li>
-      <li>.b...s......</li>
-      <li>g.i.g...g..g</li>
+      <li>..........ig</li>
+      <li>.b...t......</li>
+      <li>g.j.g...g..g</li>
     </things>
     <roof>
       <li>^^^^^^^^^^^^</li>
@@ -77,13 +78,13 @@
     </roof>
     <anchors>
       <li>............</li>
-      <li>........jk..</li>
-      <li>..........l.</li>
-      <li>.........mm.</li>
+      <li>........kl..</li>
+      <li>..........m.</li>
+      <li>.........nn.</li>
       <li>............</li>
-      <li>...n........</li>
-      <li>.....oo.....</li>
-      <li>.....oo.....</li>
+      <li>...o........</li>
+      <li>.....pp.....</li>
+      <li>.....pp.....</li>
       <li>............</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

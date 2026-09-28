@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Friedhof_DA_B</defName>
+    <label>CBF_MO_Friedhof_DA_B</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Friedhof</li>
+    </categories>
+    <nurMitMod>Van.DACrypts</nurMitMod>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li MayRequire="Van.DACrypts"><symbol>!</symbol><thing>DA_WallTomb</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li><symbol>1</symbol><anchor>Grabbeigaben</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Kirchenschatz</lootTable></li>
+      <li><symbol>C</symbol><thing>Plant_TreeCypress</thing></li>
+      <li MayRequire="Van.DACrypts"><symbol>D</symbol><thing>DA_DemonStatue</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>E</symbol><thing>Grave</thing><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>G</symbol><thing>Grave</thing><rotation>South</rotation></li>
+      <li><symbol>N</symbol><thing>Grave</thing><rotation>North</rotation></li>
+      <li MayRequire="Van.DACrypts"><symbol>P</symbol><thing>DA_GrandSarcophagus</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
+      <li MayRequire="Van.DACrypts"><symbol>R</symbol><thing>DA_OssuaryWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_Vase</thing></li>
+      <li MayRequire="Van.DACrypts"><symbol>V</symbol><thing>DA_GrandCandelabra</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>Z</symbol><thing>Fence</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="Van.DACrypts"><symbol>a</symbol><thing>DA_SkeletonStatue</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="Van.DACrypts"><symbol>g</symbol><thing>DA_GargoyleStatue</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
+      <li MayRequire="Van.DACrypts"><symbol>i</symbol><thing>DA_ImpStatue</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="Van.DACrypts"><symbol>j</symbol><thing>DA_SepulchralBrazier</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="Van.DACrypts"><symbol>o</symbol><thing>DA_BurialUrn</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="Van.DACrypts"><symbol>p</symbol><thing>DA_Coffin</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="Van.DACrypts"><symbol>t</symbol><thing>DA_WallTomb</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li MayRequire="Van.DACrypts"><symbol>x</symbol><thing>DA_WallTomb</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
+      <li><symbol>z</symbol><thing>FenceGate</thing><stuff>BlocksGranite</stuff></li>
+    </legend>
+    <mask>
+      <li>......#######......</li>
+      <li>...##########......</li>
+      <li>...#############...</li>
+      <li>.###############...</li>
+      <li>.##################</li>
+      <li>.##################</li>
+      <li>###################</li>
+      <li>###################</li>
+      <li>###################</li>
+      <li>###################</li>
+      <li>#################..</li>
+      <li>.################..</li>
+      <li>.################..</li>
+      <li>....##########.....</li>
+      <li>....##########.....</li>
+    </mask>
+    <terrain>
+      <li>......hhhhhhh......</li>
+      <li>......hhhhhhh......</li>
+      <li>......hhhhhhh......</li>
+      <li>......hhhhhhh......</li>
+      <li>......hhhhhhh......</li>
+      <li>......hhhhhhh......</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+    </terrain>
+    <things>
+      <li>......RRRRRRR......</li>
+      <li>...ZZZRV.faVR......</li>
+      <li>...Z..R.....RZZZ...</li>
+      <li>.ZZZo.R.P.P.R..Z...</li>
+      <li>.Z....Rp...pR.GZZZZ</li>
+      <li>.ZG.j.RRRFRRR....iZ</li>
+      <li>ZZ......g.g...j...Z</li>
+      <li>Z.................Z</li>
+      <li>Z.C.G.P.E..U.o.D..Z</li>
+      <li>Z...............ZZZ</li>
+      <li>ZZ..........P...Z..</li>
+      <li>.Z.P..o.G.N...G.Z..</li>
+      <li>.ZZZZ........ZZZZ..</li>
+      <li>....ZP....i.iZ.....</li>
+      <li>....ZZZZzZZZZZ.....</li>
+    </things>
+    <things2>
+      <li>........t.t........</li>
+      <li>...................</li>
+      <li>......x.....!......</li>
+      <li>......x.....!......</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+    </things2>
+    <roof>
+      <li>......^^^^^^^......</li>
+      <li>......^^^^^^^......</li>
+      <li>......^^^^^^^......</li>
+      <li>......^^^^^^^......</li>
+      <li>......^^^^^^^......</li>
+      <li>......^^^^^^^......</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+    </roof>
+    <anchors>
+      <li>...................</li>
+      <li>.........1.........</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+      <li>...................</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

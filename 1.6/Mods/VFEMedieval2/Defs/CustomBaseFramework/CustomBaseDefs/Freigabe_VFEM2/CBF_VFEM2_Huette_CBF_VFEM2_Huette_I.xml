@@ -18,11 +18,12 @@
       <li><symbol>b</symbol><thing>VFEM2_FurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
       <li><symbol>f</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>g</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>i</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>j</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Huette</lootTable></li>
-      <li><symbol>k</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>l</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
-      <li><symbol>m</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
+      <li><symbol>j</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>k</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Huette</lootTable></li>
+      <li><symbol>l</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>m</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
+      <li><symbol>n</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
     </legend>
     <mask>
@@ -38,25 +39,25 @@
       <li>wwwwww</li>
       <li>wwwwww</li>
       <li>wwwwww</li>
-      <li>wwllww</li>
+      <li>wwmmww</li>
       <li>wwwwww</li>
       <li>......</li>
       <li>......</li>
     </terrain>
     <things>
       <li>OOOOOO</li>
-      <li>Oa.m.O</li>
+      <li>Oa.n.O</li>
       <li>O...bO</li>
       <li>O....O</li>
       <li>OFOOOO</li>
       <li>..ff..</li>
-      <li>g..g..</li>
+      <li>gi.g..</li>
     </things>
     <things2>
       <li>......</li>
       <li>......</li>
       <li>......</li>
-      <li>..fi..</li>
+      <li>..fj..</li>
       <li>......</li>
       <li>......</li>
       <li>......</li>
@@ -72,8 +73,8 @@
     </roof>
     <anchors>
       <li>......</li>
-      <li>...j..</li>
-      <li>..k...</li>
+      <li>...k..</li>
+      <li>..l...</li>
       <li>......</li>
       <li>......</li>
       <li>......</li>

@@ -56,6 +56,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>x</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>y</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>z</symbol><thing>DankPyon_ArmorStatue</thing><stuff>DankPyon_IronIngot</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>c</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
     </legend>
     <mask>
       <li>..#########..</li>
@@ -109,7 +111,7 @@
       <li>..SSSSFSSSS..</li>
       <li>....Sz.zS....</li>
       <li>....S...F....</li>
-      <li>....SSSSS..o.</li>
+      <li>....SSSSSc.oc</li>
     </things>
     <things2>
       <li>.............</li>
@@ -163,7 +165,7 @@
       <li>.............</li>
       <li>.....g9j.....</li>
       <li>.............</li>
-      <li>.............</li>
+      <li>.........§..§</li>
     </anchors>
     <anchorsOver>
       <li>.............</li>

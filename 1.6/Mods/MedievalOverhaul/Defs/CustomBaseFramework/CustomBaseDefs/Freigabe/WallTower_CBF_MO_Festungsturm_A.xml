@@ -26,11 +26,14 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Turret_Scorpio</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>
       <li><symbol>f</symbol><anchor>Pfeilfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>u</symbol><anchor>BedienerC</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList><pawnCount>1</pawnCount></li>
       <li><symbol>x</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList><pawnCount>1</pawnCount></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
     </legend>
     <mask>
       <li>..#####..</li>
@@ -59,10 +62,10 @@
       <li>.SSDa.SS.</li>
       <li>MS.....SM</li>
       <li>S.b.....S</li>
-      <li>S.......S</li>
+      <li>Sg.....iS</li>
       <li>S.C.....S</li>
-      <li>MSg.CK.SM</li>
-      <li>.SS.i.SS.</li>
+      <li>MSj.CK.SM</li>
+      <li>.SS.k.SS.</li>
       <li>..MSSSM..</li>
     </things>
     <roof>
@@ -81,7 +84,7 @@
       <li>.........</li>
       <li>....u....</li>
       <li>.........</li>
-      <li>R.9.8.x.R</li>
+      <li>R§9.8.x§R</li>
       <li>.........</li>
       <li>..f......</li>
       <li>....1....</li>

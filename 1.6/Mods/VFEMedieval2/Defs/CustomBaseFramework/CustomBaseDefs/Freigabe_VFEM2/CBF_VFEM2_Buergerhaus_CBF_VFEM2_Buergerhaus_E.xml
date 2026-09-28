@@ -21,18 +21,19 @@
       <li><symbol>g</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
       <li><symbol>i</symbol><thing>VFEM2_CleaverRack</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>j</symbol><thing>VFEM2_CarvingBoard</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>k</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>l</symbol><thing>VFEM2_DoubleFurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
-      <li><symbol>m</symbol><anchor>Stubentruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>n</symbol><anchor>Kammertruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>o</symbol><thing>WoodLog</thing><count>40</count></li>
-      <li><symbol>p</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>q</symbol><anchor>Kuechenfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>r</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>s</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>t</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>u</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>k</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
+      <li><symbol>l</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>m</symbol><thing>VFEM2_DoubleFurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
+      <li><symbol>n</symbol><anchor>Stubentruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>o</symbol><anchor>Kammertruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>p</symbol><thing>WoodLog</thing><count>40</count></li>
+      <li><symbol>q</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>r</symbol><anchor>Kuechenfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>s</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>t</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>u</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>x</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
     </legend>
     <mask>
       <li>###########</li>
@@ -60,15 +61,15 @@
     </terrain>
     <things>
       <li>TTTTTTTTTTT</li>
-      <li>T..aTs..b.T</li>
-      <li>Tl..F.f.bgT</li>
-      <li>Tat.T.....T</li>
+      <li>T..aTt..b.T</li>
+      <li>Tm..F.f.bgT</li>
+      <li>Tau.T.....T</li>
       <li>TTTTTTTTTFT</li>
-      <li>Ti.jToo....</li>
-      <li>Tu..F.....k</li>
-      <li>Tt..T.....k</li>
-      <li>TTFTT....o.</li>
-      <li>.........o.</li>
+      <li>Ti.jTpp....</li>
+      <li>Tx..F.....l</li>
+      <li>Tu.kT.....l</li>
+      <li>TTFTT....p.</li>
+      <li>.........p.</li>
     </things>
     <roof>
       <li>^^^^^^^^^^^</li>
@@ -84,13 +85,13 @@
     </roof>
     <anchors>
       <li>...........</li>
-      <li>.....m.....</li>
+      <li>.....n.....</li>
       <li>...........</li>
-      <li>..n........</li>
+      <li>..o........</li>
       <li>...........</li>
       <li>...........</li>
-      <li>.p.........</li>
-      <li>.q....r....</li>
+      <li>.q.........</li>
+      <li>.r....s....</li>
       <li>...........</li>
       <li>...........</li>
     </anchors>

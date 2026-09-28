@@ -26,18 +26,21 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>X</symbol><thing>DankPyon_RusticTable1x1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Buerger</objects><chance>0.8</chance><obenauf>true</obenauf></li>
       <li><symbol>b</symbol><anchor>Bett</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Doppelbett</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_SawTable</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Bed_RusticDouble_Blue</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutCrate1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>j</symbol><thing>CBF_MO_Porzellanvase</thing><rotation>North</rotation></li>
       <li><symbol>k</symbol><anchor>Werkkiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Werkstatt</lootTable></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideOutBuildingBase_Cart_RawWood</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideoutCrate1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>n</symbol><thing>CBF_MO_Porzellanvase</thing><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_HideOutBuildingBase_Cart_RawWood</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>r</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
     </legend>
     <mask>
       <li>..###.......</li>
@@ -65,12 +68,12 @@
       <li>..TTT.......</li>
       <li>TTTYTTTTTTTT</li>
       <li>T....iTf..W.</li>
-      <li>Tg....T.....</li>
-      <li>TTTFTTTj....</li>
+      <li>Tg...jT.....</li>
+      <li>TTTFTTTl....</li>
       <li>T.....F..V..</li>
-      <li>THR...T.I..I</li>
+      <li>THR...TnI..I</li>
       <li>TTTTFTT.....</li>
-      <li>........m...</li>
+      <li>........o...</li>
     </things>
     <things2>
       <li>............</li>
@@ -79,7 +82,7 @@
       <li>............</li>
       <li>............</li>
       <li>............</li>
-      <li>..rX.l......</li>
+      <li>..rX.m......</li>
       <li>............</li>
       <li>............</li>
     </things2>
@@ -98,10 +101,10 @@
       <li>...+........</li>
       <li>............</li>
       <li>.bb..1......</li>
-      <li>+bb.8.......</li>
+      <li>+bb.8Ç......</li>
       <li>.......kk...</li>
       <li>............</li>
-      <li>.....2......</li>
+      <li>.....2.Ç....</li>
       <li>........JJ..</li>
       <li>........JJ..</li>
     </anchors>

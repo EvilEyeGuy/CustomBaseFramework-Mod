@@ -20,20 +20,21 @@
       <li><symbol>f</symbol><thing>VFEM2_DoubleFurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
       <li><symbol>g</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
       <li><symbol>i</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>j</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>k</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>l</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>m</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>n</symbol><thing>WoodLog</thing><count>40</count></li>
-      <li><symbol>o</symbol><anchor>Futtersack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>p</symbol><anchor>Bauer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>q</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>r</symbol><anchor>Stubenfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>s</symbol><anchor>Magd</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>t</symbol><thing>RawCorn</thing><count>30</count></li>
-      <li><symbol>u</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
+      <li><symbol>j</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
+      <li><symbol>k</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>l</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>m</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>n</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>o</symbol><thing>WoodLog</thing><count>40</count></li>
+      <li><symbol>p</symbol><anchor>Futtersack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>q</symbol><anchor>Bauer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>r</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>s</symbol><anchor>Stubenfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>t</symbol><anchor>Magd</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>u</symbol><thing>RawCorn</thing><count>30</count></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
-      <li><symbol>x</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>x</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
+      <li><symbol>y</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>#######..####.</li>
@@ -51,8 +52,8 @@
     <terrain>
       <li>wwwwwww..eeee.</li>
       <li>wwwwwww..eeee.</li>
-      <li>wwwwwuw..eeee.</li>
-      <li>wwwwwuw..eeee.</li>
+      <li>wwwwwxw..eeee.</li>
+      <li>wwwwwxw..eeee.</li>
       <li>wwwwwww.......</li>
       <li>wwwwwww.......</li>
       <li>..............</li>
@@ -63,22 +64,22 @@
     </terrain>
     <things>
       <li>OOOOOOO..OOOO.</li>
-      <li>O..Oa.OnnOb.O.</li>
-      <li>Of.O..O..Ox.O.</li>
+      <li>O..Oa.OooOb.O.</li>
+      <li>Of.O..O..Oy.O.</li>
       <li>O..F..O.gOOFOg</li>
-      <li>Oxx...O.g....g</li>
+      <li>Oyy...O.g....g</li>
       <li>OOOOOFO.g....g</li>
-      <li>...ii...g....g</li>
-      <li>...j..j.ggkggg</li>
-      <li>...........t..</li>
-      <li>...........t..</li>
+      <li>...ii...g...jg</li>
+      <li>...k..k.gglggg</li>
+      <li>...........u..</li>
+      <li>...........u..</li>
       <li>..............</li>
     </things>
     <things2>
       <li>..............</li>
       <li>..............</li>
-      <li>.....l........</li>
       <li>.....m........</li>
+      <li>.....n........</li>
       <li>..............</li>
       <li>..............</li>
       <li>..............</li>
@@ -103,13 +104,13 @@
     <anchors>
       <li>..............</li>
       <li>..............</li>
-      <li>..........o...</li>
-      <li>..p...........</li>
-      <li>.qr...........</li>
+      <li>..........p...</li>
+      <li>..q...........</li>
+      <li>.rs...........</li>
       <li>..............</li>
       <li>..............</li>
       <li>..............</li>
-      <li>.....s........</li>
+      <li>.....t........</li>
       <li>..............</li>
       <li>..............</li>
     </anchors>

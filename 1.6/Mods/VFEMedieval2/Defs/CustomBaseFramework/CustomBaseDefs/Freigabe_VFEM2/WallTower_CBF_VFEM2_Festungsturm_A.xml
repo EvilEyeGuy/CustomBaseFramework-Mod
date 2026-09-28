@@ -21,13 +21,16 @@
       <li><symbol>g</symbol><anchor>Wall</anchor></li>
       <li><symbol>h</symbol><terrain>TileLimestone</terrain></li>
       <li><symbol>i</symbol><anchor>BedienerC</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>j</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>k</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>l</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>m</symbol><anchor>Pfeilfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>n</symbol><anchor>Turmtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>o</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
-      <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>j</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>k</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>l</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>m</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>n</symbol><anchor>Pfeilfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>o</symbol><anchor>Turmtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>p</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
+      <li><symbol>q</symbol><thing>VFEM2_StandingBanner</thing><rotation>East</rotation></li>
+      <li><symbol>r</symbol><thing>VFEM2_StandingBanner</thing><rotation>West</rotation></li>
+      <li><symbol>s</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>..#####..</li>
@@ -53,13 +56,13 @@
     </terrain>
     <things>
       <li>..aSSSa..</li>
-      <li>.SSbo.SS.</li>
+      <li>.SSbp.SS.</li>
       <li>aS.....Sa</li>
       <li>S.f.....S</li>
-      <li>S.......S</li>
+      <li>Sq.....rS</li>
       <li>S.b.....S</li>
-      <li>aSp.bf.Sa</li>
-      <li>.SS.p.SS.</li>
+      <li>aSs.bf.Sa</li>
+      <li>.SS.s.SS.</li>
       <li>..aSSSa..</li>
     </things>
     <roof>
@@ -78,10 +81,10 @@
       <li>.........</li>
       <li>....i....</li>
       <li>.........</li>
-      <li>g.j.k.l.g</li>
+      <li>gjk.l.mjg</li>
       <li>.........</li>
-      <li>..m......</li>
-      <li>....n....</li>
+      <li>..n......</li>
+      <li>....o....</li>
       <li>....g....</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

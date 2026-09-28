@@ -13,25 +13,25 @@
     <legend>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>b</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
-      <li><symbol>f</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>g</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
+      <li><symbol>a</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>f</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>g</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
       <li><symbol>h</symbol><terrain>TileLimestone</terrain></li>
-      <li><symbol>i</symbol><anchor>MehlA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>j</symbol><anchor>MehlB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>k</symbol><anchor>Baecker</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>l</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>m</symbol><anchor>Brotregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>n</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>o</symbol><anchor>Brennholz</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>p</symbol><anchor>Brotstand</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>q</symbol><thing>FueledStove</thing><rotation>North</rotation></li>
-      <li><symbol>r</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>s</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>t</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>u</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
+      <li><symbol>j</symbol><anchor>MehlA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>k</symbol><anchor>MehlB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>l</symbol><anchor>Baecker</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>m</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>n</symbol><anchor>Brotregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>o</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>p</symbol><anchor>Brennholz</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>q</symbol><anchor>Brotstand</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>r</symbol><thing>FueledStove</thing><rotation>North</rotation></li>
+      <li><symbol>s</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>t</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>u</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>x</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>###########</li>
@@ -54,14 +54,14 @@
       <li>...........</li>
     </terrain>
     <things>
-      <li>OOOOOOOSSSS</li>
-      <li>O...rrO.q..</li>
-      <li>Ob....F....</li>
-      <li>Os....Os.u.</li>
-      <li>O...t.Of..f</li>
+      <li>OOOOOOOaaaa</li>
+      <li>O...ssO.r..</li>
+      <li>Of....F....</li>
+      <li>Ot....Ot.x.</li>
+      <li>O...u.Og..g</li>
       <li>OOOFOOO....</li>
-      <li>.g.........</li>
-      <li>....t......</li>
+      <li>.i.........</li>
+      <li>....u......</li>
     </things>
     <roof>
       <li>^^^^^^^^^^^</li>
@@ -75,13 +75,13 @@
     </roof>
     <anchors>
       <li>...........</li>
-      <li>....ij.....</li>
-      <li>...k.......</li>
-      <li>.l..mm.n.oo</li>
-      <li>....mm.....</li>
+      <li>....jk.....</li>
+      <li>...l.......</li>
+      <li>.m..nn.o.pp</li>
+      <li>....nn.....</li>
       <li>...........</li>
       <li>...........</li>
-      <li>....ppp....</li>
+      <li>....qqq....</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

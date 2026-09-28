@@ -27,12 +27,15 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>X</symbol><thing>DankPyon_RusticTable1x2c</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Buerger</objects><chance>0.8</chance><obenauf>true</obenauf></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Bed_RusticDouble_Blue</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutLargeShelf_FilledA_Amboise</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_OnTop_Kitchen_Plate</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>CBF_MO_Porzellanvase</thing><rotation>East</rotation></li>
+      <li><symbol>j</symbol><thing>CBF_MO_Porzellanvase</thing><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_OnTop_Kitchen_Plate</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
     </legend>
     <mask>
       <li>#########</li>
@@ -60,8 +63,8 @@
       <li>Tb...TTTT</li>
       <li>TY......T</li>
       <li>Tg...U.HT</li>
-      <li>T.C.K...T</li>
-      <li>T.CXK...T</li>
+      <li>TiC.K...T</li>
+      <li>T.CXK..jT</li>
       <li>TTTTTTFTT</li>
     </things>
     <things2>
@@ -70,7 +73,7 @@
       <li>.........</li>
       <li>.........</li>
       <li>.........</li>
-      <li>...i.....</li>
+      <li>...k.....</li>
       <li>.........</li>
       <li>.........</li>
     </things2>
@@ -90,8 +93,8 @@
       <li>.11......</li>
       <li>.........</li>
       <li>+33.....+</li>
-      <li>......4..</li>
-      <li>.........</li>
+      <li>.Ç....4..</li>
+      <li>.......Ç.</li>
       <li>..+......</li>
     </anchors>
     <anchorsOver>

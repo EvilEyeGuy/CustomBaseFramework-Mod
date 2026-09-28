@@ -18,22 +18,23 @@
       <li><symbol>b</symbol><thing>VFEM2_CleaverRack</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
       <li><symbol>f</symbol><thing>VFEM2_CarvingBoard</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>g</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
-      <li><symbol>i</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>j</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>k</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>l</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
-      <li><symbol>m</symbol><thing>VFEM2_DoubleFurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
-      <li><symbol>n</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>o</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>p</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>q</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>r</symbol><anchor>Regal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
-      <li><symbol>s</symbol><terrain>VFEM2_Matting_Leather_Bear</terrain></li>
-      <li><symbol>t</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>u</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>g</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
+      <li><symbol>i</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li><symbol>j</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>k</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>l</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>m</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
+      <li><symbol>n</symbol><thing>VFEM2_DoubleFurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
+      <li><symbol>o</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>p</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>q</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>r</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>s</symbol><anchor>Regal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
+      <li><symbol>t</symbol><terrain>VFEM2_Matting_Leather_Bear</terrain></li>
+      <li><symbol>u</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
-      <li><symbol>x</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>x</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>y</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>##########</li>
@@ -54,21 +55,21 @@
       <li>wwwwweeee.</li>
       <li>wwwwwwwww.</li>
       <li>wwwwwwwww.</li>
-      <li>wwsswwwww.</li>
-      <li>wwsswwwww.</li>
+      <li>wwttwwwww.</li>
+      <li>wwttwwwww.</li>
       <li>wwwwwwwww.</li>
       <li>.wwwwww...</li>
     </terrain>
     <things>
       <li>TTTTTTTTT.</li>
       <li>T..aTb.fT.</li>
-      <li>Tm.tT...T.</li>
-      <li>Ta..Tu.uT.</li>
+      <li>Tn.uT...Tg</li>
+      <li>Ta..Tx.xT.</li>
       <li>TTFTTTFTT.</li>
       <li>T.......F.</li>
-      <li>T.......Ti</li>
-      <li>Tg....x.Ti</li>
-      <li>TTjaklTTT.</li>
+      <li>T.......Tj</li>
+      <li>Ti....y.Tj</li>
+      <li>TTkalmTTT.</li>
       <li>.TTTTTT...</li>
     </things>
     <roof>
@@ -86,12 +87,12 @@
     <anchors>
       <li>..........</li>
       <li>..........</li>
-      <li>...n......</li>
-      <li>.....o.p..</li>
+      <li>...o......</li>
+      <li>.....p.q..</li>
       <li>..........</li>
       <li>..........</li>
-      <li>.....q....</li>
-      <li>......rr..</li>
+      <li>.....r....</li>
+      <li>......ss..</li>
       <li>..........</li>
       <li>..........</li>
     </anchors>

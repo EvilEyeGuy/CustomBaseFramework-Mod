@@ -13,11 +13,12 @@
     <legend>
       <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>WoodLog</thing><count>75</count></li>
-      <li><symbol>b</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>f</symbol><thing>WoodLog</thing><count>40</count></li>
-      <li><symbol>g</symbol><anchor>Wasser</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>i</symbol><terrain>Bridge</terrain></li>
+      <li><symbol>a</symbol><thing>VFEM2_CleaverRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>b</symbol><thing>WoodLog</thing><count>75</count></li>
+      <li><symbol>f</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>g</symbol><thing>WoodLog</thing><count>40</count></li>
+      <li><symbol>i</symbol><anchor>Wasser</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>j</symbol><terrain>Bridge</terrain></li>
     </legend>
     <mask>
       <li>#######</li>
@@ -28,20 +29,20 @@
       <li>#######</li>
     </mask>
     <terrain>
-      <li>iiiiiii</li>
-      <li>iiiiiii</li>
-      <li>iiiiiii</li>
-      <li>iiiiiii</li>
-      <li>iiiiiii</li>
-      <li>iiiiiii</li>
+      <li>jjjjjjj</li>
+      <li>jjjjjjj</li>
+      <li>jjjjjjj</li>
+      <li>jjjjjjj</li>
+      <li>jjjjjjj</li>
+      <li>jjjjjjj</li>
     </terrain>
     <things>
       <li>OOOOOOO</li>
-      <li>O...ffO</li>
+      <li>O...ggO</li>
+      <li>O.a...O</li>
       <li>O.....O</li>
-      <li>O.....O</li>
-      <li>Oa....O</li>
-      <li>b.....b</li>
+      <li>Ob....O</li>
+      <li>f.....f</li>
     </things>
     <roof>
       <li>^^^^^^^</li>
@@ -57,7 +58,7 @@
       <li>.......</li>
       <li>.......</li>
       <li>.......</li>
-      <li>.ggggg.</li>
+      <li>.iiiii.</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

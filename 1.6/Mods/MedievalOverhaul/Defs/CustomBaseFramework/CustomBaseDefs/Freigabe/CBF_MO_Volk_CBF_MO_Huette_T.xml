@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Huette_T</defName>
+    <label>CBF_MO_Huette_T</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Volk</li>
+      <li>CBF_MO_Huette</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>1</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Huette</lootTable></li>
+      <li><symbol>2</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Huette</lootTable></li>
+      <li><symbol>8</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_StrawBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_WoodBurningStove</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
+      <li><symbol>O</symbol><thing>CBF_MO_Pflastermauer</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RugPatched_Cloth1x2c</thing><stuff>Cloth</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>X</symbol><thing>DankPyon_RusticTable1x1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Huette</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>b</symbol><anchor>Bett1</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Bett_Einfach</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+    </legend>
+    <mask>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+    </mask>
+    <terrain>
+      <li>wwwwww</li>
+      <li>wwwwww</li>
+      <li>wwwwww</li>
+      <li>wwwwww</li>
+      <li>wwwwww</li>
+      <li>wwwwww</li>
+    </terrain>
+    <things>
+      <li>OOOOOO</li>
+      <li>O..H.O</li>
+      <li>OB...O</li>
+      <li>O....F</li>
+      <li>Of.RgO</li>
+      <li>OOFOOO</li>
+    </things>
+    <things2>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>...X..</li>
+      <li>...U..</li>
+      <li>......</li>
+    </things2>
+    <roof>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>...+..</li>
+      <li>.b....</li>
+      <li>.b8...</li>
+      <li>+.....</li>
+      <li>.1..2.</li>
+      <li>......</li>
+    </anchors>
+    <anchorsOver>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>...a..</li>
+      <li>......</li>
+      <li>......</li>
+    </anchorsOver>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -11,10 +11,11 @@
     <style>CBF_VFEM2</style>
     <legend>
       <li><symbol>a</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>b</symbol><thing>Hay</thing><count>30</count></li>
-      <li><symbol>f</symbol><thing>Hay</thing><count>60</count></li>
-      <li><symbol>g</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>i</symbol><anchor>Vieh</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>b</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
+      <li><symbol>f</symbol><thing>Hay</thing><count>30</count></li>
+      <li><symbol>g</symbol><thing>Hay</thing><count>60</count></li>
+      <li><symbol>i</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>j</symbol><anchor>Vieh</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
     </legend>
     <mask>
       <li>....#####....</li>
@@ -48,14 +49,14 @@
       <li>....aaaaa....</li>
       <li>..aaa...aaa..</li>
       <li>.aa.......aa.</li>
-      <li>.a.....b...a.</li>
+      <li>.a..b..f...a.</li>
       <li>aa.........a.</li>
       <li>a..........aa</li>
       <li>a...........a</li>
       <li>aa..........a</li>
-      <li>.a.f.......aa</li>
-      <li>.aa.......aa.</li>
-      <li>..aaaggaaaa..</li>
+      <li>.a.g.......aa</li>
+      <li>.aa......baa.</li>
+      <li>..aaaiiaaaa..</li>
       <li>.............</li>
     </things>
     <roof>
@@ -78,8 +79,8 @@
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
-      <li>......i......</li>
-      <li>........i....</li>
+      <li>......j......</li>
+      <li>........j....</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>

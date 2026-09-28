@@ -23,15 +23,17 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>X</symbol><thing>DankPyon_RusticTable1x1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Buerger</objects><chance>0.8</chance><obenauf>true</obenauf></li>
       <li><symbol>b</symbol><anchor>Bett</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Doppelbett</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Bed_RusticDouble_Blue</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutLargeShelf_FilledA_Amboise</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>i</symbol><thing>CBF_MO_Porzellanvase</thing><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutLargeShelf_FilledA_Amboise</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>r</symbol><anchor>Regal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Wappenregal</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
     </legend>
     <mask>
       <li>######</li>
@@ -59,11 +61,11 @@
       <li>TTTTTT</li>
       <li>T..EgT</li>
       <li>Tf...T</li>
-      <li>TY...T</li>
+      <li>TY..iT</li>
       <li>TTTFTT</li>
-      <li>Ti...T</li>
+      <li>Tj...T</li>
       <li>T...HT</li>
-      <li>T.R.jT</li>
+      <li>TiR.kT</li>
       <li>TTTFTT</li>
     </things>
     <things2>
@@ -92,11 +94,11 @@
       <li>...+..</li>
       <li>.bb.1.</li>
       <li>+bb...</li>
-      <li>...8..</li>
+      <li>...8Ç.</li>
       <li>......</li>
       <li>.rr...</li>
       <li>.....+</li>
-      <li>....2.</li>
+      <li>.Ç..2.</li>
       <li>......</li>
     </anchors>
     <anchorsOver>

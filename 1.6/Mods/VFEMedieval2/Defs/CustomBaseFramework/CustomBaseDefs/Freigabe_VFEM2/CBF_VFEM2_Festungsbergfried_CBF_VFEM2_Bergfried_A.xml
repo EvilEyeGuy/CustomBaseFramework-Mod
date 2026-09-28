@@ -11,31 +11,32 @@
     <style>CBF_VFEM2</style>
     <traufen>true</traufen>
     <legend>
-      <li><symbol>0</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>A</symbol><anchor>Schlaftruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>B</symbol><anchor>TurmtruheA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>C</symbol><anchor>TurmtruheB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>D</symbol><anchor>Burgherr</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>E</symbol><anchor>Barren</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>0</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>1</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>A</symbol><anchor>Ruestung2</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>B</symbol><anchor>Schlaftruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>C</symbol><anchor>TurmtruheA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>D</symbol><anchor>TurmtruheB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>E</symbol><anchor>Burgherr</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>G</symbol><anchor>SchatzC</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>H</symbol><anchor>WaffenregalA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>I</symbol><anchor>Ruesttruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>J</symbol><anchor>WaffenregalB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>K</symbol><anchor>Prunkruestung3</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>L</symbol><anchor>Prunkruestung4</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>M</symbol><thing>WoodLog</thing><count>40</count></li>
-      <li><symbol>N</symbol><anchor>Hofwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>P</symbol><anchor>Flankenregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>Q</symbol><thing>RawCorn</thing><count>30</count></li>
-      <li><symbol>R</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>G</symbol><anchor>Barren</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>H</symbol><anchor>SchatzC</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>I</symbol><anchor>WaffenregalA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>J</symbol><anchor>Ruesttruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>K</symbol><anchor>WaffenregalB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>L</symbol><anchor>Prunkruestung3</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>M</symbol><anchor>Prunkruestung4</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>N</symbol><thing>WoodLog</thing><count>40</count></li>
+      <li><symbol>P</symbol><anchor>Hofwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>Q</symbol><anchor>Flankenregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>R</symbol><thing>RawCorn</thing><count>30</count></li>
       <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>U</symbol><thing>Beer</thing><count>10</count></li>
-      <li><symbol>V</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
-      <li><symbol>W</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>X</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>Y</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>Z</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>U</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>V</symbol><thing>Beer</thing><count>10</count></li>
+      <li><symbol>W</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
+      <li><symbol>X</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>Y</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>Z</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>Armchair</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
       <li><symbol>b</symbol><thing>VFEM2_DoubleFurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
@@ -44,21 +45,21 @@
       <li><symbol>h</symbol><terrain>TileLimestone</terrain></li>
       <li><symbol>i</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
       <li><symbol>j</symbol><thing>Dresser</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>k</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>l</symbol><thing>Hay</thing><count>60</count></li>
-      <li><symbol>m</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>n</symbol><thing>VFEM2_2x1CastleDoor</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>o</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>p</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>q</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>r</symbol><thing>Table2x4c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>s</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>t</symbol><anchor>SchatzA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>u</symbol><anchor>SchatzB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>k</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
+      <li><symbol>l</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>m</symbol><thing>Hay</thing><count>60</count></li>
+      <li><symbol>n</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>o</symbol><thing>VFEM2_2x1CastleDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>p</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>q</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>r</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>s</symbol><thing>Table2x4c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>t</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>u</symbol><anchor>SchatzA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
-      <li><symbol>x</symbol><anchor>Ruestung1</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>y</symbol><anchor>Saaltruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>z</symbol><anchor>Ruestung2</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>x</symbol><anchor>SchatzB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>y</symbol><anchor>Ruestung1</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>z</symbol><anchor>Saaltruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
     </legend>
     <mask>
       <li>#######...............</li>
@@ -87,10 +88,10 @@
       <li>hhhhhhhhhhhhhhhhwwww..</li>
       <li>hhhhhhhhhhhhhhhhwwww..</li>
       <li>hhhhhhhhhhhhhhhhwwwwww</li>
-      <li>hhhhhhhhVVVVVVhhwwwwww</li>
-      <li>hhhhhhhhVVVVVVhhwwwwww</li>
-      <li>hhhhhhhhVVVVVVhhwwwwww</li>
-      <li>hhhhhhhhVVVVVVhhwwwwww</li>
+      <li>hhhhhhhhWWWWWWhhwwwwww</li>
+      <li>hhhhhhhhWWWWWWhhwwwwww</li>
+      <li>hhhhhhhhWWWWWWhhwwwwww</li>
+      <li>hhhhhhhhWWWWWWhhwwwwww</li>
       <li>hhhhhhhhhhhhhhhhwwww..</li>
       <li>hhhhhhhhhhhhhhhhhhhh..</li>
       <li>h..................h..</li>
@@ -106,35 +107,35 @@
     </terrain>
     <things>
       <li>SSSSSSS...............</li>
-      <li>SW..W.SSSSSSSSSSSSSS..</li>
-      <li>S.....SXX..a..XSX..S..</li>
-      <li>SY.X..S........F.b.SSS</li>
+      <li>SX..X.SSSSSSSSSSSSSS..</li>
+      <li>S.....SYY..a..YSY..S..</li>
+      <li>SZ.Y..S........F.b.SSS</li>
       <li>S.....F........S....fS</li>
-      <li>SZ..Z.S........S.....S</li>
+      <li>S0..0.S........S.....S</li>
       <li>SSSSSSSg.......S....iS</li>
-      <li>SW.XW.S........S...SSS</li>
-      <li>S0...0Si......iSij.S..</li>
+      <li>SX.YX.S........S...SSS</li>
+      <li>S1...1Si......iSij.S..</li>
       <li>SSSFSSSSSSSFSSSSSSSS..</li>
-      <li>S............MM....S..</li>
-      <li>k.....MM.....MM..l.k..</li>
+      <li>Sk...........NN....S..</li>
+      <li>l.....NN.....NN..m.l..</li>
       <li>SSS..............SSSS.</li>
-      <li>..S.mmm..........SW.k.</li>
-      <li>..SkS.........Q..F..S.</li>
-      <li>....SUUi..i...Q..SSSS.</li>
+      <li>..S.nnn..........SX.l.</li>
+      <li>..SlS.........R..F..S.</li>
+      <li>....SVVi..i...R..SSSS.</li>
       <li>....SSSS..SSSSSSSS....</li>
-      <li>.....SSk..kSS.........</li>
+      <li>.....SSl..lSS.........</li>
       <li>.....SSS..SSS.........</li>
-      <li>.....kSSn.SSk.........</li>
+      <li>.....lSSo.SSl.........</li>
     </things>
     <things2>
       <li>......................</li>
       <li>......................</li>
       <li>......................</li>
       <li>......................</li>
-      <li>.........oooo.........</li>
-      <li>........p....q........</li>
-      <li>........pr...q........</li>
-      <li>.........ssss.........</li>
+      <li>.........pppp.........</li>
+      <li>........q....r........</li>
+      <li>........qs...r........</li>
+      <li>.........tttt.........</li>
       <li>......................</li>
       <li>......................</li>
       <li>......................</li>
@@ -172,20 +173,20 @@
     </roof>
     <anchors>
       <li>......................</li>
-      <li>.tt.uu................</li>
-      <li>.......xy.....z.A.....</li>
-      <li>.B.C.......D..........</li>
+      <li>.uu.xx................</li>
+      <li>.......yz.....A.B.....</li>
+      <li>.C.D.......E..........</li>
       <li>......................</li>
-      <li>.EE.GG................</li>
+      <li>.GG.HH................</li>
       <li>......................</li>
-      <li>.HHIJJ................</li>
-      <li>.K...L................</li>
-      <li>......................</li>
-      <li>......................</li>
+      <li>.IIJKK................</li>
+      <li>.L...M................</li>
       <li>......................</li>
       <li>......................</li>
-      <li>.........N........PP..</li>
-      <li>...................R..</li>
+      <li>......................</li>
+      <li>......................</li>
+      <li>.........P........QQ..</li>
+      <li>...................U..</li>
       <li>......................</li>
       <li>......................</li>
       <li>......................</li>

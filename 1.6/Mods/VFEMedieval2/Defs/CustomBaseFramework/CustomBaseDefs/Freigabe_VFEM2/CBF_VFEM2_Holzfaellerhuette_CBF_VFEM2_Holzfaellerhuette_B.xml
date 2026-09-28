@@ -14,15 +14,16 @@
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
-      <li><symbol>b</symbol><thing>VFEM2_FurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
-      <li><symbol>f</symbol><thing>VFEM2_ChiselRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>g</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>i</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>j</symbol><anchor>Arbeiter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>k</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Huette</lootTable></li>
-      <li><symbol>l</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
-      <li><symbol>m</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>a</symbol><thing>Campfire</thing><rotation>North</rotation></li>
+      <li><symbol>b</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
+      <li><symbol>f</symbol><thing>VFEM2_FurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
+      <li><symbol>g</symbol><thing>VFEM2_ChiselRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>j</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>k</symbol><anchor>Arbeiter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>l</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Huette</lootTable></li>
+      <li><symbol>m</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
+      <li><symbol>n</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
     </legend>
     <mask>
@@ -38,17 +39,17 @@
       <li>wwwwwww...</li>
       <li>wwwwwww...</li>
       <li>wwwwwwwwww</li>
-      <li>wwwllwwwww</li>
+      <li>wwwmmwwwww</li>
       <li>wwwwwwwwww</li>
       <li>wwwwwwwwww</li>
       <li>..........</li>
     </terrain>
     <things>
       <li>OOOOOOO...</li>
-      <li>O....aO...</li>
-      <li>Ob....OOOO</li>
-      <li>O......m.O</li>
-      <li>Of......bO</li>
+      <li>O.a..bO...</li>
+      <li>Of....OOOO</li>
+      <li>O......n.O</li>
+      <li>Og......fO</li>
       <li>OOOOFOOOOO</li>
       <li>..........</li>
     </things>
@@ -56,7 +57,7 @@
       <li>..........</li>
       <li>..........</li>
       <li>..........</li>
-      <li>...gi.....</li>
+      <li>...ij.....</li>
       <li>..........</li>
       <li>..........</li>
       <li>..........</li>
@@ -74,7 +75,7 @@
       <li>..........</li>
       <li>..........</li>
       <li>..........</li>
-      <li>.....j.k..</li>
+      <li>.....k.l..</li>
       <li>..........</li>
       <li>..........</li>
       <li>..........</li>

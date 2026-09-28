@@ -18,13 +18,14 @@
       <li><symbol>b</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
       <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
       <li><symbol>f</symbol><thing>VFEM2_FurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
-      <li><symbol>g</symbol><thing>WoodLog</thing><count>40</count></li>
-      <li><symbol>i</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>j</symbol><anchor>Jaeger</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>k</symbol><anchor>Waffenregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>l</symbol><terrain>VFEM2_Matting_Leather_Bear</terrain></li>
-      <li><symbol>m</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>n</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>g</symbol><thing>VFEM2_CleaverRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>WoodLog</thing><count>40</count></li>
+      <li><symbol>j</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>k</symbol><anchor>Jaeger</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>l</symbol><anchor>Waffenregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>m</symbol><terrain>VFEM2_Matting_Leather_Bear</terrain></li>
+      <li><symbol>n</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>o</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
     </legend>
     <mask>
@@ -40,21 +41,21 @@
     <terrain>
       <li>wwwwwwwwe</li>
       <li>wwwwwwwwe</li>
-      <li>wwwlllwwe</li>
-      <li>wwwlllwwe</li>
-      <li>wwwlllwwe</li>
+      <li>wwwmmmwwe</li>
+      <li>wwwmmmwwe</li>
+      <li>wwwmmmwwe</li>
       <li>wwwwwwwwe</li>
       <li>eeeeeeeee</li>
       <li>.eeeeee..</li>
     </terrain>
     <things>
       <li>OOOOOOOO.</li>
-      <li>O.a.b.mO.</li>
+      <li>O.a.b.nO.</li>
       <li>Of.....O.</li>
       <li>O......O.</li>
-      <li>On.....O.</li>
+      <li>Oo.....O.</li>
       <li>OOOOOOFO.</li>
-      <li>.......g.</li>
+      <li>.g.....i.</li>
       <li>.........</li>
     </things>
     <roof>
@@ -69,10 +70,10 @@
     </roof>
     <anchors>
       <li>.........</li>
-      <li>......i..</li>
+      <li>......j..</li>
       <li>.........</li>
-      <li>..j......</li>
-      <li>.kk......</li>
+      <li>..k......</li>
+      <li>.ll......</li>
       <li>.........</li>
       <li>.........</li>
       <li>.........</li>

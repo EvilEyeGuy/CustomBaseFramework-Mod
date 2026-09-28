@@ -15,19 +15,21 @@
       <li><symbol>b</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>f</symbol><thing>TorchLamp</thing></li>
       <li><symbol>g</symbol><thing>SculptureLarge</thing><stuff>BlocksMarble</stuff></li>
-      <li><symbol>i</symbol><anchor>StandA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
-      <li><symbol>j</symbol><thing>Beer</thing><count>10</count></li>
-      <li><symbol>k</symbol><anchor>StandB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
-      <li><symbol>l</symbol><anchor>StandE</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
-      <li><symbol>m</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
-      <li><symbol>n</symbol><thing>RawCorn</thing><count>30</count></li>
-      <li><symbol>o</symbol><thing>Cloth</thing><count>20</count></li>
-      <li><symbol>p</symbol><anchor>StandD</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
-      <li><symbol>q</symbol><anchor>Haendler</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>r</symbol><anchor>StandC</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
-      <li><symbol>s</symbol><terrain>FlagstoneGranite</terrain></li>
-      <li><symbol>t</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>u</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>j</symbol><anchor>StandA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
+      <li><symbol>k</symbol><thing>Beer</thing><count>10</count></li>
+      <li><symbol>l</symbol><anchor>StandB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
+      <li><symbol>m</symbol><anchor>StandE</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
+      <li><symbol>n</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
+      <li><symbol>o</symbol><thing>RawCorn</thing><count>30</count></li>
+      <li><symbol>p</symbol><thing>Cloth</thing><count>20</count></li>
+      <li><symbol>q</symbol><anchor>StandD</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
+      <li><symbol>r</symbol><anchor>Haendler</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>s</symbol><anchor>StandC</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Markt</lootTable></li>
+      <li><symbol>t</symbol><terrain>FlagstoneGranite</terrain></li>
+      <li><symbol>u</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
+      <li><symbol>x</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>y</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>..##############..</li>
@@ -49,10 +51,10 @@
       <li>..................</li>
       <li>..................</li>
       <li>..................</li>
-      <li>............sss...</li>
-      <li>...sss......sss...</li>
-      <li>...sss......sss...</li>
-      <li>...sss............</li>
+      <li>............ttt...</li>
+      <li>...ttt......ttt...</li>
+      <li>...ttt......ttt...</li>
+      <li>...ttt............</li>
       <li>..................</li>
       <li>..................</li>
       <li>..................</li>
@@ -60,19 +62,19 @@
       <li>..................</li>
     </terrain>
     <things>
-      <li>........a.........</li>
-      <li>..t...j...........</li>
-      <li>............t.....</li>
+      <li>u.......a........u</li>
+      <li>..x...k...........</li>
+      <li>............x.....</li>
       <li>........bbb.......</li>
       <li>a...........f....a</li>
       <li>...f.........g....</li>
-      <li>....g..t......f...</li>
-      <li>.....f..........n.</li>
-      <li>o...............n.</li>
-      <li>o........u...t....</li>
+      <li>....g..x......f...</li>
+      <li>.....f..........o.</li>
+      <li>p...............o.</li>
+      <li>p........y...x....</li>
       <li>..................</li>
-      <li>..t.............j.</li>
-      <li>..........n.......</li>
+      <li>..x.............k.</li>
+      <li>u.........o......u</li>
     </things>
     <roof>
       <li>..................</li>
@@ -90,19 +92,19 @@
       <li>..................</li>
     </roof>
     <anchors>
+      <li>i................i</li>
+      <li>..jjj.............</li>
+      <li>............lll...</li>
       <li>..................</li>
-      <li>..iii.............</li>
-      <li>............kkk...</li>
       <li>..................</li>
       <li>..................</li>
-      <li>..................</li>
-      <li>.......lll........</li>
-      <li>.........mmm......</li>
-      <li>.........mmm......</li>
-      <li>.........mmm.ppp..</li>
-      <li>.........q........</li>
-      <li>..rrr.............</li>
-      <li>..................</li>
+      <li>.......mmm........</li>
+      <li>.........nnn......</li>
+      <li>.........nnn......</li>
+      <li>.........nnn.qqq..</li>
+      <li>.........r........</li>
+      <li>..sss.............</li>
+      <li>i................i</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

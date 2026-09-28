@@ -17,8 +17,19 @@
   <CBF_AllBuildableCancelled>{0} offene Bauaufträge nachgetragener Gebäude abgebrochen, das Material liegt wieder bereit.</CBF_AllBuildableCancelled>
   <CBF_Cfg_RoadWidth>Wege dürfen höchstens {0} Felder breit sein.</CBF_Cfg_RoadWidth>
   <CBF_Cfg_MapSize>Eine Kartengröße unter 150 lässt Angreifern keinen Rand.</CBF_Cfg_MapSize>
+  <CBF_Cfg_NoMaterialList>Der Ortstyp nennt keine Materialliste. Ohne sie baut RimWorld an seiner Stelle eine gewöhnliche Siedlung.</CBF_Cfg_NoMaterialList>
   <CBF_Cfg_NoBudget>Der Ortstyp hat kein Bauprogramm.</CBF_Cfg_NoBudget>
   <CBF_Cfg_Range>{0} muss zwischen {1} und {2} liegen.</CBF_Cfg_Range>
+  <CBF_Cfg_RiafHolding>riafHolding „{0}“ ist unbekannt. Erlaubt sind {1}. Der Ortstyp wird für RIAF-Holdings nie gewählt.</CBF_Cfg_RiafHolding>
+  <CBF_Cfg_MineRange>Mine {0}: {1} muss zwischen {2} und {3} liegen, der Planer begrenzt den Wert.</CBF_Cfg_MineRange>
+  <CBF_Cfg_MineMin>Mine {0}: {1} muss mindestens {2} sein, der Planer hebt den Wert an.</CBF_Cfg_MineMin>
+  <CBF_Cfg_MineSupportSize>Mine {0}: die Stütze {1} muss size (2,1) haben, also 2 Felder breit und 1 tief, sonst wird keine gesetzt.</CBF_Cfg_MineSupportSize>
+  <CBF_Cfg_MineSupportNarrow>Mine {0}: Stützen brauchen einen 2 Felder breiten Gang, breite erlaubt höchstens 1. Es wird keine Stütze gesetzt.</CBF_Cfg_MineSupportNarrow>
+  <CBF_Cfg_MineVein>Mine {0}: ader {1} ist kein abbaubarer Fels. Nimm eine Erzader wie MineableSteel.</CBF_Cfg_MineVein>
+  <CBF_Cfg_MineRangeOrder>Mine {0}: bei {1} ist der kleinste Wert größer als der größte.</CBF_Cfg_MineRangeOrder>
+  <CBF_Cfg_MineChamberItems>Mine {0}: kammern ist 0, trotzdem stehen Dinge mit ort Kammer (auch ohne Angabe von ort). Sie finden keinen Platz.</CBF_Cfg_MineChamberItems>
+  <CBF_Cfg_MineItemEmpty>Mine {0}: ein Eintrag in dinge nennt weder thing noch liste und entfällt.</CBF_Cfg_MineItemEmpty>
+  <CBF_Cfg_MineItemPlace>Mine {0}: unbekannter ort „{1}“, erlaubt sind Kammer, Gang und Eingang. Der Eintrag entfällt.</CBF_Cfg_MineItemPlace>
   <CBF_Cfg_NoPlants>Die Pflanzenliste enthält keine Pflanzen.</CBF_Cfg_NoPlants>
   <CBF_Cfg_EntryNoPlant>Ein Eintrag hat keine Pflanze.</CBF_Cfg_EntryNoPlant>
   <CBF_Cfg_NoWeight>{0} hat kein positives Gewicht.</CBF_Cfg_NoWeight>
@@ -38,6 +49,7 @@
   <CBF_Planner_StageWalls>Befestigung und Torwege</CBF_Planner_StageWalls>
   <CBF_Planner_StageTowers>Turmanschlüsse</CBF_Planner_StageTowers>
   <CBF_Planner_StageBuildings>Gebäude und Äcker</CBF_Planner_StageBuildings>
+  <CBF_Planner_StageFehler>Programmfehler in dieser Lage</CBF_Planner_StageFehler>
   <CBF_Planner_NoWall>Die befestigte Stadt braucht eine definierte Mauervorlage.</CBF_Planner_NoWall>
   <CBF_Planner_BadSettings>Ungültige Abstands-, Tor- oder Wegeinstellungen.</CBF_Planner_BadSettings>
   <CBF_Planner_BadCount>Ungültige Stückzahl oder Ebene.</CBF_Planner_BadCount>
@@ -63,6 +75,9 @@
   <CBF_Planner_MissingWard>Stadtteildefinition fehlt für Ebene {0}.</CBF_Planner_MissingWard>
   <CBF_Planner_MissingWall>Keine verfügbare Mauervorlage für Ebene {0}.</CBF_Planner_MissingWall>
   <CBF_Planner_WallShape>Mauervorlage {0} braucht eine definierte Außenseite und ein Segmentprofil. Automatisches Ersetzen ist nicht erlaubt.</CBF_Planner_WallShape>
+  <CBF_Planner_OffeneStadt>Die Stadt hat kein Mauerstück und bleibt offen.</CBF_Planner_OffeneStadt>
+  <CBF_Planner_WallSkipped>Ebene {0}: das Mauerstück {1} taugt nicht als Mauer, das nächste Stück der Liste wird genommen.</CBF_Planner_WallSkipped>
+  <CBF_Planner_WardOpen>Ebene {0}: kein Mauerstück taugt als Mauer, der Stadtteil bleibt offen.</CBF_Planner_WardOpen>
   <CBF_Planner_WallDepth>Nicht unterstützte Mauertiefe von {0}.</CBF_Planner_WallDepth>
   <CBF_Planner_WallProfile>Mauerprofil muss aus Wand und Wehrgang bestehen: {0}.</CBF_Planner_WallProfile>
   <CBF_Planner_WallEdge>Mauerprofil braucht eine geschlossene Außenkante: {0}.</CBF_Planner_WallEdge>
@@ -77,6 +92,9 @@
   <CBF_Machbar_Failed>Die Prüfung ist gescheitert: {0}</CBF_Machbar_Failed>
   <CBF_Machbar_TooBig>Die Bestellungen brauchen {0} Felder Kantenlänge, möglich sind {1} bei mapSize {2}. Was nicht hineinpasst, wird nicht gebaut.</CBF_Machbar_TooBig>
   <CBF_Machbar_Tight>Die Bestellungen brauchen {0} von {1} möglichen Feldern Kantenlänge. Auf engem Gelände wird das knapp.</CBF_Machbar_Tight>
+  <CBF_Machbar_WallUnusable>Das Mauerstück {0} in Ebene {1} taugt nicht als Mauer: {2} Der Planer nimmt das nächste Stück der Liste.</CBF_Machbar_WallUnusable>
+  <CBF_Machbar_WallMissing>Das Mauerstück {0} in Ebene {1} ist nicht verfügbar, weil die Mod fehlt oder das Stück abgeschaltet ist. Der Planer nimmt das nächste Stück der Liste.</CBF_Machbar_WallMissing>
+  <CBF_Machbar_WallNone>Kein Mauerstück in Ebene {0} taugt als Mauer. Der Stadtteil bleibt ohne Mauer. Ein Mauerstück muss 1 Feld breit und höchstens 5 Felder tief sein, nur aus Wand und Wehrgang bestehen und außen wie innen mit Wand enden.</CBF_Machbar_WallNone>
   <CBF_Machbar_NoPiece>{0} in Ebene {1}: dazu gibt es kein Stück mit den Stilen dieses Ortstyps.</CBF_Machbar_NoPiece>
   <CBF_Machbar_PieceTooBig>{0} in Ebene {1}: das kleinste passende Stück ist {2} Felder breit, der Bezirk bietet {3}.</CBF_Machbar_PieceTooBig>
   <CBF_Machbar_PieceTight>{0} in Ebene {1}: das kleinste passende Stück ist {2} Felder breit bei {3} verfügbaren. Auf zerklüftetem Gelände findet es oft keinen Platz.</CBF_Machbar_PieceTight>
@@ -107,6 +125,7 @@
   <CBF_Pen_NoSpace>Für das Gehege {0} wurde kein geschlossener Platz mit Wegzugang gefunden.</CBF_Pen_NoSpace>
   <CBF_Mine_NoHut>Für die Mine {0} steht keine Hütte im Ort. Die Mine entfällt.</CBF_Mine_NoHut>
   <CBF_Mine_NoRock>Für die Mine {0} liegt kein Berg mit genug Fels nahe einer Hütte. Die Mine entfällt.</CBF_Mine_NoRock>
+  <CBF_Mine_NoChamber>Für die Mine {0} passte keine Kammer in den Fels. Der Stollen bleibt ohne Kammer, Dinge für die Kammer fehlen.</CBF_Mine_NoChamber>
   <CBF_ChoosePlants>Feldfrüchte wählen</CBF_ChoosePlants>
   <CBF_ChoosePlantsHint>{0} gewählt. Kachel anklicken zum Hinzufügen oder Entfernen.</CBF_ChoosePlantsHint>
   <CBF_Apply>Übernehmen</CBF_Apply>
@@ -326,6 +345,8 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
 
   <CBF_Planner_Abtragrueckbau>Frühere Felsabtragungen außerhalb der Stadt zurückgenommen, {0} Felder bleiben Fels.</CBF_Planner_Abtragrueckbau>
   <CBF_Planner_Anbauten>{0} Anbauten an Gebäude gesetzt.</CBF_Planner_Anbauten>
+  <CBF_Planner_Anlaufbremse>Die Füllphase dieser Lage wurde nach {0} Sekunden beendet, damit der Kartenbau nicht zu lange steht.</CBF_Planner_Anlaufbremse>
+  <CBF_Planner_AnlaufFehler>{0} Lage(n) brachen mit einem Programmfehler ab ({1}). Die Suche lief mit den übrigen Lagen weiter.</CBF_Planner_AnlaufFehler>
   <CBF_Planner_Aufgeschuettet>{0} Sumpffelder in der Siedlung und unter Wegen, Mauern und Zäunen aufgeschüttet.</CBF_Planner_Aufgeschuettet>
   <CBF_Planner_AusgangUeberWasser>Kein Ausgang nach {0}: der Weg zum Kartenrand führt dort über Wasser.</CBF_Planner_AusgangUeberWasser>
   <CBF_Planner_Bergraeumen>Ebene {0}: {1} Felsfelder abgetragen.</CBF_Planner_Bergraeumen>
@@ -341,19 +362,24 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_Planner_Flussuebergang>{0} Brücke(n) über den Fluss geplant. Die Vorstadt bekommt dafür {1} Felder mehr.</CBF_Planner_Flussuebergang>
   <CBF_Planner_Gasse>{0} erreichte das Wegenetz nicht und bekam eine Gasse mit {1} Feldern.</CBF_Planner_Gasse>
   <CBF_Planner_GateHoleInstead>Ebene {0}: auch nach vielen Lagen kein Platz für ein Torhaus. Die Mauer bekommt dort einen offenen Durchgang.</CBF_Planner_GateHoleInstead>
-  <CBF_Planner_GateMinimum>Jede ummauerte Ebene braucht mindestens ein Torhaus. Ein offener Durchgang zählt nicht.</CBF_Planner_GateMinimum>
+  <CBF_Planner_GateMinimum>Jede ummauerte Ebene braucht ein Tor: ein Torhaus oder, wenn im Notlauf keines Platz findet, einen offenen Durchgang. Hier fehlt beides.</CBF_Planner_GateMinimum>
   <CBF_Planner_GateMissing>Ebene {0}: das eingetragene Torhaus {1} ist nicht verfügbar oder dort nicht erlaubt.</CBF_Planner_GateMissing>
   <CBF_Planner_IslandDropped>Ein abgetrenntes Stück Stadt oder Vorstadt wurde aufgegeben.</CBF_Planner_IslandDropped>
   <CBF_Planner_IslandEmpty>Ebene {0}: ein abgetrenntes Stück mit {1} Feldern bietet keinem Gebäude Platz.</CBF_Planner_IslandEmpty>
   <CBF_Planner_Kantenglaetten>Ebene {0}: Umriss mit Fensterbreite {1} geglättet, {2} Felder dazu, {3} weg.</CBF_Planner_Kantenglaetten>
+  <CBF_Planner_Maengelzeile>{0}: Der Ort wurde mit Mängeln gebaut. {1}</CBF_Planner_Maengelzeile>
+  <CBF_Planner_MaengelWeitere>Dazu {0} weitere Mängel.</CBF_Planner_MaengelWeitere>
   <CBF_Planner_Marge>{0} in Ebene {1}: {2} von {3} gesetzt. Der Rest liegt in der Toleranz.</CBF_Planner_Marge>
   <CBF_Planner_Mauerversatz>Ebene {0}: Mauerlinie abschnittsweise versetzt, {1} Felder zurückgenommen.</CBF_Planner_Mauerversatz>
   <CBF_Planner_Nachschlag>{0} lag unter der Mindestzahl. Mit Geländeeingriffen kamen weitere dazu, {1} Felder verändert.</CBF_Planner_Nachschlag>
   <CBF_Planner_NoSpot>Kein Platz für {0}. Geprüft: {1} Stellen mit genug Baufläche, davon {2} mit Wegzugang, davon {3} ganz passend.</CBF_Planner_NoSpot>
+  <CBF_Planner_Repariert>Reparatur: {0} Bau(ten) mit Überschneidung oder ohne Weganschluss entfernt: {1}. Sie fehlen jetzt in der Stückliste.</CBF_Planner_Repariert>
   <CBF_Planner_Seefuellen>{0} Seefelder im Siedlungsgebiet aufgeschüttet.</CBF_Planner_Seefuellen>
   <CBF_Planner_Sickerstelle>Die Befestigung ist undicht: {0} Felder in Stadt oder Vorstadt sind von außen erreichbar.</CBF_Planner_Sickerstelle>
+  <CBF_Planner_StadtGanzAufgegeben>In {0} gebauten Lagen war die Stadt nie zusammenhängend. Der Planer verlangt das nicht mehr, die Stadt darf geteilt sein.</CBF_Planner_StadtGanzAufgegeben>
   <CBF_Planner_StadtGeteilt>Die Stadt ist geteilt: {0} Felder hängen nicht am größten zusammenhängenden Teil.</CBF_Planner_StadtGeteilt>
   <CBF_Planner_Sumpfbruecke>{0} Wegfelder über Sumpf bekamen eine Brücke.</CBF_Planner_Sumpfbruecke>
+  <CBF_Planner_Torloecher>{0} Tor(e) ohne Torhaus: Die Mauer hat dort nur einen offenen Durchgang. Der Ort wird mit diesem Mangel gebaut.</CBF_Planner_Torloecher>
   <CBF_Planner_TrotzdemGebaut>Letzte Lage: trotz der Mängel an Mauer oder Toren wird gebaut.</CBF_Planner_TrotzdemGebaut>
   <CBF_Planner_Uferbruecke>Brücke zwischen Stadt und Vorstadt über das Wasser gelegt, {0} Felder.</CBF_Planner_Uferbruecke>
   <CBF_Planner_Uferenge>Brückenenden: {0} Wasserfelder am Ufer aufgeschüttet.</CBF_Planner_Uferenge>
@@ -368,6 +394,8 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_Planner_WallOpen>Die Mauer ist nicht geschlossen.</CBF_Planner_WallOpen>
   <CBF_Planner_WardEroded>Ebene {0}: {1} Felder in zu schmalen Ausläufern aufgegeben.</CBF_Planner_WardEroded>
   <CBF_Planner_ZwickelGefuellt>Eingeschlossene Lücken gefüllt: {0} Felder zur Stadt, {1} zur Vorstadt.</CBF_Planner_ZwickelGefuellt>
+  <CBF_Planner_Felstasche>Kleine Taschen zwischen Ort und Fels zum Ort genommen, die Mauer endet dort am Fels: {0} Felder zur Stadt, {1} zur Vorstadt.</CBF_Planner_Felstasche>
+  <CBF_Planner_VorstadtmauerOffen>Offene Stadt: die Vorstadtmauer hat eine Lücke nach außen. Das ist bei offener Stadt erlaubt, der Ort wird so gebaut.</CBF_Planner_VorstadtmauerOffen>
   <CBF_Planner_IslandUnlinked>Ein Vorstadtstück mit {0} Feldern hat keinen Weg zur Stadt.</CBF_Planner_IslandUnlinked>
   <CBF_Planner_NoEscape>Ein Vorstadtstück ({0}, {1} Felder) bekam weder Torhaus noch Durchgang.</CBF_Planner_NoEscape>
   <CBF_Planner_NoFrontage>Ebene {0}: für ein Stück der Größe {1} fand sich kein Torvorplatz.</CBF_Planner_NoFrontage>

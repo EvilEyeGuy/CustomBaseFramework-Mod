@@ -34,6 +34,15 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Anbau_Gilde</defName>
+    <label>CBF_MO_Anbau_Gilde</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Anbau_Hof</defName>
     <label>Anbau Hof</label>
     <zones>
@@ -306,6 +315,12 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
+    <anbauten>
+      <li>CBF_MO_Anbau_Gilde</li>
+      <li>CBF_MO_Anbau_Stadt</li>
+    </anbauten>
+    <anbauChance>0.8</anbauChance>
+    <anbauMax>2</anbauMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>

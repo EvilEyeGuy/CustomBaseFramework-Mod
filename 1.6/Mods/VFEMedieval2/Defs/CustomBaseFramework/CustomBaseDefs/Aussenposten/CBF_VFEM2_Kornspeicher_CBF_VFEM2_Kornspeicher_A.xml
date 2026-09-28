@@ -14,15 +14,17 @@
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>Hay</thing><count>60</count></li>
-      <li><symbol>b</symbol><thing>Hay</thing><count>30</count></li>
-      <li><symbol>f</symbol><anchor>Arbeiter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>g</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
-      <li><symbol>i</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
-      <li><symbol>j</symbol><anchor>Sack2</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>k</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>l</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>m</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>b</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
+      <li><symbol>f</symbol><thing>Hay</thing><count>60</count></li>
+      <li><symbol>g</symbol><thing>Hay</thing><count>30</count></li>
+      <li><symbol>i</symbol><anchor>Arbeiter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>j</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
+      <li><symbol>k</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
+      <li><symbol>l</symbol><anchor>Sack2</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>m</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>n</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>o</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
     </legend>
     <mask>
@@ -54,15 +56,15 @@
     <things>
       <li>OOOOOOO......</li>
       <li>O.....O......</li>
-      <li>O.....O......</li>
+      <li>O.a.a.O......</li>
       <li>O.....OOOOOO.</li>
-      <li>O........k.O.</li>
+      <li>O........m.O.</li>
       <li>O..........O.</li>
-      <li>OOOO......lO.</li>
-      <li>...Om......O.</li>
+      <li>OOOO......nO.</li>
+      <li>.b.Oo......O.</li>
       <li>...OOOOFOOOO.</li>
-      <li>a............</li>
-      <li>.........b...</li>
+      <li>f............</li>
+      <li>.........g...</li>
     </things>
     <roof>
       <li>^^^^^^^......</li>
@@ -82,10 +84,10 @@
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
-      <li>.....f...gg..</li>
-      <li>..........i..</li>
-      <li>..........i..</li>
-      <li>....j........</li>
+      <li>.....i...jj..</li>
+      <li>..........k..</li>
+      <li>..........k..</li>
+      <li>....l........</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>

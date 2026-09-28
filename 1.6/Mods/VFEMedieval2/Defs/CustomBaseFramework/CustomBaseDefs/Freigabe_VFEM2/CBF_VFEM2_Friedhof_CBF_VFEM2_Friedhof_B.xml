@@ -8,28 +8,30 @@
     <categories>
       <li>CBF_VFEM2_Friedhof</li>
     </categories>
+    <ausWennMod>Van.DACrypts</ausWennMod>
     <style>CBF_VFEM2</style>
     <traufen>true</traufen>
     <legend>
-      <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>Fence</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>b</symbol><thing>Sarcophagus</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
-      <li><symbol>f</symbol><thing>Grave</thing><rotation>South</rotation></li>
-      <li><symbol>g</symbol><thing>Grave</thing><rotation>North</rotation></li>
+      <li><symbol>a</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>b</symbol><thing>Fence</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>f</symbol><thing>Sarcophagus</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>g</symbol><thing>Grave</thing><rotation>South</rotation></li>
       <li><symbol>h</symbol><terrain>TileLimestone</terrain></li>
-      <li><symbol>i</symbol><thing>Plant_TreeOak</thing></li>
-      <li><symbol>j</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>k</symbol><thing>Grave</thing><rotation>East</rotation></li>
-      <li><symbol>l</symbol><thing>SculptureLarge</thing><stuff>BlocksMarble</stuff></li>
-      <li><symbol>m</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
-      <li><symbol>n</symbol><thing>Plant_TreeCypress</thing></li>
-      <li><symbol>o</symbol><thing>Grave</thing><rotation>West</rotation></li>
-      <li><symbol>p</symbol><thing>Column</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>q</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>r</symbol><thing>FenceGate</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>s</symbol><anchor>Grabbeigaben</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>t</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>Grave</thing><rotation>North</rotation></li>
+      <li><symbol>j</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>k</symbol><thing>Plant_TreeOak</thing></li>
+      <li><symbol>l</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>m</symbol><thing>Grave</thing><rotation>East</rotation></li>
+      <li><symbol>n</symbol><thing>SculptureLarge</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>o</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
+      <li><symbol>p</symbol><thing>Plant_TreeCypress</thing></li>
+      <li><symbol>q</symbol><thing>Grave</thing><rotation>West</rotation></li>
+      <li><symbol>r</symbol><thing>Column</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>s</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>t</symbol><thing>FenceGate</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>u</symbol><anchor>Grabbeigaben</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>x</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>.......#######...</li>
@@ -62,19 +64,19 @@
       <li>.................</li>
     </terrain>
     <things>
-      <li>.......SSSSSSS...</li>
-      <li>...aaaaS.....S...</li>
-      <li>...a...Sb...bS...</li>
-      <li>.aaaf.gS..t..Sa..</li>
-      <li>.a.....S.....Saaa</li>
-      <li>aai....SSSjSSSk.a</li>
-      <li>a....l.m........a</li>
-      <li>an..m....g.g...aa</li>
-      <li>a.....o.......na.</li>
-      <li>aa..p....i.....a.</li>
-      <li>.af........qaaaa.</li>
-      <li>.aaaaf...o..a....</li>
-      <li>....aaaraaaaa....</li>
+      <li>.......aaaaaaa...</li>
+      <li>...bbbba.....a...</li>
+      <li>...b...af...fa...</li>
+      <li>.bbbg.ia..x..ab..</li>
+      <li>.b.....aj...jabbb</li>
+      <li>bbk....aaalaaam.b</li>
+      <li>b....n.o........b</li>
+      <li>bp..o....i.i...bb</li>
+      <li>b.....q.......pb.</li>
+      <li>bb..r....k.....b.</li>
+      <li>.bg........sbbbb.</li>
+      <li>.bbbbg...q..b....</li>
+      <li>....bbbtbbbbb....</li>
     </things>
     <roof>
       <li>.......^^^^^^^...</li>
@@ -95,7 +97,7 @@
       <li>.................</li>
       <li>.................</li>
       <li>.................</li>
-      <li>..........s......</li>
+      <li>..........u......</li>
       <li>.................</li>
       <li>.................</li>
       <li>.................</li>

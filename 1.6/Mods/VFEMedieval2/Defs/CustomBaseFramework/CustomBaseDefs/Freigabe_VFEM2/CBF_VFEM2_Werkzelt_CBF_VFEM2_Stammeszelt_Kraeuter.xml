@@ -16,12 +16,14 @@
       <li><symbol>a</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
       <li><symbol>b</symbol><thing>VFEM2_ClothWall</thing><stuff>Cloth</stuff></li>
       <li><symbol>f</symbol><thing>VFEM2_AilmentsShelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>g</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>i</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>j</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>k</symbol><terrain>StrawMatting</terrain></li>
-      <li><symbol>l</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>m</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>g</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>VFEM2_CleaverRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>j</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>k</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>l</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>m</symbol><terrain>StrawMatting</terrain></li>
+      <li><symbol>n</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>o</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>...#..#...</li>
@@ -37,24 +39,24 @@
     </mask>
     <terrain>
       <li>..........</li>
-      <li>...kkkk...</li>
-      <li>..kkkkkk..</li>
-      <li>.kkkkkkkk.</li>
-      <li>.kkkkkkkk.</li>
-      <li>.kkkkkkkk.</li>
-      <li>.kkkkkkkk.</li>
-      <li>..kkkkkk..</li>
-      <li>...kkkk...</li>
+      <li>...mmmm...</li>
+      <li>..mmmmmm..</li>
+      <li>.mmmmmmmm.</li>
+      <li>.mmmmmmmm.</li>
+      <li>.mmmmmmmm.</li>
+      <li>.mmmmmmmm.</li>
+      <li>..mmmmmm..</li>
+      <li>...mmmm...</li>
       <li>..........</li>
     </terrain>
     <things>
       <li>...a..a...</li>
       <li>...bbbb...</li>
       <li>..bb..bb..</li>
-      <li>abbf...bba</li>
+      <li>abbf.g.bba</li>
       <li>.b......b.</li>
-      <li>.b....l.b.</li>
-      <li>abb...mbba</li>
+      <li>.b....n.b.</li>
+      <li>abbi..obba</li>
       <li>..bb..bb..</li>
       <li>...bFbb...</li>
       <li>......a...</li>
@@ -77,8 +79,8 @@
       <li>..........</li>
       <li>..........</li>
       <li>..........</li>
-      <li>....g.i...</li>
-      <li>......j...</li>
+      <li>....j.k...</li>
+      <li>......l...</li>
       <li>..........</li>
       <li>..........</li>
       <li>..........</li>

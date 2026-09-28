@@ -24,11 +24,13 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>q</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li><symbol>x</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList><pawnCount>1</pawnCount></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
     </legend>
     <mask>
       <li>..#####..</li>
@@ -58,9 +60,9 @@
       <li>MS.C..CSM</li>
       <li>S.......S</li>
       <li>SJ..Q.a.S</li>
-      <li>S.......S</li>
-      <li>MS.b...SM</li>
-      <li>.SS.g.SS.</li>
+      <li>Sb.....bS</li>
+      <li>MS.g...SM</li>
+      <li>.SS.i.SS.</li>
       <li>..MSSSM..</li>
     </things>
     <roof>
@@ -80,7 +82,7 @@
       <li>....8....</li>
       <li>.........</li>
       <li>R.......R</li>
-      <li>..9...x..</li>
+      <li>.§9...x§.</li>
       <li>...qq....</li>
       <li>....1....</li>
       <li>....R....</li>

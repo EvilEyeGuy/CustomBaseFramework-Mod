@@ -17,13 +17,14 @@
       <li><symbol>a</symbol><thing>VFEM2_TailoringLoom</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>b</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
       <li><symbol>f</symbol><thing>Bed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>g</symbol><anchor>Stofffass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>i</symbol><anchor>Weber</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>j</symbol><anchor>Tuchkiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>k</symbol><thing>Cloth</thing><count>20</count></li>
-      <li><symbol>l</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>m</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>n</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>g</symbol><thing>VFEM2_LeatherBoilpot</thing><rotation>South</rotation></li>
+      <li><symbol>i</symbol><anchor>Stofffass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>j</symbol><anchor>Weber</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>k</symbol><anchor>Tuchkiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>l</symbol><thing>Cloth</thing><count>20</count></li>
+      <li><symbol>m</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>n</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>o</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
     </legend>
     <mask>
@@ -50,13 +51,13 @@
     </terrain>
     <things>
       <li>TTTTTTTT...</li>
-      <li>Ta..a.mT...</li>
+      <li>Ta..a.nT...</li>
       <li>T......T...</li>
-      <li>T..a.n.T...</li>
+      <li>T..a.o.T...</li>
       <li>TFTTTTFT...</li>
       <li>T..T...b...</li>
-      <li>T.fT.k.....</li>
-      <li>T.nT.k..k..</li>
+      <li>T.fT.l..g..</li>
+      <li>T.oT.l..l..</li>
       <li>TTTT.......</li>
     </things>
     <roof>
@@ -72,13 +73,13 @@
     </roof>
     <anchors>
       <li>...........</li>
-      <li>......g....</li>
-      <li>...i.......</li>
-      <li>.....j.....</li>
+      <li>......i....</li>
+      <li>...j.......</li>
+      <li>.....k.....</li>
       <li>...........</li>
       <li>...........</li>
       <li>...........</li>
-      <li>..l........</li>
+      <li>..m........</li>
       <li>...........</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

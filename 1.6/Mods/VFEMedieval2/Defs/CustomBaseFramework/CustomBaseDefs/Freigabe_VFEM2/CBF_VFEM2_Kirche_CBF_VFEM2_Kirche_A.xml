@@ -11,22 +11,22 @@
     <style>CBF_VFEM2</style>
     <traufen>true</traufen>
     <legend>
-      <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
-      <li><symbol>b</symbol><thing>Column</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
-      <li><symbol>f</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>g</symbol><thing>VFEM2_2x1CastleDoor</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>i</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>j</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
-      <li><symbol>k</symbol><anchor>Kirchenschatz</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>l</symbol><anchor>Priester</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>m</symbol><anchor>Schreibregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
-      <li><symbol>n</symbol><terrain>TileMarble</terrain></li>
-      <li><symbol>o</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
-      <li><symbol>p</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>North</rotation></li>
-      <li><symbol>q</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>r</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>a</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>b</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
+      <li><symbol>f</symbol><thing>Column</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
+      <li><symbol>g</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>i</symbol><thing>VFEM2_2x1CastleDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>j</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>k</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
+      <li><symbol>l</symbol><anchor>Kirchenschatz</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>m</symbol><anchor>Priester</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>n</symbol><anchor>Schreibregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
+      <li><symbol>o</symbol><terrain>TileMarble</terrain></li>
+      <li><symbol>p</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
+      <li><symbol>q</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>North</rotation></li>
+      <li><symbol>r</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>s</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>.....###.....</li>
@@ -47,46 +47,46 @@
       <li>...#######...</li>
     </mask>
     <terrain>
-      <li>.....nnn.....</li>
-      <li>....nnnnn....</li>
-      <li>....nooon....</li>
-      <li>....nooon....</li>
-      <li>nnnnnnnnnnnnn</li>
-      <li>nnnnnnnnnnnnn</li>
-      <li>nnnnnnnnnnnnn</li>
-      <li>nnnnnnnnnnnnn</li>
-      <li>nnnnnnnnnnnnn</li>
-      <li>...nnnnnnn...</li>
-      <li>...nnnnnnn...</li>
-      <li>...nnnnnnn...</li>
-      <li>...nnnnnnn...</li>
-      <li>...nnnnnnn...</li>
-      <li>...nnnnnnn...</li>
-      <li>...nnnnnnn...</li>
+      <li>.....ooo.....</li>
+      <li>....ooooo....</li>
+      <li>....opppo....</li>
+      <li>....opppo....</li>
+      <li>ooooooooooooo</li>
+      <li>ooooooooooooo</li>
+      <li>ooooooooooooo</li>
+      <li>ooooooooooooo</li>
+      <li>ooooooooooooo</li>
+      <li>...ooooooo...</li>
+      <li>...ooooooo...</li>
+      <li>...ooooooo...</li>
+      <li>...ooooooo...</li>
+      <li>...ooooooo...</li>
+      <li>...ooooooo...</li>
+      <li>...ooooooo...</li>
     </terrain>
     <things>
-      <li>.....SSS.....</li>
-      <li>....SSaSS....</li>
-      <li>....S...S....</li>
-      <li>....S...S....</li>
-      <li>SSSSS...SSSSS</li>
-      <li>S...a...a..qS</li>
-      <li>S...........S</li>
-      <li>Sp..b....r.bS</li>
-      <li>SSSS.....SSSS</li>
-      <li>...S.fff.S...</li>
-      <li>...S.fff.S...</li>
-      <li>...S.fff.S...</li>
-      <li>...S.fff.S...</li>
-      <li>...S.....S...</li>
-      <li>...S.....S...</li>
-      <li>...SSg.SSS...</li>
+      <li>.....aaa.....</li>
+      <li>....aabaa....</li>
+      <li>....a...a....</li>
+      <li>....a...a....</li>
+      <li>aaaaa...aaaaa</li>
+      <li>a...b...b..ra</li>
+      <li>a...........a</li>
+      <li>aq..f....s.fa</li>
+      <li>aaaa.....aaaa</li>
+      <li>...a.ggg.a...</li>
+      <li>...a.ggg.a...</li>
+      <li>...a.ggg.a...</li>
+      <li>...a.ggg.a...</li>
+      <li>...a.....a...</li>
+      <li>...a.....a...</li>
+      <li>...aai.aaa...</li>
     </things>
     <things2>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
-      <li>.....i.......</li>
+      <li>.....j.......</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
@@ -124,9 +124,9 @@
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
-      <li>.jjj.......k.</li>
-      <li>.jjj..l......</li>
-      <li>.jjj.....mm..</li>
+      <li>.kkk.......l.</li>
+      <li>.kkk..m......</li>
+      <li>.kkk.....nn..</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>

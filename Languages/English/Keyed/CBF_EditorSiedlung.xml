@@ -98,7 +98,7 @@
   <CBF_S_GateFromMaterialList>from material list</CBF_S_GateFromMaterialList>
   <CBF_S_GateTip>The door for the passages in this ward's wall. Empty takes the door from the material list. Gatehouses are set under Fortification.</CBF_S_GateTip>
   <CBF_S_DistrictPlacement>Location of the district</CBF_S_DistrictPlacement>
-  <CBF_S_DistrictPlacementTip>Where the district is seeded. 0 to 1 each, if all are 0 it is placed at random.</CBF_S_DistrictPlacementTip>
+  <CBF_S_DistrictPlacementTip>Where the district starts. Tick what it should lie near. Several ticks count equally, the district seeks a spot that suits all of them. Nothing ticked: it starts at a random spot away from the other districts.</CBF_S_DistrictPlacementTip>
   <CBF_S_WdStage>WD tier</CBF_S_WdStage>
   <CBF_S_WdStageTip>World Domination tier 1 to 4 this settlement type stands for. A World Domination settlement of this tier prefers it among the types its faction may get. 0 means no tier.</CBF_S_WdStageTip>
   <CBF_S_WdStageNone>No tier</CBF_S_WdStageNone>
@@ -176,4 +176,8 @@
   <CBF_S_CoreSizeTip>Edge length of the settlement core in cells, as a range. The suburb and the countryside grow around it.</CBF_S_CoreSizeTip>
   <CBF_FactionPickTags>Category tags</CBF_FactionPickTags>
   <CBF_FactionPickTagInfo>{0} factions: {1}</CBF_FactionPickTagInfo>
+  <CBF_S_LocCenterTip>The district starts as close to the middle of its ward as possible.</CBF_S_LocCenterTip>
+  <CBF_S_LocGateTip>The district starts close to a gate.</CBF_S_LocGateTip>
+  <CBF_S_LocWallTip>The district starts close to the wall of its ward.</CBF_S_LocWallTip>
+  <CBF_S_LocMainTip>The district starts along the main road.</CBF_S_LocMainTip>
 </LanguageData>

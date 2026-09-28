@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_VFEM2_Friedhof_DA_A</defName>
+    <label>CBF_VFEM2_Friedhof_DA_A</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_VFEM2_Friedhof</li>
+    </categories>
+    <nurMitMod>Van.DACrypts</nurMitMod>
+    <style>CBF_VFEM2</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>a</symbol><thing>Fence</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="Van.DACrypts"><symbol>b</symbol><thing>DA_Candles</thing></li>
+      <li MayRequire="Van.DACrypts"><symbol>f</symbol><thing>DA_BurialUrn</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>g</symbol><thing>Grave</thing><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>Plant_TreeCypress</thing></li>
+      <li MayRequire="Van.DACrypts"><symbol>j</symbol><thing>DA_SepulchralBrazier</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="Van.DACrypts"><symbol>k</symbol><thing>DA_GrandSarcophagus</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
+      <li MayRequire="Van.DACrypts"><symbol>l</symbol><thing>DA_HeroicMemorial</thing><stuff>BlocksMarble</stuff></li>
+      <li MayRequire="Van.DACrypts"><symbol>m</symbol><thing>DA_GargoyleStatue</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>n</symbol><thing>Plant_TreeOak</thing></li>
+      <li><symbol>o</symbol><thing>Grave</thing><rotation>West</rotation></li>
+      <li><symbol>p</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>q</symbol><thing>Sarcophagus</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>r</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>s</symbol><thing>Grave</thing><rotation>North</rotation></li>
+      <li><symbol>t</symbol><thing>FenceGate</thing><stuff>BlocksGranite</stuff></li>
+    </legend>
+    <mask>
+      <li>.....#######.....</li>
+      <li>...###########...</li>
+      <li>.###############.</li>
+      <li>.###############.</li>
+      <li>################.</li>
+      <li>#################</li>
+      <li>#################</li>
+      <li>#################</li>
+      <li>#################</li>
+      <li>#################</li>
+      <li>################.</li>
+      <li>..##############.</li>
+      <li>..###########....</li>
+      <li>....#########....</li>
+    </mask>
+    <terrain>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+    </terrain>
+    <things>
+      <li>.....aaaaaaa.....</li>
+      <li>...aaab...faaa...</li>
+      <li>.aaaf...g...iaaa.</li>
+      <li>.a....j...j....a.</li>
+      <li>aa.i.........i.a.</li>
+      <li>a..........b...aa</li>
+      <li>ak.....l......f.a</li>
+      <li>a..k..m...m.g...a</li>
+      <li>a.............n.a</li>
+      <li>a.o....p.p.....aa</li>
+      <li>aaa....p.p.q..fa.</li>
+      <li>..ar.s......aaaa.</li>
+      <li>..aaa.......a....</li>
+      <li>....aaaataaaa....</li>
+    </things>
+    <roof>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

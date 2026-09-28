@@ -12,13 +12,14 @@
     <legend>
       <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>b</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>f</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>g</symbol><anchor>Arbeiter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>i</symbol><anchor>Speisesack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>j</symbol><anchor>Speisefass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>k</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>a</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
+      <li><symbol>b</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>f</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>g</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>i</symbol><anchor>Arbeiter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>j</symbol><anchor>Speisesack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>k</symbol><anchor>Speisefass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>l</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
     </legend>
     <mask>
@@ -41,11 +42,11 @@
     </terrain>
     <things>
       <li>OOOOOOOO.</li>
-      <li>O......O.</li>
-      <li>O.......a</li>
-      <li>O..b.b...</li>
-      <li>Ok.b.bk..</li>
-      <li>a..bfb..a</li>
+      <li>O.a..a.O.</li>
+      <li>O.......b</li>
+      <li>O..f.f...</li>
+      <li>Ol.f.fl..</li>
+      <li>b..fgf..b</li>
       <li>.........</li>
     </things>
     <roof>
@@ -60,9 +61,9 @@
     <anchors>
       <li>.........</li>
       <li>.........</li>
-      <li>..g......</li>
-      <li>.i....j..</li>
-      <li>.i....j..</li>
+      <li>..i......</li>
+      <li>.j....k..</li>
+      <li>.j....k..</li>
       <li>.........</li>
       <li>.........</li>
     </anchors>

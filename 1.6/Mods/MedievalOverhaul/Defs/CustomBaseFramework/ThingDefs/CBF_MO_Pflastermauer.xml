@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="Wall">
+    <defName>CBF_MO_Pflastermauer</defName>
+    <label>rubble stone wall</label>
+    <description>A wall of rough fieldstones set in mortar. Cheaper and quicker to build than a proper stone wall, but it does not hold up as well.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/Cobblestone_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/Cobblestone_MenuIcon</uiIconPath>
+    <uiIconPathsStuff Inherit="False"/>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToBuild>110</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+    </statBases>
+    <stuffCategories Inherit="False">
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>3</costStuffCount>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <building>
+      <paintable>false</paintable>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Atlas_CobbleStone_blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <designationHotKey Inherit="False"/>
+  </ThingDef>
+</Defs>

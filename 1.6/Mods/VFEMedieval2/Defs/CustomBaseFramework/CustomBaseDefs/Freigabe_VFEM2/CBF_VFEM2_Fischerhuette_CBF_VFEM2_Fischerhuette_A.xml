@@ -17,16 +17,18 @@
       <li><symbol>a</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
       <li><symbol>b</symbol><thing>VFEM2_FurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
       <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
-      <li><symbol>f</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>g</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>i</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>j</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>k</symbol><anchor>Hafenvolk</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>l</symbol><thing>Beer</thing><count>10</count></li>
-      <li><symbol>m</symbol><anchor>Wasser</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>n</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
-      <li><symbol>o</symbol><terrain>Bridge</terrain></li>
-      <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>f</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
+      <li><symbol>g</symbol><thing>VFEM2_CleaverRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>j</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>k</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>l</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>m</symbol><anchor>Hafenvolk</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>n</symbol><thing>Beer</thing><count>10</count></li>
+      <li><symbol>o</symbol><anchor>Wasser</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>p</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
+      <li><symbol>q</symbol><terrain>Bridge</terrain></li>
+      <li><symbol>r</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
     </legend>
     <mask>
       <li>#######</li>
@@ -43,29 +45,29 @@
       <li>eeeeeee</li>
       <li>eeeeeee</li>
       <li>eeeeeee</li>
-      <li>eeeenne</li>
+      <li>eeeeppe</li>
       <li>eeeeeee</li>
       <li>.......</li>
-      <li>..ooo..</li>
-      <li>..ooo..</li>
-      <li>..ooo..</li>
+      <li>..qqq..</li>
+      <li>..qqq..</li>
+      <li>..qqq..</li>
     </terrain>
     <things>
       <li>OOOOOOO</li>
       <li>O...a.O</li>
-      <li>Ob...pO</li>
+      <li>Ob...rO</li>
       <li>O.....O</li>
       <li>OOOFOOO</li>
-      <li>......l</li>
-      <li>..f.f..</li>
+      <li>f...g.n</li>
+      <li>..i.i..</li>
       <li>.......</li>
-      <li>..f.f..</li>
+      <li>..i.i..</li>
     </things>
     <things2>
       <li>.......</li>
       <li>.......</li>
       <li>.......</li>
-      <li>....gi.</li>
+      <li>....jk.</li>
       <li>.......</li>
       <li>.......</li>
       <li>.......</li>
@@ -86,13 +88,13 @@
     <anchors>
       <li>.......</li>
       <li>.......</li>
-      <li>.....j.</li>
-      <li>..k....</li>
+      <li>.....l.</li>
+      <li>..m....</li>
       <li>.......</li>
       <li>.......</li>
       <li>.......</li>
       <li>.......</li>
-      <li>..mmm..</li>
+      <li>..ooo..</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

@@ -76,6 +76,8 @@
       <li><symbol>x</symbol><anchor>KisteA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li><symbol>y</symbol><anchor>KisteB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li><symbol>z</symbol><anchor>Prunkruestung3</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Prunkstaender</objects><lootTable>CBF_MO_Loot_Ruestkammer</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>c</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
     </legend>
     <mask>
       <li>#######...............</li>
@@ -136,7 +138,7 @@
       <li>M.....%......?...A.M..</li>
       <li>SSS.........o....SSSS.</li>
       <li>..S.Z............S%.M.</li>
-      <li>..SMS............F..S.</li>
+      <li>..SMS..c..c......F..S.</li>
       <li>....S##P..P...@..SSSS.</li>
       <li>....SSSS..SSSSSSSS....</li>
       <li>.....SSM..MSS.........</li>
@@ -202,7 +204,7 @@
       <li>......qq.....yy.......</li>
       <li>......................</li>
       <li>.........9........uu..</li>
-      <li>..............JJ...l..</li>
+      <li>.......§..§...JJ...l..</li>
       <li>.....fg.......JJ......</li>
       <li>......................</li>
       <li>......................</li>

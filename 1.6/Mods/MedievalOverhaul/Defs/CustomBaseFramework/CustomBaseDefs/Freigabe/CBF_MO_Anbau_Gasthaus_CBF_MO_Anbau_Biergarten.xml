@@ -16,11 +16,12 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_LampPost</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_LogTable1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
-      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><obenauf>true</obenauf></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_OnTop_Kitchen_Plate</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>x</symbol><anchor>FassA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
       <li><symbol>y</symbol><anchor>FassB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
+      <li><symbol>¤</symbol><anchor>Gasthausgeschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.7</chance><obenauf>true</obenauf></li>
     </legend>
     <mask>
       <li>.#####</li>
@@ -43,7 +44,7 @@
     <things2>
       <li>......</li>
       <li>......</li>
-      <li>...f..</li>
+      <li>..fff.</li>
       <li>......</li>
     </things2>
     <roof>
@@ -61,7 +62,7 @@
     <anchorsOver>
       <li>......</li>
       <li>......</li>
-      <li>...a..</li>
+      <li>..¤a¤.</li>
       <li>......</li>
     </anchorsOver>
   </CustomBaseFramework.PieceDef>

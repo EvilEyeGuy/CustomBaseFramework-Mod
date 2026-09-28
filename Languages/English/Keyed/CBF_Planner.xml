@@ -17,7 +17,18 @@
   <CBF_AllBuildableCancelled>{0} open build orders for added buildings were cancelled. The materials are back.</CBF_AllBuildableCancelled>
   <CBF_Cfg_RoadWidth>Roads may be at most {0} cells wide.</CBF_Cfg_RoadWidth>
   <CBF_Cfg_MapSize>A map size below 150 leaves attackers no edge.</CBF_Cfg_MapSize>
+  <CBF_Cfg_NoMaterialList>The settlement type names no material list. Without one, RimWorld builds an ordinary settlement in its place.</CBF_Cfg_NoMaterialList>
   <CBF_Cfg_NoBudget>The settlement type has no building program.</CBF_Cfg_NoBudget>
+  <CBF_Cfg_RiafHolding>riafHolding "{0}" is unknown. Allowed are {1}. The settlement type is never picked for RIAF holdings.</CBF_Cfg_RiafHolding>
+  <CBF_Cfg_MineRange>Mine {0}: {1} must be between {2} and {3}, the planner clamps the value.</CBF_Cfg_MineRange>
+  <CBF_Cfg_MineMin>Mine {0}: {1} must be at least {2}, the planner raises the value.</CBF_Cfg_MineMin>
+  <CBF_Cfg_MineSupportSize>Mine {0}: the support {1} must have size (2,1), 2 cells wide and 1 deep, otherwise none is placed.</CBF_Cfg_MineSupportSize>
+  <CBF_Cfg_MineSupportNarrow>Mine {0}: supports need a tunnel 2 cells wide, but breite allows at most 1. No support is placed.</CBF_Cfg_MineSupportNarrow>
+  <CBF_Cfg_MineVein>Mine {0}: ader {1} is not mineable rock. Use an ore vein such as MineableSteel.</CBF_Cfg_MineVein>
+  <CBF_Cfg_MineRangeOrder>Mine {0}: the minimum of {1} is larger than its maximum.</CBF_Cfg_MineRangeOrder>
+  <CBF_Cfg_MineChamberItems>Mine {0}: kammern is 0, but there are items with ort Kammer (also the default when ort is missing). They find no place.</CBF_Cfg_MineChamberItems>
+  <CBF_Cfg_MineItemEmpty>Mine {0}: an entry in dinge names neither thing nor liste and is dropped.</CBF_Cfg_MineItemEmpty>
+  <CBF_Cfg_MineItemPlace>Mine {0}: unknown ort "{1}", allowed are Kammer, Gang and Eingang. The entry is dropped.</CBF_Cfg_MineItemPlace>
   <CBF_Cfg_Range>{0} must be between {1} and {2}.</CBF_Cfg_Range>
   <CBF_Cfg_NoPlants>The crop list contains no plants.</CBF_Cfg_NoPlants>
   <CBF_Cfg_EntryNoPlant>An entry has no plant.</CBF_Cfg_EntryNoPlant>
@@ -38,6 +49,7 @@
   <CBF_Planner_StageWalls>Fortifications and gate access</CBF_Planner_StageWalls>
   <CBF_Planner_StageTowers>Tower connections</CBF_Planner_StageTowers>
   <CBF_Planner_StageBuildings>Buildings and fields</CBF_Planner_StageBuildings>
+  <CBF_Planner_StageFehler>Program error in this layout</CBF_Planner_StageFehler>
   <CBF_Planner_NoWall>The fortified city requires a wall template.</CBF_Planner_NoWall>
   <CBF_Planner_BadSettings>Invalid spacing, gate or road settings.</CBF_Planner_BadSettings>
   <CBF_Planner_BadCount>Invalid building count or layer.</CBF_Planner_BadCount>
@@ -63,6 +75,9 @@
   <CBF_Planner_MissingWard>Ward definition is missing for layer {0}.</CBF_Planner_MissingWard>
   <CBF_Planner_MissingWall>No wall template is available for layer {0}.</CBF_Planner_MissingWall>
   <CBF_Planner_WallShape>Wall template {0} requires a defined outside and cross section. Automatic substitution is not allowed.</CBF_Planner_WallShape>
+  <CBF_Planner_OffeneStadt>The city has no wall piece and stays open.</CBF_Planner_OffeneStadt>
+  <CBF_Planner_WallSkipped>Layer {0}: the wall piece {1} cannot be used as a wall, the next piece in the list is used.</CBF_Planner_WallSkipped>
+  <CBF_Planner_WardOpen>Layer {0}: no wall piece can be used as a wall, the ward stays open.</CBF_Planner_WardOpen>
   <CBF_Planner_WallDepth>Unsupported wall depth in {0}.</CBF_Planner_WallDepth>
   <CBF_Planner_WallProfile>Wall profile must consist of walls and a parapet walkway: {0}.</CBF_Planner_WallProfile>
   <CBF_Planner_WallEdge>Wall profile needs a closed outer edge: {0}.</CBF_Planner_WallEdge>
@@ -77,6 +92,9 @@
   <CBF_Machbar_Failed>The check failed: {0}</CBF_Machbar_Failed>
   <CBF_Machbar_TooBig>The orders need {0} cells of edge length, {1} are possible at mapSize {2}. Whatever does not fit will not be built.</CBF_Machbar_TooBig>
   <CBF_Machbar_Tight>The orders need {0} of {1} possible cells of edge length. On rough terrain this gets tight.</CBF_Machbar_Tight>
+  <CBF_Machbar_WallUnusable>The wall piece {0} in layer {1} cannot be used as a wall: {2} The planner takes the next piece in the list.</CBF_Machbar_WallUnusable>
+  <CBF_Machbar_WallMissing>The wall piece {0} in layer {1} is not available because its mod is missing or the piece is disabled. The planner takes the next piece in the list.</CBF_Machbar_WallMissing>
+  <CBF_Machbar_WallNone>No wall piece in layer {0} can be used as a wall. The ward stays without a wall. A wall piece must be 1 cell wide and at most 5 cells deep, consist only of wall and walkway, and end with wall on the outside and inside.</CBF_Machbar_WallNone>
   <CBF_Machbar_NoPiece>{0} in layer {1}: there is no piece for it with this plan's styles.</CBF_Machbar_NoPiece>
   <CBF_Machbar_PieceTooBig>{0} in layer {1}: the smallest matching piece is {2} cells wide, the ward offers {3}.</CBF_Machbar_PieceTooBig>
   <CBF_Machbar_PieceTight>{0} in layer {1}: the smallest matching piece is {2} cells wide with {3} available. On rough terrain it often finds no spot.</CBF_Machbar_PieceTight>
@@ -107,6 +125,7 @@
   <CBF_Pen_NoSpace>No enclosed space with road access was found for pen {0}.</CBF_Pen_NoSpace>
   <CBF_Mine_NoHut>No miner's hut was placed for mine {0}. The mine is left out.</CBF_Mine_NoHut>
   <CBF_Mine_NoRock>No mountain with enough rock was found near a hut for mine {0}. The mine is left out.</CBF_Mine_NoRock>
+  <CBF_Mine_NoChamber>No chamber fit into the rock for mine {0}. The tunnel stays without a chamber, chamber items are missing.</CBF_Mine_NoChamber>
   <CBF_ChoosePlants>Choose crops</CBF_ChoosePlants>
   <CBF_ChoosePlantsHint>{0} selected. Click a tile to add or remove it.</CBF_ChoosePlantsHint>
   <CBF_Apply>Apply</CBF_Apply>
@@ -332,6 +351,8 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
 
   <CBF_Planner_Abtragrueckbau>Earlier rock removal outside the city undone, {0} cells stay rock.</CBF_Planner_Abtragrueckbau>
   <CBF_Planner_Anbauten>{0} annexes attached to buildings.</CBF_Planner_Anbauten>
+  <CBF_Planner_Anlaufbremse>The fill phase of this layout was stopped after {0} seconds so that map generation does not stall.</CBF_Planner_Anlaufbremse>
+  <CBF_Planner_AnlaufFehler>{0} layout(s) stopped with a program error ({1}). The search continued with the other layouts.</CBF_Planner_AnlaufFehler>
   <CBF_Planner_Aufgeschuettet>{0} marsh cells filled in inside the settlement and under roads, walls and fences.</CBF_Planner_Aufgeschuettet>
   <CBF_Planner_AusgangUeberWasser>No exit at the {0} edge: the road there would cross water.</CBF_Planner_AusgangUeberWasser>
   <CBF_Planner_Bergraeumen>Layer {0}: {1} rock cells cleared.</CBF_Planner_Bergraeumen>
@@ -347,19 +368,24 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_Planner_Flussuebergang>{0} river crossing(s) planned. The suburb gets {1} extra cells for them.</CBF_Planner_Flussuebergang>
   <CBF_Planner_Gasse>{0} could not reach the road network and got a lane of {1} cells.</CBF_Planner_Gasse>
   <CBF_Planner_GateHoleInstead>Layer {0}: still no room for a gatehouse after many layouts. The wall gets an open passage there instead.</CBF_Planner_GateHoleInstead>
-  <CBF_Planner_GateMinimum>Every walled layer needs at least one gatehouse. An open passage does not count.</CBF_Planner_GateMinimum>
+  <CBF_Planner_GateMinimum>Every walled layer needs a gate: a gatehouse or, if none fits even in an emergency layout, an open passage. Both are missing here.</CBF_Planner_GateMinimum>
   <CBF_Planner_GateMissing>Layer {0}: the listed gatehouse {1} is not available or not allowed there.</CBF_Planner_GateMissing>
   <CBF_Planner_IslandDropped>A detached part of the city or suburb was dropped.</CBF_Planner_IslandDropped>
   <CBF_Planner_IslandEmpty>Layer {0}: a detached part with {1} cells has no room for any building.</CBF_Planner_IslandEmpty>
   <CBF_Planner_Kantenglaetten>Layer {0}: outline smoothed with window width {1}, {2} cells added, {3} removed.</CBF_Planner_Kantenglaetten>
+  <CBF_Planner_Maengelzeile>{0}: The settlement was built with flaws. {1}</CBF_Planner_Maengelzeile>
+  <CBF_Planner_MaengelWeitere>Plus {0} more flaws.</CBF_Planner_MaengelWeitere>
   <CBF_Planner_Marge>{0} in layer {1}: {2} of {3} placed. The shortfall is within tolerance.</CBF_Planner_Marge>
   <CBF_Planner_Mauerversatz>Layer {0}: wall line staggered in sections, {1} cells taken back.</CBF_Planner_Mauerversatz>
   <CBF_Planner_Nachschlag>{0} was below its minimum. More were placed using terrain changes, {1} cells changed.</CBF_Planner_Nachschlag>
   <CBF_Planner_NoSpot>No room for {0}. Checked: {1} spots with enough ground, {2} of them with road access, {3} of them fully fitting.</CBF_Planner_NoSpot>
+  <CBF_Planner_Repariert>Repair: removed {0} building(s) that overlapped or had no road access: {1}. They are now missing from the parts list.</CBF_Planner_Repariert>
   <CBF_Planner_Seefuellen>{0} lake cells inside the settlement area filled in.</CBF_Planner_Seefuellen>
   <CBF_Planner_Sickerstelle>The fortification leaks: {0} cells in the city or suburb can be reached from outside.</CBF_Planner_Sickerstelle>
+  <CBF_Planner_StadtGanzAufgegeben>In {0} built layouts the city was never contiguous. The planner no longer requires it, the city may be split.</CBF_Planner_StadtGanzAufgegeben>
   <CBF_Planner_StadtGeteilt>The city is split: {0} cells are not connected to its largest part.</CBF_Planner_StadtGeteilt>
   <CBF_Planner_Sumpfbruecke>{0} road cells over marsh got a bridge.</CBF_Planner_Sumpfbruecke>
+  <CBF_Planner_Torloecher>{0} gate(s) without a gatehouse: the wall only has an open passage there. The settlement is built with this flaw.</CBF_Planner_Torloecher>
   <CBF_Planner_TrotzdemGebaut>Last attempt: building despite the problems with walls or gates.</CBF_Planner_TrotzdemGebaut>
   <CBF_Planner_Uferbruecke>Bridge laid across the water between city and suburb, {0} cells.</CBF_Planner_Uferbruecke>
   <CBF_Planner_Uferenge>Bridge ends: {0} water cells at the bank filled in.</CBF_Planner_Uferenge>
@@ -374,6 +400,8 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_Planner_WallOpen>The wall is not closed.</CBF_Planner_WallOpen>
   <CBF_Planner_WardEroded>Layer {0}: {1} cells in narrow offshoots dropped.</CBF_Planner_WardEroded>
   <CBF_Planner_ZwickelGefuellt>Enclosed gaps filled: {0} cells to the city, {1} to the suburb.</CBF_Planner_ZwickelGefuellt>
+  <CBF_Planner_Felstasche>Small pockets between settlement and rock added to the settlement, the wall ends at the rock there: {0} cells to the town, {1} to the suburb.</CBF_Planner_Felstasche>
+  <CBF_Planner_VorstadtmauerOffen>Open town: the suburb wall has a gap to the outside. This is allowed for an open town, the settlement is built as is.</CBF_Planner_VorstadtmauerOffen>
   <CBF_Planner_IslandUnlinked>A suburb part with {0} cells has no path to the city.</CBF_Planner_IslandUnlinked>
   <CBF_Planner_NoEscape>A suburb part ({0}, {1} cells) got neither a gatehouse nor a passage.</CBF_Planner_NoEscape>
   <CBF_Planner_NoFrontage>Layer {0}: no gate forecourt found for a part of size {1}.</CBF_Planner_NoFrontage>

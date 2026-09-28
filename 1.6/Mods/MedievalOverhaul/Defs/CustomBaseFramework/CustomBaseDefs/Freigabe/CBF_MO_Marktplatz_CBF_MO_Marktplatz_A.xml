@@ -23,19 +23,22 @@
       <li><symbol>H</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_LampPost</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_Fountain2x2c</thing><stuff>BlocksGranite</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_HideoutTableMarket_Bread</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>j</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutTableMarket_Bread</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li><symbol>k</symbol><anchor>ZeltA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
       <li><symbol>l</symbol><anchor>ZeltB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
       <li><symbol>m</symbol><anchor>ZeltC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
       <li><symbol>n</symbol><anchor>ZeltD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_HideOutBuildingBase_Cart_Textiles</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_MarketTent_1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>o</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_HideOutBuildingBase_Cart_Textiles</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>q</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>r</symbol><thing>DankPyon_MarketTent_1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>u</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
     </legend>
     <mask>
       <li>..##########..</li>
@@ -66,30 +69,30 @@
       <li>..............</li>
     </terrain>
     <things>
-      <li>..............</li>
-      <li>.....a.......b</li>
-      <li>.f........f...</li>
-      <li>..............</li>
-      <li>..............</li>
-      <li>g..P..........</li>
-      <li>......W...P..i</li>
+      <li>a............a</li>
+      <li>.....b.......f</li>
+      <li>.g........g...</li>
       <li>..............</li>
       <li>..............</li>
-      <li>.f....j...f...</li>
+      <li>i..P..........</li>
+      <li>......W...P..j</li>
       <li>..............</li>
-      <li>.......o......</li>
+      <li>..............</li>
+      <li>.g....o...g...</li>
+      <li>..............</li>
+      <li>q......p.....q</li>
     </things>
     <things2>
       <li>..............</li>
       <li>..............</li>
-      <li>.p........p...</li>
+      <li>.r........r...</li>
       <li>..............</li>
       <li>..............</li>
       <li>..............</li>
       <li>..............</li>
       <li>..............</li>
       <li>..............</li>
-      <li>.p........p...</li>
+      <li>.r........r...</li>
       <li>..............</li>
       <li>..............</li>
     </things2>
@@ -108,7 +111,7 @@
       <li>..............</li>
     </roof>
     <anchors>
-      <li>.....77.......</li>
+      <li>§....77......§</li>
       <li>.....77......u</li>
       <li>.AAA......BBB.</li>
       <li>..............</li>
@@ -119,7 +122,7 @@
       <li>......HHH.....</li>
       <li>.CCC..HHH.DDD.</li>
       <li>.......88.....</li>
-      <li>.......88.....</li>
+      <li>§......88....§</li>
     </anchors>
     <anchorsOver>
       <li>..............</li>

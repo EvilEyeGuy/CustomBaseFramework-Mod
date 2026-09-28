@@ -47,6 +47,8 @@
       <li><symbol>q</symbol><anchor>Hofregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li><symbol>r</symbol><anchor>WaffenregalA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li><symbol>s</symbol><anchor>WaffenregalB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>t</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
     </legend>
     <mask>
       <li>#############</li>
@@ -83,7 +85,7 @@
       <li>S......S...gS</li>
       <li>SBj.nBjSp.p.S</li>
       <li>SSSFSSSSSSSSS</li>
-      <li>I...Z.I......</li>
+      <li>I.t.Z.I.t....</li>
       <li>..........o..</li>
       <li>Q......p.....</li>
     </things>
@@ -122,7 +124,7 @@
       <li>...........6.</li>
       <li>..3.f.4.rrss.</li>
       <li>.............</li>
-      <li>.............</li>
+      <li>..§.....§....</li>
       <li>.....m.......</li>
       <li>.......qq....</li>
     </anchors>

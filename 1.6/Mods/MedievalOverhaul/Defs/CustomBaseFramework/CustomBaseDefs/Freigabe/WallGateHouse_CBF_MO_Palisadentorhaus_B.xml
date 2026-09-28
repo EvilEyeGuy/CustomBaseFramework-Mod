@@ -31,10 +31,12 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_Turret_Scorpio</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>q</symbol><anchor>RegalNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li><symbol>x</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList><pawnCount>1</pawnCount></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
     </legend>
     <mask>
       <li>#######</li>
@@ -65,13 +67,13 @@
     <things>
       <li>PPPEPPP</li>
       <li>P..Ck.P</li>
-      <li>Ei....F</li>
-      <li>P....mP</li>
+      <li>Ei.m..F</li>
+      <li>P....oP</li>
       <li>PPPPPPP</li>
       <li>.G...G.</li>
       <li>.G...G.</li>
       <li>PPPPPPP</li>
-      <li>Pj.D.oP</li>
+      <li>PjmD.pP</li>
       <li>E.....F</li>
       <li>PPPEPPP</li>
     </things>
@@ -91,13 +93,13 @@
     <anchors>
       <li>...K...</li>
       <li>....qq.</li>
-      <li>....8..</li>
+      <li>...§8..</li>
       <li>.9...f.</li>
       <li>.......</li>
       <li>A......</li>
       <li>.......</li>
       <li>.......</li>
-      <li>....72.</li>
+      <li>..§.72.</li>
       <li>.x.....</li>
       <li>...K...</li>
     </anchors>

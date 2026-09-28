@@ -15,14 +15,15 @@
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
       <li><symbol>b</symbol><thing>VFEM2_ClothWall</thing><stuff>Cloth</stuff></li>
-      <li><symbol>f</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>g</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>i</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>j</symbol><thing>Campfire</thing></li>
-      <li><symbol>k</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>l</symbol><anchor>BewohnerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>m</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>n</symbol><terrain>StrawMatting</terrain></li>
+      <li><symbol>f</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>g</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>j</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>k</symbol><thing>Campfire</thing></li>
+      <li><symbol>l</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>m</symbol><anchor>BewohnerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>n</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>o</symbol><terrain>StrawMatting</terrain></li>
     </legend>
     <mask>
       <li>....#...#....</li>
@@ -41,30 +42,30 @@
     </mask>
     <terrain>
       <li>.............</li>
-      <li>....nnnnn....</li>
-      <li>...nnnnnnn...</li>
-      <li>..nnnnnnnnn..</li>
-      <li>.nnnnnnnnnnn.</li>
-      <li>.nnnnnnnnnnn.</li>
-      <li>.nnnnnnnnnnn.</li>
-      <li>.nnnnnnnnnnn.</li>
-      <li>.nnnnnnnnnnn.</li>
-      <li>..nnnnnnnnn..</li>
-      <li>...nnnnnnn...</li>
-      <li>....nnnnn....</li>
+      <li>....ooooo....</li>
+      <li>...ooooooo...</li>
+      <li>..ooooooooo..</li>
+      <li>.ooooooooooo.</li>
+      <li>.ooooooooooo.</li>
+      <li>.ooooooooooo.</li>
+      <li>.ooooooooooo.</li>
+      <li>.ooooooooooo.</li>
+      <li>..ooooooooo..</li>
+      <li>...ooooooo...</li>
+      <li>....ooooo....</li>
       <li>.............</li>
     </terrain>
     <things>
       <li>....a...a....</li>
       <li>....bbbbb....</li>
-      <li>...bb...bb...</li>
-      <li>..bb.f.f.bb..</li>
+      <li>...bb.f.bb...</li>
+      <li>..bb.g.g.bb..</li>
       <li>abb.......bba</li>
-      <li>.b.g.....i.b.</li>
-      <li>.b.g..j..i.b.</li>
-      <li>.b.g.....i.b.</li>
+      <li>.b.i.....j.b.</li>
+      <li>.b.i..k..j.b.</li>
+      <li>.b.i.....j.b.</li>
       <li>abb.......bba</li>
-      <li>..bb.k.k.bb..</li>
+      <li>..bb.l.l.bb..</li>
       <li>...bb...bb...</li>
       <li>....bbFbb....</li>
       <li>....a...a....</li>
@@ -89,11 +90,11 @@
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
-      <li>......l......</li>
-      <li>.............</li>
-      <li>.............</li>
-      <li>.............</li>
       <li>......m......</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>......n......</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>

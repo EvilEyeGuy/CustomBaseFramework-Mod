@@ -13,6 +13,8 @@
     <style>CBF_VFEM2</style>
     <traufen>true</traufen>
     <legend>
+      <li><symbol>A</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>B</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
@@ -27,15 +29,16 @@
       <li><symbol>l</symbol><anchor>WacheNord</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
       <li><symbol>m</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
       <li><symbol>n</symbol><anchor>RegalNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>o</symbol><anchor>Outside</anchor></li>
-      <li><symbol>p</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>q</symbol><anchor>RegalSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>r</symbol><anchor>WacheSued</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>s</symbol><anchor>TruheSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>t</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>u</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>x</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>y</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>o</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>p</symbol><anchor>Outside</anchor></li>
+      <li><symbol>q</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>r</symbol><anchor>RegalSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>s</symbol><anchor>WacheSued</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>t</symbol><anchor>TruheSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>u</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>x</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>y</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
+      <li><symbol>z</symbol><thing>VFEM2_StandingBanner</thing><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>#########</li>
@@ -69,17 +72,17 @@
     </terrain>
     <things>
       <li>SSaSSSaSS</li>
-      <li>S..b.t.tS</li>
+      <li>S..b.u.uS</li>
       <li>af......F</li>
-      <li>S....u..S</li>
-      <li>SSSSSSSSS</li>
-      <li>..g...g..</li>
-      <li>..g...g..</li>
-      <li>..g...g..</li>
-      <li>SSSSSSSSS</li>
       <li>S....x..S</li>
+      <li>SSSSSSSSS</li>
+      <li>y.g...g..</li>
+      <li>..g...g..</li>
+      <li>z.g...g..</li>
+      <li>SSSSSSSSS</li>
+      <li>S....A..S</li>
       <li>a.......F</li>
-      <li>Sf.b...yS</li>
+      <li>Sf.b...BS</li>
       <li>SSaSSSaSS</li>
     </things>
     <roof>
@@ -103,13 +106,13 @@
       <li>....l....</li>
       <li>.m...nn..</li>
       <li>.........</li>
-      <li>.........</li>
+      <li>o........</li>
+      <li>p........</li>
       <li>o........</li>
       <li>.........</li>
-      <li>.........</li>
-      <li>.p...qq..</li>
-      <li>....r....</li>
-      <li>.......s.</li>
+      <li>.q...rr..</li>
+      <li>....s....</li>
+      <li>.......t.</li>
       <li>....i....</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

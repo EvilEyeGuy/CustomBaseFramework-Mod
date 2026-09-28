@@ -29,17 +29,19 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Huette</objects><chance>0.8</chance><obenauf>true</obenauf></li>
       <li><symbol>b</symbol><anchor>Ruestung1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Ruestungsstaender</objects><lootTable>CBF_MO_Loot_Ruestung</lootTable></li>
       <li><symbol>f</symbol><anchor>Ruestung2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Ruestungsstaender</objects><lootTable>CBF_MO_Loot_Ruestung</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_ArmorStatue</thing><stuff>DankPyon_IronIngot</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>k</symbol><anchor>HofA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Guard</pawnList><pawnCount>1~2</pawnCount></li>
       <li><symbol>l</symbol><anchor>HofB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Guard</pawnList><pawnCount>1~2</pawnCount></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_OnTop_Kitchen_Plate</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_OnTop_Kitchen_Plate</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>q</symbol><anchor>Hofregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
     </legend>
     <mask>
       <li>############</li>
@@ -69,9 +71,9 @@
       <li>OB.B.B.B...O</li>
       <li>Oi........iO</li>
       <li>OOOOOOOOOFOO</li>
-      <li>P.Z....Q..WP</li>
+      <li>P.Z..j.Qj.WP</li>
       <li>P.L........P</li>
-      <li>PPZ....j..PP</li>
+      <li>PPZ....m..PP</li>
       <li>.EPPPGPPPPE.</li>
     </things>
     <things2>
@@ -81,7 +83,7 @@
       <li>............</li>
       <li>............</li>
       <li>............</li>
-      <li>...m........</li>
+      <li>...n........</li>
       <li>............</li>
       <li>............</li>
     </things2>
@@ -102,7 +104,7 @@
       <li>+..........+</li>
       <li>.b...8....f.</li>
       <li>............</li>
-      <li>............</li>
+      <li>.....§..§...</li>
       <li>.......k.l..</li>
       <li>.......qq...</li>
       <li>............</li>

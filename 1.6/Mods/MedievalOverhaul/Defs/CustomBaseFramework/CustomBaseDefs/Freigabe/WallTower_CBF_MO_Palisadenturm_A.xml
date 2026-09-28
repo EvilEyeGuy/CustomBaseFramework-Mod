@@ -25,7 +25,9 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li><symbol>f</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>q</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
     </legend>
     <mask>
       <li>#####</li>
@@ -45,7 +47,7 @@
       <li>PEPEP</li>
       <li>ED.aE</li>
       <li>P.Y.P</li>
-      <li>Eb..E</li>
+      <li>Eb.iE</li>
       <li>PEPEP</li>
     </things>
     <roof>
@@ -59,7 +61,7 @@
       <li>..R..</li>
       <li>...f.</li>
       <li>R9.8R</li>
-      <li>.qq..</li>
+      <li>.qq§.</li>
       <li>..R..</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

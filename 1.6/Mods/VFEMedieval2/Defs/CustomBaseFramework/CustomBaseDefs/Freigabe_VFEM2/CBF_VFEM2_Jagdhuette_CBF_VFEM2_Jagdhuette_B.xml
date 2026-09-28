@@ -14,15 +14,17 @@
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>VFEM2_FurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
-      <li><symbol>b</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>f</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>g</symbol><anchor>Arbeiter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>i</symbol><anchor>Fleischtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>j</symbol><anchor>Waffenregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>k</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
-      <li><symbol>l</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>m</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>a</symbol><thing>Campfire</thing><rotation>North</rotation></li>
+      <li><symbol>b</symbol><thing>VFEM2_FurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
+      <li><symbol>f</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>g</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>i</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>j</symbol><anchor>Arbeiter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>k</symbol><anchor>Fleischtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>l</symbol><anchor>Waffenregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>m</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
+      <li><symbol>n</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>o</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
     </legend>
     <mask>
@@ -38,17 +40,17 @@
       <li>wwwwwwww..</li>
       <li>wwwwwwww..</li>
       <li>wwwwwwwwww</li>
-      <li>wwwwkkwwww</li>
+      <li>wwwwmmwwww</li>
       <li>wwwwwwwwww</li>
       <li>wwwwwwwwww</li>
       <li>..........</li>
     </terrain>
     <things>
       <li>OOOOOOOO..</li>
-      <li>O......O..</li>
-      <li>Oa.....OOO</li>
-      <li>O.......lO</li>
-      <li>Om.......O</li>
+      <li>O.a....O..</li>
+      <li>Ob...f.OOO</li>
+      <li>O.......nO</li>
+      <li>Oo.......O</li>
       <li>OOOFOOOOOO</li>
       <li>..........</li>
     </things>
@@ -56,7 +58,7 @@
       <li>..........</li>
       <li>..........</li>
       <li>..........</li>
-      <li>....bf....</li>
+      <li>....gi....</li>
       <li>..........</li>
       <li>..........</li>
       <li>..........</li>
@@ -74,8 +76,8 @@
       <li>..........</li>
       <li>..........</li>
       <li>..........</li>
-      <li>......g.i.</li>
-      <li>.jj.......</li>
+      <li>......j.k.</li>
+      <li>.ll.......</li>
       <li>..........</li>
       <li>..........</li>
     </anchors>

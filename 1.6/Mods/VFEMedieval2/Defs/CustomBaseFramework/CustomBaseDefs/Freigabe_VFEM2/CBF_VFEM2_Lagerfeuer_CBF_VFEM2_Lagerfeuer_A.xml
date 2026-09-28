@@ -10,13 +10,15 @@
     </categories>
     <style>CBF_VFEM2</style>
     <legend>
-      <li><symbol>a</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>b</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>f</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>g</symbol><thing>Campfire</thing></li>
-      <li><symbol>i</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>j</symbol><thing>WoodLog</thing><count>40</count></li>
-      <li><symbol>k</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>a</symbol><thing>TorchLamp</thing></li>
+      <li><symbol>b</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>f</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>g</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>i</symbol><thing>Campfire</thing></li>
+      <li><symbol>j</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>k</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>l</symbol><thing>WoodLog</thing><count>40</count></li>
+      <li><symbol>m</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
     </legend>
     <mask>
       <li>....#####....</li>
@@ -39,13 +41,13 @@
       <li>.............</li>
     </terrain>
     <things>
-      <li>.............</li>
       <li>......a......</li>
-      <li>...b.....f...</li>
-      <li>...b..g..f...</li>
-      <li>...b.....f...</li>
-      <li>......i......</li>
-      <li>...j..jj.....</li>
+      <li>......b......</li>
+      <li>...f.....g...</li>
+      <li>...f..i..g...</li>
+      <li>...f.....g...</li>
+      <li>......j....k.</li>
+      <li>...l..ll.a...</li>
       <li>.............</li>
     </things>
     <roof>
@@ -63,7 +65,7 @@
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
-      <li>.....k.......</li>
+      <li>.....m.......</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>

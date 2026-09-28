@@ -24,7 +24,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_BannerSun</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_CultPedestal</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RugRoyal_Lys2x3c</thing><rotation>East</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>S</symbol><thing>CBF_MO_Pflastermauer</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_Vase</thing></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
@@ -41,6 +41,7 @@
       <li><symbol>r</symbol><anchor>Reliquienschrein</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Reliquienschrein</objects></li>
       <li><symbol>s</symbol><anchor>Schreibregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Schreibregal</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+      <li><symbol>¤</symbol><anchor>Teppich</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Adelsteppich_2x3</objects></li>
     </legend>
     <mask>
       <li>....#######....</li>
@@ -167,8 +168,8 @@
       <li>......rrr......</li>
       <li>......rrr......</li>
       <li>...............</li>
-      <li>.........HHH...</li>
-      <li>.........HHH...</li>
+      <li>......¤¤¤HHH...</li>
+      <li>......¤¤¤HHH...</li>
       <li>........8HHH...</li>
       <li>...............</li>
       <li>...............</li>

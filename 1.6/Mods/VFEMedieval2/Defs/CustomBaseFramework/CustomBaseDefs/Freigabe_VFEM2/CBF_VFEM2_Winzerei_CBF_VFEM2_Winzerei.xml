@@ -12,23 +12,23 @@
     <traufen>true</traufen>
     <legend>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>VFEM2_WineBarrel</thing></li>
-      <li><symbol>b</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>a</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>b</symbol><thing>VFEM2_WineBarrel</thing></li>
       <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
-      <li><symbol>f</symbol><thing>VFEM2_StandingBanner</thing><rotation>North</rotation></li>
-      <li><symbol>g</symbol><anchor>Kellerfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
+      <li><symbol>f</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>g</symbol><thing>VFEM2_StandingBanner</thing><rotation>North</rotation></li>
       <li><symbol>h</symbol><terrain>TileLimestone</terrain></li>
-      <li><symbol>i</symbol><anchor>Weinregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
-      <li><symbol>j</symbol><anchor>Winzer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>k</symbol><anchor>Grossfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
-      <li><symbol>l</symbol><anchor>Fassreihe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
-      <li><symbol>m</symbol><thing>RawCorn</thing><count>30</count></li>
-      <li><symbol>n</symbol><thing>Beer</thing><count>10</count></li>
-      <li><symbol>o</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>p</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>q</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>i</symbol><anchor>Kellerfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
+      <li><symbol>j</symbol><anchor>Weinregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
+      <li><symbol>k</symbol><anchor>Winzer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>l</symbol><anchor>Grossfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
+      <li><symbol>m</symbol><anchor>Fassreihe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
+      <li><symbol>n</symbol><thing>RawCorn</thing><count>30</count></li>
+      <li><symbol>o</symbol><thing>Beer</thing><count>10</count></li>
+      <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>q</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>r</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>###########</li>
@@ -51,14 +51,14 @@
       <li>...........</li>
     </terrain>
     <things>
-      <li>SSSSSSSSSSS</li>
-      <li>S.....So..S</li>
-      <li>S...a.S.p.S</li>
-      <li>S.....F...S</li>
-      <li>Sa....Sq..S</li>
-      <li>b..bp.SSSSS</li>
-      <li>..f...m..n.</li>
-      <li>......m....</li>
+      <li>aaaaaaaaaaa</li>
+      <li>a.....ap..a</li>
+      <li>a...b.a.q.a</li>
+      <li>a.....F...a</li>
+      <li>ab....ar..a</li>
+      <li>f..fq.aaaaa</li>
+      <li>..g...n..o.</li>
+      <li>......n....</li>
     </things>
     <roof>
       <li>^^^^^^^^^^^</li>
@@ -72,11 +72,11 @@
     </roof>
     <anchors>
       <li>...........</li>
-      <li>.......gii.</li>
-      <li>........ii.</li>
-      <li>..j........</li>
-      <li>....kk.lll.</li>
-      <li>....kk.....</li>
+      <li>.......ijj.</li>
+      <li>........jj.</li>
+      <li>..k........</li>
+      <li>....ll.mmm.</li>
+      <li>....ll.....</li>
       <li>...........</li>
       <li>...........</li>
     </anchors>

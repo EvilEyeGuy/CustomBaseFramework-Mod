@@ -21,15 +21,16 @@
       <li><symbol>H</symbol><anchor>Saaltruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
       <li><symbol>I</symbol><anchor>Saalwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>J</symbol><anchor>Ruestung3</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>K</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
-      <li><symbol>L</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>M</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>N</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>P</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>Q</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>R</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>K</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>L</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
+      <li><symbol>M</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>N</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>P</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>Q</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>R</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>U</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>U</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>V</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>b</symbol><thing>VFEM2_DoubleFurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
@@ -79,10 +80,10 @@
       <li>hhhhhwwwwwhhhhh</li>
       <li>hhhhhwwwwwhhhhh</li>
       <li>hhhhhhhhhhhhhhh</li>
-      <li>hvKKKKKKvvhhhhh</li>
-      <li>hvKKKKKKvvh....</li>
-      <li>hvKKKKKKvvh....</li>
-      <li>hvKKKKKKvvh....</li>
+      <li>hvLLLLLLvvhhhhh</li>
+      <li>hvLLLLLLvvh....</li>
+      <li>hvLLLLLLvvh....</li>
+      <li>hvLLLLLLvvh....</li>
       <li>hvvvvvvvvvh....</li>
       <li>hhhhhhhhhhh....</li>
       <li>...............</li>
@@ -91,16 +92,16 @@
     </terrain>
     <things>
       <li>..........SSSSS</li>
-      <li>SSSSSSSSSSSL..S</li>
-      <li>SN..S..a.LS..MS</li>
-      <li>S..MSb....F...S</li>
-      <li>SP.QSfg..QSR..S</li>
-      <li>SSFSSSSSFSSU.MS</li>
+      <li>SSSSSSSSSSSM..S</li>
+      <li>SP..S..a.MS..NS</li>
+      <li>S..NSb....F...S</li>
+      <li>SQ.RSfg..RSU..S</li>
+      <li>SSFSSSSSFSSV.NS</li>
       <li>S........fSSSSS</li>
       <li>S.........S....</li>
       <li>S........iS....</li>
       <li>S.........S....</li>
-      <li>SQQ......QS....</li>
+      <li>SRR......RS....</li>
       <li>SSSSj.SSSSS....</li>
       <li>.k.l..l.k......</li>
       <li>...............</li>
@@ -153,7 +154,7 @@
       <li>...............</li>
       <li>.GH....I.J.....</li>
       <li>...............</li>
-      <li>...............</li>
+      <li>.K......K......</li>
       <li>...............</li>
       <li>...............</li>
     </anchors>

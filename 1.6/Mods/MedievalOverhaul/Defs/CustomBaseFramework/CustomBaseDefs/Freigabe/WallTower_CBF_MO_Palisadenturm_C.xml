@@ -23,12 +23,14 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_Turret_Scorpio</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li><symbol>f</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>q</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li><symbol>x</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_Geschuetzmannschaft</pawnList><pawnCount>1</pawnCount></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
     </legend>
     <mask>
       <li>#######</li>
@@ -51,10 +53,10 @@
     <things>
       <li>PEPPPEP</li>
       <li>E...C.E</li>
-      <li>P.a...P</li>
+      <li>P.a..bP</li>
       <li>P.....P</li>
       <li>P...Y.P</li>
-      <li>Eb.i.DE</li>
+      <li>Ei.j.DE</li>
       <li>PEPPPEP</li>
     </things>
     <roof>
@@ -69,7 +71,7 @@
     <anchors>
       <li>...R...</li>
       <li>.......</li>
-      <li>.......</li>
+      <li>.....§.</li>
       <li>R.9.8.R</li>
       <li>...x...</li>
       <li>.f.qq..</li>

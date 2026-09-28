@@ -11,26 +11,29 @@
     <style>CBF_VFEM2</style>
     <traufen>true</traufen>
     <legend>
-      <li><symbol>A</symbol><anchor>Ruesttruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>B</symbol><anchor>Barren</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>C</symbol><anchor>TurmtruheB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>D</symbol><anchor>Burgherr</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>E</symbol><thing>WoodLog</thing><count>40</count></li>
+      <li><symbol>A</symbol><anchor>Schlaftruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>B</symbol><anchor>Ruesttruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>C</symbol><anchor>Barren</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>D</symbol><anchor>TurmtruheB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>E</symbol><anchor>Burgherr</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>G</symbol><anchor>Kuechensack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>H</symbol><anchor>Kuechenfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>I</symbol><thing>Beer</thing><count>10</count></li>
-      <li><symbol>J</symbol><thing>RawCorn</thing><count>30</count></li>
-      <li><symbol>K</symbol><anchor>Hofwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>L</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
-      <li><symbol>M</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>N</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>P</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>Q</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>R</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>G</symbol><thing>WoodLog</thing><count>40</count></li>
+      <li><symbol>H</symbol><anchor>Kuechensack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>I</symbol><anchor>Kuechenfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>J</symbol><thing>Beer</thing><count>10</count></li>
+      <li><symbol>K</symbol><thing>RawCorn</thing><count>30</count></li>
+      <li><symbol>L</symbol><anchor>Hofwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>M</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>N</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
+      <li><symbol>P</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>Q</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>R</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>T</symbol><thing>VFEM2_TimberedWall</thing><stuff>BlocksLimestone</stuff></li>
-      <li><symbol>U</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>U</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>V</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>W</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>X</symbol><thing>VFEM2_StandingBanner</thing><rotation>North</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>Dresser</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>b</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
@@ -40,21 +43,21 @@
       <li><symbol>h</symbol><terrain>TileLimestone</terrain></li>
       <li><symbol>i</symbol><thing>VFEM2_CleaverRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>j</symbol><thing>VFEM2_CarvingBoard</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>k</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>l</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>m</symbol><thing>Hay</thing><count>60</count></li>
-      <li><symbol>n</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>o</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>p</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>q</symbol><thing>Table2x4c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>r</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>s</symbol><anchor>SchatzA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>t</symbol><anchor>TurmtruheA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>u</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>k</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
+      <li><symbol>l</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>m</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>n</symbol><thing>Hay</thing><count>60</count></li>
+      <li><symbol>o</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>p</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>q</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>r</symbol><thing>Table2x4c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>s</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>t</symbol><anchor>SchatzA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>u</symbol><anchor>TurmtruheA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
-      <li><symbol>x</symbol><anchor>SchatzB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>y</symbol><anchor>Saaltruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>z</symbol><anchor>Schlaftruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>x</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>y</symbol><anchor>SchatzB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>z</symbol><anchor>Saaltruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
     </legend>
     <mask>
       <li>.............#####.</li>
@@ -78,10 +81,10 @@
       <li>.............hhhhh.</li>
       <li>wwwwww......hhhhhhh</li>
       <li>wwwwwwwwwwwwhhhhhhh</li>
-      <li>wwwwwwLLLLLLhhhhhhh</li>
-      <li>wwwwwwLLLLLLhhhhhhh</li>
-      <li>wwwwwwLLLLLLhhhhhhh</li>
-      <li>eeeeeeLLLLLLhhhhhh.</li>
+      <li>wwwwwwNNNNNNhhhhhhh</li>
+      <li>wwwwwwNNNNNNhhhhhhh</li>
+      <li>wwwwwwNNNNNNhhhhhhh</li>
+      <li>eeeeeeNNNNNNhhhhhh.</li>
       <li>eeeeeewwwwww.......</li>
       <li>eeeeeewwwwwww......</li>
       <li>eeeeee.............</li>
@@ -94,30 +97,30 @@
     </terrain>
     <things>
       <li>.............SSSSS.</li>
-      <li>TTTTTT......SSM.NSS</li>
+      <li>TTTTTT......SSP.QSS</li>
       <li>Ta.b.TTTTTTTS.....S</li>
-      <li>T....F.....NSP...QS</li>
-      <li>Tf.RgT......F....RS</li>
-      <li>TTTTTT......SSU.RSS</li>
-      <li>Ti.j.T......TSSSSS.</li>
-      <li>T....F......T...k..</li>
-      <li>T....TTTTFTTT.EEk..</li>
-      <li>TR.R.TII..EE....k..</li>
-      <li>TTFTTT..........k..</li>
-      <li>k.........l..l..k..</li>
-      <li>kJ.............kk..</li>
-      <li>k..J......lm.lkk...</li>
-      <li>kk.J.g.......kk....</li>
-      <li>.kkkkkknkkkkkk.....</li>
+      <li>T....F.....QSR...US</li>
+      <li>Tf.VgT......F....VS</li>
+      <li>TTTTTT......SSW.VSS</li>
+      <li>Ti.jkT......TSSSSS.</li>
+      <li>T....F......Tk..l..</li>
+      <li>T....TTTTFTTT.GGl..</li>
+      <li>TV.V.TJJ..GG....l..</li>
+      <li>TTFTTT..........l..</li>
+      <li>l.........m..m..l..</li>
+      <li>lK.............ll..</li>
+      <li>l..K......mn.mll...</li>
+      <li>ll.K.gX.X....ll....</li>
+      <li>.llllllollllll.....</li>
     </things>
     <things2>
       <li>...................</li>
       <li>...................</li>
       <li>...................</li>
-      <li>.......oooo........</li>
-      <li>......p............</li>
-      <li>......pq...........</li>
-      <li>.......rrrr........</li>
+      <li>.......pppp........</li>
+      <li>......q............</li>
+      <li>......qr...........</li>
+      <li>.......ssss........</li>
       <li>...................</li>
       <li>...................</li>
       <li>...................</li>
@@ -148,20 +151,20 @@
     </roof>
     <anchors>
       <li>...................</li>
-      <li>..............sst..</li>
-      <li>.............u...x.</li>
-      <li>...........y.u...x.</li>
-      <li>...z.............A.</li>
-      <li>..............BBC..</li>
+      <li>..............ttu..</li>
+      <li>.............x...y.</li>
+      <li>...........z.x...y.</li>
+      <li>...A.............B.</li>
+      <li>..............CCD..</li>
       <li>...................</li>
-      <li>........D..........</li>
+      <li>........E..........</li>
       <li>...................</li>
-      <li>.G.H...............</li>
-      <li>...................</li>
-      <li>...................</li>
-      <li>.......K...........</li>
+      <li>.H.I...............</li>
       <li>...................</li>
       <li>...................</li>
+      <li>.......L...........</li>
+      <li>...................</li>
+      <li>......M.M..........</li>
       <li>...................</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

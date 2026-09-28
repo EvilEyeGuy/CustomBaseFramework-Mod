@@ -21,7 +21,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><terrain>DankPyon_Floor_Lys_White</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_CultPedestal</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RugRoyal_Lys2x3c</thing><rotation>East</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>S</symbol><thing>CBF_MO_Pflastermauer</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_CultPedestal</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
@@ -31,6 +31,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutShelfFilledBook</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>s</symbol><anchor>Schreibregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Schreibregal</objects></li>
+      <li><symbol>¤</symbol><anchor>Teppich</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Adelsteppich_2x3</objects></li>
     </legend>
     <mask>
       <li>.....###.....</li>
@@ -125,8 +126,8 @@
     <anchors>
       <li>.............</li>
       <li>.............</li>
-      <li>.............</li>
-      <li>.............</li>
+      <li>.....¤¤¤.....</li>
+      <li>.....¤¤¤.....</li>
       <li>.............</li>
       <li>.HHH.......1.</li>
       <li>.HHH..8......</li>

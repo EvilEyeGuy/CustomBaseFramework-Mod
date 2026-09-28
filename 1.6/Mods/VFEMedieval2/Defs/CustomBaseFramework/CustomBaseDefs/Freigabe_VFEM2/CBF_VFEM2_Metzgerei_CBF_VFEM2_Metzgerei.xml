@@ -12,23 +12,26 @@
     <traufen>true</traufen>
     <legend>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>T</symbol><thing>VFEM2_TimberedWall</thing><stuff>BlocksLimestone</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>VFEM2_CarvingBoard</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>b</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>f</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
-      <li><symbol>g</symbol><anchor>Ladenkiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>a</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>b</symbol><thing>VFEM2_CarvingBoard</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>f</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>g</symbol><thing>VFEM2_LeatherBoilpot</thing><rotation>South</rotation></li>
       <li><symbol>h</symbol><terrain>TileLimestone</terrain></li>
-      <li><symbol>i</symbol><thing>WoodLog</thing><count>40</count></li>
-      <li><symbol>j</symbol><anchor>Metzger</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>k</symbol><anchor>Fleischregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>l</symbol><anchor>Schlachtfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>m</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>n</symbol><anchor>Fleischstand</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>o</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>p</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>q</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>i</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>j</symbol><thing>VFEM2_CleaverRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>k</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
+      <li><symbol>l</symbol><anchor>Ladenkiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>m</symbol><thing>WoodLog</thing><count>40</count></li>
+      <li><symbol>n</symbol><anchor>Metzger</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>o</symbol><anchor>Fleischregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>p</symbol><anchor>Schlachtfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>q</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>r</symbol><anchor>Fleischstand</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>s</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>t</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>u</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
     </legend>
     <mask>
@@ -56,16 +59,16 @@
       <li>.............</li>
     </terrain>
     <things>
-      <li>SSSSS........</li>
-      <li>Sa..STTTT....</li>
-      <li>F...S..oT..i.</li>
-      <li>S...F...T..i.</li>
-      <li>S...S...T....</li>
-      <li>Sp.qS.b.T....</li>
-      <li>SSSSS..qT..ii</li>
+      <li>aaaaa........</li>
+      <li>abf.aTTTT....</li>
+      <li>F...a..sT..m.</li>
+      <li>a...F...Tg.m.</li>
+      <li>a...a...T....</li>
+      <li>at.ua.i.T.j..</li>
+      <li>aaaaa..uT..mm</li>
       <li>....TFTTT....</li>
-      <li>...f.........</li>
-      <li>......p......</li>
+      <li>...k.........</li>
+      <li>......t......</li>
     </things>
     <roof>
       <li>^^^^^........</li>
@@ -82,14 +85,14 @@
     <anchors>
       <li>.............</li>
       <li>.............</li>
-      <li>.......g.....</li>
-      <li>..j..........</li>
-      <li>.kk..........</li>
-      <li>.kkl.........</li>
-      <li>.......m.....</li>
+      <li>.......l.....</li>
+      <li>..n..........</li>
+      <li>.oo..........</li>
+      <li>.oop.........</li>
+      <li>.......q.....</li>
       <li>.............</li>
       <li>.............</li>
-      <li>......nnn....</li>
+      <li>......rrr....</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

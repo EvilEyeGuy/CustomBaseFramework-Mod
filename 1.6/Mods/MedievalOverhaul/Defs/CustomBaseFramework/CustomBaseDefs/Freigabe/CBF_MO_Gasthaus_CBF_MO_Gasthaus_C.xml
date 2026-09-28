@@ -33,26 +33,30 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>X</symbol><thing>DankPyon_RusticTable2x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>GeschirrA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
-      <li><symbol>b</symbol><anchor>GeschirrB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>a</symbol><anchor>GeschirrA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>b</symbol><anchor>GeschirrB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><obenauf>true</obenauf></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li><symbol>f</symbol><anchor>Fassreihe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fassreihe</objects><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>i</symbol><anchor>GeschirrC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>i</symbol><anchor>GeschirrC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><obenauf>true</obenauf></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutRusticBarrelStack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>k</symbol><thing>CBF_MO_Porzellanvase</thing><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_Well</thing><stuff>BlocksGranite</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>q</symbol><thing>DankPyon_OnTop_Kitchen_Plate</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>q</symbol><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>r</symbol><thing>DankPyon_OnTop_Kitchen_Plate</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>s</symbol><anchor>Kuechensack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>t</symbol><thing>DankPyon_OnTop_Kitchen_Plate</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>u</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
       <li><symbol>x</symbol><anchor>Kuechenfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
       <li><symbol>y</symbol><anchor>Hoffass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li><symbol>z</symbol><anchor>Futtersack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Stall</lootTable></li>
+      <li><symbol>¤</symbol><anchor>Gasthausgeschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.7</chance><obenauf>true</obenauf></li>
+      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
     </legend>
     <mask>
       <li>###############</li>
@@ -87,20 +91,20 @@
       <li>T..gT...j..TK.T</li>
       <li>TB..T......F..T</li>
       <li>TE..FR...Q.T..T</li>
-      <li>TTTTT......TklT</li>
+      <li>TTTTTk....kTlmT</li>
       <li>T..gTTTFTTTTTTT</li>
-      <li>TB..F....mI...T</li>
+      <li>TB..F....pI...T</li>
       <li>TTTTT.......A.T</li>
       <li>T..gT..o.....WT</li>
-      <li>TB..F.....IkP.T</li>
-      <li>TTTTT...p.TTTTT</li>
+      <li>TB..F.....IlP.T</li>
+      <li>TTTTT...q.TTTTT</li>
       <li>......L....!...</li>
     </things>
     <things2>
       <li>...............</li>
       <li>.....n.........</li>
       <li>.....nX........</li>
-      <li>......uu.q.....</li>
+      <li>.r....uu.t.....</li>
       <li>...............</li>
       <li>...............</li>
       <li>...............</li>
@@ -129,7 +133,7 @@
       <li>...1....fff....</li>
       <li>+........8....+</li>
       <li>...............</li>
-      <li>............sx.</li>
+      <li>.....Ç....Ç.sx.</li>
       <li>...2...........</li>
       <li>.........y.....</li>
       <li>......9........</li>
@@ -140,9 +144,9 @@
     </anchors>
     <anchorsOver>
       <li>...............</li>
-      <li>......a........</li>
+      <li>......a¤.......</li>
       <li>.......b.......</li>
-      <li>.........i.....</li>
+      <li>.¤.......i.....</li>
       <li>...............</li>
       <li>...............</li>
       <li>...............</li>

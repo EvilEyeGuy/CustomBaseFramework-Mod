@@ -25,6 +25,7 @@
       <li><symbol>k</symbol><anchor>Soldaten</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList><pawnCount>2~3</pawnCount></li>
       <li><symbol>m</symbol><terrain>StrawMatting</terrain></li>
       <li><symbol>x</symbol><anchor>Ruestung</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Ruestungsstaender</objects><lootTable>CBF_MO_Loot_Ruestung</lootTable></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
     </legend>
     <mask>
       <li>...#.....#...</li>
@@ -81,7 +82,7 @@
     <anchors>
       <li>.............</li>
       <li>.............</li>
-      <li>.............</li>
+      <li>...§.....§...</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>

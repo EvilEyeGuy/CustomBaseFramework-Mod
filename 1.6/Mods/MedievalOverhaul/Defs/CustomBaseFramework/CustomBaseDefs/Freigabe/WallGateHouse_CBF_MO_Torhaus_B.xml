@@ -26,8 +26,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_RugPatched_Cloth1x2c</thing><stuff>Cloth</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_RusticTable1x2c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>GeschirrNord</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
-      <li><symbol>b</symbol><anchor>GeschirrSued</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>a</symbol><anchor>GeschirrNord</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Huette</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>b</symbol><anchor>GeschirrSued</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Huette</objects><chance>0.8</chance><obenauf>true</obenauf></li>
       <li><symbol>f</symbol><anchor>FassNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li><symbol>g</symbol><anchor>FassSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
@@ -35,12 +35,15 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>q</symbol><anchor>RegalNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li><symbol>r</symbol><anchor>RegalSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>s</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>t</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
     </legend>
     <mask>
       <li>#######</li>
@@ -74,14 +77,14 @@
       <li>SSSMSSS</li>
       <li>Si...jS</li>
       <li>M.W...F</li>
-      <li>Sk....S</li>
+      <li>Sk...mS</li>
       <li>SSSMSSS</li>
       <li>.G...G.</li>
       <li>.G...G.</li>
       <li>SSSMSSS</li>
-      <li>Sm....S</li>
-      <li>M.W...F</li>
       <li>So...pS</li>
+      <li>M.W...F</li>
+      <li>Ss...tS</li>
       <li>SSSMSSS</li>
     </things>
     <things2>
@@ -116,12 +119,12 @@
       <li>...K...</li>
       <li>.qq..1.</li>
       <li>.......</li>
-      <li>.f..8..</li>
+      <li>.f..8§.</li>
       <li>.......</li>
       <li>A......</li>
       <li>.......</li>
       <li>.......</li>
-      <li>.g..7..</li>
+      <li>.g..7§.</li>
       <li>.......</li>
       <li>.rr..2.</li>
       <li>...K...</li>

@@ -19,12 +19,14 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Workbench</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_HideoutLargeShelf_FilledA_Amboise</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutCrate1x2c</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>b</symbol><thing>CBF_MO_Porzellanvase</thing><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutLargeShelf_FilledA_Amboise</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutCrate1x2c</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li><symbol>k</symbol><anchor>Werkkiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Werkstatt</lootTable></li>
       <li><symbol>r</symbol><anchor>Regal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Wappenregal</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
     </legend>
     <mask>
       <li>######</li>
@@ -48,11 +50,11 @@
     </terrain>
     <things>
       <li>TTTTTT</li>
-      <li>T..H.T</li>
-      <li>TB..bT</li>
+      <li>T.bH.T</li>
+      <li>TB..fT</li>
       <li>TTTFTT</li>
-      <li>Tf...T</li>
-      <li>T...gT</li>
+      <li>Tg...T</li>
+      <li>T...iT</li>
       <li>T.a..T</li>
       <li>TFTTTT</li>
     </things>
@@ -68,7 +70,7 @@
     </roof>
     <anchors>
       <li>...+..</li>
-      <li>......</li>
+      <li>..Ç...</li>
       <li>....1.</li>
       <li>......</li>
       <li>.rr.k.</li>

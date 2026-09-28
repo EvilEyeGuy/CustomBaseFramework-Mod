@@ -22,10 +22,12 @@
       <li><symbol>h</symbol><terrain>TileLimestone</terrain></li>
       <li><symbol>i</symbol><anchor>Turmtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
       <li><symbol>j</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>k</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>l</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>m</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>n</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>k</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>l</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>m</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>n</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>o</symbol><thing>VFEM2_StandingBanner</thing><rotation>West</rotation></li>
+      <li><symbol>p</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>..###..</li>
@@ -47,10 +49,10 @@
     </terrain>
     <things>
       <li>..SSS..</li>
-      <li>.SamaS.</li>
+      <li>.SanaS.</li>
       <li>SSb..SS</li>
-      <li>S..f..S</li>
-      <li>SSn..SS</li>
+      <li>S.of..S</li>
+      <li>SSp..SS</li>
       <li>.Sa.aS.</li>
       <li>..SSS..</li>
     </things>
@@ -67,8 +69,8 @@
       <li>...g...</li>
       <li>...i...</li>
       <li>.......</li>
-      <li>gj...kg</li>
-      <li>..ll...</li>
+      <li>gjk..lg</li>
+      <li>..mm...</li>
       <li>.......</li>
       <li>...g...</li>
     </anchors>

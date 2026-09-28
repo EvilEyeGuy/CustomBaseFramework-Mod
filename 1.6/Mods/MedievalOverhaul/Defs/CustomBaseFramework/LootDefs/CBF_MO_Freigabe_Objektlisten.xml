@@ -405,12 +405,13 @@
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_Teppich_2x4</defName>
     <members>
+      <li><thing>DankPyon_RugRoyal_LongLys2x4c</thing><bleibt>true</bleibt></li>
       <li><thing>DankPyon_RugLoot_Diamond_DeepGreen2x4c</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_RugLoot_Diamond_RedYellow2x4c</thing><bleibt>true</bleibt></li>
       <li><thing>DankPyon_RugLoot_Diamond_LimeRed2x4c</thing><bleibt>true</bleibt></li>
       <li><thing>DankPyon_RugLoot_Diamond_RGB2x4c</thing><bleibt>true</bleibt></li>
-      <li><thing>DankPyon_RugLoot_Diamond_RedYellow2x4c</thing><bleibt>true</bleibt></li>
-      <li><thing>DankPyon_RugLoot_Striped_BlueLime2x4c</thing><bleibt>true</bleibt></li>
       <li><thing>DankPyon_RugLoot_Striped_RGB2x4c</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_RugLoot_Striped_BlueLime2x4c</thing><bleibt>true</bleibt></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
@@ -419,6 +420,9 @@
     <members>
       <li><thing>DankPyon_RugRoyal_Lys2x3c</thing><bleibt>true</bleibt></li>
       <li><thing>DankPyon_RugLoot_Lys_Red2x3c</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_RugLoot_Lys_DeepGreen2x3c</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_RugLoot_Lys_Lime2x3c</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_RugLoot_Lys_Blue2x3c</thing><bleibt>true</bleibt></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
@@ -457,6 +461,78 @@
       <li><thing>SculptureLarge</thing><bleibt>true</bleibt></li>
       <li><thing>DankPyon_ArchonSculpture2x2c</thing><bleibt>true</bleibt></li>
       <li><thing>DankPyon_Obelisk2x2c</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Flagge</defName>
+    <members>
+      <li><thing>DankPyon_BannerPlain</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BannerHesse</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BannerAmboise</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BannerOswin</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BannerSoren</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BannerSun</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BannerCrow</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BannerArrow</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BannerHand</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BannerAxe</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_BannerLindwurm</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Tischgeschirr_Huette</defName>
+    <members>
+      <li><thing>DankPyon_OnTop_Kitchen_Plate</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Kitchen_Bowl</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Kitchen_Cup</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_Ale</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_Milk</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Tischgeschirr_Buerger</defName>
+    <members>
+      <li><thing>DankPyon_OnTop_Kitchen_Plate</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Kitchen_Bowl</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Kitchen_Cup</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_Wine</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_Mead</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_MulberryWine</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Tischgeschirr_Adel</defName>
+    <members>
+      <li><thing>DankPyon_OnTop_Kitchen_Plate</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_Wine</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_IceWine</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_GriffonWine</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_MulberryWine</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Tischgeschirr_Gasthaus</defName>
+    <members>
+      <li><thing>DankPyon_OnTop_Kitchen_Plate</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Kitchen_Bowl</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Kitchen_Cup</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_Ale</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_Mead</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_Wine</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_OnTop_Bottle_Milk</thing><bleibt>true</bleibt></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Vase</defName>
+    <members>
+      <li><thing>CBF_MO_Porzellanvase</thing><bleibt>true</bleibt></li>
+      <li><thing>DankPyon_Vase</thing><bleibt>true</bleibt></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 

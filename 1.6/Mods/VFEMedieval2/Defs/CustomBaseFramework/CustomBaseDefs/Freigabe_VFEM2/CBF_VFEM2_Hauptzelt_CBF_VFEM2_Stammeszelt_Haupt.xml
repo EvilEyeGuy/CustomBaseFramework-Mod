@@ -19,18 +19,19 @@
       <li><symbol>g</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>i</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>j</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>k</symbol><thing>VFEM2_FurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
-      <li><symbol>l</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>m</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>n</symbol><anchor>Haeuptling</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>o</symbol><anchor>Haeuptlingstruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>p</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>q</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>r</symbol><anchor>Krieger</anchor><anchorKind>Spawn</anchorKind><pawnCount>2~3</pawnCount></li>
-      <li><symbol>s</symbol><terrain>StrawMatting</terrain></li>
-      <li><symbol>t</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
-      <li><symbol>u</symbol><terrain>VFEM2_Matting_Leather_Bear</terrain></li>
-      <li><symbol>x</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>k</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>l</symbol><thing>VFEM2_FurBed</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
+      <li><symbol>m</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>n</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>o</symbol><anchor>Haeuptling</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>p</symbol><anchor>Haeuptlingstruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>q</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>r</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>s</symbol><anchor>Krieger</anchor><anchorKind>Spawn</anchorKind><pawnCount>2~3</pawnCount></li>
+      <li><symbol>t</symbol><terrain>StrawMatting</terrain></li>
+      <li><symbol>u</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
+      <li><symbol>x</symbol><terrain>VFEM2_Matting_Leather_Bear</terrain></li>
+      <li><symbol>y</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>.......#.....#.......</li>
@@ -49,17 +50,17 @@
     </mask>
     <terrain>
       <li>.....................</li>
-      <li>.......sssssss.......</li>
-      <li>......sssttssss......</li>
-      <li>.....ssssttsssss.....</li>
-      <li>.ssssssssttsssssssss.</li>
-      <li>.sssssssssssssssssss.</li>
-      <li>.sssssssssssssssssss.</li>
-      <li>.sssssssssssssssssss.</li>
-      <li>.ssssssssuusssssssss.</li>
-      <li>.....ssssuusssss.....</li>
-      <li>......sssssssss......</li>
-      <li>.......sssssss.......</li>
+      <li>.......ttttttt.......</li>
+      <li>......tttuutttt......</li>
+      <li>.....ttttuuttttt.....</li>
+      <li>.ttttttttuuttttttttt.</li>
+      <li>.ttttttttttttttttttt.</li>
+      <li>.ttttttttttttttttttt.</li>
+      <li>.ttttttttttttttttttt.</li>
+      <li>.ttttttttxxttttttttt.</li>
+      <li>.....ttttxxttttt.....</li>
+      <li>......ttttttttt......</li>
+      <li>.......ttttttt.......</li>
       <li>.....................</li>
     </terrain>
     <things>
@@ -68,9 +69,9 @@
       <li>......bb.....bb......</li>
       <li>.a..abb.......bba..a.</li>
       <li>abbbbbf.......fbbbbba</li>
-      <li>.b..b..g..i..j..b..b.</li>
-      <li>.bk.F....glj....F..b.</li>
-      <li>.bx.b..g..m..j..bxxb.</li>
+      <li>.b..b..g..i..j..bk.b.</li>
+      <li>.bl.F....gmj....F..b.</li>
+      <li>.by.b..g..n..j..byyb.</li>
       <li>abbbbbf.......fbbbbba</li>
       <li>.a..abb.......bba..a.</li>
       <li>......bb.....bb......</li>
@@ -97,12 +98,12 @@
       <li>.....................</li>
       <li>.....................</li>
       <li>.....................</li>
-      <li>........n............</li>
+      <li>........o............</li>
       <li>.....................</li>
       <li>.....................</li>
-      <li>..o..............pq..</li>
+      <li>..p..............qr..</li>
       <li>.....................</li>
-      <li>........r............</li>
+      <li>........s............</li>
       <li>.....................</li>
       <li>.....................</li>
       <li>.....................</li>

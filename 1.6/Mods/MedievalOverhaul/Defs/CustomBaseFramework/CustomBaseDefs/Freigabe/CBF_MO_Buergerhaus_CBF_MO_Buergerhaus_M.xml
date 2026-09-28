@@ -23,7 +23,9 @@
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>i</symbol><thing>CBF_MO_Porzellanvase</thing><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
     </legend>
     <mask>
       <li>#####</li>
@@ -46,7 +48,7 @@
       <li>TH.YT</li>
       <li>T...T</li>
       <li>Tf.BT</li>
-      <li>Tg..T</li>
+      <li>Tg.iT</li>
       <li>TTFTT</li>
     </things>
     <roof>
@@ -62,7 +64,7 @@
       <li>.....</li>
       <li>....+</li>
       <li>+28..</li>
-      <li>.1...</li>
+      <li>.1.Ç.</li>
       <li>.....</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

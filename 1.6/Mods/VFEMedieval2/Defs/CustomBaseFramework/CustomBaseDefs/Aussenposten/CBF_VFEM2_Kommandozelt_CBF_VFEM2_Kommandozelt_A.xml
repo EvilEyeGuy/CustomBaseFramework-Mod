@@ -19,11 +19,12 @@
       <li><symbol>g</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>i</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li><symbol>j</symbol><thing>Table2x2c</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>k</symbol><anchor>Haeuptlingstruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>l</symbol><anchor>Soldaten</anchor><anchorKind>Spawn</anchorKind><pawnCount>2~3</pawnCount></li>
-      <li><symbol>m</symbol><anchor>Ruestung</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>n</symbol><terrain>StrawMatting</terrain></li>
-      <li><symbol>o</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>k</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>l</symbol><anchor>Haeuptlingstruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>m</symbol><anchor>Soldaten</anchor><anchorKind>Spawn</anchorKind><pawnCount>2~3</pawnCount></li>
+      <li><symbol>n</symbol><anchor>Ruestung</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>o</symbol><terrain>StrawMatting</terrain></li>
+      <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>...#.....#...</li>
@@ -40,15 +41,15 @@
     </mask>
     <terrain>
       <li>.............</li>
-      <li>...nnnnnnn...</li>
-      <li>..nnnnnnnnn..</li>
-      <li>.nnnnnnnnnnn.</li>
-      <li>.nnnnnnnnnnn.</li>
-      <li>.nnnnnnnnnnn.</li>
-      <li>.nnnnnnnnnnn.</li>
-      <li>.nnnnnnnnnnn.</li>
-      <li>..nnnnnnnnn..</li>
-      <li>...nnnnnnn...</li>
+      <li>...ooooooo...</li>
+      <li>..ooooooooo..</li>
+      <li>.ooooooooooo.</li>
+      <li>.ooooooooooo.</li>
+      <li>.ooooooooooo.</li>
+      <li>.ooooooooooo.</li>
+      <li>.ooooooooooo.</li>
+      <li>..ooooooooo..</li>
+      <li>...ooooooo...</li>
       <li>.............</li>
     </terrain>
     <things>
@@ -59,7 +60,7 @@
       <li>.b...g..i..b.</li>
       <li>.b...gj.i..b.</li>
       <li>.b.........b.</li>
-      <li>abbo.....obba</li>
+      <li>abbp.....pbba</li>
       <li>..bb.....bb..</li>
       <li>...bbbFbbb...</li>
       <li>...a.....a...</li>
@@ -80,12 +81,12 @@
     <anchors>
       <li>.............</li>
       <li>.............</li>
+      <li>...k.....k...</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
-      <li>.............</li>
-      <li>...k..l..m...</li>
+      <li>...l..m..n...</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>

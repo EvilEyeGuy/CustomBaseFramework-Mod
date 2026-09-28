@@ -14,6 +14,8 @@
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>b</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
     </legend>
     <mask>
@@ -39,9 +41,9 @@
     <things>
       <li>OOOOOOOO...</li>
       <li>O......O...</li>
-      <li>O......OOOO</li>
+      <li>O.a..a.OOOO</li>
       <li>O.........O</li>
-      <li>O.........O</li>
+      <li>Ob......b.O</li>
       <li>OOOOFOOOOOO</li>
       <li>...........</li>
       <li>...........</li>

@@ -19,19 +19,20 @@
       <li><symbol>f</symbol><thing>Bed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>g</symbol><thing>VFEM2_TailoringLoom</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>i</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
-      <li><symbol>j</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>k</symbol><anchor>Stofffass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>l</symbol><anchor>Schneider</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>m</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>n</symbol><anchor>Tuchkiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
-      <li><symbol>o</symbol><anchor>Stoffwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
-      <li><symbol>p</symbol><anchor>Ladenfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>q</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
-      <li><symbol>r</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>s</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>t</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>u</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>j</symbol><thing>VFEM2_LeatherBoilpot</thing><rotation>South</rotation></li>
+      <li><symbol>k</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>l</symbol><anchor>Stofffass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>m</symbol><anchor>Schneider</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>n</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>o</symbol><anchor>Tuchkiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
+      <li><symbol>p</symbol><anchor>Stoffwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
+      <li><symbol>q</symbol><anchor>Ladenfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>r</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
+      <li><symbol>s</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>t</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>u</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>x</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>.......####</li>
@@ -48,9 +49,9 @@
       <li>.......wwww</li>
       <li>wwwwwwwwwww</li>
       <li>wwwwwwwwwww</li>
-      <li>wwwqqqwwwww</li>
-      <li>wwwqqqwwwww</li>
-      <li>wwwqqqww...</li>
+      <li>wwwrrrwwwww</li>
+      <li>wwwrrrwwwww</li>
+      <li>wwwrrrww...</li>
       <li>wwwwwwww...</li>
       <li>...........</li>
       <li>...........</li>
@@ -58,13 +59,13 @@
     <things>
       <li>.......TTTT</li>
       <li>TTTTTTTTa.T</li>
-      <li>Tb..b.rT.fT</li>
-      <li>T......F.sT</li>
+      <li>Tb..b.sT.fT</li>
+      <li>T......F.tT</li>
       <li>T......TTTT</li>
-      <li>Tg....tT...</li>
+      <li>Tg....uT...</li>
       <li>TTTFTTTT...</li>
-      <li>.....ir....</li>
-      <li>ju..j..j...</li>
+      <li>.....is.j..</li>
+      <li>kx..k..k...</li>
     </things>
     <roof>
       <li>.......^^^^</li>
@@ -80,13 +81,13 @@
     <anchors>
       <li>...........</li>
       <li>...........</li>
-      <li>......k....</li>
-      <li>...l.....m.</li>
-      <li>......n....</li>
-      <li>......n....</li>
+      <li>......l....</li>
+      <li>...m.....n.</li>
+      <li>......o....</li>
+      <li>......o....</li>
       <li>...........</li>
-      <li>.oo...p....</li>
-      <li>.oo........</li>
+      <li>.pp...q....</li>
+      <li>.pp........</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

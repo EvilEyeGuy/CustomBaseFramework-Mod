@@ -19,13 +19,15 @@
       <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
       <li><symbol>f</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
       <li><symbol>g</symbol><anchor>Wall</anchor></li>
-      <li><symbol>i</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>j</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>k</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>l</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>m</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>n</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>o</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>i</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>j</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>k</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>l</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>m</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>n</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>o</symbol><thing>VFEM2_StandingBanner</thing><rotation>West</rotation></li>
+      <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>q</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>#######</li>
@@ -48,10 +50,10 @@
     <things>
       <li>aaaaaaa</li>
       <li>a...b.a</li>
-      <li>a.f...a</li>
+      <li>a.f..oa</li>
       <li>a.....a</li>
       <li>a...f.a</li>
-      <li>an.o.ba</li>
+      <li>ap.q.ba</li>
       <li>aaaaaaa</li>
     </things>
     <roof>
@@ -66,10 +68,10 @@
     <anchors>
       <li>...g...</li>
       <li>.......</li>
-      <li>.......</li>
-      <li>g.i.j.g</li>
-      <li>...k...</li>
-      <li>.l.mm..</li>
+      <li>.....i.</li>
+      <li>g.j.k.g</li>
+      <li>...l...</li>
+      <li>.m.nn..</li>
       <li>...g...</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

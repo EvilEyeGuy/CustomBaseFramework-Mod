@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <CBF_Editor>Editor</CBF_Editor>
@@ -766,6 +766,8 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_WdTakeOverHelp>CBF replaces the layouts of World Domination 2.0 and picks the settlement type by the World Domination tier. Off: CBF leaves World Domination settlements alone.</CBF_WdTakeOverHelp>
   <CBF_CampsTakeOver>Build camps and work sites with CBF</CBF_CampsTakeOver>
   <CBF_CampsTakeOverHelp>CBF builds bandit camps, outposts, raid sources and work sites from quests when a matching camp plan exists. The stockpile and workers of work sites stay as in the base game. Off: RimWorld builds these sites itself.</CBF_CampsTakeOverHelp>
+  <CBF_RiafTakeOver>Build A Rim of Ice and Fire holdings with CBF</CBF_RiafTakeOver>
+  <CBF_RiafTakeOverHelp>CBF builds the houses and walls of villages, towns and garrisons from A Rim of Ice and Fire when a plan with a matching riafHolding exists. Defenders, levies, residents and stores stay with A Rim of Ice and Fire. Off: A Rim of Ice and Fire builds its holdings itself.</CBF_RiafTakeOverHelp>
   <CBF_S_FieldsNoEffect>Fields only take effect in the suburb and the countryside. They are not placed in this ward.</CBF_S_FieldsNoEffect>
   <CBF_S_PensNoEffect>Pens only take effect in the countryside. They are not placed in this ward.</CBF_S_PensNoEffect>
   <CBF_SearchSite>Search site</CBF_SearchSite>
@@ -775,4 +777,12 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_SearchSiteNone>No closed containers left to mark.</CBF_SearchSiteNone>
   <CBF_SearchSiteFog>{0} more lie in unexplored rooms. Press again once they are explored.</CBF_SearchSiteFog>
   <CBF_WikiSectionTip>Opens the part of the guide that explains this section.</CBF_WikiSectionTip>
+  <CBF_SaveAsPatch>Save as patch</CBF_SaveAsPatch>
+  <CBF_SaveAsPatchTip>This belongs to another mod. Your changes are saved as a patch in your own mod; the original stays untouched. Only the changed fields and list entries are patched, and every change checks first that its target exists.</CBF_SaveAsPatchTip>
+  <CBF_PlanCopyTip>Makes an independent copy in your own mod under a new name.</CBF_PlanCopyTip>
+  <CBF_SavedAsPatch>{0} saved as patch: {1}</CBF_SavedAsPatch>
+  <CBF_PatchNoSource>The original file of {0} was not found, the patch could not be made.</CBF_PatchNoSource>
+  <CBF_ExportedAsPatch>{0} saved as patch: {1}. The new structure takes effect after restarting the game.</CBF_ExportedAsPatch>
+  <CBF_WdLootShare>Loot in World Domination settlements: {0}% planned CBF loot, {1}% World Domination loot</CBF_WdLootShare>
+  <CBF_WdLootShareHelp>100%: every container keeps the loot of its CBF or Medieval Overhaul table, World Domination loot is off. 0%: the general containers get World Domination's loot budget, as World Domination would. In between, that share of the containers keeps its planned loot. The rest shares the full World Domination budget, and each of them gets at least one item. There is never less loot than at 0%.</CBF_WdLootShareHelp>
 </LanguageData>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CBF_Field_walls>Walls</CBF_Field_walls>
   <CBF_S_UnsavedSwitch>{0} has unsaved changes. Switch anyway?</CBF_S_UnsavedSwitch>
@@ -102,6 +102,12 @@
   <CBF_S_WdStage>WD tier</CBF_S_WdStage>
   <CBF_S_WdStageTip>World Domination tier 1 to 4 this settlement type stands for. A World Domination settlement of this tier prefers it among the types its faction may get. 0 means no tier.</CBF_S_WdStageTip>
   <CBF_S_WdStageNone>No tier</CBF_S_WdStageNone>
+  <CBF_S_RiafHolding>RIAF holding</CBF_S_RiafHolding>
+  <CBF_S_RiafHoldingTip>Makes this settlement type the plan for villages, towns or garrisons of A Rim of Ice and Fire. CBF then builds the houses and walls of such holdings; defenders, levies, residents and stores stay with A Rim of Ice and Fire. A type with a holding kind is not used for normal settlements.</CBF_S_RiafHoldingTip>
+  <CBF_S_RiafNone>None</CBF_S_RiafNone>
+  <CBF_S_RiafDorf>Village</CBF_S_RiafDorf>
+  <CBF_S_RiafStadt>Town</CBF_S_RiafStadt>
+  <CBF_S_RiafGarnison>Garrison</CBF_S_RiafGarnison>
   <CBF_S_WdStageRange>{0} to {1}</CBF_S_WdStageRange>
   <CBF_Lb_Button>Show loot</CBF_Lb_Button>
   <CBF_Lb_ButtonTip>Loot value of the settlement of this type that was built last.</CBF_Lb_ButtonTip>
@@ -140,4 +146,34 @@
   <CBF_S_IdeoPrecepts>Precepts</CBF_S_IdeoPrecepts>
   <CBF_PreviewWards>Wards</CBF_PreviewWards>
   <CBF_PreviewWardsTip>Colours the old town, suburb and countryside in the preview.</CBF_PreviewWardsTip>
+  <CBF_S_AddMine>+ Mine</CBF_S_AddMine>
+  <CBF_S_Mine>Mine</CBF_S_Mine>
+  <CBF_S_MineTip>A mine dug into the rock from a building of this district: a tunnel with chambers.</CBF_S_MineTip>
+  <CBF_S_MineOre>Ore</CBF_S_MineOre>
+  <CBF_S_MineOreNone>no ore</CBF_S_MineOreNone>
+  <CBF_S_MineLength>Length</CBF_S_MineLength>
+  <CBF_S_MineWidth>Width</CBF_S_MineWidth>
+  <CBF_S_MineChambers>Chambers</CBF_S_MineChambers>
+  <CBF_S_MineChamberSize>Chamber size</CBF_S_MineChamberSize>
+  <CBF_S_MineOreShare>Ore share</CBF_S_MineOreShare>
+  <CBF_S_MineOreShareTip>Share of rock cells along the mine that become ore, from 0 to 1.</CBF_S_MineOreShareTip>
+  <CBF_S_MineLumps>Rock chunks</CBF_S_MineLumps>
+  <CBF_S_MineHuts>Starts at</CBF_S_MineHuts>
+  <CBF_S_MineHutsAny>any building</CBF_S_MineHutsAny>
+  <CBF_S_MineHutsTip>Categories of the buildings the mine may start from. Empty: any building of the district.</CBF_S_MineHutsTip>
+  <CBF_S_MineThings>Things</CBF_S_MineThings>
+  <CBF_S_MineThingsNone>none</CBF_S_MineThingsNone>
+  <CBF_S_MineThingsTip>Things placed in the mine. Click to add, remove or move them between chamber, tunnel and entrance.</CBF_S_MineThingsTip>
+  <CBF_S_MineThingAdd>Add thing...</CBF_S_MineThingAdd>
+  <CBF_S_MinePlace_Kammer>chamber</CBF_S_MinePlace_Kammer>
+  <CBF_S_MinePlace_Gang>tunnel</CBF_S_MinePlace_Gang>
+  <CBF_S_MinePlace_Eingang>entrance</CBF_S_MinePlace_Eingang>
+  <CBF_S_TreeShare>Tree share</CBF_S_TreeShare>
+  <CBF_S_TreeShareTip>Share of the wild trees inside the settlement that stay standing when it is built, from 0 to 1. 0 clears them all.</CBF_S_TreeShareTip>
+  <CBF_S_MapSize>Map size</CBF_S_MapSize>
+  <CBF_S_MapSizeTip>Edge length of the map this settlement type asks for, 150 to 400. The larger of this and the world setting is used.</CBF_S_MapSizeTip>
+  <CBF_S_CoreSize>Core size</CBF_S_CoreSize>
+  <CBF_S_CoreSizeTip>Edge length of the settlement core in cells, as a range. The suburb and the countryside grow around it.</CBF_S_CoreSizeTip>
+  <CBF_FactionPickTags>Category tags</CBF_FactionPickTags>
+  <CBF_FactionPickTagInfo>{0} factions: {1}</CBF_FactionPickTagInfo>
 </LanguageData>

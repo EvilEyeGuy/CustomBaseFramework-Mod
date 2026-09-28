@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CBF_AddRoadEdge>+ Straßenrand</CBF_AddRoadEdge>
   <CBF_Field_roadEdges>Straßenränder</CBF_Field_roadEdges>
@@ -107,6 +107,12 @@
   <CBF_S_WdStage>WD-Stufe</CBF_S_WdStage>
   <CBF_S_WdStageTip>World-Domination-Stufe 1 bis 4, für die dieser Ortstyp steht. Ein World-Domination-Ort dieser Stufe nimmt ihn bevorzugt unter den Typen, die seine Fraktion bekommen darf. 0 heißt keine Stufe.</CBF_S_WdStageTip>
   <CBF_S_WdStageNone>Keine Stufe</CBF_S_WdStageNone>
+  <CBF_S_RiafHolding>RIAF-Holding</CBF_S_RiafHolding>
+  <CBF_S_RiafHoldingTip>Macht diesen Ortstyp zum Plan für Dörfer, Städte oder Garnisonen aus A Rim of Ice and Fire. CBF baut dann Häuser und Mauern solcher Holdings; Verteidiger, Aufgebote, Bewohner und Vorräte bleiben bei A Rim of Ice and Fire. Ein Typ mit Holding-Art wird für normale Siedlungen nicht verwendet.</CBF_S_RiafHoldingTip>
+  <CBF_S_RiafNone>Keine</CBF_S_RiafNone>
+  <CBF_S_RiafDorf>Dorf</CBF_S_RiafDorf>
+  <CBF_S_RiafStadt>Stadt</CBF_S_RiafStadt>
+  <CBF_S_RiafGarnison>Garnison</CBF_S_RiafGarnison>
   <CBF_S_WdStageRange>{0} bis {1}</CBF_S_WdStageRange>
   <CBF_Lb_Button>Beute anzeigen</CBF_Lb_Button>
   <CBF_Lb_ButtonTip>Beutewert des zuletzt gebauten Ortes dieses Typs.</CBF_Lb_ButtonTip>
@@ -145,4 +151,34 @@
   <CBF_S_IdeoPrecepts>Gebote</CBF_S_IdeoPrecepts>
   <CBF_PreviewWards>Stadtteile</CBF_PreviewWards>
   <CBF_PreviewWardsTip>Färbt Altstadt, Vorstadt und Umland in der Vorschau ein.</CBF_PreviewWardsTip>
+  <CBF_S_AddMine>+ Mine</CBF_S_AddMine>
+  <CBF_S_Mine>Mine</CBF_S_Mine>
+  <CBF_S_MineTip>Eine Mine, die von einem Gebäude dieses Bezirks in den Fels getrieben wird: ein Gang mit Kammern.</CBF_S_MineTip>
+  <CBF_S_MineOre>Erz</CBF_S_MineOre>
+  <CBF_S_MineOreNone>kein Erz</CBF_S_MineOreNone>
+  <CBF_S_MineLength>Länge</CBF_S_MineLength>
+  <CBF_S_MineWidth>Breite</CBF_S_MineWidth>
+  <CBF_S_MineChambers>Kammern</CBF_S_MineChambers>
+  <CBF_S_MineChamberSize>Kammergröße</CBF_S_MineChamberSize>
+  <CBF_S_MineOreShare>Erzanteil</CBF_S_MineOreShare>
+  <CBF_S_MineOreShareTip>Anteil der Felsfelder entlang der Mine, die zu Erz werden, von 0 bis 1.</CBF_S_MineOreShareTip>
+  <CBF_S_MineLumps>Felsbrocken</CBF_S_MineLumps>
+  <CBF_S_MineHuts>Beginnt an</CBF_S_MineHuts>
+  <CBF_S_MineHutsAny>jedem Gebäude</CBF_S_MineHutsAny>
+  <CBF_S_MineHutsTip>Kategorien der Gebäude, von denen die Mine ausgehen darf. Leer: jedes Gebäude des Bezirks.</CBF_S_MineHutsTip>
+  <CBF_S_MineThings>Dinge</CBF_S_MineThings>
+  <CBF_S_MineThingsNone>keine</CBF_S_MineThingsNone>
+  <CBF_S_MineThingsTip>Dinge in der Mine. Klicken zum Hinzufügen, Entfernen oder Verschieben zwischen Kammer, Gang und Eingang.</CBF_S_MineThingsTip>
+  <CBF_S_MineThingAdd>Ding hinzufügen …</CBF_S_MineThingAdd>
+  <CBF_S_MinePlace_Kammer>Kammer</CBF_S_MinePlace_Kammer>
+  <CBF_S_MinePlace_Gang>Gang</CBF_S_MinePlace_Gang>
+  <CBF_S_MinePlace_Eingang>Eingang</CBF_S_MinePlace_Eingang>
+  <CBF_S_TreeShare>Baumanteil</CBF_S_TreeShare>
+  <CBF_S_TreeShareTip>Anteil der wilden Bäume im Ort, die beim Bau stehen bleiben, von 0 bis 1. 0 räumt alle.</CBF_S_TreeShareTip>
+  <CBF_S_MapSize>Kartengröße</CBF_S_MapSize>
+  <CBF_S_MapSizeTip>Kantenlänge der Karte, die dieser Ortstyp verlangt, 150 bis 400. Der größere Wert aus diesem und der Welteinstellung gilt.</CBF_S_MapSizeTip>
+  <CBF_S_CoreSize>Kerngröße</CBF_S_CoreSize>
+  <CBF_S_CoreSizeTip>Kantenlänge des Ortskerns in Feldern, als Spanne. Vorstadt und Umland wachsen darum herum.</CBF_S_CoreSizeTip>
+  <CBF_FactionPickTags>Kategorie-Tags</CBF_FactionPickTags>
+  <CBF_FactionPickTagInfo>{0} Fraktionen: {1}</CBF_FactionPickTagInfo>
 </LanguageData>

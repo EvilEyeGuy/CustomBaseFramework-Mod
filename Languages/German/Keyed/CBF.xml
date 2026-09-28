@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <CBF_Editor>Editor</CBF_Editor>
@@ -766,6 +766,8 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_WdTakeOverHelp>CBF ersetzt die Layouts von World Domination 2.0 und wählt den Ortstyp nach der World-Domination-Stufe. Aus: CBF lässt World-Domination-Orte in Ruhe.</CBF_WdTakeOverHelp>
   <CBF_CampsTakeOver>Lager und Arbeitsstätten mit CBF bauen</CBF_CampsTakeOver>
   <CBF_CampsTakeOverHelp>Banditenlager, Außenposten, Raid-Quellen und Arbeitsstätten aus Quests baut CBF, wenn ein passender Lagerplan da ist. Warenlager und Arbeiter der Arbeitsstätten bleiben wie im Spiel. Aus: RimWorld baut diese Orte selbst.</CBF_CampsTakeOverHelp>
+  <CBF_RiafTakeOver>RIAF-Holdings mit CBF bauen</CBF_RiafTakeOver>
+  <CBF_RiafTakeOverHelp>Häuser und Mauern der Dörfer, Städte und Garnisonen aus A Rim of Ice and Fire baut CBF, wenn ein Plan mit passendem riafHolding da ist. Verteidiger, Aufgebote, Bewohner und Vorräte bleiben bei A Rim of Ice and Fire. Aus: A Rim of Ice and Fire baut seine Holdings selbst.</CBF_RiafTakeOverHelp>
   <CBF_S_FieldsNoEffect>Äcker wirken nur in Vorstadt und Umland. In diesem Stadtteil werden sie nicht angelegt.</CBF_S_FieldsNoEffect>
   <CBF_S_PensNoEffect>Gehege wirken nur im Umland. In diesem Stadtteil werden sie nicht angelegt.</CBF_S_PensNoEffect>
   <CBF_SearchSite>Ort durchsuchen</CBF_SearchSite>
@@ -775,4 +777,12 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_SearchSiteNone>Keine geschlossenen Behälter mehr zum Markieren.</CBF_SearchSiteNone>
   <CBF_SearchSiteFog>{0} weitere liegen in unerkundeten Räumen. Nach dem Erkunden erneut drücken.</CBF_SearchSiteFog>
   <CBF_WikiSectionTip>Öffnet die Stelle der Anleitung, die diesen Abschnitt erklärt.</CBF_WikiSectionTip>
+  <CBF_SaveAsPatch>Als Patch speichern</CBF_SaveAsPatch>
+  <CBF_SaveAsPatchTip>Das gehört zu einem anderen Mod. Deine Änderungen werden als Patch in deinem eigenen Mod gespeichert, das Original bleibt unverändert. Gepatcht werden nur die geänderten Felder und Listeneinträge, und jede Änderung prüft zuerst, ob ihr Ziel existiert.</CBF_SaveAsPatchTip>
+  <CBF_PlanCopyTip>Legt eine eigenständige Kopie unter neuem Namen in deinem eigenen Mod an.</CBF_PlanCopyTip>
+  <CBF_SavedAsPatch>{0} als Patch gespeichert: {1}</CBF_SavedAsPatch>
+  <CBF_PatchNoSource>Die Originaldatei von {0} wurde nicht gefunden, der Patch konnte nicht erstellt werden.</CBF_PatchNoSource>
+  <CBF_ExportedAsPatch>{0} als Patch gespeichert: {1}. Der neue Aufbau wirkt nach einem Neustart des Spiels.</CBF_ExportedAsPatch>
+  <CBF_WdLootShare>Beute in World-Domination-Orten: {0} % geplante CBF-Beute, {1} % World-Domination-Beute</CBF_WdLootShare>
+  <CBF_WdLootShareHelp>100 %: Jeder Behälter behält die Beute seiner CBF- oder Medieval-Overhaul-Tabelle, die World-Domination-Beute ist aus. 0 %: Die allgemeinen Behälter bekommen das Beutebudget von World Domination, so wie World Domination es machen würde. Dazwischen behält dieser Anteil der Behälter seine geplante Beute. Der Rest teilt sich das volle World-Domination-Budget, und jeder davon bekommt mindestens ein Stück. Es gibt nie weniger Beute als bei 0 %.</CBF_WdLootShareHelp>
 </LanguageData>

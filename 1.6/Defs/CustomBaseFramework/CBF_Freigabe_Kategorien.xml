@@ -16,6 +16,15 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Anbau_Bergbau</defName>
+    <label>CBF_MO_Anbau_Bergbau</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Anbau_Gasthaus</defName>
     <label>Anbau Gasthaus</label>
     <zones>
@@ -27,6 +36,24 @@
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Anbau_Hof</defName>
     <label>Anbau Hof</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Anbau_Holz</defName>
+    <label>CBF_MO_Anbau_Holz</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Anbau_Jagd</defName>
+    <label>CBF_MO_Anbau_Jagd</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -75,7 +102,16 @@
     <zones>
       <li>Inside</li>
     </zones>
-    <needsRoadAccess>true</needsRoadAccess>
+    <needsRoadAccess>true</needsRoadAccess><anbauVoll>true</anbauVoll><anbauUeberstand>1</anbauUeberstand><anbauEckenWeg>true</anbauEckenWeg>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Anbau_Zelt_Gross</defName>
+    <label>Anbau Zelt groß</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess><anbauVoll>true</anbauVoll><anbauUeberstand>1</anbauUeberstand><anbauEckenWeg>true</anbauEckenWeg>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -299,6 +335,7 @@
     <needsRoadAccess>true</needsRoadAccess>
     <anbauten>
       <li>CBF_MO_Anbau_Zelt</li>
+      <li>CBF_MO_Anbau_Zelt_Gross</li>
     </anbauten>
     <anbauChance>0.8</anbauChance>
     <anbauMax>3</anbauMax>
@@ -326,6 +363,12 @@
     </zones>
     <needsRoadAccess>false</needsRoadAccess>
     <blockMax>1</blockMax>
+    <anbauten>
+      <li>CBF_MO_Anbau_Jagd</li>
+      <li>CBF_MO_Anbau_Laendlich</li>
+    </anbauten>
+    <anbauChance>0.8</anbauChance>
+    <anbauMax>3</anbauMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -363,6 +406,15 @@
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Kirche</defName>
     <label>Kirche</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Kochhuette</defName>
+    <label>CBF_MO_Kochhuette</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -435,6 +487,21 @@
     </anbauten>
     <anbauChance>0.5</anbauChance>
     <anbauMax>2</anbauMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Minenhuette</defName>
+    <label>CBF_MO_Minenhuette</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <anbauten>
+      <li>CBF_MO_Anbau_Bergbau</li>
+      <li>CBF_MO_Anbau_Laendlich</li>
+    </anbauten>
+    <anbauChance>0.8</anbauChance>
+    <anbauMax>3</anbauMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>

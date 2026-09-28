@@ -150,7 +150,7 @@
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
-    <coreSize>30~38</coreSize>
+    <coreSize>36~46</coreSize>
     <mapSize>200</mapSize>
     <roadMain>1</roadMain>
     <roadLane>1</roadLane>
@@ -169,7 +169,10 @@
             <name>Lager</name>
             <entries>
               <li><tag>CBF_Vanilla_Saegewerk</tag><count>1~1</count></li>
-              <li><tag>CBF_Vanilla_Posten_Baracke</tag><count>0~2</count><filler>true</filler></li>
+              <li><tag>CBF_Vanilla_Kueche</tag><count>1~1</count></li>
+              <li><tag>CBF_Vanilla_Lagerhalle</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Werkhalle</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Wohnhuette</tag><count>2~4</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -197,7 +200,7 @@
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
-    <coreSize>30~38</coreSize>
+    <coreSize>36~46</coreSize>
     <mapSize>200</mapSize>
     <roadMain>1</roadMain>
     <roadLane>1</roadLane>
@@ -215,23 +218,27 @@
           <li>
             <name>Lager</name><mines><li>
               <name>Stahlmine</name>
-              <count>1~2</count>
-              <tags><li>CBF_Vanilla_Bohrbaracke</li><li>CBF_Vanilla_Posten_Baracke</li></tags>
-              <laenge>25~45</laenge>
+              <count>1~1</count>
+              <tags><li>CBF_Vanilla_Bohrbaracke</li><li>CBF_Vanilla_Wohnhuette</li></tags>
+              <laenge>15~20</laenge>
               <breite>1~2</breite>
-              <kammern>2~3</kammern>
-              <kammerGroesse>5~7</kammerGroesse>
+              <ebenen>1~1</ebenen>
+              <kammern>2~2</kammern>
+              <kammerGroesse>4~6</kammerGroesse>
               <ader>MineableSteel</ader>
               <aderAnteil>0.06</aderAnteil>
               <brocken>3~6</brocken>
               <dinge>
-                  <li><thing>DeepDrill</thing><count>1~1</count></li>
-                  <li><thing>StandingLamp</thing><count>1~2</count></li>
-                  <li><thing>Shelf</thing><count>1~2</count><inhalt>Steel</inhalt><menge>30~75</menge></li>
+                  <li><liste>CBF_Vanilla_Mine_Bohrer</liste><count>1~1</count></li>
+                  <li><liste>CBF_Vanilla_Mine_Licht</liste><count>2~3</count></li>
+                  <li><liste>CBF_Vanilla_Mine_Regal</liste><count>1~2</count><inhalt>Steel</inhalt><menge>30~75</menge></li>
               </dinge></li></mines>
             <entries>
               <li><tag>CBF_Vanilla_Bohrbaracke</tag><count>1~1</count></li>
-              <li><tag>CBF_Vanilla_Posten_Baracke</tag><count>0~2</count><filler>true</filler></li>
+              <li><tag>CBF_Vanilla_Kueche</tag><count>1~1</count></li>
+              <li><tag>CBF_Vanilla_Lagerhalle</tag><count>1~1</count></li>
+              <li><tag>CBF_Vanilla_Maschinenbau</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Wohnhuette</tag><count>2~4</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -259,7 +266,7 @@
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
-    <coreSize>30~38</coreSize>
+    <coreSize>36~46</coreSize>
     <mapSize>200</mapSize>
     <roadMain>1</roadMain>
     <roadLane>1</roadLane>
@@ -279,7 +286,9 @@
             <entries>
               <li><tag>CBF_Vanilla_Posten_Schlachthaus</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_Posten_Gerberei</tag><count>0~1</count></li>
-              <li><tag>CBF_Vanilla_Posten_Baracke</tag><count>0~2</count><filler>true</filler></li>
+              <li><tag>CBF_Vanilla_Kueche</tag><count>1~1</count></li>
+              <li><tag>CBF_Vanilla_Lagerhalle</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Wohnhuette</tag><count>2~4</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -326,7 +335,8 @@
             <name>Hof</name>
             <entries>
               <li><tag>CBF_Vanilla_Silo</tag><count>1~1</count></li>
-              <li><tag>CBF_Vanilla_Posten_Baracke</tag><count>1~2</count><filler>true</filler></li>
+              <li><tag>CBF_Vanilla_Kueche</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Wohnhuette</tag><count>1~3</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -346,7 +356,7 @@
                   <li>Plant_Rice</li>
                 </plants>
                 <tags>
-                  <li>CBF_Vanilla_Posten_Baracke</li>
+                  <li>CBF_Vanilla_Bauernhof</li>
                 </tags></li></fields><pens><li>
               <name>Gehege</name>
               <count>1~1</count>
@@ -357,7 +367,7 @@
                </plants>
               <weight>1</weight></li></pens>
             <entries>
-              <li><tag>CBF_Vanilla_Posten_Baracke</tag><count>1~3</count></li>
+              <li><tag>CBF_Vanilla_Bauernhof</tag><count>1~2</count></li>
             </entries>
           </li>
         </districts>

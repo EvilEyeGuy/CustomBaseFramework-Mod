@@ -14,81 +14,72 @@
       <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>4</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
       <li><symbol>6</symbol><anchor>Stoff</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stofffass</objects></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_DryingRack_Small</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_TanningRack</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TanningDrum</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_TentWall</thing><stuff>Leather_Plain</stuff><biomLeder>true</biomLeder></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_SpinningWheel</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_HideoutBarrelTextiles</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_SpinningWheel</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_TanningDrum</thing><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_HideoutBarrelTextiles</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
       <li><symbol>m</symbol><terrain>StrawMatting</terrain></li>
     </legend>
     <mask>
-      <li>....#...#...</li>
-      <li>....#####...</li>
-      <li>...#######..</li>
-      <li>..##########</li>
-      <li>###########.</li>
-      <li>###########.</li>
-      <li>###########.</li>
-      <li>..##########</li>
-      <li>...#######..</li>
-      <li>....#####...</li>
-      <li>....#.#.#...</li>
+      <li>.....#...</li>
+      <li>######...</li>
+      <li>#######..</li>
+      <li>#########</li>
+      <li>########.</li>
+      <li>#########</li>
+      <li>#######..</li>
+      <li>######...</li>
+      <li>.....#...</li>
     </mask>
     <terrain>
-      <li>............</li>
-      <li>....mmmmm...</li>
-      <li>...mmmmmmm..</li>
-      <li>..mmmmmmmmm.</li>
-      <li>mmmmmmmmmmm.</li>
-      <li>mmmmmmmmmmm.</li>
-      <li>mmmmmmmmmmm.</li>
-      <li>..mmmmmmmmm.</li>
-      <li>...mmmmmmm..</li>
-      <li>....mmmmm...</li>
-      <li>............</li>
+      <li>.........</li>
+      <li>mmmmmm...</li>
+      <li>mmmmmmm..</li>
+      <li>mmmmmmmm.</li>
+      <li>mmmmmmmm.</li>
+      <li>mmmmmmmm.</li>
+      <li>mmmmmmm..</li>
+      <li>mmmmmm...</li>
+      <li>.........</li>
     </terrain>
     <things>
-      <li>....I...I...</li>
-      <li>....UUUUU...</li>
-      <li>...UU...UU..</li>
-      <li>..UU...a.UUI</li>
-      <li>UUU.T.....U.</li>
-      <li>U.........U.</li>
-      <li>UUUf......U.</li>
-      <li>..UUi..D.UUI</li>
-      <li>...UU...UU..</li>
-      <li>....UUFUU...</li>
-      <li>....I...I...</li>
+      <li>.....I...</li>
+      <li>UUUUUU...</li>
+      <li>Uj.f.UU..</li>
+      <li>U.....UUI</li>
+      <li>F.....kU.</li>
+      <li>U...i.UUI</li>
+      <li>UlG..UU..</li>
+      <li>UUUUUU...</li>
+      <li>.....I...</li>
     </things>
     <roof>
-      <li>............</li>
-      <li>....^^^^^...</li>
-      <li>...^^^^^^^..</li>
-      <li>..^^^^^^^^^.</li>
-      <li>^^^^^^^^^^^.</li>
-      <li>^^^^^^^^^^^.</li>
-      <li>^^^^^^^^^^^.</li>
-      <li>..^^^^^^^^^.</li>
-      <li>...^^^^^^^..</li>
-      <li>....^^^^^...</li>
-      <li>............</li>
+      <li>.........</li>
+      <li>^^^^^^...</li>
+      <li>^^^^^^^..</li>
+      <li>^^^^^^^^.</li>
+      <li>^^^^^^^^.</li>
+      <li>^^^^^^^^.</li>
+      <li>^^^^^^^..</li>
+      <li>^^^^^^...</li>
+      <li>.........</li>
     </roof>
     <anchors>
-      <li>............</li>
-      <li>............</li>
-      <li>............</li>
-      <li>............</li>
-      <li>............</li>
-      <li>+...........</li>
-      <li>...6........</li>
-      <li>....4.......</li>
-      <li>............</li>
-      <li>............</li>
-      <li>............</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.4.......</li>
+      <li>.........</li>
+      <li>+.....6..</li>
+      <li>.........</li>
+      <li>.4.......</li>
+      <li>.........</li>
+      <li>.........</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

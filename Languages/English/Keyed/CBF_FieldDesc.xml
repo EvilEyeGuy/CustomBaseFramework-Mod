@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CBF_FieldDesc_abstand>Gap between buildings in this ward, in cells, as a range. 0~0 takes minBuildingGap and maxBuildingGap of the settlement.</CBF_FieldDesc_abstand>
   <CBF_FieldDesc_allowMirror>May the generator mirror this piece. Switch off for pieces that only work one way round.</CBF_FieldDesc_allowMirror>
@@ -146,6 +146,7 @@
   <CBF_FieldDesc_wandAbriss>How likely a building wall is torn down, 0 to 1, more often near the attack.</CBF_FieldDesc_wandAbriss>
   <CBF_FieldDesc_wards>The parts of the settlement: Stadt, Vorstadt and Umland, each with its own wall, garrison, districts and surfaces.</CBF_FieldDesc_wards>
   <CBF_FieldDesc_wdStufe>World Domination tier this type stands for, as a range from 1 to 4. A settlement with a tier prefers the types closest to it. 0 means no tier.</CBF_FieldDesc_wdStufe>
+  <CBF_FieldDesc_riafHolding>Holding kind of A Rim of Ice and Fire this type is the plan for: Dorf (village), Stadt (town) or Garnison (garrison). Empty means none. A type with a holding kind is only used for such holdings.</CBF_FieldDesc_riafHolding>
   <CBF_FieldDesc_weightOverDepth>Curve that replaces weight by depth. Settlements have no depth, so only the value at 0 counts.</CBF_FieldDesc_weightOverDepth>
   <CBF_FieldDesc_weightOverWealth>Curve over the wealth of the player's home map. Its value multiplies weight.</CBF_FieldDesc_weightOverWealth>
   <CBF_FieldDesc_zu>defName of the replacement. Targets that do not exist are skipped.</CBF_FieldDesc_zu>
@@ -166,4 +167,18 @@
   <CBF_FieldDesc_lagerArten>SitePartDef names, such as BanditCamp or Outpost. This camp plan builds these quest sites. Only for the kind Lager.</CBF_FieldDesc_lagerArten>
   <CBF_FieldDesc_ohneWdBeute>Switches off the World Domination loot budget for this settlement type.</CBF_FieldDesc_ohneWdBeute>
   <CBF_FieldDesc_ideologieRolle>Role of the faction's ideoligion for pawns of this entry: empty, Kampf (shooting or melee specialist by weapon) or a role precept defName. Needs Ideology.</CBF_FieldDesc_ideologieRolle>
+  <CBF_FieldDesc_baumanteil>Share of wild trees inside the settlement that are kept when it is built, 0 to 1. 0 clears them.</CBF_FieldDesc_baumanteil>
+  <CBF_FieldDesc_mines>Mines of this district. Each mine starts at a building of the district and runs as a tunnel with chambers into the rock.</CBF_FieldDesc_mines>
+  <CBF_FieldDesc_Minending_inhalt>Items put into or next to the thing, for example ore in a cart.</CBF_FieldDesc_Minending_inhalt>
+  <CBF_FieldDesc_Minending_menge>How many of the items in inhalt.</CBF_FieldDesc_Minending_menge>
+  <CBF_FieldDesc_Minending_ort>Where the thing stands: Kammer (chamber), Gang (tunnel) or Eingang (entrance).</CBF_FieldDesc_Minending_ort>
+  <CBF_FieldDesc_Minenspec_ader>Ore rock (a mineable ThingDef) set into the rock along the mine.</CBF_FieldDesc_Minenspec_ader>
+  <CBF_FieldDesc_Minenspec_aderAnteil>Share of rock cells along the mine that become ore, 0 to 1.</CBF_FieldDesc_Minenspec_aderAnteil>
+  <CBF_FieldDesc_Minenspec_breite>Width of the tunnel in cells.</CBF_FieldDesc_Minenspec_breite>
+  <CBF_FieldDesc_Minenspec_brocken>Number of rock chunks left in the mine.</CBF_FieldDesc_Minenspec_brocken>
+  <CBF_FieldDesc_Minenspec_kammerGroesse>Edge length of the chambers in cells.</CBF_FieldDesc_Minenspec_kammerGroesse>
+  <CBF_FieldDesc_Minenspec_kammern>Number of chambers along the tunnel.</CBF_FieldDesc_Minenspec_kammern>
+  <CBF_FieldDesc_Minenspec_laenge>Length of the tunnel in cells.</CBF_FieldDesc_Minenspec_laenge>
+  <CBF_FieldDesc_anbauUeberstand>With anbauVoll: how many cells the annex must reach past the house wall at each end. 0 means flush.</CBF_FieldDesc_anbauUeberstand>
+  <CBF_FieldDesc_anbauVoll>Set on the annex category. True: the annex only attaches where it covers the whole wall side of the house.</CBF_FieldDesc_anbauVoll>
 </LanguageData>

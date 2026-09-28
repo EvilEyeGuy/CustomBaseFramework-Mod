@@ -38,7 +38,8 @@
               <li><tag>CBF_MO_Kommandozelt</tag><count>1~1</count><unique>true</unique></li>
               <li><tag>CBF_MO_Waffenzelt</tag><count>1~2</count></li>
               <li><tag>CBF_MO_Beuteplatz</tag><count>1~2</count></li>
-              <li><tag>CBF_MO_Lagerfeuer</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Kochhuette</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Lagerfeuer</tag><count>0~1</count></li>
               <li><tag>CBF_MO_Soldatenzelt</tag><count>3~7</count><filler>true</filler></li>
             </entries>
           </li>
@@ -146,7 +147,7 @@
     <styles>
       <li>Rustical</li>
     </styles>
-    <coreSize>30~38</coreSize>
+    <coreSize>36~46</coreSize>
     <mapSize>200</mapSize>
     <roadMain>1</roadMain>
     <roadLane>1</roadLane>
@@ -164,10 +165,14 @@
           <li>
             <name>Lager</name>
             <entries>
-              <li><tag>CBF_MO_Holzfaellerhuette</tag><count>1~2</count></li>
               <li><tag>CBF_MO_Saegeplatz</tag><count>1~2</count></li>
+              <li><tag>CBF_MO_Lagerhaus</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Tischlerei</tag><count>0~1</count></li>
               <li><tag>CBF_MO_Koehlerei</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Huette</tag><count>2~4</count><filler>true</filler></li>
+              <li><tag>CBF_MO_Kochhuette</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Lagerfeuer</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Volk</tag><count>1~2</count></li>
+              <li><tag>CBF_MO_Holzfaellerhuette</tag><count>2~4</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -192,7 +197,7 @@
     <styles>
       <li>Rustical</li>
     </styles>
-    <coreSize>30~38</coreSize>
+    <coreSize>36~46</coreSize>
     <mapSize>200</mapSize>
     <roadMain>1</roadMain>
     <roadLane>1</roadLane>
@@ -210,25 +215,32 @@
           <li>
             <name>Lager</name><mines><li>
               <name>Eisenmine</name>
-              <count>1~2</count>
-              <tags><li>CBF_MO_Huette</li><li>CBF_MO_Baracke</li></tags>
-              <laenge>25~45</laenge>
+              <count>1~1</count>
+              <tags><li>CBF_MO_Minenhuette</li></tags>
+              <laenge>15~20</laenge>
               <breite>1~2</breite>
-              <kammern>2~3</kammern>
-              <kammerGroesse>5~7</kammerGroesse>
+              <ebenen>1~1</ebenen>
+              <kammern>2~2</kammern>
+              <kammerGroesse>4~6</kammerGroesse>
               <ader>DankPyon_MineableIron</ader>
               <aderAnteil>0.06</aderAnteil>
+              <stuetze>CBF_MO_Minenstuetze</stuetze>
+              <stuetzenAbstand>5~8</stuetzenAbstand>
               <brocken>3~6</brocken>
               <dinge>
-                  <li><thing>DankPyon_MineShaft</thing><count>1~1</count></li>
-                  <li><thing>DankPyon_Storage_Cart_Ore</thing><count>0~1</count><ort>Gang</ort></li>
-                  <li><thing>DankPyon_RusticTorchLamp</thing><count>1~3</count></li>
-                  <li><thing>DankPyon_BarrelIronOre</thing><count>2~4</count><inhalt>DankPyon_IronOre</inhalt><menge>20~60</menge></li>
+                  <li><liste>CBF_MO_Mine_Schacht</liste><count>1~1</count></li>
+                  <li><liste>CBF_MO_Mine_Karren</liste><count>0~1</count><ort>Gang</ort></li>
+                  <li><liste>CBF_MO_Mine_Licht</liste><count>2~4</count></li>
+                  <li><liste>CBF_MO_Mine_Eisenfass</liste><count>2~4</count><inhalt>DankPyon_IronOre</inhalt><menge>20~60</menge></li>
               </dinge></li></mines>
             <entries>
-              <li><tag>CBF_MO_Baracke</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Minenhuette</tag><count>1~2</count></li>
+              <li><tag>CBF_MO_Lagerhaus</tag><count>1~1</count></li>
               <li><tag>CBF_MO_Schmelze</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Huette</tag><count>2~4</count><filler>true</filler></li>
+              <li><tag>CBF_MO_Schmiede</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Kochhuette</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Lagerfeuer</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Volk</tag><count>1~3</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -266,7 +278,7 @@
     <styles>
       <li>Rustical</li>
     </styles>
-    <coreSize>30~38</coreSize>
+    <coreSize>36~46</coreSize>
     <mapSize>200</mapSize>
     <roadMain>1</roadMain>
     <roadLane>1</roadLane>
@@ -284,25 +296,32 @@
           <li>
             <name>Lager</name><mines><li>
               <name>Kohlemine</name>
-              <count>1~2</count>
-              <tags><li>CBF_MO_Huette</li><li>CBF_MO_Baracke</li></tags>
-              <laenge>25~45</laenge>
+              <count>1~1</count>
+              <tags><li>CBF_MO_Minenhuette</li></tags>
+              <laenge>15~20</laenge>
               <breite>1~2</breite>
-              <kammern>2~3</kammern>
-              <kammerGroesse>5~7</kammerGroesse>
+              <ebenen>1~1</ebenen>
+              <kammern>2~2</kammern>
+              <kammerGroesse>4~6</kammerGroesse>
               <ader>DankPyon_MineableCoal</ader>
               <aderAnteil>0.06</aderAnteil>
+              <stuetze>CBF_MO_Minenstuetze</stuetze>
+              <stuetzenAbstand>5~8</stuetzenAbstand>
               <brocken>3~6</brocken>
               <dinge>
-                  <li><thing>DankPyon_MineShaft</thing><count>1~1</count></li>
-                  <li><thing>DankPyon_Storage_Cart_Ore</thing><count>0~1</count><ort>Gang</ort></li>
-                  <li><thing>DankPyon_RusticTorchLamp</thing><count>1~3</count></li>
-                  <li><thing>DankPyon_BarrelCoalOre</thing><count>2~4</count><inhalt>DankPyon_Coal</inhalt><menge>20~60</menge></li>
+                  <li><liste>CBF_MO_Mine_Schacht</liste><count>1~1</count></li>
+                  <li><liste>CBF_MO_Mine_Karren</liste><count>0~1</count><ort>Gang</ort></li>
+                  <li><liste>CBF_MO_Mine_Licht</liste><count>2~4</count></li>
+                  <li><liste>CBF_MO_Mine_Kohlefass</liste><count>2~4</count><inhalt>DankPyon_Coal</inhalt><menge>20~60</menge></li>
               </dinge></li></mines>
             <entries>
-              <li><tag>CBF_MO_Baracke</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Minenhuette</tag><count>1~2</count></li>
+              <li><tag>CBF_MO_Lagerhaus</tag><count>1~1</count></li>
               <li><tag>CBF_MO_Koehlerei</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Huette</tag><count>2~4</count><filler>true</filler></li>
+              <li><tag>CBF_MO_Schmiede</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Kochhuette</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Lagerfeuer</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Volk</tag><count>1~3</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -340,7 +359,7 @@
     <styles>
       <li>Rustical</li>
     </styles>
-    <coreSize>30~38</coreSize>
+    <coreSize>36~46</coreSize>
     <mapSize>200</mapSize>
     <roadMain>1</roadMain>
     <roadLane>1</roadLane>
@@ -358,21 +377,28 @@
           <li>
             <name>Lager</name><mines><li>
               <name>Steinmine</name>
-              <count>1~2</count>
-              <tags><li>CBF_MO_Huette</li><li>CBF_MO_Baracke</li></tags>
-              <laenge>25~45</laenge>
+              <count>1~1</count>
+              <tags><li>CBF_MO_Minenhuette</li></tags>
+              <laenge>15~20</laenge>
               <breite>1~2</breite>
-              <kammern>2~3</kammern>
-              <kammerGroesse>5~7</kammerGroesse>
+              <ebenen>1~1</ebenen>
+              <kammern>2~2</kammern>
+              <kammerGroesse>4~6</kammerGroesse>
+              <stuetze>CBF_MO_Minenstuetze</stuetze>
+              <stuetzenAbstand>5~8</stuetzenAbstand>
               <brocken>10~18</brocken>
               <dinge>
-                  <li><thing>DankPyon_MineShaft</thing><count>1~1</count></li>
-                  <li><thing>DankPyon_Storage_Cart_Ore</thing><count>0~1</count><ort>Gang</ort></li>
-                  <li><thing>DankPyon_RusticTorchLamp</thing><count>1~3</count></li>
+                  <li><liste>CBF_MO_Mine_Schacht</liste><count>1~1</count></li>
+                  <li><liste>CBF_MO_Mine_Karren</liste><count>0~1</count><ort>Gang</ort></li>
+                  <li><liste>CBF_MO_Mine_Licht</liste><count>2~4</count></li>
               </dinge></li></mines>
             <entries>
-              <li><tag>CBF_MO_Baracke</tag><count>1~1</count></li>
-              <li><tag>CBF_MO_Huette</tag><count>2~4</count><filler>true</filler></li>
+              <li><tag>CBF_MO_Minenhuette</tag><count>1~2</count></li>
+              <li><tag>CBF_MO_Lagerhaus</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Tischlerei</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Kochhuette</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Lagerfeuer</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Volk</tag><count>1~3</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -410,7 +436,7 @@
     <styles>
       <li>Rustical</li>
     </styles>
-    <coreSize>30~38</coreSize>
+    <coreSize>36~46</coreSize>
     <mapSize>200</mapSize>
     <roadMain>1</roadMain>
     <roadLane>1</roadLane>
@@ -429,10 +455,12 @@
             <name>Lager</name>
             <entries>
               <li><tag>CBF_MO_Posten_Schlachthaus</tag><count>1~1</count></li>
-              <li><tag>CBF_MO_Posten_Gerberei</tag><count>1~1</count></li>
-              <li><tag>CBF_MO_Jagdhuette</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Gerberei</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Lagerhaus</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Kochhuette</tag><count>1~1</count></li>
               <li><tag>CBF_MO_Lagerfeuer</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Huette</tag><count>1~3</count><filler>true</filler></li>
+              <li><tag>CBF_MO_Volk</tag><count>1~2</count></li>
+              <li><tag>CBF_MO_Jagdhuette</tag><count>2~4</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -477,6 +505,7 @@
             <entries>
               <li><tag>CBF_MO_Kornspeicher</tag><count>0~1</count></li>
               <li><tag>CBF_MO_Bauernhof</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Lagerhaus</tag><count>0~1</count></li>
               <li><tag>CBF_MO_Huette</tag><count>1~3</count><filler>true</filler></li>
             </entries>
           </li>

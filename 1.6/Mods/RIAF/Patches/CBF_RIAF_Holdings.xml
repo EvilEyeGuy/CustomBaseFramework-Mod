@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/WorldObjectDef[@Name="ARIOIAF_HoldingBase"]/comps</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/WorldObjectDef[@Name="ARIOIAF_HoldingBase"]/comps</xpath>
+      <value>
+        <li Class="CustomBaseFramework.WorldObjectCompProperties_Plan" />
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/WorldObjectDef[@Name="ARIOIAF_HoldingBase"]</xpath>
+      <value>
+        <comps>
+          <li Class="CustomBaseFramework.WorldObjectCompProperties_Plan" />
+        </comps>
+      </value>
+    </nomatch>
+  </Operation>
+
+</Patch>

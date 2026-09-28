@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Anbau_Saegebock</defName>
+    <label>CBF_MO_Anbau_Saegebock</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Anbau_Holz</li>
+    </categories>
+    <placement><weight>1</weight></placement>
+    <style>CBF_Medieval</style>
+    <traufen>true</traufen>
+    <legend>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_WoodLogs1x2c</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_SawTable</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+    </legend>
+    <mask>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+    </mask>
+    <terrain>
+      <li>w.....</li>
+      <li>w.....</li>
+      <li>w.....</li>
+      <li>w.....</li>
+    </terrain>
+    <things>
+      <li>O....I</li>
+      <li>O.W...</li>
+      <li>O.....</li>
+      <li>O.L..I</li>
+    </things>
+    <roof>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>......</li>
+      <li>......</li>
+      <li>+.....</li>
+      <li>......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

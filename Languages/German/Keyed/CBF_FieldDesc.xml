@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CBF_FieldDesc_abstand>Abstand zwischen den Gebäuden in diesem Stadtteil, in Feldern, als Spanne. 0~0 übernimmt minBuildingGap und maxBuildingGap der Siedlung.</CBF_FieldDesc_abstand>
   <CBF_FieldDesc_allowMirror>Darf der Generator dieses Stück spiegeln. Aus für Stücke, die nur in einer Richtung funktionieren.</CBF_FieldDesc_allowMirror>
@@ -146,6 +146,7 @@
   <CBF_FieldDesc_wandAbriss>Wie wahrscheinlich eine Gebäudewand eingerissen ist, 0 bis 1, nahe am Angriff öfter.</CBF_FieldDesc_wandAbriss>
   <CBF_FieldDesc_wards>Die Teile der Siedlung: Stadt, Vorstadt und Umland, jeder mit eigener Mauer, Garnison, Bezirken und Belägen.</CBF_FieldDesc_wards>
   <CBF_FieldDesc_wdStufe>World-Domination-Stufe, für die dieser Typ steht, als Spanne von 1 bis 4. Eine Siedlung mit Stufe nimmt bevorzugt die Typen, die ihr am nächsten liegen. 0 heißt keine Stufe.</CBF_FieldDesc_wdStufe>
+  <CBF_FieldDesc_riafHolding>Holding-Art aus A Rim of Ice and Fire, für die dieser Typ der Plan ist: Dorf, Stadt oder Garnison. Leer heißt keine. Ein Typ mit Holding-Art wird nur für solche Holdings verwendet.</CBF_FieldDesc_riafHolding>
   <CBF_FieldDesc_weightOverDepth>Kurve, die weight nach Tiefe ersetzt. Siedlungen haben keine Tiefe, es zählt also nur der Wert bei 0.</CBF_FieldDesc_weightOverDepth>
   <CBF_FieldDesc_weightOverWealth>Kurve über den Wohlstand der Heimatkarte des Spielers. Ihr Wert vervielfacht weight.</CBF_FieldDesc_weightOverWealth>
   <CBF_FieldDesc_zu>defName des Ersatzes. Ziele, die es nicht gibt, werden übergangen.</CBF_FieldDesc_zu>
@@ -166,4 +167,18 @@
   <CBF_FieldDesc_lagerArten>Namen von SitePartDefs, etwa BanditCamp oder Outpost. Dieser Lagerplan baut diese Quest-Orte. Nur für die Ortsart Lager.</CBF_FieldDesc_lagerArten>
   <CBF_FieldDesc_ohneWdBeute>Schaltet das Beutebudget von World Domination für diesen Ortstyp ab.</CBF_FieldDesc_ohneWdBeute>
   <CBF_FieldDesc_ideologieRolle>Rolle der Ideologie der Fraktion für Einheiten dieses Eintrags: leer, Kampf (Schützen- oder Nahkampfspezialist nach Waffe) oder der defName eines Rollen-Gebots. Braucht Ideology.</CBF_FieldDesc_ideologieRolle>
+  <CBF_FieldDesc_baumanteil>Anteil der wilden Bäume im Ort, die beim Bau stehen bleiben, 0 bis 1. 0 räumt alle.</CBF_FieldDesc_baumanteil>
+  <CBF_FieldDesc_mines>Minen dieses Bezirks. Jede Mine beginnt an einem Gebäude des Bezirks und führt als Gang mit Kammern in den Fels.</CBF_FieldDesc_mines>
+  <CBF_FieldDesc_Minending_inhalt>Waren, die in oder neben das Ding kommen, etwa Erz in einen Wagen.</CBF_FieldDesc_Minending_inhalt>
+  <CBF_FieldDesc_Minending_menge>Wie viele der Waren aus inhalt.</CBF_FieldDesc_Minending_menge>
+  <CBF_FieldDesc_Minending_ort>Wo das Ding steht: Kammer, Gang oder Eingang.</CBF_FieldDesc_Minending_ort>
+  <CBF_FieldDesc_Minenspec_ader>Erzgestein (abbaubares ThingDef), das entlang der Mine in den Fels gesetzt wird.</CBF_FieldDesc_Minenspec_ader>
+  <CBF_FieldDesc_Minenspec_aderAnteil>Anteil der Felsfelder entlang der Mine, die zu Erz werden, 0 bis 1.</CBF_FieldDesc_Minenspec_aderAnteil>
+  <CBF_FieldDesc_Minenspec_breite>Breite des Gangs in Feldern.</CBF_FieldDesc_Minenspec_breite>
+  <CBF_FieldDesc_Minenspec_brocken>Zahl der Felsbrocken, die in der Mine liegen.</CBF_FieldDesc_Minenspec_brocken>
+  <CBF_FieldDesc_Minenspec_kammerGroesse>Kantenlänge der Kammern in Feldern.</CBF_FieldDesc_Minenspec_kammerGroesse>
+  <CBF_FieldDesc_Minenspec_kammern>Zahl der Kammern entlang des Gangs.</CBF_FieldDesc_Minenspec_kammern>
+  <CBF_FieldDesc_Minenspec_laenge>Länge des Gangs in Feldern.</CBF_FieldDesc_Minenspec_laenge>
+  <CBF_FieldDesc_anbauUeberstand>Mit anbauVoll: wie viele Felder der Anbau an jedem Ende über die Hauswand hinausreichen muss. 0 heißt bündig.</CBF_FieldDesc_anbauUeberstand>
+  <CBF_FieldDesc_anbauVoll>An der Kategorie des Anbaus. Wahr: Der Anbau setzt nur dort an, wo er die ganze Wandseite des Hauses abdeckt.</CBF_FieldDesc_anbauVoll>
 </LanguageData>

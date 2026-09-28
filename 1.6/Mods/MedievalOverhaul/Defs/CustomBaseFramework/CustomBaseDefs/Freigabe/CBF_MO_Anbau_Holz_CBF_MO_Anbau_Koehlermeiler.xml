@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Anbau_Koehlermeiler</defName>
+    <label>CBF_MO_Anbau_Koehlermeiler</label>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Anbau_Holz</li>
+    </categories>
+    <placement><weight>0.5</weight></placement>
+    <style>CBF_Medieval</style>
+    <legend>
+      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_CharcoalPile</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_WoodLogs1x2c</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>q</symbol><thing>DankPyon_BarrelCoalOre</thing><stuff>WoodLog</stuff></li>
+    </legend>
+    <mask>
+      <li>.######</li>
+      <li>.######</li>
+      <li>.######</li>
+      <li>.######</li>
+      <li>..####.</li>
+    </mask>
+    <terrain>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </terrain>
+    <things>
+      <li>.......</li>
+      <li>.......</li>
+      <li>......Q</li>
+      <li>..K..L.</li>
+      <li>.....q.</li>
+    </things>
+    <roof>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.......</li>
+      <li>+......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

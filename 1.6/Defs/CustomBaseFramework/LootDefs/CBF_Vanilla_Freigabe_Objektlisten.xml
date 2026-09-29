@@ -2,35 +2,35 @@
 <Defs>
 
   <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_Vanilla_Regal</defName>
+    <defName>CBF_Vanilla_Shelf</defName>
     <members>
       <li>Shelf</li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_Vanilla_Regal_Klein</defName>
+    <defName>CBF_Vanilla_Shelf_Small</defName>
     <members>
       <li>ShelfSmall</li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_Vanilla_Schildgenerator_Hoch</defName>
+    <defName>CBF_Vanilla_ShieldGenerator_High</defName>
     <members>
       <li MayRequire="Ludeon.RimWorld.Royalty"><thing>ShieldGeneratorMortar</thing><stays>true</stays></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_Vanilla_Schildgenerator_Nieder</defName>
+    <defName>CBF_Vanilla_ShieldGenerator_Low</defName>
     <members>
       <li MayRequire="Ludeon.RimWorld.Royalty"><thing>ShieldGeneratorBullets</thing><stays>true</stays></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_Vanilla_Heiligtum</defName>
+    <defName>CBF_Vanilla_Sanctum</defName>
     <members>
       <li><thing>SculptureGrand</thing><stays>true</stays></li>
       <li><thing>SculptureLarge</thing><stays>true</stays></li>

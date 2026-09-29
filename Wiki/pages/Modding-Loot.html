@@ -127,8 +127,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>The loot table is rolled and the result goes into that structure or onto it.</li>
 </ol>
 <p>A real anchor from a Medieval Overhaul piece:</p>
-<pre><code class="language-xml">&lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;4&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;Fass&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Fill&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_MO_Fass&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">lootTable</span>&gt;CBF_MO_Loot_Speisekammer&lt;/<span class="xt">lootTable</span>&gt;&lt;/<span class="xt">li</span>&gt;
-&lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;5&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;Regal&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Fill&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_MO_Wappenregal&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">lootFremd</span>&gt;true&lt;/<span class="xt">lootFremd</span>&gt;&lt;/<span class="xt">li</span>&gt;
+<pre><code class="language-xml">&lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;4&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;Fass&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Fill&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_MO_Barrel&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">lootTable</span>&gt;CBF_MO_Loot_Larder&lt;/<span class="xt">lootTable</span>&gt;&lt;/<span class="xt">li</span>&gt;
+&lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;5&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;Regal&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Fill&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_MO_HeraldryShelf&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">lootFremd</span>&gt;true&lt;/<span class="xt">lootFremd</span>&gt;&lt;/<span class="xt">li</span>&gt;
 </code></pre>
 <table>
 <thead>
@@ -169,7 +169,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="object-lists">Object lists</h2>
 <p>Node: <code>&lt;CustomBaseFramework.LootBuildingCategoryDef&gt;</code>. An object list names the structures an anchor may place.</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootBuildingCategoryDef</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_MO_Fass&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_Barrel&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">members</span>&gt;
     &lt;<span class="xt">li</span>&gt;DankPyon_HideoutRusticBarrelClosed&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;DankPyon_HideoutCrate1x1c&lt;/<span class="xt">li</span>&gt;
@@ -178,7 +178,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </code></pre>
 <p>A member can be a plain defName, as above, or a block with more nodes:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootBuildingCategoryDef</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_MO_Waffenregal&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_WeaponRack&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">members</span>&gt;
     &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">thing</span>&gt;DankPyon_HideoutRackSword&lt;/<span class="xt">thing</span>&gt;&lt;<span class="xt">fremd</span>&gt;true&lt;/<span class="xt">fremd</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">thing</span>&gt;DankPyon_HideoutRackSpear&lt;/<span class="xt">thing</span>&gt;&lt;<span class="xt">fremd</span>&gt;true&lt;/<span class="xt">fremd</span>&gt;&lt;/<span class="xt">li</span>&gt;
@@ -219,7 +219,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </table>
 <p>A shipped example of <code>bleibt</code>:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootBuildingCategoryDef</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_MO_Schreibzeug&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_WritingSet&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">members</span>&gt;
     &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">thing</span>&gt;DankPyon_OnTop_Scribe_Book&lt;/<span class="xt">thing</span>&gt;&lt;<span class="xt">bleibt</span>&gt;true&lt;/<span class="xt">bleibt</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">thing</span>&gt;DankPyon_OnTop_Scribe_ScrollAndInkwell&lt;/<span class="xt">thing</span>&gt;&lt;<span class="xt">bleibt</span>&gt;true&lt;/<span class="xt">bleibt</span>&gt;&lt;/<span class="xt">li</span>&gt;
@@ -306,7 +306,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h3 id="other-mods">Other mods</h3>
 <p>Use <code>MayRequire</code> on the list or on a member so the XML loads without that mod.</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootBuildingCategoryDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Vanilla_Schildgenerator_Hoch&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Vanilla_ShieldGenerator_High&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">members</span>&gt;
     &lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;Ludeon.RimWorld.Royalty&quot;</span>&gt;&lt;<span class="xt">thing</span>&gt;ShieldGeneratorMortar&lt;/<span class="xt">thing</span>&gt;&lt;<span class="xt">bleibt</span>&gt;true&lt;/<span class="xt">bleibt</span>&gt;&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">members</span>&gt;
@@ -317,22 +317,22 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>Node: <code>&lt;CustomBaseFramework.LootTableDef&gt;</code>. A loot table decides what comes out. Entries can be a single item, another table or a whole thing category.</p>
 <p>A table of tables:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootTableDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_MO_Loot_Wohnhaus&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_Loot_Dwelling&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;Wohnhaus&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">rolls</span>&gt;2~4&lt;/<span class="xt">rolls</span>&gt;
   &lt;<span class="xt">uniqueEntries</span>&gt;true&lt;/<span class="xt">uniqueEntries</span>&gt;
   &lt;<span class="xt">emptyFallback</span>&gt;CBF_MO_Loot_Minimal&lt;/<span class="xt">emptyFallback</span>&gt;
   &lt;<span class="xt">entries</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">weight</span>&gt;20&lt;/<span class="xt">weight</span>&gt;&lt;<span class="xt">table</span>&gt;CBF_MO_Ware_Brot&lt;/<span class="xt">table</span>&gt;&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">weight</span>&gt;16&lt;/<span class="xt">weight</span>&gt;&lt;<span class="xt">table</span>&gt;CBF_MO_Ware_Kaese&lt;/<span class="xt">table</span>&gt;&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">weight</span>&gt;12&lt;/<span class="xt">weight</span>&gt;&lt;<span class="xt">table</span>&gt;CBF_MO_Ware_Textil&lt;/<span class="xt">table</span>&gt;&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">weight</span>&gt;8&lt;/<span class="xt">weight</span>&gt;&lt;<span class="xt">table</span>&gt;CBF_MO_Ware_Wein&lt;/<span class="xt">table</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">weight</span>&gt;20&lt;/<span class="xt">weight</span>&gt;&lt;<span class="xt">table</span>&gt;CBF_MO_Goods_Bread&lt;/<span class="xt">table</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">weight</span>&gt;16&lt;/<span class="xt">weight</span>&gt;&lt;<span class="xt">table</span>&gt;CBF_MO_Goods_Cheese&lt;/<span class="xt">table</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">weight</span>&gt;12&lt;/<span class="xt">weight</span>&gt;&lt;<span class="xt">table</span>&gt;CBF_MO_Goods_Textiles&lt;/<span class="xt">table</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">weight</span>&gt;8&lt;/<span class="xt">weight</span>&gt;&lt;<span class="xt">table</span>&gt;CBF_MO_Goods_Wine&lt;/<span class="xt">table</span>&gt;&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">entries</span>&gt;
 &lt;/<span class="xt">CustomBaseFramework.LootTableDef</span>&gt;
 </code></pre>
 <p>A table of items:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootTableDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Vanilla_Ware_Gewand&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Vanilla_Goods_Garments&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;Gewand&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">rolls</span>&gt;1~2&lt;/<span class="xt">rolls</span>&gt;
   &lt;<span class="xt">entries</span>&gt;
@@ -512,7 +512,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>A CBF container is a building that holds loot inside, looks different once searched, and can turn into another building or vanish. Use it when a plain shelf is not enough.</p>
 <p>CBF ships an abstract base, <code>CBF_BeutebehaelterBase</code>, in <code>Defs/CustomBaseFramework/ThingDefs/CBF_Beutebehaelter.xml</code>. It sets <code>thingClass</code> to <code>CustomBaseFramework.Building_Beutebehaelter</code>, the contents tab and the usual building values. Inherit from it and add a size, a graphic and the extension.</p>
 <pre><code class="language-xml">&lt;<span class="xt">ThingDef</span> <span class="xa">ParentName</span>=<span class="xw">&quot;CBF_BeutebehaelterBase&quot;</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Behaelter_Regal&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Container_Shelf&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;stocked shelf&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">description</span>&gt;A shelf someone left behind, still holding what its owner kept there. Once emptied, it is just a shelf again.&lt;/<span class="xt">description</span>&gt;
   &lt;<span class="xt">size</span>&gt;(2,1)&lt;/<span class="xt">size</span>&gt;
@@ -588,7 +588,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h3 id="shelves-with-visible-loot">Shelves with visible loot</h3>
 <p>To show loot lying on a vanilla or modded shelf, do not use a CBF container. Put the shelf in an object list. CBF places the shelf itself and lays the items on its cells. When the items are gone, the shelf stays, or turns into the member's <code>leer</code> building.</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootBuildingCategoryDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_VFEM2_Regal&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_VFEM2_Shelf&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">members</span>&gt;
     &lt;<span class="xt">li</span>&gt;Shelf&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">members</span>&gt;
@@ -596,7 +596,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </code></pre>
 <p>A mod's own self-filling shelf is marked <code>fremd</code>, so CBF does not touch its contents:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootBuildingCategoryDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_VFEM2_Autoregal&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_VFEM2_AutoShelf&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">members</span>&gt;
     &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">thing</span>&gt;VFEM2_AutofillShelf&lt;/<span class="xt">thing</span>&gt;&lt;<span class="xt">fremd</span>&gt;true&lt;/<span class="xt">fremd</span>&gt;&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">members</span>&gt;

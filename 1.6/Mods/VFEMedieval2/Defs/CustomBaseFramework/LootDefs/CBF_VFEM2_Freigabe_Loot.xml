@@ -2,8 +2,8 @@
 <Defs>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Ware_Vorrat</defName>
-    <label>Vorraete</label>
+    <defName>CBF_VFEM2_Goods_Supplies</defName>
+    <label>supplies</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>10</weight><thing>MealSimple</thing><count>1~3</count><onMissing>Skip</onMissing></li>
@@ -20,8 +20,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Ware_Getraenk</defName>
-    <label>Getraenke</label>
+    <defName>CBF_VFEM2_Goods_Drink</defName>
+    <label>drinks</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>10</weight><thing>Beer</thing><count>4~12</count><onMissing>Skip</onMissing></li>
@@ -33,8 +33,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Ware_Stoff</defName>
-    <label>Stoffe und Leder</label>
+    <defName>CBF_VFEM2_Goods_Cloth</defName>
+    <label>cloth and leather</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>10</weight><thing>Cloth</thing><count>30~90</count><onMissing>Skip</onMissing></li>
@@ -48,8 +48,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Ware_Rohstoff</defName>
-    <label>Rohstoffe</label>
+    <defName>CBF_VFEM2_Goods_RawMaterial</defName>
+    <label>raw materials</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>10</weight><thing>WoodLog</thing><count>50~150</count><onMissing>Skip</onMissing></li>
@@ -60,8 +60,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Ware_Heilung</defName>
-    <label>Heilmittel</label>
+    <defName>CBF_VFEM2_Goods_Healing</defName>
+    <label>medicine</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>10</weight><thing>MedicineHerbal</thing><count>5~15</count><onMissing>Skip</onMissing></li>
@@ -73,8 +73,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Ware_Geld</defName>
-    <label>Geld und Schmuck</label>
+    <defName>CBF_VFEM2_Goods_Money</defName>
+    <label>money goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>10</weight><thing>Silver</thing><count>40~180</count><onMissing>Skip</onMissing></li>
@@ -84,8 +84,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Ware_Waffe</defName>
-    <label>Mittelalterwaffen</label>
+    <defName>CBF_VFEM2_Goods_Weapon</defName>
+    <label>medieval weapons</label>
     <rolls>1~1</rolls><rollChance>0.5</rollChance>
     <entries>
       <li><weight>8</weight><thing>VFEM2_MeleeWeapon_Shortsword</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
@@ -107,8 +107,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Ware_Ruestung</defName>
-    <label>Ruestungen und Helme</label>
+    <defName>CBF_VFEM2_Goods_Armor</defName>
+    <label>armor and helmets</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>8</weight><thing>VFEM2_Apparel_PaddedArmor</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
@@ -125,8 +125,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Ware_Kleidung</defName>
-    <label>Kleidung</label>
+    <defName>CBF_VFEM2_Goods_Clothing</defName>
+    <label>clothing goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>6</weight><thing>VFEM2_Apparel_Mantle</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
@@ -138,116 +138,116 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Loot_Wohnhaus</defName>
-    <label>Wohnhaus</label>
+    <defName>CBF_VFEM2_Loot_Dwelling</defName>
+    <label>dwelling loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>18</weight><table>CBF_VFEM2_Ware_Vorrat</table></li>
-      <li><weight>12</weight><table>CBF_VFEM2_Ware_Stoff</table></li>
-      <li><weight>10</weight><table>CBF_VFEM2_Ware_Getraenk</table></li>
-      <li><weight>8</weight><table>CBF_VFEM2_Ware_Rohstoff</table></li>
-      <li><weight>5</weight><table>CBF_VFEM2_Ware_Geld</table></li>
-      <li><weight>4</weight><table>CBF_VFEM2_Ware_Heilung</table></li>
-      <li><weight>4</weight><table>CBF_VFEM2_Ware_Kleidung</table></li>
+      <li><weight>18</weight><table>CBF_VFEM2_Goods_Supplies</table></li>
+      <li><weight>12</weight><table>CBF_VFEM2_Goods_Cloth</table></li>
+      <li><weight>10</weight><table>CBF_VFEM2_Goods_Drink</table></li>
+      <li><weight>8</weight><table>CBF_VFEM2_Goods_RawMaterial</table></li>
+      <li><weight>5</weight><table>CBF_VFEM2_Goods_Money</table></li>
+      <li><weight>4</weight><table>CBF_VFEM2_Goods_Healing</table></li>
+      <li><weight>4</weight><table>CBF_VFEM2_Goods_Clothing</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Loot_Huette</defName>
-    <label>Huette</label>
+    <defName>CBF_VFEM2_Loot_Hut</defName>
+    <label>hut loot</label>
     <rolls>1~3</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>20</weight><table>CBF_VFEM2_Ware_Vorrat</table></li>
-      <li><weight>12</weight><table>CBF_VFEM2_Ware_Rohstoff</table></li>
-      <li><weight>8</weight><table>CBF_VFEM2_Ware_Stoff</table></li>
-      <li><weight>3</weight><table>CBF_VFEM2_Ware_Heilung</table></li>
+      <li><weight>20</weight><table>CBF_VFEM2_Goods_Supplies</table></li>
+      <li><weight>12</weight><table>CBF_VFEM2_Goods_RawMaterial</table></li>
+      <li><weight>8</weight><table>CBF_VFEM2_Goods_Cloth</table></li>
+      <li><weight>3</weight><table>CBF_VFEM2_Goods_Healing</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Loot_Kueche</defName>
-    <label>Kueche</label>
+    <defName>CBF_VFEM2_Loot_Kitchen</defName>
+    <label>kitchen loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>26</weight><table>CBF_VFEM2_Ware_Vorrat</table></li>
-      <li><weight>12</weight><table>CBF_VFEM2_Ware_Getraenk</table></li>
+      <li><weight>26</weight><table>CBF_VFEM2_Goods_Supplies</table></li>
+      <li><weight>12</weight><table>CBF_VFEM2_Goods_Drink</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Loot_Taverne</defName>
-    <label>Taverne</label>
+    <defName>CBF_VFEM2_Loot_Alehouse</defName>
+    <label>alehouse loot</label>
     <rolls>3~5</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>24</weight><table>CBF_VFEM2_Ware_Getraenk</table></li>
-      <li><weight>16</weight><table>CBF_VFEM2_Ware_Vorrat</table></li>
-      <li><weight>6</weight><table>CBF_VFEM2_Ware_Geld</table></li>
+      <li><weight>24</weight><table>CBF_VFEM2_Goods_Drink</table></li>
+      <li><weight>16</weight><table>CBF_VFEM2_Goods_Supplies</table></li>
+      <li><weight>6</weight><table>CBF_VFEM2_Goods_Money</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Loot_Schmiede</defName>
-    <label>Schmiede</label>
+    <defName>CBF_VFEM2_Loot_Smithy</defName>
+    <label>smithy loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>20</weight><table>CBF_VFEM2_Ware_Rohstoff</table></li>
-      <li><weight>8</weight><table>CBF_VFEM2_Ware_Waffe</table></li>
-      <li><weight>6</weight><table>CBF_VFEM2_Ware_Ruestung</table></li>
-      <li><weight>4</weight><table>CBF_VFEM2_Ware_Geld</table></li>
+      <li><weight>20</weight><table>CBF_VFEM2_Goods_RawMaterial</table></li>
+      <li><weight>8</weight><table>CBF_VFEM2_Goods_Weapon</table></li>
+      <li><weight>6</weight><table>CBF_VFEM2_Goods_Armor</table></li>
+      <li><weight>4</weight><table>CBF_VFEM2_Goods_Money</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Loot_Waffenkammer</defName>
-    <label>Waffenkammer</label>
+    <defName>CBF_VFEM2_Loot_Armory</defName>
+    <label>armory loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>20</weight><table>CBF_VFEM2_Ware_Waffe</table></li>
-      <li><weight>14</weight><table>CBF_VFEM2_Ware_Ruestung</table></li>
-      <li><weight>6</weight><table>CBF_VFEM2_Ware_Heilung</table></li>
+      <li><weight>20</weight><table>CBF_VFEM2_Goods_Weapon</table></li>
+      <li><weight>14</weight><table>CBF_VFEM2_Goods_Armor</table></li>
+      <li><weight>6</weight><table>CBF_VFEM2_Goods_Healing</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Loot_Markt</defName>
-    <label>Markt</label>
+    <defName>CBF_VFEM2_Loot_Market</defName>
+    <label>market loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>16</weight><table>CBF_VFEM2_Ware_Vorrat</table></li>
-      <li><weight>12</weight><table>CBF_VFEM2_Ware_Stoff</table></li>
-      <li><weight>10</weight><table>CBF_VFEM2_Ware_Getraenk</table></li>
-      <li><weight>8</weight><table>CBF_VFEM2_Ware_Kleidung</table></li>
-      <li><weight>4</weight><table>CBF_VFEM2_Ware_Heilung</table></li>
-      <li><weight>3</weight><table>CBF_VFEM2_Ware_Geld</table></li>
+      <li><weight>16</weight><table>CBF_VFEM2_Goods_Supplies</table></li>
+      <li><weight>12</weight><table>CBF_VFEM2_Goods_Cloth</table></li>
+      <li><weight>10</weight><table>CBF_VFEM2_Goods_Drink</table></li>
+      <li><weight>8</weight><table>CBF_VFEM2_Goods_Clothing</table></li>
+      <li><weight>4</weight><table>CBF_VFEM2_Goods_Healing</table></li>
+      <li><weight>3</weight><table>CBF_VFEM2_Goods_Money</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_VFEM2_Loot_Schatz</defName>
-    <label>Schatz</label>
+    <defName>CBF_VFEM2_Loot_Treasure</defName>
+    <label>treasure loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>20</weight><table>CBF_VFEM2_Ware_Geld</table></li>
-      <li><weight>5</weight><table>CBF_VFEM2_Ware_Waffe</table></li>
-      <li><weight>5</weight><table>CBF_VFEM2_Ware_Ruestung</table></li>
-      <li><weight>6</weight><table>CBF_VFEM2_Ware_Getraenk</table></li>
-      <li><weight>6</weight><table>CBF_VFEM2_Ware_Kleidung</table></li>
+      <li><weight>20</weight><table>CBF_VFEM2_Goods_Money</table></li>
+      <li><weight>5</weight><table>CBF_VFEM2_Goods_Weapon</table></li>
+      <li><weight>5</weight><table>CBF_VFEM2_Goods_Armor</table></li>
+      <li><weight>6</weight><table>CBF_VFEM2_Goods_Drink</table></li>
+      <li><weight>6</weight><table>CBF_VFEM2_Goods_Clothing</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 

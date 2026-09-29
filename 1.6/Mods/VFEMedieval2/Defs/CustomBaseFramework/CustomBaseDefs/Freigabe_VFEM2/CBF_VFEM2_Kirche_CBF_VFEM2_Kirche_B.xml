@@ -2,11 +2,10 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Kirche_B</defName>
-    <label>CBF_VFEM2_Kirche_B</label>
+    <defName>CBF_VFEM2_Church_B</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Kirche</li>
+      <li>CBF_VFEM2_Church</li>
     </categories>
     <style>CBF_VFEM2</style>
     <eaves>true</eaves>
@@ -18,8 +17,8 @@
       <li><symbol>b</symbol><thing>Column</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
       <li><symbol>f</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>g</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>i</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Heiligtum</objects><ideoBuilding>true</ideoBuilding></li>
-      <li><symbol>j</symbol><anchor>Opfertruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>i</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Sanctum</objects><ideoBuilding>true</ideoBuilding></li>
+      <li><symbol>j</symbol><anchor>Opfertruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Treasure</lootTable></li>
       <li><symbol>k</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
       <li><symbol>l</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>

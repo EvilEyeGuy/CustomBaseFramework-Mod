@@ -3,10 +3,9 @@
 
   <CustomBaseFramework.PieceDef>
     <defName>CBF_Vanilla_Workshop_Kitchen_B</defName>
-    <label>CBF_Vanilla_Workshop_Kitchen_B</label>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Kueche</li>
+      <li>CBF_Vanilla_Kitchen</li>
     </categories>
     <style>CBF_ModernVanilla</style>
 
@@ -28,11 +27,11 @@
       <li><symbol>N</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li><symbol>Q</symbol><thing>Cooler</thing><rotation>East</rotation></li>
       <li><symbol>U</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>V</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Kueche</lootTable></li>
-      <li><symbol>X</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Kueche</lootTable></li>
-      <li><symbol>Y</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Kueche</lootTable></li>
-      <li><symbol>Z</symbol><anchor>Fill4</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Kueche</lootTable></li>
-      <li><symbol>a</symbol><anchor>Fill5</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Kueche</lootTable></li>
+      <li><symbol>V</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kitchen</lootTable></li>
+      <li><symbol>X</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kitchen</lootTable></li>
+      <li><symbol>Y</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kitchen</lootTable></li>
+      <li><symbol>Z</symbol><anchor>Fill4</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kitchen</lootTable></li>
+      <li><symbol>a</symbol><anchor>Fill5</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kitchen</lootTable></li>
       <li><symbol>e</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind></li>
     </legend>
 

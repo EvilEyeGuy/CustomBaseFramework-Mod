@@ -2,7 +2,7 @@
 <Defs>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Waffenregal</defName>
+    <defName>CBF_MO_WeaponRack</defName>
     <members>
       <li><thing>DankPyon_HideoutRackSword</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutRackSpear</thing><foreign>true</foreign></li>
@@ -11,7 +11,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Erzfass</defName>
+    <defName>CBF_MO_OreBarrel</defName>
     <members>
       <li><thing>DankPyon_HideoutBarrelIronOre</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutBarrelCoalOre</thing><foreign>true</foreign></li>
@@ -20,7 +20,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Stofffass</defName>
+    <defName>CBF_MO_ClothBarrel</defName>
     <members>
       <li><thing>DankPyon_HideoutBarrelTextiles</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutBarrelLeather</thing><foreign>true</foreign></li>
@@ -28,7 +28,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Fass</defName>
+    <defName>CBF_MO_Barrel</defName>
     <members>
       <li>DankPyon_HideoutRusticBarrelClosed</li>
       <li>DankPyon_HideoutCrate1x1c</li>
@@ -36,7 +36,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Grossfass</defName>
+    <defName>CBF_MO_LargeBarrel</defName>
     <members>
       <li>DankPyon_HideoutRusticBarrelBigClosed</li>
       <li>DankPyon_HideoutRusticBarrelBigClosedDown</li>
@@ -44,42 +44,42 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Fassreihe</defName>
+    <defName>CBF_MO_BarrelRow</defName>
     <members>
       <li>DankPyon_HideoutRusticBarrelStack</li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Stoffwagen</defName>
+    <defName>CBF_MO_ClothCart</defName>
     <members>
       <li><thing>DankPyon_HideOutBuildingBase_Cart_Textiles</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Holzwagen</defName>
+    <defName>CBF_MO_WoodCart</defName>
     <members>
       <li><thing>DankPyon_HideOutBuildingBase_Cart_RawWood</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Erzwagen</defName>
+    <defName>CBF_MO_OreCart</defName>
     <members>
       <li><thing>DankPyon_HideOutBuildingBase_Cart_Ore</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Erntewagen</defName>
+    <defName>CBF_MO_HarvestCart</defName>
     <members>
       <li><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Weinregal</defName>
+    <defName>CBF_MO_WineRack</defName>
     <members>
       <li><thing>DankPyon_HideoutLargeShelf_Wine</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutLargeShelf_Mead</thing><foreign>true</foreign></li>
@@ -88,7 +88,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Vorratsregal</defName>
+    <defName>CBF_MO_PantryShelf</defName>
     <members>
       <li><thing>DankPyon_HideoutLargeShelf_Bread</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutLargeShelf_Cheese</thing><foreign>true</foreign></li>
@@ -100,14 +100,14 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Truhe</defName>
+    <defName>CBF_MO_Chest</defName>
     <members>
       <li>DankPyon_Hideout_RusticChest</li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Adelstruhe</defName>
+    <defName>CBF_MO_NobleChest</defName>
     <members>
       <li>DankPyon_Hideout_RoyalChest</li>
     </members>
@@ -124,21 +124,21 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Holzstapel</defName>
+    <defName>CBF_MO_WoodPile</defName>
     <members>
       <li><thing>DankPyon_HideoutWoodLogs1x2c</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Kiste</defName>
+    <defName>CBF_MO_Crate</defName>
     <members>
       <li>DankPyon_HideoutCrate1x2c</li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Schreibregal</defName>
+    <defName>CBF_MO_WritingShelf</defName>
     <members>
       <li><thing>DankPyon_HideoutShelfFilledBook</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutShelfFilledChaliceSilver</thing><foreign>true</foreign></li>
@@ -147,7 +147,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Schatzregal</defName>
+    <defName>CBF_MO_TreasureShelf</defName>
     <members>
       <li><thing>DankPyon_HideoutShelfFilledChaliceSilver</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutShelfFilledEmerald</thing><foreign>true</foreign></li>
@@ -159,14 +159,14 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Barrenregal</defName>
+    <defName>CBF_MO_IngotShelf</defName>
     <members>
       <li><thing>DankPyon_HideoutShelfFilledIngot</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Kraeuterregal</defName>
+    <defName>CBF_MO_HerbShelf</defName>
     <members>
       <li><thing>DankPyon_LootableShelf_AssortedHerbs</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_LootableShelf_GreenHerbs</thing><foreign>true</foreign></li>
@@ -175,14 +175,14 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Brotregal</defName>
+    <defName>CBF_MO_BreadShelf</defName>
     <members>
       <li><thing>DankPyon_HideoutLargeShelf_Bread</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Brotstand</defName>
+    <defName>CBF_MO_BreadStall</defName>
     <members>
       <li><thing>DankPyon_HideoutTableMarket_Bread</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutStallMarket_Bread</thing><foreign>true</foreign></li>
@@ -190,14 +190,14 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Fleischregal</defName>
+    <defName>CBF_MO_MeatShelf</defName>
     <members>
       <li><thing>DankPyon_HideoutLargeShelf_Meats</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Fleischstand</defName>
+    <defName>CBF_MO_MeatStall</defName>
     <members>
       <li><thing>DankPyon_HideoutTableMarket_Meats</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutStallMarket_Meats</thing><foreign>true</foreign></li>
@@ -205,14 +205,14 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Trockengestell</defName>
+    <defName>CBF_MO_DryingRack</defName>
     <members>
       <li><thing>DankPyon_HideoutDryingRack_Big</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Buchregal</defName>
+    <defName>CBF_MO_Bookshelf</defName>
     <members>
       <li><thing>DankPyon_HideoutShelfFilledBook</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_LootableShelf_Book</thing><foreign>true</foreign></li>
@@ -220,7 +220,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Schreibzeug</defName>
+    <defName>CBF_MO_WritingSet</defName>
     <members>
       <li><thing>DankPyon_OnTop_Scribe_Book</thing><stays>true</stays></li>
       <li><thing>DankPyon_OnTop_Scribe_ScrollAndInkwell</thing><stays>true</stays></li>
@@ -229,21 +229,21 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Reliquienschrein</defName>
+    <defName>CBF_MO_Reliquary</defName>
     <members>
       <li><thing>DankPyon_AncientReliquary</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Ruestungsstaender</defName>
+    <defName>CBF_MO_ArmorStand</defName>
     <members>
-      <li>CBF_MO_Ruestungsstaender_Weiss</li>
+      <li>CBF_MO_ArmorStand_White</li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Waffenstand</defName>
+    <defName>CBF_MO_WeaponStand</defName>
     <members>
       <li><thing>DankPyon_HideoutTableMarket_Melee</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutStallMarket_Melee</thing><foreign>true</foreign></li>
@@ -251,7 +251,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Bogenstand</defName>
+    <defName>CBF_MO_BowStand</defName>
     <members>
       <li><thing>DankPyon_HideoutTableMarket_Bow</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutStallMarket_Bow</thing><foreign>true</foreign></li>
@@ -259,14 +259,14 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Prunkstaender</defName>
+    <defName>CBF_MO_DisplayStand</defName>
     <members>
-      <li>CBF_MO_Ruestungsstaender_Rot</li>
+      <li>CBF_MO_ArmorStand_Red</li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Mehlsack</defName>
+    <defName>CBF_MO_FlourSack</defName>
     <members>
       <li>DankPyon_HideoutSackFlour</li>
       <li>DankPyon_HideoutSackWheat</li>
@@ -274,7 +274,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Bett_Einfach</defName>
+    <defName>CBF_MO_Bed_Single</defName>
     <members>
       <li><thing>DankPyon_StrawBed</thing><stays>true</stays></li>
       <li><thing>DankPyon_BedFur</thing><stays>true</stays></li>
@@ -284,7 +284,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Bett_Doppel</defName>
+    <defName>CBF_MO_Bed_Double</defName>
     <members>
       <li><thing>DankPyon_StrawBedDouble</thing><stays>true</stays></li>
       <li><thing>DankPyon_BedFurDouble</thing><stays>true</stays></li>
@@ -294,7 +294,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Doppelbett</defName>
+    <defName>CBF_MO_DoubleBed</defName>
     <members>
       <li><thing>DankPyon_Bed_RusticDouble_Blue</thing><stays>true</stays></li>
       <li><thing>DankPyon_Bed_RusticDouble_Green</thing><stays>true</stays></li>
@@ -303,7 +303,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Marktzelt</defName>
+    <defName>CBF_MO_MarketTent</defName>
     <members>
       <li><thing>DankPyon_MarketTent_1c</thing><stays>true</stays></li>
       <li><thing>DankPyon_MarketTent_2c</thing><stays>true</stays></li>
@@ -316,7 +316,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Marktstand</defName>
+    <defName>CBF_MO_MarketStall</defName>
     <members>
       <li><thing>DankPyon_HideoutTableMarket_Bread</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutStallMarket_Bread</thing><foreign>true</foreign></li>
@@ -334,7 +334,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Wappenregal</defName>
+    <defName>CBF_MO_HeraldryShelf</defName>
     <members>
       <li><thing>DankPyon_HideoutLargeShelf_FilledA_Amboise</thing><foreign>true</foreign></li>
       <li><thing>DankPyon_HideoutLargeShelf_FilledB_Amboise</thing><foreign>true</foreign></li>
@@ -348,7 +348,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Fell_2x2</defName>
+    <defName>CBF_MO_Fur_2x2</defName>
     <members>
       <li><thing>DankPyon_RugCougar2x2c</thing><stays>true</stays></li>
       <li><thing>DankPyon_RugHyena2x2c</thing><stays>true</stays></li>
@@ -359,7 +359,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Fell_3x3</defName>
+    <defName>CBF_MO_Fur_3x3</defName>
     <members>
       <li><thing>DankPyon_RugGrizzlyBear3x3c</thing><stays>true</stays></li>
       <li><thing>DankPyon_RugPolarBear3x3c</thing><stays>true</stays></li>
@@ -369,7 +369,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Flicken_1x2</defName>
+    <defName>CBF_MO_Patch_1x2</defName>
     <members>
       <li><thing>DankPyon_RugPatched_Cloth1x2c</thing><stays>true</stays></li>
       <li><thing>DankPyon_RugPatched_Leather1x2c</thing><stays>true</stays></li>
@@ -377,7 +377,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Flicken_2x2</defName>
+    <defName>CBF_MO_Patch_2x2</defName>
     <members>
       <li><thing>DankPyon_RugPatched_Cloth2x2c</thing><stays>true</stays></li>
       <li><thing>DankPyon_RugPatched_Leather2x2c</thing><stays>true</stays></li>
@@ -385,7 +385,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Flicken_2x4</defName>
+    <defName>CBF_MO_Patch_2x4</defName>
     <members>
       <li><thing>DankPyon_RugPatched_Cloth2x4c</thing><stays>true</stays></li>
       <li><thing>DankPyon_RugPatched_Leather2x4c</thing><stays>true</stays></li>
@@ -393,7 +393,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Teppich_2x3</defName>
+    <defName>CBF_MO_Rug_2x3</defName>
     <members>
       <li><thing>DankPyon_RugLoot_Lys_Blue2x3c</thing><stays>true</stays></li>
       <li><thing>DankPyon_RugLoot_Lys_DeepGreen2x3c</thing><stays>true</stays></li>
@@ -403,7 +403,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Teppich_2x4</defName>
+    <defName>CBF_MO_Rug_2x4</defName>
     <members>
       <li><thing>DankPyon_RugRoyal_LongLys2x4c</thing><stays>true</stays></li>
       <li><thing>DankPyon_RugLoot_Diamond_DeepGreen2x4c</thing><stays>true</stays></li>
@@ -416,7 +416,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Adelsteppich_2x3</defName>
+    <defName>CBF_MO_NobleRug_2x3</defName>
     <members>
       <li><thing>DankPyon_RugRoyal_Lys2x3c</thing><stays>true</stays></li>
       <li><thing>DankPyon_RugLoot_Lys_Red2x3c</thing><stays>true</stays></li>
@@ -427,7 +427,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Adelsteppich_2x4</defName>
+    <defName>CBF_MO_NobleRug_2x4</defName>
     <members>
       <li><thing>DankPyon_RugRoyal_LongLys2x4c</thing><stays>true</stays></li>
       <li><thing>DankPyon_RugLoot_Diamond_RedYellow2x4c</thing><stays>true</stays></li>
@@ -435,7 +435,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Tafelgeschirr</defName>
+    <defName>CBF_MO_Dinnerware</defName>
     <members>
       <li><thing>DankPyon_Building_ChaliceGold</thing><stays>true</stays></li>
       <li><thing>DankPyon_Building_ChaliceSilver</thing><stays>true</stays></li>
@@ -445,7 +445,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Tischgeschirr</defName>
+    <defName>CBF_MO_Tableware</defName>
     <members>
       <li><thing>DankPyon_OnTop_Kitchen_Plate</thing><stays>true</stays></li>
       <li><thing>DankPyon_OnTop_Kitchen_Bowl</thing><stays>true</stays></li>
@@ -455,7 +455,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Heiligtum</defName>
+    <defName>CBF_MO_Sanctum</defName>
     <members>
       <li><thing>SculptureGrand</thing><stays>true</stays></li>
       <li><thing>SculptureLarge</thing><stays>true</stays></li>
@@ -465,7 +465,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Flagge</defName>
+    <defName>CBF_MO_Flag</defName>
     <members>
       <li><thing>DankPyon_BannerPlain</thing><stays>true</stays></li>
       <li><thing>DankPyon_BannerHesse</thing><stays>true</stays></li>
@@ -482,7 +482,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Tischgeschirr_Huette</defName>
+    <defName>CBF_MO_Tableware_Hut</defName>
     <members>
       <li><thing>DankPyon_OnTop_Kitchen_Plate</thing><stays>true</stays></li>
       <li><thing>DankPyon_OnTop_Kitchen_Bowl</thing><stays>true</stays></li>
@@ -493,7 +493,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Tischgeschirr_Buerger</defName>
+    <defName>CBF_MO_Tableware_Burgher</defName>
     <members>
       <li><thing>DankPyon_OnTop_Kitchen_Plate</thing><stays>true</stays></li>
       <li><thing>DankPyon_OnTop_Kitchen_Bowl</thing><stays>true</stays></li>
@@ -505,7 +505,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Tischgeschirr_Adel</defName>
+    <defName>CBF_MO_Tableware_Noble</defName>
     <members>
       <li><thing>DankPyon_OnTop_Kitchen_Plate</thing><stays>true</stays></li>
       <li><thing>DankPyon_OnTop_Bottle_Wine</thing><stays>true</stays></li>
@@ -516,7 +516,7 @@
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Tischgeschirr_Gasthaus</defName>
+    <defName>CBF_MO_Tableware_Tavern</defName>
     <members>
       <li><thing>DankPyon_OnTop_Kitchen_Plate</thing><stays>true</stays></li>
       <li><thing>DankPyon_OnTop_Kitchen_Bowl</thing><stays>true</stays></li>
@@ -531,20 +531,20 @@
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_Vase</defName>
     <members>
-      <li><thing>CBF_MO_Porzellanvase</thing><stays>true</stays></li>
+      <li><thing>CBF_MO_PorcelainVase</thing><stays>true</stays></li>
       <li><thing>DankPyon_Vase</thing><stays>true</stays></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Weinregal_1x2</defName>
+    <defName>CBF_MO_WineRack_1x2</defName>
     <members>
       <li><thing>DankPyon_HideoutShelfFilledWine</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Vorratsregal_1x2</defName>
+    <defName>CBF_MO_PantryShelf_1x2</defName>
     <members>
       <li><thing>DankPyon_HideoutShelfFilledFood</thing><foreign>true</foreign></li>
     </members>

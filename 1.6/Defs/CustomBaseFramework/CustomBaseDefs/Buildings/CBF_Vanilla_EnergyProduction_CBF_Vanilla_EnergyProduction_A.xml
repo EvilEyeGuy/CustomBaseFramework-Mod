@@ -3,7 +3,6 @@
 
   <CustomBaseFramework.PieceDef>
     <defName>CBF_Vanilla_EnergyProduction_A</defName>
-    <label>CBF_Vanilla_EnergyProduction_A</label>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_Vanilla_EnergyProduction</li>
@@ -25,9 +24,9 @@
       <li><symbol>H</symbol><thing>Cooler</thing><rotation>East</rotation></li>
       <li><symbol>K</symbol><thing>WallLamp</thing><rotation>South</rotation></li>
       <li><symbol>M</symbol><thing>BiofuelRefinery</thing><rotation>South</rotation></li>
-      <li><symbol>N</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Ware_Chemie</lootTable></li>
-      <li><symbol>Q</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Ware_Chemie</lootTable></li>
-      <li><symbol>U</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Ware_Fleisch</lootTable></li>
+      <li><symbol>N</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Goods_Chemistry</lootTable></li>
+      <li><symbol>Q</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Goods_Chemistry</lootTable></li>
+      <li><symbol>U</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Goods_Meat</lootTable></li>
     </legend>
 
     <mask>

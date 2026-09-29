@@ -364,7 +364,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>The terrain <code>CBF_Leerfeld</code> marks a cell that belongs to the piece but keeps the natural ground of the map.</p>
+<p>The terrain <code>CBF_EmptyCell</code> marks a cell that belongs to the piece but keeps the natural ground of the map.</p>
 <h3 id="material-lists">Material lists</h3>
 <ul>
 <li><code>criticality</code>: <code>Optional</code> or <code>Critical</code>. If a critical role finds nothing, the whole list is unusable, and with it every settlement type that uses it.</li>
@@ -440,10 +440,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <ul>
 <li><strong>defNames of settlement types in use.</strong> Savegames store the settlement type of each settlement by name. A renamed type loads with a warning, and the settlement gets a different type.</li>
 <li><strong>District names within a settlement type.</strong> Fields and pens belong to their district by name, and names must be unique in the whole plan.</li>
-<li><strong>Shared material lists:</strong> <code>CBF_Materialliste_Basis</code>, <code>CBF_MO_Materialliste</code>, <code>CBF_Modern_Materialliste</code>, <code>CBF_VFEM2_Materialliste</code>. Most shipped settlement types use them.</li>
+<li><strong>Shared material lists:</strong> <code>CBF_MaterialList_Base</code>, <code>CBF_MO_MaterialList</code>, <code>CBF_Modern_MaterialList</code>, <code>CBF_VFEM2_MaterialList</code>. Most shipped settlement types use them.</li>
 <li><strong>Abstract parents:</strong> <code>CBF_BeutebehaelterBase</code>, <code>CBF_Ruin_Basis</code>, <code>CBF_Modern_SoldatBasis</code>, <code>CBF_MO_NeutralerSoldatBasis</code>, <code>CBF_MO_StammBasis</code>. Inherit from them, do not change them.</li>
-<li><strong>Categories the generator looks for by name:</strong> <code>WallTower</code>, <code>WallGateHouse</code>, <code>GateHouse</code>, <code>WallSegment</code>, <code>CBF_ModernDefense</code>, <code>CBF_Vanilla_Torhaus</code>, <code>Market</code>, <code>Farm</code>, <code>Landmark</code>, <code>HouseSmall</code>, <code>DungeonRoom</code>, <code>CBF_Baubar</code>.</li>
-<li><strong>Defs the code looks up:</strong> <code>CBF_Leerfeld</code>, <code>CBF_Kartenschritte</code>, <code>CBF_Base_Faction</code>, <code>CBF_Gelaende</code>, <code>CBF_Halten</code>, <code>CBF_Wehrgang</code>, <code>CBF_Editor</code>.</li>
+<li><strong>Categories the generator looks for by name:</strong> <code>WallTower</code>, <code>WallGateHouse</code>, <code>GateHouse</code>, <code>WallSegment</code>, <code>CBF_ModernDefense</code>, <code>CBF_Vanilla_Gatehouse</code>, <code>Market</code>, <code>Farm</code>, <code>Landmark</code>, <code>HouseSmall</code>, <code>DungeonRoom</code>, <code>CBF_Baubar</code>.</li>
+<li><strong>Defs the code looks up:</strong> <code>CBF_EmptyCell</code>, <code>CBF_MapSteps</code>, <code>CBF_Base_Faction</code>, <code>CBF_Terrain</code>, <code>CBF_Hold</code>, <code>CBF_Walkway</code>, <code>CBF_Editor</code>.</li>
 <li><strong>The prefix <code>CBF_</code></strong> on map generators and map steps marks a map as a CBF settlement, and the uninstaller removes every <code>CBF_</code> def. Do not give defs of your own mod this prefix; use your own.</li>
 <li><strong>Styles</strong> <code>Standard</code>, <code>Rustical</code>, <code>Fancy</code>, <code>CBF_Medieval</code>, <code>CBF_VFEM2</code>, <code>CBF_ModernVanilla</code>: many pieces refer to them.</li>
 <li><strong>packageIds in LoadFolders.xml</strong> of other mods: they decide which content folders load.</li>

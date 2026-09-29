@@ -168,9 +168,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>There is no garrison, so the defenders come from <code>defenderPoints</code> (default 180 to 420).</li>
 </ul>
 <h2 id="header-fields">Header fields</h2>
-<p>From <code>CBF_Plan_Village_Neu</code> (Medieval Overhaul village), trimmed:</p>
+<p>From <code>CBF_Plan_Village_New</code> (Medieval Overhaul village), trimmed:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.SettlementPlanDef</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Plan_Village_Neu&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Plan_Village_New&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;village (MO)&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">kind</span>&gt;Mittelalterstadt&lt;/<span class="xt">kind</span>&gt;
   &lt;<span class="xt">styles</span>&gt;
@@ -341,7 +341,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tbody>
 </table>
 <p>Write each kind once. The enum also lists <code>Burg</code>, but the planner has no layer of its own for it; do not use it.</p>
-<p>From <code>CBF_Plan_FortressCity_Neu</code>, the town ward, trimmed:</p>
+<p>From <code>CBF_Plan_FortressCity_New</code>, the town ward, trimmed:</p>
 <pre><code class="language-xml">&lt;<span class="xt">wards</span>&gt;
   &lt;<span class="xt">li</span>&gt;
     &lt;<span class="xt">art</span>&gt;Stadt&lt;/<span class="xt">art</span>&gt;
@@ -351,18 +351,18 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
     &lt;/<span class="xt">roads</span>&gt;
     &lt;<span class="xt">walls</span>&gt;
       &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;TownWall_1x5&lt;/<span class="xt">piece</span>&gt;&lt;<span class="xt">weight</span>&gt;0.75&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_Stadtmauer_1x5_Scharte&lt;/<span class="xt">piece</span>&gt;&lt;<span class="xt">weight</span>&gt;0.25&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_TownWall_1x5_Embrasure&lt;/<span class="xt">piece</span>&gt;&lt;<span class="xt">weight</span>&gt;0.25&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">walls</span>&gt;
     &lt;<span class="xt">emplacements</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Festungsturm&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;4~6&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_FortressTower&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;4~6&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">emplacements</span>&gt;
     &lt;<span class="xt">gatehouses</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Festungstor&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_FortressGate&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">gatehouses</span>&gt;
     &lt;<span class="xt">garrison</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">list</span>&gt;CBF_MO_Garnison_Wehrgang&lt;/<span class="xt">list</span>&gt;&lt;<span class="xt">count</span>&gt;16~21&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">posten</span>&gt;Wehrgang&lt;/<span class="xt">posten</span>&gt;&lt;/<span class="xt">li</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">list</span>&gt;CBF_MO_Garnison_Tor&lt;/<span class="xt">list</span>&gt;&lt;<span class="xt">count</span>&gt;5~8&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">posten</span>&gt;Tor&lt;/<span class="xt">posten</span>&gt;&lt;/<span class="xt">li</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">list</span>&gt;CBF_MO_Garnison_Innen&lt;/<span class="xt">list</span>&gt;&lt;<span class="xt">count</span>&gt;8~13&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">posten</span>&gt;Innen&lt;/<span class="xt">posten</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">list</span>&gt;CBF_MO_Garrison_Walkway&lt;/<span class="xt">list</span>&gt;&lt;<span class="xt">count</span>&gt;16~21&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">posten</span>&gt;Wehrgang&lt;/<span class="xt">posten</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">list</span>&gt;CBF_MO_Garrison_Gate&lt;/<span class="xt">list</span>&gt;&lt;<span class="xt">count</span>&gt;5~8&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">posten</span>&gt;Tor&lt;/<span class="xt">posten</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">list</span>&gt;CBF_MO_Garrison_Inside&lt;/<span class="xt">list</span>&gt;&lt;<span class="xt">count</span>&gt;8~13&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">posten</span>&gt;Innen&lt;/<span class="xt">posten</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">garrison</span>&gt;
     &lt;<span class="xt">districts</span>&gt;
       ...
@@ -471,19 +471,19 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>All three are lists of wall entries. An entry is either plain text or a node with fields:</p>
 <pre><code class="language-xml">&lt;<span class="xt">walls</span>&gt;
   &lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;Palisade&lt;/<span class="xt">li</span>&gt;
-  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_Stadtmauer_Scharte&lt;/<span class="xt">piece</span>&gt;&lt;<span class="xt">weight</span>&gt;0.25&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
+  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_TownWall_Embrasure&lt;/<span class="xt">piece</span>&gt;&lt;<span class="xt">weight</span>&gt;0.25&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
 &lt;/<span class="xt">walls</span>&gt;
 &lt;<span class="xt">emplacements</span>&gt;
-  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Palisadenturm&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_PalisadeTower&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
 &lt;/<span class="xt">emplacements</span>&gt;
 &lt;<span class="xt">gatehouses</span>&gt;
-  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_Torhaus&lt;/<span class="xt">piece</span>&gt;&lt;/<span class="xt">li</span>&gt;
+  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_Gatehouse&lt;/<span class="xt">piece</span>&gt;&lt;/<span class="xt">li</span>&gt;
 &lt;/<span class="xt">gatehouses</span>&gt;
 </code></pre>
 <ul>
 <li><strong>walls</strong>: the pieces the wall is built from. The first entry is plain text, the second names one piece with <code>piece</code> and a weight, so it makes up about a fifth of the wall.</li>
-<li><strong>emplacements</strong>: towers and other pieces set into the wall. Here one or two pieces from the category <code>CBF_MO_Palisadenturm</code>, picked with <code>tag</code>.</li>
-<li><strong>gatehouses</strong>: the pieces placed where roads cross the wall. Here always the piece <code>CBF_MO_Torhaus</code>.</li>
+<li><strong>emplacements</strong>: towers and other pieces set into the wall. Here one or two pieces from the category <code>CBF_MO_PalisadeTower</code>, picked with <code>tag</code>.</li>
+<li><strong>gatehouses</strong>: the pieces placed where roads cross the wall. Here always the piece <code>CBF_MO_Gatehouse</code>.</li>
 </ul>
 <table>
 <thead>
@@ -556,24 +556,24 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>A ward with a garrison uses only its own entries. A ward without one takes its share of the plan's <code>defenderPoints</code>. <code>defendersOnWall</code> (default 0.25) sets how many of those point-based defenders stand on the wall.</p>
 <h2 id="districts-and-building-entries">Districts and building entries</h2>
 <p>A district is a group of buildings that stay together. Each ward has one or more districts.</p>
-<p>From <code>CBF_Plan_FortressCity_Neu</code>, town ward:</p>
+<p>From <code>CBF_Plan_FortressCity_New</code>, town ward:</p>
 <pre><code class="language-xml">&lt;<span class="xt">districts</span>&gt;
   &lt;<span class="xt">li</span>&gt;
     &lt;<span class="xt">name</span>&gt;Burg&lt;/<span class="xt">name</span>&gt;
     &lt;<span class="xt">prefCenter</span>&gt;1&lt;/<span class="xt">prefCenter</span>&gt;
     &lt;<span class="xt">entries</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Festungsbergfried&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">unique</span>&gt;true&lt;/<span class="xt">unique</span>&gt;&lt;/<span class="xt">li</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Kaserne&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;2~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_Verlies&lt;/<span class="xt">piece</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_FortressKeep&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">unique</span>&gt;true&lt;/<span class="xt">unique</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Barracks&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;2~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_Dungeon&lt;/<span class="xt">piece</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">entries</span>&gt;
   &lt;/<span class="xt">li</span>&gt;
   &lt;<span class="xt">li</span>&gt;
     &lt;<span class="xt">name</span>&gt;Zentrum&lt;/<span class="xt">name</span>&gt;
     &lt;<span class="xt">entries</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Gasthaus&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Kirche&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Buergerhaus&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;6~14&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">filler</span>&gt;true&lt;/<span class="xt">filler</span>&gt;&lt;/<span class="xt">li</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Lueckenhof&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;0~6&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">filler</span>&gt;true&lt;/<span class="xt">filler</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Tavern&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Church&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_BurgherHouse&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;6~14&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">filler</span>&gt;true&lt;/<span class="xt">filler</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_GapYard&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;0~6&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">filler</span>&gt;true&lt;/<span class="xt">filler</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">entries</span>&gt;
   &lt;/<span class="xt">li</span>&gt;
 &lt;/<span class="xt">districts</span>&gt;
@@ -702,7 +702,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>The minimum of an entry is a wish, not a guarantee. If the space runs out, the planner reports what it could not place.</li>
 </ul>
 <h2 id="fields-and-pens">Fields and pens</h2>
-<p>Fields and pens belong to a district in the suburb or countryside ward. From <code>CBF_Plan_Village_Neu</code>:</p>
+<p>Fields and pens belong to a district in the suburb or countryside ward. From <code>CBF_Plan_Village_New</code>:</p>
 <pre><code class="language-xml">&lt;<span class="xt">li</span>&gt;
   &lt;<span class="xt">art</span>&gt;Umland&lt;/<span class="xt">art</span>&gt;
   &lt;<span class="xt">districts</span>&gt;
@@ -716,12 +716,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
             &lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;DankPyon_Plant_Wheat&lt;/<span class="xt">li</span>&gt;
           &lt;/<span class="xt">plants</span>&gt;
           &lt;<span class="xt">tags</span>&gt;
-            &lt;<span class="xt">li</span>&gt;CBF_MO_Muehle&lt;/<span class="xt">li</span>&gt;
+            &lt;<span class="xt">li</span>&gt;CBF_MO_Mill&lt;/<span class="xt">li</span>&gt;
           &lt;/<span class="xt">tags</span>&gt;
         &lt;/<span class="xt">li</span>&gt;
       &lt;/<span class="xt">fields</span>&gt;
       &lt;<span class="xt">entries</span>&gt;
-        &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Muehle&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+        &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Mill&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
       &lt;/<span class="xt">entries</span>&gt;
     &lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;
@@ -738,7 +738,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
         &lt;/<span class="xt">li</span>&gt;
       &lt;/<span class="xt">pens</span>&gt;
       &lt;<span class="xt">entries</span>&gt;
-        &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Scheune&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+        &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Barn&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
       &lt;/<span class="xt">entries</span>&gt;
     &lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">districts</span>&gt;
@@ -856,10 +856,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>A medieval settlement at the coast or on a river of at least <code>flussbreite</code> cells gets a harbor at the shore: jetties, fishing huts, harbor store, harbor master and boat sheds, with a path to the town.</p>
 <pre><code class="language-xml">&lt;<span class="xt">hafen</span>&gt;
   &lt;<span class="xt">entries</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Hafenmeister&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Hafenlager&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Steg&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Bootsschuppen&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;0~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Harbormaster&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_HarborStore&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Jetty&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Boathouse&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;0~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">entries</span>&gt;
 &lt;/<span class="xt">hafen</span>&gt;
 </code></pre>

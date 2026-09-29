@@ -2,12 +2,11 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Stadtturm_A</defName>
-    <label>CBF_VFEM2_Stadtturm_A</label>
+    <defName>CBF_VFEM2_TownTower_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>WallTower</li>
-      <li>CBF_VFEM2_Stadtturm</li>
+      <li>CBF_VFEM2_TownTower</li>
     </categories>
     <type>WallPart</type>
     <style>CBF_VFEM2</style>
@@ -20,10 +19,10 @@
       <li><symbol>c</symbol><terrain>FlagstoneSlate</terrain></li>
       <li><symbol>f</symbol><thing>WoodLog</thing><count>30</count></li>
       <li><symbol>g</symbol><anchor>Wall</anchor></li>
-      <li><symbol>i</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flagge</objects><factionFlag>true</factionFlag></li>
-      <li><symbol>j</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>i</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flag</objects><factionFlag>true</factionFlag></li>
+      <li><symbol>j</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
       <li><symbol>k</symbol><anchor>Turmwache</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>l</symbol><anchor>Turmtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>l</symbol><anchor>Turmtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
       <li><symbol>m</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
       <li><symbol>n</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
       <li><symbol>o</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>

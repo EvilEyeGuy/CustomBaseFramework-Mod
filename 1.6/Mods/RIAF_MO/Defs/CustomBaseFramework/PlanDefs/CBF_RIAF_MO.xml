@@ -2,9 +2,9 @@
 <Defs>
 
   <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_Plan_RIAF_Weiler</defName>
+    <defName>CBF_Plan_RIAF_Hamlet</defName>
     <label>hamlet (RIAF, MO)</label>
-    <materialList>CBF_MO_Materialliste</materialList>
+    <materialList>CBF_MO_MaterialList</materialList>
 
     <styles>
       <li>Rustical</li>
@@ -36,26 +36,26 @@
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
         </walls>
         <emplacements>
-          <li><tag>CBF_MO_Palisadenturm</tag><count>1~1</count></li>
+          <li><tag>CBF_MO_PalisadeTower</tag><count>1~1</count></li>
         </emplacements>
         <gatehouses>
-          <li><tag>CBF_MO_Palisadentorhaus</tag><count>1~1</count></li>
+          <li><tag>CBF_MO_PalisadeGatehouse</tag><count>1~1</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garnison_Wehrgang</list><post>Walkway</post><count>3~5</count></li>
-          <li><list>CBF_MO_Garnison_Tor</list><post>Gate</post><count>1~3</count></li>
-          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>1~3</count></li>
+          <li><list>CBF_MO_Garrison_Walkway</list><post>Walkway</post><count>3~5</count></li>
+          <li><list>CBF_MO_Garrison_Gate</list><post>Gate</post><count>1~3</count></li>
+          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>1~3</count></li>
         </garrison>
         <districts>
           <li>
             <name>Dorfplatz</name>
             <entries>
-              <li><tag>CBF_MO_Gasthaus</tag><count>1~1</count></li>
-              <li><tag>CBF_MO_Werkstatt</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Kirche</tag><count>1~1</count></li>
-              <li><tag>CBF_MO_Schrein</tag><count>0~1</count></li>
-              <li><piece>CBF_MO_Waffenkammer_D</piece><count>0~1</count></li>
-              <li><tag>CBF_MO_Volk</tag><count>0~5</count><filler>true</filler></li>
+              <li><tag>CBF_MO_Tavern</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Workshop</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Church</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Shrine</tag><count>0~1</count></li>
+              <li><piece>CBF_MO_Armory_D</piece><count>0~1</count></li>
+              <li><tag>CBF_MO_Folk</tag><count>0~5</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -65,7 +65,7 @@
         <name>Aussenhoefe</name>
         <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>1~3</count></li>
+          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>1~3</count></li>
         </garrison>
         <districts>
           <li>
@@ -81,12 +81,12 @@
                 <li>Plant_Corn</li>
                </plants>
               <tags>
-                <li>CBF_MO_Huette</li>
-                <li>CBF_MO_Bauernhof</li>
+                <li>CBF_MO_Hut</li>
+                <li>CBF_MO_Farmstead</li>
               </tags></li></fields>
             <entries>
-              <li><tag>CBF_MO_Huette</tag><count>0~3</count><filler>true</filler></li>
-              <li><tag>CBF_MO_Bauernhof</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Hut</tag><count>0~3</count><filler>true</filler></li>
+              <li><tag>CBF_MO_Farmstead</tag><count>1~1</count></li>
             </entries>
           </li>
         </districts>
@@ -96,7 +96,7 @@
         <name>Umland</name>
         <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>1~3</count></li>
+          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>1~3</count></li>
         </garrison>
         <districts>
           <li>
@@ -107,10 +107,10 @@
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
                </plants>
               <tags>
-                <li>CBF_MO_Muehle</li>
+                <li>CBF_MO_Mill</li>
               </tags></li></fields>
             <entries>
-              <li><tag>CBF_MO_Muehle</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Mill</tag><count>1~1</count></li>
             </entries>
           </li>
           <li>
@@ -124,22 +124,22 @@
                </plants>
               <weight>1</weight></li></pens>
             <entries>
-              <li><tag>CBF_MO_Scheune</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Huette</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Barn</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Hut</tag><count>0~1</count></li>
             </entries>
           </li>
           <li>
             <name>Kirchhof</name>
             <entries>
-              <li><tag>CBF_MO_Friedhof</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Graveyard</tag><count>0~1</count></li>
             </entries>
           </li>
           <li>
             <name>Rand</name>
             <entries>
-              <li><tag>CBF_MO_Huette</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Jagdhuette</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Winzerei</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Hut</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_HuntingLodge</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Winery</tag><count>0~1</count></li>
             </entries>
           </li>
         </districts>
@@ -157,9 +157,9 @@
   </CustomBaseFramework.SettlementPlanDef>
 
   <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_Plan_RIAF_Marktstadt</defName>
+    <defName>CBF_Plan_RIAF_MarketTown</defName>
     <label>small market town (RIAF, MO)</label>
-    <materialList>CBF_MO_Materialliste</materialList>
+    <materialList>CBF_MO_MaterialList</materialList>
 
     <styles>
       <li>Rustical</li>
@@ -191,42 +191,42 @@
         </roads>
         <walls>
           <li><piece>TownWall</piece><weight>0.75</weight></li>
-          <li><piece>CBF_MO_Stadtmauer_Scharte</piece><weight>0.25</weight></li>
+          <li><piece>CBF_MO_TownWall_Embrasure</piece><weight>0.25</weight></li>
         </walls>
         <emplacements>
-          <li><tag>CBF_MO_Stadtturm</tag><count>1~1</count></li>
+          <li><tag>CBF_MO_TownTower</tag><count>1~1</count></li>
         </emplacements>
         <gatehouses>
-          <li><tag>CBF_MO_Torhaus</tag><count>1~1</count></li>
+          <li><tag>CBF_MO_Gatehouse</tag><count>1~1</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garnison_Wehrgang</list><post>Walkway</post><count>6~9</count></li>
-          <li><list>CBF_MO_Garnison_Tor</list><post>Gate</post><count>3~4</count></li>
-          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>4~5</count></li>
+          <li><list>CBF_MO_Garrison_Walkway</list><post>Walkway</post><count>6~9</count></li>
+          <li><list>CBF_MO_Garrison_Gate</list><post>Gate</post><count>3~4</count></li>
+          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>4~5</count></li>
         </garrison>
         <districts>
           <li>
             <name>Burg</name>
             <entries>
-              <li><tag>CBF_MO_Bergfried</tag><count>1~1</count><unique>true</unique></li>
-              <li><tag>CBF_MO_Kaserne</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Waffenkammer</tag><count>0~1</count></li>
-              <li><piece>CBF_MO_Verlies</piece><count>0~1</count></li>
+              <li><tag>CBF_MO_Keep</tag><count>1~1</count><unique>true</unique></li>
+              <li><tag>CBF_MO_Barracks</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Armory</tag><count>0~1</count></li>
+              <li><piece>CBF_MO_Dungeon</piece><count>0~1</count></li>
             </entries>
           </li>
           <li>
             <name>Zentrum</name>
             <entries>
-              <li><tag>CBF_MO_Adelshaus</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Gilde</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Gasthaus</tag><count>1~1</count></li>
-              <li><tag>CBF_MO_Marktplatz</tag><count>1~1</count></li>
-              <li><tag>CBF_MO_Katapultstellung</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Mauerzugang</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Kirche</tag><count>1~1</count></li>
-              <li><tag>CBF_MO_Denkmal</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Buergerhaus</tag><count>0~4</count><filler>true</filler></li>
-              <li><tag>CBF_MO_Lueckenhof</tag><count>0~2</count><filler>true</filler></li>
+              <li><tag>CBF_MO_NobleHouse</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Guild</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Tavern</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_MarketSquare</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_CatapultEmplacement</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_WallAccess</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Church</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Monument</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_BurgherHouse</tag><count>0~4</count><filler>true</filler></li>
+              <li><tag>CBF_MO_GapYard</tag><count>0~2</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -244,9 +244,9 @@
   </CustomBaseFramework.SettlementPlanDef>
 
   <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_Plan_RIAF_Festung</defName>
+    <defName>CBF_Plan_RIAF_Fortress</defName>
     <label>small fortress (RIAF, MO)</label>
-    <materialList>CBF_MO_Materialliste</materialList>
+    <materialList>CBF_MO_MaterialList</materialList>
 
     <styles>
       <li>Rustical</li>
@@ -278,44 +278,44 @@
         </roads>
         <walls>
           <li><piece>TownWall_1x5</piece><weight>0.75</weight></li>
-          <li><piece>CBF_MO_Stadtmauer_1x5_Scharte</piece><weight>0.25</weight></li>
+          <li><piece>CBF_MO_TownWall_1x5_Embrasure</piece><weight>0.25</weight></li>
         </walls>
         <emplacements>
-          <li><tag>CBF_MO_Festungsturm</tag><count>1~2</count></li>
+          <li><tag>CBF_MO_FortressTower</tag><count>1~2</count></li>
         </emplacements>
         <gatehouses>
-          <li><tag>CBF_MO_Festungstor</tag><count>1~1</count></li>
+          <li><tag>CBF_MO_FortressGate</tag><count>1~1</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garnison_Wehrgang</list><post>Walkway</post><count>16~21</count></li>
-          <li><list>CBF_MO_Garnison_Tor</list><post>Gate</post><count>5~8</count></li>
-          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>8~13</count></li>
+          <li><list>CBF_MO_Garrison_Walkway</list><post>Walkway</post><count>16~21</count></li>
+          <li><list>CBF_MO_Garrison_Gate</list><post>Gate</post><count>5~8</count></li>
+          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>8~13</count></li>
         </garrison>
         <districts>
           <li>
             <name>Burg</name>
             <entries>
-              <li><tag>CBF_MO_Bergfried</tag><count>1~1</count><unique>true</unique></li>
-              <li><tag>CBF_MO_Kaserne</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Waffenkammer</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Ruestkammer</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Keep</tag><count>1~1</count><unique>true</unique></li>
+              <li><tag>CBF_MO_Barracks</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Armory</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Armoury</tag><count>0~1</count></li>
             </entries>
           </li>
           <li>
             <name>Zentrum</name>
             <entries>
-              <li><tag>CBF_MO_Adelshaus</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Gilde</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Gasthaus</tag><count>1~1</count></li>
-              <li><tag>CBF_MO_Katapultstellung</tag><count>0~2</count></li>
-              <li><tag>CBF_MO_Werkstatt</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Waffenhaendler</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Schmiede</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Mauerzugang</tag><count>0~2</count></li>
-              <li><tag>CBF_MO_Kirche</tag><count>1~1</count></li>
-              <li><tag>CBF_MO_Denkmal</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Buergerhaus</tag><count>0~4</count><filler>true</filler></li>
-              <li><tag>CBF_MO_Lueckenhof</tag><count>0~2</count><filler>true</filler></li>
+              <li><tag>CBF_MO_NobleHouse</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Guild</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Tavern</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_CatapultEmplacement</tag><count>0~2</count></li>
+              <li><tag>CBF_MO_Workshop</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_WeaponDealer</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Smithy</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_WallAccess</tag><count>0~2</count></li>
+              <li><tag>CBF_MO_Church</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Monument</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_BurgherHouse</tag><count>0~4</count><filler>true</filler></li>
+              <li><tag>CBF_MO_GapYard</tag><count>0~2</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -325,7 +325,7 @@
         <name>Umland</name>
         <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>3~5</count></li>
+          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>3~5</count></li>
         </garrison>
         <districts>
           <li>
@@ -341,10 +341,10 @@
                 <li>Plant_Corn</li>
                </plants>
               <tags>
-                <li>CBF_MO_Bauernhof</li>
+                <li>CBF_MO_Farmstead</li>
               </tags></li></fields>
             <entries>
-              <li><tag>CBF_MO_Bauernhof</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Farmstead</tag><count>1~1</count></li>
             </entries>
           </li>
           <li>
@@ -355,10 +355,10 @@
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
                </plants>
               <tags>
-                <li>CBF_MO_Muehle</li>
+                <li>CBF_MO_Mill</li>
               </tags></li></fields>
             <entries>
-              <li><tag>CBF_MO_Muehle</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Mill</tag><count>1~1</count></li>
             </entries>
           </li>
           <li>
@@ -372,28 +372,28 @@
                </plants>
               <weight>1</weight></li></pens>
             <entries>
-              <li><tag>CBF_MO_Scheune</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Huette</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Barn</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Hut</tag><count>0~1</count></li>
             </entries>
           </li>
           <li>
             <name>Kirchhof</name>
             <entries>
-              <li><tag>CBF_MO_Friedhof</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Graveyard</tag><count>0~1</count></li>
             </entries>
           </li>
           <li>
             <name>Turnier</name>
             <entries>
-              <li><tag>CBF_MO_Turnierplatz</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_TourneyGround</tag><count>0~1</count></li>
             </entries>
           </li>
           <li>
             <name>Rand</name>
             <entries>
-              <li><tag>CBF_MO_Huette</tag><count>0~1</count><filler>true</filler></li>
-              <li><tag>CBF_MO_Jagdhuette</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Winzerei</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Hut</tag><count>0~1</count><filler>true</filler></li>
+              <li><tag>CBF_MO_HuntingLodge</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Winery</tag><count>0~1</count></li>
             </entries>
           </li>
         </districts>

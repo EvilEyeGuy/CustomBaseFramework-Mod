@@ -76,7 +76,7 @@
   <CBF_FieldDesc_maxTechLevel>Category entries only: things above this tech level are left out. Empty means no limit.</CBF_FieldDesc_maxTechLevel>
   <CBF_FieldDesc_name>Name of the entry. On a district it links fields and pens to its houses and must be unique. On a pen it appears in messages. On a ward it is replaced by the ward kind, on a field it is not read, and in wall lists piece is written instead.</CBF_FieldDesc_name>
   <CBF_FieldDesc_neutral>Pawn kinds (defName) that the fallback swap never changes, for any faction.</CBF_FieldDesc_neutral>
-  <CBF_FieldDesc_fromTechLevel>Map generation steps that only run on CBF maps when the map faction reaches the given tech level. Only read from the def named CBF_Kartenschritte.</CBF_FieldDesc_fromTechLevel>
+  <CBF_FieldDesc_fromTechLevel>Map generation steps that only run on CBF maps when the map faction reaches the given tech level. Only read from the def named CBF_MapSteps.</CBF_FieldDesc_fromTechLevel>
   <CBF_FieldDesc_onTop>Places the anchor's object on top of what stands there, instead of clearing the cells first. Anchors in anchorsOver always do this.</CBF_FieldDesc_onTop>
   <CBF_FieldDesc_objects>The object list (LootBuildingCategoryDef) a Fill or Object anchor places its buildings from. Without it an Object anchor stays empty.</CBF_FieldDesc_objects>
   <CBF_FieldDesc_onMissing>What happens when thing does not exist. Skip drops the entry, Fallback tries fallbackThings, Silver gives silver instead.</CBF_FieldDesc_onMissing>
@@ -130,7 +130,7 @@
   <CBF_FieldDesc_tower>Piece used for towers. It must be square with an odd edge length. Empty lets the generator build a round tower.</CBF_FieldDesc_tower>
   <CBF_FieldDesc_eavesMaterial>Material of the eaves. Empty takes the material of the wall they sit on.</CBF_FieldDesc_eavesMaterial>
   <CBF_FieldDesc_uniqueEntries>Each entry can be drawn at most once per roll of the table.</CBF_FieldDesc_uniqueEntries>
-  <CBF_FieldDesc_suppress>Map generation steps skipped on CBF maps. If CBF builds nothing there, they are run afterwards. Only read from the def named CBF_Kartenschritte.</CBF_FieldDesc_suppress>
+  <CBF_FieldDesc_suppress>Map generation steps skipped on CBF maps. If CBF builds nothing there, they are run afterwards. Only read from the def named CBF_MapSteps.</CBF_FieldDesc_suppress>
   <CBF_FieldDesc_usable>False switches the profile off. It is also switched off when none of its segments is usable.</CBF_FieldDesc_usable>
   <CBF_FieldDesc_value>Category entries only: market value range a thing must fall in. 0~0 means no limit.</CBF_FieldDesc_value>
   <CBF_FieldDesc_variants>Alternatives drawn per cell by weight. The entry's own thing or terrain, if set, takes part with weight 1.</CBF_FieldDesc_variants>

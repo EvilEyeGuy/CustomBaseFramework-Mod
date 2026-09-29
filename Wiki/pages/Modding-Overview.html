@@ -227,7 +227,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h3 id="example">Example</h3>
 <p>From CBF's Medieval Overhaul folder, labels translated:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.WallProfileDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;WallProfile_Stein_3&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;WallProfile_Stone_3&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;stone wall, drawn&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">style</span>&gt;Standard&lt;/<span class="xt">style</span>&gt;
   &lt;<span class="xt">depth</span>&gt;3&lt;/<span class="xt">depth</span>&gt;
@@ -235,7 +235,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
     &lt;<span class="xt">li</span>&gt;TownWall&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;TownWall&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;TownWall&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;TownWall_Scharte&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;TownWall_Embrasure&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">segments</span>&gt;
   &lt;<span class="xt">tower</span>&gt;Tower&lt;/<span class="xt">tower</span>&gt;
   &lt;<span class="xt">gatehouse</span>&gt;CBF_MO_GateHouse_Small&lt;/<span class="xt">gatehouse</span>&gt;
@@ -333,7 +333,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>A <code>MaterialListDef</code> decides what the generator uses for the parts it builds itself: walls, doors, gates, fences, roads, bridges, roofs and so on. Every settlement type must name one in <code>materialList</code>. There is no hidden default: without a usable list the settlement type is not built. The editor has its own part for them, see <a href="Material-Lists.html">Material lists</a>.</p>
 <p>Trimmed from the shipped base list:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.MaterialListDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Materialliste_Basis&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MaterialList_Base&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;base&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">roles</span>&gt;
     &lt;<span class="xt">li</span>&gt;
@@ -357,11 +357,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.MaterialListDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;MyMod_Materials&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;my mod&lt;/<span class="xt">label</span>&gt;
-  &lt;<span class="xt">parent</span>&gt;CBF_Materialliste_Basis&lt;/<span class="xt">parent</span>&gt;
+  &lt;<span class="xt">parent</span>&gt;CBF_MaterialList_Base&lt;/<span class="xt">parent</span>&gt;
   &lt;<span class="xt">roles</span>&gt;
     &lt;<span class="xt">li</span>&gt;
       &lt;<span class="xt">role</span>&gt;DOOR&lt;/<span class="xt">role</span>&gt;
-      &lt;<span class="xt">fuer</span>&gt;&lt;<span class="xt">li</span>&gt;Wall_Pallisade&lt;/<span class="xt">li</span>&gt;&lt;<span class="xt">li</span>&gt;CBF_MO_Palisadenturm_A&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">fuer</span>&gt;
+      &lt;<span class="xt">fuer</span>&gt;&lt;<span class="xt">li</span>&gt;Wall_Pallisade&lt;/<span class="xt">li</span>&gt;&lt;<span class="xt">li</span>&gt;CBF_MO_PalisadeTower_A&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">fuer</span>&gt;
       &lt;<span class="xt">chain</span>&gt;&lt;<span class="xt">li</span>&gt;DankPyon_RusticDoor&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">chain</span>&gt;
       &lt;<span class="xt">stuffChain</span>&gt;&lt;<span class="xt">li</span>&gt;WoodLog&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">stuffChain</span>&gt;
     &lt;/<span class="xt">li</span>&gt;
@@ -436,7 +436,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>A <code>RuinDef</code> turns a generated settlement into a raided or destroyed one: breaches, burnt rooms, corpses, reduced loot. CBF uses ruins for quest sites. A ruin reaches a map either from a quest node or from a <code>CustomBaseFramework.CBFOrtExtension</code> on a SitePartDef. See <a href="Modding-Quests.html">Modding-Quests</a>.</p>
 <p>CBF's shipped ruin inherits from the abstract <code>CBF_Ruin_Basis</code>, which only sets <code>besatzung</code> to <code>Besatzer</code>. Some fields are left out here:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.RuinDef</span> <span class="xa">ParentName</span>=<span class="xw">&quot;CBF_Ruin_Basis&quot;</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Ruin_Ueberfallen&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Ruin_Raided&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;raided&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">wandAbriss</span>&gt;0.15&lt;/<span class="xt">wandAbriss</span>&gt;
   &lt;<span class="xt">haeufung</span>&gt;0.7&lt;/<span class="xt">haeufung</span>&gt;
@@ -538,9 +538,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tbody>
 </table>
 <h2 id="map-steps">Map steps</h2>
-<p><code>KartenschritteDef</code> lists vanilla or mod map generation steps that CBF skips on maps it builds itself. Only the def named <code>CBF_Kartenschritte</code> is read. To add steps, patch that def instead of writing a new one.</p>
+<p><code>KartenschritteDef</code> lists vanilla or mod map generation steps that CBF skips on maps it builds itself. Only the def named <code>CBF_MapSteps</code> is read. To add steps, patch that def instead of writing a new one.</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.KartenschritteDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Kartenschritte&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MapSteps&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">unterdruecken</span>&gt;
     &lt;<span class="xt">li</span>&gt;Roads&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;ScatterRuinsSimple&lt;/<span class="xt">li</span>&gt;
@@ -574,7 +574,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>A patch from your own mod:</p>
 <pre><code class="language-xml">&lt;<span class="xt">Patch</span>&gt;
   &lt;<span class="xt">Operation</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationAdd&quot;</span>&gt;
-    &lt;<span class="xt">xpath</span>&gt;/Defs/CustomBaseFramework.KartenschritteDef[defName=&quot;CBF_Kartenschritte&quot;]/unterdruecken&lt;/<span class="xt">xpath</span>&gt;
+    &lt;<span class="xt">xpath</span>&gt;/Defs/CustomBaseFramework.KartenschritteDef[defName=&quot;CBF_MapSteps&quot;]/unterdruecken&lt;/<span class="xt">xpath</span>&gt;
     &lt;<span class="xt">value</span>&gt;
       &lt;<span class="xt">li</span>&gt;MyMod_ScatterCamps&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">value</span>&gt;
@@ -584,7 +584,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="buildability-rules">Buildability rules</h2>
 <p><code>BaubarRegelDef</code> is only read when the mod setting <strong>Make everything buildable</strong> is on. See <a href="Mod-Settings.html">Mod settings</a>. The setting gives every building without an architect category one. The rules decide which category.</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.BaubarRegelDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Baubar_Ruinen&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Buildable_Ruins&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">rang</span>&gt;30&lt;/<span class="xt">rang</span>&gt;
   &lt;<span class="xt">kategorie</span>&gt;CBF_RuinFurniture&lt;/<span class="xt">kategorie</span>&gt;
   &lt;<span class="xt">kategorieLabel</span>&gt;Ruin Furn.&lt;/<span class="xt">kategorieLabel</span>&gt;

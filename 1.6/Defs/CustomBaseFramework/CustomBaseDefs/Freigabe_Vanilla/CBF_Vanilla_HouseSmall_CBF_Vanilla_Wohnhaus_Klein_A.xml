@@ -2,8 +2,7 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Wohnhaus_Klein_A</defName>
-    <label>CBF_Vanilla_Wohnhaus_Klein_A</label>
+    <defName>CBF_Vanilla_Dwelling_Small_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_Vanilla_HouseSmall</li>
@@ -11,8 +10,8 @@
     <style>CBF_ModernVanilla</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>Kueche</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Kueche</lootTable></li>
-      <li><symbol>2</symbol><anchor>SchrankA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>1</symbol><anchor>Kueche</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Kitchen</lootTable></li>
+      <li><symbol>2</symbol><anchor>SchrankA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
       <li><symbol>8</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>E</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>

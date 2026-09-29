@@ -2,9 +2,9 @@
 <Defs>
 
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_WD_VFEM2_Farmlager</defName>
+    <defName>CBF_Plan_WD_VFEM2_FarmCamp</defName>
     <label>farm camp (VFE Medieval 2)</label>
-    <materialList>CBF_VFEM2_Materialliste</materialList>
+    <materialList>CBF_VFEM2_MaterialList</materialList>
     <styles>
       <li>CBF_VFEM2</li>
     </styles>
@@ -31,18 +31,18 @@
           <li>Palisade</li>
         </walls>
         <emplacements>
-          <li><tag>CBF_VFEM2_Palisadenturm</tag><count>1~1</count></li>
+          <li><tag>CBF_VFEM2_PalisadeTower</tag><count>1~1</count></li>
         </emplacements>
         <garrison>
-          <li><list>CBF_VFEM2_Garnison_Innen</list><post>Inside</post><count>2~4</count></li>
+          <li><list>CBF_VFEM2_Garrison_Inside</list><post>Inside</post><count>2~4</count></li>
         </garrison>
         <districts>
           <li>
             <name>Hof</name>
             <entries>
-              <li><tag>CBF_VFEM2_Kornspeicher</tag><count>1~2</count></li>
-              <li><tag>CBF_VFEM2_Bauernhof</tag><count>1~2</count></li>
-              <li><tag>CBF_VFEM2_Huette</tag><count>3~6</count><filler>true</filler></li>
+              <li><tag>CBF_VFEM2_Granary</tag><count>1~2</count></li>
+              <li><tag>CBF_VFEM2_Farmstead</tag><count>1~2</count></li>
+              <li><tag>CBF_VFEM2_Hut</tag><count>3~6</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -61,12 +61,12 @@
                   <li>Plant_Potato</li>
                 </plants>
                 <tags>
-                  <li>CBF_VFEM2_Kornspeicher</li>
-                  <li>CBF_VFEM2_Scheune</li>
+                  <li>CBF_VFEM2_Granary</li>
+                  <li>CBF_VFEM2_Barn</li>
                 </tags></li></fields>
             <entries>
-              <li><tag>CBF_VFEM2_Gehege</tag><count>1~2</count></li>
-              <li><tag>CBF_VFEM2_Scheune</tag><count>0~1</count></li>
+              <li><tag>CBF_VFEM2_Pen</tag><count>1~2</count></li>
+              <li><tag>CBF_VFEM2_Barn</tag><count>0~1</count></li>
             </entries>
           </li>
         </districts>
@@ -95,9 +95,9 @@
   </CustomBaseFramework.SettlementPlanDef>
 
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_WD_VFEM2_Holzfaellerlager</defName>
+    <defName>CBF_Plan_WD_VFEM2_LoggingCamp</defName>
     <label>logging camp (VFE Medieval 2)</label>
-    <materialList>CBF_VFEM2_Materialliste</materialList>
+    <materialList>CBF_VFEM2_MaterialList</materialList>
     <styles>
       <li>CBF_VFEM2</li>
     </styles>
@@ -124,18 +124,18 @@
           <li>Palisade</li>
         </walls>
         <emplacements>
-          <li><tag>CBF_VFEM2_Palisadenturm</tag><count>1~1</count></li>
+          <li><tag>CBF_VFEM2_PalisadeTower</tag><count>1~1</count></li>
         </emplacements>
         <garrison>
-          <li><list>CBF_VFEM2_Garnison_Innen</list><post>Inside</post><count>2~4</count></li>
+          <li><list>CBF_VFEM2_Garrison_Inside</list><post>Inside</post><count>2~4</count></li>
         </garrison>
         <districts>
           <li>
             <name>Holzplatz</name>
             <entries>
-              <li><tag>CBF_VFEM2_Holzfaellerhuette</tag><count>1~2</count></li>
-              <li><tag>CBF_VFEM2_Saegeplatz</tag><count>1~2</count></li>
-              <li><tag>CBF_VFEM2_Huette</tag><count>2~5</count><filler>true</filler></li>
+              <li><tag>CBF_VFEM2_WoodcutterHut</tag><count>1~2</count></li>
+              <li><tag>CBF_VFEM2_SawingYard</tag><count>1~2</count></li>
+              <li><tag>CBF_VFEM2_Hut</tag><count>2~5</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -148,7 +148,7 @@
           <li>
             <name>Wald</name>
             <entries>
-              <li><tag>CBF_VFEM2_Huette</tag><count>0~2</count></li>
+              <li><tag>CBF_VFEM2_Hut</tag><count>0~2</count></li>
             </entries>
           </li>
         </districts>
@@ -177,9 +177,9 @@
   </CustomBaseFramework.SettlementPlanDef>
 
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_WD_VFEM2_Produktionsdorf</defName>
+    <defName>CBF_Plan_WD_VFEM2_ProductionVillage</defName>
     <label>production village (VFE Medieval 2)</label>
-    <materialList>CBF_VFEM2_Materialliste</materialList>
+    <materialList>CBF_VFEM2_MaterialList</materialList>
     <styles>
       <li>CBF_VFEM2</li>
     </styles>
@@ -206,19 +206,19 @@
           <li>Palisade</li>
         </walls>
         <emplacements>
-          <li><tag>CBF_VFEM2_Palisadenturm</tag><count>1~2</count></li>
+          <li><tag>CBF_VFEM2_PalisadeTower</tag><count>1~2</count></li>
         </emplacements>
         <garrison>
-          <li><list>CBF_VFEM2_Garnison_Innen</list><post>Inside</post><count>3~6</count></li>
+          <li><list>CBF_VFEM2_Garrison_Inside</list><post>Inside</post><count>3~6</count></li>
         </garrison>
         <districts>
           <li>
             <name>Werkstaetten</name>
             <entries>
-              <li><tag>CBF_VFEM2_Werkstatt</tag><count>3~5</count></li>
-              <li><tag>CBF_VFEM2_Lagerhaus</tag><count>1~2</count></li>
-              <li><tag>CBF_VFEM2_Gasthaus</tag><count>0~1</count></li>
-              <li><tag>CBF_VFEM2_Huette</tag><count>4~8</count><filler>true</filler></li>
+              <li><tag>CBF_VFEM2_Workshop</tag><count>3~5</count></li>
+              <li><tag>CBF_VFEM2_Warehouse</tag><count>1~2</count></li>
+              <li><tag>CBF_VFEM2_Tavern</tag><count>0~1</count></li>
+              <li><tag>CBF_VFEM2_Hut</tag><count>4~8</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -237,10 +237,10 @@
                   <li>Plant_Potato</li>
                 </plants>
                 <tags>
-                  <li>CBF_VFEM2_Bauernhof</li>
+                  <li>CBF_VFEM2_Farmstead</li>
                 </tags></li></fields>
             <entries>
-              <li><tag>CBF_VFEM2_Bauernhof</tag><count>1~1</count></li>
+              <li><tag>CBF_VFEM2_Farmstead</tag><count>1~1</count></li>
             </entries>
           </li>
         </districts>
@@ -269,9 +269,9 @@
   </CustomBaseFramework.SettlementPlanDef>
 
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_WD_VFEM2_Sklavendorf</defName>
+    <defName>CBF_Plan_WD_VFEM2_SlaveVillage</defName>
     <label>slave village (VFE Medieval 2)</label>
-    <materialList>CBF_VFEM2_Materialliste</materialList>
+    <materialList>CBF_VFEM2_MaterialList</materialList>
     <styles>
       <li>CBF_VFEM2</li>
     </styles>
@@ -298,19 +298,19 @@
           <li>Palisade</li>
         </walls>
         <emplacements>
-          <li><tag>CBF_VFEM2_Palisadenturm</tag><count>1~2</count></li>
+          <li><tag>CBF_VFEM2_PalisadeTower</tag><count>1~2</count></li>
         </emplacements>
         <garrison>
-          <li><list>CBF_VFEM2_Garnison_Tor</list><post>Inside</post><count>3~6</count></li>
+          <li><list>CBF_VFEM2_Garrison_Gate</list><post>Inside</post><count>3~6</count></li>
         </garrison>
         <districts>
           <li>
             <name>Pferche</name>
             <entries>
-              <li><tag>CBF_VFEM2_Sklavenpferch</tag><count>1~2</count></li>
-              <li><tag>CBF_VFEM2_Zwinger</tag><count>1~1</count></li>
-              <li><tag>CBF_VFEM2_Aufseherhaus</tag><count>1~1</count><unique>true</unique></li>
-              <li><tag>CBF_VFEM2_Huette</tag><count>3~6</count><filler>true</filler></li>
+              <li><tag>CBF_VFEM2_SlavePen</tag><count>1~2</count></li>
+              <li><tag>CBF_VFEM2_Kennel</tag><count>1~1</count></li>
+              <li><tag>CBF_VFEM2_OverseerHouse</tag><count>1~1</count><unique>true</unique></li>
+              <li><tag>CBF_VFEM2_Hut</tag><count>3~6</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -329,10 +329,10 @@
                   <li>Plant_Potato</li>
                 </plants>
                 <tags>
-                  <li>CBF_VFEM2_Bauernhof</li>
+                  <li>CBF_VFEM2_Farmstead</li>
                 </tags></li></fields>
             <entries>
-              <li><tag>CBF_VFEM2_Bauernhof</tag><count>1~1</count></li>
+              <li><tag>CBF_VFEM2_Farmstead</tag><count>1~1</count></li>
             </entries>
           </li>
         </districts>
@@ -361,9 +361,9 @@
   </CustomBaseFramework.SettlementPlanDef>
 
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_WD_VFEM2_Kriegslager</defName>
+    <defName>CBF_Plan_WD_VFEM2_WarCamp</defName>
     <label>war camp (VFE Medieval 2)</label>
-    <materialList>CBF_VFEM2_Materialliste</materialList>
+    <materialList>CBF_VFEM2_MaterialList</materialList>
     <styles>
       <li>CBF_VFEM2</li>
     </styles>
@@ -390,19 +390,19 @@
           <li>Palisade</li>
         </walls>
         <emplacements>
-          <li><tag>CBF_VFEM2_Palisadenturm</tag><count>1~2</count></li>
+          <li><tag>CBF_VFEM2_PalisadeTower</tag><count>1~2</count></li>
         </emplacements>
         <garrison>
-          <li><list>CBF_VFEM2_Garnison_Wehrgang</list><post>Walkway</post><count>3~6</count></li>
-          <li><list>CBF_VFEM2_Garnison_Innen</list><post>Inside</post><count>3~5</count></li>
+          <li><list>CBF_VFEM2_Garrison_Walkway</list><post>Walkway</post><count>3~6</count></li>
+          <li><list>CBF_VFEM2_Garrison_Inside</list><post>Inside</post><count>3~5</count></li>
         </garrison>
         <districts>
           <li>
             <name>Zelte</name>
             <entries>
-              <li><tag>CBF_VFEM2_Kommandozelt</tag><count>1~1</count><unique>true</unique></li>
-              <li><tag>CBF_VFEM2_Waffenzelt</tag><count>1~2</count></li>
-              <li><tag>CBF_VFEM2_Soldatenzelt</tag><count>3~6</count><filler>true</filler></li>
+              <li><tag>CBF_VFEM2_CommandTent</tag><count>1~1</count><unique>true</unique></li>
+              <li><tag>CBF_VFEM2_WeaponTent</tag><count>1~2</count></li>
+              <li><tag>CBF_VFEM2_SoldierTent</tag><count>3~6</count><filler>true</filler></li>
             </entries>
           </li>
         </districts>
@@ -415,7 +415,7 @@
           <li>
             <name>Pferde</name>
             <entries>
-              <li><tag>CBF_VFEM2_Pferdestand</tag><count>1~2</count></li>
+              <li><tag>CBF_VFEM2_HorseStall</tag><count>1~2</count></li>
             </entries>
           </li>
         </districts>

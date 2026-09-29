@@ -2,20 +2,19 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_MO_Hafenlager_A</defName>
-    <label>CBF_MO_Hafenlager_A</label>
+    <defName>CBF_MO_HarborStore_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_MO_Hafenlager</li>
+      <li>CBF_MO_HarborStore</li>
     </categories>
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>2</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Hafen</lootTable></li>
-      <li><symbol>3</symbol><anchor>Kiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Hafen</lootTable></li>
-      <li><symbol>4</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Hafen</lootTable></li>
-      <li><symbol>6</symbol><anchor>Stoffballen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stofffass</objects></li>
-      <li><symbol>8</symbol><anchor>Hafenvolk</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>2</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Harbor</lootTable></li>
+      <li><symbol>3</symbol><anchor>Kiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Crate</objects><lootTable>CBF_MO_Loot_Harbor</lootTable></li>
+      <li><symbol>4</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Harbor</lootTable></li>
+      <li><symbol>6</symbol><anchor>Stoffballen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothBarrel</objects></li>
+      <li><symbol>8</symbol><anchor>Hafenvolk</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_Gate1x2c</thing><stuff>Steel</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_LampPost</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>

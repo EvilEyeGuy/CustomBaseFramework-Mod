@@ -2,18 +2,17 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Huette_B</defName>
-    <label>CBF_VFEM2_Huette_B</label>
+    <defName>CBF_VFEM2_Hut_B</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Huette</li>
+      <li>CBF_VFEM2_Hut</li>
     </categories>
     <style>CBF_VFEM2</style>
     <eaves>true</eaves>
     <legend>
       <li><symbol>0</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>1</symbol><anchor>Huette</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Huette</lootTable></li>
-      <li><symbol>8</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>1</symbol><anchor>Huette</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Hut</lootTable></li>
+      <li><symbol>8</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>H</symbol><thing>VFEM2_Hearth</thing><stuff>BlocksLimestone</stuff><rotation>South</rotation></li>
       <li><symbol>L</symbol><thing>TorchLamp</thing></li>

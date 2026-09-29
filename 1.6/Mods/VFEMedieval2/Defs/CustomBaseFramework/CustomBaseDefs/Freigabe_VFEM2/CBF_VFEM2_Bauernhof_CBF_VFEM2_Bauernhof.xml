@@ -2,11 +2,10 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Bauernhof</defName>
-    <label>CBF_VFEM2_Bauernhof</label>
+    <defName>CBF_VFEM2_Farmstead</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Bauernhof</li>
+      <li>CBF_VFEM2_Farmstead</li>
     </categories>
     <style>CBF_VFEM2</style>
     <eaves>true</eaves>
@@ -24,11 +23,11 @@
       <li><symbol>k</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>l</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
       <li><symbol>m</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
-      <li><symbol>n</symbol><anchor>SackB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>o</symbol><anchor>Bauer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>n</symbol><anchor>SackB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
+      <li><symbol>o</symbol><anchor>Bauer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
       <li><symbol>p</symbol><thing>RawCorn</thing><count>30</count></li>
-      <li><symbol>q</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>r</symbol><anchor>SackA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>q</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
+      <li><symbol>r</symbol><anchor>SackA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
       <li><symbol>s</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
       <li><symbol>t</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>u</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>

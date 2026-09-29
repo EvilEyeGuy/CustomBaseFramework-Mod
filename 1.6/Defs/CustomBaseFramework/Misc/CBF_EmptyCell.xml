@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TerrainDef>
+    <defName>CBF_EmptyCell</defName>
+    <label>empty marker</label>
+    <description>A marker for the settlement editor. A cell painted with it belongs to the piece, but nothing is built there and the existing ground stays untouched. It never appears in a generated settlement.</description>
+    <texturePath>CBF/Terrain/Leerfeld</texturePath>
+    <edgeType>Hard</edgeType>
+    <layerable>true</layerable>
+    <renderPrecedence>250</renderPrecedence>
+    <pathCost>0</pathCost>
+    <fertility>0</fertility>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+    </affordances>
+    <statBases>
+      <Beauty>0</Beauty>
+      <Cleanliness>0</Cleanliness>
+    </statBases>
+  </TerrainDef>
+
+</Defs>

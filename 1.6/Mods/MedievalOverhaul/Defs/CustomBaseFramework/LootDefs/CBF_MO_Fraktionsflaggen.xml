@@ -2,77 +2,77 @@
 <Defs>
 
   <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_MO_Flagge_Oswin</defName>
+    <defName>CBF_MO_Flag_Oswin</defName>
     <members>
       <li><thing>DankPyon_BannerOswin</thing><stays>true</stays></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_MO_Flagge_Soren</defName>
+    <defName>CBF_MO_Flag_Soren</defName>
     <members>
       <li><thing>DankPyon_BannerSoren</thing><stays>true</stays></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_MO_Flagge_Amboise</defName>
+    <defName>CBF_MO_Flag_Amboise</defName>
     <members>
       <li><thing>DankPyon_BannerAmboise</thing><stays>true</stays></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_MO_Flagge_Hesse</defName>
+    <defName>CBF_MO_Flag_Hesse</defName>
     <members>
       <li><thing>DankPyon_BannerHesse</thing><stays>true</stays></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.LootBuildingCategoryDef>
-    <defName>CBF_MO_Flagge_Sun</defName>
+    <defName>CBF_MO_Flag_Sun</defName>
     <members>
       <li><thing>DankPyon_BannerSun</thing><stays>true</stays></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
   <CustomBaseFramework.FactionFlagDef>
-    <defName>CBF_MO_Fraktionsflagge_Oswin</defName>
+    <defName>CBF_MO_FactionFlag_Oswin</defName>
     <faction>DankPyon_NobleHouseCivil</faction>
     <objects>
-      <li>CBF_MO_Flagge_Oswin</li>
+      <li>CBF_MO_Flag_Oswin</li>
     </objects>
   </CustomBaseFramework.FactionFlagDef>
 
   <CustomBaseFramework.FactionFlagDef>
-    <defName>CBF_MO_Fraktionsflagge_Soren</defName>
+    <defName>CBF_MO_FactionFlag_Soren</defName>
     <faction>DankPyon_NobleHouseCivil2</faction>
     <objects>
-      <li>CBF_MO_Flagge_Soren</li>
+      <li>CBF_MO_Flag_Soren</li>
     </objects>
   </CustomBaseFramework.FactionFlagDef>
 
   <CustomBaseFramework.FactionFlagDef>
-    <defName>CBF_MO_Fraktionsflagge_Amboise</defName>
+    <defName>CBF_MO_FactionFlag_Amboise</defName>
     <faction>DankPyon_NobleHouseFierce</faction>
     <objects>
-      <li>CBF_MO_Flagge_Amboise</li>
+      <li>CBF_MO_Flag_Amboise</li>
     </objects>
   </CustomBaseFramework.FactionFlagDef>
 
   <CustomBaseFramework.FactionFlagDef>
-    <defName>CBF_MO_Fraktionsflagge_Hesse</defName>
+    <defName>CBF_MO_FactionFlag_Hesse</defName>
     <faction>DankPyon_NobleHouseSavage</faction>
     <objects>
-      <li>CBF_MO_Flagge_Hesse</li>
+      <li>CBF_MO_Flag_Hesse</li>
     </objects>
   </CustomBaseFramework.FactionFlagDef>
 
   <CustomBaseFramework.FactionFlagDef MayRequire="Ludeon.RimWorld.Royalty">
-    <defName>CBF_MO_Fraktionsflagge_Sun</defName>
+    <defName>CBF_MO_FactionFlag_Sun</defName>
     <faction>Empire</faction>
     <objects>
-      <li>CBF_MO_Flagge_Sun</li>
+      <li>CBF_MO_Flag_Sun</li>
     </objects>
   </CustomBaseFramework.FactionFlagDef>
 

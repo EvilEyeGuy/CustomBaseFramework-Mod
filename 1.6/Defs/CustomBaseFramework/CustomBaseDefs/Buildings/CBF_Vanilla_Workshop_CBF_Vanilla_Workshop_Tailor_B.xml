@@ -3,10 +3,9 @@
 
   <CustomBaseFramework.PieceDef>
     <defName>CBF_Vanilla_Workshop_Tailor_B</defName>
-    <label>CBF_Vanilla_Workshop_Tailor_B</label>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Schneiderei</li>
+      <li>CBF_Vanilla_TailorShop</li>
     </categories>
     <style>CBF_ModernVanilla</style>
 
@@ -25,11 +24,11 @@
       <li><symbol>H</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>K</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li><symbol>M</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>N</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Schneiderei</lootTable></li>
-      <li><symbol>Q</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Ware_Textil</lootTable></li>
-      <li><symbol>U</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Ware_Gewand</lootTable></li>
+      <li><symbol>N</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_TailorShop</lootTable></li>
+      <li><symbol>Q</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Goods_Textiles</lootTable></li>
+      <li><symbol>U</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Goods_Garments</lootTable></li>
       <li><symbol>V</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind></li>
-      <li><symbol>X</symbol><anchor>Fill4</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Ware_Gewand</lootTable></li>
+      <li><symbol>X</symbol><anchor>Fill4</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Goods_Garments</lootTable></li>
     </legend>
 
     <mask>

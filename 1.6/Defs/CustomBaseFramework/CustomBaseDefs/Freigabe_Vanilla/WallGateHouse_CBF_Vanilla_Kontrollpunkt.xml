@@ -2,20 +2,19 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Kontrollpunkt</defName>
-    <label>CBF_Vanilla_Kontrollpunkt</label>
+    <defName>CBF_Vanilla_Checkpoint</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>WallGateHouse</li>
-      <li>CBF_Vanilla_Kontrollpunkt</li>
+      <li>CBF_Vanilla_Checkpoint</li>
     </categories>
     <type>WallPart</type>
     <style>CBF_ModernVanilla</style>
     <legend>
-      <li><symbol>1</symbol><anchor>KisteNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
-      <li><symbol>2</symbol><anchor>KisteSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
-      <li><symbol>7</symbol><anchor>WacheSued</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Modern_Garnison_Tor</pawnList><pawnCount>2~3</pawnCount></li>
-      <li><symbol>8</symbol><anchor>WacheNord</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Modern_Garnison_Tor</pawnList><pawnCount>2~3</pawnCount></li>
+      <li><symbol>1</symbol><anchor>KisteNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
+      <li><symbol>2</symbol><anchor>KisteSued</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
+      <li><symbol>7</symbol><anchor>WacheSued</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Modern_Garrison_Gate</pawnList><pawnCount>2~3</pawnCount></li>
+      <li><symbol>8</symbol><anchor>WacheNord</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Modern_Garrison_Gate</pawnList><pawnCount>2~3</pawnCount></li>
       <li><symbol>A</symbol><anchor>Outside</anchor></li>
       <li><symbol>W</symbol><anchor>Wall</anchor></li>
       <li><symbol>C</symbol><thing>Sandbags</thing><stuff>Cloth</stuff></li>

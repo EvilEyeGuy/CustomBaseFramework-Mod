@@ -2,8 +2,7 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Holzkraftwerk_A</defName>
-    <label>CBF_Vanilla_Holzkraftwerk_A</label>
+    <defName>CBF_Vanilla_WoodPowerPlant_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_Vanilla_EnergyProduction</li>
@@ -11,7 +10,7 @@
     <style>CBF_ModernVanilla</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>Brennstoff</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Generator</lootTable></li>
+      <li><symbol>1</symbol><anchor>Brennstoff</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Generator</lootTable></li>
       <li><symbol>8</symbol><anchor>Maschinist</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>9</symbol><anchor>Heizer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>

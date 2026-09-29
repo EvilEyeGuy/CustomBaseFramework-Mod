@@ -2,18 +2,17 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_MO_Stammeszelt_Versammlung</defName>
-    <label>CBF_MO_Stammeszelt_Versammlung</label>
+    <defName>CBF_MO_TribalTent_Assembly</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_MO_Versammlungszelt</li>
+      <li>CBF_MO_AssemblyTent</li>
     </categories>
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
     <legend>
       <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>8</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Stamm_Bewohner</pawnList></li>
-      <li><symbol>9</symbol><anchor>BewohnerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Stamm_Bewohner</pawnList></li>
+      <li><symbol>8</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tribe_Residents</pawnList></li>
+      <li><symbol>9</symbol><anchor>BewohnerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tribe_Residents</pawnList></li>
       <li><symbol>C</symbol><thing>Campfire</thing></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_LogChair</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>

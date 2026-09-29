@@ -2,36 +2,35 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_MO_Kirche_A</defName>
-    <label>CBF_MO_Kirche_A</label>
+    <defName>CBF_MO_Church_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_MO_Kirche</li>
+      <li>CBF_MO_Church</li>
     </categories>
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>Kirchenschatz</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Adelstruhe</objects><lootTable>CBF_MO_Loot_Kirchenschatz</lootTable></li>
-      <li><symbol>8</symbol><anchor>Priester</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>1</symbol><anchor>Kirchenschatz</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_ChurchTreasure</lootTable></li>
+      <li><symbol>8</symbol><anchor>Priester</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_LogTable1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_Candelabra</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
-      <li><symbol>H</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Heiligtum</objects><ideoBuilding>true</ideoBuilding></li>
+      <li><symbol>H</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Sanctum</objects><ideoBuilding>true</ideoBuilding></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_RusticDoor1x2c</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><terrain>DankPyon_Floor_Lys_White</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_CultPedestal</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RugRoyal_Lys2x3c</thing><rotation>East</rotation></li>
-      <li><symbol>S</symbol><thing>CBF_MO_Pflastermauer</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>S</symbol><thing>CBF_MO_CobbleWall</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_CultPedestal</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>AltargefaessA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><onTop>true</onTop></li>
-      <li><symbol>b</symbol><anchor>AltargefaessB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><onTop>true</onTop></li>
+      <li><symbol>a</symbol><anchor>AltargefaessA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Dinnerware</objects><onTop>true</onTop></li>
+      <li><symbol>b</symbol><anchor>AltargefaessB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Dinnerware</objects><onTop>true</onTop></li>
       <li><symbol>f</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutShelfFilledBook</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>s</symbol><anchor>Schreibregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Schreibregal</objects></li>
-      <li><symbol>¤</symbol><anchor>Teppich</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Adelsteppich_2x3</objects></li>
+      <li><symbol>s</symbol><anchor>Schreibregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WritingShelf</objects></li>
+      <li><symbol>¤</symbol><anchor>Teppich</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_NobleRug_2x3</objects></li>
     </legend>
     <mask>
       <li>.....###.....</li>

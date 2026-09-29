@@ -2,18 +2,17 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Drogenlabor_A</defName>
-    <label>CBF_Vanilla_Drogenlabor_A</label>
+    <defName>CBF_Vanilla_DrugLab_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Drogenlabor</li>
+      <li>CBF_Vanilla_DrugLab</li>
     </categories>
     <style>CBF_ModernVanilla</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>LaborA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Drogenlabor</lootTable></li>
-      <li><symbol>2</symbol><anchor>LaborB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Drogenlabor</lootTable></li>
-      <li><symbol>3</symbol><anchor>Anbau</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Drogenlabor</lootTable></li>
+      <li><symbol>1</symbol><anchor>LaborA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_DrugLab</lootTable></li>
+      <li><symbol>2</symbol><anchor>LaborB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_DrugLab</lootTable></li>
+      <li><symbol>3</symbol><anchor>Anbau</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_DrugLab</lootTable></li>
       <li><symbol>8</symbol><anchor>Koch</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>9</symbol><anchor>Gaertner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>

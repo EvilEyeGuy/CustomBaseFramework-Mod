@@ -37,7 +37,7 @@
   </ThingDef>
 
   <ThingDef ParentName="CBF_BeutebehaelterBase">
-    <defName>CBF_Behaelter_Regal</defName>
+    <defName>CBF_Container_Shelf</defName>
     <label>stocked shelf</label>
     <description>A shelf someone left behind, still holding what its owner kept there. Once emptied, it is just a shelf again.</description>
     <size>(2,1)</size>
@@ -55,7 +55,7 @@
   </ThingDef>
 
   <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_Behaelter_Kraeuterregal</defName>
+    <defName>CBF_Container_HerbShelf</defName>
     <label>herb shelf</label>
     <description>Bundles and jars line the boards. What is left of them is worth a look.</description>
     <size>(2,1)</size>
@@ -82,7 +82,7 @@
   </ThingDef>
 
   <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_Behaelter_Ruinenkiste</defName>
+    <defName>CBF_Container_RuinCrate</defName>
     <label>ruined crate</label>
     <description>A crate that has stood here for a long time. Whatever is left inside falls apart with it.</description>
     <size>(1,1)</size>
@@ -105,7 +105,7 @@
   </ThingDef>
 
   <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_Behaelter_Truhe</defName>
+    <defName>CBF_Container_Chest</defName>
     <label>locked chest</label>
     <description>A chest that has not been opened in a long while. Something may have made a home of it.</description>
     <size>(1,1)</size>

@@ -2,9 +2,9 @@
 <Defs>
 
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_WD_Modern_Farmposten</defName>
+    <defName>CBF_Plan_WD_Modern_FarmOutpost</defName>
     <label>farm outpost</label>
-    <materialList>CBF_Modern_Materialliste</materialList>
+    <materialList>CBF_Modern_MaterialList</materialList>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -28,7 +28,7 @@
         <name>Posten</name>
         <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Innen</list><post>Inside</post><count>3~5</count></li>
+          <li><list>CBF_Modern_Garrison_Inside</list><post>Inside</post><count>3~5</count></li>
         </garrison>
         <districts>
           <li>
@@ -58,7 +58,7 @@
                   <li>CBF_Vanilla_Silo</li>
                 </tags></li></fields>
             <entries>
-              <li><tag>CBF_Vanilla_Gehege</tag><count>1~1</count></li>
+              <li><tag>CBF_Vanilla_Pen</tag><count>1~1</count></li>
             </entries>
           </li>
         </districts>
@@ -81,9 +81,9 @@
   </CustomBaseFramework.SettlementPlanDef>
 
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_WD_Modern_Holzposten</defName>
+    <defName>CBF_Plan_WD_Modern_WoodOutpost</defName>
     <label>logging outpost</label>
-    <materialList>CBF_Modern_Materialliste</materialList>
+    <materialList>CBF_Modern_MaterialList</materialList>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -107,13 +107,13 @@
         <name>Posten</name>
         <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Innen</list><post>Inside</post><count>3~5</count></li>
+          <li><list>CBF_Modern_Garrison_Inside</list><post>Inside</post><count>3~5</count></li>
         </garrison>
         <districts>
           <li>
             <name>Werk</name>
             <entries>
-              <li><tag>CBF_Vanilla_Saegewerk</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Sawmill</tag><count>1~2</count></li>
               <li><tag>CBF_Vanilla_HouseSmall</tag><count>2~4</count><filler>true</filler></li>
             </entries>
           </li>
@@ -150,9 +150,9 @@
   </CustomBaseFramework.SettlementPlanDef>
 
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_WD_Modern_Minenposten</defName>
+    <defName>CBF_Plan_WD_Modern_MineOutpost</defName>
     <label>mining outpost</label>
-    <materialList>CBF_Modern_Materialliste</materialList>
+    <materialList>CBF_Modern_MaterialList</materialList>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -176,13 +176,13 @@
         <name>Posten</name>
         <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Innen</list><post>Inside</post><count>3~5</count></li>
+          <li><list>CBF_Modern_Garrison_Inside</list><post>Inside</post><count>3~5</count></li>
         </garrison>
         <districts>
           <li>
             <name>Bohrfeld</name>
             <entries>
-              <li><tag>CBF_Vanilla_Bohrbaracke</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_DrillBarracks</tag><count>1~2</count></li>
               <li><tag>CBF_Vanilla_EnergyProduction</tag><count>0~1</count></li>
               <li><tag>CBF_Vanilla_HouseSmall</tag><count>1~3</count><filler>true</filler></li>
             </entries>
@@ -197,7 +197,7 @@
           <li>
             <name>Rand</name>
             <entries>
-              <li><tag>CBF_Vanilla_Lager</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Storage</tag><count>0~1</count></li>
             </entries>
           </li>
         </districts>
@@ -220,9 +220,9 @@
   </CustomBaseFramework.SettlementPlanDef>
 
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_WD_Modern_Produktionsstadt</defName>
+    <defName>CBF_Plan_WD_Modern_ProductionTown</defName>
     <label>production town</label>
-    <materialList>CBF_Modern_Materialliste</materialList>
+    <materialList>CBF_Modern_MaterialList</materialList>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -246,14 +246,14 @@
         <name>Werksviertel</name>
         <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Innen</list><post>Inside</post><count>5~8</count></li>
+          <li><list>CBF_Modern_Garrison_Inside</list><post>Inside</post><count>5~8</count></li>
         </garrison>
         <districts>
           <li>
             <name>Werk</name>
             <entries>
-              <li><tag>CBF_Vanilla_Werkhalle</tag><count>2~3</count></li>
-              <li><tag>CBF_Vanilla_Lager</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Workhall</tag><count>2~3</count></li>
+              <li><tag>CBF_Vanilla_Storage</tag><count>1~2</count></li>
               <li><tag>CBF_Vanilla_Workshop</tag><count>2~5</count><filler>true</filler></li>
               <li><tag>CBF_Vanilla_HouseLarge</tag><count>3~8</count><filler>true</filler></li>
             </entries>
@@ -269,7 +269,7 @@
             <name>Energie</name>
             <entries>
               <li><tag>CBF_Vanilla_EnergyProduction</tag><count>1~2</count></li>
-              <li><tag>CBF_Vanilla_Solarpark</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_SolarPark</tag><count>0~1</count></li>
             </entries>
           </li>
         </districts>
@@ -292,9 +292,9 @@
   </CustomBaseFramework.SettlementPlanDef>
 
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_WD_Modern_Gefangenenlager</defName>
+    <defName>CBF_Plan_WD_Modern_PrisonCamp</defName>
     <label>prison camp</label>
-    <materialList>CBF_Modern_Materialliste</materialList>
+    <materialList>CBF_Modern_MaterialList</materialList>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -318,14 +318,14 @@
         <name>Lager</name>
         <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Tor</list><post>Inside</post><count>5~8</count></li>
+          <li><list>CBF_Modern_Garrison_Gate</list><post>Inside</post><count>5~8</count></li>
         </garrison>
         <districts>
           <li>
             <name>Lager</name>
             <entries>
-              <li><tag>CBF_Vanilla_Gefangenenlager</tag><count>1~2</count></li>
-              <li><tag>CBF_Vanilla_Kaserne</tag><count>1~1</count></li>
+              <li><tag>CBF_Vanilla_PrisonCamp</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Barracks</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_HouseSmall</tag><count>2~5</count><filler>true</filler></li>
             </entries>
           </li>
@@ -362,9 +362,9 @@
   </CustomBaseFramework.SettlementPlanDef>
 
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_WD_Modern_Feldlager</defName>
+    <defName>CBF_Plan_WD_Modern_FieldCamp</defName>
     <label>field camp</label>
-    <materialList>CBF_Modern_Materialliste</materialList>
+    <materialList>CBF_Modern_MaterialList</materialList>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -388,15 +388,15 @@
         <name>Lager</name>
         <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Wehrgang</list><post>Inside</post><count>4~8</count></li>
-          <li><list>CBF_Modern_Garnison_Elite</list><post>Inside</post><count>1~3</count></li>
+          <li><list>CBF_Modern_Garrison_Walkway</list><post>Inside</post><count>4~8</count></li>
+          <li><list>CBF_Modern_Garrison_Elite</list><post>Inside</post><count>1~3</count></li>
         </garrison>
         <districts>
           <li>
             <name>Stellungen</name>
             <entries>
-              <li><tag>CBF_Vanilla_Feldlager</tag><count>2~4</count></li>
-              <li><tag>CBF_Vanilla_Kaserne</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_FieldCamp</tag><count>2~4</count></li>
+              <li><tag>CBF_Vanilla_Barracks</tag><count>0~1</count></li>
             </entries>
           </li>
         </districts>

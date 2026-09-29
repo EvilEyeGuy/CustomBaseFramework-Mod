@@ -119,8 +119,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Quests in XML</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html" class="hier">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="modding-quests">Modding quests</h1><p class="unter">Modding</p>
 <p>CBF has quest nodes and components to send the player to a CBF settlement that is built for a quest. The two shipped quests use them, see <a href="Quests.html">Quests</a>. Their files are the reference:</p>
 <ul>
-<li><code>1.6/Mods/MedievalOverhaul/Defs/Quests/CBF_MO_Quest_UeberfallenerOrt.xml</code> (raided settlement)</li>
-<li><code>1.6/Mods/MedievalOverhaul/Defs/Quests/CBF_MO_Quest_UmkaempfterOrt.xml</code> (contested settlement)</li>
+<li><code>1.6/Mods/MedievalOverhaul/Defs/Quests/CBF_MO_Quest_RaidedSite.xml</code> (raided settlement)</li>
+<li><code>1.6/Mods/MedievalOverhaul/Defs/Quests/CBF_MO_Quest_ContestedSite.xml</code> (contested settlement)</li>
 <li><code>CBF_MO_Quest_SiteParts.xml</code>, <code>CBF_MO_Quest_Orte.xml</code> and <code>CBF_MO_Quest_Ruinen.xml</code> in the same folder</li>
 </ul>
 <p>All classes are in the namespace <code>CustomBaseFramework</code>.</p>
@@ -156,7 +156,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="site-setup">Site setup</h2>
 <h3 id="worldobjectdef">WorldObjectDef</h3>
 <pre><code class="language-xml">&lt;<span class="xt">WorldObjectDef</span> <span class="xa">ParentName</span>=<span class="xw">&quot;Site&quot;</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_MO_Quest_UmkaempfterOrt&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_Quest_ContestedSite&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;settlement under attack&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">mapGenerator</span>&gt;CBF_Base_Faction&lt;/<span class="xt">mapGenerator</span>&gt;
   &lt;<span class="xt">comps</span>&gt;
@@ -226,13 +226,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tbody>
 </table>
 <pre><code class="language-xml">&lt;<span class="xt">SitePartDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_MO_Quest_UeberfallenerOrt&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_Quest_RaidedSite&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">requiresFaction</span>&gt;true&lt;/<span class="xt">requiresFaction</span>&gt;
   &lt;<span class="xt">wantsThreatPoints</span>&gt;true&lt;/<span class="xt">wantsThreatPoints</span>&gt;
   &lt;<span class="xt">minThreatPoints</span>&gt;300&lt;/<span class="xt">minThreatPoints</span>&gt;
   &lt;<span class="xt">modExtensions</span>&gt;
     &lt;<span class="xt">li</span> <span class="xa">Class</span>=<span class="xw">&quot;CustomBaseFramework.CBFOrtExtension&quot;</span>&gt;
-      &lt;<span class="xt">ruin</span>&gt;CBF_MO_Quest_Ruin_Ueberfallen&lt;/<span class="xt">ruin</span>&gt;
+      &lt;<span class="xt">ruin</span>&gt;CBF_MO_Quest_Ruin_Raided&lt;/<span class="xt">ruin</span>&gt;
       &lt;<span class="xt">planTags</span>&gt;
         &lt;<span class="xt">li</span>&gt;Dorf&lt;/<span class="xt">li</span>&gt;
         &lt;<span class="xt">li</span>&gt;Marktstadt&lt;/<span class="xt">li</span>&gt;
@@ -542,7 +542,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>Nothing is charged while there is no owner.</li>
 <li>A recorded item counts as taken when a player pawn gets it into inventory, carry slot, equipment or apparel. Partial stack merges are charged by count.</li>
 <li>A spawned thing of the owner that changes to the player faction is charged at its market value.</li>
-<li>Fractions add up. Goodwill drops in whole points with the history event <code>CBF_Quest_OrtsgutGenommen</code>.</li>
+<li>Fractions add up. Goodwill drops in whole points with the history event <code>CBF_Quest_SiteGoodsTaken</code>.</li>
 <li>The inspect string shows the owner with the keys <code>CBF_Quest_Ortsgut_Inspect</code> or <code>CBF_Quest_Ortsgut_Inspect_Eigen</code>.</li>
 </ul>
 <h2 id="cbfbelohnungextension">CBFBelohnungExtension</h2>
@@ -573,7 +573,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </table>
 <p>The tech level of a thing is the highest of its own <code>techLevel</code>, its research prerequisites and the research of its <code>recipeMaker</code>. Things with a power comp count as at least Industrial. Excluded things are added to the reward's disallowed things and removed from the market value fillers while rewards are generated.</p>
 <pre><code class="language-xml">&lt;<span class="xt">QuestScriptDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_MO_Quest_UmkaempfterOrt&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_Quest_ContestedSite&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">modExtensions</span>&gt;
     &lt;<span class="xt">li</span> <span class="xa">Class</span>=<span class="xw">&quot;CustomBaseFramework.CBFBelohnungExtension&quot;</span>&gt;
       &lt;<span class="xt">hoechsteTechstufe</span>&gt;Medieval&lt;/<span class="xt">hoechsteTechstufe</span>&gt;
@@ -587,9 +587,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 &lt;/<span class="xt">QuestScriptDef</span>&gt;
 </code></pre>
 <h2 id="example-contested-settlement">Example: contested settlement</h2>
-<p>Trimmed from <code>CBF_MO_Quest_UmkaempfterOrt.xml</code>. Name rules, description rules, the timeout and the leave and reward branches are left out.</p>
+<p>Trimmed from <code>CBF_MO_Quest_ContestedSite.xml</code>. Name rules, description rules, the timeout and the leave and reward branches are left out.</p>
 <pre><code class="language-xml">&lt;<span class="xt">QuestScriptDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_MO_Quest_UmkaempfterOrt&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_Quest_ContestedSite&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">rootSelectionWeight</span>&gt;1.0&lt;/<span class="xt">rootSelectionWeight</span>&gt;
   &lt;<span class="xt">rootMinPoints</span>&gt;300&lt;/<span class="xt">rootMinPoints</span>&gt;
   &lt;<span class="xt">root</span> <span class="xa">Class</span>=<span class="xw">&quot;QuestNode_Sequence&quot;</span>&gt;
@@ -598,7 +598,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
       &lt;<span class="xt">li</span> <span class="xa">Class</span>=<span class="xw">&quot;CustomBaseFramework.QuestNode_CBFAuftraggeber&quot;</span>&gt;
         &lt;<span class="xt">storeAs</span>&gt;asker&lt;/<span class="xt">storeAs</span>&gt;
         &lt;<span class="xt">storeFactionAs</span>&gt;askerFaction&lt;/<span class="xt">storeFactionAs</span>&gt;
-        &lt;<span class="xt">sitePart</span>&gt;CBF_MO_Quest_UmkaempfterOrt&lt;/<span class="xt">sitePart</span>&gt;
+        &lt;<span class="xt">sitePart</span>&gt;CBF_MO_Quest_ContestedSite&lt;/<span class="xt">sitePart</span>&gt;
       &lt;/<span class="xt">li</span>&gt;
       &lt;<span class="xt">li</span> <span class="xa">Class</span>=<span class="xw">&quot;QuestNode_GetSiteTile&quot;</span>&gt;
         &lt;<span class="xt">storeAs</span>&gt;siteTile&lt;/<span class="xt">storeAs</span>&gt;
@@ -607,7 +607,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
       &lt;<span class="xt">li</span> <span class="xa">Class</span>=<span class="xw">&quot;CustomBaseFramework.QuestNode_CBFBesatzer&quot;</span>&gt;
         &lt;<span class="xt">storeAs</span>&gt;angreiferFaction&lt;/<span class="xt">storeAs</span>&gt;
         &lt;<span class="xt">storeSitePartDefsAs</span>&gt;sitePartDefs&lt;/<span class="xt">storeSitePartDefsAs</span>&gt;
-        &lt;<span class="xt">sitePart</span>&gt;CBF_MO_Quest_UmkaempfterOrt&lt;/<span class="xt">sitePart</span>&gt;
+        &lt;<span class="xt">sitePart</span>&gt;CBF_MO_Quest_ContestedSite&lt;/<span class="xt">sitePart</span>&gt;
         &lt;<span class="xt">feindVon</span>&gt;$askerFaction&lt;/<span class="xt">feindVon</span>&gt;
       &lt;/<span class="xt">li</span>&gt;
       &lt;<span class="xt">li</span> <span class="xa">Class</span>=<span class="xw">&quot;QuestNode_GetDefaultSitePartsParams&quot;</span>&gt;
@@ -629,7 +629,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
         &lt;<span class="xt">sitePartsParams</span>&gt;$sitePartsParams&lt;/<span class="xt">sitePartsParams</span>&gt;
         &lt;<span class="xt">faction</span>&gt;$askerFaction&lt;/<span class="xt">faction</span>&gt;
         &lt;<span class="xt">tile</span>&gt;$siteTile&lt;/<span class="xt">tile</span>&gt;
-        &lt;<span class="xt">worldObjectDef</span>&gt;CBF_MO_Quest_UmkaempfterOrt&lt;/<span class="xt">worldObjectDef</span>&gt;
+        &lt;<span class="xt">worldObjectDef</span>&gt;CBF_MO_Quest_ContestedSite&lt;/<span class="xt">worldObjectDef</span>&gt;
         &lt;<span class="xt">storeAs</span>&gt;site&lt;/<span class="xt">storeAs</span>&gt;
       &lt;/<span class="xt">li</span>&gt;
       &lt;<span class="xt">li</span> <span class="xa">Class</span>=<span class="xw">&quot;CustomBaseFramework.QuestNode_CBFOrt&quot;</span>&gt;
@@ -664,12 +664,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><code>QuestNode_CBFAuftraggeber</code> picks a friendly faction that has a village or market town plan (<code>planTags</code> of the site part) and stores it with its leader.</li>
 <li><code>QuestNode_CBFBesatzer</code> picks a brigand faction hostile to the player and to the quest giver.</li>
 <li>The site belongs to the quest giver (<code>faction</code> is <code>$askerFaction</code>). The attackers get three times the site points.</li>
-<li><code>QuestNode_CBFOrt</code> builds the settlement in the quest giver's style. The site part's ruin <code>CBF_MO_Quest_Ruin_Schlacht</code> uses <code>besatzung</code> <code>Bauherr</code>, so the defenders are the quest giver's soldiers.</li>
+<li><code>QuestNode_CBFOrt</code> builds the settlement in the quest giver's style. The site part's ruin <code>CBF_MO_Quest_Ruin_Battle</code> uses <code>besatzung</code> <code>Bauherr</code>, so the defenders are the quest giver's soldiers.</li>
 <li><code>QuestNode_CBFAngriff</code> spawns the attackers in front of the breaches once the settlement is built.</li>
 <li><code>site.VerteidigerGefallen</code> fails the quest, <code>site.AllEnemiesDefeated</code> completes it.</li>
 </ol>
 <h2 id="example-the-choice">Example: the choice</h2>
-<p>From <code>CBF_MO_Quest_UeberfallenerOrt.xml</code>. Here the site belongs to the occupier (<code>QuestNode_GenerateSite</code> with <code>$siteFaction</code>), <code>QuestNode_CBFOrt</code> sets <code>bauherr</code> to the quest giver and <code>punkte</code> to 1.5 times the site points.</p>
+<p>From <code>CBF_MO_Quest_RaidedSite.xml</code>. Here the site belongs to the occupier (<code>QuestNode_GenerateSite</code> with <code>$siteFaction</code>), <code>QuestNode_CBFOrt</code> sets <code>bauherr</code> to the quest giver and <code>punkte</code> to 1.5 times the site points.</p>
 <pre><code class="language-xml">&lt;<span class="xt">li</span> <span class="xa">Class</span>=<span class="xw">&quot;CustomBaseFramework.QuestNode_CBFWahl&quot;</span>&gt;
   &lt;<span class="xt">inSignalBesiegt</span>&gt;site.AllEnemiesDefeated&lt;/<span class="xt">inSignalBesiegt</span>&gt;
   &lt;<span class="xt">inSignalWeg</span>&gt;site.Destroyed&lt;/<span class="xt">inSignalWeg</span>&gt;

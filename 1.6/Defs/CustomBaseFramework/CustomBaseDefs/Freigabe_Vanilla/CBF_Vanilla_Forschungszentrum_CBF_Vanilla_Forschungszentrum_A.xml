@@ -2,18 +2,17 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Forschungszentrum_A</defName>
-    <label>CBF_Vanilla_Forschungszentrum_A</label>
+    <defName>CBF_Vanilla_ResearchCenter_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Forschungszentrum</li>
+      <li>CBF_Vanilla_ResearchCenter</li>
     </categories>
     <style>CBF_ModernVanilla</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>LaborA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Forschung</lootTable></li>
-      <li><symbol>2</symbol><anchor>LaborC</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Forschung</lootTable></li>
-      <li><symbol>3</symbol><anchor>LaborB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Forschung</lootTable></li>
+      <li><symbol>1</symbol><anchor>LaborA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
+      <li><symbol>2</symbol><anchor>LaborC</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
+      <li><symbol>3</symbol><anchor>LaborB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>E</symbol><thing>DiningChair</thing><stuff>Steel</stuff><rotation>East</rotation></li>
       <li><symbol>K</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>

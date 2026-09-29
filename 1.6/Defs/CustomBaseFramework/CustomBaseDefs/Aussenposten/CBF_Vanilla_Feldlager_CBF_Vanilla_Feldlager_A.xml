@@ -2,16 +2,15 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Feldlager_A</defName>
-    <label>CBF_Vanilla_Feldlager_A</label>
+    <defName>CBF_Vanilla_FieldCamp_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Feldlager</li>
+      <li>CBF_Vanilla_FieldCamp</li>
     </categories>
     <style>CBF_ModernVanilla</style>
     <legend>
-      <li><symbol>1</symbol><anchor>WaffenA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>2</symbol><anchor>WaffenB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>1</symbol><anchor>WaffenA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Armory</lootTable></li>
+      <li><symbol>2</symbol><anchor>WaffenB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Armory</lootTable></li>
       <li><symbol>9</symbol><anchor>Wache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>1~2</pawnCount></li>
       <li><symbol>C</symbol><thing>Campfire</thing></li>
       <li><symbol>b</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>

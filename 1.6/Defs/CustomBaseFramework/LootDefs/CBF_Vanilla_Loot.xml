@@ -2,8 +2,8 @@
 <Defs>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Mahlzeit</defName>
-    <label>Mahlzeiten</label>
+    <defName>CBF_Vanilla_Goods_Meal</defName>
+    <label>meals</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>20</weight><thing>MealSimple</thing><count>1~1</count><onMissing>Skip</onMissing></li>
@@ -17,8 +17,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Gemuese</defName>
-    <label>Gemuese</label>
+    <defName>CBF_Vanilla_Goods_Vegetables</defName>
+    <label>vegetables goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>20</weight><thing>RawPotatoes</thing><count>30~90</count><onMissing>Skip</onMissing></li>
@@ -30,8 +30,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Obst</defName>
-    <label>Obst</label>
+    <defName>CBF_Vanilla_Goods_Fruit</defName>
+    <label>fruit goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>20</weight><thing>RawBerries</thing><count>20~60</count><onMissing>Skip</onMissing></li>
@@ -40,8 +40,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Fleisch</defName>
-    <label>Fleisch</label>
+    <defName>CBF_Vanilla_Goods_Meat</defName>
+    <label>meat goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>16</weight><thing>Pemmican</thing><count>20~60</count><onMissing>Skip</onMissing></li>
@@ -51,8 +51,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Hof</defName>
-    <label>Hoferzeugnis</label>
+    <defName>CBF_Vanilla_Goods_Yard</defName>
+    <label>farm produce</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>18</weight><thing>Milk</thing><count>15~45</count><onMissing>Skip</onMissing></li>
@@ -63,8 +63,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Textil</defName>
-    <label>Textil</label>
+    <defName>CBF_Vanilla_Goods_Textiles</defName>
+    <label>textiles goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>22</weight><thing>Cloth</thing><count>40~120</count><onMissing>Skip</onMissing></li>
@@ -83,8 +83,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Holz</defName>
-    <label>Holz</label>
+    <defName>CBF_Vanilla_Goods_Wood</defName>
+    <label>wood goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>1</weight><thing>WoodLog</thing><count>60~200</count><onMissing>Skip</onMissing></li>
@@ -92,8 +92,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Stein</defName>
-    <label>Steinbloecke</label>
+    <defName>CBF_Vanilla_Goods_Stone</defName>
+    <label>stone blocks</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>20</weight><thing>BlocksGranite</thing><count>40~120</count><onMissing>Skip</onMissing></li>
@@ -107,8 +107,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Erz</defName>
-    <label>Erz und Metall</label>
+    <defName>CBF_Vanilla_Goods_Ore</defName>
+    <label>ore goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>24</weight><thing>Steel</thing><count>60~200</count><onMissing>Skip</onMissing></li>
@@ -121,8 +121,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Komponent</defName>
-    <label>Komponenten</label>
+    <defName>CBF_Vanilla_Goods_Components</defName>
+    <label>components goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>20</weight><thing>ComponentIndustrial</thing><count>4~16</count><onMissing>Skip</onMissing></li>
@@ -136,8 +136,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Chemie</defName>
-    <label>Chemikalien</label>
+    <defName>CBF_Vanilla_Goods_Chemistry</defName>
+    <label>chemicals</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>20</weight><thing>Chemfuel</thing><count>30~120</count><onMissing>Skip</onMissing></li>
@@ -148,8 +148,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Medizin</defName>
-    <label>Medizin</label>
+    <defName>CBF_Vanilla_Goods_Medicine</defName>
+    <label>medicine goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>20</weight><thing>MedicineIndustrial</thing><count>4~14</count><onMissing>Skip</onMissing></li>
@@ -164,8 +164,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Droge</defName>
-    <label>Drogen</label>
+    <defName>CBF_Vanilla_Goods_Drugs</defName>
+    <label>drugs goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>18</weight><thing>PsychoidLeaves</thing><count>10~30</count><onMissing>Skip</onMissing></li>
@@ -182,8 +182,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Bier</defName>
-    <label>Bier und Wuerze</label>
+    <defName>CBF_Vanilla_Goods_Beer</defName>
+    <label>beer goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>22</weight><thing>Beer</thing><count>4~15</count><onMissing>Skip</onMissing></li>
@@ -194,8 +194,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Buecher</defName>
-    <label>Buecher</label>
+    <defName>CBF_Vanilla_Goods_Books</defName>
+    <label>books goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>14</weight><thing>TextBook</thing><count>1~3</count><onMissing>Skip</onMissing></li>
@@ -207,8 +207,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Schatz</defName>
-    <label>Schatz</label>
+    <defName>CBF_Vanilla_Goods_Treasure</defName>
+    <label>treasure goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>20</weight><thing>Gold</thing><count>15~60</count><onMissing>Skip</onMissing></li>
@@ -228,8 +228,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Munition</defName>
-    <label>Munition</label>
+    <defName>CBF_Vanilla_Goods_Ammo</defName>
+    <label>ammo goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>16</weight><thing>Shell_HighExplosive</thing><count>4~14</count><onMissing>Skip</onMissing></li>
@@ -240,8 +240,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Gewand</defName>
-    <label>Gewand</label>
+    <defName>CBF_Vanilla_Goods_Garments</defName>
+    <label>garments goods</label>
     <rolls>1~2</rolls>
     <entries>
       <li><weight>20</weight><thing>Apparel_BasicShirt</thing><count>1~3</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
@@ -257,8 +257,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Muenzen</defName>
-    <label>Gold und Silber</label>
+    <defName>CBF_Vanilla_Goods_Coins</defName>
+    <label>gold and silver</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>24</weight><thing>Silver</thing><count>40~220</count><onMissing>Skip</onMissing></li>
@@ -268,8 +268,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Pistole</defName>
-    <label>Faustfeuerwaffe</label>
+    <defName>CBF_Vanilla_Goods_Pistol</defName>
+    <label>sidearms</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>20</weight><thing>Gun_Revolver</thing><count>1</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
@@ -280,267 +280,267 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Wohnhaus</defName>
-    <label>Wohnhaus</label>
+    <defName>CBF_Vanilla_Loot_Dwelling</defName>
+    <label>dwelling loot</label>
     <rolls>3~6</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>20</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
-      <li><weight>18</weight><table>CBF_Vanilla_Ware_Gewand</table></li>
-      <li><weight>16</weight><table>CBF_Vanilla_Ware_Gemuese</table></li>
-      <li><weight>14</weight><table>CBF_Vanilla_Ware_Textil</table></li>
-      <li><weight>12</weight><table>CBF_Vanilla_Ware_Holz</table></li>
-      <li><weight>12</weight><table>CBF_Vanilla_Ware_Muenzen</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Obst</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
-      <li><weight>6</weight><table>CBF_Vanilla_Ware_Buecher</table></li>
-      <li><weight>6</weight><table>CBF_Vanilla_Ware_Bier</table></li>
-      <li><weight>2</weight><table>CBF_Vanilla_Ware_Pistole</table></li>
+      <li><weight>20</weight><table>CBF_Vanilla_Goods_Meal</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Goods_Garments</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Goods_Vegetables</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Goods_Textiles</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Goods_Wood</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Goods_Coins</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Fruit</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Medicine</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Goods_Books</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Goods_Beer</table></li>
+      <li><weight>2</weight><table>CBF_Vanilla_Goods_Pistol</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Schlafstelle</defName>
-    <label>Schlafstelle</label>
+    <defName>CBF_Vanilla_Loot_Sleeping</defName>
+    <label>sleeping loot</label>
     <rolls>1~3</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>22</weight><table>CBF_Vanilla_Ware_Textil</table></li>
-      <li><weight>18</weight><table>CBF_Vanilla_Ware_Gewand</table></li>
-      <li><weight>16</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Muenzen</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Buecher</table></li>
-      <li><weight>6</weight><table>CBF_Vanilla_Ware_Droge</table></li>
-      <li><weight>3</weight><table>CBF_Vanilla_Ware_Schatz</table></li>
+      <li><weight>22</weight><table>CBF_Vanilla_Goods_Textiles</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Goods_Garments</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Goods_Meal</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Coins</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Medicine</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Books</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Goods_Drugs</table></li>
+      <li><weight>3</weight><table>CBF_Vanilla_Goods_Treasure</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Kueche</defName>
-    <label>Kueche</label>
+    <defName>CBF_Vanilla_Loot_Kitchen</defName>
+    <label>kitchen loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>22</weight><table>CBF_Vanilla_Ware_Gemuese</table></li>
-      <li><weight>20</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
-      <li><weight>16</weight><table>CBF_Vanilla_Ware_Hof</table></li>
-      <li><weight>14</weight><table>CBF_Vanilla_Ware_Fleisch</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Obst</table></li>
+      <li><weight>22</weight><table>CBF_Vanilla_Goods_Vegetables</table></li>
+      <li><weight>20</weight><table>CBF_Vanilla_Goods_Meal</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Goods_Yard</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Goods_Meat</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Fruit</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Lager</defName>
-    <label>Lager</label>
+    <defName>CBF_Vanilla_Loot_Storage</defName>
+    <label>storage loot</label>
     <rolls>3~5</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>18</weight><table>CBF_Vanilla_Ware_Erz</table></li>
-      <li><weight>16</weight><table>CBF_Vanilla_Ware_Holz</table></li>
-      <li><weight>14</weight><table>CBF_Vanilla_Ware_Textil</table></li>
-      <li><weight>12</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
-      <li><weight>12</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Chemie</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Stein</table></li>
-      <li><weight>6</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Goods_Ore</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Goods_Wood</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Goods_Textiles</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Goods_Meal</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Goods_Components</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Chemistry</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Stone</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Goods_Medicine</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Werkstatt</defName>
-    <label>Werkstatt</label>
+    <defName>CBF_Vanilla_Loot_Workshop</defName>
+    <label>workshop loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>20</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
-      <li><weight>18</weight><table>CBF_Vanilla_Ware_Erz</table></li>
-      <li><weight>16</weight><table>CBF_Vanilla_Ware_Holz</table></li>
-      <li><weight>14</weight><table>CBF_Vanilla_Ware_Chemie</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Textil</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Stein</table></li>
+      <li><weight>20</weight><table>CBF_Vanilla_Goods_Components</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Goods_Ore</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Goods_Wood</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Goods_Chemistry</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Textiles</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Stone</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Schmiede</defName>
-    <label>Schmiede</label>
+    <defName>CBF_Vanilla_Loot_Smithy</defName>
+    <label>smithy loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>26</weight><table>CBF_Vanilla_Ware_Erz</table></li>
-      <li><weight>18</weight><table>CBF_Vanilla_Ware_Stein</table></li>
-      <li><weight>14</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Holz</table></li>
-      <li><weight>6</weight><table>CBF_Vanilla_Ware_Munition</table></li>
-      <li><weight>12</weight><table>CBF_Vanilla_Ware_Nahkampf</table></li>
-      <li><weight>6</weight><table>CBF_Vanilla_Ware_Schutz</table></li>
+      <li><weight>26</weight><table>CBF_Vanilla_Goods_Ore</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Goods_Stone</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Goods_Components</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Wood</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Goods_Ammo</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Goods_Melee</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Goods_Protection</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Schneiderei</defName>
-    <label>Schneiderei</label>
+    <defName>CBF_Vanilla_Loot_TailorShop</defName>
+    <label>tailor shop loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>30</weight><table>CBF_Vanilla_Ware_Textil</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Holz</table></li>
-      <li><weight>24</weight><table>CBF_Vanilla_Ware_Gewand</table></li>
+      <li><weight>30</weight><table>CBF_Vanilla_Goods_Textiles</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Wood</table></li>
+      <li><weight>24</weight><table>CBF_Vanilla_Goods_Garments</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Steinmetz</defName>
-    <label>Steinmetz</label>
+    <defName>CBF_Vanilla_Loot_Stonemason</defName>
+    <label>stonemason loot</label>
     <rolls>2~3</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>28</weight><table>CBF_Vanilla_Ware_Stein</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Erz</table></li>
+      <li><weight>28</weight><table>CBF_Vanilla_Goods_Stone</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Ore</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Spital</defName>
-    <label>Spital</label>
+    <defName>CBF_Vanilla_Loot_Hospital</defName>
+    <label>hospital loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>30</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
-      <li><weight>12</weight><table>CBF_Vanilla_Ware_Textil</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Droge</table></li>
-      <li><weight>6</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
+      <li><weight>30</weight><table>CBF_Vanilla_Goods_Medicine</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Goods_Textiles</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Meal</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Drugs</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Goods_Components</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Drogenlabor</defName>
-    <label>Drogenlabor</label>
+    <defName>CBF_Vanilla_Loot_DrugLab</defName>
+    <label>drug lab loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>30</weight><table>CBF_Vanilla_Ware_Droge</table></li>
-      <li><weight>16</weight><table>CBF_Vanilla_Ware_Chemie</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
+      <li><weight>30</weight><table>CBF_Vanilla_Goods_Drugs</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Goods_Chemistry</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Medicine</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Brauerei</defName>
-    <label>Brauerei</label>
+    <defName>CBF_Vanilla_Loot_Brewery</defName>
+    <label>brewery loot</label>
     <rolls>2~3</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>30</weight><table>CBF_Vanilla_Ware_Bier</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Gemuese</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Holz</table></li>
+      <li><weight>30</weight><table>CBF_Vanilla_Goods_Beer</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Vegetables</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Wood</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Forschung</defName>
-    <label>Forschungsgebaeude</label>
+    <defName>CBF_Vanilla_Loot_Research</defName>
+    <label>research building</label>
     <rolls>2~3</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>22</weight><table>CBF_Vanilla_Ware_Buecher</table></li>
-      <li><weight>20</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
-      <li><weight>14</weight><table>CBF_Vanilla_Ware_Erz</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Schatz</table></li>
-      <li><weight>6</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
+      <li><weight>22</weight><table>CBF_Vanilla_Goods_Books</table></li>
+      <li><weight>20</weight><table>CBF_Vanilla_Goods_Components</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Goods_Ore</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Treasure</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Goods_Medicine</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_Vanilla_Loot_Generator</defName>
-    <label>Generatoranlage</label>
+    <label>generator plant</label>
     <rolls>2~3</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>28</weight><table>CBF_Vanilla_Ware_Chemie</table></li>
-      <li><weight>20</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
-      <li><weight>16</weight><table>CBF_Vanilla_Ware_Erz</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Holz</table></li>
+      <li><weight>28</weight><table>CBF_Vanilla_Goods_Chemistry</table></li>
+      <li><weight>20</weight><table>CBF_Vanilla_Goods_Components</table></li>
+      <li><weight>16</weight><table>CBF_Vanilla_Goods_Ore</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Wood</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Waffenkammer</defName>
-    <label>Waffenkammer</label>
+    <defName>CBF_Vanilla_Loot_Armory</defName>
+    <label>armory loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>26</weight><table>CBF_Vanilla_Ware_Munition</table></li>
-      <li><weight>18</weight><table>CBF_Vanilla_Ware_Erz</table></li>
-      <li><weight>12</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Textil</table></li>
-      <li><weight>28</weight><table>CBF_Vanilla_Ware_Gewehr</table></li>
-      <li><weight>20</weight><table>CBF_Vanilla_Ware_Nahkampf</table></li>
-      <li><weight>22</weight><table>CBF_Vanilla_Ware_Schutz</table></li>
+      <li><weight>26</weight><table>CBF_Vanilla_Goods_Ammo</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Goods_Ore</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Goods_Components</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Textiles</table></li>
+      <li><weight>28</weight><table>CBF_Vanilla_Goods_Rifle</table></li>
+      <li><weight>20</weight><table>CBF_Vanilla_Goods_Melee</table></li>
+      <li><weight>22</weight><table>CBF_Vanilla_Goods_Protection</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Bauernhof</defName>
-    <label>Bauernhof</label>
+    <defName>CBF_Vanilla_Loot_Farmstead</defName>
+    <label>farmstead loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>24</weight><table>CBF_Vanilla_Ware_Hof</table></li>
-      <li><weight>20</weight><table>CBF_Vanilla_Ware_Gemuese</table></li>
-      <li><weight>12</weight><table>CBF_Vanilla_Ware_Obst</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Holz</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Textil</table></li>
+      <li><weight>24</weight><table>CBF_Vanilla_Goods_Yard</table></li>
+      <li><weight>20</weight><table>CBF_Vanilla_Goods_Vegetables</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Goods_Fruit</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Wood</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Textiles</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Schatzkammer</defName>
-    <label>Schatzkammer</label>
+    <defName>CBF_Vanilla_Loot_Treasury</defName>
+    <label>treasury loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>30</weight><table>CBF_Vanilla_Ware_Schatz</table></li>
-      <li><weight>14</weight><table>CBF_Vanilla_Ware_Erz</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Buecher</table></li>
+      <li><weight>30</weight><table>CBF_Vanilla_Goods_Treasure</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Goods_Ore</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Books</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_Vanilla_Loot_Minimal</defName>
-    <label>Wenig</label>
+    <label>little loot</label>
     <rolls>1~2</rolls>
     <uniqueEntries>true</uniqueEntries>
     <entries>
-      <li><weight>22</weight><table>CBF_Vanilla_Ware_Holz</table></li>
-      <li><weight>18</weight><table>CBF_Vanilla_Ware_Erz</table></li>
-      <li><weight>14</weight><table>CBF_Vanilla_Ware_Textil</table></li>
-      <li><weight>12</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
+      <li><weight>22</weight><table>CBF_Vanilla_Goods_Wood</table></li>
+      <li><weight>18</weight><table>CBF_Vanilla_Goods_Ore</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Goods_Textiles</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Goods_Meal</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Medicine</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Gewehr</defName>
-    <label>Gewehre</label>
+    <defName>CBF_Vanilla_Goods_Rifle</defName>
+    <label>rifles</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>20</weight><thing>Gun_BoltActionRifle</thing><count>1~2</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
@@ -555,8 +555,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Nahkampf</defName>
-    <label>Nahkampfwaffen</label>
+    <defName>CBF_Vanilla_Goods_Melee</defName>
+    <label>melee weapons</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>20</weight><thing>MeleeWeapon_Knife</thing><count>1~3</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
@@ -572,8 +572,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Ware_Schutz</defName>
-    <label>Schutzkleidung</label>
+    <defName>CBF_Vanilla_Goods_Protection</defName>
+    <label>protective clothing</label>
     <rolls>1~2</rolls>
     <entries>
       <li><weight>20</weight><thing>Apparel_SimpleHelmet</thing><count>1~2</count><quality>Awful~Good</quality><hitPoints>0.4~0.9</hitPoints><onMissing>Skip</onMissing></li>
@@ -589,37 +589,37 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Hydrokultur</defName>
-    <label>Hydrokultur</label>
+    <defName>CBF_Vanilla_Loot_Hydroponics</defName>
+    <label>hydroponics loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>30</weight><table>CBF_Vanilla_Ware_Gemuese</table></li>
-      <li><weight>14</weight><table>CBF_Vanilla_Ware_Obst</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Droge</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
-      <li><weight>6</weight><table>CBF_Vanilla_Ware_Chemie</table></li>
+      <li><weight>30</weight><table>CBF_Vanilla_Goods_Vegetables</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Goods_Fruit</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Drugs</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Medicine</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Goods_Chemistry</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Handel</defName>
-    <label>Handelsposten</label>
+    <defName>CBF_Vanilla_Loot_Trade</defName>
+    <label>trade loot</label>
     <rolls>3~5</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>24</weight><table>CBF_Vanilla_Ware_Muenzen</table></li>
-      <li><weight>14</weight><table>CBF_Vanilla_Ware_Gewand</table></li>
-      <li><weight>12</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
-      <li><weight>12</weight><table>CBF_Vanilla_Ware_Medizin</table></li>
-      <li><weight>10</weight><table>CBF_Vanilla_Ware_Textil</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Droge</table></li>
-      <li><weight>8</weight><table>CBF_Vanilla_Ware_Mahlzeit</table></li>
-      <li><weight>6</weight><table>CBF_Vanilla_Ware_Pistole</table></li>
-      <li><weight>4</weight><table>CBF_Vanilla_Ware_Gewehr</table></li>
-      <li><weight>3</weight><table>CBF_Vanilla_Ware_Schatz</table></li>
+      <li><weight>24</weight><table>CBF_Vanilla_Goods_Coins</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Goods_Garments</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Goods_Components</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Goods_Medicine</table></li>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_Textiles</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Drugs</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Meal</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Goods_Pistol</table></li>
+      <li><weight>4</weight><table>CBF_Vanilla_Goods_Rifle</table></li>
+      <li><weight>3</weight><table>CBF_Vanilla_Goods_Treasure</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 

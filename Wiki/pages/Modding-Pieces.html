@@ -121,11 +121,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>Categories group pieces. They are stored as <code>CustomBaseFramework.PieceCategoryDef</code> and carry the rules that all their pieces share, see <a href="Categories.html">Categories</a>.</p>
 <p>All field names on this page are the exact XML names. The full list of fields is on the reference pages linked at the end.</p>
 <h2 id="a-small-house">A small house</h2>
-<p>This is <code>CBF_Vanilla_Wohnhaus_Klein_A</code>, shipped with CBF in <code>1.6/Defs/CustomBaseFramework/CustomBaseDefs/Freigabe_Vanilla/</code>. It is shown unchanged except for a shorter legend.</p>
+<p>This is <code>CBF_Vanilla_Dwelling_Small_A</code>, shipped with CBF in <code>1.6/Defs/CustomBaseFramework/CustomBaseDefs/Freigabe_Vanilla/</code>. It is shown unchanged except for a shorter legend.</p>
 <pre><code class="language-xml">&lt;<span class="xt">Defs</span>&gt;
   &lt;<span class="xt">CustomBaseFramework.PieceDef</span>&gt;
-    &lt;<span class="xt">defName</span>&gt;CBF_Vanilla_Wohnhaus_Klein_A&lt;/<span class="xt">defName</span>&gt;
-    &lt;<span class="xt">label</span>&gt;CBF_Vanilla_Wohnhaus_Klein_A&lt;/<span class="xt">label</span>&gt;
+    &lt;<span class="xt">defName</span>&gt;CBF_Vanilla_Dwelling_Small_A&lt;/<span class="xt">defName</span>&gt;
+    &lt;<span class="xt">label</span>&gt;CBF_Vanilla_Dwelling_Small_A&lt;/<span class="xt">label</span>&gt;
     &lt;<span class="xt">schemaVersion</span>&gt;2&lt;/<span class="xt">schemaVersion</span>&gt;
     &lt;<span class="xt">categories</span>&gt;
       &lt;<span class="xt">li</span>&gt;CBF_Vanilla_HouseSmall&lt;/<span class="xt">li</span>&gt;
@@ -133,8 +133,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
     &lt;<span class="xt">style</span>&gt;CBF_ModernVanilla&lt;/<span class="xt">style</span>&gt;
     &lt;<span class="xt">traufen</span>&gt;true&lt;/<span class="xt">traufen</span>&gt;
     &lt;<span class="xt">legend</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;1&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;Kueche&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Fill&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_Vanilla_Regal_Klein&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">lootTable</span>&gt;CBF_Vanilla_Loot_Kueche&lt;/<span class="xt">lootTable</span>&gt;&lt;/<span class="xt">li</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;2&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;SchrankA&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Fill&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_Vanilla_Regal_Klein&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">lootTable</span>&gt;CBF_Vanilla_Loot_Wohnhaus&lt;/<span class="xt">lootTable</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;1&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;Kueche&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Fill&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_Vanilla_Shelf_Small&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">lootTable</span>&gt;CBF_Vanilla_Loot_Kitchen&lt;/<span class="xt">lootTable</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;2&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;SchrankA&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Fill&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_Vanilla_Shelf_Small&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">lootTable</span>&gt;CBF_Vanilla_Loot_Dwelling&lt;/<span class="xt">lootTable</span>&gt;&lt;/<span class="xt">li</span>&gt;
       &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;8&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;BewohnerA&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Spawn&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">pawnList</span>&gt;CBF_Vanilla_Villager&lt;/<span class="xt">pawnList</span>&gt;&lt;<span class="xt">chance</span>&gt;0.3&lt;/<span class="xt">chance</span>&gt;&lt;/<span class="xt">li</span>&gt;
       &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;B&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">thing</span>&gt;HiddenConduit&lt;/<span class="xt">thing</span>&gt;&lt;/<span class="xt">li</span>&gt;
       &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;F&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">thing</span>&gt;Door&lt;/<span class="xt">thing</span>&gt;&lt;<span class="xt">stuff</span>&gt;WoodLog&lt;/<span class="xt">stuff</span>&gt;&lt;/<span class="xt">li</span>&gt;
@@ -454,13 +454,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tbody>
 </table>
 <p><code>required</code> set to <code>true</code> only has an effect on a Connect anchor named <code>Wall</code>. The piece is then only placed against the town wall.</p>
-<p>A gatehouse, trimmed from <code>CBF_Vanilla_Torhaus_Holz</code>:</p>
+<p>A gatehouse, trimmed from <code>CBF_Vanilla_Gatehouse_Wood</code>:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.PieceDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Vanilla_Torhaus_Holz&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Vanilla_Gatehouse_Wood&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">schemaVersion</span>&gt;2&lt;/<span class="xt">schemaVersion</span>&gt;
   &lt;<span class="xt">categories</span>&gt;
     &lt;<span class="xt">li</span>&gt;WallGateHouse&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;CBF_Vanilla_Torhaus&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;CBF_Vanilla_Gatehouse&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">categories</span>&gt;
   &lt;<span class="xt">type</span>&gt;WallPart&lt;/<span class="xt">type</span>&gt;
   &lt;<span class="xt">legend</span>&gt;
@@ -494,7 +494,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>If a wall piece has no <code>Outside</code> anchor, the field <code>drawnOutward</code> (<code>North</code>, <code>East</code>, <code>South</code> or <code>West</code>) names the outer side instead.</p>
 <h3 id="fill">Fill</h3>
 <p>A Fill anchor places an object from an object list and fills it from a loot table.</p>
-<pre><code class="language-xml">&lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;1&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;Kueche&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Fill&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_Vanilla_Regal_Klein&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">lootTable</span>&gt;CBF_Vanilla_Loot_Kueche&lt;/<span class="xt">lootTable</span>&gt;&lt;/<span class="xt">li</span>&gt;
+<pre><code class="language-xml">&lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;1&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;Kueche&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Fill&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_Vanilla_Shelf_Small&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">lootTable</span>&gt;CBF_Vanilla_Loot_Kitchen&lt;/<span class="xt">lootTable</span>&gt;&lt;/<span class="xt">li</span>&gt;
 </code></pre>
 <ul>
 <li><code>objects</code> names a <code>LootBuildingCategoryDef</code>, an object list. One object that fits the area is placed.</li>
@@ -506,7 +506,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>See <a href="Loot.html">Loot</a> for object lists and loot tables.</p>
 <h3 id="object">Object</h3>
 <p>An Object anchor places an object from an object list with the anchor's <code>chance</code>, without loot.</p>
-<pre><code class="language-xml">&lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;a&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;Geschirr&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Object&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_MO_Tischgeschirr&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">chance</span>&gt;0.8&lt;/<span class="xt">chance</span>&gt;&lt;<span class="xt">obenauf</span>&gt;true&lt;/<span class="xt">obenauf</span>&gt;&lt;/<span class="xt">li</span>&gt;
+<pre><code class="language-xml">&lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;a&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;Geschirr&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Object&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_MO_Tableware&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">chance</span>&gt;0.8&lt;/<span class="xt">chance</span>&gt;&lt;<span class="xt">obenauf</span>&gt;true&lt;/<span class="xt">obenauf</span>&gt;&lt;/<span class="xt">li</span>&gt;
 </code></pre>
 <p><code>obenauf</code> set to <code>true</code> keeps what already stands on the cells and places the object on top, here dishes on a table. Anchors in the <code>anchorsOver</code> grid always behave this way.</p>
 <h3 id="spawn">Spawn</h3>
@@ -533,10 +533,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="things-from-other-mods">Things from other mods</h2>
 <p>Legend entries for things from another mod carry <code>MayRequire</code>, as in this shipped annex for Medieval Overhaul:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.PieceDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_MO_Anbau_Abort&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_Annex_Privy&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">schemaVersion</span>&gt;2&lt;/<span class="xt">schemaVersion</span>&gt;
   &lt;<span class="xt">categories</span>&gt;
-    &lt;<span class="xt">li</span>&gt;CBF_MO_Anbau_Laendlich&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;CBF_MO_Annex_Rural&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">categories</span>&gt;
   &lt;<span class="xt">placement</span>&gt;&lt;<span class="xt">weight</span>&gt;0.3&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">placement</span>&gt;
   &lt;<span class="xt">legend</span>&gt;
@@ -590,7 +590,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="categories">Categories</h2>
 <p>A category from the Medieval Overhaul set, shipped in <code>1.6/Defs/CustomBaseFramework/CBF_Freigabe_Kategorien.xml</code>:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.PieceCategoryDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_MO_Bauernhof&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_Farmstead&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;Bauernhof&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">zones</span>&gt;
     &lt;<span class="xt">li</span>&gt;Outside&lt;/<span class="xt">li</span>&gt;
@@ -598,22 +598,22 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;<span class="xt">needsRoadAccess</span>&gt;false&lt;/<span class="xt">needsRoadAccess</span>&gt;
   &lt;<span class="xt">blockMax</span>&gt;1&lt;/<span class="xt">blockMax</span>&gt;
   &lt;<span class="xt">anbauten</span>&gt;
-    &lt;<span class="xt">li</span>&gt;CBF_MO_Anbau_Hof&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;CBF_MO_Anbau_Laendlich&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;CBF_MO_Annex_Yard&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;CBF_MO_Annex_Rural&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">anbauten</span>&gt;
   &lt;<span class="xt">anbauMax</span>&gt;3&lt;/<span class="xt">anbauMax</span>&gt;
 &lt;/<span class="xt">CustomBaseFramework.PieceCategoryDef</span>&gt;
 
 &lt;<span class="xt">CustomBaseFramework.PieceCategoryDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_MO_Apotheke&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_Apothecary&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;Apotheke&lt;/<span class="xt">label</span>&gt;
-  &lt;<span class="xt">parent</span>&gt;CBF_MO_Werkstatt&lt;/<span class="xt">parent</span>&gt;
+  &lt;<span class="xt">parent</span>&gt;CBF_MO_Workshop&lt;/<span class="xt">parent</span>&gt;
   &lt;<span class="xt">zones</span>&gt;
     &lt;<span class="xt">li</span>&gt;Inside&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">zones</span>&gt;
   &lt;<span class="xt">needsRoadAccess</span>&gt;true&lt;/<span class="xt">needsRoadAccess</span>&gt;
   &lt;<span class="xt">anbauten</span>&gt;
-    &lt;<span class="xt">li</span>&gt;CBF_MO_Anbau_Stadt&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;CBF_MO_Annex_Town&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">anbauten</span>&gt;
   &lt;<span class="xt">anbauChance</span>&gt;0.5&lt;/<span class="xt">anbauChance</span>&gt;
   &lt;<span class="xt">anbauMax</span>&gt;2&lt;/<span class="xt">anbauMax</span>&gt;
@@ -623,7 +623,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <ul>
 <li><code>parent</code> names the category this one inherits from. The chain may be up to 16 deep and must not loop.</li>
 <li>A field that is not set takes the value of the parent, then its parent, and so on. Most category fields are optional for this reason.</li>
-<li>A piece in a child category also counts as a piece of every parent. A settlement that orders <code>CBF_MO_Werkstatt</code> can get a <code>CBF_MO_Apotheke</code> piece.</li>
+<li>A piece in a child category also counts as a piece of every parent. A settlement that orders <code>CBF_MO_Workshop</code> can get a <code>CBF_MO_Apothecary</code> piece.</li>
 <li><code>blockMax</code> and <code>verschmelzen</code> are read on each category itself, not inherited.</li>
 </ul>
 <h3 id="placement-rules">Placement rules</h3>
@@ -704,7 +704,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>Use <code>.</code> for empty cells, not spaces. Both work, but dots keep rows readable and equally long.</li>
 <li>Give every Fill and Object anchor a rotated placeholder in <code>things</code>.</li>
 <li>A gatehouse needs the category <code>WallGateHouse</code>, the type <code>WallPart</code>, two <code>Wall</code> anchors and one <code>Outside</code> anchor.</li>
-<li>Mark a cell that belongs to the piece but should keep the map's own ground with the floor <code>CBF_Leerfeld</code>. It is not placed in the game.</li>
+<li>Mark a cell that belongs to the piece but should keep the map's own ground with the floor <code>CBF_EmptyCell</code>. It is not placed in the game.</li>
 <li>Run <strong>Check</strong> in the editor after hand edits. It runs the same checks as the game on load.</li>
 <li>Loading errors and skipped pieces are written to the log once per piece.</li>
 </ul>

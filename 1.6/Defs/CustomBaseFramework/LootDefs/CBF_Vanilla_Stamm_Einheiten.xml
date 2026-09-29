@@ -2,17 +2,17 @@
 <Defs>
 
   <CustomBaseFramework.PawnListDef>
-    <defName>CBF_Vanilla_Stamm_Bewohner</defName>
+    <defName>CBF_Vanilla_Tribe_Residents</defName>
     <label>tribespeople</label>
     <role>Civilian</role>
     <radius>4</radius>
     <members>
-      <li><kind>CBF_Stammesmitglied</kind><weight>1</weight></li>
+      <li><kind>CBF_Tribesperson</kind><weight>1</weight></li>
     </members>
   </CustomBaseFramework.PawnListDef>
 
   <CustomBaseFramework.PawnListDef>
-    <defName>CBF_Vanilla_Stamm_Krieger</defName>
+    <defName>CBF_Vanilla_Tribe_Warrior</defName>
     <label>tribal warriors</label>
     <role>Guard</role>
     <radius>6</radius>
@@ -26,7 +26,7 @@
   </CustomBaseFramework.PawnListDef>
 
   <CustomBaseFramework.PawnListDef>
-    <defName>CBF_Vanilla_Stamm_Haeuptling</defName>
+    <defName>CBF_Vanilla_Tribe_Chief</defName>
     <label>tribal chief</label>
     <role>Guard</role>
     <radius>3</radius>

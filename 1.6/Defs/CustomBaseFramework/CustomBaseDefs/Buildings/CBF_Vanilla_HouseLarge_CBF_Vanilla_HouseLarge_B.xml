@@ -3,7 +3,6 @@
 
   <CustomBaseFramework.PieceDef>
     <defName>CBF_Vanilla_HouseLarge_B</defName>
-    <label>CBF_Vanilla_HouseLarge_B</label>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_Vanilla_HouseLarge</li>
@@ -28,8 +27,8 @@
       <li><symbol>N</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
       <li><symbol>Q</symbol><thing>DoubleBed</thing><stuff>WoodLog</stuff></li>
       <li><symbol>U</symbol><thing>EndTable</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>V</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>X</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>V</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
+      <li><symbol>X</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
       <li><symbol>Y</symbol><anchor>Spawn</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList></li>
       <li><symbol>Z</symbol><anchor>Spawn2</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList></li>
     </legend>

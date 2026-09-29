@@ -2,11 +2,10 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Winzerei</defName>
-    <label>CBF_VFEM2_Winzerei</label>
+    <defName>CBF_VFEM2_Winery</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Winzerei</li>
+      <li>CBF_VFEM2_Winery</li>
     </categories>
     <style>CBF_VFEM2</style>
     <eaves>true</eaves>
@@ -19,11 +18,11 @@
       <li><symbol>f</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
       <li><symbol>g</symbol><thing>VFEM2_StandingBanner</thing><rotation>North</rotation></li>
       <li><symbol>h</symbol><terrain>TileLimestone</terrain></li>
-      <li><symbol>i</symbol><anchor>Kellerfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
-      <li><symbol>j</symbol><anchor>Weinregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
-      <li><symbol>k</symbol><anchor>Winzer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>l</symbol><anchor>Grossfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
-      <li><symbol>m</symbol><anchor>Fassreihe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
+      <li><symbol>i</symbol><anchor>Kellerfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Alehouse</lootTable></li>
+      <li><symbol>j</symbol><anchor>Weinregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Alehouse</lootTable></li>
+      <li><symbol>k</symbol><anchor>Winzer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>l</symbol><anchor>Grossfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Alehouse</lootTable></li>
+      <li><symbol>m</symbol><anchor>Fassreihe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Alehouse</lootTable></li>
       <li><symbol>n</symbol><thing>RawCorn</thing><count>30</count></li>
       <li><symbol>o</symbol><thing>Beer</thing><count>10</count></li>
       <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>

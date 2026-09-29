@@ -2,11 +2,10 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Mauerzugang_C</defName>
-    <label>CBF_VFEM2_Mauerzugang_C</label>
+    <defName>CBF_VFEM2_WallAccess_C</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Mauerzugang</li>
+      <li>CBF_VFEM2_WallAccess</li>
     </categories>
     <placement><atWall>Required</atWall></placement>
     <style>CBF_VFEM2</style>
@@ -18,7 +17,7 @@
       <li><symbol>a</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
       <li><symbol>b</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>f</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>g</symbol><anchor>Mauerwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>g</symbol><anchor>Mauerwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
       <li><symbol>i</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
     </legend>

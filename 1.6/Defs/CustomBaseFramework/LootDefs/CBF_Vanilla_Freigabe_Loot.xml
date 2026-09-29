@@ -2,18 +2,18 @@
 <Defs>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_Vanilla_Loot_Tresor</defName>
-    <label>Tresor</label>
+    <defName>CBF_Vanilla_Loot_Vault</defName>
+    <label>vault loot</label>
     <rolls>3~5</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>20</weight><table>CBF_Vanilla_Ware_Muenzen</table></li>
-      <li><weight>14</weight><table>CBF_Vanilla_Ware_Schatz</table></li>
-      <li><weight>12</weight><table>CBF_Vanilla_Ware_Komponent</table></li>
-      <li><weight>6</weight><table>CBF_Vanilla_Ware_Erz</table></li>
-      <li><weight>6</weight><table>CBF_Vanilla_Ware_Gewehr</table></li>
-      <li><weight>4</weight><table>CBF_Vanilla_Ware_Schutz</table></li>
+      <li><weight>20</weight><table>CBF_Vanilla_Goods_Coins</table></li>
+      <li><weight>14</weight><table>CBF_Vanilla_Goods_Treasure</table></li>
+      <li><weight>12</weight><table>CBF_Vanilla_Goods_Components</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Goods_Ore</table></li>
+      <li><weight>6</weight><table>CBF_Vanilla_Goods_Rifle</table></li>
+      <li><weight>4</weight><table>CBF_Vanilla_Goods_Protection</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Plan_TribalCamp</defName>
+    <label>tribal camp (MO)</label>
+    <materialList>CBF_MO_MaterialList</materialList>
+    <kind>Camp</kind>
+    <styles>
+      <li>Rustical</li>
+    </styles>
+    <coreSize>52~64</coreSize>
+    <mapSize>200</mapSize>
+    <roadMain>1</roadMain>
+    <roadLane>1</roadLane>
+    <minBuildingGap>2</minBuildingGap>
+    <maxBuildingGap>4</maxBuildingGap>
+    <targetBuilt>0.32</targetBuilt>
+    <treeShare>0.15</treeShare>
+    <defenderPoints>150~300</defenderPoints>
+
+    <wards>
+      <li>
+        <kind>Town</kind>
+        <name>Lager</name>
+        <label>Lager</label>
+        <supply>1.2</supply>
+        <walls>
+          <li><piece>CBF_MO_StakeWall</piece><weight>0.4</weight></li>
+          <li><piece>CBF_MO_BarricadeWall</piece><weight>0.3</weight></li>
+          <li><piece>Palisade</piece><weight>0.3</weight></li>
+        </walls>
+        <garrison>
+          <li><list>CBF_MO_Tribe_Guard</list><post>Inside</post><count>5~8</count></li>
+          <li><list>CBF_MO_Tribe_Outpost</list><post>Gate</post><count>2~4</count></li>
+        </garrison>
+        <districts>
+          <li>
+            <name>Mitte</name>
+            <entries>
+              <li><tag>CBF_MO_MainTent</tag><count>1~1</count><unique>true</unique></li>
+              <li><tag>CBF_MO_AssemblyTent</tag><count>1~2</count></li>
+              <li><tag>CBF_MO_WorkTent</tag><count>1~3</count></li>
+              <li><tag>CBF_MO_Campfire</tag><count>1~2</count></li>
+              <li><tag>CBF_MO_LivingTent</tag><count>4~14</count><filler>true</filler></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <kind>Rural</kind>
+        <name>Umland</name>
+        <supply>1.2</supply>
+        <garrison>
+          <li><list>CBF_MO_Tribe_Guard</list><post>Inside</post><count>1~3</count></li>
+        </garrison>
+        <districts>
+          <li>
+            <name>Rand</name>
+            <entries>
+              <li><tag>CBF_MO_Tent</tag><count>0~3</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </wards>
+
+    <share>0</share>
+
+    <techLevels>
+      <li>Neolithic</li>
+    </techLevels>
+
+    <forAllFactions>true</forAllFactions>
+
+    <worldTexture>World/WorldObjects/CBF/CBF_CampPalisade</worldTexture>
+  </CustomBaseFramework.SettlementPlanDef>
+
+</Defs>

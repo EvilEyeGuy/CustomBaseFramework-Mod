@@ -76,7 +76,7 @@
   <CBF_FieldDesc_maxTechLevel>Nur für Kategorieeinträge: Dinge über dieser Techstufe bleiben weg. Leer heißt keine Grenze.</CBF_FieldDesc_maxTechLevel>
   <CBF_FieldDesc_name>Name des Eintrags. Bei einem Bezirk verbindet er Äcker und Gehege mit dessen Häusern und muss eindeutig sein. Bei einem Gehege erscheint er in Meldungen. Bei einem Stadtteil wird er durch die Art ersetzt, bei einem Acker nicht gelesen, und in Mauerlisten schreibst du piece.</CBF_FieldDesc_name>
   <CBF_FieldDesc_neutral>Einheitenarten (defName), die der Ersatztausch bei keiner Fraktion ändert.</CBF_FieldDesc_neutral>
-  <CBF_FieldDesc_fromTechLevel>Kartenschritte, die auf CBF-Karten nur laufen, wenn die Fraktion der Karte die angegebene Techstufe erreicht. Gelesen wird nur die Def namens CBF_Kartenschritte.</CBF_FieldDesc_fromTechLevel>
+  <CBF_FieldDesc_fromTechLevel>Kartenschritte, die auf CBF-Karten nur laufen, wenn die Fraktion der Karte die angegebene Techstufe erreicht. Gelesen wird nur die Def namens CBF_MapSteps.</CBF_FieldDesc_fromTechLevel>
   <CBF_FieldDesc_onTop>Setzt das Objekt des Ankers auf das, was dort steht, statt die Zellen vorher zu räumen. Anker in anchorsOver tun das immer.</CBF_FieldDesc_onTop>
   <CBF_FieldDesc_objects>Die Objektliste (LootBuildingCategoryDef), aus der ein Fill- oder Object-Anker seine Gebäude setzt. Ohne sie bleibt ein Object-Anker leer.</CBF_FieldDesc_objects>
   <CBF_FieldDesc_onMissing>Was passiert, wenn es thing nicht gibt. Skip lässt den Eintrag fallen, Fallback versucht fallbackThings, Silver gibt stattdessen Silber.</CBF_FieldDesc_onMissing>
@@ -130,7 +130,7 @@
   <CBF_FieldDesc_tower>Stück für die Türme. Es muss quadratisch sein und eine ungerade Kantenlänge haben. Leer lässt den Generator einen runden Turm bauen.</CBF_FieldDesc_tower>
   <CBF_FieldDesc_eavesMaterial>Material der Traufen. Leer nimmt das Material der Mauer, an der sie sitzen.</CBF_FieldDesc_eavesMaterial>
   <CBF_FieldDesc_uniqueEntries>Jeder Eintrag kann je Wurf der Tabelle höchstens einmal gezogen werden.</CBF_FieldDesc_uniqueEntries>
-  <CBF_FieldDesc_suppress>Kartenschritte, die auf CBF-Karten übersprungen werden. Baut CBF dort nichts, werden sie nachgeholt. Gelesen wird nur die Def namens CBF_Kartenschritte.</CBF_FieldDesc_suppress>
+  <CBF_FieldDesc_suppress>Kartenschritte, die auf CBF-Karten übersprungen werden. Baut CBF dort nichts, werden sie nachgeholt. Gelesen wird nur die Def namens CBF_MapSteps.</CBF_FieldDesc_suppress>
   <CBF_FieldDesc_usable>False schaltet das Profil ab. Es wird auch abgeschaltet, wenn keiner seiner Streifen brauchbar ist.</CBF_FieldDesc_usable>
   <CBF_FieldDesc_value>Nur für Kategorieeinträge: Marktwertspanne, in der ein Ding liegen muss. 0~0 heißt keine Grenze.</CBF_FieldDesc_value>
   <CBF_FieldDesc_variants>Alternativen, je Zelle nach Gewicht gezogen. Das eigene Ding oder der eigene Boden des Eintrags macht, falls gesetzt, mit Gewicht 1 mit.</CBF_FieldDesc_variants>

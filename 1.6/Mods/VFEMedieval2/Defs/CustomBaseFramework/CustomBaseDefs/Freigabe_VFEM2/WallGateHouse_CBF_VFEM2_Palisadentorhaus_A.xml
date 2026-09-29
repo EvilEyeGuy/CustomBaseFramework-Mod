@@ -2,12 +2,11 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Palisadentorhaus_A</defName>
-    <label>CBF_VFEM2_Palisadentorhaus_A</label>
+    <defName>CBF_VFEM2_PalisadeGatehouse_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>WallGateHouse</li>
-      <li>CBF_VFEM2_Palisadentorhaus</li>
+      <li>CBF_VFEM2_PalisadeGatehouse</li>
     </categories>
     <type>WallPart</type>
     <style>CBF_VFEM2</style>
@@ -22,7 +21,7 @@
       <li><symbol>g</symbol><thing>WoodLog</thing><count>30</count></li>
       <li><symbol>i</symbol><anchor>Wall</anchor></li>
       <li><symbol>j</symbol><anchor>WacheNord</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>k</symbol><anchor>FassNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>k</symbol><anchor>FassNord</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
       <li><symbol>l</symbol><anchor>BedienerA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
       <li><symbol>m</symbol><anchor>Outside</anchor></li>
       <li><symbol>n</symbol><anchor>BedienerB</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>

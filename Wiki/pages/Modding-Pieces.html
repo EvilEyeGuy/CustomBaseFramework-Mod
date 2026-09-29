@@ -416,7 +416,14 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><code>atWall</code> says how much the piece wants to touch the town wall: <code>Forbidden</code>, <code>Avoid</code>, <code>Allowed</code>, <code>Preferred</code>, <code>StronglyPreferred</code> or <code>Required</code>. Default is <code>Allowed</code>. When it is <code>Allowed</code> or missing, <code>wallContact</code> of the category decides.</li>
 <li><code>weight</code> says how often this piece is picked over others that fit. It falls back to the category weight, then 1.</li>
 <li><code>zones</code>, <code>needsRoadAccess</code> and <code>countPerSettlement</code> also exist here and follow the same rules as on the category.</li>
+<li><code>factions</code> and <code>excludeFactions</code> list FactionDef defNames. With <code>factions</code> the piece is only used in settlements of those factions, with <code>excludeFactions</code> never in theirs. <code>withIdeo</code> and <code>withoutIdeo</code> do the same for memes and precepts of the owning faction's ideoligion (needs Ideology). All four can also sit on the category and are inherited. A piece that does not fit counts as missing for this settlement; if a plan orders it by name and nothing else fits, the entry stays empty.</li>
 </ul>
+<pre><code class="language-xml">&lt;<span class="xt">placement</span>&gt;
+  &lt;<span class="xt">factions</span>&gt;
+    &lt;<span class="xt">li</span>&gt;DankPyon_NobleHouseFierce&lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">factions</span>&gt;
+&lt;/<span class="xt">placement</span>&gt;
+</code></pre>
 <h2 id="anchors">Anchors</h2>
 <p>An anchor marks cells where something happens after the piece is built. An anchor is a legend entry with an <code>anchor</code> name. Its cells are drawn in the <code>anchors</code> grid with the entry's symbol.</p>
 <ul>
@@ -650,6 +657,14 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td><code>needsRoadAccess</code></td>
 <td>Must be reachable from a road.</td>
+</tr>
+<tr>
+<td><code>factions</code>, <code>excludeFactions</code></td>
+<td>Only in, or never in, settlements of these factions (FactionDef defNames).</td>
+</tr>
+<tr>
+<td><code>withIdeo</code>, <code>withoutIdeo</code></td>
+<td>Only with, or never with, these memes or precepts in the owning faction's ideoligion.</td>
 </tr>
 <tr>
 <td><code>wallAccess</code></td>

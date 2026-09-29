@@ -41,7 +41,8 @@
   <CBF_FieldDesc_units>Pawn kind replacements for this faction, each entry swaps the kind in from for the kind in to. Humanlike kinds without a rule that the faction does not use become its closest own kind, unless they are listed in neutral.</CBF_FieldDesc_units>
   <CBF_FieldDesc_emptyFallback>Loot table rolled instead when this one yields nothing.</CBF_FieldDesc_emptyFallback>
   <CBF_FieldDesc_entries>On a loot table: the weighted pool that rolls draws from. On a district: its budget, which pieces or categories it wants and how many.</CBF_FieldDesc_entries>
-  <CBF_FieldDesc_excludeFactions>Factions (FactionDef defName) that never get this settlement type, even when their tags or tech level fit.</CBF_FieldDesc_excludeFactions>
+  <CBF_FieldDesc_excludeFactions>Factions (FactionDef defName). On a settlement type: they never get it, even when their tags or tech level fit. On a piece or category (under placement): the piece is not used in their settlements.</CBF_FieldDesc_excludeFactions>
+  <CBF_FieldDesc_factions>Factions (FactionDef defName), under placement of a piece or category. The piece is only used in settlements of these factions. Empty means every faction.</CBF_FieldDesc_factions>
   <CBF_FieldDesc_faction>The faction (FactionDef defName) these rules apply to. It may stay empty when the def only lists neutral pawn kinds.</CBF_FieldDesc_faction>
   <CBF_FieldDesc_fallbackThings>Things tried in order when thing does not exist and onMissing is Fallback.</CBF_FieldDesc_fallbackThings>
   <CBF_FieldDesc_fieldsRavaged>Chance per field cell that its crop is destroyed, 0 to 1.</CBF_FieldDesc_fieldsRavaged>
@@ -155,8 +156,8 @@
   <CBF_FieldDesc_district>Ward this role entry is meant for: Town, Suburb or Rural. Empty applies everywhere. Only for walls, roads and floors the generator draws itself, not inside buildings; buildings take the material of the map as designed.</CBF_FieldDesc_district>
   <CBF_FieldDesc_wdType>World Domination settlement types this plan stands for, such as Mining or Slavery. Empty means any type. Only used with World Domination 2.0.</CBF_FieldDesc_wdType>
   <CBF_FieldDesc_PawnListDef_techLevel>The tech level this list counts as. Set, the settlement draws from the whole list without working out levels from the gear. Empty works the level out per member.</CBF_FieldDesc_PawnListDef_techLevel>
-  <CBF_FieldDesc_withIdeo>Memes or precepts (defNames). The entry is only built when the owning faction's ideoligion has at least one of them. Needs Ideology.</CBF_FieldDesc_withIdeo>
-  <CBF_FieldDesc_withoutIdeo>Memes or precepts (defNames). The entry is not built when the owning faction's ideoligion has one of them. Needs Ideology.</CBF_FieldDesc_withoutIdeo>
+  <CBF_FieldDesc_withIdeo>Memes or precepts (defNames). The entry, or on a piece or category (under placement) the piece, is only used when the owning faction's ideoligion has at least one of them. Needs Ideology.</CBF_FieldDesc_withIdeo>
+  <CBF_FieldDesc_withoutIdeo>Memes or precepts (defNames). The entry, or on a piece or category (under placement) the piece, is not used when the owning faction's ideoligion has one of them. Needs Ideology.</CBF_FieldDesc_withoutIdeo>
   <CBF_FieldDesc_biomeLeather>On a thing entry: the stuff is replaced by the leather of a wild animal of the biome, chosen once per piece.</CBF_FieldDesc_biomeLeather>
   <CBF_FieldDesc_ideoBuilding>On an Object anchor: places a building of the faction's ideoligion, such as an altar or ritual spot. Needs Ideology.</CBF_FieldDesc_ideoBuilding>
   <CBF_FieldDesc_wdBudget>With World Domination 2.0 active, containers with this table are filled from the World Domination loot budget of the settlement instead of the table.</CBF_FieldDesc_wdBudget>

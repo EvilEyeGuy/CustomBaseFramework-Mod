@@ -41,7 +41,8 @@
   <CBF_FieldDesc_units>Einheitentausch für diese Fraktion, jeder Eintrag tauscht die Art aus from gegen die Art aus to. Menschliche Arten ohne Regel, die die Fraktion nicht selbst nutzt, werden zu ihrer ähnlichsten eigenen Art, außer sie stehen in neutral.</CBF_FieldDesc_units>
   <CBF_FieldDesc_emptyFallback>Beutetabelle, die stattdessen gewürfelt wird, wenn diese nichts liefert.</CBF_FieldDesc_emptyFallback>
   <CBF_FieldDesc_entries>Bei einer Beutetabelle: der gewichtete Vorrat, aus dem rolls zieht. Bei einem Bezirk: sein Budget, welche Stücke oder Kategorien er will und wie viele.</CBF_FieldDesc_entries>
-  <CBF_FieldDesc_excludeFactions>Fraktionen (FactionDef defName), die diesen Ortstyp nie bekommen, auch wenn Marken oder Techstufe passen.</CBF_FieldDesc_excludeFactions>
+  <CBF_FieldDesc_excludeFactions>Fraktionen (FactionDef defName). Bei einem Ortstyp: Sie bekommen ihn nie, auch wenn Marken oder Techstufe passen. Bei einem Stück oder einer Kategorie (unter placement): Das Stück kommt in ihren Siedlungen nicht vor.</CBF_FieldDesc_excludeFactions>
+  <CBF_FieldDesc_factions>Fraktionen (FactionDef defName), unter placement eines Stücks oder einer Kategorie. Das Stück kommt nur in Siedlungen dieser Fraktionen vor. Leer heißt jede Fraktion.</CBF_FieldDesc_factions>
   <CBF_FieldDesc_faction>Die Fraktion (FactionDef defName), für die diese Regeln gelten. Darf leer bleiben, wenn die Def nur neutrale Einheitenarten nennt.</CBF_FieldDesc_faction>
   <CBF_FieldDesc_fallbackThings>Dinge, die der Reihe nach versucht werden, wenn es thing nicht gibt und onMissing auf Fallback steht.</CBF_FieldDesc_fallbackThings>
   <CBF_FieldDesc_fieldsRavaged>Chance je Ackerfeld, dass die Frucht darauf zerstört ist, 0 bis 1.</CBF_FieldDesc_fieldsRavaged>
@@ -155,8 +156,8 @@
   <CBF_FieldDesc_district>Stadtteil, für den dieser Rolleneintrag gedacht ist: Town (Stadt), Suburb (Vorstadt) oder Rural (Umland). Leer gilt überall. Gilt nur für Mauern, Wege und Böden, die der Generator selbst zieht, nicht in Gebäuden; die nehmen, wie entworfen, das Material der Karte.</CBF_FieldDesc_district>
   <CBF_FieldDesc_wdType>World-Domination-Ortsarten, für die dieser Plan steht, etwa Mining oder Slavery. Leer heißt jede Art. Nur mit World Domination 2.0.</CBF_FieldDesc_wdType>
   <CBF_FieldDesc_PawnListDef_techLevel>Die Techstufe, als die diese Liste gilt. Gesetzt zieht der Ort aus der ganzen Liste, ohne Stufen aus der Ausrüstung zu ermitteln. Leer ermittelt die Stufe je Mitglied.</CBF_FieldDesc_PawnListDef_techLevel>
-  <CBF_FieldDesc_withIdeo>Meme oder Gebote (defNames). Der Eintrag wird nur gebaut, wenn die Ideologie der Fraktion mindestens eines davon hat. Braucht Ideology.</CBF_FieldDesc_withIdeo>
-  <CBF_FieldDesc_withoutIdeo>Meme oder Gebote (defNames). Der Eintrag wird nicht gebaut, wenn die Ideologie der Fraktion eines davon hat. Braucht Ideology.</CBF_FieldDesc_withoutIdeo>
+  <CBF_FieldDesc_withIdeo>Meme oder Gebote (defNames). Der Eintrag, bei einem Stück oder einer Kategorie (unter placement) das Stück, wird nur verwendet, wenn die Ideologie der Fraktion mindestens eines davon hat. Braucht Ideology.</CBF_FieldDesc_withIdeo>
+  <CBF_FieldDesc_withoutIdeo>Meme oder Gebote (defNames). Der Eintrag, bei einem Stück oder einer Kategorie (unter placement) das Stück, wird nicht verwendet, wenn die Ideologie der Fraktion eines davon hat. Braucht Ideology.</CBF_FieldDesc_withoutIdeo>
   <CBF_FieldDesc_biomeLeather>An einem Ding-Eintrag: Der Stoff wird durch das Leder eines Wildtiers aus dem Biom ersetzt, einmal gewählt je Stück.</CBF_FieldDesc_biomeLeather>
   <CBF_FieldDesc_ideoBuilding>An einem Objekt-Anker: stellt ein Gebäude der Ideologie der Fraktion auf, etwa einen Altar oder Ritualplatz. Braucht Ideology.</CBF_FieldDesc_ideoBuilding>
   <CBF_FieldDesc_wdBudget>Mit World Domination 2.0 werden Behälter mit dieser Tabelle aus dem Beutebudget des Orts gefüllt statt aus der Tabelle.</CBF_FieldDesc_wdBudget>

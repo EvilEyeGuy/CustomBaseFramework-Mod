@@ -157,6 +157,30 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>none</td>
 <td>Only Outside has an effect: together with needsRoadAccess set to false, the building needs no road and may be entered from every side. Inside and Center do nothing. Where a building stands is decided by the budget of its ward.</td>
 </tr>
+<tr>
+<td><code>factions</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>FactionDef defNames. The piece is only used in settlements of these factions. Empty means every faction.</td>
+</tr>
+<tr>
+<td><code>excludeFactions</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>FactionDef defNames. The piece is never used in settlements of these factions.</td>
+</tr>
+<tr>
+<td><code>withIdeo</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>Memes or precepts (defNames). The piece is only used when the owning faction's ideoligion has one of them. Needs Ideology.</td>
+</tr>
+<tr>
+<td><code>withoutIdeo</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>Memes or precepts (defNames). The piece is not used when the owning faction's ideoligion has one of them. Needs Ideology.</td>
+</tr>
 </tbody>
 </table>
 <p><a href="Field-Reference.html">Back to the field reference</a></p></div></main><aside class="rechts"></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

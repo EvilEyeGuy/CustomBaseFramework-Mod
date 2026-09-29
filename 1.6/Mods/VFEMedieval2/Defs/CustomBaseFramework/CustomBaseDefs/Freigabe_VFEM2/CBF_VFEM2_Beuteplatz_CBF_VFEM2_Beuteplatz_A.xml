@@ -2,19 +2,18 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Beuteplatz_A</defName>
-    <label>CBF_VFEM2_Beuteplatz_A</label>
+    <defName>CBF_VFEM2_LootSpot_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Beuteplatz</li>
+      <li>CBF_VFEM2_LootSpot</li>
     </categories>
     <style>CBF_VFEM2</style>
     <legend>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>b</symbol><anchor>Kiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
-      <li><symbol>f</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>g</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>b</symbol><anchor>Crate</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_AutoShelf</objects></li>
+      <li><symbol>f</symbol><anchor>Chest</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>g</symbol><anchor>Barrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Kitchen</lootTable></li>
       <li><symbol>i</symbol><thing>RawCorn</thing><count>30</count></li>
       <li><symbol>j</symbol><thing>Beer</thing><count>10</count></li>
       <li><symbol>k</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>

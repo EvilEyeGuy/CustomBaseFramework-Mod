@@ -2,14 +2,13 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Waffenhaendler_A</defName>
-    <label>CBF_VFEM2_Waffenhaendler_A</label>
+    <defName>CBF_VFEM2_WeaponDealer_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Waffenhaendler</li>
+      <li>CBF_VFEM2_WeaponDealer</li>
     </categories>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li><symbol>A</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>B</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
@@ -31,17 +30,17 @@
       <li><symbol>l</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
       <li><symbol>m</symbol><thing>VFEM2_StandingBanner</thing><rotation>North</rotation></li>
       <li><symbol>n</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
-      <li><symbol>o</symbol><anchor>Kammertruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>p</symbol><anchor>Haendler</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>q</symbol><anchor>RegalA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>r</symbol><anchor>Waffenstand</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>s</symbol><anchor>Ladentruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>t</symbol><anchor>RuestungA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>u</symbol><anchor>RuestungB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>o</symbol><anchor>ChamberChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>p</symbol><anchor>Trader</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>q</symbol><anchor>ShelfA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>r</symbol><anchor>WeaponStand</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>s</symbol><anchor>ShopChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>t</symbol><anchor>ArmorA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>u</symbol><anchor>ArmorB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
-      <li><symbol>x</symbol><anchor>Schmied</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>y</symbol><anchor>Schmiedekiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schmiede</lootTable></li>
-      <li><symbol>z</symbol><anchor>Bogenstand</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>x</symbol><anchor>Smith</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>y</symbol><anchor>SmithyCrate</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Smithy</lootTable></li>
+      <li><symbol>z</symbol><anchor>BowStand</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
     </legend>
     <mask>
       <li>########......</li>

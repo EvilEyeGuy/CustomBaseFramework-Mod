@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.MapStepsDef>
+    <defName>CBF_MapSteps</defName>
+    <suppress>
+      <li>Roads</li>
+      <li>ScatterRuinsSimple</li>
+      <li>ScatterShrines</li>
+      <li>AncientUtilityBuilding</li>
+      <li>AncientPipelineSection</li>
+      <li>MechanoidRemains</li>
+      <li>AncientTurret</li>
+      <li>AncientMechs</li>
+      <li>AncientLandingPad</li>
+      <li>AncientFences</li>
+      <li>AncientJunkClusters</li>
+      <li>AncientPollutionJunk</li>
+      <li>ScatterRoadDebris</li>
+      <li>ScatterCaveDebris</li>
+      <li>DankPyon_BattlefieldRemains</li>
+    </suppress>
+    <fromTechLevel>
+      <li><step>SettlementPower</step><techLevel>Industrial</techLevel></li>
+    </fromTechLevel>
+  </CustomBaseFramework.MapStepsDef>
+
+</Defs>

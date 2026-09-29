@@ -2,9 +2,9 @@
 <Defs>
 
   <CustomBaseFramework.PawnListDef>
-    <defName>CBF_Pawns_Ungeziefer</defName>
-    <label>Ungeziefer</label>
-    <rolle>Zivil</rolle>
+    <defName>CBF_Pawns_Vermin</defName>
+    <label>vermin</label>
+    <role>Civilian</role>
     <radius>6</radius>
     <members>
       <li><kind>Rat</kind><weight>10</weight></li>
@@ -14,9 +14,9 @@
   </CustomBaseFramework.PawnListDef>
 
   <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_Pawns_Mimik</defName>
-    <label>Mimik</label>
-    <rolle>Wache</rolle>
+    <defName>CBF_Pawns_Mimic</defName>
+    <label>mimic</label>
+    <role>Guard</role>
     <radius>0</radius>
     <members>
       <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_RusticMimic_WoodLog</kind><weight>10</weight></li>
@@ -25,9 +25,9 @@
   </CustomBaseFramework.PawnListDef>
 
   <CustomBaseFramework.PawnListDef>
-    <defName>CBF_Pawns_Versteckt</defName>
-    <label>Versteckter</label>
-    <rolle>Zivil</rolle>
+    <defName>CBF_Pawns_Hidden</defName>
+    <label>hidden</label>
+    <role>Civilian</role>
     <radius>8</radius>
     <members>
       <li><kind>Villager</kind><weight>10</weight></li>

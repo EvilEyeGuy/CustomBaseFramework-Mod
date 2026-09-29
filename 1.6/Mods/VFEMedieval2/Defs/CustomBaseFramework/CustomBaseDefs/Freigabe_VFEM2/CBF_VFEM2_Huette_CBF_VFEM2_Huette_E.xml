@@ -2,14 +2,13 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Huette_E</defName>
-    <label>CBF_VFEM2_Huette_E</label>
+    <defName>CBF_VFEM2_Hut_E</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Huette</li>
+      <li>CBF_VFEM2_Hut</li>
     </categories>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
@@ -21,9 +20,9 @@
       <li><symbol>i</symbol><thing>VFEM2_MeadFermentingBarrel</thing></li>
       <li><symbol>j</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>k</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>l</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Huette</lootTable></li>
-      <li><symbol>m</symbol><anchor>Holzstapel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
-      <li><symbol>n</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>l</symbol><anchor>Chest</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Hut</lootTable></li>
+      <li><symbol>m</symbol><anchor>WoodPile</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_AutoShelf</objects></li>
+      <li><symbol>n</symbol><anchor>Residents</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
       <li><symbol>o</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
       <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>q</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>

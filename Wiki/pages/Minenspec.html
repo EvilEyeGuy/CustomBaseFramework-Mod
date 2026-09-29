@@ -128,25 +128,25 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>ader</code></td>
+<td><code>vein</code></td>
 <td>ThingDef</td>
 <td>none</td>
 <td>Ore rock (a mineable ThingDef) set into the rock along the mine.</td>
 </tr>
 <tr>
-<td><code>aderAnteil</code></td>
+<td><code>veinChance</code></td>
 <td>number</td>
 <td><code>0</code></td>
 <td>Share of rock cells along the mine that become ore, 0 to 1.</td>
 </tr>
 <tr>
-<td><code>breite</code></td>
+<td><code>width</code></td>
 <td>IntRange</td>
 <td><code>1~2</code></td>
 <td>Width of the tunnel in cells.</td>
 </tr>
 <tr>
-<td><code>brocken</code></td>
+<td><code>chunks</code></td>
 <td>IntRange</td>
 <td><code>0</code></td>
 <td>Number of rock chunks left in the mine.</td>
@@ -158,31 +158,31 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How many of these the settlement wants, as a range.</td>
 </tr>
 <tr>
-<td><code>dinge</code></td>
+<td><code>things</code></td>
 <td>list of <a href="Minending.html">Minending</a></td>
 <td>none</td>
-<td>Thing replacements for this faction. Things the generator places are swapped from von to zu.</td>
+<td>Thing replacements for this faction. Each entry swaps the thing in from for the thing in to.</td>
 </tr>
 <tr>
-<td><code>ebenen</code></td>
+<td><code>levels</code></td>
 <td>IntRange</td>
 <td><code>1</code></td>
 <td>How deep the tunnels branch: 0 only the main tunnel, 1 side tunnels off it, 2 side tunnels off those.</td>
 </tr>
 <tr>
-<td><code>kammerGroesse</code></td>
+<td><code>chamberSize</code></td>
 <td>IntRange</td>
 <td><code>4~6</code></td>
 <td>Edge length of the chambers in cells.</td>
 </tr>
 <tr>
-<td><code>kammern</code></td>
+<td><code>chambers</code></td>
 <td>IntRange</td>
 <td><code>2</code></td>
 <td>Number of chambers along the tunnel.</td>
 </tr>
 <tr>
-<td><code>laenge</code></td>
+<td><code>length</code></td>
 <td>IntRange</td>
 <td><code>15~20</code></td>
 <td>Length of the tunnel in cells.</td>
@@ -194,13 +194,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Name of the entry. On a district it links fields and pens to its houses and must be unique. On a pen it appears in messages. On a ward it is replaced by the ward kind, on a field it is not read, and in wall lists piece is written instead.</td>
 </tr>
 <tr>
-<td><code>stuetze</code></td>
+<td><code>support</code></td>
 <td>ThingDef</td>
 <td>none</td>
 <td>Thing set as a support along the tunnels, for example a wooden pillar. Empty sets none.</td>
 </tr>
 <tr>
-<td><code>stuetzenAbstand</code></td>
+<td><code>supportSpacing</code></td>
 <td>IntRange</td>
 <td><code>5~8</code></td>
 <td>Distance in cells between two supports along a tunnel.</td>

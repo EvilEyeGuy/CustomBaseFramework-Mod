@@ -2,21 +2,20 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_MO_Gerberei_A</defName>
-    <label>CBF_MO_Gerberei_A</label>
+    <defName>CBF_MO_Tannery_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_MO_Gerberei</li>
+      <li>CBF_MO_Tannery</li>
     </categories>
     <style>CBF_Medieval</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>1</symbol><anchor>Lederfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stofffass</objects></li>
-      <li><symbol>2</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Schneiderei</lootTable></li>
-      <li><symbol>3</symbol><anchor>Stoffwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stoffwagen</objects></li>
-      <li><symbol>4</symbol><anchor>Gerber</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>5</symbol><anchor>Stofffass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Stofffass</objects></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>1</symbol><anchor>LeatherBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothBarrel</objects></li>
+      <li><symbol>2</symbol><anchor>Chest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_TailorShop</lootTable></li>
+      <li><symbol>3</symbol><anchor>ClothCart</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothCart</objects></li>
+      <li><symbol>4</symbol><anchor>Tanner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>5</symbol><anchor>ClothBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothBarrel</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_DryingRack_Big</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_TanningDrum</thing><rotation>South</rotation></li>

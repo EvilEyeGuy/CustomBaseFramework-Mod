@@ -2,18 +2,17 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Friedhof_DA_B</defName>
-    <label>CBF_VFEM2_Friedhof_DA_B</label>
+    <defName>CBF_VFEM2_Graveyard_DA_B</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Friedhof</li>
+      <li>CBF_VFEM2_Graveyard</li>
     </categories>
-    <nurMitMod>Van.DACrypts</nurMitMod>
+    <onlyWithMod>Van.DACrypts</onlyWithMod>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li MayRequire="Van.DACrypts"><symbol>A</symbol><thing>DA_WallTomb</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
-      <li><symbol>B</symbol><anchor>Grabbeigaben</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>B</symbol><anchor>GraveGoods</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Treasure</lootTable></li>
       <li><symbol>C</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="Van.DACrypts"><symbol>a</symbol><thing>DA_OssuaryWall</thing><stuff>BlocksGranite</stuff></li>

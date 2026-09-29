@@ -2,28 +2,27 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Lagerhaus_B</defName>
-    <label>CBF_VFEM2_Lagerhaus_B</label>
+    <defName>CBF_VFEM2_Warehouse_B</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Lagerhaus</li>
+      <li>CBF_VFEM2_Warehouse</li>
     </categories>
     <placement><atWall>Preferred</atWall></placement>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>Hay</thing><count>60</count></li>
       <li><symbol>b</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
       <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
-      <li><symbol>f</symbol><anchor>Kisten</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Autoregal</objects></li>
-      <li><symbol>g</symbol><anchor>Grossfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>i</symbol><anchor>Speichermeister</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>j</symbol><anchor>SackA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>k</symbol><anchor>SackB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>l</symbol><anchor>Fassreihe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
-      <li><symbol>m</symbol><anchor>SackC</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>f</symbol><anchor>Crates</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_AutoShelf</objects></li>
+      <li><symbol>g</symbol><anchor>LargeBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Kitchen</lootTable></li>
+      <li><symbol>i</symbol><anchor>Granarian</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>j</symbol><anchor>SackA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
+      <li><symbol>k</symbol><anchor>SackB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
+      <li><symbol>l</symbol><anchor>BarrelRow</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Alehouse</lootTable></li>
+      <li><symbol>m</symbol><anchor>SackC</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Kitchen</lootTable></li>
       <li><symbol>n</symbol><thing>RawCorn</thing><count>30</count></li>
       <li><symbol>o</symbol><thing>WoodLog</thing><count>40</count></li>
       <li><symbol>p</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>

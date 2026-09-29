@@ -2,15 +2,14 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Stadtmauer_Plastahl</defName>
-    <label>CBF_Vanilla_Stadtmauer_Plastahl</label>
+    <defName>CBF_Vanilla_TownWall_Plasteel</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>WallSegment</li>
     </categories>
     <type>WallPart</type>
     <style>CBF_ModernVanilla</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li><symbol>P</symbol><thing>Wall</thing><stuff>Plasteel</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>

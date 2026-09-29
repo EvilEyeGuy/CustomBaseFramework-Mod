@@ -2,21 +2,20 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Wohnhaus_Gross_A</defName>
-    <label>CBF_Vanilla_Wohnhaus_Gross_A</label>
+    <defName>CBF_Vanilla_Dwelling_Large_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_Vanilla_HouseLarge</li>
     </categories>
     <style>CBF_ModernVanilla</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>Kueche</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Kueche</lootTable></li>
-      <li><symbol>2</symbol><anchor>SchrankA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>3</symbol><anchor>VorratA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
-      <li><symbol>4</symbol><anchor>VorratB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>8</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
-      <li><symbol>9</symbol><anchor>BewohnerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>1</symbol><anchor>Kitchen</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kitchen</lootTable></li>
+      <li><symbol>2</symbol><anchor>CabinetA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
+      <li><symbol>3</symbol><anchor>SuppliesA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
+      <li><symbol>4</symbol><anchor>SuppliesB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
+      <li><symbol>8</symbol><anchor>ResidentsA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>9</symbol><anchor>ResidentsB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>A</symbol><thing>Armchair</thing><stuff>Cloth</stuff><rotation>East</rotation></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>D</symbol><thing>Dresser</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>

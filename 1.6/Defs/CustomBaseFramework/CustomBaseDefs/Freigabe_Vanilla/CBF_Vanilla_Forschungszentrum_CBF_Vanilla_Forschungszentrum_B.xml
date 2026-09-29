@@ -2,19 +2,18 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Forschungszentrum_B</defName>
-    <label>CBF_Vanilla_Forschungszentrum_B</label>
+    <defName>CBF_Vanilla_ResearchCenter_B</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Forschungszentrum</li>
+      <li>CBF_Vanilla_ResearchCenter</li>
     </categories>
     <style>CBF_ModernVanilla</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>LaborA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Forschung</lootTable></li>
-      <li><symbol>2</symbol><anchor>LaborC</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Forschung</lootTable></li>
-      <li><symbol>3</symbol><anchor>LaborB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Forschung</lootTable></li>
-      <li><symbol>4</symbol><anchor>LaborD</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Drogenlabor</lootTable></li>
+      <li><symbol>1</symbol><anchor>LabA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
+      <li><symbol>2</symbol><anchor>LabC</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
+      <li><symbol>3</symbol><anchor>LabB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
+      <li><symbol>4</symbol><anchor>LabD</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_DrugLab</lootTable></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>D</symbol><thing>DrugLab</thing><stuff>Steel</stuff><rotation>North</rotation></li>
       <li><symbol>K</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
@@ -27,8 +26,8 @@
       <li><symbol>d</symbol><terrain>SterileTile</terrain></li>
       <li><symbol>f</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>i</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>k</symbol><anchor>ForscherA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.5</chance></li>
-      <li><symbol>l</symbol><anchor>ForscherB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.5</chance></li>
+      <li><symbol>k</symbol><anchor>ResearcherA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.5</chance></li>
+      <li><symbol>l</symbol><anchor>ResearcherB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.5</chance></li>
       <li><symbol>r</symbol><thing>SimpleResearchBench</thing><stuff>Steel</stuff><rotation>North</rotation></li>
     </legend>
     <mask>

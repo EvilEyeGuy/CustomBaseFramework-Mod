@@ -3,7 +3,6 @@
 
   <CustomBaseFramework.PieceDef>
     <defName>CBF_Vanilla_EnergyProduction_B</defName>
-    <label>CBF_Vanilla_EnergyProduction_B</label>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_Vanilla_EnergyProduction</li>
@@ -23,8 +22,8 @@
       <li><symbol>S</symbol><thing>Cooler</thing><rotation>West</rotation></li>
       <li><symbol>G</symbol><thing>Shelf</thing><stuff>Steel</stuff><rotation>East</rotation></li>
       <li><symbol>H</symbol><thing>Cooler</thing><rotation>South</rotation></li>
-      <li><symbol>K</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Ware_Chemie</lootTable></li>
-      <li><symbol>M</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Ware_Fleisch</lootTable></li>
+      <li><symbol>K</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Goods_Chemistry</lootTable></li>
+      <li><symbol>M</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Goods_Meat</lootTable></li>
     </legend>
 
     <mask>

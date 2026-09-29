@@ -2,7 +2,7 @@
 <Defs>
 
   <DutyDef>
-    <defName>CBF_Halten</defName>
+    <defName>CBF_Hold</defName>
     <alwaysShowWeapon>false</alwaysShowWeapon>
     <thinkNode Class="ThinkNode_Priority">
       <subNodes>
@@ -41,14 +41,14 @@
   </DutyDef>
 
   <DutyDef>
-    <defName>CBF_Wehrgang</defName>
+    <defName>CBF_Walkway</defName>
     <alwaysShowWeapon>true</alwaysShowWeapon>
     <thinkNode Class="ThinkNode_Priority">
       <subNodes>
         <li Class="ThinkNode_Subtree">
           <treeDef>Abilities_Aggressive</treeDef>
         </li>
-        <li Class="CustomBaseFramework.JobGiver_CBFWehrgang">
+        <li Class="CustomBaseFramework.JobGiver_CBFWalkway">
           <targetAcquireRadius>60</targetAcquireRadius>
           <targetKeepRadius>70</targetKeepRadius>
         </li>

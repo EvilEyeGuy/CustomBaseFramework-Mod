@@ -2,29 +2,29 @@
 <Defs>
 
   <CustomBaseFramework.RuinDef Name="CBF_Ruin_Basis" Abstract="True">
-    <besatzung>Besatzer</besatzung>
+    <occupation>Occupier</occupation>
   </CustomBaseFramework.RuinDef>
 
   <CustomBaseFramework.RuinDef ParentName="CBF_Ruin_Basis">
-    <defName>CBF_Ruin_Ueberfallen</defName>
+    <defName>CBF_Ruin_Raided</defName>
     <label>raided</label>
-    <wandAbriss>0.15</wandAbriss>
-    <haeufung>0.7</haeufung>
-    <breschen>1~3</breschen>
-    <torZerstoert>0.5</torZerstoert>
-    <gebaeudeSchaden>0.1~0.5</gebaeudeSchaden>
-    <geschuetzeZerstoert>0.5</geschuetzeZerstoert>
-    <brandstellen>0.2</brandstellen>
-    <feuer>0~3</feuer>
-    <schutt>0.3</schutt>
-    <beuteFaktor>0.4</beuteFaktor>
-    <beuteBeiBesatzern>0.5</beuteBeiBesatzern>
-    <leichenBewohner>4~10</leichenBewohner>
-    <leichenAngreifer>2~6</leichenAngreifer>
-    <verwesungTage>0.5~3</verwesungTage>
-    <gefangene>0~3</gefangene>
-    <felderVerwuestet>0.3</felderVerwuestet>
-    <viehWeg>0.6</viehWeg>
+    <wallDemolition>0.15</wallDemolition>
+    <clustering>0.7</clustering>
+    <breaches>1~3</breaches>
+    <gateDestroyed>0.5</gateDestroyed>
+    <buildingDamage>0.1~0.5</buildingDamage>
+    <turretsDestroyed>0.5</turretsDestroyed>
+    <burnMarks>0.2</burnMarks>
+    <fires>0~3</fires>
+    <rubble>0.3</rubble>
+    <lootFactor>0.4</lootFactor>
+    <lootWithOccupiers>0.5</lootWithOccupiers>
+    <residentCorpses>4~10</residentCorpses>
+    <attackerCorpses>2~6</attackerCorpses>
+    <rotDays>0.5~3</rotDays>
+    <prisoners>0~3</prisoners>
+    <fieldsRavaged>0.3</fieldsRavaged>
+    <livestockGone>0.6</livestockGone>
   </CustomBaseFramework.RuinDef>
 
 </Defs>

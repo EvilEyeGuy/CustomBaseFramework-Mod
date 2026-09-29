@@ -2,14 +2,13 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Gildenhaus_B</defName>
-    <label>CBF_VFEM2_Gildenhaus_B</label>
+    <defName>CBF_VFEM2_Guildhall_B</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Gilde</li>
+      <li>CBF_VFEM2_Guild</li>
     </categories>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
@@ -23,10 +22,10 @@
       <li><symbol>k</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>l</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li><symbol>m</symbol><thing>Table2x4c</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>n</symbol><anchor>Gildentruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
-      <li><symbol>o</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>p</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
-      <li><symbol>q</symbol><anchor>Schatzregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>n</symbol><anchor>GuildChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Treasure</lootTable></li>
+      <li><symbol>o</symbol><anchor>Residents</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>p</symbol><anchor>Flag</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flag</objects><factionFlag>true</factionFlag></li>
+      <li><symbol>q</symbol><anchor>TreasureShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Treasure</lootTable></li>
       <li><symbol>r</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
       <li><symbol>s</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>t</symbol><thing>VFEM2_StandingBanner</thing><rotation>East</rotation></li>

@@ -2,22 +2,21 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_MO_Windmuehle</defName>
-    <label>CBF_MO_Windmuehle</label>
+    <defName>CBF_MO_Windmill</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_MO_Muehle</li>
+      <li>CBF_MO_Mill</li>
     </categories>
     <style>CBF_Medieval</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>MehlA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Mehlsack</objects><lootTable>CBF_MO_Loot_Baeckerei</lootTable></li>
-      <li><symbol>2</symbol><anchor>Erntewagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Erntewagen</objects></li>
-      <li><symbol>3</symbol><anchor>MehlB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Mehlsack</objects><lootTable>CBF_MO_Loot_Baeckerei</lootTable></li>
-      <li><symbol>4</symbol><anchor>Hofsack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Mehlsack</objects><lootTable>CBF_MO_Loot_Baeckerei</lootTable></li>
-      <li><symbol>5</symbol><anchor>Kiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Kiste</objects><lootTable>CBF_MO_Loot_Bauernhof</lootTable></li>
-      <li><symbol>6</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Truhe</objects><lootTable>CBF_MO_Loot_Bauernhof</lootTable></li>
-      <li><symbol>8</symbol><anchor>Mueller</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
+      <li><symbol>1</symbol><anchor>FlourA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_FlourSack</objects><lootTable>CBF_MO_Loot_Bakery</lootTable></li>
+      <li><symbol>2</symbol><anchor>HarvestCart</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_HarvestCart</objects></li>
+      <li><symbol>3</symbol><anchor>FlourB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_FlourSack</objects><lootTable>CBF_MO_Loot_Bakery</lootTable></li>
+      <li><symbol>4</symbol><anchor>YardSack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_FlourSack</objects><lootTable>CBF_MO_Loot_Bakery</lootTable></li>
+      <li><symbol>5</symbol><anchor>Crate</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Crate</objects><lootTable>CBF_MO_Loot_Farmstead</lootTable></li>
+      <li><symbol>6</symbol><anchor>Chest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Farmstead</lootTable></li>
+      <li><symbol>8</symbol><anchor>Miller</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_WindMill</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>

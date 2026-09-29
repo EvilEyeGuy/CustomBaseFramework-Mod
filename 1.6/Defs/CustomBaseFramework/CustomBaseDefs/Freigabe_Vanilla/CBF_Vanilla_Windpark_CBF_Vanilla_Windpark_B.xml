@@ -2,16 +2,15 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Windpark_B</defName>
-    <label>CBF_Vanilla_Windpark_B</label>
+    <defName>CBF_Vanilla_WindPark_B</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Windpark</li>
+      <li>CBF_Vanilla_WindPark</li>
     </categories>
     <style>CBF_ModernVanilla</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>8</symbol><anchor>Maschinist</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>8</symbol><anchor>Machinist</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>P</symbol><thing>FirefoamPopper</thing></li>

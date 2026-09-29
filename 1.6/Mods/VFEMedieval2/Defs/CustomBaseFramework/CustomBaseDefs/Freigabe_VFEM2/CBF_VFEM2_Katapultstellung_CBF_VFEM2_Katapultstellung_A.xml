@@ -2,15 +2,14 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Katapultstellung_A</defName>
-    <label>CBF_VFEM2_Katapultstellung_A</label>
+    <defName>CBF_VFEM2_CatapultEmplacement_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Katapultstellung</li>
+      <li>CBF_VFEM2_CatapultEmplacement</li>
     </categories>
     <placement><atWall>Preferred</atWall></placement>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
@@ -18,7 +17,7 @@
       <li><symbol>b</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
       <li><symbol>f</symbol><thing>Beer</thing><count>10</count></li>
       <li><symbol>g</symbol><thing>WoodLog</thing><count>40</count></li>
-      <li><symbol>i</symbol><anchor>Mannschaft</anchor><anchorKind>Spawn</anchorKind><pawnCount>2~3</pawnCount></li>
+      <li><symbol>i</symbol><anchor>Crew</anchor><anchorKind>Spawn</anchorKind><pawnCount>2~3</pawnCount></li>
     </legend>
     <mask>
       <li>#######</li>

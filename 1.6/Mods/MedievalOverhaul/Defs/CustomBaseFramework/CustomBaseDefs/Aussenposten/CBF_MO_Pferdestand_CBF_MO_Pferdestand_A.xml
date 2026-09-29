@@ -2,11 +2,10 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_MO_Pferdestand_A</defName>
-    <label>CBF_MO_Pferdestand_A</label>
+    <defName>CBF_MO_HorseStall_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_MO_Pferdestand</li>
+      <li>CBF_MO_HorseStall</li>
     </categories>
     <style>CBF_Medieval</style>
     <legend>
@@ -16,7 +15,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
       <li><symbol>Z</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>u</symbol><anchor>Vieh</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Weidevieh</pawnList><chance>0.8</chance></li>
+      <li><symbol>u</symbol><anchor>Livestock</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Livestock</pawnList><chance>0.8</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>y</symbol><thing>DankPyon_HayPile1x2c</thing><rotation>South</rotation></li>
       <li><symbol>z</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>

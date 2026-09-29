@@ -2,16 +2,15 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_MO_Anbau_Kraeutergarten</defName>
-    <label>CBF_MO_Anbau_Kraeutergarten</label>
+    <defName>CBF_MO_Annex_HerbGarden</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_MO_Anbau_Laendlich</li>
+      <li>CBF_MO_Annex_Rural</li>
     </categories>
     <style>CBF_Medieval</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_DryingRack_Small</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_GardeningBox</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_HerbTable</thing><stuff>WoodLog</stuff></li>

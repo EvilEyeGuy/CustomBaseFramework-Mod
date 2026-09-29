@@ -2,14 +2,13 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_MO_Posten_Geschuetzstellung_A</defName>
-    <label>CBF_MO_Posten_Geschuetzstellung_A</label>
+    <defName>CBF_MO_Outpost_GunEmplacement_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_MO_Posten_Geschuetzstellung</li>
+      <li>CBF_MO_Outpost_GunEmplacement</li>
     </categories>
     <style>CBF_Medieval</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_BannerHesse</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>

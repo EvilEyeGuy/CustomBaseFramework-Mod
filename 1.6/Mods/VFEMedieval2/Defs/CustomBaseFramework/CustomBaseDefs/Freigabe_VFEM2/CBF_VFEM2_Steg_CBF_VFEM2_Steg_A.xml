@@ -2,18 +2,17 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Steg_A</defName>
-    <label>CBF_VFEM2_Steg_A</label>
+    <defName>CBF_VFEM2_Jetty_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Steg</li>
+      <li>CBF_VFEM2_Jetty</li>
     </categories>
     <style>CBF_VFEM2</style>
     <legend>
       <li><symbol>a</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
       <li><symbol>b</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
       <li><symbol>f</symbol><thing>Beer</thing><count>10</count></li>
-      <li><symbol>g</symbol><anchor>Wasser</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>g</symbol><anchor>Water</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>i</symbol><terrain>Bridge</terrain></li>
     </legend>
     <mask>

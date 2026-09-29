@@ -2,36 +2,35 @@
 <Defs>
   <CustomBaseFramework.StyleDef>
     <defName>CBF_ModernVanilla</defName>
-    <label>Modern (Vanilla)</label>
+    <label>modern (vanilla)</label>
   </CustomBaseFramework.StyleDef>
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_ModernHomes</defName>
-    <label>Wohnhaus</label>
+    <label>modern homes</label>
     <blockMax>3</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_ModernWork</defName>
-    <label>Werkstatt</label>
+    <label>modern work</label>
     <blockMax>3</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_ModernCivic</defName>
-    <label>Gemeinschaft</label>
+    <label>community</label>
     <blockMax>3</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_ModernFarmHouse</defName>
-    <label>Bauernhaus</label>
+    <label>farmhouse</label>
     <blockMax>3</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_ModernDefense</defName>
-    <label>Verteidigungsstellung</label>
+    <label>defensive position</label>
     <blockMax>3</blockMax>
   </CustomBaseFramework.PieceCategoryDef>
   <CustomBaseFramework.PieceDef>
     <defName>CBF_Modern_Farmhouse</defName>
-    <label>CBF_Modern_Farmhouse</label>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_ModernFarmHouse</li>
@@ -62,9 +61,9 @@
       <li><symbol>Z</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>a</symbol><thing>TubeTelevision</thing></li>
       <li><symbol>e</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>b</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>d</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
-      <li><symbol>f</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects></li>
+      <li><symbol>b</symbol><anchor>Fill</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
+      <li><symbol>d</symbol><anchor>Fill2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
+      <li><symbol>f</symbol><anchor>Fill3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects></li>
     </legend>
 
     <mask>
@@ -140,8 +139,8 @@
     </anchors>
   </CustomBaseFramework.PieceDef>
   <CustomBaseFramework.MaterialListDef>
-    <defName>CBF_Modern_Materialliste</defName>
-    <parent>CBF_Materialliste_Basis</parent>
+    <defName>CBF_Modern_MaterialList</defName>
+    <parent>CBF_MaterialList_Base</parent>
     <label>modern</label>
     <roles>
       <li>
@@ -256,10 +255,10 @@
     </roles>
   </CustomBaseFramework.MaterialListDef>
   <CustomBaseFramework.SettlementPlanDef>
-    <defName>CBF_Plan_Modernestadt</defName>
-    <materialList>CBF_Modern_Materialliste</materialList>
+    <defName>CBF_Plan_ModernCity</defName>
+    <materialList>CBF_Modern_MaterialList</materialList>
     <label>modern town (industrial)</label>
-    <kind>Modernestadt</kind>
+    <kind>ModernTown</kind>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -268,13 +267,13 @@
     <roadMain>6</roadMain>
     <roadLane>2</roadLane>
     <minBuildingGap>1</minBuildingGap>
-    <gelaendeOeffnen>true</gelaendeOeffnen>
+    <openTerrain>true</openTerrain>
     <wards>
       <li>
-        <art>Stadt</art>
-        <name>Altstadt</name>
+        <kind>Town</kind>
+        <name>OldTown</name>
         <label>Zentrum</label>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <roads>
           <li>Concrete</li>
         </roads>
@@ -283,9 +282,9 @@
         </roadEdges>
         <garrison>
           <li>
-            <list>CBF_Modern_Garnison_Innen</list>
+            <list>CBF_Modern_Garrison_Inside</list>
             <count>12~17</count>
-            <posten>Innen</posten>
+            <post>Inside</post>
           </li>
         </garrison>
         <defenses>
@@ -293,21 +292,21 @@
         </defenses>
         <districts>
           <li>
-            <name>Zentrum</name>
+            <name>Center</name>
             <entries>
               <li><tag>CBF_Vanilla_HouseSmall</tag><count>14~22</count><filler>true</filler></li>
               <li><tag>CBF_Vanilla_Workshop</tag><count>1~6</count><filler>true</filler></li>
-              <li><tag>CBF_Vanilla_Gasthaus</tag><count>0~1</count></li>
-              <li><tag>CBF_Vanilla_Kirche</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Tavern</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Church</tag><count>0~1</count></li>
             </entries>
           </li>
         </districts>
       </li>
       <li>
-        <art>Vorstadt</art>
-        <name>Neustadt</name>
+        <kind>Suburb</kind>
+        <name>NewTown</name>
         <label>Wohnviertel</label>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <roads>
           <li>Concrete</li>
         </roads>
@@ -316,9 +315,9 @@
         </roadEdges>
         <garrison>
           <li>
-            <list>CBF_Modern_Garnison_Innen</list>
+            <list>CBF_Modern_Garrison_Inside</list>
             <count>6~9</count>
-            <posten>Innen</posten>
+            <post>Inside</post>
           </li>
         </garrison>
         <defenses>
@@ -326,15 +325,15 @@
         </defenses>
         <districts>
           <li>
-            <name>Wohnviertel</name>
+            <name>ResidentialQuarter</name>
             <entries>
               <li><tag>CBF_Vanilla_HouseLarge</tag><count>14~28</count><filler>true</filler></li>
-              <li><tag>CBF_Vanilla_Lager</tag><count>1~2</count></li>
-              <li><tag>CBF_Vanilla_Hydrokultur</tag><count>0~2</count></li>
-              <li><tag>CBF_Vanilla_Handelsposten</tag><count>0~1</count></li>
-              <li><tag>CBF_Vanilla_Kaserne</tag><count>1~2</count></li>
-              <li><tag>CBF_Vanilla_Waffenkammer</tag><count>0~1</count></li>
-              <li><tag>CBF_Vanilla_Gefaengnis</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Storage</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Hydroponics</tag><count>0~2</count></li>
+              <li><tag>CBF_Vanilla_TradingPost</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Barracks</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Armory</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Prison</tag><count>0~1</count></li>
               <li><tag>CBF_Vanilla_Defence_Large</tag><count>2~4</count></li>
               <li><tag>CBF_Vanilla_Defense_Small</tag><count>4~8</count></li>
             </entries>
@@ -342,25 +341,25 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
-        <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <kind>Rural</kind>
+        <name>Countryside</name>
+        <supply>1.2</supply>
         <roads>
           <li>Concrete</li>
         </roads>
         <garrison>
           <li>
-            <list>CBF_Modern_Garnison_Innen</list>
+            <list>CBF_Modern_Garrison_Inside</list>
             <count>2~4</count>
-            <posten>Innen</posten>
+            <post>Inside</post>
           </li>
         </garrison>
         <districts>
           <li>
-            <name>Umland</name>
+            <name>Countryside</name>
             <entries>
               <li><tag>CBF_ModernDefense</tag><count>0~4</count></li>
-              <li><tag>CBF_Vanilla_Friedhof</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Graveyard</tag><count>0~1</count></li>
             </entries>
           </li>
           <li>
@@ -394,7 +393,7 @@
       </li>
     </wards>
   
-    <anteil>0</anteil>
+    <share>0</share>
   
     <techLevels>
       <li>Industrial</li>
@@ -402,11 +401,11 @@
       <li>Ultra</li>
     </techLevels>
   
-    <ideologieStil>true</ideologieStil>
+    <ideoStyle>true</ideoStyle>
 
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    <forAllFactions>true</forAllFactions>
   
     <worldTexture>World/WorldObjects/CBF/CBF_ModernTown</worldTexture>
-    <wdStufe>2</wdStufe>
+    <wdLevel>2</wdLevel>
   </CustomBaseFramework.SettlementPlanDef>
 </Defs>

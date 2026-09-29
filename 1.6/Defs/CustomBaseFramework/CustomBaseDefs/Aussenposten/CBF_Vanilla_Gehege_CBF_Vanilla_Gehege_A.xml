@@ -2,17 +2,16 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Gehege_A</defName>
-    <label>CBF_Vanilla_Gehege_A</label>
+    <defName>CBF_Vanilla_Pen_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Gehege</li>
+      <li>CBF_Vanilla_Pen</li>
     </categories>
     <style>CBF_ModernVanilla</style>
     <legend>
       <li><symbol>Z</symbol><thing>Fence</thing><stuff>Steel</stuff></li>
       <li><symbol>k</symbol><thing>AnimalSleepingBox</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>u</symbol><anchor>Vieh</anchor><anchorKind>Spawn</anchorKind><pawnList>Hardanimals_1</pawnList><chance>0.8</chance></li>
+      <li><symbol>u</symbol><anchor>Livestock</anchor><anchorKind>Spawn</anchorKind><pawnList>Hardanimals_1</pawnList><chance>0.8</chance></li>
       <li><symbol>z</symbol><thing>FenceGate</thing><stuff>Steel</stuff></li>
     </legend>
     <mask>

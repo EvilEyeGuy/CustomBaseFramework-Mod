@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Plan_FortressCity_New</defName>
+    <label>fortress city (MO)</label>
+    <materialList>CBF_MO_MaterialList</materialList>
+
+    <styles>
+      <li>Rustical</li>
+      <li>Standard</li>
+    </styles>
+
+    <coreSize>90~105</coreSize>
+    <mapSize>250</mapSize>
+    <towerCorner>7</towerCorner>
+    <towerCurtain>7</towerCurtain>
+    <towerCapTotal>0</towerCapTotal>
+    <wallGap>1</wallGap>
+    <roadMain>2</roadMain>
+    <roadLane>2</roadLane>
+    <minBuildingGap>1</minBuildingGap>
+    <maxBuildingGap>2</maxBuildingGap>
+    <targetBuilt>0.62</targetBuilt>
+    <weightNearRoad>1.4</weightNearRoad>
+    <defenderPoints>400~700</defenderPoints>
+    <defendersOnWall>0.28</defendersOnWall>
+
+    <wards>
+      <li>
+        <kind>Town</kind>
+        <name>OldTown</name>
+        <supply>1.2</supply>
+        <roads>
+          <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Floor_Cobblestone_Granite</li>
+        </roads>
+        <walls>
+          <li><piece>TownWall_1x5</piece><weight>0.75</weight></li>
+          <li><piece>CBF_MO_TownWall_1x5_Embrasure</piece><weight>0.25</weight></li>
+        </walls>
+        <emplacements>
+          <li><tag>CBF_MO_FortressTower</tag><count>4~6</count></li>
+        </emplacements>
+        <gatehouses>
+          <li><tag>CBF_MO_FortressGate</tag><count>1~2</count></li>
+        </gatehouses>
+        <garrison>
+          <li><list>CBF_MO_Garrison_Walkway</list><post>Walkway</post><count>16~21</count></li>
+          <li><list>CBF_MO_Garrison_Gate</list><post>Gate</post><count>5~8</count></li>
+          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>8~13</count></li>
+        </garrison>
+        <districts>
+          <li>
+            <name>Castle</name>
+            <entries>
+              <li><tag>CBF_MO_FortressKeep</tag><count>1~1</count><unique>true</unique></li>
+              <li><tag>CBF_MO_Barracks</tag><count>2~2</count></li>
+              <li><tag>CBF_MO_Armory</tag><count>1~3</count></li>
+              <li><tag>CBF_MO_Armoury</tag><count>1~1</count></li>
+              <li><piece>CBF_MO_Dungeon</piece><count>1~2</count></li>
+            </entries>
+          </li>
+          <li>
+            <name>Center</name>
+            <entries>
+              <li><tag>CBF_MO_NobleHouse</tag><count>1~3</count></li>
+              <li><tag>CBF_MO_Guild</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Tavern</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_CatapultEmplacement</tag><count>3~5</count></li>
+              <li><tag>CBF_MO_Workshop</tag><count>1~3</count></li>
+              <li><tag>CBF_MO_WeaponDealer</tag><count>1~2</count></li>
+              <li><tag>CBF_MO_Smithy</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_WallAccess</tag><count>3~5</count></li>
+              <li><tag>CBF_MO_Church</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Monument</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_BurgherHouse</tag><count>6~14</count><filler>true</filler></li>
+              <li><tag>CBF_MO_GapYard</tag><count>0~6</count><filler>true</filler></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <kind>Suburb</kind>
+        <name>NewTown</name>
+        <supply>1.2</supply>
+        <walls>
+          <li><piece>TownWall</piece><weight>0.75</weight></li>
+          <li><piece>CBF_MO_TownWall_Embrasure</piece><weight>0.25</weight></li>
+        </walls>
+        <emplacements>
+          <li><tag>CBF_MO_TownTower</tag><count>3~5</count></li>
+        </emplacements>
+        <gatehouses>
+          <li><tag>CBF_MO_Gatehouse</tag><count>1~2</count></li>
+        </gatehouses>
+        <garrison>
+          <li><list>CBF_MO_Garrison_Walkway</list><post>Walkway</post><count>5~8</count></li>
+          <li><list>CBF_MO_Garrison_Gate</list><post>Gate</post><count>3~3</count></li>
+          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>3~4</count></li>
+        </garrison>
+        <districts>
+          <li>
+            <name>Housing</name>
+            <entries>
+              <li><tag>CBF_MO_Folk</tag><count>28~36</count><filler>true</filler></li>
+              <li><tag>CBF_MO_Tavern</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Shrine</tag><count>0~1</count></li>
+            </entries>
+          </li>
+          <li>
+            <name>Camp</name>
+            <entries>
+              <li><tag>CBF_MO_Warehouse</tag><count>1~2</count></li>
+              <li><tag>CBF_MO_Bakery</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Butchery</tag><count>1~1</count><withoutIdeo><li>MeatEating_Abhorrent</li><li>MeatEating_Horrible</li></withoutIdeo></li>
+              <li><tag>CBF_MO_TailorShop</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Smithy</tag><count>1~1</count></li>
+              <li><piece>CBF_MO_Armory_D</piece><count>0~1</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <kind>Rural</kind>
+        <name>Countryside</name>
+        <supply>1.2</supply>
+        <garrison>
+          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>3~5</count></li>
+        </garrison>
+        <districts>
+          <li>
+            <name>Farms</name><fields><li>
+              <count>1~2</count>
+              <fence>true</fence>
+              <weight>1</weight><plants>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Carrots</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Garlic</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Onions</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Pumpkins</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
+                <li>Plant_Corn</li>
+               </plants>
+              <tags>
+                <li>CBF_MO_Farmstead</li>
+              </tags></li></fields>
+            <entries>
+              <li><tag>CBF_MO_Farmstead</tag><count>1~2</count></li>
+            </entries>
+          </li>
+          <li>
+            <name>Mill</name><fields><li>
+              <count>1~2</count>
+              <fence>false</fence>
+              <weight>1</weight><plants>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
+               </plants>
+              <tags>
+                <li>CBF_MO_Mill</li>
+              </tags></li></fields>
+            <entries>
+              <li><tag>CBF_MO_Mill</tag><count>1~1</count></li>
+            </entries>
+          </li>
+          <li>
+            <name>Pasture</name><pens><li>
+              <name>Pen</name>
+              <count>1~1</count>
+              <herd>3~7</herd>
+              <pawns>Hardanimals_1</pawns>
+              <terrain>Soil</terrain><plants>
+                <li>Plant_Haygrass</li>
+               </plants>
+              <weight>1</weight></li></pens>
+            <entries>
+              <li><tag>CBF_MO_Barn</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Hut</tag><count>1~2</count></li>
+            </entries>
+          </li>
+          <li>
+            <name>Churchyard</name>
+            <entries>
+              <li><tag>CBF_MO_Graveyard</tag><count>1~1</count></li>
+            </entries>
+          </li>
+          <li>
+            <name>Tournament</name>
+            <entries>
+              <li><tag>CBF_MO_TourneyGround</tag><count>0~1</count></li>
+            </entries>
+          </li>
+          <li>
+            <name>Edge</name>
+            <entries>
+              <li><tag>CBF_MO_Hut</tag><count>2~3</count><filler>true</filler></li>
+              <li><tag>CBF_MO_HuntingLodge</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Winery</tag><count>0~1</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </wards>
+
+    <kind>MedievalTown</kind>
+
+    <factionTags>
+      <li>DankPyon_NobleHouseSavage</li>
+      <li>DankPyon_NobleHouseFierce</li>
+      <li>DankPyon_NobleHouseCivil</li>
+      <li>DankPyon_NobleHouseCivil2</li>
+    </factionTags>
+
+    <share>10</share>
+
+    <wdLevel>4</wdLevel>
+
+    <harbor>
+      <entries>
+        <li><tag>CBF_MO_Harbormaster</tag><count>1~1</count></li>
+        <li><tag>CBF_MO_HarborStore</tag><count>1~1</count></li>
+        <li><tag>CBF_MO_Jetty</tag><count>1~2</count></li>
+        <li><tag>CBF_MO_Boathouse</tag><count>0~1</count></li>
+      </entries>
+    </harbor>
+    <suburbIslands>2</suburbIslands>
+
+    <techLevels>
+      <li>Medieval</li>
+    </techLevels>
+
+    <worldTexture>World/WorldObjects/CBF/CBF_FortressTown</worldTexture>
+  </CustomBaseFramework.SettlementPlanDef>
+
+</Defs>

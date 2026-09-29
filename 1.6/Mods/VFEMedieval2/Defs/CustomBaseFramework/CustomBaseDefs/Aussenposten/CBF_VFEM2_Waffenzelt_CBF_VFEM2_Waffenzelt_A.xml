@@ -2,23 +2,22 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Waffenzelt_A</defName>
-    <label>CBF_VFEM2_Waffenzelt_A</label>
+    <defName>CBF_VFEM2_WeaponTent_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Waffenzelt</li>
+      <li>CBF_VFEM2_WeaponTent</li>
     </categories>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>Column</thing><stuff>WoodLog</stuff></li>
       <li><symbol>b</symbol><thing>VFEM2_ClothWall</thing><stuff>Cloth</stuff></li>
-      <li><symbol>f</symbol><anchor>Waffenregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>g</symbol><anchor>Soldaten</anchor><anchorKind>Spawn</anchorKind><pawnCount>2~3</pawnCount></li>
-      <li><symbol>i</symbol><anchor>Ruestung</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>j</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
+      <li><symbol>f</symbol><anchor>WeaponRack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>g</symbol><anchor>Soldiers</anchor><anchorKind>Spawn</anchorKind><pawnCount>2~3</pawnCount></li>
+      <li><symbol>i</symbol><anchor>Armor</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>j</symbol><anchor>Barrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Kitchen</lootTable></li>
       <li><symbol>k</symbol><terrain>StrawMatting</terrain></li>
       <li><symbol>l</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>m</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>

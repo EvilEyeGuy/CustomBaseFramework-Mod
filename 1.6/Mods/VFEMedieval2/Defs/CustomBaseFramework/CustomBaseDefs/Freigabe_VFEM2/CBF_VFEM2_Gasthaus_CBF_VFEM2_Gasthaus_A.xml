@@ -2,23 +2,22 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Gasthaus_A</defName>
-    <label>CBF_VFEM2_Gasthaus_A</label>
+    <defName>CBF_VFEM2_Tavern_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Gasthaus</li>
+      <li>CBF_VFEM2_Tavern</li>
     </categories>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>A</symbol><anchor>TruheA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
-      <li><symbol>B</symbol><anchor>TruheB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
-      <li><symbol>C</symbol><anchor>Wirt</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>D</symbol><anchor>Schankfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
-      <li><symbol>E</symbol><anchor>Weinregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
+      <li><symbol>A</symbol><anchor>ChestA</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Alehouse</lootTable></li>
+      <li><symbol>B</symbol><anchor>ChestB</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Alehouse</lootTable></li>
+      <li><symbol>C</symbol><anchor>Innkeeper</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>D</symbol><anchor>TapBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Alehouse</lootTable></li>
+      <li><symbol>E</symbol><anchor>WineRack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Alehouse</lootTable></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>G</symbol><anchor>Futter</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Kueche</lootTable></li>
-      <li><symbol>H</symbol><anchor>Erntewagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Taverne</lootTable></li>
+      <li><symbol>G</symbol><anchor>Feed</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Kitchen</lootTable></li>
+      <li><symbol>H</symbol><anchor>HarvestCart</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Alehouse</lootTable></li>
       <li><symbol>I</symbol><thing>Beer</thing><count>10</count></li>
       <li><symbol>J</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
       <li><symbol>K</symbol><terrain>VFEM2_Matting_Leather_Bear</terrain></li>

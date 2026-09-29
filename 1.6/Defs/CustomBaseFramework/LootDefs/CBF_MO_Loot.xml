@@ -2,293 +2,293 @@
 <Defs>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Wohnhaus</defName>
-    <label>Wohnhaus</label>
+    <defName>CBF_MO_Loot_Dwelling</defName>
+    <label>dwelling loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>20</weight><table>CBF_MO_Ware_Brot</table></li>
-      <li><weight>16</weight><table>CBF_MO_Ware_Kaese</table></li>
-      <li><weight>14</weight><table>CBF_MO_Ware_Gemuese</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Obst</table></li>
-      <li><weight>12</weight><table>CBF_MO_Ware_Textil</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Holz</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Wein</table></li>
-      <li><weight>6</weight><table>CBF_MO_Ware_Kraeuter</table></li>
+      <li><weight>20</weight><table>CBF_MO_Goods_Bread</table></li>
+      <li><weight>16</weight><table>CBF_MO_Goods_Cheese</table></li>
+      <li><weight>14</weight><table>CBF_MO_Goods_Vegetables</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Fruit</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Textiles</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Wood</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Wine</table></li>
+      <li><weight>6</weight><table>CBF_MO_Goods_Herbs</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Herrenhaus</defName>
-    <label>Herrenhaus</label>
+    <defName>CBF_MO_Loot_Manor</defName>
+    <label>manor loot</label>
     <rolls>3~5</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>18</weight><table>CBF_MO_Ware_Wein</table></li>
-      <li><weight>14</weight><table>CBF_MO_Ware_Geschirr</table></li>
-      <li><weight>12</weight><table>CBF_MO_Ware_Kaese</table></li>
-      <li><weight>12</weight><table>CBF_MO_Ware_Textil</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Buecher</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Brot</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Fleisch</table></li>
-      <li><weight>4</weight><table>CBF_MO_Ware_Edelstein</table></li>
+      <li><weight>18</weight><table>CBF_MO_Goods_Wine</table></li>
+      <li><weight>14</weight><table>CBF_MO_Goods_Dishes</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Cheese</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Textiles</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Books</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Bread</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Meat</table></li>
+      <li><weight>4</weight><table>CBF_MO_Goods_Gems</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Baeckerei</defName>
-    <label>Baeckerei</label>
+    <defName>CBF_MO_Loot_Bakery</defName>
+    <label>bakery loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>30</weight><table>CBF_MO_Ware_Brot</table></li>
-      <li><weight>26</weight><table>CBF_MO_Ware_Getreide</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Kaese</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Holz</table></li>
+      <li><weight>30</weight><table>CBF_MO_Goods_Bread</table></li>
+      <li><weight>26</weight><table>CBF_MO_Goods_Grain</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Cheese</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Wood</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Metzgerei</defName>
-    <label>Metzgerei</label>
+    <defName>CBF_MO_Loot_Butchery</defName>
+    <label>butchery loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>34</weight><table>CBF_MO_Ware_Fleisch</table></li>
-      <li><weight>14</weight><table>CBF_MO_Ware_Rationen</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Textil</table></li>
-      <li><weight>4</weight><table>CBF_MO_Ware_Monster</table></li>
+      <li><weight>34</weight><table>CBF_MO_Goods_Meat</table></li>
+      <li><weight>14</weight><table>CBF_MO_Goods_Rations</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Textiles</table></li>
+      <li><weight>4</weight><table>CBF_MO_Goods_Monster</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Schneiderei</defName>
-    <label>Schneiderei</label>
+    <defName>CBF_MO_Loot_TailorShop</defName>
+    <label>tailor shop loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>34</weight><table>CBF_MO_Ware_Textil</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Werkzeug</table></li>
-      <li><weight>6</weight><table>CBF_MO_Ware_Rationen</table></li>
+      <li><weight>34</weight><table>CBF_MO_Goods_Textiles</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Tools</table></li>
+      <li><weight>6</weight><table>CBF_MO_Goods_Rations</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Schmiede</defName>
-    <label>Schmiede</label>
+    <defName>CBF_MO_Loot_Smithy</defName>
+    <label>smithy loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>26</weight><table>CBF_MO_Ware_Barren</table></li>
-      <li><weight>20</weight><table>CBF_MO_Ware_Erz</table></li>
-      <li><weight>14</weight><table>CBF_MO_Ware_Werkzeug</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Nahkampf</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Komponent</table></li>
-      <li><weight>6</weight><table>CBF_MO_Ware_Stein</table></li>
+      <li><weight>26</weight><table>CBF_MO_Goods_Ingots</table></li>
+      <li><weight>20</weight><table>CBF_MO_Goods_Ore</table></li>
+      <li><weight>14</weight><table>CBF_MO_Goods_Tools</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Melee</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Components</table></li>
+      <li><weight>6</weight><table>CBF_MO_Goods_Stone</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Werkstatt</defName>
-    <label>Werkstatt</label>
+    <defName>CBF_MO_Loot_Workshop</defName>
+    <label>workshop loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>18</weight><table>CBF_MO_Ware_Textil</table></li>
-      <li><weight>16</weight><table>CBF_MO_Ware_Werkzeug</table></li>
-      <li><weight>14</weight><table>CBF_MO_Ware_Holz</table></li>
-      <li><weight>12</weight><table>CBF_MO_Ware_Brot</table></li>
-      <li><weight>12</weight><table>CBF_MO_Ware_Fleisch</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Barren</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Getreide</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Komponent</table></li>
+      <li><weight>18</weight><table>CBF_MO_Goods_Textiles</table></li>
+      <li><weight>16</weight><table>CBF_MO_Goods_Tools</table></li>
+      <li><weight>14</weight><table>CBF_MO_Goods_Wood</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Bread</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Meat</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Ingots</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Grain</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Components</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Gasthaus</defName>
-    <label>Gasthaus</label>
+    <defName>CBF_MO_Loot_Tavern</defName>
+    <label>tavern loot</label>
     <rolls>3~5</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>26</weight><table>CBF_MO_Ware_Wein</table></li>
-      <li><weight>16</weight><table>CBF_MO_Ware_Brot</table></li>
-      <li><weight>14</weight><table>CBF_MO_Ware_Kaese</table></li>
-      <li><weight>12</weight><table>CBF_MO_Ware_Fleisch</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Rationen</table></li>
-      <li><weight>6</weight><table>CBF_MO_Ware_Trauben</table></li>
+      <li><weight>26</weight><table>CBF_MO_Goods_Wine</table></li>
+      <li><weight>16</weight><table>CBF_MO_Goods_Bread</table></li>
+      <li><weight>14</weight><table>CBF_MO_Goods_Cheese</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Meat</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Rations</table></li>
+      <li><weight>6</weight><table>CBF_MO_Goods_Grapes</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Bergfried</defName>
-    <label>Bergfried</label>
+    <defName>CBF_MO_Loot_Keep</defName>
+    <label>keep loot</label>
     <rolls>3~5</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>18</weight><table>CBF_MO_Ware_Geschirr</table></li>
-      <li><weight>12</weight><table>CBF_MO_Ware_Buecher</table></li>
-      <li><weight>12</weight><table>CBF_MO_Ware_Wein</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Nahkampf</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Edelstein</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Schatz</table></li>
-      <li><weight>6</weight><table>CBF_MO_Ware_Harnisch</table></li>
+      <li><weight>18</weight><table>CBF_MO_Goods_Dishes</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Books</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Wine</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Melee</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Gems</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Treasure</table></li>
+      <li><weight>6</weight><table>CBF_MO_Goods_Plate</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Waffenkammer</defName>
-    <label>Waffenkammer</label>
+    <defName>CBF_MO_Loot_Armory</defName>
+    <label>armory loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>26</weight><table>CBF_MO_Ware_Nahkampf</table></li>
-      <li><weight>18</weight><table>CBF_MO_Ware_Stangen</table></li>
-      <li><weight>12</weight><table>CBF_MO_Ware_Bogen</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Rationen</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Harnisch</table></li>
+      <li><weight>26</weight><table>CBF_MO_Goods_Melee</table></li>
+      <li><weight>18</weight><table>CBF_MO_Goods_Bars</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Bows</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Rations</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Plate</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Marktstand_Kaese</defName>
-    <label>Marktstand Kaese</label>
+    <defName>CBF_MO_Loot_MarketStall_Cheese</defName>
+    <label>market stall cheese loot</label>
     <rolls>2~3</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>34</weight><table>CBF_MO_Ware_Kaese</table></li>
-      <li><weight>14</weight><table>CBF_MO_Ware_Brot</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Obst</table></li>
+      <li><weight>34</weight><table>CBF_MO_Goods_Cheese</table></li>
+      <li><weight>14</weight><table>CBF_MO_Goods_Bread</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Fruit</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Marktstand_Fleisch</defName>
-    <label>Marktstand Fleisch</label>
+    <defName>CBF_MO_Loot_MarketStall_Meat</defName>
+    <label>market stall meat loot</label>
     <rolls>2~3</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>34</weight><table>CBF_MO_Ware_Fleisch</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Rationen</table></li>
-      <li><weight>6</weight><table>CBF_MO_Ware_Textil</table></li>
+      <li><weight>34</weight><table>CBF_MO_Goods_Meat</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Rations</table></li>
+      <li><weight>6</weight><table>CBF_MO_Goods_Textiles</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Bauernhof</defName>
-    <label>Bauernhof</label>
+    <defName>CBF_MO_Loot_Farmstead</defName>
+    <label>farmstead loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>24</weight><table>CBF_MO_Ware_Getreide</table></li>
-      <li><weight>22</weight><table>CBF_MO_Ware_Gemuese</table></li>
-      <li><weight>14</weight><table>CBF_MO_Ware_Obst</table></li>
-      <li><weight>14</weight><table>CBF_MO_Ware_Stroh</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Werkzeug</table></li>
+      <li><weight>24</weight><table>CBF_MO_Goods_Grain</table></li>
+      <li><weight>22</weight><table>CBF_MO_Goods_Vegetables</table></li>
+      <li><weight>14</weight><table>CBF_MO_Goods_Fruit</table></li>
+      <li><weight>14</weight><table>CBF_MO_Goods_Straw</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Tools</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Schreibstube</defName>
-    <label>Schreibstube</label>
+    <defName>CBF_MO_Loot_Scriptorium</defName>
+    <label>scriptorium loot</label>
     <rolls>2~3</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>26</weight><table>CBF_MO_Ware_Buecher</table></li>
-      <li><weight>22</weight><table>CBF_MO_Ware_Schema</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Kraeuter</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Elixiere</table></li>
+      <li><weight>26</weight><table>CBF_MO_Goods_Books</table></li>
+      <li><weight>22</weight><table>CBF_MO_Goods_Schema</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Herbs</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Elixirs</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Apotheke</defName>
-    <label>Apotheke</label>
+    <defName>CBF_MO_Loot_Apothecary</defName>
+    <label>apothecary loot</label>
     <rolls>2~3</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>30</weight><table>CBF_MO_Ware_Kraeuter</table></li>
-      <li><weight>24</weight><table>CBF_MO_Ware_Elixiere</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Buecher</table></li>
+      <li><weight>30</weight><table>CBF_MO_Goods_Herbs</table></li>
+      <li><weight>24</weight><table>CBF_MO_Goods_Elixirs</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Books</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Stall</defName>
-    <label>Stall</label>
+    <defName>CBF_MO_Loot_Stable</defName>
+    <label>stable</label>
     <rolls>1~3</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>30</weight><table>CBF_MO_Ware_Stroh</table></li>
-      <li><weight>14</weight><table>CBF_MO_Ware_Textil</table></li>
-      <li><weight>12</weight><table>CBF_MO_Ware_Getreide</table></li>
-      <li><weight>6</weight><table>CBF_MO_Ware_Werkzeug</table></li>
+      <li><weight>30</weight><table>CBF_MO_Goods_Straw</table></li>
+      <li><weight>14</weight><table>CBF_MO_Goods_Textiles</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Grain</table></li>
+      <li><weight>6</weight><table>CBF_MO_Goods_Tools</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Lager</defName>
-    <label>Lager</label>
+    <defName>CBF_MO_Loot_Storage</defName>
+    <label>storage loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>18</weight><table>CBF_MO_Ware_Holz</table></li>
-      <li><weight>14</weight><table>CBF_MO_Ware_Stein</table></li>
-      <li><weight>12</weight><table>CBF_MO_Ware_Getreide</table></li>
-      <li><weight>12</weight><table>CBF_MO_Ware_Textil</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Brot</table></li>
-      <li><weight>10</weight><table>CBF_MO_Ware_Erz</table></li>
-      <li><weight>6</weight><table>CBF_MO_Ware_Komponent</table></li>
+      <li><weight>18</weight><table>CBF_MO_Goods_Wood</table></li>
+      <li><weight>14</weight><table>CBF_MO_Goods_Stone</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Grain</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Textiles</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Bread</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Ore</table></li>
+      <li><weight>6</weight><table>CBF_MO_Goods_Components</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_Gruft</defName>
-    <label>Gruft</label>
+    <defName>CBF_MO_Loot_Crypt</defName>
+    <label>crypt loot</label>
     <rolls>1~3</rolls>
     <uniqueEntries>true</uniqueEntries>
     <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
     <entries>
-      <li><weight>24</weight><table>CBF_MO_Ware_Monster</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Ruestung</table></li>
-      <li><weight>6</weight><table>CBF_MO_Ware_Edelstein</table></li>
-      <li><weight>4</weight><table>CBF_MO_Ware_Schatz</table></li>
+      <li><weight>24</weight><table>CBF_MO_Goods_Monster</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Armor</table></li>
+      <li><weight>6</weight><table>CBF_MO_Goods_Gems</table></li>
+      <li><weight>4</weight><table>CBF_MO_Goods_Treasure</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
     <defName>CBF_MO_Loot_Minimal</defName>
-    <label>Notfallbeute</label>
+    <label>emergency loot</label>
     <rolls>1~2</rolls>
     <uniqueEntries>true</uniqueEntries>
     <entries>
-      <li><weight>10</weight><table>CBF_MO_Ware_Holz</table></li>
-      <li><weight>8</weight><table>CBF_MO_Ware_Brot</table></li>
-      <li><weight>6</weight><table>CBF_MO_Ware_Stein</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Wood</table></li>
+      <li><weight>8</weight><table>CBF_MO_Goods_Bread</table></li>
+      <li><weight>6</weight><table>CBF_MO_Goods_Stone</table></li>
     </entries>
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Brot</defName>
-    <label>Brot</label>
+    <defName>CBF_MO_Goods_Bread</defName>
+    <label>bread goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealBread</thing><count>2~8</count><onMissing>Skip</onMissing></li>
@@ -296,8 +296,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Getreide</defName>
-    <label>Getreide und Mehl</label>
+    <defName>CBF_MO_Goods_Grain</defName>
+    <label>grain goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Flour</thing><count>20~80</count><onMissing>Skip</onMissing></li>
@@ -306,8 +306,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Kaese</defName>
-    <label>Kaese und Milch</label>
+    <defName>CBF_MO_Goods_Cheese</defName>
+    <label>cheese goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealCheese</thing><count>2~12</count><onMissing>Skip</onMissing></li>
@@ -320,8 +320,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Fleisch</defName>
-    <label>Fleisch</label>
+    <defName>CBF_MO_Goods_Meat</defName>
+    <label>meat goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_DriedMeat</thing><count>20~120</count><onMissing>Skip</onMissing></li>
@@ -337,8 +337,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Gemuese</defName>
-    <label>Gemuese</label>
+    <defName>CBF_MO_Goods_Vegetables</defName>
+    <label>vegetables goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_RawPumpkins</thing><count>40~160</count><onMissing>Skip</onMissing></li>
@@ -351,8 +351,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Obst</defName>
-    <label>Obst und Knollen</label>
+    <defName>CBF_MO_Goods_Fruit</defName>
+    <label>fruit goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_RawApples</thing><count>30~40</count><onMissing>Skip</onMissing></li>
@@ -361,8 +361,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Rationen</defName>
-    <label>Rationen</label>
+    <defName>CBF_MO_Goods_Rations</defName>
+    <label>rations goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MealRations</thing><count>1~4</count><onMissing>Skip</onMissing></li>
@@ -372,8 +372,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Wein</defName>
-    <label>Wein, Ale und Cider</label>
+    <defName>CBF_MO_Goods_Wine</defName>
+    <label>wine goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Wine</thing><count>10~40</count><onMissing>Skip</onMissing></li>
@@ -385,8 +385,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Trauben</defName>
-    <label>Trauben und Beeren</label>
+    <defName>CBF_MO_Goods_Grapes</defName>
+    <label>grapes goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_RawGrapes</thing><count>10~40</count><onMissing>Skip</onMissing></li>
@@ -396,8 +396,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Kraeuter</defName>
-    <label>Kraeuter</label>
+    <defName>CBF_MO_Goods_Herbs</defName>
+    <label>herbs goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Mindwort</thing><count>1~5</count><onMissing>Skip</onMissing></li>
@@ -410,8 +410,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Elixiere</defName>
-    <label>Elixiere und Pulver</label>
+    <defName>CBF_MO_Goods_Elixirs</defName>
+    <label>elixirs goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_BattleElixir</thing><count>1~5</count><onMissing>Skip</onMissing></li>
@@ -424,8 +424,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Buecher</defName>
-    <label>Buecher</label>
+    <defName>CBF_MO_Goods_Books</defName>
+    <label>books goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Book</thing><count>1~1</count><onMissing>Skip</onMissing></li>
@@ -449,8 +449,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Edelstein</defName>
-    <label>Edelsteine</label>
+    <defName>CBF_MO_Goods_Gems</defName>
+    <label>gems goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Emerald</thing><count>1~5</count><onMissing>Skip</onMissing></li>
@@ -460,8 +460,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Geschirr</defName>
-    <label>Edelgeschirr</label>
+    <defName>CBF_MO_Goods_Dishes</defName>
+    <label>fine tableware</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_ChaliceSilver</thing><count>1~3</count><onMissing>Skip</onMissing></li>
@@ -471,8 +471,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Barren</defName>
-    <label>Barren</label>
+    <defName>CBF_MO_Goods_Ingots</defName>
+    <label>ingots goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_IronIngot</thing><count>40~100</count><onMissing>Skip</onMissing></li>
@@ -481,8 +481,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Erz</defName>
-    <label>Erz und Kohle</label>
+    <defName>CBF_MO_Goods_Ore</defName>
+    <label>ore goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_IronOre</thing><count>40~120</count><onMissing>Skip</onMissing></li>
@@ -493,8 +493,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Holz</defName>
-    <label>Holz</label>
+    <defName>CBF_MO_Goods_Wood</defName>
+    <label>wood goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_RawWood</thing><count>40~160</count><onMissing>Skip</onMissing></li>
@@ -503,8 +503,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Stein</defName>
-    <label>Steinbloecke</label>
+    <defName>CBF_MO_Goods_Stone</defName>
+    <label>stone blocks</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>1</weight><thing>BlocksLimestone</thing><count>40~160</count><onMissing>Skip</onMissing></li>
@@ -516,8 +516,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Textil</defName>
-    <label>Textilien und Leder</label>
+    <defName>CBF_MO_Goods_Textiles</defName>
+    <label>textiles and leather</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>1</weight><thing>Cloth</thing><count>40~80</count><onMissing>Skip</onMissing></li>
@@ -529,8 +529,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Nahkampf</defName>
-    <label>Nahkampfwaffen</label>
+    <defName>CBF_MO_Goods_Melee</defName>
+    <label>melee weapons</label>
     <rolls>1~1</rolls><rollChance>0.5</rollChance>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_Falchion</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
@@ -560,8 +560,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Stangen</defName>
-    <label>Stangenwaffen</label>
+    <defName>CBF_MO_Goods_Bars</defName>
+    <label>polearms</label>
     <rolls>1~1</rolls><rollChance>0.5</rollChance>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_MilitiaSpear</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
@@ -578,8 +578,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Bogen</defName>
-    <label>Boegen</label>
+    <defName>CBF_MO_Goods_Bows</defName>
+    <label>bows</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>1</weight><thing>Bow_Recurve</thing><count>1~2</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
@@ -590,8 +590,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Werkzeug</defName>
-    <label>Werkzeug</label>
+    <defName>CBF_MO_Goods_Tools</defName>
+    <label>tools goods</label>
     <rolls>1~1</rolls><rollChance>0.15</rollChance>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_MeleeWeapon_ArmingSword</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
@@ -603,8 +603,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Ruestung</defName>
-    <label>Ruestung und Prunkwaffen</label>
+    <defName>CBF_MO_Goods_Armor</defName>
+    <label>armor goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Apparel_FullPlateNamed</thing><count>1~1</count><quality>Awful~Good</quality><hitPoints>0.5~1.0</hitPoints><onMissing>Skip</onMissing></li>
@@ -620,8 +620,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Schema</defName>
-    <label>Schematiken</label>
+    <defName>CBF_MO_Goods_Schema</defName>
+    <label>schematics</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Schematic_MilitaryBlades</thing><count>1~1</count><onMissing>Skip</onMissing></li>
@@ -644,8 +644,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Monster</defName>
-    <label>Monsterteile</label>
+    <defName>CBF_MO_Goods_Monster</defName>
+    <label>monster parts</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_UnholdBones</thing><count>1~3</count><onMissing>Skip</onMissing></li>
@@ -663,8 +663,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Stroh</defName>
-    <label>Stroh</label>
+    <defName>CBF_MO_Goods_Straw</defName>
+    <label>straw goods</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_Straw</thing><count>20~80</count><onMissing>Skip</onMissing></li>
@@ -672,8 +672,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Komponent</defName>
-    <label>Bauteile</label>
+    <defName>CBF_MO_Goods_Components</defName>
+    <label>components</label>
     <rolls>1~1</rolls>
     <entries>
       <li MayRequire="DankPyon.Medieval.Overhaul"><weight>1</weight><thing>DankPyon_ComponentBasic</thing><count>10~40</count><onMissing>Skip</onMissing></li>
@@ -681,8 +681,8 @@
   </CustomBaseFramework.LootTableDef>
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Ware_Schatz</defName>
-    <label>Schatztruhe</label>
+    <defName>CBF_MO_Goods_Treasure</defName>
+    <label>treasure chest</label>
     <rolls>1~1</rolls>
     <entries>
       <li><weight>1</weight><thing>Gold</thing><count>1~5</count><onMissing>Skip</onMissing></li>

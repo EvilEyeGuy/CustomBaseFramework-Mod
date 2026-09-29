@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Ruestungsstaender_Weiss</defName>
+    <defName>CBF_MO_ArmorStand_White</defName>
     <label>armor stand</label>
     <description>A stand with a suit of armor and a helmet. Someone could make use of them.</description>
     <size>(1,1)</size>
@@ -20,18 +20,18 @@
       <Flammability>0.2</Flammability>
     </statBases>
     <modExtensions>
-      <li Class="CustomBaseFramework.BeutebehaelterExtension">
-        <leerGrafik>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <emptyGraphic>
           <texPath>Things/Building/CBF/SockelWeiss</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>(2,2)</drawSize>
-        </leerGrafik>
+        </emptyGraphic>
       </li>
     </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_MO_Ruestungsstaender_Rot</defName>
+    <defName>CBF_MO_ArmorStand_Red</defName>
     <label>ornate armor stand</label>
     <description>A stand draped in red, holding arms and armor of some renown.</description>
     <size>(1,1)</size>
@@ -50,12 +50,12 @@
       <Flammability>0.4</Flammability>
     </statBases>
     <modExtensions>
-      <li Class="CustomBaseFramework.BeutebehaelterExtension">
-        <leerGrafik>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <emptyGraphic>
           <texPath>Things/Building/Ruin/ArmorStatueNamedEmpty</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>(2,2)</drawSize>
-        </leerGrafik>
+        </emptyGraphic>
       </li>
     </modExtensions>
   </ThingDef>

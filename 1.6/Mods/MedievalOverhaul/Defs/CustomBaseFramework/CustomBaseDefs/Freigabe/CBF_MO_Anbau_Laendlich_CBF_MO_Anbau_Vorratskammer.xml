@@ -2,23 +2,22 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_MO_Anbau_Vorratskammer</defName>
-    <label>CBF_MO_Anbau_Vorratskammer</label>
+    <defName>CBF_MO_Annex_Pantry</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_MO_Anbau_Laendlich</li>
+      <li>CBF_MO_Annex_Rural</li>
     </categories>
     <style>CBF_Medieval</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>DankPyon_RawWood</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideoutShelfFilledFood</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
-      <li><symbol>r</symbol><anchor>Vorratsregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Vorratsregal_1x2</objects></li>
-      <li><symbol>u</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
+      <li><symbol>r</symbol><anchor>PantryShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_PantryShelf_1x2</objects></li>
+      <li><symbol>u</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
     </legend>
     <mask>

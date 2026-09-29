@@ -2,17 +2,16 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Kaserne_B</defName>
-    <label>CBF_Vanilla_Kaserne_B</label>
+    <defName>CBF_Vanilla_Barracks_B</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Kaserne</li>
+      <li>CBF_Vanilla_Barracks</li>
     </categories>
     <style>CBF_ModernVanilla</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>SpindA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Schlafstelle</lootTable></li>
-      <li><symbol>2</symbol><anchor>SpindB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>1</symbol><anchor>LockerA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Sleeping</lootTable></li>
+      <li><symbol>2</symbol><anchor>LockerB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Armory</lootTable></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>E</symbol><thing>EndTable</thing><stuff>Steel</stuff><rotation>South</rotation></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
@@ -24,8 +23,8 @@
       <li><symbol>b</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>e</symbol><terrain>MetalTile</terrain></li>
       <li><symbol>g</symbol><thing>Turret_MiniTurret</thing><stuff>Steel</stuff></li>
-      <li><symbol>k</symbol><anchor>SoldatenA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>2~3</pawnCount></li>
-      <li><symbol>m</symbol><anchor>Wache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>k</symbol><anchor>SoldiersA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>2~3</pawnCount></li>
+      <li><symbol>m</symbol><anchor>Guard</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>1~2</pawnCount></li>
       <li><symbol>s</symbol><thing>Sandbags</thing><stuff>Cloth</stuff></li>
     </legend>
     <mask>

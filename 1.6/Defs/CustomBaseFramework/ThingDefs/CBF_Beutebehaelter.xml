@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef Name="CBF_BeutebehaelterBase" Abstract="True">
-    <thingClass>CustomBaseFramework.Building_Beutebehaelter</thingClass>
+    <thingClass>CustomBaseFramework.Building_LootContainer</thingClass>
     <category>Building</category>
     <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -37,7 +37,7 @@
   </ThingDef>
 
   <ThingDef ParentName="CBF_BeutebehaelterBase">
-    <defName>CBF_Behaelter_Regal</defName>
+    <defName>CBF_Container_Shelf</defName>
     <label>stocked shelf</label>
     <description>A shelf someone left behind, still holding what its owner kept there. Once emptied, it is just a shelf again.</description>
     <size>(2,1)</size>
@@ -48,14 +48,14 @@
     </graphicData>
 
     <modExtensions>
-      <li Class="CustomBaseFramework.BeutebehaelterExtension">
-        <leerGebaeude>Shelf</leerGebaeude>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <emptyBuilding>Shelf</emptyBuilding>
       </li>
     </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_Behaelter_Kraeuterregal</defName>
+    <defName>CBF_Container_HerbShelf</defName>
     <label>herb shelf</label>
     <description>Bundles and jars line the boards. What is left of them is worth a look.</description>
     <size>(2,1)</size>
@@ -71,18 +71,18 @@
     <costStuffCount>65</costStuffCount>
 
     <modExtensions>
-      <li Class="CustomBaseFramework.BeutebehaelterExtension">
-        <leerGrafik>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <emptyGraphic>
           <texPath>Things/Building/Ruin/RuinedShelf</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>(2.75,2.75)</drawSize>
-        </leerGrafik>
+        </emptyGraphic>
       </li>
     </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_Behaelter_Ruinenkiste</defName>
+    <defName>CBF_Container_RuinCrate</defName>
     <label>ruined crate</label>
     <description>A crate that has stood here for a long time. Whatever is left inside falls apart with it.</description>
     <size>(1,1)</size>
@@ -98,14 +98,14 @@
     </statBases>
 
     <modExtensions>
-      <li Class="CustomBaseFramework.BeutebehaelterExtension">
-        <zerstoerenWennLeer>true</zerstoerenWennLeer>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <destroyWhenEmpty>true</destroyWhenEmpty>
       </li>
     </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_Behaelter_Truhe</defName>
+    <defName>CBF_Container_Chest</defName>
     <label>locked chest</label>
     <description>A chest that has not been opened in a long while. Something may have made a home of it.</description>
     <size>(1,1)</size>
@@ -129,12 +129,12 @@
     </statBases>
 
     <modExtensions>
-      <li Class="CustomBaseFramework.BeutebehaelterExtension">
-        <leerGrafik>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <emptyGraphic>
           <texPath>Things/Building/Ruin/RusticChestOpened</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>(2,2)</drawSize>
-        </leerGrafik>
+        </emptyGraphic>
       </li>
     </modExtensions>
   </ThingDef>

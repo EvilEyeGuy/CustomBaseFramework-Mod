@@ -2,17 +2,16 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Anfuehrerzelt_A</defName>
-    <label>CBF_Vanilla_Anfuehrerzelt_A</label>
+    <defName>CBF_Vanilla_LeaderTent_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Anfuehrerzelt</li>
+      <li>CBF_Vanilla_LeaderTent</li>
     </categories>
     <style>CBF_ModernVanilla</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>3</symbol><anchor>Waffen</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>4</symbol><anchor>Schatz</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Schatzkammer</lootTable></li>
+      <li><symbol>3</symbol><anchor>Weapons</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Armory</lootTable></li>
+      <li><symbol>4</symbol><anchor>Treasure</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Treasury</lootTable></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>Q</symbol><thing>Bed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>

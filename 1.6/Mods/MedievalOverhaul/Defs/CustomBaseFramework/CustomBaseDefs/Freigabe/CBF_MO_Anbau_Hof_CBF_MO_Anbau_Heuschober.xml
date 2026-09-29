@@ -2,17 +2,16 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_MO_Anbau_Heuschober</defName>
-    <label>CBF_MO_Anbau_Heuschober</label>
+    <defName>CBF_MO_Annex_Haystack</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_MO_Anbau_Hof</li>
+      <li>CBF_MO_Annex_Yard</li>
     </categories>
     <placement><weight>2</weight></placement>
     <style>CBF_Medieval</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_HayBale2x2c</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>

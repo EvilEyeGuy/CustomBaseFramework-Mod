@@ -3,15 +3,14 @@
 
   <CustomBaseFramework.PieceDef>
     <defName>CBF_Vanilla_Spacer_Bunker_B</defName>
-    <label>CBF_Vanilla_Spacer_Bunker_B</label>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_Vanilla_Spacer_Defence_Large</li>
     </categories>
     <style>CBF_ModernVanilla</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>Munition</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Waffenkammer</lootTable></li>
+      <li><symbol>1</symbol><anchor>Ammo</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Armory</lootTable></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>G</symbol><thing>ChemfuelPoweredGenerator</thing></li>
       <li><symbol>K</symbol><thing>Turret_Autocannon</thing></li>
@@ -20,7 +19,7 @@
       <li><symbol>N</symbol><thing>Turret_Sniper</thing></li>
       <li><symbol>P</symbol><thing>FirefoamPopper</thing></li>
       <li><symbol>T</symbol><thing>Wall</thing><stuff>Plasteel</stuff></li>
-      <li><symbol>U</symbol><anchor>Niederschild</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Schildgenerator_Nieder</objects></li>
+      <li><symbol>U</symbol><anchor>LowShield</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_ShieldGenerator_Low</objects></li>
       <li><symbol>Y</symbol><thing>Battery</thing><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>Autodoor</thing><stuff>Plasteel</stuff></li>
@@ -28,7 +27,7 @@
       <li><symbol>d</symbol><terrain>SterileTile</terrain></li>
       <li><symbol>f</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>g</symbol><thing>Turret_MiniTurret</thing><stuff>Plasteel</stuff></li>
-      <li><symbol>k</symbol><anchor>Besatzung</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>2~3</pawnCount></li>
+      <li><symbol>k</symbol><anchor>Crew</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>2~3</pawnCount></li>
       <li><symbol>o</symbol><terrain>Concrete</terrain></li>
       <li><symbol>p</symbol><terrain>PavedTile</terrain></li>
       <li><symbol>s</symbol><thing>Sandbags</thing><stuff>Synthread</stuff></li>

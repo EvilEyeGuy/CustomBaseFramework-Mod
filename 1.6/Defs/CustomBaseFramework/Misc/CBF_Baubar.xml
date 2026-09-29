@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <CustomBaseFramework.BaubarRegelDef>
-    <defName>CBF_Baubar_Deko</defName>
-    <rang>10</rang>
-    <kategorie>DankPyon_RusticDecoration</kategorie>
-    <kategorieLabel>Rustic Deco.</kategorieLabel>
-    <ordnung>505</ordnung>
-    <dateiEnthaelt>
+  <CustomBaseFramework.BuildableRuleDef>
+    <defName>CBF_Buildable_Decor</defName>
+    <rank>10</rank>
+    <category>DankPyon_RusticDecoration</category>
+    <categoryLabel>Rustic Deco.</categoryLabel>
+    <order>505</order>
+    <fileContains>
       <li>Buildings_Rug</li>
       <li>Buildings_Art</li>
       <li>Buildings_Banners</li>
       <li>Buildings_Decoration</li>
-    </dateiEnthaelt>
-  </CustomBaseFramework.BaubarRegelDef>
+    </fileContains>
+  </CustomBaseFramework.BuildableRuleDef>
 
-  <CustomBaseFramework.BaubarRegelDef>
-    <defName>CBF_Baubar_RuinenBeute</defName>
-    <rang>20</rang>
-    <kategorie>CBF_RuinLoot</kategorie>
-    <kategorieLabel>Ruin Loot</kategorieLabel>
-    <ordnung>-101</ordnung>
-    <dateiEnthaelt>
+  <CustomBaseFramework.BuildableRuleDef>
+    <defName>CBF_Buildable_RuinsLoot</defName>
+    <rank>20</rank>
+    <category>CBF_RuinLoot</category>
+    <categoryLabel>Ruin Loot</categoryLabel>
+    <order>-101</order>
+    <fileContains>
       <li>Buildings_RuinsLootable</li>
       <li>Buildings_Loot</li>
-    </dateiEnthaelt>
-  </CustomBaseFramework.BaubarRegelDef>
+    </fileContains>
+  </CustomBaseFramework.BuildableRuleDef>
 
-  <CustomBaseFramework.BaubarRegelDef>
-    <defName>CBF_Baubar_Ruinen</defName>
-    <rang>30</rang>
-    <kategorie>CBF_RuinFurniture</kategorie>
-    <kategorieLabel>Ruin Furn.</kategorieLabel>
-    <ordnung>-102</ordnung>
-    <dateiEnthaelt>
+  <CustomBaseFramework.BuildableRuleDef>
+    <defName>CBF_Buildable_Ruins</defName>
+    <rank>30</rank>
+    <category>CBF_RuinFurniture</category>
+    <categoryLabel>Ruin Furn.</categoryLabel>
+    <order>-102</order>
+    <fileContains>
       <li>Buildings_Ruins</li>
       <li>Buildings_Ruined</li>
-    </dateiEnthaelt>
-  </CustomBaseFramework.BaubarRegelDef>
+    </fileContains>
+  </CustomBaseFramework.BuildableRuleDef>
 
-  <CustomBaseFramework.BaubarRegelDef>
-    <defName>CBF_Baubar_Versteck</defName>
-    <rang>40</rang>
-    <kategorie>CBF_Hideout</kategorie>
-    <kategorieLabel>Hideout</kategorieLabel>
-    <ordnung>-103</ordnung>
-    <dateiEnthaelt>
+  <CustomBaseFramework.BuildableRuleDef>
+    <defName>CBF_Buildable_Stash</defName>
+    <rank>40</rank>
+    <category>CBF_Hideout</category>
+    <categoryLabel>Hideout</categoryLabel>
+    <order>-103</order>
+    <fileContains>
       <li>Hideout</li>
-    </dateiEnthaelt>
-  </CustomBaseFramework.BaubarRegelDef>
+    </fileContains>
+  </CustomBaseFramework.BuildableRuleDef>
 
 </Defs>

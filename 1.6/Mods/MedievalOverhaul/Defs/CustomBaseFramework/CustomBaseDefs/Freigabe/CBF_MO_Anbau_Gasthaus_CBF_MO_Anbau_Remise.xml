@@ -2,25 +2,24 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_MO_Anbau_Remise</defName>
-    <label>CBF_MO_Anbau_Remise</label>
+    <defName>CBF_MO_Annex_CoachHouse</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_MO_Anbau_Gasthaus</li>
+      <li>CBF_MO_Annex_Tavern</li>
     </categories>
     <placement><weight>2</weight></placement>
     <style>CBF_Medieval</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li><symbol>J</symbol><anchor>Erntewagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Erntewagen</objects></li>
+      <li><symbol>J</symbol><anchor>HarvestCart</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_HarvestCart</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutRusticBarrelStack</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
-      <li><symbol>f</symbol><anchor>Fassreihe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fassreihe</objects><lootTable>CBF_MO_Loot_Gasthaus</lootTable></li>
+      <li><symbol>f</symbol><anchor>BarrelRow</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_BarrelRow</objects><lootTable>CBF_MO_Loot_Tavern</lootTable></li>
     </legend>
     <mask>
       <li>######</li>

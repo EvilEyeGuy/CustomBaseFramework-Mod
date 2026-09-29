@@ -2,23 +2,22 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Lagerhalle_A</defName>
-    <label>CBF_Vanilla_Lagerhalle_A</label>
+    <defName>CBF_Vanilla_StorageHall_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Lagerhalle</li>
+      <li>CBF_Vanilla_StorageHall</li>
     </categories>
     <style>CBF_ModernVanilla</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>Regal1</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
-      <li><symbol>2</symbol><anchor>Regal2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
-      <li><symbol>3</symbol><anchor>Regal3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
-      <li><symbol>4</symbol><anchor>Regal4</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
-      <li><symbol>5</symbol><anchor>Regal5</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
-      <li><symbol>6</symbol><anchor>Regal6</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
-      <li><symbol>7</symbol><anchor>Regal7</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
-      <li><symbol>8</symbol><anchor>Regal8</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Lager</lootTable></li>
+      <li><symbol>1</symbol><anchor>Shelf1</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
+      <li><symbol>2</symbol><anchor>Shelf2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
+      <li><symbol>3</symbol><anchor>Shelf3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
+      <li><symbol>4</symbol><anchor>Shelf4</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
+      <li><symbol>5</symbol><anchor>Shelf5</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
+      <li><symbol>6</symbol><anchor>Shelf6</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
+      <li><symbol>7</symbol><anchor>Shelf7</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
+      <li><symbol>8</symbol><anchor>Shelf8</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>L</symbol><thing>StandingLamp</thing></li>
       <li><symbol>T</symbol><thing>Wall</thing><stuff>Steel</stuff></li>
@@ -29,9 +28,9 @@
       <li><symbol>e</symbol><terrain>MetalTile</terrain></li>
       <li><symbol>f</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>i</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>k</symbol><anchor>Lagerarbeiter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.5</chance></li>
+      <li><symbol>k</symbol><anchor>StoreWorker</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.5</chance></li>
       <li><symbol>t</symbol><thing>Table1x2c</thing><stuff>Steel</stuff><rotation>North</rotation></li>
-      <li><symbol>x</symbol><anchor>Buero</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Wohnhaus</lootTable></li>
+      <li><symbol>x</symbol><anchor>Office</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
     </legend>
     <mask>
       <li>############....</li>

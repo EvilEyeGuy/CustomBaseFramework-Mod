@@ -2,19 +2,18 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Maschinenbau_A</defName>
-    <label>CBF_Vanilla_Maschinenbau_A</label>
+    <defName>CBF_Vanilla_Machining_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Maschinenbau</li>
+      <li>CBF_Vanilla_Machining</li>
     </categories>
     <style>CBF_ModernVanilla</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>Bauteile</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Werkstatt</lootTable></li>
-      <li><symbol>2</symbol><anchor>Schmelze</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Werkstatt</lootTable></li>
-      <li><symbol>8</symbol><anchor>Meister</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
-      <li><symbol>9</symbol><anchor>Gehilfe</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>1</symbol><anchor>Components</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Workshop</lootTable></li>
+      <li><symbol>2</symbol><anchor>Smelter</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Workshop</lootTable></li>
+      <li><symbol>8</symbol><anchor>Master</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>9</symbol><anchor>Helper</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>E</symbol><thing>ToolCabinet</thing><rotation>South</rotation></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>

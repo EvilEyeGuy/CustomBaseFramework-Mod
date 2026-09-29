@@ -2,20 +2,19 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Kommandozentrale_A</defName>
-    <label>CBF_Vanilla_Kommandozentrale_A</label>
+    <defName>CBF_Vanilla_CommandCenter_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_Vanilla_Kommandozentrale</li>
+      <li>CBF_Vanilla_CommandCenter</li>
     </categories>
     <style>CBF_ModernVanilla</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>WaffenA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>2</symbol><anchor>WaffenB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>3</symbol><anchor>WaffenC</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>8</symbol><anchor>StabA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>2~3</pawnCount></li>
-      <li><symbol>9</symbol><anchor>StabB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>1</symbol><anchor>WeaponsA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Armory</lootTable></li>
+      <li><symbol>2</symbol><anchor>WeaponsB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Armory</lootTable></li>
+      <li><symbol>3</symbol><anchor>WeaponsC</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Armory</lootTable></li>
+      <li><symbol>8</symbol><anchor>StaffA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>2~3</pawnCount></li>
+      <li><symbol>9</symbol><anchor>StaffB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>1~2</pawnCount></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>C</symbol><thing>CommsConsole</thing><rotation>South</rotation></li>
       <li><symbol>E</symbol><thing>DiningChair</thing><stuff>Steel</stuff><rotation>East</rotation></li>

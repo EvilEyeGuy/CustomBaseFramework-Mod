@@ -129,43 +129,43 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>anbauChance</code></td>
+<td><code>annexChance</code></td>
 <td>number, optional</td>
 <td>none</td>
 <td>Chance per annex anchor of a house that an annex is built there, 0 to 1. Empty takes the parent category, then 0.6.</td>
 </tr>
 <tr>
-<td><code>anbauEckenWeg</code></td>
+<td><code>annexCornerPath</code></td>
 <td>true/false, optional</td>
 <td>none</td>
 <td>Where an annex of this category attaches, the two inner corner wall cells at the ends of the straight house wall become floor. Used for lean-to tents.</td>
 </tr>
 <tr>
-<td><code>anbauMax</code></td>
+<td><code>annexMax</code></td>
 <td>whole number, optional</td>
 <td>none</td>
 <td>At most this many annexes per house. Empty takes the parent category, then 2.</td>
 </tr>
 <tr>
-<td><code>anbauMehrfach</code></td>
+<td><code>annexMultiple</code></td>
 <td>true/false, optional</td>
 <td>none</td>
 <td>Set on the category of the annex. True lets the same annex piece attach to one house several times. Default false.</td>
 </tr>
 <tr>
-<td><code>anbauten</code></td>
+<td><code>annexes</code></td>
 <td>list of <a href="PieceCategoryDef.html">PieceCategoryDef</a></td>
 <td>none</td>
 <td>Categories whose pieces may attach as annexes at the Anbau anchors of houses in this category. Empty takes the list of the parent category.</td>
 </tr>
 <tr>
-<td><code>anbauUeberstand</code></td>
+<td><code>annexOverhang</code></td>
 <td>whole number, optional</td>
 <td>none</td>
-<td>With anbauVoll: how many cells the annex must reach past the house wall at each end. 0 means flush.</td>
+<td>With annexFill: how many cells the annex must reach past the house wall at each end. 0 means flush.</td>
 </tr>
 <tr>
-<td><code>anbauVoll</code></td>
+<td><code>annexFill</code></td>
 <td>true/false, optional</td>
 <td>none</td>
 <td>Set on the annex category. True: the annex only attaches where it covers the whole wall side of the house.</td>
@@ -177,7 +177,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How many buildings of this category may stand wall to wall in one block. Empty takes the planner default of 3, 0 means no limit, 1 keeps them apart.</td>
 </tr>
 <tr>
-<td><code>mauerzugang</code></td>
+<td><code>wallAccess</code></td>
 <td>true/false, optional</td>
 <td>none</td>
 <td>Pieces of this category are joined to the wall walkway. A door is set where the walkway passes them, and their open sides away from the wall are closed. Empty takes the parent category, then false.</td>
@@ -195,7 +195,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>The category this one inherits from. Fields left unset here come from it.</td>
 </tr>
 <tr>
-<td><code>verschmelzen</code></td>
+<td><code>merge</code></td>
 <td>true/false, optional</td>
 <td>none</td>
 <td>True joins buildings of this category wall to wall with neighbours of the same category, false never does. Empty joins them only where the plan is dense.</td>

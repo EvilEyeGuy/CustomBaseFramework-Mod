@@ -2,22 +2,21 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Friedhof_DA_C</defName>
-    <label>CBF_VFEM2_Friedhof_DA_C</label>
+    <defName>CBF_VFEM2_Graveyard_DA_C</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Friedhof</li>
+      <li>CBF_VFEM2_Graveyard</li>
     </categories>
-    <nurMitMod>Van.DACrypts</nurMitMod>
+    <onlyWithMod>Van.DACrypts</onlyWithMod>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li><symbol>A</symbol><thing>Grave</thing><rotation>North</rotation></li>
       <li><symbol>B</symbol><thing>FenceGate</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="Van.DACrypts"><symbol>C</symbol><thing>DA_WallTomb</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
       <li MayRequire="Van.DACrypts"><symbol>D</symbol><thing>DA_WallTomb</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
       <li MayRequire="Van.DACrypts"><symbol>E</symbol><thing>DA_WallTomb</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
-      <li><symbol>G</symbol><anchor>Grabbeigaben</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
+      <li><symbol>G</symbol><anchor>GraveGoods</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Treasure</lootTable></li>
       <li><symbol>H</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>Fence</thing><stuff>BlocksGranite</stuff></li>

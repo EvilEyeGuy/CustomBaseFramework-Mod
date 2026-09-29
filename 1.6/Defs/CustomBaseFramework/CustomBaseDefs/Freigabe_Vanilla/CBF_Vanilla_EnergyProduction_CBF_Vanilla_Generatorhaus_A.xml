@@ -2,19 +2,18 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_Vanilla_Generatorhaus_A</defName>
-    <label>CBF_Vanilla_Generatorhaus_A</label>
+    <defName>CBF_Vanilla_GeneratorHouse_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
       <li>CBF_Vanilla_EnergyProduction</li>
     </categories>
     <style>CBF_ModernVanilla</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>Brennstoff</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal</objects><lootTable>CBF_Vanilla_Loot_Generator</lootTable></li>
-      <li><symbol>2</symbol><anchor>Leitstand</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Regal_Klein</objects><lootTable>CBF_Vanilla_Loot_Generator</lootTable></li>
-      <li><symbol>8</symbol><anchor>Maschinist</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
-      <li><symbol>9</symbol><anchor>Heizer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>1</symbol><anchor>Fuel</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Generator</lootTable></li>
+      <li><symbol>2</symbol><anchor>ControlDesk</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Generator</lootTable></li>
+      <li><symbol>8</symbol><anchor>Machinist</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>9</symbol><anchor>Stoker</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>G</symbol><thing>ChemfuelPoweredGenerator</thing><rotation>South</rotation></li>

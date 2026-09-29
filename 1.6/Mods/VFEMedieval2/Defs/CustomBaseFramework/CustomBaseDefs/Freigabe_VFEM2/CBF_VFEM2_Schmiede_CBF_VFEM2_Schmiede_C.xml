@@ -2,14 +2,13 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Schmiede_C</defName>
-    <label>CBF_VFEM2_Schmiede_C</label>
+    <defName>CBF_VFEM2_Smithy_C</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Schmiede</li>
+      <li>CBF_VFEM2_Smithy</li>
     </categories>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li><symbol>A</symbol><terrain>VFEM2_Matting_Leather_Patch</terrain></li>
       <li><symbol>B</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
@@ -35,12 +34,12 @@
       <li><symbol>q</symbol><thing>TorchLamp</thing><rotation>South</rotation></li>
       <li><symbol>r</symbol><thing>WoodLog</thing><count>40</count></li>
       <li><symbol>s</symbol><thing>Steel</thing><count>25</count></li>
-      <li><symbol>t</symbol><anchor>Waffenregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Waffenkammer</lootTable></li>
-      <li><symbol>u</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schmiede</lootTable></li>
+      <li><symbol>t</symbol><anchor>WeaponRack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>u</symbol><anchor>Chest</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Smithy</lootTable></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
-      <li><symbol>x</symbol><anchor>Schmied</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>y</symbol><anchor>Erzfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schmiede</lootTable></li>
-      <li><symbol>z</symbol><anchor>Schmiedekiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schmiede</lootTable></li>
+      <li><symbol>x</symbol><anchor>Smith</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>y</symbol><anchor>OreBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Smithy</lootTable></li>
+      <li><symbol>z</symbol><anchor>SmithyCrate</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Smithy</lootTable></li>
     </legend>
     <mask>
       <li>#############</li>

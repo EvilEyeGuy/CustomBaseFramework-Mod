@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="CBF_BeutebehaelterBase" MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Container</defName>
+    <label>shelf test</label>
+    <description>A container waiting to be searched.</description>
+    <size>(2,1)</size>
+    <graphicData>
+      <texPath>Things/Building/Storage/Alchemy/Shelf_AssortedDrugsB</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+    </graphicData>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>65</costStuffCount>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+    </statBases>
+
+    <modExtensions>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <emptyBuilding>DankPyon_RuinedShelfEmpty</emptyBuilding>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

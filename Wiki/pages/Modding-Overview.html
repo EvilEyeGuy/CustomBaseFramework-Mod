@@ -227,7 +227,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h3 id="example">Example</h3>
 <p>From CBF's Medieval Overhaul folder, labels translated:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.WallProfileDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;WallProfile_Stein_3&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;WallProfile_Stone_3&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;stone wall, drawn&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">style</span>&gt;Standard&lt;/<span class="xt">style</span>&gt;
   &lt;<span class="xt">depth</span>&gt;3&lt;/<span class="xt">depth</span>&gt;
@@ -235,7 +235,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
     &lt;<span class="xt">li</span>&gt;TownWall&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;TownWall&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;TownWall&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;TownWall_Scharte&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;TownWall_Embrasure&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">segments</span>&gt;
   &lt;<span class="xt">tower</span>&gt;Tower&lt;/<span class="xt">tower</span>&gt;
   &lt;<span class="xt">gatehouse</span>&gt;CBF_MO_GateHouse_Small&lt;/<span class="xt">gatehouse</span>&gt;
@@ -333,7 +333,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>A <code>MaterialListDef</code> decides what the generator uses for the parts it builds itself: walls, doors, gates, fences, roads, bridges, roofs and so on. Every settlement type must name one in <code>materialList</code>. There is no hidden default: without a usable list the settlement type is not built. The editor has its own part for them, see <a href="Material-Lists.html">Material lists</a>.</p>
 <p>Trimmed from the shipped base list:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.MaterialListDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Materialliste_Basis&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MaterialList_Base&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;base&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">roles</span>&gt;
     &lt;<span class="xt">li</span>&gt;
@@ -357,17 +357,17 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.MaterialListDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;MyMod_Materials&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;my mod&lt;/<span class="xt">label</span>&gt;
-  &lt;<span class="xt">parent</span>&gt;CBF_Materialliste_Basis&lt;/<span class="xt">parent</span>&gt;
+  &lt;<span class="xt">parent</span>&gt;CBF_MaterialList_Base&lt;/<span class="xt">parent</span>&gt;
   &lt;<span class="xt">roles</span>&gt;
     &lt;<span class="xt">li</span>&gt;
       &lt;<span class="xt">role</span>&gt;DOOR&lt;/<span class="xt">role</span>&gt;
-      &lt;<span class="xt">fuer</span>&gt;&lt;<span class="xt">li</span>&gt;Wall_Pallisade&lt;/<span class="xt">li</span>&gt;&lt;<span class="xt">li</span>&gt;CBF_MO_Palisadenturm_A&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">fuer</span>&gt;
+      &lt;<span class="xt">forPieces</span>&gt;&lt;<span class="xt">li</span>&gt;Wall_Pallisade&lt;/<span class="xt">li</span>&gt;&lt;<span class="xt">li</span>&gt;CBF_MO_PalisadeTower_A&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">forPieces</span>&gt;
       &lt;<span class="xt">chain</span>&gt;&lt;<span class="xt">li</span>&gt;DankPyon_RusticDoor&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">chain</span>&gt;
       &lt;<span class="xt">stuffChain</span>&gt;&lt;<span class="xt">li</span>&gt;WoodLog&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">stuffChain</span>&gt;
     &lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;
       &lt;<span class="xt">role</span>&gt;FLOOR_ROAD&lt;/<span class="xt">role</span>&gt;
-      &lt;<span class="xt">stadtteil</span>&gt;Umland&lt;/<span class="xt">stadtteil</span>&gt;
+      &lt;<span class="xt">district</span>&gt;Rural&lt;/<span class="xt">district</span>&gt;
       &lt;<span class="xt">terrainChain</span>&gt;&lt;<span class="xt">li</span>&gt;PackedDirt&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">terrainChain</span>&gt;
     &lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">roles</span>&gt;
@@ -398,12 +398,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>Critical</code> makes the whole list unusable when this role finds nothing. Default <code>Optional</code>.</td>
 </tr>
 <tr>
-<td><code>fuer</code></td>
+<td><code>forPieces</code></td>
 <td>Pieces or categories this entry is meant for.</td>
 </tr>
 <tr>
-<td><code>stadtteil</code></td>
-<td>The ward this entry is meant for: <code>Stadt</code>, <code>Burg</code>, <code>Vorstadt</code> or <code>Umland</code>.</td>
+<td><code>district</code></td>
+<td>The ward this entry is meant for: <code>Town</code>, <code>Castle</code>, <code>Suburb</code> or <code>Rural</code>.</td>
 </tr>
 <tr>
 <td><code>chain</code></td>
@@ -431,24 +431,24 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>When several entries of the same role fit a cell, the most specific wins: a <code>fuer</code> match beats a <code>stadtteil</code> match, which beats an entry without conditions. The cell's ward and the wall, tower and gatehouse pieces of that ward decide what matches.</p>
+<p>When several entries of the same role fit a cell, the most specific wins: a <code>forPieces</code> match beats a <code>district</code> match, which beats an entry without conditions. The cell's ward and the wall, tower and gatehouse pieces of that ward decide what matches.</p>
 <h2 id="ruins">Ruins</h2>
-<p>A <code>RuinDef</code> turns a generated settlement into a raided or destroyed one: breaches, burnt rooms, corpses, reduced loot. CBF uses ruins for quest sites. A ruin reaches a map either from a quest node or from a <code>CustomBaseFramework.CBFOrtExtension</code> on a SitePartDef. See <a href="Modding-Quests.html">Modding-Quests</a>.</p>
-<p>CBF's shipped ruin inherits from the abstract <code>CBF_Ruin_Basis</code>, which only sets <code>besatzung</code> to <code>Besatzer</code>. Some fields are left out here:</p>
+<p>A <code>RuinDef</code> turns a generated settlement into a raided or destroyed one: breaches, burnt rooms, corpses, reduced loot. CBF uses ruins for quest sites. A ruin reaches a map either from a quest node or from a <code>CustomBaseFramework.CBFSiteExtension</code> on a SitePartDef. See <a href="Modding-Quests.html">Modding-Quests</a>.</p>
+<p>CBF's shipped ruin inherits from the abstract <code>CBF_Ruin_Basis</code>, which only sets <code>occupation</code> to <code>Occupier</code>. Some fields are left out here:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.RuinDef</span> <span class="xa">ParentName</span>=<span class="xw">&quot;CBF_Ruin_Basis&quot;</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Ruin_Ueberfallen&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Ruin_Raided&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;raided&lt;/<span class="xt">label</span>&gt;
-  &lt;<span class="xt">wandAbriss</span>&gt;0.15&lt;/<span class="xt">wandAbriss</span>&gt;
-  &lt;<span class="xt">haeufung</span>&gt;0.7&lt;/<span class="xt">haeufung</span>&gt;
-  &lt;<span class="xt">breschen</span>&gt;1~3&lt;/<span class="xt">breschen</span>&gt;
-  &lt;<span class="xt">torZerstoert</span>&gt;0.5&lt;/<span class="xt">torZerstoert</span>&gt;
-  &lt;<span class="xt">gebaeudeSchaden</span>&gt;0.1~0.5&lt;/<span class="xt">gebaeudeSchaden</span>&gt;
-  &lt;<span class="xt">feuer</span>&gt;0~3&lt;/<span class="xt">feuer</span>&gt;
-  &lt;<span class="xt">beuteFaktor</span>&gt;0.4&lt;/<span class="xt">beuteFaktor</span>&gt;
-  &lt;<span class="xt">beuteBeiBesatzern</span>&gt;0.5&lt;/<span class="xt">beuteBeiBesatzern</span>&gt;
-  &lt;<span class="xt">leichenBewohner</span>&gt;4~10&lt;/<span class="xt">leichenBewohner</span>&gt;
-  &lt;<span class="xt">leichenAngreifer</span>&gt;2~6&lt;/<span class="xt">leichenAngreifer</span>&gt;
-  &lt;<span class="xt">gefangene</span>&gt;0~3&lt;/<span class="xt">gefangene</span>&gt;
+  &lt;<span class="xt">wallDemolition</span>&gt;0.15&lt;/<span class="xt">wallDemolition</span>&gt;
+  &lt;<span class="xt">clustering</span>&gt;0.7&lt;/<span class="xt">clustering</span>&gt;
+  &lt;<span class="xt">breaches</span>&gt;1~3&lt;/<span class="xt">breaches</span>&gt;
+  &lt;<span class="xt">gateDestroyed</span>&gt;0.5&lt;/<span class="xt">gateDestroyed</span>&gt;
+  &lt;<span class="xt">buildingDamage</span>&gt;0.1~0.5&lt;/<span class="xt">buildingDamage</span>&gt;
+  &lt;<span class="xt">fires</span>&gt;0~3&lt;/<span class="xt">fires</span>&gt;
+  &lt;<span class="xt">lootFactor</span>&gt;0.4&lt;/<span class="xt">lootFactor</span>&gt;
+  &lt;<span class="xt">lootWithOccupiers</span>&gt;0.5&lt;/<span class="xt">lootWithOccupiers</span>&gt;
+  &lt;<span class="xt">residentCorpses</span>&gt;4~10&lt;/<span class="xt">residentCorpses</span>&gt;
+  &lt;<span class="xt">attackerCorpses</span>&gt;2~6&lt;/<span class="xt">attackerCorpses</span>&gt;
+  &lt;<span class="xt">prisoners</span>&gt;0~3&lt;/<span class="xt">prisoners</span>&gt;
 &lt;/<span class="xt">CustomBaseFramework.RuinDef</span>&gt;
 </code></pre>
 <table>
@@ -460,97 +460,97 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>angriffsseite</code></td>
+<td><code>attackSide</code></td>
 <td>Side the attack came from. Random if not set, unless the quest sets one.</td>
 </tr>
 <tr>
-<td><code>haeufung</code></td>
+<td><code>clustering</code></td>
 <td>How strongly the damage gathers towards the attack side. <code>0</code> spreads it evenly. Default <code>0.6</code>.</td>
 </tr>
 <tr>
-<td><code>breschen</code></td>
+<td><code>breaches</code></td>
 <td>Number of breaches in the wall.</td>
 </tr>
 <tr>
-<td><code>torZerstoert</code></td>
+<td><code>gateDestroyed</code></td>
 <td>Chance per gate to be destroyed.</td>
 </tr>
 <tr>
-<td><code>wandAbriss</code></td>
+<td><code>wallDemolition</code></td>
 <td>Chance scale for torn down walls.</td>
 </tr>
 <tr>
-<td><code>gebaeudeSchaden</code></td>
+<td><code>buildingDamage</code></td>
 <td>Share of hit points buildings lose.</td>
 </tr>
 <tr>
-<td><code>geschuetzeZerstoert</code></td>
+<td><code>turretsDestroyed</code></td>
 <td>Chance scale for destroyed turrets.</td>
 </tr>
 <tr>
-<td><code>brandstellen</code></td>
+<td><code>burnMarks</code></td>
 <td>Chance scale for burnt out rooms.</td>
 </tr>
 <tr>
-<td><code>feuer</code></td>
+<td><code>fires</code></td>
 <td>Number of fires still burning.</td>
 </tr>
 <tr>
-<td><code>schutt</code></td>
+<td><code>rubble</code></td>
 <td>Chance scale for rubble.</td>
 </tr>
 <tr>
-<td><code>felderVerwuestet</code></td>
+<td><code>fieldsRavaged</code></td>
 <td>Chance per crop plant to be destroyed.</td>
 </tr>
 <tr>
-<td><code>viehWeg</code></td>
+<td><code>livestockGone</code></td>
 <td>Chance per animal to be gone.</td>
 </tr>
 <tr>
-<td><code>beuteFaktor</code></td>
+<td><code>lootFactor</code></td>
 <td>Multiplier on the loot left in the settlement. Default <code>1</code>.</td>
 </tr>
 <tr>
-<td><code>beuteBeiBesatzern</code></td>
+<td><code>lootWithOccupiers</code></td>
 <td>Share of the loot moved to the occupiers.</td>
 </tr>
 <tr>
-<td><code>leichenBewohner</code>, <code>leichenAngreifer</code></td>
+<td><code>residentCorpses</code>, <code>attackerCorpses</code></td>
 <td>Corpses of residents and attackers.</td>
 </tr>
 <tr>
-<td><code>verwesungTage</code></td>
+<td><code>rotDays</code></td>
 <td>Age of the corpses in days.</td>
 </tr>
 <tr>
-<td><code>gefangene</code></td>
+<td><code>prisoners</code></td>
 <td>Residents held prisoner by the occupiers.</td>
 </tr>
 <tr>
-<td><code>besatzung</code></td>
-<td>Who holds the site: <code>Keine</code>, <code>Bauherr</code> (the builders) or <code>Besatzer</code> (occupiers). Default <code>Besatzer</code>. Prisoners only exist with <code>Besatzer</code>.</td>
+<td><code>occupation</code></td>
+<td>Who holds the site: <code>None</code>, <code>Builder</code> (the builders) or <code>Occupier</code> (occupiers). Default <code>Occupier</code>. Prisoners only exist with <code>Occupier</code>.</td>
 </tr>
 <tr>
-<td><code>besatzungAnteil</code></td>
+<td><code>occupationChance</code></td>
 <td>Multiplier on the number of defenders. Default <code>1</code>.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="map-steps">Map steps</h2>
-<p><code>KartenschritteDef</code> lists vanilla or mod map generation steps that CBF skips on maps it builds itself. Only the def named <code>CBF_Kartenschritte</code> is read. To add steps, patch that def instead of writing a new one.</p>
-<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.KartenschritteDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Kartenschritte&lt;/<span class="xt">defName</span>&gt;
-  &lt;<span class="xt">unterdruecken</span>&gt;
+<p><code>MapStepsDef</code> lists vanilla or mod map generation steps that CBF skips on maps it builds itself. Only the def named <code>CBF_MapSteps</code> is read. To add steps, patch that def instead of writing a new one.</p>
+<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.MapStepsDef</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MapSteps&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">suppress</span>&gt;
     &lt;<span class="xt">li</span>&gt;Roads&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;ScatterRuinsSimple&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;AncientTurret&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;DankPyon_BattlefieldRemains&lt;/<span class="xt">li</span>&gt;
-  &lt;/<span class="xt">unterdruecken</span>&gt;
-  &lt;<span class="xt">nurAbTechstufe</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">schritt</span>&gt;SettlementPower&lt;/<span class="xt">schritt</span>&gt;&lt;<span class="xt">techstufe</span>&gt;Industrial&lt;/<span class="xt">techstufe</span>&gt;&lt;/<span class="xt">li</span>&gt;
-  &lt;/<span class="xt">nurAbTechstufe</span>&gt;
-&lt;/<span class="xt">CustomBaseFramework.KartenschritteDef</span>&gt;
+  &lt;/<span class="xt">suppress</span>&gt;
+  &lt;<span class="xt">fromTechLevel</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">step</span>&gt;SettlementPower&lt;/<span class="xt">step</span>&gt;&lt;<span class="xt">techLevel</span>&gt;Industrial&lt;/<span class="xt">techLevel</span>&gt;&lt;/<span class="xt">li</span>&gt;
+  &lt;/<span class="xt">fromTechLevel</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.MapStepsDef</span>&gt;
 </code></pre>
 <table>
 <thead>
@@ -561,12 +561,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>unterdruecken</code></td>
+<td><code>suppress</code></td>
 <td>GenStepDef names skipped on CBF maps.</td>
 </tr>
 <tr>
-<td><code>nurAbTechstufe</code></td>
-<td>Steps that only run when the map's faction has at least this tech level. Each entry has <code>schritt</code> (GenStepDef name) and <code>techstufe</code> (default <code>Industrial</code>).</td>
+<td><code>fromTechLevel</code></td>
+<td>Steps that only run when the map's faction has at least this tech level. Each entry has <code>step</code> (GenStepDef name) and <code>techLevel</code> (default <code>Industrial</code>).</td>
 </tr>
 </tbody>
 </table>
@@ -574,7 +574,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>A patch from your own mod:</p>
 <pre><code class="language-xml">&lt;<span class="xt">Patch</span>&gt;
   &lt;<span class="xt">Operation</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationAdd&quot;</span>&gt;
-    &lt;<span class="xt">xpath</span>&gt;/Defs/CustomBaseFramework.KartenschritteDef[defName=&quot;CBF_Kartenschritte&quot;]/unterdruecken&lt;/<span class="xt">xpath</span>&gt;
+    &lt;<span class="xt">xpath</span>&gt;/Defs/CustomBaseFramework.MapStepsDef[defName=&quot;CBF_MapSteps&quot;]/unterdruecken&lt;/<span class="xt">xpath</span>&gt;
     &lt;<span class="xt">value</span>&gt;
       &lt;<span class="xt">li</span>&gt;MyMod_ScatterCamps&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">value</span>&gt;
@@ -582,18 +582,18 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 &lt;/<span class="xt">Patch</span>&gt;
 </code></pre>
 <h2 id="buildability-rules">Buildability rules</h2>
-<p><code>BaubarRegelDef</code> is only read when the mod setting <strong>Make everything buildable</strong> is on. See <a href="Mod-Settings.html">Mod settings</a>. The setting gives every building without an architect category one. The rules decide which category.</p>
-<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.BaubarRegelDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Baubar_Ruinen&lt;/<span class="xt">defName</span>&gt;
-  &lt;<span class="xt">rang</span>&gt;30&lt;/<span class="xt">rang</span>&gt;
-  &lt;<span class="xt">kategorie</span>&gt;CBF_RuinFurniture&lt;/<span class="xt">kategorie</span>&gt;
-  &lt;<span class="xt">kategorieLabel</span>&gt;Ruin Furn.&lt;/<span class="xt">kategorieLabel</span>&gt;
-  &lt;<span class="xt">ordnung</span>&gt;-102&lt;/<span class="xt">ordnung</span>&gt;
-  &lt;<span class="xt">dateiEnthaelt</span>&gt;
+<p><code>BuildableRuleDef</code> is only read when the mod setting <strong>Make everything buildable</strong> is on. See <a href="Mod-Settings.html">Mod settings</a>. The setting gives every building without an architect category one. The rules decide which category.</p>
+<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.BuildableRuleDef</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_Buildable_Ruins&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">rank</span>&gt;30&lt;/<span class="xt">rank</span>&gt;
+  &lt;<span class="xt">category</span>&gt;CBF_RuinFurniture&lt;/<span class="xt">category</span>&gt;
+  &lt;<span class="xt">categoryLabel</span>&gt;Ruin Furn.&lt;/<span class="xt">categoryLabel</span>&gt;
+  &lt;<span class="xt">order</span>&gt;-102&lt;/<span class="xt">order</span>&gt;
+  &lt;<span class="xt">fileContains</span>&gt;
     &lt;<span class="xt">li</span>&gt;Buildings_Ruins&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;Buildings_Ruined&lt;/<span class="xt">li</span>&gt;
-  &lt;/<span class="xt">dateiEnthaelt</span>&gt;
-&lt;/<span class="xt">CustomBaseFramework.BaubarRegelDef</span>&gt;
+  &lt;/<span class="xt">fileContains</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.BuildableRuleDef</span>&gt;
 </code></pre>
 <table>
 <thead>
@@ -604,35 +604,35 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>dateiEnthaelt</code></td>
+<td><code>fileContains</code></td>
 <td>Parts of the XML file name the building was defined in. Case is ignored.</td>
 </tr>
 <tr>
-<td><code>kategorie</code></td>
+<td><code>category</code></td>
 <td>DesignationCategoryDef to put matching buildings in. Created if it does not exist.</td>
 </tr>
 <tr>
-<td><code>kategorieLabel</code></td>
+<td><code>categoryLabel</code></td>
 <td>Label of the category when CBF creates it.</td>
 </tr>
 <tr>
-<td><code>ordnung</code></td>
+<td><code>order</code></td>
 <td>Order of the created category in the architect menu.</td>
 </tr>
 <tr>
-<td><code>rang</code></td>
-<td>Rules are checked by <code>rang</code>, lowest first. The first match wins.</td>
+<td><code>rank</code></td>
+<td>Rules are checked by <code>rank</code>, lowest first. The first match wins.</td>
 </tr>
 </tbody>
 </table>
 <p>Buildings that match no rule go into the category <code>CBF_Baubar</code> (label "CBF extra"). Buildings without build cost are skipped.</p>
 <h2 id="help-texts">Help texts</h2>
-<p><code>HilfeDef</code> holds the texts behind the help buttons in the editor. Each button asks for a fixed defName, for example <code>CBF_Help_Wards</code>.</p>
-<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.HilfeDef</span>&gt;
+<p><code>HelpDef</code> holds the texts behind the help buttons in the editor. Each button asks for a fixed defName, for example <code>CBF_Help_Wards</code>.</p>
+<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.HelpDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;CBF_Help_Walls&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;Walls&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">description</span>&gt;The wall pieces this ward is built from.&lt;/<span class="xt">description</span>&gt;
-&lt;/<span class="xt">CustomBaseFramework.HilfeDef</span>&gt;
+&lt;/<span class="xt">CustomBaseFramework.HelpDef</span>&gt;
 </code></pre>
 <table>
 <thead>
@@ -647,11 +647,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Title and text of the help window.</td>
 </tr>
 <tr>
-<td><code>bilder</code></td>
+<td><code>images</code></td>
 <td>Texture paths of images shown in the window.</td>
 </tr>
 <tr>
-<td><code>bildbreite</code></td>
+<td><code>imageWidth</code></td>
 <td>Maximum image width. <code>0</code> uses the window width.</td>
 </tr>
 </tbody>
@@ -673,9 +673,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>For each faction, CBF collects the settlement types in two groups:</p>
 <ol>
 <li><strong>Own types.</strong> <code>factionTags</code> contains the faction's defName or its <code>categoryTag</code>.</li>
-<li><strong>General types.</strong> <code>fuerAlleFraktionen</code> is <code>true</code> and <code>techLevels</code> contains the faction's tech level.</li>
+<li><strong>General types.</strong> <code>forAllFactions</code> is <code>true</code> and <code>techLevels</code> contains the faction's tech level.</li>
 </ol>
-<p>Types that list the faction in <code>excludeFactions</code> are skipped. If the faction has any own types, only those are used. General types are only used for factions without own types. CBF's modern town, for example, sets <code>fuerAlleFraktionen</code> and the tech levels <code>Industrial</code>, <code>Spacer</code> and <code>Ultra</code>, so every such faction without own types gets it. A faction with no matching type keeps its vanilla base. Details of the plan fields are on <a href="Modding-Settlements.html">Modding-Settlements</a>.</p>
+<p>Types that list the faction in <code>excludeFactions</code> are skipped. If the faction has any own types, only those are used. General types are only used for factions without own types. CBF's modern town, for example, sets <code>forAllFactions</code> and the tech levels <code>Industrial</code>, <code>Spacer</code> and <code>Ultra</code>, so every such faction without own types gets it. A faction with no matching type keeps its vanilla base. Details of the plan fields are on <a href="Modding-Settlements.html">Modding-Settlements</a>.</p>
 <h2 id="world-icons_1">World icons</h2>
 <p>A settlement type sets its world map icon with <code>worldTexture</code>:</p>
 <pre><code class="language-xml">&lt;<span class="xt">worldTexture</span>&gt;World/WorldObjects/CBF/CBF_ModernTown&lt;/<span class="xt">worldTexture</span>&gt;

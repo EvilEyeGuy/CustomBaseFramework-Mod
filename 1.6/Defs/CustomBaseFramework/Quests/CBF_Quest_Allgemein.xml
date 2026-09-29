@@ -2,13 +2,13 @@
 <Defs>
 
   <HistoryEventDef>
-    <defName>CBF_Quest_OrtsgutGenommen</defName>
+    <defName>CBF_Quest_SiteGoodsTaken</defName>
     <label>took goods from their settlement</label>
   </HistoryEventDef>
 
   <LetterDef ParentName="CustomChoiceLetterBase">
-    <defName>CBF_Quest_Wahl</defName>
-    <letterClass>CustomBaseFramework.ChoiceLetter_CBFWahl</letterClass>
+    <defName>CBF_Quest_Choice</defName>
+    <letterClass>CustomBaseFramework.ChoiceLetter_CBFChoice</letterClass>
   </LetterDef>
 
 </Defs>

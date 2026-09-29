@@ -2,8 +2,8 @@
 <Defs>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Adelshaus</defName>
-    <label>Adelshaus</label>
+    <defName>CBF_VFEM2_NobleHouse</defName>
+    <label>noble house</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -11,8 +11,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Apotheke</defName>
-    <label>Apotheke</label><parent>CBF_VFEM2_Werkstatt</parent>
+    <defName>CBF_VFEM2_Apothecary</defName>
+    <label>apothecary</label><parent>CBF_VFEM2_Workshop</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -20,8 +20,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Baeckerei</defName>
-    <label>Bäckerei</label><parent>CBF_VFEM2_Werkstatt</parent>
+    <defName>CBF_VFEM2_Bakery</defName>
+    <label>bakery</label><parent>CBF_VFEM2_Workshop</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -29,8 +29,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Bauernhof</defName>
-    <label>Bauernhof</label>
+    <defName>CBF_VFEM2_Farmstead</defName>
+    <label>farmstead</label>
     <zones>
       <li>Outside</li>
     </zones>
@@ -38,8 +38,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Bergfried</defName>
-    <label>Bergfried</label>
+    <defName>CBF_VFEM2_Keep</defName>
+    <label>keep</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -47,8 +47,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Beuteplatz</defName>
-    <label>CBF_VFEM2_Beuteplatz</label>
+    <defName>CBF_VFEM2_LootSpot</defName>
+    <label>loot spot</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -56,8 +56,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Bootsschuppen</defName>
-    <label>CBF_VFEM2_Bootsschuppen</label>
+    <defName>CBF_VFEM2_Boathouse</defName>
+    <label>boathouse</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -65,8 +65,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Buergerhaus</defName>
-    <label>Bürgerhaus</label>
+    <defName>CBF_VFEM2_BurgherHouse</defName>
+    <label>burgher house</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -74,8 +74,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Denkmal</defName>
-    <label>Denkmal</label>
+    <defName>CBF_VFEM2_Monument</defName>
+    <label>monument</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -83,8 +83,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Festungsbergfried</defName>
-    <label>Festungsbergfried</label>
+    <defName>CBF_VFEM2_FortressKeep</defName>
+    <label>fortress keep</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -92,8 +92,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Festungstor</defName>
-    <label>Festungstor</label>
+    <defName>CBF_VFEM2_FortressGate</defName>
+    <label>fortress gate</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -101,8 +101,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Festungsturm</defName>
-    <label>Festungsturm</label>
+    <defName>CBF_VFEM2_FortressTower</defName>
+    <label>fortress tower</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -110,8 +110,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Fischerhuette</defName>
-    <label>CBF_VFEM2_Fischerhuette</label>
+    <defName>CBF_VFEM2_FisherHut</defName>
+    <label>fisher hut</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -119,8 +119,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Friedhof</defName>
-    <label>Friedhof</label>
+    <defName>CBF_VFEM2_Graveyard</defName>
+    <label>graveyard</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -128,8 +128,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Gasthaus</defName>
-    <label>Gasthaus</label>
+    <defName>CBF_VFEM2_Tavern</defName>
+    <label>tavern</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -137,8 +137,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Gerberei</defName>
-    <label>Gerberei</label><parent>CBF_VFEM2_Werkstatt</parent>
+    <defName>CBF_VFEM2_Tannery</defName>
+    <label>tannery</label><parent>CBF_VFEM2_Workshop</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -146,8 +146,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Gilde</defName>
-    <label>Gildenhaus</label>
+    <defName>CBF_VFEM2_Guild</defName>
+    <label>guild</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -155,8 +155,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Hafenlager</defName>
-    <label>CBF_VFEM2_Hafenlager</label>
+    <defName>CBF_VFEM2_HarborStore</defName>
+    <label>harbor store</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -164,8 +164,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Hafenmeister</defName>
-    <label>CBF_VFEM2_Hafenmeister</label>
+    <defName>CBF_VFEM2_Harbormaster</defName>
+    <label>harbormaster</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -173,8 +173,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Hauptzelt</defName>
-    <label>CBF_VFEM2_Hauptzelt</label>
+    <defName>CBF_VFEM2_MainTent</defName>
+    <label>main tent</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -182,8 +182,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Huette</defName>
-    <label>Hütte</label>
+    <defName>CBF_VFEM2_Hut</defName>
+    <label>hut</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -191,8 +191,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Jagdhuette</defName>
-    <label>Jagdhütte</label>
+    <defName>CBF_VFEM2_HuntingLodge</defName>
+    <label>hunting lodge</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -200,8 +200,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Kaserne</defName>
-    <label>Kaserne</label>
+    <defName>CBF_VFEM2_Barracks</defName>
+    <label>barracks</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -209,8 +209,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Katapultstellung</defName>
-    <label>Katapultstellung</label>
+    <defName>CBF_VFEM2_CatapultEmplacement</defName>
+    <label>catapult emplacement</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -218,8 +218,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Kirche</defName>
-    <label>Kirche</label>
+    <defName>CBF_VFEM2_Church</defName>
+    <label>church</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -227,8 +227,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Kochhuette</defName>
-    <label>CBF_VFEM2_Kochhuette</label>
+    <defName>CBF_VFEM2_CookHut</defName>
+    <label>cook hut</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -236,8 +236,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Lagerfeuer</defName>
-    <label>CBF_VFEM2_Lagerfeuer</label>
+    <defName>CBF_VFEM2_Campfire</defName>
+    <label>campfire</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -245,8 +245,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Lagerhaus</defName>
-    <label>Lagerhaus</label>
+    <defName>CBF_VFEM2_Warehouse</defName>
+    <label>warehouse</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -254,8 +254,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Lueckenhof</defName>
-    <label>Lückenhof</label>
+    <defName>CBF_VFEM2_GapYard</defName>
+    <label>gap yard</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -263,8 +263,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Marktplatz</defName>
-    <label>Marktplatz</label>
+    <defName>CBF_VFEM2_MarketSquare</defName>
+    <label>market square</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -272,8 +272,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Mauerzugang</defName>
-    <label>Mauerzugang</label>
+    <defName>CBF_VFEM2_WallAccess</defName>
+    <label>wall access</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -281,8 +281,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Metzgerei</defName>
-    <label>Metzgerei</label><parent>CBF_VFEM2_Werkstatt</parent>
+    <defName>CBF_VFEM2_Butchery</defName>
+    <label>butchery</label><parent>CBF_VFEM2_Workshop</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -291,7 +291,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_VFEM2_MilitaryWallAttachment</defName>
-    <label>Militärbau an der Mauer</label>
+    <label>military wall attachment</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -299,8 +299,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Minenhuette</defName>
-    <label>CBF_VFEM2_Minenhuette</label>
+    <defName>CBF_VFEM2_MineHut</defName>
+    <label>mine hut</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -308,8 +308,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Palisadentorhaus</defName>
-    <label>Palisadentorhaus</label>
+    <defName>CBF_VFEM2_PalisadeGatehouse</defName>
+    <label>palisade gatehouse</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -317,8 +317,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Palisadenturm</defName>
-    <label>Palisadenturm</label>
+    <defName>CBF_VFEM2_PalisadeTower</defName>
+    <label>palisade tower</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -326,8 +326,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Posten_Baracke</defName>
-    <label>CBF_VFEM2_Posten_Baracke</label>
+    <defName>CBF_VFEM2_Outpost_Bunkhouse</defName>
+    <label>bunkhouse outpost</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -335,8 +335,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Posten_Bibliothek</defName>
-    <label>CBF_VFEM2_Posten_Bibliothek</label>
+    <defName>CBF_VFEM2_Outpost_Library</defName>
+    <label>library outpost</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -344,8 +344,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Posten_Gaestehaus</defName>
-    <label>CBF_VFEM2_Posten_Gaestehaus</label>
+    <defName>CBF_VFEM2_Outpost_GuestHouse</defName>
+    <label>guest house outpost</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -353,8 +353,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Posten_Gerberei</defName>
-    <label>CBF_VFEM2_Posten_Gerberei</label>
+    <defName>CBF_VFEM2_Outpost_Tannery</defName>
+    <label>tannery outpost</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -362,8 +362,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Posten_Geschuetzstellung</defName>
-    <label>CBF_VFEM2_Posten_Geschuetzstellung</label>
+    <defName>CBF_VFEM2_Outpost_GunEmplacement</defName>
+    <label>gun emplacement outpost</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -371,8 +371,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Posten_Marktstand</defName>
-    <label>CBF_VFEM2_Posten_Marktstand</label>
+    <defName>CBF_VFEM2_Outpost_MarketStall</defName>
+    <label>market stall outpost</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -380,8 +380,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Posten_Sammelplatz</defName>
-    <label>CBF_VFEM2_Posten_Sammelplatz</label>
+    <defName>CBF_VFEM2_Outpost_GatheringSpot</defName>
+    <label>gathering spot outpost</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -389,8 +389,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Posten_Schlachthaus</defName>
-    <label>CBF_VFEM2_Posten_Schlachthaus</label>
+    <defName>CBF_VFEM2_Outpost_Slaughterhouse</defName>
+    <label>slaughterhouse outpost</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -398,8 +398,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Posten_Speicher</defName>
-    <label>CBF_VFEM2_Posten_Speicher</label>
+    <defName>CBF_VFEM2_Outpost_Storehouse</defName>
+    <label>storehouse outpost</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -407,8 +407,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Posten_Studierstube</defName>
-    <label>CBF_VFEM2_Posten_Studierstube</label>
+    <defName>CBF_VFEM2_Outpost_Study</defName>
+    <label>study outpost</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -416,8 +416,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Ruestkammer</defName>
-    <label>Rüstkammer</label>
+    <defName>CBF_VFEM2_Armoury</defName>
+    <label>armoury</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -425,8 +425,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Scheune</defName>
-    <label>Scheune</label>
+    <defName>CBF_VFEM2_Barn</defName>
+    <label>barn</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -434,8 +434,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Schmiede</defName>
-    <label>Schmiede</label><parent>CBF_VFEM2_Werkstatt</parent>
+    <defName>CBF_VFEM2_Smithy</defName>
+    <label>smithy</label><parent>CBF_VFEM2_Workshop</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -443,8 +443,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Schneiderei</defName>
-    <label>Schneiderei</label><parent>CBF_VFEM2_Werkstatt</parent>
+    <defName>CBF_VFEM2_TailorShop</defName>
+    <label>tailor shop</label><parent>CBF_VFEM2_Workshop</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -452,8 +452,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Schreibstube</defName>
-    <label>Schreibstube</label><parent>CBF_VFEM2_Werkstatt</parent>
+    <defName>CBF_VFEM2_Scriptorium</defName>
+    <label>scriptorium</label><parent>CBF_VFEM2_Workshop</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -461,8 +461,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Schrein</defName>
-    <label>Schrein</label>
+    <defName>CBF_VFEM2_Shrine</defName>
+    <label>shrine</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -470,8 +470,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Stadtturm</defName>
-    <label>Stadtturm</label>
+    <defName>CBF_VFEM2_TownTower</defName>
+    <label>town tower</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -479,8 +479,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Steg</defName>
-    <label>CBF_VFEM2_Steg</label>
+    <defName>CBF_VFEM2_Jetty</defName>
+    <label>jetty</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -488,8 +488,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Steinmetz</defName>
-    <label>Steinmetz</label><parent>CBF_VFEM2_Werkstatt</parent>
+    <defName>CBF_VFEM2_Stonemason</defName>
+    <label>stonemason</label><parent>CBF_VFEM2_Workshop</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -497,8 +497,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Taverne</defName>
-    <label>Taverne</label>
+    <defName>CBF_VFEM2_Alehouse</defName>
+    <label>alehouse</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -506,8 +506,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Tischlerei</defName>
-    <label>Tischlerei</label><parent>CBF_VFEM2_Werkstatt</parent>
+    <defName>CBF_VFEM2_Joinery</defName>
+    <label>joinery</label><parent>CBF_VFEM2_Workshop</parent>
     <zones>
       <li>Inside</li>
     </zones>
@@ -515,8 +515,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Torhaus</defName>
-    <label>Torhaus</label>
+    <defName>CBF_VFEM2_Gatehouse</defName>
+    <label>gatehouse</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -524,8 +524,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Turnierplatz</defName>
-    <label>Turnierplatz</label>
+    <defName>CBF_VFEM2_TourneyGround</defName>
+    <label>tourney ground</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -533,8 +533,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Versammlungszelt</defName>
-    <label>CBF_VFEM2_Versammlungszelt</label>
+    <defName>CBF_VFEM2_AssemblyTent</defName>
+    <label>assembly tent</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -542,8 +542,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Waffenhaendler</defName>
-    <label>Waffenhändler</label>
+    <defName>CBF_VFEM2_WeaponDealer</defName>
+    <label>weapon dealer</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -551,8 +551,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Waffenkammer</defName>
-    <label>Waffenkammer</label>
+    <defName>CBF_VFEM2_Armory</defName>
+    <label>armory</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -560,8 +560,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Werkstatt</defName>
-    <label>Werkstatt</label>
+    <defName>CBF_VFEM2_Workshop</defName>
+    <label>workshop</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -569,8 +569,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Werkzelt</defName>
-    <label>CBF_VFEM2_Werkzelt</label>
+    <defName>CBF_VFEM2_WorkTent</defName>
+    <label>work tent</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -578,8 +578,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Winzerei</defName>
-    <label>Winzerei</label>
+    <defName>CBF_VFEM2_Winery</defName>
+    <label>winery</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -587,8 +587,8 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_VFEM2_Wohnzelt</defName>
-    <label>CBF_VFEM2_Wohnzelt</label>
+    <defName>CBF_VFEM2_LivingTent</defName>
+    <label>living tent</label>
     <zones>
       <li>Inside</li>
     </zones>

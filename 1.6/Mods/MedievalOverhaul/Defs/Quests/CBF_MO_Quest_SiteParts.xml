@@ -2,7 +2,7 @@
 <Defs>
 
   <SitePartDef>
-    <defName>CBF_MO_Quest_UeberfallenerOrt</defName>
+    <defName>CBF_MO_Quest_RaidedSite</defName>
     <label>raided settlement</label>
     <description>A settlement recently overrun by bandits. Parts of it are burnt and the walls are breached.</description>
     <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
@@ -18,26 +18,26 @@
     <minThreatPoints>300</minThreatPoints>
     <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
     <tags>
-      <li>CBF_MO_Quest_UeberfallenerOrt</li>
+      <li>CBF_MO_Quest_RaidedSite</li>
     </tags>
     <modExtensions>
-      <li Class="CustomBaseFramework.CBFOrtExtension">
-        <ruin>CBF_MO_Quest_Ruin_Ueberfallen</ruin>
+      <li Class="CustomBaseFramework.CBFSiteExtension">
+        <ruin>CBF_MO_Quest_Ruin_Raided</ruin>
         <planTags>
           <li>Dorf</li>
           <li>Marktstadt</li>
         </planTags>
       </li>
-      <li Class="CustomBaseFramework.CBFBesatzerExtension">
-        <besatzer>
+      <li Class="CustomBaseFramework.CBFOccupierExtension">
+        <occupiers>
           <li>DankPyon_BrigandFaction</li>
-        </besatzer>
+        </occupiers>
       </li>
     </modExtensions>
   </SitePartDef>
 
   <SitePartDef>
-    <defName>CBF_MO_Quest_UmkaempfterOrt</defName>
+    <defName>CBF_MO_Quest_ContestedSite</defName>
     <label>settlement under attack</label>
     <description>A settlement under attack by bandits. The defenders are holding out, but not for long.</description>
     <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
@@ -52,20 +52,20 @@
     <minThreatPoints>300</minThreatPoints>
     <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
     <tags>
-      <li>CBF_MO_Quest_UmkaempfterOrt</li>
+      <li>CBF_MO_Quest_ContestedSite</li>
     </tags>
     <modExtensions>
-      <li Class="CustomBaseFramework.CBFOrtExtension">
-        <ruin>CBF_MO_Quest_Ruin_Schlacht</ruin>
+      <li Class="CustomBaseFramework.CBFSiteExtension">
+        <ruin>CBF_MO_Quest_Ruin_Battle</ruin>
         <planTags>
           <li>Dorf</li>
           <li>Marktstadt</li>
         </planTags>
       </li>
-      <li Class="CustomBaseFramework.CBFBesatzerExtension">
-        <besatzer>
+      <li Class="CustomBaseFramework.CBFOccupierExtension">
+        <occupiers>
           <li>DankPyon_BrigandFaction</li>
-        </besatzer>
+        </occupiers>
       </li>
     </modExtensions>
   </SitePartDef>

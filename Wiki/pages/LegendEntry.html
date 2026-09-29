@@ -140,7 +140,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>What the anchor does. Connect only marks cells, see anchor. Fill places a container from objects and fills it from lootTable. Object places something from objects without the anchor's loot table. Spawn places pawns.</td>
 </tr>
 <tr>
-<td><code>biomLeder</code></td>
+<td><code>biomeLeather</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
 <td>On a thing entry: the stuff is replaced by the leather of a wild animal of the biome, chosen once per piece.</td>
@@ -158,13 +158,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Stack size of the thing placed at this cell, for items. Buildings ignore it.</td>
 </tr>
 <tr>
-<td><code>ideologieGebaeude</code></td>
+<td><code>ideoBuilding</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
 <td>On an Object anchor: places a building of the faction's ideoligion, such as an altar or ritual spot. Needs Ideology.</td>
 </tr>
 <tr>
-<td><code>lootFremd</code></td>
+<td><code>lootForeign</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
 <td>Leaves the loot to the mod that brings the container. The anchor's loot table is ignored. Without objects the anchor places nothing.</td>
@@ -176,7 +176,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>The loot table (LootTableDef) used here. On an anchor it fills the containers. On an object list member it replaces the anchor's table. On a content zone or a settlement budget entry it fills content zones. Not used on dungeon profiles.</td>
 </tr>
 <tr>
-<td><code>obenauf</code></td>
+<td><code>onTop</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
 <td>Places the anchor's object on top of what stands there, instead of clearing the cells first. Anchors in anchorsOver always do this.</td>
@@ -248,7 +248,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>The character that stands for this entry in the layers. Only the first character counts.</td>
 </tr>
 <tr>
-<td><code>temperatur</code></td>
+<td><code>temperature</code></td>
 <td>number</td>
 <td><code>-9999</code></td>
 <td>Target temperature in degrees Celsius for things with a thermostat, such as heaters and coolers. Empty leaves their own setting.</td>

@@ -2,15 +2,14 @@
 <Defs>
 
   <CustomBaseFramework.PieceDef>
-    <defName>CBF_VFEM2_Friedhof_DA_A</defName>
-    <label>CBF_VFEM2_Friedhof_DA_A</label>
+    <defName>CBF_VFEM2_Graveyard_DA_A</defName>
     <schemaVersion>2</schemaVersion>
     <categories>
-      <li>CBF_VFEM2_Friedhof</li>
+      <li>CBF_VFEM2_Graveyard</li>
     </categories>
-    <nurMitMod>Van.DACrypts</nurMitMod>
+    <onlyWithMod>Van.DACrypts</onlyWithMod>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li><symbol>a</symbol><thing>Fence</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="Van.DACrypts"><symbol>b</symbol><thing>DA_Candles</thing></li>

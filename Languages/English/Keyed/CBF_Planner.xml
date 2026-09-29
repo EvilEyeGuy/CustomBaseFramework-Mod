@@ -138,10 +138,10 @@
   <CBF_UploadPartReport>Report:</CBF_UploadPartReport>
   <CBF_UploadPartTerrain>Terrain:</CBF_UploadPartTerrain>
   <CBF_UploadPartFailed>failed:</CBF_UploadPartFailed>
-  <CBF_Kind_Mittelalterstadt>Medieval town</CBF_Kind_Mittelalterstadt>
-  <CBF_Kind_Modernestadt>Modern town</CBF_Kind_Modernestadt>
-  <CBF_Kind_Lager>Camp</CBF_Kind_Lager>
-  <CBF_Kind_Verlies>Dungeon</CBF_Kind_Verlies>
+  <CBF_Kind_MedievalTown>Medieval town</CBF_Kind_MedievalTown>
+  <CBF_Kind_ModernTown>Modern town</CBF_Kind_ModernTown>
+  <CBF_Kind_Camp>Camp</CBF_Kind_Camp>
+  <CBF_Kind_Dungeon>Dungeon</CBF_Kind_Dungeon>
   <CBF_UploadConfirmTitle>Upload error report?</CBF_UploadConfirmTitle>
   <CBF_UploadConfirm>The terrain sample and the text report from
 {1}
@@ -317,7 +317,7 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_Field_techLevels>Tech levels</CBF_Field_techLevels>
   <CBF_TechLevelsTip>Which ages this settlement fits. Pawn lists draw at this level first and step down one level at a time if nobody fits.</CBF_TechLevelsTip>
   <CBF_TechLevelButtonTip>Click switches this level. Right click selects this level and all above.</CBF_TechLevelButtonTip>
-  <CBF_Field_fuerAlleFraktionen>For every faction of these levels</CBF_Field_fuerAlleFraktionen>
+  <CBF_Field_forAllFactions>For every faction of these levels</CBF_Field_forAllFactions>
   <CBF_ForAllTip>This plan applies to every faction whose tech level is ticked, unless that faction has plans of its own through faction tags. Its own plans always win.</CBF_ForAllTip>
   <CBF_ForAllNeedsLevel>Pick at least one tech level first.</CBF_ForAllNeedsLevel>
   <CBF_PawnTechLevel>Tech level</CBF_PawnTechLevel>
@@ -336,7 +336,7 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_FactionOverviewVanillaShort>RimWorld builds</CBF_FactionOverviewVanillaShort>
   <CBF_FactionOverviewNone>No faction matches the search.</CBF_FactionOverviewNone>
   <CBF_FactionOverviewChance>Weight {0} of {1} across all settlements of this faction. Change it in the faction panel.</CBF_FactionOverviewChance>
-  <CBF_Field_anteil>Weight</CBF_Field_anteil>
+  <CBF_Field_share>Weight</CBF_Field_share>
   <CBF_WeightTip>How often this settlement is picked among all settlements a faction can get. 0 counts as 1.</CBF_WeightTip>
   <CBF_WeightHint>The faction overview shows what this means in percent per faction.</CBF_WeightHint>
   <CBF_Field_excludeFactions>Excluded factions</CBF_Field_excludeFactions>

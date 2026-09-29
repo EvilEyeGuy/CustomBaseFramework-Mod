@@ -71,10 +71,10 @@
   <CBF_S_Ground>Roads and ground</CBF_S_Ground>
   <CBF_S_GroundNatural>natural</CBF_S_GroundNatural>
   <CBF_S_Standard>default</CBF_S_Standard>
-  <CBF_S_WardKind_Stadt>Town</CBF_S_WardKind_Stadt>
-  <CBF_S_WardKind_Burg>Castle</CBF_S_WardKind_Burg>
-  <CBF_S_WardKind_Vorstadt>Suburb</CBF_S_WardKind_Vorstadt>
-  <CBF_S_WardKind_Umland>Countryside</CBF_S_WardKind_Umland>
+  <CBF_S_WardKind_Town>Town</CBF_S_WardKind_Town>
+  <CBF_S_WardKind_Castle>Castle</CBF_S_WardKind_Castle>
+  <CBF_S_WardKind_Suburb>Suburb</CBF_S_WardKind_Suburb>
+  <CBF_S_WardKind_Rural>Countryside</CBF_S_WardKind_Rural>
   <CBF_S_WallN>wall {0}</CBF_S_WallN>
   <CBF_S_NoWall>no wall</CBF_S_NoWall>
   <CBF_S_NDistricts>{0} districts</CBF_S_NDistricts>
@@ -105,9 +105,9 @@
   <CBF_S_RiafHolding>RIAF holding</CBF_S_RiafHolding>
   <CBF_S_RiafHoldingTip>Makes this settlement type the plan for villages, towns or garrisons of A Rim of Ice and Fire. CBF then builds the houses and walls of such holdings; defenders, levies, residents and stores stay with A Rim of Ice and Fire. A type with a holding kind is not used for normal settlements.</CBF_S_RiafHoldingTip>
   <CBF_S_RiafNone>None</CBF_S_RiafNone>
-  <CBF_S_RiafDorf>Village</CBF_S_RiafDorf>
-  <CBF_S_RiafStadt>Town</CBF_S_RiafStadt>
-  <CBF_S_RiafGarnison>Garrison</CBF_S_RiafGarnison>
+  <CBF_S_RiafVillage>Village</CBF_S_RiafVillage>
+  <CBF_S_RiafTown>Town</CBF_S_RiafTown>
+  <CBF_S_RiafGarrison>Garrison</CBF_S_RiafGarrison>
   <CBF_S_WdStageRange>{0} to {1}</CBF_S_WdStageRange>
   <CBF_Lb_Button>Show loot</CBF_Lb_Button>
   <CBF_Lb_ButtonTip>Loot value of the settlement of this type that was built last.</CBF_Lb_ButtonTip>
@@ -164,9 +164,9 @@
   <CBF_S_MineThings>Things</CBF_S_MineThings>
   <CBF_S_MineThingsNone>none</CBF_S_MineThingsNone>
   <CBF_S_MineThingsTip>Things in the mine. Click to open the window where you enter them by place.</CBF_S_MineThingsTip>
-  <CBF_S_MinePlace_Kammer>chamber</CBF_S_MinePlace_Kammer>
-  <CBF_S_MinePlace_Gang>tunnel</CBF_S_MinePlace_Gang>
-  <CBF_S_MinePlace_Eingang>entrance</CBF_S_MinePlace_Eingang>
+  <CBF_S_MinePlace_Chamber>chamber</CBF_S_MinePlace_Chamber>
+  <CBF_S_MinePlace_Tunnel>tunnel</CBF_S_MinePlace_Tunnel>
+  <CBF_S_MinePlace_Entrance>entrance</CBF_S_MinePlace_Entrance>
   <CBF_S_TreeShare>Tree share</CBF_S_TreeShare>
   <CBF_S_TreeShareTip>Share of the wild trees inside the settlement that stay standing when it is built, from 0 to 1. 0 clears them all.</CBF_S_TreeShareTip>
   <CBF_S_MapSize>Map size</CBF_S_MapSize>
@@ -179,9 +179,9 @@
   <CBF_S_LocGateTip>The district starts close to a gate.</CBF_S_LocGateTip>
   <CBF_S_LocWallTip>The district starts close to the wall of its ward.</CBF_S_LocWallTip>
   <CBF_S_LocMainTip>The district starts along the main road.</CBF_S_LocMainTip>
-  <CBF_S_MinePlace_EingangTip>On the first cells of the tunnel, right behind the mine entrance at the hut.</CBF_S_MinePlace_EingangTip>
-  <CBF_S_MinePlace_GangTip>Along the tunnels, only where the tunnel is wide enough to pass by.</CBF_S_MinePlace_GangTip>
-  <CBF_S_MinePlace_KammerTip>In a chamber at the end of a tunnel. Small things stand by the wall.</CBF_S_MinePlace_KammerTip>
+  <CBF_S_MinePlace_EntranceTip>On the first cells of the tunnel, right behind the mine entrance at the hut.</CBF_S_MinePlace_EntranceTip>
+  <CBF_S_MinePlace_TunnelTip>Along the tunnels, only where the tunnel is wide enough to pass by.</CBF_S_MinePlace_TunnelTip>
+  <CBF_S_MinePlace_ChamberTip>In a chamber at the end of a tunnel. Small things stand by the wall.</CBF_S_MinePlace_ChamberTip>
   <CBF_MineWin_Title>Things in the mine</CBF_MineWin_Title>
   <CBF_MineWin_Hut>Hut</CBF_MineWin_Hut>
   <CBF_MineWin_AddThing>+ Thing</CBF_MineWin_AddThing>

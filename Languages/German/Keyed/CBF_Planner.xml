@@ -138,10 +138,10 @@
   <CBF_UploadPartReport>Bericht:</CBF_UploadPartReport>
   <CBF_UploadPartTerrain>Gelände:</CBF_UploadPartTerrain>
   <CBF_UploadPartFailed>fehlgeschlagen:</CBF_UploadPartFailed>
-  <CBF_Kind_Mittelalterstadt>Mittelalterstadt</CBF_Kind_Mittelalterstadt>
-  <CBF_Kind_Modernestadt>Moderne Stadt</CBF_Kind_Modernestadt>
-  <CBF_Kind_Lager>Lager</CBF_Kind_Lager>
-  <CBF_Kind_Verlies>Verlies</CBF_Kind_Verlies>
+  <CBF_Kind_MedievalTown>Mittelalterstadt</CBF_Kind_MedievalTown>
+  <CBF_Kind_ModernTown>Moderne Stadt</CBF_Kind_ModernTown>
+  <CBF_Kind_Camp>Lager</CBF_Kind_Camp>
+  <CBF_Kind_Dungeon>Verlies</CBF_Kind_Dungeon>
   <CBF_UploadConfirmTitle>Fehlerbericht hochladen?</CBF_UploadConfirmTitle>
   <CBF_UploadConfirm>Die Geländeprobe und der Textbericht aus
 {1}
@@ -292,7 +292,7 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_Field_techLevels>Techstufen</CBF_Field_techLevels>
   <CBF_TechLevelsTip>Zu welchen Zeitaltern diese Siedlung passt. Einheitenlisten ziehen zuerst auf dieser Stufe und gehen Stufe für Stufe nach unten, bis jemand passt.</CBF_TechLevelsTip>
   <CBF_TechLevelButtonTip>Klick schaltet diese Stufe. Rechtsklick wählt diese und alle darüber.</CBF_TechLevelButtonTip>
-  <CBF_Field_fuerAlleFraktionen>Für alle Fraktionen dieser Stufen</CBF_Field_fuerAlleFraktionen>
+  <CBF_Field_forAllFactions>Für alle Fraktionen dieser Stufen</CBF_Field_forAllFactions>
   <CBF_ForAllTip>Der Plan gilt für jede Fraktion, deren Techstufe angekreuzt ist, außer sie hat über Fraktionsmarken eigene Pläne. Eigene Pläne gehen immer vor.</CBF_ForAllTip>
   <CBF_ForAllNeedsLevel>Zuerst mindestens eine Techstufe wählen.</CBF_ForAllNeedsLevel>
   <CBF_PawnTechLevel>Techstufe</CBF_PawnTechLevel>
@@ -311,7 +311,7 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_FactionOverviewVanillaShort>RimWorld baut</CBF_FactionOverviewVanillaShort>
   <CBF_FactionOverviewNone>Keine Fraktion passt zur Suche.</CBF_FactionOverviewNone>
   <CBF_FactionOverviewChance>Gewicht {0} von {1} über alle Siedlungen dieser Fraktion. Ändern im Fraktionspanel.</CBF_FactionOverviewChance>
-  <CBF_Field_anteil>Gewicht</CBF_Field_anteil>
+  <CBF_Field_share>Gewicht</CBF_Field_share>
   <CBF_WeightTip>Wie oft diese Siedlung unter allen Siedlungen gezogen wird, die eine Fraktion bekommen kann. 0 zählt als 1.</CBF_WeightTip>
   <CBF_WeightHint>Die Fraktionsübersicht zeigt, was das je Fraktion in Prozent heißt.</CBF_WeightHint>
   <CBF_Field_excludeFactions>Ausgeschlossene Fraktionen</CBF_Field_excludeFactions>

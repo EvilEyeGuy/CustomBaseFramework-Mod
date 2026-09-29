@@ -157,22 +157,22 @@
   <CBF_FieldDesc_gates>How many gates the wall gets, as a range.</CBF_FieldDesc_gates>
   <CBF_Field_embrasureEvery>Embrasure spacing</CBF_Field_embrasureEvery>
   <CBF_FieldDesc_embrasureEvery>Every how many cells the wall gets an embrasure. 0 means none. Without the EMBRASURE role plain wall is used.</CBF_FieldDesc_embrasureEvery>
-  <CBF_Field_kerbeMax>Maximum notch</CBF_Field_kerbeMax>
-  <CBF_FieldDesc_kerbeMax>How deep the outline may cut inwards where the terrain calls for it.</CBF_FieldDesc_kerbeMax>
+  <CBF_Field_notchMax>Maximum notch</CBF_Field_notchMax>
+  <CBF_FieldDesc_notchMax>How deep the outline may cut inwards where the terrain calls for it.</CBF_FieldDesc_notchMax>
   <CBF_Field_wallGap>Gap to the wall</CBF_Field_wallGap>
   <CBF_FieldDesc_wallGap>How much room stays free inside the wall. Only pieces with wallContact may come closer.</CBF_FieldDesc_wallGap>
   <CBF_Field_minLobe>Smallest bulge</CBF_Field_minLobe>
   <CBF_FieldDesc_minLobe>Smallest usable bulge of the outline. 0 turns the check off.</CBF_FieldDesc_minLobe>
-  <CBF_Field_laufMin>Shortest wall run</CBF_Field_laufMin>
-  <CBF_FieldDesc_laufMin>Shortest straight piece of wall before it may turn.</CBF_FieldDesc_laufMin>
-  <CBF_Field_laufMax>Longest wall run</CBF_Field_laufMax>
-  <CBF_FieldDesc_laufMax>Longest straight piece of wall before it must step.</CBF_FieldDesc_laufMax>
-  <CBF_Field_stufeMax>Largest step</CBF_Field_stufeMax>
-  <CBF_FieldDesc_stufeMax>How far the wall may step sideways at once.</CBF_FieldDesc_stufeMax>
-  <CBF_Field_buchtHaus>Smallest house</CBF_Field_buchtHaus>
-  <CBF_FieldDesc_buchtHaus>Edge length of the smallest house. Bays narrower than this are dropped.</CBF_FieldDesc_buchtHaus>
-  <CBF_Field_minFuellgrad>Minimum fill</CBF_Field_minFuellgrad>
-  <CBF_FieldDesc_minFuellgrad>How full the outline must be against its convex hull. Lower allows more ragged shapes.</CBF_FieldDesc_minFuellgrad>
+  <CBF_Field_runMin>Shortest wall run</CBF_Field_runMin>
+  <CBF_FieldDesc_runMin>Shortest straight piece of wall before it may turn.</CBF_FieldDesc_runMin>
+  <CBF_Field_runMax>Longest wall run</CBF_Field_runMax>
+  <CBF_FieldDesc_runMax>Longest straight piece of wall before it must step.</CBF_FieldDesc_runMax>
+  <CBF_Field_stepMax>Largest step</CBF_Field_stepMax>
+  <CBF_FieldDesc_stepMax>How far the wall may step sideways at once.</CBF_FieldDesc_stepMax>
+  <CBF_Field_minHouseSize>Smallest house</CBF_Field_minHouseSize>
+  <CBF_FieldDesc_minHouseSize>Edge length of the smallest house. Bays narrower than this are dropped.</CBF_FieldDesc_minHouseSize>
+  <CBF_Field_minFillRatio>Minimum fill</CBF_Field_minFillRatio>
+  <CBF_FieldDesc_minFillRatio>How full the outline must be against its convex hull. Lower allows more ragged shapes.</CBF_FieldDesc_minFillRatio>
   <CBF_Field_roadMain>Main road width</CBF_Field_roadMain>
   <CBF_FieldDesc_roadMain>Width of the main road. There are only two widths on purpose; more cuts the map up visually.</CBF_FieldDesc_roadMain>
   <CBF_Field_roadLane>Lane width</CBF_Field_roadLane>
@@ -334,7 +334,6 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_OutwardTip>Which end of the drawn strip faces away from the town. The wall builder turns the strip for every direction, so only the two ends matter. An embrasure needs this: its opening belongs on the outside.</CBF_OutwardTip>
   <!-- Wards -->
   <CBF_Field_name>Name</CBF_Field_name>
-  <CBF_Field_art>Kind</CBF_Field_art>
   <CBF_Field_ground>Ground</CBF_Field_ground>
   <CBF_FieldDesc_ground>The ground between the houses. Empty means the map stays as it is. Lanes, squares and fields keep their own surface and are left alone.</CBF_FieldDesc_ground>
   <CBF_AddGround>+ Ground</CBF_AddGround>
@@ -374,7 +373,7 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_Field_usedByPieces>Used by pieces</CBF_Field_usedByPieces>
   <CBF_Field_pawnList>Pawn list</CBF_Field_pawnList>
   <CBF_Field_pawnChance>Pawn chance</CBF_Field_pawnChance>
-  <CBF_Field_rolle>Role</CBF_Field_rolle>
+  <CBF_Field_role>Role</CBF_Field_role>
   <CBF_Field_radius>Radius</CBF_Field_radius>
   <CBF_Field_sourceMod>From</CBF_Field_sourceMod>
   <CBF_Field_race>Race</CBF_Field_race>
@@ -427,8 +426,8 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_FieldDesc_apparelTags>Which apparel this kind can be given, on top of what the budget buys.</CBF_FieldDesc_apparelTags>
   <CBF_FieldDesc_gearHealthRange>How worn the gear is, 1 means untouched.</CBF_FieldDesc_gearHealthRange>
   <CBF_Empty>Empty</CBF_Empty>
-  <CBF_Field_leer>Empty building</CBF_Field_leer>
-  <CBF_FieldDesc_leer>Takes the place of the container once a player has cleared it out. Only buildings of the same footprint can be chosen.</CBF_FieldDesc_leer>
+  <CBF_Field_empty>Empty building</CBF_Field_empty>
+  <CBF_FieldDesc_empty>Takes the place of the container once a player has cleared it out. Only buildings of the same footprint can be chosen.</CBF_FieldDesc_empty>
   <CBF_BehaelterDurchsucht>Already searched.</CBF_BehaelterDurchsucht>
   <CBF_BehaelterTitle>Loot container</CBF_BehaelterTitle>
   <CBF_BehaelterFromDef>Take from a building</CBF_BehaelterFromDef>
@@ -449,23 +448,23 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_BehaelterPickImage>Pick an image</CBF_BehaelterPickImage>
   <CBF_BehaelterNoImages>No images found under {0}.</CBF_BehaelterNoImages>
   <CBF_Field_texPath>Texture</CBF_Field_texPath>
-  <CBF_Field_leerGrafik>Texture after</CBF_Field_leerGrafik>
+  <CBF_Field_emptyGraphic>Texture after</CBF_Field_emptyGraphic>
   <CBF_Field_drawSize>Draw size</CBF_Field_drawSize>
-  <CBF_Field_leerGebaeude>Becomes</CBF_Field_leerGebaeude>
-  <CBF_Field_zerstoerenWennLeer>Destroy when empty</CBF_Field_zerstoerenWennLeer>
+  <CBF_Field_emptyBuilding>Becomes</CBF_Field_emptyBuilding>
+  <CBF_Field_destroyWhenEmpty>Destroy when empty</CBF_Field_destroyWhenEmpty>
   <CBF_Field_standardTabelle>Default table</CBF_Field_standardTabelle>
   <CBF_Field_standardEinheiten>Default pawn list</CBF_Field_standardEinheiten>
   <CBF_Field_einheitenChance>Pawn chance</CBF_Field_einheitenChance>
   <CBF_Field_einheitenFeindlich>Pawn turns hostile</CBF_Field_einheitenFeindlich>
   <CBF_FieldDesc_standardTabelle>Used when nothing else assigns a loot table, for example when the container is placed by hand rather than through an anchor.</CBF_FieldDesc_standardTabelle>
-  <CBF_FieldDesc_zerstoerenWennLeer>It vanishes once searched, leaving no building materials behind. Only happens if no building is set above.</CBF_FieldDesc_zerstoerenWennLeer>
+  <CBF_FieldDesc_destroyWhenEmpty>It vanishes once searched, leaving no building materials behind. Only happens if no building is set above.</CBF_FieldDesc_destroyWhenEmpty>
   <CBF_BehaelterEdit>Edit container</CBF_BehaelterEdit>
   <CBF_BehaelterUpdate>Save changes</CBF_BehaelterUpdate>
   <CBF_BehaelterNoExt>This container has no settings block, so it can never be filled.</CBF_BehaelterNoExt>
   <CBF_Field_pawnCount>Pawn count</CBF_Field_pawnCount>
-  <CBF_Field_pawnFeindlich>Turns hostile</CBF_Field_pawnFeindlich>
+  <CBF_Field_pawnHostile>Turns hostile</CBF_Field_pawnHostile>
   <CBF_FieldDesc_pawnList>Who can be hiding inside. Only works in containers with an inside, not on open shelves.</CBF_FieldDesc_pawnList>
-  <CBF_FieldDesc_pawnFeindlich>The pawn attacks once the container is opened. Animals go manhunter, people go berserk.</CBF_FieldDesc_pawnFeindlich>
+  <CBF_FieldDesc_pawnHostile>The pawn attacks once the container is opened. Animals go manhunter, people go berserk.</CBF_FieldDesc_pawnHostile>
   <CBF_Field_hitPoints>Condition %</CBF_Field_hitPoints>
   <CBF_Field_depthRange>Depth</CBF_Field_depthRange>
   <CBF_Field_stuff>Material</CBF_Field_stuff>
@@ -533,13 +532,13 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_MemberDestroyedTip>Nothing is set, so it is destroyed once emptied. No building materials are left behind.</CBF_MemberDestroyedTip>
   <CBF_MemberBecomes>Once emptied it becomes {0}.</CBF_MemberBecomes>
   <CBF_MemberBecomesWhat>What does {0} become?</CBF_MemberBecomesWhat>
-  <CBF_FieldDesc_leerGrafik>Same building, different picture. It stays this container, keeps its name, and stays scenery: nobody can store anything in it. The picture changes the moment it has been searched, not when it runs out of items, because a container somebody found nothing in was still searched.</CBF_FieldDesc_leerGrafik>
-  <CBF_FieldDesc_leerGebaeude>This container disappears and another building stands in its place. Use it when the result should be a real, usable thing, for example an ordinary chest the colony can store things in. Only works if the other building has the same footprint, otherwise this one just stays. If something is set here, the texture above is never seen.</CBF_FieldDesc_leerGebaeude>
+  <CBF_FieldDesc_emptyGraphic>Same building, different picture. It stays this container, keeps its name, and stays scenery: nobody can store anything in it. The picture changes the moment it has been searched, not when it runs out of items, because a container somebody found nothing in was still searched.</CBF_FieldDesc_emptyGraphic>
+  <CBF_FieldDesc_emptyBuilding>This container disappears and another building stands in its place. Use it when the result should be a real, usable thing, for example an ordinary chest the colony can store things in. Only works if the other building has the same footprint, otherwise this one just stays. If something is set here, the texture above is never seen.</CBF_FieldDesc_emptyBuilding>
   <CBF_FieldDesc_einheitenChance>How likely somebody is waiting inside, per container. 0 means never.</CBF_FieldDesc_einheitenChance>
   <CBF_OnlyContainers>My containers</CBF_OnlyContainers>
   <CBF_OnlyContainersTip>Only the loot containers you built yourself. They are ordinary buildings and would otherwise sit somewhere between two thousand others, under the name of what they depict.</CBF_OnlyContainersTip>
-  <CBF_Field_pawnFraktion>Faction</CBF_Field_pawnFraktion>
-  <CBF_FieldDesc_pawnFraktion>Which faction the occupant belongs to. Without one it goes berserk instead, which reads as a trapped animal rather than an ambush, and they attack each other too.</CBF_FieldDesc_pawnFraktion>
+  <CBF_Field_pawnFaction>Faction</CBF_Field_pawnFaction>
+  <CBF_FieldDesc_pawnFaction>Which faction the occupant belongs to. Without one it goes berserk instead, which reads as a trapped animal rather than an ambush, and they attack each other too.</CBF_FieldDesc_pawnFaction>
   <CBF_FieldDesc_pawnFraktionNone>No faction: it goes berserk instead.</CBF_FieldDesc_pawnFraktionNone>
   <CBF_DevFill>Fill from table</CBF_DevFill>
   <CBF_DevFillTip>Dev mode with god mode only. Since the loot table lives on the anchor, a container placed by hand stays empty. This assigns one by hand so you can test it. Nothing is written to a file.</CBF_DevFillTip>
@@ -599,9 +598,9 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_NeedTag>A category must be set.</CBF_NeedTag>
   <CBF_ExportDeleted>Template {0} was deleted. Create a new region for a new piece.</CBF_ExportDeleted>
   <CBF_ExportReloadFailed>The file for {0} was saved, but could not be reloaded into the running game. See the console for the loading error; the editor remains unsaved.</CBF_ExportReloadFailed>
-  <CBF_Field_traufen>Eaves</CBF_Field_traufen>
-  <CBF_FieldDesc_traufen>Places an eave from Architecture of the Rim on every outer wall and outer door. Does nothing without that mod.</CBF_FieldDesc_traufen>
-  <CBF_Field_traufenMaterial>Eave material</CBF_Field_traufenMaterial>
+  <CBF_Field_eaves>Eaves</CBF_Field_eaves>
+  <CBF_FieldDesc_eaves>Places an eave from Architecture of the Rim on every outer wall and outer door. Does nothing without that mod.</CBF_FieldDesc_eaves>
+  <CBF_Field_eavesMaterial>Eave material</CBF_Field_eavesMaterial>
   <CBF_EavesLikeWall>same as wall</CBF_EavesLikeWall>
   <CBF_MassTitle>Mass stress test</CBF_MassTitle>
   <CBF_MassHelp>Tests several settlement types one after another with the same settings. Each type gets its own folder under CBF-Stresstest.</CBF_MassHelp>
@@ -704,7 +703,7 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_Field_tags>Categories</CBF_Field_tags>
   <CBF_Field_pawns>Animals</CBF_Field_pawns>
   <CBF_Field_garrison>Garrison</CBF_Field_garrison>
-  <CBF_Field_kind>Settlement kind</CBF_Field_kind>
+  <CBF_Field_kind>Kind</CBF_Field_kind>
   <CBF_Au_S_Role>Role {0}</CBF_Au_S_Role>
   <CBF_Au_RoleUnserved>has no thing in any material list, used by {0}</CBF_Au_RoleUnserved>
   <CBF_Au_S_Style>Style {0}</CBF_Au_S_Style>

@@ -1,88 +1,86 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <CBF_FieldDesc_abstand>Abstand zwischen den Gebäuden in diesem Stadtteil, in Feldern, als Spanne. 0~0 übernimmt minBuildingGap und maxBuildingGap der Siedlung.</CBF_FieldDesc_abstand>
+  <CBF_FieldDesc_buildingGap>Abstand zwischen den Gebäuden in diesem Stadtteil, in Feldern, als Spanne. 0~0 übernimmt minBuildingGap und maxBuildingGap der Siedlung.</CBF_FieldDesc_buildingGap>
   <CBF_FieldDesc_allowMirror>Darf der Generator dieses Stück spiegeln. Aus für Stücke, die nur in einer Richtung funktionieren.</CBF_FieldDesc_allowMirror>
   <CBF_FieldDesc_always>Einträge, die bei jedem Wurf der Tabelle genommen werden, jeder nach seiner eigenen Chance. Sie zählen nicht zu rolls.</CBF_FieldDesc_always>
-  <CBF_FieldDesc_anbauChance>Chance je Anbauanker eines Hauses, dass dort ein Anbau entsteht, 0 bis 1. Leer übernimmt die Elternkategorie, sonst 0.6.</CBF_FieldDesc_anbauChance>
-  <CBF_FieldDesc_anbauMax>Höchstens so viele Anbauten je Haus. Leer übernimmt die Elternkategorie, sonst 2.</CBF_FieldDesc_anbauMax>
-  <CBF_FieldDesc_anbauMehrfach>Gehört an die Kategorie des Anbaus. Mit true darf dasselbe Anbaustück mehrmals an ein Haus. Vorgabe false.</CBF_FieldDesc_anbauMehrfach>
-  <CBF_FieldDesc_anbauten>Kategorien, deren Stücke als Anbau an die Anbau-Anker der Häuser dieser Kategorie dürfen. Leer übernimmt die Liste der Elternkategorie.</CBF_FieldDesc_anbauten>
+  <CBF_FieldDesc_annexChance>Chance je Anbauanker eines Hauses, dass dort ein Anbau entsteht, 0 bis 1. Leer übernimmt die Elternkategorie, sonst 0.6.</CBF_FieldDesc_annexChance>
+  <CBF_FieldDesc_annexMax>Höchstens so viele Anbauten je Haus. Leer übernimmt die Elternkategorie, sonst 2.</CBF_FieldDesc_annexMax>
+  <CBF_FieldDesc_annexMultiple>Gehört an die Kategorie des Anbaus. Mit true darf dasselbe Anbaustück mehrmals an ein Haus. Vorgabe false.</CBF_FieldDesc_annexMultiple>
+  <CBF_FieldDesc_annexes>Kategorien, deren Stücke als Anbau an die Anbau-Anker der Häuser dieser Kategorie dürfen. Leer übernimmt die Liste der Elternkategorie.</CBF_FieldDesc_annexes>
   <CBF_FieldDesc_anchor>Name des Ankers. Wall bindet die Zellen an die Stadtmauer, Anbau markiert, wo ein Anbau andocken darf, Outside markiert die Außenseite eines Mauerstreifens oder Torhauses. Andere Namen sind nur eine Beschriftung.</CBF_FieldDesc_anchor>
   <CBF_FieldDesc_anchorKind>Was der Anker tut. Connect markiert nur Zellen, siehe anchor. Fill setzt einen Behälter aus objects und füllt ihn aus lootTable. Object setzt etwas aus objects ohne die Beutetabelle des Ankers. Spawn setzt Einheiten.</CBF_FieldDesc_anchorKind>
   <CBF_FieldDesc_anchorsOver>Eine zweite Ankerebene über der ersten. Ihre Anker dürfen andere überlappen und räumen darunter nichts weg, etwa ein Zelt über einem Marktstand.</CBF_FieldDesc_anchorsOver>
-  <CBF_FieldDesc_angriffsseite>Seite, von der die Angreifer kamen: North, East, South oder West. Breschen und die schwersten Schäden sammeln sich dort. Leer wählt eine Seite zufällig.</CBF_FieldDesc_angriffsseite>
-  <CBF_FieldDesc_ankerSoldaten>Obergrenze für Kämpfer. Hat die Siedlung so viele, bleiben weitere Spawnanker für Kämpfer leer; Geschützanker werden trotzdem besetzt. 0 heißt keine Grenze.</CBF_FieldDesc_ankerSoldaten>
-  <CBF_FieldDesc_ankerZivil>Obergrenze für Zivilisten. Hat die Siedlung so viele Einheiten, die keine Kämpfer sind, bleiben weitere zivile Spawnanker leer. 0 heißt keine Grenze.</CBF_FieldDesc_ankerZivil>
-  <CBF_FieldDesc_anteil>Gewicht dieses Ortstyps gegen die anderen Typen, die dieselbe Fraktion bekommen kann. 0 zählt als 1.</CBF_FieldDesc_anteil>
-  <CBF_FieldDesc_art>Bei einem Stadtteil: welcher Teil der Siedlung er ist, Stadt, Vorstadt oder Umland. Burg wird angenommen, aber nicht als eigener Teil geplant. Bei einer Objektliste: Fuellen füllt die Behälter, Leer setzt sie ohne Beute und ohne Insassen.</CBF_FieldDesc_art>
-  <CBF_FieldDesc_besatzung>Wer die Ruine hält. Keine lässt sie leer, Bauherr behält die ursprünglichen Besitzer, Besatzer setzt die Eroberer hinein, nur aus Überfallpunkten, ohne Garnisonen der Stadtteile und ohne die Einheiten der Anker.</CBF_FieldDesc_besatzung>
-  <CBF_FieldDesc_besatzungAnteil>Skaliert, wie viele Verteidiger die Ruine bekommt. 1 ist die volle Zahl, 0.5 die Hälfte.</CBF_FieldDesc_besatzungAnteil>
-  <CBF_FieldDesc_beuteBeiBesatzern>Anteil der verbliebenen Beute, 0 bis 1, der weggetragen und auf einem Platz nahe der Mitte aufgehäuft wird.</CBF_FieldDesc_beuteBeiBesatzern>
-  <CBF_FieldDesc_beuteFaktor>Wie viel Beute übrig bleibt, 1 behält alles. Stapel schrumpfen um diesen Faktor, einzelne Stücke bleiben mit dieser Chance erhalten.</CBF_FieldDesc_beuteFaktor>
-  <CBF_FieldDesc_bildbreite>Größte Breite der Bilder auf dieser Hilfeseite, in Pixeln. 0 lässt sie die Fensterbreite füllen.</CBF_FieldDesc_bildbreite>
-  <CBF_FieldDesc_bilder>Texturpfade der Bilder unter dem Hilfetext, in dieser Reihenfolge. Fehlende Texturen werden übersprungen.</CBF_FieldDesc_bilder>
-  <CBF_FieldDesc_bleibt>Setzt das Gebäude selbst, sodass die Beute sichtbar darauf liegt, statt einer geschlossenen Hülle, die gleich aussieht. Ausgeräumt wird es nicht ausgetauscht.</CBF_FieldDesc_bleibt>
+  <CBF_FieldDesc_attackSide>Seite, von der die Angreifer kamen: North, East, South oder West. Breschen und die schwersten Schäden sammeln sich dort. Leer wählt eine Seite zufällig.</CBF_FieldDesc_attackSide>
+  <CBF_FieldDesc_maxSoldiers>Obergrenze für Kämpfer. Hat die Siedlung so viele, bleiben weitere Spawnanker für Kämpfer leer; Geschützanker werden trotzdem besetzt. 0 heißt keine Grenze.</CBF_FieldDesc_maxSoldiers>
+  <CBF_FieldDesc_maxCivilians>Obergrenze für Zivilisten. Hat die Siedlung so viele Einheiten, die keine Kämpfer sind, bleiben weitere zivile Spawnanker leer. 0 heißt keine Grenze.</CBF_FieldDesc_maxCivilians>
+  <CBF_FieldDesc_share>Gewicht dieses Ortstyps gegen die anderen Typen, die dieselbe Fraktion bekommen kann. 0 zählt als 1.</CBF_FieldDesc_share>
+  <CBF_FieldDesc_occupation>Wer die Ruine hält. Keine lässt sie leer, Bauherr behält die ursprünglichen Besitzer, Besatzer setzt die Eroberer hinein, nur aus Überfallpunkten, ohne Garnisonen der Stadtteile und ohne die Einheiten der Anker.</CBF_FieldDesc_occupation>
+  <CBF_FieldDesc_occupationChance>Skaliert, wie viele Verteidiger die Ruine bekommt. 1 ist die volle Zahl, 0.5 die Hälfte.</CBF_FieldDesc_occupationChance>
+  <CBF_FieldDesc_lootWithOccupiers>Anteil der verbliebenen Beute, 0 bis 1, der weggetragen und auf einem Platz nahe der Mitte aufgehäuft wird.</CBF_FieldDesc_lootWithOccupiers>
+  <CBF_FieldDesc_lootFactor>Wie viel Beute übrig bleibt, 1 behält alles. Stapel schrumpfen um diesen Faktor, einzelne Stücke bleiben mit dieser Chance erhalten.</CBF_FieldDesc_lootFactor>
+  <CBF_FieldDesc_imageWidth>Größte Breite der Bilder auf dieser Hilfeseite, in Pixeln. 0 lässt sie die Fensterbreite füllen.</CBF_FieldDesc_imageWidth>
+  <CBF_FieldDesc_images>Texturpfade der Bilder unter dem Hilfetext, in dieser Reihenfolge. Fehlende Texturen werden übersprungen.</CBF_FieldDesc_images>
+  <CBF_FieldDesc_stays>Setzt das Gebäude selbst, sodass die Beute sichtbar darauf liegt, statt einer geschlossenen Hülle, die gleich aussieht. Ausgeräumt wird es nicht ausgetauscht.</CBF_FieldDesc_stays>
   <CBF_FieldDesc_blockMax>Wie viele Gebäude dieser Kategorie höchstens Wand an Wand einen Block bilden. Leer nimmt die Vorgabe des Planers von 3, 0 heißt keine Grenze, 1 hält sie getrennt.</CBF_FieldDesc_blockMax>
-  <CBF_FieldDesc_brandstellen>Wie wahrscheinlich ein Raum ausgebrannt ist, 0 bis 1, nahe am Angriff öfter. Ausgebrannte Räume bekommen verkohlten Boden und verlieren Brennbares.</CBF_FieldDesc_brandstellen>
-  <CBF_FieldDesc_breschen>Wie viele Breschen in die Außenmauer gerissen werden, als Spanne. Sie liegen bevorzugt auf der Angriffsseite und bei den Toren.</CBF_FieldDesc_breschen>
-  <CBF_FieldDesc_category>Bei einem Beuteeintrag: eine ThingCategoryDef, aus der ein passendes Ding zufällig gezogen wird. Bei einer Inhaltszone: die Objektliste (LootBuildingCategoryDef), deren Behälter in die Zone kommen.</CBF_FieldDesc_category>
+  <CBF_FieldDesc_burnMarks>Wie wahrscheinlich ein Raum ausgebrannt ist, 0 bis 1, nahe am Angriff öfter. Ausgebrannte Räume bekommen verkohlten Boden und verlieren Brennbares.</CBF_FieldDesc_burnMarks>
+  <CBF_FieldDesc_breaches>Wie viele Breschen in die Außenmauer gerissen werden, als Spanne. Sie liegen bevorzugt auf der Angriffsseite und bei den Toren.</CBF_FieldDesc_breaches>
+  <CBF_FieldDesc_category>Bei einem Beuteeintrag: eine ThingCategoryDef, aus der ein passendes Ding zufällig gezogen wird. Bei einer Inhaltszone: die Objektliste (LootBuildingCategoryDef), deren Behälter in die Zone kommen. Die Architektenkategorie (DesignationCategoryDef defName), in die passende Gebäude kommen. Gibt es sie nicht, wird sie angelegt.</CBF_FieldDesc_category>
   <CBF_FieldDesc_cells>Wird derzeit nicht verwendet.</CBF_FieldDesc_cells>
   <CBF_FieldDesc_chance>Chance von 0 bis 1. Bei einem Legendeneintrag: dass das Ding in eine Zelle kommt oder der Anker gefüllt oder besetzt wird. Bei einer Inhaltszone: dass sie überhaupt gefüllt wird. Bei einem Beuteeintrag zählt sie nur in always.</CBF_FieldDesc_chance>
   <CBF_FieldDesc_countOverDepth>Kurve, die count nach Tiefe vervielfacht. Siedlungen haben keine Tiefe, es zählt also nur der Wert bei 0.</CBF_FieldDesc_countOverDepth>
   <CBF_FieldDesc_criticality>Critical macht die ganze Materialliste unbrauchbar, wenn diese Rolle nichts findet. Optional, die Vorgabe, lässt die Rolle einfach leer.</CBF_FieldDesc_criticality>
   <CBF_FieldDesc_crops>Name einer Pflanzenliste (CropListDef). Bei einem Acker bestimmt sie die Frucht, bei einem Gehege den Bewuchs, gezogen nach Gewicht. plants dient nur als Ersatz, wenn die Liste nichts liefert.</CBF_FieldDesc_crops>
-  <CBF_FieldDesc_dateiEnthaelt>Teile eines Dateinamens. Ein Gebäude ohne Architektenkategorie, dessen Def-Datei einen davon im Namen trägt, kommt in kategorie. Groß- und Kleinschreibung zählt nicht.</CBF_FieldDesc_dateiEnthaelt>
+  <CBF_FieldDesc_fileContains>Teile eines Dateinamens. Ein Gebäude ohne Architektenkategorie, dessen Def-Datei einen davon im Namen trägt, kommt in kategorie. Groß- und Kleinschreibung zählt nicht.</CBF_FieldDesc_fileContains>
   <CBF_FieldDesc_decor>Stücke, die an die Gassen und Plätze dieses Stadtteils gestellt werden. Abstand und Obergrenze kommen aus dem jeweiligen Eintrag.</CBF_FieldDesc_decor>
   <CBF_FieldDesc_defenses>Verteidigungsanlagen, über die Gassen dieses Stadtteils verteilt, jede so weit von den anderen wie möglich. count gibt die Zahl vor, sonst max, sonst eine.</CBF_FieldDesc_defenses>
   <CBF_FieldDesc_depth>Mauerdicke in Feldern, für die dieses Profil gezeichnet ist: 1, 3 oder 5. Eine Siedlung nimmt das Profil, dessen Tiefe zu ihrer Mauer passt.</CBF_FieldDesc_depth>
   <CBF_FieldDesc_depthRange>Einträge außerhalb dieser Tiefe werden nie gezogen. Siedlungen haben keine Tiefe und zählen als 0, ein Minimum über 0 heißt also nie.</CBF_FieldDesc_depthRange>
-  <CBF_FieldDesc_dinge>Dingtausch für diese Fraktion. Was der Generator setzt, wird von von zu zu getauscht.</CBF_FieldDesc_dinge>
+  <CBF_FieldDesc_things>Dingtausch für diese Fraktion. Was der Generator setzt, wird von von zu zu getauscht.</CBF_FieldDesc_things>
   <CBF_FieldDesc_drawnOutward>Welche Seite dieses Torhauses in der Zeichnung aus der Stadt hinaus zeigt: North, East, South oder West. Ein Outside-Anker hat Vorrang. Leer übernimmt gatehouseOutward des Mauerprofils, sonst South.</CBF_FieldDesc_drawnOutward>
   <CBF_FieldDesc_edge>Wird derzeit nicht verwendet.</CBF_FieldDesc_edge>
-  <CBF_FieldDesc_einheiten>Einheitentausch für diese Fraktion, von von zu zu. Menschliche Arten ohne Regel, die die Fraktion nicht selbst nutzt, werden zu ihrer ähnlichsten eigenen Art, außer sie stehen in neutral.</CBF_FieldDesc_einheiten>
+  <CBF_FieldDesc_units>Einheitentausch für diese Fraktion, von von zu zu. Menschliche Arten ohne Regel, die die Fraktion nicht selbst nutzt, werden zu ihrer ähnlichsten eigenen Art, außer sie stehen in neutral.</CBF_FieldDesc_units>
   <CBF_FieldDesc_emptyFallback>Beutetabelle, die stattdessen gewürfelt wird, wenn diese nichts liefert.</CBF_FieldDesc_emptyFallback>
   <CBF_FieldDesc_entries>Bei einer Beutetabelle: der gewichtete Vorrat, aus dem rolls zieht. Bei einem Bezirk: sein Budget, welche Stücke oder Kategorien er will und wie viele.</CBF_FieldDesc_entries>
   <CBF_FieldDesc_excludeFactions>Fraktionen (FactionDef defName), die diesen Ortstyp nie bekommen, auch wenn Marken oder Techstufe passen.</CBF_FieldDesc_excludeFactions>
   <CBF_FieldDesc_faction>Die Fraktion (FactionDef defName), für die diese Regeln gelten. Darf leer bleiben, wenn die Def nur neutrale Einheitenarten nennt.</CBF_FieldDesc_faction>
   <CBF_FieldDesc_fallbackThings>Dinge, die der Reihe nach versucht werden, wenn es thing nicht gibt und onMissing auf Fallback steht.</CBF_FieldDesc_fallbackThings>
-  <CBF_FieldDesc_felderVerwuestet>Chance je Ackerfeld, dass die Frucht darauf zerstört ist, 0 bis 1.</CBF_FieldDesc_felderVerwuestet>
+  <CBF_FieldDesc_fieldsRavaged>Chance je Ackerfeld, dass die Frucht darauf zerstört ist, 0 bis 1.</CBF_FieldDesc_fieldsRavaged>
   <CBF_FieldDesc_fence>Bei einem Acker: ob er einen Zaun mit Tor bekommt. Gehege werden immer eingezäunt, dort wird der Wert nicht gelesen.</CBF_FieldDesc_fence>
-  <CBF_FieldDesc_feuer>Wie viele Feuer noch brennen, als Spanne. Sie entstehen nur in ausgebrannten Räumen, deren Wände nicht brennen.</CBF_FieldDesc_feuer>
+  <CBF_FieldDesc_fires>Wie viele Feuer noch brennen, als Spanne. Sie entstehen nur in ausgebrannten Räumen, deren Wände nicht brennen.</CBF_FieldDesc_fires>
   <CBF_FieldDesc_fields>Ackerarten. Äcker gibt es nur in Vorstadt und Umland. Bei einem Bezirk liegen sie bei seinen eigenen Häusern.</CBF_FieldDesc_fields>
   <CBF_FieldDesc_filler>Gilt schon mit der Hälfte seines Minimums als erfüllt. Wenn am Ende freie Fläche aufgefüllt wird, darf er auch über sein Maximum gehen.</CBF_FieldDesc_filler>
-  <CBF_FieldDesc_fremd>Das Gebäude wird gesetzt und dann in Ruhe gelassen. Beute, Insassen und das Leerbild kommen von dem Mod, der es mitbringt; eine Beutetabelle hier wirkt nicht.</CBF_FieldDesc_fremd>
-  <CBF_FieldDesc_fuerAlleFraktionen>Bietet diesen Typ auch Fraktionen an, die keinen eigenen Ortstyp haben, sofern ihre Techstufe in techLevels steht.</CBF_FieldDesc_fuerAlleFraktionen>
+  <CBF_FieldDesc_foreign>Das Gebäude wird gesetzt und dann in Ruhe gelassen. Beute, Insassen und das Leerbild kommen von dem Mod, der es mitbringt; eine Beutetabelle hier wirkt nicht.</CBF_FieldDesc_foreign>
+  <CBF_FieldDesc_forAllFactions>Bietet diesen Typ auch Fraktionen an, die keinen eigenen Ortstyp haben, sofern ihre Techstufe in techLevels steht.</CBF_FieldDesc_forAllFactions>
   <CBF_FieldDesc_garrison>Einheiten, die in diesem Stadtteil stationiert sind. Jeder Eintrag nennt eine Einheitenliste, eine Anzahl und einen Posten.</CBF_FieldDesc_garrison>
   <CBF_FieldDesc_gatehouse>Stück, das mittig auf jedes Tor gesetzt wird. Beide Seiten müssen ungerade sein. Leer baut ein einfaches Tor.</CBF_FieldDesc_gatehouse>
   <CBF_FieldDesc_gatehouseOutward>Welche Seite des Torhauses in der Zeichnung nach außen zeigt: North, East, South oder West. Vorgabe South.</CBF_FieldDesc_gatehouseOutward>
-  <CBF_FieldDesc_gebaeudeSchaden>Anteil der Trefferpunkte, den Gebäude verlieren, als Spanne von 0 bis 1. Gebäude nahe am Angriff verlieren mehr.</CBF_FieldDesc_gebaeudeSchaden>
-  <CBF_FieldDesc_gefangene>Wie viele frühere Bewohner die Besatzer gefangen halten, als Spanne. Nur wenn besatzung auf Besatzer steht.</CBF_FieldDesc_gefangene>
-  <CBF_FieldDesc_gelaendeOeffnen>Erlaubt dem Planer einen Standort, der erst Erdarbeiten braucht, etwa weggeräumten Fels. Vorgabe aus; als letzten Ausweg tut der Planer es trotzdem.</CBF_FieldDesc_gelaendeOeffnen>
-  <CBF_FieldDesc_geschuetzeZerstoert>Wie wahrscheinlich ein Geschütz zerstört ist, 0 bis 1, nahe am Angriff öfter.</CBF_FieldDesc_geschuetzeZerstoert>
-  <CBF_FieldDesc_gewicht>Gewicht dieses Ziels gegen die anderen Ziele für dasselbe von. 0 oder weniger lässt es wegfallen.</CBF_FieldDesc_gewicht>
-  <CBF_FieldDesc_haeufung>Wie stark sich die Schäden um die Breschen und Angriffspunkte sammeln, 0 bis 1. 0 verteilt sie gleichmäßig.</CBF_FieldDesc_haeufung>
+  <CBF_FieldDesc_buildingDamage>Anteil der Trefferpunkte, den Gebäude verlieren, als Spanne von 0 bis 1. Gebäude nahe am Angriff verlieren mehr.</CBF_FieldDesc_buildingDamage>
+  <CBF_FieldDesc_prisoners>Wie viele frühere Bewohner die Besatzer gefangen halten, als Spanne. Nur wenn besatzung auf Besatzer steht.</CBF_FieldDesc_prisoners>
+  <CBF_FieldDesc_openTerrain>Erlaubt dem Planer einen Standort, der erst Erdarbeiten braucht, etwa weggeräumten Fels. Vorgabe aus; als letzten Ausweg tut der Planer es trotzdem.</CBF_FieldDesc_openTerrain>
+  <CBF_FieldDesc_turretsDestroyed>Wie wahrscheinlich ein Geschütz zerstört ist, 0 bis 1, nahe am Angriff öfter.</CBF_FieldDesc_turretsDestroyed>
+  <CBF_FieldDesc_weight>Gewicht dieses Ziels gegen die anderen Ziele für dasselbe von. 0 oder weniger lässt es wegfallen.</CBF_FieldDesc_weight>
+  <CBF_FieldDesc_clustering>Wie stark sich die Schäden um die Breschen und Angriffspunkte sammeln, 0 bis 1. 0 verteilt sie gleichmäßig.</CBF_FieldDesc_clustering>
   <CBF_FieldDesc_herd>Wie viele Tiere in jedem Gehege leben, als Spanne. Höchstens eines je 12 Innenfelder, mindestens eines.</CBF_FieldDesc_herd>
   <CBF_FieldDesc_hitPoints>Zustand der Beute als Anteil ihrer Trefferpunkte, als Spanne. 1 heißt unbeschädigt.</CBF_FieldDesc_hitPoints>
-  <CBF_FieldDesc_kategorie>Die Architektenkategorie (DesignationCategoryDef defName), in die passende Gebäude kommen. Gibt es sie nicht, wird sie angelegt.</CBF_FieldDesc_kategorie>
-  <CBF_FieldDesc_kategorieLabel>Beschriftung von kategorie, falls sie angelegt werden muss.</CBF_FieldDesc_kategorieLabel>
-  <CBF_FieldDesc_kind>Bei einem Ortstyp: Mittelalterstadt oder Modernestadt. Modernestadt erlaubt Straßen bis 6 Felder breit und verlegt Stromleitungen. Lager und Verlies sind derzeit abgeschaltet. Bei einem Eintrag einer Einheitenliste: die Einheitenart (PawnKindDef defName).</CBF_FieldDesc_kind>
+  <CBF_FieldDesc_categoryLabel>Beschriftung von kategorie, falls sie angelegt werden muss.</CBF_FieldDesc_categoryLabel>
+  <CBF_FieldDesc_kind>Bei einem Ortstyp: Mittelalterstadt oder Modernestadt. Modernestadt erlaubt Straßen bis 6 Felder breit und verlegt Stromleitungen. Lager und Verlies sind derzeit abgeschaltet. Bei einem Eintrag einer Einheitenliste: die Einheitenart (PawnKindDef defName). Bei einem Stadtteil: welcher Teil der Siedlung er ist, Stadt, Vorstadt oder Umland. Burg wird angenommen, aber nicht als eigener Teil geplant. Bei einer Objektliste: Fuellen füllt die Behälter, Leer setzt sie ohne Beute und ohne Insassen.</CBF_FieldDesc_kind>
   <CBF_FieldDesc_lanternGap>Abstand der Laternen entlang der Gassen, in Feldern. 0 heißt 12.</CBF_FieldDesc_lanternGap>
   <CBF_FieldDesc_lanterns>Laternen für die Gassen dieses Stadtteils. Genommen wird die erste, die es gibt. Leer lässt den Stadtteil dunkel.</CBF_FieldDesc_lanterns>
-  <CBF_FieldDesc_leichenAngreifer>Wie viele tote Angreifer herumliegen, als Spanne. Sie sind seit verwesungTage tot.</CBF_FieldDesc_leichenAngreifer>
-  <CBF_FieldDesc_leichenBewohner>Wie viele tote Bewohner herumliegen, als Spanne. Sie sind seit verwesungTage tot.</CBF_FieldDesc_leichenBewohner>
-  <CBF_FieldDesc_list>Die Einheitenliste (PawnListDef), aus der diese Einheiten gezogen werden.</CBF_FieldDesc_list>
-  <CBF_FieldDesc_lootFremd>Überlässt die Beute dem Mod, der den Behälter mitbringt. Die Beutetabelle des Ankers wird übergangen. Ohne objects setzt der Anker nichts.</CBF_FieldDesc_lootFremd>
+  <CBF_FieldDesc_attackerCorpses>Wie viele tote Angreifer herumliegen, als Spanne. Sie sind seit verwesungTage tot.</CBF_FieldDesc_attackerCorpses>
+  <CBF_FieldDesc_residentCorpses>Wie viele tote Bewohner herumliegen, als Spanne. Sie sind seit verwesungTage tot.</CBF_FieldDesc_residentCorpses>
+  <CBF_FieldDesc_list>Die Einheitenliste (PawnListDef), aus der diese Einheiten gezogen werden. Objektliste (LootBuildingCategoryDef), aus der das Ding gezogen wird, statt eines festen Dings.</CBF_FieldDesc_list>
+  <CBF_FieldDesc_lootForeign>Überlässt die Beute dem Mod, der den Behälter mitbringt. Die Beutetabelle des Ankers wird übergangen. Ohne objects setzt der Anker nichts.</CBF_FieldDesc_lootForeign>
   <CBF_FieldDesc_lootTable>Die Beutetabelle (LootTableDef), die hier gilt. An einem Anker füllt sie die Behälter. Bei einem Mitglied einer Objektliste ersetzt sie die Tabelle des Ankers. Bei einer Inhaltszone oder einem Budgeteintrag der Siedlung füllt sie Inhaltszonen. Bei Verliesprofilen wird sie nicht verwendet.</CBF_FieldDesc_lootTable>
-  <CBF_FieldDesc_mauerzugang>Stücke dieser Kategorie werden an den Wehrgang angebunden. Wo der Wehrgang an ihnen vorbeiführt, kommt eine Tür hinein, und ihre offenen Seiten abseits der Mauer werden geschlossen. Leer übernimmt die Elternkategorie, sonst false.</CBF_FieldDesc_mauerzugang>
+  <CBF_FieldDesc_wallAccess>Stücke dieser Kategorie werden an den Wehrgang angebunden. Wo der Wehrgang an ihnen vorbeiführt, kommt eine Tür hinein, und ihre offenen Seiten abseits der Mauer werden geschlossen. Leer übernimmt die Elternkategorie, sonst false.</CBF_FieldDesc_wallAccess>
   <CBF_FieldDesc_maxEntriesPerResolve>Obergrenze für die Stücke, die ein Wurf dieser Tabelle liefern kann. Vorgabe 16.</CBF_FieldDesc_maxEntriesPerResolve>
   <CBF_FieldDesc_maxTechLevel>Nur für Kategorieeinträge: Dinge über dieser Techstufe bleiben weg. Leer heißt keine Grenze.</CBF_FieldDesc_maxTechLevel>
   <CBF_FieldDesc_name>Name des Eintrags. Bei einem Bezirk verbindet er Äcker und Gehege mit dessen Häusern und muss eindeutig sein. Bei einem Gehege erscheint er in Meldungen. Bei einem Stadtteil wird er durch die Art ersetzt, bei einem Acker nicht gelesen, und in Mauerlisten schreibst du piece.</CBF_FieldDesc_name>
   <CBF_FieldDesc_neutral>Einheitenarten (defName), die der Ersatztausch bei keiner Fraktion ändert.</CBF_FieldDesc_neutral>
-  <CBF_FieldDesc_nurAbTechstufe>Kartenschritte, die auf CBF-Karten nur laufen, wenn die Fraktion der Karte die angegebene Techstufe erreicht. Gelesen wird nur die Def namens CBF_Kartenschritte.</CBF_FieldDesc_nurAbTechstufe>
-  <CBF_FieldDesc_obenauf>Setzt das Objekt des Ankers auf das, was dort steht, statt die Zellen vorher zu räumen. Anker in anchorsOver tun das immer.</CBF_FieldDesc_obenauf>
+  <CBF_FieldDesc_fromTechLevel>Kartenschritte, die auf CBF-Karten nur laufen, wenn die Fraktion der Karte die angegebene Techstufe erreicht. Gelesen wird nur die Def namens CBF_Kartenschritte.</CBF_FieldDesc_fromTechLevel>
+  <CBF_FieldDesc_onTop>Setzt das Objekt des Ankers auf das, was dort steht, statt die Zellen vorher zu räumen. Anker in anchorsOver tun das immer.</CBF_FieldDesc_onTop>
   <CBF_FieldDesc_objects>Die Objektliste (LootBuildingCategoryDef), aus der ein Fill- oder Object-Anker seine Gebäude setzt. Ohne sie bleibt ein Object-Anker leer.</CBF_FieldDesc_objects>
   <CBF_FieldDesc_onMissing>Was passiert, wenn es thing nicht gibt. Skip lässt den Eintrag fallen, Fallback versucht fallbackThings, Silver gibt stattdessen Silber.</CBF_FieldDesc_onMissing>
-  <CBF_FieldDesc_ordnung>Position von kategorie im Menü, falls sie angelegt werden muss.</CBF_FieldDesc_ordnung>
+  <CBF_FieldDesc_order>Position von kategorie im Menü, falls sie angelegt werden muss.</CBF_FieldDesc_order>
   <CBF_FieldDesc_outwardIsLow>Welches Ende eines Mauerstreifens aus der Stadt hinaus zeigt. True heißt unten bei einem stehenden Streifen, links bei einem liegenden. Ein Outside-Anker im Streifen hat Vorrang. Bei einem Stück übernimmt leer den Wert des Mauerprofils, dessen Vorgabe true ist.</CBF_FieldDesc_outwardIsLow>
   <CBF_FieldDesc_pawnChain>Einheitenarten, die für diese Rolle der Reihe nach versucht werden. Genommen wird die erste, die es gibt.</CBF_FieldDesc_pawnChain>
   <CBF_FieldDesc_pawnChance>Chance je Behälter, dass jemand darin wartet, 0 bis 1. 0 heißt nie.</CBF_FieldDesc_pawnChance>
@@ -92,25 +90,24 @@
   <CBF_FieldDesc_pens>Gehegearten. Gehege gibt es nur im Umland. Bei einem Bezirk liegen sie nahe seinen eigenen Häusern.</CBF_FieldDesc_pens>
   <CBF_FieldDesc_piece>Ein bestimmtes Stück per defName. Es hat Vorrang vor einer Kategorie im selben Eintrag. In Mauerlisten darf der Name auch eine Kategorie sein.</CBF_FieldDesc_piece>
   <CBF_FieldDesc_plant>Die Pflanze (ThingDef defName). Dinge, die keine Pflanzen sind, werden übergangen.</CBF_FieldDesc_plant>
-  <CBF_FieldDesc_posten>Wo die Einheiten stehen: Innen auf Gassen, Plätzen und freiem Grund, Wehrgang auf dem Wehrgang an offenen Scharten, Tor bei den Toren. Fehlen solche Felder, stehen sie innen.</CBF_FieldDesc_posten>
-  <CBF_FieldDesc_prioritaet>Decken mehrere Regelsätze dieselbe Fraktion und dasselbe von ab, zählt nur die höchste Priorität. Gleiche Prioritäten werden zusammengelegt.</CBF_FieldDesc_prioritaet>
+  <CBF_FieldDesc_post>Wo die Einheiten stehen: Innen auf Gassen, Plätzen und freiem Grund, Wehrgang auf dem Wehrgang an offenen Scharten, Tor bei den Toren. Fehlen solche Felder, stehen sie innen.</CBF_FieldDesc_post>
+  <CBF_FieldDesc_priority>Decken mehrere Regelsätze dieselbe Fraktion und dasselbe von ab, zählt nur die höchste Priorität. Gleiche Prioritäten werden zusammengelegt.</CBF_FieldDesc_priority>
   <CBF_FieldDesc_quality>Qualitätsspanne für Dinge mit Qualität, gleichmäßig zwischen beiden Enden gezogen.</CBF_FieldDesc_quality>
   <CBF_FieldDesc_radius>Wie weit sich die Einheiten um ihre Stelle verteilen, in Feldern, mindestens 1. Wachen schließen sich der allgemeinen Verteidigung an und beachten ihn nicht.</CBF_FieldDesc_radius>
-  <CBF_FieldDesc_raeumen>Räumt Pflanzen von freiem Grund in diesem Stadtteil. Aus behält die Pflanzen und einen Teil der Bäume, umso mehr, je weiter außen der Stadtteil liegt.</CBF_FieldDesc_raeumen>
-  <CBF_FieldDesc_rang>Reihenfolge, in der die Regeln geprüft werden. Kleiner kommt zuerst, der erste Treffer gewinnt.</CBF_FieldDesc_rang>
+  <CBF_FieldDesc_clearRubble>Räumt Pflanzen von freiem Grund in diesem Stadtteil. Aus behält die Pflanzen und einen Teil der Bäume, umso mehr, je weiter außen der Stadtteil liegt.</CBF_FieldDesc_clearRubble>
+  <CBF_FieldDesc_rank>Reihenfolge, in der die Regeln geprüft werden. Kleiner kommt zuerst, der erste Treffer gewinnt.</CBF_FieldDesc_rank>
   <CBF_FieldDesc_required>Wirkt nur bei einem Connect-Anker namens Wall. Das Stück muss dann an der Stadtmauer stehen.</CBF_FieldDesc_required>
   <CBF_FieldDesc_requiredMods>Mods, die dieser Ortstyp über die vom Editor erkannten hinaus braucht. Der Editor trägt sie beim Paketbau als Abhängigkeiten ein. Das Spiel liest die Liste nicht.</CBF_FieldDesc_requiredMods>
   <CBF_FieldDesc_requiresAnyMod>Der Eintrag zählt nur, wenn mindestens einer dieser Mods (packageId) aktiv ist.</CBF_FieldDesc_requiresAnyMod>
   <CBF_FieldDesc_roadEdges>Belag der äußersten Felder von Gassen, Plätzen und Tordurchfahrten in diesem Stadtteil. Genommen wird der erste Boden, den es gibt. Leer behält den Wegbelag.</CBF_FieldDesc_roadEdges>
-  <CBF_FieldDesc_role>Name einer Bauteil-Rolle wie Wand, Boden oder Tür. CBF setzt dort das passende Ding aus der Materialliste, wenn kein Ding und kein Boden gesetzt ist.</CBF_FieldDesc_role>
+  <CBF_FieldDesc_role>Name einer Bauteil-Rolle wie Wand, Boden oder Tür. CBF setzt dort das passende Ding aus der Materialliste, wenn kein Ding und kein Boden gesetzt ist. Wie sich die Einheiten verhalten. Wache schließt sich der allgemeinen Verteidigung an, Posten hält seine Stelle, Geschuetz bemannt die Geschütze um seine Stelle, Zivil verteidigt seine Stelle, darf aber fliehen und muss nicht kämpfen können.</CBF_FieldDesc_role>
   <CBF_FieldDesc_rollChance>Chance, dass die Tabelle überhaupt aus entries zieht, 0 bis 1. always ist davon nicht betroffen.</CBF_FieldDesc_rollChance>
-  <CBF_FieldDesc_rolle>Wie sich die Einheiten verhalten. Wache schließt sich der allgemeinen Verteidigung an, Posten hält seine Stelle, Geschuetz bemannt die Geschütze um seine Stelle, Zivil verteidigt seine Stelle, darf aber fliehen und muss nicht kämpfen können.</CBF_FieldDesc_rolle>
   <CBF_FieldDesc_rolls>Wie oft aus entries gezogen wird, als Spanne. Vorgabe 1~3.</CBF_FieldDesc_rolls>
   <CBF_FieldDesc_rollsOverDepth>Kurve, die rolls nach Tiefe ersetzt. Siedlungen haben keine Tiefe, es zählt also nur der Wert bei 0.</CBF_FieldDesc_rollsOverDepth>
   <CBF_FieldDesc_roofChain>Dächer, die für diese Rolle der Reihe nach versucht werden. Genommen wird das erste, das es gibt.</CBF_FieldDesc_roofChain>
   <CBF_FieldDesc_rotation>Ausrichtung des Dings in der Zeichnung: North, East, South oder West. Sie dreht sich mit dem Stück. Vorgabe North.</CBF_FieldDesc_rotation>
-  <CBF_FieldDesc_schritt>Der Kartenschritt (GenStepDef defName).</CBF_FieldDesc_schritt>
-  <CBF_FieldDesc_schutt>Schutt auf freiem Grund und Wegen, 0 bis 1, nahe am Angriff dichter.</CBF_FieldDesc_schutt>
+  <CBF_FieldDesc_step>Der Kartenschritt (GenStepDef defName).</CBF_FieldDesc_step>
+  <CBF_FieldDesc_rubble>Schutt auf freiem Grund und Wegen, 0 bis 1, nahe am Angriff dichter.</CBF_FieldDesc_rubble>
   <CBF_FieldDesc_segments>Mauerstreifen, jeder ein Feld breit oder ein Feld hoch, entlang der Mauer in dieser Reihenfolge wiederholt.</CBF_FieldDesc_segments>
   <CBF_FieldDesc_siteTags>Marken, die diesen Ortstyp für Questorte nutzbar machen. Ein Questort, der Marken verlangt, nimmt nur Typen mit einer passenden. Leer heißt, er wird für Questorte nie verwendet.</CBF_FieldDesc_siteTags>
   <CBF_FieldDesc_spacing>Abstand zweier Dekostücke entlang der Gasse, in Feldern, als Spanne.</CBF_FieldDesc_spacing>
@@ -123,51 +120,51 @@
   <CBF_FieldDesc_tags>Kategorien der Häuser, um die dieser Acker gelegt wird. Äcker gehen zuerst an Häuser dieser Kategorien. Leer übernimmt bei einem Bezirksacker die Kategorien aus dessen Budget.</CBF_FieldDesc_tags>
   <CBF_FieldDesc_tagSearch>Greift, wenn kein Eintrag einer Kette existiert. AnyWall, AnyDoor, AnyContainer und AnyLight finden ein Ding, AnyHardFloor und AnySoil einen Boden.</CBF_FieldDesc_tagSearch>
   <CBF_FieldDesc_techLevels>Techstufen, für die dieser Typ gedacht ist. Mit fuerAlleFraktionen entscheiden sie, welche Fraktionen in Frage kommen. Einheiten aus Einheitenlisten werden auf die Stufe der Fraktion begrenzt, wenn sie hier steht, sonst auf die höchste genannte. Leer heißt keine Grenze.</CBF_FieldDesc_techLevels>
-  <CBF_FieldDesc_techstufe>Niedrigste Techstufe der Fraktion, ab der der Schritt läuft. Vorgabe Industrial.</CBF_FieldDesc_techstufe>
-  <CBF_FieldDesc_temperatur>Zieltemperatur in Grad Celsius für Dinge mit Thermostat, etwa Heizungen und Kühler. Leer lässt ihre eigene Einstellung.</CBF_FieldDesc_temperatur>
+  <CBF_FieldDesc_techLevel>Niedrigste Techstufe der Fraktion, ab der der Schritt läuft. Vorgabe Industrial.</CBF_FieldDesc_techLevel>
+  <CBF_FieldDesc_temperature>Zieltemperatur in Grad Celsius für Dinge mit Thermostat, etwa Heizungen und Kühler. Leer lässt ihre eigene Einstellung.</CBF_FieldDesc_temperature>
   <CBF_FieldDesc_terrainChain>Böden, die für diese Rolle der Reihe nach versucht werden. Genommen wird der erste, den es gibt.</CBF_FieldDesc_terrainChain>
   <CBF_FieldDesc_terrainMix>Gewichtete Liste von Böden, die für diese Rolle gemischt werden. Sie hat Vorrang vor terrainChain; gibt es keinen davon, gelten die Ketten.</CBF_FieldDesc_terrainMix>
   <CBF_FieldDesc_thing>Das Ding (ThingDef defName), für das dieser Eintrag steht: in die Zelle gesetzt, als Beute gegeben oder als Gebäude gesetzt.</CBF_FieldDesc_thing>
-  <CBF_FieldDesc_tor>Tür für die Durchgänge in der Mauer dieses Stadtteils. Leer nimmt sie aus der Materialliste. Nicht das Torhaus, das steht unter gatehouses.</CBF_FieldDesc_tor>
-  <CBF_FieldDesc_torZerstoert>Chance je Tor, dass es eingerissen ist, 0 bis 1.</CBF_FieldDesc_torZerstoert>
+  <CBF_FieldDesc_gate>Tür für die Durchgänge in der Mauer dieses Stadtteils. Leer nimmt sie aus der Materialliste. Nicht das Torhaus, das steht unter gatehouses.</CBF_FieldDesc_gate>
+  <CBF_FieldDesc_gateDestroyed>Chance je Tor, dass es eingerissen ist, 0 bis 1.</CBF_FieldDesc_gateDestroyed>
   <CBF_FieldDesc_tower>Stück für die Türme. Es muss quadratisch sein und eine ungerade Kantenlänge haben. Leer lässt den Generator einen runden Turm bauen.</CBF_FieldDesc_tower>
-  <CBF_FieldDesc_traufenMaterial>Material der Traufen. Leer nimmt das Material der Mauer, an der sie sitzen.</CBF_FieldDesc_traufenMaterial>
+  <CBF_FieldDesc_eavesMaterial>Material der Traufen. Leer nimmt das Material der Mauer, an der sie sitzen.</CBF_FieldDesc_eavesMaterial>
   <CBF_FieldDesc_uniqueEntries>Jeder Eintrag kann je Wurf der Tabelle höchstens einmal gezogen werden.</CBF_FieldDesc_uniqueEntries>
-  <CBF_FieldDesc_unterdruecken>Kartenschritte, die auf CBF-Karten übersprungen werden. Baut CBF dort nichts, werden sie nachgeholt. Gelesen wird nur die Def namens CBF_Kartenschritte.</CBF_FieldDesc_unterdruecken>
+  <CBF_FieldDesc_suppress>Kartenschritte, die auf CBF-Karten übersprungen werden. Baut CBF dort nichts, werden sie nachgeholt. Gelesen wird nur die Def namens CBF_Kartenschritte.</CBF_FieldDesc_suppress>
   <CBF_FieldDesc_usable>False schaltet das Profil ab. Es wird auch abgeschaltet, wenn keiner seiner Streifen brauchbar ist.</CBF_FieldDesc_usable>
   <CBF_FieldDesc_value>Nur für Kategorieeinträge: Marktwertspanne, in der ein Ding liegen muss. 0~0 heißt keine Grenze.</CBF_FieldDesc_value>
   <CBF_FieldDesc_variants>Alternativen, je Zelle nach Gewicht gezogen. Das eigene Ding oder der eigene Boden des Eintrags macht, falls gesetzt, mit Gewicht 1 mit.</CBF_FieldDesc_variants>
-  <CBF_FieldDesc_verschmelzen>True fügt Gebäude dieser Kategorie Wand an Wand mit Nachbarn derselben Kategorie zusammen, false nie. Leer tut es nur, wo der Plan dicht ist.</CBF_FieldDesc_verschmelzen>
-  <CBF_FieldDesc_versorgung>Größe der Gehege im Umland im Verhältnis zur bebauten Fläche. Vorgabe 1.2. Ein Gehege umfasst 60 bis 240 Felder.</CBF_FieldDesc_versorgung>
-  <CBF_FieldDesc_verwesungTage>Wie lange die Toten schon tot sind, in Tagen, als Spanne.</CBF_FieldDesc_verwesungTage>
-  <CBF_FieldDesc_viehWeg>Chance je Tier der Besitzer oder Besatzer, dass es fort ist, 0 bis 1.</CBF_FieldDesc_viehWeg>
-  <CBF_FieldDesc_von>defName der Einheitenart oder des Dings, das ersetzt wird.</CBF_FieldDesc_von>
+  <CBF_FieldDesc_merge>True fügt Gebäude dieser Kategorie Wand an Wand mit Nachbarn derselben Kategorie zusammen, false nie. Leer tut es nur, wo der Plan dicht ist.</CBF_FieldDesc_merge>
+  <CBF_FieldDesc_supply>Größe der Gehege im Umland im Verhältnis zur bebauten Fläche. Vorgabe 1.2. Ein Gehege umfasst 60 bis 240 Felder.</CBF_FieldDesc_supply>
+  <CBF_FieldDesc_rotDays>Wie lange die Toten schon tot sind, in Tagen, als Spanne.</CBF_FieldDesc_rotDays>
+  <CBF_FieldDesc_livestockGone>Chance je Tier der Besitzer oder Besatzer, dass es fort ist, 0 bis 1.</CBF_FieldDesc_livestockGone>
+  <CBF_FieldDesc_from>defName der Einheitenart oder des Dings, das ersetzt wird.</CBF_FieldDesc_from>
   <CBF_FieldDesc_walls>Mauerstreifen, jeder ein Feld breit oder ein Feld hoch, entlang der Mauer nach Gewicht wiederholt. Der dickste bestimmt die Mauertiefe. Bei einem Stadtteil heißt leer keine Mauer. Beim Ortstyp ersetzen sie die Streifen des Mauerprofils.</CBF_FieldDesc_walls>
-  <CBF_FieldDesc_wandAbriss>Wie wahrscheinlich eine Gebäudewand eingerissen ist, 0 bis 1, nahe am Angriff öfter.</CBF_FieldDesc_wandAbriss>
+  <CBF_FieldDesc_wallDemolition>Wie wahrscheinlich eine Gebäudewand eingerissen ist, 0 bis 1, nahe am Angriff öfter.</CBF_FieldDesc_wallDemolition>
   <CBF_FieldDesc_wards>Die Teile der Siedlung: Stadt, Vorstadt und Umland, jeder mit eigener Mauer, Garnison, Bezirken und Belägen.</CBF_FieldDesc_wards>
-  <CBF_FieldDesc_wdStufe>World-Domination-Stufe, für die dieser Typ steht, als Spanne von 1 bis 4. Eine Siedlung mit Stufe nimmt bevorzugt die Typen, die ihr am nächsten liegen. 0 heißt keine Stufe.</CBF_FieldDesc_wdStufe>
+  <CBF_FieldDesc_wdLevel>World-Domination-Stufe, für die dieser Typ steht, als Spanne von 1 bis 4. Eine Siedlung mit Stufe nimmt bevorzugt die Typen, die ihr am nächsten liegen. 0 heißt keine Stufe.</CBF_FieldDesc_wdLevel>
   <CBF_FieldDesc_riafHolding>Holding-Art aus A Rim of Ice and Fire, für die dieser Typ der Plan ist: Dorf, Stadt oder Garnison. Leer heißt keine. Ein Typ mit Holding-Art wird nur für solche Holdings verwendet.</CBF_FieldDesc_riafHolding>
   <CBF_FieldDesc_weightOverDepth>Kurve, die weight nach Tiefe ersetzt. Siedlungen haben keine Tiefe, es zählt also nur der Wert bei 0.</CBF_FieldDesc_weightOverDepth>
   <CBF_FieldDesc_weightOverWealth>Kurve über den Wohlstand der Heimatkarte des Spielers. Ihr Wert vervielfacht weight.</CBF_FieldDesc_weightOverWealth>
-  <CBF_FieldDesc_zu>defName des Ersatzes. Ziele, die es nicht gibt, werden übergangen.</CBF_FieldDesc_zu>
+  <CBF_FieldDesc_to>defName des Ersatzes. Ziele, die es nicht gibt, werden übergangen.</CBF_FieldDesc_to>
   <CBF_FieldDesc_LegendEntry_count>Stapelgröße des Dings auf diesem Feld, für Gegenstände. Gebäude beachten den Wert nicht.</CBF_FieldDesc_LegendEntry_count>
-  <CBF_FieldDesc_flussbreite>Kleinste Flussbreite in Feldern, die für einen Hafen zählt. Das Meer zählt immer.</CBF_FieldDesc_flussbreite>
-  <CBF_FieldDesc_reichweite>Wie weit vom Ort entfernt Hafenstücke stehen dürfen, in Feldern.</CBF_FieldDesc_reichweite>
-  <CBF_FieldDesc_hafen>Hafen an der Küste oder an einem breiten Fluss: welche Hafengebäude der Ort bekommt. Nur für Mittelalter-Orte.</CBF_FieldDesc_hafen>
-  <CBF_FieldDesc_fuer>Stücke oder Kategorien, für die dieser Rolleneintrag gedacht ist, etwa Palisadenwände und Palisadentürme. Ein Treffer hier schlägt einen Stadtteil-Treffer. Gilt nur für Mauern, Wege und Böden, die der Generator selbst zieht, nicht in Gebäuden; die nehmen, wie entworfen, das Material der Karte.</CBF_FieldDesc_fuer>
-  <CBF_FieldDesc_stadtteil>Stadtteil, für den dieser Rolleneintrag gedacht ist: Stadt, Vorstadt oder Umland. Leer gilt überall. Gilt nur für Mauern, Wege und Böden, die der Generator selbst zieht, nicht in Gebäuden; die nehmen, wie entworfen, das Material der Karte.</CBF_FieldDesc_stadtteil>
-  <CBF_FieldDesc_wdTyp>World-Domination-Ortsarten, für die dieser Plan steht, etwa Mining oder Slavery. Leer heißt jede Art. Nur mit World Domination 2.0.</CBF_FieldDesc_wdTyp>
+  <CBF_FieldDesc_minRiverWidth>Kleinste Flussbreite in Feldern, die für einen Hafen zählt. Das Meer zählt immer.</CBF_FieldDesc_minRiverWidth>
+  <CBF_FieldDesc_range>Wie weit vom Ort entfernt Hafenstücke stehen dürfen, in Feldern.</CBF_FieldDesc_range>
+  <CBF_FieldDesc_harbor>Hafen an der Küste oder an einem breiten Fluss: welche Hafengebäude der Ort bekommt. Nur für Mittelalter-Orte.</CBF_FieldDesc_harbor>
+  <CBF_FieldDesc_forPieces>Stücke oder Kategorien, für die dieser Rolleneintrag gedacht ist, etwa Palisadenwände und Palisadentürme. Ein Treffer hier schlägt einen Stadtteil-Treffer. Gilt nur für Mauern, Wege und Böden, die der Generator selbst zieht, nicht in Gebäuden; die nehmen, wie entworfen, das Material der Karte.</CBF_FieldDesc_forPieces>
+  <CBF_FieldDesc_district>Stadtteil, für den dieser Rolleneintrag gedacht ist: Stadt, Vorstadt oder Umland. Leer gilt überall. Gilt nur für Mauern, Wege und Böden, die der Generator selbst zieht, nicht in Gebäuden; die nehmen, wie entworfen, das Material der Karte.</CBF_FieldDesc_district>
+  <CBF_FieldDesc_wdType>World-Domination-Ortsarten, für die dieser Plan steht, etwa Mining oder Slavery. Leer heißt jede Art. Nur mit World Domination 2.0.</CBF_FieldDesc_wdType>
   <CBF_FieldDesc_PawnListDef_stufe>Die Techstufe, als die diese Liste gilt. Gesetzt zieht der Ort aus der ganzen Liste, ohne Stufen aus der Ausrüstung zu ermitteln. Leer ermittelt die Stufe je Mitglied.</CBF_FieldDesc_PawnListDef_stufe>
-  <CBF_FieldDesc_mitIdeologie>Meme oder Gebote (defNames). Der Eintrag wird nur gebaut, wenn die Ideologie der Fraktion mindestens eines davon hat. Braucht Ideology.</CBF_FieldDesc_mitIdeologie>
-  <CBF_FieldDesc_ohneIdeologie>Meme oder Gebote (defNames). Der Eintrag wird nicht gebaut, wenn die Ideologie der Fraktion eines davon hat. Braucht Ideology.</CBF_FieldDesc_ohneIdeologie>
-  <CBF_FieldDesc_biomLeder>An einem Ding-Eintrag: Der Stoff wird durch das Leder eines Wildtiers aus dem Biom ersetzt, einmal gewählt je Stück.</CBF_FieldDesc_biomLeder>
-  <CBF_FieldDesc_ideologieGebaeude>An einem Objekt-Anker: stellt ein Gebäude der Ideologie der Fraktion auf, etwa einen Altar oder Ritualplatz. Braucht Ideology.</CBF_FieldDesc_ideologieGebaeude>
+  <CBF_FieldDesc_withIdeo>Meme oder Gebote (defNames). Der Eintrag wird nur gebaut, wenn die Ideologie der Fraktion mindestens eines davon hat. Braucht Ideology.</CBF_FieldDesc_withIdeo>
+  <CBF_FieldDesc_withoutIdeo>Meme oder Gebote (defNames). Der Eintrag wird nicht gebaut, wenn die Ideologie der Fraktion eines davon hat. Braucht Ideology.</CBF_FieldDesc_withoutIdeo>
+  <CBF_FieldDesc_biomeLeather>An einem Ding-Eintrag: Der Stoff wird durch das Leder eines Wildtiers aus dem Biom ersetzt, einmal gewählt je Stück.</CBF_FieldDesc_biomeLeather>
+  <CBF_FieldDesc_ideoBuilding>An einem Objekt-Anker: stellt ein Gebäude der Ideologie der Fraktion auf, etwa einen Altar oder Ritualplatz. Braucht Ideology.</CBF_FieldDesc_ideoBuilding>
   <CBF_FieldDesc_wdBudget>Mit World Domination 2.0 werden Behälter mit dieser Tabelle aus dem Beutebudget des Orts gefüllt statt aus der Tabelle.</CBF_FieldDesc_wdBudget>
-  <CBF_FieldDesc_ideologieStil>Möbel bekommen den Stil der Ideologie der Fraktion. Braucht Ideology.</CBF_FieldDesc_ideologieStil>
-  <CBF_FieldDesc_lagerArten>Namen von SitePartDefs, etwa BanditCamp oder Outpost. Dieser Lagerplan baut diese Quest-Orte. Nur für die Ortsart Lager.</CBF_FieldDesc_lagerArten>
-  <CBF_FieldDesc_ohneWdBeute>Schaltet das Beutebudget von World Domination für diesen Ortstyp ab.</CBF_FieldDesc_ohneWdBeute>
-  <CBF_FieldDesc_ideologieRolle>Rolle der Ideologie der Fraktion für Einheiten dieses Eintrags: leer, Kampf (Schützen- oder Nahkampfspezialist nach Waffe) oder der defName eines Rollen-Gebots. Braucht Ideology.</CBF_FieldDesc_ideologieRolle>
-  <CBF_FieldDesc_baumanteil>Anteil der wilden Bäume im Ort, die beim Bau stehen bleiben, 0 bis 1. 0 räumt alle.</CBF_FieldDesc_baumanteil>
+  <CBF_FieldDesc_ideoStyle>Möbel bekommen den Stil der Ideologie der Fraktion. Braucht Ideology.</CBF_FieldDesc_ideoStyle>
+  <CBF_FieldDesc_campTypes>Namen von SitePartDefs, etwa BanditCamp oder Outpost. Dieser Lagerplan baut diese Quest-Orte. Nur für die Ortsart Lager.</CBF_FieldDesc_campTypes>
+  <CBF_FieldDesc_noWdLoot>Schaltet das Beutebudget von World Domination für diesen Ortstyp ab.</CBF_FieldDesc_noWdLoot>
+  <CBF_FieldDesc_ideoRole>Rolle der Ideologie der Fraktion für Einheiten dieses Eintrags: leer, Kampf (Schützen- oder Nahkampfspezialist nach Waffe) oder der defName eines Rollen-Gebots. Braucht Ideology.</CBF_FieldDesc_ideoRole>
+  <CBF_FieldDesc_treeShare>Anteil der wilden Bäume im Ort, die beim Bau stehen bleiben, 0 bis 1. 0 räumt alle.</CBF_FieldDesc_treeShare>
   <CBF_FieldDesc_mines>Minen dieses Bezirks. Jede Mine beginnt an einem Gebäude des Bezirks und führt als Gang mit Kammern in den Fels.</CBF_FieldDesc_mines>
   <CBF_FieldDesc_Minending_inhalt>Waren, die in oder neben das Ding kommen, etwa Erz in einen Wagen.</CBF_FieldDesc_Minending_inhalt>
   <CBF_FieldDesc_Minending_menge>Wie viele der Waren aus inhalt.</CBF_FieldDesc_Minending_menge>
@@ -179,13 +176,12 @@
   <CBF_FieldDesc_Minenspec_kammerGroesse>Kantenlänge der Kammern in Feldern.</CBF_FieldDesc_Minenspec_kammerGroesse>
   <CBF_FieldDesc_Minenspec_kammern>Zahl der Kammern entlang des Gangs.</CBF_FieldDesc_Minenspec_kammern>
   <CBF_FieldDesc_Minenspec_laenge>Länge des Gangs in Feldern.</CBF_FieldDesc_Minenspec_laenge>
-  <CBF_FieldDesc_anbauUeberstand>Mit anbauVoll: wie viele Felder der Anbau an jedem Ende über die Hauswand hinausreichen muss. 0 heißt bündig.</CBF_FieldDesc_anbauUeberstand>
-  <CBF_FieldDesc_anbauVoll>An der Kategorie des Anbaus. Wahr: Der Anbau setzt nur dort an, wo er die ganze Wandseite des Hauses abdeckt.</CBF_FieldDesc_anbauVoll>
-  <CBF_FieldDesc_liste>Objektliste (LootBuildingCategoryDef), aus der das Ding gezogen wird, statt eines festen Dings.</CBF_FieldDesc_liste>
-  <CBF_FieldDesc_ebenen>Wie tief sich die Gänge verzweigen: 0 nur der Hauptgang, 1 Seitengänge davon, 2 Seitengänge von diesen.</CBF_FieldDesc_ebenen>
-  <CBF_FieldDesc_stuetze>Ding, das als Stütze entlang der Gänge gesetzt wird, etwa ein Holzpfeiler. Leer setzt keine.</CBF_FieldDesc_stuetze>
-  <CBF_FieldDesc_stuetzenAbstand>Abstand in Feldern zwischen zwei Stützen entlang eines Gangs.</CBF_FieldDesc_stuetzenAbstand>
-  <CBF_FieldDesc_anbauEckenWeg>Wo ein Anbau dieser Kategorie anschließt, werden die zwei inneren Eckwandfelder an den Enden der geraden Hauswand zu Boden. Für Beizelte.</CBF_FieldDesc_anbauEckenWeg>
-  <CBF_FieldDesc_nurMitMod>packageIds von Mods, durch Kommas getrennt. Das Stück wird nur gesetzt, wenn alle aktiv sind.</CBF_FieldDesc_nurMitMod>
-  <CBF_FieldDesc_ausWennMod>packageIds von Mods, durch Kommas getrennt. Das Stück wird nicht gesetzt, wenn einer davon aktiv ist.</CBF_FieldDesc_ausWennMod>
+  <CBF_FieldDesc_annexOverhang>Mit anbauVoll: wie viele Felder der Anbau an jedem Ende über die Hauswand hinausreichen muss. 0 heißt bündig.</CBF_FieldDesc_annexOverhang>
+  <CBF_FieldDesc_annexFill>An der Kategorie des Anbaus. Wahr: Der Anbau setzt nur dort an, wo er die ganze Wandseite des Hauses abdeckt.</CBF_FieldDesc_annexFill>
+  <CBF_FieldDesc_levels>Wie tief sich die Gänge verzweigen: 0 nur der Hauptgang, 1 Seitengänge davon, 2 Seitengänge von diesen.</CBF_FieldDesc_levels>
+  <CBF_FieldDesc_support>Ding, das als Stütze entlang der Gänge gesetzt wird, etwa ein Holzpfeiler. Leer setzt keine.</CBF_FieldDesc_support>
+  <CBF_FieldDesc_supportSpacing>Abstand in Feldern zwischen zwei Stützen entlang eines Gangs.</CBF_FieldDesc_supportSpacing>
+  <CBF_FieldDesc_annexCornerPath>Wo ein Anbau dieser Kategorie anschließt, werden die zwei inneren Eckwandfelder an den Enden der geraden Hauswand zu Boden. Für Beizelte.</CBF_FieldDesc_annexCornerPath>
+  <CBF_FieldDesc_onlyWithMod>packageIds von Mods, durch Kommas getrennt. Das Stück wird nur gesetzt, wenn alle aktiv sind.</CBF_FieldDesc_onlyWithMod>
+  <CBF_FieldDesc_offIfMod>packageIds von Mods, durch Kommas getrennt. Das Stück wird nicht gesetzt, wenn einer davon aktiv ist.</CBF_FieldDesc_offIfMod>
 </LanguageData>

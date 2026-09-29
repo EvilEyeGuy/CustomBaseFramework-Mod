@@ -157,22 +157,22 @@
   <CBF_FieldDesc_gates>Wie viele Tore die Mauer bekommt, als Spanne.</CBF_FieldDesc_gates>
   <CBF_Field_embrasureEvery>Schießscharten alle</CBF_Field_embrasureEvery>
   <CBF_FieldDesc_embrasureEvery>Alle wie viele Zellen die Mauer eine Schießscharte bekommt. 0 heißt keine. Fehlt die Rolle EMBRASURE, wird normale Mauer gesetzt.</CBF_FieldDesc_embrasureEvery>
-  <CBF_Field_kerbeMax>Größte Kerbe</CBF_Field_kerbeMax>
-  <CBF_FieldDesc_kerbeMax>Wie tief der Umriss nach innen schneiden darf, wo das Gelände es nahelegt.</CBF_FieldDesc_kerbeMax>
+  <CBF_Field_notchMax>Größte Kerbe</CBF_Field_notchMax>
+  <CBF_FieldDesc_notchMax>Wie tief der Umriss nach innen schneiden darf, wo das Gelände es nahelegt.</CBF_FieldDesc_notchMax>
   <CBF_Field_wallGap>Abstand zur Mauer</CBF_Field_wallGap>
   <CBF_FieldDesc_wallGap>Wie viel Platz innen an der Mauer frei bleibt. Näher dürfen nur Stücke mit wallContact.</CBF_FieldDesc_wallGap>
   <CBF_Field_minLobe>Kleinste Ausbuchtung</CBF_Field_minLobe>
   <CBF_FieldDesc_minLobe>Kleinste nutzbare Ausbuchtung des Umrisses. 0 schaltet die Prüfung ab.</CBF_FieldDesc_minLobe>
-  <CBF_Field_laufMin>Kürzester Mauerlauf</CBF_Field_laufMin>
-  <CBF_FieldDesc_laufMin>Kürzestes gerades Mauerstück, bevor sie abbiegen darf.</CBF_FieldDesc_laufMin>
-  <CBF_Field_laufMax>Längster Mauerlauf</CBF_Field_laufMax>
-  <CBF_FieldDesc_laufMax>Längstes gerades Mauerstück, bevor sie eine Stufe machen muss.</CBF_FieldDesc_laufMax>
-  <CBF_Field_stufeMax>Größte Stufe</CBF_Field_stufeMax>
-  <CBF_FieldDesc_stufeMax>Wie weit die Mauer auf einmal seitlich versetzen darf.</CBF_FieldDesc_stufeMax>
-  <CBF_Field_buchtHaus>Kleinstes Haus</CBF_Field_buchtHaus>
-  <CBF_FieldDesc_buchtHaus>Kantenlänge des kleinsten Hauses. Buchten darunter fallen weg.</CBF_FieldDesc_buchtHaus>
-  <CBF_Field_minFuellgrad>Kleinster Füllgrad</CBF_Field_minFuellgrad>
-  <CBF_FieldDesc_minFuellgrad>Wie voll der Umriss gegen seine konvexe Hülle sein muss. Kleiner erlaubt zerklüftetere Formen.</CBF_FieldDesc_minFuellgrad>
+  <CBF_Field_runMin>Kürzester Mauerlauf</CBF_Field_runMin>
+  <CBF_FieldDesc_runMin>Kürzestes gerades Mauerstück, bevor sie abbiegen darf.</CBF_FieldDesc_runMin>
+  <CBF_Field_runMax>Längster Mauerlauf</CBF_Field_runMax>
+  <CBF_FieldDesc_runMax>Längstes gerades Mauerstück, bevor sie eine Stufe machen muss.</CBF_FieldDesc_runMax>
+  <CBF_Field_stepMax>Größte Stufe</CBF_Field_stepMax>
+  <CBF_FieldDesc_stepMax>Wie weit die Mauer auf einmal seitlich versetzen darf.</CBF_FieldDesc_stepMax>
+  <CBF_Field_minHouseSize>Kleinstes Haus</CBF_Field_minHouseSize>
+  <CBF_FieldDesc_minHouseSize>Kantenlänge des kleinsten Hauses. Buchten darunter fallen weg.</CBF_FieldDesc_minHouseSize>
+  <CBF_Field_minFillRatio>Kleinster Füllgrad</CBF_Field_minFillRatio>
+  <CBF_FieldDesc_minFillRatio>Wie voll der Umriss gegen seine konvexe Hülle sein muss. Kleiner erlaubt zerklüftetere Formen.</CBF_FieldDesc_minFillRatio>
   <CBF_Field_roadMain>Breite der Hauptstraße</CBF_Field_roadMain>
   <CBF_FieldDesc_roadMain>Breite der Hauptstraße. Es gibt bewusst nur zwei Breiten, mehr zerschneidet die Karte optisch.</CBF_FieldDesc_roadMain>
   <CBF_Field_roadLane>Breite der Gassen</CBF_Field_roadLane>
@@ -334,7 +334,6 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_OutwardTip>Welches Ende des gezeichneten Streifens von der Stadt wegzeigt. Der Mauerbauer dreht den Streifen für jede Himmelsrichtung, deshalb zählen nur die beiden Enden. Eine Schießscharte braucht das: ihre Öffnung gehört nach außen.</CBF_OutwardTip>
   <!-- Stadtteile -->
   <CBF_Field_name>Name</CBF_Field_name>
-  <CBF_Field_art>Art</CBF_Field_art>
   <CBF_Field_ground>Boden</CBF_Field_ground>
   <CBF_FieldDesc_ground>Der Boden zwischen den Häusern. Leer heißt: die Karte bleibt, wie sie ist. Gassen, Plätze und Äcker haben ihren eigenen Belag und bleiben unberührt.</CBF_FieldDesc_ground>
   <CBF_AddGround>+ Boden</CBF_AddGround>
@@ -374,7 +373,7 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_Field_usedByPieces>Stücke damit</CBF_Field_usedByPieces>
   <CBF_Field_pawnList>Einheitenliste</CBF_Field_pawnList>
   <CBF_Field_pawnChance>Einheitenchance</CBF_Field_pawnChance>
-  <CBF_Field_rolle>Rolle</CBF_Field_rolle>
+  <CBF_Field_role>Rolle</CBF_Field_role>
   <CBF_Field_radius>Radius</CBF_Field_radius>
   <CBF_Field_sourceMod>Aus</CBF_Field_sourceMod>
   <CBF_Field_race>Art</CBF_Field_race>
@@ -427,8 +426,8 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_FieldDesc_apparelTags>Welche Kleidung diese Art bekommen kann, zusätzlich zu dem, was das Budget kauft.</CBF_FieldDesc_apparelTags>
   <CBF_FieldDesc_gearHealthRange>Wie abgetragen die Sachen sind, 1 heißt neuwertig.</CBF_FieldDesc_gearHealthRange>
   <CBF_Empty>Leer</CBF_Empty>
-  <CBF_Field_leer>Leeres Gebäude</CBF_Field_leer>
-  <CBF_FieldDesc_leer>Tritt an die Stelle des Behälters, sobald ein Spieler ihn ausgeräumt hat. Wählbar sind nur Gebäude mit derselben Grundfläche.</CBF_FieldDesc_leer>
+  <CBF_Field_empty>Leeres Gebäude</CBF_Field_empty>
+  <CBF_FieldDesc_empty>Tritt an die Stelle des Behälters, sobald ein Spieler ihn ausgeräumt hat. Wählbar sind nur Gebäude mit derselben Grundfläche.</CBF_FieldDesc_empty>
   <CBF_BehaelterDurchsucht>Schon durchsucht.</CBF_BehaelterDurchsucht>
   <CBF_BehaelterTitle>Beutebehälter</CBF_BehaelterTitle>
   <CBF_BehaelterFromDef>Von einem Gebäude abnehmen</CBF_BehaelterFromDef>
@@ -449,23 +448,23 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_BehaelterPickImage>Bild wählen</CBF_BehaelterPickImage>
   <CBF_BehaelterNoImages>Unter {0} liegt kein Bild.</CBF_BehaelterNoImages>
   <CBF_Field_texPath>Textur</CBF_Field_texPath>
-  <CBF_Field_leerGrafik>Bild danach</CBF_Field_leerGrafik>
+  <CBF_Field_emptyGraphic>Bild danach</CBF_Field_emptyGraphic>
   <CBF_Field_drawSize>Zeichengröße</CBF_Field_drawSize>
-  <CBF_Field_leerGebaeude>Wird zu</CBF_Field_leerGebaeude>
-  <CBF_Field_zerstoerenWennLeer>Verschwindet wenn leer</CBF_Field_zerstoerenWennLeer>
+  <CBF_Field_emptyBuilding>Wird zu</CBF_Field_emptyBuilding>
+  <CBF_Field_destroyWhenEmpty>Verschwindet wenn leer</CBF_Field_destroyWhenEmpty>
   <CBF_Field_standardTabelle>Standardtabelle</CBF_Field_standardTabelle>
   <CBF_Field_standardEinheiten>Standardeinheiten</CBF_Field_standardEinheiten>
   <CBF_Field_einheitenChance>Einheitenchance</CBF_Field_einheitenChance>
   <CBF_Field_einheitenFeindlich>Einheit wird feindlich</CBF_Field_einheitenFeindlich>
   <CBF_FieldDesc_standardTabelle>Gilt, wenn sonst niemand eine Beutetabelle zuweist, etwa wenn der Behälter von Hand gesetzt wird statt über einen Anker.</CBF_FieldDesc_standardTabelle>
-  <CBF_FieldDesc_zerstoerenWennLeer>Es verschwindet nach dem Durchsuchen und hinterlässt kein Baumaterial. Greift nur, wenn oben kein Gebäude steht.</CBF_FieldDesc_zerstoerenWennLeer>
+  <CBF_FieldDesc_destroyWhenEmpty>Es verschwindet nach dem Durchsuchen und hinterlässt kein Baumaterial. Greift nur, wenn oben kein Gebäude steht.</CBF_FieldDesc_destroyWhenEmpty>
   <CBF_BehaelterEdit>Behälter bearbeiten</CBF_BehaelterEdit>
   <CBF_BehaelterUpdate>Änderungen sichern</CBF_BehaelterUpdate>
   <CBF_BehaelterNoExt>Diesem Behälter fehlt der Einstellungsblock, er kann also nie gefüllt werden.</CBF_BehaelterNoExt>
   <CBF_Field_pawnCount>Anzahl</CBF_Field_pawnCount>
-  <CBF_Field_pawnFeindlich>Wird feindlich</CBF_Field_pawnFeindlich>
+  <CBF_Field_pawnHostile>Wird feindlich</CBF_Field_pawnHostile>
   <CBF_FieldDesc_pawnList>Wer darin stecken kann. Wirkt nur in Behältern mit Innenraum, nicht auf offenen Regalen.</CBF_FieldDesc_pawnList>
-  <CBF_FieldDesc_pawnFeindlich>Die Einheit greift an, sobald der Behälter geöffnet wird. Tiere werden Manhunter, Leute rasten aus.</CBF_FieldDesc_pawnFeindlich>
+  <CBF_FieldDesc_pawnHostile>Die Einheit greift an, sobald der Behälter geöffnet wird. Tiere werden Manhunter, Leute rasten aus.</CBF_FieldDesc_pawnHostile>
   <CBF_Field_hitPoints>Zustand %</CBF_Field_hitPoints>
   <CBF_Field_depthRange>Tiefe</CBF_Field_depthRange>
   <CBF_Field_stuff>Material</CBF_Field_stuff>
@@ -533,13 +532,13 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_MemberDestroyedTip>Nichts gesetzt, also wird es nach dem Ausräumen zerstört. Baumaterial bleibt keines zurück.</CBF_MemberDestroyedTip>
   <CBF_MemberBecomes>Wird nach dem Ausräumen zu {0}.</CBF_MemberBecomes>
   <CBF_MemberBecomesWhat>Was wird aus {0}?</CBF_MemberBecomesWhat>
-  <CBF_FieldDesc_leerGrafik>Dasselbe Gebäude, anderes Bild. Es bleibt dieser Behälter, behält seinen Namen und bleibt Deko: einlagern kann niemand etwas darin. Das Bild wechselt, sobald durchsucht wurde, nicht wenn nichts mehr drin ist, denn ein Behälter, aus dem nichts kam, ist trotzdem durchsucht.</CBF_FieldDesc_leerGrafik>
-  <CBF_FieldDesc_leerGebaeude>Dieser Behälter verschwindet, und ein anderes Gebäude steht an seiner Stelle. Nimm das, wenn danach etwas Richtiges dastehen soll, etwa eine gewöhnliche Truhe, in der die Kolonie lagern kann. Geht nur bei gleicher Grundfläche, sonst bleibt dieser einfach stehen. Steht hier etwas, bekommt man das Bild darüber nie zu sehen.</CBF_FieldDesc_leerGebaeude>
+  <CBF_FieldDesc_emptyGraphic>Dasselbe Gebäude, anderes Bild. Es bleibt dieser Behälter, behält seinen Namen und bleibt Deko: einlagern kann niemand etwas darin. Das Bild wechselt, sobald durchsucht wurde, nicht wenn nichts mehr drin ist, denn ein Behälter, aus dem nichts kam, ist trotzdem durchsucht.</CBF_FieldDesc_emptyGraphic>
+  <CBF_FieldDesc_emptyBuilding>Dieser Behälter verschwindet, und ein anderes Gebäude steht an seiner Stelle. Nimm das, wenn danach etwas Richtiges dastehen soll, etwa eine gewöhnliche Truhe, in der die Kolonie lagern kann. Geht nur bei gleicher Grundfläche, sonst bleibt dieser einfach stehen. Steht hier etwas, bekommt man das Bild darüber nie zu sehen.</CBF_FieldDesc_emptyBuilding>
   <CBF_FieldDesc_einheitenChance>Wie wahrscheinlich jemand darin wartet, je Behälter. 0 heißt nie.</CBF_FieldDesc_einheitenChance>
   <CBF_OnlyContainers>Meine Behälter</CBF_OnlyContainers>
   <CBF_OnlyContainersTip>Nur die Beutebehälter, die du selbst gebaut hast. Sie sind gewöhnliche Gebäude und lägen sonst irgendwo zwischen zweitausend anderen, unter dem Namen dessen, was sie darstellen.</CBF_OnlyContainersTip>
-  <CBF_Field_pawnFraktion>Fraktion</CBF_Field_pawnFraktion>
-  <CBF_FieldDesc_pawnFraktion>Zu welcher Fraktion der Bewohner gehört. Ohne eine geht er stattdessen berserk, was wie ein eingesperrtes Tier wirkt statt wie ein Hinterhalt, und sie greifen dann auch einander an.</CBF_FieldDesc_pawnFraktion>
+  <CBF_Field_pawnFaction>Fraktion</CBF_Field_pawnFaction>
+  <CBF_FieldDesc_pawnFaction>Zu welcher Fraktion der Bewohner gehört. Ohne eine geht er stattdessen berserk, was wie ein eingesperrtes Tier wirkt statt wie ein Hinterhalt, und sie greifen dann auch einander an.</CBF_FieldDesc_pawnFaction>
   <CBF_FieldDesc_pawnFraktionNone>Keine Fraktion: er geht stattdessen berserk.</CBF_FieldDesc_pawnFraktionNone>
   <CBF_DevFill>Aus Tabelle füllen</CBF_DevFill>
   <CBF_DevFillTip>Nur im Entwicklermodus mit God Mode. Weil die Beutetabelle am Anker steht, bleibt ein von Hand gesetzter Behälter leer. Hiermit weist du ihm eine zu, um sie zu prüfen. In eine Datei kommt davon nichts.</CBF_DevFillTip>
@@ -599,9 +598,9 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_NeedTag>Eine Kategorie muss gesetzt sein.</CBF_NeedTag>
   <CBF_ExportDeleted>Die Vorlage {0} wurde gelöscht. Für ein neues Stück bitte eine neue Fläche anlegen.</CBF_ExportDeleted>
   <CBF_ExportReloadFailed>Die Datei für {0} wurde gespeichert, konnte aber nicht ins laufende Spiel übernommen werden. Die Konsole zeigt den Ladefehler; der Editor bleibt ungesichert.</CBF_ExportReloadFailed>
-  <CBF_Field_traufen>Traufen</CBF_Field_traufen>
-  <CBF_FieldDesc_traufen>Setzt auf jede Außenwand und Außentür eine Traufe aus Architecture of the Rim. Ohne den Mod passiert nichts.</CBF_FieldDesc_traufen>
-  <CBF_Field_traufenMaterial>Traufenmaterial</CBF_Field_traufenMaterial>
+  <CBF_Field_eaves>Traufen</CBF_Field_eaves>
+  <CBF_FieldDesc_eaves>Setzt auf jede Außenwand und Außentür eine Traufe aus Architecture of the Rim. Ohne den Mod passiert nichts.</CBF_FieldDesc_eaves>
+  <CBF_Field_eavesMaterial>Traufenmaterial</CBF_Field_eavesMaterial>
   <CBF_EavesLikeWall>wie die Mauer</CBF_EavesLikeWall>
   <CBF_MassTitle>Massenstresstest</CBF_MassTitle>
   <CBF_MassHelp>Testet mehrere Ortstypen nacheinander mit denselben Einstellungen. Jeder Ortstyp bekommt seinen eigenen Ordner unter CBF-Stresstest.</CBF_MassHelp>
@@ -704,7 +703,7 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_Field_tags>Kategorien</CBF_Field_tags>
   <CBF_Field_pawns>Tiere</CBF_Field_pawns>
   <CBF_Field_garrison>Garnison</CBF_Field_garrison>
-  <CBF_Field_kind>Ortsart</CBF_Field_kind>
+  <CBF_Field_kind>Art</CBF_Field_kind>
   <CBF_Au_S_Role>Rolle {0}</CBF_Au_S_Role>
   <CBF_Au_RoleUnserved>hat in keiner Materialliste ein Ding, genutzt von {0}</CBF_Au_RoleUnserved>
   <CBF_Au_S_Style>Stil {0}</CBF_Au_S_Style>

@@ -131,7 +131,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>After <strong>Build</strong>, the button <strong>Show loot</strong> at the bottom shows what the loot of the settlement built last is worth in silver: in total, per ward and per kind of goods. The value is counted while the settlement is built and saved with it. Medieval Overhaul containers that only fill when searched are not included.</p>
 <h2 id="what-the-generator-handles-by-itself">What the generator handles by itself</h2>
 <ul>
-<li>Buildings that belong at the wall, such as barracks, dock onto the town wall. The wall stays and the building gets a door onto the walkway.</li>
+<li>Buildings that belong at the wall, such as barracks, dock onto the town wall with their open side. They are only built where that side touches the wall. The wall stays and the building gets a door onto the walkway.</li>
+<li>A medieval old town is made of 2 to 4 overlapping blocks, which gives L, T and stepped outlines instead of a plain rectangle. This also holds for towns without suburb islands if the wall is thicker than 3 cells. Every straight wall stretch, every projection and every indent is at least 16 cells long (a third of the town width for small towns).</li>
+<li>If there is no room for a field right at a farmhouse, the field may lie up to 30 cells away. When no road passes it, its gate faces the farmhouse.</li>
 <li>An open side of such a building that does not touch the wall is closed with the building's own wall.</li>
 <li>Wall parts cut off by a mountain turn into rock. Large rock pockets behind the wall get a postern. Small rock islands that touch the planned wall stay on the wall line and outside the town and replace the wall there; only the part inside the town is removed.</li>
 <li>Rubble inside the settlement is cleared.</li>

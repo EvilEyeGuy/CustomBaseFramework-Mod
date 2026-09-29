@@ -11,11 +11,11 @@
     <eaves>true</eaves>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Smith</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>5</symbol><anchor>Kammertruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_BurgherHouse</lootTable></li>
-      <li><symbol>6</symbol><anchor>Ladentruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_WeaponDealer</lootTable></li>
-      <li><symbol>8</symbol><anchor>Haendler</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
-      <li><symbol>9</symbol><anchor>Schmied</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>5</symbol><anchor>ChamberChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_BurgherHouse</lootTable></li>
+      <li><symbol>6</symbol><anchor>ShopChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_WeaponDealer</lootTable></li>
+      <li><symbol>8</symbol><anchor>Trader</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>9</symbol><anchor>Smith</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_Anvil</thing><stuff>Steel</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_Bellows</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
@@ -33,15 +33,15 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>V</symbol><thing>DankPyon_Bed_Rustic_Blue</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>RuestungA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ArmorStand</objects><lootTable>CBF_MO_Loot_Armor</lootTable></li>
-      <li><symbol>b</symbol><anchor>RuestungB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ArmorStand</objects><lootTable>CBF_MO_Loot_Armor</lootTable></li>
+      <li><symbol>a</symbol><anchor>ArmorA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ArmorStand</objects><lootTable>CBF_MO_Loot_Armor</lootTable></li>
+      <li><symbol>b</symbol><anchor>ArmorB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ArmorStand</objects><lootTable>CBF_MO_Loot_Armor</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Furnace</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
-      <li><symbol>g</symbol><anchor>Bogenstand</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_BowStand</objects></li>
-      <li><symbol>h</symbol><anchor>Schmiedekiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Crate</objects><lootTable>CBF_MO_Loot_Smithy</lootTable></li>
-      <li><symbol>m</symbol><anchor>Waffenstand</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WeaponStand</objects></li>
+      <li><symbol>g</symbol><anchor>BowStand</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_BowStand</objects></li>
+      <li><symbol>h</symbol><anchor>SmithyCrate</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Crate</objects><lootTable>CBF_MO_Loot_Smithy</lootTable></li>
+      <li><symbol>m</symbol><anchor>WeaponStand</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WeaponStand</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>q</symbol><anchor>RegalA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WeaponRack</objects></li>
+      <li><symbol>q</symbol><anchor>ShelfA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WeaponRack</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>y</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>z</symbol><thing>DankPyon_HideoutTableMarket_Melee</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>

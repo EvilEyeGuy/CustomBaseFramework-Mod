@@ -10,13 +10,13 @@
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>1</symbol><anchor>Schreibregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WritingShelf</objects></li>
-      <li><symbol>2</symbol><anchor>Studiertruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_Manor</lootTable></li>
-      <li><symbol>5</symbol><anchor>Schlaftruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_Manor</lootTable></li>
-      <li><symbol>6</symbol><anchor>Gaestetruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_BurgherHouse</lootTable></li>
-      <li><symbol>7</symbol><anchor>Hausherr</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
-      <li><symbol>8</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>1</symbol><anchor>WritingShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WritingShelf</objects></li>
+      <li><symbol>2</symbol><anchor>StudyChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_Manor</lootTable></li>
+      <li><symbol>5</symbol><anchor>BedChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_Manor</lootTable></li>
+      <li><symbol>6</symbol><anchor>GuestChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_BurgherHouse</lootTable></li>
+      <li><symbol>7</symbol><anchor>Householder</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>8</symbol><anchor>Residents</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_RoyalDresser</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_RoyalEndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
@@ -36,15 +36,15 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>GeschirrA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Dinnerware</objects><chance>0.8</chance><onTop>true</onTop></li>
-      <li><symbol>b</symbol><anchor>GeschirrB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Dinnerware</objects><chance>0.8</chance><onTop>true</onTop></li>
+      <li><symbol>a</symbol><anchor>DishesA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Dinnerware</objects><chance>0.8</chance><onTop>true</onTop></li>
+      <li><symbol>b</symbol><anchor>DishesB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Dinnerware</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>d</symbol><terrain>DankPyon_DarkWoodPlankFloor</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Book_ScribeTable</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_StoneOven</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
-      <li><symbol>i</symbol><anchor>GeschirrC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Dinnerware</objects><chance>0.8</chance><onTop>true</onTop></li>
-      <li><symbol>j</symbol><anchor>GeschirrD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Dinnerware</objects><chance>0.8</chance><onTop>true</onTop></li>
+      <li><symbol>i</symbol><anchor>DishesC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Dinnerware</objects><chance>0.8</chance><onTop>true</onTop></li>
+      <li><symbol>j</symbol><anchor>DishesD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Dinnerware</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_ButchersBlock</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_RusticNobleChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_HideoutShelfFilledBook</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
@@ -54,12 +54,12 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>r</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>s</symbol><thing>DankPyon_OnTop_Scribe_ScrollAndInkwell</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>t</symbol><thing>DankPyon_HideoutLargeShelf_Bread</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>u</symbol><anchor>Vorratssack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>
-      <li><symbol>v</symbol><anchor>Vorratsregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_PantryShelf</objects></li>
+      <li><symbol>u</symbol><anchor>SupplySack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>
+      <li><symbol>v</symbol><anchor>PantryShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_PantryShelf</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>x</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>y</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>¤</symbol><anchor>Teppich</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_NobleRug_2x3</objects></li>
-      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flag</objects><factionFlag>true</factionFlag></li>
+      <li><symbol>¤</symbol><anchor>Rug</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_NobleRug_2x3</objects></li>
+      <li><symbol>§</symbol><anchor>Flag</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flag</objects><factionFlag>true</factionFlag></li>
       <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
     </legend>
     <mask>

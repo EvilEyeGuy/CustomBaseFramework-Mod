@@ -22,8 +22,8 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Lager</name>
-        <label>Lager</label>
+        <name>Camp</name>
+        <label>Camp</label>
         <supply>1.2</supply>
         <walls>
           <li><piece>CBF_MO_StakeWall</piece><weight>0.4</weight></li>
@@ -36,7 +36,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Mitte</name>
+            <name>Middle</name>
             <entries>
               <li><tag>CBF_MO_MainTent</tag><count>1~1</count><unique>true</unique></li>
               <li><tag>CBF_MO_AssemblyTent</tag><count>1~2</count></li>
@@ -49,14 +49,14 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <garrison>
           <li><list>CBF_MO_Tribe_Guard</list><post>Inside</post><count>1~3</count></li>
         </garrison>
         <districts>
           <li>
-            <name>Rand</name>
+            <name>Edge</name>
             <entries>
               <li><tag>CBF_MO_Tent</tag><count>0~3</count></li>
             </entries>

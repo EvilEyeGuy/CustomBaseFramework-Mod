@@ -11,21 +11,21 @@
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>8</symbol><anchor>Speichermeister</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>8</symbol><anchor>Granarian</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_HayBale2x2c</thing><rotation>South</rotation></li>
-      <li><symbol>H</symbol><anchor>Holzwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WoodCart</objects></li>
+      <li><symbol>H</symbol><anchor>WoodCart</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WoodCart</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li><symbol>J</symbol><anchor>Erntewagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_HarvestCart</objects></li>
+      <li><symbol>J</symbol><anchor>HarvestCart</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_HarvestCart</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>DankPyon_RawWood</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideoutCrate1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutRusticBarrelBigClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
-      <li><symbol>f</symbol><anchor>Fassreihe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_BarrelRow</objects><lootTable>CBF_MO_Loot_Storage</lootTable></li>
-      <li><symbol>g</symbol><anchor>Grossfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_LargeBarrel</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>
+      <li><symbol>f</symbol><anchor>BarrelRow</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_BarrelRow</objects><lootTable>CBF_MO_Loot_Storage</lootTable></li>
+      <li><symbol>g</symbol><anchor>LargeBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_LargeBarrel</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>South</rotation></li>
-      <li><symbol>k</symbol><anchor>Kisten</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Crate</objects><lootTable>CBF_MO_Loot_Storage</lootTable></li>
+      <li><symbol>k</symbol><anchor>Crates</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Crate</objects><lootTable>CBF_MO_Loot_Storage</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideoutRusticBarrelStack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_HideOutBuildingBase_Cart_RawWood</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>

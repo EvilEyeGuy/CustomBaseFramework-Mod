@@ -10,9 +10,9 @@
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>2</symbol><anchor>Werkzeugtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Mine</lootTable></li>
-      <li><symbol>8</symbol><anchor>ArbeiterA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
-      <li><symbol>9</symbol><anchor>ArbeiterB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>2</symbol><anchor>ToolChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Mine</lootTable></li>
+      <li><symbol>8</symbol><anchor>WorkerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>9</symbol><anchor>WorkerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li><symbol>C</symbol><thing>ChunkGranite</thing><count>1</count></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_StoneDebris</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_Brazier1x1c</thing><stuff>BlocksGranite</stuff></li>
@@ -21,10 +21,10 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
-      <li><symbol>f</symbol><anchor>ErzfassA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_OreBarrel</objects></li>
-      <li><symbol>g</symbol><anchor>ErzfassB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_OreBarrel</objects></li>
+      <li><symbol>f</symbol><anchor>OreBarrelA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_OreBarrel</objects></li>
+      <li><symbol>g</symbol><anchor>OreBarrelB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_OreBarrel</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_MineableIron</thing></li>
-      <li><symbol>j</symbol><anchor>Erzwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_OreCart</objects></li>
+      <li><symbol>j</symbol><anchor>OreCart</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_OreCart</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_MineableCoal</thing></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideoutBarrelIronOre</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>

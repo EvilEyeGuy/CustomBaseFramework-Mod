@@ -10,7 +10,7 @@
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>7</symbol><anchor>Haeuptlingstruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_Manor</lootTable></li>
+      <li><symbol>7</symbol><anchor>ChiefChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_Manor</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_LogChair</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
@@ -21,10 +21,10 @@
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_ArmorStatue</thing><stuff>DankPyon_IronIngot</stuff><rotation>North</rotation></li>
-      <li><symbol>k</symbol><anchor>Soldaten</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList><pawnCount>2~3</pawnCount></li>
+      <li><symbol>k</symbol><anchor>Soldiers</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList><pawnCount>2~3</pawnCount></li>
       <li><symbol>m</symbol><terrain>StrawMatting</terrain></li>
-      <li><symbol>x</symbol><anchor>Ruestung</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ArmorStand</objects><lootTable>CBF_MO_Loot_Armor</lootTable></li>
-      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flag</objects><factionFlag>true</factionFlag></li>
+      <li><symbol>x</symbol><anchor>Armor</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ArmorStand</objects><lootTable>CBF_MO_Loot_Armor</lootTable></li>
+      <li><symbol>§</symbol><anchor>Flag</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flag</objects><factionFlag>true</factionFlag></li>
     </legend>
     <mask>
       <li>...#.....#...</li>

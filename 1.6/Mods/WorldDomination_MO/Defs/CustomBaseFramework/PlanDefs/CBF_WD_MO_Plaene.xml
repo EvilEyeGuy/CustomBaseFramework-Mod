@@ -26,7 +26,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Lager</name>
+        <name>Camp</name>
         <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
@@ -39,7 +39,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Hof</name>
+            <name>Farmstead</name>
             <entries>
               <li><tag>CBF_MO_Granary</tag><count>1~2</count></li>
               <li><tag>CBF_MO_Farmstead</tag><count>1~2</count></li>
@@ -50,11 +50,11 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Felder</name><fields><li>
+            <name>Fields</name><fields><li>
                 <count>2~3</count>
                 <fence>false</fence>
                 <weight>1</weight><plants>
@@ -118,7 +118,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Lager</name>
+        <name>Camp</name>
         <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
@@ -131,7 +131,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Holzplatz</name>
+            <name>Woodyard</name>
             <entries>
               <li><tag>CBF_MO_WoodcutterHut</tag><count>1~2</count></li>
               <li><tag>CBF_MO_SawingYard</tag><count>1~2</count></li>
@@ -143,11 +143,11 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Wald</name>
+            <name>Forest</name>
             <entries>
               <li><tag>CBF_MO_Hut</tag><count>0~2</count></li>
             </entries>
@@ -199,7 +199,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Lager</name>
+        <name>Camp</name>
         <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
@@ -212,7 +212,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Grube</name>
+            <name>Pit</name>
             <entries>
               <li><tag>CBF_MO_Smelter</tag><count>1~1</count></li>
               <li><tag>CBF_MO_Bunkhouse</tag><count>1~2</count></li>
@@ -223,11 +223,11 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Abbau</name>
+            <name>Extraction</name>
             <entries>
               <li><tag>CBF_MO_Mine</tag><count>1~2</count></li>
               <li><tag>CBF_MO_OreStore</tag><count>1~2</count></li>
@@ -280,7 +280,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Dorf</name>
+        <name>Village</name>
         <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
@@ -293,7 +293,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Werkstaetten</name>
+            <name>Workshops</name>
             <entries>
               <li><tag>CBF_MO_Workshop</tag><count>3~5</count></li>
               <li><tag>CBF_MO_Warehouse</tag><count>1~2</count></li>
@@ -305,11 +305,11 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Felder</name><fields><li>
+            <name>Fields</name><fields><li>
                 <count>1~2</count>
                 <fence>false</fence>
                 <weight>1</weight><plants>
@@ -371,7 +371,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Dorf</name>
+        <name>Village</name>
         <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
@@ -384,7 +384,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Pferche</name>
+            <name>Pens</name>
             <entries>
               <li><tag>CBF_MO_SlavePen</tag><count>1~2</count></li>
               <li><tag>CBF_MO_Kennel</tag><count>1~1</count></li>
@@ -396,11 +396,11 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Felder</name><fields><li>
+            <name>Fields</name><fields><li>
                 <count>2~3</count>
                 <fence>false</fence>
                 <weight>1</weight><plants>
@@ -462,7 +462,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Lager</name>
+        <name>Camp</name>
         <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
@@ -476,7 +476,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Zelte</name>
+            <name>Tents</name>
             <entries>
               <li><tag>CBF_MO_CommandTent</tag><count>1~1</count><unique>true</unique></li>
               <li><tag>CBF_MO_WeaponTent</tag><count>1~2</count></li>
@@ -487,11 +487,11 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Pferde</name>
+            <name>Horses</name>
             <entries>
               <li><tag>CBF_MO_HorseStall</tag><count>1~2</count></li>
             </entries>

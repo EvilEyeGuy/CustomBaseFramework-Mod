@@ -10,9 +10,9 @@
     <style>CBF_ModernVanilla</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>LaborA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
-      <li><symbol>2</symbol><anchor>LaborC</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
-      <li><symbol>3</symbol><anchor>LaborB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
+      <li><symbol>1</symbol><anchor>LabA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
+      <li><symbol>2</symbol><anchor>LabC</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
+      <li><symbol>3</symbol><anchor>LabB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>E</symbol><thing>DiningChair</thing><stuff>Steel</stuff><rotation>East</rotation></li>
       <li><symbol>K</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
@@ -27,11 +27,11 @@
       <li><symbol>d</symbol><terrain>SterileTile</terrain></li>
       <li><symbol>f</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>i</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>k</symbol><anchor>ForscherA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.5</chance></li>
-      <li><symbol>l</symbol><anchor>ForscherB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.5</chance></li>
+      <li><symbol>k</symbol><anchor>ResearcherA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.5</chance></li>
+      <li><symbol>l</symbol><anchor>ResearcherB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.5</chance></li>
       <li><symbol>r</symbol><thing>SimpleResearchBench</thing><stuff>Steel</stuff><rotation>North</rotation></li>
       <li><symbol>u</symbol><thing>BookcaseSmall</thing><stuff>Steel</stuff><rotation>South</rotation></li>
-      <li><symbol>x</symbol><anchor>Leiter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>x</symbol><anchor>Manager</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
     </legend>
     <mask>
       <li>###################</li>

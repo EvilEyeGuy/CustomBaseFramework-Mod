@@ -24,7 +24,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Dorfkern</name>
+        <name>VillageCore</name>
         <supply>1.2</supply>
         <walls>
           <li>CBF_VFEM2_Palisade</li>
@@ -60,7 +60,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Dorfplatz</name>
+            <name>VillageSquare</name>
             <entries>
               <li>
                 <tag>CBF_VFEM2_Tavern</tag>
@@ -93,7 +93,7 @@
       </li>
       <li>
         <kind>Suburb</kind>
-        <name>Aussenhoefe</name>
+        <name>OuterFarms</name>
         <supply>1.2</supply>
         <garrison>
           <li>
@@ -104,7 +104,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Hoefe</name>
+            <name>Farms</name>
             <fields>
               <li>
                 <count>2~4</count>
@@ -140,7 +140,7 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <garrison>
           <li>
@@ -151,7 +151,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Muehle</name>
+            <name>Mill</name>
             <fields>
               <li>
                 <count>2~3</count>
@@ -173,10 +173,10 @@
             </entries>
           </li>
           <li>
-            <name>Weide</name>
+            <name>Pasture</name>
             <pens>
               <li>
-                <name>Gehege</name>
+                <name>Pen</name>
                 <count>1~1</count>
                 <herd>2~5</herd>
                 <pawns>Hardanimals_1</pawns>
@@ -199,7 +199,7 @@
             </entries>
           </li>
           <li>
-            <name>Kirchhof</name>
+            <name>Churchyard</name>
             <entries>
               <li>
                 <tag>CBF_VFEM2_Graveyard</tag>
@@ -208,7 +208,7 @@
             </entries>
           </li>
           <li>
-            <name>Rand</name>
+            <name>Edge</name>
             <entries>
               <li>
                 <tag>CBF_VFEM2_Hut</tag>

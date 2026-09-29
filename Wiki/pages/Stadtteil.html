@@ -128,16 +128,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>abstand</code></td>
+<td><code>buildingGap</code></td>
 <td>IntRange</td>
 <td><code>0</code></td>
 <td>Gap between buildings in this ward, in cells, as a range. 0~0 takes minBuildingGap and maxBuildingGap of the settlement.</td>
 </tr>
 <tr>
-<td><code>art</code><br>Kind</td>
-<td>Stadtteilart (Stadt, Burg, Vorstadt, Umland)</td>
-<td><code>Stadt</code></td>
-<td>On a ward: which part of the settlement it is, Stadt, Vorstadt or Umland. Burg is accepted but not planned as a part of its own. On an object list: Fuellen fills the containers, Leer places them without loot or occupants.</td>
+<td><code>kind</code><br>Kind</td>
+<td>Stadtteilart (Town, Castle, Suburb, Rural)</td>
+<td><code>Town</code></td>
+<td>On a ward: which part of the settlement it is, Town, Suburb or Rural. Castle is accepted but not planned as a part of its own. On an object list: Fill fills the containers, Empty places them without loot or occupants.</td>
 </tr>
 <tr>
 <td><code>decor</code></td>
@@ -167,7 +167,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>fields</code></td>
 <td>list of <a href="Ackerspec.html">Ackerspec</a></td>
 <td>none</td>
-<td>Field types. Only Vorstadt and Umland grow fields. On a district the fields are laid by its own houses.</td>
+<td>Field types. Only Suburb and Rural grow fields. On a district the fields are laid by its own houses.</td>
 </tr>
 <tr>
 <td><code>garrison</code></td>
@@ -208,17 +208,17 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td><code>name</code></td>
 <td>text</td>
-<td><code>Stadt</code></td>
+<td><code>Town</code></td>
 <td>Name of the entry. On a district it links fields and pens to its houses and must be unique. On a pen it appears in messages. On a ward it is replaced by the ward kind, on a field it is not read, and in wall lists piece is written instead.</td>
 </tr>
 <tr>
 <td><code>pens</code></td>
 <td>list of <a href="Gehegespec.html">Gehegespec</a></td>
 <td>none</td>
-<td>Animal pen types. Only the Umland ward builds pens. On a district they go near its own houses.</td>
+<td>Animal pen types. Only the Rural ward builds pens. On a district they go near its own houses.</td>
 </tr>
 <tr>
-<td><code>raeumen</code></td>
+<td><code>clearRubble</code></td>
 <td>true/false</td>
 <td><code>true</code></td>
 <td>Clears plants from open ground in this ward. Off keeps the plants and a share of the trees, the more the further out the ward lies.</td>
@@ -236,16 +236,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>The surface of lanes, squares and gate passages in this ward. Empty means the standard surface.</td>
 </tr>
 <tr>
-<td><code>tor</code></td>
+<td><code>gate</code></td>
 <td>text</td>
 <td>none</td>
 <td>Door for the passages in this ward's wall. Empty takes it from the material list. Not the gatehouse, that is set under gatehouses.</td>
 </tr>
 <tr>
-<td><code>versorgung</code></td>
+<td><code>supply</code></td>
 <td>number</td>
 <td><code>1.2</code></td>
-<td>Size of the pens in the Umland ward relative to the built area. Default 1.2. A pen covers 60 to 240 cells.</td>
+<td>Size of the pens in the Rural ward relative to the built area. Default 1.2. A pen covers 60 to 240 cells.</td>
 </tr>
 <tr>
 <td><code>walls</code></td>

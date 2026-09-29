@@ -11,29 +11,29 @@
     <eaves>true</eaves>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Woodworking</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>1</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_BurgherHouse</lootTable></li>
-      <li><symbol>8</symbol><anchor>Tischler</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>1</symbol><anchor>Chest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_BurgherHouse</lootTable></li>
+      <li><symbol>8</symbol><anchor>Carpenter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_Bed_Rustic_Green</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li><symbol>J</symbol><anchor>Holzwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WoodCart</objects></li>
+      <li><symbol>J</symbol><anchor>WoodCart</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WoodCart</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RugPatched_Cloth1x2c</thing><stuff>Cloth</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>V</symbol><thing>DankPyon_WoodLogs2x2c</thing><stuff>DankPyon_RawWood</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>X</symbol><thing>DankPyon_RusticTable1x1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tableware_Burgher</objects><chance>0.8</chance><onTop>true</onTop></li>
+      <li><symbol>a</symbol><anchor>Dishes</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tableware_Burgher</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Workbench</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_SawTable</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>g</symbol><anchor>HolzstapelA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WoodPile</objects></li>
+      <li><symbol>g</symbol><anchor>WoodPileA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WoodPile</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>j</symbol><anchor>HolzstapelB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WoodPile</objects></li>
-      <li><symbol>k</symbol><anchor>KisteA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Crate</objects><lootTable>CBF_MO_Loot_Workshop</lootTable></li>
+      <li><symbol>j</symbol><anchor>WoodPileB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WoodPile</objects></li>
+      <li><symbol>k</symbol><anchor>CrateA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Crate</objects><lootTable>CBF_MO_Loot_Workshop</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideoutCrate1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>m</symbol><anchor>KisteB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Crate</objects><lootTable>CBF_MO_Loot_Workshop</lootTable></li>
+      <li><symbol>m</symbol><anchor>CrateB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Crate</objects><lootTable>CBF_MO_Loot_Workshop</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_HideOutBuildingBase_Cart_RawWood</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_HideoutWoodLogs1x2c</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_HideoutWoodLogs1x2c</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>

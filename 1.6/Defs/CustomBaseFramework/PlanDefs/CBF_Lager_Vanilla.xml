@@ -21,7 +21,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Lager</name>
+        <name>Camp</name>
         <supply>1.2</supply>
         <walls>
           <li><piece>CBF_Vanilla_Line_Sandbag</piece><weight>0.6</weight></li>
@@ -32,7 +32,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Lager</name>
+            <name>Camp</name>
             <entries>
               <li><tag>CBF_Vanilla_LeaderTent</tag><count>1~1</count><unique>true</unique></li>
               <li><tag>CBF_Vanilla_LootSpot</tag><count>1~2</count></li>
@@ -44,11 +44,11 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Umland</name>
+            <name>Countryside</name>
             <entries>
               <li><tag>CBF_Vanilla_Defense_Small</tag><count>0~1</count></li>
             </entries>
@@ -90,7 +90,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Lager</name>
+        <name>Camp</name>
         <supply>1.2</supply>
         <walls>
           <li><piece>CBF_Vanilla_Line_Sandbag</piece><weight>0.6</weight></li>
@@ -101,7 +101,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Lager</name>
+            <name>Camp</name>
             <entries>
               <li><tag>CBF_Vanilla_Outpost_Bunkhouse</tag><count>1~2</count></li>
               <li><tag>CBF_Vanilla_Outpost_GunEmplacement</tag><count>1~2</count></li>
@@ -115,11 +115,11 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Umland</name>
+            <name>Countryside</name>
             <entries>
               <li><tag>CBF_Vanilla_Defense_Small</tag><count>0~2</count></li>
             </entries>
@@ -162,11 +162,11 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Lager</name>
+        <name>Camp</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Lager</name>
+            <name>Camp</name>
             <entries>
               <li><tag>CBF_Vanilla_Sawmill</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_Kitchen</tag><count>1~1</count></li>
@@ -212,12 +212,12 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Lager</name>
+        <name>Camp</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Lager</name><mines><li>
-              <name>Stahlmine</name>
+            <name>Camp</name><mines><li>
+              <name>SteelMine</name>
               <count>1~1</count>
               <tags><li>CBF_Vanilla_DrillBarracks</li><li>CBF_Vanilla_LivingHut</li></tags>
               <length>15~20</length>
@@ -278,11 +278,11 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Lager</name>
+        <name>Camp</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Lager</name>
+            <name>Camp</name>
             <entries>
               <li><tag>CBF_Vanilla_Outpost_Slaughterhouse</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_Outpost_Tannery</tag><count>0~1</count></li>
@@ -328,11 +328,11 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Hof</name>
+        <name>Farmstead</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Hof</name>
+            <name>Farmstead</name>
             <entries>
               <li><tag>CBF_Vanilla_Silo</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_Kitchen</tag><count>0~1</count></li>
@@ -343,11 +343,11 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Felder</name>
+        <name>Fields</name>
         <supply>1.2</supply>
         <districts>
           <li>
-            <name>Felder</name><fields><li>
+            <name>Fields</name><fields><li>
                 <count>2~4</count>
                 <fence>false</fence>
                 <weight>1</weight><plants>
@@ -358,7 +358,7 @@
                 <tags>
                   <li>CBF_Vanilla_Farmstead</li>
                 </tags></li></fields><pens><li>
-              <name>Gehege</name>
+              <name>Pen</name>
               <count>1~1</count>
               <herd>2~5</herd>
               <pawns>Hardanimals_1</pawns>

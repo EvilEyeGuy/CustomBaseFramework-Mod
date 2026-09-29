@@ -18,7 +18,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Altstadt</name>
+        <name>OldTown</name>
         <label>Dorfkern</label>
         <supply>1.2</supply>
         <roads>
@@ -39,7 +39,7 @@
         </defenses>
         <districts>
           <li>
-            <name>Dorfkern</name>
+            <name>VillageCore</name>
             <entries>
               <li><tag>CBF_Vanilla_HouseSmall</tag><count>8~16</count><filler>true</filler></li>
               <li><tag>CBF_Vanilla_HouseLarge</tag><count>2~6</count><filler>true</filler></li>
@@ -54,7 +54,7 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <roads>
           <li>Concrete</li>
@@ -68,7 +68,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Umland</name>
+            <name>Countryside</name>
             <entries>
               <li><tag>CBF_Vanilla_Graveyard</tag><count>0~1</count></li>
               <li><tag>CBF_Vanilla_SolarPark</tag><count>0~1</count></li>

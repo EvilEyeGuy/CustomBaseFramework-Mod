@@ -29,7 +29,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Altstadt</name>
+        <name>OldTown</name>
         <supply>1.2</supply>
         <roads>
           <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Floor_Cobblestone_Granite</li>
@@ -51,7 +51,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Burg</name>
+            <name>Castle</name>
             <entries>
               <li><tag>CBF_MO_Keep</tag><count>1~1</count><unique>true</unique></li>
               <li><tag>CBF_MO_Barracks</tag><count>1~2</count></li>
@@ -61,7 +61,7 @@
             </entries>
           </li>
           <li>
-            <name>Markt</name>
+            <name>Market</name>
             <entries>
               <li><tag>CBF_MO_MarketSquare</tag><count>2~2</count></li>
               <li><tag>CBF_MO_WeaponDealer</tag><count>0~1</count></li>
@@ -73,7 +73,7 @@
             </entries>
           </li>
           <li>
-            <name>Zentrum</name>
+            <name>Center</name>
             <entries>
               <li><tag>CBF_MO_NobleHouse</tag><count>1~4</count></li>
               <li><tag>CBF_MO_CatapultEmplacement</tag><count>2~3</count></li>
@@ -88,7 +88,7 @@
       </li>
       <li>
         <kind>Suburb</kind>
-        <name>Neustadt</name>
+        <name>NewTown</name>
         <gate>DankPyon_ReinfocedLogGate</gate>
         <supply>1.2</supply>
         <walls>
@@ -107,7 +107,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Wohnen</name>
+            <name>Housing</name>
             <entries>
               <li><tag>CBF_MO_Folk</tag><count>30~45</count><filler>true</filler></li>
               <li><tag>CBF_MO_Tavern</tag><count>0~1</count></li>
@@ -115,7 +115,7 @@
             </entries>
           </li>
           <li>
-            <name>Handwerk</name>
+            <name>Crafts</name>
             <entries>
               <li><tag>CBF_MO_Smithy</tag><count>1~2</count></li>
               <li><tag>CBF_MO_Tannery</tag><count>1~2</count></li>
@@ -132,14 +132,14 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <garrison>
           <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>4~5</count></li>
         </garrison>
         <districts>
           <li>
-            <name>Hoefe</name><fields><li>
+            <name>Farms</name><fields><li>
               <count>3~4</count>
               <fence>true</fence>
               <weight>1</weight><plants>
@@ -158,7 +158,7 @@
             </entries>
           </li>
           <li>
-            <name>Muehle</name><fields><li>
+            <name>Mill</name><fields><li>
               <count>2~3</count>
               <fence>false</fence>
               <weight>1</weight><plants>
@@ -172,8 +172,8 @@
             </entries>
           </li>
           <li>
-            <name>Weide</name><pens><li>
-              <name>Gehege</name>
+            <name>Pasture</name><pens><li>
+              <name>Pen</name>
               <count>1~1</count>
               <herd>3~7</herd>
               <pawns>Hardanimals_1</pawns>
@@ -187,8 +187,8 @@
             </entries>
           </li>
           <li>
-            <name>Weide2</name><pens><li>
-              <name>Gehege</name>
+            <name>Pasture2</name><pens><li>
+              <name>Pen</name>
               <count>1~1</count>
               <herd>3~7</herd>
               <pawns>Hardanimals_1</pawns>
@@ -202,19 +202,19 @@
             </entries>
           </li>
           <li>
-            <name>Kirchhof</name>
+            <name>Churchyard</name>
             <entries>
               <li><tag>CBF_MO_Graveyard</tag><count>1~1</count></li>
             </entries>
           </li>
           <li>
-            <name>Turnier</name>
+            <name>Tournament</name>
             <entries>
               <li><tag>CBF_MO_TourneyGround</tag><count>0~1</count></li>
             </entries>
           </li>
           <li>
-            <name>Rand</name>
+            <name>Edge</name>
             <entries>
               <li><tag>CBF_MO_Hut</tag><count>3~5</count><filler>true</filler></li>
               <li><tag>CBF_MO_HuntingLodge</tag><count>0~1</count></li>

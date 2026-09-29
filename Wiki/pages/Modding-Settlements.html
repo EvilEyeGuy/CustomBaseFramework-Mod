@@ -136,17 +136,17 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;<span class="xt">CustomBaseFramework.SettlementPlanDef</span>&gt;
     &lt;<span class="xt">defName</span>&gt;MyMod_Plan_Hamlet&lt;/<span class="xt">defName</span>&gt;
     &lt;<span class="xt">label</span>&gt;hamlet&lt;/<span class="xt">label</span>&gt;
-    &lt;<span class="xt">kind</span>&gt;Modernestadt&lt;/<span class="xt">kind</span>&gt;
+    &lt;<span class="xt">kind</span>&gt;ModernTown&lt;/<span class="xt">kind</span>&gt;
     &lt;<span class="xt">styles</span>&gt;
       &lt;<span class="xt">li</span>&gt;CBF_ModernVanilla&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">styles</span>&gt;
     &lt;<span class="xt">techLevels</span>&gt;
       &lt;<span class="xt">li</span>&gt;Industrial&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">techLevels</span>&gt;
-    &lt;<span class="xt">fuerAlleFraktionen</span>&gt;true&lt;/<span class="xt">fuerAlleFraktionen</span>&gt;
+    &lt;<span class="xt">forAllFactions</span>&gt;true&lt;/<span class="xt">forAllFactions</span>&gt;
     &lt;<span class="xt">wards</span>&gt;
       &lt;<span class="xt">li</span>&gt;
-        &lt;<span class="xt">art</span>&gt;Stadt&lt;/<span class="xt">art</span>&gt;
+        &lt;<span class="xt">kind</span>&gt;Town&lt;/<span class="xt">kind</span>&gt;
         &lt;<span class="xt">districts</span>&gt;
           &lt;<span class="xt">li</span>&gt;
             &lt;<span class="xt">entries</span>&gt;
@@ -160,10 +160,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 &lt;/<span class="xt">Defs</span>&gt;
 </code></pre>
 <ul>
-<li><code>kind</code> is set to <code>Modernestadt</code> because the default kind, <code>Mittelalterstadt</code>, needs a wall on the town ward. Without one the planner stops with "The fortified city requires a wall template".</li>
+<li><code>kind</code> is set to <code>ModernTown</code> because the default kind, <code>MedievalTown</code>, needs a wall on the town ward. Without one the planner stops with "The fortified city requires a wall template".</li>
 <li><code>styles</code> names one of the shipped styles.</li>
 <li><code>materialList</code> names a material list; without one the plan is not used.</li>
-<li><code>techLevels</code> together with <code>fuerAlleFraktionen</code> makes the plan available to every industrial faction that has no plans of its own. Without faction settings the plan is only used for places that have no faction.</li>
+<li><code>techLevels</code> together with <code>forAllFactions</code> makes the plan available to every industrial faction that has no plans of its own. Without faction settings the plan is only used for places that have no faction.</li>
 <li>The load check needs at least one building entry, a <code>mapSize</code> of 150 or more (default 175) and road widths within the limit of the kind.</li>
 <li>There is no garrison, so the defenders come from <code>defenderPoints</code> (default 180 to 420).</li>
 </ul>
@@ -172,7 +172,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.SettlementPlanDef</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;
   &lt;<span class="xt">defName</span>&gt;CBF_Plan_Village_New&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;village (MO)&lt;/<span class="xt">label</span>&gt;
-  &lt;<span class="xt">kind</span>&gt;Mittelalterstadt&lt;/<span class="xt">kind</span>&gt;
+  &lt;<span class="xt">kind</span>&gt;MedievalTown&lt;/<span class="xt">kind</span>&gt;
   &lt;<span class="xt">styles</span>&gt;
     &lt;<span class="xt">li</span>&gt;Rustical&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;Standard&lt;/<span class="xt">li</span>&gt;
@@ -183,13 +183,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
     &lt;<span class="xt">li</span>&gt;DankPyon_NobleHouseSavage&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;DankPyon_NobleHouseCivil&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">factionTags</span>&gt;
-  &lt;<span class="xt">fuerAlleFraktionen</span>&gt;true&lt;/<span class="xt">fuerAlleFraktionen</span>&gt;
+  &lt;<span class="xt">forAllFactions</span>&gt;true&lt;/<span class="xt">forAllFactions</span>&gt;
   &lt;<span class="xt">techLevels</span>&gt;
     &lt;<span class="xt">li</span>&gt;Medieval&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">techLevels</span>&gt;
-  &lt;<span class="xt">anteil</span>&gt;80&lt;/<span class="xt">anteil</span>&gt;
+  &lt;<span class="xt">share</span>&gt;80&lt;/<span class="xt">share</span>&gt;
   &lt;<span class="xt">worldTexture</span>&gt;World/WorldObjects/CBF/CBF_VillagePalisade&lt;/<span class="xt">worldTexture</span>&gt;
-  &lt;<span class="xt">wdStufe</span>&gt;1&lt;/<span class="xt">wdStufe</span>&gt;
+  &lt;<span class="xt">wdLevel</span>&gt;1&lt;/<span class="xt">wdLevel</span>&gt;
 &lt;/<span class="xt">CustomBaseFramework.SettlementPlanDef</span>&gt;
 </code></pre>
 <table>
@@ -217,8 +217,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td><code>kind</code></td>
 <td>Settlement kind</td>
-<td><code>Mittelalterstadt</code> (medieval, town ward needs a wall) or <code>Modernestadt</code> (modern, walls optional, roads up to 6 wide). <code>Lager</code> and <code>Verlies</code> exist but are never picked in the current version.</td>
-<td><code>Mittelalterstadt</code></td>
+<td><code>MedievalTown</code> (medieval, town ward needs a wall) or <code>ModernTown</code> (modern, walls optional, roads up to 6 wide). <code>Camp</code> and <code>Dungeon</code> exist but are never picked in the current version.</td>
+<td><code>MedievalTown</code></td>
 </tr>
 <tr>
 <td><code>styles</code></td>
@@ -259,17 +259,17 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td><code>techLevels</code></td>
 <td>Tech levels</td>
-<td>Tech levels this plan fits. Only used together with <code>fuerAlleFraktionen</code>.</td>
+<td>Tech levels this plan fits. Only used together with <code>forAllFactions</code>.</td>
 <td>none</td>
 </tr>
 <tr>
-<td><code>fuerAlleFraktionen</code></td>
+<td><code>forAllFactions</code></td>
 <td>For every faction of these levels</td>
 <td>Offers the plan to every faction whose tech level is in <code>techLevels</code>, unless that faction has plans of its own.</td>
 <td><code>false</code></td>
 </tr>
 <tr>
-<td><code>anteil</code></td>
+<td><code>share</code></td>
 <td>Weight</td>
 <td>Chance against the other plans a faction can get. 0 counts as 1.</td>
 <td><code>0</code></td>
@@ -281,7 +281,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>none</td>
 </tr>
 <tr>
-<td><code>wdStufe</code></td>
+<td><code>wdLevel</code></td>
 <td>WD tier</td>
 <td>World Domination tier this plan stands for, 0 to 4, as a number or a range like <code>2~3</code>. 0 means no tier. See <a href="Compatibility.html#world-domination-20">Compatibility</a>.</td>
 <td><code>0</code></td>
@@ -309,11 +309,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </code></pre>
 <p>Put <code>MayRequire</code> on the def node whenever the plan names pieces, categories or pawn lists from another mod. <code>requiredMods</code> alone does not protect a hand-written plan.</p>
 <h2 id="wards">Wards</h2>
-<p>A ward is one ring of the settlement. There are three kinds, set with <code>art</code>:</p>
+<p>A ward is one ring of the settlement. There are three kinds, set with <code>kind</code>:</p>
 <table>
 <thead>
 <tr>
-<th><code>art</code></th>
+<th><code>kind</code></th>
 <th>Editor name</th>
 <th>Layer</th>
 <th>Notes</th>
@@ -321,30 +321,30 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>Stadt</code></td>
+<td><code>Town</code></td>
 <td>Town</td>
 <td>inner</td>
 <td>Required. In a medieval plan it must have walls.</td>
 </tr>
 <tr>
-<td><code>Vorstadt</code></td>
+<td><code>Suburb</code></td>
 <td>Suburb</td>
 <td>middle</td>
 <td>Optional. Without walls it is an open suburb. Without the ward there is no suburb.</td>
 </tr>
 <tr>
-<td><code>Umland</code></td>
+<td><code>Rural</code></td>
 <td>Countryside</td>
 <td>outer</td>
 <td>Optional. Never walled. Pens are only placed here.</td>
 </tr>
 </tbody>
 </table>
-<p>Write each kind once. The enum also lists <code>Burg</code>, but the planner has no layer of its own for it; do not use it.</p>
+<p>Write each kind once. The enum also lists <code>Castle</code>, but the planner has no layer of its own for it; do not use it.</p>
 <p>From <code>CBF_Plan_FortressCity_New</code>, the town ward, trimmed:</p>
 <pre><code class="language-xml">&lt;<span class="xt">wards</span>&gt;
   &lt;<span class="xt">li</span>&gt;
-    &lt;<span class="xt">art</span>&gt;Stadt&lt;/<span class="xt">art</span>&gt;
+    &lt;<span class="xt">kind</span>&gt;Town&lt;/<span class="xt">kind</span>&gt;
     &lt;<span class="xt">label</span>&gt;Old town&lt;/<span class="xt">label</span>&gt;
     &lt;<span class="xt">roads</span>&gt;
       &lt;<span class="xt">li</span>&gt;DankPyon_Floor_Cobblestone_Granite&lt;/<span class="xt">li</span>&gt;
@@ -360,9 +360,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
       &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_FortressGate&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">gatehouses</span>&gt;
     &lt;<span class="xt">garrison</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">list</span>&gt;CBF_MO_Garrison_Walkway&lt;/<span class="xt">list</span>&gt;&lt;<span class="xt">count</span>&gt;16~21&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">posten</span>&gt;Wehrgang&lt;/<span class="xt">posten</span>&gt;&lt;/<span class="xt">li</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">list</span>&gt;CBF_MO_Garrison_Gate&lt;/<span class="xt">list</span>&gt;&lt;<span class="xt">count</span>&gt;5~8&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">posten</span>&gt;Tor&lt;/<span class="xt">posten</span>&gt;&lt;/<span class="xt">li</span>&gt;
-      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">list</span>&gt;CBF_MO_Garrison_Inside&lt;/<span class="xt">list</span>&gt;&lt;<span class="xt">count</span>&gt;8~13&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">posten</span>&gt;Innen&lt;/<span class="xt">posten</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">list</span>&gt;CBF_MO_Garrison_Walkway&lt;/<span class="xt">list</span>&gt;&lt;<span class="xt">count</span>&gt;16~21&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">post</span>&gt;Walkway&lt;/<span class="xt">post</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">list</span>&gt;CBF_MO_Garrison_Gate&lt;/<span class="xt">list</span>&gt;&lt;<span class="xt">count</span>&gt;5~8&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">post</span>&gt;Gate&lt;/<span class="xt">post</span>&gt;&lt;/<span class="xt">li</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">list</span>&gt;CBF_MO_Garrison_Inside&lt;/<span class="xt">list</span>&gt;&lt;<span class="xt">count</span>&gt;8~13&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">post</span>&gt;Inside&lt;/<span class="xt">post</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">garrison</span>&gt;
     &lt;<span class="xt">districts</span>&gt;
       ...
@@ -382,10 +382,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>art</code></td>
+<td><code>kind</code></td>
 <td>Kind</td>
 <td>Ward kind, see above.</td>
-<td><code>Stadt</code></td>
+<td><code>Town</code></td>
 </tr>
 <tr>
 <td><code>label</code></td>
@@ -397,7 +397,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>name</code></td>
 <td>Name</td>
 <td>Replaced by the kind at load. Use <code>label</code> instead.</td>
-<td><code>Stadt</code></td>
+<td><code>Town</code></td>
 </tr>
 <tr>
 <td><code>walls</code></td>
@@ -418,7 +418,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>none</td>
 </tr>
 <tr>
-<td><code>tor</code></td>
+<td><code>gate</code></td>
 <td>Gate</td>
 <td>ThingDef that closes the gate passages. Empty uses the gate of the material list.</td>
 <td>none</td>
@@ -448,13 +448,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>none</td>
 </tr>
 <tr>
-<td><code>abstand</code></td>
+<td><code>buildingGap</code></td>
 <td></td>
 <td>Gap between buildings in this ward, as a range. The planner uses the lower value, 0 to 4.</td>
 <td><code>0~0</code></td>
 </tr>
 <tr>
-<td><code>raeumen</code></td>
+<td><code>clearRubble</code></td>
 <td></td>
 <td><code>false</code> leaves some plants and trees standing on open ground.</td>
 <td><code>true</code></td>
@@ -547,9 +547,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>1~1</code></td>
 </tr>
 <tr>
-<td><code>posten</code></td>
-<td>Post: <code>Innen</code> (inside), <code>Wehrgang</code> (on the wall walkway) or <code>Tor</code> (at the gates).</td>
-<td><code>Innen</code></td>
+<td><code>post</code></td>
+<td>Post: <code>Inside</code> (inside), <code>Walkway</code> (on the wall walkway) or <code>Gate</code> (at the gates).</td>
+<td><code>Inside</code></td>
 </tr>
 </tbody>
 </table>
@@ -559,7 +559,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>From <code>CBF_Plan_FortressCity_New</code>, town ward:</p>
 <pre><code class="language-xml">&lt;<span class="xt">districts</span>&gt;
   &lt;<span class="xt">li</span>&gt;
-    &lt;<span class="xt">name</span>&gt;Burg&lt;/<span class="xt">name</span>&gt;
+    &lt;<span class="xt">name</span>&gt;Castle&lt;/<span class="xt">name</span>&gt;
     &lt;<span class="xt">prefCenter</span>&gt;1&lt;/<span class="xt">prefCenter</span>&gt;
     &lt;<span class="xt">entries</span>&gt;
       &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_FortressKeep&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">unique</span>&gt;true&lt;/<span class="xt">unique</span>&gt;&lt;/<span class="xt">li</span>&gt;
@@ -568,7 +568,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
     &lt;/<span class="xt">entries</span>&gt;
   &lt;/<span class="xt">li</span>&gt;
   &lt;<span class="xt">li</span>&gt;
-    &lt;<span class="xt">name</span>&gt;Zentrum&lt;/<span class="xt">name</span>&gt;
+    &lt;<span class="xt">name</span>&gt;Center&lt;/<span class="xt">name</span>&gt;
     &lt;<span class="xt">entries</span>&gt;
       &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Tavern&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
       &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Church&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
@@ -704,10 +704,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="fields-and-pens">Fields and pens</h2>
 <p>Fields and pens belong to a district in the suburb or countryside ward. From <code>CBF_Plan_Village_New</code>:</p>
 <pre><code class="language-xml">&lt;<span class="xt">li</span>&gt;
-  &lt;<span class="xt">art</span>&gt;Umland&lt;/<span class="xt">art</span>&gt;
+  &lt;<span class="xt">kind</span>&gt;Rural&lt;/<span class="xt">kind</span>&gt;
   &lt;<span class="xt">districts</span>&gt;
     &lt;<span class="xt">li</span>&gt;
-      &lt;<span class="xt">name</span>&gt;Muehle&lt;/<span class="xt">name</span>&gt;
+      &lt;<span class="xt">name</span>&gt;Mill&lt;/<span class="xt">name</span>&gt;
       &lt;<span class="xt">fields</span>&gt;
         &lt;<span class="xt">li</span>&gt;
           &lt;<span class="xt">count</span>&gt;2~3&lt;/<span class="xt">count</span>&gt;
@@ -725,7 +725,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
       &lt;/<span class="xt">entries</span>&gt;
     &lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;
-      &lt;<span class="xt">name</span>&gt;Weide&lt;/<span class="xt">name</span>&gt;
+      &lt;<span class="xt">name</span>&gt;Pasture&lt;/<span class="xt">name</span>&gt;
       &lt;<span class="xt">pens</span>&gt;
         &lt;<span class="xt">li</span>&gt;
           &lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;
@@ -745,7 +745,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 &lt;/<span class="xt">li</span>&gt;
 </code></pre>
 <h3 id="field-nodes">Field nodes</h3>
-<p>Fields are read from the <code>Vorstadt</code> and <code>Umland</code> wards. Fields in the town ward are ignored.</p>
+<p>Fields are read from the <code>Suburb</code> and <code>Rural</code> wards. Fields in the town ward are ignored.</p>
 <table>
 <thead>
 <tr>
@@ -796,7 +796,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </table>
 <p>The field needs a building from <code>tags</code> to grow next to. List that category in the district's entries, or the field has no farmhouse.</p>
 <h3 id="pen-nodes">Pen nodes</h3>
-<p>Pens are read from the <code>Umland</code> ward only. They are placed near the buildings of their district.</p>
+<p>Pens are read from the <code>Rural</code> ward only. They are placed near the buildings of their district.</p>
 <table>
 <thead>
 <tr>
@@ -851,17 +851,17 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>The ward node <code>versorgung</code> (default 1.2) scales the size of all pens in the countryside.</p>
+<p>The ward node <code>supply</code> (default 1.2) scales the size of all pens in the countryside.</p>
 <h2 id="harbors">Harbors</h2>
-<p>A medieval settlement at the coast or on a river of at least <code>flussbreite</code> cells gets a harbor at the shore: jetties, fishing huts, harbor store, harbor master and boat sheds, with a path to the town.</p>
-<pre><code class="language-xml">&lt;<span class="xt">hafen</span>&gt;
+<p>A medieval settlement at the coast or on a river of at least <code>minRiverWidth</code> cells gets a harbor at the shore: jetties, fishing huts, harbor store, harbor master and boat sheds, with a path to the town.</p>
+<pre><code class="language-xml">&lt;<span class="xt">harbor</span>&gt;
   &lt;<span class="xt">entries</span>&gt;
     &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Harbormaster&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_HarborStore&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Jetty&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Boathouse&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;0~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">entries</span>&gt;
-&lt;/<span class="xt">hafen</span>&gt;
+&lt;/<span class="xt">harbor</span>&gt;
 </code></pre>
 <table>
 <thead>
@@ -878,18 +878,18 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>none</td>
 </tr>
 <tr>
-<td><code>flussbreite</code></td>
+<td><code>minRiverWidth</code></td>
 <td>Smallest river width in cells that counts. The sea always counts.</td>
 <td><code>10</code></td>
 </tr>
 <tr>
-<td><code>reichweite</code></td>
+<td><code>range</code></td>
 <td>How far from the settlement harbor pieces may stand, in cells.</td>
 <td><code>45</code></td>
 </tr>
 </tbody>
 </table>
-<p>Harbor pieces need a Connect anchor named <code>Wasser</code> on their water side, see <a href="Modding-Pieces.html#connect">Pieces and categories in XML</a>. Without suitable water no harbor is built.</p>
+<p>Harbor pieces need a Connect anchor named <code>Water</code> on their water side, see <a href="Modding-Pieces.html#connect">Pieces and categories in XML</a>. Without suitable water no harbor is built.</p>
 <h2 id="tuning-fields">Tuning fields</h2>
 <p>These sit on the plan, next to the header fields:</p>
 <pre><code class="language-xml">&lt;<span class="xt">roadMain</span>&gt;2&lt;/<span class="xt">roadMain</span>&gt;
@@ -946,18 +946,18 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>Gaps between buildings are set per ward with <code>abstand</code>. The plan nodes <code>minBuildingGap</code> and <code>maxBuildingGap</code> are only used when the plan has no town ward.</p>
+<p>Gaps between buildings are set per ward with <code>buildingGap</code>. The plan nodes <code>minBuildingGap</code> and <code>maxBuildingGap</code> are only used when the plan has no town ward.</p>
 <p>Use <code>targetBuilt</code> to change density.</p>
 <p>Older plans put <code>walls</code>, <code>emplacements</code>, <code>gatehouses</code> and <code>districts</code> directly on the plan. That still loads as a single town ward. Use <code>wards</code> for new plans.</p>
 <h2 id="how-cbf-picks-a-plan-for-a-faction">How CBF picks a plan for a faction</h2>
 <p>For every faction base CBF builds a pool of plans, then draws one:</p>
 <ol>
 <li><strong>Own plans.</strong> Every plan whose <code>factionTags</code> names the faction's defName or its <code>categoryTag</code>.</li>
-<li><strong>General plans.</strong> Only if step 1 found nothing: every plan with <code>fuerAlleFraktionen</code> set and the faction's tech level in <code>techLevels</code>.</li>
+<li><strong>General plans.</strong> Only if step 1 found nothing: every plan with <code>forAllFactions</code> set and the faction's tech level in <code>techLevels</code>.</li>
 <li><strong>Exclusions.</strong> A faction listed in <code>excludeFactions</code> never gets that plan, in either step.</li>
-<li><strong>Unusable plans.</strong> Plans without a usable material list and plans of the hidden kinds <code>Lager</code> and <code>Verlies</code> are left out.</li>
-<li><strong>Tier filter.</strong> With World Domination 2.0, only the plans whose <code>wdStufe</code> is closest to the base's tier stay; plans without <code>wdStufe</code> drop out as soon as one plan in the pool has one. With A Rim of Ice and Fire, the faction's main seat prefers plans with <code>wdStufe</code> 3 or more, other bases plans below 3.</li>
-<li><strong>Draw.</strong> One plan by weight, <code>anteil</code> (0 counts as 1). The draw depends on the world object, so the same base always gets the same plan.</li>
+<li><strong>Unusable plans.</strong> Plans without a usable material list and plans of the hidden kinds <code>Camp</code> and <code>Dungeon</code> are left out.</li>
+<li><strong>Tier filter.</strong> With World Domination 2.0, only the plans whose <code>wdLevel</code> is closest to the base's tier stay; plans without <code>wdLevel</code> drop out as soon as one plan in the pool has one. With A Rim of Ice and Fire, the faction's main seat prefers plans with <code>wdLevel</code> 3 or more, other bases plans below 3.</li>
+<li><strong>Draw.</strong> One plan by weight, <code>share</code> (0 counts as 1). The draw depends on the world object, so the same base always gets the same plan.</li>
 </ol>
 <p>A faction that ends up with an empty pool keeps RimWorld's own base. A place without a faction takes the plans that have no <code>factionTags</code>.</p>
 <p>Players can switch single factions back to RimWorld's bases in the mod settings, see <a href="Mod-Settings.html#settlements-per-faction">Mod settings</a>. A switched-off faction gets no plan, whatever the XML says.</p>
@@ -965,16 +965,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="tips">Tips</h2>
 <ul>
 <li>Start from a shipped plan. Copy it, change <code>defName</code>, <code>label</code> and <code>factionTags</code>, then change one thing at a time.</li>
-<li>Give a plan for your own faction <code>factionTags</code> and leave <code>fuerAlleFraktionen</code> off. Then it cannot spill over to other factions of the same tech level.</li>
-<li>Setting <code>fuerAlleFraktionen</code> without <code>techLevels</code> does nothing.</li>
+<li>Give a plan for your own faction <code>factionTags</code> and leave <code>forAllFactions</code> off. Then it cannot spill over to other factions of the same tech level.</li>
+<li>Setting <code>forAllFactions</code> without <code>techLevels</code> does nothing.</li>
 <li>A faction with own plans never gets the general ones. If you add one plan for a faction, it loses the shipped general plans. Add enough plans of your own, or none.</li>
-<li>Use <code>anteil</code> to make a large town rare. The Medieval Overhaul village uses 80, the fortress city 10.</li>
+<li>Use <code>share</code> to make a large town rare. The Medieval Overhaul village uses 80, the fortress city 10.</li>
 <li>Every <code>tag</code> must match a category that has pieces for the loaded mods. A category without pieces places nothing.</li>
 <li>Put <code>MayRequire</code> on the def node and on every list item that names content from another mod.</li>
 <li>A very large program on a small map gets cut, and CBF logs a warning with the edge length it needed. Raise <code>mapSize</code>, lower the counts, or raise <code>targetBuilt</code>.</li>
 <li>Mark the bulk housing of each ward as <code>filler</code>. Fixed buildings are placed first, filler takes what is left.</li>
 <li>Keep <code>unique</code> for keeps, town halls and similar single buildings.</li>
-<li>Pens need an <code>Umland</code> ward. Fields need a <code>Vorstadt</code> or <code>Umland</code> ward and a farmhouse category in the same district.</li>
+<li>Pens need an <code>Rural</code> ward. Fields need a <code>Suburb</code> or <code>Rural</code> ward and a farmhouse category in the same district.</li>
 <li>The editor preview shows the plan on a flat map. Build a real base afterwards; the terrain of a tile changes a lot.</li>
 <li><code>defName</code> is saved with the world. Renaming it later makes existing bases draw a new plan.</li>
 </ul>

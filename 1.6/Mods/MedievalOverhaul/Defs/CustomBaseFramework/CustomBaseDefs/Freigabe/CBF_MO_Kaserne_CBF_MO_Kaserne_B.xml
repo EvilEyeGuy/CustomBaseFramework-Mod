@@ -11,11 +11,11 @@
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>1</symbol><anchor>SpindA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Dwelling</lootTable></li>
-      <li><symbol>2</symbol><anchor>SpindB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Dwelling</lootTable></li>
-      <li><symbol>3</symbol><anchor>SpindC</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Armory</lootTable></li>
-      <li><symbol>8</symbol><anchor>Anfuehrer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>1</symbol><anchor>LockerA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Dwelling</lootTable></li>
+      <li><symbol>2</symbol><anchor>LockerB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Dwelling</lootTable></li>
+      <li><symbol>3</symbol><anchor>LockerC</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Armory</lootTable></li>
+      <li><symbol>8</symbol><anchor>Leader</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_StrawBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_EmbPalisade</thing><stuff>DankPyon_RawWood</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
@@ -28,19 +28,19 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>Geschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tableware_Hut</objects><chance>0.8</chance><onTop>true</onTop></li>
-      <li><symbol>b</symbol><anchor>Ruestung1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ArmorStand</objects><lootTable>CBF_MO_Loot_Armor</lootTable></li>
-      <li><symbol>f</symbol><anchor>Ruestung2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ArmorStand</objects><lootTable>CBF_MO_Loot_Armor</lootTable></li>
+      <li><symbol>a</symbol><anchor>Dishes</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tableware_Hut</objects><chance>0.8</chance><onTop>true</onTop></li>
+      <li><symbol>b</symbol><anchor>Armor1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ArmorStand</objects><lootTable>CBF_MO_Loot_Armor</lootTable></li>
+      <li><symbol>f</symbol><anchor>Armor2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ArmorStand</objects><lootTable>CBF_MO_Loot_Armor</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_ArmorStatue</thing><stuff>DankPyon_IronIngot</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>k</symbol><anchor>HofA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Guard</pawnList><pawnCount>1~2</pawnCount></li>
-      <li><symbol>l</symbol><anchor>HofB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Guard</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>k</symbol><anchor>YardA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Guard</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>l</symbol><anchor>YardB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Guard</pawnList><pawnCount>1~2</pawnCount></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_OnTop_Kitchen_Plate</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>q</symbol><anchor>Hofregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WeaponRack</objects></li>
+      <li><symbol>q</symbol><anchor>YardShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WeaponRack</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
-      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flag</objects><factionFlag>true</factionFlag></li>
+      <li><symbol>§</symbol><anchor>Flag</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flag</objects><factionFlag>true</factionFlag></li>
     </legend>
     <mask>
       <li>############</li>

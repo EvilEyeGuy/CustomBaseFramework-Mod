@@ -11,10 +11,10 @@
     <eaves>true</eaves>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Scribe</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>1</symbol><anchor>Saaltruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Scriptorium</lootTable></li>
-      <li><symbol>2</symbol><anchor>Archivtruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Scriptorium</lootTable></li>
-      <li><symbol>8</symbol><anchor>Schreiber</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>1</symbol><anchor>HallChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Scriptorium</lootTable></li>
+      <li><symbol>2</symbol><anchor>ArchiveChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Scriptorium</lootTable></li>
+      <li><symbol>8</symbol><anchor>Scribe</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_PaperHangingRack</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
@@ -27,7 +27,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_ScribeTable</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>b</symbol><anchor>BuchregalB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Bookshelf</objects></li>
+      <li><symbol>b</symbol><anchor>BookshelfB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Bookshelf</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>d</symbol><terrain>DankPyon_DarkWoodPlankFloor</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Book_ScribeTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
@@ -39,13 +39,13 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideoutShelfFilledBook</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_OnTop_Scribe_Book</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_OnTop_Scribe_Book</thing><rotation>North</rotation></li>
-      <li><symbol>o</symbol><anchor>SchreibzeugD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_WritingSet</objects><chance>0.9</chance><onTop>true</onTop></li>
-      <li><symbol>q</symbol><anchor>BuchregalA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Bookshelf</objects></li>
-      <li><symbol>r</symbol><anchor>Schreibregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WritingShelf</objects></li>
-      <li><symbol>s</symbol><anchor>SchreibzeugA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_WritingSet</objects><chance>0.9</chance><onTop>true</onTop></li>
-      <li><symbol>t</symbol><anchor>SchreibzeugB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_WritingSet</objects><chance>0.9</chance><onTop>true</onTop></li>
-      <li><symbol>u</symbol><anchor>SchreibzeugC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_WritingSet</objects><chance>0.9</chance><onTop>true</onTop></li>
-      <li><symbol>z</symbol><anchor>Archivregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Bookshelf</objects></li>
+      <li><symbol>o</symbol><anchor>WritingSetD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_WritingSet</objects><chance>0.9</chance><onTop>true</onTop></li>
+      <li><symbol>q</symbol><anchor>BookshelfA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Bookshelf</objects></li>
+      <li><symbol>r</symbol><anchor>WritingShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WritingShelf</objects></li>
+      <li><symbol>s</symbol><anchor>WritingSetA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_WritingSet</objects><chance>0.9</chance><onTop>true</onTop></li>
+      <li><symbol>t</symbol><anchor>WritingSetB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_WritingSet</objects><chance>0.9</chance><onTop>true</onTop></li>
+      <li><symbol>u</symbol><anchor>WritingSetC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_WritingSet</objects><chance>0.9</chance><onTop>true</onTop></li>
+      <li><symbol>z</symbol><anchor>ArchiveShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Bookshelf</objects></li>
     </legend>
     <mask>
       <li>......#####.</li>

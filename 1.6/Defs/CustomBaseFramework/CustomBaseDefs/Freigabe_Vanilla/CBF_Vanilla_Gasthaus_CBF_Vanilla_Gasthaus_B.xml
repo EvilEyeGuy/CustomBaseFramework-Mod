@@ -10,12 +10,12 @@
     <style>CBF_ModernVanilla</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>ZimmerA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Sleeping</lootTable></li>
-      <li><symbol>2</symbol><anchor>ZimmerB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Sleeping</lootTable></li>
-      <li><symbol>3</symbol><anchor>ZimmerC</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Sleeping</lootTable></li>
-      <li><symbol>6</symbol><anchor>GastB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
-      <li><symbol>8</symbol><anchor>Wirt</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
-      <li><symbol>9</symbol><anchor>Gast</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>1</symbol><anchor>RoomA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Sleeping</lootTable></li>
+      <li><symbol>2</symbol><anchor>RoomB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Sleeping</lootTable></li>
+      <li><symbol>3</symbol><anchor>RoomC</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Sleeping</lootTable></li>
+      <li><symbol>6</symbol><anchor>GuestB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>8</symbol><anchor>Innkeeper</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>9</symbol><anchor>Guest</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>D</symbol><thing>Table2x2c</thing><stuff>WoodLog</stuff></li>
       <li><symbol>E</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
@@ -31,9 +31,9 @@
       <li><symbol>Z</symbol><thing>ChessTable</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>b</symbol><anchor>ThekeA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Brewery</lootTable></li>
+      <li><symbol>b</symbol><anchor>CounterA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Brewery</lootTable></li>
       <li><symbol>f</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>g</symbol><anchor>ThekeB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Brewery</lootTable></li>
+      <li><symbol>g</symbol><anchor>CounterB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Brewery</lootTable></li>
       <li><symbol>h</symbol><terrain>TileGranite</terrain></li>
       <li><symbol>i</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>o</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>

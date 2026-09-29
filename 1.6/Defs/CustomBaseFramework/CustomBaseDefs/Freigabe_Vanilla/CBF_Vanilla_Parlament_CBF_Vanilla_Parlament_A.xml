@@ -10,11 +10,11 @@
     <style>CBF_ModernVanilla</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>AktenLinks</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
-      <li><symbol>2</symbol><anchor>AktenRechts</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
-      <li><symbol>3</symbol><anchor>SchrankLinks</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
-      <li><symbol>4</symbol><anchor>SchrankRechts</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
-      <li><symbol>8</symbol><anchor>Saalwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>1</symbol><anchor>FilesLeft</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
+      <li><symbol>2</symbol><anchor>FilesRight</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Research</lootTable></li>
+      <li><symbol>3</symbol><anchor>CabinetLeft</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
+      <li><symbol>4</symbol><anchor>CabinetRight</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
+      <li><symbol>8</symbol><anchor>HallGuard</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>1~2</pawnCount></li>
       <li><symbol>A</symbol><thing>Armchair</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
       <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
       <li><symbol>I</symbol><thing>Column</thing><stuff>BlocksMarble</stuff></li>
@@ -27,7 +27,7 @@
       <li><symbol>f</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>i</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li><symbol>j</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>k</symbol><anchor>Abgeordnete</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.6</chance></li>
+      <li><symbol>k</symbol><anchor>Delegate</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.6</chance></li>
       <li><symbol>m</symbol><terrain>TileMarble</terrain></li>
       <li><symbol>n</symbol><thing>DiningChair</thing><stuff>Steel</stuff><rotation>North</rotation></li>
       <li><symbol>s</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>

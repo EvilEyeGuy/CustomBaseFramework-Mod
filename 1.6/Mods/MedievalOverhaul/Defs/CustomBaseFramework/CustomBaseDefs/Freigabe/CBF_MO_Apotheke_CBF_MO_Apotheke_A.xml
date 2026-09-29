@@ -11,9 +11,9 @@
     <eaves>true</eaves>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Apothecary</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>2</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Apothecary</lootTable></li>
-      <li><symbol>8</symbol><anchor>Apotheker</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>2</symbol><anchor>Chest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Apothecary</lootTable></li>
+      <li><symbol>8</symbol><anchor>Apothecary</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_BarrelWater</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_DryingRack_Small</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_RusticEndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
@@ -29,9 +29,9 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_LootableShelf_AssortedHerbs</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
-      <li><symbol>k</symbol><anchor>Laborregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_HerbShelf</objects></li>
+      <li><symbol>k</symbol><anchor>LabShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_HerbShelf</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_OnTop_Alchemy_MortarAndPestle</thing><rotation>South</rotation></li>
-      <li><symbol>q</symbol><anchor>Ladenregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_HerbShelf</objects></li>
+      <li><symbol>q</symbol><anchor>ShopShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_HerbShelf</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
     </legend>
     <mask>

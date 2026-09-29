@@ -153,7 +153,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>A second anchor layer above the first. Its anchors may overlap others and clear nothing underneath, for example a tent over a market stall.</td>
 </tr>
 <tr>
-<td><code>ausWennMod</code></td>
+<td><code>offIfMod</code></td>
 <td>text</td>
 <td>none</td>
 <td>packageIds of mods, separated by commas. The piece is not placed when one of them is active.</td>
@@ -201,7 +201,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Which cells belong to the piece at all. Everything outside stays untouched.</td>
 </tr>
 <tr>
-<td><code>nurMitMod</code></td>
+<td><code>onlyWithMod</code></td>
 <td>text</td>
 <td>none</td>
 <td>packageIds of mods, separated by commas. The piece is only placed when all of them are active.</td>
@@ -279,13 +279,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>A third pass for the rare cell that carries three things.</td>
 </tr>
 <tr>
-<td><code>traufen</code><br>Eaves</td>
+<td><code>eaves</code><br>Eaves</td>
 <td>true/false</td>
 <td><code>false</code></td>
 <td>Places an eave from Architecture of the Rim on every outer wall and outer door. Does nothing without that mod.</td>
 </tr>
 <tr>
-<td><code>traufenMaterial</code><br>Eave material</td>
+<td><code>eavesMaterial</code><br>Eave material</td>
 <td>text</td>
 <td>none</td>
 <td>Material of the eaves. Empty takes the material of the wall they sit on.</td>

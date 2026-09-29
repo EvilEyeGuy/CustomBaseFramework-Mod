@@ -6,8 +6,8 @@
   <CBF_FieldDesc_annexChance>Chance je Anbauanker eines Hauses, dass dort ein Anbau entsteht, 0 bis 1. Leer übernimmt die Elternkategorie, sonst 0.6.</CBF_FieldDesc_annexChance>
   <CBF_FieldDesc_annexMax>Höchstens so viele Anbauten je Haus. Leer übernimmt die Elternkategorie, sonst 2.</CBF_FieldDesc_annexMax>
   <CBF_FieldDesc_annexMultiple>Gehört an die Kategorie des Anbaus. Mit true darf dasselbe Anbaustück mehrmals an ein Haus. Vorgabe false.</CBF_FieldDesc_annexMultiple>
-  <CBF_FieldDesc_annexes>Kategorien, deren Stücke als Anbau an die Anbau-Anker der Häuser dieser Kategorie dürfen. Leer übernimmt die Liste der Elternkategorie.</CBF_FieldDesc_annexes>
-  <CBF_FieldDesc_anchor>Name des Ankers. Wall bindet die Zellen an die Stadtmauer, Anbau markiert, wo ein Anbau andocken darf, Outside markiert die Außenseite eines Mauerstreifens oder Torhauses. Andere Namen sind nur eine Beschriftung.</CBF_FieldDesc_anchor>
+  <CBF_FieldDesc_annexes>Kategorien, deren Stücke als Anbau an die Annex-Anker der Häuser dieser Kategorie dürfen. Leer übernimmt die Liste der Elternkategorie.</CBF_FieldDesc_annexes>
+  <CBF_FieldDesc_anchor>Name des Ankers. Wall bindet die Zellen an die Stadtmauer, Annex markiert, wo ein Anbau andocken darf, Outside markiert die Außenseite eines Mauerstreifens oder Torhauses. Andere Namen sind nur eine Beschriftung.</CBF_FieldDesc_anchor>
   <CBF_FieldDesc_anchorKind>Was der Anker tut. Connect markiert nur Zellen, siehe anchor. Fill setzt einen Behälter aus objects und füllt ihn aus lootTable. Object setzt etwas aus objects ohne die Beutetabelle des Ankers. Spawn setzt Einheiten.</CBF_FieldDesc_anchorKind>
   <CBF_FieldDesc_anchorsOver>Eine zweite Ankerebene über der ersten. Ihre Anker dürfen andere überlappen und räumen darunter nichts weg, etwa ein Zelt über einem Marktstand.</CBF_FieldDesc_anchorsOver>
   <CBF_FieldDesc_attackSide>Seite, von der die Angreifer kamen: North, East, South oder West. Breschen und die schwersten Schäden sammeln sich dort. Leer wählt eine Seite zufällig.</CBF_FieldDesc_attackSide>

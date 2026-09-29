@@ -27,7 +27,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Altstadt</name>
+        <name>OldTown</name>
         <label>Regierungsviertel</label>
         <supply>1.2</supply>
         <roads>
@@ -67,7 +67,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Regierung</name>
+            <name>Government</name>
             <entries>
               <li><tag>CBF_Vanilla_Parliament</tag><count>1~1</count><unique>true</unique></li>
               <li><tag>CBF_Vanilla_CommandCenter</tag><count>1~1</count><lootTable>CBF_Modern_Loot_Citadel</lootTable></li>
@@ -79,7 +79,7 @@
             </entries>
           </li>
           <li>
-            <name>Zentrum</name>
+            <name>Center</name>
             <entries>
               <li><tag>CBF_Vanilla_ResearchCenter</tag><count>1~2</count><lootTable>CBF_Modern_Loot_Citadel</lootTable></li>
               <li><tag>CBF_Vanilla_Hospital</tag><count>1~1</count></li>
@@ -93,7 +93,7 @@
       </li>
       <li>
         <kind>Suburb</kind>
-        <name>Neustadt</name>
+        <name>NewTown</name>
         <label>Stadtring</label>
         <supply>1.2</supply>
         <roads>
@@ -128,7 +128,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Stadtring</name>
+            <name>TownRing</name>
             <entries>
               <li><tag>CBF_Vanilla_StorageHall</tag><count>2~4</count></li>
               <li><tag>CBF_Vanilla_ResearchCenter</tag><count>0~1</count></li>
@@ -147,7 +147,7 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <roads>
           <li>Concrete</li>
@@ -161,7 +161,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Umland</name>
+            <name>Countryside</name>
             <entries>
               <li><tag>CBF_Vanilla_WindPark</tag><count>1~3</count></li>
               <li><tag>CBF_Vanilla_SolarPark</tag><count>0~2</count></li>

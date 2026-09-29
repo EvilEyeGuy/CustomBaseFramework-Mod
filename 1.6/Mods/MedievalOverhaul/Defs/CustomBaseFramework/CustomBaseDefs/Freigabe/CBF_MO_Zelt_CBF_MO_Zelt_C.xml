@@ -11,9 +11,9 @@
     <eaves>true</eaves>
     <legend>
       <li><symbol>3</symbol><anchor>SackB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>
-      <li><symbol>4</symbol><anchor>FassB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>
-      <li><symbol>8</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
-      <li><symbol>9</symbol><anchor>BewohnerB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>4</symbol><anchor>BarrelB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>
+      <li><symbol>8</symbol><anchor>ResidentsA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>9</symbol><anchor>ResidentsB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li><symbol>C</symbol><thing>Campfire</thing></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_DryingRack_Small</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
@@ -26,9 +26,9 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
-      <li><symbol>f</symbol><anchor>Fass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>
-      <li><symbol>g</symbol><anchor>Fell</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Fur_2x2</objects></li>
-      <li><symbol>h</symbol><anchor>FellB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Fur_2x2</objects></li>
+      <li><symbol>f</symbol><anchor>Barrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>
+      <li><symbol>g</symbol><anchor>Fur</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Fur_2x2</objects></li>
+      <li><symbol>h</symbol><anchor>FurB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Fur_2x2</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_RugCougar2x2c</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>West</rotation></li>
       <li><symbol>s</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>

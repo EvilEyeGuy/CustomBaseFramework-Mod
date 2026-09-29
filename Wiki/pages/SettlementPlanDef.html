@@ -129,19 +129,19 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>ankerSoldaten</code></td>
+<td><code>maxSoldiers</code></td>
 <td>whole number</td>
 <td><code>40</code></td>
 <td>Upper limit on fighters. Once the settlement has this many, further spawn anchors for fighters stay empty; gunner anchors still get theirs. 0 means no limit.</td>
 </tr>
 <tr>
-<td><code>ankerZivil</code></td>
+<td><code>maxCivilians</code></td>
 <td>whole number</td>
 <td><code>30</code></td>
 <td>Upper limit on civilians. Once the settlement has this many pawns that are not fighters, further civilian spawn anchors stay empty. 0 means no limit.</td>
 </tr>
 <tr>
-<td><code>anteil</code><br>Weight</td>
+<td><code>share</code><br>Weight</td>
 <td>number</td>
 <td><code>0</code></td>
 <td>Weight of this settlement type against the other types the same faction may get. 0 counts as 1.</td>
@@ -153,13 +153,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How long the defenders wait before they attack, in ticks.</td>
 </tr>
 <tr>
-<td><code>baumanteil</code></td>
+<td><code>treeShare</code></td>
 <td>number</td>
 <td><code>0</code></td>
 <td>Share of wild trees inside the settlement that are kept when it is built, 0 to 1. 0 clears them.</td>
 </tr>
 <tr>
-<td><code>buchtHaus</code><br>Smallest house</td>
+<td><code>minHouseSize</code><br>Smallest house</td>
 <td>whole number</td>
 <td><code>5</code></td>
 <td>Edge length of the smallest house. Bays narrower than this are dropped.</td>
@@ -225,7 +225,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Which factions may use this settlement type.</td>
 </tr>
 <tr>
-<td><code>fuerAlleFraktionen</code><br>For every faction of these levels</td>
+<td><code>forAllFactions</code><br>For every faction of these levels</td>
 <td>true/false</td>
 <td><code>false</code></td>
 <td>Also offers this type to factions that have no settlement type of their own, if their tech level is in techLevels.</td>
@@ -237,49 +237,49 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Which pieces may serve as gatehouses.</td>
 </tr>
 <tr>
-<td><code>gelaendeOeffnen</code></td>
+<td><code>openTerrain</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
 <td>Lets the planner choose a site that needs earthwork first, such as rock cleared away. Off by default; the planner still does it as a last resort.</td>
 </tr>
 <tr>
-<td><code>hafen</code></td>
+<td><code>harbor</code></td>
 <td><a href="HafenSpec.html">HafenSpec</a></td>
 <td>none</td>
 <td>Harbor at the coast or on a wide river: which harbor buildings the settlement gets. Only for medieval settlements.</td>
 </tr>
 <tr>
-<td><code>ideologieStil</code></td>
+<td><code>ideoStyle</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
 <td>Furniture gets the style of the owning faction's ideoligion. Needs Ideology.</td>
 </tr>
 <tr>
-<td><code>kerbeMax</code><br>Maximum notch</td>
+<td><code>notchMax</code><br>Maximum notch</td>
 <td>whole number</td>
 <td><code>6</code></td>
 <td>How deep the outline may cut inwards where the terrain calls for it.</td>
 </tr>
 <tr>
 <td><code>kind</code><br>Settlement kind</td>
-<td>Ortsart (Mittelalterstadt, Modernestadt, Lager, Verlies)</td>
-<td><code>Mittelalterstadt</code></td>
-<td>On a settlement type: Mittelalterstadt or Modernestadt. Modernestadt allows roads up to 6 wide and lays power conduits. Lager and Verlies are switched off at the moment. On a pawn list entry: the pawn kind (PawnKindDef defName).</td>
+<td>Ortsart (MedievalTown, ModernTown, Camp, Dungeon)</td>
+<td><code>MedievalTown</code></td>
+<td>On a settlement type: MedievalTown or ModernTown. ModernTown allows roads up to 6 wide and lays power conduits. Camp and Dungeon are switched off at the moment. On a pawn list entry: the pawn kind (PawnKindDef defName).</td>
 </tr>
 <tr>
-<td><code>lagerArten</code></td>
+<td><code>campTypes</code></td>
 <td>list of text</td>
 <td>none</td>
-<td>SitePartDef names, such as BanditCamp or Outpost. This camp plan builds these quest sites. Only for the kind Lager.</td>
+<td>SitePartDef names, such as BanditCamp or Outpost. This camp plan builds these quest sites. Only for the kind Camp.</td>
 </tr>
 <tr>
-<td><code>laufMax</code><br>Longest wall run</td>
+<td><code>runMax</code><br>Longest wall run</td>
 <td>whole number</td>
 <td><code>6</code></td>
 <td>Longest straight piece of wall before it must step.</td>
 </tr>
 <tr>
-<td><code>laufMin</code><br>Shortest wall run</td>
+<td><code>runMin</code><br>Shortest wall run</td>
 <td>whole number</td>
 <td><code>1</code></td>
 <td>Shortest straight piece of wall before it may turn.</td>
@@ -309,7 +309,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>0 lets the framework decide from the loaded mods.</td>
 </tr>
 <tr>
-<td><code>minFuellgrad</code><br>Minimum fill</td>
+<td><code>minFillRatio</code><br>Minimum fill</td>
 <td>number</td>
 <td><code>0.85</code></td>
 <td>How full the outline must be against its convex hull. Lower allows more ragged shapes.</td>
@@ -321,7 +321,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Smallest usable bulge of the outline. 0 turns the check off.</td>
 </tr>
 <tr>
-<td><code>ohneWdBeute</code></td>
+<td><code>noWdLoot</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
 <td>Switches off the World Domination loot budget for this settlement type.</td>
@@ -336,7 +336,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>riafHolding</code></td>
 <td>text</td>
 <td>none</td>
-<td>Holding kind of A Rim of Ice and Fire this type is the plan for: Dorf (village), Stadt (town) or Garnison (garrison). Empty means none. A type with a holding kind is only used for such holdings.</td>
+<td>Holding kind of A Rim of Ice and Fire this type is the plan for: Village, Town or Garrison. Empty means none. A type with a holding kind is only used for such holdings.</td>
 </tr>
 <tr>
 <td><code>roadLane</code><br>Lane width</td>
@@ -357,7 +357,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Tags that make this settlement type usable for quest sites. A site that asks for tags only takes types with a matching one. Empty means it is never used for sites.</td>
 </tr>
 <tr>
-<td><code>stufeMax</code><br>Largest step</td>
+<td><code>stepMax</code><br>Largest step</td>
 <td>whole number</td>
 <td><code>3</code></td>
 <td>How far the wall may step sideways at once.</td>
@@ -390,7 +390,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>techLevels</code><br>Tech levels</td>
 <td>list of TechLevel (Undefined, Animal, Neolithic, Medieval, Industrial, Spacer, Ultra, Archotech)</td>
 <td>none</td>
-<td>Tech levels this type is meant for. With fuerAlleFraktionen they decide which factions qualify. Pawns from pawn lists are capped at the faction's level if it is listed, otherwise at the highest listed one. Empty means no cap.</td>
+<td>Tech levels this type is meant for. With forAllFactions they decide which factions qualify. Pawns from pawn lists are capped at the faction's level if it is listed, otherwise at the highest listed one. Empty means no cap.</td>
 </tr>
 <tr>
 <td><code>towerCapTotal</code><br>Tower limit</td>
@@ -438,16 +438,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>wards</code></td>
 <td>list of <a href="Stadtteil.html">Stadtteil</a></td>
 <td>none</td>
-<td>The parts of the settlement: Stadt, Vorstadt and Umland, each with its own wall, garrison, districts and surfaces.</td>
+<td>The parts of the settlement: Town, Suburb and Rural, each with its own wall, garrison, districts and surfaces.</td>
 </tr>
 <tr>
-<td><code>wdStufe</code></td>
+<td><code>wdLevel</code></td>
 <td>IntRange</td>
 <td><code>0</code></td>
 <td>World Domination tier this type stands for, as a range from 1 to 4. A settlement with a tier prefers the types closest to it. 0 means no tier.</td>
 </tr>
 <tr>
-<td><code>wdTyp</code></td>
+<td><code>wdType</code></td>
 <td>list of text</td>
 <td>none</td>
 <td>World Domination settlement types this plan stands for, such as Mining or Slavery. Empty means any type. Only used with World Domination 2.0.</td>

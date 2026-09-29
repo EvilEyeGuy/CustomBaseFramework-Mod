@@ -10,8 +10,8 @@
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>1</symbol><anchor>TruheA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Hut</lootTable></li>
-      <li><symbol>8</symbol><anchor>BewohnerA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>1</symbol><anchor>ChestA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Hut</lootTable></li>
+      <li><symbol>8</symbol><anchor>ResidentsA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li><symbol>C</symbol><thing>Campfire</thing></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_DryingRack_Small</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
@@ -22,8 +22,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
-      <li><symbol>g</symbol><anchor>Fell</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Fur_2x2</objects></li>
-      <li><symbol>h</symbol><anchor>FellB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Fur_2x2</objects></li>
+      <li><symbol>g</symbol><anchor>Fur</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Fur_2x2</objects></li>
+      <li><symbol>h</symbol><anchor>FurB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Fur_2x2</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_RugCougar2x2c</thing><rotation>South</rotation></li>
       <li><symbol>s</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>
     </legend>

@@ -6,8 +6,8 @@
   <CBF_FieldDesc_annexChance>Chance per annex anchor of a house that an annex is built there, 0 to 1. Empty takes the parent category, then 0.6.</CBF_FieldDesc_annexChance>
   <CBF_FieldDesc_annexMax>At most this many annexes per house. Empty takes the parent category, then 2.</CBF_FieldDesc_annexMax>
   <CBF_FieldDesc_annexMultiple>Set on the category of the annex. True lets the same annex piece attach to one house several times. Default false.</CBF_FieldDesc_annexMultiple>
-  <CBF_FieldDesc_annexes>Categories whose pieces may attach as annexes at the Anbau anchors of houses in this category. Empty takes the list of the parent category.</CBF_FieldDesc_annexes>
-  <CBF_FieldDesc_anchor>Name of the anchor. Wall ties the cells to the town wall, Anbau marks where an annex may attach, Outside marks the outer side of a wall strip or gatehouse. Other names only label the anchor.</CBF_FieldDesc_anchor>
+  <CBF_FieldDesc_annexes>Categories whose pieces may attach as annexes at the Annex anchors of houses in this category. Empty takes the list of the parent category.</CBF_FieldDesc_annexes>
+  <CBF_FieldDesc_anchor>Name of the anchor. Wall ties the cells to the town wall, Annex marks where an annex may attach, Outside marks the outer side of a wall strip or gatehouse. Other names only label the anchor.</CBF_FieldDesc_anchor>
   <CBF_FieldDesc_anchorKind>What the anchor does. Connect only marks cells, see anchor. Fill places a container from objects and fills it from lootTable. Object places something from objects without the anchor's loot table. Spawn places pawns.</CBF_FieldDesc_anchorKind>
   <CBF_FieldDesc_anchorsOver>A second anchor layer above the first. Its anchors may overlap others and clear nothing underneath, for example a tent over a market stall.</CBF_FieldDesc_anchorsOver>
   <CBF_FieldDesc_attackSide>Side the attackers came from: North, East, South or West. Breaches and the worst damage gather there. Empty picks a side at random.</CBF_FieldDesc_attackSide>

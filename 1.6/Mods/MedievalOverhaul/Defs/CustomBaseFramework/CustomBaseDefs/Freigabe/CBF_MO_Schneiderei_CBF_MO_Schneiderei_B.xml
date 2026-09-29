@@ -11,13 +11,13 @@
     <eaves>true</eaves>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Tailor</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>1</symbol><anchor>Truhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_TailorShop</lootTable></li>
-      <li><symbol>8</symbol><anchor>Weber</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>1</symbol><anchor>Chest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_TailorShop</lootTable></li>
+      <li><symbol>8</symbol><anchor>Weaver</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_Bed_Rustic_Blue</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_DryingRack_Big</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
-      <li><symbol>J</symbol><anchor>Stoffwagen</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothCart</objects></li>
+      <li><symbol>J</symbol><anchor>ClothCart</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothCart</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_MendingBench</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
@@ -25,9 +25,9 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutBarrelTextiles</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideOutBuildingBase_Cart_Textiles</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>k</symbol><anchor>Tuchkiste</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_TailorShop</lootTable></li>
-      <li><symbol>s</symbol><anchor>Stofffass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothBarrel</objects></li>
-      <li><symbol>u</symbol><anchor>Hoffass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothBarrel</objects></li>
+      <li><symbol>k</symbol><anchor>ClothCrate</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_TailorShop</lootTable></li>
+      <li><symbol>s</symbol><anchor>ClothBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothBarrel</objects></li>
+      <li><symbol>u</symbol><anchor>YardBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothBarrel</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
     </legend>
     <mask>

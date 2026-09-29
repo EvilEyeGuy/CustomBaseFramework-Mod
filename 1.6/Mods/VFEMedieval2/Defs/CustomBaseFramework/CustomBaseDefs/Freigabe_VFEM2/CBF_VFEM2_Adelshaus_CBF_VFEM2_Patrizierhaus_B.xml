@@ -10,14 +10,14 @@
     <style>CBF_VFEM2</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>A</symbol><anchor>Studiertruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Treasure</lootTable></li>
-      <li><symbol>B</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flag</objects><factionFlag>true</factionFlag></li>
-      <li><symbol>C</symbol><anchor>Schlaftruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Treasure</lootTable></li>
-      <li><symbol>D</symbol><anchor>Vorratsregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Kitchen</lootTable></li>
-      <li><symbol>E</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>A</symbol><anchor>StudyChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Treasure</lootTable></li>
+      <li><symbol>B</symbol><anchor>Flag</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flag</objects><factionFlag>true</factionFlag></li>
+      <li><symbol>C</symbol><anchor>BedChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Treasure</lootTable></li>
+      <li><symbol>D</symbol><anchor>PantryShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Kitchen</lootTable></li>
+      <li><symbol>E</symbol><anchor>Residents</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>G</symbol><anchor>Vorratssack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Kitchen</lootTable></li>
-      <li><symbol>H</symbol><anchor>Gaestetruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
+      <li><symbol>G</symbol><anchor>SupplySack</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Kitchen</lootTable></li>
+      <li><symbol>H</symbol><anchor>GuestChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
       <li><symbol>I</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
       <li><symbol>J</symbol><thing>FueledStove</thing><rotation>North</rotation></li>
       <li><symbol>K</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
@@ -47,8 +47,8 @@
       <li><symbol>v</symbol><terrain>FlagstoneMarble</terrain></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
       <li><symbol>x</symbol><thing>Table2x4c</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>y</symbol><anchor>Schreibregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_AutoShelf</objects></li>
-      <li><symbol>z</symbol><anchor>Hausherr</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>y</symbol><anchor>WritingShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_AutoShelf</objects></li>
+      <li><symbol>z</symbol><anchor>Householder</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Residents</pawnList><chance>0.3</chance></li>
     </legend>
     <mask>
       <li>###############</li>

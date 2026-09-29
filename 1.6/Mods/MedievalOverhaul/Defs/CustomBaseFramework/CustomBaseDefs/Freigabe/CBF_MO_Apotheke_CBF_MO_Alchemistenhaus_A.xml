@@ -10,10 +10,10 @@
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
     <legend>
-      <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
-      <li><symbol>4</symbol><anchor>Apothekertruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Apothecary</lootTable></li>
-      <li><symbol>5</symbol><anchor>Kraeuterregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_HerbShelf</objects></li>
-      <li><symbol>8</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>4</symbol><anchor>ApothecaryChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Apothecary</lootTable></li>
+      <li><symbol>5</symbol><anchor>HerbShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_HerbShelf</objects></li>
+      <li><symbol>8</symbol><anchor>Residents</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_Cauldron</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>DankPyon_RawWood</stuff></li>

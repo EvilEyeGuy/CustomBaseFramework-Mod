@@ -24,7 +24,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Altstadt</name>
+        <name>OldTown</name>
         <supply>1.2</supply>
         <roads>
           <li>FlagstoneGranite</li>
@@ -66,7 +66,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Burg</name>
+            <name>Castle</name>
             <entries>
               <li>
                 <tag>CBF_VFEM2_FortressKeep</tag>
@@ -92,7 +92,7 @@
             </entries>
           </li>
           <li>
-            <name>Zentrum</name>
+            <name>Center</name>
             <entries>
               <li>
                 <tag>CBF_VFEM2_NobleHouse</tag>
@@ -150,7 +150,7 @@
       </li>
       <li>
         <kind>Suburb</kind>
-        <name>Neustadt</name>
+        <name>NewTown</name>
         <supply>1.2</supply>
         <walls>
           <li>
@@ -189,7 +189,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Wohnen</name>
+            <name>Housing</name>
             <entries>
               <li>
                 <tag>CBF_VFEM2_Hut</tag>
@@ -207,7 +207,7 @@
             </entries>
           </li>
           <li>
-            <name>Lager</name>
+            <name>Camp</name>
             <entries>
               <li>
                 <tag>CBF_VFEM2_Warehouse</tag>
@@ -239,7 +239,7 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply>
         <garrison>
           <li>
@@ -250,7 +250,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Hoefe</name>
+            <name>Farms</name>
             <fields>
               <li>
                 <count>1~2</count>
@@ -277,7 +277,7 @@
             </entries>
           </li>
           <li>
-            <name>Muehle</name>
+            <name>Mill</name>
             <fields>
               <li>
                 <count>1~2</count>
@@ -299,10 +299,10 @@
             </entries>
           </li>
           <li>
-            <name>Weide</name>
+            <name>Pasture</name>
             <pens>
               <li>
-                <name>Gehege</name>
+                <name>Pen</name>
                 <count>1~1</count>
                 <herd>3~7</herd>
                 <pawns>Hardanimals_1</pawns>
@@ -325,7 +325,7 @@
             </entries>
           </li>
           <li>
-            <name>Kirchhof</name>
+            <name>Churchyard</name>
             <entries>
               <li>
                 <tag>CBF_VFEM2_Graveyard</tag>
@@ -334,7 +334,7 @@
             </entries>
           </li>
           <li>
-            <name>Turnier</name>
+            <name>Tournament</name>
             <entries>
               <li>
                 <tag>CBF_VFEM2_TourneyGround</tag>
@@ -343,7 +343,7 @@
             </entries>
           </li>
           <li>
-            <name>Rand</name>
+            <name>Edge</name>
             <entries>
               <li>
                 <tag>CBF_VFEM2_Hut</tag>

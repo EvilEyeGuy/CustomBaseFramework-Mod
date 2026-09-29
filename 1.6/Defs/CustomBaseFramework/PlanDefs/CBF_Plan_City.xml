@@ -23,7 +23,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>Altstadt</name>
+        <name>OldTown</name>
         <label>Zentrum</label>
         <supply>1.2</supply>
         <roads>
@@ -63,7 +63,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Zentrum</name>
+            <name>Center</name>
             <entries>
               <li><tag>CBF_Vanilla_HouseSmall</tag><count>12~44</count><filler>true</filler></li>
               <li><tag>CBF_Vanilla_Workshop</tag><count>2~12</count><filler>true</filler></li>
@@ -77,7 +77,7 @@
       </li>
       <li>
         <kind>Suburb</kind>
-        <name>Neustadt</name>
+        <name>NewTown</name>
         <label>Wohnviertel</label>
         <supply>1.2</supply>
         <roads>
@@ -95,7 +95,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Wohnviertel</name>
+            <name>ResidentialQuarter</name>
             <entries>
               <li><tag>CBF_Vanilla_HouseLarge</tag><count>12~56</count><filler>true</filler></li>
               <li><tag>CBF_ModernDefense</tag><count>0~4</count></li>
@@ -115,7 +115,7 @@
       </li>
       <li>
         <kind>Rural</kind>
-        <name>Umland</name>
+        <name>Countryside</name>
         <supply>1.2</supply><fields><li>
             <count>3~4</count>
             <fence>false</fence>
@@ -137,7 +137,7 @@
         </garrison>
         <districts>
           <li>
-            <name>Umland</name>
+            <name>Countryside</name>
             <entries>
               <li><tag>CBF_Vanilla_WindPark</tag><count>2~6</count></li>
               <li><tag>CBF_Vanilla_Graveyard</tag><count>0~1</count></li>

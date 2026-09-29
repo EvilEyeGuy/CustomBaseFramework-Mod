@@ -24,11 +24,11 @@
     <defendersOnWall>0.25</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Posten</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Innen</list><posten>Innen</posten><count>3~5</count></li>
+          <li><list>CBF_Modern_Garnison_Innen</list><post>Inside</post><count>3~5</count></li>
         </garrison>
         <districts>
           <li>
@@ -41,9 +41,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Felder</name><fields><li>
@@ -64,14 +64,14 @@
         </districts>
       </li>
     </wards>
-    <kind>Modernestadt</kind>
-    <anteil>0</anteil>
-    <wdStufe>1</wdStufe>
-    <wdTyp>
+    <kind>ModernTown</kind>
+    <share>0</share>
+    <wdLevel>1</wdLevel>
+    <wdType>
       <li>Farming</li>
-    </wdTyp>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
-    <ideologieStil>true</ideologieStil>
+    </wdType>
+    <forAllFactions>true</forAllFactions>
+    <ideoStyle>true</ideoStyle>
     <techLevels>
       <li>Industrial</li>
       <li>Spacer</li>
@@ -103,11 +103,11 @@
     <defendersOnWall>0.25</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Posten</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Innen</list><posten>Innen</posten><count>3~5</count></li>
+          <li><list>CBF_Modern_Garnison_Innen</list><post>Inside</post><count>3~5</count></li>
         </garrison>
         <districts>
           <li>
@@ -120,9 +120,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Wald</name>
@@ -133,14 +133,14 @@
         </districts>
       </li>
     </wards>
-    <kind>Modernestadt</kind>
-    <anteil>0</anteil>
-    <wdStufe>1</wdStufe>
-    <wdTyp>
+    <kind>ModernTown</kind>
+    <share>0</share>
+    <wdLevel>1</wdLevel>
+    <wdType>
       <li>Logging</li>
-    </wdTyp>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
-    <ideologieStil>true</ideologieStil>
+    </wdType>
+    <forAllFactions>true</forAllFactions>
+    <ideoStyle>true</ideoStyle>
     <techLevels>
       <li>Industrial</li>
       <li>Spacer</li>
@@ -172,11 +172,11 @@
     <defendersOnWall>0.25</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Posten</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Innen</list><posten>Innen</posten><count>3~5</count></li>
+          <li><list>CBF_Modern_Garnison_Innen</list><post>Inside</post><count>3~5</count></li>
         </garrison>
         <districts>
           <li>
@@ -190,9 +190,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Rand</name>
@@ -203,14 +203,14 @@
         </districts>
       </li>
     </wards>
-    <kind>Modernestadt</kind>
-    <anteil>0</anteil>
-    <wdStufe>1</wdStufe>
-    <wdTyp>
+    <kind>ModernTown</kind>
+    <share>0</share>
+    <wdLevel>1</wdLevel>
+    <wdType>
       <li>Mining</li>
-    </wdTyp>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
-    <ideologieStil>true</ideologieStil>
+    </wdType>
+    <forAllFactions>true</forAllFactions>
+    <ideoStyle>true</ideoStyle>
     <techLevels>
       <li>Industrial</li>
       <li>Spacer</li>
@@ -242,11 +242,11 @@
     <defendersOnWall>0.25</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Werksviertel</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Innen</list><posten>Innen</posten><count>5~8</count></li>
+          <li><list>CBF_Modern_Garnison_Innen</list><post>Inside</post><count>5~8</count></li>
         </garrison>
         <districts>
           <li>
@@ -261,9 +261,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Energie</name>
@@ -275,14 +275,14 @@
         </districts>
       </li>
     </wards>
-    <kind>Modernestadt</kind>
-    <anteil>0</anteil>
-    <wdStufe>2</wdStufe>
-    <wdTyp>
+    <kind>ModernTown</kind>
+    <share>0</share>
+    <wdLevel>2</wdLevel>
+    <wdType>
       <li>Production</li>
-    </wdTyp>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
-    <ideologieStil>true</ideologieStil>
+    </wdType>
+    <forAllFactions>true</forAllFactions>
+    <ideoStyle>true</ideoStyle>
     <techLevels>
       <li>Industrial</li>
       <li>Spacer</li>
@@ -314,11 +314,11 @@
     <defendersOnWall>0.25</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Tor</list><posten>Innen</posten><count>5~8</count></li>
+          <li><list>CBF_Modern_Garnison_Tor</list><post>Inside</post><count>5~8</count></li>
         </garrison>
         <districts>
           <li>
@@ -332,9 +332,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Rand</name>
@@ -345,14 +345,14 @@
         </districts>
       </li>
     </wards>
-    <kind>Modernestadt</kind>
-    <anteil>0</anteil>
-    <wdStufe>2</wdStufe>
-    <wdTyp>
+    <kind>ModernTown</kind>
+    <share>0</share>
+    <wdLevel>2</wdLevel>
+    <wdType>
       <li>Slavery</li>
-    </wdTyp>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
-    <ideologieStil>true</ideologieStil>
+    </wdType>
+    <forAllFactions>true</forAllFactions>
+    <ideoStyle>true</ideoStyle>
     <techLevels>
       <li>Industrial</li>
       <li>Spacer</li>
@@ -384,12 +384,12 @@
     <defendersOnWall>0.25</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Wehrgang</list><posten>Innen</posten><count>4~8</count></li>
-          <li><list>CBF_Modern_Garnison_Elite</list><posten>Innen</posten><count>1~3</count></li>
+          <li><list>CBF_Modern_Garnison_Wehrgang</list><post>Inside</post><count>4~8</count></li>
+          <li><list>CBF_Modern_Garnison_Elite</list><post>Inside</post><count>1~3</count></li>
         </garrison>
         <districts>
           <li>
@@ -402,9 +402,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Vorfeld</name>
@@ -415,14 +415,14 @@
         </districts>
       </li>
     </wards>
-    <kind>Modernestadt</kind>
-    <anteil>0</anteil>
-    <wdStufe>1~4</wdStufe>
-    <wdTyp>
+    <kind>ModernTown</kind>
+    <share>0</share>
+    <wdLevel>1~4</wdLevel>
+    <wdType>
       <li>Vanguard</li>
-    </wdTyp>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
-    <ideologieStil>true</ideologieStil>
+    </wdType>
+    <forAllFactions>true</forAllFactions>
+    <ideoStyle>true</ideoStyle>
     <techLevels>
       <li>Industrial</li>
       <li>Spacer</li>

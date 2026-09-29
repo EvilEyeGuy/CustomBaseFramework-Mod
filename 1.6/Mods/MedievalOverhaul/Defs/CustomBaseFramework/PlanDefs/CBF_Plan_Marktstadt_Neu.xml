@@ -28,9 +28,9 @@
 
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Altstadt</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <roads>
           <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Floor_Cobblestone_Granite</li>
         </roads>
@@ -45,9 +45,9 @@
           <li><tag>CBF_MO_Torhaus</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garnison_Wehrgang</list><posten>Wehrgang</posten><count>6~9</count></li>
-          <li><list>CBF_MO_Garnison_Tor</list><posten>Tor</posten><count>3~4</count></li>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>4~5</count></li>
+          <li><list>CBF_MO_Garnison_Wehrgang</list><post>Walkway</post><count>6~9</count></li>
+          <li><list>CBF_MO_Garnison_Tor</list><post>Gate</post><count>3~4</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>4~5</count></li>
         </garrison>
         <districts>
           <li>
@@ -77,10 +77,10 @@
         </districts>
       </li>
       <li>
-        <art>Vorstadt</art>
+        <kind>Suburb</kind>
         <name>Neustadt</name>
-        <tor>DankPyon_ReinfocedLogGate</tor>
-        <versorgung>1.2</versorgung>
+        <gate>DankPyon_ReinfocedLogGate</gate>
+        <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
         </walls>
@@ -91,9 +91,9 @@
           <li><tag>CBF_MO_Palisadentorhaus</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garnison_Wehrgang</list><posten>Wehrgang</posten><count>4~5</count></li>
-          <li><list>CBF_MO_Garnison_Tor</list><posten>Tor</posten><count>1~3</count></li>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>3~4</count></li>
+          <li><list>CBF_MO_Garnison_Wehrgang</list><post>Walkway</post><count>4~5</count></li>
+          <li><list>CBF_MO_Garnison_Tor</list><post>Gate</post><count>1~3</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>3~4</count></li>
         </garrison>
         <districts>
           <li>
@@ -112,7 +112,7 @@
               <li><tag>CBF_MO_Tischlerei</tag><count>1~1</count></li>
               <li><tag>CBF_MO_Baeckerei</tag><count>1~1</count></li>
               <li><tag>CBF_MO_Apotheke</tag><count>1~1</count></li>
-              <li><tag>CBF_MO_Metzgerei</tag><count>1~1</count><ohneIdeologie><li>MeatEating_Abhorrent</li><li>MeatEating_Horrible</li></ohneIdeologie></li>
+              <li><tag>CBF_MO_Metzgerei</tag><count>1~1</count><withoutIdeo><li>MeatEating_Abhorrent</li><li>MeatEating_Horrible</li></withoutIdeo></li>
               <li><tag>CBF_MO_Schreibstube</tag><count>1~1</count></li>
               <li><tag>CBF_MO_Lagerhaus</tag><count>0~1</count></li>
             </entries>
@@ -120,11 +120,11 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>3~4</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>3~4</count></li>
         </garrison>
         <districts>
           <li>
@@ -199,7 +199,7 @@
       </li>
     </wards>
 
-    <kind>Mittelalterstadt</kind>
+    <kind>MedievalTown</kind>
 
     <factionTags>
       <li>DankPyon_NobleHouseSavage</li>
@@ -208,18 +208,18 @@
       <li>DankPyon_NobleHouseCivil2</li>
     </factionTags>
 
-    <anteil>70</anteil>
+    <share>70</share>
 
-    <wdStufe>2</wdStufe>
+    <wdLevel>2</wdLevel>
 
-    <hafen>
+    <harbor>
       <entries>
         <li><tag>CBF_MO_Hafenlager</tag><count>1~1</count></li>
         <li><tag>CBF_MO_Steg</tag><count>1~2</count></li>
         <li><tag>CBF_MO_Fischerhuette</tag><count>1~2</count></li>
         <li><tag>CBF_MO_Bootsschuppen</tag><count>0~1</count></li>
       </entries>
-    </hafen>
+    </harbor>
     <suburbIslands>2</suburbIslands>
 
     <techLevels>

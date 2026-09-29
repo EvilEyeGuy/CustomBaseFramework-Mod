@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef Name="CBF_BeutebehaelterBase" Abstract="True">
-    <thingClass>CustomBaseFramework.Building_Beutebehaelter</thingClass>
+    <thingClass>CustomBaseFramework.Building_LootContainer</thingClass>
     <category>Building</category>
     <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -48,8 +48,8 @@
     </graphicData>
 
     <modExtensions>
-      <li Class="CustomBaseFramework.BeutebehaelterExtension">
-        <leerGebaeude>Shelf</leerGebaeude>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <emptyBuilding>Shelf</emptyBuilding>
       </li>
     </modExtensions>
   </ThingDef>
@@ -71,12 +71,12 @@
     <costStuffCount>65</costStuffCount>
 
     <modExtensions>
-      <li Class="CustomBaseFramework.BeutebehaelterExtension">
-        <leerGrafik>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <emptyGraphic>
           <texPath>Things/Building/Ruin/RuinedShelf</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>(2.75,2.75)</drawSize>
-        </leerGrafik>
+        </emptyGraphic>
       </li>
     </modExtensions>
   </ThingDef>
@@ -98,8 +98,8 @@
     </statBases>
 
     <modExtensions>
-      <li Class="CustomBaseFramework.BeutebehaelterExtension">
-        <zerstoerenWennLeer>true</zerstoerenWennLeer>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <destroyWhenEmpty>true</destroyWhenEmpty>
       </li>
     </modExtensions>
   </ThingDef>
@@ -129,12 +129,12 @@
     </statBases>
 
     <modExtensions>
-      <li Class="CustomBaseFramework.BeutebehaelterExtension">
-        <leerGrafik>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <emptyGraphic>
           <texPath>Things/Building/Ruin/RusticChestOpened</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>(2,2)</drawSize>
-        </leerGrafik>
+        </emptyGraphic>
       </li>
     </modExtensions>
   </ThingDef>

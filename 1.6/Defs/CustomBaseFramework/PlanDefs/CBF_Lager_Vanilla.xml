@@ -5,7 +5,7 @@
     <defName>CBF_Plan_Lager_Vanilla_Banditen</defName>
     <label>bandit camp</label>
     <materialList>CBF_Modern_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -16,19 +16,19 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <walls>
           <li><piece>CBF_Vanilla_Linie_Sandsack</piece><weight>0.6</weight></li>
           <li><piece>CBF_Vanilla_Linie_Barrikade</piece><weight>0.4</weight></li>
         </walls>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Innen</list><posten>Innen</posten><count>3~5</count></li>
+          <li><list>CBF_Modern_Garnison_Innen</list><post>Inside</post><count>3~5</count></li>
         </garrison>
         <districts>
           <li>
@@ -43,9 +43,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Umland</name>
@@ -56,12 +56,12 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>BanditCamp</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <ideologieStil>true</ideologieStil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <ideoStyle>true</ideoStyle>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Industrial</li>
       <li>Spacer</li>
@@ -74,7 +74,7 @@
     <defName>CBF_Plan_Lager_Vanilla_Aussenposten</defName>
     <label>outpost</label>
     <materialList>CBF_Modern_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -85,19 +85,19 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>200~400</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <walls>
           <li><piece>CBF_Vanilla_Linie_Sandsack</piece><weight>0.6</weight></li>
           <li><piece>CBF_Vanilla_Linie_Barrikade</piece><weight>0.4</weight></li>
         </walls>
         <garrison>
-          <li><list>CBF_Modern_Garnison_Innen</list><posten>Innen</posten><count>3~6</count></li>
+          <li><list>CBF_Modern_Garnison_Innen</list><post>Inside</post><count>3~6</count></li>
         </garrison>
         <districts>
           <li>
@@ -114,9 +114,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Umland</name>
@@ -127,13 +127,13 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>Outpost</li>
       <li>RaidSource</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <ideologieStil>true</ideologieStil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <ideoStyle>true</ideoStyle>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Industrial</li>
       <li>Spacer</li>
@@ -146,7 +146,7 @@
     <defName>CBF_Plan_Lager_Vanilla_Holz</defName>
     <label>logging site</label>
     <materialList>CBF_Modern_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -157,13 +157,13 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Lager</name>
@@ -178,12 +178,12 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>WorkSite_Logging</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <ideologieStil>true</ideologieStil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <ideoStyle>true</ideoStyle>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Industrial</li>
       <li>Spacer</li>
@@ -196,7 +196,7 @@
     <defName>CBF_Plan_Lager_Vanilla_Bergbau</defName>
     <label>mining site</label>
     <materialList>CBF_Modern_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -207,32 +207,32 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Lager</name><mines><li>
               <name>Stahlmine</name>
               <count>1~1</count>
               <tags><li>CBF_Vanilla_Bohrbaracke</li><li>CBF_Vanilla_Wohnhuette</li></tags>
-              <laenge>15~20</laenge>
-              <breite>1~2</breite>
-              <ebenen>1~1</ebenen>
-              <kammern>2~2</kammern>
-              <kammerGroesse>4~6</kammerGroesse>
-              <ader>MineableSteel</ader>
-              <aderAnteil>0.06</aderAnteil>
-              <brocken>3~6</brocken>
-              <dinge>
-                  <li><liste>CBF_Vanilla_Mine_Bohrer</liste><count>1~1</count></li>
-                  <li><liste>CBF_Vanilla_Mine_Licht</liste><count>2~3</count></li>
-                  <li><liste>CBF_Vanilla_Mine_Regal</liste><count>1~2</count><inhalt>Steel</inhalt><menge>30~75</menge></li>
-              </dinge></li></mines>
+              <length>15~20</length>
+              <width>1~2</width>
+              <levels>1~1</levels>
+              <chambers>2~2</chambers>
+              <chamberSize>4~6</chamberSize>
+              <vein>MineableSteel</vein>
+              <veinChance>0.06</veinChance>
+              <chunks>3~6</chunks>
+              <things>
+                  <li><list>CBF_Vanilla_Mine_Bohrer</list><count>1~1</count></li>
+                  <li><list>CBF_Vanilla_Mine_Licht</list><count>2~3</count></li>
+                  <li><list>CBF_Vanilla_Mine_Regal</list><count>1~2</count><contents>Steel</contents><amount>30~75</amount></li>
+              </things></li></mines>
             <entries>
               <li><tag>CBF_Vanilla_Bohrbaracke</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_Kueche</tag><count>1~1</count></li>
@@ -244,12 +244,12 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>WorkSite_Mining</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <ideologieStil>true</ideologieStil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <ideoStyle>true</ideoStyle>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Industrial</li>
       <li>Spacer</li>
@@ -262,7 +262,7 @@
     <defName>CBF_Plan_Lager_Vanilla_Jagd</defName>
     <label>hunting site</label>
     <materialList>CBF_Modern_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -273,13 +273,13 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Lager</name>
@@ -294,12 +294,12 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>WorkSite_Hunting</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <ideologieStil>true</ideologieStil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <ideoStyle>true</ideoStyle>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Industrial</li>
       <li>Spacer</li>
@@ -312,7 +312,7 @@
     <defName>CBF_Plan_Lager_Vanilla_Farm</defName>
     <label>farming site</label>
     <materialList>CBF_Modern_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -323,13 +323,13 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Hof</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Hof</name>
@@ -342,9 +342,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Felder</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Felder</name><fields><li>
@@ -373,12 +373,12 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>WorkSite_Farming</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <ideologieStil>true</ideologieStil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <ideoStyle>true</ideoStyle>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Industrial</li>
       <li>Spacer</li>

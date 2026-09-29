@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <CustomBaseFramework.KartenschritteDef>
+  <CustomBaseFramework.MapStepsDef>
     <defName>CBF_Kartenschritte</defName>
-    <unterdruecken>
+    <suppress>
       <li>Roads</li>
       <li>ScatterRuinsSimple</li>
       <li>ScatterShrines</li>
@@ -19,10 +19,10 @@
       <li>ScatterRoadDebris</li>
       <li>ScatterCaveDebris</li>
       <li>DankPyon_BattlefieldRemains</li>
-    </unterdruecken>
-    <nurAbTechstufe>
-      <li><schritt>SettlementPower</schritt><techstufe>Industrial</techstufe></li>
-    </nurAbTechstufe>
-  </CustomBaseFramework.KartenschritteDef>
+    </suppress>
+    <fromTechLevel>
+      <li><step>SettlementPower</step><techLevel>Industrial</techLevel></li>
+    </fromTechLevel>
+  </CustomBaseFramework.MapStepsDef>
 
 </Defs>

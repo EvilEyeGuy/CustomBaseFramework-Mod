@@ -9,7 +9,7 @@
       <li>CBF_MO_Gasthaus</li>
     </categories>
     <style>CBF_Medieval</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Tavern</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
@@ -46,16 +46,16 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_HayBale2x2c</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Z</symbol><thing>DankPyon_RusticTable1x2c</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>GeschirrA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>a</symbol><anchor>GeschirrA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_RusticBarrelBigClosed</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>d</symbol><terrain>DankPyon_DarkWoodPlankFloor</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
-      <li><symbol>f</symbol><anchor>GeschirrB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>f</symbol><anchor>GeschirrB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li><symbol>g</symbol><anchor>Kaminfell</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Fell_2x2</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
-      <li><symbol>i</symbol><anchor>GeschirrC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>i</symbol><anchor>GeschirrC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
-      <li><symbol>k</symbol><anchor>GeschirrD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>k</symbol><anchor>GeschirrD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_StoneOven</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
@@ -67,9 +67,9 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>t</symbol><thing>DankPyon_LogTable1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li><symbol>u</symbol><anchor>TeppichA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flicken_1x2</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
-      <li><symbol>x</symbol><anchor>GeschirrF</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>x</symbol><anchor>GeschirrF</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li><symbol>y</symbol><anchor>TeppichB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flicken_1x2</objects></li>
-      <li><symbol>z</symbol><anchor>GeschirrE</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>z</symbol><anchor>GeschirrE</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tischgeschirr_Gasthaus</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
     </legend>
     <mask>

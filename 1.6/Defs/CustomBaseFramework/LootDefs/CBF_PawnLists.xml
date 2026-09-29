@@ -15,7 +15,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Pawns_Wirtsleute</defName>
     <label>innkeepers</label>
-    <rolle>Zivil</rolle>
+    <role>Civilian</role>
     <radius>4</radius>
     <members>
       <li><kind>Villager</kind><weight>10</weight></li>
@@ -26,7 +26,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Pawns_Torwache</defName>
     <label>gate guards</label>
-    <rolle>Wache</rolle>
+    <role>Guard</role>
     <radius>2</radius>
     <members>
       <li><kind>Town_Guard</kind><weight>10</weight></li>
@@ -37,7 +37,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Pawns_Marktvolk</defName>
     <label>market folk</label>
-    <rolle>Zivil</rolle>
+    <role>Civilian</role>
     <radius>6</radius>
     <members>
       <li><kind>Villager</kind><weight>10</weight></li>
@@ -49,7 +49,7 @@
   <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Pawns_Turmwache</defName>
     <label>tower guards</label>
-    <rolle>Posten</rolle>
+    <role>Sentry</role>
     <radius>2</radius>
     <members>
         <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Bowman</kind><weight>1</weight></li>
@@ -59,7 +59,7 @@
   <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Pawns_Geschuetzmannschaft</defName>
     <label>artillery crew</label>
-    <rolle>Geschuetz</rolle>
+    <role>Gunner</role>
     <radius>8</radius>
     <members>
         <li><kind>DankPyon_Medieval_Billman</kind><weight>1</weight></li>
@@ -71,7 +71,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>Hardanimals_1</defName>
     <label>Hardanimals_1</label>
-    <rolle>Zivil</rolle>
+    <role>Civilian</role>
     <radius>4</radius>
     <members>
       <li><kind>Cow</kind><weight>1</weight></li>
@@ -88,7 +88,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Pawns_Vanilla_Civil</defName>
     <label>CBF_Pawns_Vanilla_Civil</label>
-    <rolle>Zivil</rolle>
+    <role>Civilian</role>
     <radius>4</radius>
     <members>
       <li><kind>Villager</kind><weight>1</weight></li>
@@ -98,7 +98,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Vanilla_Villager</defName>
     <label>CBF_Vanilla_Villager</label>
-    <rolle>Zivil</rolle>
+    <role>Civilian</role>
     <radius>2</radius>
     <members>
       <li><kind>Villager</kind><weight>1</weight></li>
@@ -108,7 +108,7 @@
   <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_Tower</defName>
     <label>CBF_MO_Tower</label>
-    <rolle>Posten</rolle>
+    <role>Sentry</role>
     <radius>4</radius>
     <members>
         <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Bowman</kind><weight>1</weight></li>
@@ -118,38 +118,38 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Vanilla_Garrison</defName>
     <label>garrison</label>
-    <rolle>Wache</rolle>
+    <role>Guard</role>
     <radius>10</radius>
     <members>
       <li><kind>CBF_Modern_Schuetze</kind><weight>4</weight></li>
       <li><kind>CBF_Modern_Stuermer</kind><weight>2</weight></li>
       <li><kind>CBF_Modern_Scharfschuetze</kind><weight>1</weight></li>
       <li><kind>CBF_Modern_Grenadier</kind><weight>1</weight></li>
-      <li><kind>CBF_Modern_Offizier</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li><kind>CBF_Modern_Offizier</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
       <li><kind>CBF_Modern_Spacer_Schuetze</kind><weight>4</weight></li>
       <li><kind>CBF_Modern_Spacer_Scharfschuetze</kind><weight>1</weight></li>
       <li><kind>CBF_Modern_Spacer_Stuermer</kind><weight>2</weight></li>
       <li><kind>CBF_Modern_Spacer_Grenadier</kind><weight>1</weight></li>
-      <li><kind>CBF_Modern_Spacer_Offizier</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li><kind>CBF_Modern_Spacer_Offizier</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
     </members>
   </CustomBaseFramework.PawnListDef>
 
   <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_Guard</defName>
     <label>CBF_MO_Guard</label>
-    <rolle>Wache</rolle>
+    <role>Guard</role>
     <radius>4</radius>
     <members>
       <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Arbalester</kind><weight>1</weight></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Bowman</kind><weight>1</weight></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><kind>CBF_MO_Pikenier</kind><weight>1</weight></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>CBF_MO_Ritter</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>CBF_MO_Ritter</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
     </members>
   </CustomBaseFramework.PawnListDef>
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_MO_Bewohner</defName>
     <label>residents</label>
-    <rolle>Zivil</rolle>
+    <role>Civilian</role>
     <radius>4</radius>
     <members>
       <li><kind>Villager</kind><weight>3</weight></li>
@@ -160,7 +160,7 @@
   <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_Garnison_Wehrgang</defName>
     <label>wall garrison</label>
-    <rolle>Posten</rolle>
+    <role>Sentry</role>
     <radius>4</radius>
     <members>
       <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Bowman</kind><weight>1</weight></li>
@@ -170,21 +170,21 @@
   <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_Garnison_Tor</defName>
     <label>gate garrison</label>
-    <rolle>Wache</rolle>
+    <role>Guard</role>
     <radius>4</radius>
     <members>
       <li MayRequire="DankPyon.Medieval.Overhaul"><kind>CBF_MO_Pikenier</kind><weight>2</weight></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>CBF_MO_Ritter</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>CBF_MO_Ritter</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Arbalester</kind><weight>1</weight></li>
     </members>
   </CustomBaseFramework.PawnListDef>
   <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_Garnison_Innen</defName>
     <label>inner garrison</label>
-    <rolle>Wache</rolle>
+    <role>Guard</role>
     <radius>4</radius>
     <members>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>CBF_MO_Ritter</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>CBF_MO_Ritter</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><kind>CBF_MO_Pikenier</kind><weight>2</weight></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Arbalester</kind><weight>1</weight></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Bowman</kind><weight>1</weight></li>
@@ -193,7 +193,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_MO_Weidevieh</defName>
     <label>Weidevieh</label>
-    <rolle>Zivil</rolle>
+    <role>Civilian</role>
     <radius>4</radius>
     <members>
         <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Ravelder</kind><weight>1</weight></li>
@@ -219,7 +219,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Modern_Garnison_Wehrgang</defName>
     <label>wall garrison</label>
-    <rolle>Posten</rolle>
+    <role>Sentry</role>
     <radius>4</radius>
     <members>
       <li><kind>CBF_Modern_Scharfschuetze</kind><weight>3</weight></li>
@@ -235,23 +235,23 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Modern_Garnison_Tor</defName>
     <label>gate garrison</label>
-    <rolle>Wache</rolle>
+    <role>Guard</role>
     <radius>4</radius>
     <members>
       <li><kind>CBF_Modern_Stuermer</kind><weight>3</weight></li>
       <li><kind>CBF_Modern_Schuetze</kind><weight>3</weight></li>
       <li><kind>CBF_Modern_MGSchuetze</kind><weight>1</weight></li>
-      <li><kind>CBF_Modern_Offizier</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li><kind>CBF_Modern_Offizier</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
       <li><kind>CBF_Modern_Spacer_Schuetze</kind><weight>3</weight></li>
       <li><kind>CBF_Modern_Spacer_Stuermer</kind><weight>3</weight></li>
       <li><kind>CBF_Modern_Spacer_MGSchuetze</kind><weight>1</weight></li>
-      <li><kind>CBF_Modern_Spacer_Offizier</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li><kind>CBF_Modern_Spacer_Offizier</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
     </members>
   </CustomBaseFramework.PawnListDef>
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Modern_Garnison_Innen</defName>
     <label>inner garrison</label>
-    <rolle>Wache</rolle>
+    <role>Guard</role>
     <radius>6</radius>
     <members>
       <li><kind>CBF_Modern_Schuetze</kind><weight>4</weight></li>
@@ -259,45 +259,45 @@
       <li><kind>CBF_Modern_Polizist</kind><weight>3</weight></li>
       <li><kind>CBF_Modern_Grenadier</kind><weight>1</weight></li>
       <li><kind>CBF_Modern_Scharfschuetze</kind><weight>1</weight></li>
-      <li><kind>CBF_Modern_Offizier</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li><kind>CBF_Modern_Offizier</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
       <li><kind>CBF_Modern_Spacer_Schuetze</kind><weight>4</weight></li>
       <li><kind>CBF_Modern_Spacer_Scharfschuetze</kind><weight>1</weight></li>
       <li><kind>CBF_Modern_Spacer_Stuermer</kind><weight>2</weight></li>
       <li><kind>CBF_Modern_Spacer_Grenadier</kind><weight>1</weight></li>
       <li><kind>CBF_Modern_Spacer_Wachmann</kind><weight>3</weight></li>
-      <li><kind>CBF_Modern_Spacer_Offizier</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li><kind>CBF_Modern_Spacer_Offizier</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
     </members>
   </CustomBaseFramework.PawnListDef>
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Modern_Garnison_Elite</defName>
     <label>elite guard</label>
-    <rolle>Wache</rolle>
+    <role>Guard</role>
     <radius>6</radius>
     <members>
-      <li><kind>CBF_Modern_Elitesoldat</kind><weight>3</weight><ideologieRolle>Kampf</ideologieRolle></li>
-      <li><kind>CBF_Modern_Offizier</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li><kind>CBF_Modern_Elitesoldat</kind><weight>3</weight><ideoRole>Kampf</ideoRole></li>
+      <li><kind>CBF_Modern_Offizier</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
       <li><kind>CBF_Modern_Schuetze</kind><weight>2</weight></li>
       <li><kind>CBF_Modern_MGSchuetze</kind><weight>1</weight></li>
       <li><kind>CBF_Modern_Spacer_Schuetze</kind><weight>2</weight></li>
       <li><kind>CBF_Modern_Spacer_MGSchuetze</kind><weight>1</weight></li>
-      <li><kind>CBF_Modern_Spacer_Offizier</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li><kind>CBF_Modern_Spacer_Offizier</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
     </members>
   </CustomBaseFramework.PawnListDef>
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_Modern_Garnison_Spacer</defName>
     <label>spacer garrison</label>
-    <rolle>Wache</rolle>
+    <role>Guard</role>
     <radius>6</radius>
     <members>
-      <li><kind>CBF_Modern_Elitesoldat</kind><weight>3</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li><kind>CBF_Modern_Elitesoldat</kind><weight>3</weight><ideoRole>Kampf</ideoRole></li>
       <li><kind>CBF_Modern_Schuetze</kind><weight>3</weight></li>
       <li><kind>CBF_Modern_Scharfschuetze</kind><weight>2</weight></li>
-      <li><kind>CBF_Modern_Offizier</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li><kind>CBF_Modern_Offizier</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
       <li><kind>CBF_Modern_MGSchuetze</kind><weight>1</weight></li>
       <li><kind>CBF_Modern_Spacer_Schuetze</kind><weight>3</weight></li>
       <li><kind>CBF_Modern_Spacer_Scharfschuetze</kind><weight>2</weight></li>
       <li><kind>CBF_Modern_Spacer_MGSchuetze</kind><weight>1</weight></li>
-      <li><kind>CBF_Modern_Spacer_Offizier</kind><weight>1</weight><ideologieRolle>Kampf</ideologieRolle></li>
+      <li><kind>CBF_Modern_Spacer_Offizier</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
     </members>
   </CustomBaseFramework.PawnListDef>
 </Defs>

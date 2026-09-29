@@ -9,7 +9,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_VFEM2_Bewohner</defName>
     <label>residents</label>
-    <rolle>Zivil</rolle>
+    <role>Civilian</role>
     <radius>4</radius>
     <members>
       <li><kind>VFEM2_Peasant</kind><weight>10</weight></li>
@@ -20,7 +20,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_VFEM2_Garnison_Wehrgang</defName>
     <label>wall garrison</label>
-    <rolle>Posten</rolle>
+    <role>Sentry</role>
     <radius>4</radius>
     <members>
       <li><kind>VFEM2_Archer</kind><weight>2</weight></li>
@@ -32,7 +32,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_VFEM2_Garnison_Tor</defName>
     <label>gate garrison</label>
-    <rolle>Wache</rolle>
+    <role>Guard</role>
     <radius>4</radius>
     <members>
       <li><kind>VFEM2_Halberdier</kind><weight>2</weight></li>
@@ -44,7 +44,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_VFEM2_Garnison_Innen</defName>
     <label>inner garrison</label>
-    <rolle>Wache</rolle>
+    <role>Guard</role>
     <radius>4</radius>
     <members>
       <li><kind>VFEM2_Knight</kind><weight>1</weight></li>

@@ -9,14 +9,14 @@
       <li>CBF_MO_Gilde</li>
     </categories>
     <style>CBF_Medieval</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
-      <li><symbol>!</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>!</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><factionFlag>true</factionFlag></li>
       <li><symbol>+</symbol><anchor>Anbau</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>6</symbol><anchor>Gildentruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Adelstruhe</objects><lootTable>CBF_MO_Loot_Gildenkasse</lootTable></li>
       <li><symbol>7</symbol><anchor>Schatzregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Schatzregal</objects></li>
       <li><symbol>8</symbol><anchor>Bewohner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Bewohner</pawnList><chance>0.3</chance></li>
-      <li><symbol>@</symbol><anchor>Gildengeschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><obenauf>true</obenauf></li>
+      <li><symbol>@</symbol><anchor>Gildengeschirr</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><onTop>true</onTop></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_CultShelf</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
       <li><symbol>B</symbol><thing>CBF_MO_Porzellanvase</thing><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_RusticNobleChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>

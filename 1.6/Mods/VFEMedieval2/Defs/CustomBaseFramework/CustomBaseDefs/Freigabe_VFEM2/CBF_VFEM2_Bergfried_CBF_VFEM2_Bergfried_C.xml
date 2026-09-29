@@ -9,7 +9,7 @@
       <li>CBF_VFEM2_Bergfried</li>
     </categories>
     <style>CBF_VFEM2</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li><symbol>0</symbol><thing>VFEM2_StandingBanner</thing><rotation>North</rotation></li>
       <li><symbol>A</symbol><anchor>Schlaftruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal_Klein</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
@@ -27,7 +27,7 @@
       <li><symbol>M</symbol><anchor>Holzstapel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Regal</objects><lootTable>CBF_VFEM2_Loot_Schatz</lootTable></li>
       <li><symbol>N</symbol><anchor>Hofwache</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_VFEM2_Bewohner</pawnList><chance>0.3</chance></li>
       <li><symbol>P</symbol><thing>RawCorn</thing><count>30</count></li>
-      <li><symbol>Q</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>Q</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flagge</objects><factionFlag>true</factionFlag></li>
       <li><symbol>R</symbol><terrain>VFEM2_Matting_Leather_Bird</terrain></li>
       <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>T</symbol><thing>VFEM2_TimberedWall</thing><stuff>BlocksLimestone</stuff></li>

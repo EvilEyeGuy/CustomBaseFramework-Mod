@@ -20,12 +20,12 @@
       <Flammability>0.2</Flammability>
     </statBases>
     <modExtensions>
-      <li Class="CustomBaseFramework.BeutebehaelterExtension">
-        <leerGrafik>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <emptyGraphic>
           <texPath>Things/Building/CBF/SockelWeiss</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>(2,2)</drawSize>
-        </leerGrafik>
+        </emptyGraphic>
       </li>
     </modExtensions>
   </ThingDef>
@@ -50,12 +50,12 @@
       <Flammability>0.4</Flammability>
     </statBases>
     <modExtensions>
-      <li Class="CustomBaseFramework.BeutebehaelterExtension">
-        <leerGrafik>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <emptyGraphic>
           <texPath>Things/Building/Ruin/ArmorStatueNamedEmpty</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>(2,2)</drawSize>
-        </leerGrafik>
+        </emptyGraphic>
       </li>
     </modExtensions>
   </ThingDef>

@@ -20,7 +20,7 @@
       <li><symbol>D</symbol><anchor>StandD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktstand</objects></li>
       <li><symbol>E</symbol><anchor>StandE</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktstand</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_Brazier1x1c</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>J</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Heiligtum</objects><ideologieGebaeude>true</ideologieGebaeude></li>
+      <li><symbol>J</symbol><anchor>Heiligtum</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Heiligtum</objects><ideoBuilding>true</ideoBuilding></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_LampPost</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>Q</symbol><thing>SculptureLarge</thing><stuff>BlocksMarble</stuff></li>
@@ -31,19 +31,19 @@
       <li><symbol>g</symbol><anchor>FassB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li><symbol>i</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>k</symbol><anchor>ZeltA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
-      <li><symbol>l</symbol><anchor>ZeltB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
-      <li><symbol>m</symbol><anchor>ZeltC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
-      <li><symbol>n</symbol><anchor>ZeltD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
+      <li><symbol>k</symbol><anchor>ZeltA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><onTop>true</onTop></li>
+      <li><symbol>l</symbol><anchor>ZeltB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><onTop>true</onTop></li>
+      <li><symbol>m</symbol><anchor>ZeltC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><onTop>true</onTop></li>
+      <li><symbol>n</symbol><anchor>ZeltD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><onTop>true</onTop></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_Well</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>p</symbol><anchor>ZeltE</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><obenauf>true</obenauf></li>
+      <li><symbol>p</symbol><anchor>ZeltE</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Marktzelt</objects><onTop>true</onTop></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>q</symbol><thing>DankPyon_HideOutBuildingBase_Cart_Textiles</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>r</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>s</symbol><terrain>DankPyon_Floor_CobbleStone_Granite</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>t</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
       <li><symbol>u</symbol><anchor>Sack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>x</symbol><thing>DankPyon_MarketTent_1c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><factionFlag>true</factionFlag></li>
     </legend>
     <mask>
       <li>..##############..</li>

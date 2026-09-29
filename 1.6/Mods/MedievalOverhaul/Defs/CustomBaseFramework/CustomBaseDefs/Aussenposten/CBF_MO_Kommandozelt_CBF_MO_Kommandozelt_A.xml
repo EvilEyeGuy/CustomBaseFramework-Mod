@@ -9,7 +9,7 @@
       <li>CBF_MO_Kommandozelt</li>
     </categories>
     <style>CBF_Medieval</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li><symbol>7</symbol><anchor>Haeuptlingstruhe</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Adelstruhe</objects><lootTable>CBF_MO_Loot_Herrenhaus</lootTable></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_LogChair</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
@@ -17,7 +17,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>J</symbol><thing>DankPyon_BannerHesse</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RusticTable2x2c</thing><stuff>WoodLog</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_TentWall</thing><stuff>Leather_Plain</stuff><biomLeder>true</biomLeder></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_TentWall</thing><stuff>Leather_Plain</stuff><biomeLeather>true</biomeLeather></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_LogChair</thing><stuff>DankPyon_RawWood</stuff><rotation>West</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>North</rotation></li>
@@ -25,7 +25,7 @@
       <li><symbol>k</symbol><anchor>Soldaten</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList><pawnCount>2~3</pawnCount></li>
       <li><symbol>m</symbol><terrain>StrawMatting</terrain></li>
       <li><symbol>x</symbol><anchor>Ruestung</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Ruestungsstaender</objects><lootTable>CBF_MO_Loot_Ruestung</lootTable></li>
-      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><factionFlag>true</factionFlag></li>
     </legend>
     <mask>
       <li>...#.....#...</li>

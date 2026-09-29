@@ -5,7 +5,7 @@
     <defName>CBF_Plan_ModernDorf</defName>
     <materialList>CBF_Modern_Materialliste</materialList>
     <label>modern village (industrial)</label>
-    <kind>Modernestadt</kind>
+    <kind>ModernTown</kind>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -14,13 +14,13 @@
     <roadMain>4</roadMain>
     <roadLane>2</roadLane>
     <minBuildingGap>1</minBuildingGap>
-    <gelaendeOeffnen>true</gelaendeOeffnen>
+    <openTerrain>true</openTerrain>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Altstadt</name>
         <label>Dorfkern</label>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <roads>
           <li>Concrete</li>
         </roads>
@@ -31,7 +31,7 @@
           <li>
             <list>CBF_Modern_Garnison_Innen</list>
             <count>6~9</count>
-            <posten>Innen</posten>
+            <post>Inside</post>
           </li>
         </garrison>
         <defenses>
@@ -53,9 +53,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <roads>
           <li>Concrete</li>
         </roads>
@@ -63,7 +63,7 @@
           <li>
             <list>CBF_Modern_Garnison_Innen</list>
             <count>1~3</count>
-            <posten>Innen</posten>
+            <post>Inside</post>
           </li>
         </garrison>
         <districts>
@@ -94,7 +94,7 @@
       </li>
     </wards>
 
-    <anteil>0</anteil>
+    <share>0</share>
 
     <techLevels>
       <li>Industrial</li>
@@ -102,12 +102,12 @@
       <li>Ultra</li>
     </techLevels>
 
-    <ideologieStil>true</ideologieStil>
+    <ideoStyle>true</ideoStyle>
 
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    <forAllFactions>true</forAllFactions>
 
     <worldTexture>World/WorldObjects/CBF/CBF_ModernVillage</worldTexture>
-    <wdStufe>1</wdStufe>
+    <wdLevel>1</wdLevel>
   </CustomBaseFramework.SettlementPlanDef>
 
 </Defs>

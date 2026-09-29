@@ -9,7 +9,7 @@
       <li>CBF_MO_Bergfried</li>
     </categories>
     <style>CBF_Medieval</style>
-    <traufen>true</traufen>
+    <eaves>true</eaves>
     <legend>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>$</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
@@ -52,21 +52,21 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>Z</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><anchor>GeschirrA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
-      <li><symbol>b</symbol><anchor>GeschirrB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>a</symbol><anchor>GeschirrA</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><chance>0.8</chance><onTop>true</onTop></li>
+      <li><symbol>b</symbol><anchor>GeschirrB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>d</symbol><terrain>DankPyon_DarkWoodPlankFloor</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li><symbol>f</symbol><anchor>Kuechenfass</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Speisekammer</lootTable></li>
       <li><symbol>g</symbol><anchor>Holzstapel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Holzstapel</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
-      <li><symbol>i</symbol><anchor>GeschirrC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>i</symbol><anchor>GeschirrC</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li><symbol>j</symbol><anchor>Hofregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li><symbol>k</symbol><anchor>Barren</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrenregal</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_ButchersBlock</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideoutShelfFilledChaliceSilver</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_RusticNobleChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_Well</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>p</symbol><anchor>GeschirrD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><chance>0.8</chance><obenauf>true</obenauf></li>
+      <li><symbol>p</symbol><anchor>GeschirrD</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tafelgeschirr</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li><symbol>q</symbol><anchor>Hofsack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sack</objects><lootTable>CBF_MO_Loot_Bauernhof</lootTable></li>
       <li><symbol>r</symbol><anchor>Turmregal</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Waffenregal</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>s</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>South</rotation></li>
@@ -75,7 +75,7 @@
       <li><symbol>x</symbol><anchor>HoffassA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li><symbol>y</symbol><anchor>HoffassB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Fass</objects><lootTable>CBF_MO_Loot_Lager</lootTable></li>
       <li><symbol>z</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><fraktionsFlagge>true</fraktionsFlagge></li>
+      <li><symbol>§</symbol><anchor>Flagge</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flagge</objects><factionFlag>true</factionFlag></li>
       <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
     </legend>
     <mask>

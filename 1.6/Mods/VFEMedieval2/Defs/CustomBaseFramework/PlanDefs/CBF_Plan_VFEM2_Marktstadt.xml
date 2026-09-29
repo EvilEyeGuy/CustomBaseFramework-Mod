@@ -23,9 +23,9 @@
     <defendersOnWall>0.28</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Altstadt</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <roads>
           <li>FlagstoneGranite</li>
         </roads>
@@ -50,17 +50,17 @@
         <garrison>
           <li>
             <list>CBF_VFEM2_Garnison_Wehrgang</list>
-            <posten>Wehrgang</posten>
+            <post>Walkway</post>
             <count>6~9</count>
           </li>
           <li>
             <list>CBF_VFEM2_Garnison_Tor</list>
-            <posten>Tor</posten>
+            <post>Gate</post>
             <count>3~4</count>
           </li>
           <li>
             <list>CBF_VFEM2_Garnison_Innen</list>
-            <posten>Innen</posten>
+            <post>Inside</post>
             <count>4~5</count>
           </li>
         </garrison>
@@ -137,9 +137,9 @@
         </districts>
       </li>
       <li>
-        <art>Vorstadt</art>
+        <kind>Suburb</kind>
         <name>Neustadt</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <walls>
           <li>CBF_VFEM2_Palisade</li>
         </walls>
@@ -158,17 +158,17 @@
         <garrison>
           <li>
             <list>CBF_VFEM2_Garnison_Wehrgang</list>
-            <posten>Wehrgang</posten>
+            <post>Walkway</post>
             <count>4~5</count>
           </li>
           <li>
             <list>CBF_VFEM2_Garnison_Tor</list>
-            <posten>Tor</posten>
+            <post>Gate</post>
             <count>1~3</count>
           </li>
           <li>
             <list>CBF_VFEM2_Garnison_Innen</list>
-            <posten>Innen</posten>
+            <post>Inside</post>
             <count>3~4</count>
           </li>
         </garrison>
@@ -231,13 +231,13 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <garrison>
           <li>
             <list>CBF_VFEM2_Garnison_Innen</list>
-            <posten>Innen</posten>
+            <post>Inside</post>
             <count>3~4</count>
           </li>
         </garrison>
@@ -356,15 +356,15 @@
         </districts>
       </li>
     </wards>
-    <kind>Mittelalterstadt</kind>
+    <kind>MedievalTown</kind>
     <factionTags>
       <li>VFEM2_KingdomCivil</li>
       <li>VFEM2_KingdomRough</li>
       <li>VFEM2_KingdomSavage</li>
     </factionTags>
-    <anteil>70</anteil>
-    <wdStufe>2</wdStufe>
-    <hafen>
+    <share>70</share>
+    <wdLevel>2</wdLevel>
+    <harbor>
       <entries>
         <li>
           <tag>CBF_VFEM2_Hafenlager</tag>
@@ -383,7 +383,7 @@
           <count>0~1</count>
         </li>
       </entries>
-    </hafen>
+    </harbor>
     <suburbIslands>2</suburbIslands>
     <techLevels>
       <li>Medieval</li>

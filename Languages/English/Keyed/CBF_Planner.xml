@@ -23,12 +23,12 @@
   <CBF_Cfg_MineRange>Mine {0}: {1} must be between {2} and {3}, the planner clamps the value.</CBF_Cfg_MineRange>
   <CBF_Cfg_MineMin>Mine {0}: {1} must be at least {2}, the planner raises the value.</CBF_Cfg_MineMin>
   <CBF_Cfg_MineSupportSize>Mine {0}: the support {1} must have size (2,1), 2 cells wide and 1 deep, otherwise none is placed.</CBF_Cfg_MineSupportSize>
-  <CBF_Cfg_MineSupportNarrow>Mine {0}: supports need a tunnel 2 cells wide, but breite allows at most 1. No support is placed.</CBF_Cfg_MineSupportNarrow>
-  <CBF_Cfg_MineVein>Mine {0}: ader {1} is not mineable rock. Use an ore vein such as MineableSteel.</CBF_Cfg_MineVein>
+  <CBF_Cfg_MineSupportNarrow>Mine {0}: supports need a tunnel 2 cells wide, but width allows at most 1. No support is placed.</CBF_Cfg_MineSupportNarrow>
+  <CBF_Cfg_MineVein>Mine {0}: vein {1} is not mineable rock. Use an ore vein such as MineableSteel.</CBF_Cfg_MineVein>
   <CBF_Cfg_MineRangeOrder>Mine {0}: the minimum of {1} is larger than its maximum.</CBF_Cfg_MineRangeOrder>
-  <CBF_Cfg_MineChamberItems>Mine {0}: kammern is 0, but there are items with ort Kammer (also the default when ort is missing). They find no place.</CBF_Cfg_MineChamberItems>
-  <CBF_Cfg_MineItemEmpty>Mine {0}: an entry in dinge names neither thing nor liste and is dropped.</CBF_Cfg_MineItemEmpty>
-  <CBF_Cfg_MineItemPlace>Mine {0}: unknown ort "{1}", allowed are Kammer, Gang and Eingang. The entry is dropped.</CBF_Cfg_MineItemPlace>
+  <CBF_Cfg_MineChamberItems>Mine {0}: chambers is 0, but there are items with location Chamber (also the default when location is missing). They find no place.</CBF_Cfg_MineChamberItems>
+  <CBF_Cfg_MineItemEmpty>Mine {0}: an entry in things names neither thing nor list and is dropped.</CBF_Cfg_MineItemEmpty>
+  <CBF_Cfg_MineItemPlace>Mine {0}: unknown location "{1}", allowed are Chamber, Tunnel and Entrance. The entry is dropped.</CBF_Cfg_MineItemPlace>
   <CBF_Cfg_Range>{0} must be between {1} and {2}.</CBF_Cfg_Range>
   <CBF_Cfg_NoPlants>The crop list contains no plants.</CBF_Cfg_NoPlants>
   <CBF_Cfg_EntryNoPlant>An entry has no plant.</CBF_Cfg_EntryNoPlant>

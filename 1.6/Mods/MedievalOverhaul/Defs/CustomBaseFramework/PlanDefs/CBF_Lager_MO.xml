@@ -5,7 +5,7 @@
     <defName>CBF_Plan_Lager_MO_Banditen</defName>
     <label>bandit camp (MO)</label>
     <materialList>CBF_MO_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>Rustical</li>
     </styles>
@@ -16,20 +16,20 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <walls>
           <li><piece>CBF_MO_Pfahlwall</piece><weight>0.4</weight></li>
           <li><piece>CBF_MO_Barrikadenwall</piece><weight>0.3</weight></li>
           <li><piece>Palisade</piece><weight>0.3</weight></li>
         </walls>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>3~5</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>3~5</count></li>
         </garrison>
         <districts>
           <li>
@@ -46,9 +46,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Umland</name>
@@ -59,11 +59,11 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>BanditCamp</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>
@@ -74,7 +74,7 @@
     <defName>CBF_Plan_Lager_MO_Aussenposten</defName>
     <label>outpost (MO)</label>
     <materialList>CBF_MO_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>Rustical</li>
     </styles>
@@ -85,20 +85,20 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>200~400</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <walls>
           <li><piece>CBF_MO_Pfahlwall</piece><weight>0.4</weight></li>
           <li><piece>CBF_MO_Barrikadenwall</piece><weight>0.3</weight></li>
           <li><piece>Palisade</piece><weight>0.3</weight></li>
         </walls>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>3~6</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>3~6</count></li>
         </garrison>
         <districts>
           <li>
@@ -114,9 +114,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Umland</name>
@@ -127,12 +127,12 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>Outpost</li>
       <li>RaidSource</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>
@@ -143,7 +143,7 @@
     <defName>CBF_Plan_Lager_MO_Holz</defName>
     <label>logging site (MO)</label>
     <materialList>CBF_MO_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>Rustical</li>
     </styles>
@@ -154,13 +154,13 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Lager</name>
@@ -178,11 +178,11 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>WorkSite_Logging</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>
@@ -193,7 +193,7 @@
     <defName>CBF_Plan_Lager_MO_Bergbau</defName>
     <label>iron mine (MO)</label>
     <materialList>CBF_MO_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>Rustical</li>
     </styles>
@@ -204,35 +204,35 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Lager</name><mines><li>
               <name>Eisenmine</name>
               <count>1~1</count>
               <tags><li>CBF_MO_Minenhuette</li></tags>
-              <laenge>15~20</laenge>
-              <breite>1~2</breite>
-              <ebenen>1~1</ebenen>
-              <kammern>2~2</kammern>
-              <kammerGroesse>4~6</kammerGroesse>
-              <ader>DankPyon_MineableIron</ader>
-              <aderAnteil>0.06</aderAnteil>
-              <stuetze>CBF_MO_Minenstuetze</stuetze>
-              <stuetzenAbstand>5~8</stuetzenAbstand>
-              <brocken>3~6</brocken>
-              <dinge>
-                  <li><liste>CBF_MO_Mine_Schacht</liste><count>1~1</count></li>
-                  <li><liste>CBF_MO_Mine_Karren</liste><count>0~1</count><ort>Gang</ort></li>
-                  <li><liste>CBF_MO_Mine_Licht</liste><count>2~4</count></li>
-                  <li><liste>CBF_MO_Mine_Eisenfass</liste><count>2~4</count><inhalt>DankPyon_IronOre</inhalt><menge>20~60</menge></li>
-              </dinge></li></mines>
+              <length>15~20</length>
+              <width>1~2</width>
+              <levels>1~1</levels>
+              <chambers>2~2</chambers>
+              <chamberSize>4~6</chamberSize>
+              <vein>DankPyon_MineableIron</vein>
+              <veinChance>0.06</veinChance>
+              <support>CBF_MO_Minenstuetze</support>
+              <supportSpacing>5~8</supportSpacing>
+              <chunks>3~6</chunks>
+              <things>
+                  <li><list>CBF_MO_Mine_Schacht</list><count>1~1</count></li>
+                  <li><list>CBF_MO_Mine_Karren</list><count>0~1</count><location>Tunnel</location></li>
+                  <li><list>CBF_MO_Mine_Licht</list><count>2~4</count></li>
+                  <li><list>CBF_MO_Mine_Eisenfass</list><count>2~4</count><contents>DankPyon_IronOre</contents><amount>20~60</amount></li>
+              </things></li></mines>
             <entries>
               <li><tag>CBF_MO_Minenhuette</tag><count>1~2</count></li>
               <li><tag>CBF_MO_Lagerhaus</tag><count>1~1</count></li>
@@ -246,9 +246,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Umland</name>
@@ -259,11 +259,11 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>WorkSite_Mining</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>
@@ -274,7 +274,7 @@
     <defName>CBF_Plan_Lager_MO_Kohlemine</defName>
     <label>coal mine (MO)</label>
     <materialList>CBF_MO_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>Rustical</li>
     </styles>
@@ -285,35 +285,35 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Lager</name><mines><li>
               <name>Kohlemine</name>
               <count>1~1</count>
               <tags><li>CBF_MO_Minenhuette</li></tags>
-              <laenge>15~20</laenge>
-              <breite>1~2</breite>
-              <ebenen>1~1</ebenen>
-              <kammern>2~2</kammern>
-              <kammerGroesse>4~6</kammerGroesse>
-              <ader>DankPyon_MineableCoal</ader>
-              <aderAnteil>0.06</aderAnteil>
-              <stuetze>CBF_MO_Minenstuetze</stuetze>
-              <stuetzenAbstand>5~8</stuetzenAbstand>
-              <brocken>3~6</brocken>
-              <dinge>
-                  <li><liste>CBF_MO_Mine_Schacht</liste><count>1~1</count></li>
-                  <li><liste>CBF_MO_Mine_Karren</liste><count>0~1</count><ort>Gang</ort></li>
-                  <li><liste>CBF_MO_Mine_Licht</liste><count>2~4</count></li>
-                  <li><liste>CBF_MO_Mine_Kohlefass</liste><count>2~4</count><inhalt>DankPyon_Coal</inhalt><menge>20~60</menge></li>
-              </dinge></li></mines>
+              <length>15~20</length>
+              <width>1~2</width>
+              <levels>1~1</levels>
+              <chambers>2~2</chambers>
+              <chamberSize>4~6</chamberSize>
+              <vein>DankPyon_MineableCoal</vein>
+              <veinChance>0.06</veinChance>
+              <support>CBF_MO_Minenstuetze</support>
+              <supportSpacing>5~8</supportSpacing>
+              <chunks>3~6</chunks>
+              <things>
+                  <li><list>CBF_MO_Mine_Schacht</list><count>1~1</count></li>
+                  <li><list>CBF_MO_Mine_Karren</list><count>0~1</count><location>Tunnel</location></li>
+                  <li><list>CBF_MO_Mine_Licht</list><count>2~4</count></li>
+                  <li><list>CBF_MO_Mine_Kohlefass</list><count>2~4</count><contents>DankPyon_Coal</contents><amount>20~60</amount></li>
+              </things></li></mines>
             <entries>
               <li><tag>CBF_MO_Minenhuette</tag><count>1~2</count></li>
               <li><tag>CBF_MO_Lagerhaus</tag><count>1~1</count></li>
@@ -327,9 +327,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Umland</name>
@@ -340,11 +340,11 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>WorkSite_Mining</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>
@@ -355,7 +355,7 @@
     <defName>CBF_Plan_Lager_MO_Steinbruch</defName>
     <label>stone mine (MO)</label>
     <materialList>CBF_MO_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>Rustical</li>
     </styles>
@@ -366,32 +366,32 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Lager</name><mines><li>
               <name>Steinmine</name>
               <count>1~1</count>
               <tags><li>CBF_MO_Minenhuette</li></tags>
-              <laenge>15~20</laenge>
-              <breite>1~2</breite>
-              <ebenen>1~1</ebenen>
-              <kammern>2~2</kammern>
-              <kammerGroesse>4~6</kammerGroesse>
-              <stuetze>CBF_MO_Minenstuetze</stuetze>
-              <stuetzenAbstand>5~8</stuetzenAbstand>
-              <brocken>10~18</brocken>
-              <dinge>
-                  <li><liste>CBF_MO_Mine_Schacht</liste><count>1~1</count></li>
-                  <li><liste>CBF_MO_Mine_Karren</liste><count>0~1</count><ort>Gang</ort></li>
-                  <li><liste>CBF_MO_Mine_Licht</liste><count>2~4</count></li>
-              </dinge></li></mines>
+              <length>15~20</length>
+              <width>1~2</width>
+              <levels>1~1</levels>
+              <chambers>2~2</chambers>
+              <chamberSize>4~6</chamberSize>
+              <support>CBF_MO_Minenstuetze</support>
+              <supportSpacing>5~8</supportSpacing>
+              <chunks>10~18</chunks>
+              <things>
+                  <li><list>CBF_MO_Mine_Schacht</list><count>1~1</count></li>
+                  <li><list>CBF_MO_Mine_Karren</list><count>0~1</count><location>Tunnel</location></li>
+                  <li><list>CBF_MO_Mine_Licht</list><count>2~4</count></li>
+              </things></li></mines>
             <entries>
               <li><tag>CBF_MO_Minenhuette</tag><count>1~2</count></li>
               <li><tag>CBF_MO_Lagerhaus</tag><count>1~1</count></li>
@@ -404,9 +404,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Umland</name>
@@ -417,11 +417,11 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>WorkSite_Mining</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>
@@ -432,7 +432,7 @@
     <defName>CBF_Plan_Lager_MO_Jagd</defName>
     <label>hunting site (MO)</label>
     <materialList>CBF_MO_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>Rustical</li>
     </styles>
@@ -443,13 +443,13 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Lager</name>
@@ -466,11 +466,11 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>WorkSite_Hunting</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>
@@ -481,7 +481,7 @@
     <defName>CBF_Plan_Lager_MO_Farm</defName>
     <label>farming site (MO)</label>
     <materialList>CBF_MO_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>Rustical</li>
     </styles>
@@ -492,13 +492,13 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.3</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Hof</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Hof</name>
@@ -512,9 +512,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Felder</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Felder</name><fields><li>
@@ -548,11 +548,11 @@
         </districts>
       </li>
     </wards>
-    <lagerArten>
+    <campTypes>
       <li>WorkSite_Farming</li>
-    </lagerArten>
-    <anteil>0</anteil>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </campTypes>
+    <share>0</share>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>

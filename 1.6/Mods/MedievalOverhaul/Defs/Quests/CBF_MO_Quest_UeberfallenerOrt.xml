@@ -37,7 +37,7 @@
 
         <li Class="QuestNode_GetMap" />
 
-        <li Class="CustomBaseFramework.QuestNode_CBFAuftraggeber">
+        <li Class="CustomBaseFramework.QuestNode_CBFClient">
           <storeAs>asker</storeAs>
           <storeFactionAs>askerFaction</storeFactionAs>
           <sitePart>CBF_MO_Quest_UeberfallenerOrt</sitePart>
@@ -48,11 +48,11 @@
           <preferCloserTiles>true</preferCloserTiles>
         </li>
 
-        <li Class="CustomBaseFramework.QuestNode_CBFBesatzer">
+        <li Class="CustomBaseFramework.QuestNode_CBFOccupier">
           <storeAs>siteFaction</storeAs>
           <storeSitePartDefsAs>sitePartDefs</storeSitePartDefsAs>
           <sitePart>CBF_MO_Quest_UeberfallenerOrt</sitePart>
-          <feindVon>$askerFaction</feindVon>
+          <enemyOf>$askerFaction</enemyOf>
         </li>
 
         <li Class="QuestNode_GetDefaultSitePartsParams">
@@ -81,10 +81,10 @@
           <storeAs>site</storeAs>
         </li>
 
-        <li Class="CustomBaseFramework.QuestNode_CBFOrt">
+        <li Class="CustomBaseFramework.QuestNode_CBFSite">
           <site>$site</site>
-          <bauherr>$askerFaction</bauherr>
-          <punkte>$besatzungPunkte</punkte>
+          <builder>$askerFaction</builder>
+          <points>$besatzungPunkte</points>
         </li>
 
         <li Class="QuestNode_SpawnWorldObjects">
@@ -133,16 +133,16 @@
           </node>
         </li>
 
-        <li Class="CustomBaseFramework.QuestNode_CBFWahl">
-          <inSignalBesiegt>site.AllEnemiesDefeated</inSignalBesiegt>
-          <inSignalWeg>site.Destroyed</inSignalWeg>
-          <outSignalFraktion>WahlFraktion</outSignalFraktion>
-          <outSignalBeute>WahlBeute</outSignalBeute>
+        <li Class="CustomBaseFramework.QuestNode_CBFChoice">
+          <inSignalDefeated>site.AllEnemiesDefeated</inSignalDefeated>
+          <inSignalGone>site.Destroyed</inSignalGone>
+          <outSignalFaction>WahlFraktion</outSignalFaction>
+          <outSignalLoot>WahlBeute</outSignalLoot>
           <site>$site</site>
-          <fraktion>$askerFaction</fraktion>
+          <faction>$askerFaction</faction>
           <lord>$asker</lord>
-          <ansehenFraktion>20</ansehenFraktion>
-          <ansehenBeute>3</ansehenBeute>
+          <goodwillFaction>20</goodwillFaction>
+          <goodwillLoot>3</goodwillLoot>
         </li>
 
         <li Class="QuestNode_End">

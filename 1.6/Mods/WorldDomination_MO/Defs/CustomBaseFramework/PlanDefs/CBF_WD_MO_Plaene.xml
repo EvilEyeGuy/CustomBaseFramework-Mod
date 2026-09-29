@@ -25,9 +25,9 @@
     <defendersOnWall>0.25</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
         </walls>
@@ -35,7 +35,7 @@
           <li><tag>CBF_MO_Palisadenturm</tag><count>1~1</count></li>
         </emplacements>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>2~4</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>2~4</count></li>
         </garrison>
         <districts>
           <li>
@@ -49,9 +49,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Felder</name><fields><li>
@@ -74,19 +74,19 @@
         </districts>
       </li>
     </wards>
-    <kind>Mittelalterstadt</kind>
+    <kind>MedievalTown</kind>
     <factionTags>
       <li>DankPyon_NobleHouseSavage</li>
       <li>DankPyon_NobleHouseFierce</li>
       <li>DankPyon_NobleHouseCivil</li>
       <li>DankPyon_NobleHouseCivil2</li>
     </factionTags>
-    <anteil>0</anteil>
-    <wdStufe>1</wdStufe>
-    <wdTyp>
+    <share>0</share>
+    <wdLevel>1</wdLevel>
+    <wdType>
       <li>Farming</li>
-    </wdTyp>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </wdType>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>
@@ -117,9 +117,9 @@
     <defendersOnWall>0.25</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
         </walls>
@@ -127,7 +127,7 @@
           <li><tag>CBF_MO_Palisadenturm</tag><count>1~1</count></li>
         </emplacements>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>2~4</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>2~4</count></li>
         </garrison>
         <districts>
           <li>
@@ -142,9 +142,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Wald</name>
@@ -155,19 +155,19 @@
         </districts>
       </li>
     </wards>
-    <kind>Mittelalterstadt</kind>
+    <kind>MedievalTown</kind>
     <factionTags>
       <li>DankPyon_NobleHouseSavage</li>
       <li>DankPyon_NobleHouseFierce</li>
       <li>DankPyon_NobleHouseCivil</li>
       <li>DankPyon_NobleHouseCivil2</li>
     </factionTags>
-    <anteil>0</anteil>
-    <wdStufe>1</wdStufe>
-    <wdTyp>
+    <share>0</share>
+    <wdLevel>1</wdLevel>
+    <wdType>
       <li>Logging</li>
-    </wdTyp>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </wdType>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>
@@ -198,9 +198,9 @@
     <defendersOnWall>0.25</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
         </walls>
@@ -208,7 +208,7 @@
           <li><tag>CBF_MO_Palisadenturm</tag><count>1~1</count></li>
         </emplacements>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>2~4</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>2~4</count></li>
         </garrison>
         <districts>
           <li>
@@ -222,9 +222,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Abbau</name>
@@ -236,19 +236,19 @@
         </districts>
       </li>
     </wards>
-    <kind>Mittelalterstadt</kind>
+    <kind>MedievalTown</kind>
     <factionTags>
       <li>DankPyon_NobleHouseSavage</li>
       <li>DankPyon_NobleHouseFierce</li>
       <li>DankPyon_NobleHouseCivil</li>
       <li>DankPyon_NobleHouseCivil2</li>
     </factionTags>
-    <anteil>0</anteil>
-    <wdStufe>1</wdStufe>
-    <wdTyp>
+    <share>0</share>
+    <wdLevel>1</wdLevel>
+    <wdType>
       <li>Mining</li>
-    </wdTyp>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </wdType>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>
@@ -279,9 +279,9 @@
     <defendersOnWall>0.25</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Dorf</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
         </walls>
@@ -289,7 +289,7 @@
           <li><tag>CBF_MO_Palisadenturm</tag><count>1~2</count></li>
         </emplacements>
         <garrison>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>3~6</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>3~6</count></li>
         </garrison>
         <districts>
           <li>
@@ -304,9 +304,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Felder</name><fields><li>
@@ -327,19 +327,19 @@
         </districts>
       </li>
     </wards>
-    <kind>Mittelalterstadt</kind>
+    <kind>MedievalTown</kind>
     <factionTags>
       <li>DankPyon_NobleHouseSavage</li>
       <li>DankPyon_NobleHouseFierce</li>
       <li>DankPyon_NobleHouseCivil</li>
       <li>DankPyon_NobleHouseCivil2</li>
     </factionTags>
-    <anteil>0</anteil>
-    <wdStufe>2</wdStufe>
-    <wdTyp>
+    <share>0</share>
+    <wdLevel>2</wdLevel>
+    <wdType>
       <li>Production</li>
-    </wdTyp>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </wdType>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>
@@ -370,9 +370,9 @@
     <defendersOnWall>0.25</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Dorf</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
         </walls>
@@ -380,7 +380,7 @@
           <li><tag>CBF_MO_Palisadenturm</tag><count>1~2</count></li>
         </emplacements>
         <garrison>
-          <li><list>CBF_MO_Garnison_Tor</list><posten>Innen</posten><count>3~6</count></li>
+          <li><list>CBF_MO_Garnison_Tor</list><post>Inside</post><count>3~6</count></li>
         </garrison>
         <districts>
           <li>
@@ -395,9 +395,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Felder</name><fields><li>
@@ -418,19 +418,19 @@
         </districts>
       </li>
     </wards>
-    <kind>Mittelalterstadt</kind>
+    <kind>MedievalTown</kind>
     <factionTags>
       <li>DankPyon_NobleHouseSavage</li>
       <li>DankPyon_NobleHouseFierce</li>
       <li>DankPyon_NobleHouseCivil</li>
       <li>DankPyon_NobleHouseCivil2</li>
     </factionTags>
-    <anteil>0</anteil>
-    <wdStufe>2</wdStufe>
-    <wdTyp>
+    <share>0</share>
+    <wdLevel>2</wdLevel>
+    <wdType>
       <li>Slavery</li>
-    </wdTyp>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </wdType>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>
@@ -461,9 +461,9 @@
     <defendersOnWall>0.25</defendersOnWall>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <walls>
           <li MayRequire="DankPyon.Medieval.Overhaul">Palisade</li>
         </walls>
@@ -471,8 +471,8 @@
           <li><tag>CBF_MO_Palisadenturm</tag><count>1~2</count></li>
         </emplacements>
         <garrison>
-          <li><list>CBF_MO_Garnison_Wehrgang</list><posten>Wehrgang</posten><count>3~6</count></li>
-          <li><list>CBF_MO_Garnison_Innen</list><posten>Innen</posten><count>3~5</count></li>
+          <li><list>CBF_MO_Garnison_Wehrgang</list><post>Walkway</post><count>3~6</count></li>
+          <li><list>CBF_MO_Garnison_Innen</list><post>Inside</post><count>3~5</count></li>
         </garrison>
         <districts>
           <li>
@@ -486,9 +486,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <districts>
           <li>
             <name>Pferde</name>
@@ -499,19 +499,19 @@
         </districts>
       </li>
     </wards>
-    <kind>Mittelalterstadt</kind>
+    <kind>MedievalTown</kind>
     <factionTags>
       <li>DankPyon_NobleHouseSavage</li>
       <li>DankPyon_NobleHouseFierce</li>
       <li>DankPyon_NobleHouseCivil</li>
       <li>DankPyon_NobleHouseCivil2</li>
     </factionTags>
-    <anteil>0</anteil>
-    <wdStufe>1~4</wdStufe>
-    <wdTyp>
+    <share>0</share>
+    <wdLevel>1~4</wdLevel>
+    <wdType>
       <li>Vanguard</li>
-    </wdTyp>
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    </wdType>
+    <forAllFactions>true</forAllFactions>
     <techLevels>
       <li>Medieval</li>
     </techLevels>

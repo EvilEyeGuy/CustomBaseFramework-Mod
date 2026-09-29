@@ -8,11 +8,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.5</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.5</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -111,7 +111,7 @@
     <zones>
       <li>Inside</li>
     </zones>
-    <needsRoadAccess>true</needsRoadAccess><anbauVoll>true</anbauVoll><anbauUeberstand>1</anbauUeberstand><anbauEckenWeg>true</anbauEckenWeg>
+    <needsRoadAccess>true</needsRoadAccess><annexFill>true</annexFill><annexOverhang>1</annexOverhang><annexCornerPath>true</annexCornerPath>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -120,7 +120,7 @@
     <zones>
       <li>Inside</li>
     </zones>
-    <needsRoadAccess>true</needsRoadAccess><anbauVoll>true</anbauVoll><anbauUeberstand>1</anbauUeberstand><anbauEckenWeg>true</anbauEckenWeg>
+    <needsRoadAccess>true</needsRoadAccess><annexFill>true</annexFill><annexOverhang>1</annexOverhang><annexCornerPath>true</annexCornerPath>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -130,11 +130,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.5</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.5</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -144,11 +144,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.5</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.5</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -159,11 +159,11 @@
     </zones>
     <needsRoadAccess>false</needsRoadAccess>
     <blockMax>1</blockMax>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Hof</li>
       <li>CBF_MO_Anbau_Laendlich</li>
-    </anbauten>
-    <anbauMax>3</anbauMax>
+    </annexes>
+    <annexMax>3</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -217,12 +217,12 @@
     <zones>
       <li>Inside</li>
     </zones>
-    <needsRoadAccess>true</needsRoadAccess><verschmelzen>true</verschmelzen>
-    <anbauten>
+    <needsRoadAccess>true</needsRoadAccess><merge>true</merge>
+    <annexes>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.6</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.6</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -286,12 +286,12 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Gasthaus</li>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.7</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.7</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -301,11 +301,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.5</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.5</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -315,12 +315,12 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Gilde</li>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.8</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.8</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -348,12 +348,12 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Zelt</li>
       <li>CBF_MO_Anbau_Zelt_Gross</li>
-    </anbauten>
-    <anbauChance>0.8</anbauChance>
-    <anbauMax>3</anbauMax>
+    </annexes>
+    <annexChance>0.8</annexChance>
+    <annexMax>3</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -363,11 +363,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess><weight>2</weight>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Laendlich</li>
-    </anbauten>
-    <anbauChance>0.7</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.7</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -378,12 +378,12 @@
     </zones>
     <needsRoadAccess>false</needsRoadAccess>
     <blockMax>1</blockMax>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Jagd</li>
       <li>CBF_MO_Anbau_Laendlich</li>
-    </anbauten>
-    <anbauChance>0.8</anbauChance>
-    <anbauMax>3</anbauMax>
+    </annexes>
+    <annexChance>0.8</annexChance>
+    <annexMax>3</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -393,11 +393,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Militaer</li>
-    </anbauten>
-    <anbauChance>0.8</anbauChance>
-    <anbauMax>2</anbauMax><mauerzugang>true</mauerzugang>
+    </annexes>
+    <annexChance>0.8</annexChance>
+    <annexMax>2</annexMax><wallAccess>true</wallAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -487,7 +487,7 @@
     <zones>
       <li>Inside</li>
     </zones>
-    <needsRoadAccess>true</needsRoadAccess><mauerzugang>true</mauerzugang>
+    <needsRoadAccess>true</needsRoadAccess><wallAccess>true</wallAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -497,11 +497,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.5</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.5</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -511,12 +511,12 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Bergbau</li>
       <li>CBF_MO_Anbau_Laendlich</li>
-    </anbauten>
-    <anbauChance>0.8</anbauChance>
-    <anbauMax>3</anbauMax>
+    </annexes>
+    <annexChance>0.8</annexChance>
+    <annexMax>3</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -535,7 +535,7 @@
     <zones>
       <li>Inside</li>
     </zones>
-    <needsRoadAccess>true</needsRoadAccess><verschmelzen>true</verschmelzen>
+    <needsRoadAccess>true</needsRoadAccess><merge>true</merge>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -681,12 +681,12 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Schmiede</li>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.7</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.7</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -696,11 +696,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.5</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.5</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -710,11 +710,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.5</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.5</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -751,11 +751,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.5</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.5</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -783,11 +783,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Zelt</li>
-    </anbauten>
-    <anbauChance>0.6</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.6</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -796,7 +796,7 @@
     <zones>
       <li>Inside</li>
     </zones>
-    <needsRoadAccess>true</needsRoadAccess><verschmelzen>true</verschmelzen>
+    <needsRoadAccess>true</needsRoadAccess><merge>true</merge>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -806,12 +806,12 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Schmiede</li>
       <li>CBF_MO_Anbau_Stadt</li>
-    </anbauten>
-    <anbauChance>0.6</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.6</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -839,11 +839,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Zelt</li>
-    </anbauten>
-    <anbauChance>0.6</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.6</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -863,11 +863,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
-    <anbauten>
+    <annexes>
       <li>CBF_MO_Anbau_Zelt</li>
-    </anbauten>
-    <anbauChance>0.6</anbauChance>
-    <anbauMax>2</anbauMax>
+    </annexes>
+    <annexChance>0.6</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>

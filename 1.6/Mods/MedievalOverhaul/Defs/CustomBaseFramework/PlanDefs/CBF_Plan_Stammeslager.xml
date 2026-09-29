@@ -5,7 +5,7 @@
     <defName>CBF_Plan_Stammeslager</defName>
     <label>tribal camp (MO)</label>
     <materialList>CBF_MO_Materialliste</materialList>
-    <kind>Lager</kind>
+    <kind>Camp</kind>
     <styles>
       <li>Rustical</li>
     </styles>
@@ -16,23 +16,23 @@
     <minBuildingGap>2</minBuildingGap>
     <maxBuildingGap>4</maxBuildingGap>
     <targetBuilt>0.32</targetBuilt>
-    <baumanteil>0.15</baumanteil>
+    <treeShare>0.15</treeShare>
     <defenderPoints>150~300</defenderPoints>
 
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Lager</name>
         <label>Lager</label>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <walls>
           <li><piece>CBF_MO_Pfahlwall</piece><weight>0.4</weight></li>
           <li><piece>CBF_MO_Barrikadenwall</piece><weight>0.3</weight></li>
           <li><piece>Palisade</piece><weight>0.3</weight></li>
         </walls>
         <garrison>
-          <li><list>CBF_MO_Stamm_Wache</list><posten>Innen</posten><count>5~8</count></li>
-          <li><list>CBF_MO_Stamm_Posten</list><posten>Tor</posten><count>2~4</count></li>
+          <li><list>CBF_MO_Stamm_Wache</list><post>Inside</post><count>5~8</count></li>
+          <li><list>CBF_MO_Stamm_Posten</list><post>Gate</post><count>2~4</count></li>
         </garrison>
         <districts>
           <li>
@@ -48,11 +48,11 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_MO_Stamm_Wache</list><posten>Innen</posten><count>1~3</count></li>
+          <li><list>CBF_MO_Stamm_Wache</list><post>Inside</post><count>1~3</count></li>
         </garrison>
         <districts>
           <li>
@@ -65,13 +65,13 @@
       </li>
     </wards>
 
-    <anteil>0</anteil>
+    <share>0</share>
 
     <techLevels>
       <li>Neolithic</li>
     </techLevels>
 
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    <forAllFactions>true</forAllFactions>
 
     <worldTexture>World/WorldObjects/CBF/CBF_CampPalisade</worldTexture>
   </CustomBaseFramework.SettlementPlanDef>

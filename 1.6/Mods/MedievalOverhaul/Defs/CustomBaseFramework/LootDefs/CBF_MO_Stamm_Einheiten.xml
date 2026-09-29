@@ -4,8 +4,8 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_MO_Stamm_Wache</defName>
     <label>tribal guard</label>
-    <rolle>Wache</rolle>
-    <stufe>Neolithic</stufe>
+    <role>Guard</role>
+    <techLevel>Neolithic</techLevel>
     <radius>6</radius>
     <members>
       <li><kind>CBF_MO_Stammeskrieger</kind><weight>6</weight></li>
@@ -17,8 +17,8 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_MO_Stamm_Posten</defName>
     <label>tribal lookout</label>
-    <rolle>Posten</rolle>
-    <stufe>Neolithic</stufe>
+    <role>Sentry</role>
+    <techLevel>Neolithic</techLevel>
     <radius>4</radius>
     <members>
       <li><kind>CBF_MO_Stammesjaeger</kind><weight>3</weight></li>
@@ -29,7 +29,7 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_MO_Stamm_Bewohner</defName>
     <label>tribespeople</label>
-    <rolle>Zivil</rolle>
+    <role>Civilian</role>
     <radius>4</radius>
     <members>
       <li><kind>CBF_Stammesmitglied</kind><weight>1</weight></li>
@@ -39,11 +39,11 @@
   <CustomBaseFramework.PawnListDef>
     <defName>CBF_MO_Stamm_Haeuptling</defName>
     <label>tribal chief</label>
-    <rolle>Wache</rolle>
-    <stufe>Neolithic</stufe>
+    <role>Guard</role>
+    <techLevel>Neolithic</techLevel>
     <radius>3</radius>
     <members>
-      <li><kind>CBF_MO_Stammeshaeuptling</kind><weight>1</weight><ideologieRolle>IdeoRole_Leader</ideologieRolle></li>
+      <li><kind>CBF_MO_Stammeshaeuptling</kind><weight>1</weight><ideoRole>IdeoRole_Leader</ideoRole></li>
     </members>
   </CustomBaseFramework.PawnListDef>
 

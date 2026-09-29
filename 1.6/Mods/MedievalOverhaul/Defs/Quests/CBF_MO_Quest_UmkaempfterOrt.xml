@@ -8,9 +8,9 @@
     <canGiveRoyalFavor>true</canGiveRoyalFavor>
     <expireDaysRange>1~2</expireDaysRange>
     <modExtensions>
-      <li Class="CustomBaseFramework.CBFBelohnungExtension">
-        <hoechsteTechstufe>Medieval</hoechsteTechstufe>
-        <verboteneDinge>
+      <li Class="CustomBaseFramework.CBFRewardExtension">
+        <maxTechLevel>Medieval</maxTechLevel>
+        <forbiddenThings>
           <li>Plasteel</li>
           <li>Uranium</li>
           <li>Hyperweave</li>
@@ -33,7 +33,7 @@
           <li>TornadoGenerator</li>
           <li MayRequire="Ludeon.RimWorld.Biotech">PowerfocusChip</li>
           <li MayRequire="Ludeon.RimWorld.Biotech">NanostructuringChip</li>
-        </verboteneDinge>
+        </forbiddenThings>
       </li>
     </modExtensions>
     <questNameRules>
@@ -67,7 +67,7 @@
 
         <li Class="QuestNode_GetMap" />
 
-        <li Class="CustomBaseFramework.QuestNode_CBFAuftraggeber">
+        <li Class="CustomBaseFramework.QuestNode_CBFClient">
           <storeAs>asker</storeAs>
           <storeFactionAs>askerFaction</storeFactionAs>
           <sitePart>CBF_MO_Quest_UmkaempfterOrt</sitePart>
@@ -78,11 +78,11 @@
           <preferCloserTiles>true</preferCloserTiles>
         </li>
 
-        <li Class="CustomBaseFramework.QuestNode_CBFBesatzer">
+        <li Class="CustomBaseFramework.QuestNode_CBFOccupier">
           <storeAs>angreiferFaction</storeAs>
           <storeSitePartDefsAs>sitePartDefs</storeSitePartDefsAs>
           <sitePart>CBF_MO_Quest_UmkaempfterOrt</sitePart>
-          <feindVon>$askerFaction</feindVon>
+          <enemyOf>$askerFaction</enemyOf>
         </li>
 
         <li Class="QuestNode_GetDefaultSitePartsParams">
@@ -124,16 +124,16 @@
           <storeAs>site</storeAs>
         </li>
 
-        <li Class="CustomBaseFramework.QuestNode_CBFOrt">
+        <li Class="CustomBaseFramework.QuestNode_CBFSite">
           <site>$site</site>
-          <bauherr>$askerFaction</bauherr>
-          <punkte>$sitePoints</punkte>
+          <builder>$askerFaction</builder>
+          <points>$sitePoints</points>
         </li>
 
-        <li Class="CustomBaseFramework.QuestNode_CBFAngriff">
+        <li Class="CustomBaseFramework.QuestNode_CBFAttack">
           <site>$site</site>
-          <angreifer>$angreiferFaction</angreifer>
-          <punkte>$angreiferPunkte</punkte>
+          <attacker>$angreiferFaction</attacker>
+          <points>$angreiferPunkte</points>
         </li>
 
         <li Class="QuestNode_SpawnWorldObjects">

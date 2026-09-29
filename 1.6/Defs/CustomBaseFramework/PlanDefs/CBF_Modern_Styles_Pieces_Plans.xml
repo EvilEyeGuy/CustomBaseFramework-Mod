@@ -259,7 +259,7 @@
     <defName>CBF_Plan_Modernestadt</defName>
     <materialList>CBF_Modern_Materialliste</materialList>
     <label>modern town (industrial)</label>
-    <kind>Modernestadt</kind>
+    <kind>ModernTown</kind>
     <styles>
       <li>CBF_ModernVanilla</li>
     </styles>
@@ -268,13 +268,13 @@
     <roadMain>6</roadMain>
     <roadLane>2</roadLane>
     <minBuildingGap>1</minBuildingGap>
-    <gelaendeOeffnen>true</gelaendeOeffnen>
+    <openTerrain>true</openTerrain>
     <wards>
       <li>
-        <art>Stadt</art>
+        <kind>Town</kind>
         <name>Altstadt</name>
         <label>Zentrum</label>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <roads>
           <li>Concrete</li>
         </roads>
@@ -285,7 +285,7 @@
           <li>
             <list>CBF_Modern_Garnison_Innen</list>
             <count>12~17</count>
-            <posten>Innen</posten>
+            <post>Inside</post>
           </li>
         </garrison>
         <defenses>
@@ -304,10 +304,10 @@
         </districts>
       </li>
       <li>
-        <art>Vorstadt</art>
+        <kind>Suburb</kind>
         <name>Neustadt</name>
         <label>Wohnviertel</label>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <roads>
           <li>Concrete</li>
         </roads>
@@ -318,7 +318,7 @@
           <li>
             <list>CBF_Modern_Garnison_Innen</list>
             <count>6~9</count>
-            <posten>Innen</posten>
+            <post>Inside</post>
           </li>
         </garrison>
         <defenses>
@@ -342,9 +342,9 @@
         </districts>
       </li>
       <li>
-        <art>Umland</art>
+        <kind>Rural</kind>
         <name>Umland</name>
-        <versorgung>1.2</versorgung>
+        <supply>1.2</supply>
         <roads>
           <li>Concrete</li>
         </roads>
@@ -352,7 +352,7 @@
           <li>
             <list>CBF_Modern_Garnison_Innen</list>
             <count>2~4</count>
-            <posten>Innen</posten>
+            <post>Inside</post>
           </li>
         </garrison>
         <districts>
@@ -394,7 +394,7 @@
       </li>
     </wards>
   
-    <anteil>0</anteil>
+    <share>0</share>
   
     <techLevels>
       <li>Industrial</li>
@@ -402,11 +402,11 @@
       <li>Ultra</li>
     </techLevels>
   
-    <ideologieStil>true</ideologieStil>
+    <ideoStyle>true</ideoStyle>
 
-    <fuerAlleFraktionen>true</fuerAlleFraktionen>
+    <forAllFactions>true</forAllFactions>
   
     <worldTexture>World/WorldObjects/CBF/CBF_ModernTown</worldTexture>
-    <wdStufe>2</wdStufe>
+    <wdLevel>2</wdLevel>
   </CustomBaseFramework.SettlementPlanDef>
 </Defs>

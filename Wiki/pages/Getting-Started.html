@@ -117,40 +117,41 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Start / Getting started</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html" class="hier">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="getting-started">Getting started</h1><p class="unter">Start</p>
+<p>The editor is where you make buildings (pieces) and settlement types for CBF. This page shows how to open it, where your work is saved and how the window is laid out.</p>
 <h2 id="switch-the-editor-on">Switch the editor on</h2>
-<p>The editor is hidden by default so players do not stumble over it.</p>
+<p>The editor is hidden by default so players do not stumble over it. There are two ways to open it:</p>
 <ul>
 <li><strong>Mod settings:</strong> Options &gt; Mod settings &gt; Custom Base Framework &gt; tick <strong>Editor in the architect menu</strong>. A category <strong>CBF base editor</strong> appears in the architect menu. Its button opens the editor.</li>
-<li><strong>Development mode:</strong> with development mode on, the debug menu has an entry <strong>Open editor</strong> under Custom Base Framework.</li>
+<li><strong>Development mode:</strong> with development mode on, the debug menu has an entry <strong>Open editor</strong> under CustomBaseFramework.</li>
 </ul>
 <a class="bild" href="images/start-settings.png" target="_blank"><img alt="Mod settings with the editor switch" src="images/start-settings.png" loading="lazy"></a>
-<p>The editor needs a game with a map. A fresh colony is fine, nothing you do in the editor changes the colony.</p>
+<p>The editor needs a loaded game with a map. Use a separate test colony: you draw pieces directly on the map, and <strong>Build here</strong> in the large settlement preview builds a whole settlement on the current map and clears the ground first.</p>
 <h2 id="your-own-mod">Your own mod</h2>
-<p>Everything you save goes into one mod, shown at the top right of the window.</p>
+<p>Everything you save goes into one mod of your own, shown at the top right of the window. CBF and other mods are never changed directly; changes to their content are saved as patches in your mod, see <a href="Settings-Overview.html#changing-content-of-other-mods">Changing content of other mods</a>.</p>
 <a class="bild" href="images/start-mod-menu.png" target="_blank"><img alt="The mod selector in the title bar" src="images/start-mod-menu.png" loading="lazy"></a>
 <ol>
 <li><strong>Mod</strong> shows the mod you work in. Click it for the menu:<ul>
-<li><strong>New mod</strong> creates a mod in your Mods folder with the folders RimWorld needs and Custom Base Framework as dependency, with a link to its Workshop page. It is enabled and loads on the next start.</li>
+<li><strong>New mod</strong> creates a mod in your Mods folder. It contains the folders RimWorld needs and lists Custom Base Framework as a dependency, with a link to its Workshop page. The new mod is enabled and loads on the next start.</li>
 <li><strong>Open mod</strong> switches to a mod you made earlier. Only mods in your local Mods folder are listed. Mods from the Steam Workshop are read only.</li>
-<li><strong>Show mod folder</strong> opens it in the file explorer.</li>
-<li><strong>Export all areas</strong> exports every piece area on the current map in one go. It appears when the map has at least two areas.</li>
+<li><strong>Show mod folder</strong> opens the folder in the file explorer.</li>
+<li><strong>Export all areas</strong> exports every piece area on the current map in one go. It needs at least two areas on the map; otherwise the entry is greyed out.</li>
 </ul>
 </li>
 </ol>
-<p>The editor adds the mods your content needs to the mod's About.xml by itself, whenever you save something that uses them. A settlement type may use pieces from any mod: when you save it, those mods are added to About.xml as dependencies, so players are asked to install them.</p>
+<p>When you save something that uses content of other mods, the editor adds those mods to the About.xml of your mod by itself. For example, a settlement type may use pieces from any mod. When you save it, those mods are added as dependencies, so players are asked to install them.</p>
 <h2 id="the-window">The window</h2>
 <a class="bild" href="images/start-window.png" target="_blank"><img alt="The editor window" src="images/start-window.png" loading="lazy"></a>
 <ol>
-<li><strong>Tabs.</strong> Piece, Settlement, Categories, Loot, Pawn, Unit swap. The button at the bottom left switches between icons and names.</li>
+<li><strong>Tabs.</strong> Piece, Settlement, Categories, Loot, Pawn, Unit swap. The button at the bottom left switches between icons only and names.</li>
 <li><strong>Back and forward.</strong> Every jump between entries is remembered, also across tabs.</li>
 <li><strong>Undo and redo.</strong> Also Ctrl+Z and Ctrl+Y, as long as no text field has the focus.</li>
 <li><strong>Saved or Unsaved.</strong> Hover it to see what is not saved yet, click it to jump there.</li>
 <li><strong>List.</strong> Entries with an error glow red. A yellow bar at the left edge marks unsaved changes.</li>
 <li><strong>Columns.</strong> Drag the border between two columns to change their width, double-click it to reset. The widths are remembered per tab.</li>
 </ol>
-<p>Most rows have a tooltip. The <strong>?</strong> buttons next to some sections open a longer help text.</p>
+<p>Most rows have a tooltip. The <strong>?</strong> buttons next to some sections open a longer help text. <strong>Guide</strong> in the title bar and at the bottom of the left bar opens the page of this guide for the current tab.</p>
 <p>Number fields take a comma or a point as decimal separator.</p>
-<p>If a file of your mod changes outside the editor while you have unsaved changes, the editor asks which version to keep.</p>
+<p>If a file of your mod changes outside the editor while you have unsaved changes in it, the editor asks which version to keep: <strong>Reload</strong> discards your changes, <strong>Keep my state</strong> keeps them.</p>
 <h2 id="pickers">Pickers</h2>
 <a class="bild" href="images/start-picker.png" target="_blank"><img alt="A picker with search and mod filter" src="images/start-picker.png" loading="lazy"></a>
 <p>Whenever you pick a thing, a pawn kind or a list, a picker opens:</p>

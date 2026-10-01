@@ -131,7 +131,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>anchor</code></td>
 <td>text</td>
 <td>none</td>
-<td>Name of the anchor. Wall ties the cells to the town wall, Anbau marks where an annex may attach, Outside marks the outer side of a wall strip or gatehouse. Other names only label the anchor.</td>
+<td>Name of the anchor. Wall ties the cells to the town wall, Annex marks where an annex may attach, Outside marks the outer side of a wall strip or gatehouse. Other names only label the anchor.</td>
 </tr>
 <tr>
 <td><code>anchorKind</code><br>Kind</td>
@@ -158,6 +158,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Stack size of the thing placed at this cell, for items. Buildings ignore it.</td>
 </tr>
 <tr>
+<td><code>factionFlag</code></td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td>On an Object anchor: true places the flag or banner that a FactionFlagDef assigns to the faction of the settlement. Factions without one get the objects of the anchor.</td>
+</tr>
+<tr>
 <td><code>ideoBuilding</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
@@ -176,16 +182,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>The loot table (LootTableDef) used here. On an anchor it fills the containers. On an object list member it replaces the anchor's table. On a content zone or a settlement budget entry it fills content zones. Not used on dungeon profiles.</td>
 </tr>
 <tr>
-<td><code>onTop</code></td>
-<td>true/false</td>
-<td><code>false</code></td>
-<td>Places the anchor's object on top of what stands there, instead of clearing the cells first. Anchors in anchorsOver always do this.</td>
-</tr>
-<tr>
 <td><code>objects</code></td>
 <td>text</td>
 <td>none</td>
 <td>The object list (LootBuildingCategoryDef) a Fill or Object anchor places its buildings from. Without it an Object anchor stays empty.</td>
+</tr>
+<tr>
+<td><code>onTop</code></td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td>Places the anchor's object on top of what stands there, instead of clearing the cells first. Anchors in anchorsOver always do this.</td>
 </tr>
 <tr>
 <td><code>pawnCount</code><br>Pawn count</td>
@@ -209,7 +215,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>pawns</code><br>Animals</td>
 <td>text</td>
 <td>none</td>
-<td>On a spawn anchor: one pawn kind (defName) for the spot, used when pawnList is empty. With neither, a regular defender takes the spot. On a pen: the pawn list (PawnListDef) its animals come from; empty leaves the pen empty.</td>
+<td>On a spawn anchor: one pawn kind (defName) for the spot, used when pawnList is empty. With neither, a regular defender takes the spot.</td>
 </tr>
 <tr>
 <td><code>required</code></td>
@@ -221,7 +227,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>role</code></td>
 <td>text</td>
 <td>none</td>
-<td>Name of a building role, such as wall, floor or door. CBF puts the matching thing from the material list there when no thing or terrain is set.</td>
+<td>Name of a building role, such as wall, floor or door. CBF puts the matching thing from the material list there when no thing or terrain is set. How the pawns behave. Guard joins the general defence, Sentry holds its spot, Gunner mans the guns around its spot, Civilian defends its spot but may flee and need not be able to fight.</td>
 </tr>
 <tr>
 <td><code>roof</code></td>

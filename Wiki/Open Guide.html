@@ -117,14 +117,27 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="pages/suche.js"></script></head><body class="home" data-basis=""><div class="fenster"><header class="kopf"><a class="marke" href="Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="Open%20Guide.html">Guide</a> / Start</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="Open%20Guide.html" class="hier">Overview</a><a href="pages/Getting-Started.html">Getting started</a><a href="pages/Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="pages/Pieces.html">Draw and edit pieces</a><a href="pages/Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="pages/Settlements.html">Settlement types</a><a href="pages/Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="pages/Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="pages/Loot.html">Object lists and loot</a><a href="pages/Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="pages/Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="pages/Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="pages/Settlement-Types.html">Shipped settlements</a><a href="pages/Quests.html">Quests</a><a href="pages/Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="pages/Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="pages/Modding-Overview.html">Your own content mod</a><a href="pages/Modding-Settlements.html">Settlement types in XML</a><a href="pages/Modding-Pieces.html">Pieces and categories in XML</a><a href="pages/Modding-Loot.html">Loot in XML</a><a href="pages/Modding-Pawns.html">Pawns in XML</a><a href="pages/Modding-Quests.html">Quests in XML</a><a href="pages/Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="custom-base-framework">Custom Base Framework</h1>
-<p>Custom Base Framework (CBF) builds faction settlements, villages and camps from hand-drawn building pieces. A generator plans the layout on the actual map: walls, gates, roads, districts, fields and pens. The pieces fill it.</p>
-<p>Everything is data. You draw pieces on the map, group them into categories and describe settlements as rings of wards with districts inside. The generator does the rest.</p>
+<p>Custom Base Framework (CBF) replaces the bases of NPC factions with generated towns, villages and camps. The towns are built from buildings that someone drew by hand in the game. CBF plans the layout on the actual map (walls, gates, roads, fields and pens) and then fills it with those buildings.</p>
+<p>Everything is data. CBF ships an in-game editor: you draw buildings on the map, group them and describe how a settlement is laid out. The generator does the rest.</p>
 <a class="bild" href="pages/images/home-town.png" target="_blank"><img alt="A generated market town" src="pages/images/home-town.png" loading="lazy"></a>
+<h2 id="terms">Terms</h2>
+<p>These words appear throughout the guide.</p>
+<ul>
+<li><strong>Piece</strong>: one building or one stretch of wall, drawn on the map and saved as a template. See <a href="pages/Pieces.html">Pieces</a>.</li>
+<li><strong>Category</strong>: a group of pieces, for example small houses or markets. Settlements ask for categories, and the generator picks a piece from them. See <a href="pages/Categories.html">Categories</a>.</li>
+<li><strong>Settlement type</strong> (also called plan): the description of one kind of place, for example a market town or a fortress city. See <a href="pages/Settlements.html">Settlements</a>.</li>
+<li><strong>Ward</strong>: one ring of a settlement. There are up to three: the town in the middle, the suburb around it and the countryside outside. Each ward has its own buildings, its own garrison and optionally a wall.</li>
+<li><strong>District</strong>: a group of buildings inside a ward that is placed together, for example a market quarter.</li>
+<li><strong>Anchor</strong>: a marked cell in a piece where CBF places something when the piece is built: furniture, containers with loot, or pawns.</li>
+<li><strong>Object list</strong>, <strong>loot table</strong>, <strong>material list</strong>: what an anchor may place, what goes into the containers, and which walls, floors and doors a settlement uses. See <a href="pages/Loot.html">Loot</a> and <a href="pages/Material-Lists.html">Material lists</a>.</li>
+<li><strong>Annex</strong>: a side part docked onto a house, such as a shed. See <a href="pages/Annexes.html">Annexes</a>.</li>
+<li><strong>Pawn list</strong>: a weighted list of pawn kinds for garrisons and inhabitants. See <a href="pages/Pawns.html">Pawns</a>.</li>
+</ul>
 <h2 id="every-building-differs">Every building differs</h2>
 <p>A piece is a template, not a fixed building. Each time it is placed, it comes out differently:</p>
 <ul>
 <li><strong>Interior.</strong> Beds, tables, storage and decoration come from object lists with chances. Many things have alternatives, and materials follow the map.</li>
-<li><strong>Annexes.</strong> Houses get side parts docked on: a shed, a stable, a storage area or a small yard. They change the outline of the building, so the town does not look assembled from the same blocks even from a distance. See <a href="pages/Annexes.html">Annexes</a>.</li>
+<li><strong>Annexes.</strong> Houses get side parts docked on: a shed, a stable, a storage area or a small yard. They change the outline of the building, so even from a distance the town does not look assembled from identical blocks. See <a href="pages/Annexes.html">Annexes</a>.</li>
 <li><strong>Placement.</strong> Rotation, mirroring, the neighbouring buildings, the roads and the place in the town differ each time.</li>
 </ul>
 <p>You may recognise a house you have seen before, but inside and outside it looks different. More than 500 pieces ship with the mod, buildings and annexes together.</p>
@@ -137,11 +150,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>CBF brings its own buildings for Medieval Overhaul and Vanilla Factions Expanded - Medieval 2, and a vanilla style for modern towns. For some mods there are extra pieces designed for their things: cemeteries with Dark Ages: Crypts and Tombs, outposts for World Domination 2.0 and holdings for A Rim of Ice and Fire. Cemeteries and outposts come for Medieval Overhaul and for VFE Medieval 2, the holdings for Medieval Overhaul. See <a href="pages/Compatibility.html#content-for-other-mods">Compatibility</a>.</p>
 <h2 id="adding-and-removing">Adding and removing</h2>
 <ul>
-<li><strong>Running game:</strong> CBF can be added to a running game. Faction bases you have not visited yet are built by CBF when you first visit them. Bases you already visited stay as they are.</li>
+<li><strong>Adding to a running game:</strong> CBF can be added to a running game. Faction bases you have not visited yet are built by CBF when you first visit them. Bases you already visited stay as they are.</li>
 <li><strong>Removing:</strong> first use <strong>Remove CBF data from this save</strong> in the mod settings, then save, quit and remove the mod. See <a href="pages/Mod-Settings.html#remove-cbf-from-this-save">Mod settings</a>.</li>
 </ul>
 <h2 id="editor-guide">Editor guide</h2>
-<p>The guide follows the tabs of the editor.</p>
+<p>For players who want to make or change buildings and settlements. The pages follow the tabs of the editor.</p>
 <ol>
 <li><a href="pages/Getting-Started.html">Getting started</a>: switch the editor on, create a mod of your own, find your way around the window.</li>
 <li><strong>Piece</strong>: <a href="pages/Pieces.html">draw and edit pieces</a>, set anchors, and add <a href="pages/Annexes.html">annexes</a> that dock onto houses.</li>
@@ -151,6 +164,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><strong>Pawn</strong>: <a href="pages/Pawns.html">pawn kinds and pawn lists</a> for garrisons and inhabitants.</li>
 <li><strong>Unit swap</strong>: <a href="pages/Unit-Swap.html">let each faction send its own units</a>.</li>
 </ol>
+<p><a href="pages/Settings-Overview.html">What you can change</a> lists every setting, the values with a fixed meaning and the names you should not rename.</p>
 <h2 id="playing">Playing</h2>
 <ul>
 <li><a href="pages/Settlement-Types.html">Shipped settlements</a>: example towns, strength and performance.</li>
@@ -168,4 +182,4 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><a href="pages/Modding-Pawns.html">Pawns in XML</a></li>
 <li><a href="pages/Modding-Quests.html">Quests in XML</a></li>
 <li><a href="pages/Field-Reference.html">Field reference</a>: every field of every def.</li>
-</ul><div class="schritte"><a class="weiter" href="pages/Getting-Started.html"><span>Next</span>Getting started</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#every-building-differs">Every building differs</a><a class="t2" href="#what-you-need">What you need</a><a class="t2" href="#adding-and-removing">Adding and removing</a><a class="t2" href="#editor-guide">Editor guide</a><a class="t2" href="#playing">Playing</a><a class="t2" href="#modding">Modding</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+</ul><div class="schritte"><a class="weiter" href="pages/Getting-Started.html"><span>Next</span>Getting started</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#terms">Terms</a><a class="t2" href="#every-building-differs">Every building differs</a><a class="t2" href="#what-you-need">What you need</a><a class="t2" href="#adding-and-removing">Adding and removing</a><a class="t2" href="#editor-guide">Editor guide</a><a class="t2" href="#playing">Playing</a><a class="t2" href="#modding">Modding</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

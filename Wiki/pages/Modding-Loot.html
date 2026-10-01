@@ -118,18 +118,29 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Loot in XML</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html" class="hier">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="modding-loot-object-lists-containers-and-crops">Modding: loot, object lists, containers and crops</h1><p class="unter">Modding</p>
 <p>This page covers the XML side of loot in Custom Base Framework (CBF). The editor side is described on <a href="Loot.html">Loot</a>. Every field is listed on the field reference pages linked at the end.</p>
+<p>Terms used on this page:</p>
+<ul>
+<li><strong>Piece</strong>: one hand-drawn building. See <a href="Modding-Pieces.html">Pieces and categories in XML</a>.</li>
+<li><strong>Anchor</strong>: a marked area in a piece where CBF adds something after the building stands. See <a href="Modding-Pieces.html#anchors">Anchors</a>.</li>
+<li><strong>Structure</strong>: a building an anchor places, such as a barrel, a shelf or a chest.</li>
+<li><strong>Object list</strong> (<code>LootBuildingCategoryDef</code>): the structures an anchor may choose from.</li>
+<li><strong>Loot table</strong> (<code>LootTableDef</code>): decides which items go into or onto the structure.</li>
+<li><strong>CBF container</strong>: a building with <code>thingClass</code> <code>CustomBaseFramework.Building_LootContainer</code>. It holds items inside and changes its look once searched. See <a href="#containers">Containers</a>.</li>
+<li><strong>Crop list</strong> (<code>CropListDef</code>): a weighted list of plants for fields and pens. See <a href="#crop-lists">Crop lists</a>.</li>
+</ul>
 <h2 id="how-loot-gets-into-a-settlement">How loot gets into a settlement</h2>
 <p>Loot always starts at an anchor in a piece.</p>
 <ol>
-<li>A piece has a legend entry with <code>anchorKind</code> <code>Fill</code> or <code>Object</code>.</li>
-<li>The anchor names an object list in <code>objects</code> and, for fill anchors, a loot table in <code>lootTable</code>.</li>
+<li>A piece has a legend entry with <code>anchorKind</code> <code>Fill</code> (shown as <strong>Loot</strong> in the editor) or <code>Object</code>.</li>
+<li>The anchor names an object list in <code>objects</code> and, for Fill anchors, a loot table in <code>lootTable</code>.</li>
 <li>CBF picks one structure from the object list that fits the anchor area and places it.</li>
-<li>The loot table is rolled and the result goes into that structure or onto it.</li>
+<li>The loot table is rolled and the items go into that structure or onto it.</li>
 </ol>
-<p>A real anchor from a Medieval Overhaul piece:</p>
+<p>Two shipped anchors from a Medieval Overhaul piece:</p>
 <pre><code class="language-xml">&lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;4&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;Barrel&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Fill&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_MO_Barrel&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">lootTable</span>&gt;CBF_MO_Loot_Larder&lt;/<span class="xt">lootTable</span>&gt;&lt;/<span class="xt">li</span>&gt;
 &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">symbol</span>&gt;5&lt;/<span class="xt">symbol</span>&gt;&lt;<span class="xt">anchor</span>&gt;Shelf&lt;/<span class="xt">anchor</span>&gt;&lt;<span class="xt">anchorKind</span>&gt;Fill&lt;/<span class="xt">anchorKind</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_MO_HeraldryShelf&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">lootForeign</span>&gt;true&lt;/<span class="xt">lootForeign</span>&gt;&lt;/<span class="xt">li</span>&gt;
 </code></pre>
+<p>The first places a barrel or crate and fills it with larder loot. The second places a Medieval Overhaul shelf and lets that mod fill it.</p>
 <table>
 <thead>
 <tr>
@@ -140,7 +151,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>anchorKind</code></td>
-<td><code>Fill</code> places a structure and loot. <code>Object</code> places a structure only, the anchor's <code>lootTable</code> is ignored.</td>
+<td><code>Fill</code> places a structure and loot. <code>Object</code> places a structure only. The anchor's <code>lootTable</code> is ignored.</td>
 </tr>
 <tr>
 <td><code>objects</code></td>
@@ -156,7 +167,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>chance</code></td>
-<td>Chance that the anchor is used at all. If it fails, the anchor cells are cleared, unless <code>onTop</code> is set.</td>
+<td>Chance that the anchor is used at all. If it fails on an anchor with an object list, the anchor cells are cleared (the placeholder goes), unless <code>onTop</code> is set.</td>
 </tr>
 <tr>
 <td><code>onTop</code></td>
@@ -164,8 +175,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>A fill anchor with neither object list nor loot table stays empty and logs a warning. A fill anchor with a loot table but no object list drops the loot loose on the floor near the anchor.</p>
-<p>Pieces can also have content zones (<code>contentZones</code>, see <a href="ContentZoneSpec.html">ContentZoneSpec</a>). They use the same object lists and loot tables. A zone without its own <code>lootTable</code> falls back to the <code>lootTable</code> of the settlement's <a href="BudgetEntry.html">BudgetEntry</a> for that category.</p>
+<p>A Fill anchor with neither object list nor loot table stays empty and logs a warning. A Fill anchor with a loot table but no object list drops the loot loose on the floor near the anchor.</p>
+<p>Pieces can also have content zones (<code>contentZones</code>, see <a href="ContentZoneSpec.html">ContentZoneSpec</a>). This is the older way to add loot. Zones use the same object lists and loot tables. A zone without its own <code>lootTable</code> takes the <code>lootTable</code> of the settlement's <a href="BudgetEntry.html">BudgetEntry</a> for that piece or its category.</p>
 <h2 id="object-lists">Object lists</h2>
 <p>Node: <code>&lt;CustomBaseFramework.LootBuildingCategoryDef&gt;</code>. An object list names the structures an anchor may place.</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootBuildingCategoryDef</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;
@@ -205,11 +216,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>empty</code></td>
-<td>What it becomes once emptied. On a shelf or other open structure, this building takes its place. On a shell (see below), only its picture is used. Must have the same footprint as <code>thing</code>, otherwise a warning is logged and the swap does not happen.</td>
+<td>What the structure becomes once emptied. On a shelf or other open structure, this building takes its place. On a shell (see below), only its picture is used. Must have the same footprint as <code>thing</code>, otherwise a warning is logged and the swap does not happen.</td>
 </tr>
 <tr>
 <td><code>stays</code></td>
-<td>The structure itself is placed and stays as it is. Loot lies visibly on it or goes into it. <code>offen</code> is read as the same node.</td>
+<td>The structure itself is placed and stays as it is. Loot lies visibly on it or goes into it.</td>
 </tr>
 <tr>
 <td><code>foreign</code></td>
@@ -230,13 +241,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h3 id="what-gets-placed">What gets placed</h3>
 <p>What CBF places depends on the kind of building and the member flags.</p>
 <ul>
-<li><strong>CBF container</strong> (<code>thingClass</code> is <code>CustomBaseFramework.Building_LootContainer</code>): placed as is. It gets the loot table and rolls it when it spawns.</li>
-<li><strong>Other container</strong> (any <code>Building_Casket</code>, for example a Medieval Overhaul lootable chest) without <code>stays</code> or <code>foreign</code>: CBF places a shell of the same size instead. The shell looks like the original, takes its label and description, and holds the loot inside until it is opened. If the member has <code>empty</code>, the shell shows that building's picture once opened.</li>
+<li><strong>CBF container</strong>: placed as is. It gets the loot table and rolls it when it spawns.</li>
+<li><strong>Other container</strong> (any <code>Building_Casket</code>, for example a Medieval Overhaul lootable chest) without <code>stays</code> or <code>foreign</code>: CBF places a shell of the same size instead. A shell is a CBF container that looks like the original, takes its label and description, and holds the loot inside until it is opened. If the member has <code>empty</code>, the shell shows that building's picture once opened.</li>
 <li><strong>Storage</strong> (a shelf, <code>Building_Storage</code>): placed as is. The loot lies on its cells, respecting the shelf's storage filter and items per cell.</li>
 <li><strong>Anything else</strong>, for example a table: placed as is. The loot lies on its cells.</li>
 <li>With <code>foreign</code>, or on an anchor with <code>lootForeign</code>, none of the above applies. The structure is placed and left alone.</li>
 </ul>
-<p>Loot on a structure's cells takes the cell with the fewest items. A shelf allows its <code>maxItemsInCell</code>, anything else one stack per cell. When every cell is full, the rest of that item is not created. Items a shelf does not accept go onto free floor within 4 cells of the anchor, as does loot that does not fit into a container.</p>
+<p>Loot on a structure's cells goes to the cell with the fewest items. A shelf allows its <code>maxItemsInCell</code>, anything else one stack per cell. When every cell is full, the rest of that item is not created. Items a shelf does not accept go onto free floor within 4 cells of the anchor. So does loot that does not fit into a container.</p>
 <h3 id="what-it-becomes-when-emptied">What it becomes when emptied</h3>
 <p>For structures that hold loot on their cells, CBF checks every 250 ticks whether the loot is gone.</p>
 <ul>
@@ -248,7 +259,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </ul>
 <p>CBF containers handle this themselves, see <a href="#containers">Containers</a>.</p>
 <h3 id="pawn-inside">Pawn inside</h3>
-<p>An object list can hide someone in its containers. This only works for buildings with an inside (caskets and CBF containers), not on shelves.</p>
+<p>An object list can hide a pawn in its containers, for example an animal in a chest. This only works for buildings with an inside (caskets and CBF containers), not on shelves. This example is written for this page.</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootBuildingCategoryDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;MyMod_TrappedChest&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">members</span>&gt;
@@ -270,7 +281,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>pawnList</code></td>
-<td>defName of a <a href="PawnListDef.html">PawnListDef</a>.</td>
+<td>defName of a <a href="PawnListDef.html">PawnListDef</a>, a weighted list of pawn kinds.</td>
 </tr>
 <tr>
 <td><code>pawnChance</code></td>
@@ -278,7 +289,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>pawnCount</code></td>
-<td>How many, as a range.</td>
+<td>How many, as a range. Default <code>1</code>.</td>
 </tr>
 <tr>
 <td><code>pawnHostile</code></td>
@@ -286,7 +297,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>pawnFaction</code></td>
-<td>FactionDef of the occupant. Without it, a non-hostile person joins the settlement's faction.</td>
+<td>FactionDef of the occupant. Without it, a person that is not hostile joins the settlement's faction.</td>
 </tr>
 </tbody>
 </table>
@@ -297,12 +308,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>The anchor area is the set of cells drawn with the anchor symbol. Only members that fit into the free cells of that area can be picked. A member may be placed turned by 90 degrees if its <code>rotatable</code> is true.</p>
 <ul>
 <li>Among the members that fit, the pick is weighted by footprint. A 2x1 shelf is twice as likely as a 1x1 crate.</li>
-<li>At an anchor, CBF places the structure as close to the middle of the area as it fits.</li>
-<li>Rotation and stuff come from the placeholder building drawn under the anchor, if there is one and the stuff fits.</li>
+<li>CBF places the structure as close to the middle of the area as it fits.</li>
+<li>Rotation and material come from the placeholder building drawn under the anchor, if there is one and the material fits.</li>
 <li>Water cells never count as free.</li>
 <li>If no member fits: with a loot table, the loot is dropped loose near the anchor. Without one, the drawn placeholder stays and a warning is logged.</li>
 </ul>
-<p>In dev mode, CBF warns when only one member of a list ever fits an area, because then the same structure always appears.</p>
+<p>In dev mode, CBF warns when only one member of a list fits an area, because then the same structure always appears.</p>
 <h3 id="other-mods">Other mods</h3>
 <p>Use <code>MayRequire</code> on the list or on a member so the XML loads without that mod.</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootBuildingCategoryDef</span>&gt;
@@ -312,13 +323,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;/<span class="xt">members</span>&gt;
 &lt;/<span class="xt">CustomBaseFramework.LootBuildingCategoryDef</span>&gt;
 </code></pre>
-<p>A member whose <code>thing</code> does not exist is skipped silently. If no member is left, the list is empty and every anchor that uses it is cleared and stays empty. If the list itself does not exist, the anchor stays empty and a warning is logged.</p>
+<p>A member whose <code>thing</code> does not exist is skipped. If no member is left, the list is empty and every anchor that uses it is cleared and stays empty. If the list itself does not exist, the anchor stays empty and a warning is logged.</p>
 <h2 id="loot-tables">Loot tables</h2>
-<p>Node: <code>&lt;CustomBaseFramework.LootTableDef&gt;</code>. A loot table decides what comes out. Entries can be a single item, another table or a whole thing category.</p>
-<p>A table of tables:</p>
+<p>Node: <code>&lt;CustomBaseFramework.LootTableDef&gt;</code>. A loot table decides what comes out. Each entry is a single item, another table or a whole thing category.</p>
+<p>A table of tables (shortened):</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootTableDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;CBF_MO_Loot_Dwelling&lt;/<span class="xt">defName</span>&gt;
-  &lt;<span class="xt">label</span>&gt;Wohnhaus&lt;/<span class="xt">label</span>&gt;
+  &lt;<span class="xt">label</span>&gt;dwelling loot&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">rolls</span>&gt;2~4&lt;/<span class="xt">rolls</span>&gt;
   &lt;<span class="xt">uniqueEntries</span>&gt;true&lt;/<span class="xt">uniqueEntries</span>&gt;
   &lt;<span class="xt">emptyFallback</span>&gt;CBF_MO_Loot_Minimal&lt;/<span class="xt">emptyFallback</span>&gt;
@@ -330,10 +341,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;/<span class="xt">entries</span>&gt;
 &lt;/<span class="xt">CustomBaseFramework.LootTableDef</span>&gt;
 </code></pre>
-<p>A table of items:</p>
+<p>This draws 2 to 4 different goods tables, bread most often. If nothing comes out, <code>CBF_MO_Loot_Minimal</code> is rolled instead.</p>
+<p>A table of items (shortened):</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.LootTableDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;CBF_Vanilla_Goods_Garments&lt;/<span class="xt">defName</span>&gt;
-  &lt;<span class="xt">label</span>&gt;Gewand&lt;/<span class="xt">label</span>&gt;
+  &lt;<span class="xt">label</span>&gt;garments goods&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">rolls</span>&gt;1~2&lt;/<span class="xt">rolls</span>&gt;
   &lt;<span class="xt">entries</span>&gt;
     &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">weight</span>&gt;20&lt;/<span class="xt">weight</span>&gt;&lt;<span class="xt">thing</span>&gt;Apparel_BasicShirt&lt;/<span class="xt">thing</span>&gt;&lt;<span class="xt">count</span>&gt;1~3&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">quality</span>&gt;Awful~Good&lt;/<span class="xt">quality</span>&gt;&lt;<span class="xt">hitPoints</span>&gt;0.4~0.9&lt;/<span class="xt">hitPoints</span>&gt;&lt;<span class="xt">onMissing</span>&gt;Skip&lt;/<span class="xt">onMissing</span>&gt;&lt;/<span class="xt">li</span>&gt;
@@ -365,7 +377,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>maxEntriesPerResolve</code></td>
-<td>Drawing stops once this many picks have been made. Default <code>16</code>.</td>
+<td>Drawing stops once the result holds this many items. Default <code>16</code>.</td>
 </tr>
 <tr>
 <td><code>always</code></td>
@@ -419,7 +431,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;<span class="xt">count</span>&gt;1~3&lt;/<span class="xt">count</span>&gt;
 &lt;/<span class="xt">li</span>&gt;
 </code></pre>
-<p>For categories, only things the game allows in random item sets are used. <code>maxTechLevel</code> drops things above that tech level. <code>value</code> drops things whose base market value lies outside the range; the default <code>0~0</code> means no limit. If nothing is left, the entry gives nothing. Things made from stuff get a random fitting stuff.</p>
+<p>For categories, only things the game allows in random item sets are used. <code>maxTechLevel</code> drops things above that tech level. <code>value</code> drops things whose base market value lies outside the range. The default <code>0~0</code> means no limit. If nothing is left, the entry gives nothing. Things made from stuff get a random fitting stuff.</p>
 <h3 id="entry-nodes">Entry nodes</h3>
 <table>
 <thead>
@@ -510,7 +522,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>A <code>table</code> or <code>category</code> entry that points to something that does not exist is dropped with a warning. If no entry of a table is usable, the table stays empty and CBF logs it. An anchor that names an empty table places its structure without loot.</p>
 <h2 id="containers">Containers</h2>
 <p>A CBF container is a building that holds loot inside, looks different once searched, and can turn into another building or vanish. Use it when a plain shelf is not enough.</p>
-<p>CBF ships an abstract base, <code>CBF_BeutebehaelterBase</code>, in <code>Defs/CustomBaseFramework/ThingDefs/CBF_Beutebehaelter.xml</code>. It sets <code>thingClass</code> to <code>CustomBaseFramework.Building_LootContainer</code>, the contents tab and the usual building values. Inherit from it and add a size, a graphic and the extension.</p>
+<p>CBF ships an abstract base, <code>CBF_BeutebehaelterBase</code>, in <code>Defs/CustomBaseFramework/ThingDefs/CBF_Beutebehaelter.xml</code>. It sets <code>thingClass</code> to <code>CustomBaseFramework.Building_LootContainer</code>, the contents tab and the usual building values. Inherit from it and add a size, a graphic and the extension. This container is shipped:</p>
 <pre><code class="language-xml">&lt;<span class="xt">ThingDef</span> <span class="xa">ParentName</span>=<span class="xw">&quot;CBF_BeutebehaelterBase&quot;</span>&gt;
   &lt;<span class="xt">defName</span>&gt;CBF_Container_Shelf&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;stocked shelf&lt;/<span class="xt">label</span>&gt;
@@ -565,7 +577,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p><code>emptyBuilding</code> and <code>destroyWhenEmpty</code> exclude each other; setting both is a config error.</p>
+<p><code>emptyBuilding</code> and <code>destroyWhenEmpty</code> exclude each other. Setting both is a config error.</p>
 <p>Empty picture only:</p>
 <pre><code class="language-xml">&lt;<span class="xt">modExtensions</span>&gt;
   &lt;<span class="xt">li</span> <span class="xa">Class</span>=<span class="xw">&quot;CustomBaseFramework.LootContainerExtension&quot;</span>&gt;
@@ -580,7 +592,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h3 id="how-it-behaves">How it behaves</h3>
 <ul>
 <li>The picture changes when the container is opened, not when it runs out of items.</li>
-<li>The loot table comes from the anchor or the member, never from the container def. A container placed by hand stays empty. In dev mode with god mode, a gizmo lets you fill it from any table for testing.</li>
+<li>The loot table comes from the anchor or the member, never from the container def. A container placed by hand stays empty. In dev mode with god mode, a button on the container lets you fill it from any table for testing.</li>
 <li>The contents are rolled once, when the container spawns.</li>
 <li>A shell takes its empty picture from the member's <code>empty</code> building, or else from an empty graphic declared in the original building's own mod extension. A shell never turns into another building.</li>
 <li>A container of your own takes its empty picture from <code>emptyGraphic</code>.</li>
@@ -635,10 +647,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tbody>
 </table>
 <p>A list without plants is a config error.</p>
-<p>A field or pen names the list in <code>crops</code>. Fields sit in <code>fields</code> of the settlement or of a district, pens in <code>pens</code>.</p>
+<p>A field or pen names the list in <code>crops</code>. Fields sit in the <code>fields</code> list of a district (or of a ward), pens in <code>pens</code>. See <a href="Modding-Settlements.html#fields-and-pens">Fields and pens</a>.</p>
 <pre><code class="language-xml">&lt;<span class="xt">fields</span>&gt;
   &lt;<span class="xt">li</span>&gt;
-    &lt;<span class="xt">name</span>&gt;Acker&lt;/<span class="xt">name</span>&gt;
     &lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;
     &lt;<span class="xt">crops</span>&gt;MyMod_Crops_Grain&lt;/<span class="xt">crops</span>&gt;
     &lt;<span class="xt">plants</span>&gt;
@@ -654,9 +665,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>Give large tables an <code>emptyFallback</code>, so a structure is never empty just because a roll failed.</li>
 <li>Use <code>MayRequire</code> on every entry and member from another mod. A list whose members are all missing clears its anchors.</li>
 <li>Make anchor areas the size of the structures you want. If only one member fits, the same structure always appears.</li>
-<li>Draw a placeholder building under each anchor. It sets the rotation and stuff of what is placed.</li>
+<li>Draw a placeholder building under each anchor. It sets the rotation and material of what is placed.</li>
 <li>Mark a mod's own lootables <code>foreign</code> if their author's loot should stay. Leave the flag off to use your own table.</li>
-<li>Use the <strong>Sample</strong> button in the Loot tab to roll a table before testing in game.</li>
+<li>Use the <strong>Sample</strong> button in the <strong>Loot</strong> tab to roll a table before testing in game.</li>
 </ul>
 <h2 id="field-reference">Field reference</h2>
 <ul>

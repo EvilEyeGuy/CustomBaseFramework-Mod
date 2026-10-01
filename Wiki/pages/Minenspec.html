@@ -128,22 +128,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>vein</code></td>
-<td>ThingDef</td>
-<td>none</td>
-<td>Ore rock (a mineable ThingDef) set into the rock along the mine.</td>
-</tr>
-<tr>
-<td><code>veinChance</code></td>
-<td>number</td>
-<td><code>0</code></td>
-<td>Share of rock cells along the mine that become ore, 0 to 1.</td>
-</tr>
-<tr>
-<td><code>width</code></td>
+<td><code>chambers</code></td>
 <td>IntRange</td>
-<td><code>1~2</code></td>
-<td>Width of the tunnel in cells.</td>
+<td><code>2</code></td>
+<td>Number of chambers along the tunnel.</td>
+</tr>
+<tr>
+<td><code>chamberSize</code></td>
+<td>IntRange</td>
+<td><code>4~6</code></td>
+<td>Edge length of the chambers in cells.</td>
 </tr>
 <tr>
 <td><code>chunks</code></td>
@@ -158,34 +152,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How many of these the settlement wants, as a range.</td>
 </tr>
 <tr>
-<td><code>things</code></td>
-<td>list of <a href="Minending.html">Minending</a></td>
-<td>none</td>
-<td>Thing replacements for this faction. Each entry swaps the thing in from for the thing in to.</td>
+<td><code>length</code></td>
+<td>IntRange</td>
+<td><code>15~20</code></td>
+<td>Length of the tunnel in cells.</td>
 </tr>
 <tr>
 <td><code>levels</code></td>
 <td>IntRange</td>
 <td><code>1</code></td>
 <td>How deep the tunnels branch: 0 only the main tunnel, 1 side tunnels off it, 2 side tunnels off those.</td>
-</tr>
-<tr>
-<td><code>chamberSize</code></td>
-<td>IntRange</td>
-<td><code>4~6</code></td>
-<td>Edge length of the chambers in cells.</td>
-</tr>
-<tr>
-<td><code>chambers</code></td>
-<td>IntRange</td>
-<td><code>2</code></td>
-<td>Number of chambers along the tunnel.</td>
-</tr>
-<tr>
-<td><code>length</code></td>
-<td>IntRange</td>
-<td><code>15~20</code></td>
-<td>Length of the tunnel in cells.</td>
 </tr>
 <tr>
 <td><code>name</code></td>
@@ -210,6 +186,30 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>list of <a href="PieceCategoryDef.html">PieceCategoryDef</a></td>
 <td>none</td>
 <td>Categories of the houses this field is laid around. Fields go to houses of these categories first. Empty on a district field takes the categories of its budget.</td>
+</tr>
+<tr>
+<td><code>things</code><br>Objects</td>
+<td>list of <a href="Minending.html">Minending</a></td>
+<td>none</td>
+<td>Things placed in the mine, each at the entrance, along the tunnels or in a chamber.</td>
+</tr>
+<tr>
+<td><code>vein</code></td>
+<td>ThingDef</td>
+<td>none</td>
+<td>Ore rock (a mineable ThingDef) set into the rock along the mine.</td>
+</tr>
+<tr>
+<td><code>veinChance</code></td>
+<td>number</td>
+<td><code>0</code></td>
+<td>Share of rock cells along the mine that become ore, 0 to 1.</td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td>IntRange</td>
+<td><code>1~2</code></td>
+<td>Width of the tunnel in cells.</td>
 </tr>
 </tbody>
 </table>

@@ -117,69 +117,86 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Settlement / Settlement types</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html" class="hier">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="settlements">Settlements</h1><p class="unter">Settlement</p>
-<p>A settlement plan describes one kind of place: a market town, a fortress city, a village, a camp. The generator builds it fresh for every faction base, so no two look the same.</p>
+<p>A settlement type (also called a plan) describes one kind of place: a market town, a fortress city, a village, a camp. It says which buildings the place has and where they go, but not where each one stands. The generator plans the layout fresh for every faction base, so no two bases look the same.</p>
+<p>A settlement type is built from three layers:</p>
+<ul>
+<li><strong>Wards</strong> are the rings of the place: the old town in the middle, the suburb around it, the countryside outside.</li>
+<li><strong>Districts</strong> are groups of buildings inside a ward, for example a market quarter or a row of farmsteads.</li>
+<li><strong>Entries</strong> in a district name a <a href="Categories.html">category</a> or a single <a href="Pieces.html">piece</a> and how many of it to build.</li>
+</ul>
 <a class="bild" href="images/settlement-tab.png" target="_blank"><img alt="The Settlement tab" src="images/settlement-tab.png" loading="lazy"></a>
 <ol>
-<li><strong>List</strong> grouped by tech level. The number is the weight, a red row has an error that stops the plan from being built.</li>
-<li><strong>Preview.</strong> Off by default, because planning a large town takes a few seconds. <strong>Show preview</strong> draws the plan on a flat map, <strong>Reroll</strong> tries a new seed.</li>
-<li><strong>General</strong>: name, kind, tech levels, factions and more.</li>
-<li><strong>Wards</strong> on the right: one tab per ring of the settlement.</li>
+<li><strong>List</strong> of settlement types, grouped by their lowest tech level. The number on the right is the weight. A red row has errors that stop the type from being built; it shows the number of errors instead of the weight.</li>
+<li><strong>Preview.</strong> Off by default, because planning a large town takes a few seconds. <strong>Show preview</strong> draws the plan on a flat map, <strong>Reroll</strong> plans it again with a new seed, <strong>Wards</strong> colours the rings.</li>
+<li><strong>General</strong>: name, kind of place, tech levels, factions and more. See <a href="#general">General</a>.</li>
+<li><strong>Wards</strong> on the right: one tab per ring of the settlement. See <a href="#wards">Wards</a>.</li>
 <li><strong>Faction overview</strong> below the list shows which faction gets which settlement, see <a href="Factions.html">Factions</a>.</li>
 </ol>
-<p>Settlement types from CBF or other mods can be changed too. <strong>Save as patch</strong> stores your changes as a patch in your own mod, see <a href="Settings-Overview.html#changing-content-of-other-mods">Changing content of other mods</a>. <strong>Copy into my mod</strong> instead makes an independent copy under a new name.</p>
+<p>The buttons at the bottom right:</p>
+<ul>
+<li><strong>Save</strong> writes the settlement type into its file.</li>
+<li><strong>Build</strong> finds a matching tile on the world map and places a settlement of this type there.</li>
+<li><strong>Preview</strong> opens the preview large in its own window, with legend and tally.</li>
+<li><strong>Show loot</strong> shows the loot of the settlement of this type that was built last. See <a href="#loot-of-a-built-settlement">Loot of a built settlement</a>.</li>
+</ul>
+<p>Settlement types from CBF or other mods can be changed too. The save button then reads <strong>Save as patch</strong> and stores your changes as a patch in your own mod, see <a href="Settings-Overview.html#changing-content-of-other-mods">Changing content of other mods</a>. <strong>Copy into my mod</strong> instead makes an independent copy under a new name.</p>
 <h2 id="loot-of-a-built-settlement">Loot of a built settlement</h2>
-<p>After <strong>Build</strong>, the button <strong>Show loot</strong> at the bottom shows what the loot of the settlement built last is worth in silver: in total, per ward and per kind of goods. The value is counted while the settlement is built and saved with it. Medieval Overhaul containers that only fill when searched are not included.</p>
+<p>After <strong>Build</strong>, the button <strong>Show loot</strong> shows what the loot of the settlement built last is worth in silver: in total, per ward and per kind of goods. The value is counted while the settlement is built and saved with it. Medieval Overhaul containers that only fill when searched are not included.</p>
 <h2 id="what-the-generator-handles-by-itself">What the generator handles by itself</h2>
+<p>You do not set these things. The generator does them on its own.</p>
 <ul>
 <li>Buildings that belong at the wall, such as barracks, dock onto the town wall with their open side. They are only built where that side touches the wall. The wall stays and the building gets a door onto the walkway.</li>
+<li>An open side of such a building that does not touch the wall is closed with the building's own wall.</li>
 <li>A medieval old town is made of 2 to 4 overlapping blocks, which gives L, T and stepped outlines instead of a plain rectangle. This also holds for towns without suburb islands if the wall is thicker than 3 cells. Every straight wall stretch, every projection and every indent is at least 16 cells long (a third of the town width for small towns).</li>
 <li>If there is no room for a field right at a farmhouse, the field may lie up to 30 cells away. When no road passes it, its gate faces the farmhouse.</li>
-<li>An open side of such a building that does not touch the wall is closed with the building's own wall.</li>
-<li>Wall parts cut off by a mountain turn into rock. Large rock pockets behind the wall get a postern. Small rock islands that touch the planned wall stay on the wall line and outside the town and replace the wall there; only the part inside the town is removed.</li>
+<li>Wall parts cut off by a mountain turn into rock. Large rock pockets behind the wall get a postern (a small side gate). Small rock islands that touch the planned wall stay on the wall line and outside the town and replace the wall there; only the part inside the town is removed.</li>
 <li>Rubble inside the settlement is cleared.</li>
 <li>Modern towns always have wards shaped like a spider web: 7 to 10 corners with sagging sides, also with a sandbag or barricade line. They never get gatehouses; roads run through gaps.</li>
 <li>Medieval settlements at the coast or on a wide river get a harbor with jetties, fishing huts, harbor store, harbor master and boat sheds, linked to the town by a path. The settlement type lists the harbor buildings under <code>harbor</code>, see <a href="Modding-Settlements.html#harbors">Settlement types in XML</a>.</li>
 <li>Buildings whose graphic only has one direction, such as Medieval Overhaul carts, are never rotated.</li>
-<li>Stoves, ovens and workbenches face into the room, and every thing gets a stuff it can be made of.</li>
+<li>Stoves, ovens and workbenches face into the room, and every thing gets a material it can be made of.</li>
 </ul>
 <h2 id="general">General</h2>
 <a class="bild" href="images/settlement-general.png" target="_blank"><img alt="The General section" src="images/settlement-general.png" loading="lazy"></a>
 <ul>
 <li><strong>Label</strong>: the name players see.</li>
-<li><strong>Kind of place</strong>: medieval town, modern town or camp. Click to switch.</li>
-<li><strong>Weight</strong>: how often this plan is drawn against other plans of the same faction.</li>
-<li><strong>Map size</strong>: edge length of the map the settlement type asks for, 150 to 400. The larger of this and the world setting is used.</li>
+<li><strong>Kind of place</strong>: medieval town, modern town or camp. Click to switch to the next kind.</li>
+<li><strong>Weight</strong>: how often this type is picked among all settlement types a faction can get.</li>
+<li><strong>Map size</strong>: edge length of the map this settlement type asks for, 150 to 400. The larger of this and the world setting is used.</li>
 <li><strong>Core size</strong>: edge length of the settlement core in cells, as a range. The suburb and the countryside grow around it.</li>
-<li><strong>Tree share</strong>: share of wild trees inside the settlement that stay standing.</li>
-<li><strong>Material list</strong>: what the generator uses for walls, doors, gates, fences, roads and roofs it builds itself, see <a href="Material-Lists.html">Material lists</a>. Required; the row is red without one.</li>
-<li><strong>WD tier</strong>: only with World Domination 2.0 active. A dropdown with the tiers of World Domination, a single tier or a range such as Tier 1 to 2. The tier this plan stands for, see <a href="Compatibility.html#world-domination-20">Compatibility</a>.</li>
-<li><strong>No WD loot</strong>: only with World Domination 2.0 active. Switches off the extra loot budget World Domination gives settlements of this type.</li>
-<li><strong>Ideoligion style</strong>: only with Ideology active. Furniture gets the style of the owning faction's ideoligion.</li>
-<li><strong>RIAF holding</strong>: only with A Rim of Ice and Fire active. None, Village, Town or Garrison. Makes this type the plan for holdings of that kind, see <a href="Compatibility.html#a-rim-of-ice-and-fire">Compatibility</a>. A type with a holding kind is not used for normal settlements.</li>
-<li><strong>Camp types</strong>: only for plans of the kind camp. The quest sites this plan builds, such as bandit camps, outposts or work sites.</li>
+<li><strong>Tree share</strong>: share of the wild trees inside the settlement that stay standing, from 0 to 1. 0 clears them all.</li>
+<li><strong>Material list</strong>: what the generator uses for walls, doors, gates, fences, roads and roofs it builds itself, see <a href="Material-Lists.html">Material lists</a>. Required: without one the row turns red and the type is switched off.</li>
+<li><strong>WD tier</strong>: only with World Domination 2.0 active. A dropdown with the tiers of World Domination, a single tier or a range such as Tier 1 to 2. The tier this type stands for, see <a href="Compatibility.html#world-domination-20">Compatibility</a>.</li>
 <li><strong>WD type</strong>: only with World Domination 2.0 active. The World Domination settlement types this plan stands for, such as mining camp or slave village. Only the types of the chosen tier are offered; empty means any type.</li>
-<li><strong>Tech levels</strong>: which ages the plan fits. Click switches one level, right-click picks this level and all above. Pawn lists use their members of the highest tech level at or below the settlement's level.</li>
+<li><strong>No WD loot</strong>: only with World Domination 2.0 active. Switches off the extra loot World Domination gives settlements of this type.</li>
+<li><strong>RIAF holding</strong>: only with A Rim of Ice and Fire active. <strong>None</strong>, <strong>Village</strong>, <strong>Town</strong> or <strong>Garrison</strong>. Makes this type the plan for holdings of that kind, see <a href="Compatibility.html#a-rim-of-ice-and-fire">Compatibility</a>. A type with a holding kind is not used for normal settlements.</li>
+<li><strong>Ideoligion style</strong>: only with Ideology active. Furniture gets the style of the owning faction's ideoligion.</li>
+<li><strong>Camp types</strong>: only for the kind camp. The quest sites this plan builds, such as bandit camps, outposts or work sites.</li>
+<li><strong>Tech levels</strong>: which ages the plan fits. A click switches one level on or off, a right-click picks this level and all above. Pawn lists use their members of the highest tech level at or below the settlement's level.</li>
 <li><strong>For all factions of these levels</strong>: the plan serves every faction of a ticked tech level, unless that faction has plans of its own.</li>
-<li><strong>Factions</strong>: factions or faction categories that get this plan in any case.</li>
+<li><strong>Factions</strong>: factions or faction categories that get this plan by name.</li>
 <li><strong>Excluded</strong>: factions that never get it.</li>
 <li><strong>Mods</strong>: the mods the plan needs. Most are found automatically, <strong>+ by hand</strong> adds more.</li>
-<li><strong>World map icon</strong>: the symbol of this place on the world map, tinted in the faction color.</li>
+<li><strong>World map icon</strong>: the symbol of this place on the world map, tinted in the faction colour. <strong>Vanilla</strong> keeps the faction's own symbol.</li>
 </ul>
+<p>How these fields decide which faction gets which settlement is explained on <a href="Factions.html">Factions</a>.</p>
 <h2 id="wards">Wards</h2>
-<p>A ward is one ring: the old town behind the high wall, the suburb behind a lighter one, the countryside around them. The innermost ward is protected best and filled first.</p>
+<p>A ward is one ring of the settlement: the old town behind the high wall, the suburb behind a lighter one, the countryside around them. The innermost ward is protected best and filled first.</p>
 <a class="bild" href="images/settlement-wards.png" target="_blank"><img alt="The wards of a large market town: old town red, suburb ochre, countryside green" src="images/settlement-wards.png" loading="lazy"></a>
-<p>In the preview, <strong>Wards</strong> colours the three rings: the old town red, the suburb ochre and the countryside green. Each settlement type has at most one ward of each kind; the kind is fixed, see <a href="Settings-Overview.html#ward-kind-art">What you can change</a>.</p>
+<p>In the preview, <strong>Wards</strong> colours the three rings: the old town red, the suburb ochre and the countryside green. Each settlement type has at most one ward of each kind, and the kind of a ward cannot be changed, see <a href="Settings-Overview.html#ward-kind-kind">What you can change</a>. The <strong>+</strong> next to the ward tabs adds a ward the type does not have yet.</p>
+<p>Each ward tab has the sections <strong>Fortification</strong>, <strong>Garrison</strong>, <strong>Districts</strong> and <strong>Roads and ground</strong>.</p>
 <a class="bild" href="images/settlement-ward.png" target="_blank"><img alt="A ward with fortification, garrison and districts" src="images/settlement-ward.png" loading="lazy"></a>
 <h3 id="fortification">Fortification</h3>
 <ul>
-<li><strong>Walls</strong>: the wall pieces of this ring. Several entries give a wall that varies along its length.</li>
+<li><strong>Walls</strong>: the wall pieces of this ring. Several entries give a wall that varies along its length; the slider sets each entry's share.</li>
 <li><strong>Emplacements</strong>: towers and other works in the ring. The generator spaces them itself, corners first.</li>
 <li><strong>Gatehouses</strong>: built wherever a road crosses the wall.</li>
-<li><strong>Door</strong>: the door that closes the passages in the wall. Empty uses the door of the <a href="Material-Lists.html">material list</a>. Gatehouses are set under <strong>Fortification</strong>.</li>
+<li><strong>Door</strong>: the door that closes the passages in the wall. Empty uses the door of the <a href="Material-Lists.html">material list</a>.</li>
 </ul>
 <p>Modern towns and the countryside have no fortification.</p>
 <h3 id="garrison">Garrison</h3>
-<p>Pawn lists that defend this ward, with a count and a post: <strong>Inside</strong>, <strong>Wall</strong> or <strong>Gate</strong>. The editor shows the point value. A ward with a garrison ignores the defender points of the settlement type; without entries the ward takes its share of them.</p>
+<p>The garrison is the set of defenders of this ward. Each row names a <a href="Pawns.html#pawn-lists">pawn list</a> (a set of pawn kinds), with a min and max count and a post: <strong>Inside</strong>, <strong>Wall</strong> or <strong>Gate</strong>. The section header shows the point value of the garrison.</p>
+<p>A ward with a garrison ignores the defender points of the settlement type. A ward without entries takes its share of those points. Pawns from Pawn anchors in the pieces come on top.</p>
 <p>How the defenders behave:</p>
 <ul>
 <li>Every ward defends itself. Defenders do not gather in the center and do not storm out together.</li>
@@ -189,17 +206,24 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </ul>
 <h3 id="defences">Defences</h3>
 <p>Defences spread over the whole ward: turret posts, sandbag nests, bunkers. Each entry names a category or one piece and a count. The first one stands at a random spot along a road; every further one goes where it is farthest from those already placed. Use districts instead when a defence belongs to one district only.</p>
+<p>The editor has no field for defences. They are set in XML in the ward's <code>defenses</code> list, see the <a href="Stadtteil.html">ward field reference</a>.</p>
 <h3 id="districts">Districts</h3>
-<p>A district is a building programme. Districts without a name of their own are numbered, District 1, District 2 and so on.</p>
+<p>A district is a building programme: a list of what to build in one part of the ward. Districts without a name of their own are numbered, District 1, District 2 and so on.</p>
 <a class="bild" href="images/settlement-district.png" target="_blank"><img alt="A district with buildings, a field and a pen" src="images/settlement-district.png" loading="lazy"></a>
 <ol>
-<li><strong>Buildings</strong>: a category or one specific piece, with min, max and weight. <strong>Filler</strong> entries fill the space left at the end.</li>
-<li><strong>Field</strong>: a crop plot grown around the buildings named under <strong>Farmsteads</strong>. The plants come from single plants or from a <strong>Crop list</strong>, see <a href="Loot.html#crop-lists">Loot</a>.</li>
-<li><strong>Pen</strong>: animals from a pawn list, the herd size, and what grows inside.</li>
-<li><strong>Mine</strong>: a tunnel with chambers dug into the rock from a building of the district. You set the ore and its share, length and width of the tunnel, number and size of the chambers, rock chunks, the buildings it may start at, and the things inside. <strong>Things</strong> opens a window with a sketch of the mine and one column per place: <strong>Entrance</strong> (the first cells of the tunnel right behind the entrance at the hut), <strong>Tunnel</strong> (along the tunnels, only where there is room to pass) and <strong>Chamber</strong> (in a chamber at the end of a tunnel, small things by the wall). Each entry is a thing or an object list, with material (empty takes stone or wood of the map), count, and optional content with an amount, for example iron on a shelf. ⇄ moves an entry to another place.</li>
-<li><strong>Location of the district</strong>: tick where the district should start: near the center, near the gate, near the wall or on the main road. Several ticks count equally, the district looks for a spot that suits all of them. Nothing ticked means a random spot away from the other districts. In XML the fields are numbers; only their ratio counts, so <code>1</code> and <code>0</code> cover every normal case.</li>
+<li><strong>Buildings</strong>: each entry is a category (marked <strong>Cat.</strong>) or one specific piece, with <strong>min</strong> and <strong>max</strong> for how many. A single piece also has a weight (<strong>Wt.</strong>) against the other pieces of its category; for a category entry the pieces' own weights decide. An entry marked <strong>Filler</strong> may be built beyond its max to fill the space left at the end, and only half of its min is required.</li>
+<li><strong>Field</strong>: a crop plot laid out around the buildings named under <strong>Farmsteads</strong>. The plants come from single plants or from a <strong>Crop list</strong>, see <a href="Loot.html#crop-lists">Loot</a>. Fields only work in the suburb and the countryside.</li>
+<li><strong>Pen</strong>: animals from a pawn list, the <strong>Herd</strong> size, and what grows inside (<strong>Growth</strong>, <strong>Soil</strong>). Pens only work in the countryside.</li>
+<li><strong>Mine</strong>: a tunnel with chambers dug into the rock from a building of the district. You set the ore and its share, length and width of the tunnel, number and size of the chambers, rock chunks, the buildings it may start at (<strong>Starts at</strong>), and the things inside. <strong>Things</strong> opens a window with a sketch of the mine and one column per place: <strong>Entrance</strong> (the first cells of the tunnel, right behind the entrance at the hut), <strong>Tunnel</strong> (along the tunnels, only where there is room to pass) and <strong>Chamber</strong> (in a chamber at the end of a tunnel, small things by the wall). Each entry is a thing or an object list, with material (empty takes stone or wood of the map), count, and optional content with an amount, for example iron on a shelf. ⇄ moves an entry to another place.</li>
+<li><strong>Location of the district</strong>: tick where the district should start: <strong>Near the center</strong>, <strong>Near the gate</strong>, <strong>Near the wall</strong> or <strong>Main road</strong>. Several ticks count equally; the district looks for a spot that suits all of them. Nothing ticked means a random spot away from the other districts. In XML the fields are numbers; only their ratio counts, so <code>1</code> and <code>0</code> cover every normal case.</li>
 </ol>
 <a class="bild" href="images/settlement-district-location.png" target="_blank"><img alt="Location of the district" src="images/settlement-district-location.png" loading="lazy"></a>
-<p><strong>+ Building</strong>, <strong>+ Field</strong>, <strong>+ Pen</strong> and <strong>+ Mine</strong> add rows. The <strong>...</strong> button next to a category shows the pieces it covers.</p>
+<p><strong>+ Building</strong>, <strong>+ Field</strong>, <strong>+ Pen</strong> and <strong>+ Mine</strong> add rows. <strong>+ District</strong> below the last district adds a new one. The <strong>…</strong> button next to a category shows the pieces it covers.</p>
+<h3 id="roads-and-ground">Roads and ground</h3>
+<ul>
+<li><strong>Ground</strong>: the ground between the houses. Empty keeps the map's own ground.</li>
+<li><strong>Paths</strong>: the surface of lanes, squares and gate passages in this ward. Empty uses the standard surface.</li>
+<li><strong>Kerb</strong>: the surface of the outermost cells of lanes, squares and gate passages. Empty uses the path surface for the whole width.</li>
+</ul>
 <h2 id="ideoligion-conditions-on-entries">Ideoligion conditions on entries</h2>
-<p>With Ideology active, every building entry of a district has a small <strong>I</strong> button. It adds memes or precepts the owning faction's ideoligion must have (<strong>only with</strong>) or must not have (<strong>not with</strong>). The entry is then only built when the condition holds, for example a slaughterhouse only for factions with a meat preference. The button is highlighted when a condition is set; its tooltip lists them.</p><div class="schritte"><a href="Annexes.html"><span>Previous</span>Annexes</a><a class="weiter" href="Factions.html"><span>Next</span>Factions</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#loot-of-a-built-settlement">Loot of a built settlement</a><a class="t2" href="#what-the-generator-handles-by-itself">What the generator handles by itself</a><a class="t2" href="#general">General</a><a class="t2" href="#wards">Wards</a><a class="t3" href="#fortification">Fortification</a><a class="t3" href="#garrison">Garrison</a><a class="t3" href="#defences">Defences</a><a class="t3" href="#districts">Districts</a><a class="t2" href="#ideoligion-conditions-on-entries">Ideoligion conditions on entries</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+<p>With Ideology active, every building entry of a district has a small <strong>I</strong> button. It adds memes or precepts the owning faction's ideoligion must have (<strong>only with</strong>) or must not have (<strong>not with</strong>). The entry is then only built when the condition holds, for example a slaughterhouse only for factions with a meat preference. The button is highlighted when a condition is set; its tooltip lists them.</p><div class="schritte"><a href="Annexes.html"><span>Previous</span>Annexes</a><a class="weiter" href="Factions.html"><span>Next</span>Factions</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#loot-of-a-built-settlement">Loot of a built settlement</a><a class="t2" href="#what-the-generator-handles-by-itself">What the generator handles by itself</a><a class="t2" href="#general">General</a><a class="t2" href="#wards">Wards</a><a class="t3" href="#fortification">Fortification</a><a class="t3" href="#garrison">Garrison</a><a class="t3" href="#defences">Defences</a><a class="t3" href="#districts">Districts</a><a class="t3" href="#roads-and-ground">Roads and ground</a><a class="t2" href="#ideoligion-conditions-on-entries">Ideoligion conditions on entries</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

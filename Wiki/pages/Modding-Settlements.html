@@ -117,17 +117,25 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Settlement types in XML</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html" class="hier">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="writing-a-settlement-type-in-xml">Writing a settlement type in XML</h1><p class="unter">Modding</p>
-<p>This page is for modders who write settlement types by hand. The in-game editor writes the same XML, see <a href="Settlements.html">Settlements</a>. Every node on this page exists in the code. The full list is in the field reference, linked at the end.</p>
+<p>This page is for modders who write settlement types by hand. The in-game editor writes the same XML, see <a href="Settlements.html">Settlements</a>. Every node on this page exists in the code. The full list of nodes is in the field reference, linked at the end.</p>
 <h2 id="what-a-settlement-type-is">What a settlement type is</h2>
 <p>A settlement type is a <code>CustomBaseFramework.SettlementPlanDef</code>. It does not contain a map. It is a building program: which wards the place has, which walls, towers and gates protect them, which buildings go where, and which fields and pens lie around it.</p>
+<p>Terms used on this page:</p>
+<ul>
+<li><strong>Ward</strong>: one ring of the settlement. The town is in the middle, the suburb around it, the countryside outside.</li>
+<li><strong>District</strong>: a group of buildings inside a ward that stay together, for example a market square or a farm.</li>
+<li><strong>Piece</strong>: one hand-drawn building (a <code>PieceDef</code>), see <a href="Pieces.html">Pieces</a>.</li>
+<li><strong>Category</strong>: a group of interchangeable pieces (a <code>PieceCategoryDef</code>), for example all taverns.</li>
+<li><strong>Pawn list</strong>: a weighted list of pawn kinds (a <code>PawnListDef</code>), see <a href="Pawns.html">Pawns</a>.</li>
+</ul>
 <p>When a caravan or raid first reaches a base, the generator plans the settlement on the real map of that tile:</p>
 <ol>
 <li>It picks one settlement type for the faction.</li>
-<li>It lays out the wards as rings: the town in the middle, the suburb around it, the countryside outside.</li>
+<li>It lays out the wards as rings.</li>
 <li>It builds the walls, places towers and gatehouses, and runs the main road and lanes through the gates.</li>
 <li>It splits each ward into districts and places the buildings each district asks for.</li>
 <li>It adds fields next to farmhouses and pens in the countryside.</li>
-<li>It fills every planned spot with a piece (a PieceDef, see <a href="Pieces.html">Pieces</a>) and spawns the garrison.</li>
+<li>It fills every planned spot with a piece and spawns the defenders.</li>
 </ol>
 <p>The settlement type decides what is asked for. The pieces decide what each building looks like.</p>
 <h2 id="minimal-example">Minimal example</h2>
@@ -137,6 +145,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
     &lt;<span class="xt">defName</span>&gt;MyMod_Plan_Hamlet&lt;/<span class="xt">defName</span>&gt;
     &lt;<span class="xt">label</span>&gt;hamlet&lt;/<span class="xt">label</span>&gt;
     &lt;<span class="xt">kind</span>&gt;ModernTown&lt;/<span class="xt">kind</span>&gt;
+    &lt;<span class="xt">materialList</span>&gt;CBF_Modern_MaterialList&lt;/<span class="xt">materialList</span>&gt;
     &lt;<span class="xt">styles</span>&gt;
       &lt;<span class="xt">li</span>&gt;CBF_ModernVanilla&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">styles</span>&gt;
@@ -160,18 +169,19 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 &lt;/<span class="xt">Defs</span>&gt;
 </code></pre>
 <ul>
-<li><code>kind</code> is set to <code>ModernTown</code> because the default kind, <code>MedievalTown</code>, needs a wall on the town ward. Without one the planner stops with "The fortified city requires a wall template".</li>
+<li><code>kind</code> is <code>ModernTown</code>, so the town needs no wall. The default kind, <code>MedievalTown</code>, expects wall pieces on the town ward. Without them the town stays open and CBF logs a warning.</li>
+<li><code>materialList</code> names the shipped modern material list. Without a material list the settlement type is switched off.</li>
 <li><code>styles</code> names one of the shipped styles.</li>
-<li><code>materialList</code> names a material list; without one the plan is not used.</li>
-<li><code>techLevels</code> together with <code>forAllFactions</code> makes the plan available to every industrial faction that has no plans of its own. Without faction settings the plan is only used for places that have no faction.</li>
-<li>The load check needs at least one building entry, a <code>mapSize</code> of 150 or more (default 175) and road widths within the limit of the kind.</li>
+<li><code>techLevels</code> together with <code>forAllFactions</code> makes the settlement type available to every industrial faction that has no settlement types of its own. Without any faction settings it is only used for places that have no faction.</li>
+<li>The load check also needs at least one building entry, a <code>mapSize</code> of 150 or more (default 175) and road widths within the limit of the kind.</li>
 <li>There is no garrison, so the defenders come from <code>defenderPoints</code> (default 180 to 420).</li>
 </ul>
 <h2 id="header-fields">Header fields</h2>
-<p>From <code>CBF_Plan_Village_New</code> (Medieval Overhaul village), trimmed:</p>
+<p>These nodes sit directly on the settlement type. From <code>CBF_Plan_Village_New</code> (Medieval Overhaul village), trimmed:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.SettlementPlanDef</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;
   &lt;<span class="xt">defName</span>&gt;CBF_Plan_Village_New&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;village (MO)&lt;/<span class="xt">label</span>&gt;
+  &lt;<span class="xt">materialList</span>&gt;CBF_MO_MaterialList&lt;/<span class="xt">materialList</span>&gt;
   &lt;<span class="xt">kind</span>&gt;MedievalTown&lt;/<span class="xt">kind</span>&gt;
   &lt;<span class="xt">styles</span>&gt;
     &lt;<span class="xt">li</span>&gt;Rustical&lt;/<span class="xt">li</span>&gt;
@@ -192,11 +202,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;<span class="xt">wdLevel</span>&gt;1&lt;/<span class="xt">wdLevel</span>&gt;
 &lt;/<span class="xt">CustomBaseFramework.SettlementPlanDef</span>&gt;
 </code></pre>
+<p>The column "Editor label" gives the name of the field in the editor's settlement tab, where there is one.</p>
 <table>
 <thead>
 <tr>
 <th>Node</th>
-<th>Editor name</th>
+<th>Editor label</th>
 <th>What it does</th>
 <th>Default</th>
 </tr>
@@ -204,21 +215,27 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>defName</code></td>
-<td></td>
-<td>Unique name. Saved on the world object, so do not rename it after release.</td>
+<td><strong>defName</strong></td>
+<td>Unique name. It is saved with each base on the world map, so do not rename it after release.</td>
 <td>required</td>
 </tr>
 <tr>
 <td><code>label</code></td>
-<td>Label</td>
+<td><strong>Label</strong></td>
 <td>Name players see on the world map.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>kind</code></td>
-<td>Settlement kind</td>
-<td><code>MedievalTown</code> (medieval, town ward needs a wall) or <code>ModernTown</code> (modern, walls optional, roads up to 6 wide). <code>Camp</code> and <code>Dungeon</code> exist but are never picked in the current version.</td>
+<td><strong>Kind of place</strong></td>
+<td><code>MedievalTown</code>: the town ward is meant to have a wall, roads are at most 2 wide. <code>ModernTown</code>: walls optional, gatehouses are ignored, roads up to 6 wide. <code>Camp</code>: a camp with roads at most 2 wide and no gatehouses; with <code>campTypes</code> it builds quest camps instead of faction bases. <code>Dungeon</code> is switched off in the current version.</td>
 <td><code>MedievalTown</code></td>
+</tr>
+<tr>
+<td><code>materialList</code></td>
+<td><strong>Material list</strong></td>
+<td>Required. The <a href="Modding-Overview.html#material-lists">material list</a> for the walls, doors, gates, fences, roads and roofs the generator builds itself.</td>
+<td>none</td>
 </tr>
 <tr>
 <td><code>styles</code></td>
@@ -227,94 +244,106 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>none</td>
 </tr>
 <tr>
-<td><code>materialList</code></td>
-<td>Material list</td>
-<td>Required. The <a href="Modding-Overview.html#material-lists">material list</a> for walls, doors, gates, fences, roads and roofs the generator builds itself.</td>
-<td>none</td>
-</tr>
-<tr>
 <td><code>coreSize</code></td>
-<td>Core size</td>
-<td>Smallest edge length of the settlement. If the buildings need more room the settlement grows, up to what the map allows.</td>
+<td><strong>Core size</strong></td>
+<td>Smallest edge length of the settlement. If the buildings need more room, the settlement grows, up to what the map allows.</td>
 <td><code>66~74</code></td>
 </tr>
 <tr>
 <td><code>mapSize</code></td>
-<td>Map size</td>
+<td><strong>Map size</strong></td>
 <td>Edge length of the map this settlement asks for. The larger of this and the world setting is used. Below 150 is a load error.</td>
 <td><code>175</code></td>
 </tr>
 <tr>
 <td><code>factionTags</code></td>
-<td>Factions</td>
-<td>FactionDef defNames or faction <code>categoryTag</code> values that get this plan.</td>
+<td><strong>Factions</strong></td>
+<td>FactionDef defNames or faction <code>categoryTag</code> values that get this settlement type.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>excludeFactions</code></td>
-<td>Excluded factions</td>
-<td>FactionDef defNames that never get this plan.</td>
+<td><strong>Excluded</strong></td>
+<td>FactionDef defNames that never get this settlement type.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>techLevels</code></td>
-<td>Tech levels</td>
-<td>Tech levels this plan fits. Only used together with <code>forAllFactions</code>.</td>
+<td><strong>Tech levels</strong></td>
+<td>Tech levels this settlement type fits. Only used together with <code>forAllFactions</code>.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>forAllFactions</code></td>
-<td>For every faction of these levels</td>
-<td>Offers the plan to every faction whose tech level is in <code>techLevels</code>, unless that faction has plans of its own.</td>
+<td><strong>For all factions of these levels</strong></td>
+<td>Offers the settlement type to every faction whose tech level is in <code>techLevels</code>, unless that faction has settlement types of its own.</td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td><code>share</code></td>
-<td>Weight</td>
-<td>Chance against the other plans a faction can get. 0 counts as 1.</td>
+<td><strong>Weight</strong></td>
+<td>Chance against the other settlement types a faction can get. 0 counts as 1.</td>
 <td><code>0</code></td>
 </tr>
 <tr>
 <td><code>worldTexture</code></td>
-<td>World map icon</td>
+<td><strong>World map icon</strong></td>
 <td>Texture path of the world map icon, tinted in the faction color.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>wdLevel</code></td>
-<td>WD tier</td>
-<td>World Domination tier this plan stands for, 0 to 4, as a number or a range like <code>2~3</code>. 0 means no tier. See <a href="Compatibility.html#world-domination-20">Compatibility</a>.</td>
+<td><strong>WD tier</strong></td>
+<td>World Domination tier this settlement type stands for, 0 to 4, as a number or a range like <code>2~3</code>. 0 means no tier. See <a href="Compatibility.html#world-domination-20">Compatibility</a>.</td>
 <td><code>0</code></td>
 </tr>
 <tr>
+<td><code>wdType</code></td>
+<td><strong>WD type</strong></td>
+<td>World Domination settlement types this settlement type stands for. Empty means any.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>riafHolding</code></td>
+<td><strong>RIAF holding</strong></td>
+<td>Makes this the plan for A Rim of Ice and Fire holdings: <code>Village</code>, <code>Town</code> or <code>Garrison</code>. Such a settlement type is not used for normal bases. See <a href="Compatibility.html#a-rim-of-ice-and-fire">Compatibility</a>.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>campTypes</code></td>
+<td><strong>Camp types</strong></td>
+<td>SitePartDef names, such as <code>BanditCamp</code> or <code>Outpost</code>. Only for the kind <code>Camp</code>. The settlement type then builds these quest camps and is not used for normal bases.</td>
+<td>none</td>
+</tr>
+<tr>
 <td><code>requiredMods</code></td>
-<td>Needs these mods</td>
-<td>Read by the editor only. When the editor saves the plan, it writes these mods and the ones it detects into <code>MayRequire</code> on the def node. It does not stop a hand-written def from loading.</td>
+<td><strong>Mods</strong></td>
+<td>Read by the editor only. When the editor saves the settlement type, it writes these mods and the ones it detects into <code>MayRequire</code> on the def node. It does not stop a hand-written def from loading.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>siteTags</code></td>
 <td></td>
-<td>Plans with site tags are the only ones used for quest sites. Leave it empty for faction bases.</td>
+<td>Only settlement types with site tags are used for quest sites. Leave it empty for faction bases.</td>
 <td>none</td>
 </tr>
 </tbody>
 </table>
 <h3 id="mayrequire">MayRequire</h3>
-<p><code>MayRequire</code> is RimWorld's own attribute. On the def node it skips the whole plan when the mod is missing. On a list item it skips only that item:</p>
+<p><code>MayRequire</code> is RimWorld's own attribute. On the def node it skips the whole settlement type when the mod is missing. On a list item it skips only that item:</p>
 <pre><code class="language-xml">&lt;<span class="xt">plants</span>&gt;
   &lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;DankPyon_Plant_Wheat&lt;/<span class="xt">li</span>&gt;
   &lt;<span class="xt">li</span>&gt;Plant_Corn&lt;/<span class="xt">li</span>&gt;
 &lt;/<span class="xt">plants</span>&gt;
 </code></pre>
-<p>Put <code>MayRequire</code> on the def node whenever the plan names pieces, categories or pawn lists from another mod. <code>requiredMods</code> alone does not protect a hand-written plan.</p>
+<p>Put <code>MayRequire</code> on the def node whenever the settlement type names pieces, categories or pawn lists from another mod. <code>requiredMods</code> alone does not protect a hand-written settlement type.</p>
 <h2 id="wards">Wards</h2>
 <p>A ward is one ring of the settlement. There are three kinds, set with <code>kind</code>:</p>
 <table>
 <thead>
 <tr>
 <th><code>kind</code></th>
-<th>Editor name</th>
+<th>Editor label</th>
 <th>Layer</th>
 <th>Notes</th>
 </tr>
@@ -322,25 +351,25 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>Town</code></td>
-<td>Town</td>
+<td><strong>Town</strong></td>
 <td>inner</td>
-<td>Required. In a medieval plan it must have walls.</td>
+<td>The core. Walled if it has wall pieces, otherwise open.</td>
 </tr>
 <tr>
 <td><code>Suburb</code></td>
-<td>Suburb</td>
+<td><strong>Suburb</strong></td>
 <td>middle</td>
-<td>Optional. Without walls it is an open suburb. Without the ward there is no suburb.</td>
+<td>Optional. Without wall pieces it is an open suburb. Without the ward there is no suburb.</td>
 </tr>
 <tr>
 <td><code>Rural</code></td>
-<td>Countryside</td>
+<td><strong>Countryside</strong></td>
 <td>outer</td>
 <td>Optional. Never walled. Pens are only placed here.</td>
 </tr>
 </tbody>
 </table>
-<p>Write each kind once. The enum also lists <code>Castle</code>, but the planner has no layer of its own for it; do not use it.</p>
+<p>Write each kind once. The enum also lists <code>Castle</code>, but the planner has no layer of its own for it and treats it like the countryside. Do not use it.</p>
 <p>From <code>CBF_Plan_FortressCity_New</code>, the town ward, trimmed:</p>
 <pre><code class="language-xml">&lt;<span class="xt">wards</span>&gt;
   &lt;<span class="xt">li</span>&gt;
@@ -370,12 +399,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;/<span class="xt">li</span>&gt;
 &lt;/<span class="xt">wards</span>&gt;
 </code></pre>
-<p>The shipped file has no <code>label</code> line; it is added here to show the node.</p>
+<p>The shipped file has no <code>label</code> line. It is added here to show the node.</p>
 <table>
 <thead>
 <tr>
 <th>Node</th>
-<th>Editor name</th>
+<th>Editor label</th>
 <th>What it does</th>
 <th>Default</th>
 </tr>
@@ -383,68 +412,68 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>kind</code></td>
-<td>Kind</td>
+<td></td>
 <td>Ward kind, see above.</td>
 <td><code>Town</code></td>
 </tr>
 <tr>
 <td><code>label</code></td>
-<td>Label</td>
+<td></td>
 <td>Name shown for the ward. Empty uses the kind name.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>name</code></td>
-<td>Name</td>
-<td>Replaced by the kind at load. Use <code>label</code> instead.</td>
+<td></td>
+<td>Overwritten at load with <code>OldTown</code>, <code>NewTown</code> or <code>Countryside</code>. Use <code>label</code> for a display name.</td>
 <td><code>Town</code></td>
 </tr>
 <tr>
 <td><code>walls</code></td>
-<td>Walls</td>
-<td>Wall pieces of this ring, see below.</td>
+<td><strong>Walls</strong></td>
+<td>Wall pieces of this ring, see below. Empty means no wall.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>emplacements</code></td>
-<td>Defensive positions</td>
-<td>Towers and other works on the wall.</td>
+<td><strong>Emplacements</strong></td>
+<td>Towers and other defensive pieces on the wall.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>gatehouses</code></td>
-<td>Gatehouses</td>
-<td>Pieces built where a road crosses the wall. Empty takes the gatehouse of the wall profile.</td>
+<td><strong>Gatehouses</strong></td>
+<td>Pieces built where a road crosses the wall.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>gate</code></td>
-<td>Gate</td>
+<td><strong>Door</strong></td>
 <td>ThingDef that closes the gate passages. Empty uses the gate of the material list.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>garrison</code></td>
-<td>Garrison</td>
+<td><strong>Garrison</strong></td>
 <td>Defenders of this ward, see below.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>ground</code></td>
-<td>Ground</td>
+<td><strong>Roads and ground</strong></td>
 <td>TerrainDefs for the open ground between the houses. Empty keeps the map terrain.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>roads</code></td>
-<td>Paths</td>
+<td><strong>Roads and ground</strong></td>
 <td>TerrainDefs for lanes, squares and gate passages. Empty uses the road of the material list.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>roadEdges</code></td>
-<td>Kerb</td>
-<td>TerrainDefs for the road edge.</td>
+<td><strong>Roads and ground</strong></td>
+<td>TerrainDefs for the outer cells of the roads (kerb). Empty uses the road surface throughout.</td>
 <td>none</td>
 </tr>
 <tr>
@@ -460,31 +489,44 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>true</code></td>
 </tr>
 <tr>
-<td><code>size</code>, <code>wallDepth</code></td>
-<td>Size, Wall thickness</td>
-<td>Kept for the editor. The planner sizes a ward from its buildings and takes the wall thickness from the wall pieces.</td>
-<td><code>1</code>, <code>0</code></td>
+<td><code>lanterns</code>, <code>lanternGap</code></td>
+<td></td>
+<td>Lantern things along the lanes, and their spacing in cells (0 means 12).</td>
+<td>none, <code>0</code></td>
+</tr>
+<tr>
+<td><code>decor</code>, <code>defenses</code></td>
+<td></td>
+<td>Pieces spread along the lanes and squares of this ward, see <a href="Dekospec.html">Dekospec</a>.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>supply</code></td>
+<td></td>
+<td>Scales the size of all pens in this ward. Only read in the countryside.</td>
+<td><code>1.2</code></td>
 </tr>
 </tbody>
 </table>
 <h3 id="walls-emplacements-and-gatehouses">Walls, emplacements and gatehouses</h3>
-<p>All three are lists of wall entries. An entry is either plain text or a node with fields:</p>
+<p>All three are lists of wall entries. An entry is either plain text or a node with fields. From the suburb ward of <code>CBF_Plan_FortressCity_New</code>:</p>
 <pre><code class="language-xml">&lt;<span class="xt">walls</span>&gt;
-  &lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;Palisade&lt;/<span class="xt">li</span>&gt;
+  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;TownWall&lt;/<span class="xt">piece</span>&gt;&lt;<span class="xt">weight</span>&gt;0.75&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
   &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_TownWall_Embrasure&lt;/<span class="xt">piece</span>&gt;&lt;<span class="xt">weight</span>&gt;0.25&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
 &lt;/<span class="xt">walls</span>&gt;
 &lt;<span class="xt">emplacements</span>&gt;
-  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_PalisadeTower&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_TownTower&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;3~5&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
 &lt;/<span class="xt">emplacements</span>&gt;
 &lt;<span class="xt">gatehouses</span>&gt;
-  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_Gatehouse&lt;/<span class="xt">piece</span>&gt;&lt;/<span class="xt">li</span>&gt;
+  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Gatehouse&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
 &lt;/<span class="xt">gatehouses</span>&gt;
 </code></pre>
 <ul>
-<li><strong>walls</strong>: the pieces the wall is built from. The first entry is plain text, the second names one piece with <code>piece</code> and a weight, so it makes up about a fifth of the wall.</li>
-<li><strong>emplacements</strong>: towers and other pieces set into the wall. Here one or two pieces from the category <code>CBF_MO_PalisadeTower</code>, picked with <code>tag</code>.</li>
-<li><strong>gatehouses</strong>: the pieces placed where roads cross the wall. Here always the piece <code>CBF_MO_Gatehouse</code>.</li>
+<li><strong>walls</strong>: the pieces the wall is built from. Plain wall makes up three quarters of the wall, wall with an embrasure one quarter.</li>
+<li><strong>emplacements</strong>: three to five towers from the category <code>CBF_MO_TownTower</code>.</li>
+<li><strong>gatehouses</strong>: one or two gatehouses from the category <code>CBF_MO_Gatehouse</code>, placed where roads cross the wall.</li>
 </ul>
+<p>The village uses the plain text form, <code>&lt;li MayRequire="DankPyon.Medieval.Overhaul"&gt;Palisade&lt;/li&gt;</code>, for its palisade.</p>
 <table>
 <thead>
 <tr>
@@ -496,41 +538,45 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td>plain text</td>
-<td>A PieceDef or PieceCategoryDef name. CBF looks for a piece first, then a category.</td>
+<td>A PieceDef or PieceCategoryDef name.</td>
 <td></td>
 </tr>
 <tr>
 <td><code>piece</code></td>
-<td>One PieceDef.</td>
+<td>A PieceDef name.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>tag</code></td>
-<td>A PieceCategoryDef. Every non-template piece in it can be used.</td>
+<td>A PieceCategoryDef name. Every non-template piece in it can be used.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>weight</code></td>
-<td>Share of this entry. For walls it sets how often each piece appears along the wall.</td>
+<td>Share of this entry against the other entries of the same list. For walls it sets how often each piece appears along the wall.</td>
 <td><code>1</code></td>
 </tr>
 <tr>
 <td><code>count</code></td>
-<td>For emplacements and gatehouses: how many. <code>0~0</code> lets the planner place as many as the wall needs.</td>
+<td>For emplacements and gatehouses: how many. <code>0~0</code> lets the planner decide. At most 150.</td>
 <td><code>0~0</code></td>
 </tr>
 </tbody>
 </table>
+<p>For all three forms, CBF looks for a piece of that name first, then for a category. A name that is neither is skipped with a warning.</p>
 <ul>
-<li>A wall piece must be one cell wide in one direction. Its length in the other direction is the wall thickness: 1 is a palisade, 3 a wall with a walkway, 5 a broad fortress wall.</li>
-<li>Use pieces of the same thickness within one ward. The thickness comes from the wall pieces, not from any <code>wallDepth</code> node.</li>
+<li>A wall piece must be one cell wide in one direction. Its length in the other direction is the wall thickness, 1 to 5 cells: 1 is a palisade, 3 a wall with a walkway, 5 a broad fortress wall.</li>
+<li>Use pieces of the same thickness within one ward. The thickness comes from the wall pieces.</li>
 <li>Tower sizes are read from square pieces with an odd edge length.</li>
+<li><code>ModernTown</code> and <code>Camp</code> settlements build no gatehouses.</li>
 </ul>
 <h3 id="garrison">Garrison</h3>
+<p>A garrison places fixed defenders in a ward. Each entry names a pawn list, a count and a post.</p>
 <table>
 <thead>
 <tr>
 <th>Node</th>
+<th>Editor label</th>
 <th>What it does</th>
 <th>Default</th>
 </tr>
@@ -538,24 +584,27 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>list</code></td>
+<td></td>
 <td>A PawnListDef, see <a href="Pawns.html">Pawns</a>. A missing list leaves the entry empty and logs a warning.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>count</code></td>
+<td><strong>Min</strong>, <strong>Max</strong></td>
 <td>How many pawns from this list.</td>
 <td><code>1~1</code></td>
 </tr>
 <tr>
 <td><code>post</code></td>
-<td>Post: <code>Inside</code> (inside), <code>Walkway</code> (on the wall walkway) or <code>Gate</code> (at the gates).</td>
+<td><strong>post</strong></td>
+<td><code>Inside</code> (inside the ward), <code>Walkway</code> (on the wall walkway) or <code>Gate</code> (at the gates). The editor shows them as <strong>Inside</strong>, <strong>Wall</strong> and <strong>Gate</strong>.</td>
 <td><code>Inside</code></td>
 </tr>
 </tbody>
 </table>
-<p>A ward with a garrison uses only its own entries. A ward without one takes its share of the plan's <code>defenderPoints</code>. <code>defendersOnWall</code> (default 0.25) sets how many of those point-based defenders stand on the wall.</p>
+<p>A ward with a garrison uses only its own entries. A ward without one takes its share of the settlement type's <code>defenderPoints</code>. <code>defendersOnWall</code> (default 0.25) sets how many of those point-based defenders stand on the wall.</p>
 <h2 id="districts-and-building-entries">Districts and building entries</h2>
-<p>A district is a group of buildings that stay together. Each ward has one or more districts.</p>
+<p>A district is a group of buildings that stay together. Each ward has one or more districts. A building entry asks for a number of buildings from a category, or for one specific piece.</p>
 <p>From <code>CBF_Plan_FortressCity_New</code>, town ward:</p>
 <pre><code class="language-xml">&lt;<span class="xt">districts</span>&gt;
   &lt;<span class="xt">li</span>&gt;
@@ -578,13 +627,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;/<span class="xt">li</span>&gt;
 &lt;/<span class="xt">districts</span>&gt;
 </code></pre>
-<p>The <code>prefCenter</code> line is added for this page; the shipped plan leaves the location to the planner.</p>
+<p>The <code>prefCenter</code> line is added for this page. The shipped settlement type leaves the location to the planner.</p>
 <h3 id="district-nodes">District nodes</h3>
 <table>
 <thead>
 <tr>
 <th>Node</th>
-<th>Editor name</th>
+<th>Editor label</th>
 <th>What it does</th>
 <th>Default</th>
 </tr>
@@ -592,61 +641,67 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>name</code></td>
-<td>Name</td>
-<td>Internal name. Must be unique across the whole plan, a duplicate logs a warning. Fields and pens use it to find their buildings.</td>
+<td></td>
+<td>Internal name. Must be unique across the whole settlement type, a duplicate logs a warning. Fields and pens use it to find their buildings.</td>
 <td><code>Default</code></td>
 </tr>
 <tr>
 <td><code>label</code></td>
-<td>Label</td>
+<td></td>
 <td>Display name.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>entries</code></td>
-<td>Buildings</td>
+<td></td>
 <td>The building entries.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>prefCenter</code></td>
-<td>Toward the center</td>
+<td><strong>Near the center</strong></td>
 <td>Pull toward the center of the ward.</td>
 <td><code>0</code></td>
 </tr>
 <tr>
 <td><code>prefGate</code></td>
-<td>Toward the gate</td>
+<td><strong>Near the gate</strong></td>
 <td>Pull toward the gates.</td>
 <td><code>0</code></td>
 </tr>
 <tr>
 <td><code>prefWall</code></td>
-<td>Toward the wall</td>
+<td><strong>Near the wall</strong></td>
 <td>Pull toward the wall.</td>
 <td><code>0</code></td>
 </tr>
 <tr>
 <td><code>prefMain</code></td>
-<td>Along the main road</td>
+<td><strong>Main road</strong></td>
 <td>Pull toward the main road.</td>
 <td><code>0</code></td>
 </tr>
 <tr>
 <td><code>fields</code>, <code>pens</code></td>
-<td>Fields, Pens</td>
-<td>See the next section.</td>
+<td></td>
+<td>See <a href="#fields-and-pens">Fields and pens</a>.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>mines</code></td>
+<td></td>
+<td>Mines dug into the rock from a building of this district, see <a href="Minenspec.html">Minenspec</a>.</td>
 <td>none</td>
 </tr>
 </tbody>
 </table>
-<p>The four location values are weighed against each other, so <code>1</code> and <code>0</code> means the same as <code>0.5</code> and <code>0</code>. When all four are 0, the district starts as far as possible from the districts already placed.</p>
+<p>The four location values decide where the district starts. They are weighed against each other, so <code>1</code> and <code>0</code> means the same as <code>0.5</code> and <code>0</code>. In the editor they are tick boxes under <strong>Location of the district</strong>, which write <code>1</code> or <code>0</code>. When all four are 0, the district starts as far as possible from the districts already placed.</p>
 <h3 id="building-entries">Building entries</h3>
 <table>
 <thead>
 <tr>
 <th>Node</th>
-<th>Editor name</th>
+<th>Editor label</th>
 <th>What it does</th>
 <th>Default</th>
 </tr>
@@ -654,7 +709,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>tag</code></td>
-<td>Category</td>
+<td></td>
 <td>A PieceCategoryDef. The planner picks pieces from this category.</td>
 <td>none</td>
 </tr>
@@ -666,32 +721,38 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>count</code></td>
-<td>Count</td>
+<td><strong>Min</strong>, <strong>Max</strong></td>
 <td>How many, as a range. More than 150 is cut to 150.</td>
 <td><code>1~1</code></td>
 </tr>
 <tr>
 <td><code>unique</code></td>
-<td>Only once</td>
+<td></td>
 <td>Sets the count to exactly 1.</td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td><code>filler</code></td>
-<td>Filler</td>
-<td>After the fixed buildings are placed, filler entries fill the free space until the target built share is reached. They may go above their maximum. A filler counts as missing only below half its minimum.</td>
+<td><strong>Filler</strong></td>
+<td>After the fixed buildings are placed, filler entries fill the free space until <code>targetBuilt</code> is reached. They may go above their maximum. A filler counts as missing only below half its minimum. Fillers in the countryside do not fill.</td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td><code>weight</code></td>
-<td>Weight</td>
-<td>Only on <code>piece</code> entries. Changes how often that piece is chosen wherever its category is drawn in this plan. <code>0</code> turns the piece off. On <code>tag</code> entries it has no effect.</td>
+<td><strong>Wt.</strong></td>
+<td>Only on <code>piece</code> entries. Changes how often that piece is chosen wherever its category is drawn in this settlement type. <code>0</code> turns the piece off. On <code>tag</code> entries it has no effect.</td>
 <td><code>1</code></td>
 </tr>
 <tr>
 <td><code>lootTable</code></td>
 <td></td>
-<td>A LootTableDef. Used for loot spots in these pieces that name no table of their own. Only on <code>tag</code> entries. A missing table logs a warning.</td>
+<td>A LootTableDef. Used for loot spots in the pieces of this entry that name no table of their own. A missing table logs a warning.</td>
+<td>none</td>
+</tr>
+<tr>
+<td><code>withIdeo</code>, <code>withoutIdeo</code></td>
+<td></td>
+<td>Meme or precept defNames. The entry is only built when the owning faction's ideoligion has (or lacks) one of them. See <a href="Settlements.html#ideoligion-conditions-on-entries">Settlements</a>.</td>
 <td>none</td>
 </tr>
 </tbody>
@@ -702,7 +763,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>The minimum of an entry is a wish, not a guarantee. If the space runs out, the planner reports what it could not place.</li>
 </ul>
 <h2 id="fields-and-pens">Fields and pens</h2>
-<p>Fields and pens belong to a district in the suburb or countryside ward. From <code>CBF_Plan_Village_New</code>:</p>
+<p>Fields and pens belong to a district in the suburb or countryside ward. A field is a crop area laid out next to a building of the district. A pen is a fenced area with animals. From <code>CBF_Plan_Village_New</code>:</p>
 <pre><code class="language-xml">&lt;<span class="xt">li</span>&gt;
   &lt;<span class="xt">kind</span>&gt;Rural&lt;/<span class="xt">kind</span>&gt;
   &lt;<span class="xt">districts</span>&gt;
@@ -750,7 +811,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <thead>
 <tr>
 <th>Node</th>
-<th>Editor name</th>
+<th>Editor label</th>
 <th>What it does</th>
 <th>Default</th>
 </tr>
@@ -758,25 +819,25 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>count</code></td>
-<td>Count</td>
+<td></td>
 <td>How many fields this entry adds to the ward.</td>
 <td><code>1~1</code></td>
 </tr>
 <tr>
 <td><code>tags</code></td>
-<td>Categories (Farmsteads)</td>
-<td>Categories whose buildings get a field next to them. Empty in a district takes the categories of the district's entries.</td>
+<td><strong>Farmsteads</strong></td>
+<td>Categories whose buildings get a field next to them. Empty takes the categories of the district's entries.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>plants</code></td>
-<td>Plants</td>
+<td></td>
 <td>ThingDefs of the crops.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>crops</code></td>
-<td>Crop list</td>
+<td><strong>Crop list</strong></td>
 <td>A CropListDef with weighted plants. Used instead of <code>plants</code> when set, see <a href="Loot.html#crop-lists">Loot</a>.</td>
 <td>none</td>
 </tr>
@@ -788,20 +849,20 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>weight</code></td>
-<td>Weight</td>
-<td>Chance of this field kind when a district has several.</td>
+<td></td>
+<td>Chance of this field kind when a ward has several.</td>
 <td><code>1</code></td>
 </tr>
 </tbody>
 </table>
-<p>The field needs a building from <code>tags</code> to grow next to. List that category in the district's entries, or the field has no farmhouse.</p>
+<p>A field needs a building from <code>tags</code> to lie next to. List that category in the district's entries, or the field has no farmhouse.</p>
 <h3 id="pen-nodes">Pen nodes</h3>
 <p>Pens are read from the <code>Rural</code> ward only. They are placed near the buildings of their district.</p>
 <table>
 <thead>
 <tr>
 <th>Node</th>
-<th>Editor name</th>
+<th>Editor label</th>
 <th>What it does</th>
 <th>Default</th>
 </tr>
@@ -809,43 +870,49 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>count</code></td>
-<td>Count</td>
+<td></td>
 <td>How many pens.</td>
 <td><code>1~1</code></td>
 </tr>
 <tr>
+<td><code>name</code></td>
+<td></td>
+<td>Name of the pen in log messages.</td>
+<td><code>Pen</code></td>
+</tr>
+<tr>
 <td><code>pawns</code></td>
-<td>Animals</td>
+<td></td>
 <td>A PawnListDef with the animals. A missing list gives an empty pen.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>herd</code></td>
-<td></td>
-<td>Animals per pen. Capped by the pen area.</td>
+<td><strong>Herd</strong></td>
+<td>Animals per pen. Capped at one animal per 12 cells of pen.</td>
 <td><code>3~7</code></td>
 </tr>
 <tr>
 <td><code>plants</code></td>
-<td>Plants</td>
+<td><strong>Growth</strong></td>
 <td>What grows inside the pen.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>crops</code></td>
-<td>Crop list</td>
+<td><strong>Crop list</strong></td>
 <td>A CropListDef, used instead of <code>plants</code> when set.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>terrain</code></td>
-<td>Floor</td>
+<td><strong>Soil</strong></td>
 <td>TerrainDef for the pen floor. Empty keeps the map terrain.</td>
 <td>none</td>
 </tr>
 <tr>
 <td><code>weight</code></td>
-<td>Weight</td>
+<td></td>
 <td>Makes this pen larger or smaller.</td>
 <td><code>1</code></td>
 </tr>
@@ -853,13 +920,14 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </table>
 <p>The ward node <code>supply</code> (default 1.2) scales the size of all pens in the countryside.</p>
 <h2 id="harbors">Harbors</h2>
-<p>A medieval settlement at the coast or on a river of at least <code>minRiverWidth</code> cells gets a harbor at the shore: jetties, fishing huts, harbor store, harbor master and boat sheds, with a path to the town.</p>
+<p>A settlement at the coast, or on a river at least <code>minRiverWidth</code> cells wide, can get harbor buildings at the shore, such as jetties, fishing huts and boat sheds. <code>harbor</code> sits on the settlement type. From <code>CBF_Plan_MarketCity_New</code>:</p>
 <pre><code class="language-xml">&lt;<span class="xt">harbor</span>&gt;
   &lt;<span class="xt">entries</span>&gt;
     &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Harbormaster&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_HarborStore&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Jetty&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Boathouse&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;0~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_HarborStore&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Jetty&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;2~3&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_FisherHut&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Boathouse&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">entries</span>&gt;
 &lt;/<span class="xt">harbor</span>&gt;
 </code></pre>
@@ -874,7 +942,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>entries</code></td>
-<td>Categories (<code>tag</code>) with a count range.</td>
+<td>A category (<code>tag</code>) or one piece (<code>piece</code>), each with a count range.</td>
 <td>none</td>
 </tr>
 <tr>
@@ -889,9 +957,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>Harbor pieces need a Connect anchor named <code>Water</code> on their water side, see <a href="Modding-Pieces.html#connect">Pieces and categories in XML</a>. Without suitable water no harbor is built.</p>
+<p>Harbor pieces need an anchor named <code>Water</code> on their water side, see <a href="Modding-Pieces.html#connect">Pieces and categories in XML</a>. Pieces without it are not used. Without suitable water no harbor is built.</p>
 <h2 id="tuning-fields">Tuning fields</h2>
-<p>These sit on the plan, next to the header fields:</p>
+<p>These sit on the settlement type, next to the header fields:</p>
 <pre><code class="language-xml">&lt;<span class="xt">roadMain</span>&gt;2&lt;/<span class="xt">roadMain</span>&gt;
 &lt;<span class="xt">roadLane</span>&gt;2&lt;/<span class="xt">roadLane</span>&gt;
 &lt;<span class="xt">targetBuilt</span>&gt;0.62&lt;/<span class="xt">targetBuilt</span>&gt;
@@ -902,7 +970,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <thead>
 <tr>
 <th>Node</th>
-<th>Editor name</th>
+<th>Editor label</th>
 <th>What it does</th>
 <th>Default</th>
 </tr>
@@ -910,73 +978,79 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>roadMain</code></td>
-<td>Main road width</td>
-<td>Width of the main road. At most 2 for medieval plans, 6 for modern ones. More is a load error.</td>
+<td></td>
+<td>Width of the main road. At most 6 for <code>ModernTown</code>, 2 for every other kind. More is a load error.</td>
 <td><code>2</code></td>
 </tr>
 <tr>
 <td><code>roadLane</code></td>
-<td>Lane width</td>
+<td></td>
 <td>Width of the side lanes. Same limits.</td>
 <td><code>1</code></td>
 </tr>
 <tr>
 <td><code>targetBuilt</code></td>
-<td>Target built share</td>
-<td>Share of the town and suburb area covered by buildings. It sets how large the settlement is planned and how long filler entries keep filling. 0 uses the planner default of 0.62. Shipped medieval plans use 0.5 to 0.62.</td>
+<td></td>
+<td>Share of the town and suburb area covered by buildings. It sets how large the settlement is planned and how long filler entries keep filling. 0 uses the planner default of 0.62. Shipped medieval settlement types use 0.5 to 0.62.</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>treeShare</code></td>
+<td><strong>Tree share</strong></td>
+<td>Share of the wild trees inside the settlement that stay standing, 0 to 1.</td>
 <td><code>0</code></td>
 </tr>
 <tr>
 <td><code>defenderPoints</code></td>
-<td>Defender strength</td>
-<td>Points for wards without a garrison.</td>
+<td></td>
+<td>Points for defenders of wards without a garrison.</td>
 <td><code>180~420</code></td>
 </tr>
 <tr>
 <td><code>defendersOnWall</code></td>
-<td>Defenders on the wall</td>
+<td></td>
 <td>Share of point-based defenders on the wall, 0 to 1.</td>
 <td><code>0.25</code></td>
 </tr>
 <tr>
 <td><code>assaultDelayTicks</code></td>
-<td>Assault delay</td>
-<td>Ticks before the defenders attack.</td>
+<td></td>
+<td>Loads, but has no effect in the current version.</td>
 <td><code>25000</code></td>
 </tr>
 </tbody>
 </table>
-<p>Gaps between buildings are set per ward with <code>buildingGap</code>. The plan nodes <code>minBuildingGap</code> and <code>maxBuildingGap</code> are only used when the plan has no town ward.</p>
+<p>Gaps between buildings are set per ward with <code>buildingGap</code>. The settlement type nodes <code>minBuildingGap</code> and <code>maxBuildingGap</code> are only used when there is no town ward.</p>
 <p>Use <code>targetBuilt</code> to change density.</p>
-<p>Older plans put <code>walls</code>, <code>emplacements</code>, <code>gatehouses</code> and <code>districts</code> directly on the plan. That still loads as a single town ward. Use <code>wards</code> for new plans.</p>
+<p>Older settlement types put <code>walls</code>, <code>emplacements</code>, <code>gatehouses</code> and <code>districts</code> directly on the def. That still loads as a single town ward. Use <code>wards</code> for new settlement types.</p>
 <h2 id="how-cbf-picks-a-plan-for-a-faction">How CBF picks a plan for a faction</h2>
-<p>For every faction base CBF builds a pool of plans, then draws one:</p>
+<p>For every faction base, CBF builds a pool of settlement types, then draws one:</p>
 <ol>
-<li><strong>Own plans.</strong> Every plan whose <code>factionTags</code> names the faction's defName or its <code>categoryTag</code>.</li>
-<li><strong>General plans.</strong> Only if step 1 found nothing: every plan with <code>forAllFactions</code> set and the faction's tech level in <code>techLevels</code>.</li>
-<li><strong>Exclusions.</strong> A faction listed in <code>excludeFactions</code> never gets that plan, in either step.</li>
-<li><strong>Unusable plans.</strong> Plans without a usable material list and plans of the hidden kinds <code>Camp</code> and <code>Dungeon</code> are left out.</li>
-<li><strong>Tier filter.</strong> With World Domination 2.0, only the plans whose <code>wdLevel</code> is closest to the base's tier stay; plans without <code>wdLevel</code> drop out as soon as one plan in the pool has one. With A Rim of Ice and Fire, the faction's main seat prefers plans with <code>wdLevel</code> 3 or more, other bases plans below 3.</li>
-<li><strong>Draw.</strong> One plan by weight, <code>share</code> (0 counts as 1). The draw depends on the world object, so the same base always gets the same plan.</li>
+<li><strong>Own types.</strong> Every settlement type whose <code>factionTags</code> names the faction's defName or its <code>categoryTag</code>.</li>
+<li><strong>General types.</strong> Only if step 1 found nothing: every settlement type with <code>forAllFactions</code> set and the faction's tech level in <code>techLevels</code>.</li>
+<li><strong>Exclusions.</strong> A faction listed in <code>excludeFactions</code> never gets that settlement type, in either step.</li>
+<li><strong>Unusable types.</strong> Settlement types without a material list, of the kind <code>Dungeon</code>, or with <code>campTypes</code> or <code>riafHolding</code> are left out.</li>
+<li><strong>Tier filter.</strong> With World Domination 2.0, a base with a tier only keeps settlement types that have a <code>wdLevel</code>, and of those the ones closest to its tier. Among these, types whose <code>wdType</code> names the base's World Domination type win. Otherwise types without <code>wdType</code> are preferred. If no type in the pool has a <code>wdLevel</code>, the base keeps RimWorld's own map. With A Rim of Ice and Fire, the faction's main seat prefers settlement types with <code>wdLevel</code> 3 or more, other bases types below 3.</li>
+<li><strong>Draw.</strong> One settlement type by weight, <code>share</code> (0 counts as 1). The draw depends on the world object, so the same base always gets the same settlement type.</li>
 </ol>
-<p>A faction that ends up with an empty pool keeps RimWorld's own base. A place without a faction takes the plans that have no <code>factionTags</code>.</p>
-<p>Players can switch single factions back to RimWorld's bases in the mod settings, see <a href="Mod-Settings.html#settlements-per-faction">Mod settings</a>. A switched-off faction gets no plan, whatever the XML says.</p>
-<p>Quest sites work differently. They only take plans that have <code>siteTags</code>.</p>
+<p>A faction that ends up with an empty pool keeps RimWorld's own base. A place without a faction takes the settlement types that have no <code>factionTags</code>.</p>
+<p>Players can switch single factions back to RimWorld's bases in the mod settings, see <a href="Mod-Settings.html#settlements-per-faction">Mod settings</a>. A switched-off faction gets no settlement type, whatever the XML says.</p>
+<p>Quest sites work differently. They only take settlement types that have <code>siteTags</code>. Quest camps, such as bandit camps and outposts, take settlement types of the kind <code>Camp</code> whose <code>campTypes</code> name the site.</p>
 <h2 id="tips">Tips</h2>
 <ul>
-<li>Start from a shipped plan. Copy it, change <code>defName</code>, <code>label</code> and <code>factionTags</code>, then change one thing at a time.</li>
-<li>Give a plan for your own faction <code>factionTags</code> and leave <code>forAllFactions</code> off. Then it cannot spill over to other factions of the same tech level.</li>
+<li>Start from a shipped settlement type. Copy it, change <code>defName</code>, <code>label</code> and <code>factionTags</code>, then change one thing at a time.</li>
+<li>Give a settlement type for your own faction <code>factionTags</code> and leave <code>forAllFactions</code> off. Then it cannot spill over to other factions of the same tech level.</li>
 <li>Setting <code>forAllFactions</code> without <code>techLevels</code> does nothing.</li>
-<li>A faction with own plans never gets the general ones. If you add one plan for a faction, it loses the shipped general plans. Add enough plans of your own, or none.</li>
+<li>A faction with own settlement types never gets the general ones. If you add one settlement type for a faction, it loses the shipped general ones. Add enough of your own, or none.</li>
 <li>Use <code>share</code> to make a large town rare. The Medieval Overhaul village uses 80, the fortress city 10.</li>
 <li>Every <code>tag</code> must match a category that has pieces for the loaded mods. A category without pieces places nothing.</li>
 <li>Put <code>MayRequire</code> on the def node and on every list item that names content from another mod.</li>
 <li>A very large program on a small map gets cut, and CBF logs a warning with the edge length it needed. Raise <code>mapSize</code>, lower the counts, or raise <code>targetBuilt</code>.</li>
 <li>Mark the bulk housing of each ward as <code>filler</code>. Fixed buildings are placed first, filler takes what is left.</li>
 <li>Keep <code>unique</code> for keeps, town halls and similar single buildings.</li>
-<li>Pens need an <code>Rural</code> ward. Fields need a <code>Suburb</code> or <code>Rural</code> ward and a farmhouse category in the same district.</li>
-<li>The editor preview shows the plan on a flat map. Build a real base afterwards; the terrain of a tile changes a lot.</li>
-<li><code>defName</code> is saved with the world. Renaming it later makes existing bases draw a new plan.</li>
+<li>Pens need a <code>Rural</code> ward. Fields need a <code>Suburb</code> or <code>Rural</code> ward and a farmhouse category in the same district.</li>
+<li>The editor preview shows the settlement type on a flat map. Build a real base afterwards; the terrain of a tile changes a lot.</li>
+<li><code>defName</code> is saved with the world. Renaming it later makes existing bases draw a new settlement type.</li>
 </ul>
 <h2 id="field-reference">Field reference</h2>
 <p>Every node with its type and default:</p>
@@ -989,5 +1063,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><a href="BudgetEntry.html">BudgetEntry</a> (building entry)</li>
 <li><a href="Ackerspec.html">Ackerspec</a> (field)</li>
 <li><a href="Gehegespec.html">Gehegespec</a> (pen)</li>
+<li><a href="Minenspec.html">Minenspec</a> (mine)</li>
+<li><a href="Dekospec.html">Dekospec</a> (decor and defenses)</li>
+<li><a href="HafenSpec.html">HafenSpec</a> (harbor)</li>
 <li><a href="Field-Reference.html">Field reference</a> (all pages)</li>
 </ul><div class="schritte"><a href="Modding-Overview.html"><span>Previous</span>Your own content mod</a><a class="weiter" href="Modding-Pieces.html"><span>Next</span>Pieces and categories in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#what-a-settlement-type-is">What a settlement type is</a><a class="t2" href="#minimal-example">Minimal example</a><a class="t2" href="#header-fields">Header fields</a><a class="t3" href="#mayrequire">MayRequire</a><a class="t2" href="#wards">Wards</a><a class="t3" href="#walls-emplacements-and-gatehouses">Walls, emplacements and gatehouses</a><a class="t3" href="#garrison">Garrison</a><a class="t2" href="#districts-and-building-entries">Districts and building entries</a><a class="t3" href="#district-nodes">District nodes</a><a class="t3" href="#building-entries">Building entries</a><a class="t2" href="#fields-and-pens">Fields and pens</a><a class="t3" href="#field-nodes">Field nodes</a><a class="t3" href="#pen-nodes">Pen nodes</a><a class="t2" href="#harbors">Harbors</a><a class="t2" href="#tuning-fields">Tuning fields</a><a class="t2" href="#how-cbf-picks-a-plan-for-a-faction">How CBF picks a plan for a faction</a><a class="t2" href="#tips">Tips</a><a class="t2" href="#field-reference">Field reference</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

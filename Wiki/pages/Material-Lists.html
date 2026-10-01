@@ -117,8 +117,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Loot / Material lists</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html" class="hier">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="material-lists">Material lists</h1><p class="unter">Loot</p>
-<p>A material list decides what the generator uses for the parts it builds itself: walls where no piece draws one, doors in the town wall, gates without a gatehouse, fences, roads, bridges, roofs and so on. Every settlement type names one material list. There is no hidden default: a settlement type without a usable material list is not built.</p>
-<p>The lists are edited in the Loot tab, part <strong>Material lists</strong>.</p>
+<p>A material list says which things, stuff and floors the generator uses for the parts it builds itself. Examples: walls and towers where no wall piece is drawn, doors in the town wall, gates without a gatehouse, fences, roads, bridges and fields.</p>
+<p>Each such part is a <strong>role</strong>, for example <strong>Wall</strong> or <strong>Door</strong>. A <a href="Pieces.html">piece</a> can also name a role instead of a fixed thing. The material list then decides what fills the role, so the same piece can look different in different settlement types.</p>
+<p>Every settlement type names one material list. There is no hidden default: a settlement type that names no material list is switched off.</p>
+<p>The lists are edited in the Loot tab, part <strong>Materials</strong>.</p>
 <h2 id="shipped-lists">Shipped lists</h2>
 <table>
 <thead>
@@ -129,7 +131,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td>Base</td>
+<td>base</td>
 <td>Parent of the others. Base game things, with Medieval Overhaul walls where that mod is active.</td>
 </tr>
 <tr>
@@ -141,14 +143,14 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>VFE Medieval 2 settlements.</td>
 </tr>
 <tr>
-<td>Modern</td>
+<td>modern</td>
 <td>Modern towns.</td>
 </tr>
 </tbody>
 </table>
-<p>A list can have a <strong>parent</strong>. Roles the list does not define itself are taken from the parent. Inherited roles are shown greyed; <strong>Override</strong> copies one into the list so it can be changed.</p>
+<p>A list can inherit from another list, set on the right under <strong>Inherits from</strong> (the parent). Roles the list does not define itself come from the parent. The same happens when none of the list's own rows for a role fit. Inherited roles are shown greyed under <strong>Inherited</strong>. <strong>Override</strong> copies them into the list so you can change them.</p>
 <h2 id="roles">Roles</h2>
-<p>Each row is one role. A role can appear in several rows with different conditions.</p>
+<p>Each row is one role. A role can appear in several rows with different conditions, see <a href="#which-row-wins">Which row wins</a>.</p>
 <table>
 <thead>
 <tr>
@@ -158,16 +160,20 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td>Wall, Inner wall</td>
-<td>Walls the generator builds where no piece draws one.</td>
+<td>Wall</td>
+<td>The town wall and towers where the generator builds them itself. Walls of pieces that name the role.</td>
+</tr>
+<tr>
+<td>Inner wall</td>
+<td>Walls between rooms, in pieces that name the role.</td>
 </tr>
 <tr>
 <td>Door</td>
-<td>Doors in the town wall, the walkway, towers and posterns.</td>
+<td>Doors in the town wall, on the walkway, in towers and posterns.</td>
 </tr>
 <tr>
 <td>Gate</td>
-<td>Gate passages without a gatehouse.</td>
+<td>Gates in wall passages without a gatehouse.</td>
 </tr>
 <tr>
 <td>Embrasure</td>
@@ -175,15 +181,19 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td>Pillar, Window</td>
-<td>Pillars and windows of generated walls.</td>
+<td>Pillars and windows in pieces that name the role.</td>
 </tr>
 <tr>
-<td>Road, Road edge</td>
+<td>Road</td>
 <td>Roads, when the ward names no roads of its own.</td>
 </tr>
 <tr>
+<td>Road edge</td>
+<td>The strip along roads, in pieces that name the role. The generator takes road edges from the ward.</td>
+</tr>
+<tr>
 <td>Interior floor, Fine floor, Rough floor, Dirt floor</td>
-<td>Floors the generator lays.</td>
+<td>Floors the generator lays, for example fine floor on squares, rough floor under the town wall, dirt under fences. Floors of pieces that name the role.</td>
 </tr>
 <tr>
 <td>Field soil, Crop</td>
@@ -195,15 +205,15 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td>Roof, Thin roof</td>
-<td>Roofs.</td>
+<td>Roofs of pieces that name the role.</td>
 </tr>
 <tr>
 <td>Fence, Fence gate, Pen marker</td>
-<td>Pens.</td>
+<td>Pens for animals.</td>
 </tr>
 <tr>
 <td>Light, Furniture, Container</td>
-<td>Things for roles a piece asks for.</td>
+<td>Things in pieces that name the role.</td>
 </tr>
 <tr>
 <td>Conduit, Conduit under roads, Conduit under water</td>
@@ -211,15 +221,19 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
+<p>If no row gives a <strong>Door</strong> or an <strong>Embrasure</strong>, the generator builds wall there. Without a <strong>Fence gate</strong>, a pen stays open at that spot and the animals can walk off.</p>
 <p>For each row:</p>
 <ul>
-<li><strong>Things</strong>, <strong>Stuff</strong>, <strong>Floors</strong>, <strong>Roofs</strong>: candidates in order. The first one that exists is used. Stuff can be <strong>MapStone</strong> or <strong>MapWood</strong>, the stone or wood of the map.</li>
-<li><strong>Applies to</strong>: pieces or categories this row is meant for, for example a palisade door only for palisade walls, palisade towers and palisade gates.</li>
-<li><strong>Ward</strong>: the row only applies in this ward, for example a different road for the old town, the suburb and the countryside.</li>
-<li><strong>Critical</strong>: if a critical role finds nothing, the whole list is unusable and marked red.</li>
+<li><strong>Thing</strong>, <strong>Stuff</strong>, <strong>Floor</strong>, <strong>Roof</strong>: candidates in order. The first one that exists in the game is used, so a row can name a mod item first and a base game item after it. Stuff can also be <strong>Stone of the map</strong> (blocks from the rock of the map tile) or <strong>Wood of the map</strong>. In XML these are <code>MapStone</code> and <code>MapWood</code>. If no stuff exists, the thing's default stuff is used.</li>
+<li><strong>Applies to</strong>: pieces or categories. The row then only applies in a ward whose walls, towers or gatehouses use one of them. Example: a palisade door for wards fortified with palisade walls, palisade towers and palisade gates.</li>
+<li><strong>Ward</strong>: the row only applies in this kind of ward: <strong>Town</strong>, <strong>Suburb</strong> or <strong>Countryside</strong>. Example: cobblestone roads in the town, dirt roads in the countryside. A ward is one ring of a settlement, see <a href="Settlements.html#wards">Wards</a>.</li>
+<li><strong>Critical</strong> or <strong>Optional</strong>: if a critical role finds nothing, the whole list is unusable and shown in red. An optional role simply stays empty.</li>
+<li><strong>Floor mix</strong> mixes several floors by weight. The weights are set in the file.</li>
+<li><strong>Tag search</strong> is the last resort: when no candidate exists, CBF looks for a thing or floor with this tag.</li>
 </ul>
-<p><strong>Applies to</strong> and <strong>Ward</strong> only act on walls, roads and floors the generator draws itself. Inside buildings they do nothing; buildings take the material of the map as designed.</p>
-<p>When several rows of the same role fit, the most specific one wins: a row whose <strong>Applies to</strong> matches beats a row with a matching <strong>Ward</strong>, which beats a row without conditions.</p>
+<p><strong>Applies to</strong> and <strong>Ward</strong> only change what is filled through the material list: the parts the generator draws itself, and roles a piece names. Things drawn directly into a piece stay as drawn.</p>
+<h3 id="which-row-wins">Which row wins</h3>
+<p>When several rows of the same role fit, the most specific one wins. A row whose <strong>Applies to</strong> matches beats a row with a matching <strong>Ward</strong>. A row with a matching <strong>Ward</strong> beats a row without conditions.</p>
 <h2 id="in-the-settlement-type">In the settlement type</h2>
-<p>The General section of the Settlement tab has the row <strong>Material list</strong>. The row turns red when the settlement type names no list or an unusable one. The <strong>...</strong> button opens the list.</p>
-<p>For writing material lists in XML, see <a href="Modding-Overview.html#material-lists">Your own content mod</a>.</p><div class="schritte"><a href="Loot.html"><span>Previous</span>Object lists and loot</a><a class="weiter" href="Pawns.html"><span>Next</span>Pawn kinds and lists</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#shipped-lists">Shipped lists</a><a class="t2" href="#roles">Roles</a><a class="t2" href="#in-the-settlement-type">In the settlement type</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+<p>The <strong>General</strong> section of the Settlement tab has the row <strong>Material list</strong>. The row turns red when the settlement type names no list or an unusable one. The <strong>...</strong> button opens the list.</p>
+<p>For writing material lists in XML, see <a href="Modding-Overview.html#material-lists">Your own content mod</a>.</p><div class="schritte"><a href="Loot.html"><span>Previous</span>Object lists and loot</a><a class="weiter" href="Pawns.html"><span>Next</span>Pawn kinds and lists</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#shipped-lists">Shipped lists</a><a class="t2" href="#roles">Roles</a><a class="t3" href="#which-row-wins">Which row wins</a><a class="t2" href="#in-the-settlement-type">In the settlement type</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

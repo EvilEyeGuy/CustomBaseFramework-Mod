@@ -117,11 +117,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Playing / Quests</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html" class="hier">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="quests">Quests</h1><p class="unter">Playing</p>
-<p>CBF ships two quests for Medieval Overhaul. Both send you to a settlement of a friendly faction that CBF builds as a full town. For building your own quests see <a href="Modding-Quests.html">Modding quests</a>.</p>
+<p>CBF ships two quests for Medieval Overhaul. In both, a friendly faction asks for help with one of its settlements that brigands have attacked. CBF builds that settlement as a full town on its own map. For building your own quests see <a href="Modding-Quests.html">Modding quests</a>.</p>
 <h2 id="requirements">Requirements</h2>
 <ul>
 <li>Medieval Overhaul must be active. The quests are in <code>1.6/Mods/MedievalOverhaul</code>.</li>
-<li>The quest giver is a faction that is not hostile to you, has a living leader and can get a CBF village or market town. In practice these are the Medieval Overhaul noble houses. With VFE Medieval 2 active, its kingdoms qualify too. Medieval factions of other mods that get the shared village plan qualify as well.</li>
+<li>The quest giver is a faction that is not hostile to you, has a living leader and can get a CBF village or market town. In practice these are the Medieval Overhaul noble houses. With VFE Medieval 2 active, its kingdoms qualify too. Medieval factions of other mods qualify when they get the village that CBF offers to all medieval factions.</li>
 <li>The enemy is the Medieval Overhaul brigands faction. It must exist in the world and be hostile to you and to the quest giver.</li>
 <li>Factions switched off in the <a href="Mod-Settings.html">mod settings</a> and Empire vassal colonies are never quest givers.</li>
 <li>Both quests enter the normal random quest pool from 300 threat points.</li>
@@ -129,9 +129,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>The settlement is a village or a market town in the style of the quest giver, see <a href="Settlement-Types.html">Settlement types</a>. The map is prepared in the background when you arrive by caravan, transport pod, shuttle or gravship, so the game does not freeze on arrival.</p>
 <h2 id="raided-settlement">Raided settlement</h2>
 <p>Quest names: "The Raided Village", "Bandits in [lord]'s Town", "[lord] and the Raided Settlement" and similar. On the world map the site is called "raided settlement".</p>
-<p>Brigands have overrun a settlement of the quest giver. The town is damaged: breached walls, a destroyed gate in some cases, burnt rooms, fires, rubble, dead residents and dead brigands, trampled fields and missing livestock. Part of the loot is gone or piled up with the brigands. A few residents may be held prisoner. The brigands hold the town as its garrison.</p>
+<p>Brigands have overrun a settlement of the quest giver and now hold it as its garrison. The town is damaged: breached walls, in some cases a destroyed gate, burnt rooms, fires, rubble, dead residents and dead brigands, trampled fields and missing livestock. Part of the loot is gone or piled up with the brigands. A few residents may be held prisoner.</p>
 <h3 id="what-you-do">What you do</h3>
-<p>Attack the settlement and defeat all brigands. There is no fixed reward. What is left in the settlement is the reward.</p>
+<p>Attack the settlement and defeat all brigands. There is no fixed reward: what is left in the settlement is the reward.</p>
 <h3 id="the-choice">The choice</h3>
 <p>When the last brigand is beaten, a letter asks what to do with the settlement:</p>
 <table>
@@ -146,7 +146,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td>Leave it to the lord</td>
 <td>+20</td>
-<td>The settlement and its buildings go back to the quest giver. Everything still there is forbidden and belongs to them. Taking items or claiming buildings there costs goodwill.</td>
+<td>The settlement and its buildings go back to the quest giver. Everything still there is forbidden and belongs to them. Taking items or claiming buildings there costs goodwill, see <a href="#goodwill-for-taken-goods">Goodwill for taken goods</a>.</td>
 </tr>
 <tr>
 <td>Take what is left</td>
@@ -156,7 +156,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tbody>
 </table>
 <ul>
-<li>Items your colonists already carry when you choose the first option count as taken.</li>
+<li>Items your colonists already carry when you choose <strong>Leave it to the lord</strong> count as taken.</li>
 <li>If you leave the map without deciding, you take what is left (+3).</li>
 <li>Both options complete the quest.</li>
 </ul>
@@ -178,7 +178,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>Goodwill and, with Royalty, honor are possible. For honor you pick the colonist who receives it.</li>
 </ul>
 <h3 id="taking-things">Taking things</h3>
-<p>The settlement belongs to the quest giver from the start. Taking items from it or claiming its buildings costs goodwill. The same rules apply as after "Leave it to the lord" in the raided settlement, see below.</p>
+<p>The settlement belongs to the quest giver from the start. Taking items from it or claiming its buildings costs goodwill, see <a href="#goodwill-for-taken-goods">Goodwill for taken goods</a>.</p>
 <h3 id="failure_1">Failure</h3>
 <ul>
 <li>You do not arrive within 3 to 6 days. The settlement has fallen.</li>
@@ -186,12 +186,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>You leave the map while attackers are still there.</li>
 </ul>
 <h2 id="goodwill-for-taken-goods">Goodwill for taken goods</h2>
-<p>Applies to the contested settlement and to a raided settlement left to the lord. Inspecting the site on the world map shows "Belongs to [faction]. Taking items costs goodwill." while it applies.</p>
+<p>These rules apply to the contested settlement and to a raided settlement left to the lord. While they apply, the site on the world map shows "Belongs to [faction]. Taking items costs goodwill." ("Belongs to [faction] again." after a raided settlement was left to the lord).</p>
 <ul>
-<li>Counted are items that lay in the settlement when the map was generated. Pawns, corpses and chunks do not count.</li>
+<li>Only items that lay in the settlement when the map was generated count. Pawns, corpses and chunks do not count.</li>
 <li>Items that come to the map later do not count, for example the gear of dead attackers.</li>
 <li>An item counts as taken when one of your colonists picks it up, carries it, equips it or wears it.</li>
 <li>Claiming a building of the owning faction counts at its market value.</li>
-<li>The cost is 1.5 goodwill per 1000 silver of market value. Fractions add up until they reach a full point.</li>
+<li>The cost is 1.5 goodwill per 1000 silver of market value. Fractions add up until they reach a full point, for example taking goods worth 400 silver three times costs 1 goodwill.</li>
 <li>The history entry reads "took goods from their settlement".</li>
 </ul><div class="schritte"><a href="Settlement-Types.html"><span>Previous</span>Shipped settlements</a><a class="weiter" href="Mod-Settings.html"><span>Next</span>Mod settings</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#requirements">Requirements</a><a class="t2" href="#raided-settlement">Raided settlement</a><a class="t3" href="#what-you-do">What you do</a><a class="t3" href="#the-choice">The choice</a><a class="t3" href="#failure">Failure</a><a class="t2" href="#contested-settlement">Contested settlement</a><a class="t3" href="#what-you-do_1">What you do</a><a class="t3" href="#reward">Reward</a><a class="t3" href="#taking-things">Taking things</a><a class="t3" href="#failure_1">Failure</a><a class="t2" href="#goodwill-for-taken-goods">Goodwill for taken goods</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

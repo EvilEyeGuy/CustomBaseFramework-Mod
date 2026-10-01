@@ -134,10 +134,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Gap between buildings in this ward, in cells, as a range. 0~0 takes minBuildingGap and maxBuildingGap of the settlement.</td>
 </tr>
 <tr>
-<td><code>kind</code><br>Kind</td>
-<td>Stadtteilart (Town, Castle, Suburb, Rural)</td>
-<td><code>Town</code></td>
-<td>On a ward: which part of the settlement it is, Town, Suburb or Rural. Castle is accepted but not planned as a part of its own. On an object list: Fill fills the containers, Empty places them without loot or occupants.</td>
+<td><code>clearRubble</code></td>
+<td>true/false</td>
+<td><code>true</code></td>
+<td>Clears plants from open ground in this ward. Off keeps the plants and a share of the trees, the more the further out the ward lies.</td>
 </tr>
 <tr>
 <td><code>decor</code></td>
@@ -176,6 +176,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Pawns stationed in this ward. Each entry names a pawn list, a count and a post.</td>
 </tr>
 <tr>
+<td><code>gate</code></td>
+<td>text</td>
+<td>none</td>
+<td>Door for the passages in this ward's wall. Empty takes it from the material list. Not the gatehouse, that is set under gatehouses.</td>
+</tr>
+<tr>
 <td><code>gatehouses</code></td>
 <td>list of <a href="WallEntry.html">WallEntry</a></td>
 <td>none</td>
@@ -186,6 +192,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>list of text</td>
 <td>none</td>
 <td>The ground between the houses. Empty means the map stays as it is. Lanes, squares and fields keep their own surface and are left alone.</td>
+</tr>
+<tr>
+<td><code>kind</code></td>
+<td>Stadtteilart (Town, Castle, Suburb, Rural)</td>
+<td><code>Town</code></td>
+<td>Which ring of the settlement this ward is: Town (innermost), Suburb or Rural (countryside). Each kind at most once per settlement type. Castle exists in the code but is not used.</td>
 </tr>
 <tr>
 <td><code>label</code></td>
@@ -218,12 +230,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Animal pen types. Only the Rural ward builds pens. On a district they go near its own houses.</td>
 </tr>
 <tr>
-<td><code>clearRubble</code></td>
-<td>true/false</td>
-<td><code>true</code></td>
-<td>Clears plants from open ground in this ward. Off keeps the plants and a share of the trees, the more the further out the ward lies.</td>
-</tr>
-<tr>
 <td><code>roadEdges</code><br>Kerb</td>
 <td>list of text</td>
 <td>none</td>
@@ -234,12 +240,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>list of text</td>
 <td>none</td>
 <td>The surface of lanes, squares and gate passages in this ward. Empty means the standard surface.</td>
-</tr>
-<tr>
-<td><code>gate</code></td>
-<td>text</td>
-<td>none</td>
-<td>Door for the passages in this ward's wall. Empty takes it from the material list. Not the gatehouse, that is set under gatehouses.</td>
 </tr>
 <tr>
 <td><code>supply</code></td>

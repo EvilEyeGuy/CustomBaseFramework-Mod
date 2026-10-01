@@ -117,44 +117,70 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Loot / Object lists and loot</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html" class="hier">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="loot">Loot</h1><p class="unter">Loot</p>
-<p>The Loot tab has five parts, switched at the top of the list: <strong>Lists</strong>, <strong>Tables</strong>, <strong>Containers</strong>, <strong>Crops</strong> and <strong>Material lists</strong>. Material lists have a page of their own: <a href="Material-Lists.html">Material lists</a>. Changes reach the file only when you save.</p>
+<p>The Loot tab holds the lists that fill a settlement besides its buildings: which furniture and containers stand at an anchor, which goods lie in them, and which plants grow on the fields. An anchor is a marked area in a <a href="Pieces.html">piece</a> (a building drawn in the editor) where something is placed once the piece stands, see <a href="Pieces.html#anchors">Anchors</a>.</p>
+<p>The buttons at the top of the list switch between five parts: <strong>Lists</strong> (object lists), <strong>Tables</strong> (loot tables), <strong>Containers</strong>, <strong>Crops</strong> (crop lists) and <strong>Materials</strong> (material lists). Material lists have a page of their own: <a href="Material-Lists.html">Material lists</a>. <strong>+ New</strong> creates an entry in the current part. <strong>Open</strong> opens the file of the selected entry in your text editor.</p>
+<p>Changes reach the file only when you press <strong>Save</strong> at the bottom right.</p>
 <h2 id="object-lists">Object lists</h2>
-<p>An object list names the structures a Loot or Object anchor may place: shelves, crates, market stalls.</p>
+<p>An object list is a set of structures that a <strong>Loot</strong> or <strong>Object</strong> anchor may place, for example shelves, crates or market stalls. At a <strong>Loot</strong> anchor the structures are also filled with goods from a loot table.</p>
 <a class="bild" href="images/loot-list.png" target="_blank"><img alt="An object list" src="images/loot-list.png" loading="lazy"></a>
 <ol>
-<li><strong>Structures</strong> of the list. <strong>Pick structures</strong> adds more.</li>
-<li><strong>Table</strong>: the loot table that fills this structure. Mods that handle their own lootables show "by the mod".</li>
-<li><strong>When emptied</strong>: what the structure becomes after it has been searched.</li>
-<li><strong>Pawn inside</strong> on the right: a chance for someone hiding in it, hostile or of a faction.</li>
-<li><strong>Used in</strong>: the pieces whose anchors use this list.</li>
+<li><strong>Structures</strong> in the list. <strong>Pick structures</strong> below them adds more.</li>
+<li><strong>Table</strong>: the loot table that fills this structure. <strong>from anchor</strong> means the table set on the anchor is used. <strong>from the mod</strong> means the mod that brings the structure fills it itself; it appears when <strong>When emptied</strong> is <strong>mod's own</strong>.</li>
+<li><strong>When emptied</strong>: what the structure becomes once it has been searched. Click to change it.<ul>
+<li><strong>destroyed</strong>: it disappears and leaves no materials.</li>
+<li><strong>open</strong>: the structure itself is placed and the loot lies visibly on it. It stays as it is.</li>
+<li><strong>mod's own</strong>: loot, occupants and empty look come from the mod that brings the structure, as if it had been placed by hand. Only offered for structures whose mod has an empty look of its own, such as Medieval Overhaul's market stalls.</li>
+<li>Any other entry is a building of the same size that replaces it.</li>
+</ul>
+</li>
+<li><strong>Pawn inside</strong> on the right: someone can wait in a container and come out when it is opened. Pick a <a href="Pawns.html#pawn-lists">pawn list</a>, then set the <strong>Chance</strong> per container and the <strong>Count</strong>. With <strong>Hostile</strong> ticked, the pawn attacks when the container is opened: animals go manhunter, people go berserk, or belong to the faction picked under <strong>Faction</strong>. Without <strong>Hostile</strong>, people belong to the faction of the settlement.</li>
+<li><strong>Used in</strong>: the pieces whose anchors use this list. Click a tile to open the piece.</li>
 </ol>
-<p>The preview behind the <strong>...</strong> button in the Piece tab works the same way: changes there can be undone, and a <strong>Save</strong> button appears while the list has unsaved changes.</p>
+<p><strong>Display</strong> on the right decides the use of the list: <strong>Fill</strong> fills the containers with loot, <strong>Empty</strong> places them as plain furniture.</p>
+<p>The <strong>...</strong> button next to an object list in the Piece tab opens a preview of the list. Changes made there can be undone, and a <strong>Save</strong> button appears while the list has unsaved changes.</p>
 <h2 id="loot-tables">Loot tables</h2>
-<p>A loot table decides what comes out. Tables can draw from other tables, so small tables add up to big ones.</p>
+<p>A loot table decides which goods end up in a container. An entry is a single item, a whole category of things, or another table. Small tables can therefore be combined into big ones.</p>
 <a class="bild" href="images/loot-table.png" target="_blank"><img alt="A loot table" src="images/loot-table.png" loading="lazy"></a>
 <ol>
-<li><strong>Entries</strong>: an item, another table or a whole category of things. Each has a weight, a count, quality and condition. <strong>Share</strong> shows the chance that follows from the weights.</li>
-<li><strong>+ Item</strong>, <strong>+ Table</strong>, <strong>+ Category</strong> add entries.</li>
-<li><strong>Rolls</strong> and <strong>Chance</strong> on the right. The chance is checked once for the whole table: if it fails, the table gives nothing. <strong>If empty</strong> is what comes when nothing else does.</li>
-<li><strong>Selected entry</strong>: kind, <strong>Up to tech</strong> for categories, stuff, depth and what happens <strong>If missing</strong> (skip, a fallback, or silver with the entry's count).</li>
-<li><strong>Sample</strong> rolls the table once and shows the result.</li>
+<li><strong>Entries</strong>. Under <strong>Drawn by weight</strong>, each roll picks one entry. The higher its weight (<strong>Wt.</strong>), the more often it comes. <strong>Share</strong> shows the resulting chance in percent. Each entry also has a <strong>Count</strong>, a <strong>Quality</strong> range and a <strong>Condition</strong> (hit points in percent). Entries under <strong>Always included</strong> come every time the table is used, each with its own <strong>Chance</strong>.</li>
+<li><strong>+ Item</strong>, <strong>+ Table</strong> and <strong>+ Category</strong> add entries. Both sections have these buttons.</li>
+<li>The table itself, on the right:<ul>
+<li><strong>Rolls</strong>: how many entries are drawn by weight, as a range.</li>
+<li><strong>Chance</strong>: checked once each time the table is used. If it fails, nothing is drawn by weight. Entries under <strong>Always included</strong> still come.</li>
+<li><strong>Unique</strong>: each entry is drawn at most once.</li>
+<li><strong>If empty</strong>: a table that is drawn instead when this one yields nothing.</li>
+</ul>
+</li>
+<li><strong>Selected entry</strong>: the entry clicked in the list. <strong>Kind</strong> switches between <strong>Item</strong>, <strong>Table</strong> and <strong>Category</strong>. For a category, <strong>Up to tech</strong> leaves out things above that tech level. For an item, <strong>Material</strong> sets the stuff it is made of. <strong>If missing</strong> decides what happens when the item does not exist, usually because its mod is not loaded:<ul>
+<li><strong>Skip</strong>: the entry drops out.</li>
+<li><strong>Use a fallback</strong>: the things listed under <code>fallbackThings</code> in the file are tried in order.</li>
+<li><strong>Silver of equal value</strong>: silver comes instead. The amount is the entry's count, not the value of the item.</li>
+</ul>
+</li>
+<li><strong>Sample</strong> opens a preview of the saved table: every entry as a tile, with count and weight in the tooltip. Click a nested table to look inside it.</li>
 </ol>
+<p>A table shown in red in the list on the left has no entry that exists in the game, usually because a mod is missing. Settings the tab cannot edit, such as curves over depth, are named below the selected entry and kept when you save.</p>
 <h3 id="affects">Affects</h3>
+<p>Below the entries, <strong>Affects</strong> shows where the table ends up.</p>
 <a class="bild" href="images/loot-affects.png" target="_blank"><img alt="Where a table ends up" src="images/loot-affects.png" loading="lazy"></a>
-<p>Below the entries the tab shows where this table ends up: the tables that draw it, the settlements that reach it, and tiles of every piece that uses it. The anchors that use the table are highlighted in the tiles, the tooltip names them.</p>
+<ol>
+<li><strong>Directly part of</strong>: the tables that draw this one, with the weight they give it, or <strong>always</strong> for an entry under <strong>Always included</strong>. Click one to open it.</li>
+<li><strong>Through pieces in settlements</strong>: the settlement types that reach this table through their pieces, with those pieces named. Click one to open it.</li>
+</ol>
+<p>Below them, tiles show every piece that uses the table, directly or through an object list. The anchors that use it are highlighted in the tiles, and the tooltip names them. Click a tile to open the piece.</p>
 <h2 id="containers">Containers</h2>
-<p>A container is a building that holds loot and changes its look once emptied, for example a stocked shelf that becomes an empty one.</p>
+<p>A container is a building that holds loot and changes its look once emptied, for example a stocked shelf that turns into an empty shelf.</p>
 <a class="bild" href="images/loot-container.png" target="_blank"><img alt="A container, full and empty" src="images/loot-container.png" loading="lazy"></a>
 <ol>
-<li><strong>Full</strong> and <strong>empty</strong> image side by side.</li>
-<li><strong>After emptying</strong>: the empty image, another building it <strong>Becomes</strong>, or it <strong>Vanishes</strong>.</li>
-<li><strong>Edit container</strong> opens the container window to change it.</li>
+<li><strong>Full</strong> and <strong>Empty</strong> image side by side. <strong>In object lists</strong> below them names the object lists that contain this container.</li>
+<li><strong>After emptying</strong>: the empty image (<strong>Texture</strong>), a building it <strong>Becomes</strong>, and whether it <strong>Vanishes</strong>.</li>
+<li><strong>Edit container</strong> opens the container window with this container as the template.</li>
 </ol>
 <h2 id="crop-lists">Crop lists</h2>
-<p>A crop list is a weighted list of plants for fields and pens. Change it once and every field that names it follows.</p>
-<a class="bild" href="images/loot-crops.png" target="_blank"><img alt="A crop list" src="images/loot-crops.png" loading="lazy"></a>
-<ol>
-<li><strong>Plants</strong> with weight and share. <strong>Pick plants</strong> opens the plant picker.</li>
-<li><strong>Used in</strong>: the fields and pens that name this list. Click to open the settlement.</li>
-<li>Fields and pens pick the list in the Settlement tab, row <strong>Crop list</strong>.</li>
-</ol><div class="schritte"><a href="Categories.html"><span>Previous</span>Categories</a><a class="weiter" href="Material-Lists.html"><span>Next</span>Material lists</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#object-lists">Object lists</a><a class="t2" href="#loot-tables">Loot tables</a><a class="t3" href="#affects">Affects</a><a class="t2" href="#containers">Containers</a><a class="t2" href="#crop-lists">Crop lists</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+<p>A crop list is a weighted list of plants for fields and pens. Several fields and pens can name the same list. Change the list once and all of them follow.</p>
+<p>CBF ships no crop lists; its fields pick their plants one by one. Create a list with <strong>+ New</strong> in the <strong>Crops</strong> tab when several fields should share the same plants.</p>
+<ul>
+<li><strong>Plants</strong> with weight (<strong>Wt.</strong>) and share. <strong>Pick plants</strong> opens the plant picker.</li>
+<li><strong>Used in</strong>: the fields and pens that name this list. Click one to open its settlement type.</li>
+<li>Each field and pen picks its list in the Settlement tab, row <strong>Crop list</strong>. Without a list, the plants chosen for that field one by one apply.</li>
+</ul><div class="schritte"><a href="Categories.html"><span>Previous</span>Categories</a><a class="weiter" href="Material-Lists.html"><span>Next</span>Material lists</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#object-lists">Object lists</a><a class="t2" href="#loot-tables">Loot tables</a><a class="t3" href="#affects">Affects</a><a class="t2" href="#containers">Containers</a><a class="t2" href="#crop-lists">Crop lists</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

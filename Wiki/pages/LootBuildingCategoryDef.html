@@ -129,10 +129,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>kind</code><br>Kind</td>
+<td><code>kind</code></td>
 <td>LootDarstellung (Fill, Empty)</td>
 <td><code>Fill</code></td>
-<td>On a ward: which part of the settlement it is, Town, Suburb or Rural. Castle is accepted but not planned as a part of its own. On an object list: Fill fills the containers, Empty places them without loot or occupants.</td>
+<td>Fill fills the containers of this object list with loot. Empty places them without loot or occupants.</td>
 </tr>
 <tr>
 <td><code>members</code></td>
@@ -153,16 +153,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How many pawns, as a range. On a spawn anchor at least one. On an object list, how many wait in a container that has any.</td>
 </tr>
 <tr>
-<td><code>pawnHostile</code><br>Turns hostile</td>
-<td>true/false</td>
-<td><code>false</code></td>
-<td>The pawn attacks once the container is opened. Animals go manhunter, people go berserk.</td>
-</tr>
-<tr>
 <td><code>pawnFaction</code><br>Faction</td>
 <td>text</td>
 <td>none</td>
 <td>Which faction the occupant belongs to. Without one it goes berserk instead, which reads as a trapped animal rather than an ambush, and they attack each other too.</td>
+</tr>
+<tr>
+<td><code>pawnHostile</code><br>Turns hostile</td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td>The pawn attacks once the container is opened. Animals go manhunter, people go berserk.</td>
 </tr>
 <tr>
 <td><code>pawnList</code><br>Pawn list</td>

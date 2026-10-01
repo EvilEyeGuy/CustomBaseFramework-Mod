@@ -129,34 +129,28 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
+<td><code>attackerCorpses</code></td>
+<td>IntRange</td>
+<td><code>0</code></td>
+<td>How many dead attackers lie around, as a range. They have been dead for rotDays.</td>
+</tr>
+<tr>
 <td><code>attackSide</code></td>
 <td>Rot4</td>
 <td><code>200</code></td>
 <td>Side the attackers came from: North, East, South or West. Breaches and the worst damage gather there. Empty picks a side at random.</td>
 </tr>
 <tr>
-<td><code>occupation</code></td>
-<td>Besatzungsart (None, Builder, Occupier)</td>
-<td><code>Occupier</code></td>
-<td>Who holds the ruin. None leaves it empty, Builder keeps the original owners, Occupier puts the conquering faction in, drawn from raid points only, without ward garrisons or the units set on anchors.</td>
-</tr>
-<tr>
-<td><code>occupationChance</code></td>
-<td>number</td>
-<td><code>1</code></td>
-<td>Scales how many defenders the ruin gets. 1 is the full number, 0.5 half of it.</td>
-</tr>
-<tr>
-<td><code>lootWithOccupiers</code></td>
-<td>number</td>
+<td><code>breaches</code></td>
+<td>IntRange</td>
 <td><code>0</code></td>
-<td>Share of the remaining loot, 0 to 1, that is carried off and piled up on a square near the centre.</td>
+<td>How many breaches are torn into the outer wall, as a range. They favour the attack side and the gates.</td>
 </tr>
 <tr>
-<td><code>lootFactor</code></td>
-<td>number</td>
-<td><code>1</code></td>
-<td>How much loot remains, 1 keeps all of it. Stacks shrink by this factor, single items survive with this chance.</td>
+<td><code>buildingDamage</code></td>
+<td>FloatRange</td>
+<td><code>0~0</code></td>
+<td>Share of hit points buildings lose, as a range from 0 to 1. Buildings near the attack lose more.</td>
 </tr>
 <tr>
 <td><code>burnMarks</code></td>
@@ -165,10 +159,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How likely a room is burnt out, 0 to 1, more often near the attack. Burnt rooms get charred floors and lose flammable contents.</td>
 </tr>
 <tr>
-<td><code>breaches</code></td>
-<td>IntRange</td>
-<td><code>0</code></td>
-<td>How many breaches are torn into the outer wall, as a range. They favour the attack side and the gates.</td>
+<td><code>clustering</code></td>
+<td>number</td>
+<td><code>0.6</code></td>
+<td>How strongly the damage gathers around the breaches and points of attack, 0 to 1. 0 spreads it evenly.</td>
 </tr>
 <tr>
 <td><code>fieldsRavaged</code></td>
@@ -183,10 +177,40 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How many fires still burn, as a range. They only start in burnt rooms whose walls do not burn.</td>
 </tr>
 <tr>
-<td><code>buildingDamage</code></td>
-<td>FloatRange</td>
-<td><code>0~0</code></td>
-<td>Share of hit points buildings lose, as a range from 0 to 1. Buildings near the attack lose more.</td>
+<td><code>gateDestroyed</code></td>
+<td>number</td>
+<td><code>0</code></td>
+<td>Chance per gate that it is torn down, 0 to 1.</td>
+</tr>
+<tr>
+<td><code>livestockGone</code></td>
+<td>number</td>
+<td><code>0</code></td>
+<td>Chance per animal of the owners or occupiers that it is gone, 0 to 1.</td>
+</tr>
+<tr>
+<td><code>lootFactor</code></td>
+<td>number</td>
+<td><code>1</code></td>
+<td>How much loot remains, 1 keeps all of it. Stacks shrink by this factor, single items survive with this chance.</td>
+</tr>
+<tr>
+<td><code>lootWithOccupiers</code></td>
+<td>number</td>
+<td><code>0</code></td>
+<td>Share of the remaining loot, 0 to 1, that is carried off and piled up on a square near the centre.</td>
+</tr>
+<tr>
+<td><code>occupation</code></td>
+<td>Besatzungsart (None, Builder, Occupier)</td>
+<td><code>Occupier</code></td>
+<td>Who holds the ruin. None leaves it empty, Builder keeps the original owners, Occupier puts the conquering faction in, drawn from raid points only, without ward garrisons or the units set on anchors.</td>
+</tr>
+<tr>
+<td><code>occupationChance</code></td>
+<td>number</td>
+<td><code>1</code></td>
+<td>Scales how many defenders the ruin gets. 1 is the full number, 0.5 half of it.</td>
 </tr>
 <tr>
 <td><code>prisoners</code></td>
@@ -195,40 +219,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How many former inhabitants the occupiers hold prisoner, as a range. Only when occupation is Occupier.</td>
 </tr>
 <tr>
-<td><code>turretsDestroyed</code></td>
-<td>number</td>
-<td><code>0</code></td>
-<td>How likely a turret is destroyed, 0 to 1, more often near the attack.</td>
-</tr>
-<tr>
-<td><code>clustering</code></td>
-<td>number</td>
-<td><code>0.6</code></td>
-<td>How strongly the damage gathers around the breaches and points of attack, 0 to 1. 0 spreads it evenly.</td>
-</tr>
-<tr>
-<td><code>attackerCorpses</code></td>
-<td>IntRange</td>
-<td><code>0</code></td>
-<td>How many dead attackers lie around, as a range. They have been dead for rotDays.</td>
-</tr>
-<tr>
 <td><code>residentCorpses</code></td>
 <td>IntRange</td>
 <td><code>0</code></td>
 <td>How many dead inhabitants lie around, as a range. They have been dead for rotDays.</td>
-</tr>
-<tr>
-<td><code>rubble</code></td>
-<td>number</td>
-<td><code>0</code></td>
-<td>Rubble on open ground and roads, 0 to 1, thicker near the attack.</td>
-</tr>
-<tr>
-<td><code>gateDestroyed</code></td>
-<td>number</td>
-<td><code>0</code></td>
-<td>Chance per gate that it is torn down, 0 to 1.</td>
 </tr>
 <tr>
 <td><code>rotDays</code></td>
@@ -237,10 +231,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How long the bodies have been dead, in days, as a range.</td>
 </tr>
 <tr>
-<td><code>livestockGone</code></td>
+<td><code>rubble</code></td>
 <td>number</td>
 <td><code>0</code></td>
-<td>Chance per animal of the owners or occupiers that it is gone, 0 to 1.</td>
+<td>Rubble on open ground and roads, 0 to 1, thicker near the attack.</td>
+</tr>
+<tr>
+<td><code>turretsDestroyed</code></td>
+<td>number</td>
+<td><code>0</code></td>
+<td>How likely a turret is destroyed, 0 to 1, more often near the attack.</td>
 </tr>
 <tr>
 <td><code>wallDemolition</code></td>

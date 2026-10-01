@@ -129,18 +129,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>things</code></td>
-<td>list of <a href="Tauscheintrag.html">Tauscheintrag</a></td>
-<td>none</td>
-<td>Thing replacements for this faction. Each entry swaps the thing in from for the thing in to.</td>
-</tr>
-<tr>
-<td><code>units</code></td>
-<td>list of <a href="Tauscheintrag.html">Tauscheintrag</a></td>
-<td>none</td>
-<td>Pawn kind replacements for this faction, each entry swaps the kind in from for the kind in to. Humanlike kinds without a rule that the faction does not use become its closest own kind, unless they are listed in neutral.</td>
-</tr>
-<tr>
 <td><code>faction</code></td>
 <td>text</td>
 <td>none</td>
@@ -157,6 +145,18 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>whole number</td>
 <td><code>0</code></td>
 <td>When several rule sets cover the same faction and the same from, only the highest priority counts. Equal priorities are merged.</td>
+</tr>
+<tr>
+<td><code>things</code><br>Objects</td>
+<td>list of <a href="Tauscheintrag.html">Tauscheintrag</a></td>
+<td>none</td>
+<td>Thing replacements for this faction. Each entry swaps the thing in from for the thing in to.</td>
+</tr>
+<tr>
+<td><code>units</code></td>
+<td>list of <a href="Tauscheintrag.html">Tauscheintrag</a></td>
+<td>none</td>
+<td>Pawn kind replacements for this faction, each entry swaps the kind in from for the kind in to. Humanlike kinds without a rule that the faction does not use become its closest own kind, unless they are listed in neutral.</td>
 </tr>
 </tbody>
 </table>

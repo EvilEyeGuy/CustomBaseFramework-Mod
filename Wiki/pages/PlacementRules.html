@@ -140,6 +140,18 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How many of these a settlement wants, as a range.</td>
 </tr>
 <tr>
+<td><code>excludeFactions</code><br>Excluded factions</td>
+<td>list of text</td>
+<td>none</td>
+<td>Factions (FactionDef defName). On a settlement type: they never get it, even when their tags or tech level fit. On a piece or category (under placement): the piece is not used in their settlements.</td>
+</tr>
+<tr>
+<td><code>factions</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>Factions (FactionDef defName), under placement of a piece or category. The piece is only used in settlements of these factions. Empty means every faction.</td>
+</tr>
+<tr>
 <td><code>needsRoadAccess</code><br>Needs a road</td>
 <td>true/false, optional</td>
 <td>none</td>
@@ -149,37 +161,25 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>weight</code></td>
 <td>number, optional</td>
 <td>none</td>
-<td>How likely this is picked over its siblings. Belongs on the settlement, not on the piece.</td>
+<td>How often this piece is picked among the pieces of its category. Empty takes the weight of the category.</td>
+</tr>
+<tr>
+<td><code>withIdeo</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>Memes or precepts (defNames). The entry, or on a piece or category (under placement) the piece, is only used when the owning faction's ideoligion has at least one of them. Needs Ideology.</td>
+</tr>
+<tr>
+<td><code>withoutIdeo</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>Memes or precepts (defNames). The entry, or on a piece or category (under placement) the piece, is not used when the owning faction's ideoligion has one of them. Needs Ideology.</td>
 </tr>
 <tr>
 <td><code>zones</code></td>
 <td>list of text</td>
 <td>none</td>
 <td>Only Outside has an effect: together with needsRoadAccess set to false, the building needs no road and may be entered from every side. Inside and Center do nothing. Where a building stands is decided by the budget of its ward.</td>
-</tr>
-<tr>
-<td><code>factions</code></td>
-<td>list of text</td>
-<td>none</td>
-<td>FactionDef defNames. The piece is only used in settlements of these factions. Empty means every faction.</td>
-</tr>
-<tr>
-<td><code>excludeFactions</code></td>
-<td>list of text</td>
-<td>none</td>
-<td>FactionDef defNames. The piece is never used in settlements of these factions.</td>
-</tr>
-<tr>
-<td><code>withIdeo</code></td>
-<td>list of text</td>
-<td>none</td>
-<td>Memes or precepts (defNames). The piece is only used when the owning faction's ideoligion has one of them. Needs Ideology.</td>
-</tr>
-<tr>
-<td><code>withoutIdeo</code></td>
-<td>list of text</td>
-<td>none</td>
-<td>Memes or precepts (defNames). The piece is not used when the owning faction's ideoligion has one of them. Needs Ideology.</td>
 </tr>
 </tbody>
 </table>

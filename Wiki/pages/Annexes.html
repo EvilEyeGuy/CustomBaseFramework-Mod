@@ -117,32 +117,33 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Piece / Annexes</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html" class="hier">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="annexes">Annexes</h1><p class="unter">Piece</p>
-<p>An annex is a small piece that docks onto a larger one: a stable at the inn, a woodshed at the farmhouse, a beer garden behind the tavern. The house stays the same piece, the annexes make each copy of it look different.</p>
+<p>An annex is a small piece that docks onto a larger one: a stable at the inn, a woodshed at the farmhouse, a beer garden behind the tavern. The house stays the same piece. The annexes make each copy of it look different, because each copy gets other annexes at other sides.</p>
 <a class="bild" href="images/annex-example.png" target="_blank"><img alt="Village houses with annexes" src="images/annex-example.png" loading="lazy"></a>
 <ol>
 <li><strong>Houses</strong> of a village.</li>
 <li><strong>Annexes</strong>: a pen, a hay store and a woodshed, docked at different sides.</li>
 </ol>
+<p>To use annexes you need three things: annex spots on the house, annex pieces in a category of their own, and a link from the house's category to that annex category. The sections below explain each.</p>
 <h2 id="how-it-works">How it works</h2>
 <ol>
-<li>The generator places the buildings of a district.</li>
-<li>Then it goes through the houses once more. For every house whose category names annex categories, it looks at the house's annex anchors in random order.</li>
+<li>The generator places the buildings of a district (a group of buildings in one part of the town, see <a href="Settlements.html#districts">Settlements</a>).</li>
+<li>Then it goes through the houses once more. For every house whose category names annex categories, it visits the house's annex anchors in random order.</li>
 <li>At each anchor it rolls <strong>Chance per anchor</strong>. On success it tries the annexes of the allowed categories in an order drawn by weight, and places the first one that fits.</li>
 <li>It stops when the house has <strong>At most</strong> annexes.</li>
 </ol>
-<p>An annex belongs to the same district and ward as its house. It is placed after all normal buildings, so it only takes space that is still free.</p>
+<p>An annex belongs to the same district and ward (ring of the town) as its house. It is placed after all normal buildings, so it only takes space that is still free.</p>
 <h2 id="the-anchor-name">The anchor name</h2>
-<p>Annexes use a <strong>Connect</strong> anchor. Pick the name <strong>Anbau</strong> from the name menu of the anchor.</p>
-<a class="bild" href="images/annex-anchor-name.png" target="_blank"><img alt="The name menu of a Connect anchor" src="images/annex-anchor-name.png" loading="lazy"></a>
+<p>Both the house and the annex mark the docking spot with an anchor. An anchor is a marked area inside a piece, see <a href="Pieces.html#anchors">Anchors</a>. For annexes it is a <strong>Connect</strong> anchor with the name <strong>Annex</strong>, picked from the name menu of the anchor.</p>
+<a class="bild" href="images/annex-anchor-name.png" target="_blank"><img alt="A Connect anchor named Annex" src="images/annex-anchor-name.png" loading="lazy"></a>
 <h2 id="what-the-house-needs">What the house needs</h2>
 <ul>
-<li>A <strong>Connect</strong> anchor named <strong>Anbau</strong> on its outer wall. Mark one cell per possible annex spot, on the wall cell itself. The cell outside must be free of the house.</li>
-<li>Its category (or a parent) lists the <strong>Annex categories</strong> that may attach. See <a href="Categories.html#annexes">Categories</a>. The <strong>+</strong> next to them opens a picker with search and mod filter.</li>
+<li>A <strong>Connect</strong> anchor named <strong>Annex</strong> on its outer wall. Mark one cell per possible annex spot, on the wall cell itself. The cell outside it must not belong to the house.</li>
+<li>Its category, or a parent category, lists the <strong>Annex categories</strong> that may attach. See <a href="Categories.html#annexes">Categories</a>. The <strong>+</strong> next to them opens a picker with search and mod filter.</li>
 </ul>
 <a class="bild" href="images/annex-picker.png" target="_blank"><img alt="Picking annex categories for a house category" src="images/annex-picker.png" loading="lazy"></a>
 <h2 id="what-the-annex-needs">What the annex needs</h2>
 <ul>
-<li>A <strong>Connect</strong> anchor named <strong>Anbau</strong> on the side that faces the house. Two ways:<ul>
+<li>A <strong>Connect</strong> anchor named <strong>Annex</strong> on the side that faces the house. There are two ways to set it:<ul>
 <li><strong>Shared wall:</strong> the anchor lies on a wall cell of the annex. The annex then uses the house wall as its own. Both cells must be walls.</li>
 <li><strong>Touching only:</strong> the anchor lies one cell outside the annex's shape. The annex then stands right next to the house with its own wall.</li>
 </ul>
@@ -162,6 +163,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </ul>
 <p>If no annex fits at an anchor, that anchor stays empty. The house is built in any case.</p>
 <h2 id="settings">Settings</h2>
+<p>The settings are set in the Categories tab, section <strong>Annexes</strong>. <strong>Weight</strong> is in the section <strong>Placement</strong> of the category, or in <strong>Basics</strong> of the piece in the Piece tab.</p>
 <table>
 <thead>
 <tr>
@@ -176,7 +178,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Annex categories</td>
 <td>category of the house</td>
 <td>none</td>
-<td>Which annexes may attach. Empty takes the list of the parent.</td>
+<td>Which annexes may attach. Empty takes the list of the parent category.</td>
 </tr>
 <tr>
 <td>Chance per anchor</td>

@@ -58,7 +58,7 @@ A piece used here needs a passable opening. Without one the ward is sealed and t
     <label>Anchors</label>
     <description>An anchor is a marked area inside a piece where something happens once the piece is placed.
 
-Connect anchors tie the piece to its surroundings. Wall is where the town wall docks, Outside tells which side faces out, Anbau is where annexes attach.
+Connect anchors tie the piece to its surroundings. Wall is where the town wall docks, Outside tells which side faces out, Annex is where annexes attach.
 
 Loot anchors place objects from an object list and fill them from a loot table. Object anchors place objects from an object list with a chance, without loot. Pawn anchors bring in people or animals from a pawn list, with a role that decides whether they stay and fight or run.
 
@@ -115,7 +115,7 @@ Repeatable belongs on the category of the annex itself. Yes allows the same anne
 
 Weight decides which annex is picked when several fit. For annexes, a weight below 1 is also the chance that this annex is tried at all.
 
-The anchor is a Connect anchor named Anbau. On the house it lies on the outer wall. On the annex it lies either on its outer wall, when both share that wall, or one cell outside its shape, when the annex only touches the house.</description>
+The anchor is a Connect anchor named Annex. On the house it lies on the outer wall. On the annex it lies either on its outer wall, when both share that wall, or one cell outside its shape, when the annex only touches the house.</description>
   </CustomBaseFramework.HelpDef>
 
   <CustomBaseFramework.HelpDef>

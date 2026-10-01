@@ -35,7 +35,7 @@
   <CBF_FieldDesc_defenses>Defences spread over the lanes of this ward, each as far from the others as possible. count gives how many, else max, else one.</CBF_FieldDesc_defenses>
   <CBF_FieldDesc_depth>Wall thickness in cells this profile is drawn for: 1, 3 or 5. A settlement takes the profile whose depth matches its wall.</CBF_FieldDesc_depth>
   <CBF_FieldDesc_depthRange>Entries outside this depth range are never drawn. Settlements have no depth and count as 0, so a minimum above 0 means never.</CBF_FieldDesc_depthRange>
-  <CBF_FieldDesc_things>Thing replacements for this faction. Each entry swaps the thing in from for the thing in to.</CBF_FieldDesc_things>
+  <CBF_FieldDesc_things>The structure layer: walls, doors and everything a cell is built from, one character per cell, resolved through the legend.</CBF_FieldDesc_things>
   <CBF_FieldDesc_drawnOutward>Which side of this gatehouse faces out of the town as drawn: North, East, South or West. An Outside anchor wins. Empty takes gatehouseOutward of the wall profile, else South.</CBF_FieldDesc_drawnOutward>
   <CBF_FieldDesc_edge>Not used at the moment.</CBF_FieldDesc_edge>
   <CBF_FieldDesc_units>Pawn kind replacements for this faction, each entry swaps the kind in from for the kind in to. Humanlike kinds without a rule that the faction does not use become its closest own kind, unless they are listed in neutral.</CBF_FieldDesc_units>
@@ -59,7 +59,7 @@
   <CBF_FieldDesc_prisoners>How many former inhabitants the occupiers hold prisoner, as a range. Only when occupation is Occupier.</CBF_FieldDesc_prisoners>
   <CBF_FieldDesc_openTerrain>Lets the planner choose a site that needs earthwork first, such as rock cleared away. Off by default; the planner still does it as a last resort.</CBF_FieldDesc_openTerrain>
   <CBF_FieldDesc_turretsDestroyed>How likely a turret is destroyed, 0 to 1, more often near the attack.</CBF_FieldDesc_turretsDestroyed>
-  <CBF_FieldDesc_weight>Weight of this target against the other targets for the same from. 0 or less drops it.</CBF_FieldDesc_weight>
+  <CBF_FieldDesc_weight>Weight against the other entries of the same list. Higher values are picked more often.</CBF_FieldDesc_weight>
   <CBF_FieldDesc_clustering>How strongly the damage gathers around the breaches and points of attack, 0 to 1. 0 spreads it evenly.</CBF_FieldDesc_clustering>
   <CBF_FieldDesc_herd>How many animals live in each pen, as a range. At most one per 12 inner cells, at least one.</CBF_FieldDesc_herd>
   <CBF_FieldDesc_hitPoints>Condition of the loot as a share of its hit points, as a range. 1 means undamaged.</CBF_FieldDesc_hitPoints>
@@ -152,8 +152,8 @@
   <CBF_FieldDesc_minRiverWidth>Smallest river width in cells that counts for a harbor. The sea always counts.</CBF_FieldDesc_minRiverWidth>
   <CBF_FieldDesc_range>How far from the settlement harbor pieces may stand, in cells.</CBF_FieldDesc_range>
   <CBF_FieldDesc_harbor>Harbor at the coast or on a wide river: which harbor buildings the settlement gets. Only for medieval settlements.</CBF_FieldDesc_harbor>
-  <CBF_FieldDesc_forPieces>Pieces or categories this role entry is meant for, for example palisade walls and palisade towers. A match beats a ward match. Only for walls, roads and floors the generator draws itself, not inside buildings; buildings take the material of the map as designed.</CBF_FieldDesc_forPieces>
-  <CBF_FieldDesc_district>Ward this role entry is meant for: Town, Suburb or Rural. Empty applies everywhere. Only for walls, roads and floors the generator draws itself, not inside buildings; buildings take the material of the map as designed.</CBF_FieldDesc_district>
+  <CBF_FieldDesc_forPieces>Fortification pieces or categories this role entry is meant for, for example palisade walls and palisade towers. It applies in wards whose walls, emplacements or gatehouses use one of them, and beats a ward match. Only affects what is resolved by role; pieces that name concrete things keep them.</CBF_FieldDesc_forPieces>
+  <CBF_FieldDesc_district>Ward this role entry is meant for: Town, Suburb or Rural. Empty applies everywhere. Only affects what is resolved by role, including cells of pieces that name a role; pieces that name concrete things keep them.</CBF_FieldDesc_district>
   <CBF_FieldDesc_wdType>World Domination settlement types this plan stands for, such as Mining or Slavery. Empty means any type. Only used with World Domination 2.0.</CBF_FieldDesc_wdType>
   <CBF_FieldDesc_PawnListDef_techLevel>The tech level this list counts as. Set, the settlement draws from the whole list without working out levels from the gear. Empty works the level out per member.</CBF_FieldDesc_PawnListDef_techLevel>
   <CBF_FieldDesc_withIdeo>Memes or precepts (defNames). The entry, or on a piece or category (under placement) the piece, is only used when the owning faction's ideoligion has at least one of them. Needs Ideology.</CBF_FieldDesc_withIdeo>
@@ -185,4 +185,23 @@
   <CBF_FieldDesc_annexCornerPath>Where an annex of this category attaches, the two inner corner wall cells at the ends of the straight house wall become floor. Used for lean-to tents.</CBF_FieldDesc_annexCornerPath>
   <CBF_FieldDesc_onlyWithMod>packageIds of mods, separated by commas. The piece is only placed when all of them are active.</CBF_FieldDesc_onlyWithMod>
   <CBF_FieldDesc_offIfMod>packageIds of mods, separated by commas. The piece is not placed when one of them is active.</CBF_FieldDesc_offIfMod>
+  <CBF_FieldDesc_factionFlag>On an Object anchor: true places the flag or banner that a FactionFlagDef assigns to the faction of the settlement. Factions without one get the objects of the anchor.</CBF_FieldDesc_factionFlag>
+  <CBF_FieldDesc_SettlementPlanDef_kind>Kind of place. MedievalTown: walls with towers and gatehouses. ModernTown: street grid with roads up to 6 wide, power conduits, no gatehouses. Camp: only for the quest camps named under campTypes. Dungeon is switched off.</CBF_FieldDesc_SettlementPlanDef_kind>
+  <CBF_FieldDesc_Stadtteil_kind>Which ring of the settlement this ward is: Town (innermost), Suburb or Rural (countryside). Each kind at most once per settlement type. Castle exists in the code but is not used.</CBF_FieldDesc_Stadtteil_kind>
+  <CBF_FieldDesc_PawnListEntry_kind>The pawn kind of this entry (PawnKindDef defName).</CBF_FieldDesc_PawnListEntry_kind>
+  <CBF_FieldDesc_LootBuildingCategoryDef_kind>Fill fills the containers of this object list with loot. Empty places them without loot or occupants.</CBF_FieldDesc_LootBuildingCategoryDef_kind>
+  <CBF_FieldDesc_LootEntry_category>A ThingCategoryDef; the roll draws a random fitting thing from it.</CBF_FieldDesc_LootEntry_category>
+  <CBF_FieldDesc_ContentZoneSpec_category>The object list (LootBuildingCategoryDef) whose containers go into the zone.</CBF_FieldDesc_ContentZoneSpec_category>
+  <CBF_FieldDesc_BuildableRuleDef_category>The architect category (DesignationCategoryDef defName) that matching buildings go into. It is created if it does not exist.</CBF_FieldDesc_BuildableRuleDef_category>
+  <CBF_FieldDesc_LootTableDef_entries>The weighted pool the rolls draw from.</CBF_FieldDesc_LootTableDef_entries>
+  <CBF_FieldDesc_DistrictSpec_entries>The budget of the district: which pieces or categories it wants and how many.</CBF_FieldDesc_DistrictSpec_entries>
+  <CBF_FieldDesc_HafenSpec_entries>The harbor pieces or categories and how many of each.</CBF_FieldDesc_HafenSpec_entries>
+  <CBF_FieldDesc_LegendEntry_pawns>On a spawn anchor: one pawn kind (defName) for the spot, used when pawnList is empty. With neither, a regular defender takes the spot.</CBF_FieldDesc_LegendEntry_pawns>
+  <CBF_FieldDesc_Gehegespec_pawns>The pawn list (PawnListDef) the animals of the pen come from. Empty leaves the pen empty.</CBF_FieldDesc_Gehegespec_pawns>
+  <CBF_FieldDesc_Tauscheintrag_weight>Weight of this target against the other targets for the same from. 0 or less drops it.</CBF_FieldDesc_Tauscheintrag_weight>
+  <CBF_FieldDesc_LegendVariant_weight>How likely this variant is picked over its siblings.</CBF_FieldDesc_LegendVariant_weight>
+  <CBF_FieldDesc_PieceCategoryDef_weight>How often pieces of this category are picked when several fit. 1 is normal.</CBF_FieldDesc_PieceCategoryDef_weight>
+  <CBF_FieldDesc_PlacementRules_weight>How often this piece is picked among the pieces of its category. Empty takes the weight of the category.</CBF_FieldDesc_PlacementRules_weight>
+  <CBF_FieldDesc_UnitSwapDef_things>Thing replacements for this faction. Each entry swaps the thing in from for the thing in to.</CBF_FieldDesc_UnitSwapDef_things>
+  <CBF_FieldDesc_Minenspec_things>Things placed in the mine, each at the entrance, along the tunnels or in a chamber.</CBF_FieldDesc_Minenspec_things>
 </LanguageData>

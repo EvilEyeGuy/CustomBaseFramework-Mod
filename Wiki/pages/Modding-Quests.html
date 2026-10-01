@@ -117,15 +117,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Quests in XML</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html" class="hier">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="modding-quests">Modding quests</h1><p class="unter">Modding</p>
-<p>CBF has quest nodes and components to send the player to a CBF settlement that is built for a quest. The two shipped quests use them, see <a href="Quests.html">Quests</a>. Their files are the reference:</p>
+<p>CBF can build a full settlement as a quest site. A quest can send the player to a village that bandits have taken, or to a town under attack. This page is for modders who write such a quest in XML. It lists the quest nodes, components and mod extensions CBF adds. The player's side is described in <a href="Quests.html">Quests</a>.</p>
+<p>The two shipped quests are the working reference:</p>
 <ul>
 <li><code>1.6/Mods/MedievalOverhaul/Defs/Quests/CBF_MO_Quest_RaidedSite.xml</code> (raided settlement)</li>
-<li><code>1.6/Mods/MedievalOverhaul/Defs/Quests/CBF_MO_Quest_ContestedSite.xml</code> (contested settlement)</li>
+<li><code>1.6/Mods/MedievalOverhaul/Defs/Quests/CBF_MO_Quest_ContestedSite.xml</code> (settlement under attack)</li>
 <li><code>CBF_MO_Quest_SiteParts.xml</code>, <code>CBF_MO_Quest_Orte.xml</code> and <code>CBF_MO_Quest_Ruinen.xml</code> in the same folder</li>
 </ul>
-<p>All classes are in the namespace <code>CustomBaseFramework</code>.</p>
+<p>All classes are in the namespace <code>CustomBaseFramework</code>. You need to know how vanilla quests work: a <code>QuestScriptDef</code> runs quest nodes in order, nodes store values in the slate (the quest's variables, written as <code>$name</code>), and parts of the quest react to signals such as <code>site.AllEnemiesDefeated</code>.</p>
 <h2 id="overview">Overview</h2>
-<p>A CBF quest site needs four defs:</p>
+<p>A CBF quest site uses these defs:</p>
 <table>
 <thead>
 <tr>
@@ -136,11 +137,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>SitePartDef</code></td>
-<td>Carries <code>CBFSiteExtension</code> (which plans, which ruin) and optionally <code>CBFOccupierExtension</code> (which enemy factions).</td>
+<td>Carries <code>CBFSiteExtension</code> (which settlement types, which ruin) and optionally <code>CBFOccupierExtension</code> (which enemy factions).</td>
 </tr>
 <tr>
 <td><code>WorldObjectDef</code></td>
-<td>The site. Uses a CBF map generator and adds the quest components.</td>
+<td>The site on the world map. Uses a CBF map generator and adds the quest components.</td>
 </tr>
 <tr>
 <td><a href="RuinDef.html">RuinDef</a></td>
@@ -152,7 +153,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>The settlement plan must have <code>siteTags</code>, see <a href="SettlementPlanDef.html">SettlementPlanDef</a>. Plans without <code>siteTags</code> are never used for sites.</p>
+<p>The settlement type (<code>SettlementPlanDef</code>) used for the site must have <code>siteTags</code>, see <a href="SettlementPlanDef.html">SettlementPlanDef</a>. Settlement types without <code>siteTags</code> are never used for sites. The shipped village and market town types carry the tags <code>Dorf</code> and <code>Marktstadt</code>.</p>
 <h2 id="site-setup">Site setup</h2>
 <h3 id="worldobjectdef">WorldObjectDef</h3>
 <pre><code class="language-xml">&lt;<span class="xt">WorldObjectDef</span> <span class="xa">ParentName</span>=<span class="xw">&quot;Site&quot;</span>&gt;
@@ -171,10 +172,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <ul>
 <li><code>mapGenerator</code> must be a CBF map generator. The shipped quests use <code>CBF_Base_Faction</code>.</li>
 <li>CBF patches <code>WorldObjectCompProperties_Plan</code> into the vanilla <code>Site</code> def. Defs with <code>ParentName="Site"</code> inherit it. Without it <code>QuestNode_CBFSite</code> logs a warning and does nothing.</li>
-<li>Sites with a CBF map generator get the background map generation on arrival like faction settlements.</li>
+<li>Sites with a CBF map generator get the same background map generation on arrival as faction settlements.</li>
+<li><code>WorldObjectCompProperties_CBFSiteGoods</code> makes taking items cost goodwill, see <a href="#worldobjectcomp_cbfortsgut">WorldObjectComp_CBFOrtsgut</a>.</li>
+<li><code>WorldObjectCompProperties_CBFAttack</code> is needed for <code>QuestNode_CBFAttack</code>, see <a href="#questnode_cbfattack">QuestNode_CBFAttack</a>.</li>
 </ul>
 <h3 id="cbfsiteextension">CBFSiteExtension</h3>
-<p>On the <code>SitePartDef</code>.</p>
+<p>A mod extension on the <code>SitePartDef</code>. It tells CBF which settlement type to build.</p>
 <table>
 <thead>
 <tr>
@@ -195,18 +198,18 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>plan</code></td>
 <td><a href="SettlementPlanDef.html">SettlementPlanDef</a></td>
 <td>none</td>
-<td>A fixed plan. Used if it is <code>usable</code>.</td>
+<td>A fixed settlement type. Used if it is usable (loaded without errors).</td>
 </tr>
 <tr>
 <td><code>planTags</code></td>
 <td>list of text</td>
 <td>none</td>
-<td>Plans whose <code>siteTags</code> contain one of these. Empty means any plan with <code>siteTags</code>.</td>
+<td>Settlement types whose <code>siteTags</code> contain one of these. Empty means any settlement type with <code>siteTags</code>.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="cbfoccupierextension">CBFOccupierExtension</h3>
-<p>On the <code>SitePartDef</code>. Read by <code>QuestNode_CBFOccupier</code>.</p>
+<p>A mod extension on the <code>SitePartDef</code>. <code>QuestNode_CBFOccupier</code> reads it to pick the enemy faction.</p>
 <table>
 <thead>
 <tr>
@@ -247,37 +250,38 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 &lt;/<span class="xt">SitePartDef</span>&gt;
 </code></pre>
 <h3 id="ruindef-and-garrison">RuinDef and garrison</h3>
-<p>The <a href="RuinDef.html">RuinDef</a> field <code>occupation</code> decides who garrisons the built settlement:</p>
+<p>A ruin damages the finished settlement: breaches, burnt rooms, corpses. Its field <code>occupation</code> also decides who defends the settlement. All ruin fields are listed in <a href="RuinDef.html">RuinDef</a> and <a href="Modding-Overview.html#ruins">Modding-Overview</a>.</p>
 <table>
 <thead>
 <tr>
 <th>Value</th>
-<th>Garrison</th>
+<th>Defenders</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>Occupier</code></td>
-<td>The site faction, sized by the points from <code>QuestNode_CBFSite</code>. Prisoners from <code>prisoners</code> are only placed in this mode.</td>
+<td>Pawns of the site faction, bought with the points from <code>QuestNode_CBFSite</code> (without points, the settlement type's <code>defenderPoints</code>). Garrisons and pawn anchors with their own list or kind are skipped. Prisoners from <code>prisoners</code> are only placed in this mode, and only when the site faction is not the builder.</td>
 </tr>
 <tr>
 <td><code>Builder</code></td>
-<td>The faction set as <code>builder</code>, scaled by <code>occupationChance</code>.</td>
+<td>The faction set as <code>builder</code> in <code>QuestNode_CBFSite</code>, with its normal garrison. Without a builder, the site faction.</td>
 </tr>
 <tr>
 <td><code>None</code></td>
-<td>No garrison.</td>
+<td>No defenders.</td>
 </tr>
 </tbody>
 </table>
-<p>The shipped raided settlement uses <code>Occupier</code>. The contested settlement uses <code>Builder</code> with <code>occupationChance</code> 0.3.</p>
+<p><code>occupationChance</code> scales the number of defenders in both <code>Occupier</code> and <code>Builder</code> mode. Default <code>1</code>.</p>
+<p>The shipped raided settlement uses <code>Occupier</code>. The settlement under attack uses <code>Builder</code> with <code>occupationChance</code> 0.3.</p>
 <h2 id="quest-nodes">Quest nodes</h2>
 <h3 id="questnode_cbfclient">QuestNode_CBFClient</h3>
-<p>Picks the quest giver. Fails the test run if there is no candidate, so the quest is not offered.</p>
-<p>A candidate faction is visible, not the player, not defeated, not hidden, not a permanent enemy, not hostile to the player and has a living leader. Empire vassal colonies are skipped. It also needs a plan that fits <code>sitePart</code>:</p>
+<p>Picks the quest giver. If there is no candidate, the test run fails and the quest is not offered.</p>
+<p>A candidate faction is visible, not the player, not defeated, not hidden, not a permanent enemy, not hostile to the player, and has a living leader. Vassal colonies of the Empire mod are skipped while <strong>Leave settlements of other settlement mods alone</strong> is on in the mod settings. The faction also needs a settlement type that fits <code>sitePart</code>:</p>
 <ul>
-<li>With <code>plan</code> set in <code>CBFSiteExtension</code>, that plan only has to be <code>usable</code>.</li>
-<li>Otherwise the faction needs a plan with <code>siteTags</code> that match <code>planTags</code>. Factions switched off in the mod settings have no plans.</li>
+<li>If <code>plan</code> is set in <code>CBFSiteExtension</code>, that settlement type only has to be usable.</li>
+<li>Otherwise the faction needs a settlement type with <code>siteTags</code> that match <code>planTags</code>. Factions switched off in the mod settings have no settlement types.</li>
 </ul>
 <table>
 <thead>
@@ -301,13 +305,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td><code>sitePart</code></td>
 <td>SitePartDef</td>
-<td>Its <code>CBFSiteExtension</code> decides which plans fit.</td>
+<td>Its <code>CBFSiteExtension</code> decides which settlement types fit.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="questnode_cbfoccupier">QuestNode_CBFOccupier</h3>
-<p>Picks the hostile faction. Fails the test run without <code>sitePart</code> or without a candidate.</p>
-<p>A candidate is not the player, not defeated, hostile to the player, listed in <code>CBFOccupierExtension.besatzer</code> if that list is set, and hostile to <code>enemyOf</code> if set.</p>
+<p>Picks the hostile faction: the occupier of a raided settlement, or the attacker of a settlement under attack. The test run fails without <code>sitePart</code> or without a candidate.</p>
+<p>A candidate is not the player, not defeated, hostile to the player, listed in <code>occupiers</code> of the site part's <code>CBFOccupierExtension</code> if that list is set, and hostile to <code>enemyOf</code> if that is set.</p>
 <table>
 <thead>
 <tr>
@@ -358,12 +362,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td><code>builder</code></td>
 <td>Faction</td>
-<td>Builder. The settlement is built in this faction's style, independent of the site faction.</td>
+<td>The settlement is built in this faction's style, independent of who owns the site.</td>
 </tr>
 <tr>
 <td><code>points</code></td>
 <td>number</td>
-<td>Garrison points. 0 or less means CBF's normal garrison.</td>
+<td>Points for the defenders. 0 or less means the settlement type's own <code>defenderPoints</code>.</td>
 </tr>
 <tr>
 <td><code>ruin</code></td>
@@ -373,12 +377,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td><code>plan</code></td>
 <td><a href="SettlementPlanDef.html">SettlementPlanDef</a></td>
-<td>Optional. A fixed plan instead of the tag selection.</td>
+<td>Optional. A fixed settlement type instead of the tag selection.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="questnode_cbfattack">QuestNode_CBFAttack</h3>
-<p>Adds an attack on the settlement. Needs <code>WorldObjectCompProperties_CBFAttack</code> on the <code>WorldObjectDef</code>, otherwise it logs a warning.</p>
+<p>Adds an attack on the settlement that starts when the player arrives. Needs <code>WorldObjectCompProperties_CBFAttack</code> on the <code>WorldObjectDef</code>, otherwise it logs a warning.</p>
 <table>
 <thead>
 <tr>
@@ -401,7 +405,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td><code>points</code></td>
 <td>number</td>
-<td>Points for the attacking combat group.</td>
+<td>Points for the attacking group.</td>
 </tr>
 </tbody>
 </table>
@@ -424,16 +428,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>Behaviour of <code>WorldObjectComp_CBFAngriff</code>:</p>
+<p>What the attack component (<code>WorldObjectComp_CBFAngriff</code>) does:</p>
 <ul>
-<li>After CBF has built the settlement, a combat group of <code>attacker</code> with <code>points</code> spawns in front of the breaches of the ruin. If no cell in front is found, it spawns at the breaches. Without breaches it spawns at the map edge.</li>
-<li>Defenders are the garrison pawns CBF placed for the settlement faction. Those without a lord and able to fight get a guard duty per ward and do not flee on their own.</li>
+<li>After CBF has built the settlement, a combat group of <code>attacker</code> with <code>points</code> spawns in front of the ruin's breaches. If no cell in front is found, it spawns at the breaches. Without breaches it spawns at the map edge.</li>
+<li>The defenders are the pawns CBF placed for the settlement's faction. If there are none, all humanlike pawns of that faction on the map count. Defenders without a lord that can fight get a guard duty per ward and do not flee on their own.</li>
 <li>The attackers go for the defenders. Without defenders they assault the map.</li>
-<li>Every 250 ticks it checks the defenders. When none is on the map, alive and standing while hostiles are still active, it sends the site signal <code>VerteidigerGefallen</code> once. Listen to it as <code>site.VerteidigerGefallen</code>.</li>
+<li>Every 250 ticks it checks the defenders. When none is left alive, standing and on the map while hostiles are still active, it sends the site signal <code>VerteidigerGefallen</code> once. Listen to it as <code>site.VerteidigerGefallen</code> (the German name is the exact signal name).</li>
 <li>If the map was generated without a CBF settlement, the attack starts at the map edge and a warning is logged.</li>
 </ul>
 <h3 id="questnode_cbfchoice">QuestNode_CBFChoice</h3>
-<p>A choice letter after the fight: leave the site to a faction or take the loot.</p>
+<p>Sends a choice letter after the fight. The player either leaves the site to a faction or takes the loot.</p>
 <table>
 <thead>
 <tr>
@@ -510,9 +514,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>On "leave to faction" the site and all artificial buildings of the old site faction pass to <code>faction</code>. If the site has <code>WorldObjectComp_CBFOrtsgut</code>, its goods are forbidden and belong to <code>faction</code>. Goods already carried by player pawns are charged at once. The letter cannot be dismissed with a right click.</p>
+<p>On "leave to faction", the site and all artificial buildings of the old site faction pass to <code>faction</code>. If the site has <code>WorldObjectComp_CBFOrtsgut</code>, its recorded goods are forbidden and belong to <code>faction</code>. Goods that player pawns already carry are charged at once. The letter cannot be dismissed with a right click.</p>
 <h2 id="worldobjectcomp_cbfortsgut">WorldObjectComp_CBFOrtsgut</h2>
-<p>Charges goodwill for goods the player takes from the site. Added with <code>WorldObjectCompProperties_CBFSiteGoods</code>.</p>
+<p>Charges goodwill for goods the player takes from the site. This stops the player from freeing a settlement and then looting its owner. It is added with <code>WorldObjectCompProperties_CBFSiteGoods</code>.</p>
 <table>
 <thead>
 <tr>
@@ -524,7 +528,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>ansehenJe1000Silber</code></td>
+<td><code>goodwillPer1000Silver</code></td>
 <td>number</td>
 <td><code>1.5</code></td>
 <td>Goodwill lost per 1000 silver of market value. 0 turns the cost off.</td>
@@ -540,13 +544,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <ul>
 <li>At map generation it records every haulable item on the map. Pawns, corpses and chunks are left out. Stacks split from a recorded item are recorded too.</li>
 <li>Nothing is charged while there is no owner.</li>
-<li>A recorded item counts as taken when a player pawn gets it into inventory, carry slot, equipment or apparel. Partial stack merges are charged by count.</li>
+<li>A recorded item counts as taken when a player pawn puts it into its inventory, carries it, equips it or wears it. When only part of a stack is merged into a carried stack, only that part is charged.</li>
 <li>A spawned thing of the owner that changes to the player faction is charged at its market value.</li>
 <li>Fractions add up. Goodwill drops in whole points with the history event <code>CBF_Quest_SiteGoodsTaken</code>.</li>
-<li>The inspect string shows the owner with the keys <code>CBF_Quest_Ortsgut_Inspect</code> or <code>CBF_Quest_Ortsgut_Inspect_Eigen</code>.</li>
+<li>The inspect string of the site shows the owner with the keys <code>CBF_Quest_Ortsgut_Inspect</code> or <code>CBF_Quest_Ortsgut_Inspect_Eigen</code>.</li>
 </ul>
 <h2 id="cbfrewardextension">CBFRewardExtension</h2>
-<p>On the <code>QuestScriptDef</code>. Filters item rewards generated for this quest.</p>
+<p>A mod extension on the <code>QuestScriptDef</code>. It filters the item rewards generated for this quest, so that a medieval quest does not pay in plasteel.</p>
 <table>
 <thead>
 <tr>
@@ -572,6 +576,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tbody>
 </table>
 <p>The tech level of a thing is the highest of its own <code>techLevel</code>, its research prerequisites and the research of its <code>recipeMaker</code>. Things with a power comp count as at least Industrial. Excluded things are added to the reward's disallowed things and removed from the market value fillers while rewards are generated.</p>
+<p>Shortened from <code>CBF_MO_Quest_ContestedSite.xml</code>:</p>
 <pre><code class="language-xml">&lt;<span class="xt">QuestScriptDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;CBF_MO_Quest_ContestedSite&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">modExtensions</span>&gt;
@@ -587,7 +592,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 &lt;/<span class="xt">QuestScriptDef</span>&gt;
 </code></pre>
 <h2 id="example-contested-settlement">Example: contested settlement</h2>
-<p>Trimmed from <code>CBF_MO_Quest_ContestedSite.xml</code>. Name rules, description rules, the timeout and the leave and reward branches are left out.</p>
+<p>Trimmed from <code>CBF_MO_Quest_ContestedSite.xml</code>. Name rules, description rules, the timeout, the "player left" branch and the reward branch are left out.</p>
 <pre><code class="language-xml">&lt;<span class="xt">QuestScriptDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;CBF_MO_Quest_ContestedSite&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">rootSelectionWeight</span>&gt;1.0&lt;/<span class="xt">rootSelectionWeight</span>&gt;
@@ -661,15 +666,15 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </code></pre>
 <p>Step by step:</p>
 <ol>
-<li><code>QuestNode_CBFClient</code> picks a friendly faction that has a village or market town plan (<code>planTags</code> of the site part) and stores it with its leader.</li>
-<li><code>QuestNode_CBFOccupier</code> picks a brigand faction hostile to the player and to the quest giver.</li>
+<li><code>QuestNode_CBFClient</code> picks a friendly faction that has a village or market town settlement type (the <code>planTags</code> of the site part). It stores the faction and its leader.</li>
+<li><code>QuestNode_CBFOccupier</code> picks a brigand faction that is hostile to the player and to the quest giver.</li>
 <li>The site belongs to the quest giver (<code>faction</code> is <code>$askerFaction</code>). The attackers get three times the site points.</li>
 <li><code>QuestNode_CBFSite</code> builds the settlement in the quest giver's style. The site part's ruin <code>CBF_MO_Quest_Ruin_Battle</code> uses <code>occupation</code> <code>Builder</code>, so the defenders are the quest giver's soldiers.</li>
 <li><code>QuestNode_CBFAttack</code> spawns the attackers in front of the breaches once the settlement is built.</li>
-<li><code>site.VerteidigerGefallen</code> fails the quest, <code>site.AllEnemiesDefeated</code> completes it.</li>
+<li><code>site.VerteidigerGefallen</code> fails the quest. <code>site.AllEnemiesDefeated</code> completes it.</li>
 </ol>
 <h2 id="example-the-choice">Example: the choice</h2>
-<p>From <code>CBF_MO_Quest_RaidedSite.xml</code>. Here the site belongs to the occupier (<code>QuestNode_GenerateSite</code> with <code>$siteFaction</code>), <code>QuestNode_CBFSite</code> sets <code>builder</code> to the quest giver and <code>points</code> to 1.5 times the site points.</p>
+<p>From <code>CBF_MO_Quest_RaidedSite.xml</code>. Here the site belongs to the occupier (<code>QuestNode_GenerateSite</code> with <code>$siteFaction</code>). <code>QuestNode_CBFSite</code> sets <code>builder</code> to the quest giver and <code>points</code> to 1.5 times the site points.</p>
 <pre><code class="language-xml">&lt;<span class="xt">li</span> <span class="xa">Class</span>=<span class="xw">&quot;CustomBaseFramework.QuestNode_CBFChoice&quot;</span>&gt;
   &lt;<span class="xt">inSignalDefeated</span>&gt;site.AllEnemiesDefeated&lt;/<span class="xt">inSignalDefeated</span>&gt;
   &lt;<span class="xt">inSignalGone</span>&gt;site.Destroyed&lt;/<span class="xt">inSignalGone</span>&gt;
@@ -690,12 +695,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;<span class="xt">outcome</span>&gt;Success&lt;/<span class="xt">outcome</span>&gt;
 &lt;/<span class="xt">li</span>&gt;
 </code></pre>
+<p>The signal names <code>WahlFraktion</code> and <code>WahlBeute</code> are chosen by the quest. Any name works as long as the <code>QuestNode_End</code> nodes use the same one.</p>
 <p>The <code>WorldObjectDef</code> of this site has <code>WorldObjectCompProperties_CBFSiteGoods</code> without <code>ownedFromStart</code>. Taking goods is free until the player picks "leave to faction".</p>
 <h2 id="debug-actions">Debug actions</h2>
-<p>Under "CBF Quests" in the debug menu, while on a map:</p>
+<p>With development mode on, the debug menu has a group "CBF Quests". These actions work while a map is open:</p>
 <ul>
-<li><strong>Enter raided settlement:</strong> generates the map of a site with <code>WorldObjectComp_CBFOrtsgut</code> and moves the free colonists there.</li>
+<li><strong>Enter raided settlement:</strong> generates the map of a site that has <code>WorldObjectComp_CBFOrtsgut</code> and moves the free colonists of the current map there.</li>
 <li><strong>Defeat occupiers:</strong> kills all pawns hostile to the player on the current map.</li>
-<li><strong>Log raided settlement:</strong> writes site, plan, builder, ruin, points and recorded goods to the log.</li>
-<li><strong>Carry settlement item:</strong> a free colonist picks up the most valuable recorded item and the goodwill change is logged.</li>
+<li><strong>Log raided settlement:</strong> writes site, settlement type, builder, ruin, points and recorded goods to the log.</li>
+<li><strong>Carry settlement item:</strong> a free colonist picks up the most valuable recorded item, and the goodwill change is logged.</li>
 </ul><div class="schritte"><a href="Modding-Pawns.html"><span>Previous</span>Pawns in XML</a><a class="weiter" href="Field-Reference.html"><span>Next</span>Field reference</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#overview">Overview</a><a class="t2" href="#site-setup">Site setup</a><a class="t3" href="#worldobjectdef">WorldObjectDef</a><a class="t3" href="#cbfsiteextension">CBFSiteExtension</a><a class="t3" href="#cbfoccupierextension">CBFOccupierExtension</a><a class="t3" href="#ruindef-and-garrison">RuinDef and garrison</a><a class="t2" href="#quest-nodes">Quest nodes</a><a class="t3" href="#questnode_cbfclient">QuestNode_CBFClient</a><a class="t3" href="#questnode_cbfoccupier">QuestNode_CBFOccupier</a><a class="t3" href="#questnode_cbfsite">QuestNode_CBFSite</a><a class="t3" href="#questnode_cbfattack">QuestNode_CBFAttack</a><a class="t3" href="#questnode_cbfchoice">QuestNode_CBFChoice</a><a class="t2" href="#worldobjectcomp_cbfortsgut">WorldObjectComp_CBFOrtsgut</a><a class="t2" href="#cbfrewardextension">CBFRewardExtension</a><a class="t2" href="#example-contested-settlement">Example: contested settlement</a><a class="t2" href="#example-the-choice">Example: the choice</a><a class="t2" href="#debug-actions">Debug actions</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

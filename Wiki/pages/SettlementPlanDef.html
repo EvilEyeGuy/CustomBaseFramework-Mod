@@ -129,46 +129,22 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>maxSoldiers</code></td>
-<td>whole number</td>
-<td><code>40</code></td>
-<td>Upper limit on fighters. Once the settlement has this many, further spawn anchors for fighters stay empty; gunner anchors still get theirs. 0 means no limit.</td>
-</tr>
-<tr>
-<td><code>maxCivilians</code></td>
-<td>whole number</td>
-<td><code>30</code></td>
-<td>Upper limit on civilians. Once the settlement has this many pawns that are not fighters, further civilian spawn anchors stay empty. 0 means no limit.</td>
-</tr>
-<tr>
-<td><code>share</code><br>Weight</td>
-<td>number</td>
-<td><code>0</code></td>
-<td>Weight of this settlement type against the other types the same faction may get. 0 counts as 1.</td>
-</tr>
-<tr>
 <td><code>assaultDelayTicks</code><br>Assault delay</td>
 <td>whole number</td>
 <td><code>25000</code></td>
 <td>How long the defenders wait before they attack, in ticks.</td>
 </tr>
 <tr>
-<td><code>treeShare</code></td>
-<td>number</td>
-<td><code>0</code></td>
-<td>Share of wild trees inside the settlement that are kept when it is built, 0 to 1. 0 clears them.</td>
-</tr>
-<tr>
-<td><code>minHouseSize</code><br>Smallest house</td>
-<td>whole number</td>
-<td><code>5</code></td>
-<td>Edge length of the smallest house. Bays narrower than this are dropped.</td>
-</tr>
-<tr>
 <td><code>budget</code></td>
 <td>list of <a href="BudgetEntry.html">BudgetEntry</a></td>
 <td>none</td>
 <td>Which categories the settlement wants, how many of each, and what share of the area.</td>
+</tr>
+<tr>
+<td><code>campTypes</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>SitePartDef names, such as BanditCamp or Outpost. This camp plan builds these quest sites. Only for the kind Camp.</td>
 </tr>
 <tr>
 <td><code>coreSize</code><br>Core size</td>
@@ -216,7 +192,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>excludeFactions</code><br>Excluded factions</td>
 <td>list of text</td>
 <td>none</td>
-<td>Factions (FactionDef defName) that never get this settlement type, even when their tags or tech level fit.</td>
+<td>Factions (FactionDef defName). On a settlement type: they never get it, even when their tags or tech level fit. On a piece or category (under placement): the piece is not used in their settlements.</td>
 </tr>
 <tr>
 <td><code>factionTags</code><br>Factions</td>
@@ -237,12 +213,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Which pieces may serve as gatehouses.</td>
 </tr>
 <tr>
-<td><code>openTerrain</code></td>
-<td>true/false</td>
-<td><code>false</code></td>
-<td>Lets the planner choose a site that needs earthwork first, such as rock cleared away. Off by default; the planner still does it as a last resort.</td>
-</tr>
-<tr>
 <td><code>harbor</code></td>
 <td><a href="HafenSpec.html">HafenSpec</a></td>
 <td>none</td>
@@ -255,34 +225,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Furniture gets the style of the owning faction's ideoligion. Needs Ideology.</td>
 </tr>
 <tr>
-<td><code>notchMax</code><br>Maximum notch</td>
-<td>whole number</td>
-<td><code>6</code></td>
-<td>How deep the outline may cut inwards where the terrain calls for it.</td>
-</tr>
-<tr>
-<td><code>kind</code><br>Settlement kind</td>
+<td><code>kind</code></td>
 <td>Ortsart (MedievalTown, ModernTown, Camp, Dungeon)</td>
 <td><code>MedievalTown</code></td>
-<td>On a settlement type: MedievalTown or ModernTown. ModernTown allows roads up to 6 wide and lays power conduits. Camp and Dungeon are switched off at the moment. On a pawn list entry: the pawn kind (PawnKindDef defName).</td>
-</tr>
-<tr>
-<td><code>campTypes</code></td>
-<td>list of text</td>
-<td>none</td>
-<td>SitePartDef names, such as BanditCamp or Outpost. This camp plan builds these quest sites. Only for the kind Camp.</td>
-</tr>
-<tr>
-<td><code>runMax</code><br>Longest wall run</td>
-<td>whole number</td>
-<td><code>6</code></td>
-<td>Longest straight piece of wall before it must step.</td>
-</tr>
-<tr>
-<td><code>runMin</code><br>Shortest wall run</td>
-<td>whole number</td>
-<td><code>1</code></td>
-<td>Shortest straight piece of wall before it may turn.</td>
+<td>Kind of place. MedievalTown: walls with towers and gatehouses. ModernTown: street grid with roads up to 6 wide, power conduits, no gatehouses. Camp: only for the quest camps named under campTypes. Dungeon is switched off.</td>
 </tr>
 <tr>
 <td><code>mapSize</code><br>Map size</td>
@@ -303,6 +249,18 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Keeps enough room between houses for a path.</td>
 </tr>
 <tr>
+<td><code>maxCivilians</code></td>
+<td>whole number</td>
+<td><code>30</code></td>
+<td>Upper limit on civilians. Once the settlement has this many pawns that are not fighters, further civilian spawn anchors stay empty. 0 means no limit.</td>
+</tr>
+<tr>
+<td><code>maxSoldiers</code></td>
+<td>whole number</td>
+<td><code>40</code></td>
+<td>Upper limit on fighters. Once the settlement has this many, further spawn anchors for fighters stay empty; gunner anchors still get theirs. 0 means no limit.</td>
+</tr>
+<tr>
 <td><code>minBuildingGap</code><br>Smallest gap between buildings</td>
 <td>whole number</td>
 <td><code>0</code></td>
@@ -315,16 +273,34 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How full the outline must be against its convex hull. Lower allows more ragged shapes.</td>
 </tr>
 <tr>
+<td><code>minHouseSize</code><br>Smallest house</td>
+<td>whole number</td>
+<td><code>5</code></td>
+<td>Edge length of the smallest house. Bays narrower than this are dropped.</td>
+</tr>
+<tr>
 <td><code>minLobe</code><br>Smallest bulge</td>
 <td>whole number</td>
 <td><code>5</code></td>
 <td>Smallest usable bulge of the outline. 0 turns the check off.</td>
 </tr>
 <tr>
+<td><code>notchMax</code><br>Maximum notch</td>
+<td>whole number</td>
+<td><code>6</code></td>
+<td>How deep the outline may cut inwards where the terrain calls for it.</td>
+</tr>
+<tr>
 <td><code>noWdLoot</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
 <td>Switches off the World Domination loot budget for this settlement type.</td>
+</tr>
+<tr>
+<td><code>openTerrain</code></td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td>Lets the planner choose a site that needs earthwork first, such as rock cleared away. Off by default; the planner still does it as a last resort.</td>
 </tr>
 <tr>
 <td><code>requiredMods</code><br>Needs these mods</td>
@@ -349,6 +325,24 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>whole number</td>
 <td><code>2</code></td>
 <td>Width of the main road. There are only two widths on purpose; more cuts the map up visually.</td>
+</tr>
+<tr>
+<td><code>runMax</code><br>Longest wall run</td>
+<td>whole number</td>
+<td><code>6</code></td>
+<td>Longest straight piece of wall before it must step.</td>
+</tr>
+<tr>
+<td><code>runMin</code><br>Shortest wall run</td>
+<td>whole number</td>
+<td><code>1</code></td>
+<td>Shortest straight piece of wall before it may turn.</td>
+</tr>
+<tr>
+<td><code>share</code><br>Weight</td>
+<td>number</td>
+<td><code>0</code></td>
+<td>Weight of this settlement type against the other types the same faction may get. 0 counts as 1.</td>
 </tr>
 <tr>
 <td><code>siteTags</code></td>
@@ -421,6 +415,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>whole number</td>
 <td><code>24</code></td>
 <td>How far apart curtain towers stand. Larger means fewer towers.</td>
+</tr>
+<tr>
+<td><code>treeShare</code></td>
+<td>number</td>
+<td><code>0</code></td>
+<td>Share of wild trees inside the settlement that are kept when it is built, 0 to 1. 0 clears them.</td>
 </tr>
 <tr>
 <td><code>wallGap</code><br>Gap to the wall</td>

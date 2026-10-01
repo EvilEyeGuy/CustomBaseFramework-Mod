@@ -155,7 +155,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>pawns</code><br>Animals</td>
 <td>text</td>
 <td>none</td>
-<td>On a spawn anchor: one pawn kind (defName) for the spot, used when pawnList is empty. With neither, a regular defender takes the spot. On a pen: the pawn list (PawnListDef) its animals come from; empty leaves the pen empty.</td>
+<td>The pawn list (PawnListDef) the animals of the pen come from. Empty leaves the pen empty.</td>
 </tr>
 <tr>
 <td><code>plants</code></td>
@@ -173,7 +173,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>weight</code></td>
 <td>number</td>
 <td><code>1</code></td>
-<td>How likely this is picked over its siblings. Belongs on the settlement, not on the piece.</td>
+<td>Weight against the other entries of the same list. Higher values are picked more often.</td>
 </tr>
 </tbody>
 </table>

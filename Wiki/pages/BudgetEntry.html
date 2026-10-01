@@ -146,18 +146,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>The loot table (LootTableDef) used here. On an anchor it fills the containers. On an object list member it replaces the anchor's table. On a content zone or a settlement budget entry it fills content zones. Not used on dungeon profiles.</td>
 </tr>
 <tr>
-<td><code>withIdeo</code></td>
-<td>list of text</td>
-<td>none</td>
-<td>Memes or precepts (defNames). The entry is only built when the owning faction's ideoligion has at least one of them. Needs Ideology.</td>
-</tr>
-<tr>
-<td><code>withoutIdeo</code></td>
-<td>list of text</td>
-<td>none</td>
-<td>Memes or precepts (defNames). The entry is not built when the owning faction's ideoligion has one of them. Needs Ideology.</td>
-</tr>
-<tr>
 <td><code>piece</code></td>
 <td><a href="PieceDef.html">PieceDef</a></td>
 <td>none</td>
@@ -179,7 +167,19 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>weight</code></td>
 <td>number</td>
 <td><code>1</code></td>
-<td>How likely this is picked over its siblings. Belongs on the settlement, not on the piece.</td>
+<td>Weight against the other entries of the same list. Higher values are picked more often.</td>
+</tr>
+<tr>
+<td><code>withIdeo</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>Memes or precepts (defNames). The entry, or on a piece or category (under placement) the piece, is only used when the owning faction's ideoligion has at least one of them. Needs Ideology.</td>
+</tr>
+<tr>
+<td><code>withoutIdeo</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>Memes or precepts (defNames). The entry, or on a piece or category (under placement) the piece, is not used when the owning faction's ideoligion has one of them. Needs Ideology.</td>
 </tr>
 </tbody>
 </table>

@@ -153,12 +153,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>A second anchor layer above the first. Its anchors may overlap others and clear nothing underneath, for example a tent over a market stall.</td>
 </tr>
 <tr>
-<td><code>offIfMod</code></td>
-<td>text</td>
-<td>none</td>
-<td>packageIds of mods, separated by commas. The piece is not placed when one of them is active.</td>
-</tr>
-<tr>
 <td><code>categories</code></td>
 <td>list of <a href="PieceCategoryDef.html">PieceCategoryDef</a></td>
 <td>none</td>
@@ -189,6 +183,18 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Which side of this gatehouse faces out of the town as drawn: North, East, South or West. An Outside anchor wins. Empty takes gatehouseOutward of the wall profile, else South.</td>
 </tr>
 <tr>
+<td><code>eaves</code></td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td>Places an eave from Architecture of the Rim on every outer wall and outer door. Does nothing without that mod.</td>
+</tr>
+<tr>
+<td><code>eavesMaterial</code><br>Eave material</td>
+<td>text</td>
+<td>none</td>
+<td>Material of the eaves. Empty takes the material of the wall they sit on.</td>
+</tr>
+<tr>
 <td><code>legend</code></td>
 <td>list of <a href="LegendEntry.html">LegendEntry</a></td>
 <td>none</td>
@@ -199,6 +205,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>list of text</td>
 <td>none</td>
 <td>Which cells belong to the piece at all. Everything outside stays untouched.</td>
+</tr>
+<tr>
+<td><code>offIfMod</code></td>
+<td>text</td>
+<td>none</td>
+<td>packageIds of mods, separated by commas. The piece is not placed when one of them is active.</td>
 </tr>
 <tr>
 <td><code>onlyWithMod</code></td>
@@ -264,7 +276,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>things</code><br>Objects</td>
 <td>list of text</td>
 <td>none</td>
-<td>The load-bearing layer: walls, doors, anything a cell is built out of.</td>
+<td>The structure layer: walls, doors and everything a cell is built from, one character per cell, resolved through the legend.</td>
 </tr>
 <tr>
 <td><code>things2</code><br>Objects, second layer</td>
@@ -277,18 +289,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>list of text</td>
 <td>none</td>
 <td>A third pass for the rare cell that carries three things.</td>
-</tr>
-<tr>
-<td><code>eaves</code><br>Eaves</td>
-<td>true/false</td>
-<td><code>false</code></td>
-<td>Places an eave from Architecture of the Rim on every outer wall and outer door. Does nothing without that mod.</td>
-</tr>
-<tr>
-<td><code>eavesMaterial</code><br>Eave material</td>
-<td>text</td>
-<td>none</td>
-<td>Material of the eaves. Empty takes the material of the wall they sit on.</td>
 </tr>
 <tr>
 <td><code>type</code></td>

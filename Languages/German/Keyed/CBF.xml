@@ -96,7 +96,7 @@
   <CBF_Field_unique>Nur einmal</CBF_Field_unique>
   <CBF_FieldDesc_unique>Höchstens eines je Siedlung.</CBF_FieldDesc_unique>
   <CBF_Field_wallContact>An der Mauer</CBF_Field_wallContact>
-  <CBF_FieldDesc_wallContact>Muss an der Stadtmauer stehen.</CBF_FieldDesc_wallContact>
+  <CBF_FieldDesc_wallContact>Steht bevorzugt an der Stadtmauer. Das Stückfeld An der Mauer steuert das feiner und geht vor.</CBF_FieldDesc_wallContact>
   <CBF_Field_prefGate>Zum Tor</CBF_Field_prefGate>
   <CBF_FieldDesc_prefGate>Wie stark es ans Tor möchte.</CBF_FieldDesc_prefGate>
   <CBF_Field_prefCenter>Zur Mitte</CBF_Field_prefCenter>
@@ -110,7 +110,6 @@
   <CBF_Field_terrain>Boden</CBF_Field_terrain>
   <CBF_FieldDesc_terrain>Die Bodenebene. Ein Zeichen je Zelle, aufgelöst über die Legende.</CBF_FieldDesc_terrain>
   <CBF_Field_things>Objekte</CBF_Field_things>
-  <CBF_FieldDesc_things>Die tragende Ebene: Mauern, Türen, alles, woraus eine Zelle gebaut ist.</CBF_FieldDesc_things>
   <CBF_Field_things2>Objekte, zweite Ebene</CBF_Field_things2>
   <CBF_FieldDesc_things2>Was an der ersten hängt, etwa eine Wandfackel. RimWorld lässt in einer Zelle eine Mauer und ein daran hängendes Ding zu; mit nur einer Ebene bekäme die Mauer ein Loch.</CBF_FieldDesc_things2>
   <CBF_Field_things3>Objekte, dritte Ebene</CBF_Field_things3>
@@ -140,7 +139,6 @@
   <CBF_Field_countPerSettlement>Anzahl je Siedlung</CBF_Field_countPerSettlement>
   <CBF_FieldDesc_countPerSettlement>Wie viele davon eine Siedlung haben möchte, als Spanne.</CBF_FieldDesc_countPerSettlement>
   <CBF_Field_weight>Gewicht</CBF_Field_weight>
-  <CBF_FieldDesc_weight>Wie wahrscheinlich das gegenüber seinesgleichen gezogen wird. Gehört an die Siedlung, nicht an das Stück.</CBF_FieldDesc_weight>
   <CBF_Field_mapSize>Kartengröße</CBF_Field_mapSize>
   <CBF_FieldDesc_mapSize>Wie groß die Karte ist, auf der diese Siedlung entsteht.</CBF_FieldDesc_mapSize>
   <CBF_Field_towerCorner>Größe der Ecktürme</CBF_Field_towerCorner>
@@ -203,8 +201,6 @@
   <CBF_FieldDesc_weightHilly>Wie stark dieser Ortstyp hügeliges Gelände möchte.</CBF_FieldDesc_weightHilly>
   <CBF_Field_factionTags>Fraktionen</CBF_Field_factionTags>
   <CBF_FieldDesc_factionTags>Welche Fraktionen diesen Ortstyp benutzen dürfen.</CBF_FieldDesc_factionTags>
-  <CBF_Field_share>Flächenanteil</CBF_Field_share>
-  <CBF_FieldDesc_share>Welchen Anteil der bebauten Fläche dieser Budgetposten bekommen soll.</CBF_FieldDesc_share>
   <CBF_Field_count>Anzahl</CBF_Field_count>
   <CBF_FieldDesc_count>Wie viele davon die Siedlung will, als Spanne.</CBF_FieldDesc_count>
   <CBF_Field_coreSize>Größe des Ortskerns</CBF_Field_coreSize>
@@ -786,4 +782,6 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_WdLootShareHelp>100 %: Jeder Behälter behält die Beute seiner CBF- oder Medieval-Overhaul-Tabelle, die World-Domination-Beute ist aus. 0 %: Die allgemeinen Behälter bekommen das Beutebudget von World Domination, so wie World Domination es machen würde. Dazwischen behält dieser Anteil der Behälter seine geplante Beute. Der Rest teilt sich das volle World-Domination-Budget, und jeder davon bekommt mindestens ein Stück. Es gibt nie weniger Beute als bei 0 %.</CBF_WdLootShareHelp>
   <CBF_Au_NeedsMod>Braucht den Mod {0}, der nicht aktiv ist. Das Stück fällt gewollt weg und wird geprüft, sobald der Mod aktiv ist.</CBF_Au_NeedsMod>
   <CBF_Au_OffByMod>Aus, weil der Mod {0} aktiv ist. Das Stück fällt gewollt weg und wird geprüft, sobald der Mod aus ist.</CBF_Au_OffByMod>
+  <CBF_PawnPreviewInGame>Vorschau nur im laufenden Spiel</CBF_PawnPreviewInGame>
+  <CBF_Type_UnitSwapDef>Einheitentausch</CBF_Type_UnitSwapDef>
 </LanguageData>

@@ -117,7 +117,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Start / What you can change</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html" class="hier">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="what-you-can-change">What you can change</h1><p class="unter">Start</p>
-<p>An overview of everything you can set, which values have a fixed meaning, and which names you should not change. Each field is described in detail in the <a href="Field-Reference.html">field reference</a>. Values in XML are case-sensitive and partly German, because they are the names the code uses.</p>
+<p>This page lists what you can set in the editor, which values only accept certain words, and which names you should not rename. Each field is described in detail in the <a href="Field-Reference.html">field reference</a>.</p>
+<p>Values in XML are case-sensitive. They are the names the code uses, so the editor sometimes shows a different label for the same value. Where that is the case, the editor label is given in bold.</p>
 <h2 id="overview-by-area">Overview by area</h2>
 <table>
 <thead>
@@ -174,46 +175,52 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="values-with-a-fixed-meaning">Values with a fixed meaning</h2>
 <p>These fields only accept certain words. Anything else is an error or is ignored.</p>
 <h3 id="ward-kind-kind">Ward kind (<code>kind</code>)</h3>
-<p>Every settlement type has up to three rings. The kind decides which ring a ward is:</p>
+<p>A ward is one ring of a settlement. Every settlement type has up to three. The kind decides which ring a ward is:</p>
 <table>
 <thead>
 <tr>
 <th>Kind</th>
+<th>Editor tab</th>
 <th>Ring</th>
-<th>Default distance</th>
-<th>Clears plants</th>
+<th>Gap between buildings (<code>buildingGap</code>)</th>
+<th>Clears plants (<code>clearRubble</code>)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>Town</code></td>
-<td>Old town, innermost, protected best, filled first</td>
+<td><strong>Town</strong></td>
+<td>Innermost, protected best, filled first</td>
 <td>1 to 2</td>
 <td>yes</td>
 </tr>
 <tr>
 <td><code>Suburb</code></td>
-<td>Suburb around the old town</td>
+<td><strong>Suburb</strong></td>
+<td>Around the town</td>
 <td>3 to 5</td>
 <td>no</td>
 </tr>
 <tr>
 <td><code>Rural</code></td>
-<td>Countryside outside, farmsteads and pens</td>
+<td><strong>Countryside</strong></td>
+<td>Outside, farmsteads and pens</td>
 <td>4 to 8</td>
 <td>no</td>
 </tr>
 </tbody>
 </table>
+<p>The last two columns are the values a ward gets when the editor creates it. In hand-written XML, <code>buildingGap</code> 0 to 0 takes the gap of the settlement type, and <code>clearRubble</code> is true unless set.</p>
 <ul>
-<li>The kind is the identity of a ward. A settlement type has at most one ward of each kind. That is why the editor shows it as a fixed tab (Old town, Suburb, Countryside) and does not let you change it.</li>
-<li>A missing ward is added with <strong>+</strong> next to the ward tabs. You cannot add a second ward of the same kind; in XML a second one gets no area.</li>
+<li>The kind is the identity of a ward. A settlement type has at most one ward of each kind. That is why the editor shows each ward as a fixed tab and does not let you change its kind.</li>
+<li>A missing ward is added with <strong>+</strong> next to the ward tabs. You cannot add a second ward of the same kind. In XML a second one gets no area.</li>
 <li>A walled settlement type needs a <code>Town</code> ward. Without one the plan fails. Without a <code>Suburb</code> there is simply no suburb.</li>
 <li>Fields work in the suburb and the countryside, pens only in the countryside.</li>
 <li><code>Castle</code> exists in the code but is not planned as a ring of its own. Do not use it.</li>
-<li><code>name</code> of a ward is replaced when the game loads. Use <code>label</code> for your own display name.</li>
+<li>The <code>name</code> of a ward is replaced when the game loads. Use <code>label</code> for your own display name.</li>
 </ul>
 <h3 id="kind-of-place-kind">Kind of place (<code>kind</code>)</h3>
+<p>Set on the settlement type as <strong>Kind of place</strong>.</p>
 <table>
 <thead>
 <tr>
@@ -224,11 +231,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>MedievalTown</code></td>
-<td>Walls with towers and gatehouses, dense wall pass. The default.</td>
+<td>Walls with towers and gatehouses. The default.</td>
 </tr>
 <tr>
 <td><code>ModernTown</code></td>
-<td>Street grid up to 6 wide, power conduits, no gatehouses, wards without walls allowed, fields not fenced.</td>
+<td>Street grid with roads up to 6 wide, power conduits, no gatehouses, wards without walls allowed, fields not fenced.</td>
 </tr>
 <tr>
 <td><code>Camp</code></td>
@@ -236,58 +243,71 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
+<p><code>Dungeon</code> also exists in the code but is switched off at the moment.</p>
 <h3 id="garrison-post-post">Garrison post (<code>post</code>)</h3>
+<p>Where the pawns of a garrison entry stand.</p>
 <table>
 <thead>
 <tr>
 <th>Post</th>
+<th>Editor label</th>
 <th>Where the pawns stand</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>Inside</code></td>
+<td><strong>Inside</strong></td>
 <td>On lanes, squares and open ground inside the ward</td>
 </tr>
 <tr>
 <td><code>Walkway</code></td>
+<td><strong>Wall</strong></td>
 <td>On the wall walk at the embrasures</td>
 </tr>
 <tr>
 <td><code>Gate</code></td>
+<td><strong>Gate</strong></td>
 <td>At the gates</td>
 </tr>
 </tbody>
 </table>
-<p>If a post has no cells, for example no wall walk, the pawns stand inside instead.</p>
+<p>If a post has no cells, for example a ward without a wall walk, the pawns stand inside instead.</p>
 <h3 id="pawn-list-role-role">Pawn list role (<code>role</code>)</h3>
+<p>How the pawns of a pawn list behave.</p>
 <table>
 <thead>
 <tr>
 <th>Role</th>
+<th>Editor label</th>
 <th>Behaviour</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>Guard</code></td>
-<td>Guard: joins the defence of the settlement</td>
+<td><strong>Guard</strong></td>
+<td>Joins the defence of the settlement.</td>
 </tr>
 <tr>
 <td><code>Sentry</code></td>
-<td>Post: holds its spot around the anchor</td>
+<td><strong>Post</strong></td>
+<td>Holds its spot around the anchor.</td>
 </tr>
 <tr>
 <td><code>Gunner</code></td>
-<td>Gunner: mans artillery</td>
+<td><strong>Gunner</strong></td>
+<td>Mans the guns around its spot.</td>
 </tr>
 <tr>
 <td><code>Civilian</code></td>
-<td>Civilian: may flee. Warns when fighters are in the list. The default.</td>
+<td><strong>Civilian</strong></td>
+<td>May flee and does not need to be able to fight. The default. The log warns when a civilian list contains fighters.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="anchors">Anchors</h3>
+<p>An anchor is a marked cell in a piece where CBF places something when the piece is built. The anchor kind decides what:</p>
 <table>
 <thead>
 <tr>
@@ -329,7 +349,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>Outside</code></td>
-<td>The side that faces out; gives the piece its direction</td>
+<td>The side that faces out. It gives the piece its direction.</td>
 </tr>
 <tr>
 <td><code>Annex</code></td>
@@ -352,7 +372,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>type</code></td>
-<td><code>Building</code>, <code>WallPart</code> (drawn as wall), <code>DungeonRoom</code></td>
+<td><code>Building</code>, <code>WallPart</code> (drawn as wall), <code>DungeonRoom</code> (dungeons are switched off at the moment)</td>
 </tr>
 <tr>
 <td><code>rotation</code></td>
@@ -366,12 +386,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </table>
 <p>The terrain <code>CBF_EmptyCell</code> marks a cell that belongs to the piece but keeps the natural ground of the map.</p>
 <h3 id="material-lists">Material lists</h3>
+<p>A material list says which thing fills each role, for example which wall or door. See <a href="Material-Lists.html">Material lists</a>.</p>
 <ul>
 <li><code>criticality</code>: <code>Optional</code> or <code>Critical</code>. If a critical role finds nothing, the whole list is unusable, and with it every settlement type that uses it.</li>
-<li><code>stuffChain</code> knows two special words: <code>MapStone</code> (stone blocks of the map) and <code>MapWood</code> (wood).</li>
+<li><code>stuffChain</code> knows two special words: <code>MapStone</code> (stone blocks of the map, <strong>Stone of the map</strong>) and <code>MapWood</code> (wood, <strong>Wood of the map</strong>).</li>
 <li><code>district</code>: <code>Town</code>, <code>Suburb</code> or <code>Rural</code>.</li>
 <li>Roles the generator uses itself: <code>WALL</code>, <code>DOOR</code>, <code>GATE</code>, <code>FLOOR_ROAD</code>, <code>FENCE</code>, <code>FENCE_GATE</code>, <code>PEN_MARKER</code>, <code>BRIDGE</code>, <code>ROOF</code>, <code>CONDUIT</code> and the others shown in the list. Other role names work in pieces as long as the list defines them.</li>
-<li><strong>Applies to</strong> and <strong>Ward</strong> only take effect for cells the generator draws itself, not for roles inside pieces.</li>
+<li><strong>Applies to</strong> and the ward choice (<strong>Any ward</strong> by default) only take effect for cells the generator draws itself, not for roles inside pieces.</li>
 </ul>
 <h3 id="loot">Loot</h3>
 <table>
@@ -384,15 +405,15 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td>Missing things (<code>onMissing</code>)</td>
-<td><code>Skip</code> (default), <code>Fallback</code> (uses the fallback things), <code>Silver</code></td>
+<td><code>Skip</code> (default, drops the entry), <code>Fallback</code> (uses the fallback things), <code>Silver</code> (gives silver instead)</td>
 </tr>
 <tr>
 <td>Object list display (<code>kind</code>)</td>
-<td><code>Fill</code> fills the containers (default), <code>Empty</code> places them empty</td>
+<td><code>Fill</code> fills the containers (default), <code>Empty</code> places them without loot or occupants</td>
 </tr>
 <tr>
-<td>Container flags</td>
-<td><code>empty</code> empty, <code>stays</code> stays closed, <code>foreign</code> leaves the loot to the mod that brings the container</td>
+<td>Container fields</td>
+<td><code>empty</code> names the building that replaces the container once it is emptied. <code>stays</code>: the building itself is placed and the loot lies visibly on it. <code>foreign</code>: loot and occupants come from the mod that brings the container.</td>
 </tr>
 </tbody>
 </table>
@@ -407,11 +428,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>techLevels</code></td>
-<td>RimWorld tech levels: <code>Neolithic</code>, <code>Medieval</code>, <code>Industrial</code>, <code>Spacer</code>, <code>Ultra</code>. They only matter together with <strong>For all factions of these levels</strong>.</td>
+<td>RimWorld tech levels: <code>Neolithic</code>, <code>Medieval</code>, <code>Industrial</code>, <code>Spacer</code>, <code>Ultra</code>. For choosing factions they only matter together with <strong>For all factions of these levels</strong>.</td>
 </tr>
 <tr>
 <td><code>wdLevel</code></td>
-<td>1 to 4</td>
+<td>A range from 1 to 4. 0 means no tier.</td>
 </tr>
 <tr>
 <td><code>wdType</code></td>
@@ -419,30 +440,30 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>riafHolding</code></td>
-<td><code>Village</code> (village), <code>Town</code> (town), <code>Garrison</code> (garrison); empty for none. Only with A Rim of Ice and Fire.</td>
+<td><code>Village</code>, <code>Town</code>, <code>Garrison</code>; empty for none. Only with A Rim of Ice and Fire.</td>
 </tr>
 <tr>
 <td><code>campTypes</code></td>
-<td>Quest site names: <code>Outpost</code>, <code>BanditCamp</code>, <code>RaidSource</code>, <code>WorkSite_Mining</code>, <code>WorkSite_Logging</code>, <code>WorkSite_Hunting</code>, <code>WorkSite_Farming</code></td>
+<td>Names of quest site parts (SitePartDef), for example <code>Outpost</code>, <code>BanditCamp</code>, <code>RaidSource</code>, <code>WorkSite_Mining</code>, <code>WorkSite_Logging</code>, <code>WorkSite_Hunting</code>, <code>WorkSite_Farming</code></td>
 </tr>
 <tr>
-<td>Ideoligion role</td>
-<td>A role precept, or <code>Kampf</code> for the shooting or melee specialist by weapon</td>
+<td>Ideoligion role (<code>ideoRole</code>)</td>
+<td>A role precept, or <code>Kampf</code> (<strong>Combat role by weapon</strong>) for the shooting or melee specialist depending on the weapon</td>
 </tr>
 <tr>
 <td>Ruin occupation (<code>occupation</code>)</td>
-<td><code>None</code>, <code>Builder</code> (the owner defends), <code>Occupier</code> (occupiers, default)</td>
+<td><code>None</code> (nobody), <code>Builder</code> (the original owners defend), <code>Occupier</code> (the conquering faction, the default)</td>
 </tr>
 </tbody>
 </table>
 <h2 id="do-not-change">Do not change</h2>
-<p>These names are used by other content, by the code or by savegames. Renaming or deleting them breaks something.</p>
+<p>Other content, the code or savegames refer to these names. Renaming or deleting them breaks something.</p>
 <ul>
 <li><strong>defNames of settlement types in use.</strong> Savegames store the settlement type of each settlement by name. A renamed type loads with a warning, and the settlement gets a different type.</li>
 <li><strong>District names within a settlement type.</strong> Fields and pens belong to their district by name, and names must be unique in the whole plan.</li>
 <li><strong>Shared material lists:</strong> <code>CBF_MaterialList_Base</code>, <code>CBF_MO_MaterialList</code>, <code>CBF_Modern_MaterialList</code>, <code>CBF_VFEM2_MaterialList</code>. Most shipped settlement types use them.</li>
 <li><strong>Abstract parents:</strong> <code>CBF_BeutebehaelterBase</code>, <code>CBF_Ruin_Basis</code>, <code>CBF_Modern_SoldatBasis</code>, <code>CBF_MO_NeutralerSoldatBasis</code>, <code>CBF_MO_StammBasis</code>. Inherit from them, do not change them.</li>
-<li><strong>Categories the generator looks for by name:</strong> <code>WallTower</code>, <code>WallGateHouse</code>, <code>GateHouse</code>, <code>WallSegment</code>, <code>CBF_ModernDefense</code>, <code>CBF_Vanilla_Gatehouse</code>, <code>Market</code>, <code>Farm</code>, <code>Landmark</code>, <code>HouseSmall</code>, <code>DungeonRoom</code>, <code>CBF_Baubar</code>.</li>
+<li><strong>Categories the generator looks for by name:</strong> <code>WallTower</code>, <code>WallGateHouse</code>, <code>GateHouse</code>, <code>WallSegment</code>, <code>CBF_ModernDefense</code>, <code>CBF_Vanilla_Gatehouse</code>, <code>Market</code>, <code>Farm</code>, <code>Landmark</code>, <code>HouseSmall</code>, <code>DungeonRoom</code>.</li>
 <li><strong>Defs the code looks up:</strong> <code>CBF_EmptyCell</code>, <code>CBF_MapSteps</code>, <code>CBF_Base_Faction</code>, <code>CBF_Terrain</code>, <code>CBF_Hold</code>, <code>CBF_Walkway</code>, <code>CBF_Editor</code>.</li>
 <li><strong>The prefix <code>CBF_</code></strong> on map generators and map steps marks a map as a CBF settlement, and the uninstaller removes every <code>CBF_</code> def. Do not give defs of your own mod this prefix; use your own.</li>
 <li><strong>Styles</strong> <code>Standard</code>, <code>Rustical</code>, <code>Fancy</code>, <code>CBF_Medieval</code>, <code>CBF_VFEM2</code>, <code>CBF_ModernVanilla</code>: many pieces refer to them.</li>
@@ -451,10 +472,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="changing-content-of-other-mods">Changing content of other mods</h2>
 <p>You can change settlement types, pieces, categories, loot tables, object lists, crop lists, material lists and pawn lists of CBF or of other mods. The original files stay untouched. When you save, the editor writes a patch into your own mod: <code>Patches/CBF_Changes/&lt;type&gt;_&lt;defName&gt;.xml</code> in the version folder of your mod.</p>
 <ul>
-<li>Only what you changed is patched: single fields, and single entries of lists. Remove one faction from a list, and the patch removes exactly that entry; add one district entry, and the patch adds exactly that one. Other mods that patch the same def keep working, and later CBF updates to fields you did not touch still arrive.</li>
+<li>Only what you changed is patched: single fields, and single entries of lists. Remove one faction from a list, and the patch removes exactly that entry. Add one district entry, and the patch adds exactly that one. Other mods that patch the same def keep working, and later CBF updates to fields you did not touch still arrive.</li>
 <li>Every operation only runs when the mod it patches is active (<code>MayRequire</code>). For content that CBF or another mod only loads together with a further mod, such as the Medieval Overhaul settlement types, that mod is required too.</li>
 <li>Every operation also checks first that its target exists. If a mod renames or removes something, the operation does nothing instead of causing errors.</li>
-<li>Saving again rewrites the patch file for that def from the current state. There is no button to undo all changes; to return to the original, delete the patch file.</li>
+<li>Saving again rewrites the patch file for that def from the current state. There is no button to undo all changes. To return to the original, delete the patch file.</li>
 <li>Renaming and deleting defs of other mods is not possible, because other content and savegames refer to their names. Use <strong>Copy into my mod</strong> or <strong>Duplicate</strong> for an independent version under a new name.</li>
 <li>Changing the structure of a piece of another mod (exporting it again from the map) is also saved as a patch. The new structure takes effect after restarting the game.</li>
 </ul>

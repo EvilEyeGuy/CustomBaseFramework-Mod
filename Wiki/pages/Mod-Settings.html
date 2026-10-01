@@ -120,11 +120,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>Options &gt; Mod settings &gt; Custom Base Framework.</p>
 <h2 id="editor">Editor</h2>
 <ul>
-<li><strong>Editor in the architect menu</strong> shows the editor as its own category in the architect menu. Without it the editor opens only in development mode, debug menu entry <strong>Open editor</strong>.</li>
-<li><strong>Open editor guide</strong> opens this guide. In the editor, <strong>Guide</strong> at the bottom of the left bar and in the title bar does the same.</li>
+<li><strong>Editor in the architect menu</strong> shows the editor as its own category in the architect menu. Without the tick the editor opens only in development mode, through the debug menu entry <strong>Open editor</strong>. See <a href="Getting-Started.html">Getting started</a>.</li>
+<li><strong>Open editor guide</strong> opens this guide in your browser. In the editor, <strong>Guide</strong> in the title bar and at the bottom of the left bar does the same.</li>
 </ul>
 <h2 id="settlements-per-faction">Settlements per faction</h2>
-<p>Lists every faction that gets its bases from Custom Base Framework, from any mod. <strong>Choose factions</strong> shows all of them in a window of their own:</p>
+<p>Shows how many factions get their bases from Custom Base Framework, from any mod. <strong>Choose factions</strong> lists all of them in a window of their own:</p>
 <ul>
 <li><strong>Search</strong> by faction or mod name.</li>
 <li><strong>Sorted by mod</strong> or <strong>Sorted by name</strong> changes the order.</li>
@@ -132,25 +132,27 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </ul>
 <p>Untick a faction to give it RimWorld's own bases again. Bases that were already visited stay as they are.</p>
 <h2 id="building-ground">Building ground</h2>
-<p><strong>Reserve building ground before the rock</strong>: before RimWorld places the rock, the edge of the mountain recedes where the settlement will stand, only as far as it needs to fit. Off means the settlement has to make do with the terrain as grown and can fail on rocky tiles.</p>
+<p><strong>Reserve building ground before the rock</strong>: before RimWorld places the rock, the edge of the mountain recedes where the settlement will stand, only as far as the settlement needs to fit. The shape of the mountain is kept, the rest of the map is untouched. Off means the settlement has to make do with the terrain as generated and can fail on rocky tiles.</p>
 <h2 id="other-settlement-mods">Other settlement mods</h2>
+<p>These settings decide which places CBF builds when another mod or a quest would build them otherwise. They are on by default.</p>
 <ul>
-<li><strong>Leave settlements of other settlement mods alone</strong>, on by default. Settlements that another mod builds with its own map generator keep it. Vassal colonies of Empire get no CBF settlements and no CBF quests.</li>
-<li><strong>Build World Domination settlements with CBF</strong>, on by default, only shown with World Domination active. CBF replaces the World Domination layouts and picks the settlement type by tier. Off: CBF leaves them alone.</li>
-<li><strong>Loot in World Domination settlements</strong>, a slider below it, 50% by default. 100% keeps the planned CBF or Medieval Overhaul loot in every container and switches World Domination loot off. 0% gives the general containers World Domination's loot budget, as World Domination would. In between, that share of the containers keeps its planned loot, the rest shares the full World Domination budget and each gets at least one item. There is never less loot than at 0%. See <a href="Compatibility.html#loot">Compatibility</a>.</li>
-<li><strong>Build A Rim of Ice and Fire holdings with CBF</strong>, on by default, only shown with A Rim of Ice and Fire active. CBF builds holdings that have a matching settlement type. Off: A Rim of Ice and Fire builds its holdings itself.</li>
+<li><strong>Leave settlements of other settlement mods alone.</strong> Settlements that another mod builds with its own map generator keep it. Vassal colonies of Empire get no CBF settlements and no CBF quests.</li>
+<li><strong>Build camps and work sites with CBF.</strong> CBF builds bandit camps, outposts, raid sources and work sites from quests when a matching camp plan exists. The stockpile and workers of work sites stay as in the base game. Off: RimWorld builds these sites itself.</li>
+<li><strong>Build World Domination settlements with CBF</strong>, only shown with World Domination active. CBF replaces the World Domination layouts and picks the settlement type by World Domination tier. Off: CBF leaves them alone.</li>
+<li><strong>Loot in World Domination settlements</strong>, a slider below the World Domination switch, 50% by default. It sets how many containers keep their planned CBF or Medieval Overhaul loot. 100% keeps the planned loot in every container and switches World Domination loot off. 0% gives the general containers World Domination's loot budget, as World Domination would. In between, that share of the containers keeps its planned loot; the rest shares the full World Domination budget, and each of them gets at least one item. There is never less loot than at 0%. See <a href="Compatibility.html#loot">Compatibility</a>.</li>
+<li><strong>Build A Rim of Ice and Fire holdings with CBF</strong>, only shown with A Rim of Ice and Fire active. CBF builds holdings that have a matching settlement type. Off: A Rim of Ice and Fire builds its holdings itself.</li>
 </ul>
 <p>See <a href="Compatibility.html#mods-with-settlements-of-their-own">Compatibility</a>.</p>
 <h2 id="make-everything-buildable">Make everything buildable</h2>
-<p>Gives every building without an architect category one, so it can be placed from the architect menu instead of crafted and installed. Things without build cost are skipped. Takes effect after a restart. Open build orders for these buildings are cancelled when you switch it off or remove CBF, and the materials are returned.</p>
+<p><strong>Make everything buildable (building aid)</strong> gives every building without an architect category one, so you can place it from the architect menu instead of crafting and installing it. Things without build cost are skipped. The setting takes effect after a restart. When you switch it off or remove CBF, open build orders for these buildings are cancelled and the materials are returned.</p>
 <h2 id="error-report">Error report</h2>
-<p>If a settlement cannot be generated, CBF writes a report with the terrain and the log, and a vanilla settlement is placed instead. A window opens and offers to upload the report.</p>
+<p>If a settlement cannot be generated, CBF places a vanilla settlement instead and writes a report with the terrain and the log. A window opens and offers to upload the report.</p>
 <ul>
-<li><strong>Upload latest error report</strong> in the settings does the same later.</li>
-<li>Uploaded are two files: <code>Bericht.txt</code> (mod list, settlement type, seed, log excerpt) and <code>Gelaende.gel</code> (the terrain of the map). No save games.</li>
+<li><strong>Upload latest error report</strong> in the settings uploads the latest report later.</li>
+<li>Two files are uploaded: <code>Bericht.txt</code> (mod list, settlement type, seed, log excerpt) and <code>Gelaende.gel</code> (the terrain of the map). No save games.</li>
 <li>The link is public. The files are deleted automatically after 30 days.</li>
 <li><strong>Copy links</strong> copies the links together with a short summary of the error. Post them in a comment on the Steam Workshop page.</li>
 </ul>
 <h2 id="remove-cbf-from-this-save">Remove CBF from this save</h2>
-<p><strong>Remove CBF data from this save</strong> is available in a loaded game. It removes CBF quests, map data, containers and settlement plans. Settlements remain, containers are emptied onto the ground. It cannot be undone.</p>
+<p><strong>Remove CBF data from this save</strong> is only available in a loaded game. It removes CBF quests, map data, containers and settlement plans. Settlements remain, and the contents of containers are dropped on the ground. It cannot be undone.</p>
 <p>Afterwards save at once, quit the game and only then remove the mod. As long as CBF stays active, the world map and new maps bring CBF data back.</p><div class="schritte"><a href="Quests.html"><span>Previous</span>Quests</a><a class="weiter" href="Compatibility.html"><span>Next</span>Compatibility</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#editor">Editor</a><a class="t2" href="#settlements-per-faction">Settlements per faction</a><a class="t2" href="#building-ground">Building ground</a><a class="t2" href="#other-settlement-mods">Other settlement mods</a><a class="t2" href="#make-everything-buildable">Make everything buildable</a><a class="t2" href="#error-report">Error report</a><a class="t2" href="#remove-cbf-from-this-save">Remove CBF from this save</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

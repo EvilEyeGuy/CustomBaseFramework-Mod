@@ -140,10 +140,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Critical makes the whole material list unusable when this role finds nothing. Optional, the default, just leaves the role empty.</td>
 </tr>
 <tr>
+<td><code>district</code></td>
+<td>text</td>
+<td>none</td>
+<td>Ward this role entry is meant for: Town, Suburb or Rural. Empty applies everywhere. Only affects what is resolved by role, including cells of pieces that name a role; pieces that name concrete things keep them.</td>
+</tr>
+<tr>
 <td><code>forPieces</code></td>
 <td>list of text</td>
 <td>none</td>
-<td>Pieces or categories this role entry is meant for, for example palisade walls and palisade towers. A match beats a ward match. Only for walls, roads and floors the generator draws itself, not inside buildings; buildings take the material of the map as designed.</td>
+<td>Fortification pieces or categories this role entry is meant for, for example palisade walls and palisade towers. It applies in wards whose walls, emplacements or gatehouses use one of them, and beats a ward match. Only affects what is resolved by role; pieces that name concrete things keep them.</td>
 </tr>
 <tr>
 <td><code>pawnChain</code></td>
@@ -155,19 +161,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>role</code></td>
 <td>text</td>
 <td>none</td>
-<td>Name of a building role, such as wall, floor or door. CBF puts the matching thing from the material list there when no thing or terrain is set.</td>
+<td>Name of a building role, such as wall, floor or door. CBF puts the matching thing from the material list there when no thing or terrain is set. How the pawns behave. Guard joins the general defence, Sentry holds its spot, Gunner mans the guns around its spot, Civilian defends its spot but may flee and need not be able to fight.</td>
 </tr>
 <tr>
 <td><code>roofChain</code></td>
 <td>list of text</td>
 <td>none</td>
 <td>Roofs tried in order for this role. The first one that exists is used.</td>
-</tr>
-<tr>
-<td><code>district</code></td>
-<td>text</td>
-<td>none</td>
-<td>Ward this role entry is meant for: Town, Suburb or Rural. Empty applies everywhere. Only for walls, roads and floors the generator draws itself, not inside buildings; buildings take the material of the map as designed.</td>
 </tr>
 <tr>
 <td><code>stuffChain</code></td>

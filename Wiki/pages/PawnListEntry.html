@@ -134,16 +134,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Role of the faction's ideoligion for pawns of this entry: empty, Kampf (shooting or melee specialist by weapon) or a role precept defName. Needs Ideology.</td>
 </tr>
 <tr>
-<td><code>kind</code><br>Settlement kind</td>
+<td><code>kind</code></td>
 <td>text</td>
 <td>none</td>
-<td>On a settlement type: MedievalTown or ModernTown. ModernTown allows roads up to 6 wide and lays power conduits. Camp and Dungeon are switched off at the moment. On a pawn list entry: the pawn kind (PawnKindDef defName).</td>
+<td>The pawn kind of this entry (PawnKindDef defName).</td>
 </tr>
 <tr>
 <td><code>weight</code></td>
 <td>number</td>
 <td><code>1</code></td>
-<td>How likely this is picked over its siblings. Belongs on the settlement, not on the piece.</td>
+<td>Weight against the other entries of the same list. Higher values are picked more often.</td>
 </tr>
 </tbody>
 </table>

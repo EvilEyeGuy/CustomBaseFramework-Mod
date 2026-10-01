@@ -117,8 +117,14 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Your own content mod</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html" class="hier">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="modding-overview">Modding overview</h1><p class="unter">Modding</p>
-<p>This page is for modders who write XML for Custom Base Framework (CBF) by hand or want to know what the editor writes. It covers the folder layout of a content mod, how the defs connect, and the def types that have no page of their own in the guide: wall profiles, styles, ruins, map steps, buildability rules, help texts and dungeon profiles. The last sections explain how CBF takes over faction bases and draws world icons.</p>
-<p>Every field is listed in the <a href="Field-Reference.html">Field reference</a>. This page shows how the fields are used.</p>
+<p>This page is for modders who write XML for Custom Base Framework (CBF) by hand, or who want to understand what the in-game editor writes. It covers:</p>
+<ul>
+<li>the folder layout of a content mod,</li>
+<li>how the def types connect,</li>
+<li>the def types that have no page of their own: wall profiles, styles, material lists, ruins, map steps, buildability rules, help texts and dungeon profiles,</li>
+<li>how CBF takes over faction bases and draws world map icons.</li>
+</ul>
+<p>Every field of every def type is listed in the <a href="Field-Reference.html">Field reference</a>. This page shows how the fields are used.</p>
 <h2 id="your-own-content-mod">Your own content mod</h2>
 <p>A content mod for CBF is a normal RimWorld mod. It needs no C# and no patches.</p>
 <h3 id="folder-layout">Folder layout</h3>
@@ -171,7 +177,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </code></pre>
 <p><code>loadAfter</code> matters. A def can only inherit with <code>ParentName</code> from a parent in a mod that loads earlier. CBF's abstract parents, such as <code>CBF_Ruin_Basis</code>, are only usable when your mod loads after CBF.</p>
 <h3 id="loadfoldersxml-for-other-mods">LoadFolders.xml for other mods</h3>
-<p>Content that needs another mod can go into a subfolder that only loads when that mod is active. CBF does this for Medieval Overhaul and Vanilla Factions Expanded - Medieval 2:</p>
+<p>Content that needs another mod can go into a subfolder that only loads when that mod is active. CBF does this for Medieval Overhaul and Vanilla Factions Expanded - Medieval 2. Trimmed from CBF's own file:</p>
 <pre><code class="language-xml">&lt;?xml <span class="xa">version</span>=<span class="xw">&quot;1.0&quot;</span> <span class="xa">encoding</span>=<span class="xw">&quot;utf-8&quot;</span>?&gt;
 &lt;<span class="xt">loadFolders</span>&gt;
   &lt;<span class="xt">v1.6</span>&gt;
@@ -182,7 +188,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;/<span class="xt">v1.6</span>&gt;
 &lt;/<span class="xt">loadFolders</span>&gt;
 </code></pre>
-<p><code>/</code> loads <code>Textures</code> and <code>Languages</code> from the mod root. <code>1.6</code> loads <code>1.6/Defs</code> and <code>1.6/Patches</code>. Each conditional line loads its own <code>Defs</code> and <code>Languages</code> folders.</p>
+<ul>
+<li><code>/</code> loads <code>Textures</code> and <code>Languages</code> from the mod root.</li>
+<li><code>1.6</code> loads <code>1.6/Defs</code> and <code>1.6/Patches</code>.</li>
+<li>Each conditional line loads the <code>Defs</code> and <code>Languages</code> folders inside it. <code>IfModActiveAll="a,b"</code> loads a folder only when all listed mods are active.</li>
+</ul>
 <h3 id="mayrequire">MayRequire</h3>
 <p>For single defs or single list entries, RimWorld's <code>MayRequire</code> attribute is enough. On a def node it skips the whole def when the mod is missing. On a list item it skips only that item, for example a member of an object list:</p>
 <pre><code class="language-xml">&lt;<span class="xt">members</span>&gt;
@@ -196,19 +206,22 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h3 id="what-the-editor-writes-for-you">What the editor writes for you</h3>
 <p>The in-game editor handles most of this. See <a href="Getting-Started.html">Getting started</a>.</p>
 <ul>
-<li><strong>New mod</strong> creates the mod in your Mods folder with <code>About/About.xml</code> (dependency on CBF, <code>loadAfter</code> CBF) and the folders <code>1.6/Defs/CustomBaseFramework/CustomBaseDefs/Buildings</code>, <code>.../WallParts</code>, <code>.../DungeonRooms</code>, <code>1.6/Defs/CustomBaseFramework/Layouts</code>, <code>1.6/Defs/CustomBaseFramework/LootDefs</code> and <code>1.6/Patches</code>.</li>
+<li>A new mod created in the editor gets <code>About/About.xml</code> (dependency on CBF, <code>loadAfter</code> CBF) and these folders: <code>1.6/Defs/CustomBaseFramework/CustomBaseDefs/Buildings</code>, <code>.../WallParts</code>, <code>.../DungeonRooms</code>, <code>1.6/Defs/CustomBaseFramework/Layouts</code>, <code>1.6/Defs/CustomBaseFramework/LootDefs</code> and <code>1.6/Patches</code>.</li>
 <li>When you save content that uses other mods, the editor adds those mods to About.xml.</li>
 <li>When it saves a settlement type, it writes <code>MayRequire</code> on the def node for the mods the type needs.</li>
 <li>If your mod already has a <code>LoadFolders.xml</code> with <code>IfModActive</code> lines, a new settlement type that needs one of those mods is saved into that mod's folder.</li>
 </ul>
 <p>The editor does not write <code>LoadFolders.xml</code> and does not copy world icon images. Add those by hand.</p>
 <h2 id="how-the-defs-connect">How the defs connect</h2>
+<p>A settlement type (<code>SettlementPlanDef</code>) is the top of the tree. It is made of wards: rings such as the town, the suburb and the countryside. Each ward has districts: groups of buildings that stay together. A district asks for buildings by category or by single piece. A piece is one hand-drawn building. Its anchors are marked spots that CBF fills with objects, loot or pawns.</p>
 <pre><code>SettlementPlanDef (settlement type)
-  worldTexture ............ world icon
+  worldTexture ............ world map icon
+  materialList ............ MaterialListDef: walls, doors, roads the generator builds itself
   styles .................. StyleDef -&gt; WallProfileDef
   techLevels, factionTags . which factions use it
-  wards (Stadtteil) ....... rings from the middle outwards
-    walls, gatehouses ..... wall pieces for this ring
+  wards ................... rings from the middle outwards
+    walls, gatehouses ..... wall pieces of this ring
+    garrison .............. PawnListDef: defenders of this ring
     districts ............. building programme of the ring
       categories .......... PieceCategoryDef
         pieces ............ PieceDef
@@ -221,11 +234,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>Pawn lists, garrisons and unit swap: <a href="Modding-Pawns.html">Modding-Pawns</a></li>
 <li>Quest sites and ruins in quests: <a href="Modding-Quests.html">Modding-Quests</a></li>
 </ul>
-<p>The rest of this page covers the defs on the side of that tree.</p>
+<p>The rest of this page covers the def types on the side of that tree.</p>
 <h2 id="wall-profiles">Wall profiles</h2>
-<p>A <code>WallProfileDef</code> describes a wall ring as a cross section. Each segment is a piece one cell wide or one cell high. The generator builds the wall line from these segments. A profile can also name a tower and a gatehouse piece.</p>
+<p>A <code>WallProfileDef</code> describes a wall ring by its cross section. Each segment is a piece one cell wide or one cell high, drawn across the wall. The generator repeats the segments along the wall line. A profile can also name a tower piece and a gatehouse piece.</p>
 <h3 id="example">Example</h3>
-<p>From CBF's Medieval Overhaul folder, labels translated:</p>
+<p>From CBF's Medieval Overhaul folder:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.WallProfileDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;WallProfile_Stone_3&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;stone wall, drawn&lt;/<span class="xt">label</span>&gt;
@@ -253,6 +266,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;<span class="xt">tower</span>&gt;PalisadeTower&lt;/<span class="xt">tower</span>&gt;
 &lt;/<span class="xt">CustomBaseFramework.WallProfileDef</span>&gt;
 </code></pre>
+<p>In the first profile, three plain wall segments follow one segment with an embrasure, so every fourth cross section of the wall has one.</p>
 <h3 id="nodes">Nodes</h3>
 <table>
 <thead>
@@ -299,9 +313,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>A profile needs at least one segment, otherwise the def reports a config error.</p>
 <h3 id="how-a-profile-is-chosen">How a profile is chosen</h3>
 <ol>
-<li>The settlement type's <code>styles</code> are tried in order. For each style its <code>fallback</code> chain is walked. The first usable profile with that style and the wanted depth wins.</li>
+<li>The settlement type's <code>styles</code> are tried in order. For each style, its <code>fallback</code> chain is walked. The first usable profile with that style and the wanted depth wins.</li>
 <li>If none matches, the first usable profile with the wanted depth is taken. A warning is logged, and the material then comes from that profile's style.</li>
-<li>If no profile has that depth, the one with the nearest depth is taken. Standard wall fills the remaining columns.</li>
+<li>If no profile has that depth, the one with the nearest depth is taken. The wall of the material list fills the remaining columns.</li>
 </ol>
 <p>A settlement type or a ward can also list its own wall pieces in <code>walls</code>. These replace the profile's segments. Tower, gatehouse and orientation still come from the chosen profile. See <a href="Modding-Settlements.html">Modding-Settlements</a>.</p>
 <h2 id="styles">Styles</h2>
@@ -320,7 +334,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </code></pre>
 <p><code>fallback</code> is used when nothing is found for this style. The chain may not loop and may not be deeper than 16 steps.</p>
 <h3 id="what-a-style-decides-today">What a style decides today</h3>
-<p>A style only picks the wall profile of a settlement type. It does not restrict which pieces are built, and it has nothing to do with materials.</p>
+<p>A style only picks the wall profile of a settlement type. It does not restrict which pieces are built.</p>
 <p>Which factions use a settlement type is decided by <code>factionTags</code> and <code>techLevels</code> on the SettlementPlanDef, not by the style. See <a href="#how-cbf-takes-over-faction-bases">How CBF takes over faction bases</a>.</p>
 <p>A settlement type lists its styles in order:</p>
 <pre><code class="language-xml">&lt;<span class="xt">styles</span>&gt;
@@ -330,7 +344,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </code></pre>
 <p>The older single field <code>style</code> still loads. If <code>styles</code> is empty, <code>style</code> is used as its only entry.</p>
 <h2 id="material-lists">Material lists</h2>
-<p>A <code>MaterialListDef</code> decides what the generator uses for the parts it builds itself: walls, doors, gates, fences, roads, bridges, roofs and so on. Every settlement type must name one in <code>materialList</code>. There is no hidden default: without a usable list the settlement type is not built. The editor has its own part for them, see <a href="Material-Lists.html">Material lists</a>.</p>
+<p>The generator builds some things itself instead of taking them from pieces: walls, doors, gates, fences, roads, bridges, roofs and so on. Each of these parts is a role, for example <code>WALL</code> or <code>FLOOR_ROAD</code>. A <code>MaterialListDef</code> says which thing, stuff or floor each role uses. Every settlement type must name one in <code>materialList</code>. There is no hidden default: a settlement type without a material list is switched off. The editor has its own part for material lists, see <a href="Material-Lists.html">Material lists</a>.</p>
 <p>Trimmed from the shipped base list:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.MaterialListDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;CBF_MaterialList_Base&lt;/<span class="xt">defName</span>&gt;
@@ -353,7 +367,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;/<span class="xt">roles</span>&gt;
 &lt;/<span class="xt">CustomBaseFramework.MaterialListDef</span>&gt;
 </code></pre>
-<p>A list for your own mod usually inherits from the base list and only overrides what differs. This example is not shipped:</p>
+<p>A list for your own mod usually inherits from the base list and only overrides what differs. This example is not shipped. It gives palisade walls and palisade towers a rustic door, and gives the countryside packed dirt roads:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.MaterialListDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;MyMod_Materials&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">label</span>&gt;my mod&lt;/<span class="xt">label</span>&gt;
@@ -361,8 +375,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;<span class="xt">roles</span>&gt;
     &lt;<span class="xt">li</span>&gt;
       &lt;<span class="xt">role</span>&gt;DOOR&lt;/<span class="xt">role</span>&gt;
-      &lt;<span class="xt">forPieces</span>&gt;&lt;<span class="xt">li</span>&gt;Wall_Pallisade&lt;/<span class="xt">li</span>&gt;&lt;<span class="xt">li</span>&gt;CBF_MO_PalisadeTower_A&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">forPieces</span>&gt;
-      &lt;<span class="xt">chain</span>&gt;&lt;<span class="xt">li</span>&gt;DankPyon_RusticDoor&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">chain</span>&gt;
+      &lt;<span class="xt">forPieces</span>&gt;&lt;<span class="xt">li</span>&gt;Palisade&lt;/<span class="xt">li</span>&gt;&lt;<span class="xt">li</span>&gt;CBF_MO_PalisadeTower&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">forPieces</span>&gt;
+      &lt;<span class="xt">chain</span>&gt;&lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;DankPyon_RusticDoor&lt;/<span class="xt">li</span>&gt;&lt;<span class="xt">li</span>&gt;Door&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">chain</span>&gt;
       &lt;<span class="xt">stuffChain</span>&gt;&lt;<span class="xt">li</span>&gt;WoodLog&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">stuffChain</span>&gt;
     &lt;/<span class="xt">li</span>&gt;
     &lt;<span class="xt">li</span>&gt;
@@ -383,7 +397,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>parent</code></td>
-<td>Another material list. Roles not defined here are taken from the parent.</td>
+<td>Another material list. A role this list does not define, or defines only for other pieces or wards, is taken from the parent.</td>
 </tr>
 <tr>
 <td><code>roles</code></td>
@@ -395,7 +409,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>criticality</code></td>
-<td><code>Critical</code> makes the whole list unusable when this role finds nothing. Default <code>Optional</code>.</td>
+<td><code>Critical</code> marks the whole list as unusable when this role finds nothing. CBF logs a config error and the editor shows a warning. Default <code>Optional</code>.</td>
 </tr>
 <tr>
 <td><code>forPieces</code></td>
@@ -403,11 +417,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>district</code></td>
-<td>The ward this entry is meant for: <code>Town</code>, <code>Castle</code>, <code>Suburb</code> or <code>Rural</code>.</td>
+<td>The ward this entry is meant for: <code>Town</code>, <code>Suburb</code> or <code>Rural</code>.</td>
 </tr>
 <tr>
 <td><code>chain</code></td>
-<td>Things in order; the first that exists is used.</td>
+<td>Things in order. The first that exists is used.</td>
 </tr>
 <tr>
 <td><code>stuffChain</code></td>
@@ -431,7 +445,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>When several entries of the same role fit a cell, the most specific wins: a <code>forPieces</code> match beats a <code>district</code> match, which beats an entry without conditions. The cell's ward and the wall, tower and gatehouse pieces of that ward decide what matches.</p>
+<p>When several entries of the same role fit a cell, the most specific wins. A <code>forPieces</code> match beats a <code>district</code> match, which beats an entry without conditions. What matches depends on the cell's ward and on the wall, tower and gatehouse pieces of that ward.</p>
 <h2 id="ruins">Ruins</h2>
 <p>A <code>RuinDef</code> turns a generated settlement into a raided or destroyed one: breaches, burnt rooms, corpses, reduced loot. CBF uses ruins for quest sites. A ruin reaches a map either from a quest node or from a <code>CustomBaseFramework.CBFSiteExtension</code> on a SitePartDef. See <a href="Modding-Quests.html">Modding-Quests</a>.</p>
 <p>CBF's shipped ruin inherits from the abstract <code>CBF_Ruin_Basis</code>, which only sets <code>occupation</code> to <code>Occupier</code>. Some fields are left out here:</p>
@@ -529,7 +543,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>occupation</code></td>
-<td>Who holds the site: <code>None</code>, <code>Builder</code> (the builders) or <code>Occupier</code> (occupiers). Default <code>Occupier</code>. Prisoners only exist with <code>Occupier</code>.</td>
+<td>Who holds the site: <code>None</code>, <code>Builder</code> (the faction that built it) or <code>Occupier</code> (the attackers). Default <code>Occupier</code>. Prisoners only exist with <code>Occupier</code>.</td>
 </tr>
 <tr>
 <td><code>occupationChance</code></td>
@@ -538,7 +552,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tbody>
 </table>
 <h2 id="map-steps">Map steps</h2>
-<p><code>MapStepsDef</code> lists vanilla or mod map generation steps that CBF skips on maps it builds itself. Only the def named <code>CBF_MapSteps</code> is read. To add steps, patch that def instead of writing a new one.</p>
+<p>A map is generated in steps (GenStepDefs), for example roads or scattered ruins. Some vanilla or mod steps would clutter a CBF settlement. <code>MapStepsDef</code> lists the steps CBF skips on maps it builds itself. Only the def named <code>CBF_MapSteps</code> is read. To add steps, patch that def instead of writing a new one.</p>
+<p>Trimmed from the shipped def:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.MapStepsDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;CBF_MapSteps&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">suppress</span>&gt;
@@ -570,11 +585,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>The filter only applies to maps whose generator contains a <code>CBF_</code> step. If CBF then builds nothing on the map, the skipped steps are run afterwards.</p>
+<p>The filter only applies to maps whose generator contains a step whose name starts with <code>CBF_</code>. If CBF then builds nothing on the map, the skipped steps are run afterwards.</p>
 <p>A patch from your own mod:</p>
 <pre><code class="language-xml">&lt;<span class="xt">Patch</span>&gt;
   &lt;<span class="xt">Operation</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationAdd&quot;</span>&gt;
-    &lt;<span class="xt">xpath</span>&gt;/Defs/CustomBaseFramework.MapStepsDef[defName=&quot;CBF_MapSteps&quot;]/unterdruecken&lt;/<span class="xt">xpath</span>&gt;
+    &lt;<span class="xt">xpath</span>&gt;/Defs/CustomBaseFramework.MapStepsDef[defName=&quot;CBF_MapSteps&quot;]/suppress&lt;/<span class="xt">xpath</span>&gt;
     &lt;<span class="xt">value</span>&gt;
       &lt;<span class="xt">li</span>&gt;MyMod_ScatterCamps&lt;/<span class="xt">li</span>&gt;
     &lt;/<span class="xt">value</span>&gt;
@@ -582,7 +597,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 &lt;/<span class="xt">Patch</span>&gt;
 </code></pre>
 <h2 id="buildability-rules">Buildability rules</h2>
-<p><code>BuildableRuleDef</code> is only read when the mod setting <strong>Make everything buildable</strong> is on. See <a href="Mod-Settings.html">Mod settings</a>. The setting gives every building without an architect category one. The rules decide which category.</p>
+<p>Many buildings in RimWorld and in mods have no place in the architect menu, so players cannot build them. The mod setting <strong>Make everything buildable (building aid)</strong> gives each of them a menu category. See <a href="Mod-Settings.html">Mod settings</a>. <code>BuildableRuleDef</code> decides which category a building gets. The rules are only read when the setting is on.</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.BuildableRuleDef</span>&gt;
   &lt;<span class="xt">defName</span>&gt;CBF_Buildable_Ruins&lt;/<span class="xt">defName</span>&gt;
   &lt;<span class="xt">rank</span>&gt;30&lt;/<span class="xt">rank</span>&gt;
@@ -656,17 +671,18 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>A content mod does not need these. New HilfeDefs get no button. Translations go through <code>DefInjected</code> as usual.</p>
+<p>A content mod does not need these. A new HelpDef with a defName no button asks for is never shown. Translations go through <code>DefInjected</code> as usual.</p>
 <h2 id="dungeon-profiles">Dungeon profiles</h2>
-<p><code>DungeonProfileDef</code> exists in the code, but CBF ships none and nothing assigns one to a world object at the moment. Its fields are listed in <a href="DungeonProfileDef.html">DungeonProfileDef</a>. Do not build content on it yet.</p>
+<p><code>DungeonProfileDef</code> exists in the code, and CBF ships two (<code>CBF_Dungeon_Crypt</code> and <code>CBF_Dungeon_Dungeon</code>). Nothing assigns one to a world object at the moment, and the settlement kind <code>Dungeon</code> is switched off. Its fields are listed in <a href="DungeonProfileDef.html">DungeonProfileDef</a>. Do not build content on it yet.</p>
 <h2 id="how-cbf-takes-over-faction-bases">How CBF takes over faction bases</h2>
-<p>No patch is needed to make CBF build bases for a faction. CBF patches RimWorld so that a non-player faction settlement uses CBF's map generator <code>CBF_Base_Faction</code> when:</p>
+<p>No patch is needed to make CBF build bases for a faction. CBF patches RimWorld so that a non-player faction settlement uses CBF's map generator <code>CBF_Base_Faction</code> when all of these hold:</p>
 <ul>
-<li>at least one usable settlement type matches the faction, or a type was assigned to this settlement by hand in the editor,</li>
+<li>at least one usable settlement type matches the faction, or a type was assigned to this settlement by hand in the editor. Camp types and A Rim of Ice and Fire holding types (plans with <code>campTypes</code> or <code>riafHolding</code>) do not count here,</li>
 <li>the faction is not switched off in the mod settings,</li>
 <li>the settlement's WorldObjectDef has no map generator of its own,</li>
 <li>the settlement is not in space,</li>
-<li>no other mod's generator is known to take over this faction.</li>
+<li>no other mod's generator is known to take over this faction,</li>
+<li>with World Domination 2.0: if the settlement has a World Domination tier, at least one matching type has a <code>wdLevel</code>.</li>
 </ul>
 <p>CBF adds its world object comp to the vanilla <code>Settlement</code> and <code>Site</code> defs itself.</p>
 <h3 id="faction-matching">Faction matching</h3>
@@ -675,7 +691,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><strong>Own types.</strong> <code>factionTags</code> contains the faction's defName or its <code>categoryTag</code>.</li>
 <li><strong>General types.</strong> <code>forAllFactions</code> is <code>true</code> and <code>techLevels</code> contains the faction's tech level.</li>
 </ol>
-<p>Types that list the faction in <code>excludeFactions</code> are skipped. If the faction has any own types, only those are used. General types are only used for factions without own types. CBF's modern town, for example, sets <code>forAllFactions</code> and the tech levels <code>Industrial</code>, <code>Spacer</code> and <code>Ultra</code>, so every such faction without own types gets it. A faction with no matching type keeps its vanilla base. Details of the plan fields are on <a href="Modding-Settlements.html">Modding-Settlements</a>.</p>
+<p>Types that list the faction in <code>excludeFactions</code> are skipped. If the faction has any own types, only those are used. General types are only used for factions without own types.</p>
+<p>For example, CBF's modern town sets <code>forAllFactions</code> and the tech levels <code>Industrial</code>, <code>Spacer</code> and <code>Ultra</code>. Every such faction without own types gets it. A faction with no matching type keeps its vanilla base. The full picking order is on <a href="Modding-Settlements.html">Modding-Settlements</a>.</p>
 <h2 id="world-icons_1">World icons</h2>
 <p>A settlement type sets its world map icon with <code>worldTexture</code>:</p>
 <pre><code class="language-xml">&lt;<span class="xt">worldTexture</span>&gt;World/WorldObjects/CBF/CBF_ModernTown&lt;/<span class="xt">worldTexture</span>&gt;
@@ -689,7 +706,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>CBF ships its icons in <code>Textures/World/WorldObjects/CBF</code>, for example <code>CBF_City</code>, <code>CBF_MarketTown</code> and <code>CBF_Metropolis</code>. Your own icons in the same folder of your mod show up in the editor's picker next to them.</p>
 <h2 id="tips">Tips</h2>
 <ul>
-<li>Load after CBF. Without it <code>ParentName</code> on CBF's abstract defs fails.</li>
+<li>Load after CBF. Without it, <code>ParentName</code> on CBF's abstract defs fails.</li>
 <li>Draw a wall profile for every depth your settlement types use. The fallback to another depth works but logs a warning.</li>
 <li>Towers need a square, odd size. Gatehouses need odd width and height.</li>
 <li>Put <code>MayRequire</code> on every def or entry that names content from another mod, or move it into an <code>IfModActive</code> folder.</li>

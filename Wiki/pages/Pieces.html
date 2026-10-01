@@ -117,67 +117,72 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Piece / Draw and edit pieces</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html" class="hier">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="pieces">Pieces</h1><p class="unter">Piece</p>
-<p>A piece is one building or one stretch of wall, drawn on the map and saved as a PieceDef. Houses, workshops, towers, gatehouses and wall segments are all pieces.</p>
-<p>A piece is a template. Object and Loot anchors, alternatives in the legend, materials from the map and <a href="Annexes.html">annexes</a> make every placed copy different, see <a href="../Open%20Guide.html#every-building-differs">Every building differs</a>. Draw one good house with several anchors and annex points rather than several fixed ones.</p>
+<p>A piece is one building or one stretch of wall. You build it on a map in the game, and the editor saves it as a <code>PieceDef</code>. Houses, workshops, towers, gatehouses and wall segments are all pieces. The generator puts pieces together into settlements.</p>
+<p>Every piece belongs to at least one <a href="Categories.html">category</a>, for example <code>HouseSmall</code> or <code>Workshop</code>. Settlements ask for categories, and the generator picks a piece from them.</p>
+<p>A piece is a template, not a fixed building. Each placed copy comes out different: anchors fill in furniture, loot and people by chance, drawn things can have alternatives, materials follow the map, and <a href="Annexes.html">annexes</a> dock on at different sides. See <a href="../Open%20Guide.html#every-building-differs">Every building differs</a>. So one good house with several anchors and annex spots is worth more than several fixed houses.</p>
 <a class="bild" href="images/piece-tab.png" target="_blank"><img alt="The Piece tab" src="images/piece-tab.png" loading="lazy"></a>
 <ol>
-<li><strong>List</strong> grouped by category. The chips filter by size (small up to 8 cells, medium 9 to 14, large 15 and more) or show templates only. <strong>All mods</strong> below them shows only the pieces of one mod; pieces from a subfolder such as <code>Mods/MedievalOverhaul</code> are listed separately. Right-click an entry to rename, duplicate, mark as template or delete it.</li>
-<li><strong>Image</strong> drawn from the piece's data: floor, walls, furniture and the anchors on top. The dashed line is the outline of the piece. Small tiles elsewhere in the editor show anchors by color only, without names.</li>
-<li><strong>Basics.</strong> Size, categories, rotation, clearing the footprint, and for buildings <strong>At the wall</strong> and <strong>Weight</strong>. <strong>Only with mod</strong> and <strong>Off with mod</strong> tie the piece to other mods: it is only placed when all mods of the first row are active, and not placed when one mod of the second row is active. Pick the mods from the list of installed mods; an inactive mod can be picked too.</li>
-<li><strong>Anchors</strong> of the piece and the details of the selected one.</li>
-<li><strong>Check</strong> runs the same check the game runs on load. Click the result at the bottom left to see every finding. <strong>Save</strong> writes the piece back into its file.</li>
+<li><strong>List</strong> of pieces, grouped by category. The chips filter by size (<strong>Small</strong>: longest side up to 8 cells, <strong>Medium</strong>: 9 to 14, <strong>Large</strong>: 15 or more) or show templates only. A template is a piece that other pieces copy from; it is never placed itself. The dropdown below the chips, <strong>All mods</strong> by default, shows only the pieces of one mod. Pieces from a subfolder such as <code>Mods/MedievalOverhaul</code> count as a mod of their own there. Right-click an entry to rename, duplicate, mark as template or delete it.</li>
+<li><strong>Image</strong> of the piece: floor, walls, furniture, and the anchors on top in the colour of their kind. The dashed line is the outline of the piece. Click an anchor in the image to select it. Small tiles elsewhere in the editor show anchors by colour only, without names.</li>
+<li><strong>Basics.</strong> Size, categories (the first one is the main category), <strong>Rotation allowed</strong>, <strong>Clear footprint</strong>, and for buildings <strong>At the wall</strong> and <strong>Weight</strong>. <strong>Only with mod</strong> and <strong>Off with mod</strong> tie the piece to other mods: the piece is only placed when all mods in the first row are active, and it is not placed when any mod in the second row is active. You pick the mods from the list of installed mods, inactive ones included. <strong>Only for factions</strong> and <strong>Not for factions</strong> limit the piece to certain factions in the same way.</li>
+<li><strong>Anchors</strong> of the piece, and below them the details of the selected anchor. See <a href="#anchors">Anchors</a>.</li>
+<li><strong>Check</strong> looks for errors in the piece. While the piece is on the map it runs the full export check, otherwise it checks the saved file. The result stands at the bottom left; click it to see every finding. <strong>Export</strong> writes the piece from the map into its file and only works while the piece is on the map. <strong>Save</strong> writes changes made in the editor, such as anchors and basics, into the file.</li>
 </ol>
-<p>The mod filter lists every mod that brings pieces, with the number of pieces:</p>
+<p>The mod dropdown lists every mod that brings pieces, with the number of pieces:</p>
 <a class="bild" href="images/piece-mod-filter.png" target="_blank"><img alt="The mod filter of the piece list" src="images/piece-mod-filter.png" loading="lazy"></a>
 <h2 id="draw-a-new-piece">Draw a new piece</h2>
 <a class="bild" href="images/piece-toolbox.png" target="_blank"><img alt="The toolbox on the map" src="images/piece-toolbox.png" loading="lazy"></a>
-<p>A piece is drawn in the normal game, on the map of your colony, and then taken into the editor.</p>
+<p>You build a piece in the normal game, on the map of your colony, and then take it into the editor.</p>
 <ol>
-<li>Build the house first, with the normal architect tools, in god mode if you like. Build it exactly as it should appear: the walls, floors, doors, furniture and stuff you place are what the piece will contain. Pick concrete things here, such as a wooden wall or a specific bed, because the export takes them as they stand.</li>
-<li>Click <strong>+ New</strong> in the Piece tab. The editor folds away and the toolbox <strong>Piece on the map</strong> opens on the right.</li>
+<li>Build the house first with the normal architect tools, in god mode if you like. Build it exactly as it should appear: the walls, floors, doors, furniture and materials you place are what the piece will contain. Pick concrete things here, such as a wooden wall or a specific bed, because the export takes them as they stand.</li>
+<li>Click <strong>+ New</strong> in the Piece tab. The editor window folds away and the toolbox <strong>Piece on the map</strong> opens on the right.</li>
 <li><strong>Paint area</strong> marks the cells that belong to the piece. The area does not have to be a rectangle. <strong>Cut</strong> takes cells out again.</li>
-<li><strong>Empty cell</strong> marks cells that belong to the piece but stay empty, for example a yard.</li>
-<li>Give the piece a <strong>Name</strong> and pick a <strong>Category</strong> in the picker, or create a new one there. Without a category it cannot be exported.</li>
-<li><strong>Check</strong>, then <strong>Export</strong>. The piece is written into your mod and appears in the list.</li>
-<li><strong>Back to the editor</strong> opens the window again with the new piece selected.</li>
+<li><strong>Empty cell</strong> marks cells that belong to the piece but where nothing is built, for example a yard. <strong>Remove empty cell</strong> takes the mark off again.</li>
+<li>Give the piece a <strong>Name</strong> and pick a <strong>Category</strong>. The picker can also create a new category. Without a category the piece cannot be exported.</li>
+<li>Click <strong>Check</strong>, then <strong>Export</strong>. The piece is written into your mod and appears in the list. Export stays locked while the last check found errors.</li>
+<li><strong>Back to the editor</strong> opens the editor window again with the new piece selected.</li>
 </ol>
-<p>A gatehouse needs two anchors named Wall and one named Outside. You set them in the image after the export, until then the check reports them as notes.</p>
+<p>Anchors are set in the editor image after the export. A gatehouse needs a <strong>Connect</strong> anchor named <strong>Wall</strong> with at least two cells and one named <strong>Outside</strong>. Until you have set them, the check lists them as notes.</p>
 <h2 id="change-an-existing-piece">Change an existing piece</h2>
 <ul>
-<li><strong>Place to edit</strong> puts the piece on the map so you can change its structure, then export it again. Its anchors are kept.</li>
-<li><strong>Place</strong> puts a copy on the map the way the generator would build it, with variants and chances rolled. Good for a look, not for exporting.</li>
+<li><strong>Place to edit</strong> puts the piece on the map so you can change what is built, then export it again. Its anchors are kept.</li>
+<li><strong>Place</strong> puts a copy on the map the way the generator would build it, with alternatives and chances rolled. Use it to look at the result. Do not export such a copy.</li>
 </ul>
+<p>Both buttons need an open map and do not work for templates.</p>
 <h2 id="anchors">Anchors</h2>
-<p>An anchor marks cells where something happens once the piece stands: a wall docks on, loot appears, people wait.</p>
+<p>An anchor is a marked area inside the piece where something happens once the piece stands: the town wall docks on, furniture or loot appears, people wait.</p>
 <a class="bild" href="images/piece-anchors.png" target="_blank"><img alt="Anchors in the image" src="images/piece-anchors.png" loading="lazy"></a>
 <ol>
 <li><strong>+ Anchor</strong> creates an anchor and lets you drag its area in the image right away. The size shows while you drag.</li>
-<li><strong>Paint anchors</strong> lays a cell grid over the image. Drag rectangles to add cells to the selected anchor. Right-click or Escape ends it.</li>
-<li><strong>Erase anchors</strong> removes anchor cells inside a rectangle.</li>
-<li><strong>From another piece</strong> copies all anchors of another piece with their settings, without areas.</li>
-<li>Each row has <strong>Area</strong> (drag it again), <strong>Copy</strong> (same settings, no area) and <strong>×</strong>.</li>
+<li><strong>Paint anchors</strong> switches the image to painting. Drag a rectangle to set the area of the selected anchor. For <strong>Loot</strong>, <strong>Object</strong> and <strong>Pawn</strong> anchors the rectangle replaces the old area; for <strong>Connect</strong> anchors it adds cells. With no anchor selected, a new anchor is created. Right-click or Escape ends painting.</li>
+<li><strong>Erase anchors</strong> removes all anchor cells inside a rectangle.</li>
+<li><strong>From another piece</strong> copies all anchors of another piece with their settings, but without their areas.</li>
+<li>Each row has <strong>Area</strong> (drag the area again), <strong>Copy</strong> (same settings, no area) and <strong>×</strong> (remove). <strong>Connect</strong> anchors cannot be copied.</li>
 </ol>
 <h3 id="anchor-kinds">Anchor kinds</h3>
 <a class="bild" href="images/piece-anchor-details.png" target="_blank"><img alt="Anchor details" src="images/piece-anchor-details.png" loading="lazy"></a>
+<p>The four buttons at the top of the details set the kind of the anchor.</p>
 <ul>
-<li><strong>Connect</strong> ties the piece to its surroundings. The name decides what for:<ul>
-<li><strong>Wall</strong>: the town wall docks here. Gatehouses need at least two cells.</li>
-<li><strong>Outside</strong>: which side faces out. Gatehouses need it.</li>
-<li><strong>Anbau</strong>: annexes attach here, see <a href="Annexes.html">Annexes</a>.</li>
+<li><strong>Connect</strong> ties the piece to its surroundings. Its <strong>Name</strong> decides what for:<ul>
+<li><strong>Wall</strong>: the town wall docks here. A gatehouse needs at least two cells of it. With <strong>Required</strong> ticked, the piece must stand at the town wall.</li>
+<li><strong>Outside</strong>: marks which side of the piece faces away from the town. A gatehouse needs it, otherwise the gate is turned the wrong way round.</li>
+<li><strong>Annex</strong>: annexes attach here. See <a href="Annexes.html">Annexes</a>.</li>
 </ul>
 </li>
-<li><strong>Loot</strong> places objects from an object list and fills them from a loot table. Loot <strong>decoration only</strong> leaves them empty, <strong>unchanged</strong> leaves them to the mod that brings them.</li>
-<li><strong>Object</strong> places objects from an object list with a chance, without loot. With Ideology active, <strong>Ideoligion building</strong> places a building of the owning faction's ideoligion there instead, such as an altar or a ritual spot.</li>
-<li><strong>Pawn</strong> places pawns from a pawn list, or a single pawn kind, with a count and a chance.</li>
 </ul>
-<p>The <strong>...</strong> button in front of a list opens a preview of what is in it.</p>
+<p>A piece has at most one <strong>Wall</strong> and one <strong>Outside</strong> anchor. <strong>Annex</strong> anchors can be used several times.
+- <strong>Loot</strong> places furniture or containers from an <a href="Loot.html#object-lists">object list</a> and fills them from a <a href="Loot.html#loot-tables">loot table</a>. An object list is a set of things the anchor can place; a loot table decides the goods inside. <strong>decoration only</strong> places them empty. <strong>unchanged</strong> leaves the contents to the mod that brings the object, for example Medieval Overhaul's lootable shelves.
+- <strong>Object</strong> places things from an object list, without loot. With Ideology active, <strong>Ideoligion building</strong> places a building of the owning faction's ideoligion there instead, such as an altar or a ritual spot.
+- <strong>Pawn</strong> places pawns from a <a href="Pawns.html#pawn-lists">pawn list</a>, or a <strong>Single kind</strong> of pawn when no list is set, with a <strong>Count</strong>.</p>
+<p><strong>Loot</strong>, <strong>Object</strong> and <strong>Pawn</strong> anchors also have a <strong>Chance</strong> that anything appears there at all. <strong>Loot</strong> and <strong>Object</strong> anchors have <strong>Second layer</strong>: such an anchor may overlap other anchors and clears nothing underneath, for example a fur rug under a table.</p>
+<p>The <strong>…</strong> button in front of a list shows what is in it.</p>
 <ul>
-<li>An anchor whose list does not exist, or whose list holds nothing that fits the anchor area, marks the piece red in the list.</li>
-<li>If only some objects of the list are too large for the area, the anchor shows a yellow note. Only what fits is placed.</li>
+<li>An anchor whose list does not exist, or whose object list holds nothing that fits the anchor area, marks the piece red in the list.</li>
+<li>If only some objects of the list are too large for the area, the anchor shows a note. Only what fits is placed.</li>
 </ul>
 <h3 id="things-from-other-mods">Things from other mods</h3>
 <ul>
-<li>A thing drawn directly into the piece is required. If its mod or DLC is missing, the generator does not use the piece at all, because a missing wall or door would leave a hole.</li>
-<li>A thing placed through an object list is optional. Entries whose mod is missing drop out. If nothing is left, nothing appears at the anchor and the rest of the piece is built. The placeholder drawn under the anchor may come from that mod; it does not block the piece.</li>
-<li>So: draw walls, doors and anything the building needs directly. Put devices, furniture and decoration that only some mods bring into an object list.</li>
+<li>A thing built directly into the piece is required. If its mod or DLC is missing, the generator does not use the piece at all, because a missing wall or door would leave a hole.</li>
+<li>A thing placed through an object list is optional. Entries whose mod is missing drop out. If nothing is left, nothing appears at the anchor and the rest of the piece is built. The thing you built under the anchor as a placeholder may come from that mod; it does not block the piece.</li>
+<li>So: build walls, doors and anything the building needs directly. Put devices, furniture and decoration that only some mods bring into an object list.</li>
 </ul><div class="schritte"><a href="Settings-Overview.html"><span>Previous</span>What you can change</a><a class="weiter" href="Annexes.html"><span>Next</span>Annexes</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#draw-a-new-piece">Draw a new piece</a><a class="t2" href="#change-an-existing-piece">Change an existing piece</a><a class="t2" href="#anchors">Anchors</a><a class="t3" href="#anchor-kinds">Anchor kinds</a><a class="t3" href="#things-from-other-mods">Things from other mods</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

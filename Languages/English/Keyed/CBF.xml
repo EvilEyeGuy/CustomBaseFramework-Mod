@@ -96,7 +96,7 @@
   <CBF_Field_unique>Only once</CBF_Field_unique>
   <CBF_FieldDesc_unique>At most one per settlement.</CBF_FieldDesc_unique>
   <CBF_Field_wallContact>Touches the wall</CBF_Field_wallContact>
-  <CBF_FieldDesc_wallContact>Must sit against the town wall.</CBF_FieldDesc_wallContact>
+  <CBF_FieldDesc_wallContact>Prefers to stand against the town wall. The piece field At the wall controls this more finely and wins.</CBF_FieldDesc_wallContact>
   <CBF_Field_prefGate>Toward the gate</CBF_Field_prefGate>
   <CBF_FieldDesc_prefGate>How strongly this wants to be near the gate.</CBF_FieldDesc_prefGate>
   <CBF_Field_prefCenter>Toward the center</CBF_Field_prefCenter>
@@ -110,7 +110,6 @@
   <CBF_Field_terrain>Floor</CBF_Field_terrain>
   <CBF_FieldDesc_terrain>The floor layer. One character per cell, resolved through the legend.</CBF_FieldDesc_terrain>
   <CBF_Field_things>Objects</CBF_Field_things>
-  <CBF_FieldDesc_things>Thing replacements for this faction. Each entry swaps the thing in from for the thing in to.</CBF_FieldDesc_things>
   <CBF_Field_things2>Objects, second layer</CBF_Field_things2>
   <CBF_FieldDesc_things2>What hangs on the first layer, such as a wall torch. RimWorld allows a wall and something attached to it in the same cell; with only one layer the wall would get a hole.</CBF_FieldDesc_things2>
   <CBF_Field_things3>Objects, third layer</CBF_Field_things3>
@@ -140,7 +139,6 @@
   <CBF_Field_countPerSettlement>Count per settlement</CBF_Field_countPerSettlement>
   <CBF_FieldDesc_countPerSettlement>How many of these a settlement wants, as a range.</CBF_FieldDesc_countPerSettlement>
   <CBF_Field_weight>Weight</CBF_Field_weight>
-  <CBF_FieldDesc_weight>How likely this is picked over its siblings. Belongs on the settlement, not on the piece.</CBF_FieldDesc_weight>
   <CBF_Field_mapSize>Map size</CBF_Field_mapSize>
   <CBF_FieldDesc_mapSize>How large the map is that this settlement is generated on.</CBF_FieldDesc_mapSize>
   <CBF_Field_towerCorner>Corner tower size</CBF_Field_towerCorner>
@@ -203,8 +201,6 @@
   <CBF_FieldDesc_weightHilly>How strongly this settlement type wants hilly terrain.</CBF_FieldDesc_weightHilly>
   <CBF_Field_factionTags>Factions</CBF_Field_factionTags>
   <CBF_FieldDesc_factionTags>Which factions may use this settlement type.</CBF_FieldDesc_factionTags>
-  <CBF_Field_share>Area share</CBF_Field_share>
-  <CBF_FieldDesc_share>What share of the built area this budget entry should take.</CBF_FieldDesc_share>
   <CBF_Field_count>Count</CBF_Field_count>
   <CBF_FieldDesc_count>How many of these the settlement wants, as a range.</CBF_FieldDesc_count>
   <CBF_Field_coreSize>Core size</CBF_Field_coreSize>
@@ -786,4 +782,6 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_WdLootShareHelp>100%: every container keeps the loot of its CBF or Medieval Overhaul table, World Domination loot is off. 0%: the general containers get World Domination's loot budget, as World Domination would. In between, that share of the containers keeps its planned loot. The rest shares the full World Domination budget, and each of them gets at least one item. There is never less loot than at 0%.</CBF_WdLootShareHelp>
   <CBF_Au_NeedsMod>Needs the mod {0}, which is not active. The piece is left out on purpose and checked once the mod is active.</CBF_Au_NeedsMod>
   <CBF_Au_OffByMod>Off because the mod {0} is active. The piece is left out on purpose and checked once the mod is off.</CBF_Au_OffByMod>
+  <CBF_PawnPreviewInGame>Preview only in a running game</CBF_PawnPreviewInGame>
+  <CBF_Type_UnitSwapDef>Unit swap</CBF_Type_UnitSwapDef>
 </LanguageData>

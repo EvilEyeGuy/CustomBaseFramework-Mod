@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="Addie.HouseVanIlla">
+    <defName>CBF_MO_VanIlla_FrostPlaza</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Monument</li>
+    </categories>
+    <placement><factions><li>Addie_CivilHouseVanIlla</li></factions></placement>
+    <style>CBF_Medieval</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="Addie.HouseVanIlla,Ludeon.RimWorld.Royalty"><symbol>B</symbol><thing>Addie_IllanBanner</thing></li>
+      <li MayRequire="Addie.HouseVanIlla,Ludeon.RimWorld.Royalty"><symbol>N</symbol><thing>Addie_CrystalBrazier</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_Fountain2x2c</thing><stuff>BlocksMarble</stuff></li>
+    </legend>
+    <mask>
+      <li>..#####..</li>
+      <li>.#######.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.#######.</li>
+      <li>..#####..</li>
+    </mask>
+    <terrain>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </terrain>
+    <things>
+      <li>..B...B..</li>
+      <li>.........</li>
+      <li>.N.....N.</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>....Q....</li>
+      <li>.N.....N.</li>
+      <li>.........</li>
+      <li>..B...B..</li>
+    </things>
+    <roof>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

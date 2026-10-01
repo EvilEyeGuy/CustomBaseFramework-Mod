@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="Addie.HouseVanIlla">
+    <defName>CBF_VFEM2_VanIlla_FrostPlaza</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_VFEM2_Monument</li>
+    </categories>
+    <placement><factions><li>Addie_CivilHouseVanIlla</li></factions></placement>
+    <style>CBF_VFEM2</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="Addie.HouseVanIlla,Ludeon.RimWorld.Royalty"><symbol>a</symbol><thing>Addie_IllanBanner</thing></li>
+      <li MayRequire="Addie.HouseVanIlla,Ludeon.RimWorld.Royalty"><symbol>b</symbol><thing>Addie_CrystalBrazier</thing></li>
+      <li><symbol>f</symbol><thing>SculptureGrand</thing><stuff>BlocksMarble</stuff></li>
+    </legend>
+    <mask>
+      <li>..#####..</li>
+      <li>.#######.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.#######.</li>
+      <li>..#####..</li>
+    </mask>
+    <terrain>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </terrain>
+    <things>
+      <li>..a...a..</li>
+      <li>.........</li>
+      <li>.b.....b.</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>....f....</li>
+      <li>.b.....b.</li>
+      <li>.........</li>
+      <li>..a...a..</li>
+    </things>
+    <roof>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BigT.HouseIgnivar">
+    <defName>CBF_MO_Ignivar_AshberryPress</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Winery</li>
+    </categories>
+    <placement><factions><li>Ignivar_Faction</li><li>Ignivar_Exiles</li></factions></placement>
+    <style>CBF_Medieval</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>!</symbol><thing>DankPyon_Sign_Winery</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>1</symbol><anchor>CellarBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_WineCellar</lootTable></li>
+      <li><symbol>7</symbol><anchor>HarvestCart</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_HarvestCart</objects></li>
+      <li><symbol>8</symbol><anchor>Vintner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_RusticBarrelBigGrape</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_Cauldron</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_Brazier1x1c</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_Presser</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>R</symbol><anchor>BarrelRow</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_BarrelRow</objects><lootTable>CBF_MO_Loot_WineCellar</lootTable></li>
+      <li><symbol>S</symbol><thing>CBF_MO_CobbleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>V</symbol><anchor>WineRack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WineRack</objects></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="BigT.HouseIgnivar"><symbol>a</symbol><thing>Ignivar_RawAshberry</thing><count>25~45</count></li>
+      <li><symbol>b</symbol><anchor>LargeBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_LargeBarrel</objects><lootTable>CBF_MO_Loot_WineCellar</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
+      <li><symbol>f</symbol><anchor>YardBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Storage</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_BarrelGrape</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutLargeShelf_Wine</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_HideoutRusticBarrelBigClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_HideoutRusticBarrelStack</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+    </legend>
+    <mask>
+      <li>#######......</li>
+      <li>############.</li>
+      <li>############.</li>
+      <li>############.</li>
+      <li>############.</li>
+      <li>############.</li>
+      <li>############.</li>
+      <li>#############</li>
+      <li>#############</li>
+    </mask>
+    <terrain>
+      <li>eeeeeee......</li>
+      <li>eeeeeeehhhhh.</li>
+      <li>eeeeeeehhhhh.</li>
+      <li>eeeeeeehhhhh.</li>
+      <li>eeeeeeehhhhh.</li>
+      <li>eeeeeeehhhhh.</li>
+      <li>......hhhhhh.</li>
+      <li>.............</li>
+      <li>.............</li>
+    </terrain>
+    <things>
+      <li>SSSSSSS......</li>
+      <li>SP.a..SSSSSS.</li>
+      <li>S.KaG.Si...S.</li>
+      <li>S.....F..j.S.</li>
+      <li>Sg....S....S.</li>
+      <li>N..Lk.S.l..S.</li>
+      <li>......SSSSSS.</li>
+      <li>..!........i.</li>
+      <li>.......m.....</li>
+    </things>
+    <roof>
+      <li>^^^^^^^......</li>
+      <li>^^^^^^^^^^^^.</li>
+      <li>^^^^^^^^^^^^.</li>
+      <li>^^^^^^^^^^^^.</li>
+      <li>^^^^^^^^^^^^.</li>
+      <li>^^^^^^^^^^^^.</li>
+      <li>......^^^^^^.</li>
+      <li>.............</li>
+      <li>.............</li>
+    </roof>
+    <anchors>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.......1.VV..</li>
+      <li>..8......VV..</li>
+      <li>....bb.......</li>
+      <li>....bb..RRR..</li>
+      <li>.............</li>
+      <li>.......77..f.</li>
+      <li>.......77....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

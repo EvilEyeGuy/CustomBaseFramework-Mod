@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_CrestSquare_Amboise</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Monument</li>
+    </categories>
+    <placement><factions><li>DankPyon_NobleHouseFierce</li></factions></placement>
+    <style>CBF_Medieval</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>WeaponRack</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WeaponRack</objects></li>
+      <li><symbol>8</symbol><anchor>Guard</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_BannerAmboise</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_Brazier2x2c</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><thing>DankPyon_ArmorStatue</thing><stuff>Steel</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+    </legend>
+    <mask>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.#######.</li>
+      <li>..#####..</li>
+      <li>...###...</li>
+      <li>....#....</li>
+    </mask>
+    <terrain>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </terrain>
+    <things>
+      <li>B.W...W.B</li>
+      <li>.........</li>
+      <li>.a....a..</li>
+      <li>.........</li>
+      <li>...Q.....</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>....B....</li>
+    </things>
+    <roof>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.11...11.</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>....8....</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

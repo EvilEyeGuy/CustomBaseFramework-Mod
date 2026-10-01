@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_CrestSquare_Hesse</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Monument</li>
+    </categories>
+    <placement><factions><li>DankPyon_NobleHouseSavage</li></factions></placement>
+    <style>CBF_Medieval</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_BannerHesse</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_LogColumn</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_Brazier2x2c</thing><stuff>BlocksGranite</stuff></li>
+    </legend>
+    <mask>
+      <li>.####....</li>
+      <li>#######..</li>
+      <li>########.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.########</li>
+      <li>..#######</li>
+      <li>....####.</li>
+    </mask>
+    <terrain>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </terrain>
+    <things>
+      <li>..B.B....</li>
+      <li>C........</li>
+      <li>..L......</li>
+      <li>........C</li>
+      <li>....Q....</li>
+      <li>.........</li>
+      <li>..C.L....</li>
+      <li>.......C.</li>
+    </things>
+    <roof>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

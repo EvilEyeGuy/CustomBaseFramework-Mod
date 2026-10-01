@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BigT.HouseIgnivar">
+    <defName>CBF_VFEM2_Ignivar_FyrEmplacement</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_VFEM2_CatapultEmplacement</li>
+    </categories>
+    <placement><factions><li>Ignivar_Faction</li><li>Ignivar_Exiles</li></factions></placement>
+    <style>CBF_VFEM2</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="BigT.HouseIgnivar"><symbol>b</symbol><thing>Ignivar_Turret_Fyrthrower</thing></li>
+      <li><symbol>f</symbol><anchor>Crew</anchor><anchorKind>Spawn</anchorKind><pawnCount>2~3</pawnCount></li>
+      <li><symbol>g</symbol><thing>Beer</thing><count>10</count></li>
+      <li><symbol>i</symbol><thing>WoodLog</thing><count>40</count></li>
+    </legend>
+    <mask>
+      <li>..#######..</li>
+      <li>.#########.</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>.#########.</li>
+    </mask>
+    <terrain>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </terrain>
+    <things>
+      <li>..SaSaSaS..</li>
+      <li>.SSb...bSS.</li>
+      <li>aS.......Sa</li>
+      <li>S.........S</li>
+      <li>a..g...i..a</li>
+      <li>SS.....i.SS</li>
+      <li>.SSSS.SSSS.</li>
+    </things>
+    <roof>
+      <li>..^^^^^^^..</li>
+      <li>.^^.....^^.</li>
+      <li>^^.......^^</li>
+      <li>^.........^</li>
+      <li>^.........^</li>
+      <li>^^.......^^</li>
+      <li>.^^^^.^^^^.</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>.....f.....</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

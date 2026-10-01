@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="Addie.HouseVanIlla,Ludeon.RimWorld.Royalty">
+    <defName>CBF_VanIlla_Flag</defName>
+    <members>
+      <li><thing>Addie_IllanBanner</thing><stays>true</stays></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.FactionFlagDef MayRequire="Addie.HouseVanIlla,Ludeon.RimWorld.Royalty">
+    <defName>CBF_VanIlla_FactionFlag</defName>
+    <faction>Addie_CivilHouseVanIlla</faction>
+    <objects>
+      <li>CBF_VanIlla_Flag</li>
+    </objects>
+  </CustomBaseFramework.FactionFlagDef>
+
+</Defs>

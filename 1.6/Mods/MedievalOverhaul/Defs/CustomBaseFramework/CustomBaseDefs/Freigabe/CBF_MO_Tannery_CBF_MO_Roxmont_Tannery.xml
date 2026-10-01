@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="DankPyon.Medieval.Overhaul.House.Roxmont">
+    <defName>CBF_MO_Roxmont_Tannery</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Tannery</li>
+    </categories>
+    <placement><factions><li>DankPyon_NobleHouseRoxmont</li></factions></placement>
+    <style>CBF_Medieval</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>1</symbol><anchor>LeatherBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothBarrel</objects></li>
+      <li><symbol>2</symbol><anchor>Chest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_TailorShop</lootTable></li>
+      <li><symbol>3</symbol><anchor>ClothCart</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothCart</objects></li>
+      <li><symbol>4</symbol><anchor>Tanner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>5</symbol><anchor>ClothBarrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ClothBarrel</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul.House.Roxmont"><symbol>D</symbol><thing>DankPyon_HideoutDryingRack_BigRox</thing><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul.House.Roxmont"><symbol>N</symbol><thing>DankPyon_HideoutTanningRackRox</thing><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_RugPatched_Leather2x2c</thing><stuff>Leather_Plain</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_Bed_Rustic_Green</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_RawhideRack</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_MendingBench</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_TanningDrum</thing><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutBarrelTextiles</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutBarrelTextiles</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_HideOutBuildingBase_Cart_Textiles</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
+    </legend>
+    <mask>
+      <li>##########...</li>
+      <li>############.</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#########....</li>
+    </mask>
+    <terrain>
+      <li>wwwwwwweee...</li>
+      <li>wwwwwwweeeee.</li>
+      <li>wwwwwwweeeeee</li>
+      <li>wwwwwwweeeeee</li>
+      <li>wwwwwwweeeeee</li>
+      <li>wwwwwwweeeeee</li>
+      <li>wwwweeeeeeeee</li>
+      <li>wwwweeeeeeeee</li>
+      <li>wwww.........</li>
+    </terrain>
+    <things>
+      <li>TTTTTTT......</li>
+      <li>Ta..b.T......</li>
+      <li>T.....F.ND...</li>
+      <li>TU....T......</li>
+      <li>Tg..i.T...j..</li>
+      <li>TTFTTTT.N....</li>
+      <li>T..T.........</li>
+      <li>TY.T....f....</li>
+      <li>TTTT.k.......</li>
+    </things>
+    <roof>
+      <li>^^^^^^^......</li>
+      <li>^^^^^^^......</li>
+      <li>^^^^^^^......</li>
+      <li>^^^^^^^......</li>
+      <li>^^^^^^^......</li>
+      <li>^^^^^^^......</li>
+      <li>^^^^.........</li>
+      <li>^^^^.........</li>
+      <li>^^^^.........</li>
+    </roof>
+    <anchors>
+      <li>...+.........</li>
+      <li>.............</li>
+      <li>...4.........</li>
+      <li>+............</li>
+      <li>.2..55....1..</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.....33......</li>
+      <li>.+...33......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

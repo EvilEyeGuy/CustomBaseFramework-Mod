@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="Addie.HouseVanIlla">
+    <defName>CBF_VFEM2_VanIlla_FrostShrine</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_VFEM2_Shrine</li>
+    </categories>
+    <placement><factions><li>Addie_CivilHouseVanIlla</li></factions></placement>
+    <style>CBF_VFEM2</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="Addie.HouseVanIlla,Ludeon.RimWorld.Royalty"><symbol>a</symbol><thing>Addie_IllanBanner</thing></li>
+      <li><symbol>b</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
+      <li MayRequire="Addie.HouseVanIlla,Ludeon.RimWorld.Royalty"><symbol>f</symbol><thing>Addie_CrystalBrazier</thing></li>
+      <li><symbol>v</symbol><terrain>FlagstoneMarble</terrain></li>
+    </legend>
+    <mask>
+      <li>..#####..</li>
+      <li>..#####..</li>
+      <li>..#####..</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>..#####..</li>
+      <li>..#####..</li>
+    </mask>
+    <terrain>
+      <li>..vvvvv..</li>
+      <li>..vvvvv..</li>
+      <li>..vvvvv..</li>
+      <li>vvvvvvvvv</li>
+      <li>vvvvvvvvv</li>
+      <li>vvvvvvvvv</li>
+      <li>vvvvvvvvv</li>
+      <li>..vvvvv..</li>
+      <li>..vvvvv..</li>
+    </terrain>
+    <things>
+      <li>..SSSSS..</li>
+      <li>..SabaS..</li>
+      <li>..Sf.fS..</li>
+      <li>SSS...SSS</li>
+      <li>S.......S</li>
+      <li>S.......S</li>
+      <li>SSS...SSS</li>
+      <li>..S...S..</li>
+      <li>..SSFSS..</li>
+    </things>
+    <roof>
+      <li>..^^^^^..</li>
+      <li>..^^^^^..</li>
+      <li>..^^^^^..</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>..^^^^^..</li>
+      <li>..^^^^^..</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

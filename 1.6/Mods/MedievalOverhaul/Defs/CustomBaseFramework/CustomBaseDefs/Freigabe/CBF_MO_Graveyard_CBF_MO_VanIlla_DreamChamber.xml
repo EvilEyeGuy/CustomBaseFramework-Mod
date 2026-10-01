@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="Addie.HouseVanIlla">
+    <defName>CBF_MO_VanIlla_DreamChamber</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Graveyard</li>
+    </categories>
+    <placement><factions><li>Addie_CivilHouseVanIlla</li><li>Addie_IllanRemnant</li></factions></placement>
+    <style>CBF_Medieval</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>ChamberChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_Treasury</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="Addie.HouseVanIlla,Ludeon.RimWorld.Royalty"><symbol>N</symbol><thing>Addie_CrystalBrazier</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>North</rotation></li>
+      <li MayRequire="Addie.HouseVanIlla"><symbol>p</symbol><thing>Addie_AncientPod</thing><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>v</symbol><terrain>DankPyon_Floor_Versailles_Marble</terrain></li>
+    </legend>
+    <mask>
+      <li>..#######..</li>
+      <li>.#########.</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>...#####...</li>
+      <li>...#####...</li>
+    </mask>
+    <terrain>
+      <li>..vvvvvvv..</li>
+      <li>.vvvvvvvvv.</li>
+      <li>vvvvvvvvvvv</li>
+      <li>vvvvvvvvvvv</li>
+      <li>vvvvvvvvvvv</li>
+      <li>vvvvvvvvvvv</li>
+      <li>...vvvvv...</li>
+      <li>...vvvvv...</li>
+    </terrain>
+    <things>
+      <li>..SSSSSSS..</li>
+      <li>.SSN...NSS.</li>
+      <li>SS.......SS</li>
+      <li>S..p.p.p..S</li>
+      <li>S........aS</li>
+      <li>SSSS...SSSS</li>
+      <li>...S...S...</li>
+      <li>...SSFSS...</li>
+    </things>
+    <roof>
+      <li>..^^^^^^^..</li>
+      <li>.^^^^^^^^^.</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>...^^^^^...</li>
+      <li>...^^^^^...</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>.........1.</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

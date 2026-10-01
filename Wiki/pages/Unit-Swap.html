@@ -137,4 +137,14 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </ol>
 <h2 id="priority">Priority</h2>
 <p>When several mods bring rules for the same faction, the rule with the highest priority applies, separately for each unit or thing. To override a rule of another mod, give yours a higher priority.</p>
-<p>Saving writes a file of its own into your mod, under <code>Defs/CustomBaseFramework/Einheitentausch</code> in the version folder. Files of other mods are never touched.</p><div class="schritte"><a href="Pawns.html"><span>Previous</span>Pawn kinds and lists</a><a class="weiter" href="Settlement-Types.html"><span>Next</span>Shipped settlements</a></div></div></main><aside class="rechts"></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+<p>Saving writes a file of its own into your mod, under <code>Defs/CustomBaseFramework/Einheitentausch</code> in the version folder. Files of other mods are never touched.</p>
+<h2 id="faction-flags">Faction flags</h2>
+<p>Pieces can have flag anchors (<code>factionFlag</code>). There CBF places the flag of the faction that builds the settlement. The section <strong>Faction flag</strong> in the right column sets which object lists count as the flag of the selected faction.</p>
+<ul>
+<li>Each settlement of the faction shows one of these lists. All its settlements show the same one.</li>
+<li><strong>+ Object list</strong> adds a list, <strong>×</strong> removes one.</li>
+<li><strong>+ Own flag</strong> creates a flag for this faction in your mod.</li>
+<li>Flags from other mods can be changed too. The change is saved as a patch in your mod. Such a flag keeps at least one list.</li>
+<li>Without a flag, the object list set at the anchor is used.</li>
+</ul>
+<p><strong>Save</strong> writes the flags together with the swap rule. Your own flags go to <code>Defs/CustomBaseFramework/FactionFlags</code>. In XML a flag is a <a href="FactionFlagDef.html">FactionFlagDef</a>.</p><div class="schritte"><a href="Pawns.html"><span>Previous</span>Pawn kinds and lists</a><a class="weiter" href="Settlement-Types.html"><span>Next</span>Shipped settlements</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#priority">Priority</a><a class="t2" href="#faction-flags">Faction flags</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

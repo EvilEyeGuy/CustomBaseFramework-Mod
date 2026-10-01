@@ -268,6 +268,8 @@
   <CBF_PreviewReroll>Neue Saat</CBF_PreviewReroll>
   <CBF_PreviewAgain>Neu rechnen</CBF_PreviewAgain>
   <CBF_PreviewFailed>Das Layout kam nicht zustande. Siehe Log.</CBF_PreviewFailed>
+  <CBF_PreviewRunning>Plane den Ort, {0} s</CBF_PreviewRunning>
+  <CBF_TabFailed>Dieser Reiter ließ sich nicht zeichnen: {0}. Einzelheiten stehen im Log.</CBF_TabFailed>
   <CBF_PreviewNone>nichts gerechnet</CBF_PreviewNone>
   <CBF_PreviewFooter>{0} x {0} Felder, {1} ms, Saat {2}</CBF_PreviewFooter>
   <CBF_CG_5>Mauer</CBF_CG_5>
@@ -394,7 +396,6 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_LootUnique>Ohne Wiederholung</CBF_LootUnique>
   <CBF_NewLootTable>Neue Beutetabelle</CBF_NewLootTable>
   <CBF_UsedByNobody>Niemand nennt diese Liste, sie wird also nie gezogen.</CBF_UsedByNobody>
-  <CBF_AndNMore>   und {0} weitere</CBF_AndNMore>
   <CBF_PawnAddToList>{0} in eine Liste aufnehmen</CBF_PawnAddToList>
   <CBF_PawnListEntries>Einträge</CBF_PawnListEntries>
   <CBF_PawnListAlready>schon drin</CBF_PawnListAlready>
@@ -431,7 +432,6 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_BehaelterWhat>Was es ist</CBF_BehaelterWhat>
   <CBF_BehaelterFull>Voll</CBF_BehaelterFull>
   <CBF_BehaelterEmpty>Nach dem Durchsuchen</CBF_BehaelterEmpty>
-  <CBF_BehaelterDefault>Wenn niemand etwas zuweist</CBF_BehaelterDefault>
   <CBF_BehaelterSave>Behälter anlegen</CBF_BehaelterSave>
   <CBF_BehaelterSaved>{0} angelegt.</CBF_BehaelterSaved>
   <CBF_BehaelterNeedsName>Der Behälter braucht einen Namen.</CBF_BehaelterNeedsName>
@@ -442,7 +442,6 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_BehaelterForeign>{0} gehört zu {1}. Fremde Behälter lassen sich hier nicht ändern.</CBF_BehaelterForeign>
   <CBF_BehaelterFailed>{0} ließ sich nicht anlegen.</CBF_BehaelterFailed>
   <CBF_BehaelterPickImage>Bild wählen</CBF_BehaelterPickImage>
-  <CBF_BehaelterNoImages>Unter {0} liegt kein Bild.</CBF_BehaelterNoImages>
   <CBF_Field_texPath>Textur</CBF_Field_texPath>
   <CBF_Field_emptyGraphic>Bild danach</CBF_Field_emptyGraphic>
   <CBF_Field_drawSize>Zeichengröße</CBF_Field_drawSize>
@@ -454,7 +453,6 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_Field_einheitenFeindlich>Einheit wird feindlich</CBF_Field_einheitenFeindlich>
   <CBF_FieldDesc_standardTabelle>Gilt, wenn sonst niemand eine Beutetabelle zuweist, etwa wenn der Behälter von Hand gesetzt wird statt über einen Anker.</CBF_FieldDesc_standardTabelle>
   <CBF_FieldDesc_destroyWhenEmpty>Es verschwindet nach dem Durchsuchen und hinterlässt kein Baumaterial. Greift nur, wenn oben kein Gebäude steht.</CBF_FieldDesc_destroyWhenEmpty>
-  <CBF_BehaelterEdit>Behälter bearbeiten</CBF_BehaelterEdit>
   <CBF_BehaelterUpdate>Änderungen sichern</CBF_BehaelterUpdate>
   <CBF_BehaelterNoExt>Diesem Behälter fehlt der Einstellungsblock, er kann also nie gefüllt werden.</CBF_BehaelterNoExt>
   <CBF_Field_pawnCount>Anzahl</CBF_Field_pawnCount>
@@ -541,12 +539,6 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_DevFilled>Gefüllt: {0} Stapel.</CBF_DevFilled>
   <CBF_NoLootTables>Keine Beutetabellen geladen</CBF_NoLootTables>
   <CBF_BehaelterFromDefTip>Liest Werte von einem vorhandenen Gebäude ab und schreibt sie in deine Definition: Textur, Größe, Zeichengröße, Trefferpunkte, Baustoff.\n\nGeerbt wird nichts. Dein Behälter ist ein eigenes Ding und behält keine Verbindung zum Original. Ein Lootable von Medieval Overhaul gibt weder seine Beute noch sein leeres Bild noch seine Ratten weiter.\n\nEines folgt doch: nimmst du eine Textur aus einem Mod ab, braucht dein Behälter diesen Mod, denn ohne ihn fehlt das Bild. Leg eine eigene PNG unter Textures in deinen Mod, wenn du das nicht willst.</CBF_BehaelterFromDefTip>
-  <CBF_BehaelterNextStepTitle>Ein Schritt fehlt noch</CBF_BehaelterNextStepTitle>
-  <CBF_BehaelterNextStep>{0} gibt es jetzt, aber noch setzt ihn niemand.\n\nEin Behälter kommt auf genau einem Weg auf die Karte: eine Objektliste nennt ihn, und ein Füllanker wählt diese Liste. Was hineinkommt, entscheidet die Beutetabelle am selben Anker.\n\nGleich in eine Liste aufnehmen?</CBF_BehaelterNextStep>
-  <CBF_BehaelterPutInList>In eine Objektliste aufnehmen</CBF_BehaelterPutInList>
-  <CBF_Later>Später</CBF_Later>
-  <CBF_BehaelterAdded>{0} in {1} aufgenommen.</CBF_BehaelterAdded>
-  <CBF_BehaelterAlreadyIn>{0} enthält ihn schon.</CBF_BehaelterAlreadyIn>
   <CBF_PawnParentLost>{0}: die Vorlage erbt von einem Def, das sich nicht auflösen ließ. Die Kopie steht allein, es fehlt also alles, was nur in der Basis stand. Prüfe Ausrüstung und Kleidung, bevor du sie verwendest.</CBF_PawnParentLost>
   <CBF_MemberTable>Beutetabelle für dieses Stück</CBF_MemberTable>
   <CBF_MemberTableFromAnchor>vom Anker</CBF_MemberTableFromAnchor>
@@ -619,7 +611,6 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_GuideMissing>Die Anleitung wurde nicht gefunden: {0}</CBF_GuideMissing>
   <CBF_FactionSwitchHead>Siedlungen je Fraktion</CBF_FactionSwitchHead>
   <CBF_FactionSwitchHelp>Diese Fraktionen bekommen ihre Basen von Custom Base Framework. Nimm das Häkchen weg, dann bekommt die Fraktion wieder RimWorlds eigene Basen. Schon besuchte Basen bleiben, wie sie sind.</CBF_FactionSwitchHelp>
-  <CBF_FactionSwitchNone>Keine Fraktion bekommt ihre Basen von Custom Base Framework.</CBF_FactionSwitchNone>
   <CBF_FactionSwitchFrom>Pläne aus {0}</CBF_FactionSwitchFrom>
   <CBF_FactionSwitchOpen>Fraktionen wählen</CBF_FactionSwitchOpen>
   <CBF_FactionSwitchCount>{0} von {1} Fraktionen bekommen ihre Basen von Custom Base Framework.</CBF_FactionSwitchCount>
@@ -641,11 +632,26 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_ErrWin_UploadButton>Hochladen</CBF_ErrWin_UploadButton>
   <CBF_ErrWin_Done>Hochgeladen. Kopier den Link und poste ihn als Kommentar auf der Steam-Workshop-Seite von Custom Base Framework.</CBF_ErrWin_Done>
   <CBF_UninstallHead>CBF aus diesem Spielstand entfernen</CBF_UninstallHead>
-  <CBF_UninstallHelp>Entfernt alle CBF-Daten aus dem geladenen Spiel, damit du den Mod danach gefahrlos entfernen kannst. Siedlungen bleiben bestehen, Behälter werden auf den Boden ausgeleert.</CBF_UninstallHelp>
+  <CBF_UninstallHelp>Entfernt alle CBF-Daten aus dem geladenen Spiel, damit du den Mod danach gefahrlos entfernen kannst. Siedlungen bleiben bestehen. Behälter werden durch ihr Vorbild ersetzt, ihr Inhalt landet am Boden.</CBF_UninstallHelp>
   <CBF_UninstallButton>CBF-Daten aus diesem Spielstand entfernen</CBF_UninstallButton>
   <CBF_UninstallNeedGame>Nur in einem geladenen Spiel möglich.</CBF_UninstallNeedGame>
   <CBF_UninstallConfirm>Das entfernt alle CBF-Daten aus dem geladenen Spiel: Quests, Kartendaten, Behälter und Siedlungspläne. Rückgängig machen geht nicht.\n\nDanach sofort speichern, das Spiel beenden und erst dann den Mod entfernen. Solange CBF aktiv bleibt, holen die Weltkarte und neue Karten wieder CBF-Daten herein.</CBF_UninstallConfirm>
   <CBF_UninstallDone>CBF-Daten aus {0} Orten entfernt.\n\nJetzt speichern, das Spiel beenden und den Mod entfernen.</CBF_UninstallDone>
+  <CBF_UninstallStepQuests>{0} CBF-Quests beendet und entfernt</CBF_UninstallStepQuests>
+  <CBF_UninstallStepQuestParts>{0} CBF-Questteile aus anderen Quests entfernt</CBF_UninstallStepQuestParts>
+  <CBF_UninstallStepComponents>{0} Kartenkomponenten entfernt</CBF_UninstallStepComponents>
+  <CBF_UninstallStepGenerator>{0} Karten auf den Vanilla-Kartengenerator umgestellt</CBF_UninstallStepGenerator>
+  <CBF_UninstallStepLords>{0} Verteidigergruppen an die Vanilla-Verteidigung übergeben</CBF_UninstallStepLords>
+  <CBF_UninstallStepContainers>{0} Behälter durch ihr Vorbild ersetzt, Inhalt liegt am Boden</CBF_UninstallStepContainers>
+  <CBF_UninstallStepSupports>{0} Minenstützen durch Säulen ersetzt</CBF_UninstallStepSupports>
+  <CBF_UninstallStepWalls>{0} CBF-Mauern durch Mauern aus demselben Stoff ersetzt</CBF_UninstallStepWalls>
+  <CBF_UninstallStepThings>{0} weitere CBF-Dinge entfernt</CBF_UninstallStepThings>
+  <CBF_UninstallStepTerrain>{0} Felder mit CBF-Boden zurückgesetzt</CBF_UninstallStepTerrain>
+  <CBF_UninstallStepPlans>{0} Orte auf der Weltkarte ohne CBF-Plan</CBF_UninstallStepPlans>
+  <CBF_UninstallStepSites>{0} CBF-Ortsteile entfernt</CBF_UninstallStepSites>
+  <CBF_UninstallStepPawns>{0} Pawns auf eine Vanilla-Art umgestellt</CBF_UninstallStepPawns>
+  <CBF_UninstallCheckClean>Prüfung: Im Spiel ist nichts mehr von CBF übrig.</CBF_UninstallCheckClean>
+  <CBF_UninstallCheckRest>Prüfung: Es sind noch {0} CBF-Einträge übrig. Den Knopf noch einmal drücken.</CBF_UninstallCheckRest>
   <CBF_CloseUnsaved>Ungesicherte Änderungen an {0}. Beim Schließen gehen sie verloren, die Werte werden aus den Dateien neu gelesen.</CBF_CloseUnsaved>
   <CBF_CloseDiscard>Verwerfen und schließen</CBF_CloseDiscard>
 

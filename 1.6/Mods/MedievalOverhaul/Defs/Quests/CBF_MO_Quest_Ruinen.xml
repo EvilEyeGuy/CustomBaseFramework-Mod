@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <CustomBaseFramework.RuinDef ParentName="CBF_Ruin_Basis">
+  <CustomBaseFramework.RuinDef ParentName="CBF_Ruin_Raided">
     <defName>CBF_MO_Quest_Ruin_Raided</defName>
     <label>raided</label>
-    <wallDemolition>0.15</wallDemolition>
-    <clustering>0.7</clustering>
-    <breaches>1~3</breaches>
-    <gateDestroyed>0.5</gateDestroyed>
-    <buildingDamage>0.1~0.5</buildingDamage>
-    <turretsDestroyed>0.5</turretsDestroyed>
     <burnMarks>0.3</burnMarks>
     <fires>0~1</fires>
-    <rubble>0.3</rubble>
-    <lootFactor>0.4</lootFactor>
-    <lootWithOccupiers>0.5</lootWithOccupiers>
-    <residentCorpses>4~10</residentCorpses>
-    <attackerCorpses>2~6</attackerCorpses>
-    <rotDays>0.5~3</rotDays>
-    <prisoners>0~3</prisoners>
-    <fieldsRavaged>0.3</fieldsRavaged>
-    <livestockGone>0.6</livestockGone>
-    <occupation>Occupier</occupation>
   </CustomBaseFramework.RuinDef>
 
   <CustomBaseFramework.RuinDef ParentName="CBF_Ruin_Basis">

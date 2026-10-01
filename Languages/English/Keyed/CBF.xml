@@ -268,6 +268,8 @@
   <CBF_PreviewReroll>New seed</CBF_PreviewReroll>
   <CBF_PreviewAgain>Recalculate</CBF_PreviewAgain>
   <CBF_PreviewFailed>The layout did not come out. See the log.</CBF_PreviewFailed>
+  <CBF_PreviewRunning>Planning the layout, {0} s</CBF_PreviewRunning>
+  <CBF_TabFailed>This tab could not be drawn: {0}. Details are in the log.</CBF_TabFailed>
   <CBF_PreviewNone>nothing calculated</CBF_PreviewNone>
   <CBF_PreviewFooter>{0} x {0} cells, {1} ms, seed {2}</CBF_PreviewFooter>
   <CBF_CG_5>wall</CBF_CG_5>
@@ -394,7 +396,6 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_LootUnique>No repeats</CBF_LootUnique>
   <CBF_NewLootTable>New loot table</CBF_NewLootTable>
   <CBF_UsedByNobody>Nothing names this list, so it is never rolled.</CBF_UsedByNobody>
-  <CBF_AndNMore>   and {0} more</CBF_AndNMore>
   <CBF_PawnAddToList>Add {0} to a list</CBF_PawnAddToList>
   <CBF_PawnListEntries>entries</CBF_PawnListEntries>
   <CBF_PawnListAlready>already in</CBF_PawnListAlready>
@@ -431,7 +432,6 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_BehaelterWhat>What it is</CBF_BehaelterWhat>
   <CBF_BehaelterFull>Full</CBF_BehaelterFull>
   <CBF_BehaelterEmpty>Once searched</CBF_BehaelterEmpty>
-  <CBF_BehaelterDefault>If nobody assigns anything</CBF_BehaelterDefault>
   <CBF_BehaelterSave>Create container</CBF_BehaelterSave>
   <CBF_BehaelterSaved>{0} created.</CBF_BehaelterSaved>
   <CBF_BehaelterNeedsName>The container needs a name.</CBF_BehaelterNeedsName>
@@ -442,7 +442,6 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_BehaelterForeign>{0} belongs to {1}. Containers from other mods cannot be changed here.</CBF_BehaelterForeign>
   <CBF_BehaelterFailed>{0} could not be created.</CBF_BehaelterFailed>
   <CBF_BehaelterPickImage>Pick an image</CBF_BehaelterPickImage>
-  <CBF_BehaelterNoImages>No images found under {0}.</CBF_BehaelterNoImages>
   <CBF_Field_texPath>Texture</CBF_Field_texPath>
   <CBF_Field_emptyGraphic>Texture after</CBF_Field_emptyGraphic>
   <CBF_Field_drawSize>Draw size</CBF_Field_drawSize>
@@ -454,7 +453,6 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_Field_einheitenFeindlich>Pawn turns hostile</CBF_Field_einheitenFeindlich>
   <CBF_FieldDesc_standardTabelle>Used when nothing else assigns a loot table, for example when the container is placed by hand rather than through an anchor.</CBF_FieldDesc_standardTabelle>
   <CBF_FieldDesc_destroyWhenEmpty>It vanishes once searched, leaving no building materials behind. Only happens if no building is set above.</CBF_FieldDesc_destroyWhenEmpty>
-  <CBF_BehaelterEdit>Edit container</CBF_BehaelterEdit>
   <CBF_BehaelterUpdate>Save changes</CBF_BehaelterUpdate>
   <CBF_BehaelterNoExt>This container has no settings block, so it can never be filled.</CBF_BehaelterNoExt>
   <CBF_Field_pawnCount>Pawn count</CBF_Field_pawnCount>
@@ -541,12 +539,6 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_DevFilled>Filled: {0} stacks.</CBF_DevFilled>
   <CBF_NoLootTables>No loot tables loaded</CBF_NoLootTables>
   <CBF_BehaelterFromDefTip>Reads values off an existing building and writes them into your definition: texture, size, draw size, hit points, stuff.\n\nNothing is inherited. Your container is a thing of its own and keeps no tie to the original. A Medieval Overhaul lootable does not pass on its loot, its empty graphic or its rats.\n\nOne thing does follow: if you take a texture from a mod, your container needs that mod, because without it the image is missing. Put your own PNG under Textures in your mod to avoid that.</CBF_BehaelterFromDefTip>
-  <CBF_BehaelterNextStepTitle>One step left</CBF_BehaelterNextStepTitle>
-  <CBF_BehaelterNextStep>{0} exists now, but nothing places it yet.\n\nA container reaches the map along one path: an object list names it, and a fill anchor picks that list. The loot table on the same anchor decides what goes inside.\n\nPut it in a list now?</CBF_BehaelterNextStep>
-  <CBF_BehaelterPutInList>Put in an object list</CBF_BehaelterPutInList>
-  <CBF_Later>Later</CBF_Later>
-  <CBF_BehaelterAdded>{0} added to {1}.</CBF_BehaelterAdded>
-  <CBF_BehaelterAlreadyIn>{0} already contains it.</CBF_BehaelterAlreadyIn>
   <CBF_PawnParentLost>{0}: the template inherits from a def that could not be resolved. The copy stands alone, so anything that lived only in the parent is missing. Check gear and apparel before using it.</CBF_PawnParentLost>
   <CBF_MemberTable>Loot table for this piece</CBF_MemberTable>
   <CBF_MemberTableFromAnchor>from anchor</CBF_MemberTableFromAnchor>
@@ -619,7 +611,6 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_GuideMissing>The guide was not found: {0}</CBF_GuideMissing>
   <CBF_FactionSwitchHead>Settlements per faction</CBF_FactionSwitchHead>
   <CBF_FactionSwitchHelp>These factions get their bases from Custom Base Framework. Untick a faction to give it RimWorld's own bases again. Bases that were already visited stay as they are.</CBF_FactionSwitchHelp>
-  <CBF_FactionSwitchNone>No faction gets its bases from Custom Base Framework.</CBF_FactionSwitchNone>
   <CBF_FactionSwitchFrom>plans from {0}</CBF_FactionSwitchFrom>
   <CBF_FactionSwitchOpen>Choose factions</CBF_FactionSwitchOpen>
   <CBF_FactionSwitchCount>{0} of {1} factions get their bases from Custom Base Framework.</CBF_FactionSwitchCount>
@@ -641,11 +632,26 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_ErrWin_UploadButton>Upload</CBF_ErrWin_UploadButton>
   <CBF_ErrWin_Done>Uploaded. Copy the link and post it in a comment on the Custom Base Framework Steam Workshop page.</CBF_ErrWin_Done>
   <CBF_UninstallHead>Remove CBF from this save</CBF_UninstallHead>
-  <CBF_UninstallHelp>Removes all CBF data from the loaded game so the mod can be uninstalled safely. Settlements remain, containers are emptied onto the ground.</CBF_UninstallHelp>
+  <CBF_UninstallHelp>Removes all CBF data from the loaded game so the mod can be uninstalled safely. Settlements remain. Containers are replaced by their original furniture, their contents end up on the ground.</CBF_UninstallHelp>
   <CBF_UninstallButton>Remove CBF data from this save</CBF_UninstallButton>
   <CBF_UninstallNeedGame>Only available in a loaded game.</CBF_UninstallNeedGame>
   <CBF_UninstallConfirm>This removes all CBF data from the loaded game: quests, map data, containers and settlement plans. It cannot be undone.\n\nAfterwards save immediately, quit the game and then remove the mod. As long as CBF stays active, the world map and new maps bring CBF data back.</CBF_UninstallConfirm>
   <CBF_UninstallDone>CBF data removed from {0} places.\n\nSave now, quit the game and remove the mod.</CBF_UninstallDone>
+  <CBF_UninstallStepQuests>{0} CBF quests ended and removed</CBF_UninstallStepQuests>
+  <CBF_UninstallStepQuestParts>{0} CBF quest parts removed from other quests</CBF_UninstallStepQuestParts>
+  <CBF_UninstallStepComponents>{0} map components removed</CBF_UninstallStepComponents>
+  <CBF_UninstallStepGenerator>{0} maps switched to the vanilla map generator</CBF_UninstallStepGenerator>
+  <CBF_UninstallStepLords>{0} defender groups handed to vanilla defence</CBF_UninstallStepLords>
+  <CBF_UninstallStepContainers>{0} containers replaced by their original furniture, contents on the ground</CBF_UninstallStepContainers>
+  <CBF_UninstallStepSupports>{0} mine supports replaced by columns</CBF_UninstallStepSupports>
+  <CBF_UninstallStepWalls>{0} CBF walls replaced by walls of the same material</CBF_UninstallStepWalls>
+  <CBF_UninstallStepThings>{0} other CBF things removed</CBF_UninstallStepThings>
+  <CBF_UninstallStepTerrain>{0} cells with CBF terrain reset</CBF_UninstallStepTerrain>
+  <CBF_UninstallStepPlans>{0} world places without CBF plan</CBF_UninstallStepPlans>
+  <CBF_UninstallStepSites>{0} CBF site parts removed</CBF_UninstallStepSites>
+  <CBF_UninstallStepPawns>{0} pawns switched to a vanilla pawn kind</CBF_UninstallStepPawns>
+  <CBF_UninstallCheckClean>Check: nothing from CBF is left in this game.</CBF_UninstallCheckClean>
+  <CBF_UninstallCheckRest>Check: {0} CBF entries are still left. Run the button again.</CBF_UninstallCheckRest>
   <CBF_CloseUnsaved>Unsaved changes to {0}. Closing discards them and reloads the values from the files.</CBF_CloseUnsaved>
   <CBF_CloseDiscard>Discard and close</CBF_CloseDiscard>
 

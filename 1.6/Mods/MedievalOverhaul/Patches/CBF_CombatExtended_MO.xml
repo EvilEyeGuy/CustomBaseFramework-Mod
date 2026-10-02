@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>Defs/CustomBaseFramework.PieceDef/legend/li/thing[text()="DankPyon_BallistaBolt"]</xpath>
+          <value>
+            <thing>Pila</thing>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>Defs/CustomBaseFramework.PieceDef/legend/li/thing[text()="DankPyon_ScorpioBolt"]</xpath>
+          <value>
+            <thing>Ammo_CrossbowBolt_Iron</thing>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>Defs/CustomBaseFramework.PieceDef/legend/li/thing[text()="DankPyon_StoneBoulder"]</xpath>
+          <value>
+            <thing>Ammo_Catapult_Boulder</thing>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>Defs/CustomBaseFramework.PieceDef/legend/li/thing[text()="DankPyon_StoneBoulderTarred"]</xpath>
+          <value>
+            <thing>Ammo_Catapult_TarBoulder</thing>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

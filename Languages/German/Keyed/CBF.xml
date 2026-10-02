@@ -587,16 +587,11 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_FactionSwitchAllOn>Alle an</CBF_FactionSwitchAllOn>
   <CBF_FactionSwitchAllOff>Alle aus</CBF_FactionSwitchAllOff>
   <CBF_ReportHead>Fehlerbericht</CBF_ReportHead>
-  <CBF_ReportHelp>Scheitert eine Siedlung, schreibt CBF einen Bericht mit Gelände und Log. Hier kannst du den neuesten Bericht hochladen und den Link zu deiner Fehlermeldung dazugeben.</CBF_ReportHelp>
-  <CBF_ReportUpload>Neuesten Fehlerbericht hochladen</CBF_ReportUpload>
-  <CBF_ReportLinks>Links zum hochgeladenen Bericht:</CBF_ReportLinks>
-  <CBF_ReportCopy>Links kopieren</CBF_ReportCopy>
-  <CBF_ReportCopied>Links kopiert.</CBF_ReportCopied>
+  <CBF_ReportHelp>Scheitert eine Siedlung, schreibt CBF einen Bericht mit Gelände und Log. Öffne den Ordner des neuesten Berichts und hänge Bericht.txt und Gelaende.gel an deine Fehlermeldung an, zum Beispiel in einem Kommentar auf der Workshop-Seite.</CBF_ReportHelp>
+  <CBF_ReportCopy>Zusammenfassung kopieren</CBF_ReportCopy>
+  <CBF_ReportCopied>Zusammenfassung kopiert.</CBF_ReportCopied>
   <CBF_ErrWin_Title>Eine Siedlung konnte nicht erzeugt werden</CBF_ErrWin_Title>
   <CBF_ErrWin_What>Stattdessen steht eine Vanilla-Siedlung. Dein Spiel läuft normal weiter.</CBF_ErrWin_What>
-  <CBF_ErrWin_Upload>Du kannst helfen, die Ursache zu finden. Hochladen schickt zwei Dateien zu {0}:\n- Bericht.txt: Modliste, Ortstyp, Seed und ein Auszug aus dem Log\n- Gelaende.gel: das Gelände der Karte\nSpielstände werden nicht hochgeladen. Der Link ist öffentlich, die Dateien werden nach {1} Tagen automatisch gelöscht.</CBF_ErrWin_Upload>
-  <CBF_ErrWin_UploadButton>Hochladen</CBF_ErrWin_UploadButton>
-  <CBF_ErrWin_Done>Hochgeladen. Kopier den Link und poste ihn als Kommentar auf der Steam-Workshop-Seite von Custom Base Framework.</CBF_ErrWin_Done>
   <CBF_UninstallHead>CBF aus diesem Spielstand entfernen</CBF_UninstallHead>
   <CBF_UninstallHelp>Entfernt alle CBF-Daten aus dem geladenen Spiel, damit du den Mod danach gefahrlos entfernen kannst. Siedlungen bleiben bestehen. Behälter werden durch ihr Vorbild ersetzt, ihr Inhalt landet am Boden.</CBF_UninstallHelp>
   <CBF_UninstallButton>CBF-Daten aus diesem Spielstand entfernen</CBF_UninstallButton>
@@ -779,4 +774,12 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_Log_KernformZuKlein>{0} ({1}): Die Altstadt ist für die Form {2} zu klein. Mit dieser Mauer bleibt in den Armen kein Platz für Gebäude, sie wurde deshalb als Rechteck gebaut.</CBF_Log_KernformZuKlein>
   <CBF_Log_KernformStadtZuKlein>{0} ({1}): Die Altstadt ist für die Form {2} zu klein, auch ohne Mauer. Sie wurde deshalb als Rechteck gebaut.</CBF_Log_KernformStadtZuKlein>
   <CBF_Log_GewachsenRechteck>{0} ({1}): Die Altstadt hat die Form Gewachsen, ist aber ein Rechteck. Der Ort hat keine Vorstadtinseln und eine Mauertiefe bis {2}.</CBF_Log_GewachsenRechteck>
+  <CBF_AnchorNameEmpty>Der Anker braucht einen Namen.</CBF_AnchorNameEmpty>
+  <CBF_AnchorNameChars>Nur Buchstaben, Ziffern und Unterstriche verwenden.</CBF_AnchorNameChars>
+  <CBF_AnchorNameReserved>{0} ist für Verbindungsanker reserviert.</CBF_AnchorNameReserved>
+  <CBF_AnchorNameUsed>Ein anderer Anker dieses Stücks heißt schon {0}.</CBF_AnchorNameUsed>
+  <CBF_AnchorNameTip>Name des Ankers in der Datei. Er erscheint nur im Editor und in der Datei, der Anker wirkt unter jedem Namen gleich.</CBF_AnchorNameTip>
+  <CBF_ReportOpenFolder>Berichtsordner öffnen</CBF_ReportOpenFolder>
+  <CBF_ReportFolderLine>Berichtsordner: {0}</CBF_ReportFolderLine>
+  <CBF_ErrWin_Folder>CBF hat einen Bericht in diesen Ordner geschrieben:\n{0}\n\nUm den Fehler zu melden, hänge Bericht.txt (Modliste, Ortstyp, Seed, Log-Auszug) und Gelaende.gel (das Gelände der Karte) an, zum Beispiel in einem Kommentar auf der Workshop-Seite. Zusammenfassung kopieren legt eine kurze Beschreibung des Fehlers in die Zwischenablage.</CBF_ErrWin_Folder>
 </LanguageData>

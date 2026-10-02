@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/PawnKindDef[defName="CBF_Tribesperson"]/weaponMoney</xpath>
+      <value>
+        <weaponMoney>50~90</weaponMoney>
+      </value>
+    </match>
+  </Operation>
+</Patch>

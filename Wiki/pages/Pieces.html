@@ -175,6 +175,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 - <strong>Object</strong> places things from an object list, without loot. With Ideology active, <strong>Ideoligion building</strong> places a building of the owning faction's ideoligion there instead, such as an altar or a ritual spot.
 - <strong>Pawn</strong> places pawns from a <a href="Pawns.html#pawn-lists">pawn list</a>, or a <strong>Single kind</strong> of pawn when no list is set, with a <strong>Count</strong>.</p>
 <p><strong>Loot</strong>, <strong>Object</strong> and <strong>Pawn</strong> anchors also have a <strong>Chance</strong> that anything appears there at all. <strong>Loot</strong> and <strong>Object</strong> anchors have <strong>Second layer</strong>: such an anchor may overlap other anchors and clears nothing underneath, for example a fur rug under a table.</p>
+<p><strong>Loot</strong>, <strong>Object</strong> and <strong>Pawn</strong> anchors have a <strong>Name</strong> field. New anchors get a name from their kind, such as Object2; type a clearer one, for example Bed or Rug. Letters, digits and underscores are allowed, each name once per piece, and Wall, Outside, Annex and Water are reserved for connection anchors. The name only labels the anchor in the editor and in the file.</p>
 <p>The <strong>…</strong> button in front of a list shows what is in it.</p>
 <ul>
 <li>An anchor whose list does not exist, or whose object list holds nothing that fits the anchor area, marks the piece red in the list.</li>

@@ -587,16 +587,11 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_FactionSwitchAllOn>All on</CBF_FactionSwitchAllOn>
   <CBF_FactionSwitchAllOff>All off</CBF_FactionSwitchAllOff>
   <CBF_ReportHead>Error report</CBF_ReportHead>
-  <CBF_ReportHelp>If a settlement could not be generated, CBF writes a report with the terrain and the log. You can upload the latest report here and post the link with your bug report.</CBF_ReportHelp>
-  <CBF_ReportUpload>Upload latest error report</CBF_ReportUpload>
-  <CBF_ReportLinks>Links to the uploaded report:</CBF_ReportLinks>
-  <CBF_ReportCopy>Copy links</CBF_ReportCopy>
-  <CBF_ReportCopied>Links copied.</CBF_ReportCopied>
+  <CBF_ReportHelp>If a settlement could not be generated, CBF writes a report with the terrain and the log. Open the folder of the latest report and attach Bericht.txt and Gelaende.gel to your bug report, for example in a comment on the Steam Workshop page.</CBF_ReportHelp>
+  <CBF_ReportCopy>Copy summary</CBF_ReportCopy>
+  <CBF_ReportCopied>Summary copied.</CBF_ReportCopied>
   <CBF_ErrWin_Title>A settlement could not be generated</CBF_ErrWin_Title>
   <CBF_ErrWin_What>A vanilla settlement was placed instead. Your game continues normally.</CBF_ErrWin_What>
-  <CBF_ErrWin_Upload>You can help find the cause. Upload sends two files to {0}:\n- Bericht.txt: mod list, settlement type, seed and an excerpt of the log\n- Gelaende.gel: the terrain of the map\nNo save games are uploaded. The link is public, the files are deleted automatically after {1} days.</CBF_ErrWin_Upload>
-  <CBF_ErrWin_UploadButton>Upload</CBF_ErrWin_UploadButton>
-  <CBF_ErrWin_Done>Uploaded. Copy the link and post it in a comment on the Custom Base Framework Steam Workshop page.</CBF_ErrWin_Done>
   <CBF_UninstallHead>Remove CBF from this save</CBF_UninstallHead>
   <CBF_UninstallHelp>Removes all CBF data from the loaded game so the mod can be uninstalled safely. Settlements remain. Containers are replaced by their original furniture, their contents end up on the ground.</CBF_UninstallHelp>
   <CBF_UninstallButton>Remove CBF data from this save</CBF_UninstallButton>
@@ -779,4 +774,12 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_Log_KernformZuKlein>{0} ({1}): the old town is too small for the shape {2}. With this wall the arms leave no room for buildings, so it was built as a rectangle.</CBF_Log_KernformZuKlein>
   <CBF_Log_KernformStadtZuKlein>{0} ({1}): the old town is too small for the shape {2}, even without a wall. It was built as a rectangle.</CBF_Log_KernformStadtZuKlein>
   <CBF_Log_GewachsenRechteck>{0} ({1}): the old town has the shape Grown but is a rectangle. The settlement has no suburb islands and a wall depth of {2} or less.</CBF_Log_GewachsenRechteck>
+  <CBF_AnchorNameEmpty>The anchor needs a name.</CBF_AnchorNameEmpty>
+  <CBF_AnchorNameChars>Use only letters, digits and underscores.</CBF_AnchorNameChars>
+  <CBF_AnchorNameReserved>{0} is reserved for connection anchors.</CBF_AnchorNameReserved>
+  <CBF_AnchorNameUsed>Another anchor of this piece is already called {0}.</CBF_AnchorNameUsed>
+  <CBF_AnchorNameTip>Name of the anchor in the file. Only shown in the editor and in the file; the anchor works the same under any name.</CBF_AnchorNameTip>
+  <CBF_ReportOpenFolder>Open report folder</CBF_ReportOpenFolder>
+  <CBF_ReportFolderLine>Report folder: {0}</CBF_ReportFolderLine>
+  <CBF_ErrWin_Folder>CBF wrote a report to this folder:\n{0}\n\nTo report the problem, attach Bericht.txt (mod list, settlement type, seed, log excerpt) and Gelaende.gel (the terrain of the map), for example in a comment on the Steam Workshop page. Copy summary puts a short description of the error on the clipboard.</CBF_ErrWin_Folder>
 </LanguageData>

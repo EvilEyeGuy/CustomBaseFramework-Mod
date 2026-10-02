@@ -29,6 +29,10 @@
   <CBF_Cfg_MineChamberItems>Mine {0}: chambers is 0, but there are items with location Chamber (also the default when location is missing). They find no place.</CBF_Cfg_MineChamberItems>
   <CBF_Cfg_MineItemEmpty>Mine {0}: an entry in things names neither thing nor list and is dropped.</CBF_Cfg_MineItemEmpty>
   <CBF_Cfg_MineItemPlace>Mine {0}: unknown location "{1}", allowed are Chamber, Tunnel and Entrance. The entry is dropped.</CBF_Cfg_MineItemPlace>
+  <CBF_Cfg_OutworkSize>Outworks {0}: the piece {1} is not 1x1 and is not placed.</CBF_Cfg_OutworkSize>
+  <CBF_Cfg_OutworkDistance>Outworks {0}: distance must be at least 1, the planner uses 1.</CBF_Cfg_OutworkDistance>
+  <CBF_Cfg_OutworkRange>Outworks {0}: {1} needs a minimum of at least 1 that does not exceed the maximum, the planner adjusts the values.</CBF_Cfg_OutworkRange>
+  <CBF_Cfg_OutworkGate>Outworks {0}: gateClearance must not be negative, the planner uses 0.</CBF_Cfg_OutworkGate>
   <CBF_Cfg_Range>{0} must be between {1} and {2}.</CBF_Cfg_Range>
   <CBF_Cfg_NoPlants>The crop list contains no plants.</CBF_Cfg_NoPlants>
   <CBF_Cfg_EntryNoPlant>An entry has no plant.</CBF_Cfg_EntryNoPlant>

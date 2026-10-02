@@ -145,7 +145,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>coreShapes</code><br>Old town shapes</td>
 <td>list of text</td>
 <td>none</td>
-<td>Allowed shapes of the old town: Grown, Rectangle, LShape, TShape, UShape, Cross, Step, Octagon. Each settlement picks one of them at random. Empty means all shapes.</td>
+<td>Allowed shapes of the old town: Grown, Rectangle, LShape, TShape, UShape, Cross, Step, Octagon. Each settlement picks one of them at random. Empty means Grown only, the behaviour of settlement types without this field. Grown only forms its own outline when the settlement has suburb islands or a wall deeper than 3 cells; otherwise the old town stays a rectangle.</td>
 </tr>
 <tr>
 <td><code>coreSize</code><br>Core size</td>

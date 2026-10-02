@@ -117,6 +117,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / BudgetEntry</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / BudgetEntry</div><h1 id="budgetentry">BudgetEntry</h1><p class="unter">Modding</p>
+<p>Requests a category of buildings or one specific piece within a district. Use count for the requested quantity and filler for buildings that may occupy space left over after the main programme. Naming a piece takes precedence over tag.</p>
 <table>
 <thead>
 <tr>
@@ -131,7 +132,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>count</code></td>
 <td>IntRange</td>
 <td><code>1</code></td>
-<td>How many of these the settlement wants, as a range.</td>
+<td>Requested number of buildings, sampled from the range. Placement depends on available space. During reference resolution, counts above 150 are capped at 150.</td>
 </tr>
 <tr>
 <td><code>filler</code></td>
@@ -143,19 +144,19 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>lootTable</code></td>
 <td>text</td>
 <td>none</td>
-<td>The loot table (LootTableDef) used here. On an anchor it fills the containers. On an object list member it replaces the anchor's table. On a content zone or a settlement budget entry it fills content zones. Not used on dungeon profiles.</td>
+<td>Default loot table for content zones in pieces selected by this entry. A content zone with its own resolved table takes precedence.</td>
 </tr>
 <tr>
 <td><code>piece</code></td>
 <td><a href="PieceDef.html">PieceDef</a></td>
 <td>none</td>
-<td>One specific piece by defName. It wins over a category in the same entry. In wall lists the name may also be a category.</td>
+<td>Specific PieceDef to request. Takes precedence when tag is also supplied.</td>
 </tr>
 <tr>
-<td><code>tag</code><br>Category (old)</td>
+<td><code>tag</code><br>Category</td>
 <td><a href="PieceCategoryDef.html">PieceCategoryDef</a></td>
 <td>none</td>
-<td>The first category. Kept so old files still load; write categories instead.</td>
+<td>PieceCategoryDef to select buildings from, including its descendant categories. This is the current category field for a building request; use piece to request a specific template.</td>
 </tr>
 <tr>
 <td><code>unique</code><br>Only once</td>
@@ -173,13 +174,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>withIdeo</code></td>
 <td>list of text</td>
 <td>none</td>
-<td>Memes or precepts (defNames). The entry, or on a piece or category (under placement) the piece, is only used when the owning faction's ideoligion has at least one of them. Needs Ideology.</td>
+<td>Allow the entry only if the owning ideoligion contains at least one listed meme or precept defName. Without an ideoligion, a non-empty list rejects the entry.</td>
 </tr>
 <tr>
 <td><code>withoutIdeo</code></td>
 <td>list of text</td>
 <td>none</td>
-<td>Memes or precepts (defNames). The entry, or on a piece or category (under placement) the piece, is not used when the owning faction's ideoligion has one of them. Needs Ideology.</td>
+<td>Reject the entry if the owning ideoligion contains any listed meme or precept defName.</td>
 </tr>
 </tbody>
 </table>

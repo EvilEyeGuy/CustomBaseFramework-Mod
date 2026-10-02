@@ -117,7 +117,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / DistrictSpec</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / DistrictSpec</div><h1 id="districtspec">DistrictSpec</h1><p class="unter">Modding</p>
-<p>Groups building requests within a ward and supplies preferences for their position. Fields, pens and mines attached to the district can be associated with its buildings. District names must be unique across the settlement, including districts in different wards.</p>
 <table>
 <thead>
 <tr>
@@ -132,7 +131,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>entries</code></td>
 <td>list of <a href="BudgetEntry.html">BudgetEntry</a></td>
 <td>none</td>
-<td>Building requests for this district. Each BudgetEntry selects a category or one specific piece.</td>
+<td>The budget of the district: which pieces or categories it wants and how many.</td>
 </tr>
 <tr>
 <td><code>fields</code></td>
@@ -144,7 +143,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>label</code></td>
 <td>text</td>
 <td>none</td>
-<td>Display name of the district. Falls back to name when omitted.</td>
+<td>The name shown on the world map and in the settlement tooltip. The defName stays as it is.</td>
 </tr>
 <tr>
 <td><code>mines</code></td>
@@ -156,7 +155,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>name</code></td>
 <td>text</td>
 <td><code>Default</code></td>
-<td>District identifier used to associate buildings, fields, pens and mines. Must be unique across all districts of the plan.</td>
+<td>Name of the entry. On a district it links fields and pens to its houses and must be unique. On a pen it appears in messages. On a ward it is replaced by the ward kind, on a field it is not read, and in wall lists piece is written instead.</td>
 </tr>
 <tr>
 <td><code>pens</code></td>
@@ -168,25 +167,25 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>prefCenter</code><br>Toward the center</td>
 <td>number</td>
 <td><code>0</code></td>
-<td>Preference for placing this district near the settlement centre.</td>
+<td>How strongly this wants to be near the center.</td>
 </tr>
 <tr>
 <td><code>prefGate</code><br>Toward the gate</td>
 <td>number</td>
 <td><code>0</code></td>
-<td>Preference for placing this district near a gate.</td>
+<td>How strongly this wants to be near the gate.</td>
 </tr>
 <tr>
 <td><code>prefMain</code><br>Along the main road</td>
 <td>number</td>
 <td><code>0</code></td>
-<td>Preference for placing this district along the main road.</td>
+<td>How strongly this wants to sit on the main road.</td>
 </tr>
 <tr>
 <td><code>prefWall</code><br>Toward the wall</td>
 <td>number</td>
 <td><code>0</code></td>
-<td>Preference for placing this district near the wall.</td>
+<td>How strongly this wants to be near the wall.</td>
 </tr>
 </tbody>
 </table>

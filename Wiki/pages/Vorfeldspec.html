@@ -117,7 +117,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Vorfeldspec</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / Vorfeldspec</div><h1 id="vorfeldspec">Vorfeldspec</h1><p class="unter">Modding</p>
-<p>Places groups of 1×1 obstacle pieces outside a ward wall or boundary. Roads and gate approaches remain clear, and blocked cells are skipped. Add entries to Stadtteil.outworks; see <a href="Modding-Settlements.html#outworks">Outworks</a>.</p>
 <table>
 <thead>
 <tr>
@@ -132,37 +131,37 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>distance</code></td>
 <td>whole number</td>
 <td><code>2</code></td>
-<td>Distance outside the wall or ward boundary in orthogonal cell steps. Values below 1 are treated as 1.</td>
+<td>Distance from the wall or ward edge in cells.</td>
 </tr>
 <tr>
 <td><code>gateClearance</code></td>
 <td>whole number</td>
 <td><code>4</code></td>
-<td>Clearance around gate cells. Negative values are treated as zero. Roads, squares and fence gates also keep a one-cell clearance.</td>
+<td>Cells kept free around a gate.</td>
 </tr>
 <tr>
 <td><code>piece</code></td>
 <td><a href="PieceDef.html">PieceDef</a></td>
 <td>none</td>
-<td>Specific 1×1 PieceDef used as the obstacle. Takes precedence over tag.</td>
+<td>One specific piece by defName. It wins over a category in the same entry. In wall lists the name may also be a category.</td>
 </tr>
 <tr>
 <td><code>run</code></td>
 <td>IntRange</td>
 <td><code>2~3</code></td>
-<td>Number of candidate cells attempted per group. Blocked cells are skipped, so the resulting group can contain fewer obstacles.</td>
+<td>How many obstacles stand next to each other in one group.</td>
 </tr>
 <tr>
 <td><code>spacing</code></td>
 <td>IntRange</td>
 <td><code>5~9</code></td>
-<td>Interval sampled between obstacle groups while traversing the boundary ring. Each bound is treated as at least 1.</td>
+<td>Gap between two groups of obstacles along the wall or edge, in cells, as a range.</td>
 </tr>
 <tr>
-<td><code>tag</code><br>Category</td>
+<td><code>tag</code><br>Category (old)</td>
 <td><a href="PieceCategoryDef.html">PieceCategoryDef</a></td>
 <td>none</td>
-<td>PieceCategoryDef supplying obstacle pieces. Candidates are selected uniformly; pieces larger than 1×1 are skipped.</td>
+<td>The first category. Kept so old files still load; write categories instead.</td>
 </tr>
 </tbody>
 </table>

@@ -117,7 +117,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / LootTableDef</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / LootTableDef</div><h1 id="loottabledef">LootTableDef</h1><p class="unter">Modding</p>
-<p>Generates item selections for containers, shelves or loose loot. The always list is evaluated first; entries are then selected by weight. Nested tables let several containers share a common set of goods. See <a href="Modding-Loot.html#loot-tables">Loot tables</a>.</p>
 <p>XML node: <code>&lt;CustomBaseFramework.LootTableDef&gt;</code>. Also takes the common fields <code>defName</code>, <code>label</code> and <code>description</code>.</p>
 <table>
 <thead>
@@ -133,13 +132,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>always</code></td>
 <td>list of <a href="LootEntry.html">LootEntry</a></td>
 <td>none</td>
-<td>Entries evaluated before weighted draws, each with its own chance. They do not consume rolls and are not limited by maxEntriesPerResolve.</td>
+<td>Entries taken every time the table is rolled, each subject to its own chance. They do not count against rolls.</td>
 </tr>
 <tr>
 <td><code>emptyFallback</code><br>Fallback</td>
 <td>text</td>
 <td>none</td>
-<td>LootTableDef evaluated if the entire result is empty. Cannot refer directly to this table. Nested and fallback evaluations share the recursion limit.</td>
+<td>Loot table rolled instead when this one yields nothing.</td>
 </tr>
 <tr>
 <td><code>entries</code></td>
@@ -151,13 +150,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>maxEntriesPerResolve</code></td>
 <td>whole number</td>
 <td><code>16</code></td>
-<td>Threshold checked before each weighted draw. Counts LootPick records, not individual items or final stacks. always entries and a nested-table result can exceed this threshold.</td>
+<td>Upper limit on the items one roll of this table can give. Default 16.</td>
 </tr>
 <tr>
 <td><code>rollChance</code><br>Roll chance</td>
 <td>number</td>
 <td><code>1</code></td>
-<td>One probability check for the entire weighted-draw phase. Does not suppress always entries; an empty result can still invoke emptyFallback.</td>
+<td>Chance that the table draws from entries at all, 0 to 1. always is not affected.</td>
 </tr>
 <tr>
 <td><code>rolls</code></td>
@@ -175,7 +174,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>uniqueEntries</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
-<td>Prevents selecting the same entry again during this table evaluation. Different entries and nested tables can still produce the same item.</td>
+<td>Each entry can be drawn at most once per roll of the table.</td>
 </tr>
 <tr>
 <td><code>wdBudget</code></td>

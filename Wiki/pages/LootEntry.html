@@ -117,7 +117,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / LootEntry</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / LootEntry</div><h1 id="lootentry">LootEntry</h1><p class="unter">Modding</p>
-<p>Defines one result in a loot table: a specific item, a random item from a ThingCategoryDef, or another loot table. The enclosing list determines selection: always uses chance, while entries uses relative weight. If several result fields are set, table takes precedence over category, then thing.</p>
 <table>
 <thead>
 <tr>
@@ -132,19 +131,19 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>category</code></td>
 <td>text</td>
 <td>none</td>
-<td>ThingCategoryDef for a random item from that category and its descendants. Filters use maxTechLevel, value and the game item-generation rules.</td>
+<td>A ThingCategoryDef; the roll draws a random fitting thing from it.</td>
 </tr>
 <tr>
 <td><code>chance</code></td>
 <td>number</td>
 <td><code>1</code></td>
-<td>Probability that this entry is taken from always. Ignored when the entry is in the weighted entries list.</td>
+<td>Chance from 0 to 1. On a legend entry: that the thing is placed in a cell, or that the anchor is filled or manned. On a content zone: that it is filled at all. On a loot entry it only counts in always.</td>
 </tr>
 <tr>
 <td><code>count</code></td>
 <td>IntRange</td>
 <td><code>1</code></td>
-<td>Item quantity sampled from this range, then multiplied by countOverDepth if present. The resulting quantity is clamped to at least 1; use chance or weight to suppress an entry. Does not control nested tables.</td>
+<td>How many of these the settlement wants, as a range.</td>
 </tr>
 <tr>
 <td><code>countOverDepth</code></td>
@@ -156,7 +155,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>depthRange</code><br>Depth</td>
 <td>IntRange</td>
 <td><code>0~99</code></td>
-<td>Eligible depth interval for weighted entries. Settlements use depth 0. In always, the current implementation only applies this rejection when weightOverDepth is present.</td>
+<td>Entries outside this depth range are never drawn. Settlements have no depth and count as 0, so a minimum above 0 means never.</td>
 </tr>
 <tr>
 <td><code>fallbackThings</code></td>
@@ -180,7 +179,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>onMissing</code><br>If missing</td>
 <td>OnMissing (Skip, Fallback, Silver)</td>
 <td><code>Skip</code></td>
-<td>Fallback for a missing direct thing: Skip omits it, Fallback tries fallbackThings in order, Silver substitutes Silver with the entry quantity. Silver is not a market-value conversion.</td>
+<td>What happens when thing does not exist. Skip drops the entry, Fallback tries fallbackThings, Silver gives silver instead.</td>
 </tr>
 <tr>
 <td><code>quality</code></td>
@@ -198,25 +197,25 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>stuff</code><br>Material</td>
 <td>text</td>
 <td>none</td>
-<td>Material for a direct thing result. Category results choose a suitable material randomly instead.</td>
+<td>Material of the thing. On a variant, empty keeps the material of the entry. Empty or unfitting material falls back to the default material.</td>
 </tr>
 <tr>
 <td><code>table</code></td>
 <td>text</td>
 <td>none</td>
-<td>Nested LootTableDef, evaluated tableRolls times. Takes precedence over category and thing; count does not multiply nested results.</td>
+<td>A nested loot table, rolled tableRolls times. It wins over category and thing.</td>
 </tr>
 <tr>
 <td><code>tableRolls</code></td>
 <td>IntRange</td>
 <td><code>1</code></td>
-<td>Number of evaluations of a nested table. Applies only when table resolves.</td>
+<td>How often the nested table is rolled, as a range.</td>
 </tr>
 <tr>
 <td><code>thing</code></td>
 <td>text</td>
 <td>none</td>
-<td>ThingDef name for a direct item result. Missing items are handled by onMissing.</td>
+<td>The thing (ThingDef defName) this entry stands for: placed in the cell, given as loot, or placed as a building.</td>
 </tr>
 <tr>
 <td><code>value</code></td>
@@ -228,19 +227,19 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>weight</code></td>
 <td>number</td>
 <td><code>1</code></td>
-<td>Relative selection weight in entries. Zero excludes the entry unless weightOverDepth supplies a positive replacement weight. This is not a probability.</td>
+<td>Weight against the other entries of the same list. Higher values are picked more often.</td>
 </tr>
 <tr>
 <td><code>weightOverDepth</code></td>
 <td>SimpleCurve</td>
 <td>none</td>
-<td>Curve whose value replaces weight at the supplied depth. Settlements use depth 0.</td>
+<td>Curve that replaces weight by depth. Settlements have no depth, so only the value at 0 counts.</td>
 </tr>
 <tr>
 <td><code>weightOverWealth</code></td>
 <td>SimpleCurve</td>
 <td>none</td>
-<td>Curve multiplying the selection weight by the supplied wealth value. Normal settlement loot uses player-home wealth.</td>
+<td>Curve over the wealth of the player's home map. Its value multiplies weight.</td>
 </tr>
 </tbody>
 </table>

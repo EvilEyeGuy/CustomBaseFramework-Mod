@@ -117,7 +117,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / PieceCategoryDef</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / PieceCategoryDef</div><h1 id="piececategorydef">PieceCategoryDef</h1><p class="unter">Modding</p>
-<p>Groups interchangeable pieces and supplies their shared placement rules. A plan can request the category instead of naming one building, allowing different layouts to use different pieces. Unset rules can inherit from parent categories; blockMax and merge are read from the primary category itself. See <a href="Categories.html">Categories</a>.</p>
 <p>XML node: <code>&lt;CustomBaseFramework.PieceCategoryDef&gt;</code>. Also takes the common fields <code>defName</code>, <code>label</code> and <code>description</code>.</p>
 <table>
 <thead>
@@ -139,7 +138,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>annexCornerPath</code></td>
 <td>true/false, optional</td>
 <td>none</td>
-<td>For annexes: opens the two house-wall corner cells at the ends of the attachment as floor. Useful for lean-to tents. Inherits through parent categories; defaults to false.</td>
+<td>Where an annex of this category attaches, the two inner corner wall cells at the ends of the straight house wall become floor. Used for lean-to tents.</td>
 </tr>
 <tr>
 <td><code>annexes</code></td>
@@ -181,13 +180,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>excludeFactions</code><br>Excluded factions</td>
 <td>list of text</td>
 <td>none</td>
-<td>FactionDef names excluded from pieces of this category, subject to the piece/category rule precedence.</td>
+<td>Factions (FactionDef defName). On a settlement type: they never get it, even when their tags or tech level fit. On a piece or category (under placement): the piece is not used in their settlements.</td>
 </tr>
 <tr>
 <td><code>factions</code></td>
 <td>list of text</td>
 <td>none</td>
-<td>FactionDef names allowed to use pieces of this category. An unset list can inherit from parent categories.</td>
+<td>Factions (FactionDef defName), under placement of a piece or category. The piece is only used in settlements of these factions. Empty means every faction.</td>
 </tr>
 <tr>
 <td><code>merge</code></td>
@@ -199,7 +198,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>needsRoadAccess</code><br>Needs a road</td>
 <td>true/false, optional</td>
 <td>none</td>
-<td>Set false together with zones containing Outside to enable open access. That combination is checked on categories directly assigned to the piece. District preferences determine location.</td>
+<td>Must be reachable from the road network.</td>
 </tr>
 <tr>
 <td><code>parent</code></td>
@@ -211,7 +210,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>wallAccess</code></td>
 <td>true/false, optional</td>
 <td>none</td>
-<td>Connects pieces of this category to the wall walkway by adding access doors and closing exposed sides away from the wall. Inherits through parent categories; defaults to false.</td>
+<td>Pieces of this category are joined to the wall walkway. A door is set where the walkway passes them, and their open sides away from the wall are closed. Empty takes the parent category, then false.</td>
 </tr>
 <tr>
 <td><code>wallContact</code><br>Touches the wall</td>
@@ -241,7 +240,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>zones</code></td>
 <td>list of text</td>
 <td>none</td>
-<td>Outside together with needsRoadAccess=false enables open access. The current check reads categories directly assigned to the piece, not their parent chain. Inside and Center have no effect.</td>
+<td>Only Outside has an effect: together with needsRoadAccess set to false, the building needs no road and may be entered from every side. Inside and Center do nothing. Where a building stands is decided by the budget of its ward.</td>
 </tr>
 </tbody>
 </table>

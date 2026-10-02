@@ -117,7 +117,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / LegendEntry</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / LegendEntry</div><h1 id="legendentry">LegendEntry</h1><p class="unter">Modding</p>
-<p>Maps one character in a piece grid to an object, terrain, roof, pawn or anchor. The grid determines how the entry is used: an anchors symbol refers to an anchor, while a terrain symbol resolves a floor. See <a href="Modding-Pieces.html#the-legend">The legend</a>.</p>
 <table>
 <thead>
 <tr>
@@ -150,7 +149,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>chance</code></td>
 <td>number</td>
 <td><code>1</code></td>
-<td>Placement probability from 0 to 1. Object cells are checked individually; Fill, Object and Spawn anchors are checked as anchor regions.</td>
+<td>Chance from 0 to 1. On a legend entry: that the thing is placed in a cell, or that the anchor is filled or manned. On a content zone: that it is filled at all. On a loot entry it only counts in always.</td>
 </tr>
 <tr>
 <td><code>count</code></td>
@@ -180,7 +179,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>lootTable</code></td>
 <td>text</td>
 <td>none</td>
-<td>LootTableDef used by a Fill anchor. A selected object-list member can override it. Object anchors do not use the anchor loot table.</td>
+<td>The loot table (LootTableDef) used here. On an anchor it fills the containers. On an object list member it replaces the anchor's table. On a content zone or a settlement budget entry it fills content zones. Not used on dungeon profiles.</td>
 </tr>
 <tr>
 <td><code>objects</code></td>
@@ -198,7 +197,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>pawnCount</code><br>Pawn count</td>
 <td>IntRange</td>
 <td><code>1</code></td>
-<td>Number of pawns requested by a Spawn anchor, sampled from this range. The spawn path treats values below 1 as 1.</td>
+<td>How many pawns, as a range. On a spawn anchor at least one. On an object list, how many wait in a container that has any.</td>
 </tr>
 <tr>
 <td><code>pawnKind</code></td>
@@ -210,10 +209,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>pawnList</code><br>Pawn list</td>
 <td>text</td>
 <td>none</td>
-<td>PawnListDef used by a Spawn anchor. The list supplies pawn kinds, behaviour and radius, subject to the settlement tech filter.</td>
+<td>Who can be hiding inside. Only works in containers with an inside, not on open shelves.</td>
 </tr>
 <tr>
-<td><code>pawns</code><br>Pawn kind</td>
+<td><code>pawns</code><br>Animals</td>
 <td>text</td>
 <td>none</td>
 <td>On a spawn anchor: one pawn kind (defName) for the spot, used when pawnList is empty. With neither, a regular defender takes the spot.</td>
@@ -228,13 +227,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>role</code></td>
 <td>text</td>
 <td>none</td>
-<td>Construction role resolved through the settlement material list when the entry does not specify a concrete object or terrain. This is unrelated to pawn-list behaviour roles.</td>
+<td>Name of a building role, such as wall, floor or door. CBF puts the matching thing from the material list there when no thing or terrain is set. How the pawns behave. Guard joins the general defence, Sentry holds its spot, Gunner mans the guns around its spot, Civilian defends its spot but may flee and need not be able to fight.</td>
 </tr>
 <tr>
 <td><code>roof</code></td>
 <td>RoofDef</td>
 <td>none</td>
-<td>RoofDef placed when this symbol is used in the roof grid.</td>
+<td>Where a roof is built.</td>
 </tr>
 <tr>
 <td><code>rotation</code></td>
@@ -264,13 +263,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>terrain</code><br>Floor</td>
 <td>TerrainDef</td>
 <td>none</td>
-<td>TerrainDef placed when this symbol is used in the terrain grid.</td>
+<td>The floor layer. One character per cell, resolved through the legend.</td>
 </tr>
 <tr>
 <td><code>thing</code></td>
 <td>ThingDef</td>
 <td>none</td>
-<td>ThingDef placed for this legend symbol in an object layer.</td>
+<td>The thing (ThingDef defName) this entry stands for: placed in the cell, given as loot, or placed as a building.</td>
 </tr>
 <tr>
 <td><code>variants</code></td>

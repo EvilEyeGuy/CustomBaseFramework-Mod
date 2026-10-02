@@ -15,14 +15,14 @@
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
-  <CustomBaseFramework.LootBuildingCategoryDef>
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="Ludeon.RimWorld.Royalty">
     <defName>CBF_Vanilla_ShieldGenerator_High</defName>
     <members>
       <li MayRequire="Ludeon.RimWorld.Royalty"><thing>ShieldGeneratorMortar</thing><stays>true</stays></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
-  <CustomBaseFramework.LootBuildingCategoryDef>
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="Ludeon.RimWorld.Royalty">
     <defName>CBF_Vanilla_ShieldGenerator_Low</defName>
     <members>
       <li MayRequire="Ludeon.RimWorld.Royalty"><thing>ShieldGeneratorBullets</thing><stays>true</stays></li>

@@ -30,6 +30,10 @@
   <CBF_Cfg_MineChamberItems>Mine {0}: chambers ist 0, trotzdem stehen Dinge mit location Chamber (auch ohne Angabe von location). Sie finden keinen Platz.</CBF_Cfg_MineChamberItems>
   <CBF_Cfg_MineItemEmpty>Mine {0}: ein Eintrag in things nennt weder thing noch list und entfällt.</CBF_Cfg_MineItemEmpty>
   <CBF_Cfg_MineItemPlace>Mine {0}: unbekannte location „{1}“, erlaubt sind Chamber, Tunnel und Entrance. Der Eintrag entfällt.</CBF_Cfg_MineItemPlace>
+  <CBF_Cfg_OutworkSize>Vorfeld {0}: das Stück {1} ist nicht 1x1 und wird nicht gesetzt.</CBF_Cfg_OutworkSize>
+  <CBF_Cfg_OutworkDistance>Vorfeld {0}: distance muss mindestens 1 sein, der Planer nimmt 1.</CBF_Cfg_OutworkDistance>
+  <CBF_Cfg_OutworkRange>Vorfeld {0}: bei {1} muss der kleinste Wert mindestens 1 sein und darf den größten nicht übersteigen, der Planer gleicht die Werte an.</CBF_Cfg_OutworkRange>
+  <CBF_Cfg_OutworkGate>Vorfeld {0}: gateClearance darf nicht negativ sein, der Planer nimmt 0.</CBF_Cfg_OutworkGate>
   <CBF_Cfg_NoPlants>Die Pflanzenliste enthält keine Pflanzen.</CBF_Cfg_NoPlants>
   <CBF_Cfg_EntryNoPlant>Ein Eintrag hat keine Pflanze.</CBF_Cfg_EntryNoPlant>
   <CBF_Cfg_NoWeight>{0} hat kein positives Gewicht.</CBF_Cfg_NoWeight>
@@ -420,4 +424,5 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_CoreShape_Step>Treppe</CBF_CoreShape_Step>
   <CBF_CoreShape_Octagon>Achteck</CBF_CoreShape_Octagon>
   <CBF_Planner_KernformZuKlein>Die Altstadt ist für die Form {0} mit dieser Mauer zu klein, sie wird ein Rechteck.</CBF_Planner_KernformZuKlein>
+  <CBF_Planner_KernformVorgabeUnbekannt>Die Formvorgabe {0} ist unbekannt und wird ignoriert.</CBF_Planner_KernformVorgabeUnbekannt>
 </LanguageData>

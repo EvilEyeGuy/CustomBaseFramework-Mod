@@ -160,15 +160,17 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
   &lt;/<span class="xt">members</span>&gt;
 &lt;/<span class="xt">CustomBaseFramework.PawnListDef</span>&gt;
 </code></pre>
-<p>A list that depends on another mod uses <code>MayRequire</code>, either on the whole def or on single members:</p>
-<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.PawnListDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Pawns_GateGuard&lt;/<span class="xt">defName</span>&gt;
-  &lt;<span class="xt">label</span>&gt;gate guards&lt;/<span class="xt">label</span>&gt;
+<p>A list that depends on another mod uses <code>MayRequire</code>, on the whole def, on single members, or on both. This list is shipped in the same file:</p>
+<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.PawnListDef</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_Guard&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">label</span>&gt;guard&lt;/<span class="xt">label</span>&gt;
   &lt;<span class="xt">role</span>&gt;Guard&lt;/<span class="xt">role</span>&gt;
-  &lt;<span class="xt">radius</span>&gt;2&lt;/<span class="xt">radius</span>&gt;
+  &lt;<span class="xt">radius</span>&gt;4&lt;/<span class="xt">radius</span>&gt;
   &lt;<span class="xt">members</span>&gt;
-    &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">kind</span>&gt;Town_Guard&lt;/<span class="xt">kind</span>&gt;&lt;<span class="xt">weight</span>&gt;10&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;&lt;<span class="xt">kind</span>&gt;DankPyon_Guard&lt;/<span class="xt">kind</span>&gt;&lt;<span class="xt">weight</span>&gt;10&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;&lt;<span class="xt">kind</span>&gt;DankPyon_Medieval_Arbalester&lt;/<span class="xt">kind</span>&gt;&lt;<span class="xt">weight</span>&gt;1&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;&lt;<span class="xt">kind</span>&gt;DankPyon_Medieval_Bowman&lt;/<span class="xt">kind</span>&gt;&lt;<span class="xt">weight</span>&gt;1&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;&lt;<span class="xt">kind</span>&gt;CBF_MO_Pikeman&lt;/<span class="xt">kind</span>&gt;&lt;<span class="xt">weight</span>&gt;1&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;<span class="xt">li</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;&lt;<span class="xt">kind</span>&gt;CBF_MO_Knight&lt;/<span class="xt">kind</span>&gt;&lt;<span class="xt">weight</span>&gt;1&lt;/<span class="xt">weight</span>&gt;&lt;<span class="xt">ideoRole</span>&gt;Kampf&lt;/<span class="xt">ideoRole</span>&gt;&lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">members</span>&gt;
 &lt;/<span class="xt">CustomBaseFramework.PawnListDef</span>&gt;
 </code></pre>

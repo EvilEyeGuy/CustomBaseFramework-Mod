@@ -117,6 +117,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / PieceDef</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / PieceDef</div><h1 id="piecedef">PieceDef</h1><p class="unter">Modding</p>
+<p>Stores a building, wall segment or other reusable structure as character grids and a shared legend. Categories determine where the piece can be selected; anchors add variable furniture, loot, pawns and connections. See <a href="Modding-Pieces.html">Pieces and categories in XML</a>.</p>
 <p>XML node: <code>&lt;CustomBaseFramework.PieceDef&gt;</code>. Also takes the common fields <code>defName</code>, <code>label</code> and <code>description</code>.</p>
 <table>
 <thead>
@@ -144,7 +145,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>anchors</code></td>
 <td>list of text</td>
 <td>none</td>
-<td>Cells that must sit on the town wall. A barracks anchors here so it merges into the wall instead of standing in front of it.</td>
+<td>Character grid for Connect, Fill, Object and Spawn anchors. Each non-empty symbol refers to a legend entry; the entry determines what happens in that area.</td>
 </tr>
 <tr>
 <td><code>anchorsOver</code></td>
@@ -168,7 +169,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>content</code><br>Content zones</td>
 <td>list of text</td>
 <td>none</td>
-<td>Cells that get loot at spawn time. Furniture is never chosen automatically, only loot is.</td>
+<td>Legacy character grid for content zones. Matching contentZones entries control object placement and loot.</td>
 </tr>
 <tr>
 <td><code>contentZones</code><br>Content zone rules</td>
@@ -252,7 +253,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>style</code></td>
 <td><a href="StyleDef.html">StyleDef</a></td>
 <td>none</td>
-<td>Old field. It only still picks the wall profile and the standard materials. Does not restrict piece selection.</td>
+<td>Legacy style reference. Building selection is controlled by categories and placement rules.</td>
 </tr>
 <tr>
 <td><code>tag</code><br>Category (old)</td>
@@ -294,7 +295,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>type</code></td>
 <td>PieceType (Building, WallPart, DungeonRoom)</td>
 <td><code>Building</code></td>
-<td>Who consumes this piece: the settlement generator, the wall profile, or the dungeon generator.</td>
+<td>Classifies the template as Building, WallPart or DungeonRoom. Dungeon generation is currently disabled.</td>
 </tr>
 </tbody>
 </table>

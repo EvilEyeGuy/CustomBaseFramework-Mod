@@ -187,7 +187,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>Each ward tab has the sections <strong>Fortification</strong>, <strong>Garrison</strong>, <strong>Districts</strong> and <strong>Roads and ground</strong>.</p>
 <a class="bild" href="images/settlement-ward.png" target="_blank"><img alt="A ward with fortification, garrison and districts" src="images/settlement-ward.png" loading="lazy"></a>
 <h3 id="old-town-shapes">Old town shapes</h3>
-<p>Only in the old town of a medieval settlement type. Each picture shows one outline the old town can take, for example rectangle, L-shape, cross or the grown form. All shapes are allowed by default. Click a shape to exclude it, click again to allow it. At least one shape stays selected. In XML this is the field <code>coreShapes</code> of the settlement type; empty means all shapes.</p>
+<p>Only in the old town of a medieval settlement type. Each picture shows one outline the old town can take, for example rectangle, L-shape, cross or the grown form. All shapes are allowed by default. Click a shape to exclude it, click again to allow it. At least one shape stays selected. In XML this is the field <code>coreShapes</code> of the settlement type, a list of the values <code>Grown</code>, <code>Rectangle</code>, <code>LShape</code>, <code>TShape</code>, <code>UShape</code>, <code>Cross</code>, <code>Step</code> and <code>Octagon</code>. Empty means all shapes, and a name that is not in this list is reported as a config error.</p>
 <h3 id="fortification">Fortification</h3>
 <ul>
 <li><strong>Walls</strong>: the wall pieces of this ring. Several entries give a wall that varies along its length; the slider sets each entry's share.</li>

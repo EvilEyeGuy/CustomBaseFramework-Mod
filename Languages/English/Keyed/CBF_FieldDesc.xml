@@ -73,7 +73,7 @@
   <CBF_FieldDesc_lootForeign>Leaves the loot to the mod that brings the container. The anchor's loot table is ignored. Without objects the anchor places nothing.</CBF_FieldDesc_lootForeign>
   <CBF_FieldDesc_lootTable>The loot table (LootTableDef) used here. On an anchor it fills the containers. On an object list member it replaces the anchor's table. On a content zone or a settlement budget entry it fills content zones. Not used on dungeon profiles.</CBF_FieldDesc_lootTable>
   <CBF_FieldDesc_wallAccess>Pieces of this category are joined to the wall walkway. A door is set where the walkway passes them, and their open sides away from the wall are closed. Empty takes the parent category, then false.</CBF_FieldDesc_wallAccess>
-  <CBF_FieldDesc_maxEntriesPerResolve>Upper limit on the items one roll of this table can give. Default 16.</CBF_FieldDesc_maxEntriesPerResolve>
+  <CBF_FieldDesc_maxEntriesPerResolve>Threshold checked before each weighted draw: once the result holds this many entries, no further draw happens. Not a hard cap, because always entries and a nested table can exceed it. Counts entries, not individual items. Default 16.</CBF_FieldDesc_maxEntriesPerResolve>
   <CBF_FieldDesc_maxTechLevel>Category entries only: things above this tech level are left out. Empty means no limit.</CBF_FieldDesc_maxTechLevel>
   <CBF_FieldDesc_name>Name of the entry. On a district it links fields and pens to its houses and must be unique. On a pen it appears in messages. On a ward it is replaced by the ward kind, on a field it is not read, and in wall lists piece is written instead.</CBF_FieldDesc_name>
   <CBF_FieldDesc_neutral>Pawn kinds (defName) that the fallback swap never changes, for any faction.</CBF_FieldDesc_neutral>
@@ -209,5 +209,5 @@
   <CBF_FieldDesc_run>How many obstacles stand next to each other in one group.</CBF_FieldDesc_run>
   <CBF_FieldDesc_gateClearance>Cells kept free around a gate.</CBF_FieldDesc_gateClearance>
   <CBF_FieldDesc_Vorfeldspec_spacing>Gap between two groups of obstacles along the wall or edge, in cells, as a range.</CBF_FieldDesc_Vorfeldspec_spacing>
-  <CBF_FieldDesc_coreShapes>Allowed shapes of the old town. Each settlement picks one of them at random. Empty means all shapes.</CBF_FieldDesc_coreShapes>
+  <CBF_FieldDesc_coreShapes>Allowed shapes of the old town: Grown, Rectangle, LShape, TShape, UShape, Cross, Step, Octagon. Each settlement picks one of them at random. Empty means all shapes.</CBF_FieldDesc_coreShapes>
 </LanguageData>

@@ -73,7 +73,7 @@
   <CBF_FieldDesc_lootForeign>Überlässt die Beute dem Mod, der den Behälter mitbringt. Die Beutetabelle des Ankers wird übergangen. Ohne objects setzt der Anker nichts.</CBF_FieldDesc_lootForeign>
   <CBF_FieldDesc_lootTable>Die Beutetabelle (LootTableDef), die hier gilt. An einem Anker füllt sie die Behälter. Bei einem Mitglied einer Objektliste ersetzt sie die Tabelle des Ankers. Bei einer Inhaltszone oder einem Budgeteintrag der Siedlung füllt sie Inhaltszonen. Bei Verliesprofilen wird sie nicht verwendet.</CBF_FieldDesc_lootTable>
   <CBF_FieldDesc_wallAccess>Stücke dieser Kategorie werden an den Wehrgang angebunden. Wo der Wehrgang an ihnen vorbeiführt, kommt eine Tür hinein, und ihre offenen Seiten abseits der Mauer werden geschlossen. Leer übernimmt die Elternkategorie, sonst false.</CBF_FieldDesc_wallAccess>
-  <CBF_FieldDesc_maxEntriesPerResolve>Obergrenze für die Stücke, die ein Wurf dieser Tabelle liefern kann. Vorgabe 16.</CBF_FieldDesc_maxEntriesPerResolve>
+  <CBF_FieldDesc_maxEntriesPerResolve>Schwelle, die vor jedem gewichteten Wurf geprüft wird: Hat das Ergebnis schon so viele Einträge, folgt kein weiterer Wurf. Keine harte Obergrenze, denn always-Einträge und eine Untertabelle können darüber hinausgehen. Gezählt werden Einträge, nicht einzelne Dinge. Vorgabe 16.</CBF_FieldDesc_maxEntriesPerResolve>
   <CBF_FieldDesc_maxTechLevel>Nur für Kategorieeinträge: Dinge über dieser Techstufe bleiben weg. Leer heißt keine Grenze.</CBF_FieldDesc_maxTechLevel>
   <CBF_FieldDesc_name>Name des Eintrags. Bei einem Bezirk verbindet er Äcker und Gehege mit dessen Häusern und muss eindeutig sein. Bei einem Gehege erscheint er in Meldungen. Bei einem Stadtteil wird er durch die Art ersetzt, bei einem Acker nicht gelesen, und in Mauerlisten schreibst du piece.</CBF_FieldDesc_name>
   <CBF_FieldDesc_neutral>Einheitenarten (defName), die der Ersatztausch bei keiner Fraktion ändert.</CBF_FieldDesc_neutral>
@@ -204,10 +204,10 @@
   <CBF_FieldDesc_PlacementRules_weight>Wie oft dieses Stück unter den Stücken seiner Kategorie gezogen wird. Leer nimmt das Gewicht der Kategorie.</CBF_FieldDesc_PlacementRules_weight>
   <CBF_FieldDesc_UnitSwapDef_things>Dingtausch für diese Fraktion. Jeder Eintrag tauscht das Ding aus from gegen das Ding aus to.</CBF_FieldDesc_UnitSwapDef_things>
   <CBF_FieldDesc_Minenspec_things>Dinge in der Mine, jeweils am Eingang, entlang der Gänge oder in einer Kammer.</CBF_FieldDesc_Minenspec_things>
-  <CBF_FieldDesc_outworks>Hindernisse aussen um diesen Stadtteil, entlang seiner Mauer oder ohne Mauer entlang seines Randes. Jeder Eintrag nennt ein 1x1-Stück oder eine Kategorie, den Abstand in Feldern, die Lücke zwischen den Gruppen (spacing), die Gruppenlänge (run) und den freien Raum um Tore (gateClearance).</CBF_FieldDesc_outworks>
+  <CBF_FieldDesc_outworks>Hindernisse außen um diesen Stadtteil, entlang seiner Mauer oder ohne Mauer entlang seines Randes. Jeder Eintrag nennt ein 1x1-Stück oder eine Kategorie, den Abstand in Feldern, die Lücke zwischen den Gruppen (spacing), die Gruppenlänge (run) und den freien Raum um Tore (gateClearance).</CBF_FieldDesc_outworks>
   <CBF_FieldDesc_distance>Abstand von der Mauer oder vom Rand des Stadtteils in Feldern.</CBF_FieldDesc_distance>
   <CBF_FieldDesc_run>Wie viele Hindernisse in einer Gruppe nebeneinander stehen.</CBF_FieldDesc_run>
   <CBF_FieldDesc_gateClearance>Felder, die um ein Tor frei bleiben.</CBF_FieldDesc_gateClearance>
   <CBF_FieldDesc_Vorfeldspec_spacing>Lücke zwischen zwei Hindernisgruppen entlang der Mauer oder des Randes, in Feldern, als Spanne.</CBF_FieldDesc_Vorfeldspec_spacing>
-  <CBF_FieldDesc_coreShapes>Erlaubte Formen der Altstadt. Jeder Ort würfelt eine davon. Leer heißt alle Formen.</CBF_FieldDesc_coreShapes>
+  <CBF_FieldDesc_coreShapes>Erlaubte Formen der Altstadt: Grown, Rectangle, LShape, TShape, UShape, Cross, Step, Octagon. Jeder Ort würfelt eine davon. Leer heißt alle Formen.</CBF_FieldDesc_coreShapes>
 </LanguageData>

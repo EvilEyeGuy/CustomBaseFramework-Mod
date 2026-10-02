@@ -117,6 +117,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Gehegespec</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / Gehegespec</div><h1 id="gehegespec">Gehegespec</h1><p class="unter">Modding</p>
+<p>Requests fenced animal pens in the Rural ward. A pawn list supplies the animal species, herd sets the requested herd size, and available pen area limits the result. Plant choices can come from a crop list or the plants fallback.</p>
 <table>
 <thead>
 <tr>
@@ -131,7 +132,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>count</code></td>
 <td>IntRange</td>
 <td><code>1</code></td>
-<td>How many of these the settlement wants, as a range.</td>
+<td>Requested number of pens of this specification.</td>
 </tr>
 <tr>
 <td><code>crops</code><br>Crop list</td>
@@ -149,7 +150,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>name</code></td>
 <td>text</td>
 <td><code>Pen</code></td>
-<td>Name of the entry. On a district it links fields and pens to its houses and must be unique. On a pen it appears in messages. On a ward it is replaced by the ward kind, on a field it is not read, and in wall lists piece is written instead.</td>
+<td>Name used to identify the pen specification in messages.</td>
 </tr>
 <tr>
 <td><code>pawns</code><br>Animals</td>
@@ -161,13 +162,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>plants</code></td>
 <td>list of text</td>
 <td>none</td>
-<td>The plant layer, for gardens and fields.</td>
+<td>Fallback plant ThingDef names for the pen, used when crops provides no usable plant.</td>
 </tr>
 <tr>
 <td><code>terrain</code><br>Floor</td>
 <td>text</td>
 <td>none</td>
-<td>The floor layer. One character per cell, resolved through the legend.</td>
+<td>TerrainDef name for the pen surface, not a character grid.</td>
 </tr>
 <tr>
 <td><code>weight</code></td>

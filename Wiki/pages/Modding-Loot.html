@@ -522,20 +522,32 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>A <code>table</code> or <code>category</code> entry that points to something that does not exist is dropped with a warning. If no entry of a table is usable, the table stays empty and CBF logs it. An anchor that names an empty table places its structure without loot.</p>
 <h2 id="containers">Containers</h2>
 <p>A CBF container is a building that holds loot inside, looks different once searched, and can turn into another building or vanish. Use it when a plain shelf is not enough.</p>
-<p>CBF ships an abstract base, <code>CBF_BeutebehaelterBase</code>, in <code>Defs/CustomBaseFramework/ThingDefs/CBF_Beutebehaelter.xml</code>. It sets <code>thingClass</code> to <code>CustomBaseFramework.Building_LootContainer</code>, the contents tab and the usual building values. Inherit from it and add a size, a graphic and the extension. This container is shipped:</p>
-<pre><code class="language-xml">&lt;<span class="xt">ThingDef</span> <span class="xa">ParentName</span>=<span class="xw">&quot;CBF_BeutebehaelterBase&quot;</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Container_Shelf&lt;/<span class="xt">defName</span>&gt;
-  &lt;<span class="xt">label</span>&gt;stocked shelf&lt;/<span class="xt">label</span>&gt;
-  &lt;<span class="xt">description</span>&gt;A shelf someone left behind, still holding what its owner kept there. Once emptied, it is just a shelf again.&lt;/<span class="xt">description</span>&gt;
-  &lt;<span class="xt">size</span>&gt;(2,1)&lt;/<span class="xt">size</span>&gt;
+<p>CBF ships an abstract base, <code>CBF_BeutebehaelterBase</code>, in <code>Defs/CustomBaseFramework/ThingDefs/CBF_Beutebehaelter.xml</code>. It sets <code>thingClass</code> to <code>CustomBaseFramework.Building_LootContainer</code>, the contents tab and the usual building values. Inherit from it and add a size, a graphic and the extension. The containers for Medieval Overhaul are in <code>Defs/CustomBaseFramework/ThingDefs/CBF_MO_Freigabe_Behaelter.xml</code>. This one is shipped:</p>
+<pre><code class="language-xml">&lt;<span class="xt">ThingDef</span> <span class="xa">ParentName</span>=<span class="xw">&quot;CBF_BeutebehaelterBase&quot;</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;
+  &lt;<span class="xt">defName</span>&gt;CBF_MO_ArmorStand_White&lt;/<span class="xt">defName</span>&gt;
+  &lt;<span class="xt">label</span>&gt;armor stand&lt;/<span class="xt">label</span>&gt;
+  &lt;<span class="xt">description</span>&gt;A stand with a suit of armor and a helmet. Someone could make use of them.&lt;/<span class="xt">description</span>&gt;
+  &lt;<span class="xt">size</span>&gt;(1,1)&lt;/<span class="xt">size</span>&gt;
+  &lt;<span class="xt">defaultPlacingRot</span>&gt;South&lt;/<span class="xt">defaultPlacingRot</span>&gt;
   &lt;<span class="xt">graphicData</span>&gt;
-    &lt;<span class="xt">texPath</span>&gt;Things/Building/Furniture/Shelf&lt;/<span class="xt">texPath</span>&gt;
+    &lt;<span class="xt">texPath</span>&gt;Things/Building/Art/ArmorStatue&lt;/<span class="xt">texPath</span>&gt;
     &lt;<span class="xt">graphicClass</span>&gt;Graphic_Multi&lt;/<span class="xt">graphicClass</span>&gt;
-    &lt;<span class="xt">drawSize</span>&gt;(3,2)&lt;/<span class="xt">drawSize</span>&gt;
+    &lt;<span class="xt">drawSize</span>&gt;(2,2)&lt;/<span class="xt">drawSize</span>&gt;
   &lt;/<span class="xt">graphicData</span>&gt;
+  &lt;<span class="xt">costList</span>&gt;
+    &lt;<span class="xt">DankPyon_IronIngot</span>&gt;40&lt;/<span class="xt">DankPyon_IronIngot</span>&gt;
+  &lt;/<span class="xt">costList</span>&gt;
+  &lt;<span class="xt">statBases</span>&gt;
+    &lt;<span class="xt">MaxHitPoints</span>&gt;120&lt;/<span class="xt">MaxHitPoints</span>&gt;
+    &lt;<span class="xt">Flammability</span>&gt;0.2&lt;/<span class="xt">Flammability</span>&gt;
+  &lt;/<span class="xt">statBases</span>&gt;
   &lt;<span class="xt">modExtensions</span>&gt;
     &lt;<span class="xt">li</span> <span class="xa">Class</span>=<span class="xw">&quot;CustomBaseFramework.LootContainerExtension&quot;</span>&gt;
-      &lt;<span class="xt">emptyBuilding</span>&gt;Shelf&lt;/<span class="xt">emptyBuilding</span>&gt;
+      &lt;<span class="xt">emptyGraphic</span>&gt;
+        &lt;<span class="xt">texPath</span>&gt;Things/Building/CBF/SockelWeiss&lt;/<span class="xt">texPath</span>&gt;
+        &lt;<span class="xt">graphicClass</span>&gt;Graphic_Multi&lt;/<span class="xt">graphicClass</span>&gt;
+        &lt;<span class="xt">drawSize</span>&gt;(2,2)&lt;/<span class="xt">drawSize</span>&gt;
+      &lt;/<span class="xt">emptyGraphic</span>&gt;
     &lt;/<span class="xt">li</span>&gt;
   &lt;/<span class="xt">modExtensions</span>&gt;
 &lt;/<span class="xt">ThingDef</span>&gt;

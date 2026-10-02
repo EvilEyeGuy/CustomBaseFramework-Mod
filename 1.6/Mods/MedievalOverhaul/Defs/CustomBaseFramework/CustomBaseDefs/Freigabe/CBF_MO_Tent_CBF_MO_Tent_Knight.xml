@@ -20,6 +20,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_RusticTable2x2c</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_RackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_TentWall</thing><stuff>Cloth</stuff></li>
+      <li><symbol>Z</symbol><anchor>Armory</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WeaponRack</objects></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_ArmorStatue</thing><stuff>Steel</stuff><rotation>South</rotation></li>
       <li><symbol>h</symbol><anchor>FurB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Fur_2x2</objects></li>
@@ -29,7 +30,7 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_RugRoyal_Lys2x3c</thing><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>q</symbol><thing>DankPyon_RugCougar2x2c</thing><rotation>South</rotation></li>
       <li><symbol>r</symbol><anchor>Rug</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_NobleRug_2x3</objects></li>
-      <li><symbol>w</symbol><anchor>Armory</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WeaponRack</objects></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>x</symbol><thing>DankPyon_Bed_RusticDouble_Red</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
@@ -108,8 +109,8 @@
       <li>...............</li>
       <li>...7...........</li>
       <li>.....8...9.....</li>
-      <li>............w..</li>
-      <li>...rr.......w..</li>
+      <li>............Z..</li>
+      <li>...rr.......Z..</li>
       <li>...rr.....hh...</li>
       <li>...rr.....hh...</li>
       <li>...............</li>

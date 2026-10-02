@@ -117,6 +117,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Dekospec</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / Dekospec</div><h1 id="dekospec">Dekospec</h1><p class="unter">Modding</p>
+<p>Places decorative or defensive pieces along a ward road network. Use it inside decor for spaced decoration or defenses for defensive positions distributed through the ward.</p>
 <table>
 <thead>
 <tr>
@@ -131,7 +132,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>count</code></td>
 <td>IntRange</td>
 <td><code>0</code></td>
-<td>How many of these the settlement wants, as a range.</td>
+<td>Requested number for a defenses entry. If unset, defensive placement uses max, then one; decor placement uses spacing and max.</td>
 </tr>
 <tr>
 <td><code>max</code></td>
@@ -143,7 +144,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>piece</code></td>
 <td><a href="PieceDef.html">PieceDef</a></td>
 <td>none</td>
-<td>One specific piece by defName. It wins over a category in the same entry. In wall lists the name may also be a category.</td>
+<td>Specific PieceDef to place instead of selecting from tag.</td>
 </tr>
 <tr>
 <td><code>spacing</code></td>
@@ -152,10 +153,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Distance along the lane between two decor pieces, in cells, as a range.</td>
 </tr>
 <tr>
-<td><code>tag</code><br>Category (old)</td>
+<td><code>tag</code><br>Category</td>
 <td><a href="PieceCategoryDef.html">PieceCategoryDef</a></td>
 <td>none</td>
-<td>The first category. Kept so old files still load; write categories instead.</td>
+<td>PieceCategoryDef supplying decoration or defensive pieces. This is the active category selector for this entry.</td>
 </tr>
 <tr>
 <td><code>weight</code></td>

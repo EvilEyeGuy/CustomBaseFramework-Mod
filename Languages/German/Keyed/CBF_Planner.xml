@@ -62,10 +62,8 @@
   <CBF_Planner_NoHub>Eine Ebene hat keinen begehbaren Mittelpunkt.</CBF_Planner_NoHub>
   <CBF_Planner_Disconnected>Stadt und Vorstadt sind nicht durchgehend verbunden.</CBF_Planner_Disconnected>
   <CBF_Planner_GateUnreachable>Ein Tor ist vom Stadtinneren nicht erreichbar.</CBF_Planner_GateUnreachable>
-  <CBF_Planner_NoField>Keine verfügbare Ackervorlage im Katalog.</CBF_Planner_NoField>
   <CBF_Planner_Exits>Nicht alle Außentore erreichen den Kartenrand über das verbundene Wegenetz.</CBF_Planner_Exits>
   <CBF_Planner_OpenWall>Die Verteidigungslinie hat eine begehbare Lücke. Dieser Entwurf ist nicht freigegeben.</CBF_Planner_OpenWall>
-  <CBF_Planner_MissingFields>Nicht alle gewünschten Äcker passen mit dem eingestellten Mauerabstand ins Umland.</CBF_Planner_MissingFields>
   <CBF_Planner_MissingMinimum>Einige Mindestzahlen passen noch nicht in diesen Entwurf. Die Stückliste zeigt die offenen Einträge.</CBF_Planner_MissingMinimum>
   <CBF_Planner_Density>Die Zieldichte wird nicht über harte Stückzahlgrenzen oder gesicherte Zugänge erzwungen.</CBF_Planner_Density>
   <CBF_Build_Elapsed>Dauer: {0} Sekunden  {1}</CBF_Build_Elapsed>
@@ -362,6 +360,7 @@ Ohne deine Bestätigung geht nichts hinaus.</CBF_UploadConfirm>
   <CBF_Planner_CoreShapeFallback>Die Stadtform ließ sich nicht an das Gelände anpassen und wird unverändert verwendet.</CBF_Planner_CoreShapeFallback>
   <CBF_Planner_Feinraster>Ebene {0}: Umriss für die Mauer mit Wehrgang begradigt, {1} Felder angepasst.</CBF_Planner_Feinraster>
   <CBF_Planner_Flussuebergang>{0} Brücke(n) über den Fluss geplant. Die Vorstadt bekommt dafür {1} Felder mehr.</CBF_Planner_Flussuebergang>
+  <CBF_Planner_UebergangLos>{0} Brücke(n) über den Fluss hatten an einem Ende keinen Weg und wurden entfernt.</CBF_Planner_UebergangLos>
   <CBF_Planner_Gasse>{0} erreichte das Wegenetz nicht und bekam eine Gasse mit {1} Feldern.</CBF_Planner_Gasse>
   <CBF_Planner_GateHoleInstead>Ebene {0}: auch nach vielen Lagen kein Platz für ein Torhaus. Die Mauer bekommt dort einen offenen Durchgang.</CBF_Planner_GateHoleInstead>
   <CBF_Planner_GateMinimum>Jede ummauerte Ebene braucht ein Tor: ein Torhaus oder, wenn im Notlauf keines Platz findet, einen offenen Durchgang. Hier fehlt beides.</CBF_Planner_GateMinimum>

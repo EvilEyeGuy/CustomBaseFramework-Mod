@@ -117,7 +117,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Settlement types in XML</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html" class="hier">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="writing-a-settlement-type-in-xml">Writing a settlement type in XML</h1><p class="unter">Modding</p>
-<p>This page is for modders who write settlement types by hand. The in-game editor writes the same XML, see <a href="Settlements.html">Settlements</a>. Every node on this page exists in the code. The full list of nodes is in the field reference, linked at the end.</p>
+<p>This guide builds a settlement plan from XML, then explains how wards, districts and building requests work together. The <a href="Settlements.html">in-game editor</a> writes the same format. Use <a href="SettlementPlanDef.html">SettlementPlanDef</a> to check the current field names and initial defaults.</p>
 <h2 id="what-a-settlement-type-is">What a settlement type is</h2>
 <p>A settlement type is a <code>CustomBaseFramework.SettlementPlanDef</code>. It does not contain a map. It is a building program: which wards the place has, which walls, towers and gates protect them, which buildings go where, and which fields and pens lie around it.</p>
 <p>Terms used on this page:</p>
@@ -139,7 +139,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </ol>
 <p>The settlement type decides what is asked for. The pieces decide what each building looks like.</p>
 <h2 id="minimal-example">Minimal example</h2>
-<p>The shortest settlement type that loads without errors and is actually used:</p>
+<p>This example uses CBF’s shipped modern material list and house category. It makes the plan eligible for industrial factions without an explicit faction plan; it does not force every eligible base to choose it.</p>
 <pre><code class="language-xml">&lt;<span class="xt">Defs</span>&gt;
   &lt;<span class="xt">CustomBaseFramework.SettlementPlanDef</span>&gt;
     &lt;<span class="xt">defName</span>&gt;MyMod_Plan_Hamlet&lt;/<span class="xt">defName</span>&gt;
@@ -270,7 +270,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td><code>techLevels</code></td>
 <td><strong>Tech levels</strong></td>
-<td>Tech levels this settlement type fits. Only used together with <code>forAllFactions</code>.</td>
+<td>Eligibility levels for <code>forAllFactions</code>; also determine the tech cap used by garrisons and pawn anchors. See <a href="Modding-Pawns.html#tech-level-of-the-settlement">Tech level of the settlement</a>.</td>
 <td>none</td>
 </tr>
 <tr>
@@ -324,7 +324,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td><code>siteTags</code></td>
 <td></td>
-<td>Only settlement types with site tags are used for quest sites. Leave it empty for faction bases.</td>
+<td>Tags for automatic quest-site selection. Empty excludes the plan from that pool; an explicitly supplied quest plan bypasses the tag filter.</td>
 <td>none</td>
 </tr>
 </tbody>
@@ -570,6 +570,21 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>Tower sizes are read from square pieces with an odd edge length.</li>
 <li><code>ModernTown</code> and <code>Camp</code> settlements build no gatehouses.</li>
 </ul>
+<h3 id="outworks">Outworks</h3>
+<p>Use <code>outworks</code> on a ward for obstacles outside its wall, such as individual stakes or barricade cells. Each selected piece must be <strong>1×1</strong>. Larger pieces are skipped, so a normal multi-cell building is not suitable here.</p>
+<p>This fragment belongs inside one <code>wards/li</code>. Replace <code>MyMod_Stake</code> with your own 1×1 PieceDef:</p>
+<pre><code class="language-xml">&lt;<span class="xt">outworks</span>&gt;
+  &lt;<span class="xt">li</span>&gt;
+    &lt;<span class="xt">piece</span>&gt;MyMod_Stake&lt;/<span class="xt">piece</span>&gt;
+    &lt;<span class="xt">distance</span>&gt;2&lt;/<span class="xt">distance</span>&gt;
+    &lt;<span class="xt">spacing</span>&gt;5~9&lt;/<span class="xt">spacing</span>&gt;
+    &lt;<span class="xt">run</span>&gt;2~3&lt;/<span class="xt">run</span>&gt;
+    &lt;<span class="xt">gateClearance</span>&gt;4&lt;/<span class="xt">gateClearance</span>&gt;
+  &lt;/<span class="xt">li</span>&gt;
+&lt;/<span class="xt">outworks</span>&gt;
+</code></pre>
+<p>The generator follows a ring two orthogonal cell steps outside the wall. Without a wall it starts from the ward boundary. <code>spacing</code> controls the interval between groups and <code>run</code> the number of candidate cells in each group. Blocked cells are skipped, so group size is a request rather than a guarantee. Gate approaches, roads and squares remain clear.</p>
+<p>Use <code>tag</code> instead of <code>piece</code> to select from a category. When both are set, <code>piece</code> wins. Category candidates are chosen uniformly. See <a href="Vorfeldspec.html">Vorfeldspec</a> for defaults and limits.</p>
 <h3 id="garrison">Garrison</h3>
 <p>A garrison places fixed defenders in a ward. Each entry names a pawn list, a count and a post.</p>
 <table>
@@ -1012,12 +1027,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Share of point-based defenders on the wall, 0 to 1.</td>
 <td><code>0.25</code></td>
 </tr>
-<tr>
-<td><code>assaultDelayTicks</code></td>
-<td></td>
-<td>Loads, but has no effect in the current version.</td>
-<td><code>25000</code></td>
-</tr>
 </tbody>
 </table>
 <p>Gaps between buildings are set per ward with <code>buildingGap</code>. The settlement type nodes <code>minBuildingGap</code> and <code>maxBuildingGap</code> are only used when there is no town ward.</p>
@@ -1035,7 +1044,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </ol>
 <p>A faction that ends up with an empty pool keeps RimWorld's own base. A place without a faction takes the settlement types that have no <code>factionTags</code>.</p>
 <p>Players can switch single factions back to RimWorld's bases in the mod settings, see <a href="Mod-Settings.html#settlements-per-faction">Mod settings</a>. A switched-off faction gets no settlement type, whatever the XML says.</p>
-<p>Quest sites work differently. They only take settlement types that have <code>siteTags</code>. Quest camps, such as bandit camps and outposts, take settlement types of the kind <code>Camp</code> whose <code>campTypes</code> name the site.</p>
+<p>Quest sites use <code>siteTags</code> for automatic plan selection. A fixed usable plan supplied by a quest or site extension bypasses that filter. Quest camps, such as bandit camps and outposts, take settlement types of the kind <code>Camp</code> whose <code>campTypes</code> name the site.</p>
 <h2 id="tips">Tips</h2>
 <ul>
 <li>Start from a shipped settlement type. Copy it, change <code>defName</code>, <code>label</code> and <code>factionTags</code>, then change one thing at a time.</li>
@@ -1067,4 +1076,4 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><a href="Dekospec.html">Dekospec</a> (decor and defenses)</li>
 <li><a href="HafenSpec.html">HafenSpec</a> (harbor)</li>
 <li><a href="Field-Reference.html">Field reference</a> (all pages)</li>
-</ul><div class="schritte"><a href="Modding-Overview.html"><span>Previous</span>Your own content mod</a><a class="weiter" href="Modding-Pieces.html"><span>Next</span>Pieces and categories in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#what-a-settlement-type-is">What a settlement type is</a><a class="t2" href="#minimal-example">Minimal example</a><a class="t2" href="#header-fields">Header fields</a><a class="t3" href="#mayrequire">MayRequire</a><a class="t2" href="#wards">Wards</a><a class="t3" href="#walls-emplacements-and-gatehouses">Walls, emplacements and gatehouses</a><a class="t3" href="#garrison">Garrison</a><a class="t2" href="#districts-and-building-entries">Districts and building entries</a><a class="t3" href="#district-nodes">District nodes</a><a class="t3" href="#building-entries">Building entries</a><a class="t2" href="#fields-and-pens">Fields and pens</a><a class="t3" href="#field-nodes">Field nodes</a><a class="t3" href="#pen-nodes">Pen nodes</a><a class="t2" href="#harbors">Harbors</a><a class="t2" href="#tuning-fields">Tuning fields</a><a class="t2" href="#how-cbf-picks-a-plan-for-a-faction">How CBF picks a plan for a faction</a><a class="t2" href="#tips">Tips</a><a class="t2" href="#field-reference">Field reference</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+</ul><div class="schritte"><a href="Modding-Overview.html"><span>Previous</span>Your own content mod</a><a class="weiter" href="Modding-Pieces.html"><span>Next</span>Pieces and categories in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#what-a-settlement-type-is">What a settlement type is</a><a class="t2" href="#minimal-example">Minimal example</a><a class="t2" href="#header-fields">Header fields</a><a class="t3" href="#mayrequire">MayRequire</a><a class="t2" href="#wards">Wards</a><a class="t3" href="#walls-emplacements-and-gatehouses">Walls, emplacements and gatehouses</a><a class="t3" href="#outworks">Outworks</a><a class="t3" href="#garrison">Garrison</a><a class="t2" href="#districts-and-building-entries">Districts and building entries</a><a class="t3" href="#district-nodes">District nodes</a><a class="t3" href="#building-entries">Building entries</a><a class="t2" href="#fields-and-pens">Fields and pens</a><a class="t3" href="#field-nodes">Field nodes</a><a class="t3" href="#pen-nodes">Pen nodes</a><a class="t2" href="#harbors">Harbors</a><a class="t2" href="#tuning-fields">Tuning fields</a><a class="t2" href="#how-cbf-picks-a-plan-for-a-faction">How CBF picks a plan for a faction</a><a class="t2" href="#tips">Tips</a><a class="t2" href="#field-reference">Field reference</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

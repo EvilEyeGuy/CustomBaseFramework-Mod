@@ -12,50 +12,6 @@
 
 
 
-  <CustomBaseFramework.PawnListDef>
-    <defName>CBF_Pawns_Innkeepers</defName>
-    <label>innkeepers</label>
-    <role>Civilian</role>
-    <radius>4</radius>
-    <members>
-      <li><kind>Villager</kind><weight>10</weight></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Peasant</kind><weight>10</weight></li>
-    </members>
-  </CustomBaseFramework.PawnListDef>
-
-  <CustomBaseFramework.PawnListDef>
-    <defName>CBF_Pawns_GateGuard</defName>
-    <label>gate guards</label>
-    <role>Guard</role>
-    <radius>2</radius>
-    <members>
-      <li><kind>Town_Guard</kind><weight>10</weight></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Guard</kind><weight>10</weight></li>
-    </members>
-  </CustomBaseFramework.PawnListDef>
-
-  <CustomBaseFramework.PawnListDef>
-    <defName>CBF_Pawns_MarketFolk</defName>
-    <label>market folk</label>
-    <role>Civilian</role>
-    <radius>6</radius>
-    <members>
-      <li><kind>Villager</kind><weight>10</weight></li>
-      <li><kind>Town_Trader</kind><weight>3</weight></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Peasant</kind><weight>10</weight></li>
-    </members>
-  </CustomBaseFramework.PawnListDef>
-
-  <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
-    <defName>CBF_Pawns_TowerGuard</defName>
-    <label>tower guards</label>
-    <role>Sentry</role>
-    <radius>2</radius>
-    <members>
-        <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Bowman</kind><weight>1</weight></li>
-      </members>
-  </CustomBaseFramework.PawnListDef>
-
   <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_Pawns_GunCrew</defName>
     <label>artillery crew</label>

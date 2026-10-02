@@ -162,32 +162,6 @@
 
 
   <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_MarketStall_Cheese</defName>
-    <label>market stall cheese loot</label>
-    <rolls>2~3</rolls>
-    <uniqueEntries>true</uniqueEntries>
-    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
-    <entries>
-      <li><weight>34</weight><table>CBF_MO_Goods_Cheese</table></li>
-      <li><weight>14</weight><table>CBF_MO_Goods_Bread</table></li>
-      <li><weight>8</weight><table>CBF_MO_Goods_Fruit</table></li>
-    </entries>
-  </CustomBaseFramework.LootTableDef>
-
-  <CustomBaseFramework.LootTableDef>
-    <defName>CBF_MO_Loot_MarketStall_Meat</defName>
-    <label>market stall meat loot</label>
-    <rolls>2~3</rolls>
-    <uniqueEntries>true</uniqueEntries>
-    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
-    <entries>
-      <li><weight>34</weight><table>CBF_MO_Goods_Meat</table></li>
-      <li><weight>10</weight><table>CBF_MO_Goods_Rations</table></li>
-      <li><weight>6</weight><table>CBF_MO_Goods_Textiles</table></li>
-    </entries>
-  </CustomBaseFramework.LootTableDef>
-
-  <CustomBaseFramework.LootTableDef>
     <defName>CBF_MO_Loot_Farmstead</defName>
     <label>farmstead loot</label>
     <rolls>2~4</rolls>

@@ -604,4 +604,31 @@
     <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_VFEM2_Tent</defName>
+    <label>tent</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_VFEM2_Annex_Tent</defName>
+    <label>tent annex</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess><annexFill>true</annexFill><annexOverhang>1</annexOverhang><annexCornerPath>true</annexCornerPath>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_VFEM2_Annex_Tent_Large</defName>
+    <label>tent large annex</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess><annexFill>true</annexFill><annexOverhang>1</annexOverhang><annexCornerPath>true</annexCornerPath>
+  </CustomBaseFramework.PieceCategoryDef>
+
 </Defs>

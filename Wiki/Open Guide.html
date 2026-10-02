@@ -117,8 +117,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="pages/suche.js"></script></head><body class="home" data-basis=""><div class="fenster"><header class="kopf"><a class="marke" href="Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="Open%20Guide.html">Guide</a> / Start</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="Open%20Guide.html" class="hier">Overview</a><a href="pages/Getting-Started.html">Getting started</a><a href="pages/Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="pages/Pieces.html">Draw and edit pieces</a><a href="pages/Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="pages/Settlements.html">Settlement types</a><a href="pages/Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="pages/Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="pages/Loot.html">Object lists and loot</a><a href="pages/Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="pages/Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="pages/Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="pages/Settlement-Types.html">Shipped settlements</a><a href="pages/Quests.html">Quests</a><a href="pages/Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="pages/Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="pages/Modding-Overview.html">Your own content mod</a><a href="pages/Modding-Settlements.html">Settlement types in XML</a><a href="pages/Modding-Pieces.html">Pieces and categories in XML</a><a href="pages/Modding-Loot.html">Loot in XML</a><a href="pages/Modding-Pawns.html">Pawns in XML</a><a href="pages/Modding-Quests.html">Quests in XML</a><a href="pages/Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="custom-base-framework">Custom Base Framework</h1>
-<p>Custom Base Framework (CBF) replaces the bases of NPC factions with generated towns, villages and camps. The towns are built from buildings that someone drew by hand in the game. CBF plans the layout on the actual map (walls, gates, roads, fields and pens) and then fills it with those buildings.</p>
-<p>Everything is data. CBF ships an in-game editor: you draw buildings on the map, group them and describe how a settlement is laid out. The generator does the rest.</p>
+<p>Custom Base Framework (CBF) builds NPC settlements from reusable buildings designed in RimWorld. A settlement plan specifies the houses, workshops, fortifications and inhabitants; the generator arranges them around the terrain of each map, with connecting roads, fields and animal pens.</p>
+<p>The in-game editor lets you create this content without writing C#: build a structure on a test map, save it as a piece, and add its category to a settlement plan. Modders can also write or extend the same definitions in XML.</p>
 <a class="bild" href="pages/images/home-town.png" target="_blank"><img alt="A generated market town" src="pages/images/home-town.png" loading="lazy"></a>
 <h2 id="terms">Terms</h2>
 <p>These words appear throughout the guide.</p>
@@ -134,13 +134,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><strong>Pawn list</strong>: a weighted list of pawn kinds for garrisons and inhabitants. See <a href="pages/Pawns.html">Pawns</a>.</li>
 </ul>
 <h2 id="every-building-differs">Every building differs</h2>
-<p>A piece is a template, not a fixed building. Each time it is placed, it comes out differently:</p>
+<p>Pieces can include several sources of variation. Configure these features to reuse a building without giving every copy identical contents or surroundings:</p>
 <ul>
 <li><strong>Interior.</strong> Beds, tables, storage and decoration come from object lists with chances. Many things have alternatives, and materials follow the map.</li>
 <li><strong>Annexes.</strong> Houses get side parts docked on: a shed, a stable, a storage area or a small yard. They change the outline of the building, so even from a distance the town does not look assembled from identical blocks. See <a href="pages/Annexes.html">Annexes</a>.</li>
 <li><strong>Placement.</strong> Rotation, mirroring, the neighbouring buildings, the roads and the place in the town differ each time.</li>
 </ul>
-<p>You may recognise a house you have seen before, but inside and outside it looks different. More than 500 pieces ship with the mod, buildings and annexes together.</p>
+<p>The same house can therefore appear with different furnishings, additions and surroundings. Variation depends on the anchors, alternatives and annexes configured for the piece.</p>
 <h2 id="what-you-need">What you need</h2>
 <ul>
 <li>RimWorld 1.6 and Harmony.</li>

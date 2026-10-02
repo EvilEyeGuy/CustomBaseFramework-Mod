@@ -129,7 +129,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><strong>Crop list</strong> (<code>CropListDef</code>): a weighted list of plants for fields and pens. See <a href="#crop-lists">Crop lists</a>.</li>
 </ul>
 <h2 id="how-loot-gets-into-a-settlement">How loot gets into a settlement</h2>
-<p>Loot always starts at an anchor in a piece.</p>
+<p>For new pieces, use a Fill anchor to connect an object list with a loot table. Older content zones remain supported and are described below.</p>
 <ol>
 <li>A piece has a legend entry with <code>anchorKind</code> <code>Fill</code> (shown as <strong>Loot</strong> in the editor) or <code>Object</code>.</li>
 <li>The anchor names an object list in <code>objects</code> and, for Fill anchors, a loot table in <code>lootTable</code>.</li>
@@ -377,7 +377,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>maxEntriesPerResolve</code></td>
-<td>Drawing stops once the result holds this many items. Default <code>16</code>.</td>
+<td>Stops further weighted draws once the result reaches this many item-selection records. Default <code>16</code>. This is not a hard cap: <code>always</code> entries and a nested table can exceed it. It does not count final stacks or individual items.</td>
 </tr>
 <tr>
 <td><code>always</code></td>
@@ -393,7 +393,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>Nested tables and fallbacks go at most 4 levels deep. Deeper levels produce nothing.</p>
+<p>The initial table is evaluated at recursion depth 0. Nested tables and fallbacks share a limit of four additional levels; calls beyond depth 4 return no results. Avoid circular table references even though this limit prevents endless recursion.</p>
 <h3 id="entry-kinds">Entry kinds</h3>
 <p>Each entry sets exactly one of <code>thing</code>, <code>table</code> or <code>category</code>. An entry in <code>entries</code> with none of them is a config error. If more than one is set, <code>table</code> wins over <code>category</code>, and <code>category</code> wins over <code>thing</code>.</p>
 <table>
@@ -451,7 +451,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>count</code></td>
-<td>Stack count as a range. Counts above the stack limit are split into several stacks.</td>
+<td>Quantity for a direct item or category result. After depth scaling, at least one item is produced. Placement splits quantities into stacks as needed. This field does not multiply nested-table results; use <code>tableRolls</code> for those.</td>
 </tr>
 <tr>
 <td><code>quality</code></td>
@@ -495,7 +495,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>The fields <code>depthRange</code>, <code>weightOverDepth</code>, <code>countOverDepth</code> and <code>rollsOverDepth</code> read a depth. Settlements always have depth 0. An entry with <code>depthRange</code> starting above 0 never appears, and CBF logs a warning for it.</p>
+<p>The depth fields are evaluated at 0 for settlements. In the weighted <code>entries</code> list, a <code>depthRange</code> excluding 0 prevents selection. In <code>always</code>, the current code only applies the depth/weight rejection when <code>weightOverDepth</code> is present. Use <code>chance</code> to control ordinary <code>always</code> entries. <code>weightOverDepth</code> replaces the base weight, whereas <code>weightOverWealth</code> multiplies it.</p>
 <h3 id="when-a-mod-is-missing">When a mod is missing</h3>
 <p>There are three ways to handle things from other mods.</p>
 <ol>
@@ -662,12 +662,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="tips">Tips</h2>
 <ul>
 <li>Build small tables of goods and combine them in larger tables with <code>table</code> entries. The shipped tables work this way.</li>
-<li>Give large tables an <code>emptyFallback</code>, so a structure is never empty just because a roll failed.</li>
+<li>Use <code>emptyFallback</code> to provide a second table when the first produces no results. Ensure the fallback has usable entries; an empty or unavailable fallback cannot guarantee loot.</li>
 <li>Use <code>MayRequire</code> on every entry and member from another mod. A list whose members are all missing clears its anchors.</li>
 <li>Make anchor areas the size of the structures you want. If only one member fits, the same structure always appears.</li>
 <li>Draw a placeholder building under each anchor. It sets the rotation and material of what is placed.</li>
 <li>Mark a mod's own lootables <code>foreign</code> if their author's loot should stay. Leave the flag off to use your own table.</li>
-<li>Use the <strong>Sample</strong> button in the <strong>Loot</strong> tab to roll a table before testing in game.</li>
+<li>Use <strong>Sample</strong> in the <strong>Loot</strong> tab to inspect the saved table and its nested tables, then place a test container to check the generated contents.</li>
 </ul>
 <h2 id="field-reference">Field reference</h2>
 <ul>

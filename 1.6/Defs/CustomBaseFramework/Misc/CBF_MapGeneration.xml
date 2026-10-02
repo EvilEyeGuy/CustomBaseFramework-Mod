@@ -9,14 +9,6 @@
     </genStep>
   </GenStepDef>
 
-  <GenStepDef>
-    <defName>CBF_SettlementEmpty</defName>
-    <order>400</order>
-    <genStep Class="CustomBaseFramework.GenStep_CBFSettlement">
-      <spawnPawns>false</spawnPawns>
-    </genStep>
-  </GenStepDef>
-
   <MapGeneratorDef ParentName="MapCommonBase">
     <defName>CBF_Base_Faction</defName>
     <genSteps>
@@ -24,14 +16,6 @@
       <li>RocksFromGrid</li>
       <li>CBF_Settlement</li>
       <li>SettlementPower</li>
-    </genSteps>
-  </MapGeneratorDef>
-
-  <MapGeneratorDef ParentName="MapCommonBase">
-    <defName>CBF_Base_Abandoned</defName>
-    <genSteps>
-      <li>RocksFromGrid</li>
-      <li>CBF_SettlementEmpty</li>
     </genSteps>
   </MapGeneratorDef>
 

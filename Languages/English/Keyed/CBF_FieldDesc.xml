@@ -204,4 +204,9 @@
   <CBF_FieldDesc_PlacementRules_weight>How often this piece is picked among the pieces of its category. Empty takes the weight of the category.</CBF_FieldDesc_PlacementRules_weight>
   <CBF_FieldDesc_UnitSwapDef_things>Thing replacements for this faction. Each entry swaps the thing in from for the thing in to.</CBF_FieldDesc_UnitSwapDef_things>
   <CBF_FieldDesc_Minenspec_things>Things placed in the mine, each at the entrance, along the tunnels or in a chamber.</CBF_FieldDesc_Minenspec_things>
+  <CBF_FieldDesc_outworks>Obstacles placed outside around this ward, along its wall or, without a wall, along its edge. Each entry names a 1x1 piece or a category, the distance in cells, the gap between groups (spacing), the group length (run) and the free space kept around gates (gateClearance).</CBF_FieldDesc_outworks>
+  <CBF_FieldDesc_distance>Distance from the wall or ward edge in cells.</CBF_FieldDesc_distance>
+  <CBF_FieldDesc_run>How many obstacles stand next to each other in one group.</CBF_FieldDesc_run>
+  <CBF_FieldDesc_gateClearance>Cells kept free around a gate.</CBF_FieldDesc_gateClearance>
+  <CBF_FieldDesc_Vorfeldspec_spacing>Gap between two groups of obstacles along the wall or edge, in cells, as a range.</CBF_FieldDesc_Vorfeldspec_spacing>
 </LanguageData>

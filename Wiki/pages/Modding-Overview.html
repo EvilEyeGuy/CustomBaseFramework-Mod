@@ -121,12 +121,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <ul>
 <li>the folder layout of a content mod,</li>
 <li>how the def types connect,</li>
-<li>the def types that have no page of their own: wall profiles, styles, material lists, ruins, map steps, buildability rules, help texts and dungeon profiles,</li>
+<li>how supporting definitions configure wall profiles, materials, ruins, map steps, buildability rules and editor help,</li>
 <li>how CBF takes over faction bases and draws world map icons.</li>
 </ul>
 <p>Every field of every def type is listed in the <a href="Field-Reference.html">Field reference</a>. This page shows how the fields are used.</p>
 <h2 id="your-own-content-mod">Your own content mod</h2>
-<p>A content mod for CBF is a normal RimWorld mod. It needs no C# and no patches.</p>
+<p>A CBF content mod uses the normal RimWorld folder structure. New pieces, lists and plans can be defined entirely in XML. Use patches when changing definitions supplied by CBF or another mod.</p>
 <h3 id="folder-layout">Folder layout</h3>
 <pre><code>MyCBFContent/
   About/
@@ -201,7 +201,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 &lt;/<span class="xt">members</span>&gt;
 </code></pre>
 <p>See <a href="Modding-Settlements.html">Modding-Settlements</a> for <code>MayRequire</code> on settlement types.</p>
-<h3 id="world-icons">World icons</h3>
+<h3 id="texture-files">Texture files</h3>
 <p>World map icons go into <code>Textures/World/WorldObjects/CBF/</code> of your mod. A settlement type names one in <code>worldTexture</code>. The editor lists every texture in that folder from all active mods. See <a href="#world-icons">World icons</a> below.</p>
 <h3 id="what-the-editor-writes-for-you">What the editor writes for you</h3>
 <p>The in-game editor handles most of this. See <a href="Getting-Started.html">Getting started</a>.</p>
@@ -212,6 +212,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>If your mod already has a <code>LoadFolders.xml</code> with <code>IfModActive</code> lines, a new settlement type that needs one of those mods is saved into that mod's folder.</li>
 </ul>
 <p>The editor does not write <code>LoadFolders.xml</code> and does not copy world icon images. Add those by hand.</p>
+<h2 id="xml-values-and-a-first-test">XML values and a first test</h2>
+<p>Place complete definitions inside a <code>&lt;Defs&gt;</code> root. The examples that show only a field or <code>&lt;li&gt;</code> are fragments to insert into the surrounding definition, not standalone files. Use exact, case-sensitive field names and <code>defName</code> references rather than translated labels.</p>
+<p>Ranges use <code>minimum~maximum</code>, for example <code>&lt;count&gt;2~4&lt;/count&gt;</code>; a single number fixes the value. Write decimal values with a point in XML, even when the editor accepts a comma. A weight is relative to the other eligible entries: weights 3 and 1 give a 75%/25% split when those are the only candidates. A chance such as 0.75 is a separate probability check.</p>
+<p>Start with one piece, one category and one small settlement plan. Load the content mod after CBF, check the log for unresolved references, then preview and generate the plan on a test map. An XML file can be well-formed while still naming unavailable definitions or producing a layout that cannot fit the terrain.</p>
+<p>For changes to existing definitions, use RimWorld patch operations in your mod’s <code>Patches</code> folder. The <a href="https://rimworldwiki.com/wiki/Modding_Tutorials/PatchOperations">RimWorld patch-operation tutorial</a> explains targeting and operation types; the <a href="https://github.com/Vanilla-Expanded/VanillaExpandedFramework/wiki">VEF wiki</a> is another example of organising framework documentation by feature.</p>
 <h2 id="how-the-defs-connect">How the defs connect</h2>
 <p>A settlement type (<code>SettlementPlanDef</code>) is the top of the tree. It is made of wards: rings such as the town, the suburb and the countryside. Each ward has districts: groups of buildings that stay together. A district asks for buildings by category or by single piece. A piece is one hand-drawn building. Its anchors are marked spots that CBF fills with objects, loot or pawns.</p>
 <pre><code>SettlementPlanDef (settlement type)
@@ -693,7 +698,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </ol>
 <p>Types that list the faction in <code>excludeFactions</code> are skipped. If the faction has any own types, only those are used. General types are only used for factions without own types.</p>
 <p>For example, CBF's modern town sets <code>forAllFactions</code> and the tech levels <code>Industrial</code>, <code>Spacer</code> and <code>Ultra</code>. Every such faction without own types gets it. A faction with no matching type keeps its vanilla base. The full picking order is on <a href="Modding-Settlements.html">Modding-Settlements</a>.</p>
-<h2 id="world-icons_1">World icons</h2>
+<h2 id="world-icons">World icons</h2>
 <p>A settlement type sets its world map icon with <code>worldTexture</code>:</p>
 <pre><code class="language-xml">&lt;<span class="xt">worldTexture</span>&gt;World/WorldObjects/CBF/CBF_ModernTown&lt;/<span class="xt">worldTexture</span>&gt;
 </code></pre>
@@ -712,4 +717,4 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>Put <code>MayRequire</code> on every def or entry that names content from another mod, or move it into an <code>IfModActive</code> folder.</li>
 <li>Check the log after loading. CBF reports broken references once per def and says what it does instead.</li>
 <li>The full list of fields for every def type is in the <a href="Field-Reference.html">Field reference</a>.</li>
-</ul><div class="schritte"><a href="Compatibility.html"><span>Previous</span>Compatibility</a><a class="weiter" href="Modding-Settlements.html"><span>Next</span>Settlement types in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#your-own-content-mod">Your own content mod</a><a class="t3" href="#folder-layout">Folder layout</a><a class="t3" href="#aboutxml">About.xml</a><a class="t3" href="#loadfoldersxml-for-other-mods">LoadFolders.xml for other mods</a><a class="t3" href="#mayrequire">MayRequire</a><a class="t3" href="#world-icons">World icons</a><a class="t3" href="#what-the-editor-writes-for-you">What the editor writes for you</a><a class="t2" href="#how-the-defs-connect">How the defs connect</a><a class="t2" href="#wall-profiles">Wall profiles</a><a class="t3" href="#example">Example</a><a class="t3" href="#nodes">Nodes</a><a class="t3" href="#how-a-profile-is-chosen">How a profile is chosen</a><a class="t2" href="#styles">Styles</a><a class="t3" href="#styledef">StyleDef</a><a class="t3" href="#what-a-style-decides-today">What a style decides today</a><a class="t2" href="#material-lists">Material lists</a><a class="t2" href="#ruins">Ruins</a><a class="t2" href="#map-steps">Map steps</a><a class="t2" href="#buildability-rules">Buildability rules</a><a class="t2" href="#help-texts">Help texts</a><a class="t2" href="#dungeon-profiles">Dungeon profiles</a><a class="t2" href="#how-cbf-takes-over-faction-bases">How CBF takes over faction bases</a><a class="t3" href="#faction-matching">Faction matching</a><a class="t2" href="#world-icons_1">World icons</a><a class="t2" href="#tips">Tips</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+</ul><div class="schritte"><a href="Compatibility.html"><span>Previous</span>Compatibility</a><a class="weiter" href="Modding-Settlements.html"><span>Next</span>Settlement types in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#your-own-content-mod">Your own content mod</a><a class="t3" href="#folder-layout">Folder layout</a><a class="t3" href="#aboutxml">About.xml</a><a class="t3" href="#loadfoldersxml-for-other-mods">LoadFolders.xml for other mods</a><a class="t3" href="#mayrequire">MayRequire</a><a class="t3" href="#texture-files">Texture files</a><a class="t3" href="#what-the-editor-writes-for-you">What the editor writes for you</a><a class="t2" href="#xml-values-and-a-first-test">XML values and a first test</a><a class="t2" href="#how-the-defs-connect">How the defs connect</a><a class="t2" href="#wall-profiles">Wall profiles</a><a class="t3" href="#example">Example</a><a class="t3" href="#nodes">Nodes</a><a class="t3" href="#how-a-profile-is-chosen">How a profile is chosen</a><a class="t2" href="#styles">Styles</a><a class="t3" href="#styledef">StyleDef</a><a class="t3" href="#what-a-style-decides-today">What a style decides today</a><a class="t2" href="#material-lists">Material lists</a><a class="t2" href="#ruins">Ruins</a><a class="t2" href="#map-steps">Map steps</a><a class="t2" href="#buildability-rules">Buildability rules</a><a class="t2" href="#help-texts">Help texts</a><a class="t2" href="#dungeon-profiles">Dungeon profiles</a><a class="t2" href="#how-cbf-takes-over-faction-bases">How CBF takes over faction bases</a><a class="t3" href="#faction-matching">Faction matching</a><a class="t2" href="#world-icons">World icons</a><a class="t2" href="#tips">Tips</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

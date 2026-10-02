@@ -117,6 +117,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / SettlementPlanDef</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / SettlementPlanDef</div><h1 id="settlementplandef">SettlementPlanDef</h1><p class="unter">Modding</p>
+<p>Defines the building programme for a settlement: its wards, districts, fortifications and defenders. The generator fits this programme to the terrain when it creates the map. A materialList is required. See <a href="Modding-Settlements.html">Settlement types in XML</a> for a complete example.</p>
 <p>XML node: <code>&lt;CustomBaseFramework.SettlementPlanDef&gt;</code>. Also takes the common fields <code>defName</code>, <code>label</code> and <code>description</code>.</p>
 <table>
 <thead>
@@ -129,16 +130,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
-<td><code>assaultDelayTicks</code><br>Assault delay</td>
-<td>whole number</td>
-<td><code>25000</code></td>
-<td>How long the defenders wait before they attack, in ticks.</td>
-</tr>
-<tr>
 <td><code>budget</code></td>
 <td>list of <a href="BudgetEntry.html">BudgetEntry</a></td>
 <td>none</td>
-<td>Which categories the settlement wants, how many of each, and what share of the area.</td>
+<td>Legacy building requests. Converted to a Default district only when neither top-level nor ward districts exist. Prefer wards and their districts for new plans.</td>
 </tr>
 <tr>
 <td><code>campTypes</code></td>
@@ -174,13 +169,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>districts</code></td>
 <td>list of <a href="DistrictSpec.html">DistrictSpec</a></td>
 <td>none</td>
-<td>How many districts this settlement has, and how many entries in total.</td>
-</tr>
-<tr>
-<td><code>embrasureEvery</code><br>Embrasure spacing</td>
-<td>whole number</td>
-<td><code>5</code></td>
-<td>Every how many cells the wall gets an embrasure. 0 means none. Without the EMBRASURE role plain wall is used.</td>
+<td>Legacy top-level district definitions. Prefer districts inside wards to make the intended ward explicit.</td>
 </tr>
 <tr>
 <td><code>emplacements</code><br>Defensive positions</td>
@@ -198,7 +187,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>factionTags</code><br>Factions</td>
 <td>list of text</td>
 <td>none</td>
-<td>Which factions may use this settlement type.</td>
+<td>FactionDef defNames or faction categoryTag values that explicitly qualify for this plan. Explicit matches take precedence over general tech-level plans.</td>
 </tr>
 <tr>
 <td><code>forAllFactions</code><br>For every faction of these levels</td>
@@ -234,19 +223,19 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>mapSize</code><br>Map size</td>
 <td>whole number</td>
 <td><code>175</code></td>
-<td>How large the map is that this settlement is generated on.</td>
+<td>Requested map edge length in cells. The map uses the larger of this value and the world map-size setting. Values below 150 are configuration errors.</td>
 </tr>
 <tr>
 <td><code>materialList</code><br>Material list</td>
 <td><a href="MaterialListDef.html">MaterialListDef</a></td>
 <td>none</td>
-<td>Which material list this settlement type uses for walls, floors, doors, gates and the other roles.</td>
+<td>Required MaterialListDef supplying construction roles. A missing reference disables the plan.</td>
 </tr>
 <tr>
 <td><code>maxBuildingGap</code><br>Largest gap between buildings</td>
 <td>whole number</td>
 <td><code>0</code></td>
-<td>Keeps enough room between houses for a path.</td>
+<td>Legacy maximum-gap input. Prefer buildingGap on each ward; the current planner primarily uses the minimum gap.</td>
 </tr>
 <tr>
 <td><code>maxCivilians</code></td>
@@ -264,31 +253,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>minBuildingGap</code><br>Smallest gap between buildings</td>
 <td>whole number</td>
 <td><code>0</code></td>
-<td>0 lets the framework decide from the loaded mods.</td>
-</tr>
-<tr>
-<td><code>minFillRatio</code><br>Minimum fill</td>
-<td>number</td>
-<td><code>0.85</code></td>
-<td>How full the outline must be against its convex hull. Lower allows more ragged shapes.</td>
-</tr>
-<tr>
-<td><code>minHouseSize</code><br>Smallest house</td>
-<td>whole number</td>
-<td><code>5</code></td>
-<td>Edge length of the smallest house. Bays narrower than this are dropped.</td>
-</tr>
-<tr>
-<td><code>minLobe</code><br>Smallest bulge</td>
-<td>whole number</td>
-<td><code>5</code></td>
-<td>Smallest usable bulge of the outline. 0 turns the check off.</td>
-</tr>
-<tr>
-<td><code>notchMax</code><br>Maximum notch</td>
-<td>whole number</td>
-<td><code>6</code></td>
-<td>How deep the outline may cut inwards where the terrain calls for it.</td>
+<td>Legacy minimum-gap input. Zero uses the compatibility default. Prefer buildingGap on the ward.</td>
 </tr>
 <tr>
 <td><code>noWdLoot</code></td>
@@ -318,55 +283,37 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>roadLane</code><br>Lane width</td>
 <td>whole number</td>
 <td><code>1</code></td>
-<td>Width of the side lanes.</td>
+<td>Side-lane width in cells, with the same limits as roadMain.</td>
 </tr>
 <tr>
 <td><code>roadMain</code><br>Main road width</td>
 <td>whole number</td>
 <td><code>2</code></td>
-<td>Width of the main road. There are only two widths on purpose; more cuts the map up visually.</td>
-</tr>
-<tr>
-<td><code>runMax</code><br>Longest wall run</td>
-<td>whole number</td>
-<td><code>6</code></td>
-<td>Longest straight piece of wall before it must step.</td>
-</tr>
-<tr>
-<td><code>runMin</code><br>Shortest wall run</td>
-<td>whole number</td>
-<td><code>1</code></td>
-<td>Shortest straight piece of wall before it may turn.</td>
+<td>Main road width in cells. Maximum 6 for ModernTown and 2 for other supported kinds.</td>
 </tr>
 <tr>
 <td><code>share</code><br>Weight</td>
 <td>number</td>
 <td><code>0</code></td>
-<td>Weight of this settlement type against the other types the same faction may get. 0 counts as 1.</td>
+<td>Relative selection weight among eligible plans. Values of zero or less are treated as 1.</td>
 </tr>
 <tr>
 <td><code>siteTags</code></td>
 <td>list of text</td>
 <td>none</td>
-<td>Tags that make this settlement type usable for quest sites. A site that asks for tags only takes types with a matching one. Empty means it is never used for sites.</td>
-</tr>
-<tr>
-<td><code>stepMax</code><br>Largest step</td>
-<td>whole number</td>
-<td><code>3</code></td>
-<td>How far the wall may step sideways at once.</td>
+<td>Eligibility tags for automatic quest-site plan selection. Empty excludes the plan from that pool. A fixed usable plan supplied by the site extension or quest node bypasses tag selection.</td>
 </tr>
 <tr>
 <td><code>style</code></td>
 <td><a href="StyleDef.html">StyleDef</a></td>
 <td>none</td>
-<td>Old field. It only still picks the wall profile and the standard materials. Does not restrict piece selection.</td>
+<td>Single-style compatibility field, used if styles is empty. Styles select wall profiles, not building categories.</td>
 </tr>
 <tr>
 <td><code>styles</code></td>
 <td>list of <a href="StyleDef.html">StyleDef</a></td>
 <td>none</td>
-<td>Old field. It only still picks the wall profile and the standard materials. Does not filter pieces.</td>
+<td>Styles available for wall-profile selection. Does not restrict building pieces or replace the required materialList.</td>
 </tr>
 <tr>
 <td><code>suburbIslands</code></td>
@@ -378,7 +325,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>targetBuilt</code><br>Target built share</td>
 <td>number</td>
 <td><code>0</code></td>
-<td>How densely built the settlement should feel. Hand-built MO settlements sit at 0.61.</td>
+<td>Target building coverage used to size and fill the settlement. Zero leaves the planner default in effect; see the settlement guide for tuning.</td>
 </tr>
 <tr>
 <td><code>techLevels</code><br>Tech levels</td>
@@ -387,46 +334,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Tech levels this type is meant for. With forAllFactions they decide which factions qualify. Pawns from pawn lists are capped at the faction's level if it is listed, otherwise at the highest listed one. Empty means no cap.</td>
 </tr>
 <tr>
-<td><code>towerCapTotal</code><br>Tower limit</td>
-<td>whole number</td>
-<td><code>0</code></td>
-<td>Upper limit on towers. 0 means as many as there are corners.</td>
-</tr>
-<tr>
 <td><code>towerCorner</code><br>Corner tower size</td>
 <td>whole number</td>
 <td><code>7</code></td>
 <td>Edge length of a corner tower, measured on the centre line of the wall band.</td>
 </tr>
 <tr>
-<td><code>towerCurtain</code><br>Curtain tower size</td>
-<td>whole number</td>
-<td><code>7</code></td>
-<td>Edge length of the towers that sit between the corners.</td>
-</tr>
-<tr>
-<td><code>towerRun</code><br>Straight run before a tower</td>
-<td>whole number</td>
-<td><code>6</code></td>
-<td>How much straight wall must run before a tower may be placed.</td>
-</tr>
-<tr>
-<td><code>towerSpacing</code><br>Tower spacing</td>
-<td>whole number</td>
-<td><code>24</code></td>
-<td>How far apart curtain towers stand. Larger means fewer towers.</td>
-</tr>
-<tr>
 <td><code>treeShare</code></td>
 <td>number</td>
 <td><code>0</code></td>
 <td>Share of wild trees inside the settlement that are kept when it is built, 0 to 1. 0 clears them.</td>
-</tr>
-<tr>
-<td><code>wallGap</code><br>Gap to the wall</td>
-<td>whole number</td>
-<td><code>1</code></td>
-<td>How much room stays free inside the wall. Only pieces with wallContact may come closer.</td>
 </tr>
 <tr>
 <td><code>walls</code></td>
@@ -451,24 +368,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>list of text</td>
 <td>none</td>
 <td>World Domination settlement types this plan stands for, such as Mining or Slavery. Empty means any type. Only used with World Domination 2.0.</td>
-</tr>
-<tr>
-<td><code>weightHilly</code><br>Prefers hills</td>
-<td>number</td>
-<td><code>0</code></td>
-<td>How strongly this settlement type wants hilly terrain.</td>
-</tr>
-<tr>
-<td><code>weightNearRoad</code><br>Prefers roads</td>
-<td>number</td>
-<td><code>1</code></td>
-<td>How strongly this settlement type wants to sit near a road on the world map.</td>
-</tr>
-<tr>
-<td><code>weightNearWater</code><br>Prefers water</td>
-<td>number</td>
-<td><code>0</code></td>
-<td>How strongly this settlement type wants to sit near water.</td>
 </tr>
 <tr>
 <td><code>worldTexture</code><br>World map icon</td>

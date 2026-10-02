@@ -117,52 +117,54 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Field reference</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><h1 id="field-reference">Field reference</h1><p class="unter">Modding</p>
-<p>Every field you can write in the XML of Custom Base Framework, generated from the code and the English language files.
-Do not edit these pages by hand, the next run overwrites them. To change a text, change it in <code>Languages/English/Keyed</code>, then the editor shows it too.</p>
+<p>Use this reference to check XML field names, types and initial defaults. Start with the <a href="Modding-Overview.html">modding guide</a> for complete examples and the relationships between definitions.</p>
+<p>The tables are generated from the framework assembly. Defaults describe a newly created definition before inheritance, reference resolution and generation; a blank value may therefore acquire a fallback later. Fields marked optional can inherit a value instead of overriding it.</p>
+<p>For maintainers: edit wiki descriptions in <code>Wiki/ReferenceDescriptions.xml</code>; editor tooltips remain in <code>Languages/English/Keyed</code>. Regenerate these pages with <code>WikiGen.cs</code> against the current framework assembly. Quest extensions and quest nodes are documented in <a href="Modding-Quests.html">Modding quests</a>.</p>
 <h2 id="definitions">Definitions</h2>
 <ul>
-<li><a href="BuildableRuleDef.html">BuildableRuleDef</a></li>
-<li><a href="CropListDef.html">CropListDef</a></li>
-<li><a href="DungeonProfileDef.html">DungeonProfileDef</a></li>
-<li><a href="FactionFlagDef.html">FactionFlagDef</a></li>
-<li><a href="HelpDef.html">HelpDef</a></li>
-<li><a href="LootBuildingCategoryDef.html">LootBuildingCategoryDef</a></li>
-<li><a href="LootTableDef.html">LootTableDef</a></li>
-<li><a href="MapStepsDef.html">MapStepsDef</a></li>
-<li><a href="MaterialListDef.html">MaterialListDef</a></li>
-<li><a href="PawnListDef.html">PawnListDef</a></li>
-<li><a href="PieceCategoryDef.html">PieceCategoryDef</a></li>
-<li><a href="PieceDef.html">PieceDef</a></li>
-<li><a href="RuinDef.html">RuinDef</a></li>
-<li><a href="SettlementPlanDef.html">SettlementPlanDef</a></li>
-<li><a href="StyleDef.html">StyleDef</a></li>
-<li><a href="UnitSwapDef.html">UnitSwapDef</a></li>
-<li><a href="WallProfileDef.html">WallProfileDef</a></li>
+<li><a href="BuildableRuleDef.html">BuildableRuleDef</a>: Assigns otherwise uncategorised buildings to architect categories when the building-aid setting is enabled.</li>
+<li><a href="CropListDef.html">CropListDef</a>: Shares a weighted selection of plants between fields and pens.</li>
+<li><a href="DungeonProfileDef.html">DungeonProfileDef</a>: Retained definition for dungeon configuration.</li>
+<li><a href="FactionFlagDef.html">FactionFlagDef</a>: Assigns flag object lists to a faction.</li>
+<li><a href="HelpDef.html">HelpDef</a>: Provides help text for the in-game editor.</li>
+<li><a href="LootBuildingCategoryDef.html">LootBuildingCategoryDef</a>: Supplies the objects placed by Fill and Object anchors, such as shelves, barrels or market stalls.</li>
+<li><a href="LootTableDef.html">LootTableDef</a>: Generates item selections for containers, shelves or loose loot.</li>
+<li><a href="MapStepsDef.html">MapStepsDef</a>: Controls which map generation steps are suppressed or gated by tech level on CBF maps.</li>
+<li><a href="MaterialListDef.html">MaterialListDef</a>: Resolves named construction roles into objects, materials, terrain and roofs.</li>
+<li><a href="PawnListDef.html">PawnListDef</a>: Provides weighted pawn kinds for garrisons, spawn anchors, animal pens and container occupants.</li>
+<li><a href="PieceCategoryDef.html">PieceCategoryDef</a>: Groups interchangeable pieces and supplies their shared placement rules.</li>
+<li><a href="PieceDef.html">PieceDef</a>: Stores a building, wall segment or other reusable structure as character grids and a shared legend.</li>
+<li><a href="RuinDef.html">RuinDef</a>: Applies damage and occupation rules to a generated settlement used as a quest site.</li>
+<li><a href="SettlementPlanDef.html">SettlementPlanDef</a>: Defines the building programme for a settlement: its wards, districts, fortifications and defenders.</li>
+<li><a href="StyleDef.html">StyleDef</a>: Identifies a style used when selecting wall profiles, with an optional fallback style.</li>
+<li><a href="UnitSwapDef.html">UnitSwapDef</a>: Replaces generic pawn kinds and objects with faction-specific alternatives.</li>
+<li><a href="WallProfileDef.html">WallProfileDef</a>: Defines a repeating wall cross section and optional tower and gatehouse pieces.</li>
 </ul>
 <h2 id="parts-used-inside-definitions">Parts used inside definitions</h2>
 <ul>
-<li><a href="Ackerspec.html">Ackerspec</a></li>
-<li><a href="BudgetEntry.html">BudgetEntry</a></li>
-<li><a href="ContentZoneSpec.html">ContentZoneSpec</a></li>
-<li><a href="CropEintrag.html">CropEintrag</a></li>
-<li><a href="Dekospec.html">Dekospec</a></li>
-<li><a href="DistrictSpec.html">DistrictSpec</a></li>
-<li><a href="Garnisonseintrag.html">Garnisonseintrag</a></li>
-<li><a href="Gehegespec.html">Gehegespec</a></li>
-<li><a href="HafenEintrag.html">HafenEintrag</a></li>
-<li><a href="HafenSpec.html">HafenSpec</a></li>
-<li><a href="LegendEntry.html">LegendEntry</a></li>
-<li><a href="LegendVariant.html">LegendVariant</a></li>
-<li><a href="LootEntry.html">LootEntry</a></li>
-<li><a href="LootMember.html">LootMember</a></li>
-<li><a href="MaterialRole.html">MaterialRole</a></li>
-<li><a href="Minending.html">Minending</a></li>
-<li><a href="Minenspec.html">Minenspec</a></li>
-<li><a href="PawnListEntry.html">PawnListEntry</a></li>
-<li><a href="PlacementRules.html">PlacementRules</a></li>
-<li><a href="Stadtteil.html">Stadtteil</a></li>
-<li><a href="Tauscheintrag.html">Tauscheintrag</a></li>
-<li><a href="Techschritt.html">Techschritt</a></li>
-<li><a href="TerrainWeight.html">TerrainWeight</a></li>
-<li><a href="WallEntry.html">WallEntry</a></li>
+<li><a href="Ackerspec.html">Ackerspec</a>: Requests planted fields in a suburb or rural ward.</li>
+<li><a href="BudgetEntry.html">BudgetEntry</a>: Requests a category of buildings or one specific piece within a district.</li>
+<li><a href="ContentZoneSpec.html">ContentZoneSpec</a>: Configures a connected region in the older PieceDef.content grid.</li>
+<li><a href="CropEintrag.html">CropEintrag</a>: Adds a plant and its relative selection weight to a CropListDef.</li>
+<li><a href="Dekospec.html">Dekospec</a>: Places decorative or defensive pieces along a ward road network.</li>
+<li><a href="DistrictSpec.html">DistrictSpec</a>: Groups building requests within a ward and supplies preferences for their position.</li>
+<li><a href="Garnisonseintrag.html">Garnisonseintrag</a>: Requests defenders from a pawn list for one ward.</li>
+<li><a href="Gehegespec.html">Gehegespec</a>: Requests fenced animal pens in the Rural ward.</li>
+<li><a href="HafenEintrag.html">HafenEintrag</a>: Requests a harbour piece or category and its quantity.</li>
+<li><a href="HafenSpec.html">HafenSpec</a>: Adds harbour buildings near a settlement when a suitable coast or sufficiently wide river is available.</li>
+<li><a href="LegendEntry.html">LegendEntry</a>: Maps one character in a piece grid to an object, terrain, roof, pawn or anchor.</li>
+<li><a href="LegendVariant.html">LegendVariant</a>: Adds a weighted alternative to a legend entry.</li>
+<li><a href="LootEntry.html">LootEntry</a>: Defines one result in a loot table: a specific item, a random item from a ThingCategoryDef, or another loot table.</li>
+<li><a href="LootMember.html">LootMember</a>: Configures one object in an object list, including its loot override and what happens after its contents are removed.</li>
+<li><a href="MaterialRole.html">MaterialRole</a>: Defines the candidates for one construction role, optionally restricted to a ward or matching fortification pieces.</li>
+<li><a href="Minending.html">Minending</a>: Adds an object to a generated mine at its entrance, along a tunnel or in a chamber.</li>
+<li><a href="Minenspec.html">Minenspec</a>: Requests mines associated with a district and its buildings.</li>
+<li><a href="PawnListEntry.html">PawnListEntry</a>: Adds one PawnKindDef to a pawn list, with a relative selection weight and an optional Ideology specialist role.</li>
+<li><a href="PlacementRules.html">PlacementRules</a>: Overrides supported category rules for one PieceDef, including selection weight, wall preference, faction restrictions and ideoligion conditions.</li>
+<li><a href="Stadtteil.html">Stadtteil</a>: Defines one ward within SettlementPlanDef.wards: Town, Suburb or Rural.</li>
+<li><a href="Tauscheintrag.html">Tauscheintrag</a>: Maps a source pawn kind or object to a replacement within a UnitSwapDef.</li>
+<li><a href="Techschritt.html">Techschritt</a>: Associates a map generation step with its minimum faction tech level.</li>
+<li><a href="TerrainWeight.html">TerrainWeight</a>: Adds one terrain candidate to a material role terrainMix.</li>
+<li><a href="Vorfeldspec.html">Vorfeldspec</a>: Places groups of 1×1 obstacle pieces outside a ward wall or boundary.</li>
+<li><a href="WallEntry.html">WallEntry</a>: Selects a piece or category for a ward wall, emplacement or gatehouse list.</li>
 </ul><div class="schritte"><a href="Modding-Quests.html"><span>Previous</span>Quests in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#definitions">Definitions</a><a class="t2" href="#parts-used-inside-definitions">Parts used inside definitions</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

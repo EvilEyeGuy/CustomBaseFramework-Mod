@@ -62,10 +62,8 @@
   <CBF_Planner_NoHub>A layer has no walkable hub.</CBF_Planner_NoHub>
   <CBF_Planner_Disconnected>The city and suburb are not fully connected.</CBF_Planner_Disconnected>
   <CBF_Planner_GateUnreachable>A gate cannot be reached from inside the city.</CBF_Planner_GateUnreachable>
-  <CBF_Planner_NoField>No available field template in the catalogue.</CBF_Planner_NoField>
   <CBF_Planner_Exits>Not all outer gates reach the map edge through the connected road network.</CBF_Planner_Exits>
   <CBF_Planner_OpenWall>The defensive line has a walkable gap. This plan is not approved.</CBF_Planner_OpenWall>
-  <CBF_Planner_MissingFields>Not all requested fields fit outside the walls with the configured clearance.</CBF_Planner_MissingFields>
   <CBF_Planner_MissingMinimum>Some minimum building counts are not met. See the remaining entries in the building list.</CBF_Planner_MissingMinimum>
   <CBF_Planner_Density>The target density does not override building limits or secured access.</CBF_Planner_Density>
   <CBF_Build_Elapsed>Elapsed: {0} seconds  {1}</CBF_Build_Elapsed>
@@ -368,6 +366,7 @@ Nothing is uploaded unless you confirm.</CBF_UploadConfirm>
   <CBF_Planner_CoreShapeFallback>The city shape could not be fitted to the terrain and is used unchanged.</CBF_Planner_CoreShapeFallback>
   <CBF_Planner_Feinraster>Layer {0}: outline squared off for the wall walk, {1} cells adjusted.</CBF_Planner_Feinraster>
   <CBF_Planner_Flussuebergang>{0} river crossing(s) planned. The suburb gets {1} extra cells for them.</CBF_Planner_Flussuebergang>
+  <CBF_Planner_UebergangLos>{0} river crossing(s) had no road at one end and were removed.</CBF_Planner_UebergangLos>
   <CBF_Planner_Gasse>{0} could not reach the road network and got a lane of {1} cells.</CBF_Planner_Gasse>
   <CBF_Planner_GateHoleInstead>Layer {0}: still no room for a gatehouse after many layouts. The wall gets an open passage there instead.</CBF_Planner_GateHoleInstead>
   <CBF_Planner_GateMinimum>Every walled layer needs a gate: a gatehouse or, if none fits even in an emergency layout, an open passage. Both are missing here.</CBF_Planner_GateMinimum>

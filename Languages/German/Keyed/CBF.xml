@@ -143,34 +143,8 @@
   <CBF_FieldDesc_mapSize>Wie groß die Karte ist, auf der diese Siedlung entsteht.</CBF_FieldDesc_mapSize>
   <CBF_Field_towerCorner>Größe der Ecktürme</CBF_Field_towerCorner>
   <CBF_FieldDesc_towerCorner>Kantenlänge eines Eckturms, gemessen auf der Mittellinie des Mauerbands.</CBF_FieldDesc_towerCorner>
-  <CBF_Field_towerCurtain>Größe der Kurtinentürme</CBF_Field_towerCurtain>
-  <CBF_FieldDesc_towerCurtain>Kantenlänge der Türme zwischen den Ecken.</CBF_FieldDesc_towerCurtain>
-  <CBF_Field_towerSpacing>Turmabstand</CBF_Field_towerSpacing>
-  <CBF_FieldDesc_towerSpacing>Wie weit Kurtinentürme auseinander stehen. Größer heißt weniger Türme.</CBF_FieldDesc_towerSpacing>
-  <CBF_Field_towerCapTotal>Turmobergrenze</CBF_Field_towerCapTotal>
-  <CBF_FieldDesc_towerCapTotal>Obergrenze für Türme. 0 heißt: so viele wie es Ecken gibt.</CBF_FieldDesc_towerCapTotal>
-  <CBF_Field_towerRun>Gerader Lauf vor einem Turm</CBF_Field_towerRun>
-  <CBF_FieldDesc_towerRun>Wie viel gerade Mauer laufen muss, bevor ein Turm gesetzt werden darf.</CBF_FieldDesc_towerRun>
   <CBF_Field_gates>Tore</CBF_Field_gates>
   <CBF_FieldDesc_gates>Wie viele Tore die Mauer bekommt, als Spanne.</CBF_FieldDesc_gates>
-  <CBF_Field_embrasureEvery>Schießscharten alle</CBF_Field_embrasureEvery>
-  <CBF_FieldDesc_embrasureEvery>Alle wie viele Zellen die Mauer eine Schießscharte bekommt. 0 heißt keine. Fehlt die Rolle EMBRASURE, wird normale Mauer gesetzt.</CBF_FieldDesc_embrasureEvery>
-  <CBF_Field_notchMax>Größte Kerbe</CBF_Field_notchMax>
-  <CBF_FieldDesc_notchMax>Wie tief der Umriss nach innen schneiden darf, wo das Gelände es nahelegt.</CBF_FieldDesc_notchMax>
-  <CBF_Field_wallGap>Abstand zur Mauer</CBF_Field_wallGap>
-  <CBF_FieldDesc_wallGap>Wie viel Platz innen an der Mauer frei bleibt. Näher dürfen nur Stücke mit wallContact.</CBF_FieldDesc_wallGap>
-  <CBF_Field_minLobe>Kleinste Ausbuchtung</CBF_Field_minLobe>
-  <CBF_FieldDesc_minLobe>Kleinste nutzbare Ausbuchtung des Umrisses. 0 schaltet die Prüfung ab.</CBF_FieldDesc_minLobe>
-  <CBF_Field_runMin>Kürzester Mauerlauf</CBF_Field_runMin>
-  <CBF_FieldDesc_runMin>Kürzestes gerades Mauerstück, bevor sie abbiegen darf.</CBF_FieldDesc_runMin>
-  <CBF_Field_runMax>Längster Mauerlauf</CBF_Field_runMax>
-  <CBF_FieldDesc_runMax>Längstes gerades Mauerstück, bevor sie eine Stufe machen muss.</CBF_FieldDesc_runMax>
-  <CBF_Field_stepMax>Größte Stufe</CBF_Field_stepMax>
-  <CBF_FieldDesc_stepMax>Wie weit die Mauer auf einmal seitlich versetzen darf.</CBF_FieldDesc_stepMax>
-  <CBF_Field_minHouseSize>Kleinstes Haus</CBF_Field_minHouseSize>
-  <CBF_FieldDesc_minHouseSize>Kantenlänge des kleinsten Hauses. Buchten darunter fallen weg.</CBF_FieldDesc_minHouseSize>
-  <CBF_Field_minFillRatio>Kleinster Füllgrad</CBF_Field_minFillRatio>
-  <CBF_FieldDesc_minFillRatio>Wie voll der Umriss gegen seine konvexe Hülle sein muss. Kleiner erlaubt zerklüftetere Formen.</CBF_FieldDesc_minFillRatio>
   <CBF_Field_roadMain>Breite der Hauptstraße</CBF_Field_roadMain>
   <CBF_FieldDesc_roadMain>Breite der Hauptstraße. Es gibt bewusst nur zwei Breiten, mehr zerschneidet die Karte optisch.</CBF_FieldDesc_roadMain>
   <CBF_Field_roadLane>Breite der Gassen</CBF_Field_roadLane>
@@ -191,14 +165,6 @@
   <CBF_FieldDesc_gatehouses>Welche Stücke als Torhäuser dienen dürfen.</CBF_FieldDesc_gatehouses>
   <CBF_Field_defenderPoints>Verteidigerstärke</CBF_Field_defenderPoints>
   <CBF_FieldDesc_defenderPoints>Wie stark die Verteidiger sind, als Punktespanne.</CBF_FieldDesc_defenderPoints>
-  <CBF_Field_assaultDelayTicks>Angriffsverzögerung</CBF_Field_assaultDelayTicks>
-  <CBF_FieldDesc_assaultDelayTicks>Wie lange die Verteidiger warten, bevor sie angreifen, in Ticks.</CBF_FieldDesc_assaultDelayTicks>
-  <CBF_Field_weightNearRoad>Nähe zur Straße</CBF_Field_weightNearRoad>
-  <CBF_FieldDesc_weightNearRoad>Wie stark dieser Ortstyp auf der Weltkarte an eine Straße möchte.</CBF_FieldDesc_weightNearRoad>
-  <CBF_Field_weightNearWater>Nähe zum Wasser</CBF_Field_weightNearWater>
-  <CBF_FieldDesc_weightNearWater>Wie stark dieser Ortstyp ans Wasser möchte.</CBF_FieldDesc_weightNearWater>
-  <CBF_Field_weightHilly>Nähe zu Hügeln</CBF_Field_weightHilly>
-  <CBF_FieldDesc_weightHilly>Wie stark dieser Ortstyp hügeliges Gelände möchte.</CBF_FieldDesc_weightHilly>
   <CBF_Field_factionTags>Fraktionen</CBF_Field_factionTags>
   <CBF_FieldDesc_factionTags>Welche Fraktionen diesen Ortstyp benutzen dürfen.</CBF_FieldDesc_factionTags>
   <CBF_Field_count>Anzahl</CBF_Field_count>
@@ -790,4 +756,13 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_Au_OffByMod>Aus, weil der Mod {0} aktiv ist. Das Stück fällt gewollt weg und wird geprüft, sobald der Mod aus ist.</CBF_Au_OffByMod>
   <CBF_PawnPreviewInGame>Vorschau nur im laufenden Spiel</CBF_PawnPreviewInGame>
   <CBF_Type_UnitSwapDef>Einheitentausch</CBF_Type_UnitSwapDef>
+  <CBF_S_Outworks>Vorfeld</CBF_S_Outworks>
+  <CBF_S_OutworksNone>Keine Hindernisse vor diesem Stadtteil.</CBF_S_OutworksNone>
+  <CBF_S_AddOutwork>+ Hindernis</CBF_S_AddOutwork>
+  <CBF_S_OutworkNoPiece>Ein Vorfeld-Eintrag nennt weder Stück noch Kategorie.</CBF_S_OutworkNoPiece>
+  <CBF_S_OwDistance>Abstand</CBF_S_OwDistance>
+  <CBF_S_OwRun>Gruppenlänge</CBF_S_OwRun>
+  <CBF_S_OwSpacing>Lücke</CBF_S_OwSpacing>
+  <CBF_S_OwGate>Torabstand</CBF_S_OwGate>
+  <CBF_Field_outworks>Vorfeld</CBF_Field_outworks>
 </LanguageData>

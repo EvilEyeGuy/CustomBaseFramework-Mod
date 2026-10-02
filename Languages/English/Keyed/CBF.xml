@@ -143,34 +143,8 @@
   <CBF_FieldDesc_mapSize>How large the map is that this settlement is generated on.</CBF_FieldDesc_mapSize>
   <CBF_Field_towerCorner>Corner tower size</CBF_Field_towerCorner>
   <CBF_FieldDesc_towerCorner>Edge length of a corner tower, measured on the centre line of the wall band.</CBF_FieldDesc_towerCorner>
-  <CBF_Field_towerCurtain>Curtain tower size</CBF_Field_towerCurtain>
-  <CBF_FieldDesc_towerCurtain>Edge length of the towers that sit between the corners.</CBF_FieldDesc_towerCurtain>
-  <CBF_Field_towerSpacing>Tower spacing</CBF_Field_towerSpacing>
-  <CBF_FieldDesc_towerSpacing>How far apart curtain towers stand. Larger means fewer towers.</CBF_FieldDesc_towerSpacing>
-  <CBF_Field_towerCapTotal>Tower limit</CBF_Field_towerCapTotal>
-  <CBF_FieldDesc_towerCapTotal>Upper limit on towers. 0 means as many as there are corners.</CBF_FieldDesc_towerCapTotal>
-  <CBF_Field_towerRun>Straight run before a tower</CBF_Field_towerRun>
-  <CBF_FieldDesc_towerRun>How much straight wall must run before a tower may be placed.</CBF_FieldDesc_towerRun>
   <CBF_Field_gates>Gates</CBF_Field_gates>
   <CBF_FieldDesc_gates>How many gates the wall gets, as a range.</CBF_FieldDesc_gates>
-  <CBF_Field_embrasureEvery>Embrasure spacing</CBF_Field_embrasureEvery>
-  <CBF_FieldDesc_embrasureEvery>Every how many cells the wall gets an embrasure. 0 means none. Without the EMBRASURE role plain wall is used.</CBF_FieldDesc_embrasureEvery>
-  <CBF_Field_notchMax>Maximum notch</CBF_Field_notchMax>
-  <CBF_FieldDesc_notchMax>How deep the outline may cut inwards where the terrain calls for it.</CBF_FieldDesc_notchMax>
-  <CBF_Field_wallGap>Gap to the wall</CBF_Field_wallGap>
-  <CBF_FieldDesc_wallGap>How much room stays free inside the wall. Only pieces with wallContact may come closer.</CBF_FieldDesc_wallGap>
-  <CBF_Field_minLobe>Smallest bulge</CBF_Field_minLobe>
-  <CBF_FieldDesc_minLobe>Smallest usable bulge of the outline. 0 turns the check off.</CBF_FieldDesc_minLobe>
-  <CBF_Field_runMin>Shortest wall run</CBF_Field_runMin>
-  <CBF_FieldDesc_runMin>Shortest straight piece of wall before it may turn.</CBF_FieldDesc_runMin>
-  <CBF_Field_runMax>Longest wall run</CBF_Field_runMax>
-  <CBF_FieldDesc_runMax>Longest straight piece of wall before it must step.</CBF_FieldDesc_runMax>
-  <CBF_Field_stepMax>Largest step</CBF_Field_stepMax>
-  <CBF_FieldDesc_stepMax>How far the wall may step sideways at once.</CBF_FieldDesc_stepMax>
-  <CBF_Field_minHouseSize>Smallest house</CBF_Field_minHouseSize>
-  <CBF_FieldDesc_minHouseSize>Edge length of the smallest house. Bays narrower than this are dropped.</CBF_FieldDesc_minHouseSize>
-  <CBF_Field_minFillRatio>Minimum fill</CBF_Field_minFillRatio>
-  <CBF_FieldDesc_minFillRatio>How full the outline must be against its convex hull. Lower allows more ragged shapes.</CBF_FieldDesc_minFillRatio>
   <CBF_Field_roadMain>Main road width</CBF_Field_roadMain>
   <CBF_FieldDesc_roadMain>Width of the main road. There are only two widths on purpose; more cuts the map up visually.</CBF_FieldDesc_roadMain>
   <CBF_Field_roadLane>Lane width</CBF_Field_roadLane>
@@ -191,14 +165,6 @@
   <CBF_FieldDesc_gatehouses>Which pieces may serve as gatehouses.</CBF_FieldDesc_gatehouses>
   <CBF_Field_defenderPoints>Defender strength</CBF_Field_defenderPoints>
   <CBF_FieldDesc_defenderPoints>How strong the defenders are, as a point range.</CBF_FieldDesc_defenderPoints>
-  <CBF_Field_assaultDelayTicks>Assault delay</CBF_Field_assaultDelayTicks>
-  <CBF_FieldDesc_assaultDelayTicks>How long the defenders wait before they attack, in ticks.</CBF_FieldDesc_assaultDelayTicks>
-  <CBF_Field_weightNearRoad>Prefers roads</CBF_Field_weightNearRoad>
-  <CBF_FieldDesc_weightNearRoad>How strongly this settlement type wants to sit near a road on the world map.</CBF_FieldDesc_weightNearRoad>
-  <CBF_Field_weightNearWater>Prefers water</CBF_Field_weightNearWater>
-  <CBF_FieldDesc_weightNearWater>How strongly this settlement type wants to sit near water.</CBF_FieldDesc_weightNearWater>
-  <CBF_Field_weightHilly>Prefers hills</CBF_Field_weightHilly>
-  <CBF_FieldDesc_weightHilly>How strongly this settlement type wants hilly terrain.</CBF_FieldDesc_weightHilly>
   <CBF_Field_factionTags>Factions</CBF_Field_factionTags>
   <CBF_FieldDesc_factionTags>Which factions may use this settlement type.</CBF_FieldDesc_factionTags>
   <CBF_Field_count>Count</CBF_Field_count>
@@ -790,4 +756,13 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_Au_OffByMod>Off because the mod {0} is active. The piece is left out on purpose and checked once the mod is off.</CBF_Au_OffByMod>
   <CBF_PawnPreviewInGame>Preview only in a running game</CBF_PawnPreviewInGame>
   <CBF_Type_UnitSwapDef>Unit swap</CBF_Type_UnitSwapDef>
+  <CBF_S_Outworks>Outworks</CBF_S_Outworks>
+  <CBF_S_OutworksNone>No obstacles in front of this ward.</CBF_S_OutworksNone>
+  <CBF_S_AddOutwork>+ Obstacle</CBF_S_AddOutwork>
+  <CBF_S_OutworkNoPiece>An outwork entry names no piece and no category.</CBF_S_OutworkNoPiece>
+  <CBF_S_OwDistance>Distance</CBF_S_OwDistance>
+  <CBF_S_OwRun>Group length</CBF_S_OwRun>
+  <CBF_S_OwSpacing>Gap</CBF_S_OwSpacing>
+  <CBF_S_OwGate>Gate clearance</CBF_S_OwGate>
+  <CBF_Field_outworks>Outworks</CBF_Field_outworks>
 </LanguageData>

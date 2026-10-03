@@ -11,24 +11,23 @@
     <type>WallPart</type>
     <style>CBF_VFEM2</style>
     <eaves>true</eaves>
+
     <legend>
-      <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>b</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
-      <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
-      <li><symbol>f</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>g</symbol><thing>WoodLog</thing><count>30</count></li>
+      <li><symbol>W</symbol><terrain>PackedDirt</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>T</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>B</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>C</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>F</symbol><thing>WoodLog</thing></li>
       <li><symbol>i</symbol><anchor>Wall</anchor></li>
+      <li><symbol>o</symbol><anchor>GuardSouth</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>n</symbol><anchor>ServantB</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>m</symbol><anchor>Outside</anchor></li>
+      <li><symbol>l</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind></li>
       <li><symbol>j</symbol><anchor>GuardNorth</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
       <li><symbol>k</symbol><anchor>BarrelNorth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
-      <li><symbol>l</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>m</symbol><anchor>Outside</anchor></li>
-      <li><symbol>n</symbol><anchor>ServantB</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>o</symbol><anchor>GuardSouth</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>p</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
-      <li><symbol>q</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
+
     <mask>
       <li>#####</li>
       <li>#####</li>
@@ -40,39 +39,43 @@
       <li>#####</li>
       <li>#####</li>
     </mask>
+
     <terrain>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
     </terrain>
+
     <things>
-      <li>aaaaa</li>
-      <li>ap.qa</li>
-      <li>a...F</li>
-      <li>aaaaa</li>
-      <li>.f.f.</li>
-      <li>aaaaa</li>
-      <li>a...F</li>
-      <li>ab.ga</li>
-      <li>aaaaa</li>
+      <li>TTTTT</li>
+      <li>T..BT</li>
+      <li>T...C</li>
+      <li>TTTTT</li>
+      <li>.C.C.</li>
+      <li>TTTTT</li>
+      <li>T...C</li>
+      <li>T..FT</li>
+      <li>TTTTT</li>
     </things>
+
     <roof>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
     </roof>
+
     <anchors>
       <li>..i..</li>
       <li>..jk.</li>

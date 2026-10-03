@@ -14,8 +14,7 @@
     <legend>
       <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>b</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>a</symbol><thing>VFEM2_LowCastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>c</symbol><terrain>FlagstoneSlate</terrain></li>
       <li><symbol>f</symbol><thing>WoodLog</thing><count>30</count></li>
       <li><symbol>g</symbol><anchor>Wall</anchor></li>
@@ -24,9 +23,10 @@
       <li><symbol>k</symbol><anchor>TowerGuard</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
       <li><symbol>l</symbol><anchor>TowerChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
       <li><symbol>m</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>n</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
-      <li><symbol>o</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>n</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li><symbol>o</symbol><thing>VFEM2_StandingBanner</thing><rotation>South</rotation></li>
+      <li><symbol>p</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>q</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>.#####.</li>
@@ -48,10 +48,10 @@
     </terrain>
     <things>
       <li>.SaSaS.</li>
-      <li>SSn..SS</li>
-      <li>a.o...a</li>
-      <li>S...b.S</li>
-      <li>a.p..fa</li>
+      <li>SSo..SS</li>
+      <li>a.p...a</li>
+      <li>a...n.S</li>
+      <li>a.q..fa</li>
       <li>SS...SS</li>
       <li>.SaSaS.</li>
     </things>

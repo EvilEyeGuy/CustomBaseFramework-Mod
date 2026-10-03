@@ -14,19 +14,21 @@
     <legend>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>b</symbol><thing>WoodLog</thing><count>30</count></li>
+      <li><symbol>b</symbol><thing>VFEM2_LowCastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
-      <li><symbol>f</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
-      <li><symbol>g</symbol><anchor>Wall</anchor></li>
-      <li><symbol>i</symbol><anchor>Flag</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flag</objects><factionFlag>true</factionFlag></li>
-      <li><symbol>j</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>k</symbol><anchor>TowerGuard</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>l</symbol><anchor>ServantB</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>m</symbol><anchor>Barrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
-      <li><symbol>n</symbol><anchor>TowerShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
-      <li><symbol>o</symbol><thing>VFEM2_StandingBanner</thing><rotation>West</rotation></li>
-      <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>q</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>f</symbol><thing>WoodLog</thing><count>30</count></li>
+      <li><symbol>i</symbol><anchor>Wall</anchor></li>
+      <li><symbol>j</symbol><anchor>Flag</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flag</objects><factionFlag>true</factionFlag></li>
+      <li><symbol>k</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>l</symbol><anchor>TowerGuard</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>m</symbol><anchor>ServantB</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>n</symbol><anchor>Barrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
+      <li><symbol>o</symbol><anchor>TowerShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>p</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li><symbol>q</symbol><thing>VFEM2_LowCastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>r</symbol><thing>VFEM2_StandingBanner</thing><rotation>West</rotation></li>
+      <li><symbol>s</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>t</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
     </legend>
     <mask>
       <li>#######</li>
@@ -47,13 +49,13 @@
       <li>eeeeeee</li>
     </terrain>
     <things>
-      <li>aaaaaaa</li>
-      <li>a...b.a</li>
-      <li>a.f..oa</li>
-      <li>a.....a</li>
-      <li>a...f.a</li>
-      <li>ap.q.ba</li>
-      <li>aaaaaaa</li>
+      <li>abaaaba</li>
+      <li>b...f.b</li>
+      <li>q.p..ra</li>
+      <li>q.....a</li>
+      <li>q...p.a</li>
+      <li>bs.t.fb</li>
+      <li>abaaaba</li>
     </things>
     <roof>
       <li>^^^^^^^</li>
@@ -65,13 +67,13 @@
       <li>^^^^^^^</li>
     </roof>
     <anchors>
-      <li>...g...</li>
+      <li>...i...</li>
       <li>.......</li>
-      <li>.....i.</li>
-      <li>g.j.k.g</li>
-      <li>...l...</li>
-      <li>.m.nn..</li>
-      <li>...g...</li>
+      <li>.....j.</li>
+      <li>i.k.l.i</li>
+      <li>...m...</li>
+      <li>.n.oo..</li>
+      <li>...i...</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

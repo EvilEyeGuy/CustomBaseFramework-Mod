@@ -22,7 +22,6 @@
       <li><symbol>8</symbol><anchor>GuardNorth</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList><pawnCount>1~2</pawnCount></li>
       <li><symbol>9</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_GunCrew</pawnList><pawnCount>1</pawnCount></li>
       <li><symbol>A</symbol><anchor>Outside</anchor></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_BallistaBolt</thing><count>10</count></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_Gate</thing><stuff>Steel</stuff></li>
@@ -36,11 +35,11 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>c</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
       <li><symbol>f</symbol><anchor>BarrelNorth</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Storage</lootTable></li>
       <li><symbol>g</symbol><anchor>BarrelSouth</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Storage</lootTable></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>q</symbol><anchor>ShelfNorth</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WeaponRack</objects></li>
       <li><symbol>r</symbol><anchor>ShelfSouth</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WeaponRack</objects></li>
       <li><symbol>x</symbol><anchor>ServantB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_GunCrew</pawnList><pawnCount>1</pawnCount></li>
@@ -85,10 +84,10 @@
     </terrain>
     <things>
       <li>.SMSMS.........</li>
-      <li>SS..jSS........</li>
+      <li>SS..kSS........</li>
       <li>M.....M........</li>
-      <li>SB....F........</li>
-      <li>MCk.m.M........</li>
+      <li>Mj....F........</li>
+      <li>MCm.o.M........</li>
       <li>SS...SSSMSMSMSS</li>
       <li>.SSSSS........S</li>
       <li>.G...G........G</li>
@@ -96,10 +95,10 @@
       <li>.G...G........G</li>
       <li>.SSSSS........S</li>
       <li>SS...SSSMSMSMSS</li>
-      <li>MCk.m.M........</li>
-      <li>S.....F........</li>
-      <li>Mi....M........</li>
-      <li>SS..oSS........</li>
+      <li>MCm.o.M........</li>
+      <li>M.....F........</li>
+      <li>Mj....M........</li>
+      <li>SS..pSS........</li>
       <li>.SMSMS.........</li>
     </things>
     <roof>

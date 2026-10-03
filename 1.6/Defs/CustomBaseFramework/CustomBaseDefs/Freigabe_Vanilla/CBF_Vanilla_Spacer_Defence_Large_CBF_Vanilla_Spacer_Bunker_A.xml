@@ -17,14 +17,12 @@
       <li><symbol>L</symbol><thing>StandingLamp</thing></li>
       <li><symbol>N</symbol><thing>Turret_Sniper</thing></li>
       <li><symbol>P</symbol><thing>FirefoamPopper</thing></li>
-      <li MayRequire="Ludeon.RimWorld.Royalty"><symbol>Q</symbol><anchor>TallShield</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_ShieldGenerator_High</objects></li>
       <li><symbol>T</symbol><thing>Wall</thing><stuff>Plasteel</stuff></li>
       <li><symbol>Y</symbol><thing>Battery</thing><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>Autodoor</thing><stuff>Plasteel</stuff></li>
-      <li MayRequire="Ludeon.RimWorld.Royalty"><symbol>b</symbol><thing>ShieldGeneratorMortar</thing><rotation>South</rotation></li>
+      <li><symbol>b</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>d</symbol><terrain>SterileTile</terrain></li>
-      <li><symbol>f</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>g</symbol><thing>Turret_MiniTurret</thing><stuff>Plasteel</stuff></li>
       <li><symbol>k</symbol><anchor>Crew</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>2~3</pawnCount></li>
       <li><symbol>o</symbol><terrain>Concrete</terrain></li>
@@ -66,11 +64,11 @@
       <li>.xxx.....xxx.</li>
       <li>.xgx.L.L.xgx.</li>
       <li>.xxTTTaTTTxx.</li>
-      <li>..LT...b.TL..</li>
-      <li>...TG...YT...</li>
+      <li>..LT.....TL..</li>
+      <li>...TG..YYT...</li>
       <li>N..a.....a.K.</li>
       <li>...T.P...T...</li>
-      <li>..LT...f.TL..</li>
+      <li>..LT...b.TL..</li>
       <li>.xxTTTaTTTxx.</li>
       <li>.xgx.L.L.xgx.</li>
       <li>.xxx.....xxx.</li>
@@ -111,7 +109,7 @@
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
-      <li>.......Q.....</li>
+      <li>.............</li>
       <li>.............</li>
       <li>.............</li>
       <li>......k......</li>

@@ -19,10 +19,10 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
       <li><symbol>R</symbol><anchor>Wall</anchor></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Turret_Scorpio</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Turret_Scorpio</thing><stuff>DankPyon_RawWood</stuff><rotation>West</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
       <li><symbol>f</symbol><anchor>Barrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Storage</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>.###.</li>
@@ -40,8 +40,8 @@
     </terrain>
     <things>
       <li>.EPE.</li>
-      <li>EPbPE</li>
-      <li>P.a.P</li>
+      <li>EPiPE</li>
+      <li>E.b.P</li>
       <li>EPDPE</li>
       <li>.EPE.</li>
     </things>
@@ -55,7 +55,7 @@
     <anchors>
       <li>..R..</li>
       <li>..f..</li>
-      <li>R9.8R</li>
+      <li>R8.9R</li>
       <li>.....</li>
       <li>..R..</li>
     </anchors>

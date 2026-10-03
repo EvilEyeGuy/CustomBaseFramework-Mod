@@ -16,17 +16,17 @@
       <li><symbol>8</symbol><anchor>TowerGuard</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList><pawnCount>1~2</pawnCount></li>
       <li><symbol>9</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_GunCrew</pawnList><pawnCount>1</pawnCount></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_BallistaBolt</thing><count>10</count></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>J</symbol><thing>DankPyon_Turret_RepeaterBallista</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>M</symbol><thing>DankPyon_CastleWallEmbrasures</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_Brazier1x1c</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>R</symbol><anchor>Wall</anchor></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Turret_RepeaterBallista</thing><stuff>DankPyon_RawWood</stuff><rotation>West</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>c</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>g</symbol><thing>DankPyon_Turret_Ballista</thing><stuff>DankPyon_RawWood</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_BannerPlain</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>j</symbol><thing>DankPyon_HideoutRackSword</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>q</symbol><anchor>TowerShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_WeaponRack</objects></li>
       <li><symbol>x</symbol><anchor>ServantB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_GunCrew</pawnList><pawnCount>1</pawnCount></li>
       <li><symbol>§</symbol><anchor>Flag</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Flag</objects><factionFlag>true</factionFlag></li>
@@ -57,11 +57,11 @@
       <li>..MSSSM..</li>
       <li>.SS...SS.</li>
       <li>MS.C..CSM</li>
-      <li>S.......S</li>
-      <li>SJ..Q.a.S</li>
-      <li>Sb.....bS</li>
-      <li>MS.g...SM</li>
-      <li>.SS.i.SS.</li>
+      <li>M.......S</li>
+      <li>Mb..Q.g.S</li>
+      <li>Mi.....iS</li>
+      <li>MS.j...SM</li>
+      <li>.SS.k.SS.</li>
       <li>..MSSSM..</li>
     </things>
     <roof>

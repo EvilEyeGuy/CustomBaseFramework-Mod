@@ -116,10 +116,10 @@
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_Sack</defName>
     <members>
-      <li>DankPyon_HideoutSackFlour</li>
-      <li>DankPyon_HideoutSackWheat</li>
-      <li>DankPyon_HideoutSackPotato</li>
-      <li>DankPyon_HideoutSackApple</li>
+      <li><thing>DankPyon_HideoutSackFlour</thing><foreign>true</foreign></li>
+      <li><thing>DankPyon_HideoutSackWheat</thing><foreign>true</foreign></li>
+      <li><thing>DankPyon_HideoutSackPotato</thing><foreign>true</foreign></li>
+      <li><thing>DankPyon_HideoutSackApple</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
@@ -268,8 +268,8 @@
   <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_FlourSack</defName>
     <members>
-      <li>DankPyon_HideoutSackFlour</li>
-      <li>DankPyon_HideoutSackWheat</li>
+      <li><thing>DankPyon_HideoutSackFlour</thing><foreign>true</foreign></li>
+      <li><thing>DankPyon_HideoutSackWheat</thing><foreign>true</foreign></li>
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 

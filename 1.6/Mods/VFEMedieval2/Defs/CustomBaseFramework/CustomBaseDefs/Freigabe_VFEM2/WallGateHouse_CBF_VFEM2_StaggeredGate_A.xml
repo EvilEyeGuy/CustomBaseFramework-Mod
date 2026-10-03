@@ -11,32 +11,33 @@
     <type>WallPart</type>
     <style>CBF_VFEM2</style>
     <eaves>true</eaves>
+
     <legend>
+      <li><symbol>W</symbol><terrain>FlagstoneSlate</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>T</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>C</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>S</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>VFEM2_CastleWall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>b</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
-      <li><symbol>c</symbol><terrain>FlagstoneSlate</terrain></li>
-      <li><symbol>f</symbol><thing>WoodLog</thing><count>30</count></li>
-      <li><symbol>g</symbol><thing>Door</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>i</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>j</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>P</symbol><thing>WoodLog</thing></li>
+      <li><symbol>R</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>L</symbol><thing>Door</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>S</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>G</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>H</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
       <li><symbol>k</symbol><anchor>Wall</anchor></li>
-      <li><symbol>l</symbol><anchor>BarrelNorth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
-      <li><symbol>m</symbol><anchor>GuardNorth</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>n</symbol><anchor>ChestNorth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
-      <li><symbol>o</symbol><anchor>ShelfNorth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
-      <li><symbol>p</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>q</symbol><anchor>Outside</anchor></li>
-      <li><symbol>r</symbol><anchor>ChestSouth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
-      <li><symbol>s</symbol><anchor>BarrelSouth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
       <li><symbol>t</symbol><anchor>ShelfSouth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
       <li><symbol>u</symbol><anchor>GuardSouth</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>x</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>y</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>z</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>r</symbol><anchor>ChestSouth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>s</symbol><anchor>BarrelSouth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
+      <li><symbol>q</symbol><anchor>Outside</anchor></li>
+      <li><symbol>p</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>n</symbol><anchor>ChestNorth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>o</symbol><anchor>ShelfNorth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
+      <li><symbol>m</symbol><anchor>GuardNorth</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>l</symbol><anchor>BarrelNorth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
     </legend>
+
     <mask>
       <li>..#####..</li>
       <li>#######..</li>
@@ -45,66 +46,70 @@
       <li>#######..</li>
       <li>#######..</li>
       <li>..#####..</li>
-      <li>#########</li>
-      <li>#########</li>
-      <li>#########</li>
-      <li>..#######</li>
-      <li>..#######</li>
-      <li>..#######</li>
-      <li>..#######</li>
-      <li>..#######</li>
+      <li>#######..</li>
+      <li>#######..</li>
+      <li>#######..</li>
+      <li>.########</li>
+      <li>.########</li>
+      <li>.########</li>
+      <li>.########</li>
+      <li>.########</li>
     </mask>
+
     <terrain>
-      <li>..ccccc..</li>
-      <li>ccccccc..</li>
-      <li>ccccccc..</li>
-      <li>ccccccc..</li>
-      <li>ccccccc..</li>
-      <li>ccccccc..</li>
-      <li>..ccccc..</li>
-      <li>.ccccc...</li>
-      <li>.ccccc...</li>
-      <li>.ccccc...</li>
-      <li>..ccccccc</li>
-      <li>..ccccccc</li>
-      <li>..ccccccc</li>
-      <li>..ccccccc</li>
-      <li>..ccccccc</li>
+      <li>..WWWWW..</li>
+      <li>WWWWWWW..</li>
+      <li>WWWWWWW..</li>
+      <li>WWWWWWW..</li>
+      <li>WWWWWWW..</li>
+      <li>WWWWWWW..</li>
+      <li>..WWWWW..</li>
+      <li>.WWWWW...</li>
+      <li>.WWWWW...</li>
+      <li>.WWWWW...</li>
+      <li>..WWWWWWW</li>
+      <li>..WWWWWWW</li>
+      <li>..WWWWWWW</li>
+      <li>..WWWWWWW</li>
+      <li>..WWWWWWW</li>
     </terrain>
+
     <things>
-      <li>..SaSaS..</li>
-      <li>SS..x.S..</li>
-      <li>a.....S..</li>
-      <li>Sb....F..</li>
-      <li>afx.y.S..</li>
-      <li>SS....S..</li>
-      <li>..SSSSS..</li>
-      <li>.g...g...</li>
-      <li>.g...g...</li>
-      <li>.g...g...</li>
-      <li>..SSSSSSS</li>
-      <li>..Sx...xS</li>
-      <li>..a.ij..F</li>
-      <li>..S.z...S</li>
-      <li>..SaSaSSS</li>
+      <li>..TTTTT..</li>
+      <li>TTT.B.T..</li>
+      <li>C.....T..</li>
+      <li>T.....F..</li>
+      <li>CPB.R.T..</li>
+      <li>TTT...T..</li>
+      <li>..TTTTT..</li>
+      <li>..L..L...</li>
+      <li>..L..L...</li>
+      <li>..L..L...</li>
+      <li>.TTTTTTTT</li>
+      <li>.T.B...BT</li>
+      <li>.C..SG..F</li>
+      <li>.T..H...T</li>
+      <li>.TTTTTTTT</li>
     </things>
+
     <roof>
-      <li>..^^^^^..</li>
-      <li>^^^^^^^..</li>
-      <li>^^^^^^^..</li>
-      <li>^^^^^^^..</li>
-      <li>^^^^^^^..</li>
-      <li>^^^^^^^..</li>
-      <li>..^^^^^..</li>
-      <li>.^^^^^...</li>
-      <li>.^^^^^...</li>
-      <li>.^^^^^...</li>
-      <li>..^^^^^^^</li>
-      <li>..^^^^^^^</li>
-      <li>..^^^^^^^</li>
-      <li>..^^^^^^^</li>
-      <li>..^^^^^^^</li>
+      <li>..DDDDD..</li>
+      <li>DDDDDDD..</li>
+      <li>DDDDDDD..</li>
+      <li>DDDDDDD..</li>
+      <li>DDDDDDD..</li>
+      <li>DDDDDDD..</li>
+      <li>..DDDDD..</li>
+      <li>.DDDDD...</li>
+      <li>.DDDDD...</li>
+      <li>.DDDDD...</li>
+      <li>.DDDDDDDD</li>
+      <li>.DDDDDDDD</li>
+      <li>.DDDDDDDD</li>
+      <li>.DDDDDDDD</li>
+      <li>.DDDDDDDD</li>
     </roof>
+
     <anchors>
       <li>....k....</li>
       <li>....l....</li>

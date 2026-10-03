@@ -13,15 +13,17 @@
     <eaves>true</eaves>
     <legend>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>a</symbol><thing>VFEM2_LowCastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>b</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
       <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
-      <li><symbol>f</symbol><thing>WoodLog</thing><count>30</count></li>
-      <li><symbol>g</symbol><anchor>Wall</anchor></li>
-      <li><symbol>i</symbol><anchor>Barrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
-      <li><symbol>j</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>g</symbol><thing>WoodLog</thing><count>30</count></li>
+      <li><symbol>i</symbol><anchor>Wall</anchor></li>
+      <li><symbol>j</symbol><anchor>Barrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
       <li><symbol>k</symbol><anchor>TowerGuard</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>l</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
-      <li><symbol>m</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>l</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
+      <li><symbol>n</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li><symbol>o</symbol><thing>VFEM2_LowCastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>p</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
     <mask>
       <li>.###.</li>
@@ -38,11 +40,11 @@
       <li>.eee.</li>
     </terrain>
     <things>
-      <li>.aaa.</li>
-      <li>aamaa</li>
-      <li>a.l.a</li>
-      <li>aafaa</li>
-      <li>.aaa.</li>
+      <li>.aba.</li>
+      <li>abpba</li>
+      <li>o.n.b</li>
+      <li>abgba</li>
+      <li>.aba.</li>
     </things>
     <roof>
       <li>.^^^.</li>
@@ -52,11 +54,11 @@
       <li>.^^^.</li>
     </roof>
     <anchors>
-      <li>..g..</li>
       <li>..i..</li>
-      <li>gj.kg</li>
+      <li>..j..</li>
+      <li>ik.li</li>
       <li>.....</li>
-      <li>..g..</li>
+      <li>..i..</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

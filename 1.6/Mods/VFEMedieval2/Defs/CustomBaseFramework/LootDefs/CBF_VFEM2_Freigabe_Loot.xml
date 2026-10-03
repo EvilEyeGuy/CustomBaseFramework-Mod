@@ -2,6 +2,20 @@
 <Defs>
 
   <CustomBaseFramework.LootTableDef>
+    <defName>CBF_VFEM2_Loot_Minimal</defName>
+    <label>little loot</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>WoodLog</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>Cloth</thing><count>10~30</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>MedicineHerbal</thing><count>2~6</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Silver</thing><count>15~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Pemmican</thing><count>2~6</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Beer</thing><count>2~6</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
     <defName>CBF_VFEM2_Goods_Supplies</defName>
     <label>supplies</label>
     <rolls>1~1</rolls>
@@ -142,7 +156,7 @@
     <label>dwelling loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
-    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <emptyFallback>CBF_VFEM2_Loot_Minimal</emptyFallback>
     <entries>
       <li><weight>18</weight><table>CBF_VFEM2_Goods_Supplies</table></li>
       <li><weight>12</weight><table>CBF_VFEM2_Goods_Cloth</table></li>
@@ -159,7 +173,7 @@
     <label>hut loot</label>
     <rolls>1~3</rolls>
     <uniqueEntries>true</uniqueEntries>
-    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <emptyFallback>CBF_VFEM2_Loot_Minimal</emptyFallback>
     <entries>
       <li><weight>20</weight><table>CBF_VFEM2_Goods_Supplies</table></li>
       <li><weight>12</weight><table>CBF_VFEM2_Goods_RawMaterial</table></li>
@@ -173,7 +187,7 @@
     <label>kitchen loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
-    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <emptyFallback>CBF_VFEM2_Loot_Minimal</emptyFallback>
     <entries>
       <li><weight>26</weight><table>CBF_VFEM2_Goods_Supplies</table></li>
       <li><weight>12</weight><table>CBF_VFEM2_Goods_Drink</table></li>
@@ -185,7 +199,7 @@
     <label>alehouse loot</label>
     <rolls>3~5</rolls>
     <uniqueEntries>true</uniqueEntries>
-    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <emptyFallback>CBF_VFEM2_Loot_Minimal</emptyFallback>
     <entries>
       <li><weight>24</weight><table>CBF_VFEM2_Goods_Drink</table></li>
       <li><weight>16</weight><table>CBF_VFEM2_Goods_Supplies</table></li>
@@ -198,7 +212,7 @@
     <label>smithy loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
-    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <emptyFallback>CBF_VFEM2_Loot_Minimal</emptyFallback>
     <entries>
       <li><weight>20</weight><table>CBF_VFEM2_Goods_RawMaterial</table></li>
       <li><weight>8</weight><table>CBF_VFEM2_Goods_Weapon</table></li>
@@ -212,7 +226,7 @@
     <label>armory loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
-    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <emptyFallback>CBF_VFEM2_Loot_Minimal</emptyFallback>
     <entries>
       <li><weight>20</weight><table>CBF_VFEM2_Goods_Weapon</table></li>
       <li><weight>14</weight><table>CBF_VFEM2_Goods_Armor</table></li>
@@ -225,7 +239,7 @@
     <label>market loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
-    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <emptyFallback>CBF_VFEM2_Loot_Minimal</emptyFallback>
     <entries>
       <li><weight>16</weight><table>CBF_VFEM2_Goods_Supplies</table></li>
       <li><weight>12</weight><table>CBF_VFEM2_Goods_Cloth</table></li>
@@ -241,7 +255,7 @@
     <label>treasure loot</label>
     <rolls>2~4</rolls>
     <uniqueEntries>true</uniqueEntries>
-    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <emptyFallback>CBF_VFEM2_Loot_Minimal</emptyFallback>
     <entries>
       <li><weight>20</weight><table>CBF_VFEM2_Goods_Money</table></li>
       <li><weight>5</weight><table>CBF_VFEM2_Goods_Weapon</table></li>

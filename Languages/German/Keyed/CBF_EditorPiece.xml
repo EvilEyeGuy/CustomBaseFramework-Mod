@@ -133,4 +133,16 @@
   <CBF_P_ModAdd>Mod hinzufügen...</CBF_P_ModAdd>
   <CBF_P_ModActive>Aktiv</CBF_P_ModActive>
   <CBF_P_ModInactive>Installiert, nicht aktiv</CBF_P_ModInactive>
+  <CBF_AnchorConnect_Socket>Eine Andockstelle für Dungeon-Teile. Hier schließen Gänge, Höhlen oder andere Räume an. Türen und Öffnungen am Außenrand gelten ohnehin als Andockstellen, dieser Anker bietet eine ausdrücklich an.</CBF_AnchorConnect_Socket>
+  <CBF_SocketType>Art der Andockstelle</CBF_SocketType>
+  <CBF_SocketTypeTip>Was der Generator hier setzt, wenn etwas andockt: Tür, offener Bogen, Höhlenöffnung oder Geheimgang.</CBF_SocketTypeTip>
+  <CBF_SocketType_Door>Tür</CBF_SocketType_Door>
+  <CBF_SocketType_Arch>Bogen</CBF_SocketType_Arch>
+  <CBF_SocketType_Cave>Höhle</CBF_SocketType_Cave>
+  <CBF_SocketType_Secret>Geheim</CBF_SocketType_Secret>
+  <CBF_SocketWidth>Breite</CBF_SocketWidth>
+  <CBF_SocketWidthTip>Breite der Öffnung in Feldern, 1 bis 5. Verbunden werden nur Andockstellen gleicher Breite.</CBF_SocketWidthTip>
+  <CBF_P_AnchorsFromFile>Aus Datei</CBF_P_AnchorsFromFile>
+  <CBF_P_AnchorsFromFileTip>Lädt die Anker neu aus der Datei des Stücks. Nützlich, wenn die Datei nach dem Platzieren auf der Karte geändert wurde.</CBF_P_AnchorsFromFileTip>
+  <CBF_P_AnchorsFromFileAsk>Die Anker auf der Karte durch die aus der Datei ersetzen? Noch nicht exportierte Änderungen an den Ankern gehen verloren.</CBF_P_AnchorsFromFileAsk>
 </LanguageData>

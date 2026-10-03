@@ -768,6 +768,11 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_Field_spacing>Gap</CBF_Field_spacing>
   <CBF_Field_gateClearance>Gate clearance</CBF_Field_gateClearance>
   <CBF_Cfg_CoreShapeUnknown>coreShapes names the unknown shape {0}. Known: Grown, Rectangle, LShape, TShape, UShape, Cross, Step, Octagon.</CBF_Cfg_CoreShapeUnknown>
+  <CBF_Cfg_DungeonNoLevels>A dungeon needs at least one entry in levels.</CBF_Cfg_DungeonNoLevels>
+  <CBF_Cfg_DungeonNoStairs>Level {0} has no stairsDown, but levels follow below it. Without stairs the levels below cannot be reached.</CBF_Cfg_DungeonNoStairs>
+  <CBF_Cfg_SpreadLevels>spread entry {0} names levels outside 1 to {1}.</CBF_Cfg_SpreadLevels>
+  <CBF_Cfg_DungeonLastStairs>Level {0} is the last level and still has stairsDown. The stairs are not built.</CBF_Cfg_DungeonLastStairs>
+  <CBF_Cfg_DungeonFirstSize>Level {0} lies on the surface map, its mapSize is ignored.</CBF_Cfg_DungeonFirstSize>
   <CBF_S_CoreShapes>Old town shapes</CBF_S_CoreShapes>
   <CBF_S_CoreShapesAll>All shapes allowed. Click a shape to exclude it.</CBF_S_CoreShapesAll>
   <CBF_S_CoreShapeLast>At least one shape stays selected.</CBF_S_CoreShapeLast>

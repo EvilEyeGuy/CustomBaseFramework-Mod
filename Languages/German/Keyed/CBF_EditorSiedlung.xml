@@ -207,4 +207,71 @@
   <CBF_MineWin_MoveTip>In einen anderen Ort der Mine verschieben.</CBF_MineWin_MoveTip>
   <CBF_S_RangeOutside>Ein Wert liegt außerhalb des erlaubten Bereichs von {0} bis {1}.</CBF_S_RangeOutside>
   <CBF_S_RangeOrder>Der kleinste Wert ist größer als der größte.</CBF_S_RangeOrder>
+  <CBF_D_NLevels>{0} Ebene(n)</CBF_D_NLevels>
+  <CBF_D_AddLevel>+ Ebene</CBF_D_AddLevel>
+  <CBF_D_AddLevelTip>Hängt eine Ebene unter der untersten an.</CBF_D_AddLevelTip>
+  <CBF_D_AddedLevel>Ebene {0} angelegt</CBF_D_AddedLevel>
+  <CBF_D_RemovedLevel>Ebene {0} entfernt</CBF_D_RemovedLevel>
+  <CBF_D_MovedLevel>Ebene {0} verschoben</CBF_D_MovedLevel>
+  <CBF_D_LastLevel>Ein Dungeon braucht mindestens eine Ebene.</CBF_D_LastLevel>
+  <CBF_D_DeleteLevelAsk>Ebene {0} entfernen? Ihre Bereiche enthalten {1} Einträge.</CBF_D_DeleteLevelAsk>
+  <CBF_D_RenameLevel>Name der Ebene</CBF_D_RenameLevel>
+  <CBF_D_Rename>Umbenennen</CBF_D_Rename>
+  <CBF_D_RemoveLevel>Ebene entfernen</CBF_D_RemoveLevel>
+  <CBF_D_MoveUpTip>Diese Ebene eine Stufe nach oben schieben.</CBF_D_MoveUpTip>
+  <CBF_D_MoveDownTip>Diese Ebene eine Stufe nach unten schieben.</CBF_D_MoveDownTip>
+  <CBF_D_LevelInfo>Ebene {0} von {1} · {2} · {3} Bereich(e)</CBF_D_LevelInfo>
+  <CBF_D_OnSurface>im Berg der Oberflächenkarte</CBF_D_OnSurface>
+  <CBF_D_Submap>eigene Karte darunter</CBF_D_Submap>
+  <CBF_D_Access>Eingang und Treppe</CBF_D_Access>
+  <CBF_D_Entrance>Eingang</CBF_D_Entrance>
+  <CBF_D_AddEntrance>+ Eingang</CBF_D_AddEntrance>
+  <CBF_D_EntranceNone>Leer heißt, der Generator öffnet einen einfachen Stollen in den Berg.</CBF_D_EntranceNone>
+  <CBF_D_StairsUpHint>Die Treppe hinauf kommt genau dorthin, wo auf der Ebene darüber die Treppe hinab steht.</CBF_D_StairsUpHint>
+  <CBF_D_StairsDown>Treppe hinab</CBF_D_StairsDown>
+  <CBF_D_AddStairs>+ Treppe</CBF_D_AddStairs>
+  <CBF_D_LowestHint>Das ist die unterste Ebene. Sie braucht keine Treppe hinab.</CBF_D_LowestHint>
+  <CBF_D_Passages>Gänge</CBF_D_Passages>
+  <CBF_D_Corridors>Gangsegmente</CBF_D_Corridors>
+  <CBF_D_AddCorridor>+ Segment</CBF_D_AddCorridor>
+  <CBF_D_CorridorsNone>Leer heißt einfache Gangfelder. Ecken, Abzweigungen und Enden baut der Generator selbst.</CBF_D_CorridorsNone>
+  <CBF_D_CaveWidth>Höhlenbreite</CBF_D_CaveWidth>
+  <CBF_D_CaveShare>Höhlenanteil</CBF_D_CaveShare>
+  <CBF_D_SecretChance>Geheimgänge</CBF_D_SecretChance>
+  <CBF_D_MapSize>Kartengröße</CBF_D_MapSize>
+  <CBF_D_MapSizeAuto>0 = aus dem Grundriss</CBF_D_MapSizeAuto>
+  <CBF_D_MapSizeFixed>Felder je Seite</CBF_D_MapSizeFixed>
+  <CBF_D_Areas>Bereiche</CBF_D_Areas>
+  <CBF_D_AreasTip>Welche Bereiche es auf dieser Ebene geben kann, jeder mit seinen Gebäuden, wie die Bezirke eines Stadtteils.</CBF_D_AreasTip>
+  <CBF_D_Spread>Über Ebenen verteilt</CBF_D_Spread>
+  <CBF_D_SpreadNone>Noch nichts. Einträge hier landen auf beliebigen Ebenen in ihrem Bereich, zusätzlich zu den Bereichen der Ebenen.</CBF_D_SpreadNone>
+  <CBF_D_AddSpread>+ Gebäude</CBF_D_AddSpread>
+  <CBF_D_Levels>Ebenen</CBF_D_Levels>
+  <CBF_D_InArea>Im Bereich</CBF_D_InArea>
+  <CBF_D_AnyArea>beliebig</CBF_D_AnyArea>
+  <CBF_D_SpreadDistrictGone>{0} soll in den Bereich {1}, aber keine Ebene hat diesen Bereich.</CBF_D_SpreadDistrictGone>
+  <CBF_Field_entrance>Eingang</CBF_Field_entrance>
+  <CBF_Field_stairsDown>Treppe hinab</CBF_Field_stairsDown>
+  <CBF_Field_corridors>Gangsegmente</CBF_Field_corridors>
+  <CBF_Field_spread>Über Ebenen verteilt</CBF_Field_spread>
+  <CBF_Field_spreadLevels>Ebenen</CBF_Field_spreadLevels>
+  <CBF_Field_caveWidth>Höhlenbreite</CBF_Field_caveWidth>
+  <CBF_FieldDesc_caveWidth>Breite der Höhlengänge zwischen den Bereichen, 1 bis 5 Felder. Jeder Gang wählt eine Breite aus der Spanne.</CBF_FieldDesc_caveWidth>
+  <CBF_FieldDesc_caveShare>Anteil der Verbindungen, die natürliche Höhle statt gebauter Gang werden.</CBF_FieldDesc_caveShare>
+  <CBF_FieldDesc_secretChance>Wahrscheinlichkeit für Geheimgänge und versteckte Räume an Sackgassen und freien Andockstellen.</CBF_FieldDesc_secretChance>
+  <CBF_FieldDesc_levelMapSize>Größe der Karte dieser Ebene. 0 nimmt die Größe aus dem Grundriss. Auf der ersten Ebene ohne Wirkung, die liegt auf der Oberflächenkarte.</CBF_FieldDesc_levelMapSize>
+  <CBF_FieldDesc_spread>Gebäude, die der Generator über mehrere Ebenen verteilt: eine Gesamtzahl über einen Bereich von Ebenen.</CBF_FieldDesc_spread>
+  <CBF_FieldDesc_SpreadEntry_levels>Von welcher bis zu welcher Ebene, von oben gezählt. Ebene 1 liegt im Berg der Oberflächenkarte.</CBF_FieldDesc_SpreadEntry_levels>
+  <CBF_FieldDesc_SpreadEntry_district>Bereich, in den die Gebäude kommen. „beliebig“ lässt den Generator wählen.</CBF_FieldDesc_SpreadEntry_district>
+  <CBF_D_Layout>Bauweise</CBF_D_Layout>
+  <CBF_D_Layout_Corridors>Gänge</CBF_D_Layout_Corridors>
+  <CBF_D_Layout_Chambers>Kammern</CBF_D_Layout_Chambers>
+  <CBF_D_Layout_CorridorsTip>Ein Hauptgangnetz, an das die Räume andocken.</CBF_D_Layout_CorridorsTip>
+  <CBF_D_Layout_ChambersTip>Die Räume liegen direkt aneinander, ohne Gänge dazwischen.</CBF_D_Layout_ChambersTip>
+  <CBF_FieldDesc_layout>Wie die Ebene gebaut wird. Gänge: ein Hauptgangnetz mit angedockten Räumen. Kammern: Räume direkt aneinander.</CBF_FieldDesc_layout>
+  <CBF_D_Layout_Cave>Höhle</CBF_D_Layout_Cave>
+  <CBF_D_Layout_CaveTip>Natürliche Höhlenkammern ohne gemauerte Wände.</CBF_D_Layout_CaveTip>
+  <CBF_D_LayoutFromLevel>wie die Ebene ({0})</CBF_D_LayoutFromLevel>
+  <CBF_FieldDesc_DistrictSpec_layout>Eigene Bauweise für diesen Bereich. Leer übernimmt die Bauweise der Ebene.</CBF_FieldDesc_DistrictSpec_layout>
+  <CBF_D_NewPlan>Neuer Dungeon</CBF_D_NewPlan>
 </LanguageData>

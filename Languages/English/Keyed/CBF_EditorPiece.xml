@@ -132,4 +132,16 @@
   <CBF_P_ModAdd>Add mod...</CBF_P_ModAdd>
   <CBF_P_ModActive>Active</CBF_P_ModActive>
   <CBF_P_ModInactive>Installed, not active</CBF_P_ModInactive>
+  <CBF_AnchorConnect_Socket>A docking point for dungeon parts. Corridors, caves or other rooms connect here. Doors and openings on the outer edge count as docking points anyway, this anchor offers one explicitly.</CBF_AnchorConnect_Socket>
+  <CBF_SocketType>Socket type</CBF_SocketType>
+  <CBF_SocketTypeTip>What the generator puts here when something docks: door, open arch, cave opening or secret passage.</CBF_SocketTypeTip>
+  <CBF_SocketType_Door>Door</CBF_SocketType_Door>
+  <CBF_SocketType_Arch>Arch</CBF_SocketType_Arch>
+  <CBF_SocketType_Cave>Cave</CBF_SocketType_Cave>
+  <CBF_SocketType_Secret>Secret</CBF_SocketType_Secret>
+  <CBF_SocketWidth>Width</CBF_SocketWidth>
+  <CBF_SocketWidthTip>Width of the opening in cells, 1 to 5. Only sockets of the same width connect.</CBF_SocketWidthTip>
+  <CBF_P_AnchorsFromFile>From file</CBF_P_AnchorsFromFile>
+  <CBF_P_AnchorsFromFileTip>Reload the anchors from the piece file. Useful when the file was changed after the piece was placed on the map.</CBF_P_AnchorsFromFileTip>
+  <CBF_P_AnchorsFromFileAsk>Replace the anchors on the map with the ones from the file? Changes to the anchors that were not exported yet are lost.</CBF_P_AnchorsFromFileAsk>
 </LanguageData>

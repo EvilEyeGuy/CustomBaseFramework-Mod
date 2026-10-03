@@ -202,4 +202,71 @@
   <CBF_MineWin_MoveTip>Move to another place in the mine.</CBF_MineWin_MoveTip>
   <CBF_S_RangeOutside>A value is outside the allowed range of {0} to {1}.</CBF_S_RangeOutside>
   <CBF_S_RangeOrder>The minimum is larger than the maximum.</CBF_S_RangeOrder>
+  <CBF_D_NLevels>{0} level(s)</CBF_D_NLevels>
+  <CBF_D_AddLevel>+ Level</CBF_D_AddLevel>
+  <CBF_D_AddLevelTip>Adds a level below the lowest one.</CBF_D_AddLevelTip>
+  <CBF_D_AddedLevel>Level {0} added</CBF_D_AddedLevel>
+  <CBF_D_RemovedLevel>Level {0} removed</CBF_D_RemovedLevel>
+  <CBF_D_MovedLevel>Level {0} moved</CBF_D_MovedLevel>
+  <CBF_D_LastLevel>A dungeon needs at least one level.</CBF_D_LastLevel>
+  <CBF_D_DeleteLevelAsk>Remove level {0}? Its areas hold {1} entries.</CBF_D_DeleteLevelAsk>
+  <CBF_D_RenameLevel>Name of the level</CBF_D_RenameLevel>
+  <CBF_D_Rename>Rename</CBF_D_Rename>
+  <CBF_D_RemoveLevel>Remove level</CBF_D_RemoveLevel>
+  <CBF_D_MoveUpTip>Move this level one up.</CBF_D_MoveUpTip>
+  <CBF_D_MoveDownTip>Move this level one down.</CBF_D_MoveDownTip>
+  <CBF_D_LevelInfo>Level {0} of {1} · {2} · {3} area(s)</CBF_D_LevelInfo>
+  <CBF_D_OnSurface>in the mountain of the surface map</CBF_D_OnSurface>
+  <CBF_D_Submap>own map below</CBF_D_Submap>
+  <CBF_D_Access>Entrance and stairs</CBF_D_Access>
+  <CBF_D_Entrance>Entrance</CBF_D_Entrance>
+  <CBF_D_AddEntrance>+ Entrance</CBF_D_AddEntrance>
+  <CBF_D_EntranceNone>Empty means the generator opens a plain tunnel into the mountain.</CBF_D_EntranceNone>
+  <CBF_D_StairsUpHint>The stairs up are placed where the stairs down of the level above stand.</CBF_D_StairsUpHint>
+  <CBF_D_StairsDown>Stairs down</CBF_D_StairsDown>
+  <CBF_D_AddStairs>+ Stairs</CBF_D_AddStairs>
+  <CBF_D_LowestHint>This is the lowest level. It needs no stairs down.</CBF_D_LowestHint>
+  <CBF_D_Passages>Passages</CBF_D_Passages>
+  <CBF_D_Corridors>Corridor segments</CBF_D_Corridors>
+  <CBF_D_AddCorridor>+ Segment</CBF_D_AddCorridor>
+  <CBF_D_CorridorsNone>Empty means plain corridor cells. Corners, junctions and ends are built by the generator.</CBF_D_CorridorsNone>
+  <CBF_D_CaveWidth>Cave width</CBF_D_CaveWidth>
+  <CBF_D_CaveShare>Cave share</CBF_D_CaveShare>
+  <CBF_D_SecretChance>Secret passages</CBF_D_SecretChance>
+  <CBF_D_MapSize>Map size</CBF_D_MapSize>
+  <CBF_D_MapSizeAuto>0 = from the layout</CBF_D_MapSizeAuto>
+  <CBF_D_MapSizeFixed>cells per side</CBF_D_MapSizeFixed>
+  <CBF_D_Areas>Areas</CBF_D_Areas>
+  <CBF_D_AreasTip>Which areas this level can have, each with its buildings, like the districts of a ward.</CBF_D_AreasTip>
+  <CBF_D_Spread>Spread over levels</CBF_D_Spread>
+  <CBF_D_SpreadNone>Nothing yet. Entries here are placed on any level within their range, in addition to the areas.</CBF_D_SpreadNone>
+  <CBF_D_AddSpread>+ Building</CBF_D_AddSpread>
+  <CBF_D_Levels>Levels</CBF_D_Levels>
+  <CBF_D_InArea>In area</CBF_D_InArea>
+  <CBF_D_AnyArea>any</CBF_D_AnyArea>
+  <CBF_D_SpreadDistrictGone>{0} should go into area {1}, but no level has that area.</CBF_D_SpreadDistrictGone>
+  <CBF_Field_entrance>Entrance</CBF_Field_entrance>
+  <CBF_Field_stairsDown>Stairs down</CBF_Field_stairsDown>
+  <CBF_Field_corridors>Corridor segments</CBF_Field_corridors>
+  <CBF_Field_spread>Spread over levels</CBF_Field_spread>
+  <CBF_Field_spreadLevels>levels</CBF_Field_spreadLevels>
+  <CBF_Field_caveWidth>Cave width</CBF_Field_caveWidth>
+  <CBF_FieldDesc_caveWidth>Width of the cave passages between the areas, 1 to 5 cells. Each passage picks a width within the range.</CBF_FieldDesc_caveWidth>
+  <CBF_FieldDesc_caveShare>Share of the connections that become natural caves instead of built corridors.</CBF_FieldDesc_caveShare>
+  <CBF_FieldDesc_secretChance>Chance for secret passages and hidden rooms at dead ends and free sockets.</CBF_FieldDesc_secretChance>
+  <CBF_FieldDesc_levelMapSize>Size of the map of this level. 0 takes the size from the layout. Ignored on the first level, it lies on the surface map.</CBF_FieldDesc_levelMapSize>
+  <CBF_FieldDesc_spread>Buildings the generator spreads over several levels: a total count over a range of levels.</CBF_FieldDesc_spread>
+  <CBF_FieldDesc_SpreadEntry_levels>From which to which level, counted from the top. Level 1 lies in the mountain of the surface map.</CBF_FieldDesc_SpreadEntry_levels>
+  <CBF_FieldDesc_SpreadEntry_district>Area the buildings go into. "any" lets the generator choose.</CBF_FieldDesc_SpreadEntry_district>
+  <CBF_D_Layout>Layout</CBF_D_Layout>
+  <CBF_D_Layout_Corridors>Corridors</CBF_D_Layout_Corridors>
+  <CBF_D_Layout_Chambers>Chambers</CBF_D_Layout_Chambers>
+  <CBF_D_Layout_CorridorsTip>A main corridor network, the rooms dock onto it.</CBF_D_Layout_CorridorsTip>
+  <CBF_D_Layout_ChambersTip>Rooms sit directly against each other, without corridors in between.</CBF_D_Layout_ChambersTip>
+  <CBF_FieldDesc_layout>How the level is built. Corridors: a main corridor network with rooms docked onto it. Chambers: rooms directly against each other.</CBF_FieldDesc_layout>
+  <CBF_D_Layout_Cave>Cave</CBF_D_Layout_Cave>
+  <CBF_D_Layout_CaveTip>Natural cave chambers without built walls.</CBF_D_Layout_CaveTip>
+  <CBF_D_LayoutFromLevel>like the level ({0})</CBF_D_LayoutFromLevel>
+  <CBF_FieldDesc_DistrictSpec_layout>Own layout for this area. Empty takes the layout of the level.</CBF_FieldDesc_DistrictSpec_layout>
+  <CBF_D_NewPlan>New dungeon</CBF_D_NewPlan>
 </LanguageData>

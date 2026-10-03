@@ -768,6 +768,11 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_Field_spacing>Lücke</CBF_Field_spacing>
   <CBF_Field_gateClearance>Torabstand</CBF_Field_gateClearance>
   <CBF_Cfg_CoreShapeUnknown>coreShapes nennt die unbekannte Form {0}. Bekannt: Grown, Rectangle, LShape, TShape, UShape, Cross, Step, Octagon.</CBF_Cfg_CoreShapeUnknown>
+  <CBF_Cfg_DungeonNoLevels>Ein Dungeon braucht mindestens einen Eintrag in levels.</CBF_Cfg_DungeonNoLevels>
+  <CBF_Cfg_DungeonNoStairs>Ebene {0} hat keine stairsDown, darunter folgen aber weitere Ebenen. Ohne Treppe sind sie nicht erreichbar.</CBF_Cfg_DungeonNoStairs>
+  <CBF_Cfg_SpreadLevels>Der spread-Eintrag {0} nennt Ebenen außerhalb von 1 bis {1}.</CBF_Cfg_SpreadLevels>
+  <CBF_Cfg_DungeonLastStairs>Ebene {0} ist die unterste und hat trotzdem stairsDown. Die Treppe wird nicht gebaut.</CBF_Cfg_DungeonLastStairs>
+  <CBF_Cfg_DungeonFirstSize>Ebene {0} liegt auf der Oberflächenkarte, ihr mapSize wird nicht beachtet.</CBF_Cfg_DungeonFirstSize>
   <CBF_S_CoreShapes>Altstadtformen</CBF_S_CoreShapes>
   <CBF_S_CoreShapesAll>Alle Formen erlaubt. Ein Klick auf eine Form schließt sie aus.</CBF_S_CoreShapesAll>
   <CBF_S_CoreShapeLast>Mindestens eine Form bleibt gewählt.</CBF_S_CoreShapeLast>

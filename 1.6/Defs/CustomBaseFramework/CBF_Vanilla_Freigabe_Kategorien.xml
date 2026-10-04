@@ -413,6 +413,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
+    <annexes>
+      <li>CBF_Vanilla_Annex_Home</li>
+    </annexes>
+    <annexChance>0.8</annexChance>
+    <annexMax>3</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -431,6 +436,38 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Annex_Home</defName>
+    <label>home annex</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_RowHouse</defName>
+    <label>row house</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_TownHouse</defName>
+    <label>town house</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <annexes>
+      <li>CBF_Vanilla_Annex_Home</li>
+    </annexes>
+    <annexChance>0.5</annexChance>
+    <annexMax>2</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
 </Defs>

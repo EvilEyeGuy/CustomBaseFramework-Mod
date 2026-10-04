@@ -888,4 +888,32 @@
     <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_AlchemyWorkshop</defName>
+    <label>alchemy workshop</label><parent>CBF_MO_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <annexes>
+      <li>CBF_MO_Annex_Town</li>
+    </annexes>
+    <annexChance>0.5</annexChance>
+    <annexMax>2</annexMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Library</defName>
+    <label>library</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <annexes>
+      <li>CBF_MO_Annex_Town</li>
+    </annexes>
+    <annexChance>0.5</annexChance>
+    <annexMax>2</annexMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
 </Defs>

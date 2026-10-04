@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Annex_Shed</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_Annex_Home</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>4</symbol><anchor>Shed</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>b</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>k</symbol><thing>ToolCabinet</thing><rotation>South</rotation></li>
+      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>x</symbol><thing>WoodLog</thing><count>40</count></li>
+    </legend>
+    <mask>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+    </mask>
+    <terrain>
+      <li>wwwwww</li>
+      <li>wwwwww</li>
+      <li>wwwwww</li>
+      <li>wwwwww</li>
+    </terrain>
+    <things>
+      <li>SSSSSS</li>
+      <li>Ob.k.O</li>
+      <li>Ox...O</li>
+      <li>OOOFOO</li>
+    </things>
+    <things2>
+      <li>BBBBBB</li>
+      <li>B....B</li>
+      <li>B....B</li>
+      <li>BBBBBB</li>
+    </things2>
+    <roof>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>..+...</li>
+      <li>.44...</li>
+      <li>......</li>
+      <li>......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

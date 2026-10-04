@@ -27,6 +27,7 @@
       <li><symbol>g</symbol><thing>ElectricStove</thing><rotation>North</rotation></li>
       <li><symbol>h</symbol><terrain>TileGranite</terrain></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
     </legend>
     <mask>
       <li>##########</li>
@@ -79,14 +80,14 @@
       <li>^^^^^^....</li>
     </roof>
     <anchors>
-      <li>..........</li>
+      <li>.....+....</li>
       <li>.....1....</li>
-      <li>..8.......</li>
+      <li>+.8......+</li>
       <li>..........</li>
       <li>..........</li>
       <li>..........</li>
       <li>....2.....</li>
-      <li>..........</li>
+      <li>..+.......</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

@@ -30,6 +30,7 @@
       <li><symbol>p</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>t</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
     </legend>
     <mask>
       <li>#########</li>
@@ -82,12 +83,12 @@
       <li>....^^^^^</li>
     </roof>
     <anchors>
-      <li>.........</li>
+      <li>..+......</li>
       <li>...2.....</li>
+      <li>........+</li>
+      <li>+.8..1...</li>
       <li>.........</li>
-      <li>..8..1...</li>
-      <li>.........</li>
-      <li>.........</li>
+      <li>.+.......</li>
       <li>.........</li>
       <li>.........</li>
     </anchors>

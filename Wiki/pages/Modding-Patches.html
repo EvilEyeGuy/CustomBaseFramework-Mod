@@ -1,0 +1,294 @@
+<!doctype html><html lang="en" data-look="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Changing existing content with XML patches · Custom Base Framework</title><style>
+:root,[data-look="dark"]{--grund:#151b1e;--fenster:#1c1b1d;--leiste:#0f1416;--spalte:#25282a;--rand:#3b3f41;--linie:#2c2f31;
+--text:#d8d6d0;--kopf:#e6d7b4;--titel:#efe9dc;--leise:#9a9c9b;--blass:#6c706f;--akzent:#d2a44e;--wahl:#4a4a32;--wahlrand:#b58a45;
+--wahltext:#f0dcae;--code:#121212;--codetext:#f0dcae;--feld:#121212;--schrift:Arial,"Segoe UI",sans-serif;--lese:Arial,"Segoe UI",sans-serif;
+--lesegroesse:15px;--h1:26px;--h2:20px;--kachel:transparent;--knopf:#4a3b22;--xt:#e6b866;--xa:#9fb7c9;--xw:#a9c98a}
+[data-look="bright"]{--grund:#e9e5dc;--fenster:#f7f4ee;--leiste:#efeae0;--spalte:#f7f4ee;--rand:#cfc6b4;--linie:#d8d0c0;
+--text:#26231e;--kopf:#26231e;--titel:#26231e;--leise:#4a4439;--blass:#7a7263;--akzent:#8a5a14;--wahl:#f7f4ee;--wahlrand:#a8741f;
+--wahltext:#8a5a14;--code:#e9e3d6;--codetext:#26231e;--feld:#fbf9f5;--schrift:Arial,"Segoe UI",sans-serif;--lese:Arial,"Segoe UI",sans-serif;
+--lesegroesse:15px;--h1:26px;--h2:20px;--kachel:#3a3631;--knopf:#efe0c2;--xt:#8a4a14;--xa:#2f5f7f;--xw:#3f6f2a}
+*{box-sizing:border-box}
+html{scroll-padding-top:56px}
+body{margin:0;background:var(--grund);color:var(--text);font-family:var(--schrift);scrollbar-color:var(--rand) var(--grund)}
+nav.leiste,aside.rechts{scrollbar-color:var(--rand) var(--leiste);scrollbar-width:thin}
+.fenster{max-width:1760px;margin:0 auto;min-height:100vh;display:grid;grid-template-columns:240px minmax(0,1fr) 220px;
+grid-template-rows:auto 1fr;border-left:1px solid var(--rand);border-right:1px solid var(--rand);background:var(--fenster)}
+.kopf{grid-column:1/-1;position:sticky;top:0;z-index:5;background:var(--leiste);border-bottom:1px solid var(--rand);
+display:flex;align-items:center;gap:14px;padding:0 14px;height:42px;font-size:13px}
+.marke{color:var(--titel);text-decoration:none;font-size:15px;white-space:nowrap}
+.pfad{color:var(--leise);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pfad a{color:var(--leise);text-decoration:none}
+.suche{margin-left:auto;min-width:230px;display:flex;justify-content:space-between;gap:10px;background:var(--feld);
+border:1px solid var(--rand);color:var(--blass);padding:4px 8px;font:12px var(--schrift);cursor:pointer}
+.suche kbd{font:11px var(--schrift);border:1px solid var(--rand);padding:0 4px}
+.look{background:none;border:1px solid var(--wahlrand);color:var(--wahltext);font:12px var(--schrift);padding:3px 10px;cursor:pointer}
+.look{background:var(--knopf)}
+nav.leiste{background:var(--leiste);border-right:1px solid var(--rand);padding:10px 8px 40px;position:sticky;top:42px;
+height:calc(100vh - 42px);overflow:auto}
+.gruppe{margin:0 0 8px}
+.gruppe b{display:flex;align-items:center;gap:9px;color:var(--kopf);font-size:14px;padding:6px 6px 3px}
+.gruppe a{display:block;color:var(--leise);text-decoration:none;font-size:13px;padding:3px 8px 3px 16px;border:1px solid transparent}
+.gruppe a:hover{color:var(--titel);background:var(--linie)}
+.gruppe a.hier{background:var(--wahl);border-color:var(--wahlrand);color:var(--wahltext)}
+.gruppe.modding{margin-top:14px;padding-top:10px;border-top:1px solid var(--rand)}
+main{padding:30px 46px 90px;min-width:0;font-family:var(--lese);font-size:var(--lesegroesse);line-height:1.65}
+.inhalt{max-width:1180px;margin:0 auto}
+.inhalt h1{color:var(--titel);font-weight:normal;font-size:var(--h1);line-height:1.12;margin:0 0 6px}
+.unter{font:12px var(--schrift);color:var(--blass);margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid var(--rand)}
+.inhalt h2{color:var(--kopf);font-weight:normal;font-size:var(--h2);margin:38px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--rand)}
+.inhalt h3{color:var(--kopf);font:bold 16px var(--schrift);margin:26px 0 8px;padding-bottom:3px;border-bottom:1px solid var(--linie)}
+.inhalt h4{color:var(--kopf);font:bold 14px var(--schrift);margin:20px 0 6px}
+.inhalt a{color:var(--akzent)}
+.inhalt strong{color:var(--titel)}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.86em;background:var(--code);color:var(--codetext);padding:1px 5px;border:1px solid var(--linie)}
+pre{background:var(--code);border:1px solid var(--rand);padding:12px 14px;overflow-x:auto;font-size:13px;line-height:1.5}
+pre code{border:0;padding:0}
+.xt{color:var(--xt)}.xa{color:var(--xa)}.xw{color:var(--xw)}.xk{color:var(--blass)}
+table{border-collapse:collapse;font:13px/1.5 var(--schrift);margin:14px 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--rand);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:var(--spalte);color:var(--kopf);font-weight:normal}
+.bild{display:block;margin:16px 0 20px}
+.bild img{display:block;max-width:100%;height:auto;border:1px solid var(--rand)}
+.inhalt ol{padding-left:26px}
+.inhalt li{margin:4px 0}
+.home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:50px;padding-top:16px;border-top:1px solid var(--rand);font-family:var(--schrift)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--rand);padding:10px 14px;color:var(--text)}
+.schritte a:hover{border-color:var(--wahlrand)}
+.schritte span{display:block;font-size:11px;color:var(--blass)}
+.schritte .weiter{text-align:right;margin-left:auto}
+aside.rechts{background:var(--spalte);border-left:1px solid var(--rand);padding:24px 12px;font-size:13px}
+.aufseite{position:sticky;top:66px}
+.aufseite b{display:block;color:var(--blass);font-size:12px;font-weight:normal;margin:0 0 8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:3px 6px 3px 10px;border-left:2px solid var(--rand)}
+.aufseite a.t3{padding-left:22px;font-size:12px}
+.aufseite a:hover{color:var(--titel)}
+.aufseite a.an{color:var(--wahltext);border-left-color:var(--wahlrand)}
+.fund{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:flex-start;justify-content:center;padding-top:12vh;z-index:20}
+.fund.offen{display:flex}
+.fundbox{width:min(640px,92vw);background:var(--fenster);border:1px solid var(--wahlrand)}
+.fundbox input{width:100%;border:0;border-bottom:1px solid var(--rand);background:var(--feld);color:var(--text);padding:12px 14px;font:15px var(--schrift);outline:none}
+.fundliste{max-height:55vh;overflow:auto;margin:0;padding:4px;list-style:none;font-family:var(--schrift)}
+.fundliste li{padding:8px 10px;cursor:pointer;border:1px solid transparent}
+.fundliste li.an{background:var(--wahl);border-color:var(--wahlrand)}
+.fundliste .t{color:var(--titel);font-size:14px}
+.fundliste .s{color:var(--blass);font-size:12px;margin-top:2px}
+.fundliste mark{background:var(--wahlrand);color:#1b1b1b}
+@media (max-width:1180px){.fenster{grid-template-columns:230px minmax(0,1fr)}aside.rechts{display:none}}
+@media (max-width:820px){.fenster{grid-template-columns:1fr}nav.leiste{position:static;height:auto}.pfad{display:none}.suche{min-width:0}main{padding:22px 16px 60px}}
+</style><script>
+(function(){
+var w=document.documentElement;
+try{var g=localStorage.getItem('cbf-look');if(g==='dark'||g==='bright')w.setAttribute('data-look',g);}catch(e){}
+function knopf(){var b=document.getElementById('look');if(b)b.textContent=w.getAttribute('data-look')==='bright'?'Dark':'Bright';}
+document.addEventListener('DOMContentLoaded',function(){
+knopf();
+document.getElementById('look').addEventListener('click',function(){
+var n=w.getAttribute('data-look')==='bright'?'dark':'bright';w.setAttribute('data-look',n);
+try{localStorage.setItem('cbf-look',n);}catch(e){}knopf();});
+var links=[].slice.call(document.querySelectorAll('.aufseite a'));
+if(links.length&&'IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('an',a.getAttribute('href')==='#'+e.target.id);});});},{rootMargin:'0px 0px -70% 0px'});
+document.querySelectorAll('.inhalt h2[id],.inhalt h3[id]').forEach(function(h){io.observe(h);});}
+var fund=document.getElementById('fund'),ein=document.getElementById('fundein'),liste=document.getElementById('fundliste'),treffer=[],wahl=0;
+var basis=document.body.getAttribute('data-basis')||'';
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+function markiere(s,t){if(!t)return esc(s);var i=s.toLowerCase().indexOf(t);if(i<0)return esc(s);return esc(s.slice(0,i))+'<mark>'+esc(s.slice(i,i+t.length))+'</mark>'+esc(s.slice(i+t.length));}
+function suchen(){var t=ein.value.trim().toLowerCase();var idx=window.CBF_SUCHE||[];
+treffer=idx.map(function(p){var s=0,ti=p.t.toLowerCase(),x=p.x.toLowerCase(),i=x.indexOf(t),aus='';
+if(!t)s=1;else{if(ti.indexOf(t)===0)s=3;else if(ti.indexOf(t)>=0)s=2;if(i>=0){if(!s)s=1;var a=Math.max(0,i-50);aus=(a?'... ':'')+p.x.slice(a,i+t.length+80)+' ...';}}
+return{p:p,s:s,aus:aus};}).filter(function(r){return r.s;}).sort(function(a,b){return b.s-a.s;}).slice(0,40);
+wahl=0;zeichnen(t);}
+function zeichnen(t){liste.innerHTML=treffer.length?treffer.map(function(r,i){return '<li data-i="'+i+'"'+(i===wahl?' class="an"':'')+'><div class="t">'+markiere(r.p.t,t)+'</div>'+(r.aus?'<div class="s">'+markiere(r.aus,t)+'</div>':'')+'</li>';}).join(''):'<li><div class="s">No page found.</div></li>';
+var a=liste.querySelector('.an');if(a)a.scrollIntoView({block:'nearest'});}
+function gehe(i){var r=treffer[i];if(r)location.href=basis+r.p.u;}
+function auf(){fund.classList.add('offen');ein.value='';suchen();ein.focus();}
+function zu(){fund.classList.remove('offen');}
+document.getElementById('suche').addEventListener('click',auf);
+ein.addEventListener('input',suchen);
+ein.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();wahl=Math.min(wahl+1,treffer.length-1);zeichnen(ein.value.trim().toLowerCase());}
+else if(e.key==='ArrowUp'){e.preventDefault();wahl=Math.max(wahl-1,0);zeichnen(ein.value.trim().toLowerCase());}
+else if(e.key==='Enter'){e.preventDefault();gehe(wahl);}});
+liste.addEventListener('click',function(e){var li=e.target.closest('li[data-i]');if(li)gehe(+li.getAttribute('data-i'));});
+fund.addEventListener('click',function(e){if(e.target===fund)zu();});
+document.addEventListener('keydown',function(e){var tippt=/INPUT|TEXTAREA/.test(document.activeElement.tagName);
+if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();fund.classList.contains('offen')?zu():auf();}
+else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')zu();});
+});
+})();
+</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / XML patches</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Patches.html" class="hier">XML patches</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Modding-Dungeons.html">Dungeons (development)</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="changing-existing-content-with-xml-patches">Changing existing content with XML patches</h1><p class="unter">Modding</p>
+<p>Use a patch when you want to change a building, settlement plan or loot table supplied by another mod. For example, you can give the modern village a larger garrison without copying its houses, roads and other settings. Updates to those untouched parts will still reach your game.</p>
+<p>To create an independent settlement instead, give a new <code>SettlementPlanDef</code> its own <code>defName</code>. See <a href="Modding-Overview.html">Your own content mod</a> for the folder layout and dependencies. A second definition with an existing <code>defName</code> is not a patch.</p>
+<h2 id="where-the-file-goes">Where the file goes</h2>
+<p>Create your own local content mod and load it after CBF and any other mod you are changing. In a mod with a loaded <code>1.6</code> folder, save the examples below under <code>1.6/Patches/</code>. A patch file has a <code>&lt;Patch&gt;</code> root; new definitions belong under <code>Defs/</code> with a <code>&lt;Defs&gt;</code> root.</p>
+<p>The editor can produce patches too: edit supported content from another mod and choose <strong>Save as patch</strong>. Keep your hand-written patches outside its <code>Patches/CBF_Changes/</code> folder. Saving that definition again in the editor rewrites its generated patch file.</p>
+<p>Restart RimWorld after changing XML by hand, then test a newly generated settlement. An existing map already contains its buildings and pawns; a patch does not rebuild them.</p>
+<h2 id="find-the-definition-and-the-field">Find the definition and the field</h2>
+<p>Find the <code>defName</code> in the source XML or the editor. Use this internal name, not the translated label shown to players. Then follow the XML nesting to the value you want to change.</p>
+<p>This excerpt is from the shipped <code>CBF_Plan_ModernVillage</code> plan:</p>
+<pre><code class="language-xml">&lt;<span class="xt">wards</span>&gt;
+  &lt;<span class="xt">li</span>&gt;
+    &lt;<span class="xt">kind</span>&gt;Town&lt;/<span class="xt">kind</span>&gt;
+    &lt;<span class="xt">garrison</span>&gt;
+      &lt;<span class="xt">li</span>&gt;
+        &lt;<span class="xt">list</span>&gt;CBF_Modern_Garrison_Inside&lt;/<span class="xt">list</span>&gt;
+        &lt;<span class="xt">count</span>&gt;6~9&lt;/<span class="xt">count</span>&gt;
+        &lt;<span class="xt">post</span>&gt;Inside&lt;/<span class="xt">post</span>&gt;
+      &lt;/<span class="xt">li</span>&gt;
+    &lt;/<span class="xt">garrison</span>&gt;
+  &lt;/<span class="xt">li</span>&gt;
+&lt;/<span class="xt">wards</span>&gt;
+</code></pre>
+<p>Each <code>li</code> is one list entry. The first belongs to <code>wards</code>; the second belongs to that ward's <code>garrison</code>. The field reference calls those embedded types <a href="Stadtteil.html">Stadtteil</a> and <a href="Garnisonseintrag.html">Garnisonseintrag</a>. Those class names explain the data structure; they are not extra XML tags to insert.</p>
+<p>The XPath for this count is:</p>
+<pre><code class="language-text">Defs/CustomBaseFramework.SettlementPlanDef[defName=&quot;CBF_Plan_ModernVillage&quot;]/wards/li[kind=&quot;Town&quot;]/garrison/li[list=&quot;CBF_Modern_Garrison_Inside&quot;]/count
+</code></pre>
+<p>Read it from left to right: find the plan, its Town ward, the garrison entry using the named pawn list, and finally that entry's count. Conditions in square brackets select matching nodes. Prefer these names to positions such as <code>li[1]</code>, which may point to a different entry after an update.</p>
+<h2 id="replace-an-existing-value">Replace an existing value</h2>
+<p>This complete patch changes the Town garrison from <code>6~9</code> to <code>10~14</code>:</p>
+<pre><code class="language-xml">&lt;<span class="xt">Patch</span>&gt;
+  &lt;<span class="xt">Operation</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationReplace&quot;</span>&gt;
+    &lt;<span class="xt">xpath</span>&gt;Defs/CustomBaseFramework.SettlementPlanDef[defName=&quot;CBF_Plan_ModernVillage&quot;]/wards/li[kind=&quot;Town&quot;]/garrison/li[list=&quot;CBF_Modern_Garrison_Inside&quot;]/count&lt;/<span class="xt">xpath</span>&gt;
+    &lt;<span class="xt">value</span>&gt;
+      &lt;<span class="xt">count</span>&gt;10~14&lt;/<span class="xt">count</span>&gt;
+    &lt;/<span class="xt">value</span>&gt;
+  &lt;/<span class="xt">Operation</span>&gt;
+&lt;/<span class="xt">Patch</span>&gt;
+</code></pre>
+<p><code>Replace</code> replaces the selected node itself, so <code>value</code> includes the <code>&lt;count&gt;</code> tag. It changes this garrison entry only. The countryside's garrison and pawns spawned by buildings are additional inhabitants, so 10–14 is not the settlement's total pawn count.</p>
+<p>The target must exist in the loaded XML. A C# default shown in the field reference does not create an XML node for a patch to select.</p>
+<h2 id="add-a-field-that-may-be-absent">Add a field that may be absent</h2>
+<p>Use <code>PatchOperationAdd</code> on the parent when the field is absent. Adding a second copy of a field that already exists can cause loading problems. A conditional operation handles both cases.</p>
+<p>This patch sets the existing small house's wall preference. If it has no <code>placement</code> block, the patch creates it. If <code>placement</code> exists, it adds or replaces only <code>atWall</code>:</p>
+<pre><code class="language-xml">&lt;<span class="xt">Patch</span>&gt;
+  &lt;<span class="xt">Operation</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationConditional&quot;</span>&gt;
+    &lt;<span class="xt">xpath</span>&gt;Defs/CustomBaseFramework.PieceDef[defName=&quot;CBF_Vanilla_Dwelling_Small_A&quot;]/placement&lt;/<span class="xt">xpath</span>&gt;
+    &lt;<span class="xt">match</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationConditional&quot;</span>&gt;
+      &lt;<span class="xt">xpath</span>&gt;Defs/CustomBaseFramework.PieceDef[defName=&quot;CBF_Vanilla_Dwelling_Small_A&quot;]/placement/atWall&lt;/<span class="xt">xpath</span>&gt;
+      &lt;<span class="xt">match</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationReplace&quot;</span>&gt;
+        &lt;<span class="xt">xpath</span>&gt;Defs/CustomBaseFramework.PieceDef[defName=&quot;CBF_Vanilla_Dwelling_Small_A&quot;]/placement/atWall&lt;/<span class="xt">xpath</span>&gt;
+        &lt;<span class="xt">value</span>&gt;&lt;<span class="xt">atWall</span>&gt;Preferred&lt;/<span class="xt">atWall</span>&gt;&lt;/<span class="xt">value</span>&gt;
+      &lt;/<span class="xt">match</span>&gt;
+      &lt;<span class="xt">nomatch</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationAdd&quot;</span>&gt;
+        &lt;<span class="xt">xpath</span>&gt;Defs/CustomBaseFramework.PieceDef[defName=&quot;CBF_Vanilla_Dwelling_Small_A&quot;]/placement&lt;/<span class="xt">xpath</span>&gt;
+        &lt;<span class="xt">value</span>&gt;&lt;<span class="xt">atWall</span>&gt;Preferred&lt;/<span class="xt">atWall</span>&gt;&lt;/<span class="xt">value</span>&gt;
+      &lt;/<span class="xt">nomatch</span>&gt;
+    &lt;/<span class="xt">match</span>&gt;
+    &lt;<span class="xt">nomatch</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationAdd&quot;</span>&gt;
+      &lt;<span class="xt">xpath</span>&gt;Defs/CustomBaseFramework.PieceDef[defName=&quot;CBF_Vanilla_Dwelling_Small_A&quot;]&lt;/<span class="xt">xpath</span>&gt;
+      &lt;<span class="xt">value</span>&gt;&lt;<span class="xt">placement</span>&gt;&lt;<span class="xt">atWall</span>&gt;Preferred&lt;/<span class="xt">atWall</span>&gt;&lt;/<span class="xt">placement</span>&gt;&lt;/<span class="xt">value</span>&gt;
+    &lt;/<span class="xt">nomatch</span>&gt;
+  &lt;/<span class="xt">Operation</span>&gt;
+&lt;/<span class="xt">Patch</span>&gt;
+</code></pre>
+<p>The house may now favour a town wall when the plan has one; it remains eligible elsewhere. <code>Required</code> would demand wall contact and is unsuitable for a design that must also work in open towns. See <a href="Modding-Pieces.html#placement">Placement rules</a>.</p>
+<h2 id="add-or-remove-a-list-entry">Add or remove a list entry</h2>
+<p>To give the village another building request, select its <code>entries</code> container and add one <code>li</code>. This example uses a tavern category already available in CBF and requests one additional tavern:</p>
+<pre><code class="language-xml">&lt;<span class="xt">Patch</span>&gt;
+  &lt;<span class="xt">Operation</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationAdd&quot;</span>&gt;
+    &lt;<span class="xt">xpath</span>&gt;Defs/CustomBaseFramework.SettlementPlanDef[defName=&quot;CBF_Plan_ModernVillage&quot;]/wards/li[kind=&quot;Town&quot;]/districts/li[name=&quot;VillageCore&quot;]/entries&lt;/<span class="xt">xpath</span>&gt;
+    &lt;<span class="xt">value</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_Vanilla_Tavern&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;/<span class="xt">value</span>&gt;
+  &lt;/<span class="xt">Operation</span>&gt;
+&lt;/<span class="xt">Patch</span>&gt;
+</code></pre>
+<p>The plan already has a <code>CBF_Vanilla_Tavern</code> entry requesting <code>0~1</code>. Adding this example leaves that request in place. To change the original quantity instead, replace its <code>count</code> using <code>entries/li[tag="CBF_Vanilla_Tavern"]/count</code>. Requested buildings still need enough room to be placed.</p>
+<p>To remove the original tavern request, use this alternative patch:</p>
+<pre><code class="language-xml">&lt;<span class="xt">Patch</span>&gt;
+  &lt;<span class="xt">Operation</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationRemove&quot;</span>&gt;
+    &lt;<span class="xt">xpath</span>&gt;Defs/CustomBaseFramework.SettlementPlanDef[defName=&quot;CBF_Plan_ModernVillage&quot;]/wards/li[kind=&quot;Town&quot;]/districts/li[name=&quot;VillageCore&quot;]/entries/li[tag=&quot;CBF_Vanilla_Tavern&quot;]&lt;/<span class="xt">xpath</span>&gt;
+  &lt;/<span class="xt">Operation</span>&gt;
+&lt;/<span class="xt">Patch</span>&gt;
+</code></pre>
+<p><code>Remove</code> has no <code>value</code>. An XPath can match several nodes: after applying the Add example above, this Remove example would remove both matching tavern entries. Test each example separately unless you intend to combine their effects.</p>
+<h2 id="choose-how-widely-a-change-should-apply">Choose how widely a change should apply</h2>
+<table>
+<thead>
+<tr>
+<th>What you change</th>
+<th>Who uses the result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A plan's district entry</td>
+<td>That request in that settlement plan</td>
+</tr>
+<tr>
+<td>A piece's anchor</td>
+<td>Every use of that anchor in the piece</td>
+</tr>
+<tr>
+<td>An object-list member's <code>lootTable</code></td>
+<td>That selected member wherever the shared list is used; it overrides the anchor's table</td>
+</tr>
+<tr>
+<td>A shared loot table</td>
+<td>Every container or nested table that resolves it</td>
+</tr>
+<tr>
+<td>A category's placement rules</td>
+<td>Eligible pieces using that category, subject to their own overrides and inheritance</td>
+</tr>
+<tr>
+<td>A material list</td>
+<td>Plans using the list, plus child lists where the role is inherited</td>
+</tr>
+</tbody>
+</table>
+<p>For example, to change one house's kitchen goods, create a new loot table with your own <code>defName</code> and point that house's Fill anchor to it. Changing the shared kitchen table would affect other buildings too. Locate the anchor with <code>legend/li[anchor="Kitchen"]</code>; the symbol used to draw its cells can differ between pieces.</p>
+<h2 id="optional-mods-and-inheritance">Optional mods and inheritance</h2>
+<p>If your patch only applies when another mod is active, add its package ID as <code>MayRequire</code> on the operation. For an MO-only operation, for example:</p>
+<pre><code class="language-xml">&lt;<span class="xt">Operation</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationConditional&quot;</span> <span class="xa">MayRequire</span>=<span class="xw">&quot;DankPyon.Medieval.Overhaul&quot;</span>&gt;
+  &lt;<span class="xt">xpath</span>&gt;Defs/CustomBaseFramework.SettlementPlanDef[defName=&quot;CBF_Plan_Village_New&quot;]/mapSize&lt;/<span class="xt">xpath</span>&gt;
+  &lt;<span class="xt">match</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationReplace&quot;</span>&gt;
+    &lt;<span class="xt">xpath</span>&gt;Defs/CustomBaseFramework.SettlementPlanDef[defName=&quot;CBF_Plan_Village_New&quot;]/mapSize&lt;/<span class="xt">xpath</span>&gt;
+    &lt;<span class="xt">value</span>&gt;&lt;<span class="xt">mapSize</span>&gt;225&lt;/<span class="xt">mapSize</span>&gt;&lt;/<span class="xt">value</span>&gt;
+  &lt;/<span class="xt">match</span>&gt;
+&lt;/<span class="xt">Operation</span>&gt;
+</code></pre>
+<p>Put this operation inside a <code>&lt;Patch&gt;</code> root. It does nothing when MO is absent or the selected node is absent. That is useful for an optional integration, but it can also hide a misspelled XPath. During development, confirm that your intended target exists.</p>
+<p>There are two different kinds of inheritance:</p>
+<ul>
+<li>RimWorld's <code>Name</code>, <code>ParentName</code> and <code>Abstract</code> attributes combine XML definitions. Patch operations address XML nodes; do not assume a field inherited from an abstract parent is physically written on the child. Inspect the parent and child. Changing the parent can affect every child.</li>
+<li>CBF's <code>&lt;parent&gt;</code> fields link categories or material lists by <code>defName</code> at runtime. Removing a local override can make the parent value apply again. An empty category list may also fall back to a parent; it does not necessarily mean “allow nothing”.</li>
+</ul>
+<h2 id="check-the-result">Check the result</h2>
+<ol>
+<li>Restart with your patch mod enabled and loaded after its targets. Check the log for failed patch operations and unresolved def names.</li>
+<li>Open the affected plan, piece or table in the editor. Confirm that the stored setting changed, rather than judging only from a random result.</li>
+<li>Generate a fresh example on a test map. For changes to selection chances or weights, try several seeds.</li>
+<li>Check the feature in use: open the container, inspect the defenders, or walk through the altered building. A correct preview cannot verify every in-game interaction.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Patch operation failed</td>
+<td>Wrong <code>defName</code>, wrong nesting, absent node, or target mod not loaded</td>
+</tr>
+<tr>
+<td>Nothing changes after restarting</td>
+<td>Conditional operation skipped, later patch overwrote the value, or you inspected an existing map</td>
+</tr>
+<tr>
+<td>Too many entries changed</td>
+<td>XPath selected more than one <code>li</code>; add a ward, district or entry condition</td>
+</tr>
+<tr>
+<td>Building does not appear</td>
+<td>Plan eligibility, category membership, mod requirements and available space</td>
+</tr>
+<tr>
+<td>Loot differs from your table</td>
+<td>Member override, <code>foreign</code>/<code>lootForeign</code>, empty-list mode, or World Domination integration</td>
+</tr>
+</tbody>
+</table>
+<p>Use the <a href="Field-Reference.html">field reference</a> to check accepted fields and values, and the feature guides for their effects. XML syntax alone cannot tell you whether a building fits or which reference wins.</p><div class="schritte"><a href="Modding-Overview.html"><span>Previous</span>Your own content mod</a><a class="weiter" href="Modding-Settlements.html"><span>Next</span>Settlement types in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#where-the-file-goes">Where the file goes</a><a class="t2" href="#find-the-definition-and-the-field">Find the definition and the field</a><a class="t2" href="#replace-an-existing-value">Replace an existing value</a><a class="t2" href="#add-a-field-that-may-be-absent">Add a field that may be absent</a><a class="t2" href="#add-or-remove-a-list-entry">Add or remove a list entry</a><a class="t2" href="#choose-how-widely-a-change-should-apply">Choose how widely a change should apply</a><a class="t2" href="#optional-mods-and-inheritance">Optional mods and inheritance</a><a class="t2" href="#check-the-result">Check the result</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

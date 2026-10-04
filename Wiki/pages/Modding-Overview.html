@@ -116,7 +116,7 @@ if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();fund.cl
 else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')zu();});
 });
 })();
-</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Your own content mod</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html" class="hier">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="modding-overview">Modding overview</h1><p class="unter">Modding</p>
+</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Your own content mod</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html" class="hier">Your own content mod</a><a href="Modding-Patches.html">XML patches</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Modding-Dungeons.html">Dungeons (development)</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="modding-overview">Modding overview</h1><p class="unter">Modding</p>
 <p>This page is for modders who write XML for Custom Base Framework (CBF) by hand, or who want to understand what the in-game editor writes. It covers:</p>
 <ul>
 <li>the folder layout of a content mod,</li>
@@ -216,7 +216,53 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>Place complete definitions inside a <code>&lt;Defs&gt;</code> root. The examples that show only a field or <code>&lt;li&gt;</code> are fragments to insert into the surrounding definition, not standalone files. Use exact, case-sensitive field names and <code>defName</code> references rather than translated labels.</p>
 <p>Ranges use <code>minimum~maximum</code>, for example <code>&lt;count&gt;2~4&lt;/count&gt;</code>; a single number fixes the value. Write decimal values with a point in XML, even when the editor accepts a comma. A weight is relative to the other eligible entries: weights 3 and 1 give a 75%/25% split when those are the only candidates. A chance such as 0.75 is a separate probability check.</p>
 <p>Start with one piece, one category and one small settlement plan. Load the content mod after CBF, check the log for unresolved references, then preview and generate the plan on a test map. An XML file can be well-formed while still naming unavailable definitions or producing a layout that cannot fit the terrain.</p>
-<p>For changes to existing definitions, use RimWorld patch operations in your mod’s <code>Patches</code> folder. The <a href="https://rimworldwiki.com/wiki/Modding_Tutorials/PatchOperations">RimWorld patch-operation tutorial</a> explains targeting and operation types; the <a href="https://github.com/Vanilla-Expanded/VanillaExpandedFramework/wiki">VEF wiki</a> is another example of organising framework documentation by feature.</p>
+<p>For changes to existing definitions, use <a href="Modding-Patches.html">XML patches</a>. That guide works through CBF examples and explains how to target a single ward, list entry or anchor without replacing the rest of the definition.</p>
+<h2 id="read-the-field-tables">Read the field tables</h2>
+<p>The first column gives the exact XML node name. A label shown below it is the editor wording, not another accepted XML name. For example, the editor's <strong>Pawn</strong> anchor is stored as <code>&lt;anchorKind&gt;Spawn&lt;/anchorKind&gt;</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field type</th>
+<th>How to write it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Text or a Def reference</td>
+<td>Put the value between the field tags. Def references use <code>defName</code>, not the display label.</td>
+</tr>
+<tr>
+<td>Whole number, number, true/false</td>
+<td>Use <code>3</code>, <code>0.5</code>, <code>true</code> or <code>false</code>, as appropriate.</td>
+</tr>
+<tr>
+<td>IntRange or FloatRange</td>
+<td>Use a fixed value or <code>min~max</code>, such as <code>2~4</code>.</td>
+</tr>
+<tr>
+<td>Enum</td>
+<td>Use one of the exact listed words, including its spelling and capitalisation.</td>
+</tr>
+<tr>
+<td>List of names</td>
+<td>Put each name in a separate <code>&lt;li&gt;</code> inside the field.</td>
+</tr>
+<tr>
+<td>List of an embedded type</td>
+<td>Put that type's fields inside each <code>&lt;li&gt;</code>. Follow its reference link for the fields.</td>
+</tr>
+<tr>
+<td>Embedded type</td>
+<td>Put its fields directly inside the named field, without a list wrapper.</td>
+</tr>
+<tr>
+<td>Optional</td>
+<td>Omitting it leaves it unset, allowing the documented fallback or inheritance. Writing <code>false</code> or <code>0</code> is an explicit value.</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>Default</strong> column describes a newly constructed object. It is not an instruction to write every field, and it may differ from the value used after inheritance or reference resolution. <code>none</code> means no initial value; do not write the word <code>none</code> into the XML. Some fields are required by later validation even though their initial value is empty.</p>
+<p>Lists of Def references and lists of embedded records look different. For example, a plan's <code>styles</code> contains style names, while its <code>wards</code> contains records with <code>kind</code>, <code>districts</code> and other settings. The class name in a reference link tells you what data is expected; it does not replace the field name or the <code>&lt;li&gt;</code> tag.</p>
 <h2 id="how-the-defs-connect">How the defs connect</h2>
 <p>A settlement type (<code>SettlementPlanDef</code>) is the top of the tree. It is made of wards: rings such as the town, the suburb and the countryside. Each ward has districts: groups of buildings that stay together. A district asks for buildings by category or by single piece. A piece is one hand-drawn building. Its anchors are marked spots that CBF fills with objects, loot or pawns.</p>
 <pre><code>SettlementPlanDef (settlement type)
@@ -678,7 +724,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </table>
 <p>A content mod does not need these. A new HelpDef with a defName no button asks for is never shown. Translations go through <code>DefInjected</code> as usual.</p>
 <h2 id="dungeon-profiles">Dungeon profiles</h2>
-<p><code>DungeonProfileDef</code> exists in the code, and CBF ships two (<code>CBF_Dungeon_Crypt</code> and <code>CBF_Dungeon_Dungeon</code>). Nothing assigns one to a world object at the moment, and the settlement kind <code>Dungeon</code> is switched off. Its fields are listed in <a href="DungeonProfileDef.html">DungeonProfileDef</a>. Do not build content on it yet.</p>
+<p><code>DungeonProfileDef</code> is an older profile type. The current development workflow uses a <code>SettlementPlanDef</code> with <code>kind</code> set to <code>Dungeon</code> and an ordered <code>levels</code> list. See <a href="Modding-Dungeons.html">Dungeon levels</a> for the implemented structure, the separate development content and fields that are not yet connected to generation.</p>
 <h2 id="how-cbf-takes-over-faction-bases">How CBF takes over faction bases</h2>
 <p>No patch is needed to make CBF build bases for a faction. CBF patches RimWorld so that a non-player faction settlement uses CBF's map generator <code>CBF_Base_Faction</code> when all of these hold:</p>
 <ul>
@@ -717,4 +763,4 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>Put <code>MayRequire</code> on every def or entry that names content from another mod, or move it into an <code>IfModActive</code> folder.</li>
 <li>Check the log after loading. CBF reports broken references once per def and says what it does instead.</li>
 <li>The full list of fields for every def type is in the <a href="Field-Reference.html">Field reference</a>.</li>
-</ul><div class="schritte"><a href="Compatibility.html"><span>Previous</span>Compatibility</a><a class="weiter" href="Modding-Settlements.html"><span>Next</span>Settlement types in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#your-own-content-mod">Your own content mod</a><a class="t3" href="#folder-layout">Folder layout</a><a class="t3" href="#aboutxml">About.xml</a><a class="t3" href="#loadfoldersxml-for-other-mods">LoadFolders.xml for other mods</a><a class="t3" href="#mayrequire">MayRequire</a><a class="t3" href="#texture-files">Texture files</a><a class="t3" href="#what-the-editor-writes-for-you">What the editor writes for you</a><a class="t2" href="#xml-values-and-a-first-test">XML values and a first test</a><a class="t2" href="#how-the-defs-connect">How the defs connect</a><a class="t2" href="#wall-profiles">Wall profiles</a><a class="t3" href="#example">Example</a><a class="t3" href="#nodes">Nodes</a><a class="t3" href="#how-a-profile-is-chosen">How a profile is chosen</a><a class="t2" href="#styles">Styles</a><a class="t3" href="#styledef">StyleDef</a><a class="t3" href="#what-a-style-decides-today">What a style decides today</a><a class="t2" href="#material-lists">Material lists</a><a class="t2" href="#ruins">Ruins</a><a class="t2" href="#map-steps">Map steps</a><a class="t2" href="#buildability-rules">Buildability rules</a><a class="t2" href="#help-texts">Help texts</a><a class="t2" href="#dungeon-profiles">Dungeon profiles</a><a class="t2" href="#how-cbf-takes-over-faction-bases">How CBF takes over faction bases</a><a class="t3" href="#faction-matching">Faction matching</a><a class="t2" href="#world-icons">World icons</a><a class="t2" href="#tips">Tips</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+</ul><div class="schritte"><a href="Compatibility.html"><span>Previous</span>Compatibility</a><a class="weiter" href="Modding-Patches.html"><span>Next</span>XML patches</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#your-own-content-mod">Your own content mod</a><a class="t3" href="#folder-layout">Folder layout</a><a class="t3" href="#aboutxml">About.xml</a><a class="t3" href="#loadfoldersxml-for-other-mods">LoadFolders.xml for other mods</a><a class="t3" href="#mayrequire">MayRequire</a><a class="t3" href="#texture-files">Texture files</a><a class="t3" href="#what-the-editor-writes-for-you">What the editor writes for you</a><a class="t2" href="#xml-values-and-a-first-test">XML values and a first test</a><a class="t2" href="#read-the-field-tables">Read the field tables</a><a class="t2" href="#how-the-defs-connect">How the defs connect</a><a class="t2" href="#wall-profiles">Wall profiles</a><a class="t3" href="#example">Example</a><a class="t3" href="#nodes">Nodes</a><a class="t3" href="#how-a-profile-is-chosen">How a profile is chosen</a><a class="t2" href="#styles">Styles</a><a class="t3" href="#styledef">StyleDef</a><a class="t3" href="#what-a-style-decides-today">What a style decides today</a><a class="t2" href="#material-lists">Material lists</a><a class="t2" href="#ruins">Ruins</a><a class="t2" href="#map-steps">Map steps</a><a class="t2" href="#buildability-rules">Buildability rules</a><a class="t2" href="#help-texts">Help texts</a><a class="t2" href="#dungeon-profiles">Dungeon profiles</a><a class="t2" href="#how-cbf-takes-over-faction-bases">How CBF takes over faction bases</a><a class="t3" href="#faction-matching">Faction matching</a><a class="t2" href="#world-icons">World icons</a><a class="t2" href="#tips">Tips</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

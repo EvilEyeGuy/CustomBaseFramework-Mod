@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_AlchemyWorkshop_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_AlchemyWorkshop</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>$</symbol><thing>DankPyon_LootableShelf_AssortedHerbs</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>1</symbol><anchor>Chest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Apothecary</lootTable></li>
+      <li><symbol>8</symbol><anchor>Residents</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>?</symbol><thing>Plant_Healroot</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_AlchemyBench</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_Cauldron</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>Z</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
+      <li><symbol>o</symbol><terrain>Soil</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>s</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>x</symbol><thing>DankPyon_VialsTable</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>z</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>
+    </legend>
+    <mask>
+      <li>######....</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>######....</li>
+    </mask>
+    <terrain>
+      <li>eeeeee....</li>
+      <li>eeeeee.oo.</li>
+      <li>eeeeeeooo.</li>
+      <li>eeeeeeooo.</li>
+      <li>eeeeeeooo.</li>
+      <li>eeeeee....</li>
+      <li>eeeeee....</li>
+    </terrain>
+    <things>
+      <li>OOOOOO....</li>
+      <li>O...xOZZZZ</li>
+      <li>OA...O?.?Z</li>
+      <li>O....F...Z</li>
+      <li>O$.U.O?.?Z</li>
+      <li>O..saOZzZZ</li>
+      <li>OOFOOO....</li>
+    </things>
+    <roof>
+      <li>^^^^^^....</li>
+      <li>^^^^^^....</li>
+      <li>^^^^^^....</li>
+      <li>^^^^^^....</li>
+      <li>^^^^^^....</li>
+      <li>^^^^^^....</li>
+      <li>^^^^^^....</li>
+    </roof>
+    <anchors>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>....8.....</li>
+      <li>....1.....</li>
+      <li>..........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

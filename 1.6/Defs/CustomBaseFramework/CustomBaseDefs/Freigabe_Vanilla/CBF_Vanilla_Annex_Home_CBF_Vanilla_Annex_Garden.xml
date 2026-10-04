@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_Annex_Garden</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_Annex_Home</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>Z</symbol><thing>Fence</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>o</symbol><terrain>Soil</terrain></li>
+      <li><symbol>p</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>r</symbol><thing>Plant_Rose</thing></li>
+      <li><symbol>u</symbol><thing>Plant_Bush</thing></li>
+      <li><symbol>y</symbol><thing>Plant_Daylily</thing></li>
+      <li><symbol>z</symbol><thing>FenceGate</thing><stuff>WoodLog</stuff></li>
+    </legend>
+    <mask>
+      <li>.......</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.ooooo.</li>
+      <li>.ooooo.</li>
+      <li>.......</li>
+    </terrain>
+    <things>
+      <li>.......</li>
+      <li>Z.p.p.Z</li>
+      <li>Zr...yZ</li>
+      <li>Zur.yuZ</li>
+      <li>ZZZzZZZ</li>
+    </things>
+    <things2>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </things2>
+    <roof>
+      <li>.......</li>
+      <li>^.....^</li>
+      <li>^.....^</li>
+      <li>^.....^</li>
+      <li>^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>...+...</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

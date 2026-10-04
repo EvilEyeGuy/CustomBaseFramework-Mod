@@ -30,6 +30,7 @@
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
       <li><symbol>x</symbol><anchor>TenantC</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>y</symbol><anchor>TenantD</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
     </legend>
     <mask>
       <li>#############</li>
@@ -97,17 +98,17 @@
       <li>^^^^^^^^^^^^^</li>
     </roof>
     <anchors>
-      <li>.............</li>
+      <li>...+.........</li>
       <li>....1...2....</li>
       <li>.............</li>
-      <li>...k.....l...</li>
+      <li>+..k.....l...</li>
       <li>.............</li>
       <li>.............</li>
       <li>....3...4....</li>
-      <li>.............</li>
+      <li>............+</li>
       <li>...x.....y...</li>
       <li>.............</li>
-      <li>.............</li>
+      <li>..........+..</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

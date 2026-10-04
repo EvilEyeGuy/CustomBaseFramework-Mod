@@ -652,4 +652,22 @@
     <needsRoadAccess>true</needsRoadAccess><annexFill>true</annexFill><annexOverhang>1</annexOverhang><annexCornerPath>true</annexCornerPath>
   </CustomBaseFramework.PieceCategoryDef>
 
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_VFEM2_AlchemyWorkshop</defName>
+    <label>alchemy workshop</label><parent>CBF_VFEM2_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_VFEM2_Library</defName>
+    <label>library</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
 </Defs>

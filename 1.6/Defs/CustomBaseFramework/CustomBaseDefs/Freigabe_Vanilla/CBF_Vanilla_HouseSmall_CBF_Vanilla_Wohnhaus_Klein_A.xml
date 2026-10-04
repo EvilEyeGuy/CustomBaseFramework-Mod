@@ -27,6 +27,7 @@
       <li><symbol>h</symbol><terrain>TileGranite</terrain></li>
       <li><symbol>j</symbol><thing>Table2x2c</thing><stuff>WoodLog</stuff></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
     </legend>
     <mask>
       <li>#########</li>
@@ -79,14 +80,14 @@
       <li>^^^^^....</li>
     </roof>
     <anchors>
+      <li>....+....</li>
       <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
+      <li>+.......+</li>
       <li>.1...8...</li>
       <li>.........</li>
       <li>.........</li>
       <li>...2.....</li>
-      <li>.........</li>
+      <li>..+......</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

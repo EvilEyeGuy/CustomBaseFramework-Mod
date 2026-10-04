@@ -1,0 +1,170 @@
+<!doctype html><html lang="en" data-look="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dungeon levels: development reference · Custom Base Framework</title><style>
+:root,[data-look="dark"]{--grund:#151b1e;--fenster:#1c1b1d;--leiste:#0f1416;--spalte:#25282a;--rand:#3b3f41;--linie:#2c2f31;
+--text:#d8d6d0;--kopf:#e6d7b4;--titel:#efe9dc;--leise:#9a9c9b;--blass:#6c706f;--akzent:#d2a44e;--wahl:#4a4a32;--wahlrand:#b58a45;
+--wahltext:#f0dcae;--code:#121212;--codetext:#f0dcae;--feld:#121212;--schrift:Arial,"Segoe UI",sans-serif;--lese:Arial,"Segoe UI",sans-serif;
+--lesegroesse:15px;--h1:26px;--h2:20px;--kachel:transparent;--knopf:#4a3b22;--xt:#e6b866;--xa:#9fb7c9;--xw:#a9c98a}
+[data-look="bright"]{--grund:#e9e5dc;--fenster:#f7f4ee;--leiste:#efeae0;--spalte:#f7f4ee;--rand:#cfc6b4;--linie:#d8d0c0;
+--text:#26231e;--kopf:#26231e;--titel:#26231e;--leise:#4a4439;--blass:#7a7263;--akzent:#8a5a14;--wahl:#f7f4ee;--wahlrand:#a8741f;
+--wahltext:#8a5a14;--code:#e9e3d6;--codetext:#26231e;--feld:#fbf9f5;--schrift:Arial,"Segoe UI",sans-serif;--lese:Arial,"Segoe UI",sans-serif;
+--lesegroesse:15px;--h1:26px;--h2:20px;--kachel:#3a3631;--knopf:#efe0c2;--xt:#8a4a14;--xa:#2f5f7f;--xw:#3f6f2a}
+*{box-sizing:border-box}
+html{scroll-padding-top:56px}
+body{margin:0;background:var(--grund);color:var(--text);font-family:var(--schrift);scrollbar-color:var(--rand) var(--grund)}
+nav.leiste,aside.rechts{scrollbar-color:var(--rand) var(--leiste);scrollbar-width:thin}
+.fenster{max-width:1760px;margin:0 auto;min-height:100vh;display:grid;grid-template-columns:240px minmax(0,1fr) 220px;
+grid-template-rows:auto 1fr;border-left:1px solid var(--rand);border-right:1px solid var(--rand);background:var(--fenster)}
+.kopf{grid-column:1/-1;position:sticky;top:0;z-index:5;background:var(--leiste);border-bottom:1px solid var(--rand);
+display:flex;align-items:center;gap:14px;padding:0 14px;height:42px;font-size:13px}
+.marke{color:var(--titel);text-decoration:none;font-size:15px;white-space:nowrap}
+.pfad{color:var(--leise);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pfad a{color:var(--leise);text-decoration:none}
+.suche{margin-left:auto;min-width:230px;display:flex;justify-content:space-between;gap:10px;background:var(--feld);
+border:1px solid var(--rand);color:var(--blass);padding:4px 8px;font:12px var(--schrift);cursor:pointer}
+.suche kbd{font:11px var(--schrift);border:1px solid var(--rand);padding:0 4px}
+.look{background:none;border:1px solid var(--wahlrand);color:var(--wahltext);font:12px var(--schrift);padding:3px 10px;cursor:pointer}
+.look{background:var(--knopf)}
+nav.leiste{background:var(--leiste);border-right:1px solid var(--rand);padding:10px 8px 40px;position:sticky;top:42px;
+height:calc(100vh - 42px);overflow:auto}
+.gruppe{margin:0 0 8px}
+.gruppe b{display:flex;align-items:center;gap:9px;color:var(--kopf);font-size:14px;padding:6px 6px 3px}
+.gruppe a{display:block;color:var(--leise);text-decoration:none;font-size:13px;padding:3px 8px 3px 16px;border:1px solid transparent}
+.gruppe a:hover{color:var(--titel);background:var(--linie)}
+.gruppe a.hier{background:var(--wahl);border-color:var(--wahlrand);color:var(--wahltext)}
+.gruppe.modding{margin-top:14px;padding-top:10px;border-top:1px solid var(--rand)}
+main{padding:30px 46px 90px;min-width:0;font-family:var(--lese);font-size:var(--lesegroesse);line-height:1.65}
+.inhalt{max-width:1180px;margin:0 auto}
+.inhalt h1{color:var(--titel);font-weight:normal;font-size:var(--h1);line-height:1.12;margin:0 0 6px}
+.unter{font:12px var(--schrift);color:var(--blass);margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid var(--rand)}
+.inhalt h2{color:var(--kopf);font-weight:normal;font-size:var(--h2);margin:38px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--rand)}
+.inhalt h3{color:var(--kopf);font:bold 16px var(--schrift);margin:26px 0 8px;padding-bottom:3px;border-bottom:1px solid var(--linie)}
+.inhalt h4{color:var(--kopf);font:bold 14px var(--schrift);margin:20px 0 6px}
+.inhalt a{color:var(--akzent)}
+.inhalt strong{color:var(--titel)}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.86em;background:var(--code);color:var(--codetext);padding:1px 5px;border:1px solid var(--linie)}
+pre{background:var(--code);border:1px solid var(--rand);padding:12px 14px;overflow-x:auto;font-size:13px;line-height:1.5}
+pre code{border:0;padding:0}
+.xt{color:var(--xt)}.xa{color:var(--xa)}.xw{color:var(--xw)}.xk{color:var(--blass)}
+table{border-collapse:collapse;font:13px/1.5 var(--schrift);margin:14px 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--rand);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:var(--spalte);color:var(--kopf);font-weight:normal}
+.bild{display:block;margin:16px 0 20px}
+.bild img{display:block;max-width:100%;height:auto;border:1px solid var(--rand)}
+.inhalt ol{padding-left:26px}
+.inhalt li{margin:4px 0}
+.home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:50px;padding-top:16px;border-top:1px solid var(--rand);font-family:var(--schrift)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--rand);padding:10px 14px;color:var(--text)}
+.schritte a:hover{border-color:var(--wahlrand)}
+.schritte span{display:block;font-size:11px;color:var(--blass)}
+.schritte .weiter{text-align:right;margin-left:auto}
+aside.rechts{background:var(--spalte);border-left:1px solid var(--rand);padding:24px 12px;font-size:13px}
+.aufseite{position:sticky;top:66px}
+.aufseite b{display:block;color:var(--blass);font-size:12px;font-weight:normal;margin:0 0 8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:3px 6px 3px 10px;border-left:2px solid var(--rand)}
+.aufseite a.t3{padding-left:22px;font-size:12px}
+.aufseite a:hover{color:var(--titel)}
+.aufseite a.an{color:var(--wahltext);border-left-color:var(--wahlrand)}
+.fund{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:flex-start;justify-content:center;padding-top:12vh;z-index:20}
+.fund.offen{display:flex}
+.fundbox{width:min(640px,92vw);background:var(--fenster);border:1px solid var(--wahlrand)}
+.fundbox input{width:100%;border:0;border-bottom:1px solid var(--rand);background:var(--feld);color:var(--text);padding:12px 14px;font:15px var(--schrift);outline:none}
+.fundliste{max-height:55vh;overflow:auto;margin:0;padding:4px;list-style:none;font-family:var(--schrift)}
+.fundliste li{padding:8px 10px;cursor:pointer;border:1px solid transparent}
+.fundliste li.an{background:var(--wahl);border-color:var(--wahlrand)}
+.fundliste .t{color:var(--titel);font-size:14px}
+.fundliste .s{color:var(--blass);font-size:12px;margin-top:2px}
+.fundliste mark{background:var(--wahlrand);color:#1b1b1b}
+@media (max-width:1180px){.fenster{grid-template-columns:230px minmax(0,1fr)}aside.rechts{display:none}}
+@media (max-width:820px){.fenster{grid-template-columns:1fr}nav.leiste{position:static;height:auto}.pfad{display:none}.suche{min-width:0}main{padding:22px 16px 60px}}
+</style><script>
+(function(){
+var w=document.documentElement;
+try{var g=localStorage.getItem('cbf-look');if(g==='dark'||g==='bright')w.setAttribute('data-look',g);}catch(e){}
+function knopf(){var b=document.getElementById('look');if(b)b.textContent=w.getAttribute('data-look')==='bright'?'Dark':'Bright';}
+document.addEventListener('DOMContentLoaded',function(){
+knopf();
+document.getElementById('look').addEventListener('click',function(){
+var n=w.getAttribute('data-look')==='bright'?'dark':'bright';w.setAttribute('data-look',n);
+try{localStorage.setItem('cbf-look',n);}catch(e){}knopf();});
+var links=[].slice.call(document.querySelectorAll('.aufseite a'));
+if(links.length&&'IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('an',a.getAttribute('href')==='#'+e.target.id);});});},{rootMargin:'0px 0px -70% 0px'});
+document.querySelectorAll('.inhalt h2[id],.inhalt h3[id]').forEach(function(h){io.observe(h);});}
+var fund=document.getElementById('fund'),ein=document.getElementById('fundein'),liste=document.getElementById('fundliste'),treffer=[],wahl=0;
+var basis=document.body.getAttribute('data-basis')||'';
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+function markiere(s,t){if(!t)return esc(s);var i=s.toLowerCase().indexOf(t);if(i<0)return esc(s);return esc(s.slice(0,i))+'<mark>'+esc(s.slice(i,i+t.length))+'</mark>'+esc(s.slice(i+t.length));}
+function suchen(){var t=ein.value.trim().toLowerCase();var idx=window.CBF_SUCHE||[];
+treffer=idx.map(function(p){var s=0,ti=p.t.toLowerCase(),x=p.x.toLowerCase(),i=x.indexOf(t),aus='';
+if(!t)s=1;else{if(ti.indexOf(t)===0)s=3;else if(ti.indexOf(t)>=0)s=2;if(i>=0){if(!s)s=1;var a=Math.max(0,i-50);aus=(a?'... ':'')+p.x.slice(a,i+t.length+80)+' ...';}}
+return{p:p,s:s,aus:aus};}).filter(function(r){return r.s;}).sort(function(a,b){return b.s-a.s;}).slice(0,40);
+wahl=0;zeichnen(t);}
+function zeichnen(t){liste.innerHTML=treffer.length?treffer.map(function(r,i){return '<li data-i="'+i+'"'+(i===wahl?' class="an"':'')+'><div class="t">'+markiere(r.p.t,t)+'</div>'+(r.aus?'<div class="s">'+markiere(r.aus,t)+'</div>':'')+'</li>';}).join(''):'<li><div class="s">No page found.</div></li>';
+var a=liste.querySelector('.an');if(a)a.scrollIntoView({block:'nearest'});}
+function gehe(i){var r=treffer[i];if(r)location.href=basis+r.p.u;}
+function auf(){fund.classList.add('offen');ein.value='';suchen();ein.focus();}
+function zu(){fund.classList.remove('offen');}
+document.getElementById('suche').addEventListener('click',auf);
+ein.addEventListener('input',suchen);
+ein.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();wahl=Math.min(wahl+1,treffer.length-1);zeichnen(ein.value.trim().toLowerCase());}
+else if(e.key==='ArrowUp'){e.preventDefault();wahl=Math.max(wahl-1,0);zeichnen(ein.value.trim().toLowerCase());}
+else if(e.key==='Enter'){e.preventDefault();gehe(wahl);}});
+liste.addEventListener('click',function(e){var li=e.target.closest('li[data-i]');if(li)gehe(+li.getAttribute('data-i'));});
+fund.addEventListener('click',function(e){if(e.target===fund)zu();});
+document.addEventListener('keydown',function(e){var tippt=/INPUT|TEXTAREA/.test(document.activeElement.tagName);
+if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();fund.classList.contains('offen')?zu():auf();}
+else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')zu();});
+});
+})();
+</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / Dungeons (development)</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Patches.html">XML patches</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Modding-Dungeons.html" class="hier">Dungeons (development)</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="dungeon-levels-development-reference">Dungeon levels: development reference</h1><p class="unter">Modding</p>
+<p>The current local framework contains a dungeon planner and stairs between maps. Its example content lives in the separate <strong>Custom Base Framework - Dungeons (Dev)</strong> mod, whose metadata marks it as development content, not a release. The fields below describe that local implementation; their presence does not mean the base mod supplies a finished set of playable dungeons.</p>
+<p>For regular towns and camps, use <a href="Modding-Settlements.html">Settlement plans</a>. Dungeon plans use the same <code>SettlementPlanDef</code>, with <code>kind</code> set to <code>Dungeon</code> and an ordered <code>levels</code> list instead of the usual town, suburb and countryside wards. The old <code>DungeonProfileDef</code> is not the entry point for this workflow.</p>
+<h2 id="build-one-level-before-adding-another">Build one level before adding another</h2>
+<p>Start with a few room pieces in one level's <code>districts</code>. Each district has the same category or piece requests used by settlement districts. The level's <code>layout</code> selects <code>Corridors</code>, <code>Chambers</code> or <code>Cave</code>; a district can supply its own <code>layout</code> override. These choices control the intended room arrangement, so compare their generated layouts with the same room set.</p>
+<p>The first level uses the surface map. Lower levels are separate pocket maps generated through the stairs. A level's positive <code>mapSize</code> sets the size of its lower map; <code>0</code> lets CBF estimate it from the requested rooms. Set the surface map size on the plan itself, not on the first level.</p>
+<h2 id="connect-two-levels">Connect two levels</h2>
+<p>This is the <code>levels</code> fragment of a two-level plan. The room and stair names below come from the development content and require that content and Medieval Overhaul. It is not a standalone definition:</p>
+<pre><code class="language-xml">&lt;<span class="xt">levels</span>&gt;
+  &lt;<span class="xt">li</span>&gt;
+    &lt;<span class="xt">name</span>&gt;Upper&lt;/<span class="xt">name</span>&gt;
+    &lt;<span class="xt">layout</span>&gt;Corridors&lt;/<span class="xt">layout</span>&gt;
+    &lt;<span class="xt">stairsDown</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_Dungeon_Stairs_Down_A&lt;/<span class="xt">piece</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;/<span class="xt">stairsDown</span>&gt;
+    &lt;<span class="xt">districts</span>&gt;
+      &lt;<span class="xt">li</span>&gt;
+        &lt;<span class="xt">name</span>&gt;Lair&lt;/<span class="xt">name</span>&gt;
+        &lt;<span class="xt">entries</span>&gt;
+          &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_Dungeon_CultistDormitory&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~2&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+        &lt;/<span class="xt">entries</span>&gt;
+      &lt;/<span class="xt">li</span>&gt;
+    &lt;/<span class="xt">districts</span>&gt;
+  &lt;/<span class="xt">li</span>&gt;
+  &lt;<span class="xt">li</span>&gt;
+    &lt;<span class="xt">name</span>&gt;Lower&lt;/<span class="xt">name</span>&gt;
+    &lt;<span class="xt">entrance</span>&gt;
+      &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_Dungeon_Stairs_Up_A&lt;/<span class="xt">piece</span>&gt;&lt;/<span class="xt">li</span>&gt;
+    &lt;/<span class="xt">entrance</span>&gt;
+    &lt;<span class="xt">districts</span>&gt;
+      &lt;<span class="xt">li</span>&gt;
+        &lt;<span class="xt">name</span>&gt;Sanctum&lt;/<span class="xt">name</span>&gt;
+        &lt;<span class="xt">entries</span>&gt;
+          &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">piece</span>&gt;CBF_MO_Dungeon_RitualCircle_Upscale_A&lt;/<span class="xt">piece</span>&gt;&lt;<span class="xt">count</span>&gt;1&lt;/<span class="xt">count</span>&gt;&lt;/<span class="xt">li</span>&gt;
+        &lt;/<span class="xt">entries</span>&gt;
+      &lt;/<span class="xt">li</span>&gt;
+    &lt;/<span class="xt">districts</span>&gt;
+  &lt;/<span class="xt">li</span>&gt;
+&lt;/<span class="xt">levels</span>&gt;
+</code></pre>
+<p><code>stairsDown</code> adds the stair-room requests leading to the next level. Every level except the last needs this list. On lower levels, <code>entrance</code> adds the rooms containing the way back up. The current conversion adds one room request per list entry; these lists are not a single weighted choice of one stair room, and their <code>count</code> field is not used as the room count.</p>
+<p>The stair pieces also need Connect anchors named <code>StairsDown</code> or <code>StairsUp</code>, respectively. These mark the portal position inside the room. A normal door, a Socket anchor or an entry in <code>stairsDown</code> alone does not create the portal. The required portal and map-generator definitions are part of the development setup.</p>
+<p>Use the complete <code>CBF_Plan_Dungeon_Levels_Test.xml</code> in the development mod as a starting point. Test travelling down and back up in game before adding more levels. A map preview cannot establish that the portals and quest setup work together.</p>
+<h2 id="fields-that-are-not-yet-connected-to-generation">Fields that are not yet connected to generation</h2>
+<p>Several settings are stored and exposed by the editor but are not passed through the current framework-to-planner conversion:</p>
+<ul>
+<li>Level <code>corridors</code>, <code>caveWidth</code>, <code>caveShare</code> and <code>secretChance</code>.</li>
+<li>The plan's <code>spread</code> list for distributing requests between levels.</li>
+<li>The legend's <code>socketType</code> and <code>socketWidth</code> settings.</li>
+</ul>
+<p>Do not rely on these fields to change the generated result in this version. Put room requests directly in each level's districts. In particular, a <code>spread</code> entry is not a substitute for those requests. This distinction matters when patching: a value can load correctly and appear in the editor without affecting the map.</p>
+<p>The reference pages describe the available structure: <a href="DungeonLevel.html">DungeonLevel</a>, <a href="SpreadEntry.html">SpreadEntry</a>, <a href="DistrictSpec.html">DistrictSpec</a> and <a href="LegendEntry.html">LegendEntry</a>. The behaviours above were checked against the local source; this documentation pass did not run an in-game dungeon test.</p><div class="schritte"><a href="Modding-Quests.html"><span>Previous</span>Quests in XML</a><a class="weiter" href="Field-Reference.html"><span>Next</span>Field reference</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#build-one-level-before-adding-another">Build one level before adding another</a><a class="t2" href="#connect-two-levels">Connect two levels</a><a class="t2" href="#fields-that-are-not-yet-connected-to-generation">Fields that are not yet connected to generation</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

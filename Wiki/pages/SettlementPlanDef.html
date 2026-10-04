@@ -116,9 +116,9 @@ if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();fund.cl
 else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')zu();});
 });
 })();
-</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / SettlementPlanDef</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / SettlementPlanDef</div><h1 id="settlementplandef">SettlementPlanDef</h1><p class="unter">Modding</p>
+</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / SettlementPlanDef</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Patches.html">XML patches</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Modding-Dungeons.html">Dungeons (development)</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / SettlementPlanDef</div><h1 id="settlementplandef">SettlementPlanDef</h1><p class="unter">Modding</p>
 <p>Defines the building programme for a settlement: its wards, districts, fortifications and defenders. The generator fits this programme to the terrain when it creates the map. A materialList is required. See <a href="Modding-Settlements.html">Settlement types in XML</a> for a complete example.</p>
-<p>XML node: <code>&lt;CustomBaseFramework.SettlementPlanDef&gt;</code>. Also takes the common fields <code>defName</code>, <code>label</code> and <code>description</code>.</p>
+<p>Define this under a <code>&lt;Defs&gt;</code> root using <code>&lt;CustomBaseFramework.SettlementPlanDef&gt;</code>. Give it a unique <code>defName</code>; <code>label</code> and <code>description</code> are the common display fields. References from other definitions use the <code>defName</code>.</p>
 <table>
 <thead>
 <tr>
@@ -145,7 +145,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>coreShapes</code><br>Old town shapes</td>
 <td>list of text</td>
 <td>none</td>
-<td>Allowed shapes of the old town: Grown, Rectangle, LShape, TShape, UShape, Cross, Step, Octagon. Each settlement picks one of them at random. Empty means Grown only, the behaviour of settlement types without this field. Grown only forms its own outline when the settlement has suburb islands or a wall deeper than 3 cells; otherwise the old town stays a rectangle.</td>
+<td>Allowed shapes of the old town: Grown, Rectangle, LShape, TShape, UShape, Cross, Step, Octagon. Each settlement picks one of them at random. Empty means Grown only. Grown only forms its own outline when the settlement has suburb islands or a wall deeper than 3 cells; otherwise the old town stays a rectangle.</td>
 </tr>
 <tr>
 <td><code>coreSize</code><br>Core size</td>
@@ -223,7 +223,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>kind</code></td>
 <td>Ortsart (MedievalTown, ModernTown, Camp, Dungeon)</td>
 <td><code>MedievalTown</code></td>
-<td>Kind of place. MedievalTown: walls with towers and gatehouses. ModernTown: street grid with roads up to 6 wide, power conduits, no gatehouses. Camp: only for the quest camps named under campTypes. Dungeon is switched off.</td>
+<td>Layout family: MedievalTown, ModernTown, Camp or Dungeon. Dungeon uses the development levels workflow; see <a href="Modding-Dungeons.html">Dungeon levels</a>.</td>
+</tr>
+<tr>
+<td><code>levels</code></td>
+<td>list of <a href="DungeonLevel.html">DungeonLevel</a></td>
+<td>none</td>
+<td>Ordered dungeon levels, starting at the surface. Used when kind is Dungeon. Every non-final level requires stairsDown; see <a href="Modding-Dungeons.html">Dungeon levels</a>.</td>
 </tr>
 <tr>
 <td><code>mapSize</code><br>Map size</td>
@@ -310,6 +316,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Eligibility tags for automatic quest-site plan selection. Empty excludes the plan from that pool. A fixed usable plan supplied by the site extension or quest node bypasses tag selection.</td>
 </tr>
 <tr>
+<td><code>spread</code><br>Spread over levels</td>
+<td>list of <a href="SpreadEntry.html">SpreadEntry</a></td>
+<td>none</td>
+<td>Stored development requests intended to span several levels. The current planner conversion does not consume this list. Put room requests in levels/li/districts instead.</td>
+</tr>
+<tr>
 <td><code>style</code></td>
 <td><a href="StyleDef.html">StyleDef</a></td>
 <td>none</td>
@@ -383,4 +395,4 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p><a href="Field-Reference.html">Back to the field reference</a></p></div></main><aside class="rechts"></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+<p><a href="Field-Reference.html">Back to the field reference</a> · <a href="Modding-Overview.html#read-the-field-tables">XML values and types</a> · <a href="Modding-Patches.html">Writing patches</a></p></div></main><aside class="rechts"></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

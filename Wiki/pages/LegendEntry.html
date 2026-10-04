@@ -116,8 +116,13 @@ if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();fund.cl
 else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')zu();});
 });
 })();
-</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / LegendEntry</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / LegendEntry</div><h1 id="legendentry">LegendEntry</h1><p class="unter">Modding</p>
+</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / LegendEntry</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Patches.html">XML patches</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Modding-Dungeons.html">Dungeons (development)</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / LegendEntry</div><h1 id="legendentry">LegendEntry</h1><p class="unter">Modding</p>
 <p>Maps one character in a piece grid to an object, terrain, roof, pawn or anchor. The grid determines how the entry is used: an anchors symbol refers to an anchor, while a terrain symbol resolves a floor. See <a href="Modding-Pieces.html#the-legend">The legend</a>.</p>
+<h2 id="where-this-record-goes">Where this record goes</h2>
+<ul>
+<li><a href="PieceDef.html">PieceDef</a> → <code>legend</code>: put these fields inside each <code>&lt;li&gt;</code> in the list.</li>
+</ul>
+<p>This is an embedded record, not an independently named Def. Do not add a <code>defName</code> or a <code>&lt;LegendEntry&gt;</code> wrapper here.</p>
 <table>
 <thead>
 <tr>
@@ -132,7 +137,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>anchor</code></td>
 <td>text</td>
 <td>none</td>
-<td>Name of the anchor. Wall ties the cells to the town wall, Annex marks where an annex may attach, Outside marks the outer side of a wall strip or gatehouse. Other names only label the anchor.</td>
+<td>Anchor name. Wall, Outside, Annex and Water have settlement connection meanings. Development stairs use StairsUp and StairsDown. Other names identify furniture, loot or pawn areas, for example Kitchen. Draw the entry symbol in anchors or anchorsOver.</td>
 </tr>
 <tr>
 <td><code>anchorKind</code><br>Kind</td>
@@ -222,7 +227,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>required</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
-<td>Only has an effect on a Connect anchor named Wall. The piece must then stand at the town wall.</td>
+<td>Retained anchor flag, also used by editor validation for missing anchor cells. It does not force wall placement. Set placement/atWall to Required on the piece for that behaviour.</td>
 </tr>
 <tr>
 <td><code>role</code></td>
@@ -243,16 +248,28 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Facing of the thing as drawn: North, East, South or West. It turns with the piece. Default North.</td>
 </tr>
 <tr>
+<td><code>socketType</code></td>
+<td>SocketArt (Door, Arch, Cave, Secret)</td>
+<td><code>Door</code></td>
+<td>Development Socket connector kind: Door, Arch, Cave or Secret. Stored by the editor but not passed to the current planner; it does not create a working connection by itself.</td>
+</tr>
+<tr>
+<td><code>socketWidth</code></td>
+<td>whole number</td>
+<td><code>1</code></td>
+<td>Development Socket width, default 1. Stored by the editor but not passed to the current planner.</td>
+</tr>
+<tr>
 <td><code>stuff</code><br>Material</td>
 <td>ThingDef</td>
 <td>none</td>
-<td>Material of the thing. On a variant, empty keeps the material of the entry. Empty or unfitting material falls back to the default material.</td>
+<td>Material for the concrete thing in this legend entry. It must be valid stuff for that ThingDef; missing or incompatible stuff falls back to the default material. Variants have their own material field.</td>
 </tr>
 <tr>
 <td><code>symbol</code></td>
 <td>text</td>
 <td>none</td>
-<td>The character that stands for this entry in the layers. Only the first character counts.</td>
+<td>One character identifying this entry in the piece grids. Symbols are case-sensitive: a and A are different entries. Write exactly one character; longer values are invalid.</td>
 </tr>
 <tr>
 <td><code>temperature</code></td>
@@ -280,4 +297,4 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p><a href="Field-Reference.html">Back to the field reference</a></p></div></main><aside class="rechts"></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+<p><a href="Field-Reference.html">Back to the field reference</a> · <a href="Modding-Overview.html#read-the-field-tables">XML values and types</a> · <a href="Modding-Patches.html">Writing patches</a></p></div></main><aside class="rechts"></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

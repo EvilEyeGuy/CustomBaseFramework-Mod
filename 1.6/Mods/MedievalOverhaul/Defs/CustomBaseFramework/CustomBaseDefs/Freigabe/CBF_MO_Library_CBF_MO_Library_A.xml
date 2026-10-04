@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Library_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Library</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>-</symbol><thing>DankPyon_LogTable1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>/</symbol><thing>DankPyon_Stack_Books</thing></li>
+      <li><symbol>2</symbol><anchor>ArchiveChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_Scriptorium</lootTable></li>
+      <li><symbol>8</symbol><anchor>Residents</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>9</symbol><anchor>Scholar</anchor><anchorKind>Spawn</anchorKind><chance>0.5</chance></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_LootableShelf_Book</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_ShelfFilledBook</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Q</symbol><thing>DankPyon_AdvancedResearchBench</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_TudorWall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>d</symbol><terrain>DankPyon_DarkWoodPlankFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_RusticNobleChair</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_RusticBookshelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+    </legend>
+    <mask>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+    </mask>
+    <terrain>
+      <li>ddddddddddddd</li>
+      <li>ddddddddddddd</li>
+      <li>ddddddddddddd</li>
+      <li>ddddddddddddd</li>
+      <li>ddddddddddddd</li>
+      <li>ddddddddddddd</li>
+      <li>ddddddddddddd</li>
+      <li>ddddddddddddd</li>
+      <li>ddddddddddddd</li>
+    </terrain>
+    <things>
+      <li>TTTTTTTTTTTTT</li>
+      <li>TkkK..kK..kkT</li>
+      <li>T/..........T</li>
+      <li>T....N.....NT</li>
+      <li>TQ......Q...T</li>
+      <li>T..........aT</li>
+      <li>T.-....-....T</li>
+      <li>T.i.i..i.iB.T</li>
+      <li>TTTTTTFTTTTTT</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.....9.......</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>......8....2.</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

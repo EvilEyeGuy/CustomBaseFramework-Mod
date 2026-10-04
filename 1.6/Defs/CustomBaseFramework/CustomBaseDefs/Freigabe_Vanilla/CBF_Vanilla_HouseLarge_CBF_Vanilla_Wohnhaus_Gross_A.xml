@@ -39,6 +39,7 @@
       <li><symbol>j</symbol><thing>Table2x2c</thing><stuff>WoodLog</stuff></li>
       <li><symbol>p</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
     </legend>
     <mask>
       <li>#############</li>
@@ -106,17 +107,17 @@
       <li>^^^^^^.......</li>
     </roof>
     <anchors>
-      <li>.............</li>
+      <li>...+.........</li>
       <li>.......11....</li>
       <li>.............</li>
-      <li>...8.........</li>
+      <li>...8........+</li>
       <li>.............</li>
       <li>.........9...</li>
       <li>.............</li>
       <li>.............</li>
-      <li>.........334.</li>
+      <li>+........334.</li>
       <li>....2........</li>
-      <li>.............</li>
+      <li>..+..........</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

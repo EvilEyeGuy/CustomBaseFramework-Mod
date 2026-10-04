@@ -22,7 +22,8 @@
       <li><symbol>P</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>R</symbol><thing>TorchLamp</thing><stuff>WoodLog</stuff></li>
       <li><symbol>L</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>S</symbol><thing>Door</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>S</symbol><terrain>Granite_Smooth</terrain></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>G</symbol><thing>VFEM2_3x1CastleGate</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
       <li><symbol>j</symbol><anchor>Wall</anchor></li>
       <li><symbol>p</symbol><anchor>ServantB</anchor><anchorKind>Spawn</anchorKind></li>
       <li><symbol>u</symbol><anchor>GuardSouth</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
@@ -67,9 +68,9 @@
       <li>WWWWWWWWW</li>
       <li>WWWWWWWWW</li>
       <li>.WWWWWWW.</li>
-      <li>..WWWWW..</li>
-      <li>..WWWWW..</li>
-      <li>..WWWWW..</li>
+      <li>SSWWWWWSS</li>
+      <li>SSWWWWWSS</li>
+      <li>SSWWWWWSS</li>
       <li>.WWWWWWW.</li>
       <li>WWWWWWWWW</li>
       <li>WWWWWWWWW</li>
@@ -87,9 +88,9 @@
       <li>T..F....T</li>
       <li>TT.....TT</li>
       <li>.TTTTTTT.</li>
-      <li>..S...S..</li>
-      <li>..S...S..</li>
-      <li>..S...S..</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>..G...G..</li>
       <li>.TTTTTTT.</li>
       <li>TTB...BTT</li>
       <li>C.......L</li>

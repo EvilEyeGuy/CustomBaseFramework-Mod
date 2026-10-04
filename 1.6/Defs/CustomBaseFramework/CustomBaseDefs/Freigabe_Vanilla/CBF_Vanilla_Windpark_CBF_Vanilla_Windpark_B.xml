@@ -9,108 +9,117 @@
     </categories>
     <style>CBF_ModernVanilla</style>
     <eaves>true</eaves>
+
     <legend>
-      <li><symbol>8</symbol><anchor>Machinist</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
-      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
-      <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>P</symbol><thing>FirefoamPopper</thing></li>
+      <li><symbol>W</symbol><thing>Fence</thing><stuff>Steel</stuff></li>
+      <li><symbol>D</symbol><thing>FenceGate</thing><stuff>Steel</stuff></li>
+      <li><symbol>T</symbol><thing>FirefoamPopper</thing></li>
+      <li><symbol>B</symbol><thing>WindTurbine</thing><rotation>West</rotation></li>
+      <li><symbol>C</symbol><thing>WindTurbine</thing><rotation>East</rotation></li>
+      <li><symbol>F</symbol><terrain>PavedTile</terrain></li>
+      <li><symbol>P</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>R</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>L</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>W</symbol><thing>WindTurbine</thing><rotation>East</rotation></li>
-      <li><symbol>Y</symbol><thing>Battery</thing><rotation>South</rotation></li>
-      <li><symbol>Z</symbol><thing>Fence</thing><stuff>Steel</stuff></li>
-      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>c</symbol><terrain>Concrete</terrain></li>
-      <li><symbol>z</symbol><thing>FenceGate</thing><stuff>Steel</stuff></li>
+      <li><symbol>G</symbol><thing>Battery</thing><rotation>South</rotation></li>
+      <li><symbol>H</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>8</symbol><anchor>Machinist</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
     </legend>
+
     <mask>
-      <li>################</li>
-      <li>################</li>
-      <li>################</li>
-      <li>################</li>
-      <li>################</li>
-      <li>################</li>
-      <li>################</li>
-      <li>################</li>
-      <li>################</li>
-      <li>################</li>
-      <li>################</li>
-      <li>################</li>
-      <li>################</li>
+      <li>.......################.......</li>
+      <li>.......################.......</li>
+      <li>##############################</li>
+      <li>##############################</li>
+      <li>##############################</li>
+      <li>##############################</li>
+      <li>##############################</li>
+      <li>##############################</li>
+      <li>##############################</li>
+      <li>.......################.......</li>
+      <li>.......################.......</li>
+      <li>.......################.......</li>
+      <li>.......################.......</li>
     </mask>
+
     <terrain>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>.....cccccc.....</li>
-      <li>.....cccccc.....</li>
-      <li>.....cccccc.....</li>
-      <li>.....cccccc.....</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>.FFFFFFFFFFFFFFFFFFFFFFFFFFFF.</li>
+      <li>.FPPPPPPPPPPPPPPPPPPPPPPPPPPF.</li>
+      <li>.FPPPPPPPPPPPPPPPPPPPPPPPPPPF.</li>
+      <li>.FPPPPPPPPPPPPPPPPPPPPPPPPPPF.</li>
+      <li>.FFFFFFFFFFFFFFFFFFFFFFFFFFFF.</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
     </terrain>
+
     <things>
-      <li>ZZZZZZZzZZZZZZZZ</li>
-      <li>ZP.............Z</li>
-      <li>Z..............Z</li>
-      <li>Z..............Z</li>
-      <li>Z..............Z</li>
-      <li>Z..............Z</li>
-      <li>Z..............Z</li>
-      <li>Z..............Z</li>
-      <li>Z..W.......W...Z</li>
-      <li>Z....SSSSSS....Z</li>
-      <li>Z....S....S....Z</li>
-      <li>Z....SYY.YS....Z</li>
-      <li>ZZZZZSSSFSSZZZZZ</li>
+      <li>.......WWWWWWWDWWWWWWWW.......</li>
+      <li>.......WT.............W.......</li>
+      <li>WWWWWWWW..............WWWWWWWW</li>
+      <li>W............................W</li>
+      <li>W............................W</li>
+      <li>W............................W</li>
+      <li>W............................W</li>
+      <li>W............................W</li>
+      <li>WWWWWWWW..B.......C...WWWWWWWW</li>
+      <li>.......W...RSSSSSSR...W.......</li>
+      <li>.......W...RS....SR...W.......</li>
+      <li>.......W....SGG.GS...TW.......</li>
+      <li>.......WWWWWSSSHSSWWWWW.......</li>
     </things>
+
     <things2>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>....BBBBBBBB....</li>
-      <li>....BB....BB....</li>
-      <li>.....B....B.....</li>
-      <li>.....BBB.BB.....</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>............RRRRRR............</li>
+      <li>............R....R............</li>
+      <li>............R....R............</li>
+      <li>............RRR.RR............</li>
     </things2>
+
     <roof>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>.....^^^^^^.....</li>
-      <li>.....^^^^^^.....</li>
-      <li>.....^^^^^^.....</li>
-      <li>.....^^^^^^.....</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>............LLLLLL............</li>
+      <li>............LLLLLL............</li>
+      <li>............LLLLLL............</li>
+      <li>............LLLLLL............</li>
     </roof>
+
     <anchors>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>................</li>
-      <li>........8.......</li>
-      <li>................</li>
-      <li>................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>..............................</li>
+      <li>...............8..............</li>
+      <li>..............................</li>
+      <li>..............................</li>
     </anchors>
   </CustomBaseFramework.PieceDef>
 

@@ -21,10 +21,11 @@
       <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>R</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
       <li><symbol>L</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>S</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>G</symbol><thing>Door</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>H</symbol><thing>TorchLamp</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>K</symbol><thing>WoodLog</thing></li>
-      <li><symbol>M</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>G</symbol><terrain>Granite_Smooth</terrain></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>H</symbol><thing>VFEM2_3x1CastleGate</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li><symbol>K</symbol><thing>TorchLamp</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>M</symbol><thing>WoodLog</thing></li>
+      <li><symbol>N</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>j</symbol><anchor>Wall</anchor></li>
       <li><symbol>C</symbol><anchor>BarrelSouth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
       <li><symbol>B</symbol><anchor>GuardSouth</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
@@ -71,13 +72,13 @@
       <li>WWWWWWW........</li>
       <li>WWWWWWW........</li>
       <li>WWWWWWW........</li>
-      <li>WWWWWWW........</li>
-      <li>.WWWWW.........</li>
-      <li>.WWWWW.........</li>
-      <li>.WWWWW.........</li>
-      <li>.WWWWW.........</li>
-      <li>.WWWWW.........</li>
-      <li>WWWWWWW........</li>
+      <li>WWWWWWWGGGGGGGG</li>
+      <li>.WWWWWGGGGGGGGG</li>
+      <li>GWWWWWGGGGGGGGG</li>
+      <li>GWWWWWGGGGGGGGG</li>
+      <li>GWWWWWGGGGGGGGG</li>
+      <li>.WWWWWGGGGGGGGG</li>
+      <li>WWWWWWWGGGGGGGG</li>
       <li>WWWWWWW........</li>
       <li>WWWWWWW........</li>
       <li>WWWWWWW........</li>
@@ -93,15 +94,15 @@
       <li>P.F.S.T........</li>
       <li>TT...TTTPTPTPTT</li>
       <li>.TTPTT........T</li>
-      <li>.G...G........G</li>
-      <li>.G...G....H...G</li>
-      <li>.G...G........G</li>
+      <li>...............</li>
+      <li>..........K....</li>
+      <li>.H...H........H</li>
       <li>.TTPTT........T</li>
       <li>TT...TTTPTPTPTT</li>
-      <li>PKF.S.T........</li>
+      <li>PMF.S.T........</li>
       <li>R.....L........</li>
       <li>P.....T........</li>
-      <li>TT..MTT........</li>
+      <li>TT..NTT........</li>
       <li>.TTTTT.........</li>
     </things>
 

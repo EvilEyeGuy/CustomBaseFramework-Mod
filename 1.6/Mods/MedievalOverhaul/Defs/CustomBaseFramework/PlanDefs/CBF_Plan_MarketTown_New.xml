@@ -28,7 +28,7 @@
         <name>OldTown</name>
         <supply>1.2</supply>
         <roads>
-          <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Floor_Cobblestone_Granite</li>
+          <li>DankPyon_Floor_Cobblestone_Granite</li>
         </roads>
         <walls>
           <li><piece>TownWall</piece><weight>0.75</weight></li>
@@ -41,9 +41,21 @@
           <li><tag>CBF_MO_Gatehouse</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garrison_Walkway</list><post>Walkway</post><count>6~9</count></li>
-          <li><list>CBF_MO_Garrison_Gate</list><post>Gate</post><count>3~4</count></li>
-          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>4~5</count></li>
+          <li>
+            <list>CBF_MO_Garrison_Walkway</list>
+            <count>6~9</count>
+            <post>Walkway</post>
+          </li>
+          <li>
+            <list>CBF_MO_Garrison_Gate</list>
+            <count>3~4</count>
+            <post>Gate</post>
+          </li>
+          <li>
+            <list>CBF_MO_Garrison_Inside</list>
+            <count>4~5</count>
+            <post>Inside</post>
+          </li>
         </garrison>
         <districts>
           <li>
@@ -90,9 +102,21 @@
           <li><tag>CBF_MO_PalisadeGatehouse</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garrison_Walkway</list><post>Walkway</post><count>4~5</count></li>
-          <li><list>CBF_MO_Garrison_Gate</list><post>Gate</post><count>1~3</count></li>
-          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>3~4</count></li>
+          <li>
+            <list>CBF_MO_Garrison_Walkway</list>
+            <count>4~5</count>
+            <post>Walkway</post>
+          </li>
+          <li>
+            <list>CBF_MO_Garrison_Gate</list>
+            <count>1~3</count>
+            <post>Gate</post>
+          </li>
+          <li>
+            <list>CBF_MO_Garrison_Inside</list>
+            <count>3~4</count>
+            <post>Inside</post>
+          </li>
         </garrison>
         <districts>
           <li>
@@ -125,7 +149,11 @@
         <name>Countryside</name>
         <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>3~4</count></li>
+          <li>
+            <list>CBF_MO_Garrison_Inside</list>
+            <count>3~4</count>
+            <post>Inside</post>
+          </li>
         </garrison>
         <districts>
           <li>
@@ -231,6 +259,8 @@
     </siteTags>
 
     <worldTexture>World/WorldObjects/CBF/CBF_MarketTown</worldTexture>
+  
+    <forAllFactions>true</forAllFactions>
   </CustomBaseFramework.SettlementPlanDef>
 
 </Defs>

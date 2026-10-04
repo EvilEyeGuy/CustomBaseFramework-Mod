@@ -21,10 +21,11 @@
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>P</symbol><thing>WoodLog</thing></li>
       <li><symbol>R</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>L</symbol><thing>Door</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>S</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>G</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>H</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>L</symbol><terrain>Granite_Smooth</terrain></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>S</symbol><thing>VFEM2_3x1CastleGate</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li><symbol>G</symbol><thing>Stool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>H</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>K</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
       <li><symbol>k</symbol><anchor>Wall</anchor></li>
       <li><symbol>t</symbol><anchor>ShelfSouth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
       <li><symbol>u</symbol><anchor>GuardSouth</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
@@ -64,14 +65,14 @@
       <li>WWWWWWW..</li>
       <li>WWWWWWW..</li>
       <li>..WWWWW..</li>
-      <li>.WWWWW...</li>
-      <li>.WWWWW...</li>
-      <li>.WWWWW...</li>
-      <li>..WWWWWWW</li>
-      <li>..WWWWWWW</li>
-      <li>..WWWWWWW</li>
-      <li>..WWWWWWW</li>
-      <li>..WWWWWWW</li>
+      <li>LWWWWWL..</li>
+      <li>LWWWWWL..</li>
+      <li>LWWWWWL..</li>
+      <li>.LWWWWWWW</li>
+      <li>.LWWWWWWW</li>
+      <li>.LWWWWWWW</li>
+      <li>.LWWWWWWW</li>
+      <li>.LWWWWWWW</li>
     </terrain>
 
     <things>
@@ -82,13 +83,13 @@
       <li>CPB.R.T..</li>
       <li>TTT...T..</li>
       <li>..TTTTT..</li>
-      <li>..L..L...</li>
-      <li>..L..L...</li>
-      <li>..L..L...</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>..S..S...</li>
       <li>.TTTTTTTT</li>
       <li>.T.B...BT</li>
-      <li>.C..SG..F</li>
-      <li>.T..H...T</li>
+      <li>.C..GH..F</li>
+      <li>.T..K...T</li>
       <li>.TTTTTTTT</li>
     </things>
 

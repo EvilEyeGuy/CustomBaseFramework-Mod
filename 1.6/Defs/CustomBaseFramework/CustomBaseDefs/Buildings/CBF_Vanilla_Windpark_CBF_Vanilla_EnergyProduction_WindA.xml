@@ -10,10 +10,11 @@
     <style>CBF_ModernVanilla</style>
 
     <legend>
-      <li><symbol>W</symbol><terrain>Concrete</terrain></li>
-      <li><symbol>D</symbol><thing>Fence</thing><stuff>Steel</stuff></li>
-      <li><symbol>T</symbol><thing>FenceGate</thing><stuff>Steel</stuff></li>
-      <li><symbol>B</symbol><thing>WindTurbine</thing></li>
+      <li><symbol>W</symbol><thing>Fence</thing><stuff>Steel</stuff></li>
+      <li><symbol>D</symbol><terrain>PavedTile</terrain></li>
+      <li><symbol>T</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>B</symbol><thing>FenceGate</thing><stuff>Steel</stuff></li>
+      <li><symbol>C</symbol><thing>WindTurbine</thing></li>
     </legend>
 
     <mask>
@@ -38,45 +39,45 @@
     </mask>
 
     <terrain>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
-      <li>WWWWWWW</li>
+      <li>.......</li>
+      <li>.DDDDD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DTTTD.</li>
+      <li>.DDDDD.</li>
+      <li>.......</li>
     </terrain>
 
     <things>
-      <li>DDDDDDD</li>
-      <li>D.....D</li>
-      <li>D.....D</li>
-      <li>D.....D</li>
-      <li>D.....D</li>
-      <li>D.....D</li>
-      <li>D.....D</li>
-      <li>T.....D</li>
-      <li>D.....D</li>
-      <li>DDDDDDD</li>
+      <li>WWWWWWW</li>
+      <li>W.....W</li>
+      <li>W.....W</li>
+      <li>W.....W</li>
+      <li>W.....W</li>
+      <li>W.....W</li>
+      <li>W.....W</li>
+      <li>B.....W</li>
+      <li>W.....W</li>
+      <li>WWWWWWW</li>
       <li>.......</li>
-      <li>B......</li>
-      <li>DDDDDDD</li>
-      <li>T.....D</li>
-      <li>D.....D</li>
-      <li>D.....D</li>
-      <li>D.....D</li>
-      <li>DDDDDDD</li>
+      <li>C......</li>
+      <li>WWWWWWW</li>
+      <li>B.....W</li>
+      <li>W.....W</li>
+      <li>W.....W</li>
+      <li>W.....W</li>
+      <li>WWWWWWW</li>
     </things>
   </CustomBaseFramework.PieceDef>
 

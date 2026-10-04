@@ -21,8 +21,9 @@
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>P</symbol><thing>WoodLog</thing></li>
       <li><symbol>R</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>L</symbol><thing>Door</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>S</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>L</symbol><terrain>Granite_Smooth</terrain></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>S</symbol><thing>VFEM2_3x1CastleGate</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li><symbol>G</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>i</symbol><anchor>Wall</anchor></li>
       <li><symbol>t</symbol><anchor>BarrelSouth</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
       <li><symbol>s</symbol><anchor>GuardSouth</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
@@ -65,9 +66,9 @@
       <li>WWWWWWW</li>
       <li>WWWWWWW</li>
       <li>.WWWWW.</li>
-      <li>.WWWWW.</li>
-      <li>.WWWWW.</li>
-      <li>.WWWWW.</li>
+      <li>LWWWWWL</li>
+      <li>LWWWWWL</li>
+      <li>LWWWWWL</li>
       <li>.WWWWW.</li>
       <li>WWWWWWW</li>
       <li>WWWWWWW</li>
@@ -85,15 +86,15 @@
       <li>TPB.R.T</li>
       <li>TT...TT</li>
       <li>.TTTTT.</li>
-      <li>.L...L.</li>
-      <li>.L...L.</li>
-      <li>.L...L.</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.S...S.</li>
       <li>.TTTTT.</li>
       <li>TT...TT</li>
       <li>TPB.R.T</li>
       <li>C.....F</li>
       <li>T.....T</li>
-      <li>TT..STT</li>
+      <li>TT..GTT</li>
       <li>.TTTTT.</li>
     </things>
 

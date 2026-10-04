@@ -8,4 +8,18 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>/Defs/TileMutatorDef[defName="RiverDelta"]/workerClass</xpath>
+    <value>
+      <workerClass>CustomBaseFramework.CBF_RiverDeltaWorker</workerClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>/Defs/TileMutatorDef[defName="RiverIsland"]/workerClass</xpath>
+    <value>
+      <workerClass>CustomBaseFramework.CBF_RiverIslandWorker</workerClass>
+    </value>
+  </Operation>
+
 </Patch>

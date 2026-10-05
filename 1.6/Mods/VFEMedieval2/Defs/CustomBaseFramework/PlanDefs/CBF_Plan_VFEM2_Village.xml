@@ -1,6 +1,6 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef MayRequire="OskarPotocki.VFE.Medieval2">
     <defName>CBF_Plan_VFEM2_Village</defName>
     <label>village (VFE Medieval 2)</label>
     <materialList>CBF_VFEM2_MaterialList</materialList>
@@ -20,73 +20,45 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>VillageCore</name>
+        <name>OldTown</name>
         <supply>1.2</supply>
         <walls>
-          <li>CBF_VFEM2_Palisade</li>
+          <li MayRequire="OskarPotocki.VFE.Medieval2">CBF_VFEM2_Palisade</li>
         </walls>
         <emplacements>
-          <li>
-            <tag>CBF_VFEM2_PalisadeTower</tag>
-            <count>1~2</count>
-          </li>
+          <li><tag>CBF_VFEM2_PalisadeTower</tag><count>1~2</count></li>
         </emplacements>
         <gatehouses>
-          <li>
-            <tag>CBF_VFEM2_PalisadeGatehouse</tag>
-            <count>1~2</count>
-          </li>
+          <li><tag>CBF_VFEM2_PalisadeGatehouse</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
           <li>
             <list>CBF_VFEM2_Garrison_Walkway</list>
-            <post>Walkway</post>
             <count>3~5</count>
+            <post>Walkway</post>
           </li>
           <li>
             <list>CBF_VFEM2_Garrison_Gate</list>
-            <post>Gate</post>
             <count>1~3</count>
+            <post>Gate</post>
           </li>
           <li>
             <list>CBF_VFEM2_Garrison_Inside</list>
-            <post>Inside</post>
             <count>1~3</count>
+            <post>Inside</post>
           </li>
         </garrison>
         <districts>
           <li>
             <name>VillageSquare</name>
             <entries>
-              <li>
-                <tag>CBF_VFEM2_Tavern</tag>
-                <count>1~1</count>
-              </li>
-              <li>
-                <tag>CBF_VFEM2_Workshop</tag>
-                <count>2~3</count>
-              </li>
-              <li>
-                <tag>CBF_VFEM2_Church</tag>
-                <count>0~1</count>
-              </li>
-              <li>
-                <tag>CBF_VFEM2_Recreation</tag>
-                <count>0~1</count>
-              </li>
-              <li>
-                <tag>CBF_VFEM2_Shrine</tag>
-                <count>1~1</count>
-              </li>
-              <li>
-                <piece>CBF_VFEM2_Armory_D</piece>
-                <count>0~1</count>
-              </li>
-              <li>
-                <tag>CBF_VFEM2_Hut</tag>
-                <count>8~12</count>
-                <filler>true</filler>
-              </li>
+              <li><tag>CBF_VFEM2_Tavern</tag><count>1~1</count></li>
+              <li><tag>CBF_VFEM2_Workshop</tag><count>2~3</count></li>
+              <li><tag>CBF_VFEM2_Church</tag><count>0~1</count></li>
+              <li><tag>CBF_VFEM2_Recreation</tag><count>0~1</count></li>
+              <li><tag>CBF_VFEM2_Shrine</tag><count>1~1</count></li>
+              <li><piece>CBF_VFEM2_Armory_D</piece><count>0~1</count></li>
+              <li><tag>CBF_VFEM2_Hut</tag><count>8~12</count><filler>true</filler></li>
               <li><tag>CBF_VFEM2_AlchemyWorkshop</tag><count>0~1</count></li>
               <li><tag>CBF_VFEM2_CookHut</tag><count>0~1</count></li>
               <li><tag>CBF_VFEM2_Alehouse</tag><count>0~1</count></li>
@@ -98,47 +70,35 @@
       </li>
       <li>
         <kind>Suburb</kind>
-        <name>OuterFarms</name>
+        <name>NewTown</name>
         <supply>1.2</supply>
         <garrison>
           <li>
             <list>CBF_VFEM2_Garrison_Inside</list>
-            <post>Inside</post>
             <count>1~3</count>
+            <post>Inside</post>
           </li>
         </garrison>
         <districts>
           <li>
-            <name>Farms</name>
-            <fields>
-              <li>
-                <count>2~4</count>
-                <fence>true</fence>
-                <weight>1</weight>
-                <plants>
-                  <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Carrots</li>
-                  <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Garlic</li>
-                  <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Onions</li>
-                  <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Pumpkins</li>
-                  <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
-                  <li>Plant_Corn</li>
-                </plants>
-                <tags>
-                  <li>CBF_VFEM2_Hut</li>
-                  <li>CBF_VFEM2_Farmstead</li>
-                </tags>
-              </li>
-            </fields>
+            <name>Farms</name><fields><li>
+              <count>2~4</count>
+              <fence>true</fence>
+              <weight>1</weight><plants>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Carrots</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Garlic</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Onions</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Pumpkins</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
+                <li>Plant_Corn</li>
+               </plants>
+              <tags>
+                <li>CBF_VFEM2_Hut</li>
+                <li>CBF_VFEM2_Farmstead</li>
+              </tags></li></fields>
             <entries>
-              <li>
-                <tag>CBF_VFEM2_Hut</tag>
-                <count>4~8</count>
-                <filler>true</filler>
-              </li>
-              <li>
-                <tag>CBF_VFEM2_Farmstead</tag>
-                <count>2~3</count>
-              </li>
+              <li><tag>CBF_VFEM2_Hut</tag><count>4~8</count><filler>true</filler></li>
+              <li><tag>CBF_VFEM2_Farmstead</tag><count>2~3</count></li>
             </entries>
           </li>
         </districts>
@@ -150,83 +110,52 @@
         <garrison>
           <li>
             <list>CBF_VFEM2_Garrison_Inside</list>
-            <post>Inside</post>
             <count>1~3</count>
+            <post>Inside</post>
           </li>
         </garrison>
         <districts>
           <li>
-            <name>Mill</name>
-            <fields>
-              <li>
-                <count>2~3</count>
-                <fence>false</fence>
-                <weight>1</weight>
-                <plants>
-                  <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
-                </plants>
-                <tags>
-                  <li>CBF_VFEM2_Farmstead</li>
-                </tags>
-              </li>
-            </fields>
+            <name>Mill</name><fields><li>
+              <count>2~3</count>
+              <fence>false</fence>
+              <weight>1</weight><plants>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Wheat</li>
+               </plants>
+              <tags>
+                <li>CBF_VFEM2_Farmstead</li>
+              </tags></li></fields>
             <entries>
-              <li>
-                <tag>CBF_VFEM2_Farmstead</tag>
-                <count>1~1</count>
-              </li>
+              <li><tag>CBF_VFEM2_Farmstead</tag><count>1~1</count></li>
             </entries>
           </li>
           <li>
-            <name>Pasture</name>
-            <pens>
-              <li>
-                <name>Pen</name>
-                <count>1~1</count>
-                <herd>2~5</herd>
-                <pawns>Hardanimals_1</pawns>
-                <terrain>Soil</terrain>
-                <plants>
-                  <li>Plant_Haygrass</li>
-                </plants>
-                <weight>1</weight>
-              </li>
-            </pens>
+            <name>Pasture</name><pens><li>
+              <name>Pen</name>
+              <count>1~1</count>
+              <herd>2~5</herd>
+              <pawns>Hardanimals_1</pawns>
+              <terrain>Soil</terrain><plants>
+                <li>Plant_Haygrass</li>
+               </plants>
+              <weight>1</weight></li></pens>
             <entries>
-              <li>
-                <tag>CBF_VFEM2_Barn</tag>
-                <count>0~1</count>
-              </li>
-              <li>
-                <tag>CBF_VFEM2_Hut</tag>
-                <count>0~2</count>
-              </li>
+              <li><tag>CBF_VFEM2_Barn</tag><count>0~1</count></li>
+              <li><tag>CBF_VFEM2_Hut</tag><count>0~2</count></li>
             </entries>
           </li>
           <li>
             <name>Churchyard</name>
             <entries>
-              <li>
-                <tag>CBF_VFEM2_Graveyard</tag>
-                <count>0~1</count>
-              </li>
+              <li><tag>CBF_VFEM2_Graveyard</tag><count>0~1</count></li>
             </entries>
           </li>
           <li>
             <name>Edge</name>
             <entries>
-              <li>
-                <tag>CBF_VFEM2_Hut</tag>
-                <count>0~3</count>
-              </li>
-              <li>
-                <tag>CBF_VFEM2_HuntingLodge</tag>
-                <count>0~1</count>
-              </li>
-              <li>
-                <tag>CBF_VFEM2_Winery</tag>
-                <count>0~1</count>
-              </li>
+              <li><tag>CBF_VFEM2_Hut</tag><count>0~3</count></li>
+              <li><tag>CBF_VFEM2_HuntingLodge</tag><count>0~1</count></li>
+              <li><tag>CBF_VFEM2_Winery</tag><count>0~1</count></li>
             </entries>
           </li>
         </districts>
@@ -238,7 +167,7 @@
       <li>VFEM2_KingdomRough</li>
       <li>VFEM2_KingdomSavage</li>
     </factionTags>
-    <share>80</share>
+    <share>0</share>
     <wdLevel>1</wdLevel>
     <harbor>
       <entries>

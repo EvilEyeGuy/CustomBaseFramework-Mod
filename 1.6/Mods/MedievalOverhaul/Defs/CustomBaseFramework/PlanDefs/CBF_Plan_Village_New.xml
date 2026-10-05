@@ -25,7 +25,7 @@
     <wards>
       <li>
         <kind>Town</kind>
-        <name>VillageCore</name>
+        <name>OldTown</name>
         <gate>DankPyon_ReinfocedLogGate</gate>
         <supply>1.2</supply>
         <walls>
@@ -38,9 +38,21 @@
           <li><tag>CBF_MO_PalisadeGatehouse</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
-          <li><list>CBF_MO_Garrison_Walkway</list><post>Walkway</post><count>3~5</count></li>
-          <li><list>CBF_MO_Garrison_Gate</list><post>Gate</post><count>1~3</count></li>
-          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>1~3</count></li>
+          <li>
+            <list>CBF_MO_Garrison_Walkway</list>
+            <count>3~5</count>
+            <post>Walkway</post>
+          </li>
+          <li>
+            <list>CBF_MO_Garrison_Gate</list>
+            <count>1~3</count>
+            <post>Gate</post>
+          </li>
+          <li>
+            <list>CBF_MO_Garrison_Inside</list>
+            <count>1~3</count>
+            <post>Inside</post>
+          </li>
         </garrison>
         <districts>
           <li>
@@ -63,10 +75,14 @@
       </li>
       <li>
         <kind>Suburb</kind>
-        <name>OuterFarms</name>
+        <name>NewTown</name>
         <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>1~3</count></li>
+          <li>
+            <list>CBF_MO_Garrison_Inside</list>
+            <count>1~3</count>
+            <post>Inside</post>
+          </li>
         </garrison>
         <districts>
           <li>
@@ -97,7 +113,11 @@
         <name>Countryside</name>
         <supply>1.2</supply>
         <garrison>
-          <li><list>CBF_MO_Garrison_Inside</list><post>Inside</post><count>1~3</count></li>
+          <li>
+            <list>CBF_MO_Garrison_Inside</list>
+            <count>1~3</count>
+            <post>Inside</post>
+          </li>
         </garrison>
         <districts>
           <li>
@@ -156,7 +176,7 @@
       <li>DankPyon_NobleHouseCivil2</li>
     </factionTags>
 
-    <share>80</share>
+    <share>0</share>
 
     <wdLevel>1</wdLevel>
 

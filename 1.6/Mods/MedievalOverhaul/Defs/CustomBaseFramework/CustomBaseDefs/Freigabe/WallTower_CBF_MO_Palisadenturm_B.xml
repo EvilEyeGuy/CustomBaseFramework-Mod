@@ -11,19 +11,21 @@
     <type>WallPart</type>
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
+
     <legend>
-      <li><symbol>8</symbol><anchor>TowerGuard</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList><pawnCount>1~2</pawnCount></li>
-      <li><symbol>9</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_GunCrew</pawnList><pawnCount>1</pawnCount></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_ScorpioBolt</thing><count>10</count></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>E</symbol><thing>DankPyon_EmbPalisade</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_EmbPalisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_Turret_Scorpio</thing><stuff>DankPyon_RawWood</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_ScorpioBolt</thing></li>
       <li><symbol>R</symbol><anchor>Wall</anchor></li>
-      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>b</symbol><thing>DankPyon_Turret_Scorpio</thing><stuff>DankPyon_RawWood</stuff><rotation>West</rotation></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>e</symbol><terrain>DankPyon_EarthenFloor</terrain></li>
+      <li><symbol>8</symbol><anchor>TowerGuard</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Tower</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>9</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Pawns_GunCrew</pawnList></li>
       <li><symbol>f</symbol><anchor>Barrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Storage</lootTable></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>i</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
     </legend>
+
     <mask>
       <li>.###.</li>
       <li>#####</li>
@@ -31,27 +33,31 @@
       <li>#####</li>
       <li>.###.</li>
     </mask>
+
     <terrain>
-      <li>.eee.</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>.eee.</li>
+      <li>.WWW.</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>.WWW.</li>
     </terrain>
+
     <things>
-      <li>.EPE.</li>
-      <li>EPiPE</li>
-      <li>E.b.P</li>
-      <li>EPDPE</li>
-      <li>.EPE.</li>
+      <li>.TTT.</li>
+      <li>TBCBT</li>
+      <li>T.F.T</li>
+      <li>TBPBT</li>
+      <li>.TTT.</li>
     </things>
+
     <roof>
-      <li>.^^^.</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>.^^^.</li>
+      <li>.DDD.</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>.DDD.</li>
     </roof>
+
     <anchors>
       <li>..R..</li>
       <li>..f..</li>

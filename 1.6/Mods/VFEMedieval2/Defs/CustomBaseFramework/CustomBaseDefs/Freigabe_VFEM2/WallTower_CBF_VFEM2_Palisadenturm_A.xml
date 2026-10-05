@@ -11,24 +11,26 @@
     <type>WallPart</type>
     <style>CBF_VFEM2</style>
     <eaves>true</eaves>
+
     <legend>
-      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>b</symbol><thing>VFEM2_LowCastleWall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>e</symbol><terrain>PackedDirt</terrain></li>
-      <li><symbol>f</symbol><thing>WoodLog</thing><count>30</count></li>
+      <li><symbol>W</symbol><terrain>PackedDirt</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>T</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>B</symbol><thing>VFEM2_LowCastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>C</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>F</symbol><thing>WoodLog</thing></li>
+      <li><symbol>P</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>R</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>L</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>S</symbol><thing>VFEM2_StandingBanner</thing></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>G</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
       <li><symbol>i</symbol><anchor>Wall</anchor></li>
-      <li><symbol>j</symbol><anchor>Barrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
-      <li><symbol>k</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind><pawnCount>1</pawnCount></li>
-      <li><symbol>l</symbol><anchor>TowerGuard</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
-      <li><symbol>m</symbol><anchor>TowerShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf</objects><lootTable>CBF_VFEM2_Loot_Armory</lootTable></li>
       <li><symbol>n</symbol><anchor>Flag</anchor><anchorKind>Object</anchorKind><objects>CBF_VFEM2_Flag</objects><factionFlag>true</factionFlag></li>
-      <li><symbol>o</symbol><thing>VFEM2_Turret_WallMountedArbalest</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
-      <li><symbol>p</symbol><thing>VFEM2_LowCastleWall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>q</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>r</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>s</symbol><thing>VFEM2_StandingBanner</thing><rotation>North</rotation></li>
+      <li><symbol>k</symbol><anchor>ServantA</anchor><anchorKind>Spawn</anchorKind></li>
+      <li><symbol>l</symbol><anchor>TowerGuard</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount></li>
+      <li><symbol>j</symbol><anchor>Barrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_Shelf_Small</objects><lootTable>CBF_VFEM2_Loot_Dwelling</lootTable></li>
     </legend>
+
     <mask>
       <li>#####</li>
       <li>#####</li>
@@ -36,32 +38,36 @@
       <li>#####</li>
       <li>#####</li>
     </mask>
+
     <terrain>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
-      <li>eeeee</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
+      <li>WWWWW</li>
     </terrain>
+
     <things>
-      <li>ababa</li>
-      <li>bf.qb</li>
-      <li>p.o.a</li>
-      <li>br.sb</li>
-      <li>ababa</li>
+      <li>TBCBT</li>
+      <li>BF.PB</li>
+      <li>R...L</li>
+      <li>B..SB</li>
+      <li>TBGBT</li>
     </things>
+
     <roof>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
-      <li>^^^^^</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
     </roof>
+
     <anchors>
       <li>..i..</li>
       <li>...j.</li>
       <li>ik.li</li>
-      <li>.mmn.</li>
+      <li>...n.</li>
       <li>..i..</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

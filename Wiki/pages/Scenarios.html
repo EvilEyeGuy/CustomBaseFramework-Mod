@@ -1,4 +1,4 @@
-<!doctype html><html lang="en" data-look="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SpreadEntry · Custom Base Framework</title><style>
+<!doctype html><html lang="en" data-look="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Scenarios · Custom Base Framework</title><style>
 :root,[data-look="dark"]{--grund:#151b1e;--fenster:#1c1b1d;--leiste:#0f1416;--spalte:#25282a;--rand:#3b3f41;--linie:#2c2f31;
 --text:#d8d6d0;--kopf:#e6d7b4;--titel:#efe9dc;--leise:#9a9c9b;--blass:#6c706f;--akzent:#d2a44e;--wahl:#4a4a32;--wahlrand:#b58a45;
 --wahltext:#f0dcae;--code:#121212;--codetext:#f0dcae;--feld:#121212;--schrift:Arial,"Segoe UI",sans-serif;--lese:Arial,"Segoe UI",sans-serif;
@@ -116,89 +116,60 @@ if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();fund.cl
 else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')zu();});
 });
 })();
-</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Modding / SpreadEntry</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Scenarios.html">Scenarios</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Patches.html">XML patches</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Modding-Scenarios.html">Starting in a ruin</a><a href="Modding-Dungeons.html">Dungeons (development)</a><a href="Field-Reference.html" class="hier">Field reference</a></div></nav><main><div class="inhalt"><div class="pfad"><a href="Field-Reference.html">Field reference</a> / SpreadEntry</div><h1 id="spreadentry">SpreadEntry</h1><p class="unter">Modding</p>
-<p>Development record intended to distribute room requests across dungeon levels. It is saved and validated but is not consumed by the current framework-to-planner conversion. Use entries in each level's districts for working room requests.</p>
-<h2 id="where-this-record-goes">Where this record goes</h2>
-<ul>
-<li><a href="SettlementPlanDef.html">SettlementPlanDef</a> → <code>spread</code>: put these fields inside each <code>&lt;li&gt;</code> in the list.</li>
-</ul>
-<p>This is an embedded record, not an independently named Def. Do not add a <code>defName</code> or a <code>&lt;SpreadEntry&gt;</code> wrapper here.</p>
+</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Playing / Scenarios</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Scenarios.html" class="hier">Scenarios</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Patches.html">XML patches</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Modding-Scenarios.html">Starting in a ruin</a><a href="Modding-Dungeons.html">Dungeons (development)</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="scenarios">Scenarios</h1><p class="unter">Playing</p>
+<p>CBF adds scenarios in which your colony starts in the ruins of an abandoned settlement. The walls are broken, roofs have fallen in and trees grow through the floors. The buildings belong to no one, so you can claim and repair them. Something may still be sleeping inside. To build your own ruin scenario, see <a href="Modding-Scenarios.html">Starting in a ruin</a>.</p>
+<h2 id="the-scenarios">The scenarios</h2>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Default</th>
-<th>Meaning</th>
+<th>Scenario</th>
+<th>Needs</th>
+<th>Start</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>count</code></td>
-<td>IntRange</td>
-<td><code>1</code></td>
-<td>Requested number of buildings, sampled from the range. Placement depends on available space. During reference resolution, counts above 150 are capped at 150.</td>
+<td><strong>Ruins of a Town</strong></td>
+<td>nothing</td>
+<td>Four settlers of a modern colony, with rifle, revolver, knife, survival meals, medicine, components, steel and wood. Wrecked war machines and rusted cars lie in front of the settlement.</td>
 </tr>
 <tr>
-<td><code>district</code></td>
-<td>text</td>
-<td>none</td>
-<td>Intended target district for a spread request. The spread list is not applied by the current planner conversion.</td>
-</tr>
-<tr>
-<td><code>filler</code></td>
-<td>true/false</td>
-<td><code>false</code></td>
-<td>Counts as met at half its minimum. When free space is filled at the end, it may also go beyond its maximum.</td>
-</tr>
-<tr>
-<td><code>levels</code></td>
-<td>IntRange</td>
-<td><code>1</code></td>
-<td>Intended inclusive level range, numbered from 1. Validated against the plan's number of levels, but spread requests are not applied by the current planner conversion.</td>
-</tr>
-<tr>
-<td><code>lootTable</code></td>
-<td>text</td>
-<td>none</td>
-<td>Default loot table for content zones in pieces selected by this entry. A content zone with its own resolved table takes precedence.</td>
-</tr>
-<tr>
-<td><code>piece</code></td>
-<td><a href="PieceDef.html">PieceDef</a></td>
-<td>none</td>
-<td>Specific PieceDef to request. Takes precedence when tag is also supplied.</td>
-</tr>
-<tr>
-<td><code>tag</code><br>Category</td>
-<td><a href="PieceCategoryDef.html">PieceCategoryDef</a></td>
-<td>none</td>
-<td>PieceCategoryDef to select buildings from, including its descendant categories. This is the current category field for a building request; use piece to request a specific template.</td>
-</tr>
-<tr>
-<td><code>unique</code><br>Only once</td>
-<td>true/false</td>
-<td><code>false</code></td>
-<td>At most one per settlement.</td>
-</tr>
-<tr>
-<td><code>weight</code></td>
-<td>number</td>
-<td><code>1</code></td>
-<td>Weight against the other entries of the same list. Higher values are picked more often.</td>
-</tr>
-<tr>
-<td><code>withIdeo</code></td>
-<td>list of text</td>
-<td>none</td>
-<td>Allow the entry only if the owning ideoligion contains at least one listed meme or precept defName. Without an ideoligion, a non-empty list rejects the entry.</td>
-</tr>
-<tr>
-<td><code>withoutIdeo</code></td>
-<td>list of text</td>
-<td>none</td>
-<td>Reject the entry if the owning ideoligion contains any listed meme or precept defName.</td>
+<td><strong>Ruins of a Village</strong></td>
+<td>Medieval Overhaul</td>
+<td>Four settlers of a medieval kingdom, with bow, hatchet, knife, rations, herbal medicine, basic components, iron and wood. A ruined siege tower, battering ram, carts, banners and fallen footmen lie in front of the village.</td>
 </tr>
 </tbody>
 </table>
-<p><a href="Field-Reference.html">Back to the field reference</a> · <a href="Modding-Overview.html#read-the-field-tables">XML values and types</a> · <a href="Modding-Patches.html">Writing patches</a></p></div></main><aside class="rechts"></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+<p>Both start with 300 silver. The settlers can be chosen from eight candidates.</p>
+<h2 id="starting-a-game">Starting a game</h2>
+<ol>
+<li>Choose the scenario and set up the world as usual.</li>
+<li>After you choose the starting site, an extra page <strong>Settlement ruin</strong> appears. Pick the settlement type of the ruin or keep <strong>Random</strong>. Only settlement types that fit the tech level of your faction are listed: medieval types for the village scenario, modern types for the town.</li>
+<li>On the same page you can set the map size. Large settlement types need a larger map, the page shows the minimum. A smaller value is not accepted.</li>
+<li>The map is generated with the settlement on it. This takes longer than a normal start.</li>
+</ol>
+<p>Your settlers start just outside the settlement.</p>
+<h2 id="what-you-find">What you find</h2>
+<ul>
+<li><strong>Buildings without owner.</strong> Every wall, door, bed and workbench is free to use. Claim doors and buildings to make them yours. Many are damaged and need repair.</li>
+<li><strong>Damage.</strong> Breaches in the walls, collapsed roofs, burnt rooms, rubble, a fallen town wall in places. Lights and torches are out.</li>
+<li><strong>No loot.</strong> The settlement was abandoned long ago. Containers are empty. What you get are the buildings themselves.</li>
+<li><strong>Corpses.</strong> A few skeletons of former residents and attackers.</li>
+<li><strong>Overgrowth.</strong> Trees and bushes grow in the streets and open spaces. Fields are gone, animals have run off or turned wild.</li>
+<li><strong>Sleepers.</strong> A group of hostile raiders and predators sleeps under a roof somewhere in the settlement, usually away from the map centre. They wake when one of your colonists comes close and sees them, or when there is noise nearby. Explore carefully and with weapons ready.</li>
+</ul>
+<h2 id="adding-a-ruin-start-to-other-scenarios">Adding a ruin start to other scenarios</h2>
+<p>The ruin start is a scenario part. In the scenario editor, add <strong>Start in a settlement ruin</strong> to any scenario and choose:</p>
+<ul>
+<li>the settlement type, or random</li>
+<li>the kind of ruin</li>
+<li>who sleeps inside: nobody, animals, raiders or both</li>
+<li>how strong the sleepers are</li>
+</ul>
+<p>A scenario can only contain one ruin start.</p>
+<h2 id="things-to-know">Things to know</h2>
+<ul>
+<li>The settlement is built in the style of a faction in your world that uses this settlement type. If no faction uses a matching type, the list is empty and the map has no settlement.</li>
+<li>Mods that reshape the map can affect the ruin in the same way as other CBF settlements, see <a href="Compatibility.html">Compatibility</a>.</li>
+<li>If the starting map has no settlement, the log explains why. Look for lines starting with <code>CBFStart</code> or <code>Startruine</code>.</li>
+</ul><div class="schritte"><a href="Quests.html"><span>Previous</span>Quests</a><a class="weiter" href="Mod-Settings.html"><span>Next</span>Mod settings</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#the-scenarios">The scenarios</a><a class="t2" href="#starting-a-game">Starting a game</a><a class="t2" href="#what-you-find">What you find</a><a class="t2" href="#adding-a-ruin-start-to-other-scenarios">Adding a ruin start to other scenarios</a><a class="t2" href="#things-to-know">Things to know</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

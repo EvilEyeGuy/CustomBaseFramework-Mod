@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>CBF_MO_Scenario_RuinMedieval</defName>
+    <label>Ruins of a Village</label>
+    <description>Your group reaches a village that was abandoned long ago. Walls are broken, roofs have fallen in and trees grow through the floors. The buildings can be claimed and repaired. Something may still be sleeping inside.</description>
+    <scenario>
+      <summary>Four settlers in the ruins of an abandoned medieval settlement.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>DankPyon_PlayerKingdom</factionDef>
+      </playerFaction>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>4</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+        <li Class="CustomBaseFramework.ScenPart_CBFRuinStart">
+          <def>CBF_RuinStart</def>
+          <ruin>CBF_Ruin_Abandoned</ruin>
+          <sleepers>Both</sleepers>
+          <sleeperPoints>200</sleeperPoints>
+          <battlefield>
+            <li><thing>DankPyon_RuinedSiegeTower</thing><count>1~2</count></li>
+            <li><thing>DankPyon_RuinedBatteringRam</thing><count>1</count></li>
+            <li><thing>DankPyon_AncientFootman</thing><count>6~12</count></li>
+            <li><thing>DankPyon_AncientRuinedBanner</thing><count>2~4</count></li>
+            <li><thing>DankPyon_AncientRuinedCart</thing><count>1~2</count></li>
+          </battlefield>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>DankPyon_MealRations</thingDef>
+          <count>40</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineHerbal</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>DankPyon_ComponentBasic</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Bow_Short</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>DankPyon_MeleeWeapon_Hatchet</thingDef>
+          <stuff>DankPyon_IronIngot</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>DankPyon_IronIngot</stuff>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>DankPyon_IronIngot</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>CBF_Scen_GameStart</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ScenPartDef>
+    <defName>CBF_RuinStart</defName>
+    <label>start in a settlement ruin</label>
+    <category>Misc</category>
+    <scenPartClass>CustomBaseFramework.ScenPart_CBFRuinStart</scenPartClass>
+    <summaryPriority>500</summaryPriority>
+    <maxUses>1</maxUses>
+    <canBeRandomlyAdded>false</canBeRandomlyAdded>
+  </ScenPartDef>
+
+  <CustomBaseFramework.RuinDef ParentName="CBF_Ruin_Basis">
+    <defName>CBF_Ruin_Abandoned</defName>
+    <label>long abandoned</label>
+    <wallDemolition>0.3</wallDemolition>
+    <clustering>0.75</clustering>
+    <breaches>3~6</breaches>
+    <gateDestroyed>1</gateDestroyed>
+    <buildingDamage>0.4~0.9</buildingDamage>
+    <turretsDestroyed>1</turretsDestroyed>
+    <burnMarks>0.3</burnMarks>
+    <fires>0</fires>
+    <rubble>0.6</rubble>
+    <lootFactor>0</lootFactor>
+    <lootWithOccupiers>0</lootWithOccupiers>
+    <residentCorpses>2~5</residentCorpses>
+    <attackerCorpses>0~2</attackerCorpses>
+    <rotDays>60~200</rotDays>
+    <prisoners>0</prisoners>
+    <fieldsRavaged>1</fieldsRavaged>
+    <livestockGone>1</livestockGone>
+    <overgrowth>0.25</overgrowth>
+    <overgrowthTrees>0.3</overgrowthTrees>
+    <townWallDecay>0.3</townWallDecay>
+    <lightsOut>true</lightsOut>
+    <roofCollapse>0.3</roofCollapse>
+    <occupation>None</occupation>
+  </CustomBaseFramework.RuinDef>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>CBF_Scenario_RuinModern</defName>
+    <label>Ruins of a Town</label>
+    <description>Your group reaches a settlement that was abandoned long ago. Walls are broken, roofs have fallen in and trees grow through the floors. The buildings can be claimed and repaired. Something may still be sleeping inside.</description>
+    <scenario>
+      <summary>Four settlers in the ruins of an abandoned settlement.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>4</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+        <li Class="CustomBaseFramework.ScenPart_CBFRuinStart">
+          <def>CBF_RuinStart</def>
+          <ruin>CBF_Ruin_Abandoned</ruin>
+          <sleepers>Both</sleepers>
+          <sleeperPoints>200</sleeperPoints>
+          <battlefield>
+            <li><thing>AncientWarwalkerTorso</thing><count>1</count></li>
+            <li><thing>AncientWarwalkerLeg</thing><count>1~2</count></li>
+            <li><thing>AncientWarwalkerFoot</thing><count>0~1</count></li>
+            <li><thing>AncientWarwalkerClaw</thing><count>0~1</count></li>
+            <li><thing>AncientWarwalkerShell</thing><count>1~2</count></li>
+            <li><thing>AncientTank</thing><count>0~1</count></li>
+            <li><thing>AncientAPC</thing><count>0~1</count></li>
+            <li><thing>AncientRustedCar</thing><count>1~3</count></li>
+          </battlefield>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_BoltActionRifle</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_Revolver</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>Steel</stuff>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <textKey>CBF_Scen_GameStart</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

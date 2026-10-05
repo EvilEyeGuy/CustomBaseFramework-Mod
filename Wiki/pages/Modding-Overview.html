@@ -284,6 +284,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>Loot tables and loot containers: <a href="Modding-Loot.html">Modding-Loot</a></li>
 <li>Pawn lists, garrisons and unit swap: <a href="Modding-Pawns.html">Modding-Pawns</a></li>
 <li>Quest sites and ruins in quests: <a href="Modding-Quests.html">Modding-Quests</a></li>
+<li>Scenarios that start in a ruin: <a href="Modding-Scenarios.html">Modding-Scenarios</a></li>
 </ul>
 <p>The rest of this page covers the def types on the side of that tree.</p>
 <h2 id="wall-profiles">Wall profiles</h2>
@@ -498,7 +499,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </table>
 <p>When several entries of the same role fit a cell, the most specific wins. A <code>forPieces</code> match beats a <code>district</code> match, which beats an entry without conditions. What matches depends on the cell's ward and on the wall, tower and gatehouse pieces of that ward.</p>
 <h2 id="ruins">Ruins</h2>
-<p>A <code>RuinDef</code> turns a generated settlement into a raided or destroyed one: breaches, burnt rooms, corpses, reduced loot. CBF uses ruins for quest sites. A ruin reaches a map either from a quest node or from a <code>CustomBaseFramework.CBFSiteExtension</code> on a SitePartDef. See <a href="Modding-Quests.html">Modding-Quests</a>.</p>
+<p>A <code>RuinDef</code> turns a generated settlement into a raided or destroyed one: breaches, burnt rooms, corpses, reduced loot. CBF uses ruins for quest sites and for scenarios that start in a ruin. On a quest site a ruin reaches the map either from a quest node or from a <code>CustomBaseFramework.CBFSiteExtension</code> on a SitePartDef, see <a href="Modding-Quests.html">Modding-Quests</a>. For scenarios see <a href="Modding-Scenarios.html">Starting in a ruin</a>.</p>
 <p>CBF's shipped ruin inherits from the abstract <code>CBF_Ruin_Basis</code>, which only sets <code>occupation</code> to <code>Occupier</code>. Some fields are left out here:</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.RuinDef</span> <span class="xa">ParentName</span>=<span class="xw">&quot;CBF_Ruin_Basis&quot;</span>&gt;
   &lt;<span class="xt">defName</span>&gt;CBF_Ruin_Raided&lt;/<span class="xt">defName</span>&gt;

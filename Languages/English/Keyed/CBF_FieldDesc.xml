@@ -210,4 +210,6 @@
   <CBF_FieldDesc_gateClearance>Cells kept free around a gate.</CBF_FieldDesc_gateClearance>
   <CBF_FieldDesc_Vorfeldspec_spacing>Gap between two groups of obstacles along the wall or edge, in cells, as a range.</CBF_FieldDesc_Vorfeldspec_spacing>
   <CBF_FieldDesc_coreShapes>Allowed shapes of the old town: Grown, Rectangle, LShape, TShape, UShape, Cross, Step, Octagon. Each settlement picks one of them at random. Empty means Grown only. Grown only forms its own outline when the settlement has suburb islands or a wall deeper than 3 cells; otherwise the old town stays a rectangle.</CBF_FieldDesc_coreShapes>
+  <CBF_FieldDesc_netShapes>Allowed outlines of modern settlements: Polygon, Square, Hexagon, Round. Each settlement picks one, fixed by its ID. Empty means all.</CBF_FieldDesc_netShapes>
+  <CBF_FieldDesc_netRoads>Allowed street networks of modern settlements: Ring (ring road with spokes) and MainRoad (one main road straight through, narrow lanes otherwise). If both are allowed, each settlement picks one, fixed by its ID. Empty means both.</CBF_FieldDesc_netRoads>
 </LanguageData>

@@ -210,4 +210,6 @@
   <CBF_FieldDesc_gateClearance>Felder, die um ein Tor frei bleiben.</CBF_FieldDesc_gateClearance>
   <CBF_FieldDesc_Vorfeldspec_spacing>Lücke zwischen zwei Hindernisgruppen entlang der Mauer oder des Randes, in Feldern, als Spanne.</CBF_FieldDesc_Vorfeldspec_spacing>
   <CBF_FieldDesc_coreShapes>Erlaubte Formen der Altstadt: Grown, Rectangle, LShape, TShape, UShape, Cross, Step, Octagon. Jeder Ort würfelt eine davon. Leer heißt nur Gewachsen. Gewachsen bildet nur dann einen eigenen Umriss, wenn der Ort Vorstadtinseln hat oder die Mauer tiefer als 3 Felder ist. Sonst bleibt die Altstadt ein Rechteck.</CBF_FieldDesc_coreShapes>
+  <CBF_FieldDesc_netShapes>Erlaubte Umrisse moderner Orte: Polygon, Square, Hexagon, Round. Jeder Ort würfelt fest nach seiner ID eine davon. Leer heißt alle.</CBF_FieldDesc_netShapes>
+  <CBF_FieldDesc_netRoads>Erlaubte Straßennetze moderner Orte: Ring (Ringstraße mit Speichen) und MainRoad (eine Hauptstraße quer durch, sonst schmale Gassen). Sind beide erlaubt, würfelt jeder Ort fest nach seiner ID. Leer heißt beide.</CBF_FieldDesc_netRoads>
 </LanguageData>

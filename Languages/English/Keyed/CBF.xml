@@ -748,6 +748,24 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_ExportedAsPatch>{0} saved as patch: {1}. The new structure takes effect after restarting the game.</CBF_ExportedAsPatch>
   <CBF_WdLootShare>Loot in World Domination settlements: {0}% planned CBF loot, {1}% World Domination loot</CBF_WdLootShare>
   <CBF_WdLootShareHelp>100%: every container keeps the loot of its CBF or Medieval Overhaul table, World Domination loot is off. 0%: the general containers get World Domination's loot budget, as World Domination would. In between, that share of the containers keeps its planned loot. The rest shares the full World Domination budget, and each of them gets at least one item. There is never less loot than at 0%.</CBF_WdLootShareHelp>
+  <CBF_TabGame>Game</CBF_TabGame>
+  <CBF_TabEditor>Editor</CBF_TabEditor>
+  <CBF_TabReport>Bug report</CBF_TabReport>
+  <CBF_OtherModsHead>Other mods</CBF_OtherModsHead>
+  <CBF_GarrisonHead>Garrisons and performance</CBF_GarrisonHead>
+  <CBF_GarrisonIntro>Large settlements keep part of their people in the houses. They come out when their district is alarmed. Fewer people on the map at once means a smoother game.</CBF_GarrisonIntro>
+  <CBF_GarrisonShare>Garrison in the streets at the start: {0}%</CBF_GarrisonShare>
+  <CBF_GarrisonShareHelp>Share of each district's garrison and civilians that is on the map from the start, at least three per district. The rest stays in the houses and comes out as soon as the district is alarmed: shots nearby, hits on its walls or houses, or one of your people is spotted. Walls, gates and guns are always fully manned. Applies to newly generated settlements.</CBF_GarrisonShareHelp>
+  <CBF_GarrisonCap>At most in the districts at once: {0}</CBF_GarrisonCap>
+  <CBF_GarrisonCapNone>At most in the districts at once: no limit</CBF_GarrisonCapNone>
+  <CBF_GarrisonCapHelp>Upper limit for the people walking around in the districts at the same time: garrison and civilians. Walls, gates, guns and posts do not count, they are always manned as the settlement was designed. Downed people do not count either. The limit is shared between the districts by their size. If a district has fewer people left than its share, the rest goes to the others. When someone falls, the next one comes out of the houses. Higher values suit fast computers, lower values slow ones. Takes effect at once, also in settlements already generated.</CBF_GarrisonCapHelp>
+  <CBF_GarrisonBatch>Reinforcements per wave: {0}</CBF_GarrisonBatch>
+  <CBF_GarrisonBatchHelp>How many people may come out of the houses at most in one wave.</CBF_GarrisonBatchHelp>
+  <CBF_GarrisonInterval>Time between two waves: {0} s</CBF_GarrisonInterval>
+  <CBF_GarrisonIntervalHelp>Game time between two waves at normal speed. The check for alarms runs at the same rate.</CBF_GarrisonIntervalHelp>
+  <CBF_GarrisonDistance>Minimum distance to your people: {0} cells</CBF_GarrisonDistance>
+  <CBF_GarrisonDistanceHelp>Reinforcements only appear at least this far from your people, and only where none of your people can see. If no such place exists for a while, the distance stays but the view check is dropped.</CBF_GarrisonDistanceHelp>
+  <CBF_GarrisonDefaults>Reset to defaults</CBF_GarrisonDefaults>
   <CBF_Au_NeedsMod>Needs the mod {0}, which is not active. The piece is left out on purpose and checked once the mod is active.</CBF_Au_NeedsMod>
   <CBF_Au_OffByMod>Off because the mod {0} is active. The piece is left out on purpose and checked once the mod is off.</CBF_Au_OffByMod>
   <CBF_PawnPreviewInGame>Preview only in a running game</CBF_PawnPreviewInGame>

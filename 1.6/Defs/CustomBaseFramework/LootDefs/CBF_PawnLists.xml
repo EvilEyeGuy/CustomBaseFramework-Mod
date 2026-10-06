@@ -102,13 +102,12 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><kind>CBF_MO_Knight</kind><weight>1</weight><ideoRole>Kampf</ideoRole></li>
     </members>
   </CustomBaseFramework.PawnListDef>
-  <CustomBaseFramework.PawnListDef>
+  <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
     <defName>CBF_MO_Residents</defName>
     <label>residents</label>
     <role>Civilian</role>
     <radius>4</radius>
     <members>
-      <li><kind>Villager</kind><weight>3</weight></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><kind>DankPyon_Medieval_Peasant</kind><weight>10</weight></li>
     </members>
   </CustomBaseFramework.PawnListDef>

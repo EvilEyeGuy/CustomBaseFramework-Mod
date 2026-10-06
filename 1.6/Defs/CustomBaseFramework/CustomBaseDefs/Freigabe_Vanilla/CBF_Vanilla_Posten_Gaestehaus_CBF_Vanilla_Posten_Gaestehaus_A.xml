@@ -9,19 +9,33 @@
     </categories>
     <style>CBF_ModernVanilla</style>
     <eaves>true</eaves>
+
+    <anchors>
+      <li>..........</li>
+      <li>.....AA...</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+    </anchors>
     <legend>
-      <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>I</symbol><thing>Column</thing><stuff>Steel</stuff></li>
-      <li><symbol>L</symbol><thing>StandingLamp</thing></li>
-      <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>Q</symbol><thing>Bed</thing><stuff>Steel</stuff><rotation>South</rotation></li>
-      <li><symbol>W</symbol><thing>DiningChair</thing><stuff>Steel</stuff><rotation>West</rotation></li>
-      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>n</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>t</symbol><thing>Table1x2c</thing><stuff>Steel</stuff><rotation>North</rotation></li>
-      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
-      <li><symbol>x</symbol><thing>Dresser</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>W</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>B</symbol><thing>Bed</thing><stuff>Steel</stuff><rotation>South</rotation></li>
+      <li><symbol>C</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>F</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>P</symbol><thing>DiningChair</thing><stuff>Steel</stuff><rotation>South</rotation></li>
+      <li><symbol>R</symbol><thing>Table1x2c</thing><stuff>Steel</stuff><rotation>West</rotation></li>
+      <li><symbol>L</symbol><thing>Dresser</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>S</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>G</symbol><thing>DiningChair</thing><stuff>Steel</stuff><rotation>East</rotation></li>
+      <li><symbol>H</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>K</symbol><thing>Column</thing><stuff>Steel</stuff></li>
+      <li><symbol>A</symbol><anchor>Loot</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Minimal</lootTable></li>
     </legend>
+
     <mask>
       <li>########..</li>
       <li>########..</li>
@@ -31,42 +45,36 @@
       <li>##########</li>
       <li>....###...</li>
     </mask>
+
     <terrain>
-      <li>wwwwwwww..</li>
-      <li>wwwwwwww..</li>
-      <li>wwwwwwwwww</li>
-      <li>wwwwwwwwww</li>
-      <li>wwwwwwwwww</li>
-      <li>wwwwwwwwww</li>
+      <li>WWWWWWWW..</li>
+      <li>WWWWWWWW..</li>
+      <li>WWWWWWWWWW</li>
+      <li>WWWWWWWWWW</li>
+      <li>WWWWWWWWWW</li>
+      <li>WWWWWWWWWW</li>
       <li>..........</li>
     </terrain>
+
     <things>
-      <li>OOOOOOOO..</li>
-      <li>O......O..</li>
-      <li>OQ.Q..nOOO</li>
-      <li>O........O</li>
-      <li>OL.tW..x.O</li>
-      <li>OOOOOFOOOO</li>
-      <li>....I.I...</li>
+      <li>TTTTTTTT..</li>
+      <li>T.C..F.T..</li>
+      <li>TB.B..PTTT</li>
+      <li>T....R...T</li>
+      <li>TS.G....LT</li>
+      <li>TTTTTHTTTT</li>
+      <li>....K.K...</li>
     </things>
+
     <roof>
-      <li>^^^^^^^^..</li>
-      <li>^^^^^^^^..</li>
-      <li>^^^^^^^^^^</li>
-      <li>^^^^^^^^^^</li>
-      <li>^^^^^^^^^^</li>
-      <li>^^^^^^^^^^</li>
-      <li>....^^^...</li>
+      <li>DDDDDDDD..</li>
+      <li>DDDDDDDD..</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>DDDDDDDDDD</li>
+      <li>....DDD...</li>
     </roof>
-    <anchors>
-      <li>..........</li>
-      <li>..........</li>
-      <li>..........</li>
-      <li>..........</li>
-      <li>..........</li>
-      <li>..........</li>
-      <li>..........</li>
-    </anchors>
   </CustomBaseFramework.PieceDef>
 
 </Defs>

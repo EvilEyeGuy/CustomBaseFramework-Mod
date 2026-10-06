@@ -748,6 +748,24 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_ExportedAsPatch>{0} als Patch gespeichert: {1}. Der neue Aufbau wirkt nach einem Neustart des Spiels.</CBF_ExportedAsPatch>
   <CBF_WdLootShare>Beute in World-Domination-Orten: {0} % geplante CBF-Beute, {1} % World-Domination-Beute</CBF_WdLootShare>
   <CBF_WdLootShareHelp>100 %: Jeder Behälter behält die Beute seiner CBF- oder Medieval-Overhaul-Tabelle, die World-Domination-Beute ist aus. 0 %: Die allgemeinen Behälter bekommen das Beutebudget von World Domination, so wie World Domination es machen würde. Dazwischen behält dieser Anteil der Behälter seine geplante Beute. Der Rest teilt sich das volle World-Domination-Budget, und jeder davon bekommt mindestens ein Stück. Es gibt nie weniger Beute als bei 0 %.</CBF_WdLootShareHelp>
+  <CBF_TabGame>Spiel</CBF_TabGame>
+  <CBF_TabEditor>Editor</CBF_TabEditor>
+  <CBF_TabReport>Fehlerbericht</CBF_TabReport>
+  <CBF_OtherModsHead>Andere Mods</CBF_OtherModsHead>
+  <CBF_GarrisonHead>Garnison und Leistung</CBF_GarrisonHead>
+  <CBF_GarrisonIntro>Große Orte halten einen Teil ihrer Leute in den Häusern zurück. Sie kommen heraus, wenn ihr Stadtteil Alarm schlägt. Je weniger Leute gleichzeitig auf der Karte sind, desto flüssiger läuft das Spiel.</CBF_GarrisonIntro>
+  <CBF_GarrisonShare>Garnison auf der Straße zu Beginn: {0} %</CBF_GarrisonShare>
+  <CBF_GarrisonShareHelp>Anteil der Garnison und der Zivilisten jedes Stadtteils, der von Anfang an auf der Karte ist, mindestens drei je Stadtteil. Der Rest bleibt in den Häusern und kommt heraus, sobald der Stadtteil Alarm schlägt: Schüsse in der Nähe, Treffer auf seine Mauern oder Häuser oder einer deiner Leute wird gesehen. Mauern, Tore und Geschütze sind immer voll besetzt. Gilt für neu erzeugte Orte.</CBF_GarrisonShareHelp>
+  <CBF_GarrisonCap>Höchstens gleichzeitig in den Stadtteilen: {0}</CBF_GarrisonCap>
+  <CBF_GarrisonCapNone>Höchstens gleichzeitig in den Stadtteilen: ohne Grenze</CBF_GarrisonCapNone>
+  <CBF_GarrisonCapHelp>Obergrenze für die Leute, die gleichzeitig in den Stadtteilen unterwegs sind: Garnison und Zivilisten. Mauern, Tore, Geschütze und Posten zählen nicht mit, sie sind immer so besetzt, wie der Ort gebaut ist. Wer am Boden liegt, zählt auch nicht. Die Grenze wird nach Größe auf die Stadtteile verteilt. Hat ein Stadtteil weniger Leute übrig als seinen Anteil, bekommen die anderen den Rest. Fällt jemand aus, kommt der Nächste aus den Häusern. Höhere Werte für schnelle Rechner, niedrigere für langsame. Wirkt sofort, auch in schon erzeugten Orten.</CBF_GarrisonCapHelp>
+  <CBF_GarrisonBatch>Nachschub je Schub: {0}</CBF_GarrisonBatch>
+  <CBF_GarrisonBatchHelp>Wie viele Leute höchstens auf einmal aus den Häusern kommen.</CBF_GarrisonBatchHelp>
+  <CBF_GarrisonInterval>Zeit zwischen zwei Schüben: {0} s</CBF_GarrisonInterval>
+  <CBF_GarrisonIntervalHelp>Spielzeit zwischen zwei Schüben bei normaler Geschwindigkeit. Im selben Takt wird auch geprüft, ob ein Stadtteil Alarm schlägt.</CBF_GarrisonIntervalHelp>
+  <CBF_GarrisonDistance>Mindestabstand zu deinen Leuten: {0} Felder</CBF_GarrisonDistance>
+  <CBF_GarrisonDistanceHelp>Nachschub erscheint nur mindestens so weit von deinen Leuten entfernt und nur dort, wo keiner von ihnen hinsieht. Findet sich eine Weile lang kein solcher Platz, bleibt der Abstand, die Sichtprüfung fällt weg.</CBF_GarrisonDistanceHelp>
+  <CBF_GarrisonDefaults>Standardwerte</CBF_GarrisonDefaults>
   <CBF_Au_NeedsMod>Braucht den Mod {0}, der nicht aktiv ist. Das Stück fällt gewollt weg und wird geprüft, sobald der Mod aktiv ist.</CBF_Au_NeedsMod>
   <CBF_Au_OffByMod>Aus, weil der Mod {0} aktiv ist. Das Stück fällt gewollt weg und wird geprüft, sobald der Mod aus ist.</CBF_Au_OffByMod>
   <CBF_PawnPreviewInGame>Vorschau nur im laufenden Spiel</CBF_PawnPreviewInGame>

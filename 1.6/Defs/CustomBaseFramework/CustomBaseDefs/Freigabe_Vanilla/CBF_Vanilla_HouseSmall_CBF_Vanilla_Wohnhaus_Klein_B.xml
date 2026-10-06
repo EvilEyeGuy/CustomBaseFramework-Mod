@@ -9,29 +9,31 @@
     </categories>
     <style>CBF_ModernVanilla</style>
     <eaves>true</eaves>
+
     <legend>
+      <li><symbol>W</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>C</symbol><thing>Bed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>F</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>P</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>R</symbol><terrain>TileGranite</terrain></li>
+      <li><symbol>L</symbol><thing>ElectricStove</thing></li>
+      <li><symbol>S</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>G</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>H</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>K</symbol><thing>Dresser</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>M</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>N</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>Q</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>U</symbol><thing>Column</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor></li>
+      <li><symbol>8</symbol><anchor>ResidentsA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>1</symbol><anchor>Kitchen</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Kitchen</lootTable></li>
       <li><symbol>2</symbol><anchor>CabinetA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
-      <li><symbol>8</symbol><anchor>ResidentsA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
-      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
-      <li><symbol>C</symbol><thing>Column</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>D</symbol><thing>Dresser</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>E</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>L</symbol><thing>StandingLamp</thing></li>
-      <li><symbol>Q</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>Y</symbol><thing>Bed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>b</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>g</symbol><thing>ElectricStove</thing><rotation>North</rotation></li>
-      <li><symbol>h</symbol><terrain>TileGranite</terrain></li>
-      <li><symbol>p</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>t</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
-      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
     </legend>
+
     <mask>
       <li>#########</li>
       <li>#########</li>
@@ -42,26 +44,29 @@
       <li>....#####</li>
       <li>....#####</li>
     </mask>
+
     <terrain>
-      <li>wwwwwwwww</li>
-      <li>wwwwwhhhw</li>
-      <li>wwwwwhhhw</li>
-      <li>wwwwwhhhw</li>
-      <li>wwwwwhhhw</li>
-      <li>wwwwwwwww</li>
+      <li>WWWWWWWWW</li>
+      <li>WWWWWRRRW</li>
+      <li>WWWWWRRRW</li>
+      <li>WWWWWRRRW</li>
+      <li>WWWWWRRRW</li>
+      <li>WWWWWWWWW</li>
       <li>.........</li>
       <li>.........</li>
     </terrain>
+
     <things>
-      <li>SSSSSSSSS</li>
-      <li>S.EaSg..S</li>
-      <li>SY..F...S</li>
-      <li>S...Sb..S</li>
-      <li>SD.LS.QtS</li>
-      <li>SSSSSFSSS</li>
-      <li>........p</li>
-      <li>....C...C</li>
+      <li>TTTTTTTTT</li>
+      <li>T.FPTL..T</li>
+      <li>TC..S...T</li>
+      <li>T...TG..T</li>
+      <li>TK.MT.NHT</li>
+      <li>TTTTTSTTT</li>
+      <li>........Q</li>
+      <li>....U...U</li>
     </things>
+
     <things2>
       <li>BBBBBBBBB</li>
       <li>B...B...B</li>
@@ -72,16 +77,18 @@
       <li>.........</li>
       <li>.........</li>
     </things2>
+
     <roof>
-      <li>^^^^^^^^^</li>
-      <li>^^^^^^^^^</li>
-      <li>^^^^^^^^^</li>
-      <li>^^^^^^^^^</li>
-      <li>^^^^^^^^^</li>
-      <li>^^^^^^^^^</li>
-      <li>....^^^^^</li>
-      <li>....^^^^^</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>DDDDDDDDD</li>
+      <li>....DDDDD</li>
+      <li>....DDDDD</li>
     </roof>
+
     <anchors>
       <li>..+......</li>
       <li>...2.....</li>

@@ -9,38 +9,40 @@
     </categories>
     <style>CBF_ModernVanilla</style>
     <eaves>true</eaves>
+
     <legend>
-      <li><symbol>1</symbol><anchor>Kitchen</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kitchen</lootTable></li>
+      <li><symbol>W</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>T</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
+      <li><symbol>C</symbol><thing>TubeTelevision</thing><rotation>South</rotation></li>
+      <li><symbol>F</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>P</symbol><terrain>TileGranite</terrain></li>
+      <li><symbol>R</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>L</symbol><thing>ElectricStove</thing></li>
+      <li><symbol>S</symbol><thing>Armchair</thing><stuff>Cloth</stuff><rotation>East</rotation></li>
+      <li><symbol>G</symbol><thing>ChessTable</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>H</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>K</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>M</symbol><thing>Table2x2c</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>N</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>Q</symbol><thing>Couch</thing><stuff>Cloth</stuff></li>
+      <li><symbol>U</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>V</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>X</symbol><thing>DoubleBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>Y</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>Z</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>a</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>e</symbol><thing>Dresser</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor></li>
       <li><symbol>2</symbol><anchor>CabinetA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
       <li><symbol>3</symbol><anchor>SuppliesA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Storage</lootTable></li>
       <li><symbol>4</symbol><anchor>SuppliesB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Dwelling</lootTable></li>
-      <li><symbol>8</symbol><anchor>ResidentsA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
       <li><symbol>9</symbol><anchor>ResidentsB</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
-      <li><symbol>A</symbol><thing>Armchair</thing><stuff>Cloth</stuff><rotation>East</rotation></li>
-      <li><symbol>B</symbol><thing>HiddenConduit</thing></li>
-      <li><symbol>D</symbol><thing>Dresser</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>E</symbol><thing>EndTable</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>L</symbol><thing>StandingLamp</thing></li>
-      <li><symbol>Q</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
-      <li><symbol>R</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>V</symbol><thing>TubeTelevision</thing><rotation>South</rotation></li>
-      <li><symbol>W</symbol><thing>Couch</thing><stuff>Cloth</stuff><rotation>North</rotation></li>
-      <li><symbol>X</symbol><thing>DoubleBed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>Z</symbol><thing>ChessTable</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>b</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>c</symbol><terrain>Concrete</terrain></li>
-      <li><symbol>f</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
-      <li><symbol>g</symbol><thing>ElectricStove</thing><rotation>North</rotation></li>
-      <li><symbol>h</symbol><terrain>TileGranite</terrain></li>
-      <li><symbol>j</symbol><thing>Table2x2c</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>p</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
-      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>8</symbol><anchor>ResidentsA</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>1</symbol><anchor>Kitchen</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kitchen</lootTable></li>
     </legend>
+
     <mask>
       <li>#############</li>
       <li>#############</li>
@@ -54,32 +56,35 @@
       <li>#############</li>
       <li>#############</li>
     </mask>
+
     <terrain>
-      <li>wwwwwwwwwwwww</li>
-      <li>wwwwwwwhhhhhw</li>
-      <li>wwwwwwwhhhhhw</li>
-      <li>wwwwwwwhhhhhw</li>
-      <li>wwwwwwwhhhhhw</li>
-      <li>wwwwwwwhhhhhw</li>
-      <li>wwwwwwwwccccc</li>
-      <li>wwwwww..ccccc</li>
-      <li>wwwwww..ccccc</li>
-      <li>wwwwww..ccccc</li>
-      <li>wwwwww.......</li>
+      <li>WWWWWWWWWWWWW</li>
+      <li>WWWWWWWPPPPPW</li>
+      <li>WWWWWWWPPPPPW</li>
+      <li>WWWWWWWPPPPPW</li>
+      <li>WWWWWWWPPPPPW</li>
+      <li>WWWWWWWPPPPPW</li>
+      <li>WWWWWWWWVVVVV</li>
+      <li>WWWWWW..VVVVV</li>
+      <li>WWWWWW..VVVVV</li>
+      <li>WWWWWW..VVVVV</li>
+      <li>WWWWWW.......</li>
     </terrain>
+
     <things>
-      <li>SSSSSSSSSSSSS</li>
-      <li>S..V.LSa.g..S</li>
-      <li>SA..Z.S.....S</li>
-      <li>F.....F.Q..RS</li>
-      <li>S.W...S.Qj.RS</li>
-      <li>Sp....SL....S</li>
-      <li>SSSSFSSSSSFSS</li>
-      <li>S....S..S...S</li>
-      <li>SX.E.S..Sb.fS</li>
-      <li>SD.LfS..SSSSS</li>
-      <li>SSSSSS.......</li>
+      <li>TTTTTTTTTTTTT</li>
+      <li>T..C.FTR.L..T</li>
+      <li>TS..G.T.....T</li>
+      <li>H.....H.K..NT</li>
+      <li>T.Q...T.KM.NT</li>
+      <li>TU....TF....T</li>
+      <li>TTTTHTTTTTHTT</li>
+      <li>T....T..T...T</li>
+      <li>TX.Y.T..TZ.aT</li>
+      <li>Te.FaT..TTTTT</li>
+      <li>TTTTTT.......</li>
     </things>
+
     <things2>
       <li>BBBBBBBBBBBBB</li>
       <li>B.....B.....B</li>
@@ -93,19 +98,21 @@
       <li>B....B..BBBBB</li>
       <li>BBBBBB.......</li>
     </things2>
+
     <roof>
-      <li>^^^^^^^^^^^^^</li>
-      <li>^^^^^^^^^^^^^</li>
-      <li>^^^^^^^^^^^^^</li>
-      <li>^^^^^^^^^^^^^</li>
-      <li>^^^^^^^^^^^^^</li>
-      <li>^^^^^^^^^^^^^</li>
-      <li>^^^^^^^^^^^^^</li>
-      <li>^^^^^^..^^^^^</li>
-      <li>^^^^^^..^^^^^</li>
-      <li>^^^^^^..^^^^^</li>
-      <li>^^^^^^.......</li>
+      <li>DDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDD</li>
+      <li>DDDDDDDDDDDDD</li>
+      <li>DDDDDD..DDDDD</li>
+      <li>DDDDDD..DDDDD</li>
+      <li>DDDDDD..DDDDD</li>
+      <li>DDDDDD.......</li>
     </roof>
+
     <anchors>
       <li>...+.........</li>
       <li>.......11....</li>

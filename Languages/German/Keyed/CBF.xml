@@ -755,14 +755,14 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_GarrisonHead>Garnison und Leistung</CBF_GarrisonHead>
   <CBF_GarrisonIntro>Große Orte halten einen Teil ihrer Leute in den Häusern zurück. Sie kommen heraus, wenn ihr Stadtteil Alarm schlägt. Je weniger Leute gleichzeitig auf der Karte sind, desto flüssiger läuft das Spiel.</CBF_GarrisonIntro>
   <CBF_GarrisonShare>Garnison auf der Straße zu Beginn: {0} %</CBF_GarrisonShare>
-  <CBF_GarrisonShareHelp>Anteil der Garnison und der Zivilisten jedes Stadtteils, der von Anfang an auf der Karte ist, mindestens drei je Stadtteil. Der Rest bleibt in den Häusern und kommt heraus, sobald der Stadtteil Alarm schlägt: Schüsse in der Nähe, Treffer auf seine Mauern oder Häuser oder einer deiner Leute wird gesehen. Mauern, Tore und Geschütze sind immer voll besetzt. Gilt für neu erzeugte Orte.</CBF_GarrisonShareHelp>
-  <CBF_GarrisonCap>Höchstens gleichzeitig in den Stadtteilen: {0}</CBF_GarrisonCap>
-  <CBF_GarrisonCapNone>Höchstens gleichzeitig in den Stadtteilen: ohne Grenze</CBF_GarrisonCapNone>
-  <CBF_GarrisonCapHelp>Obergrenze für die Leute, die gleichzeitig in den Stadtteilen unterwegs sind: Garnison und Zivilisten. Mauern, Tore, Geschütze und Posten zählen nicht mit, sie sind immer so besetzt, wie der Ort gebaut ist. Wer am Boden liegt, zählt auch nicht. Die Grenze wird nach Größe auf die Stadtteile verteilt. Hat ein Stadtteil weniger Leute übrig als seinen Anteil, bekommen die anderen den Rest. Fällt jemand aus, kommt der Nächste aus den Häusern. Höhere Werte für schnelle Rechner, niedrigere für langsame. Wirkt sofort, auch in schon erzeugten Orten.</CBF_GarrisonCapHelp>
+  <CBF_GarrisonShareHelp>Anteil der Garnison und der Zivilisten jedes Stadtteils, der von Anfang an auf der Karte ist, mindestens drei je Stadtteil. Ist das mehr, als die Obergrenze nach den Wachen übrig lässt, wird darauf gekürzt. Der Rest bleibt in den Häusern und kommt heraus, sobald der Stadtteil Alarm schlägt: Schüsse in der Nähe, Treffer auf seine Mauern oder Häuser oder einer deiner Leute wird gesehen. Mauern, Tore, Geschütze und Posten sind immer voll besetzt. Gilt für neu erzeugte Orte.</CBF_GarrisonShareHelp>
+  <CBF_GarrisonCap>Höchstens gleichzeitig auf der Karte: {0}</CBF_GarrisonCap>
+  <CBF_GarrisonCapNone>Höchstens gleichzeitig auf der Karte: ohne Grenze</CBF_GarrisonCapNone>
+  <CBF_GarrisonCapHelp>Obergrenze für die kampffähigen Leute eines Ortes, die gleichzeitig auf der Karte sind: Wachen auf Mauern, Toren, Geschützen und Posten sowie Garnison und Zivilisten in den Stadtteilen. Wer am Boden liegt, Gefangene und Leute in den Häusern zählen nicht. Die Wachen sind immer voll besetzt. Die Stadtteile bekommen den Rest, nach Größe verteilt, aber mindestens drei je Stadtteil. Liegen die Wachen allein schon über der Grenze, kann die Karte daher etwas darüber liegen. Fällt jemand aus, kommt der Nächste aus den Häusern. Höhere Werte für schnelle Rechner, niedrigere für langsame. Wirkt sofort, auch in schon erzeugten Orten.</CBF_GarrisonCapHelp>
   <CBF_GarrisonBatch>Nachschub je Schub: {0}</CBF_GarrisonBatch>
   <CBF_GarrisonBatchHelp>Wie viele Leute höchstens auf einmal aus den Häusern kommen.</CBF_GarrisonBatchHelp>
-  <CBF_GarrisonInterval>Zeit zwischen zwei Schüben: {0} s</CBF_GarrisonInterval>
-  <CBF_GarrisonIntervalHelp>Spielzeit zwischen zwei Schüben bei normaler Geschwindigkeit. Im selben Takt wird auch geprüft, ob ein Stadtteil Alarm schlägt.</CBF_GarrisonIntervalHelp>
+  <CBF_GarrisonInterval>Schübe je Spielstunde: {0}</CBF_GarrisonInterval>
+  <CBF_GarrisonIntervalHelp>Wie oft je Spielstunde Nachschub aus den Häusern kommt. Im selben Takt wird auch geprüft, ob ein Stadtteil Alarm schlägt.</CBF_GarrisonIntervalHelp>
   <CBF_GarrisonDistance>Mindestabstand zu deinen Leuten: {0} Felder</CBF_GarrisonDistance>
   <CBF_GarrisonDistanceHelp>Nachschub erscheint nur mindestens so weit von deinen Leuten entfernt und nur dort, wo keiner von ihnen hinsieht. Findet sich eine Weile lang kein solcher Platz, bleibt der Abstand, die Sichtprüfung fällt weg.</CBF_GarrisonDistanceHelp>
   <CBF_GarrisonDefaults>Standardwerte</CBF_GarrisonDefaults>
@@ -812,4 +812,21 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_ReportOpenFolder>Berichtsordner öffnen</CBF_ReportOpenFolder>
   <CBF_ReportFolderLine>Berichtsordner: {0}</CBF_ReportFolderLine>
   <CBF_ErrWin_Folder>CBF hat einen Bericht in diesen Ordner geschrieben:\n{0}\n\nUm den Fehler zu melden, hänge Bericht.txt (Modliste, Ortstyp, Seed, Log-Auszug) und Gelaende.gel (das Gelände der Karte) an, zum Beispiel in einem Kommentar auf der Workshop-Seite. Zusammenfassung kopieren legt eine kurze Beschreibung des Fehlers in die Zwischenablage.</CBF_ErrWin_Folder>
+  <CBF_GarrisonShow>Garnison auf der Karte anzeigen</CBF_GarrisonShow>
+  <CBF_GarrisonShowHelp>Zeigt auf der Karte eines CBF-Orts oben rechts einen Kasten: wie viele Leute je Stadtteil auf der Karte sind und wie viele noch nachrücken können.</CBF_GarrisonShowHelp>
+  <CBF_GarrisonBox>Garnison</CBF_GarrisonBox>
+  <CBF_GarrisonBoxCollapse>Einklappen</CBF_GarrisonBoxCollapse>
+  <CBF_GarrisonBoxExpand>Ausklappen</CBF_GarrisonBoxExpand>
+  <CBF_GarrisonBoxOut>Auf der Karte</CBF_GarrisonBoxOut>
+  <CBF_GarrisonBoxOutTip>Kampffähige Leute dieses Orts auf der Karte: Garnison in den Stadtteilen und Wachen. Nach dem Schrägstrich: die Obergrenze aus den Mod-Einstellungen.</CBF_GarrisonBoxOutTip>
+  <CBF_GarrisonBoxReady>Bereit zum Nachrücken</CBF_GarrisonBoxReady>
+  <CBF_GarrisonBoxReadyTip>Leute, die noch nicht auf der Karte sind. Sie erscheinen in Schüben, sobald ihr Stadtteil Alarm schlägt.</CBF_GarrisonBoxReadyTip>
+  <CBF_GarrisonBoxWards>Stadtteil</CBF_GarrisonBoxWards>
+  <CBF_GarrisonBoxCols>unterwegs | bereit</CBF_GarrisonBoxCols>
+  <CBF_GarrisonBoxWard>Stadtteil {0}</CBF_GarrisonBoxWard>
+  <CBF_GarrisonBoxAlarmTip>Alarm: Dieser Stadtteil schickt seine Leute heraus.</CBF_GarrisonBoxAlarmTip>
+  <CBF_GarrisonBoxDistricts>In den Stadtteilen</CBF_GarrisonBoxDistricts>
+  <CBF_GarrisonBoxDistrictsTip>Garnison und Zivilisten, die in den Stadtteilen unterwegs sind.</CBF_GarrisonBoxDistrictsTip>
+  <CBF_GarrisonBoxGuards>Wachen</CBF_GarrisonBoxGuards>
+  <CBF_GarrisonBoxGuardsTip>Leute auf Mauern, Toren, Geschützen und Posten. Sie sind immer voll besetzt und werden nie zurückgehalten.</CBF_GarrisonBoxGuardsTip>
 </LanguageData>

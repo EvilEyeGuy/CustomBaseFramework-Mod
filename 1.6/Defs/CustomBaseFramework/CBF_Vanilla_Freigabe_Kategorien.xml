@@ -2,404 +2,8 @@
 <Defs>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_LeaderTent</defName>
-    <label>leader tent</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Farmstead</defName>
-    <label>farmstead</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_LootSpot</defName>
-    <label>loot spot</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Brewery</defName>
-    <label>brewery</label><parent>CBF_Vanilla_Workshop</parent>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_DrugLab</defName>
-    <label>drug lab</label><parent>CBF_Vanilla_Workshop</parent>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Research</defName>
-    <label>research</label><parent>CBF_Vanilla_Workshop</parent>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_ResearchCenter</defName>
-    <label>research center</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Graveyard</defName>
-    <label>graveyard</label>
-    <zones>
-      <li>Outside</li>
-    </zones>
-    <needsRoadAccess>false</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Tavern</defName>
-    <label>tavern</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Prison</defName>
-    <label>prison</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_TradingPost</defName>
-    <label>trading post</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Hydroponics</defName>
-    <label>hydroponics</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Barracks</defName>
-    <label>barracks</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Church</defName>
-    <label>church</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_CommandCenter</defName>
-    <label>command center</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Checkpoint</defName>
-    <label>checkpoint</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Kitchen</defName>
-    <label>kitchen</label><parent>CBF_Vanilla_Workshop</parent>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Storage</defName>
-    <label>storage</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_StorageHall</defName>
-    <label>storage hall</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Machining</defName>
-    <label>machining</label><parent>CBF_Vanilla_Workshop</parent>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_WallTower</defName>
-    <label>wall tower</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Parliament</defName>
-    <label>parliament</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Police</defName>
-    <label>police</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Outpost_Bunkhouse</defName>
-    <label>bunkhouse outpost</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Outpost_Library</defName>
-    <label>library outpost</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Outpost_GuestHouse</defName>
-    <label>guest house outpost</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Outpost_Tannery</defName>
-    <label>tannery outpost</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Outpost_GunEmplacement</defName>
-    <label>gun emplacement outpost</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Outpost_PowerPlant</defName>
-    <label>power plant outpost</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Outpost_MarketStall</defName>
-    <label>market stall outpost</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Outpost_GatheringSpot</defName>
-    <label>gathering spot outpost</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Outpost_Slaughterhouse</defName>
-    <label>slaughterhouse outpost</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Outpost_StorageDepot</defName>
-    <label>storage depot outpost</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Outpost_Study</defName>
-    <label>study outpost</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_SandbagPosition</defName>
-    <label>sandbag position</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_SleepingTent</defName>
-    <label>sleeping tent</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Smithy</defName>
-    <label>smithy</label><parent>CBF_Vanilla_Workshop</parent>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_TailorShop</defName>
-    <label>tailor shop</label><parent>CBF_Vanilla_Workshop</parent>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Spacer_Defence_Large</defName>
-    <label>spacer bunker</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Spacer_Defence_Small</defName>
-    <label>spacer position</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Hospital</defName>
-    <label>hospital</label><parent>CBF_Vanilla_Workshop</parent>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Stonemason</defName>
-    <label>stonemason</label><parent>CBF_Vanilla_Workshop</parent>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Gatehouse</defName>
-    <label>gatehouse</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Vault</defName>
-    <label>vault</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Armory</defName>
-    <label>armory</label>
+    <defName>CBF_Vanilla_Annex_Home</defName>
+    <label>CBF_Vanilla_Annex_Home</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -408,7 +12,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_ApartmentBlock</defName>
-    <label>apartment block</label>
+    <label>Wohnblock</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -421,8 +25,71 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_LivingHut</defName>
-    <label>living hut</label>
+    <defName>CBF_Vanilla_Armory</defName>
+    <label>Waffenkammer</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Barracks</defName>
+    <label>Kaserne</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Brewery</defName>
+    <label>Brauerei</label><parent>CBF_Vanilla_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Checkpoint</defName>
+    <label>Kontrollpunkt</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Church</defName>
+    <label>Kirche</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_CommandCenter</defName>
+    <label>Kommandozentrale</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_DrugLab</defName>
+    <label>Drogenlabor</label><parent>CBF_Vanilla_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Farmstead</defName>
+    <label>CBF_Vanilla_Farmstead</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -431,7 +98,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_GameHall</defName>
-    <label>game hall</label>
+    <label>CBF_Vanilla_GameHall</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -439,8 +106,224 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_Annex_Home</defName>
-    <label>home annex</label>
+    <defName>CBF_Vanilla_Gatehouse</defName>
+    <label>Torhaus</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Graveyard</defName>
+    <label>Friedhof</label>
+    <zones>
+      <li>Outside</li>
+    </zones>
+    <needsRoadAccess>false</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Hospital</defName>
+    <label>Spital</label><parent>CBF_Vanilla_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Hydroponics</defName>
+    <label>Hydrokultur</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Kitchen</defName>
+    <label>Küche</label><parent>CBF_Vanilla_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_LeaderTent</defName>
+    <label>CBF_Vanilla_LeaderTent</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_LivingHut</defName>
+    <label>CBF_Vanilla_LivingHut</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_LootSpot</defName>
+    <label>CBF_Vanilla_LootSpot</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Machining</defName>
+    <label>Maschinenbau</label><parent>CBF_Vanilla_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Outpost_Bunkhouse</defName>
+    <label>CBF_Vanilla_Outpost_Bunkhouse</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Outpost_GatheringSpot</defName>
+    <label>CBF_Vanilla_Outpost_GatheringSpot</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Outpost_GuestHouse</defName>
+    <label>CBF_Vanilla_Outpost_GuestHouse</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Outpost_GunEmplacement</defName>
+    <label>CBF_Vanilla_Outpost_GunEmplacement</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Outpost_Library</defName>
+    <label>CBF_Vanilla_Outpost_Library</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Outpost_MarketStall</defName>
+    <label>CBF_Vanilla_Outpost_MarketStall</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Outpost_PowerPlant</defName>
+    <label>CBF_Vanilla_Outpost_PowerPlant</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Outpost_Slaughterhouse</defName>
+    <label>CBF_Vanilla_Outpost_Slaughterhouse</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Outpost_StorageDepot</defName>
+    <label>CBF_Vanilla_Outpost_StorageDepot</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Outpost_Study</defName>
+    <label>CBF_Vanilla_Outpost_Study</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Outpost_Tannery</defName>
+    <label>CBF_Vanilla_Outpost_Tannery</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Parliament</defName>
+    <label>Parlament</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Police</defName>
+    <label>Polizeistation</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Prison</defName>
+    <label>Gefängnis</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Research</defName>
+    <label>Forschung</label><parent>CBF_Vanilla_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_ResearchCenter</defName>
+    <label>Forschungszentrum</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -449,7 +332,97 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_RowHouse</defName>
-    <label>row house</label>
+    <label>CBF_Vanilla_RowHouse</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_SandbagPosition</defName>
+    <label>Sandsackstellung</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_SleepingTent</defName>
+    <label>CBF_Vanilla_SleepingTent</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Smithy</defName>
+    <label>Schmiede</label><parent>CBF_Vanilla_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Spacer_Defence_Large</defName>
+    <label>Spacer-Bunker</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Spacer_Defence_Small</defName>
+    <label>Spacer-Stellung</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Stonemason</defName>
+    <label>Steinmetz</label><parent>CBF_Vanilla_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Storage</defName>
+    <label>Lager</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_StorageHall</defName>
+    <label>Lagerhalle</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_TailorShop</defName>
+    <label>Schneiderei</label><parent>CBF_Vanilla_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Tavern</defName>
+    <label>Gasthaus</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -458,7 +431,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_TownHouse</defName>
-    <label>town house</label>
+    <label>CBF_Vanilla_TownHouse</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -468,6 +441,33 @@
     </annexes>
     <annexChance>0.5</annexChance>
     <annexMax>2</annexMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_TradingPost</defName>
+    <label>Handelsposten</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_Vault</defName>
+    <label>Tresor</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_WallTower</defName>
+    <label>Mauerturm</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
 </Defs>

@@ -32,10 +32,10 @@
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li><symbol>a</symbol><thing>ElectricStove</thing><rotation>South</rotation></li>
       <li><symbol>b</symbol><anchor>CounterA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Brewery</lootTable></li>
-      <li><symbol>c</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>c</symbol><terrain>Concrete</terrain><floorList>CBF_Vanilla_FloorList_Utility</floorList></li>
       <li><symbol>f</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>g</symbol><anchor>CounterB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Brewery</lootTable></li>
-      <li><symbol>h</symbol><terrain>TileGranite</terrain></li>
+      <li><symbol>h</symbol><terrain>TileGranite</terrain><floorList>CBF_Vanilla_FloorList_PublicTile</floorList></li>
       <li><symbol>i</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>j</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
       <li><symbol>k</symbol><anchor>CoolShelfA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_Kitchen</lootTable></li>
@@ -44,7 +44,7 @@
       <li><symbol>p</symbol><thing>PlantPot</thing><stuff>WoodLog</stuff></li>
       <li><symbol>q</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>t</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
-      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain><floorList>CBF_Vanilla_FloorList_PublicWood</floorList></li>
     </legend>
     <mask>
       <li>#############....</li>

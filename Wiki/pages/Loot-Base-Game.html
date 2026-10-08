@@ -1,0 +1,1081 @@
+<!doctype html><html lang="en" data-look="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Loot in base game settlements · Custom Base Framework</title><style>
+:root,[data-look="dark"]{--grund:#151b1e;--fenster:#1c1b1d;--leiste:#0f1416;--spalte:#25282a;--rand:#3b3f41;--linie:#2c2f31;
+--text:#d8d6d0;--kopf:#e6d7b4;--titel:#efe9dc;--leise:#9a9c9b;--blass:#6c706f;--akzent:#d2a44e;--wahl:#4a4a32;--wahlrand:#b58a45;
+--wahltext:#f0dcae;--code:#121212;--codetext:#f0dcae;--feld:#121212;--schrift:Arial,"Segoe UI",sans-serif;--lese:Arial,"Segoe UI",sans-serif;
+--lesegroesse:15px;--h1:26px;--h2:20px;--kachel:transparent;--knopf:#4a3b22;--xt:#e6b866;--xa:#9fb7c9;--xw:#a9c98a}
+[data-look="bright"]{--grund:#e9e5dc;--fenster:#f7f4ee;--leiste:#efeae0;--spalte:#f7f4ee;--rand:#cfc6b4;--linie:#d8d0c0;
+--text:#26231e;--kopf:#26231e;--titel:#26231e;--leise:#4a4439;--blass:#7a7263;--akzent:#8a5a14;--wahl:#f7f4ee;--wahlrand:#a8741f;
+--wahltext:#8a5a14;--code:#e9e3d6;--codetext:#26231e;--feld:#fbf9f5;--schrift:Arial,"Segoe UI",sans-serif;--lese:Arial,"Segoe UI",sans-serif;
+--lesegroesse:15px;--h1:26px;--h2:20px;--kachel:#3a3631;--knopf:#efe0c2;--xt:#8a4a14;--xa:#2f5f7f;--xw:#3f6f2a}
+*{box-sizing:border-box}
+html{scroll-padding-top:56px}
+body{margin:0;background:var(--grund);color:var(--text);font-family:var(--schrift);scrollbar-color:var(--rand) var(--grund)}
+nav.leiste,aside.rechts{scrollbar-color:var(--rand) var(--leiste);scrollbar-width:thin}
+.fenster{max-width:1760px;margin:0 auto;min-height:100vh;display:grid;grid-template-columns:240px minmax(0,1fr) 220px;
+grid-template-rows:auto 1fr;border-left:1px solid var(--rand);border-right:1px solid var(--rand);background:var(--fenster)}
+.kopf{grid-column:1/-1;position:sticky;top:0;z-index:5;background:var(--leiste);border-bottom:1px solid var(--rand);
+display:flex;align-items:center;gap:14px;padding:0 14px;height:42px;font-size:13px}
+.marke{color:var(--titel);text-decoration:none;font-size:15px;white-space:nowrap}
+.pfad{color:var(--leise);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pfad a{color:var(--leise);text-decoration:none}
+.suche{margin-left:auto;min-width:230px;display:flex;justify-content:space-between;gap:10px;background:var(--feld);
+border:1px solid var(--rand);color:var(--blass);padding:4px 8px;font:12px var(--schrift);cursor:pointer}
+.suche kbd{font:11px var(--schrift);border:1px solid var(--rand);padding:0 4px}
+.look{background:none;border:1px solid var(--wahlrand);color:var(--wahltext);font:12px var(--schrift);padding:3px 10px;cursor:pointer}
+.look{background:var(--knopf)}
+nav.leiste{background:var(--leiste);border-right:1px solid var(--rand);padding:10px 8px 40px;position:sticky;top:42px;
+height:calc(100vh - 42px);overflow:auto}
+.gruppe{margin:0 0 8px}
+.gruppe b{display:flex;align-items:center;gap:9px;color:var(--kopf);font-size:14px;padding:6px 6px 3px}
+.gruppe a{display:block;color:var(--leise);text-decoration:none;font-size:13px;padding:3px 8px 3px 16px;border:1px solid transparent}
+.gruppe a:hover{color:var(--titel);background:var(--linie)}
+.gruppe a.hier{background:var(--wahl);border-color:var(--wahlrand);color:var(--wahltext)}
+.gruppe.modding{margin-top:14px;padding-top:10px;border-top:1px solid var(--rand)}
+main{padding:30px 46px 90px;min-width:0;font-family:var(--lese);font-size:var(--lesegroesse);line-height:1.65}
+.inhalt{max-width:1180px;margin:0 auto}
+.inhalt h1{color:var(--titel);font-weight:normal;font-size:var(--h1);line-height:1.12;margin:0 0 6px}
+.unter{font:12px var(--schrift);color:var(--blass);margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid var(--rand)}
+.inhalt h2{color:var(--kopf);font-weight:normal;font-size:var(--h2);margin:38px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--rand)}
+.inhalt h3{color:var(--kopf);font:bold 16px var(--schrift);margin:26px 0 8px;padding-bottom:3px;border-bottom:1px solid var(--linie)}
+.inhalt h4{color:var(--kopf);font:bold 14px var(--schrift);margin:20px 0 6px}
+.inhalt a{color:var(--akzent)}
+.inhalt strong{color:var(--titel)}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.86em;background:var(--code);color:var(--codetext);padding:1px 5px;border:1px solid var(--linie)}
+pre{background:var(--code);border:1px solid var(--rand);padding:12px 14px;overflow-x:auto;font-size:13px;line-height:1.5}
+pre code{border:0;padding:0}
+.xt{color:var(--xt)}.xa{color:var(--xa)}.xw{color:var(--xw)}.xk{color:var(--blass)}
+table{border-collapse:collapse;font:13px/1.5 var(--schrift);margin:14px 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--rand);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:var(--spalte);color:var(--kopf);font-weight:normal}
+.bild{display:block;margin:16px 0 20px}
+.bild img{display:block;max-width:100%;height:auto;border:1px solid var(--rand)}
+.inhalt ol{padding-left:26px}
+.inhalt li{margin:4px 0}
+.home .bild img{width:100%;max-height:380px;object-fit:cover;object-position:center 45%}
+.schritte{display:flex;justify-content:space-between;gap:12px;margin-top:50px;padding-top:16px;border-top:1px solid var(--rand);font-family:var(--schrift)}
+.schritte a{flex:1;max-width:48%;text-decoration:none;border:1px solid var(--rand);padding:10px 14px;color:var(--text)}
+.schritte a:hover{border-color:var(--wahlrand)}
+.schritte span{display:block;font-size:11px;color:var(--blass)}
+.schritte .weiter{text-align:right;margin-left:auto}
+aside.rechts{background:var(--spalte);border-left:1px solid var(--rand);padding:24px 12px;font-size:13px}
+.aufseite{position:sticky;top:66px}
+.aufseite b{display:block;color:var(--blass);font-size:12px;font-weight:normal;margin:0 0 8px}
+.aufseite a{display:block;color:var(--leise);text-decoration:none;padding:3px 6px 3px 10px;border-left:2px solid var(--rand)}
+.aufseite a.t3{padding-left:22px;font-size:12px}
+.aufseite a:hover{color:var(--titel)}
+.aufseite a.an{color:var(--wahltext);border-left-color:var(--wahlrand)}
+.fund{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:flex-start;justify-content:center;padding-top:12vh;z-index:20}
+.fund.offen{display:flex}
+.fundbox{width:min(640px,92vw);background:var(--fenster);border:1px solid var(--wahlrand)}
+.fundbox input{width:100%;border:0;border-bottom:1px solid var(--rand);background:var(--feld);color:var(--text);padding:12px 14px;font:15px var(--schrift);outline:none}
+.fundliste{max-height:55vh;overflow:auto;margin:0;padding:4px;list-style:none;font-family:var(--schrift)}
+.fundliste li{padding:8px 10px;cursor:pointer;border:1px solid transparent}
+.fundliste li.an{background:var(--wahl);border-color:var(--wahlrand)}
+.fundliste .t{color:var(--titel);font-size:14px}
+.fundliste .s{color:var(--blass);font-size:12px;margin-top:2px}
+.fundliste mark{background:var(--wahlrand);color:#1b1b1b}
+@media (max-width:1180px){.fenster{grid-template-columns:230px minmax(0,1fr)}aside.rechts{display:none}}
+@media (max-width:820px){.fenster{grid-template-columns:1fr}nav.leiste{position:static;height:auto}.pfad{display:none}.suche{min-width:0}main{padding:22px 16px 60px}}
+</style><script>
+(function(){
+var w=document.documentElement;
+try{var g=localStorage.getItem('cbf-look');if(g==='dark'||g==='bright')w.setAttribute('data-look',g);}catch(e){}
+function knopf(){var b=document.getElementById('look');if(b)b.textContent=w.getAttribute('data-look')==='bright'?'Dark':'Bright';}
+document.addEventListener('DOMContentLoaded',function(){
+knopf();
+document.getElementById('look').addEventListener('click',function(){
+var n=w.getAttribute('data-look')==='bright'?'dark':'bright';w.setAttribute('data-look',n);
+try{localStorage.setItem('cbf-look',n);}catch(e){}knopf();});
+var links=[].slice.call(document.querySelectorAll('.aufseite a'));
+if(links.length&&'IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('an',a.getAttribute('href')==='#'+e.target.id);});});},{rootMargin:'0px 0px -70% 0px'});
+document.querySelectorAll('.inhalt h2[id],.inhalt h3[id]').forEach(function(h){io.observe(h);});}
+var fund=document.getElementById('fund'),ein=document.getElementById('fundein'),liste=document.getElementById('fundliste'),treffer=[],wahl=0;
+var basis=document.body.getAttribute('data-basis')||'';
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+function markiere(s,t){if(!t)return esc(s);var i=s.toLowerCase().indexOf(t);if(i<0)return esc(s);return esc(s.slice(0,i))+'<mark>'+esc(s.slice(i,i+t.length))+'</mark>'+esc(s.slice(i+t.length));}
+function suchen(){var t=ein.value.trim().toLowerCase();var idx=window.CBF_SUCHE||[];
+treffer=idx.map(function(p){var s=0,ti=p.t.toLowerCase(),x=p.x.toLowerCase(),i=x.indexOf(t),aus='';
+if(!t)s=1;else{if(ti.indexOf(t)===0)s=3;else if(ti.indexOf(t)>=0)s=2;if(i>=0){if(!s)s=1;var a=Math.max(0,i-50);aus=(a?'... ':'')+p.x.slice(a,i+t.length+80)+' ...';}}
+return{p:p,s:s,aus:aus};}).filter(function(r){return r.s;}).sort(function(a,b){return b.s-a.s;}).slice(0,40);
+wahl=0;zeichnen(t);}
+function zeichnen(t){liste.innerHTML=treffer.length?treffer.map(function(r,i){return '<li data-i="'+i+'"'+(i===wahl?' class="an"':'')+'><div class="t">'+markiere(r.p.t,t)+'</div>'+(r.aus?'<div class="s">'+markiere(r.aus,t)+'</div>':'')+'</li>';}).join(''):'<li><div class="s">No page found.</div></li>';
+var a=liste.querySelector('.an');if(a)a.scrollIntoView({block:'nearest'});}
+function gehe(i){var r=treffer[i];if(r)location.href=basis+r.p.u;}
+function auf(){fund.classList.add('offen');ein.value='';suchen();ein.focus();}
+function zu(){fund.classList.remove('offen');}
+document.getElementById('suche').addEventListener('click',auf);
+ein.addEventListener('input',suchen);
+ein.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();wahl=Math.min(wahl+1,treffer.length-1);zeichnen(ein.value.trim().toLowerCase());}
+else if(e.key==='ArrowUp'){e.preventDefault();wahl=Math.max(wahl-1,0);zeichnen(ein.value.trim().toLowerCase());}
+else if(e.key==='Enter'){e.preventDefault();gehe(wahl);}});
+liste.addEventListener('click',function(e){var li=e.target.closest('li[data-i]');if(li)gehe(+li.getAttribute('data-i'));});
+fund.addEventListener('click',function(e){if(e.target===fund)zu();});
+document.addEventListener('keydown',function(e){var tippt=/INPUT|TEXTAREA/.test(document.activeElement.tagName);
+if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();fund.classList.contains('offen')?zu():auf();}
+else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')zu();});
+});
+})();
+</script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Playing / Loot: base game</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Loot-Medieval-Overhaul.html">Loot: Medieval Overhaul</a><a href="Loot-VFE-Medieval-2.html">Loot: VFE Medieval 2</a><a href="Loot-Base-Game.html" class="hier">Loot: base game</a><a href="Quests.html">Quests</a><a href="Scenarios.html">Scenarios</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Patches.html">XML patches</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Modding-Scenarios.html">Starting in a ruin</a><a href="Modding-Dungeons.html">Dungeons (development)</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="loot-in-base-game-settlements">Loot in base game settlements</h1><p class="unter">Playing</p>
+<p>How much loot to expect in the settlements CBF builds for the base game (modern settlements for industrial, spacer and ultra factions). The values are market value in silver, with quality and condition included. Weapons and apparel worn by pawns, furniture and buildings are not counted.</p>
+<p>These are simulated values: each settlement type was laid out 8 times and its containers were filled 200 times. Settlements in your game are often a little larger than in the simulation, so expect somewhat more. The value per container is the more reliable figure. The numbers change when loot tables are updated.</p>
+<p>See also: <a href="Loot.html">Loot</a> for how loot tables and containers work.</p>
+<h2 id="settlements">Settlements</h2>
+<table>
+<thead>
+<tr>
+<th>Settlement</th>
+<th>Expected value</th>
+<th>Per container</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modern village</td>
+<td>19,744</td>
+<td>318</td>
+</tr>
+<tr>
+<td>Modern town</td>
+<td>64,938</td>
+<td>334</td>
+</tr>
+<tr>
+<td>Large town</td>
+<td>73,750</td>
+<td>301</td>
+</tr>
+<tr>
+<td>Metropolis</td>
+<td>102,505</td>
+<td>436</td>
+</tr>
+</tbody>
+</table>
+<h3 id="modern-village">Modern village</h3>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 19,744 silver on average, usually 13,239 to 28,086</li>
+<li><strong>Containers:</strong> about 62, worth 318 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_ModernVillage.png" target="_blank"><img src="images/loot/CBF_Plan_ModernVillage.png" width="646" alt="Loot value and composition of the modern village" loading="lazy"></a>
+<details><summary>Raw resources: 27 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>46 %</td><td>almost always</td><td>2,059</td></tr><tr><td>Steel</td><td>11 %</td><td>98 %</td><td>321</td></tr><tr><td>Cloth</td><td>7 %</td><td>97 %</td><td>262</td></tr><tr><td>Plainleather</td><td>5 %</td><td>91 %</td><td>127</td></tr><tr><td>Jade</td><td>4 %</td><td>85 %</td><td>42</td></tr><tr><td>Sheep wool</td><td>3 %</td><td>80 %</td><td>68</td></tr><tr><td>Muffalo wool</td><td>3 %</td><td>78 %</td><td>59</td></tr><tr><td>Alpaca wool</td><td>3 %</td><td>72 %</td><td>41</td></tr></table></details>
+<details><summary>Components: 20 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Component</td><td>20 %</td><td>96 %</td><td>26</td></tr><tr><td>Powerfocus chip</td><td>19 %</td><td>30 %</td><td>1</td></tr><tr><td>Nano structuring chip</td><td>18 %</td><td>28 %</td><td>0</td></tr><tr><td>Signal chip</td><td>11 %</td><td>34 %</td><td>1</td></tr><tr><td>Chemfuel</td><td>10 %</td><td>94 %</td><td>168</td></tr><tr><td>Advanced component</td><td>9 %</td><td>44 %</td><td>2</td></tr><tr><td>Neutroamine</td><td>5 %</td><td>70 %</td><td>35</td></tr><tr><td>Basic subcore</td><td>5 %</td><td>38 %</td><td>1</td></tr></table></details>
+<details><summary>Food: 13 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>17 %</td><td>almost always</td><td>365</td></tr><tr><td>Potatoes</td><td>15 %</td><td>almost always</td><td>367</td></tr><tr><td>Rice</td><td>13 %</td><td>almost always</td><td>303</td></tr><tr><td>Corn</td><td>11 %</td><td>almost always</td><td>273</td></tr><tr><td>Pemmican</td><td>6 %</td><td>almost always</td><td>121</td></tr><tr><td>Kibble</td><td>5 %</td><td>90 %</td><td>118</td></tr><tr><td>Raw fungus</td><td>4 %</td><td>89 %</td><td>88</td></tr><tr><td>Simple meal</td><td>4 %</td><td>almost always</td><td>6</td></tr></table></details>
+<details><summary>Silver and gold: 10 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>57 %</td><td>almost always</td><td>1,170</td></tr><tr><td>Gold</td><td>43 %</td><td>96 %</td><td>89</td></tr></table></details>
+<details><summary>Books: 10 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>33 %</td><td>91 %</td><td>4</td></tr><tr><td>Schematic</td><td>25 %</td><td>84 %</td><td>3</td></tr><tr><td>Novel</td><td>21 %</td><td>80 %</td><td>3</td></tr><tr><td>Map</td><td>13 %</td><td>60 %</td><td>1</td></tr><tr><td>Tome</td><td>8 %</td><td>34 %</td><td>1</td></tr></table></details>
+<details><summary>Apparel and armor: 8 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Duster</td><td>20 %</td><td>94 %</td><td>4</td></tr><tr><td>Pants</td><td>18 %</td><td>almost always</td><td>9</td></tr><tr><td>T-shirt</td><td>18 %</td><td>99 %</td><td>9</td></tr><tr><td>Jacket</td><td>16 %</td><td>94 %</td><td>4</td></tr><tr><td>Parka</td><td>7 %</td><td>78 %</td><td>2</td></tr><tr><td>Robe</td><td>6 %</td><td>73 %</td><td>1</td></tr><tr><td>Corset</td><td>5 %</td><td>42 %</td><td>1</td></tr><tr><td>Cowboy hat</td><td>4 %</td><td>86 %</td><td>3</td></tr></table></details>
+<details><summary>Medicine: 5 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>53 %</td><td>94 %</td><td>28</td></tr><tr><td>Herbal medicine</td><td>38 %</td><td>93 %</td><td>36</td></tr><tr><td>Glitterworld medicine</td><td>9 %</td><td>49 %</td><td>2</td></tr></table></details>
+<details><summary>Drugs and alcohol: 4 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Beer</td><td>44 %</td><td>93 %</td><td>29</td></tr><tr><td>Penoxycyline</td><td>26 %</td><td>77 %</td><td>11</td></tr><tr><td>Metalblood serum</td><td>13 %</td><td>20 %</td><td>1</td></tr><tr><td>Mind-numb serum</td><td>7 %</td><td>31 %</td><td>1</td></tr><tr><td>Ambrosia</td><td>4 %</td><td>44 %</td><td>2</td></tr><tr><td>Wake-up</td><td>1 %</td><td>7 %</td><td>0</td></tr><tr><td>Ghoul resurrection serum</td><td>1 %</td><td>12 %</td><td>0</td></tr><tr><td>Flake</td><td>1 %</td><td>10 %</td><td>1</td></tr></table></details>
+<details><summary>Weapons: 1 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Revolver</td><td>26 %</td><td>58 %</td><td>1</td></tr><tr><td>Autopistol</td><td>22 %</td><td>50 %</td><td>1</td></tr><tr><td>Machine pistol</td><td>15 %</td><td>28 %</td><td>0</td></tr><tr><td>81mm mortar shell (HE)</td><td>14 %</td><td>6 %</td><td>1</td></tr><tr><td>Heavy SMG</td><td>7 %</td><td>14 %</td><td>0</td></tr><tr><td>81mm mortar shell (Incendiary)</td><td>4 %</td><td>3 %</td><td>0</td></tr><tr><td>Club</td><td>2 %</td><td>6 %</td><td>0</td></tr><tr><td>Spear</td><td>2 %</td><td>2 %</td><td>0</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Persona core</td>
+<td>4,000</td>
+<td>under 1 %</td>
+</tr>
+<tr>
+<td>Marine armor</td>
+<td>2,036</td>
+<td>1 %</td>
+</tr>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>28 %</td>
+</tr>
+<tr>
+<td>Gravcore</td>
+<td>1,250</td>
+<td>2 %</td>
+</tr>
+<tr>
+<td>Powerfocus chip</td>
+<td>1,000</td>
+<td>30 %</td>
+</tr>
+</tbody>
+</table>
+<h3 id="modern-town">Modern town</h3>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 64,938 silver on average, usually 49,888 to 82,370</li>
+<li><strong>Containers:</strong> about 194, worth 334 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_ModernCity.png" target="_blank"><img src="images/loot/CBF_Plan_ModernCity.png" width="646" alt="Loot value and composition of the modern town" loading="lazy"></a>
+<details><summary>Raw resources: 27 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>41 %</td><td>almost always</td><td>6,031</td></tr><tr><td>Steel</td><td>14 %</td><td>almost always</td><td>1,332</td></tr><tr><td>Cloth</td><td>8 %</td><td>almost always</td><td>879</td></tr><tr><td>Plainleather</td><td>5 %</td><td>almost always</td><td>428</td></tr><tr><td>Jade</td><td>4 %</td><td>almost always</td><td>132</td></tr><tr><td>Sheep wool</td><td>4 %</td><td>99 %</td><td>234</td></tr><tr><td>Muffalo wool</td><td>3 %</td><td>almost always</td><td>209</td></tr><tr><td>Alpaca wool</td><td>3 %</td><td>almost always</td><td>136</td></tr></table></details>
+<details><summary>Components: 20 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Component</td><td>23 %</td><td>almost always</td><td>94</td></tr><tr><td>Powerfocus chip</td><td>22 %</td><td>74 %</td><td>3</td></tr><tr><td>Nano structuring chip</td><td>14 %</td><td>58 %</td><td>1</td></tr><tr><td>Signal chip</td><td>13 %</td><td>80 %</td><td>3</td></tr><tr><td>Advanced component</td><td>8 %</td><td>84 %</td><td>5</td></tr><tr><td>Chemfuel</td><td>7 %</td><td>almost always</td><td>425</td></tr><tr><td>Basic subcore</td><td>6 %</td><td>82 %</td><td>4</td></tr><tr><td>Neutroamine</td><td>4 %</td><td>97 %</td><td>91</td></tr></table></details>
+<details><summary>Food: 13 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>17 %</td><td>almost always</td><td>1,192</td></tr><tr><td>Potatoes</td><td>14 %</td><td>almost always</td><td>1,100</td></tr><tr><td>Rice</td><td>13 %</td><td>almost always</td><td>988</td></tr><tr><td>Corn</td><td>10 %</td><td>almost always</td><td>801</td></tr><tr><td>Pemmican</td><td>6 %</td><td>almost always</td><td>344</td></tr><tr><td>Kibble</td><td>5 %</td><td>almost always</td><td>387</td></tr><tr><td>Chicken egg (unfert.)</td><td>4 %</td><td>96 %</td><td>46</td></tr><tr><td>Simple meal</td><td>4 %</td><td>almost always</td><td>21</td></tr></table></details>
+<details><summary>Silver and gold: 9 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>60 %</td><td>almost always</td><td>3,610</td></tr><tr><td>Gold</td><td>40 %</td><td>almost always</td><td>246</td></tr></table></details>
+<details><summary>Apparel and armor: 8 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Pants</td><td>15 %</td><td>almost always</td><td>25</td></tr><tr><td>Duster</td><td>15 %</td><td>almost always</td><td>11</td></tr><tr><td>Jacket</td><td>14 %</td><td>almost always</td><td>12</td></tr><tr><td>T-shirt</td><td>14 %</td><td>almost always</td><td>24</td></tr><tr><td>Parka</td><td>6 %</td><td>almost always</td><td>4</td></tr><tr><td>Recon armor</td><td>5 %</td><td>23 %</td><td>0</td></tr><tr><td>Flak vest</td><td>5 %</td><td>80 %</td><td>2</td></tr><tr><td>Robe</td><td>4 %</td><td>96 %</td><td>3</td></tr></table></details>
+<details><summary>Books: 8 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>31 %</td><td>almost always</td><td>10</td></tr><tr><td>Schematic</td><td>24 %</td><td>almost always</td><td>8</td></tr><tr><td>Novel</td><td>21 %</td><td>98 %</td><td>7</td></tr><tr><td>Map</td><td>15 %</td><td>91 %</td><td>4</td></tr><tr><td>Tome</td><td>9 %</td><td>68 %</td><td>2</td></tr></table></details>
+<details><summary>Weapons: 5 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>81mm mortar shell (HE)</td><td>27 %</td><td>86 %</td><td>16</td></tr><tr><td>81mm mortar shell (Incendiary)</td><td>11 %</td><td>70 %</td><td>8</td></tr><tr><td>Bolt-action rifle</td><td>9 %</td><td>84 %</td><td>2</td></tr><tr><td>Pump shotgun</td><td>6 %</td><td>78 %</td><td>2</td></tr><tr><td>Assault rifle</td><td>6 %</td><td>66 %</td><td>1</td></tr><tr><td>Revolver</td><td>5 %</td><td>98 %</td><td>3</td></tr><tr><td>Autopistol</td><td>5 %</td><td>91 %</td><td>2</td></tr><tr><td>Sniper rifle</td><td>4 %</td><td>42 %</td><td>0</td></tr></table></details>
+<details><summary>Medicine: 5 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>53 %</td><td>almost always</td><td>91</td></tr><tr><td>Herbal medicine</td><td>38 %</td><td>almost always</td><td>119</td></tr><tr><td>Glitterworld medicine</td><td>9 %</td><td>84 %</td><td>5</td></tr></table></details>
+<details><summary>Drugs and alcohol: 4 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Beer</td><td>35 %</td><td>almost always</td><td>67</td></tr><tr><td>Penoxycyline</td><td>27 %</td><td>almost always</td><td>35</td></tr><tr><td>Metalblood serum</td><td>20 %</td><td>64 %</td><td>2</td></tr><tr><td>Mind-numb serum</td><td>6 %</td><td>60 %</td><td>2</td></tr><tr><td>Ambrosia</td><td>3 %</td><td>74 %</td><td>5</td></tr><tr><td>Wake-up</td><td>2 %</td><td>27 %</td><td>1</td></tr><tr><td>Flake</td><td>1 %</td><td>32 %</td><td>2</td></tr><tr><td>Yayo</td><td>1 %</td><td>25 %</td><td>1</td></tr></table></details>
+<details><summary>Other: 1 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Reinforced barrel</td><td>85 %</td><td>36 %</td><td>1</td></tr><tr><td>Pendant</td><td>8 %</td><td>6 %</td><td>0</td></tr><tr><td>Chalice</td><td>5 %</td><td>4 %</td><td>0</td></tr><tr><td>Genepack</td><td>2 %</td><td>6 %</td><td>0</td></tr><tr><td>Toxic wastepack</td><td>0 %</td><td>70 %</td><td>5</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Persona core</td>
+<td>4,000</td>
+<td>1 %</td>
+</tr>
+<tr>
+<td>Marine armor</td>
+<td>2,036</td>
+<td>8 %</td>
+</tr>
+<tr>
+<td>Recon armor</td>
+<td>1,542</td>
+<td>23 %</td>
+</tr>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>58 %</td>
+</tr>
+<tr>
+<td>Charge rifle</td>
+<td>1,012</td>
+<td>14 %</td>
+</tr>
+</tbody>
+</table>
+<h3 id="large-town">Large town</h3>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 73,750 silver on average, usually 61,968 to 86,730</li>
+<li><strong>Containers:</strong> about 245, worth 301 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_City.png" target="_blank"><img src="images/loot/CBF_Plan_City.png" width="646" alt="Loot value and composition of the large town" loading="lazy"></a>
+<details><summary>Raw resources: 26 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>41 %</td><td>almost always</td><td>6,637</td></tr><tr><td>Steel</td><td>14 %</td><td>almost always</td><td>1,446</td></tr><tr><td>Cloth</td><td>8 %</td><td>almost always</td><td>974</td></tr><tr><td>Plainleather</td><td>5 %</td><td>almost always</td><td>453</td></tr><tr><td>Jade</td><td>4 %</td><td>almost always</td><td>153</td></tr><tr><td>Sheep wool</td><td>4 %</td><td>almost always</td><td>270</td></tr><tr><td>Muffalo wool</td><td>3 %</td><td>almost always</td><td>226</td></tr><tr><td>Alpaca wool</td><td>3 %</td><td>almost always</td><td>148</td></tr></table></details>
+<details><summary>Components: 21 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Component</td><td>22 %</td><td>almost always</td><td>103</td></tr><tr><td>Powerfocus chip</td><td>17 %</td><td>72 %</td><td>3</td></tr><tr><td>Chemfuel</td><td>14 %</td><td>almost always</td><td>901</td></tr><tr><td>Nano structuring chip</td><td>13 %</td><td>62 %</td><td>1</td></tr><tr><td>Signal chip</td><td>13 %</td><td>84 %</td><td>4</td></tr><tr><td>Advanced component</td><td>8 %</td><td>79 %</td><td>6</td></tr><tr><td>Neutroamine</td><td>7 %</td><td>almost always</td><td>176</td></tr><tr><td>Basic subcore</td><td>6 %</td><td>87 %</td><td>4</td></tr></table></details>
+<details><summary>Food: 14 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>16 %</td><td>almost always</td><td>1,387</td></tr><tr><td>Potatoes</td><td>13 %</td><td>almost always</td><td>1,287</td></tr><tr><td>Rice</td><td>12 %</td><td>almost always</td><td>1,156</td></tr><tr><td>Corn</td><td>10 %</td><td>almost always</td><td>943</td></tr><tr><td>Pemmican</td><td>8 %</td><td>almost always</td><td>652</td></tr><tr><td>Kibble</td><td>7 %</td><td>almost always</td><td>704</td></tr><tr><td>Chicken egg (unfert.)</td><td>4 %</td><td>98 %</td><td>68</td></tr><tr><td>Raw fungus</td><td>4 %</td><td>almost always</td><td>350</td></tr></table></details>
+<details><summary>Silver and gold: 9 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>59 %</td><td>almost always</td><td>3,934</td></tr><tr><td>Gold</td><td>41 %</td><td>almost always</td><td>276</td></tr></table></details>
+<details><summary>Apparel and armor: 8 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Pants</td><td>15 %</td><td>almost always</td><td>28</td></tr><tr><td>T-shirt</td><td>15 %</td><td>almost always</td><td>28</td></tr><tr><td>Duster</td><td>15 %</td><td>almost always</td><td>12</td></tr><tr><td>Jacket</td><td>14 %</td><td>almost always</td><td>13</td></tr><tr><td>Parka</td><td>6 %</td><td>98 %</td><td>5</td></tr><tr><td>Robe</td><td>5 %</td><td>98 %</td><td>4</td></tr><tr><td>Corset</td><td>4 %</td><td>82 %</td><td>2</td></tr><tr><td>Recon armor</td><td>4 %</td><td>21 %</td><td>0</td></tr></table></details>
+<details><summary>Books: 8 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>30 %</td><td>almost always</td><td>10</td></tr><tr><td>Schematic</td><td>25 %</td><td>almost always</td><td>9</td></tr><tr><td>Novel</td><td>21 %</td><td>98 %</td><td>8</td></tr><tr><td>Map</td><td>14 %</td><td>93 %</td><td>5</td></tr><tr><td>Tome</td><td>9 %</td><td>80 %</td><td>2</td></tr></table></details>
+<details><summary>Medicine: 5 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>52 %</td><td>almost always</td><td>100</td></tr><tr><td>Herbal medicine</td><td>38 %</td><td>almost always</td><td>130</td></tr><tr><td>Glitterworld medicine</td><td>10 %</td><td>86 %</td><td>7</td></tr></table></details>
+<details><summary>Weapons: 5 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>81mm mortar shell (HE)</td><td>27 %</td><td>88 %</td><td>16</td></tr><tr><td>81mm mortar shell (Incendiary)</td><td>12 %</td><td>76 %</td><td>9</td></tr><tr><td>Bolt-action rifle</td><td>9 %</td><td>88 %</td><td>3</td></tr><tr><td>Assault rifle</td><td>7 %</td><td>72 %</td><td>1</td></tr><tr><td>Pump shotgun</td><td>7 %</td><td>78 %</td><td>2</td></tr><tr><td>Revolver</td><td>6 %</td><td>97 %</td><td>3</td></tr><tr><td>Autopistol</td><td>4 %</td><td>92 %</td><td>2</td></tr><tr><td>Sniper rifle</td><td>4 %</td><td>38 %</td><td>1</td></tr></table></details>
+<details><summary>Drugs and alcohol: 4 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Beer</td><td>36 %</td><td>almost always</td><td>78</td></tr><tr><td>Penoxycyline</td><td>28 %</td><td>almost always</td><td>40</td></tr><tr><td>Metalblood serum</td><td>16 %</td><td>68 %</td><td>2</td></tr><tr><td>Mind-numb serum</td><td>7 %</td><td>66 %</td><td>2</td></tr><tr><td>Ambrosia</td><td>3 %</td><td>75 %</td><td>5</td></tr><tr><td>Wake-up</td><td>2 %</td><td>32 %</td><td>2</td></tr><tr><td>Flake</td><td>2 %</td><td>44 %</td><td>3</td></tr><tr><td>Yayo</td><td>2 %</td><td>36 %</td><td>2</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Persona core</td>
+<td>4,000</td>
+<td>4 %</td>
+</tr>
+<tr>
+<td>Marine armor</td>
+<td>2,036</td>
+<td>8 %</td>
+</tr>
+<tr>
+<td>Recon armor</td>
+<td>1,542</td>
+<td>21 %</td>
+</tr>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>62 %</td>
+</tr>
+<tr>
+<td>Gravcore</td>
+<td>1,250</td>
+<td>2 %</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metropolis">Metropolis</h3>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 102,505 silver on average, usually 79,237 to 122,531</li>
+<li><strong>Containers:</strong> about 235, worth 436 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_Metropolis.png" target="_blank"><img src="images/loot/CBF_Plan_Metropolis.png" width="646" alt="Loot value and composition of the metropolis" loading="lazy"></a>
+<details><summary>Components: 33 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Component</td><td>22 %</td><td>almost always</td><td>237</td></tr><tr><td>Powerfocus chip</td><td>21 %</td><td>98 %</td><td>7</td></tr><tr><td>Nano structuring chip</td><td>16 %</td><td>95 %</td><td>4</td></tr><tr><td>Signal chip</td><td>14 %</td><td>98 %</td><td>9</td></tr><tr><td>Advanced component</td><td>8 %</td><td>99 %</td><td>14</td></tr><tr><td>Chemfuel</td><td>7 %</td><td>almost always</td><td>1,048</td></tr><tr><td>Basic subcore</td><td>6 %</td><td>98 %</td><td>9</td></tr><tr><td>Neutroamine</td><td>4 %</td><td>almost always</td><td>209</td></tr></table></details>
+<details><summary>Raw resources: 26 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>33 %</td><td>almost always</td><td>7,337</td></tr><tr><td>Steel</td><td>23 %</td><td>almost always</td><td>3,266</td></tr><tr><td>Cloth</td><td>6 %</td><td>almost always</td><td>1,102</td></tr><tr><td>Jade</td><td>5 %</td><td>almost always</td><td>261</td></tr><tr><td>Plainleather</td><td>4 %</td><td>almost always</td><td>494</td></tr><tr><td>Plasteel</td><td>4 %</td><td>99 %</td><td>103</td></tr><tr><td>Sheep wool</td><td>3 %</td><td>almost always</td><td>310</td></tr><tr><td>Muffalo wool</td><td>3 %</td><td>almost always</td><td>268</td></tr></table></details>
+<details><summary>Silver and gold: 8 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>52 %</td><td>almost always</td><td>4,368</td></tr><tr><td>Gold</td><td>48 %</td><td>almost always</td><td>397</td></tr></table></details>
+<details><summary>Food: 7 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>15 %</td><td>almost always</td><td>861</td></tr><tr><td>Potatoes</td><td>12 %</td><td>almost always</td><td>763</td></tr><tr><td>Rice</td><td>11 %</td><td>almost always</td><td>694</td></tr><tr><td>Corn</td><td>9 %</td><td>almost always</td><td>574</td></tr><tr><td>Pemmican</td><td>8 %</td><td>almost always</td><td>362</td></tr><tr><td>Kibble</td><td>6 %</td><td>almost always</td><td>396</td></tr><tr><td>Simple meal</td><td>4 %</td><td>almost always</td><td>20</td></tr><tr><td>Chicken egg (unfert.)</td><td>4 %</td><td>98 %</td><td>40</td></tr></table></details>
+<details><summary>Weapons: 6 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>81mm mortar shell (HE)</td><td>27 %</td><td>96 %</td><td>31</td></tr><tr><td>81mm mortar shell (Incendiary)</td><td>12 %</td><td>94 %</td><td>17</td></tr><tr><td>Bolt-action rifle</td><td>11 %</td><td>99 %</td><td>6</td></tr><tr><td>Assault rifle</td><td>9 %</td><td>94 %</td><td>2</td></tr><tr><td>Pump shotgun</td><td>8 %</td><td>94 %</td><td>5</td></tr><tr><td>Sniper rifle</td><td>5 %</td><td>69 %</td><td>1</td></tr><tr><td>Charge rifle</td><td>4 %</td><td>34 %</td><td>0</td></tr><tr><td>Chain shotgun</td><td>4 %</td><td>76 %</td><td>1</td></tr></table></details>
+<details><summary>Apparel and armor: 6 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Pants</td><td>10 %</td><td>almost always</td><td>20</td></tr><tr><td>T-shirt</td><td>10 %</td><td>almost always</td><td>20</td></tr><tr><td>Jacket</td><td>10 %</td><td>almost always</td><td>10</td></tr><tr><td>Flak vest</td><td>10 %</td><td>98 %</td><td>6</td></tr><tr><td>Recon armor</td><td>9 %</td><td>42 %</td><td>1</td></tr><tr><td>Duster</td><td>9 %</td><td>almost always</td><td>8</td></tr><tr><td>Flak pants</td><td>8 %</td><td>94 %</td><td>5</td></tr><tr><td>Flak jacket</td><td>5 %</td><td>87 %</td><td>2</td></tr></table></details>
+<details><summary>Books: 5 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>30 %</td><td>99 %</td><td>10</td></tr><tr><td>Schematic</td><td>25 %</td><td>almost always</td><td>8</td></tr><tr><td>Novel</td><td>21 %</td><td>98 %</td><td>7</td></tr><tr><td>Map</td><td>16 %</td><td>92 %</td><td>5</td></tr><tr><td>Tome</td><td>8 %</td><td>70 %</td><td>2</td></tr></table></details>
+<details><summary>Medicine: 4 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>53 %</td><td>almost always</td><td>114</td></tr><tr><td>Herbal medicine</td><td>37 %</td><td>almost always</td><td>146</td></tr><tr><td>Glitterworld medicine</td><td>10 %</td><td>96 %</td><td>8</td></tr></table></details>
+<details><summary>Drugs and alcohol: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Penoxycyline</td><td>33 %</td><td>almost always</td><td>44</td></tr><tr><td>Metalblood serum</td><td>21 %</td><td>67 %</td><td>3</td></tr><tr><td>Beer</td><td>19 %</td><td>almost always</td><td>38</td></tr><tr><td>Mind-numb serum</td><td>8 %</td><td>69 %</td><td>2</td></tr><tr><td>Wake-up</td><td>4 %</td><td>50 %</td><td>3</td></tr><tr><td>Yayo</td><td>3 %</td><td>54 %</td><td>4</td></tr><tr><td>Flake</td><td>3 %</td><td>62 %</td><td>5</td></tr><tr><td>Go-juice</td><td>2 %</td><td>27 %</td><td>1</td></tr></table></details>
+<details><summary>Other: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Reinforced barrel</td><td>66 %</td><td>63 %</td><td>2</td></tr><tr><td>Chalice</td><td>16 %</td><td>32 %</td><td>1</td></tr><tr><td>Pendant</td><td>13 %</td><td>25 %</td><td>0</td></tr><tr><td>Genepack</td><td>5 %</td><td>40 %</td><td>1</td></tr><tr><td>Granite chunk</td><td>0 %</td><td>12 %</td><td>0</td></tr><tr><td>Toxic wastepack</td><td>0 %</td><td>94 %</td><td>15</td></tr></table></details>
+<details><summary>Valuables: 1 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Persona core</td><td>36 %</td><td>10 %</td><td>0</td></tr><tr><td>Psychic animal pulser</td><td>30 %</td><td>29 %</td><td>1</td></tr><tr><td>Psychic soothe pulser</td><td>24 %</td><td>30 %</td><td>1</td></tr><tr><td>Techprof subpersona core</td><td>9 %</td><td>12 %</td><td>0</td></tr><tr><td>Luciferium</td><td>1 %</td><td>14 %</td><td>0</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Persona core</td>
+<td>4,000</td>
+<td>10 %</td>
+</tr>
+<tr>
+<td>Marine armor</td>
+<td>2,036</td>
+<td>22 %</td>
+</tr>
+<tr>
+<td>Recon armor</td>
+<td>1,542</td>
+<td>42 %</td>
+</tr>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>95 %</td>
+</tr>
+<tr>
+<td>Gravcore</td>
+<td>1,250</td>
+<td>7 %</td>
+</tr>
+</tbody>
+</table>
+<h2 id="camps">Camps</h2>
+<table>
+<thead>
+<tr>
+<th>Camp</th>
+<th>Expected value</th>
+<th>Per container</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outpost</td>
+<td>3,335</td>
+<td>785</td>
+</tr>
+<tr>
+<td>Farming site</td>
+<td>4,182</td>
+<td>216</td>
+</tr>
+<tr>
+<td>Hunting site</td>
+<td>7,952</td>
+<td>442</td>
+</tr>
+<tr>
+<td>Bandit camp</td>
+<td>8,081</td>
+<td>572</td>
+</tr>
+<tr>
+<td>Logging site</td>
+<td>9,476</td>
+<td>446</td>
+</tr>
+<tr>
+<td>Mining site</td>
+<td>9,807</td>
+<td>438</td>
+</tr>
+</tbody>
+</table>
+<h3 id="outpost">Outpost</h3>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 3,335 silver on average, usually 1,486 to 5,836</li>
+<li><strong>Containers:</strong> about 4, worth 785 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_Camp_Vanilla_Outpost.png" target="_blank"><img src="images/loot/CBF_Plan_Camp_Vanilla_Outpost.png" width="646" alt="Loot value and composition of the outpost" loading="lazy"></a>
+<details><summary>Weapons: 38 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>81mm mortar shell (HE)</td><td>32 %</td><td>58 %</td><td>7</td></tr><tr><td>81mm mortar shell (Incendiary)</td><td>16 %</td><td>47 %</td><td>4</td></tr><tr><td>Bolt-action rifle</td><td>9 %</td><td>48 %</td><td>1</td></tr><tr><td>Pump shotgun</td><td>8 %</td><td>49 %</td><td>1</td></tr><tr><td>Assault rifle</td><td>7 %</td><td>30 %</td><td>0</td></tr><tr><td>Sniper rifle</td><td>4 %</td><td>20 %</td><td>0</td></tr><tr><td>Charge rifle</td><td>4 %</td><td>6 %</td><td>0</td></tr><tr><td>Chain shotgun</td><td>4 %</td><td>22 %</td><td>0</td></tr></table></details>
+<details><summary>Components: 25 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Powerfocus chip</td><td>30 %</td><td>12 %</td><td>0</td></tr><tr><td>Component</td><td>23 %</td><td>48 %</td><td>6</td></tr><tr><td>Nano structuring chip</td><td>21 %</td><td>7 %</td><td>0</td></tr><tr><td>Signal chip</td><td>14 %</td><td>12 %</td><td>0</td></tr><tr><td>Advanced component</td><td>7 %</td><td>12 %</td><td>0</td></tr><tr><td>Basic subcore</td><td>5 %</td><td>10 %</td><td>0</td></tr></table></details>
+<details><summary>Apparel and armor: 15 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Flak vest</td><td>22 %</td><td>52 %</td><td>1</td></tr><tr><td>Recon armor</td><td>21 %</td><td>11 %</td><td>0</td></tr><tr><td>Flak pants</td><td>16 %</td><td>39 %</td><td>1</td></tr><tr><td>Flak jacket</td><td>11 %</td><td>30 %</td><td>0</td></tr><tr><td>Simple helmet</td><td>9 %</td><td>55 %</td><td>1</td></tr><tr><td>Flak helmet</td><td>8 %</td><td>27 %</td><td>0</td></tr><tr><td>Recon helmet</td><td>6 %</td><td>9 %</td><td>0</td></tr><tr><td>Marine armor</td><td>6 %</td><td>4 %</td><td>0</td></tr></table></details>
+<details><summary>Raw resources: 12 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Steel</td><td>64 %</td><td>72 %</td><td>140</td></tr><tr><td>Jade</td><td>6 %</td><td>19 %</td><td>5</td></tr><tr><td>Cloth</td><td>5 %</td><td>17 %</td><td>14</td></tr><tr><td>Plainleather</td><td>5 %</td><td>16 %</td><td>10</td></tr><tr><td>Plasteel</td><td>5 %</td><td>10 %</td><td>2</td></tr><tr><td>Lightleather</td><td>3 %</td><td>14 %</td><td>6</td></tr><tr><td>Sheep wool</td><td>2 %</td><td>7 %</td><td>3</td></tr><tr><td>Alpaca wool</td><td>2 %</td><td>7 %</td><td>2</td></tr></table></details>
+<details><summary>Other: 7 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Reinforced barrel</td><td>100 %</td><td>16 %</td><td>0</td></tr></table></details>
+<details><summary>Silver and gold: 3 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>54 %</td><td>40 %</td><td>54</td></tr><tr><td>Gold</td><td>46 %</td><td>16 %</td><td>5</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Marine armor</td>
+<td>2,036</td>
+<td>4 %</td>
+</tr>
+<tr>
+<td>Recon armor</td>
+<td>1,542</td>
+<td>11 %</td>
+</tr>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>7 %</td>
+</tr>
+<tr>
+<td>Charge rifle</td>
+<td>1,012</td>
+<td>6 %</td>
+</tr>
+<tr>
+<td>Powerfocus chip</td>
+<td>1,000</td>
+<td>12 %</td>
+</tr>
+</tbody>
+</table>
+<h3 id="farming-site">Farming site</h3>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 4,182 silver on average, usually 3,346 to 4,965</li>
+<li><strong>Containers:</strong> about 19, worth 216 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_Camp_Vanilla_Farm.png" target="_blank"><img src="images/loot/CBF_Plan_Camp_Vanilla_Farm.png" width="646" alt="Loot value and composition of the farming site" loading="lazy"></a>
+<details><summary>Food: 39 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>14 %</td><td>almost always</td><td>194</td></tr><tr><td>Potatoes</td><td>12 %</td><td>98 %</td><td>176</td></tr><tr><td>Rice</td><td>11 %</td><td>94 %</td><td>161</td></tr><tr><td>Chicken egg (unfert.)</td><td>10 %</td><td>88 %</td><td>23</td></tr><tr><td>Corn</td><td>9 %</td><td>96 %</td><td>136</td></tr><tr><td>Kibble</td><td>9 %</td><td>92 %</td><td>131</td></tr><tr><td>Pemmican</td><td>7 %</td><td>98 %</td><td>81</td></tr><tr><td>Milk</td><td>6 %</td><td>87 %</td><td>54</td></tr></table></details>
+<details><summary>Raw resources: 28 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>51 %</td><td>98 %</td><td>506</td></tr><tr><td>Cloth</td><td>9 %</td><td>61 %</td><td>70</td></tr><tr><td>Plainleather</td><td>5 %</td><td>47 %</td><td>30</td></tr><tr><td>Steel</td><td>5 %</td><td>27 %</td><td>33</td></tr><tr><td>Sheep wool</td><td>5 %</td><td>42 %</td><td>20</td></tr><tr><td>Muffalo wool</td><td>4 %</td><td>34 %</td><td>17</td></tr><tr><td>Lightleather</td><td>3 %</td><td>41 %</td><td>20</td></tr><tr><td>Heavy fur</td><td>3 %</td><td>31 %</td><td>11</td></tr></table></details>
+<details><summary>Components: 8 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Nano structuring chip</td><td>19 %</td><td>3 %</td><td>0</td></tr><tr><td>Component</td><td>18 %</td><td>20 %</td><td>2</td></tr><tr><td>Signal chip</td><td>16 %</td><td>5 %</td><td>0</td></tr><tr><td>Advanced component</td><td>12 %</td><td>6 %</td><td>0</td></tr><tr><td>Chemfuel</td><td>11 %</td><td>20 %</td><td>16</td></tr><tr><td>Powerfocus chip</td><td>8 %</td><td>1 %</td><td>0</td></tr><tr><td>Basic subcore</td><td>7 %</td><td>6 %</td><td>0</td></tr><tr><td>Neutroamine</td><td>6 %</td><td>14 %</td><td>3</td></tr></table></details>
+<details><summary>Silver and gold: 7 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>65 %</td><td>80 %</td><td>198</td></tr><tr><td>Gold</td><td>35 %</td><td>36 %</td><td>11</td></tr></table></details>
+<details><summary>Books: 6 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>35 %</td><td>28 %</td><td>1</td></tr><tr><td>Schematic</td><td>21 %</td><td>22 %</td><td>0</td></tr><tr><td>Novel</td><td>18 %</td><td>14 %</td><td>0</td></tr><tr><td>Map</td><td>14 %</td><td>10 %</td><td>0</td></tr><tr><td>Tome</td><td>12 %</td><td>10 %</td><td>0</td></tr></table></details>
+<details><summary>Apparel and armor: 5 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>T-shirt</td><td>20 %</td><td>55 %</td><td>1</td></tr><tr><td>Jacket</td><td>19 %</td><td>40 %</td><td>1</td></tr><tr><td>Pants</td><td>18 %</td><td>55 %</td><td>1</td></tr><tr><td>Duster</td><td>18 %</td><td>36 %</td><td>1</td></tr><tr><td>Robe</td><td>6 %</td><td>17 %</td><td>0</td></tr><tr><td>Parka</td><td>6 %</td><td>18 %</td><td>0</td></tr><tr><td>Corset</td><td>5 %</td><td>7 %</td><td>0</td></tr><tr><td>Cowboy hat</td><td>4 %</td><td>30 %</td><td>0</td></tr></table></details>
+<details><summary>Medicine: 3 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>49 %</td><td>34 %</td><td>4</td></tr><tr><td>Herbal medicine</td><td>38 %</td><td>34 %</td><td>5</td></tr><tr><td>Glitterworld medicine</td><td>13 %</td><td>11 %</td><td>0</td></tr></table></details>
+<details><summary>Drugs and alcohol: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Beer</td><td>47 %</td><td>36 %</td><td>4</td></tr><tr><td>Penoxycyline</td><td>28 %</td><td>20 %</td><td>2</td></tr><tr><td>Mind-numb serum</td><td>14 %</td><td>8 %</td><td>0</td></tr><tr><td>Metalblood serum</td><td>6 %</td><td>2 %</td><td>0</td></tr><tr><td>Ambrosia</td><td>3 %</td><td>6 %</td><td>0</td></tr><tr><td>Ghoul resurrection serum</td><td>2 %</td><td>2 %</td><td>0</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>3 %</td>
+</tr>
+<tr>
+<td>Powerfocus chip</td>
+<td>1,000</td>
+<td>1 %</td>
+</tr>
+<tr>
+<td>Signal chip</td>
+<td>500</td>
+<td>5 %</td>
+</tr>
+<tr>
+<td>Heavy SMG</td>
+<td>357</td>
+<td>2 %</td>
+</tr>
+<tr>
+<td>Tome</td>
+<td>250</td>
+<td>10 %</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-site">Hunting site</h3>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 7,952 silver on average, usually 5,772 to 10,351</li>
+<li><strong>Containers:</strong> about 18, worth 442 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_Camp_Vanilla_Hunting.png" target="_blank"><img src="images/loot/CBF_Plan_Camp_Vanilla_Hunting.png" width="646" alt="Loot value and composition of the hunting site" loading="lazy"></a>
+<details><summary>Components: 41 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Powerfocus chip</td><td>22 %</td><td>30 %</td><td>1</td></tr><tr><td>Component</td><td>21 %</td><td>90 %</td><td>21</td></tr><tr><td>Nano structuring chip</td><td>17 %</td><td>22 %</td><td>0</td></tr><tr><td>Signal chip</td><td>12 %</td><td>36 %</td><td>1</td></tr><tr><td>Chemfuel</td><td>10 %</td><td>90 %</td><td>136</td></tr><tr><td>Advanced component</td><td>9 %</td><td>39 %</td><td>1</td></tr><tr><td>Basic subcore</td><td>6 %</td><td>38 %</td><td>1</td></tr><tr><td>Neutroamine</td><td>5 %</td><td>64 %</td><td>25</td></tr></table></details>
+<details><summary>Raw resources: 34 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>37 %</td><td>almost always</td><td>825</td></tr><tr><td>Steel</td><td>22 %</td><td>96 %</td><td>310</td></tr><tr><td>Cloth</td><td>6 %</td><td>77 %</td><td>107</td></tr><tr><td>Plainleather</td><td>3 %</td><td>54 %</td><td>42</td></tr><tr><td>Jade</td><td>3 %</td><td>55 %</td><td>17</td></tr><tr><td>Plasteel</td><td>3 %</td><td>34 %</td><td>10</td></tr><tr><td>Sheep wool</td><td>3 %</td><td>52 %</td><td>27</td></tr><tr><td>Muffalo wool</td><td>2 %</td><td>43 %</td><td>24</td></tr></table></details>
+<details><summary>Food: 11 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>12 %</td><td>90 %</td><td>90</td></tr><tr><td>Rice</td><td>10 %</td><td>79 %</td><td>82</td></tr><tr><td>Potatoes</td><td>10 %</td><td>78 %</td><td>80</td></tr><tr><td>Pemmican</td><td>9 %</td><td>96 %</td><td>60</td></tr><tr><td>Kibble</td><td>9 %</td><td>78 %</td><td>76</td></tr><tr><td>Corn</td><td>7 %</td><td>72 %</td><td>58</td></tr><tr><td>Chicken egg (unfert.)</td><td>7 %</td><td>50 %</td><td>9</td></tr><tr><td>Milk</td><td>6 %</td><td>67 %</td><td>30</td></tr></table></details>
+<details><summary>Silver and gold: 6 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Gold</td><td>50 %</td><td>58 %</td><td>23</td></tr><tr><td>Silver</td><td>50 %</td><td>93 %</td><td>230</td></tr></table></details>
+<details><summary>Medicine: 4 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>51 %</td><td>63 %</td><td>9</td></tr><tr><td>Herbal medicine</td><td>35 %</td><td>57 %</td><td>11</td></tr><tr><td>Glitterworld medicine</td><td>14 %</td><td>22 %</td><td>1</td></tr></table></details>
+<details><summary>Drugs and alcohol: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Penoxycyline</td><td>40 %</td><td>34 %</td><td>3</td></tr><tr><td>Metalblood serum</td><td>32 %</td><td>14 %</td><td>0</td></tr><tr><td>Beer</td><td>14 %</td><td>19 %</td><td>2</td></tr><tr><td>Mind-numb serum</td><td>11 %</td><td>10 %</td><td>0</td></tr><tr><td>Ghoul resurrection serum</td><td>2 %</td><td>4 %</td><td>0</td></tr><tr><td>Ambrosia</td><td>1 %</td><td>4 %</td><td>0</td></tr></table></details>
+<details><summary>Apparel and armor: 1 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Jacket</td><td>28 %</td><td>28 %</td><td>0</td></tr><tr><td>T-shirt</td><td>16 %</td><td>30 %</td><td>1</td></tr><tr><td>Pants</td><td>16 %</td><td>29 %</td><td>1</td></tr><tr><td>Duster</td><td>14 %</td><td>16 %</td><td>0</td></tr><tr><td>Robe</td><td>8 %</td><td>12 %</td><td>0</td></tr><tr><td>Parka</td><td>6 %</td><td>8 %</td><td>0</td></tr><tr><td>Cowboy hat</td><td>5 %</td><td>16 %</td><td>0</td></tr><tr><td>Corset</td><td>3 %</td><td>2 %</td><td>0</td></tr></table></details>
+<details><summary>Books: 1 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>31 %</td><td>12 %</td><td>0</td></tr><tr><td>Schematic</td><td>28 %</td><td>12 %</td><td>0</td></tr><tr><td>Novel</td><td>25 %</td><td>8 %</td><td>0</td></tr><tr><td>Map</td><td>14 %</td><td>4 %</td><td>0</td></tr><tr><td>Tome</td><td>2 %</td><td>1 %</td><td>0</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>22 %</td>
+</tr>
+<tr>
+<td>Powerfocus chip</td>
+<td>1,000</td>
+<td>30 %</td>
+</tr>
+<tr>
+<td>Signal chip</td>
+<td>500</td>
+<td>36 %</td>
+</tr>
+<tr>
+<td>Advanced component</td>
+<td>200</td>
+<td>39 %</td>
+</tr>
+<tr>
+<td>Metalblood serum</td>
+<td>200</td>
+<td>14 %</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bandit-camp">Bandit camp</h3>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 8,081 silver on average, usually 5,765 to 10,745</li>
+<li><strong>Containers:</strong> about 14, worth 572 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_Camp_Vanilla_Bandits.png" target="_blank"><img src="images/loot/CBF_Plan_Camp_Vanilla_Bandits.png" width="646" alt="Loot value and composition of the bandit camp" loading="lazy"></a>
+<details><summary>Components: 40 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Component</td><td>23 %</td><td>92 %</td><td>24</td></tr><tr><td>Powerfocus chip</td><td>19 %</td><td>30 %</td><td>1</td></tr><tr><td>Signal chip</td><td>14 %</td><td>38 %</td><td>1</td></tr><tr><td>Nano structuring chip</td><td>13 %</td><td>20 %</td><td>0</td></tr><tr><td>Advanced component</td><td>8 %</td><td>36 %</td><td>1</td></tr><tr><td>Chemfuel</td><td>8 %</td><td>78 %</td><td>114</td></tr><tr><td>Basic subcore</td><td>7 %</td><td>42 %</td><td>1</td></tr><tr><td>Neutroamine</td><td>4 %</td><td>62 %</td><td>23</td></tr></table></details>
+<details><summary>Raw resources: 32 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Steel</td><td>30 %</td><td>almost always</td><td>407</td></tr><tr><td>Wood</td><td>30 %</td><td>almost always</td><td>636</td></tr><tr><td>Plasteel</td><td>5 %</td><td>47 %</td><td>14</td></tr><tr><td>Jade</td><td>4 %</td><td>56 %</td><td>22</td></tr><tr><td>Cloth</td><td>4 %</td><td>almost always</td><td>64</td></tr><tr><td>Plainleather</td><td>3 %</td><td>56 %</td><td>39</td></tr><tr><td>Alpaca wool</td><td>2 %</td><td>32 %</td><td>14</td></tr><tr><td>Sheep wool</td><td>2 %</td><td>42 %</td><td>20</td></tr></table></details>
+<details><summary>Weapons: 7 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>81mm mortar shell (HE)</td><td>36 %</td><td>36 %</td><td>4</td></tr><tr><td>81mm mortar shell (Incendiary)</td><td>17 %</td><td>28 %</td><td>2</td></tr><tr><td>Bolt-action rifle</td><td>9 %</td><td>30 %</td><td>0</td></tr><tr><td>Sniper rifle</td><td>7 %</td><td>14 %</td><td>0</td></tr><tr><td>Assault rifle</td><td>6 %</td><td>18 %</td><td>0</td></tr><tr><td>Pump shotgun</td><td>6 %</td><td>19 %</td><td>0</td></tr><tr><td>Spear</td><td>2 %</td><td>10 %</td><td>0</td></tr><tr><td>Chain shotgun</td><td>2 %</td><td>7 %</td><td>0</td></tr></table></details>
+<details><summary>Silver and gold: 7 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Gold</td><td>55 %</td><td>66 %</td><td>30</td></tr><tr><td>Silver</td><td>45 %</td><td>92 %</td><td>247</td></tr></table></details>
+<details><summary>Books: 3 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>30 %</td><td>24 %</td><td>0</td></tr><tr><td>Schematic</td><td>30 %</td><td>26 %</td><td>1</td></tr><tr><td>Novel</td><td>20 %</td><td>16 %</td><td>0</td></tr><tr><td>Map</td><td>18 %</td><td>12 %</td><td>0</td></tr><tr><td>Tome</td><td>4 %</td><td>2 %</td><td>0</td></tr></table></details>
+<details><summary>Medicine: 3 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>54 %</td><td>52 %</td><td>7</td></tr><tr><td>Herbal medicine</td><td>34 %</td><td>40 %</td><td>7</td></tr><tr><td>Glitterworld medicine</td><td>12 %</td><td>16 %</td><td>1</td></tr></table></details>
+<details><summary>Apparel and armor: 3 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Flak vest</td><td>22 %</td><td>28 %</td><td>1</td></tr><tr><td>Flak pants</td><td>19 %</td><td>24 %</td><td>0</td></tr><tr><td>Recon armor</td><td>18 %</td><td>4 %</td><td>0</td></tr><tr><td>Flak jacket</td><td>16 %</td><td>22 %</td><td>0</td></tr><tr><td>Simple helmet</td><td>8 %</td><td>30 %</td><td>1</td></tr><tr><td>Flak helmet</td><td>7 %</td><td>12 %</td><td>0</td></tr><tr><td>Marine armor</td><td>5 %</td><td>1 %</td><td>0</td></tr><tr><td>Marine helmet</td><td>3 %</td><td>4 %</td><td>0</td></tr></table></details>
+<details><summary>Valuables: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Persona core</td><td>58 %</td><td>2 %</td><td>0</td></tr><tr><td>Psychic animal pulser</td><td>20 %</td><td>4 %</td><td>0</td></tr><tr><td>Psychic soothe pulser</td><td>19 %</td><td>3 %</td><td>0</td></tr><tr><td>Techprof subpersona core</td><td>3 %</td><td>under 1 %</td><td>0</td></tr></table></details>
+<details><summary>Other: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Reinforced barrel</td><td>65 %</td><td>8 %</td><td>0</td></tr><tr><td>Pendant</td><td>20 %</td><td>4 %</td><td>0</td></tr><tr><td>Chalice</td><td>10 %</td><td>2 %</td><td>0</td></tr><tr><td>Genepack</td><td>5 %</td><td>4 %</td><td>0</td></tr><tr><td>Toxic wastepack</td><td>0 %</td><td>28 %</td><td>2</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Persona core</td>
+<td>4,000</td>
+<td>2 %</td>
+</tr>
+<tr>
+<td>Marine armor</td>
+<td>2,036</td>
+<td>1 %</td>
+</tr>
+<tr>
+<td>Recon armor</td>
+<td>1,542</td>
+<td>4 %</td>
+</tr>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>20 %</td>
+</tr>
+<tr>
+<td>Gravcore</td>
+<td>1,250</td>
+<td>4 %</td>
+</tr>
+</tbody>
+</table>
+<h3 id="logging-site">Logging site</h3>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 9,476 silver on average, usually 7,312 to 12,073</li>
+<li><strong>Containers:</strong> about 21, worth 446 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_Camp_Vanilla_Wood.png" target="_blank"><img src="images/loot/CBF_Plan_Camp_Vanilla_Wood.png" width="646" alt="Loot value and composition of the logging site" loading="lazy"></a>
+<details><summary>Components: 40 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Powerfocus chip</td><td>23 %</td><td>34 %</td><td>1</td></tr><tr><td>Component</td><td>21 %</td><td>96 %</td><td>26</td></tr><tr><td>Nano structuring chip</td><td>15 %</td><td>23 %</td><td>0</td></tr><tr><td>Signal chip</td><td>14 %</td><td>42 %</td><td>1</td></tr><tr><td>Chemfuel</td><td>9 %</td><td>89 %</td><td>144</td></tr><tr><td>Advanced component</td><td>8 %</td><td>42 %</td><td>2</td></tr><tr><td>Basic subcore</td><td>5 %</td><td>38 %</td><td>1</td></tr><tr><td>Neutroamine</td><td>4 %</td><td>70 %</td><td>29</td></tr></table></details>
+<details><summary>Raw resources: 33 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>35 %</td><td>almost always</td><td>921</td></tr><tr><td>Steel</td><td>23 %</td><td>96 %</td><td>382</td></tr><tr><td>Cloth</td><td>5 %</td><td>79 %</td><td>104</td></tr><tr><td>Plasteel</td><td>4 %</td><td>45 %</td><td>12</td></tr><tr><td>Plainleather</td><td>3 %</td><td>64 %</td><td>49</td></tr><tr><td>Sheep wool</td><td>3 %</td><td>66 %</td><td>37</td></tr><tr><td>Jade</td><td>3 %</td><td>54 %</td><td>18</td></tr><tr><td>Muffalo wool</td><td>3 %</td><td>54 %</td><td>30</td></tr></table></details>
+<details><summary>Food: 10 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>12 %</td><td>92 %</td><td>93</td></tr><tr><td>Potatoes</td><td>10 %</td><td>80 %</td><td>84</td></tr><tr><td>Pemmican</td><td>10 %</td><td>96 %</td><td>63</td></tr><tr><td>Rice</td><td>10 %</td><td>74 %</td><td>80</td></tr><tr><td>Kibble</td><td>9 %</td><td>77 %</td><td>74</td></tr><tr><td>Chicken egg (unfert.)</td><td>8 %</td><td>60 %</td><td>11</td></tr><tr><td>Corn</td><td>7 %</td><td>70 %</td><td>57</td></tr><tr><td>Milk</td><td>6 %</td><td>66 %</td><td>27</td></tr></table></details>
+<details><summary>Silver and gold: 6 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>54 %</td><td>96 %</td><td>302</td></tr><tr><td>Gold</td><td>46 %</td><td>66 %</td><td>26</td></tr></table></details>
+<details><summary>Medicine: 4 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>55 %</td><td>68 %</td><td>10</td></tr><tr><td>Herbal medicine</td><td>36 %</td><td>62 %</td><td>12</td></tr><tr><td>Glitterworld medicine</td><td>9 %</td><td>17 %</td><td>1</td></tr></table></details>
+<details><summary>Apparel and armor: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Pants</td><td>16 %</td><td>46 %</td><td>1</td></tr><tr><td>Recon armor</td><td>15 %</td><td>4 %</td><td>0</td></tr><tr><td>Duster</td><td>10 %</td><td>20 %</td><td>0</td></tr><tr><td>T-shirt</td><td>10 %</td><td>38 %</td><td>1</td></tr><tr><td>Jacket</td><td>9 %</td><td>22 %</td><td>0</td></tr><tr><td>Parka</td><td>6 %</td><td>18 %</td><td>0</td></tr><tr><td>Flak vest</td><td>6 %</td><td>7 %</td><td>0</td></tr><tr><td>Flak jacket</td><td>4 %</td><td>6 %</td><td>0</td></tr></table></details>
+<details><summary>Books: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>28 %</td><td>17 %</td><td>0</td></tr><tr><td>Map</td><td>24 %</td><td>12 %</td><td>0</td></tr><tr><td>Novel</td><td>21 %</td><td>13 %</td><td>0</td></tr><tr><td>Schematic</td><td>20 %</td><td>14 %</td><td>0</td></tr><tr><td>Tome</td><td>6 %</td><td>4 %</td><td>0</td></tr></table></details>
+<details><summary>Drugs and alcohol: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Penoxycyline</td><td>40 %</td><td>40 %</td><td>4</td></tr><tr><td>Metalblood serum</td><td>29 %</td><td>10 %</td><td>0</td></tr><tr><td>Beer</td><td>15 %</td><td>19 %</td><td>2</td></tr><tr><td>Mind-numb serum</td><td>9 %</td><td>10 %</td><td>0</td></tr><tr><td>Ghoul resurrection serum</td><td>2 %</td><td>5 %</td><td>0</td></tr><tr><td>Wake-up</td><td>1 %</td><td>2 %</td><td>0</td></tr><tr><td>Ambrosia</td><td>1 %</td><td>4 %</td><td>0</td></tr><tr><td>Go-juice</td><td>1 %</td><td>under 1 %</td><td>0</td></tr></table></details>
+<details><summary>Weapons: 1 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>81mm mortar shell (HE)</td><td>36 %</td><td>8 %</td><td>1</td></tr><tr><td>81mm mortar shell (Incendiary)</td><td>17 %</td><td>6 %</td><td>0</td></tr><tr><td>Spear</td><td>10 %</td><td>6 %</td><td>0</td></tr><tr><td>Longsword</td><td>7 %</td><td>6 %</td><td>0</td></tr><tr><td>Club</td><td>5 %</td><td>7 %</td><td>0</td></tr><tr><td>Autopistol</td><td>5 %</td><td>5 %</td><td>0</td></tr><tr><td>Revolver</td><td>5 %</td><td>8 %</td><td>0</td></tr><tr><td>Knife</td><td>4 %</td><td>6 %</td><td>0</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recon armor</td>
+<td>1,542</td>
+<td>4 %</td>
+</tr>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>23 %</td>
+</tr>
+<tr>
+<td>Powerfocus chip</td>
+<td>1,000</td>
+<td>34 %</td>
+</tr>
+<tr>
+<td>Reinforced barrel</td>
+<td>600</td>
+<td>2 %</td>
+</tr>
+<tr>
+<td>Psychic soothe pulser</td>
+<td>600</td>
+<td>1 %</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mining-site">Mining site</h3>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 9,807 silver on average, usually 7,323 to 12,567</li>
+<li><strong>Containers:</strong> about 22, worth 438 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_Camp_Vanilla_Mining.png" target="_blank"><img src="images/loot/CBF_Plan_Camp_Vanilla_Mining.png" width="646" alt="Loot value and composition of the mining site" loading="lazy"></a>
+<details><summary>Components: 43 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Component</td><td>23 %</td><td>96 %</td><td>30</td></tr><tr><td>Powerfocus chip</td><td>20 %</td><td>34 %</td><td>1</td></tr><tr><td>Nano structuring chip</td><td>15 %</td><td>26 %</td><td>0</td></tr><tr><td>Signal chip</td><td>13 %</td><td>42 %</td><td>1</td></tr><tr><td>Advanced component</td><td>10 %</td><td>52 %</td><td>2</td></tr><tr><td>Chemfuel</td><td>9 %</td><td>91 %</td><td>167</td></tr><tr><td>Basic subcore</td><td>6 %</td><td>49 %</td><td>1</td></tr><tr><td>Neutroamine</td><td>5 %</td><td>78 %</td><td>33</td></tr></table></details>
+<details><summary>Raw resources: 32 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>36 %</td><td>almost always</td><td>938</td></tr><tr><td>Steel</td><td>23 %</td><td>98 %</td><td>383</td></tr><tr><td>Cloth</td><td>5 %</td><td>75 %</td><td>108</td></tr><tr><td>Jade</td><td>4 %</td><td>69 %</td><td>23</td></tr><tr><td>Plasteel</td><td>4 %</td><td>44 %</td><td>13</td></tr><tr><td>Plainleather</td><td>3 %</td><td>61 %</td><td>51</td></tr><tr><td>Sheep wool</td><td>3 %</td><td>60 %</td><td>36</td></tr><tr><td>Alpaca wool</td><td>2 %</td><td>42 %</td><td>18</td></tr></table></details>
+<details><summary>Food: 9 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>11 %</td><td>90 %</td><td>87</td></tr><tr><td>Pemmican</td><td>10 %</td><td>96 %</td><td>67</td></tr><tr><td>Potatoes</td><td>10 %</td><td>78 %</td><td>81</td></tr><tr><td>Rice</td><td>10 %</td><td>76 %</td><td>81</td></tr><tr><td>Kibble</td><td>8 %</td><td>72 %</td><td>67</td></tr><tr><td>Chicken egg (unfert.)</td><td>8 %</td><td>56 %</td><td>10</td></tr><tr><td>Corn</td><td>7 %</td><td>70 %</td><td>63</td></tr><tr><td>Milk</td><td>5 %</td><td>64 %</td><td>26</td></tr></table></details>
+<details><summary>Silver and gold: 6 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>53 %</td><td>96 %</td><td>320</td></tr><tr><td>Gold</td><td>47 %</td><td>65 %</td><td>28</td></tr></table></details>
+<details><summary>Medicine: 3 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>53 %</td><td>66 %</td><td>10</td></tr><tr><td>Herbal medicine</td><td>37 %</td><td>60 %</td><td>12</td></tr><tr><td>Glitterworld medicine</td><td>10 %</td><td>20 %</td><td>1</td></tr></table></details>
+<details><summary>Books: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>39 %</td><td>26 %</td><td>0</td></tr><tr><td>Novel</td><td>21 %</td><td>16 %</td><td>0</td></tr><tr><td>Schematic</td><td>18 %</td><td>17 %</td><td>0</td></tr><tr><td>Tome</td><td>11 %</td><td>6 %</td><td>0</td></tr><tr><td>Map</td><td>10 %</td><td>8 %</td><td>0</td></tr></table></details>
+<details><summary>Drugs and alcohol: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Penoxycyline</td><td>39 %</td><td>40 %</td><td>4</td></tr><tr><td>Metalblood serum</td><td>29 %</td><td>10 %</td><td>0</td></tr><tr><td>Beer</td><td>13 %</td><td>16 %</td><td>2</td></tr><tr><td>Mind-numb serum</td><td>11 %</td><td>10 %</td><td>0</td></tr><tr><td>Wake-up</td><td>2 %</td><td>2 %</td><td>0</td></tr><tr><td>Ambrosia</td><td>2 %</td><td>5 %</td><td>0</td></tr><tr><td>Flake</td><td>2 %</td><td>3 %</td><td>0</td></tr><tr><td>Ghoul resurrection serum</td><td>1 %</td><td>4 %</td><td>0</td></tr></table></details>
+<details><summary>Apparel and armor: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>T-shirt</td><td>22 %</td><td>43 %</td><td>1</td></tr><tr><td>Pants</td><td>19 %</td><td>46 %</td><td>1</td></tr><tr><td>Jacket</td><td>17 %</td><td>24 %</td><td>0</td></tr><tr><td>Duster</td><td>16 %</td><td>22 %</td><td>0</td></tr><tr><td>Parka</td><td>9 %</td><td>16 %</td><td>0</td></tr><tr><td>Corset</td><td>6 %</td><td>6 %</td><td>0</td></tr><tr><td>Robe</td><td>5 %</td><td>10 %</td><td>0</td></tr><tr><td>Cowboy hat</td><td>4 %</td><td>23 %</td><td>0</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Persona core</td>
+<td>4,000</td>
+<td>2 %</td>
+</tr>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>26 %</td>
+</tr>
+<tr>
+<td>Powerfocus chip</td>
+<td>1,000</td>
+<td>34 %</td>
+</tr>
+<tr>
+<td>Signal chip</td>
+<td>500</td>
+<td>42 %</td>
+</tr>
+<tr>
+<td>Pendant</td>
+<td>500</td>
+<td>under 1 %</td>
+</tr>
+</tbody>
+</table>
+<h2 id="with-world-domination">With World Domination</h2>
+<p>Without World Domination loot mixed in. With the slider <strong>Loot in World Domination settlements</strong> below 100 %, general containers get World Domination's loot budget instead, see <a href="Compatibility.html#loot">Compatibility</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Settlement</th>
+<th>Expected value</th>
+<th>Per container</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prison camp</td>
+<td>3,571</td>
+<td>275</td>
+</tr>
+<tr>
+<td>Logging outpost</td>
+<td>5,108</td>
+<td>254</td>
+</tr>
+<tr>
+<td>Field camp</td>
+<td>5,150</td>
+<td>710</td>
+</tr>
+<tr>
+<td>Farm outpost</td>
+<td>5,686</td>
+<td>264</td>
+</tr>
+<tr>
+<td>Mining outpost</td>
+<td>6,103</td>
+<td>309</td>
+</tr>
+<tr>
+<td>Production town</td>
+<td>24,588</td>
+<td>443</td>
+</tr>
+</tbody>
+</table>
+<h4 id="prison-camp">Prison camp</h4>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 3,571 silver on average, usually 1,720 to 5,102</li>
+<li><strong>Containers:</strong> about 13, worth 275 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_WD_Modern_PrisonCamp.png" target="_blank"><img src="images/loot/CBF_Plan_WD_Modern_PrisonCamp.png" width="646" alt="Loot value and composition of the prison camp" loading="lazy"></a>
+<details><summary>Raw resources: 22 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>42 %</td><td>90 %</td><td>284</td></tr><tr><td>Steel</td><td>10 %</td><td>36 %</td><td>43</td></tr><tr><td>Cloth</td><td>9 %</td><td>42 %</td><td>48</td></tr><tr><td>Plainleather</td><td>6 %</td><td>35 %</td><td>25</td></tr><tr><td>Sheep wool</td><td>5 %</td><td>30 %</td><td>14</td></tr><tr><td>Jade</td><td>4 %</td><td>27 %</td><td>6</td></tr><tr><td>Alpaca wool</td><td>4 %</td><td>20 %</td><td>8</td></tr><tr><td>Heavy fur</td><td>3 %</td><td>23 %</td><td>8</td></tr></table></details>
+<details><summary>Food: 17 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>16 %</td><td>86 %</td><td>81</td></tr><tr><td>Potatoes</td><td>15 %</td><td>78 %</td><td>81</td></tr><tr><td>Rice</td><td>12 %</td><td>64 %</td><td>63</td></tr><tr><td>Corn</td><td>10 %</td><td>63 %</td><td>56</td></tr><tr><td>Kibble</td><td>6 %</td><td>49 %</td><td>35</td></tr><tr><td>Pemmican</td><td>6 %</td><td>79 %</td><td>26</td></tr><tr><td>Chicken egg (unfert.)</td><td>5 %</td><td>26 %</td><td>4</td></tr><tr><td>Raw fungus</td><td>4 %</td><td>38 %</td><td>21</td></tr></table></details>
+<details><summary>Books: 11 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>30 %</td><td>35 %</td><td>1</td></tr><tr><td>Novel</td><td>24 %</td><td>26 %</td><td>1</td></tr><tr><td>Schematic</td><td>24 %</td><td>30 %</td><td>1</td></tr><tr><td>Map</td><td>13 %</td><td>16 %</td><td>0</td></tr><tr><td>Tome</td><td>9 %</td><td>10 %</td><td>0</td></tr></table></details>
+<details><summary>Apparel and armor: 11 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Duster</td><td>16 %</td><td>44 %</td><td>1</td></tr><tr><td>Jacket</td><td>14 %</td><td>45 %</td><td>1</td></tr><tr><td>T-shirt</td><td>13 %</td><td>59 %</td><td>2</td></tr><tr><td>Pants</td><td>12 %</td><td>62 %</td><td>2</td></tr><tr><td>Recon armor</td><td>11 %</td><td>3 %</td><td>0</td></tr><tr><td>Parka</td><td>6 %</td><td>28 %</td><td>0</td></tr><tr><td>Robe</td><td>5 %</td><td>23 %</td><td>0</td></tr><tr><td>Corset</td><td>4 %</td><td>12 %</td><td>0</td></tr></table></details>
+<details><summary>Components: 11 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Powerfocus chip</td><td>33 %</td><td>6 %</td><td>0</td></tr><tr><td>Nano structuring chip</td><td>28 %</td><td>6 %</td><td>0</td></tr><tr><td>Component</td><td>17 %</td><td>19 %</td><td>2</td></tr><tr><td>Signal chip</td><td>7 %</td><td>4 %</td><td>0</td></tr><tr><td>Advanced component</td><td>6 %</td><td>4 %</td><td>0</td></tr><tr><td>Chemfuel</td><td>4 %</td><td>8 %</td><td>6</td></tr><tr><td>Wort</td><td>3 %</td><td>25 %</td><td>5</td></tr><tr><td>Neutroamine</td><td>2 %</td><td>6 %</td><td>1</td></tr></table></details>
+<details><summary>Silver and gold: 10 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>61 %</td><td>80 %</td><td>218</td></tr><tr><td>Gold</td><td>39 %</td><td>42 %</td><td>14</td></tr></table></details>
+<details><summary>Weapons: 7 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>81mm mortar shell (HE)</td><td>30 %</td><td>14 %</td><td>1</td></tr><tr><td>81mm mortar shell (Incendiary)</td><td>15 %</td><td>12 %</td><td>1</td></tr><tr><td>Bolt-action rifle</td><td>8 %</td><td>12 %</td><td>0</td></tr><tr><td>Assault rifle</td><td>6 %</td><td>8 %</td><td>0</td></tr><tr><td>Pump shotgun</td><td>5 %</td><td>8 %</td><td>0</td></tr><tr><td>Revolver</td><td>5 %</td><td>18 %</td><td>0</td></tr><tr><td>LMG</td><td>4 %</td><td>4 %</td><td>0</td></tr><tr><td>Charge rifle</td><td>4 %</td><td>2 %</td><td>0</td></tr></table></details>
+<details><summary>Medicine: 5 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>53 %</td><td>44 %</td><td>5</td></tr><tr><td>Herbal medicine</td><td>37 %</td><td>40 %</td><td>7</td></tr><tr><td>Glitterworld medicine</td><td>10 %</td><td>12 %</td><td>0</td></tr></table></details>
+<details><summary>Drugs and alcohol: 4 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Beer</td><td>37 %</td><td>34 %</td><td>4</td></tr><tr><td>Penoxycyline</td><td>33 %</td><td>27 %</td><td>2</td></tr><tr><td>Metalblood serum</td><td>12 %</td><td>4 %</td><td>0</td></tr><tr><td>Mind-numb serum</td><td>9 %</td><td>7 %</td><td>0</td></tr><tr><td>Ambrosia</td><td>3 %</td><td>7 %</td><td>0</td></tr><tr><td>Ghoul resurrection serum</td><td>2 %</td><td>4 %</td><td>0</td></tr><tr><td>Yayo</td><td>1 %</td><td>2 %</td><td>0</td></tr><tr><td>Smokeleaf joint</td><td>1 %</td><td>2 %</td><td>0</td></tr></table></details>
+<details><summary>Other: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Reinforced barrel</td><td>87 %</td><td>5 %</td><td>0</td></tr><tr><td>Pendant</td><td>7 %</td><td>1 %</td><td>0</td></tr><tr><td>Chalice</td><td>3 %</td><td>under 1 %</td><td>0</td></tr><tr><td>Genepack</td><td>3 %</td><td>1 %</td><td>0</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Marine armor</td>
+<td>2,036</td>
+<td>1 %</td>
+</tr>
+<tr>
+<td>Recon armor</td>
+<td>1,542</td>
+<td>3 %</td>
+</tr>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>6 %</td>
+</tr>
+<tr>
+<td>Charge rifle</td>
+<td>1,012</td>
+<td>2 %</td>
+</tr>
+<tr>
+<td>Powerfocus chip</td>
+<td>1,000</td>
+<td>6 %</td>
+</tr>
+</tbody>
+</table>
+<h4 id="logging-outpost">Logging outpost</h4>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 5,108 silver on average, usually 3,586 to 6,801</li>
+<li><strong>Containers:</strong> about 20, worth 254 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_WD_Modern_WoodOutpost.png" target="_blank"><img src="images/loot/CBF_Plan_WD_Modern_WoodOutpost.png" width="646" alt="Loot value and composition of the logging outpost" loading="lazy"></a>
+<details><summary>Raw resources: 27 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>48 %</td><td>99 %</td><td>554</td></tr><tr><td>Cloth</td><td>9 %</td><td>70 %</td><td>87</td></tr><tr><td>Plainleather</td><td>6 %</td><td>57 %</td><td>41</td></tr><tr><td>Sheep wool</td><td>5 %</td><td>48 %</td><td>24</td></tr><tr><td>Steel</td><td>5 %</td><td>26 %</td><td>34</td></tr><tr><td>Jade</td><td>4 %</td><td>38 %</td><td>11</td></tr><tr><td>Muffalo wool</td><td>4 %</td><td>38 %</td><td>20</td></tr><tr><td>Alpaca wool</td><td>4 %</td><td>34 %</td><td>13</td></tr></table></details>
+<details><summary>Food: 20 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>17 %</td><td>98 %</td><td>147</td></tr><tr><td>Potatoes</td><td>15 %</td><td>92 %</td><td>143</td></tr><tr><td>Rice</td><td>12 %</td><td>89 %</td><td>114</td></tr><tr><td>Corn</td><td>10 %</td><td>85 %</td><td>97</td></tr><tr><td>Kibble</td><td>6 %</td><td>68 %</td><td>53</td></tr><tr><td>Pemmican</td><td>5 %</td><td>93 %</td><td>37</td></tr><tr><td>Chicken egg (unfert.)</td><td>4 %</td><td>35 %</td><td>6</td></tr><tr><td>Simple meal</td><td>4 %</td><td>92 %</td><td>3</td></tr></table></details>
+<details><summary>Books: 12 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>32 %</td><td>52 %</td><td>1</td></tr><tr><td>Schematic</td><td>24 %</td><td>50 %</td><td>1</td></tr><tr><td>Novel</td><td>21 %</td><td>42 %</td><td>1</td></tr><tr><td>Map</td><td>15 %</td><td>27 %</td><td>1</td></tr><tr><td>Tome</td><td>8 %</td><td>14 %</td><td>0</td></tr></table></details>
+<details><summary>Silver and gold: 12 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>62 %</td><td>94 %</td><td>370</td></tr><tr><td>Gold</td><td>38 %</td><td>62 %</td><td>23</td></tr></table></details>
+<details><summary>Apparel and armor: 10 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Jacket</td><td>20 %</td><td>66 %</td><td>2</td></tr><tr><td>Pants</td><td>19 %</td><td>84 %</td><td>3</td></tr><tr><td>Duster</td><td>19 %</td><td>62 %</td><td>1</td></tr><tr><td>T-shirt</td><td>17 %</td><td>81 %</td><td>3</td></tr><tr><td>Parka</td><td>7 %</td><td>43 %</td><td>1</td></tr><tr><td>Robe</td><td>6 %</td><td>40 %</td><td>0</td></tr><tr><td>Corset</td><td>5 %</td><td>18 %</td><td>0</td></tr><tr><td>Cowboy hat</td><td>3 %</td><td>46 %</td><td>1</td></tr></table></details>
+<details><summary>Components: 7 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Component</td><td>22 %</td><td>22 %</td><td>2</td></tr><tr><td>Powerfocus chip</td><td>16 %</td><td>4 %</td><td>0</td></tr><tr><td>Nano structuring chip</td><td>14 %</td><td>2 %</td><td>0</td></tr><tr><td>Signal chip</td><td>11 %</td><td>4 %</td><td>0</td></tr><tr><td>Chemfuel</td><td>10 %</td><td>20 %</td><td>15</td></tr><tr><td>Advanced component</td><td>9 %</td><td>5 %</td><td>0</td></tr><tr><td>Wort</td><td>7 %</td><td>48 %</td><td>11</td></tr><tr><td>Basic subcore</td><td>6 %</td><td>4 %</td><td>0</td></tr></table></details>
+<details><summary>Medicine: 6 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>56 %</td><td>67 %</td><td>9</td></tr><tr><td>Herbal medicine</td><td>34 %</td><td>56 %</td><td>10</td></tr><tr><td>Glitterworld medicine</td><td>11 %</td><td>21 %</td><td>1</td></tr></table></details>
+<details><summary>Drugs and alcohol: 5 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Beer</td><td>44 %</td><td>64 %</td><td>9</td></tr><tr><td>Penoxycyline</td><td>27 %</td><td>40 %</td><td>4</td></tr><tr><td>Metalblood serum</td><td>17 %</td><td>10 %</td><td>0</td></tr><tr><td>Mind-numb serum</td><td>6 %</td><td>10 %</td><td>0</td></tr><tr><td>Ambrosia</td><td>4 %</td><td>16 %</td><td>1</td></tr><tr><td>Ghoul resurrection serum</td><td>1 %</td><td>5 %</td><td>0</td></tr></table></details>
+<details><summary>Weapons: 1 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Revolver</td><td>36 %</td><td>32 %</td><td>0</td></tr><tr><td>Autopistol</td><td>32 %</td><td>24 %</td><td>0</td></tr><tr><td>Machine pistol</td><td>23 %</td><td>12 %</td><td>0</td></tr><tr><td>Heavy SMG</td><td>10 %</td><td>4 %</td><td>0</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>2 %</td>
+</tr>
+<tr>
+<td>Powerfocus chip</td>
+<td>1,000</td>
+<td>4 %</td>
+</tr>
+<tr>
+<td>Signal chip</td>
+<td>500</td>
+<td>4 %</td>
+</tr>
+<tr>
+<td>Tome</td>
+<td>250</td>
+<td>14 %</td>
+</tr>
+<tr>
+<td>Advanced component</td>
+<td>200</td>
+<td>5 %</td>
+</tr>
+</tbody>
+</table>
+<h4 id="field-camp">Field camp</h4>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 5,150 silver on average, usually 2,790 to 7,356</li>
+<li><strong>Containers:</strong> about 7, worth 710 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_WD_Modern_FieldCamp.png" target="_blank"><img src="images/loot/CBF_Plan_WD_Modern_FieldCamp.png" width="646" alt="Loot value and composition of the field camp" loading="lazy"></a>
+<details><summary>Weapons: 36 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>81mm mortar shell (HE)</td><td>34 %</td><td>72 %</td><td>11</td></tr><tr><td>81mm mortar shell (Incendiary)</td><td>14 %</td><td>56 %</td><td>6</td></tr><tr><td>Bolt-action rifle</td><td>9 %</td><td>63 %</td><td>2</td></tr><tr><td>Pump shotgun</td><td>8 %</td><td>57 %</td><td>1</td></tr><tr><td>Assault rifle</td><td>8 %</td><td>48 %</td><td>1</td></tr><tr><td>Sniper rifle</td><td>5 %</td><td>30 %</td><td>0</td></tr><tr><td>Chain shotgun</td><td>3 %</td><td>27 %</td><td>0</td></tr><tr><td>Charge rifle</td><td>3 %</td><td>9 %</td><td>0</td></tr></table></details>
+<details><summary>Components: 23 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Component</td><td>26 %</td><td>64 %</td><td>10</td></tr><tr><td>Powerfocus chip</td><td>23 %</td><td>12 %</td><td>0</td></tr><tr><td>Nano structuring chip</td><td>21 %</td><td>10 %</td><td>0</td></tr><tr><td>Signal chip</td><td>15 %</td><td>16 %</td><td>0</td></tr><tr><td>Advanced component</td><td>8 %</td><td>16 %</td><td>0</td></tr><tr><td>Basic subcore</td><td>8 %</td><td>22 %</td><td>0</td></tr></table></details>
+<details><summary>Apparel and armor: 15 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Flak vest</td><td>19 %</td><td>66 %</td><td>2</td></tr><tr><td>Recon armor</td><td>19 %</td><td>18 %</td><td>0</td></tr><tr><td>Flak pants</td><td>16 %</td><td>50 %</td><td>1</td></tr><tr><td>Recon helmet</td><td>10 %</td><td>20 %</td><td>0</td></tr><tr><td>Simple helmet</td><td>10 %</td><td>66 %</td><td>2</td></tr><tr><td>Flak jacket</td><td>9 %</td><td>44 %</td><td>1</td></tr><tr><td>Flak helmet</td><td>7 %</td><td>36 %</td><td>0</td></tr><tr><td>Marine armor</td><td>5 %</td><td>5 %</td><td>0</td></tr></table></details>
+<details><summary>Raw resources: 14 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Steel</td><td>62 %</td><td>90 %</td><td>225</td></tr><tr><td>Plasteel</td><td>6 %</td><td>20 %</td><td>5</td></tr><tr><td>Jade</td><td>5 %</td><td>24 %</td><td>7</td></tr><tr><td>Cloth</td><td>5 %</td><td>24 %</td><td>21</td></tr><tr><td>Plainleather</td><td>4 %</td><td>22 %</td><td>13</td></tr><tr><td>Muffalo wool</td><td>3 %</td><td>18 %</td><td>7</td></tr><tr><td>Sheep wool</td><td>2 %</td><td>15 %</td><td>6</td></tr><tr><td>Lightleather</td><td>2 %</td><td>20 %</td><td>9</td></tr></table></details>
+<details><summary>Other: 8 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Reinforced barrel</td><td>99 %</td><td>30 %</td><td>1</td></tr><tr><td>Pendant</td><td>1 %</td><td>under 1 %</td><td>0</td></tr><tr><td>Chalice</td><td>1 %</td><td>under 1 %</td><td>0</td></tr><tr><td>Genepack</td><td>0 %</td><td>under 1 %</td><td>0</td></tr></table></details>
+<details><summary>Silver and gold: 3 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Gold</td><td>53 %</td><td>28 %</td><td>9</td></tr><tr><td>Silver</td><td>47 %</td><td>56 %</td><td>81</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Marine armor</td>
+<td>2,036</td>
+<td>5 %</td>
+</tr>
+<tr>
+<td>Recon armor</td>
+<td>1,542</td>
+<td>18 %</td>
+</tr>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>10 %</td>
+</tr>
+<tr>
+<td>Charge rifle</td>
+<td>1,012</td>
+<td>9 %</td>
+</tr>
+<tr>
+<td>Powerfocus chip</td>
+<td>1,000</td>
+<td>12 %</td>
+</tr>
+</tbody>
+</table>
+<h4 id="farm-outpost">Farm outpost</h4>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 5,686 silver on average, usually 4,165 to 7,246</li>
+<li><strong>Containers:</strong> about 22, worth 264 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_WD_Modern_FarmOutpost.png" target="_blank"><img src="images/loot/CBF_Plan_WD_Modern_FarmOutpost.png" width="646" alt="Loot value and composition of the farm outpost" loading="lazy"></a>
+<details><summary>Raw resources: 32 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>49 %</td><td>almost always</td><td>751</td></tr><tr><td>Cloth</td><td>8 %</td><td>74 %</td><td>92</td></tr><tr><td>Steel</td><td>7 %</td><td>46 %</td><td>69</td></tr><tr><td>Plainleather</td><td>5 %</td><td>60 %</td><td>47</td></tr><tr><td>Sheep wool</td><td>4 %</td><td>48 %</td><td>25</td></tr><tr><td>Lightleather</td><td>4 %</td><td>60 %</td><td>33</td></tr><tr><td>Muffalo wool</td><td>3 %</td><td>44 %</td><td>23</td></tr><tr><td>Heavy fur</td><td>3 %</td><td>38 %</td><td>17</td></tr></table></details>
+<details><summary>Food: 26 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>16 %</td><td>almost always</td><td>201</td></tr><tr><td>Potatoes</td><td>12 %</td><td>94 %</td><td>157</td></tr><tr><td>Rice</td><td>11 %</td><td>93 %</td><td>155</td></tr><tr><td>Corn</td><td>10 %</td><td>94 %</td><td>133</td></tr><tr><td>Chicken egg (unfert.)</td><td>8 %</td><td>80 %</td><td>18</td></tr><tr><td>Kibble</td><td>8 %</td><td>84 %</td><td>104</td></tr><tr><td>Milk</td><td>7 %</td><td>87 %</td><td>53</td></tr><tr><td>Pemmican</td><td>6 %</td><td>98 %</td><td>61</td></tr></table></details>
+<details><summary>Components: 14 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Component</td><td>22 %</td><td>47 %</td><td>6</td></tr><tr><td>Powerfocus chip</td><td>20 %</td><td>8 %</td><td>0</td></tr><tr><td>Nano structuring chip</td><td>16 %</td><td>6 %</td><td>0</td></tr><tr><td>Signal chip</td><td>13 %</td><td>10 %</td><td>0</td></tr><tr><td>Chemfuel</td><td>10 %</td><td>40 %</td><td>33</td></tr><tr><td>Advanced component</td><td>6 %</td><td>10 %</td><td>0</td></tr><tr><td>Neutroamine</td><td>6 %</td><td>26 %</td><td>8</td></tr><tr><td>Basic subcore</td><td>4 %</td><td>8 %</td><td>0</td></tr></table></details>
+<details><summary>Silver and gold: 8 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>62 %</td><td>89 %</td><td>288</td></tr><tr><td>Gold</td><td>38 %</td><td>50 %</td><td>18</td></tr></table></details>
+<details><summary>Books: 7 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>33 %</td><td>38 %</td><td>1</td></tr><tr><td>Schematic</td><td>24 %</td><td>36 %</td><td>1</td></tr><tr><td>Novel</td><td>18 %</td><td>25 %</td><td>0</td></tr><tr><td>Map</td><td>17 %</td><td>18 %</td><td>0</td></tr><tr><td>Tome</td><td>8 %</td><td>9 %</td><td>0</td></tr></table></details>
+<details><summary>Apparel and armor: 5 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Jacket</td><td>21 %</td><td>47 %</td><td>1</td></tr><tr><td>T-shirt</td><td>19 %</td><td>70 %</td><td>2</td></tr><tr><td>Pants</td><td>18 %</td><td>70 %</td><td>2</td></tr><tr><td>Duster</td><td>17 %</td><td>42 %</td><td>1</td></tr><tr><td>Parka</td><td>7 %</td><td>25 %</td><td>0</td></tr><tr><td>Robe</td><td>6 %</td><td>26 %</td><td>0</td></tr><tr><td>Corset</td><td>5 %</td><td>10 %</td><td>0</td></tr><tr><td>Cowboy hat</td><td>4 %</td><td>31 %</td><td>1</td></tr></table></details>
+<details><summary>Medicine: 4 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>50 %</td><td>48 %</td><td>6</td></tr><tr><td>Herbal medicine</td><td>37 %</td><td>46 %</td><td>8</td></tr><tr><td>Glitterworld medicine</td><td>13 %</td><td>16 %</td><td>1</td></tr></table></details>
+<details><summary>Drugs and alcohol: 3 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Beer</td><td>44 %</td><td>46 %</td><td>6</td></tr><tr><td>Penoxycyline</td><td>28 %</td><td>32 %</td><td>3</td></tr><tr><td>Metalblood serum</td><td>17 %</td><td>6 %</td><td>0</td></tr><tr><td>Mind-numb serum</td><td>6 %</td><td>6 %</td><td>0</td></tr><tr><td>Ambrosia</td><td>3 %</td><td>8 %</td><td>0</td></tr><tr><td>Ghoul resurrection serum</td><td>2 %</td><td>4 %</td><td>0</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>6 %</td>
+</tr>
+<tr>
+<td>Powerfocus chip</td>
+<td>1,000</td>
+<td>8 %</td>
+</tr>
+<tr>
+<td>Signal chip</td>
+<td>500</td>
+<td>10 %</td>
+</tr>
+<tr>
+<td>Tome</td>
+<td>250</td>
+<td>9 %</td>
+</tr>
+<tr>
+<td>Advanced component</td>
+<td>200</td>
+<td>10 %</td>
+</tr>
+</tbody>
+</table>
+<h4 id="mining-outpost">Mining outpost</h4>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 6,103 silver on average, usually 2,857 to 11,069</li>
+<li><strong>Containers:</strong> about 20, worth 309 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_WD_Modern_MineOutpost.png" target="_blank"><img src="images/loot/CBF_Plan_WD_Modern_MineOutpost.png" width="646" alt="Loot value and composition of the mining outpost" loading="lazy"></a>
+<details><summary>Raw resources: 29 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>37 %</td><td>almost always</td><td>550</td></tr><tr><td>Steel</td><td>16 %</td><td>52 %</td><td>153</td></tr><tr><td>Cloth</td><td>8 %</td><td>66 %</td><td>92</td></tr><tr><td>Plainleather</td><td>5 %</td><td>52 %</td><td>40</td></tr><tr><td>Sheep wool</td><td>4 %</td><td>50 %</td><td>27</td></tr><tr><td>Muffalo wool</td><td>3 %</td><td>42 %</td><td>22</td></tr><tr><td>Jade</td><td>3 %</td><td>39 %</td><td>12</td></tr><tr><td>Alpaca wool</td><td>3 %</td><td>32 %</td><td>12</td></tr></table></details>
+<details><summary>Components: 28 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Component</td><td>21 %</td><td>54 %</td><td>11</td></tr><tr><td>Nano structuring chip</td><td>19 %</td><td>13 %</td><td>0</td></tr><tr><td>Chemfuel</td><td>14 %</td><td>79 %</td><td>102</td></tr><tr><td>Powerfocus chip</td><td>14 %</td><td>9 %</td><td>0</td></tr><tr><td>Signal chip</td><td>14 %</td><td>19 %</td><td>0</td></tr><tr><td>Advanced component</td><td>7 %</td><td>16 %</td><td>1</td></tr><tr><td>Neutroamine</td><td>6 %</td><td>50 %</td><td>18</td></tr><tr><td>Basic subcore</td><td>5 %</td><td>14 %</td><td>0</td></tr></table></details>
+<details><summary>Food: 12 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>14 %</td><td>93 %</td><td>89</td></tr><tr><td>Potatoes</td><td>12 %</td><td>78 %</td><td>82</td></tr><tr><td>Rice</td><td>12 %</td><td>74 %</td><td>81</td></tr><tr><td>Pemmican</td><td>9 %</td><td>91 %</td><td>49</td></tr><tr><td>Corn</td><td>9 %</td><td>66 %</td><td>60</td></tr><tr><td>Kibble</td><td>7 %</td><td>64 %</td><td>49</td></tr><tr><td>Simple meal</td><td>4 %</td><td>86 %</td><td>2</td></tr><tr><td>Milk</td><td>4 %</td><td>40 %</td><td>15</td></tr></table></details>
+<details><summary>Silver and gold: 9 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>60 %</td><td>90 %</td><td>319</td></tr><tr><td>Gold</td><td>40 %</td><td>55 %</td><td>21</td></tr></table></details>
+<details><summary>Books: 7 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>31 %</td><td>34 %</td><td>1</td></tr><tr><td>Schematic</td><td>25 %</td><td>36 %</td><td>1</td></tr><tr><td>Novel</td><td>21 %</td><td>26 %</td><td>1</td></tr><tr><td>Map</td><td>14 %</td><td>15 %</td><td>0</td></tr><tr><td>Tome</td><td>10 %</td><td>12 %</td><td>0</td></tr></table></details>
+<details><summary>Apparel and armor: 6 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Duster</td><td>21 %</td><td>46 %</td><td>1</td></tr><tr><td>Pants</td><td>20 %</td><td>74 %</td><td>2</td></tr><tr><td>Jacket</td><td>18 %</td><td>51 %</td><td>1</td></tr><tr><td>T-shirt</td><td>16 %</td><td>70 %</td><td>2</td></tr><tr><td>Parka</td><td>7 %</td><td>28 %</td><td>0</td></tr><tr><td>Corset</td><td>6 %</td><td>12 %</td><td>0</td></tr><tr><td>Robe</td><td>5 %</td><td>22 %</td><td>0</td></tr><tr><td>Cowboy hat</td><td>4 %</td><td>38 %</td><td>1</td></tr></table></details>
+<details><summary>Medicine: 5 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>52 %</td><td>59 %</td><td>9</td></tr><tr><td>Herbal medicine</td><td>41 %</td><td>62 %</td><td>12</td></tr><tr><td>Glitterworld medicine</td><td>8 %</td><td>14 %</td><td>0</td></tr></table></details>
+<details><summary>Drugs and alcohol: 4 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Penoxycyline</td><td>32 %</td><td>38 %</td><td>4</td></tr><tr><td>Beer</td><td>28 %</td><td>41 %</td><td>5</td></tr><tr><td>Metalblood serum</td><td>20 %</td><td>10 %</td><td>0</td></tr><tr><td>Mind-numb serum</td><td>10 %</td><td>14 %</td><td>0</td></tr><tr><td>Flake</td><td>2 %</td><td>6 %</td><td>0</td></tr><tr><td>Ambrosia</td><td>2 %</td><td>6 %</td><td>0</td></tr><tr><td>Yayo</td><td>1 %</td><td>2 %</td><td>0</td></tr><tr><td>Ghoul resurrection serum</td><td>1 %</td><td>3 %</td><td>0</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>13 %</td>
+</tr>
+<tr>
+<td>Powerfocus chip</td>
+<td>1,000</td>
+<td>9 %</td>
+</tr>
+<tr>
+<td>Psychic animal pulser</td>
+<td>700</td>
+<td>under 1 %</td>
+</tr>
+<tr>
+<td>Psychic soothe pulser</td>
+<td>600</td>
+<td>1 %</td>
+</tr>
+<tr>
+<td>Signal chip</td>
+<td>500</td>
+<td>19 %</td>
+</tr>
+</tbody>
+</table>
+<h4 id="production-town">Production town</h4>
+<ul>
+<li><strong>Tech level:</strong> Industrial, Spacer, Ultra</li>
+<li><strong>Expected loot value:</strong> 24,588 silver on average, usually 19,307 to 30,237</li>
+<li><strong>Containers:</strong> about 56, worth 443 silver each on average</li>
+</ul>
+<a class="bild" href="images/loot/CBF_Plan_WD_Modern_ProductionTown.png" target="_blank"><img src="images/loot/CBF_Plan_WD_Modern_ProductionTown.png" width="646" alt="Loot value and composition of the production town" loading="lazy"></a>
+<details><summary>Components: 42 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Component</td><td>23 %</td><td>almost always</td><td>73</td></tr><tr><td>Powerfocus chip</td><td>19 %</td><td>60 %</td><td>2</td></tr><tr><td>Nano structuring chip</td><td>15 %</td><td>51 %</td><td>1</td></tr><tr><td>Signal chip</td><td>15 %</td><td>80 %</td><td>3</td></tr><tr><td>Chemfuel</td><td>9 %</td><td>almost always</td><td>418</td></tr><tr><td>Advanced component</td><td>8 %</td><td>74 %</td><td>4</td></tr><tr><td>Basic subcore</td><td>6 %</td><td>78 %</td><td>3</td></tr><tr><td>Neutroamine</td><td>5 %</td><td>98 %</td><td>84</td></tr></table></details>
+<details><summary>Raw resources: 33 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Wood</td><td>34 %</td><td>almost always</td><td>2,318</td></tr><tr><td>Steel</td><td>24 %</td><td>almost always</td><td>1,036</td></tr><tr><td>Cloth</td><td>5 %</td><td>96 %</td><td>277</td></tr><tr><td>Jade</td><td>4 %</td><td>92 %</td><td>61</td></tr><tr><td>Plainleather</td><td>4 %</td><td>94 %</td><td>137</td></tr><tr><td>Plasteel</td><td>3 %</td><td>74 %</td><td>27</td></tr><tr><td>Sheep wool</td><td>3 %</td><td>86 %</td><td>85</td></tr><tr><td>Muffalo wool</td><td>2 %</td><td>88 %</td><td>70</td></tr></table></details>
+<details><summary>Silver and gold: 6 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Silver</td><td>51 %</td><td>almost always</td><td>812</td></tr><tr><td>Gold</td><td>49 %</td><td>93 %</td><td>77</td></tr></table></details>
+<details><summary>Food: 6 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Berries</td><td>13 %</td><td>98 %</td><td>145</td></tr><tr><td>Potatoes</td><td>10 %</td><td>88 %</td><td>128</td></tr><tr><td>Pemmican</td><td>10 %</td><td>98 %</td><td>98</td></tr><tr><td>Rice</td><td>10 %</td><td>84 %</td><td>123</td></tr><tr><td>Corn</td><td>8 %</td><td>84 %</td><td>101</td></tr><tr><td>Kibble</td><td>8 %</td><td>76 %</td><td>99</td></tr><tr><td>Simple meal</td><td>5 %</td><td>98 %</td><td>5</td></tr><tr><td>Chicken egg (unfert.)</td><td>5 %</td><td>48 %</td><td>10</td></tr></table></details>
+<details><summary>Medicine: 3 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Medicine</td><td>53 %</td><td>96 %</td><td>24</td></tr><tr><td>Herbal medicine</td><td>36 %</td><td>92 %</td><td>30</td></tr><tr><td>Glitterworld medicine</td><td>10 %</td><td>44 %</td><td>2</td></tr></table></details>
+<details><summary>Apparel and armor: 3 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Pants</td><td>16 %</td><td>85 %</td><td>4</td></tr><tr><td>T-shirt</td><td>16 %</td><td>89 %</td><td>4</td></tr><tr><td>Duster</td><td>14 %</td><td>62 %</td><td>2</td></tr><tr><td>Jacket</td><td>14 %</td><td>74 %</td><td>2</td></tr><tr><td>Robe</td><td>6 %</td><td>50 %</td><td>1</td></tr><tr><td>Parka</td><td>5 %</td><td>49 %</td><td>1</td></tr><tr><td>Corset</td><td>4 %</td><td>20 %</td><td>0</td></tr><tr><td>Flak vest</td><td>4 %</td><td>22 %</td><td>0</td></tr></table></details>
+<details><summary>Books: 3 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Textbook</td><td>38 %</td><td>56 %</td><td>2</td></tr><tr><td>Schematic</td><td>22 %</td><td>46 %</td><td>1</td></tr><tr><td>Novel</td><td>19 %</td><td>42 %</td><td>1</td></tr><tr><td>Map</td><td>13 %</td><td>26 %</td><td>1</td></tr><tr><td>Tome</td><td>8 %</td><td>14 %</td><td>0</td></tr></table></details>
+<details><summary>Drugs and alcohol: 2 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>Penoxycyline</td><td>38 %</td><td>70 %</td><td>11</td></tr><tr><td>Metalblood serum</td><td>21 %</td><td>22 %</td><td>1</td></tr><tr><td>Beer</td><td>16 %</td><td>54 %</td><td>7</td></tr><tr><td>Mind-numb serum</td><td>10 %</td><td>28 %</td><td>1</td></tr><tr><td>Wake-up</td><td>3 %</td><td>10 %</td><td>0</td></tr><tr><td>Flake</td><td>2 %</td><td>14 %</td><td>1</td></tr><tr><td>Yayo</td><td>2 %</td><td>10 %</td><td>0</td></tr><tr><td>Go-juice</td><td>2 %</td><td>8 %</td><td>0</td></tr></table></details>
+<details><summary>Weapons: 1 % of the value</summary><table><tr><th>Item</th><th>Share of this class</th><th>Found in</th><th>Average amount</th></tr><tr><td>81mm mortar shell (HE)</td><td>33 %</td><td>20 %</td><td>2</td></tr><tr><td>81mm mortar shell (Incendiary)</td><td>18 %</td><td>17 %</td><td>1</td></tr><tr><td>Spear</td><td>10 %</td><td>21 %</td><td>0</td></tr><tr><td>Knife</td><td>7 %</td><td>32 %</td><td>1</td></tr><tr><td>Longsword</td><td>5 %</td><td>12 %</td><td>0</td></tr><tr><td>Revolver</td><td>4 %</td><td>20 %</td><td>0</td></tr><tr><td>Machine pistol</td><td>4 %</td><td>12 %</td><td>0</td></tr><tr><td>Club</td><td>3 %</td><td>17 %</td><td>0</td></tr></table></details>
+
+<table>
+<thead>
+<tr>
+<th>Most valuable possible find</th>
+<th>Value</th>
+<th>Chance per settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Persona core</td>
+<td>4,000</td>
+<td>under 1 %</td>
+</tr>
+<tr>
+<td>Marine armor</td>
+<td>2,036</td>
+<td>2 %</td>
+</tr>
+<tr>
+<td>Recon armor</td>
+<td>1,542</td>
+<td>2 %</td>
+</tr>
+<tr>
+<td>Nano structuring chip</td>
+<td>1,500</td>
+<td>51 %</td>
+</tr>
+<tr>
+<td>Powerfocus chip</td>
+<td>1,000</td>
+<td>60 %</td>
+</tr>
+</tbody>
+</table>
+<p><em>Simulated on 2026-10-08.</em></p><div class="schritte"><a href="Loot-VFE-Medieval-2.html"><span>Previous</span>Loot: VFE Medieval 2</a><a class="weiter" href="Quests.html"><span>Next</span>Quests</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#settlements">Settlements</a><a class="t3" href="#modern-village">Modern village</a><a class="t3" href="#modern-town">Modern town</a><a class="t3" href="#large-town">Large town</a><a class="t3" href="#metropolis">Metropolis</a><a class="t2" href="#camps">Camps</a><a class="t3" href="#outpost">Outpost</a><a class="t3" href="#farming-site">Farming site</a><a class="t3" href="#hunting-site">Hunting site</a><a class="t3" href="#bandit-camp">Bandit camp</a><a class="t3" href="#logging-site">Logging site</a><a class="t3" href="#mining-site">Mining site</a><a class="t2" href="#with-world-domination">With World Domination</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

@@ -13,8 +13,10 @@
       <li><symbol>F</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>b</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>a</symbol><anchor>LargeShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_AutoShelf</objects></li>
+      <li><symbol>b</symbol><anchor>SmallShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_VFEM2_AutoShelf</objects></li>
+      <li><symbol>f</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>g</symbol><thing>VFEM2_AutofillShelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
     </legend>
     <mask>
@@ -40,9 +42,9 @@
     <things>
       <li>OOOOOOOO...</li>
       <li>O......O...</li>
-      <li>O.a..a.OOOO</li>
+      <li>O.f..f.OOOO</li>
       <li>O.........O</li>
-      <li>Ob......b.O</li>
+      <li>Og......g.O</li>
       <li>OOOOFOOOOOO</li>
       <li>...........</li>
       <li>...........</li>
@@ -59,10 +61,10 @@
     </roof>
     <anchors>
       <li>...........</li>
+      <li>..aa.aa....</li>
+      <li>..aa.aa....</li>
       <li>...........</li>
-      <li>...........</li>
-      <li>...........</li>
-      <li>...........</li>
+      <li>.bb.....bb.</li>
       <li>...........</li>
       <li>...........</li>
       <li>...........</li>

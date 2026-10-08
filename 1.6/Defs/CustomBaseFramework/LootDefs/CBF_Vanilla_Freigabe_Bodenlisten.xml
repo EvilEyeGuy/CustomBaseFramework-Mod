@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_HomeWood</defName>
+    <label>home, living rooms</label>
+    <floors>
+      <li>
+        <terrain>WoodPlankFloor</terrain>
+        <weight>5</weight>
+      </li>
+      <li>
+        <terrain>CarpetCream</terrain>
+        <weight>3</weight>
+        <materials>
+          <li>CarpetCream</li>
+          <li>CarpetBrownLight</li>
+          <li>CarpetSage</li>
+          <li>CarpetBlueSubtle</li>
+          <li>CarpetRedSubtle</li>
+          <li>CarpetGreyDark</li>
+        </materials>
+      </li>
+      <li>
+        <terrain>TileGranite</terrain>
+        <weight>1</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_HomeTile</defName>
+    <label>home, kitchen and bath</label>
+    <floors>
+      <li>
+        <terrain>TileGranite</terrain>
+        <weight>3</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>TileMarble</terrain>
+        <weight>1</weight>
+        <materials>
+          <li>TileGranite</li>
+          <li>TileMarble</li>
+          <li>TileLimestone</li>
+          <li>TileSandstone</li>
+          <li>TileSlate</li>
+        </materials>
+      </li>
+      <li>
+        <terrain>SterileTile</terrain>
+        <weight>1</weight>
+      </li>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_HomeMetal</defName>
+    <label>home, modern</label>
+    <floors>
+      <li>
+        <terrain>MetalTile</terrain>
+        <weight>3</weight>
+      </li>
+      <li>
+        <terrain>SterileTile</terrain>
+        <weight>1</weight>
+      </li>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_Utility</defName>
+    <label>garage, shed, plain rooms</label>
+    <floors>
+      <li>
+        <terrain>Concrete</terrain>
+        <weight>4</weight>
+      </li>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>2</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_PublicWood</defName>
+    <label>taverns, halls, shops</label>
+    <floors>
+      <li>
+        <terrain>WoodPlankFloor</terrain>
+        <weight>4</weight>
+      </li>
+      <li>
+        <terrain>CarpetBurgundy</terrain>
+        <weight>2</weight>
+        <materials>
+          <li>CarpetBurgundy</li>
+          <li>CarpetGreenForest</li>
+          <li>CarpetBrownDark</li>
+          <li>CarpetRed</li>
+          <li>CarpetBlue</li>
+          <li>CarpetIndigo</li>
+        </materials>
+      </li>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_PublicTile</defName>
+    <label>public halls, tiled</label>
+    <floors>
+      <li>
+        <terrain>TileGranite</terrain>
+        <weight>3</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>TileMarble</terrain>
+        <weight>1</weight>
+        <materials>
+          <li>TileGranite</li>
+          <li>TileMarble</li>
+          <li>TileLimestone</li>
+          <li>TileSandstone</li>
+          <li>TileSlate</li>
+        </materials>
+      </li>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_Flagstone</defName>
+    <label>churches, gatehouses, halls</label>
+    <floors>
+      <li>
+        <terrain>FlagstoneGranite</terrain>
+        <weight>3</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>FlagstoneMarble</terrain>
+        <weight>1</weight>
+        <materials>
+          <li>FlagstoneGranite</li>
+          <li>FlagstoneMarble</li>
+          <li>FlagstoneLimestone</li>
+          <li>FlagstoneSandstone</li>
+          <li>FlagstoneSlate</li>
+        </materials>
+      </li>
+      <li>
+        <terrain>TileGranite</terrain>
+        <weight>1</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_Fine</defName>
+    <label>parliament and vault</label>
+    <floors>
+      <li>
+        <terrain>TileMarble</terrain>
+        <weight>3</weight>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">
+        <terrain>CarpetFineBurgundy</terrain>
+        <weight>2</weight>
+        <materials>
+          <li>CarpetFineBurgundy</li>
+          <li>CarpetFineRed</li>
+          <li>CarpetFineBlue</li>
+          <li>CarpetFineGreenForest</li>
+          <li>CarpetFineCream</li>
+        </materials>
+      </li>
+      <li>
+        <terrain>SilverTile</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_WorkWood</defName>
+    <label>workshops, wooden</label>
+    <floors>
+      <li>
+        <terrain>WoodPlankFloor</terrain>
+        <weight>4</weight>
+      </li>
+      <li>
+        <terrain>Concrete</terrain>
+        <weight>1</weight>
+      </li>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_WorkTile</defName>
+    <label>workshops, tiled</label>
+    <floors>
+      <li>
+        <terrain>TileGranite</terrain>
+        <weight>3</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>1</weight>
+      </li>
+      <li>
+        <terrain>Concrete</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_Industrial</defName>
+    <label>workshops, storage, power</label>
+    <floors>
+      <li>
+        <terrain>Concrete</terrain>
+        <weight>4</weight>
+      </li>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>2</weight>
+      </li>
+      <li>
+        <terrain>MetalTile</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_WorkMetal</defName>
+    <label>workshops, metal</label>
+    <floors>
+      <li>
+        <terrain>MetalTile</terrain>
+        <weight>3</weight>
+      </li>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>1</weight>
+      </li>
+      <li>
+        <terrain>Concrete</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_MilitaryMetal</defName>
+    <label>military, metal</label>
+    <floors>
+      <li>
+        <terrain>MetalTile</terrain>
+        <weight>4</weight>
+      </li>
+      <li>
+        <terrain>Concrete</terrain>
+        <weight>2</weight>
+      </li>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_MilitaryConcrete</defName>
+    <label>military, concrete</label>
+    <floors>
+      <li>
+        <terrain>Concrete</terrain>
+        <weight>3</weight>
+      </li>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>2</weight>
+      </li>
+      <li>
+        <terrain>MetalTile</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_MilitaryWood</defName>
+    <label>barracks, wooden</label>
+    <floors>
+      <li>
+        <terrain>WoodPlankFloor</terrain>
+        <weight>4</weight>
+      </li>
+      <li>
+        <terrain>Concrete</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_MilitaryTile</defName>
+    <label>prisons and barracks, tiled</label>
+    <floors>
+      <li>
+        <terrain>TileGranite</terrain>
+        <weight>2</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>Concrete</terrain>
+        <weight>2</weight>
+      </li>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_Paved</defName>
+    <label>yards and emplacements</label>
+    <floors>
+      <li>
+        <terrain>PavedTile</terrain>
+        <weight>3</weight>
+      </li>
+      <li>
+        <terrain>Concrete</terrain>
+        <weight>2</weight>
+      </li>
+      <li>
+        <terrain>FlagstoneGranite</terrain>
+        <weight>1</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_Vanilla_FloorList_Clean</defName>
+    <label>labs and spacer rooms</label>
+    <floors>
+      <li>
+        <terrain>SterileTile</terrain>
+        <weight>4</weight>
+      </li>
+      <li>
+        <terrain>MetalTile</terrain>
+        <weight>1</weight>
+      </li>
+      <li>
+        <terrain>TileMarble</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+</Defs>

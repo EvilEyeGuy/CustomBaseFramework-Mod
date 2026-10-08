@@ -10,12 +10,14 @@
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
     <legend>
+      <li><symbol>1</symbol><anchor>LargeShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_StoreShelfLarge</objects></li>
+      <li><symbol>2</symbol><anchor>SmallShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_StoreShelfSmall</objects></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_Storage_Cart_Empty</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>O</symbol><thing>DankPyon_LogWall</thing><stuff>DankPyon_RawWood</stuff></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_LargeShelfEmpty</thing><stuff>WoodLog</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>p</symbol><thing>DankPyon_ShelfEmpty</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_HideoutLargeShelf_Grain</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_HideoutShelfFilledFood</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
     </legend>
     <mask>
@@ -41,9 +43,9 @@
     <things>
       <li>OOOOOOOO...</li>
       <li>O......O...</li>
-      <li>O.P..P.OOOO</li>
+      <li>O.a..a.OOOO</li>
       <li>O.........O</li>
-      <li>Op......p.O</li>
+      <li>Of......f.O</li>
       <li>OOOOFOOOOOO</li>
       <li>...........</li>
       <li>........C..</li>
@@ -60,10 +62,10 @@
     </roof>
     <anchors>
       <li>...........</li>
+      <li>..11.11....</li>
+      <li>..11.11....</li>
       <li>...........</li>
-      <li>...........</li>
-      <li>...........</li>
-      <li>...........</li>
+      <li>.22.....22.</li>
       <li>...........</li>
       <li>...........</li>
       <li>...........</li>

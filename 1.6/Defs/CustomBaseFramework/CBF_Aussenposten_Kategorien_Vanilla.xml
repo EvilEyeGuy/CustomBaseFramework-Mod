@@ -3,7 +3,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_DrillBarracks</defName>
-    <label>drill barracks</label>
+    <label>DrillBarracks</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -12,16 +12,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_FieldCamp</defName>
-    <label>field camp</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_Vanilla_PrisonCamp</defName>
-    <label>prison camp</label>
+    <label>FieldCamp</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -30,16 +21,25 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_Pen</defName>
-    <label>pen</label>
+    <label>Pen</label>
     <zones>
-      <li>Outside</li>
+      <li>Inside</li>
     </zones>
-    <needsRoadAccess>false</needsRoadAccess>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Vanilla_PrisonCamp</defName>
+    <label>PrisonCamp</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_Sawmill</defName>
-    <label>sawmill</label>
+    <label>Sawmill</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -48,7 +48,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_Silo</defName>
-    <label>silo</label>
+    <label>Silo</label>
     <zones>
       <li>Inside</li>
     </zones>
@@ -57,7 +57,7 @@
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Vanilla_Workhall</defName>
-    <label>workhall</label>
+    <label>Workhall</label>
     <zones>
       <li>Inside</li>
     </zones>

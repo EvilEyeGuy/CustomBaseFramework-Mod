@@ -11,10 +11,11 @@
     <li IfModActive="lordfelix.ARimOfIceAndFire">1.6/Mods/RIAF</li>
     <li IfModActiveAll="lordfelix.ARimOfIceAndFire,DankPyon.Medieval.Overhaul">1.6/Mods/RIAF_MO</li>
     <li IfModActive="VanillaExpanded.VFESecurity">1.6/Mods/VFESecurity</li>
-    <li IfModActive="XMB.Giantimperialcannonturret.MO">1.6/Mods/GiantImperialTurret</li>
-    <li IfModActiveAll="XMB.Giantimperialcannonturret.MO,OskarPotocki.VFE.Deserters">1.6/Mods/GiantImperialTurret_VFED</li>
+    <li IfModActive="XMB.Giantimperialcannonturret.MO" IfModNotActive="CETeam.CombatExtended">1.6/Mods/GiantImperialTurret</li>
+    <li IfModActiveAll="XMB.Giantimperialcannonturret.MO,OskarPotocki.VFE.Deserters" IfModNotActive="CETeam.CombatExtended">1.6/Mods/GiantImperialTurret_VFED</li>
     <li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">1.6/Mods/Western</li>
     <li IfModActiveAll="OskarPotocki.VanillaFactionsExpanded.SettlersModule,DankPyon.Medieval.Overhaul">1.6/Mods/Western_MO</li>
     <li IfModActiveAll="OskarPotocki.VanillaFactionsExpanded.SettlersModule,OskarPotocki.VFE.Medieval2">1.6/Mods/Western_VFEM2</li>
+    <li IfModActive="CETeam.CombatExtended">1.6/Mods/CombatExtended</li>
   </v1.6>
 </loadFolders>

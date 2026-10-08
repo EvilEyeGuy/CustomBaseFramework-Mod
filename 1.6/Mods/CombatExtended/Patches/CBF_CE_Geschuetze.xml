@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="Countryside"]//li[tag="CBF_Vanilla_Spacer_Defence_Large" or tag="CBF_Vanilla_Spacer_Defence_Small" or tag="CBF_Vanilla_Defense_Small"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="Countryside"]//li[tag="CBF_Vanilla_Spacer_Defence_Large" or tag="CBF_Vanilla_Spacer_Defence_Small" or tag="CBF_Vanilla_Defense_Small"]</xpath>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="Countryside"]//li[tag="CBF_Vanilla_Defence_Large"]/count</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="Countryside"]//li[tag="CBF_Vanilla_Defence_Large"]/count</xpath>
+      <value>
+        <count>1~2</count>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="Countryside"]//li/tag[text()="CBF_Vanilla_Defence_Large"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="Countryside"]//li/tag[text()="CBF_Vanilla_Defence_Large"]</xpath>
+      <value>
+        <piece>CBF_Vanilla_DefensePosition_LargeC</piece>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="NewTown"]//li[tag="CBF_Vanilla_Spacer_Defence_Large" or tag="CBF_Vanilla_Spacer_Defence_Small"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="NewTown"]//li[tag="CBF_Vanilla_Spacer_Defence_Large" or tag="CBF_Vanilla_Spacer_Defence_Small"]</xpath>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="NewTown"]//li/tag[text()="CBF_Vanilla_SandbagPosition"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="NewTown"]//li/tag[text()="CBF_Vanilla_SandbagPosition"]</xpath>
+      <value>
+        <piece>CBF_Vanilla_SandbagPosition_A</piece>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="NewTown"]//li/tag[text()="CBF_Vanilla_Defense_Small"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="NewTown"]//li/tag[text()="CBF_Vanilla_Defense_Small"]</xpath>
+      <value>
+        <piece>CBF_Vanilla_DefenseSmall_Turret</piece>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="NewTown"]//li/tag[text()="CBF_Vanilla_Defence_Large"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="NewTown"]//li/tag[text()="CBF_Vanilla_Defence_Large"]</xpath>
+      <value>
+        <piece>CBF_Vanilla_DefensePosition_LargeC</piece>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="OldTown"]//li[tag="CBF_Vanilla_Defense_Small"]/count</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="OldTown"]//li[tag="CBF_Vanilla_Defense_Small"]/count</xpath>
+      <value>
+        <count>1~2</count>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="OldTown"]//li[tag="CBF_Vanilla_Spacer_Defence_Small" or tag="CBF_Vanilla_Spacer_Defence_Large"]/count</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/CustomBaseFramework.SettlementPlanDef/wards/li[name="OldTown"]//li[tag="CBF_Vanilla_Spacer_Defence_Small" or tag="CBF_Vanilla_Spacer_Defence_Large"]/count</xpath>
+      <value>
+        <count>0~1</count>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

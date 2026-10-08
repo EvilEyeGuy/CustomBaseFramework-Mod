@@ -550,4 +550,23 @@
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_StoreShelfLarge</defName>
+    <members>
+      <li><thing>DankPyon_HideoutLargeShelf_Grain</thing><foreign>true</foreign></li>
+      <li><thing>DankPyon_HideoutLargeShelf_Vegetables</thing><foreign>true</foreign></li>
+      <li><thing>DankPyon_HideoutLargeShelf_Bread</thing><foreign>true</foreign></li>
+      <li><thing>DankPyon_HideoutLargeShelf_Cheese</thing><foreign>true</foreign></li>
+      <li><thing>DankPyon_HideoutLargeShelf_Meats</thing><foreign>true</foreign></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_StoreShelfSmall</defName>
+    <members>
+      <li><thing>DankPyon_HideoutShelfFilledFood</thing><foreign>true</foreign></li>
+      <li><thing>DankPyon_HideoutShelfFilledIngot</thing><foreign>true</foreign></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
 </Defs>

@@ -118,6 +118,83 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Compatibility / Compatibility</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Scenarios.html">Scenarios</a><a href="Mod-Settings.html">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html" class="hier">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Patches.html">XML patches</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Modding-Scenarios.html">Starting in a ruin</a><a href="Modding-Dungeons.html">Dungeons (development)</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="compatibility">Compatibility</h1><p class="unter">Compatibility</p>
 <p>CBF integrates other mods in two ways: optional content uses their buildings and items, while generation integrations coordinate which system creates a settlement map. The sections below explain what CBF supplies, what the other mod retains and which settings control the handover.</p>
+<h2 id="at-a-glance">At a glance</h2>
+<p>Every integration is optional. CBF needs only Harmony. Content for a mod loads only when that mod is active, and code integrations find the other mod at runtime. If another mod changes its code, CBF logs one warning and falls back to its normal behaviour.</p>
+<table>
+<thead>
+<tr>
+<th>Mod</th>
+<th>What CBF does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Medieval Overhaul</td>
+<td>Own medieval settlement types, buildings, quest camps, units and quests. Controls the self-filling and enemy spawning of MO containers on CBF maps.</td>
+</tr>
+<tr>
+<td>Vanilla Factions Expanded - Medieval 2</td>
+<td>Own medieval settlement types and buildings, also without Medieval Overhaul.</td>
+</tr>
+<tr>
+<td>Vanilla Factions Expanded - Settlers</td>
+<td>Frontier settlement types with saloon, sheriff, bank and more.</td>
+</tr>
+<tr>
+<td>Vanilla Furniture Expanded - Security</td>
+<td>Its turrets join the turret pool of CBF settlements.</td>
+</tr>
+<tr>
+<td>Dark Ages: Crypts and Tombs</td>
+<td>Extra cemeteries for the Medieval Overhaul and VFE Medieval 2 sets.</td>
+</tr>
+<tr>
+<td>Combat Extended</td>
+<td>Siege ammo in Medieval Overhaul buildings becomes CE ammo. CE sidearms count for a unit's tech level.</td>
+</tr>
+<tr>
+<td>World Domination 2.0</td>
+<td>CBF builds WD settlements by tier, scales defenders with WD strength and mixes in WD loot. Outposts for the WD types.</td>
+</tr>
+<tr>
+<td>A Rim of Ice and Fire</td>
+<td>CBF builds the castle factions' seats and the holdings of the houses.</td>
+</tr>
+<tr>
+<td>Medieval Overhaul houses (Roxmont, Van Illa, Ignivar)</td>
+<td>Unit swap rules and faction flags.</td>
+</tr>
+<tr>
+<td>Medieval Total Rim</td>
+<td>Unit swap rules for its factions.</td>
+</tr>
+<tr>
+<td>World Tech Level, Rimedieval</td>
+<td>CBF uses the adjusted tech level and re-picks settlement types that no longer fit.</td>
+</tr>
+<tr>
+<td>Map Designer, Geological Landforms</td>
+<td>Kept out of CBF settlement maps, see <a href="#mods-that-reshape-the-map">below</a>.</td>
+</tr>
+<tr>
+<td>Vanilla Landmarks Expanded and other landmark mods</td>
+<td>Landmarks and extra rivers stay out of the town core.</td>
+</tr>
+<tr>
+<td>Multiplayer</td>
+<td>Deterministic planning, see <a href="#multiplayer">below</a>.</td>
+</tr>
+<tr>
+<td>Empire</td>
+<td>Its vassal colonies get no CBF settlements.</td>
+</tr>
+<tr>
+<td>Other mods with their own map generator</td>
+<td>Their settlements keep their generator, map size and icon.</td>
+</tr>
+</tbody>
+</table>
+<p>DLCs: all are optional. Ideology adds ideoligion buildings and roles to settlements, see <a href="#dlcs">DLCs</a>.</p>
 <h2 id="content-for-other-mods">Content for other mods</h2>
 <p>Custom Base Framework (CBF) brings its own buildings and settlement types for some mods, made from the things of those mods. Each set loads only when its mod is active. The folder column names where the files lie in the CBF mod folder.</p>
 <table>
@@ -155,6 +232,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Three extra cemeteries each for Medieval Overhaul and VFE Medieval 2, with sarcophagi, burial urns, gargoyles, heroic memorials, sepulchral braziers and candles from Dark Ages. With Dark Ages active they replace the plain cemeteries; without it the plain ones are built.</td>
 </tr>
 <tr>
+<td>Vanilla Factions Expanded - Settlers</td>
+<td><code>1.6/Mods/Western</code>, <code>Western_MO</code>, <code>Western_VFEM2</code></td>
+<td>Frontier settlement, frontier village, frontier town and frontier city, with saloon, sheriff, bank and other buildings, residents and guards from Settlers. With Medieval Overhaul or VFE Medieval 2 active, the palisades use their palisades.</td>
+</tr>
+<tr>
+<td>Vanilla Furniture Expanded - Security</td>
+<td><code>1.6/Mods/VFESecurity</code></td>
+<td>Its turrets (1x1 and 2x2) are added to the turret categories of CBF settlements. The base game turrets stay in the pool.</td>
+</tr>
+<tr>
 <td>A Rim of Ice and Fire</td>
 <td><code>1.6/Mods/RIAF</code>, <code>RIAF_MO</code></td>
 <td>Holdings of the houses built by CBF: hamlet, small market town and small fortress for Medieval Overhaul, on 150 maps. See <a href="#a-rim-of-ice-and-fire">A Rim of Ice and Fire</a>.</td>
@@ -162,10 +249,34 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tbody>
 </table>
 <p>Some settlement types serve every faction of a tech level. Medieval factions from other mods therefore get medieval towns and modern factions get modern towns, without patches. See <a href="Settlement-Types.html">Settlement types</a> for the full list.</p>
+<h2 id="medieval-overhaul-containers">Medieval Overhaul containers</h2>
+<p>Medieval Overhaul containers fill themselves and can spawn enemies when opened. On CBF maps, CBF decides per container: containers with a CBF loot table get CBF loot and no MO fill, MO containers placed as they are keep MO's loot, and MO's own fill is thinned on CBF maps so settlements are not flooded with melee weapons, meals and drugs.</p>
+<h2 id="combat-extended">Combat Extended</h2>
+<ul>
+<li>With Medieval Overhaul and Combat Extended active, the siege ammo in CBF buildings is swapped for CE ammo: ballista bolts become pila, scorpio bolts iron crossbow bolts, boulders and tarred boulders CE catapult boulders.</li>
+<li>Sidearms that Combat Extended gives a unit count for its tech level. A unit carrying a weapon above the settlement's tech level is swapped for a fitting one, see <a href="Unit-Swap.html">Unit swap</a>.</li>
+</ul>
+<h2 id="factions-from-other-mods">Factions from other mods</h2>
+<p>Any faction gets CBF settlements when a settlement type fits its tech level and rules, see <a href="Factions.html">Factions</a>. For some faction mods CBF ships extra rules:</p>
+<ul>
+<li>Medieval Overhaul houses: House Roxmont, House Van Illa (its banner needs Royalty) and House Ignivar, with unit swap rules and faction flags.</li>
+<li>Medieval Total Rim and its addons (Turks, Mongols, Poland, France, HRE, Byzantium, Iberia, Russia): unit swap rules.</li>
+</ul>
+<h2 id="tech-level-mods">Tech level mods</h2>
+<p>With World Tech Level or Rimedieval active, CBF uses the adjusted tech level of a faction. Settlement types already assigned are picked again when they no longer fit.</p>
 <h2 id="multiplayer">Multiplayer</h2>
 <p>Multiplayer needs every player's game to build the same settlement. The planner that lays out a settlement is deterministic: it stops after a counted amount of work, not after a time limit. With Multiplayer (<code>rwmt.Multiplayer</code>) active, the planner avoids time-based stopping. Matching inputs and content are still required; this behaviour alone does not verify every editor action or interaction with other mods in multiplayer.</p>
 <h2 id="mods-that-reshape-the-map">Mods that reshape the map</h2>
 <p>Map Designer and Geological Landforms work together with CBF. They shape every other map as usual, but they do not act while CBF generates a settlement, so rivers, cliffs and terrain features do not cut through the town.</p>
+<p>Landmarks from Odyssey and from mods such as Vanilla Landmarks Expanded are kept out of the town core. River variants from Odyssey and other mods (delta, river island) run as a simple river on CBF sites; your own maps keep them.</p>
+<h2 id="dlcs">DLCs</h2>
+<p>All DLCs are optional.</p>
+<ul>
+<li><strong>Royalty:</strong> some loot and the Van Illa banner. Raid source camps of quests are built by CBF.</li>
+<li><strong>Ideology:</strong> settlement types can use the ideoligion style of their faction, place ideoligion buildings on anchors and give pawns ideoligion roles. Work site camps of quests are built by CBF.</li>
+<li><strong>Biotech, Anomaly:</strong> some loot and map steps.</li>
+<li><strong>Odyssey:</strong> simple rivers and landmark protection as described above. Gravship landings work with settlements generated in the background.</li>
+</ul>
 <h2 id="mods-with-settlements-of-their-own">Mods with settlements of their own</h2>
 <h3 id="world-domination-20">World Domination 2.0</h3>
 <p>World Domination 2.0 (WD) turns the world into a living map, similar to RimWar with outposts:</p>
@@ -177,7 +288,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </ul>
 <h4 id="who-does-what">Who does what</h4>
 <p>World Domination keeps running the world: tiers, strength, growth, sabotage, mortars, reinforcements from nearby settlements and conquest. CBF only builds the map of a settlement when you first arrive there: the layout, the defenders and the loot. CBF uses World Domination strength and loot data alongside its own plans. The garrison rules and loot slider below determine the resulting encounter.</p>
-<p><strong>Build World Domination settlements with CBF</strong> in the <a href="Mod-Settings.html#other-settlement-mods">mod settings</a> switches this, on by default. Off: CBF leaves World Domination settlements alone. CBF also respects the map generation switch that World Domination has per faction under Allegiances in World Setup. The setting and the WD fields in the Settlement tab only appear when World Domination is active.</p>
+<p><strong>Build World Domination settlements with CBF</strong> in the <a href="Mod-Settings.html#other-mods">mod settings</a> switches this, on by default. Off: CBF leaves World Domination settlements alone. CBF also respects the map generation switch that World Domination has per faction under Allegiances in World Setup. The setting and the WD fields in the Settlement tab only appear when World Domination is active.</p>
 <h4 id="which-settlement-type-is-built">Which settlement type is built</h4>
 <ul>
 <li>CBF only picks among the settlement types the faction may get anyway. Tech level and faction rules stay the same.</li>
@@ -268,6 +379,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>The villages, towns and garrisons of the houses (holdings) are built by CBF too, when a settlement type with a matching <strong>RIAF holding</strong> (set in the Settlement tab) exists. CBF builds the houses and walls. Defenders, levies, residents and stores stay with A Rim of Ice and Fire; the stores go to a free spot near the map centre. Without a matching type, A Rim of Ice and Fire builds the holding itself. CBF ships a hamlet, a small market town and a small fortress for Medieval Overhaul, made for maps of 150 cells.</p>
 <p>Switch it off with <strong>Build A Rim of Ice and Fire holdings with CBF</strong> in the mod settings.</p>
 <h3 id="other-mods-with-their-own-map-generator">Other mods with their own map generator</h3>
-<p>Settlements that another mod builds with its own map generator keep it. CBF then also leaves their map size and world map icon alone. This is part of <strong>Leave settlements of other settlement mods alone</strong> in the <a href="Mod-Settings.html#other-settlement-mods">mod settings</a>, on by default.</p>
+<p>Settlements that another mod builds with its own map generator keep it. CBF then also leaves their map size and world map icon alone. This needs no setting.</p>
 <h2 id="credits">Credits</h2>
-<p>Thanks to Fabricator General (Blackrussian) for testing the mod and for many compatibility hints from his large mod list.</p><div class="schritte"><a href="Mod-Settings.html"><span>Previous</span>Mod settings</a><a class="weiter" href="Modding-Overview.html"><span>Next</span>Your own content mod</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#content-for-other-mods">Content for other mods</a><a class="t2" href="#multiplayer">Multiplayer</a><a class="t2" href="#mods-that-reshape-the-map">Mods that reshape the map</a><a class="t2" href="#mods-with-settlements-of-their-own">Mods with settlements of their own</a><a class="t3" href="#world-domination-20">World Domination 2.0</a><a class="t3" href="#empire">Empire</a><a class="t3" href="#a-rim-of-ice-and-fire">A Rim of Ice and Fire</a><a class="t3" href="#other-mods-with-their-own-map-generator">Other mods with their own map generator</a><a class="t2" href="#credits">Credits</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+<p>Thanks to Fabricator General (Blackrussian) for testing the mod and for many compatibility hints from his large mod list.</p><div class="schritte"><a href="Mod-Settings.html"><span>Previous</span>Mod settings</a><a class="weiter" href="Modding-Overview.html"><span>Next</span>Your own content mod</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#at-a-glance">At a glance</a><a class="t2" href="#content-for-other-mods">Content for other mods</a><a class="t2" href="#medieval-overhaul-containers">Medieval Overhaul containers</a><a class="t2" href="#combat-extended">Combat Extended</a><a class="t2" href="#factions-from-other-mods">Factions from other mods</a><a class="t2" href="#tech-level-mods">Tech level mods</a><a class="t2" href="#multiplayer">Multiplayer</a><a class="t2" href="#mods-that-reshape-the-map">Mods that reshape the map</a><a class="t2" href="#dlcs">DLCs</a><a class="t2" href="#mods-with-settlements-of-their-own">Mods with settlements of their own</a><a class="t3" href="#world-domination-20">World Domination 2.0</a><a class="t3" href="#empire">Empire</a><a class="t3" href="#a-rim-of-ice-and-fire">A Rim of Ice and Fire</a><a class="t3" href="#other-mods-with-their-own-map-generator">Other mods with their own map generator</a><a class="t2" href="#credits">Credits</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Western_Windmill_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Western_Windmill</li>
+    </categories>
+    <style>CBF_Western</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>W</symbol><thing>Windmill</thing><rotation>South</rotation></li>
+      <li><symbol>q</symbol><terrain>PackedDirt</terrain></li>
+      <li><symbol>y</symbol><thing>Hay</thing><count>40</count></li>
+    </legend>
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+    <terrain>
+      <li>qqqqq</li>
+      <li>qqqqq</li>
+      <li>qqqqq</li>
+      <li>qqqqq</li>
+    </terrain>
+    <things>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.W...</li>
+      <li>y....</li>
+    </things>
+    <roof>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

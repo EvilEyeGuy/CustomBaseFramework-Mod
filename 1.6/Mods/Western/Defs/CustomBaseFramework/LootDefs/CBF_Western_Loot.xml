@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Loot_Minimal</defName>
+    <label>small goods</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>Silver</thing><count>10~40</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>WoodLog</thing><count>10~25</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>MealSimple</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Cloth</thing><count>5~15</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Goods_Store</defName>
+    <label>store goods</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>8</weight><thing>Cloth</thing><count>10~30</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Steel</thing><count>15~40</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Pemmican</thing><count>10~25</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Beer</thing><count>4~10</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>MedicineHerbal</thing><count>2~5</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Leather_Plain</thing><count>10~20</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Apparel_CowboyHat</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>2</weight><thing>Apparel_Duster</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Apparel_BasicShirt</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Apparel_Pants</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Goods_Saloon</defName>
+    <label>saloon goods</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>Beer</thing><count>6~15</count><onMissing>Skip</onMissing></li>
+      <li><weight>2</weight><thing>Chemfuel</thing><count>5~15</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Silver</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>MealSimple</thing><count>2~5</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>SmokeleafJoint</thing><count>2~5</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Goods_Arms</defName>
+    <label>arms</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>8</weight><thing>Gun_Revolver</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Gun_BoltActionRifle</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Gun_PumpShotgun</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>1</weight><thing>Gun_IncendiaryLauncher</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>MeleeWeapon_Knife</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Goods_Bank</defName>
+    <label>bank goods</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>Silver</thing><count>80~250</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Gold</thing><count>5~20</count><onMissing>Skip</onMissing></li>
+      <li><weight>1</weight><thing>Jade</thing><count>5~15</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Goods_Smithy</defName>
+    <label>smithy goods</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>Steel</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>ComponentIndustrial</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li><weight>5</weight><thing>WoodLog</thing><count>20~40</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Goods_Stable</defName>
+    <label>stable goods</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>Hay</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>5</weight><thing>Kibble</thing><count>20~40</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Leather_Plain</thing><count>10~20</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Goods_Home</defName>
+    <label>household goods</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>6</weight><thing>MealSimple</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Silver</thing><count>10~40</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Cloth</thing><count>5~15</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Beer</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li><weight>2</weight><thing>MedicineHerbal</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Goods_Workshop</defName>
+    <label>workshop goods</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>WoodLog</thing><count>20~50</count><onMissing>Skip</onMissing></li>
+      <li><weight>5</weight><thing>Steel</thing><count>10~30</count><onMissing>Skip</onMissing></li>
+      <li><weight>5</weight><thing>Leather_Plain</thing><count>10~25</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Cloth</thing><count>10~25</count><onMissing>Skip</onMissing></li>
+      <li><weight>2</weight><thing>ComponentIndustrial</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Goods_Brewery</defName>
+    <label>brewery goods</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>Beer</thing><count>8~20</count><onMissing>Skip</onMissing></li>
+      <li><weight>5</weight><thing>Wort</thing><count>10~25</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>RawHops</thing><count>15~30</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Goods_Moonshine</defName>
+    <label>moonshine</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>Chemfuel</thing><count>10~30</count><onMissing>Skip</onMissing></li>
+      <li><weight>5</weight><thing>Beer</thing><count>4~10</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Silver</thing><count>15~50</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Goods_Medicine</defName>
+    <label>medical supplies</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>MedicineHerbal</thing><count>3~8</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>MedicineIndustrial</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Beer</thing><count>2~5</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Cloth</thing><count>5~15</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Loot_Store</defName>
+    <label>Store</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Western_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Western_Goods_Store</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Loot_Saloon</defName>
+    <label>Saloon</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Western_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Western_Goods_Saloon</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Loot_Arms</defName>
+    <label>Arms</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Western_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Western_Goods_Arms</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Loot_Bank</defName>
+    <label>Bank</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Western_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Western_Goods_Bank</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Loot_Smithy</defName>
+    <label>Smithy</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Western_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Western_Goods_Smithy</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Loot_Stable</defName>
+    <label>Stable</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Western_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Western_Goods_Stable</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Loot_Home</defName>
+    <label>Home</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Western_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Western_Goods_Home</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Loot_Workshop</defName>
+    <label>Workshop</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Western_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Western_Goods_Workshop</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Loot_Brewery</defName>
+    <label>Brewery</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Western_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Western_Goods_Brewery</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Loot_Moonshine</defName>
+    <label>Moonshine</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Western_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Western_Goods_Moonshine</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Western_Loot_Medicine</defName>
+    <label>Medicine</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Western_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Western_Goods_Medicine</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+</Defs>

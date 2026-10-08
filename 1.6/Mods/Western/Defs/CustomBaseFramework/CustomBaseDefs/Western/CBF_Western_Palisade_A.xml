@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Western_Palisade_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallSegment</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_Western</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>x</symbol><thing>Barricade</thing><stuff>WoodLog</stuff></li>
+    </legend>
+    <mask>
+      <li>#</li>
+    </mask>
+    <terrain>
+      <li>w</li>
+    </terrain>
+    <things>
+      <li>x</li>
+    </things>
+    <roof>
+      <li>^</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

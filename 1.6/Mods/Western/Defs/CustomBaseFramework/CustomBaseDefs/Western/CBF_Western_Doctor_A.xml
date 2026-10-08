@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Western_Doctor_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Western_Workshop</li>
+    </categories>
+    <style>CBF_Western</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>MedShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_Western_Shelf</objects><lootTable>CBF_Western_Loot_Medicine</lootTable></li>
+      <li><symbol>2</symbol><anchor>MedBox</anchor><anchorKind>Fill</anchorKind><objects>CBF_Western_Shelf_Small</objects><lootTable>CBF_Western_Loot_Medicine</lootTable></li>
+      <li><symbol>8</symbol><anchor>Doctor</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.8</chance></li>
+      <li><symbol>A</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>E</symbol><thing>EndTable</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>J</symbol><thing>ChemlampPost</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>P</symbol><thing>Post</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>Z</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>b</symbol><thing>Bed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>e</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>l</symbol><thing>Chemlamp</thing></li>
+      <li><symbol>m</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>t</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+    </legend>
+    <mask>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+    </mask>
+    <terrain>
+      <li>wwwwwwwww</li>
+      <li>wwwwwwwww</li>
+      <li>wwwwwwwww</li>
+      <li>wwwwwwwww</li>
+      <li>wwwwwwwww</li>
+      <li>wwwwwwwww</li>
+      <li>wwwwwwwww</li>
+      <li>wwwwwwwww</li>
+    </terrain>
+    <things>
+      <li>OOOOOOOOO</li>
+      <li>O.E.E.m.O</li>
+      <li>Ob.b....O</li>
+      <li>O.......O</li>
+      <li>O...et..O</li>
+      <li>OA.....lO</li>
+      <li>OOOOZOOOO</li>
+      <li>P.J.....P</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>......11.</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>..8......</li>
+      <li>.2.......</li>
+      <li>.........</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

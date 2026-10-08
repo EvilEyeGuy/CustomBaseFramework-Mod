@@ -29,6 +29,9 @@
       <li><symbol>o</symbol><terrain>Concrete</terrain></li>
       <li><symbol>p</symbol><terrain>PavedTile</terrain></li>
       <li><symbol>s</symbol><thing>Sandbags</thing><stuff>Synthread</stuff></li>
+      <li><symbol>A</symbol><anchor>Turret1</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Spacer_Turret_Sniper</objects></li>
+      <li><symbol>C</symbol><anchor>Turret2</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Spacer_Turret_Autocannon</objects></li>
+      <li><symbol>D</symbol><anchor>Turret3</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Spacer_Turret_Mini</objects></li>
     </legend>
     <mask>
       <li>.###########.</li>
@@ -106,9 +109,9 @@
       <li>.............</li>
     </roof>
     <anchors>
-      <li>.............</li>
-      <li>.............</li>
-      <li>.............</li>
+      <li>....AA.CC....</li>
+      <li>....AA.CC....</li>
+      <li>..D.......D..</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
@@ -116,7 +119,7 @@
       <li>.............</li>
       <li>.......11....</li>
       <li>.............</li>
-      <li>.............</li>
+      <li>..D.......D..</li>
       <li>.............</li>
       <li>.............</li>
     </anchors>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.SettlementPlanDef[defName="CBF_Plan_Metropolis"]/wards/li/districts/li[name="Countryside"]/entries</xpath>
+    <value>
+      <li><tag>CBF_Vanilla_GiantTurret</tag><count>1~2</count></li>
+    </value>
+  </Operation>
+
+</Patch>

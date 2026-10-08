@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.StyleDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western</defName>
+    <label>Western</label>
+  </CustomBaseFramework.StyleDef>
+
+  <CustomBaseFramework.MaterialListDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_MaterialList</defName>
+    <label>VFE Settlers</label>
+    <parent>CBF_MaterialList_Base</parent>
+  </CustomBaseFramework.MaterialListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Residents</defName>
+    <label>residents</label>
+    <role>Civilian</role>
+    <radius>4</radius>
+    <members>
+      <li><kind>Settler</kind><weight>10</weight></li>
+      <li><kind>Frontier_Trader</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Garrison_Walkway</defName>
+    <label>palisade garrison</label>
+    <role>Sentry</role>
+    <radius>4</radius>
+    <members>
+      <li><kind>Militia</kind><weight>2</weight></li>
+      <li><kind>Gunslinger</kind><weight>1</weight></li>
+      <li><kind>Deputy</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Garrison_Gate</defName>
+    <label>gate garrison</label>
+    <role>Guard</role>
+    <radius>4</radius>
+    <members>
+      <li><kind>Deputy</kind><weight>2</weight></li>
+      <li><kind>Militia</kind><weight>1</weight></li>
+      <li><kind>Sheriff</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Garrison_Inside</defName>
+    <label>town garrison</label>
+    <role>Guard</role>
+    <radius>4</radius>
+    <members>
+      <li><kind>Militia</kind><weight>2</weight></li>
+      <li><kind>Deputy</kind><weight>1</weight></li>
+      <li><kind>BountyHunter</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+</Defs>

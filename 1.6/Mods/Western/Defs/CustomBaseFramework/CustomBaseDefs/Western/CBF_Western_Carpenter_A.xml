@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Western_Carpenter_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Western_Workshop</li>
+    </categories>
+    <style>CBF_Western</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>WoodShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_Western_Shelf</objects><lootTable>CBF_Western_Loot_Workshop</lootTable></li>
+      <li><symbol>2</symbol><anchor>ToolBox</anchor><anchorKind>Fill</anchorKind><objects>CBF_Western_Shelf_Small</objects><lootTable>CBF_Western_Loot_Workshop</lootTable></li>
+      <li><symbol>8</symbol><anchor>Carpenter</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.7</chance></li>
+      <li><symbol>A</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>L</symbol><thing>WoodLog</thing><count>50</count></li>
+      <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>P</symbol><thing>Post</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>U</symbol><thing>TableSculpting</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>m</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+    </legend>
+    <mask>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+    </mask>
+    <terrain>
+      <li>wwwwwwwww</li>
+      <li>wwwwwwwww</li>
+      <li>wwwwwwwww</li>
+      <li>wwwwwwwww</li>
+      <li>wwwwwwwww</li>
+      <li>wwwwwwwww</li>
+    </terrain>
+    <things>
+      <li>OOOOOOOOO</li>
+      <li>O....m..O</li>
+      <li>O.U.....O</li>
+      <li>O......LO</li>
+      <li>OA.....LO</li>
+      <li>P...P...P</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>.....11..</li>
+      <li>.........</li>
+      <li>....8....</li>
+      <li>.2.......</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

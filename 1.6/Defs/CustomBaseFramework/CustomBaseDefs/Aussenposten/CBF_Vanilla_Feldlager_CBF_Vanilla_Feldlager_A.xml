@@ -18,6 +18,7 @@
       <li><symbol>k</symbol><anchor>Squad</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>2~3</pawnCount></li>
       <li><symbol>r</symbol><thing>Bedroll</thing><stuff>Cloth</stuff><rotation>South</rotation></li>
       <li><symbol>s</symbol><thing>Sandbags</thing><stuff>Cloth</stuff></li>
+      <li><symbol>A</symbol><anchor>Turret1</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Turret_Mini</objects></li>
     </legend>
     <mask>
       <li>....#######....</li>
@@ -73,14 +74,14 @@
     </roof>
     <anchors>
       <li>...............</li>
-      <li>...............</li>
+      <li>....A.....A....</li>
       <li>...............</li>
       <li>...............</li>
       <li>.......9.......</li>
       <li>...............</li>
       <li>...............</li>
       <li>...11.....22...</li>
-      <li>.......k.......</li>
+      <li>...A...k...A...</li>
       <li>...............</li>
       <li>...............</li>
     </anchors>

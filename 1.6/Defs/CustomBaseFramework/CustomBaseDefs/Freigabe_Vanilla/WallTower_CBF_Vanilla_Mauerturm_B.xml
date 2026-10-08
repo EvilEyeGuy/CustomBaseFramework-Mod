@@ -20,6 +20,7 @@
       <li><symbol>e</symbol><terrain>MetalTile</terrain></li>
       <li><symbol>f</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li><symbol>g</symbol><thing>Turret_MiniTurret</thing><stuff>Plasteel</stuff></li>
+      <li><symbol>A</symbol><anchor>Turret1</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Turret_Mini</objects></li>
     </legend>
     <mask>
       <li>#####</li>
@@ -51,7 +52,7 @@
     </roof>
     <anchors>
       <li>..R..</li>
-      <li>.....</li>
+      <li>.A.A.</li>
       <li>R.8.R</li>
       <li>.11..</li>
       <li>..R..</li>

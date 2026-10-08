@@ -16,6 +16,8 @@
       <li><symbol>j</symbol><thing>Barricade</thing><stuff>Steel</stuff></li>
       <li><symbol>s</symbol><thing>Sandbags</thing><stuff>Cloth</stuff></li>
       <li><symbol>u</symbol><thing>Turret_Autocannon</thing></li>
+      <li><symbol>A</symbol><anchor>Turret1</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Turret_Mini</objects></li>
+      <li><symbol>B</symbol><anchor>Turret2</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Turret_Autocannon</objects></li>
     </legend>
     <mask>
       <li>..#######..</li>
@@ -52,8 +54,8 @@
     <anchors>
       <li>...........</li>
       <li>...........</li>
-      <li>...........</li>
-      <li>...........</li>
+      <li>...ABB.A...</li>
+      <li>....BB.....</li>
       <li>...........</li>
       <li>...........</li>
     </anchors>

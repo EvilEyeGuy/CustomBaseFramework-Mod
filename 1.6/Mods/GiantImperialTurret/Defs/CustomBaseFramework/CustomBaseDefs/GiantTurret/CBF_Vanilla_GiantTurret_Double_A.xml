@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_GiantTurret_Double_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_GiantTurret</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>AmmoSteel</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_GiantAmmo_Steel</lootTable></li>
+      <li><symbol>2</symbol><anchor>AmmoUranium</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_GiantAmmo_Uranium</lootTable></li>
+      <li><symbol>L</symbol><thing>StandingLamp</thing></li>
+      <li MayRequire="XMB.Giantimperialcannonturret.MO"><symbol>Q</symbol><thing>Turret_Pilum</thing></li>
+      <li><symbol>U</symbol><thing>Uranium</thing><count>20</count></li>
+      <li MayRequire="XMB.Giantimperialcannonturret.MO"><symbol>Z</symbol><thing>Turret_Balistarium</thing></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>e</symbol><terrain>MetalTile</terrain></li>
+      <li><symbol>k</symbol><anchor>GunCrew</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>2~4</pawnCount></li>
+      <li><symbol>o</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>p</symbol><terrain>PavedTile</terrain></li>
+      <li><symbol>s</symbol><thing>Sandbags</thing><stuff>Cloth</stuff></li>
+      <li><symbol>u</symbol><thing>Steel</thing><count>75</count></li>
+      <li><symbol>x</symbol><thing>Barricade</thing><stuff>Steel</stuff></li>
+    </legend>
+    <mask>
+      <li>.###############.</li>
+      <li>#################</li>
+      <li>#################</li>
+      <li>#################</li>
+      <li>#################</li>
+      <li>#################</li>
+      <li>#################</li>
+      <li>.###############.</li>
+    </mask>
+    <terrain>
+      <li>.ppppppppppppppp.</li>
+      <li>peeeeeoooooeeeeep</li>
+      <li>peeeeeoooooeeeeep</li>
+      <li>peeeeeoooooeeeeep</li>
+      <li>peeeeeoooooeeeeep</li>
+      <li>peeeeeoooooeeeeep</li>
+      <li>pooooooooooooooop</li>
+      <li>.ppppppppppppppp.</li>
+    </terrain>
+    <things>
+      <li>.sssss.....xxxxx.</li>
+      <li>s.......L.......x</li>
+      <li>s...............x</li>
+      <li>s...............x</li>
+      <li>s...............x</li>
+      <li>.Z.........Q.....</li>
+      <li>L.....u...U.....L</li>
+      <li>......a..a.......</li>
+    </things>
+    <roof>
+      <li>.^^^^^.....^^^^^.</li>
+      <li>^...............^</li>
+      <li>^...............^</li>
+      <li>^...............^</li>
+      <li>^...............^</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+    </roof>
+    <anchors>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>........k........</li>
+      <li>.................</li>
+      <li>......11.22......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

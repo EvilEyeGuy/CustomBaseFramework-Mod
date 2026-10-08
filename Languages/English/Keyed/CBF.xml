@@ -753,18 +753,18 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_TabReport>Bug report</CBF_TabReport>
   <CBF_OtherModsHead>Other mods</CBF_OtherModsHead>
   <CBF_GarrisonHead>Garrisons and performance</CBF_GarrisonHead>
-  <CBF_GarrisonIntro>Large settlements keep part of their people in the houses. They come out when their district is alarmed. Fewer people on the map at once means a smoother game.</CBF_GarrisonIntro>
+  <CBF_GarrisonIntro>Large settlements do not spawn all their pawns with the map. Part of them is held back unspawned and only spawns when their district is alarmed. Fewer pawns on the map at once means a smoother game.</CBF_GarrisonIntro>
   <CBF_GarrisonShare>Garrison in the streets at the start: {0}%</CBF_GarrisonShare>
-  <CBF_GarrisonShareHelp>Share of each district's garrison and civilians that is on the map from the start, at least three per district. If this is more than the limit leaves after the guards, it is cut down to that. The rest stays in the houses and comes out as soon as the district is alarmed: shots nearby, hits on its walls or houses, or one of your people is spotted. Walls, gates, guns and posts are always fully manned. Applies to newly generated settlements.</CBF_GarrisonShareHelp>
+  <CBF_GarrisonShareHelp>Share of each district that spawns with the map. For fighters at least three per district. If this is more than the limit leaves after the guards, it is cut down, keeping fighters first. The rest is held back unspawned and spawns as soon as the district is alarmed: shots nearby, hits on its walls or houses, or one of your pawns is spotted. Fighters spawn first, then civilians, both within the limit. Walls, gates, guns and posts are always fully manned. Applies to newly generated settlements.</CBF_GarrisonShareHelp>
   <CBF_GarrisonCap>At most on the map at once: {0}</CBF_GarrisonCap>
   <CBF_GarrisonCapNone>At most on the map at once: no limit</CBF_GarrisonCapNone>
-  <CBF_GarrisonCapHelp>Upper limit for the people of a settlement who are on the map and able to fight at the same time: guards on walls, gates, guns and posts plus garrison and civilians in the districts. Downed people, prisoners and people in the houses do not count. Guards are always fully manned. The districts get the rest, shared by their size, but at least three per district. If the guards alone are above the limit, the map can therefore be slightly above it. When someone falls, the next one comes out of the houses. Higher values suit fast computers, lower values slow ones. Takes effect at once, also in settlements already generated.</CBF_GarrisonCapHelp>
+  <CBF_GarrisonCapHelp>Upper limit for the pawns of a settlement who are on the map and able to fight at the same time: guards on walls, gates, guns and posts, the garrison of the districts and civilians. Downed pawns, prisoners and pawns not yet spawned do not count. Guards are always fully manned. The districts get the rest, shared by their size, but at least three fighters per district. If the guards alone are above the limit, the map can therefore be slightly above it. When someone falls, the next one spawns. Higher values suit fast computers, lower values slow ones. A changed limit applies at once to all further reinforcements. Pawns already on the map stay; lowering the limit removes nobody. Settlements generated without a reserve are not affected.</CBF_GarrisonCapHelp>
   <CBF_GarrisonBatch>Reinforcements per wave: {0}</CBF_GarrisonBatch>
-  <CBF_GarrisonBatchHelp>How many people may come out of the houses at most in one wave.</CBF_GarrisonBatchHelp>
+  <CBF_GarrisonBatchHelp>How many pawns spawn at most in one wave.</CBF_GarrisonBatchHelp>
   <CBF_GarrisonInterval>Waves per in-game hour: {0}</CBF_GarrisonInterval>
-  <CBF_GarrisonIntervalHelp>How often per in-game hour reinforcements come out of the houses. The check for alarms runs at the same rate.</CBF_GarrisonIntervalHelp>
+  <CBF_GarrisonIntervalHelp>How often per in-game hour reinforcements spawn. The check for alarms runs at the same rate.</CBF_GarrisonIntervalHelp>
   <CBF_GarrisonDistance>Minimum distance to your people: {0} cells</CBF_GarrisonDistance>
-  <CBF_GarrisonDistanceHelp>Reinforcements only appear at least this far from your people, and only where none of your people can see. If no such place exists for a while, the distance stays but the view check is dropped.</CBF_GarrisonDistanceHelp>
+  <CBF_GarrisonDistanceHelp>Reinforcements spawn in a house at least this far from your pawns, and only where none of your pawns can see. If no such place exists for a while, the distance stays but the view check is dropped.</CBF_GarrisonDistanceHelp>
   <CBF_GarrisonDefaults>Reset to defaults</CBF_GarrisonDefaults>
   <CBF_Au_NeedsMod>Needs the mod {0}, which is not active. The piece is left out on purpose and checked once the mod is active.</CBF_Au_NeedsMod>
   <CBF_Au_OffByMod>Off because the mod {0} is active. The piece is left out on purpose and checked once the mod is off.</CBF_Au_OffByMod>
@@ -818,9 +818,9 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_GarrisonBoxCollapse>Collapse</CBF_GarrisonBoxCollapse>
   <CBF_GarrisonBoxExpand>Expand</CBF_GarrisonBoxExpand>
   <CBF_GarrisonBoxOut>On the map</CBF_GarrisonBoxOut>
-  <CBF_GarrisonBoxOutTip>People of this settlement who are on the map and able to fight: garrison in the districts plus guards. After the slash: the limit from the mod settings.</CBF_GarrisonBoxOutTip>
+  <CBF_GarrisonBoxOutTip>Pawns of this settlement on the map and able to fight: garrison and civilians in the districts plus guards. After the slash: the limit from the mod settings.</CBF_GarrisonBoxOutTip>
   <CBF_GarrisonBoxReady>Ready to spawn</CBF_GarrisonBoxReady>
-  <CBF_GarrisonBoxReadyTip>People who are not on the map yet. They appear in waves once their district is alarmed.</CBF_GarrisonBoxReadyTip>
+  <CBF_GarrisonBoxReadyTip>Pawns held back unspawned, fighters and civilians. They spawn in waves once their district is alarmed.</CBF_GarrisonBoxReadyTip>
   <CBF_GarrisonBoxWards>District</CBF_GarrisonBoxWards>
   <CBF_GarrisonBoxCols>on map | ready</CBF_GarrisonBoxCols>
   <CBF_GarrisonBoxWard>District {0}</CBF_GarrisonBoxWard>
@@ -829,4 +829,13 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_GarrisonBoxDistrictsTip>Garrison and civilians who are out in the districts.</CBF_GarrisonBoxDistrictsTip>
   <CBF_GarrisonBoxGuards>Guards</CBF_GarrisonBoxGuards>
   <CBF_GarrisonBoxGuardsTip>People on walls, gates, guns and posts. They are always fully manned and never held back.</CBF_GarrisonBoxGuardsTip>
+  <CBF_GarrisonSize>Size of the reserve: {0}%</CBF_GarrisonSize>
+  <CBF_GarrisonSizeHelp>Scales the pawns held back unspawned, compared to what the settlement has by its plan. Guards and the pawns that spawn with the map are not changed. A larger reserve means longer fights, not more pawns on the map at once; that is set by the limit. Applies to newly generated settlements.</CBF_GarrisonSizeHelp>
+  <CBF_GarrisonDefaultsTip>Sets all garrison sliders back to their defaults. The display switch below stays as it is.</CBF_GarrisonDefaultsTip>
+  <CBF_GarrisonReserve>Enable CBF spawn mechanics</CBF_GarrisonReserve>
+  <CBF_GarrisonReserveHelp>Off: every pawn of a settlement spawns with the map, with no reserve and no reinforcements. The sliders below are hidden. Applies to newly generated settlements. Settlements that already have a reserve keep it and still spawn their pawns on alarm.</CBF_GarrisonReserveHelp>
+  <CBF_Au_FloorListGone>Floor symbol {0} names the floor list {1}, which was not found. The drawn floor is laid.</CBF_Au_FloorListGone>
+  <CBF_Au_FloorListEmpty>Floor symbol {0} names the floor list {1}, which has no usable floor. The drawn floor is laid.</CBF_Au_FloorListEmpty>
+  <CBF_GarrisonDowned>Downed defenders count towards the limit</CBF_GarrisonDowned>
+  <CBF_GarrisonDownedHelp>Wounded defenders lying on the ground keep their place until they die or are captured. Fewer reinforcements spawn, which saves performance in a fight, above all on slow computers. Measured: 11 to 33 % more TPS once 10 or more defenders are down. The last stand (fewer than three defenders on their feet) is still triggered. Applies at once, also in existing settlements with a reserve.</CBF_GarrisonDownedHelp>
 </LanguageData>

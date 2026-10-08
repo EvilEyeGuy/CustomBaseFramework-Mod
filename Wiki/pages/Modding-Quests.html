@@ -281,7 +281,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="quest-nodes">Quest nodes</h2>
 <h3 id="questnode_cbfclient">QuestNode_CBFClient</h3>
 <p>Picks the quest giver. If there is no candidate, the test run fails and the quest is not offered.</p>
-<p>A candidate faction is visible, not the player, not defeated, not hidden, not a permanent enemy, not hostile to the player, and has a living leader. Vassal colonies of the Empire mod are skipped while <strong>Leave settlements of other settlement mods alone</strong> is on in the mod settings. The faction also needs a settlement type that fits <code>sitePart</code>:</p>
+<p>A candidate faction is visible, not the player, not defeated, not hidden, not a permanent enemy, not hostile to the player, and has a living leader. Vassal colonies of the Empire mod are skipped. The faction also needs a settlement type that fits <code>sitePart</code>:</p>
 <ul>
 <li>If <code>plan</code> is set in <code>CBFSiteExtension</code>, that settlement type only has to be usable.</li>
 <li>Otherwise the faction needs a settlement type with <code>siteTags</code> that match <code>planTags</code>. Factions switched off in the mod settings have no settlement types.</li>

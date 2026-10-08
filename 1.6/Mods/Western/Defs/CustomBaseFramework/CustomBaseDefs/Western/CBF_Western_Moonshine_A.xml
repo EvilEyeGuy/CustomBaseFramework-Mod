@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Western_Moonshine_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Western_Workshop</li>
+    </categories>
+    <style>CBF_Western</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>StillShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_Western_Shelf</objects><lootTable>CBF_Western_Loot_Moonshine</lootTable></li>
+      <li><symbol>2</symbol><anchor>StillBox</anchor><anchorKind>Fill</anchorKind><objects>CBF_Western_Shelf_Small</objects><lootTable>CBF_Western_Loot_Moonshine</lootTable></li>
+      <li><symbol>8</symbol><anchor>Moonshiner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.6</chance></li>
+      <li><symbol>A</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>L</symbol><thing>WoodLog</thing><count>50</count></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>M</symbol><thing>Building_ChemshineBarrel</thing><rotation>South</rotation></li>
+      <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>X</symbol><thing>ChemBoiler</thing></li>
+      <li><symbol>Z</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>l</symbol><thing>Chemlamp</thing></li>
+      <li><symbol>m</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+    </legend>
+    <mask>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+    </mask>
+    <terrain>
+      <li>wwwwwwww</li>
+      <li>wwwwwwww</li>
+      <li>wwwwwwww</li>
+      <li>wwwwwwww</li>
+      <li>wwwwwwww</li>
+      <li>wwwwwwww</li>
+      <li>wwwwwwww</li>
+    </terrain>
+    <things>
+      <li>OOOOOOOO</li>
+      <li>OM.Mm.LO</li>
+      <li>O.....LO</li>
+      <li>O......O</li>
+      <li>O.X....O</li>
+      <li>OA....lO</li>
+      <li>OOOZOOOO</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>........</li>
+      <li>....11..</li>
+      <li>........</li>
+      <li>.....8..</li>
+      <li>........</li>
+      <li>.2......</li>
+      <li>........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

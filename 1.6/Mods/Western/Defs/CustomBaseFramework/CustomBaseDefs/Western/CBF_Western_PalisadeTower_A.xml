@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Western_PalisadeTower_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallTower</li>
+      <li>CBF_Western_WallTower</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_Western</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>2</symbol><anchor>TowerBox</anchor><anchorKind>Fill</anchorKind><objects>CBF_Western_Shelf_Small</objects><lootTable>CBF_Western_Loot_Arms</lootTable></li>
+      <li><symbol>8</symbol><anchor>TowerGuard</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><chance>1</chance><pawnCount>1~2</pawnCount></li>
+      <li><symbol>A</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>R</symbol><anchor>Wall</anchor></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>m</symbol><thing>Turret_GatlingGun</thing><stuff>Steel</stuff><rotation>West</rotation></li>
+      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>x</symbol><thing>Barricade</thing><stuff>WoodLog</stuff></li>
+    </legend>
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+    <terrain>
+      <li>wwwww</li>
+      <li>wwwww</li>
+      <li>wwwww</li>
+      <li>wwwww</li>
+      <li>wwwww</li>
+    </terrain>
+    <things>
+      <li>OxxxO</li>
+      <li>x...x</li>
+      <li>x.m.x</li>
+      <li>x..Ax</li>
+      <li>OxxxO</li>
+    </things>
+    <roof>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+    </roof>
+    <anchors>
+      <li>..R..</li>
+      <li>.8...</li>
+      <li>R...R</li>
+      <li>...2.</li>
+      <li>..R..</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

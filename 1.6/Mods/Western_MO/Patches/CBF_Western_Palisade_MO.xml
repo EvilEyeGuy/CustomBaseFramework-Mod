@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Western_Palisade_A"]/legend/li[symbol="x"]</xpath>
+    <value>
+      <li><symbol>x</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Western_PalisadeTower_A"]/legend/li[symbol="O"]</xpath>
+    <value>
+      <li><symbol>O</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Western_PalisadeTower_A"]/legend/li[symbol="x"]</xpath>
+    <value>
+      <li><symbol>x</symbol><thing>DankPyon_EmbPalisade</thing><stuff>DankPyon_RawWood</stuff></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Western_PalisadeTower_B"]/legend/li[symbol="O"]</xpath>
+    <value>
+      <li><symbol>O</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Western_PalisadeTower_B"]/legend/li[symbol="x"]</xpath>
+    <value>
+      <li><symbol>x</symbol><thing>DankPyon_EmbPalisade</thing><stuff>DankPyon_RawWood</stuff></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Western_Gate_A"]/legend/li[symbol="O"]</xpath>
+    <value>
+      <li><symbol>O</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Western_Gate_A"]/legend/li[symbol="x"]</xpath>
+    <value>
+      <li><symbol>x</symbol><thing>DankPyon_EmbPalisade</thing><stuff>DankPyon_RawWood</stuff></li>
+    </value>
+  </Operation>
+
+</Patch>

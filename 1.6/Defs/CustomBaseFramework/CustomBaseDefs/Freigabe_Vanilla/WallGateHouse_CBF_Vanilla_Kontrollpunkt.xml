@@ -25,6 +25,7 @@
       <li><symbol>b</symbol><thing>ShelfSmall</thing><stuff>Steel</stuff><rotation>North</rotation></li>
       <li><symbol>d</symbol><terrain>Concrete</terrain></li>
       <li><symbol>e</symbol><terrain>PavedTile</terrain></li>
+      <li><symbol>B</symbol><anchor>Turret1</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Turret_Mini</objects></li>
     </legend>
     <mask>
       <li>#####</li>
@@ -61,13 +62,13 @@
     </things>
     <anchors>
       <li>..W..</li>
-      <li>...1.</li>
+      <li>.B.1.</li>
       <li>..8..</li>
       <li>.....</li>
       <li>A....</li>
       <li>.....</li>
       <li>..7..</li>
-      <li>...2.</li>
+      <li>.B.2.</li>
       <li>..W..</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

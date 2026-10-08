@@ -26,6 +26,7 @@
       <li><symbol>g</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
       <li><symbol>t</symbol><thing>Turret_MiniTurret</thing><stuff>Steel</stuff></li>
       <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>B</symbol><anchor>Turret1</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Turret_Mini</objects></li>
     </legend>
     <mask>
       <li>#####</li>
@@ -73,13 +74,13 @@
     </roof>
     <anchors>
       <li>..W..</li>
-      <li>..81.</li>
+      <li>.B81.</li>
       <li>.....</li>
       <li>.....</li>
       <li>A....</li>
       <li>.....</li>
       <li>.....</li>
-      <li>..72.</li>
+      <li>.B72.</li>
       <li>..W..</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

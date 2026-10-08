@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.LootBuildingCategoryDef[defName="CBF_Vanilla_Turret_Mini" or defName="CBF_Vanilla_Gun_Small"]/members</xpath>
+    <value>
+      <li>VFES_Turret_MilitaryTurret</li>
+      <li>VFES_Turret_ArmoredTurret</li>
+      <li>VFES_Turret_ShotgunTurret</li>
+      <!-- <li>VFES_Turret_Flame</li> -->
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.LootBuildingCategoryDef[defName="CBF_Vanilla_Turret_Autocannon" or defName="CBF_Vanilla_Turret_Sniper"]/members</xpath>
+    <value>
+      <li>VFES_Turret_AutocannonDouble</li>
+      <li>VFES_Turret_Minigun</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.LootBuildingCategoryDef[defName="CBF_Vanilla_Spacer_Turret_Mini"]/members</xpath>
+    <value>
+      <li>VFES_Turret_ChargeTurret</li>
+      <li>VFES_Turret_ArmoredTurret</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.LootBuildingCategoryDef[defName="CBF_Vanilla_Spacer_Turret_Autocannon" or defName="CBF_Vanilla_Spacer_Turret_Sniper"]/members</xpath>
+    <value>
+      <li>VFES_Turret_ChargeRailgun</li>
+      <li>VFES_Turret_TeslaBlaster</li>
+    </value>
+  </Operation>
+
+</Patch>

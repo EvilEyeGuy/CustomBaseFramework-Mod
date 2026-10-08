@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Western_Palisade_A"]/legend/li[symbol="x"][thing="Barricade"]</xpath>
+    <value>
+      <li><symbol>x</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Western_PalisadeTower_A"]/legend/li[symbol="O"][thing="Wall"]</xpath>
+    <value>
+      <li><symbol>O</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Western_PalisadeTower_B"]/legend/li[symbol="O"][thing="Wall"]</xpath>
+    <value>
+      <li><symbol>O</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Western_Gate_A"]/legend/li[symbol="O"][thing="Wall"]</xpath>
+    <value>
+      <li><symbol>O</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
+    </value>
+  </Operation>
+
+</Patch>

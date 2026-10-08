@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Western_Gate_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallGateHouse</li>
+      <li>CBF_Western_Gatehouse</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_Western</style>
+    <eaves>true</eaves>
+
+    <legend>
+      <li><symbol>D</symbol><terrain>WoodPlankFloor</terrain></li>
+      <li><symbol>T</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>B</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>C</symbol><thing>Barricade</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>F</symbol><thing>Turret_GatlingGun</thing><stuff>Steel</stuff><rotation>West</rotation></li>
+      <li><symbol>P</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>R</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>L</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>W</symbol><anchor>Wall</anchor></li>
+      <li><symbol>7</symbol><anchor>GuardSouth</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>2</symbol><anchor>BoxSouth</anchor><anchorKind>Fill</anchorKind><objects>CBF_Western_Shelf_Small</objects><lootTable>CBF_Western_Loot_Arms</lootTable></li>
+      <li><symbol>A</symbol><anchor>Outside</anchor></li>
+      <li><symbol>8</symbol><anchor>GuardNorth</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>1~2</pawnCount></li>
+      <li><symbol>1</symbol><anchor>BoxNorth</anchor><anchorKind>Fill</anchorKind><objects>CBF_Western_Shelf_Small</objects><lootTable>CBF_Western_Loot_Arms</lootTable></li>
+    </legend>
+
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+
+    <terrain>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+      <li>DDDDD</li>
+    </terrain>
+
+    <things>
+      <li>BBBBB</li>
+      <li>CF.PB</li>
+      <li>C...R</li>
+      <li>BBBBB</li>
+      <li>.R.R.</li>
+      <li>BBBBB</li>
+      <li>C...R</li>
+      <li>CF.LB</li>
+      <li>BBBBB</li>
+    </things>
+
+    <roof>
+      <li>TTTTT</li>
+      <li>TTTTT</li>
+      <li>TTTTT</li>
+      <li>TTTTT</li>
+      <li>TTTTT</li>
+      <li>TTTTT</li>
+      <li>TTTTT</li>
+      <li>TTTTT</li>
+      <li>TTTTT</li>
+    </roof>
+
+    <anchors>
+      <li>..W..</li>
+      <li>..81.</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>A....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>..72.</li>
+      <li>..W..</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

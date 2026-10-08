@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Vanilla_GiantTurret_Balistarium_A"]/legend</xpath>
+    <value>
+      <li><symbol>!</symbol><thing>VFED_AmmoBox_Autocannon</thing></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Vanilla_GiantTurret_Balistarium_A"]</xpath>
+    <value>
+      <things2>
+        <li>.........</li>
+        <li>.........</li>
+        <li>.........</li>
+        <li>.........</li>
+        <li>.........</li>
+        <li>.......!.</li>
+        <li>.....!...</li>
+        <li>.........</li>
+      </things2>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Vanilla_GiantTurret_Pilum_A"]/legend</xpath>
+    <value>
+      <li><symbol>?</symbol><thing>VFED_AmmoBox_UraniumSlug</thing></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Vanilla_GiantTurret_Pilum_A"]</xpath>
+    <value>
+      <things2>
+        <li>.........</li>
+        <li>.........</li>
+        <li>.........</li>
+        <li>.........</li>
+        <li>.........</li>
+        <li>.........</li>
+        <li>....?..?.</li>
+        <li>.........</li>
+      </things2>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Vanilla_GiantTurret_Double_A"]/legend</xpath>
+    <value>
+      <li><symbol>!</symbol><thing>VFED_AmmoBox_Autocannon</thing></li>
+      <li><symbol>?</symbol><thing>VFED_AmmoBox_UraniumSlug</thing></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Vanilla_GiantTurret_Double_A"]</xpath>
+    <value>
+      <things2>
+        <li>.................</li>
+        <li>.................</li>
+        <li>.................</li>
+        <li>......!...?......</li>
+        <li>.................</li>
+        <li>.................</li>
+        <li>...!.........?...</li>
+        <li>.................</li>
+      </things2>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Vanilla_GiantTurret_Mixed_A"]/legend</xpath>
+    <value>
+      <li><symbol>!</symbol><thing>VFED_AmmoBox_Autocannon</thing></li>
+      <li><symbol>?</symbol><thing>VFED_AmmoBox_UraniumSlug</thing></li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/CustomBaseFramework.PieceDef[defName="CBF_Vanilla_GiantTurret_Mixed_A"]</xpath>
+    <value>
+      <things2>
+        <li>...............</li>
+        <li>......!........</li>
+        <li>...............</li>
+        <li>...............</li>
+        <li>...........?...</li>
+        <li>...............</li>
+        <li>...?....!......</li>
+        <li>...............</li>
+        <li>...............</li>
+        <li>...............</li>
+        <li>...............</li>
+      </things2>
+    </value>
+  </Operation>
+
+</Patch>

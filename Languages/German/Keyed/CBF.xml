@@ -753,18 +753,18 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_TabReport>Fehlerbericht</CBF_TabReport>
   <CBF_OtherModsHead>Andere Mods</CBF_OtherModsHead>
   <CBF_GarrisonHead>Garnison und Leistung</CBF_GarrisonHead>
-  <CBF_GarrisonIntro>Große Orte halten einen Teil ihrer Leute in den Häusern zurück. Sie kommen heraus, wenn ihr Stadtteil Alarm schlägt. Je weniger Leute gleichzeitig auf der Karte sind, desto flüssiger läuft das Spiel.</CBF_GarrisonIntro>
+  <CBF_GarrisonIntro>Große Orte erzeugen nicht alle ihre Pawns gleich mit der Karte. Ein Teil wird zurückgehalten und erscheint erst, wenn sein Stadtteil Alarm schlägt. Je weniger Pawns gleichzeitig auf der Karte sind, desto flüssiger läuft das Spiel.</CBF_GarrisonIntro>
   <CBF_GarrisonShare>Garnison auf der Straße zu Beginn: {0} %</CBF_GarrisonShare>
-  <CBF_GarrisonShareHelp>Anteil der Garnison und der Zivilisten jedes Stadtteils, der von Anfang an auf der Karte ist, mindestens drei je Stadtteil. Ist das mehr, als die Obergrenze nach den Wachen übrig lässt, wird darauf gekürzt. Der Rest bleibt in den Häusern und kommt heraus, sobald der Stadtteil Alarm schlägt: Schüsse in der Nähe, Treffer auf seine Mauern oder Häuser oder einer deiner Leute wird gesehen. Mauern, Tore, Geschütze und Posten sind immer voll besetzt. Gilt für neu erzeugte Orte.</CBF_GarrisonShareHelp>
+  <CBF_GarrisonShareHelp>Anteil jedes Stadtteils, der gleich mit der Karte erscheint. Bei den Kämpfern mindestens drei je Stadtteil. Ist das mehr, als die Obergrenze nach den Wachen übrig lässt, wird gekürzt, Kämpfer bleiben zuerst. Der Rest wird zurückgehalten und erscheint, sobald der Stadtteil Alarm schlägt: Schüsse in der Nähe, Treffer auf seine Mauern oder Häuser oder einer deiner Pawns wird gesehen. Zuerst erscheinen die Kämpfer, dann die Zivilisten, beide im Rahmen der Obergrenze. Mauern, Tore, Geschütze und Posten sind immer voll besetzt. Gilt für neu erzeugte Orte.</CBF_GarrisonShareHelp>
   <CBF_GarrisonCap>Höchstens gleichzeitig auf der Karte: {0}</CBF_GarrisonCap>
   <CBF_GarrisonCapNone>Höchstens gleichzeitig auf der Karte: ohne Grenze</CBF_GarrisonCapNone>
-  <CBF_GarrisonCapHelp>Obergrenze für die kampffähigen Leute eines Ortes, die gleichzeitig auf der Karte sind: Wachen auf Mauern, Toren, Geschützen und Posten sowie Garnison und Zivilisten in den Stadtteilen. Wer am Boden liegt, Gefangene und Leute in den Häusern zählen nicht. Die Wachen sind immer voll besetzt. Die Stadtteile bekommen den Rest, nach Größe verteilt, aber mindestens drei je Stadtteil. Liegen die Wachen allein schon über der Grenze, kann die Karte daher etwas darüber liegen. Fällt jemand aus, kommt der Nächste aus den Häusern. Höhere Werte für schnelle Rechner, niedrigere für langsame. Wirkt sofort, auch in schon erzeugten Orten.</CBF_GarrisonCapHelp>
+  <CBF_GarrisonCapHelp>Obergrenze für die kampffähigen Pawns eines Ortes, die gleichzeitig auf der Karte sind: Wachen auf Mauern, Toren, Geschützen und Posten, die Garnison der Stadtteile und Zivilisten. Wer am Boden liegt, Gefangene und noch nicht erschienene Pawns zählen nicht. Die Wachen sind immer voll besetzt. Die Stadtteile bekommen den Rest, nach Größe verteilt, aber mindestens drei Kämpfer je Stadtteil. Liegen die Wachen allein schon über der Grenze, kann die Karte daher etwas darüber liegen. Fällt jemand aus, erscheint der Nächste. Höhere Werte für schnelle Rechner, niedrigere für langsame. Eine geänderte Grenze gilt sofort für alle weiteren Nachrücker. Wer schon auf der Karte ist, bleibt; Senken entfernt niemanden. Orte, die ohne Reserve erzeugt wurden, sind nicht betroffen.</CBF_GarrisonCapHelp>
   <CBF_GarrisonBatch>Nachschub je Schub: {0}</CBF_GarrisonBatch>
-  <CBF_GarrisonBatchHelp>Wie viele Leute höchstens auf einmal aus den Häusern kommen.</CBF_GarrisonBatchHelp>
+  <CBF_GarrisonBatchHelp>Wie viele Pawns höchstens auf einmal erscheinen.</CBF_GarrisonBatchHelp>
   <CBF_GarrisonInterval>Schübe je Spielstunde: {0}</CBF_GarrisonInterval>
-  <CBF_GarrisonIntervalHelp>Wie oft je Spielstunde Nachschub aus den Häusern kommt. Im selben Takt wird auch geprüft, ob ein Stadtteil Alarm schlägt.</CBF_GarrisonIntervalHelp>
+  <CBF_GarrisonIntervalHelp>Wie oft je Spielstunde Nachschub erscheint. Im selben Takt wird auch geprüft, ob ein Stadtteil Alarm schlägt.</CBF_GarrisonIntervalHelp>
   <CBF_GarrisonDistance>Mindestabstand zu deinen Leuten: {0} Felder</CBF_GarrisonDistance>
-  <CBF_GarrisonDistanceHelp>Nachschub erscheint nur mindestens so weit von deinen Leuten entfernt und nur dort, wo keiner von ihnen hinsieht. Findet sich eine Weile lang kein solcher Platz, bleibt der Abstand, die Sichtprüfung fällt weg.</CBF_GarrisonDistanceHelp>
+  <CBF_GarrisonDistanceHelp>Nachschub erscheint in einem Haus mindestens so weit von deinen Pawns entfernt und nur dort, wo keiner von ihnen hinsieht. Findet sich eine Weile lang kein solcher Platz, bleibt der Abstand, die Sichtprüfung fällt weg.</CBF_GarrisonDistanceHelp>
   <CBF_GarrisonDefaults>Standardwerte</CBF_GarrisonDefaults>
   <CBF_Au_NeedsMod>Braucht den Mod {0}, der nicht aktiv ist. Das Stück fällt gewollt weg und wird geprüft, sobald der Mod aktiv ist.</CBF_Au_NeedsMod>
   <CBF_Au_OffByMod>Aus, weil der Mod {0} aktiv ist. Das Stück fällt gewollt weg und wird geprüft, sobald der Mod aus ist.</CBF_Au_OffByMod>
@@ -818,9 +818,9 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_GarrisonBoxCollapse>Einklappen</CBF_GarrisonBoxCollapse>
   <CBF_GarrisonBoxExpand>Ausklappen</CBF_GarrisonBoxExpand>
   <CBF_GarrisonBoxOut>Auf der Karte</CBF_GarrisonBoxOut>
-  <CBF_GarrisonBoxOutTip>Kampffähige Leute dieses Orts auf der Karte: Garnison in den Stadtteilen und Wachen. Nach dem Schrägstrich: die Obergrenze aus den Mod-Einstellungen.</CBF_GarrisonBoxOutTip>
+  <CBF_GarrisonBoxOutTip>Kampffähige Pawns dieses Orts auf der Karte: Garnison und Zivilisten in den Stadtteilen und Wachen. Nach dem Schrägstrich: die Obergrenze aus den Mod-Einstellungen.</CBF_GarrisonBoxOutTip>
   <CBF_GarrisonBoxReady>Bereit zum Nachrücken</CBF_GarrisonBoxReady>
-  <CBF_GarrisonBoxReadyTip>Leute, die noch nicht auf der Karte sind. Sie erscheinen in Schüben, sobald ihr Stadtteil Alarm schlägt.</CBF_GarrisonBoxReadyTip>
+  <CBF_GarrisonBoxReadyTip>Zurückgehaltene Pawns, die noch nicht erschienen sind, Kämpfer und Zivilisten. Sie erscheinen in Schüben, sobald ihr Stadtteil Alarm schlägt.</CBF_GarrisonBoxReadyTip>
   <CBF_GarrisonBoxWards>Stadtteil</CBF_GarrisonBoxWards>
   <CBF_GarrisonBoxCols>unterwegs | bereit</CBF_GarrisonBoxCols>
   <CBF_GarrisonBoxWard>Stadtteil {0}</CBF_GarrisonBoxWard>
@@ -829,4 +829,13 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_GarrisonBoxDistrictsTip>Garnison und Zivilisten, die in den Stadtteilen unterwegs sind.</CBF_GarrisonBoxDistrictsTip>
   <CBF_GarrisonBoxGuards>Wachen</CBF_GarrisonBoxGuards>
   <CBF_GarrisonBoxGuardsTip>Leute auf Mauern, Toren, Geschützen und Posten. Sie sind immer voll besetzt und werden nie zurückgehalten.</CBF_GarrisonBoxGuardsTip>
+  <CBF_GarrisonSize>Größe der Reserve: {0} %</CBF_GarrisonSize>
+  <CBF_GarrisonSizeHelp>Skaliert die zurückgehaltenen Pawns, gemessen an dem, was der Ort laut Plan hat. Wachen und die Pawns, die gleich mit der Karte erscheinen, ändern sich nicht. Eine größere Reserve heißt längere Kämpfe, aber nicht mehr Pawns gleichzeitig auf der Karte, das regelt die Obergrenze. Gilt für neu erzeugte Orte.</CBF_GarrisonSizeHelp>
+  <CBF_GarrisonDefaultsTip>Setzt alle Garnisonsregler auf ihre Standardwerte zurück. Der Anzeigeschalter darunter bleibt, wie er ist.</CBF_GarrisonDefaultsTip>
+  <CBF_GarrisonReserve>CBF-Spawn-Mechanik aktivieren</CBF_GarrisonReserve>
+  <CBF_GarrisonReserveHelp>Aus: Alle Pawns eines Orts erscheinen gleich mit der Karte, ohne Reserve und ohne Nachrücker. Die Regler darunter werden ausgeblendet. Gilt für neu erzeugte Orte. Orte, die schon eine Reserve haben, behalten sie und lassen ihre Pawns weiter bei Alarm erscheinen.</CBF_GarrisonReserveHelp>
+  <CBF_Au_FloorListGone>Bodenzeichen {0} nennt die Bodenliste {1}, die es nicht gibt. Es wird der gezeichnete Boden gelegt.</CBF_Au_FloorListGone>
+  <CBF_Au_FloorListEmpty>Bodenzeichen {0} nennt die Bodenliste {1}, die keinen brauchbaren Boden enthält. Es wird der gezeichnete Boden gelegt.</CBF_Au_FloorListEmpty>
+  <CBF_GarrisonDowned>Liegende Verteidiger zählen zur Obergrenze</CBF_GarrisonDowned>
+  <CBF_GarrisonDownedHelp>Verwundete, die am Boden liegen, belegen ihren Platz, bis sie sterben oder gefangen werden. Es rückt weniger nach, das spart Leistung im Gefecht, vor allem auf langsamen Rechnern. Gemessen: 11 bis 33 % mehr TPS, sobald 10 oder mehr Verteidiger liegen. Der letzte Aufstand (weniger als drei stehende Verteidiger) wird trotzdem ausgelöst. Gilt sofort, auch in bestehenden Orten mit Reserve.</CBF_GarrisonDownedHelp>
 </LanguageData>

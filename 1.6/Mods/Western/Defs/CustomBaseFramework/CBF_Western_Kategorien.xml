@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Saloon</defName>
+    <label>saloon</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Sheriff</defName>
+    <label>sheriff office</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Store</defName>
+    <label>general store</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Bank</defName>
+    <label>bank</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Stable</defName>
+    <label>livery stable</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Smithy</defName>
+    <label>smithy</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Church</defName>
+    <label>church</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_House</defName>
+    <label>house</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <annexes>
+      <li>CBF_Western_Annex_Home</li>
+    </annexes>
+    <annexChance>0.7</annexChance>
+    <annexMax>2</annexMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Graveyard</defName>
+    <label>graveyard</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Windmill</defName>
+    <label>windmill</label>
+    <zones>
+      <li>Outside</li>
+    </zones>
+    <needsRoadAccess>false</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Workshop</defName>
+    <label>workshop</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_TownHall</defName>
+    <label>town hall</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Hotel</defName>
+    <label>hotel</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_WallTower</defName>
+    <label>palisade tower</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Gatehouse</defName>
+    <label>palisade gate</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Annex_Home</defName>
+    <label>home annex</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+</Defs>

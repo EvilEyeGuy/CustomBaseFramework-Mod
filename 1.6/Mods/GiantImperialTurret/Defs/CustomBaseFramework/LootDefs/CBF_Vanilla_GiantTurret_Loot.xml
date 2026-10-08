@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootTableDef MayRequire="XMB.Giantimperialcannonturret.MO">
+    <defName>CBF_Vanilla_Goods_GiantAmmo_Steel</defName>
+    <label>giant turret ammo</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>Steel</thing><count>40~90</count><onMissing>Skip</onMissing></li>
+      <li><weight>2</weight><thing>ComponentIndustrial</thing><count>2~5</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Chemfuel</thing><count>20~40</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef MayRequire="XMB.Giantimperialcannonturret.MO">
+    <defName>CBF_Vanilla_Goods_GiantAmmo_Uranium</defName>
+    <label>giant turret uranium ammo</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>Uranium</thing><count>15~35</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Steel</thing><count>30~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>2</weight><thing>ComponentIndustrial</thing><count>2~5</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef MayRequire="XMB.Giantimperialcannonturret.MO">
+    <defName>CBF_Vanilla_Loot_GiantAmmo_Steel</defName>
+    <label>giant turret ammo</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_GiantAmmo_Steel</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef MayRequire="XMB.Giantimperialcannonturret.MO">
+    <defName>CBF_Vanilla_Loot_GiantAmmo_Uranium</defName>
+    <label>giant turret uranium ammo</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_GiantAmmo_Uranium</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="XMB.Giantimperialcannonturret.MO">
+    <defName>CBF_Vanilla_GiantTurret</defName>
+    <members>
+      <li>Turret_Balistarium</li>
+      <li>Turret_Pilum</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+</Defs>

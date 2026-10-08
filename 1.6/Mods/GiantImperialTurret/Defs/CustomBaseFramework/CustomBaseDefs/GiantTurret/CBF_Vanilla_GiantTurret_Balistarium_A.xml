@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Vanilla_GiantTurret_Balistarium_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_GiantTurret</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>AmmoSteel</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf</objects><lootTable>CBF_Vanilla_Loot_GiantAmmo_Steel</lootTable></li>
+      <li><symbol>L</symbol><thing>StandingLamp</thing></li>
+      <li MayRequire="XMB.Giantimperialcannonturret.MO"><symbol>Z</symbol><thing>Turret_Balistarium</thing></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>e</symbol><terrain>MetalTile</terrain></li>
+      <li><symbol>k</symbol><anchor>GunCrew</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Garrison</pawnList><pawnCount>2~4</pawnCount></li>
+      <li><symbol>o</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>p</symbol><terrain>PavedTile</terrain></li>
+      <li><symbol>s</symbol><thing>Sandbags</thing><stuff>Cloth</stuff></li>
+      <li><symbol>u</symbol><thing>Steel</thing><count>75</count></li>
+    </legend>
+    <mask>
+      <li>.#######.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.#######.</li>
+    </mask>
+    <terrain>
+      <li>.ppppppp.</li>
+      <li>poeeeeeop</li>
+      <li>poeeeeeop</li>
+      <li>poeeeeeop</li>
+      <li>poeeeeeop</li>
+      <li>poeeeeeop</li>
+      <li>pooooooop</li>
+      <li>.ppppppp.</li>
+    </terrain>
+    <things>
+      <li>..sssss..</li>
+      <li>.s.....s.</li>
+      <li>.s.....s.</li>
+      <li>.s.....s.</li>
+      <li>.s.....s.</li>
+      <li>..Z......</li>
+      <li>L.....u..</li>
+      <li>..a......</li>
+    </things>
+    <roof>
+      <li>..^^^^^..</li>
+      <li>.^.....^.</li>
+      <li>.^.....^.</li>
+      <li>.^.....^.</li>
+      <li>.^.....^.</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>....k....</li>
+      <li>..11.....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

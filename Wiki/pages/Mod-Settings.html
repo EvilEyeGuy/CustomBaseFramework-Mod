@@ -117,8 +117,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 });
 })();
 </script><script src="../pages/suche.js"></script></head><body class="" data-basis="../"><div class="fenster"><header class="kopf"><a class="marke" href="../Open%20Guide.html">Custom Base Framework</a><span class="pfad"><a href="../Open%20Guide.html">Guide</a> / Playing / Mod settings</span><button class="suche" id="suche"><span>Search the guide</span><kbd>Ctrl K</kbd></button><button class="look" id="look">Bright</button></header><nav class="leiste"><div class="gruppe start"><b>Start</b><a href="../Open%20Guide.html">Overview</a><a href="Getting-Started.html">Getting started</a><a href="Settings-Overview.html">What you can change</a></div><div class="gruppe piece"><b>Piece</b><a href="Pieces.html">Draw and edit pieces</a><a href="Annexes.html">Annexes</a></div><div class="gruppe settlement"><b>Settlement</b><a href="Settlements.html">Settlement types</a><a href="Factions.html">Factions</a></div><div class="gruppe categories"><b>Categories</b><a href="Categories.html">Categories</a></div><div class="gruppe loot"><b>Loot</b><a href="Loot.html">Object lists and loot</a><a href="Material-Lists.html">Material lists</a></div><div class="gruppe pawn"><b>Pawn</b><a href="Pawns.html">Pawn kinds and lists</a></div><div class="gruppe swap"><b>Unit swap</b><a href="Unit-Swap.html">Unit swap</a></div><div class="gruppe playing"><b>Playing</b><a href="Settlement-Types.html">Shipped settlements</a><a href="Quests.html">Quests</a><a href="Scenarios.html">Scenarios</a><a href="Mod-Settings.html" class="hier">Mod settings</a></div><div class="gruppe compatibility"><b>Compatibility</b><a href="Compatibility.html">Compatibility</a></div><div class="gruppe modding"><b>Modding</b><a href="Modding-Overview.html">Your own content mod</a><a href="Modding-Patches.html">XML patches</a><a href="Modding-Settlements.html">Settlement types in XML</a><a href="Modding-Pieces.html">Pieces and categories in XML</a><a href="Modding-Loot.html">Loot in XML</a><a href="Modding-Pawns.html">Pawns in XML</a><a href="Modding-Quests.html">Quests in XML</a><a href="Modding-Scenarios.html">Starting in a ruin</a><a href="Modding-Dungeons.html">Dungeons (development)</a><a href="Field-Reference.html">Field reference</a></div></nav><main><div class="inhalt"><h1 id="mod-settings">Mod settings</h1><p class="unter">Playing</p>
-<p>Open <strong>Options &gt; Mod settings &gt; Custom Base Framework</strong> to choose which settlements CBF generates, enable the editor and manage reports or save cleanup. Generation settings affect newly created maps; they do not rebuild settlements you have already visited.</p>
-<h2 id="settlements-per-faction">Settlements per faction</h2>
+<p>Open <strong>Options &gt; Mod settings &gt; Custom Base Framework</strong>. The settings are split into three tabs: <strong>Game</strong>, <strong>Editor</strong> and <strong>Bug report</strong>. Generation settings affect newly created maps; they do not rebuild settlements you have already visited.</p>
+<h2 id="game">Game</h2>
+<h3 id="settlements-per-faction">Settlements per faction</h3>
 <p>Shows how many factions get their bases from Custom Base Framework, from any mod. <strong>Choose factions</strong> lists all of them in a window of their own:</p>
 <ul>
 <li><strong>Search</strong> by faction or mod name.</li>
@@ -126,22 +127,73 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><strong>All on</strong> and <strong>All off</strong> switch every faction at once.</li>
 </ul>
 <p>Untick a faction to give it RimWorld's own bases again. Bases that were already visited stay as they are.</p>
-<h2 id="editor">Editor</h2>
+<h3 id="garrisons-and-performance">Garrisons and performance</h3>
+<p>Large settlements do not spawn all their pawns with the map. Part of them is held back unspawned and only spawns when their district is alarmed, in a house near the fighting and out of sight of your pawns. Fewer pawns on the map at once means a smoother game. <strong>Reset to defaults</strong> next to the heading sets all sliders of this section back.</p>
 <ul>
-<li><strong>Editor in the architect menu</strong> shows the editor as its own category in the architect menu. Without the tick the editor opens only in development mode, through the debug menu entry <strong>Open editor</strong>. See <a href="Getting-Started.html">Getting started</a>.</li>
-<li><strong>Open editor guide</strong> opens this guide in your browser. In the editor, <strong>Guide</strong> in the title bar and at the bottom of the left bar does the same.</li>
+<li><strong>Enable CBF spawn mechanics</strong>, on by default. Off: every pawn of a new settlement spawns with the map, with no reserve and no reinforcements, and the sliders below are hidden. Settlements that already have a reserve keep it.</li>
+<li><strong>Garrison in the streets at the start</strong>, 35% by default. Share of each district that is on the map from the start. For fighters at least three per district. If this is more than the limit leaves after the guards, it is cut down, keeping fighters first.</li>
+<li><strong>Size of the reserve</strong>, 75% to 200%, 100% by default. Scales the pawns held back unspawned. Below 100% the settlement has fewer people. Above 100% extra people of the same kinds are created in the same district. Guards and the people on the map at the start do not change.</li>
+<li><strong>At most on the map at once</strong>, 30 to no limit, 60 by default. Counts the pawns of a settlement on the map who are able to fight: guards on walls, gates, guns and posts, the garrison of the districts and civilians. Downed pawns, prisoners and pawns not yet spawned do not count. Guards are always fully manned; the districts get the rest, shared by size, but at least three fighters each. If the guards alone are above the limit, the map can be slightly above it.</li>
+<li><strong>Reinforcements per wave</strong>, how many pawns spawn at most at once.</li>
+<li><strong>Waves per in-game hour</strong>, how often reinforcements spawn. Alarms are checked at the same rate.</li>
+<li><strong>Minimum distance to your people</strong>, reinforcements only appear at least this far from your people and where none of them can see.</li>
+<li><strong>Show the garrison on the map</strong>, off by default. See <a href="#garrison-box">below</a>.</li>
 </ul>
-<h2 id="other-settlement-mods">Other settlement mods</h2>
+<p>A district is alarmed by shots nearby, hits on its walls or houses, or when one of your people is spotted. Fighters spawn first, then civilians, both within the limit. Fighters who spawn go to their own district if it is alarmed, otherwise to where the fighting in the settlement is. Civilians go back to their houses. When fewer than three defenders are left able to fight, the district nearest to your people wakes up by itself, so the settlement can always be defeated.</p>
+<p>The share and the size apply when a settlement is generated. The limit, waves, rate and distance apply at once to all further reinforcements. People already out stay out; lowering the limit sends nobody back into the houses.</p>
+<p>Example: a village with 20 people, 6 of them guards, share 30%, limit 40. The 6 guards are always there. Of the other 14, about a third per district starts on the map, at least three fighters per district. The limit is never reached, so after the alarm all 20 spawn.</p>
+<h4 id="garrison-box">Garrison box</h4>
+<p>With <strong>Show the garrison on the map</strong> ticked, the map of a CBF settlement with a reserve shows a box at the top right. Click its title to collapse it.</p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>On the map</td>
+<td>Pawns of the settlement on the map, after the slash the limit</td>
+</tr>
+<tr>
+<td>In the districts</td>
+<td>Garrison and civilians out in the districts</td>
+</tr>
+<tr>
+<td>Guards</td>
+<td>People on walls, gates, guns and posts</td>
+</tr>
+<tr>
+<td>Ready to spawn</td>
+<td>People not on the map yet, fighters and civilians</td>
+</tr>
+<tr>
+<td>District rows</td>
+<td>Town, Suburb, Countryside: on map | ready. An alarmed district is red and marked with <code>!</code></td>
+</tr>
+</tbody>
+</table>
+<p>The box is hidden in screenshot mode.</p>
+<h3 id="other-mods">Other mods</h3>
 <p>These settings only appear when the mod in question is active. They are on by default.</p>
 <ul>
 <li><strong>Build World Domination settlements with CBF</strong>, only shown with World Domination active. CBF replaces the World Domination layouts and picks the settlement type by World Domination tier. Off: CBF leaves them alone.</li>
 <li><strong>Loot in World Domination settlements</strong>, a slider below the World Domination switch, 50% by default. It sets how many containers keep their planned CBF or Medieval Overhaul loot. 100% keeps the planned loot in every container and switches World Domination loot off. 0% gives the general containers World Domination's loot budget, as World Domination would. In between, that share of the containers keeps its planned loot; the rest shares the full World Domination budget, and each of them gets at least one item. There is never less loot than at 0%. See <a href="Compatibility.html#loot">Compatibility</a>.</li>
 <li><strong>Build A Rim of Ice and Fire holdings with CBF</strong>, only shown with A Rim of Ice and Fire active. CBF builds holdings that have a matching settlement type. Off: A Rim of Ice and Fire builds its holdings itself.</li>
 </ul>
-<p>See <a href="Compatibility.html#mods-with-settlements-of-their-own">Compatibility</a>.</p>
-<h2 id="make-everything-buildable">Make everything buildable</h2>
+<p>Camps and work sites of quests and settlements built by other mods with their own map generator are handled without a switch, see <a href="Compatibility.html#mods-with-settlements-of-their-own">Compatibility</a>.</p>
+<h3 id="remove-cbf-from-this-save">Remove CBF from this save</h3>
+<p><strong>Remove CBF data from this save</strong> is only available in a loaded game. It removes CBF quests, map data, containers and settlement plans. Settlements remain, and the contents of containers are dropped on the ground. It cannot be undone.</p>
+<p>Afterwards save at once, quit the game and only then remove the mod. As long as CBF stays active, the world map and new maps bring CBF data back.</p>
+<h2 id="editor">Editor</h2>
+<ul>
+<li><strong>Editor in the architect menu</strong> shows the editor as its own category in the architect menu. Without the tick the editor opens only in development mode, through the debug menu entry <strong>Open editor</strong>. See <a href="Getting-Started.html">Getting started</a>.</li>
+<li><strong>Open editor guide</strong> opens this guide in your browser. In the editor, <strong>Guide</strong> in the title bar and at the bottom of the left bar does the same.</li>
+</ul>
+<h3 id="make-everything-buildable">Make everything buildable</h3>
 <p>The setting is shown when <strong>Editor in the architect menu</strong> is ticked, or while it is switched on. <strong>Make everything buildable (building aid)</strong> gives every building without an architect category one, so you can place it from the architect menu instead of crafting and installing it. Things without build cost are skipped. The setting takes effect after a restart. When you switch it off or remove CBF, open build orders for these buildings are cancelled and the materials are returned.</p>
-<h2 id="error-report">Error report</h2>
+<h2 id="bug-report">Bug report</h2>
 <p>Before CBF generates a settlement, it writes a report into the folder <code>CBF-Reports</code> in the RimWorld data folder. If the settlement is built, the report is deleted again. If generation fails, CBF places a vanilla settlement instead, completes the report and opens a window that shows its folder. If RimWorld crashes or freezes during generation, the report written beforehand stays in the folder.</p>
 <ul>
 <li><code>Bericht.txt</code>: settlement type, seed, map, biome, faction, game and CBF version, mod settings, mod list, the error with stack trace and the warnings and errors logged during generation, including those of other mods.</li>
@@ -152,7 +204,4 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><strong>Open report folder</strong> opens the folder of the latest report, in the window and later in the settings.</li>
 <li><strong>Copy summary</strong> puts a short description of the error on the clipboard.</li>
 <li>When reporting a problem, include the report files, your game log and a short description of what happened. If the comment form cannot attach files, provide a link to the files.</li>
-</ul>
-<h2 id="remove-cbf-from-this-save">Remove CBF from this save</h2>
-<p><strong>Remove CBF data from this save</strong> is only available in a loaded game. It removes CBF quests, map data, containers and settlement plans. Settlements remain, and the contents of containers are dropped on the ground. It cannot be undone.</p>
-<p>Afterwards save at once, quit the game and only then remove the mod. As long as CBF stays active, the world map and new maps bring CBF data back.</p><div class="schritte"><a href="Scenarios.html"><span>Previous</span>Scenarios</a><a class="weiter" href="Compatibility.html"><span>Next</span>Compatibility</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#settlements-per-faction">Settlements per faction</a><a class="t2" href="#editor">Editor</a><a class="t2" href="#other-settlement-mods">Other settlement mods</a><a class="t2" href="#make-everything-buildable">Make everything buildable</a><a class="t2" href="#error-report">Error report</a><a class="t2" href="#remove-cbf-from-this-save">Remove CBF from this save</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+</ul><div class="schritte"><a href="Scenarios.html"><span>Previous</span>Scenarios</a><a class="weiter" href="Compatibility.html"><span>Next</span>Compatibility</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#game">Game</a><a class="t3" href="#settlements-per-faction">Settlements per faction</a><a class="t3" href="#garrisons-and-performance">Garrisons and performance</a><a class="t3" href="#other-mods">Other mods</a><a class="t3" href="#remove-cbf-from-this-save">Remove CBF from this save</a><a class="t2" href="#editor">Editor</a><a class="t3" href="#make-everything-buildable">Make everything buildable</a><a class="t2" href="#bug-report">Bug report</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

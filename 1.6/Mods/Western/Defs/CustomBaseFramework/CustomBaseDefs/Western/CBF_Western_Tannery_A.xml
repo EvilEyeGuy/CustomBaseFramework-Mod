@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Western_Tannery_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Western_Workshop</li>
+    </categories>
+    <style>CBF_Western</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>%</symbol><thing>Leather_Plain</thing><count>30</count></li>
+      <li><symbol>1</symbol><anchor>HideShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_Western_Shelf</objects><lootTable>CBF_Western_Loot_Workshop</lootTable></li>
+      <li><symbol>2</symbol><anchor>HideBox</anchor><anchorKind>Fill</anchorKind><objects>CBF_Western_Shelf_Small</objects><lootTable>CBF_Western_Loot_Workshop</lootTable></li>
+      <li><symbol>8</symbol><anchor>Tanner</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.7</chance></li>
+      <li><symbol>A</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>J</symbol><thing>ChemlampPost</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>K</symbol><thing>TableButcher</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>O</symbol><thing>Wall</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>P</symbol><thing>Post</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>Z</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>j</symbol><thing>HandTailoringBench</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>l</symbol><thing>Chemlamp</thing></li>
+      <li><symbol>m</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>w</symbol><terrain>WoodPlankFloor</terrain></li>
+    </legend>
+    <mask>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+    </mask>
+    <terrain>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+      <li>wwwwwwwwww</li>
+    </terrain>
+    <things>
+      <li>OOOOOOOOOO</li>
+      <li>O....l...O</li>
+      <li>OK....j..O</li>
+      <li>O........O</li>
+      <li>O........O</li>
+      <li>Om...%..AO</li>
+      <li>OOOOZOOOOO</li>
+      <li>P.J......P</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..........</li>
+      <li>.....8....</li>
+      <li>..........</li>
+      <li>.11.....2.</li>
+      <li>..........</li>
+      <li>..........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -243,6 +243,84 @@
   <CBF_D_MapSizeFixed>Felder je Seite</CBF_D_MapSizeFixed>
   <CBF_D_Areas>Bereiche</CBF_D_Areas>
   <CBF_D_AreasTip>Welche Bereiche es auf dieser Ebene geben kann, jeder mit seinen Gebäuden, wie die Bezirke eines Stadtteils.</CBF_D_AreasTip>
+  <CBF_D_Count>Wiederholen</CBF_D_Count>
+  <CBF_D_CountUnit>mal, jede Kopie ist eine eigene Ebene</CBF_D_CountUnit>
+  <CBF_D_CountTip>Baut diese Ebene mehrmals hintereinander, 1 bis 20. Jede Kopie wird neu erzeugt. Die Verteilung zählt jede Kopie als Ebene.</CBF_D_CountTip>
+  <CBF_D_Sections>Abschnitte</CBF_D_Sections>
+  <CBF_D_SectionsTip>Teilt die Ebene in hintereinander liegende Abschnitte. Der erste Abschnitt hat den Eingang, der letzte die Treppe hinab. Jeder Abschnitt hat eigene Bereiche und kann eigene Gangsegmente haben.</CBF_D_SectionsTip>
+  <CBF_D_SectionsNone>Keine Abschnitte. Die ganze Ebene ist ein Abschnitt mit den Bereichen unten.</CBF_D_SectionsNone>
+  <CBF_D_AddSection>+ Abschnitt</CBF_D_AddSection>
+  <CBF_D_AddSectionFirstTip>Der erste Abschnitt übernimmt die Bereiche der Ebene.</CBF_D_AddSectionFirstTip>
+  <CBF_D_AddedSection>Abschnitt {0} hinzugefügt</CBF_D_AddedSection>
+  <CBF_D_RemovedSection>Abschnitt {0} entfernt</CBF_D_RemovedSection>
+  <CBF_D_MovedSection>Abschnitt {0} verschoben</CBF_D_MovedSection>
+  <CBF_D_DeleteSectionAsk>Abschnitt {0} entfernen? Seine Bereiche enthalten {1} Einträge.</CBF_D_DeleteSectionAsk>
+  <CBF_D_RenameSection>Name des Abschnitts</CBF_D_RenameSection>
+  <CBF_D_RemoveSection>Abschnitt entfernen</CBF_D_RemoveSection>
+  <CBF_D_SectionUpTip>Diesen Abschnitt eins Richtung Eingang schieben.</CBF_D_SectionUpTip>
+  <CBF_D_SectionDownTip>Diesen Abschnitt eins Richtung Treppe hinab schieben.</CBF_D_SectionDownTip>
+  <CBF_D_SectionInfo>{0} Bereich(e)</CBF_D_SectionInfo>
+  <CBF_D_SectionEntrance>Eingang</CBF_D_SectionEntrance>
+  <CBF_D_SectionStairs>Treppe hinab</CBF_D_SectionStairs>
+  <CBF_D_SectionCorridors>Gangsegmente dieses Abschnitts</CBF_D_SectionCorridors>
+  <CBF_D_SectionCorridorsInherit>Keine gesetzt: Der Abschnitt nimmt die Gangsegmente der Ebene.</CBF_D_SectionCorridorsInherit>
+  <CBF_S_Priority>Priorität</CBF_S_Priority>
+  <CBF_S_PriorityTip>Welcher Eintrag zuerst Platz bekommt. Bei gleicher Priorität gilt die bisherige Reihenfolge (Mindestzahl, Größe). Niedrige Einträge dürfen bei Platzmangel unter ihrer Mindestzahl bleiben.</CBF_S_PriorityTip>
+  <CBF_Priority_Low>Niedrig</CBF_Priority_Low>
+  <CBF_Priority_Normal>Normal</CBF_Priority_Normal>
+  <CBF_Priority_Preferred>Bevorzugt</CBF_Priority_Preferred>
+  <CBF_Priority_Important>Wichtig</CBF_Priority_Important>
+  <CBF_Priority_Critical>Kritisch</CBF_Priority_Critical>
+  <CBF_Pr_Button>Plan prüfen</CBF_Pr_Button>
+  <CBF_Pr_ButtonTip>Plant diesen Ortstyp mehrmals auf verschiedenem Gelände und zeigt, wie oft er gelingt und was wegfällt.</CBF_Pr_ButtonTip>
+  <CBF_Pr_Ask>Die Prüfung plant diesen Ort {0} Mal auf Flachland, an Flüssen, in Bergen, an der Küste und im schlimmsten Fall. Das kann eine bis einige Minuten dauern. Starten?</CBF_Pr_Ask>
+  <CBF_Pr_Title>Plan prüfen: {0}</CBF_Pr_Title>
+  <CBF_Pr_Running>Lauf {0} von {1}</CBF_Pr_Running>
+  <CBF_Pr_Elapsed>bisher {0} s</CBF_Pr_Elapsed>
+  <CBF_Pr_Cancel>Abbrechen</CBF_Pr_Cancel>
+  <CBF_Pr_Stopped>Nach {0} von {1} Läufen abgebrochen. Das Ergebnis gilt nur für diese Läufe.</CBF_Pr_Stopped>
+  <CBF_Pr_Valid>{0} von {1} Läufen gültig</CBF_Pr_Valid>
+  <CBF_Pr_Verdict_Gruen>Der Plan gelingt zuverlässig.</CBF_Pr_Verdict_Gruen>
+  <CBF_Pr_Verdict_Gelb>Der Plan gelingt oft, scheitert aber auf manchem Gelände. Mindestzahlen senken oder weniger wichtige Einträge auf Niedrig stellen.</CBF_Pr_Verdict_Gelb>
+  <CBF_Pr_Verdict_Rot>Der Plan scheitert zu oft. Er verlangt mehr, als Platz hat. Mindestzahlen senken, Einträge entfernen oder eine größere Karte erlauben.</CBF_Pr_Verdict_Rot>
+  <CBF_Pr_Means>Im Mittel {0} Lagen und {1} s je Lauf.</CBF_Pr_Means>
+  <CBF_Pr_Terrain_Flach>Flach</CBF_Pr_Terrain_Flach>
+  <CBF_Pr_Terrain_Fluss>Fluss</CBF_Pr_Terrain_Fluss>
+  <CBF_Pr_Terrain_Berge>Berge</CBF_Pr_Terrain_Berge>
+  <CBF_Pr_Terrain_Kueste>Küste</CBF_Pr_Terrain_Kueste>
+  <CBF_Pr_Terrain_Schlimmst>Schlimmster Fall</CBF_Pr_Terrain_Schlimmst>
+  <CBF_Pr_Estimate>Schnellschätzung</CBF_Pr_Estimate>
+  <CBF_Pr_EstimateLine>Die Mindestzahlen brauchen {0} Felder Kantenlänge, bis zu den Höchstzahlen {3}. Möglich sind {1} (Kartengröße {2}).</CBF_Pr_EstimateLine>
+  <CBF_Pr_EstimateNote>Die Schätzung ist grob und plant nicht. Was zählt, sind die Läufe oben.</CBF_Pr_EstimateNote>
+  <CBF_Pr_Omitted>Am häufigsten weggelassen</CBF_Pr_Omitted>
+  <CBF_Pr_OmittedNone>Jeder Eintrag hat in jedem Lauf seine Mindestzahl erreicht.</CBF_Pr_OmittedNone>
+  <CBF_Pr_OmittedLine>{0}: in {1} von {2} Läufen unter der Mindestzahl {3}</CBF_Pr_OmittedLine>
+  <CBF_Pr_OmittedHint>Rot: in mindestens der Hälfte der Läufe weggelassen. Mindestzahl senken, auf Niedrig stellen oder in einen Stadtteil mit mehr Platz verschieben.</CBF_Pr_OmittedHint>
+  <CBF_Pr_Notes>Hinweise des Planers</CBF_Pr_Notes>
+  <CBF_Pr_NotesNone>Keine Hinweise.</CBF_Pr_NotesNone>
+  <CBF_Pr_Times>{0} von {1} Läufen</CBF_Pr_Times>
+  <CBF_Pr_Space>Platz: die Mindestzahlen brauchen {0} von {1} Feldern Kantenlänge ({2} %), bis zu den Höchstzahlen {4} (Kartengröße {3})</CBF_Pr_Space>
+  <CBF_Pr_SpaceTip>Schnellschätzung, ohne zu planen. Rot heißt: schon die Mindestzahlen passen nicht. Gelb: sie sind knapp oder die Höchstzahlen passen nicht ganz. Sie rechnet bei jeder Änderung neu. Verlässlich ist erst „Plan prüfen“.</CBF_Pr_SpaceTip>
+  <CBF_Pr_SpaceDo_Gruen>Passt.</CBF_Pr_SpaceDo_Gruen>
+  <CBF_Pr_SpaceDo_Gelb>Knapp. Auf rauem Gelände kann etwas wegfallen. „Plan prüfen“ zeigt, was.</CBF_Pr_SpaceDo_Gelb>
+  <CBF_Pr_SpaceDo_Rot>Vermutlich zu groß. Mindestzahlen senken, Einträge auf Niedrig stellen oder eine größere Karte erlauben, dann „Plan prüfen“.</CBF_Pr_SpaceDo_Rot>
+  <CBF_S_SuburbIslands>Vorstadtflächen</CBF_S_SuburbIslands>
+  <CBF_S_SuburbRing>Vorstadt als Ring</CBF_S_SuburbRing>
+  <CBF_S_SuburbRingTip>Nur bei einer Vorstadtmauer mit Wehrgang (Tiefe ab 3). An: Die Vorstadt wird ein geschlossener Ring um die Stadt. Aus: Die Vorstadt bleibt in getrennten Flächen an den Seiten, so viele wie Vorstadtflächen erlaubt. Bei Vorstadtflächen 0 bleibt der Ring.</CBF_S_SuburbRingTip>
+  <CBF_S_SuburbOnly>nur mit Vorstadt</CBF_S_SuburbOnly>
+  <CBF_S_SuburbOnlyTip>Diese Felder gelten nur für Ortstypen mit einem Vorstadt-Stadtteil. Leg unter Stadtteile eine Vorstadt an, um sie zu nutzen.</CBF_S_SuburbOnlyTip>
+  <CBF_Pr_SpaceFailed>Der Platz ließ sich nicht schätzen: {0}</CBF_Pr_SpaceFailed>
+  <CBF_Pr_SpaceUnknown>kein Ergebnis</CBF_Pr_SpaceUnknown>
+  <CBF_Pr_Stopping>Wird abgebrochen. Der laufende Durchgang beendet zuerst seinen Schritt.</CBF_Pr_Stopping>
+  <CBF_Pr_StuckHint>Der Durchgang reagiert nicht. Du kannst das Fenster trotzdem schließen, der Durchgang endet dann im Hintergrund.</CBF_Pr_StuckHint>
+  <CBF_Pr_CloseAnyway>Trotzdem schließen</CBF_Pr_CloseAnyway>
+  <CBF_Pr_NoDungeon>Für Verliese nicht verfügbar. Dort hilft die Vorschau.</CBF_Pr_NoDungeon>
+  <CBF_D_SectionFirst>Das ist schon der erste Abschnitt.</CBF_D_SectionFirst>
+  <CBF_D_SectionLast>Das ist schon der letzte Abschnitt.</CBF_D_SectionLast>
+  <CBF_D_SectionDefault>Abschnitt {0}</CBF_D_SectionDefault>
+  <CBF_D_AreaDefault>Bereich</CBF_D_AreaDefault>
+  <CBF_D_OrphanAreas>Die Ebene hat noch {0} eigene(n) Bereich(e). Mit Abschnitten gelten sie nicht.</CBF_D_OrphanAreas>
+  <CBF_D_OrphanAreasTake>In den ersten Abschnitt übernehmen</CBF_D_OrphanAreasTake>
   <CBF_D_Spread>Über Ebenen verteilt</CBF_D_Spread>
   <CBF_D_SpreadNone>Noch nichts. Einträge hier landen auf beliebigen Ebenen in ihrem Bereich, zusätzlich zu den Bereichen der Ebenen.</CBF_D_SpreadNone>
   <CBF_D_AddSpread>+ Gebäude</CBF_D_AddSpread>

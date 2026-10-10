@@ -133,6 +133,19 @@
   <CBF_P_ModAdd>Mod hinzufügen...</CBF_P_ModAdd>
   <CBF_P_ModActive>Aktiv</CBF_P_ModActive>
   <CBF_P_ModInactive>Installiert, nicht aktiv</CBF_P_ModInactive>
+  <CBF_P_UsedMods>Verwendete Mods</CBF_P_UsedMods>
+  <CBF_P_UsedModsTip>Mods und DLCs, deren Dinge, Böden und Dächer dieses Stück direkt setzt. Das Grundspiel steht nicht dabei.</CBF_P_UsedModsTip>
+  <CBF_P_UsedModsNone>Nur das Grundspiel.</CBF_P_UsedModsNone>
+  <CBF_P_UsedModsCount>{0} Ding(e)</CBF_P_UsedModsCount>
+  <CBF_P_UsedModsDlc>DLC</CBF_P_UsedModsDlc>
+  <CBF_P_UsedModsHint>Ein Klick auf einen Mod zeigt seine Dinge. Beim Export bekommt jede Legendenzeile MayRequire für ihren Mod. Dinge aus Objektlisten an Ankern sind optional und stehen hier nicht dabei.</CBF_P_UsedModsHint>
+  <CBF_P_AnnexRequired>Anbau Pflicht</CBF_P_AnnexRequired>
+  <CBF_P_AnnexRequiredTip>Das Gebäude wird nur gesetzt, wenn an diesem Anker ein Anbau Platz findet.</CBF_P_AnnexRequiredTip>
+  <CBF_P_AnnexPriority>Anbau-Priorität</CBF_P_AnnexPriority>
+  <CBF_P_AnnexPriorityTip>Anker mit höherer Priorität bekommen ihren Anbau zuerst. Kritisch und Wichtig übergehen die Anbau-Chance, Bevorzugt erhöht sie, Niedrig halbiert sie. Niedrige Anker kommen zuletzt dran, nach allen anderen Anbauten des Orts. Anbau Pflicht gilt unabhängig davon und ist stärker.</CBF_P_AnnexPriorityTip>
+  <CBF_P_AnnexCategories>Anbau-Kategorien</CBF_P_AnnexCategories>
+  <CBF_P_AnnexCategoriesPiece>aus der Kategorie des Stücks</CBF_P_AnnexCategoriesPiece>
+  <CBF_P_AnnexCategoriesTip>Aus welchen Kategorien der Anbau an diesem Anker kommt. Leer heißt: die Anbauten, die an der Kategorie des Stücks eingetragen sind.</CBF_P_AnnexCategoriesTip>
   <CBF_AnchorConnect_Socket>Eine Andockstelle für Dungeon-Teile. Hier schließen Gänge, Höhlen oder andere Räume an. Türen und Öffnungen am Außenrand gelten ohnehin als Andockstellen, dieser Anker bietet eine ausdrücklich an.</CBF_AnchorConnect_Socket>
   <CBF_SocketType>Art der Andockstelle</CBF_SocketType>
   <CBF_SocketTypeTip>Was der Generator hier setzt, wenn etwas andockt: Tür, offener Bogen, Höhlenöffnung oder Geheimgang.</CBF_SocketTypeTip>

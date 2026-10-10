@@ -93,8 +93,9 @@
   <CBF_Machbar_Ok>Die Bestellungen passen auf eine Karte dieser Größe.</CBF_Machbar_Ok>
   <CBF_Machbar_NoRequest>Aus diesem Ortstyp lässt sich keine Anfrage bauen. Fehlen Stile oder Katalog?</CBF_Machbar_NoRequest>
   <CBF_Machbar_Failed>Die Prüfung ist gescheitert: {0}</CBF_Machbar_Failed>
-  <CBF_Machbar_TooBig>Die Bestellungen brauchen {0} Felder Kantenlänge, möglich sind {1} bei mapSize {2}. Was nicht hineinpasst, wird nicht gebaut.</CBF_Machbar_TooBig>
-  <CBF_Machbar_Tight>Die Bestellungen brauchen {0} von {1} möglichen Feldern Kantenlänge. Auf engem Gelände wird das knapp.</CBF_Machbar_Tight>
+  <CBF_Machbar_TooBig>Schon die Mindestzahlen brauchen {0} Felder Kantenlänge, möglich sind {1} bei mapSize {2}. Was nicht hineinpasst, wird nicht gebaut.</CBF_Machbar_TooBig>
+  <CBF_Machbar_Tight>Die Mindestzahlen brauchen {0} von {1} möglichen Feldern Kantenlänge. An Fluss, Bergen oder Küste kann ein Teil der Versuche scheitern, wie oft, zeigt die Planprüfung.</CBF_Machbar_Tight>
+  <CBF_Machbar_WishTooBig>Die Mindestzahlen passen. Bis zu den Höchstzahlen bräuchten die Bestellungen {0} Felder Kantenlänge, möglich sind {1}, ein Teil der freiwilligen Bauten fällt also weg.</CBF_Machbar_WishTooBig>
   <CBF_Machbar_WallUnusable>Das Mauerstück {0} in Ebene {1} taugt nicht als Mauer: {2} Der Planer nimmt das nächste Stück der Liste.</CBF_Machbar_WallUnusable>
   <CBF_Machbar_WallMissing>Das Mauerstück {0} in Ebene {1} ist nicht verfügbar, weil die Mod fehlt oder das Stück abgeschaltet ist. Der Planer nimmt das nächste Stück der Liste.</CBF_Machbar_WallMissing>
   <CBF_Machbar_WallNone>Kein Mauerstück in Ebene {0} taugt als Mauer. Der Stadtteil bleibt ohne Mauer. Ein Mauerstück muss 1 Feld breit und höchstens 5 Felder tief sein, nur aus Wand und Wehrgang bestehen und außen wie innen mit Wand enden.</CBF_Machbar_WallNone>
@@ -336,6 +337,11 @@
 
   <CBF_Planner_Abtragrueckbau>Frühere Felsabtragungen außerhalb der Stadt zurückgenommen, {0} Felder bleiben Fels.</CBF_Planner_Abtragrueckbau>
   <CBF_Planner_Anbauten>{0} Anbauten an Gebäude gesetzt.</CBF_Planner_Anbauten>
+  <CBF_Planner_Pflichtanbauten>{0} Pflicht-Anbauten gesetzt, {1} Stellen verworfen, weil ein Pflicht-Anbau keinen Platz fand.</CBF_Planner_Pflichtanbauten>
+  <CBF_Planner_PflichtOhneStueck>{0}: Ein Pflicht-Anker verlangt die Anbau-Kategorie {1}, dafür gibt es kein Stück. {0} wird nie gesetzt.</CBF_Planner_PflichtOhneStueck>
+  <CBF_Planner_NiedrigWeggelassen>{0} (Ebene {1}): niedrige Priorität, nur {2} von mindestens {3} gesetzt, weil der Platz ausging.</CBF_Planner_NiedrigWeggelassen>
+  <CBF_Pruef_NoPlan>Kein Ortstyp gewählt.</CBF_Pruef_NoPlan>
+  <CBF_Pruef_NoRequest>Aus dem Plan ließ sich keine Planer-Anfrage bauen.</CBF_Pruef_NoRequest>
   <CBF_Planner_Anlaufbremse>Die Füllphase dieser Lage wurde nach {0} Sekunden beendet, damit der Kartenbau nicht zu lange steht.</CBF_Planner_Anlaufbremse>
   <CBF_Planner_AnlaufFehler>{0} Lage(n) brachen mit einem Programmfehler ab ({1}). Die Suche lief mit den übrigen Lagen weiter.</CBF_Planner_AnlaufFehler>
   <CBF_Planner_Aufgeschuettet>{0} Sumpffelder in der Siedlung und unter Wegen, Mauern und Zäunen aufgeschüttet.</CBF_Planner_Aufgeschuettet>
@@ -426,4 +432,14 @@
   <CBF_Planner_VerliesHoehleOhnePlatz>Dungeon: die Höhle von Bereich {0} fand keinen Platz.</CBF_Planner_VerliesHoehleOhnePlatz>
   <CBF_Planner_VerliesFernweg>Dungeon: {0} lange Tunnel zu tieferem Fels gegraben, weil kurze Verbindungen keinen Platz fanden.</CBF_Planner_VerliesFernweg>
   <CBF_Log_VerliesAusgang>Verlies {0}: Ebene {1} hatte keine Treppe hinauf. Sie steht jetzt am Startpunkt.</CBF_Log_VerliesAusgang>
+  <CBF_Verlies_Aufstieg>Nach oben schicken</CBF_Verlies_Aufstieg>
+  <CBF_Verlies_AufstiegDesc>Alle eigenen Leute auf dieser Ebene steigen selbständig durch alle Treppen hinauf bis zur Oberkarte.</CBF_Verlies_AufstiegDesc>
+  <CBF_Verlies_AufstiegNiemand>Hier ist niemand, der hinaufsteigen könnte.</CBF_Verlies_AufstiegNiemand>
+  <CBF_Verlies_Planen>Das Verlies wird geplant...</CBF_Verlies_Planen>
+  <CBF_Verlies_Fernziel>{0} steigt hinauf und geht dann dorthin.</CBF_Verlies_Fernziel>
+  <CBF_Verlies_Fernauswahl>{0} Leute auf der anderen Ebene bleiben vorgemerkt. Mit Rechtsklick ein Ziel hier angeben.</CBF_Verlies_Fernauswahl>
+  <CBF_Verlies_Hinauf>Ebene darüber ansehen</CBF_Verlies_Hinauf>
+  <CBF_Verlies_HinaufDesc>Wechselt die Ansicht auf die Ebene darüber. Die ausgewählten Leute bleiben vorgemerkt: ein Rechtsklick dort schickt sie hinauf und zum angeklickten Ziel.</CBF_Verlies_HinaufDesc>
+  <CBF_Verlies_Hinab>Ebene darunter ansehen</CBF_Verlies_Hinab>
+  <CBF_Verlies_HinabDesc>Wechselt die Ansicht auf die Ebene darunter. Die ausgewählten Leute bleiben vorgemerkt: ein Rechtsklick dort schickt sie hinab und zum angeklickten Ziel.</CBF_Verlies_HinabDesc>
 </LanguageData>

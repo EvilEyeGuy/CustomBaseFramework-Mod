@@ -238,6 +238,84 @@
   <CBF_D_MapSizeFixed>cells per side</CBF_D_MapSizeFixed>
   <CBF_D_Areas>Areas</CBF_D_Areas>
   <CBF_D_AreasTip>Which areas this level can have, each with its buildings, like the districts of a ward.</CBF_D_AreasTip>
+  <CBF_D_Count>Repeat</CBF_D_Count>
+  <CBF_D_CountUnit>times, each copy is a level of its own</CBF_D_CountUnit>
+  <CBF_D_CountTip>Builds this level several times in a row, 1 to 20. Each copy is generated anew. The spread counts every copy as a level.</CBF_D_CountTip>
+  <CBF_D_Sections>Sections</CBF_D_Sections>
+  <CBF_D_SectionsTip>Splits the level into sections in a row. The first section holds the entrance, the last one the stairs down. Each section has its own areas and can have its own corridor segments.</CBF_D_SectionsTip>
+  <CBF_D_SectionsNone>No sections. The whole level is one section with the areas below.</CBF_D_SectionsNone>
+  <CBF_D_AddSection>+ Section</CBF_D_AddSection>
+  <CBF_D_AddSectionFirstTip>The first section takes over the areas of the level.</CBF_D_AddSectionFirstTip>
+  <CBF_D_AddedSection>Section {0} added</CBF_D_AddedSection>
+  <CBF_D_RemovedSection>Section {0} removed</CBF_D_RemovedSection>
+  <CBF_D_MovedSection>Section {0} moved</CBF_D_MovedSection>
+  <CBF_D_DeleteSectionAsk>Remove section {0}? Its areas hold {1} entries.</CBF_D_DeleteSectionAsk>
+  <CBF_D_RenameSection>Name of the section</CBF_D_RenameSection>
+  <CBF_D_RemoveSection>Remove section</CBF_D_RemoveSection>
+  <CBF_D_SectionUpTip>Move this section one towards the entrance.</CBF_D_SectionUpTip>
+  <CBF_D_SectionDownTip>Move this section one towards the stairs down.</CBF_D_SectionDownTip>
+  <CBF_D_SectionInfo>{0} area(s)</CBF_D_SectionInfo>
+  <CBF_D_SectionEntrance>entrance</CBF_D_SectionEntrance>
+  <CBF_D_SectionStairs>stairs down</CBF_D_SectionStairs>
+  <CBF_D_SectionCorridors>Corridor segments of this section</CBF_D_SectionCorridors>
+  <CBF_D_SectionCorridorsInherit>None set: the section uses the corridor segments of the level.</CBF_D_SectionCorridorsInherit>
+  <CBF_S_Priority>Priority</CBF_S_Priority>
+  <CBF_S_PriorityTip>Which entry gets space first. With equal priority the previous order applies (minimum count, size). Low entries may stay below their minimum when space runs out.</CBF_S_PriorityTip>
+  <CBF_Priority_Low>Low</CBF_Priority_Low>
+  <CBF_Priority_Normal>Normal</CBF_Priority_Normal>
+  <CBF_Priority_Preferred>Preferred</CBF_Priority_Preferred>
+  <CBF_Priority_Important>Important</CBF_Priority_Important>
+  <CBF_Priority_Critical>Critical</CBF_Priority_Critical>
+  <CBF_Pr_Button>Check plan</CBF_Pr_Button>
+  <CBF_Pr_ButtonTip>Plans this settlement type many times on different terrain and shows how often it works and what gets left out.</CBF_Pr_ButtonTip>
+  <CBF_Pr_Ask>The check plans this settlement {0} times on flat land, rivers, mountains, coast and the worst case. This can take one to a few minutes. Start?</CBF_Pr_Ask>
+  <CBF_Pr_Title>Check plan: {0}</CBF_Pr_Title>
+  <CBF_Pr_Running>Run {0} of {1}</CBF_Pr_Running>
+  <CBF_Pr_Elapsed>{0} s so far</CBF_Pr_Elapsed>
+  <CBF_Pr_Cancel>Cancel</CBF_Pr_Cancel>
+  <CBF_Pr_Stopped>Cancelled after {0} of {1} runs. The result only covers these runs.</CBF_Pr_Stopped>
+  <CBF_Pr_Valid>{0} of {1} runs valid</CBF_Pr_Valid>
+  <CBF_Pr_Verdict_Gruen>The plan works reliably.</CBF_Pr_Verdict_Gruen>
+  <CBF_Pr_Verdict_Gelb>The plan often works, but fails on some terrain. Lower minimum counts or set less important entries to Low.</CBF_Pr_Verdict_Gelb>
+  <CBF_Pr_Verdict_Rot>The plan fails too often. It asks for more than fits. Lower minimum counts, remove entries or allow a larger map.</CBF_Pr_Verdict_Rot>
+  <CBF_Pr_Means>On average {0} attempts and {1} s per run.</CBF_Pr_Means>
+  <CBF_Pr_Terrain_Flach>Flat</CBF_Pr_Terrain_Flach>
+  <CBF_Pr_Terrain_Fluss>River</CBF_Pr_Terrain_Fluss>
+  <CBF_Pr_Terrain_Berge>Mountains</CBF_Pr_Terrain_Berge>
+  <CBF_Pr_Terrain_Kueste>Coast</CBF_Pr_Terrain_Kueste>
+  <CBF_Pr_Terrain_Schlimmst>Worst case</CBF_Pr_Terrain_Schlimmst>
+  <CBF_Pr_Estimate>Quick estimate</CBF_Pr_Estimate>
+  <CBF_Pr_EstimateLine>The minimum counts need {0} cells of edge length, up to the maximum counts {3}. {1} are possible (map size {2}).</CBF_Pr_EstimateLine>
+  <CBF_Pr_EstimateNote>The estimate is a rough guess without planning. The runs above are what counts.</CBF_Pr_EstimateNote>
+  <CBF_Pr_Omitted>Left out most often</CBF_Pr_Omitted>
+  <CBF_Pr_OmittedNone>Every entry reached its minimum in every run.</CBF_Pr_OmittedNone>
+  <CBF_Pr_OmittedLine>{0}: below its minimum of {3} in {1} of {2} runs</CBF_Pr_OmittedLine>
+  <CBF_Pr_OmittedHint>Red: left out in at least half of the runs. Lower its minimum, set it to Low or move it to a ward with more room.</CBF_Pr_OmittedHint>
+  <CBF_Pr_Notes>Planner notes</CBF_Pr_Notes>
+  <CBF_Pr_NotesNone>No notes.</CBF_Pr_NotesNone>
+  <CBF_Pr_Times>{0} of {1} runs</CBF_Pr_Times>
+  <CBF_Pr_Space>Space: the minimum counts need {0} of {1} cells of edge length ({2} %), up to the maximum counts {4} (map size {3})</CBF_Pr_Space>
+  <CBF_Pr_SpaceTip>Quick estimate without planning. Red means even the minimum counts do not fit, yellow that they are tight or the maximum counts do not fully fit. It updates with every change. Check plan gives the reliable answer.</CBF_Pr_SpaceTip>
+  <CBF_Pr_SpaceDo_Gruen>Fits.</CBF_Pr_SpaceDo_Gruen>
+  <CBF_Pr_SpaceDo_Gelb>Tight. On rough terrain some entries may be left out. Check plan shows which.</CBF_Pr_SpaceDo_Gelb>
+  <CBF_Pr_SpaceDo_Rot>Probably too big. Lower minimum counts, set entries to Low or allow a larger map, then use Check plan.</CBF_Pr_SpaceDo_Rot>
+  <CBF_S_SuburbIslands>Suburb areas</CBF_S_SuburbIslands>
+  <CBF_S_SuburbRing>Suburb as ring</CBF_S_SuburbRing>
+  <CBF_S_SuburbRingTip>Only for a suburb wall with a walkway (depth 3 or more). On: the suburb becomes a closed ring around the town. Off: the suburb stays as separate areas on the sides, as many as Suburb areas allows. With Suburb areas at 0 the ring stays.</CBF_S_SuburbRingTip>
+  <CBF_S_SuburbOnly>only with a suburb</CBF_S_SuburbOnly>
+  <CBF_S_SuburbOnlyTip>These fields only apply to settlement types with a suburb ward. Add a suburb ward under Wards to use them.</CBF_S_SuburbOnlyTip>
+  <CBF_Pr_SpaceFailed>Space could not be estimated: {0}</CBF_Pr_SpaceFailed>
+  <CBF_Pr_SpaceUnknown>no result</CBF_Pr_SpaceUnknown>
+  <CBF_Pr_Stopping>Cancelling. The current run finishes its step first.</CBF_Pr_Stopping>
+  <CBF_Pr_StuckHint>The run does not react. You can close the window anyway; the run then ends in the background.</CBF_Pr_StuckHint>
+  <CBF_Pr_CloseAnyway>Close anyway</CBF_Pr_CloseAnyway>
+  <CBF_Pr_NoDungeon>Not available for dungeons. Use Preview for them.</CBF_Pr_NoDungeon>
+  <CBF_D_SectionFirst>This is already the first section.</CBF_D_SectionFirst>
+  <CBF_D_SectionLast>This is already the last section.</CBF_D_SectionLast>
+  <CBF_D_SectionDefault>section {0}</CBF_D_SectionDefault>
+  <CBF_D_AreaDefault>area</CBF_D_AreaDefault>
+  <CBF_D_OrphanAreas>The level still has {0} area(s) of its own. With sections they do not apply.</CBF_D_OrphanAreas>
+  <CBF_D_OrphanAreasTake>Move them into the first section</CBF_D_OrphanAreasTake>
   <CBF_D_Spread>Spread over levels</CBF_D_Spread>
   <CBF_D_SpreadNone>Nothing yet. Entries here are placed on any level within their range, in addition to the areas.</CBF_D_SpreadNone>
   <CBF_D_AddSpread>+ Building</CBF_D_AddSpread>

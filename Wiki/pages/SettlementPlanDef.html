@@ -340,6 +340,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How many separate suburb areas grow outside the town, at most one per open map side. 0 turns this off.</td>
 </tr>
 <tr>
+<td><code>suburbRing</code></td>
+<td>true/false</td>
+<td><code>true</code></td>
+<td>Only for a suburb wall with a walkway (depth 3 or more). true: the suburb becomes a closed ring around the town. false: the suburb stays as separate areas on the sides, as many as suburbIslands allows; with suburbIslands 0 the ring stays.</td>
+</tr>
+<tr>
 <td><code>targetBuilt</code><br>Target built share</td>
 <td>number</td>
 <td><code>0</code></td>

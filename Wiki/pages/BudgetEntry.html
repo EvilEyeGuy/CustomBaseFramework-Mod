@@ -141,6 +141,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Requested number of buildings, sampled from the range. Placement depends on available space. During reference resolution, counts above 150 are capped at 150.</td>
 </tr>
 <tr>
+<td><code>priority</code></td>
+<td>Low, Normal, Preferred, Important, Critical</td>
+<td><code>Normal</code></td>
+<td>Which entry gets space first. With equal priority the previous order applies (minimum count, size). Low entries may stay below their minimum when space runs out. Not used in dungeon areas.</td>
+</tr>
+<tr>
 <td><code>filler</code></td>
 <td>true/false</td>
 <td><code>false</code></td>

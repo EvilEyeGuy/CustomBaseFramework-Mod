@@ -115,6 +115,7 @@
   <CBF_FieldDesc_stuff>Material of the thing. On a variant, empty keeps the material of the entry. Empty or unfitting material falls back to the default material.</CBF_FieldDesc_stuff>
   <CBF_FieldDesc_stuffChain>Materials tried in order for things made from stuff. MapStone and MapWood take the stone or wood of the map. Without a match the default material is used.</CBF_FieldDesc_stuffChain>
   <CBF_FieldDesc_suburbIslands>How many separate suburb areas grow outside the town, at most one per open map side. 0 turns this off.</CBF_FieldDesc_suburbIslands>
+  <CBF_FieldDesc_suburbRing>Only for a suburb wall with a walkway (depth 3 or more). On: the suburb becomes a closed ring around the town. Off: the suburb stays as separate areas on the sides, as many as suburbIslands allows.</CBF_FieldDesc_suburbRing>
   <CBF_FieldDesc_symbol>The character that stands for this entry in the layers. Only the first character counts.</CBF_FieldDesc_symbol>
   <CBF_FieldDesc_table>A nested loot table, rolled tableRolls times. It wins over category and thing.</CBF_FieldDesc_table>
   <CBF_FieldDesc_tableRolls>How often the nested table is rolled, as a range.</CBF_FieldDesc_tableRolls>

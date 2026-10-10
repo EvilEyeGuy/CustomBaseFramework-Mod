@@ -248,6 +248,24 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Facing of the thing as drawn: North, East, South or West. It turns with the piece. Default North.</td>
 </tr>
 <tr>
+<td><code>annexRequired</code></td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td>Only on an Annex anchor. The piece is only placed if an annex fits at this anchor.</td>
+</tr>
+<tr>
+<td><code>annexPriority</code></td>
+<td>Low, Normal, Preferred, Important, Critical</td>
+<td><code>Normal</code></td>
+<td>Only on an Annex anchor. Anchors with a higher priority get their annex first. Critical and Important ignore annexChance, Preferred raises it, Low halves it. Low anchors are filled last, after all other annexes of the settlement. annexRequired is independent and stronger.</td>
+</tr>
+<tr>
+<td><code>annexCategories</code></td>
+<td>list of PieceCategoryDef</td>
+<td>none</td>
+<td>Only on an Annex anchor. The annex at this anchor is taken from these categories. Empty means the annexes set at the category of the piece.</td>
+</tr>
+<tr>
 <td><code>socketType</code></td>
 <td>SocketArt (Door, Arch, Cave, Secret)</td>
 <td><code>Door</code></td>

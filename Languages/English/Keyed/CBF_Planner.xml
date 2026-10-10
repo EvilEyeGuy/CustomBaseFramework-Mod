@@ -93,8 +93,9 @@
   <CBF_Machbar_Ok>The orders fit on a map of this size.</CBF_Machbar_Ok>
   <CBF_Machbar_NoRequest>No request can be built from this plan. Missing styles or catalog?</CBF_Machbar_NoRequest>
   <CBF_Machbar_Failed>The check failed: {0}</CBF_Machbar_Failed>
-  <CBF_Machbar_TooBig>The orders need {0} cells of edge length, {1} are possible at mapSize {2}. Whatever does not fit will not be built.</CBF_Machbar_TooBig>
-  <CBF_Machbar_Tight>The orders need {0} of {1} possible cells of edge length. On rough terrain this gets tight.</CBF_Machbar_Tight>
+  <CBF_Machbar_TooBig>Even the minimum counts need {0} cells of edge length, {1} are possible at mapSize {2}. Whatever does not fit will not be built.</CBF_Machbar_TooBig>
+  <CBF_Machbar_Tight>The minimum counts need {0} of {1} possible cells of edge length. On rivers, mountains or coasts some attempts may fail; use the plan check to see how often.</CBF_Machbar_Tight>
+  <CBF_Machbar_WishTooBig>The minimum counts fit. Up to the maximum counts the orders would need {0} cells of edge length, {1} are possible, so some optional buildings will be left out.</CBF_Machbar_WishTooBig>
   <CBF_Machbar_WallUnusable>The wall piece {0} in layer {1} cannot be used as a wall: {2} The planner takes the next piece in the list.</CBF_Machbar_WallUnusable>
   <CBF_Machbar_WallMissing>The wall piece {0} in layer {1} is not available because its mod is missing or the piece is disabled. The planner takes the next piece in the list.</CBF_Machbar_WallMissing>
   <CBF_Machbar_WallNone>No wall piece in layer {0} can be used as a wall. The ward stays without a wall. A wall piece must be 1 cell wide and at most 5 cells deep, consist only of wall and walkway, and end with wall on the outside and inside.</CBF_Machbar_WallNone>
@@ -342,6 +343,11 @@
 
   <CBF_Planner_Abtragrueckbau>Earlier rock removal outside the city undone, {0} cells stay rock.</CBF_Planner_Abtragrueckbau>
   <CBF_Planner_Anbauten>{0} annexes attached to buildings.</CBF_Planner_Anbauten>
+  <CBF_Planner_Pflichtanbauten>{0} required annexes attached, {1} placements dropped because a required annex did not fit.</CBF_Planner_Pflichtanbauten>
+  <CBF_Planner_PflichtOhneStueck>{0}: a required annex anchor asks for the annex category {1}, but no piece has it. {0} is never placed.</CBF_Planner_PflichtOhneStueck>
+  <CBF_Planner_NiedrigWeggelassen>{0} (layer {1}): low priority, only {2} of at least {3} placed because space ran out.</CBF_Planner_NiedrigWeggelassen>
+  <CBF_Pruef_NoPlan>No settlement type selected.</CBF_Pruef_NoPlan>
+  <CBF_Pruef_NoRequest>The plan could not be turned into a planner request.</CBF_Pruef_NoRequest>
   <CBF_Planner_Anlaufbremse>The fill phase of this layout was stopped after {0} seconds so that map generation does not stall.</CBF_Planner_Anlaufbremse>
   <CBF_Planner_AnlaufFehler>{0} layout(s) stopped with a program error ({1}). The search continued with the other layouts.</CBF_Planner_AnlaufFehler>
   <CBF_Planner_Aufgeschuettet>{0} marsh cells filled in inside the settlement and under roads, walls and fences.</CBF_Planner_Aufgeschuettet>
@@ -432,4 +438,14 @@
   <CBF_Planner_VerliesHoehleOhnePlatz>Dungeon: the cave of district {0} found no space.</CBF_Planner_VerliesHoehleOhnePlatz>
   <CBF_Planner_VerliesFernweg>Dungeon: {0} long tunnels were dug to deeper rock because short connections found no space.</CBF_Planner_VerliesFernweg>
   <CBF_Log_VerliesAusgang>Dungeon {0}: level {1} had no stairs up. They were placed at the start point.</CBF_Log_VerliesAusgang>
+  <CBF_Verlies_Aufstieg>Send up</CBF_Verlies_Aufstieg>
+  <CBF_Verlies_AufstiegDesc>Every pawn of yours on this level climbs up through all stairs on its own until it reaches the surface map.</CBF_Verlies_AufstiegDesc>
+  <CBF_Verlies_AufstiegNiemand>Nobody here could climb up.</CBF_Verlies_AufstiegNiemand>
+  <CBF_Verlies_Planen>Planning the dungeon...</CBF_Verlies_Planen>
+  <CBF_Verlies_Fernziel>{0} climbs up and then walks there.</CBF_Verlies_Fernziel>
+  <CBF_Verlies_Fernauswahl>{0} people on the other level stay queued. Right click here to give them a destination.</CBF_Verlies_Fernauswahl>
+  <CBF_Verlies_Hinauf>View level above</CBF_Verlies_Hinauf>
+  <CBF_Verlies_HinaufDesc>Switches the view to the level above. The selected people stay queued: right click there sends them up and to the clicked destination.</CBF_Verlies_HinaufDesc>
+  <CBF_Verlies_Hinab>View level below</CBF_Verlies_Hinab>
+  <CBF_Verlies_HinabDesc>Switches the view to the level below. The selected people stay queued: right click there sends them down and to the clicked destination.</CBF_Verlies_HinabDesc>
 </LanguageData>

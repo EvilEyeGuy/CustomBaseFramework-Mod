@@ -132,6 +132,19 @@
   <CBF_P_ModAdd>Add mod...</CBF_P_ModAdd>
   <CBF_P_ModActive>Active</CBF_P_ModActive>
   <CBF_P_ModInactive>Installed, not active</CBF_P_ModInactive>
+  <CBF_P_UsedMods>Used mods</CBF_P_UsedMods>
+  <CBF_P_UsedModsTip>Mods and DLCs whose things, floors and roofs this piece places directly. The base game is not listed.</CBF_P_UsedModsTip>
+  <CBF_P_UsedModsNone>Only the base game.</CBF_P_UsedModsNone>
+  <CBF_P_UsedModsCount>{0} thing(s)</CBF_P_UsedModsCount>
+  <CBF_P_UsedModsDlc>DLC</CBF_P_UsedModsDlc>
+  <CBF_P_UsedModsHint>Click a mod to see its things. On export each legend line gets MayRequire for its mod. Things from object lists at anchors are optional and not listed here.</CBF_P_UsedModsHint>
+  <CBF_P_AnnexRequired>Annex required</CBF_P_AnnexRequired>
+  <CBF_P_AnnexRequiredTip>The building is only placed if an annex fits at this anchor.</CBF_P_AnnexRequiredTip>
+  <CBF_P_AnnexPriority>Annex priority</CBF_P_AnnexPriority>
+  <CBF_P_AnnexPriorityTip>Anchors with a higher priority get their annex first. Critical and Important ignore the annex chance, Preferred raises it, Low halves it. Low anchors are filled last, after all other annexes of the settlement. Annex required is independent and stronger.</CBF_P_AnnexPriorityTip>
+  <CBF_P_AnnexCategories>Annex categories</CBF_P_AnnexCategories>
+  <CBF_P_AnnexCategoriesPiece>from the category of the piece</CBF_P_AnnexCategoriesPiece>
+  <CBF_P_AnnexCategoriesTip>Which categories the annex at this anchor is taken from. Empty means the annexes set at the category of the piece.</CBF_P_AnnexCategoriesTip>
   <CBF_AnchorConnect_Socket>A docking point for dungeon parts. Corridors, caves or other rooms connect here. Doors and openings on the outer edge count as docking points anyway, this anchor offers one explicitly.</CBF_AnchorConnect_Socket>
   <CBF_SocketType>Socket type</CBF_SocketType>
   <CBF_SocketTypeTip>What the generator puts here when something docks: door, open arch, cave opening or secret passage.</CBF_SocketTypeTip>

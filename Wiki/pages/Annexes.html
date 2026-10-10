@@ -139,6 +139,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <ul>
 <li>A <strong>Connect</strong> anchor named <strong>Annex</strong> on its outer wall. Mark one cell per possible annex spot, on the wall cell itself. The cell outside it must not belong to the house.</li>
 <li>Its category, or a parent category, lists the <strong>Annex categories</strong> that may attach. See <a href="Categories.html#annexes">Categories</a>. The <strong>+</strong> next to them opens a picker with search and mod filter.</li>
+<li>Optional per anchor: <strong>Annex categories</strong> replaces the categories of the house for this spot. <strong>Annex required</strong> places the house only if an annex fits here. <strong>Annex priority</strong> (Low to Critical) decides which anchors get their annex first: Critical and Important ignore the annex chance, Preferred raises it, Low halves it and is filled last.</li>
 </ul>
 <a class="bild" href="images/annex-picker.png" target="_blank"><img alt="Picking annex categories for a house category" src="images/annex-picker.png" loading="lazy"></a>
 <h2 id="what-the-annex-needs">What the annex needs</h2>
@@ -150,6 +151,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </li>
 <li>A category that a house names as annex category.</li>
 <li>An annex without a door of its own counts as open. It is entered from outside, like a shed or a pen.</li>
+<li>An annex can have annex anchors of its own, one level deep. Required anchors on an annex belong to the house it is attached to and are never used to attach the annex itself.</li>
 </ul>
 <p>An annex category with its pieces. The red Connect anchor either lies on the shared wall or one cell outside the shape:</p>
 <a class="bild" href="images/annex-category.png" target="_blank"><img alt="An annex category" src="images/annex-category.png" loading="lazy"></a>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical,DankPyon.Medieval.Overhaul">
+    <defName>CBF_Classical_MO_Fabrica_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_Smithy</li>
+    </categories>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>Bronze</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf</objects><lootTable>CBF_Classical_Loot_Workshop</lootTable></li>
+      <li><symbol>2</symbol><anchor>Arms</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf_Small</objects><lootTable>CBF_Classical_Loot_Arms</lootTable></li>
+      <li><symbol>8</symbol><anchor>Smith</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Classical_Residents</pawnList><chance>0.8</chance><pawnCount>1~1</pawnCount></li>
+      <li><symbol>A</symbol><thing>Column</thing><stuff>BlocksMarble</stuff></li>
+      <li MayRequire="OskarPotocki.VFE.Classical"><symbol>C</symbol><thing>VFEC_CraftingBench</thing><rotation>North</rotation></li>
+      <li><symbol>D</symbol><thing>Door</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>H</symbol><thing>FueledSmithy</thing><rotation>North</rotation></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>f</symbol><terrain>FlagstoneMarble</terrain></li>
+      <li><symbol>i</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>o</symbol><thing>TorchLamp</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>τ</symbol><thing>DankPyon_Anvil</thing><stuff>Steel</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>υ</symbol><thing>DankPyon_QuenchingBucket</thing><stuff>WoodLog</stuff></li>
+    </legend>
+    <mask>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+    </mask>
+    <terrain>
+      <li>ffffffff</li>
+      <li>ffffffff</li>
+      <li>ffffffff</li>
+      <li>ffffffff</li>
+      <li>ffffffff</li>
+      <li>ffffffff</li>
+      <li>ffffffff</li>
+      <li>........</li>
+    </terrain>
+    <things>
+      <li>IIIIIIII</li>
+      <li>I......I</li>
+      <li>IH..C..I</li>
+      <li>Io....oI</li>
+      <li>I.τ..υ.I</li>
+      <li>Ia....iI</li>
+      <li>IIIDIIII</li>
+      <li>..A.A...</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>........</li>
+    </roof>
+    <anchors>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+      <li>........</li>
+      <li>....8...</li>
+      <li>.11...2.</li>
+      <li>........</li>
+      <li>........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

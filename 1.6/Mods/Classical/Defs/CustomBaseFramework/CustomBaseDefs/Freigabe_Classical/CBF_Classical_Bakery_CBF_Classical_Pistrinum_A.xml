@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_Pistrinum_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_Bakery</li>
+    </categories>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>Flour</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf</objects><lootTable>CBF_Classical_Loot_Store</lootTable></li>
+      <li><symbol>2</symbol><anchor>Wine</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf_Small</objects><lootTable>CBF_Classical_Loot_Tavern</lootTable></li>
+      <li><symbol>8</symbol><anchor>Baker</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Classical_Residents</pawnList><chance>0.8</chance><pawnCount>1~1</pawnCount></li>
+      <li><symbol>9</symbol><anchor>Customers</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Classical_Residents</pawnList><chance>0.5</chance><pawnCount>1~2</pawnCount></li>
+      <li><symbol>D</symbol><thing>Door</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>S</symbol><thing>FueledStove</thing><rotation>North</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>t</symbol><thing>Table1x2c</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>u</symbol><thing>PlantPot</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>~</symbol><terrain>TileMarble</terrain></li>
+    </legend>
+    <mask>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+      <li>########</li>
+    </mask>
+    <terrain>
+      <li>~~~~~~~~</li>
+      <li>~~~~~~~~</li>
+      <li>~~~~~~~~</li>
+      <li>~~~~~~~~</li>
+      <li>~~~~~~~~</li>
+      <li>~~~~~~~~</li>
+    </terrain>
+    <things>
+      <li>IIIIIIII</li>
+      <li>Ia....iI</li>
+      <li>I.S....I</li>
+      <li>I......I</li>
+      <li>I.t..u.I</li>
+      <li>IIIIDIII</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+      <li>^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>........</li>
+      <li>.11...2.</li>
+      <li>.....8..</li>
+      <li>.....9..</li>
+      <li>........</li>
+      <li>........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

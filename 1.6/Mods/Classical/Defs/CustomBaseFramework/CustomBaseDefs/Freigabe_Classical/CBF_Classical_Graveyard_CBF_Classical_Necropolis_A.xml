@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_Necropolis_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_Graveyard</li>
+    </categories>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>A</symbol><thing>Column</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>G</symbol><thing>Sarcophagus</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
+      <li MayRequire="OskarPotocki.VFE.Classical"><symbol>V</symbol><thing>VFEC_WoodFiredCrematorium</thing><stuff>BlocksMarble</stuff><rotation>North</rotation></li>
+      <li><symbol>o</symbol><thing>TorchLamp</thing></li>
+      <li><symbol>u</symbol><thing>PlantPot</thing><stuff>BlocksMarble</stuff></li>
+    </legend>
+    <mask>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+    </mask>
+    <terrain>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+    </terrain>
+    <things>
+      <li>.A...........A.</li>
+      <li>......V........</li>
+      <li>u.............u</li>
+      <li>.G.G.G...G.G.G.</li>
+      <li>...............</li>
+      <li>.G.G.G...G.G.G.</li>
+      <li>o.............o</li>
+      <li>.A...........A.</li>
+      <li>...............</li>
+    </things>
+    <roof>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+    </roof>
+    <anchors>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

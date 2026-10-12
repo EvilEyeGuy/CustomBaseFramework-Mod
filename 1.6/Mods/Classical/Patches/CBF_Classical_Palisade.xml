@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Medieval Overhaul</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>Defs/CustomBaseFramework.SettlementPlanDef[starts-with(defName,"CBF_Plan_Classical_")]/wards/li/walls/li[text()="CBF_Classical_TownWall"]</xpath>
+          <value>
+            <li>CBF_Classical_MO_PalisadeWall</li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>Defs/CustomBaseFramework.SettlementPlanDef[starts-with(defName,"CBF_Plan_Classical_")]//tag[text()="CBF_Classical_TownTower"]</xpath>
+          <value>
+            <tag>CBF_Classical_PalisadeTower</tag>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>Defs/CustomBaseFramework.SettlementPlanDef[starts-with(defName,"CBF_Plan_Classical_")]//tag[text()="CBF_Classical_Gatehouse"]</xpath>
+          <value>
+            <tag>CBF_Classical_PalisadeGate</tag>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>Defs/CustomBaseFramework.SettlementPlanDef[starts-with(defName,"CBF_Plan_Classical_")]//tag[text()="CBF_Classical_WallAccess"]</xpath>
+          <value>
+            <tag>CBF_Classical_PalisadeAccess</tag>
+          </value>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationFindMod">
+      <mods>
+        <li>Vanilla Factions Expanded - Medieval 2</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationReplace">
+            <success>Always</success>
+            <xpath>Defs/CustomBaseFramework.SettlementPlanDef[starts-with(defName,"CBF_Plan_Classical_")]/wards/li/walls/li[text()="CBF_Classical_TownWall"]</xpath>
+            <value>
+              <li>CBF_Classical_M2_PalisadeWall</li>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <success>Always</success>
+            <xpath>Defs/CustomBaseFramework.SettlementPlanDef[starts-with(defName,"CBF_Plan_Classical_")]//tag[text()="CBF_Classical_TownTower"]</xpath>
+            <value>
+              <tag>CBF_Classical_PalisadeTower</tag>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <success>Always</success>
+            <xpath>Defs/CustomBaseFramework.SettlementPlanDef[starts-with(defName,"CBF_Plan_Classical_")]//tag[text()="CBF_Classical_Gatehouse"]</xpath>
+            <value>
+              <tag>CBF_Classical_PalisadeGate</tag>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <success>Always</success>
+            <xpath>Defs/CustomBaseFramework.SettlementPlanDef[starts-with(defName,"CBF_Plan_Classical_")]//tag[text()="CBF_Classical_WallAccess"]</xpath>
+            <value>
+              <tag>CBF_Classical_PalisadeAccess</tag>
+            </value>
+          </li>
+        </operations>
+      </match>
+    </nomatch>
+  </Operation>
+</Patch>

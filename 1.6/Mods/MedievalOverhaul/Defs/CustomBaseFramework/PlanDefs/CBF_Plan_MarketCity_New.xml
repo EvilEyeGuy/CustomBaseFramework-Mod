@@ -66,6 +66,7 @@
               <li><tag>CBF_MO_Barracks</tag><count>1~2</count></li>
               <li><tag>CBF_MO_Armory</tag><count>1~1</count></li>
               <li><tag>CBF_MO_Armoury</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Treasury</tag><count>1~1</count><priority>Critical</priority></li>
               <li><piece>CBF_MO_Dungeon</piece><count>0~1</count></li>
             </entries>
           </li>
@@ -284,6 +285,15 @@
     </techLevels>
 
     <worldTexture>World/WorldObjects/CBF/CBF_MarketTownLarge</worldTexture>
+  
+    <coreShapes>
+      <li>Grown</li>
+      <li>LShape</li>
+      <li>TShape</li>
+      <li>Cross</li>
+      <li>Step</li>
+      <li>Octagon</li>
+    </coreShapes>
   </CustomBaseFramework.SettlementPlanDef>
 
 </Defs>

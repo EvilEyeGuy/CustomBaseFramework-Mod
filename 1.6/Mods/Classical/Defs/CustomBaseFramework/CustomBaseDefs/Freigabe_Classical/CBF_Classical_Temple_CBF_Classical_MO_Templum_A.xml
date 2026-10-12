@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical,DankPyon.Medieval.Overhaul">
+    <defName>CBF_Classical_MO_Templum_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_Temple</li>
+    </categories>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>OfferingA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf_Small</objects><lootTable>CBF_Classical_Loot_Temple</lootTable></li>
+      <li><symbol>2</symbol><anchor>OfferingB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf_Small</objects><lootTable>CBF_Classical_Loot_Temple</lootTable></li>
+      <li><symbol>8</symbol><anchor>Priest</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Classical_Residents</pawnList><chance>0.8</chance><pawnCount>1~1</pawnCount></li>
+      <li><symbol>A</symbol><thing>Column</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>D</symbol><thing>Door</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>U</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>m</symbol><terrain>VFEC_MosaicsMarble</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>α</symbol><thing>DankPyon_Vase</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>χ</symbol><thing>DankPyon_Brazier1x1c</thing><stuff>BlocksGranite</stuff></li>
+    </legend>
+    <mask>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+    </mask>
+    <terrain>
+      <li>mmmmmmmmm</li>
+      <li>mmmmmmmmm</li>
+      <li>mmmmmmmmm</li>
+      <li>mmmmmmmmm</li>
+      <li>mmmmmmmmm</li>
+      <li>mmmmmmmmm</li>
+      <li>.........</li>
+      <li>.........</li>
+    </terrain>
+    <things>
+      <li>IIIIIIIII</li>
+      <li>I.χAUAχ.I</li>
+      <li>I.......I</li>
+      <li>I.α...α.I</li>
+      <li>Ia.....aI</li>
+      <li>IIIIDIIII</li>
+      <li>.A.A.A.A.</li>
+      <li>.........</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>.........</li>
+      <li>.........</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>.........</li>
+      <li>....8....</li>
+      <li>.........</li>
+      <li>.1.....2.</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

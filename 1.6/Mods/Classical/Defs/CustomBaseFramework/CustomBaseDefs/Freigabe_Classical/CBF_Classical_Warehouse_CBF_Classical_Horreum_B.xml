@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_Horreum_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_Warehouse</li>
+    </categories>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>StoreA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf</objects><lootTable>CBF_Classical_Loot_Store</lootTable></li>
+      <li><symbol>2</symbol><anchor>StoreB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf</objects><lootTable>CBF_Classical_Loot_Workshop</lootTable></li>
+      <li><symbol>3</symbol><anchor>StoreC</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf_Small</objects><lootTable>CBF_Classical_Loot_Tavern</lootTable></li>
+      <li><symbol>8</symbol><anchor>Keeper</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Classical_Residents</pawnList><chance>0.7</chance><pawnCount>1~1</pawnCount></li>
+      <li><symbol>D</symbol><thing>Door</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>i</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>o</symbol><thing>TorchLamp</thing></li>
+      <li><symbol>~</symbol><terrain>TileMarble</terrain></li>
+    </legend>
+    <mask>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>~~~~~~~</li>
+      <li>~~~~~~~</li>
+      <li>~~~~~~~</li>
+      <li>~~~~~~~</li>
+      <li>~~~~~~~</li>
+    </terrain>
+    <things>
+      <li>IIIIIII</li>
+      <li>Ia..a.I</li>
+      <li>I.....I</li>
+      <li>Io...iI</li>
+      <li>IIIDIII</li>
+    </things>
+    <roof>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.11.22.</li>
+      <li>...8...</li>
+      <li>.....3.</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

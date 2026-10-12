@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_TyrianWorks_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_TyrianWorks</li>
+    </categories>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>Dye</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf</objects><lootTable>CBF_Classical_Loot_Store</lootTable></li>
+      <li><symbol>8</symbol><anchor>Dyer</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Classical_Residents</pawnList><chance>0.7</chance><pawnCount>1~1</pawnCount></li>
+      <li><symbol>D</symbol><thing>Door</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksMarble</stuff></li>
+      <li MayRequire="OskarPotocki.VFE.Classical"><symbol>T</symbol><thing>VFEC_TyrianFarm</thing><rotation>North</rotation></li>
+      <li><symbol>W</symbol><anchor>Water</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>j</symbol><terrain>Bridge</terrain></li>
+      <li><symbol>o</symbol><thing>TorchLamp</thing></li>
+      <li><symbol>~</symbol><terrain>TileMarble</terrain></li>
+    </legend>
+    <mask>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>~~~~~~~</li>
+      <li>~~~~~~~</li>
+      <li>~~~~~~~</li>
+      <li>~~~~~~~</li>
+      <li>...j...</li>
+      <li>...j...</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </terrain>
+    <things>
+      <li>IIIIIII</li>
+      <li>Ia....I</li>
+      <li>I.o...I</li>
+      <li>IIIDIII</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>..T....</li>
+      <li>.......</li>
+    </things>
+    <roof>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.11....</li>
+      <li>....8..</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>WWWWWWW</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

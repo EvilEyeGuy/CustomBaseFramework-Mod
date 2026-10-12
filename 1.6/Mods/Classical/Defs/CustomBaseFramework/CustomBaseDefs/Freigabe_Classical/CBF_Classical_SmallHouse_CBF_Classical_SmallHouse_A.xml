@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_SmallHouse_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_SmallHouse</li>
+    </categories>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>Home</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf_Small</objects><lootTable>CBF_Classical_Loot_Home</lootTable></li>
+      <li><symbol>8</symbol><anchor>Family</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Classical_Residents</pawnList><chance>0.6</chance><pawnCount>1~2</pawnCount></li>
+      <li><symbol>D</symbol><thing>Door</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>E</symbol><thing>EndTable</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>b</symbol><thing>Bed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>o</symbol><thing>TorchLamp</thing></li>
+      <li><symbol>r</symbol><terrain>WoodPlankFloor</terrain></li>
+    </legend>
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+    <terrain>
+      <li>rrrrr</li>
+      <li>rrrrr</li>
+      <li>rrrrr</li>
+      <li>rrrrr</li>
+      <li>rrrrr</li>
+    </terrain>
+    <things>
+      <li>IIIII</li>
+      <li>I..EI</li>
+      <li>Ib.aI</li>
+      <li>I..oI</li>
+      <li>IIDII</li>
+    </things>
+    <roof>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.....</li>
+      <li>.....</li>
+      <li>...1.</li>
+      <li>.8...</li>
+      <li>.....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

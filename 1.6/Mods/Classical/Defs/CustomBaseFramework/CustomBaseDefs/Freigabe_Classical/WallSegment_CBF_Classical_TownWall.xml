@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_TownWall</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallSegment</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>f</symbol><terrain>FlagstoneMarble</terrain></li>
+    </legend>
+    <mask>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+    </mask>
+    <terrain>
+      <li>f</li>
+      <li>f</li>
+      <li>f</li>
+    </terrain>
+    <things>
+      <li>I</li>
+      <li>.</li>
+      <li>I</li>
+    </things>
+    <roof>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

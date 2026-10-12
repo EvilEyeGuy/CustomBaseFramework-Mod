@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_Annex_Triclinium_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_Annex_Triclinium</li>
+    </categories>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>Q</symbol><thing>Table2x2c</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>e</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>m</symbol><terrain>VFEC_MosaicsMarble</terrain></li>
+      <li><symbol>u</symbol><thing>PlantPot</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>w</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>~</symbol><terrain>TileMarble</terrain></li>
+    </legend>
+    <mask>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+    </mask>
+    <terrain>
+      <li>~~~~~~</li>
+      <li>~mmmm~</li>
+      <li>~mmmm~</li>
+      <li>~mmmm~</li>
+      <li>~~~~~~</li>
+    </terrain>
+    <things>
+      <li>IIIIII</li>
+      <li>Ie..wI</li>
+      <li>IeQ.wI</li>
+      <li>I...uI</li>
+      <li>IIIIII</li>
+    </things>
+    <roof>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>..+...</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

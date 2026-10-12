@@ -64,6 +64,7 @@
               <li><tag>CBF_MO_Keep</tag><count>1~1</count><unique>true</unique></li>
               <li><tag>CBF_MO_Barracks</tag><count>1~1</count></li>
               <li><tag>CBF_MO_Armory</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_Treasury</tag><count>0~1</count></li>
               <li><piece>CBF_MO_Dungeon</piece><count>0~1</count></li>
             </entries>
           </li>
@@ -261,6 +262,14 @@
     <worldTexture>World/WorldObjects/CBF/CBF_MarketTown</worldTexture>
   
     <forAllFactions>true</forAllFactions>
+  
+    <coreShapes>
+      <li>Grown</li>
+      <li>LShape</li>
+      <li>TShape</li>
+      <li>Cross</li>
+      <li>Octagon</li>
+    </coreShapes>
   </CustomBaseFramework.SettlementPlanDef>
 
 </Defs>

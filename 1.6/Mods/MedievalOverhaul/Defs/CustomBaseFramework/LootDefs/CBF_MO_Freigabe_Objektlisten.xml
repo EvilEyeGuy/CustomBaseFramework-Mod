@@ -569,4 +569,21 @@
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_NamedArmorStatue</defName>
+    <members>
+      <li><thing>DankPyon_Lootable_ArmorStatueNamed</thing><foreign>true</foreign></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Rug_Royal3x3</defName>
+    <members>
+      <li><thing>DankPyon_RugRoyal_LongLys3x3c</thing><stays>true</stays></li>
+      <li><thing>DankPyon_RugGrizzlyBear3x3c</thing><stays>true</stays></li>
+      <li><thing>DankPyon_RugPolarBear3x3c</thing><stays>true</stays></li>
+      <li><thing>DankPyon_RugThrumbo3x3c</thing><stays>true</stays></li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
 </Defs>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Classical_Shelf</defName>
+    <members>
+      <li>Shelf</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Classical_Shelf_Small</defName>
+    <members>
+      <li>ShelfSmall</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Classical_Pew</defName>
+    <members>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Pew</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Classical_Brazier</defName>
+    <members>
+      <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+</Defs>

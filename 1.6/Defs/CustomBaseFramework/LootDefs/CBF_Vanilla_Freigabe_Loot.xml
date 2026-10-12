@@ -17,4 +17,140 @@
     </entries>
   </CustomBaseFramework.LootTableDef>
 
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_BonusArms</defName>
+    <label>BonusArms</label>
+    <rolls>1~1</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_BonusArms</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_BonusMed</defName>
+    <label>BonusMed</label>
+    <rolls>1~1</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_BonusMed</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_BonusTreasure</defName>
+    <label>BonusTreasure</label>
+    <rolls>1~1</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>16</weight><table>CBF_Vanilla_Goods_BonusValuables</table></li>
+      <li><weight>4</weight><table>CBF_Vanilla_Goods_BonusRegalia</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Prunk</defName>
+    <label>Prunk</label>
+    <rolls>1~1</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>7</weight><table>CBF_Vanilla_Goods_PrunkGear</table></li>
+      <li><weight>3</weight><table>CBF_Vanilla_Goods_PrunkRare</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Goods_PrunkGear</defName>
+    <label>masterpieces</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>10</weight><thing>MeleeWeapon_MonoSword</thing><count>1~1</count><quality>Excellent~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>10</weight><thing>MeleeWeapon_PlasmaSword</thing><count>1~1</count><quality>Excellent~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>6</weight><thing>MeleeWeapon_Zeushammer</thing><count>1~1</count><quality>Excellent~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>Apparel_PowerArmor</thing><count>1~1</count><quality>Excellent~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Apparel_PowerArmorHelmet</thing><count>1~1</count><quality>Excellent~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>6</weight><thing>Apparel_ArmorCataphract</thing><count>1~1</count><quality>Excellent~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Gun_ChargeLance</thing><count>1~1</count><quality>Excellent~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Gun_ChargeRifle</thing><count>1~1</count><quality>Excellent~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>4</weight><thing>Apparel_CrownStellic</thing><count>1~1</count><quality>Excellent~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Goods_PrunkRare</defName>
+    <label>rare finds</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>4</weight><thing>AIPersonaCore</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey"><weight>3</weight><thing>Gravcore</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>6</weight><category>NeurotrainersPsycast</category><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>ComponentSpacer</thing><count>8~15</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Goods_BonusValuables</defName>
+    <label>valuables</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>20</weight><thing>Gold</thing><count>20~80</count><onMissing>Skip</onMissing></li>
+      <li><weight>15</weight><thing>ComponentSpacer</thing><count>3~8</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech"><weight>10</weight><thing>Genepack</thing><count>2~4</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech"><weight>5</weight><thing>SubcoreRegular</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly"><weight>6</weight><thing>Shard</thing><count>2~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey"><weight>6</weight><thing>GravlitePanel</thing><count>5~10</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey"><weight>3</weight><thing>Gravcore</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>AIPersonaCore</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Goods_BonusRegalia</defName>
+    <label>regalia</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>4</weight><thing>Apparel_Crown</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>3</weight><thing>Apparel_Coronet</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>3</weight><thing>Apparel_CrownStellic</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Goods_BonusMed</defName>
+    <label>fine medicine</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>12</weight><thing>MedicineUltratech</thing><count>3~8</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>BionicArm</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>BionicLeg</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li><weight>2</weight><thing>BionicEye</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li><weight>2</weight><thing>Luciferium</thing><count>2~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>5</weight><category>NeurotrainersPsycast</category><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech"><weight>4</weight><thing>HemogenPack</thing><count>4~10</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Goods_BonusArms</defName>
+    <label>fine arms</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>8</weight><thing>Gun_ChargeRifle</thing><count>1~1</count><quality>Normal~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>5</weight><thing>Gun_ChargeLance</thing><count>1~1</count><quality>Normal~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Apparel_PowerArmor</thing><count>1~1</count><quality>Normal~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Apparel_PowerArmorHelmet</thing><count>1~1</count><quality>Normal~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>5</weight><thing>MeleeWeapon_MonoSword</thing><count>1~1</count><quality>Normal~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>5</weight><thing>MeleeWeapon_PlasmaSword</thing><count>1~1</count><quality>Normal~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>3</weight><thing>MeleeWeapon_Zeushammer</thing><count>1~1</count><quality>Normal~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>2</weight><thing>Apparel_ArmorCataphract</thing><count>1~1</count><quality>Normal~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>2</weight><thing>Apparel_ArmorHelmetCataphract</thing><count>1~1</count><quality>Normal~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Gun_AssaultRifle</thing><count>1~1</count><quality>Normal~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Gun_SniperRifle</thing><count>1~1</count><quality>Normal~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
 </Defs>

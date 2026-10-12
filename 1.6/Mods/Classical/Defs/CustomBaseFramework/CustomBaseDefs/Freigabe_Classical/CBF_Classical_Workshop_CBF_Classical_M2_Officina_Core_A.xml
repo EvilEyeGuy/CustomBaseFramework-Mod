@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical,OskarPotocki.VFE.Medieval2">
+    <defName>CBF_Classical_M2_Officina_Core_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_Workshop</li>
+    </categories>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>!</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind><annexRequired>true</annexRequired><annexCategories><li>CBF_Classical_Annex_Horreum</li></annexCategories></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>1</symbol><anchor>ToolShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf</objects><lootTable>CBF_Classical_Loot_Workshop</lootTable></li>
+      <li><symbol>8</symbol><anchor>Craftsman</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Classical_Residents</pawnList><chance>0.7</chance></li>
+      <li MayRequire="OskarPotocki.VFE.Classical"><symbol>C</symbol><thing>VFEC_CraftingBench</thing><rotation>North</rotation></li>
+      <li><symbol>D</symbol><thing>Door</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>G</symbol><thing>TableSculpting</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksMarble</stuff></li>
+      <li MayRequire="OskarPotocki.VFE.Classical"><symbol>R</symbol><thing>VFEC_MeatDryingRack</thing></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>f</symbol><terrain>FlagstoneMarble</terrain></li>
+      <li><symbol>o</symbol><thing>TorchLamp</thing></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>Ω</symbol><thing>VFEM2_ArtToolStand</thing><stuff>WoodLog</stuff></li>
+    </legend>
+    <mask>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+    </mask>
+    <terrain>
+      <li>fffffffff</li>
+      <li>fffffffff</li>
+      <li>fffffffff</li>
+      <li>fffffffff</li>
+      <li>fffffffff</li>
+      <li>fffffffff</li>
+      <li>fffffffff</li>
+    </terrain>
+    <things>
+      <li>IIIIIIIII</li>
+      <li>IC...G..I</li>
+      <li>I......ΩI</li>
+      <li>I.......I</li>
+      <li>I.R...o.I</li>
+      <li>Ia......I</li>
+      <li>IIIDIIIII</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>+...8...!</li>
+      <li>.........</li>
+      <li>.11......</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Annex_TrophyHall_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Annex_Trophy</li>
+    </categories>
+    <style>CBF_Medieval</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>$</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>South</rotation></li>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_Building_SkullGold</thing></li>
+      <li><symbol>P</symbol><anchor>TrophyChest</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_TrophyParts</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>T</symbol><anchor>TrophyStand</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_ArmorStand</objects><lootTable>CBF_MO_Loot_TrophySet</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>U</symbol><thing>DankPyon_RugGrizzlyBear3x3c</thing><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>V</symbol><thing>DankPyon_RugWolfTimber2x2c</thing><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_Candelabra</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>d</symbol><terrain>DankPyon_DarkWoodPlankFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>l</symbol><thing>DankPyon_ArmorStatue</thing><stuff>DankPyon_IronIngot</stuff><rotation>North</rotation></li>
+    </legend>
+    <mask>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+    </mask>
+    <terrain>
+      <li>ddddddddd</li>
+      <li>ddddddddd</li>
+      <li>ddddddddd</li>
+      <li>ddddddddd</li>
+      <li>ddddddddd</li>
+      <li>ddddddddd</li>
+      <li>ddddddddd</li>
+    </terrain>
+    <things>
+      <li>SSSSSSSSS</li>
+      <li>SYl.l.lKS</li>
+      <li>S.......S</li>
+      <li>S.......F</li>
+      <li>S..U....S</li>
+      <li>S$....V.S</li>
+      <li>SSSSSSSSS</li>
+    </things>
+    <things2>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.......$.</li>
+      <li>.........</li>
+    </things2>
+    <roof>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>..T.T.T..</li>
+      <li>.........</li>
+      <li>+........</li>
+      <li>.........</li>
+      <li>.P.....P.</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

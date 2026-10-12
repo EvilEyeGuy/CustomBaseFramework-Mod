@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical,DankPyon.Medieval.Overhaul">
+    <defName>CBF_Classical_MO_Annex_Balneum_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_Annex_Balneum</li>
+    </categories>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li MayRequire="OskarPotocki.VFE.Classical"><symbol>B</symbol><thing>VFEC_Thermaebath</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>m</symbol><terrain>VFEC_MosaicsMarble</terrain></li>
+      <li><symbol>~</symbol><terrain>TileMarble</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>α</symbol><thing>DankPyon_Vase</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>δ</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+    </legend>
+    <mask>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>~~~~~~~</li>
+      <li>~mmmmm~</li>
+      <li>~mmmmm~</li>
+      <li>~mmmmm~</li>
+      <li>~mmmmm~</li>
+      <li>~mmmmm~</li>
+      <li>~~~~~~~</li>
+    </terrain>
+    <things>
+      <li>IIIIIII</li>
+      <li>I....δI</li>
+      <li>I.....I</li>
+      <li>I.....I</li>
+      <li>I.....I</li>
+      <li>IB...αI</li>
+      <li>IIIIIII</li>
+    </things>
+    <roof>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>...+...</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

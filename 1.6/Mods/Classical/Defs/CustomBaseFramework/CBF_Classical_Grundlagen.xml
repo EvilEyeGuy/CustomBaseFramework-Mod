@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.StyleDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical</defName>
+    <label>Classical</label>
+  </CustomBaseFramework.StyleDef>
+
+  <CustomBaseFramework.MaterialListDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_MaterialList</defName>
+    <label>VFE Classical</label>
+    <parent>CBF_MaterialList_Base</parent>
+  </CustomBaseFramework.MaterialListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_Residents</defName>
+    <label>residents</label>
+    <role>Civilian</role>
+    <radius>4</radius>
+    <members>
+      <li><kind>VFEC_Plebeian</kind><weight>6</weight></li>
+      <li><kind>VFEC_RepublicVillager</kind><weight>6</weight></li>
+      <li><kind>VFEC_RepublicTrader</kind><weight>1</weight></li>
+      <li><kind>VFEC_RepublicSenator</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_Garrison_Walkway</defName>
+    <label>wall garrison</label>
+    <role>Sentry</role>
+    <radius>4</radius>
+    <members>
+      <li><kind>VFEC_RepublicArcher</kind><weight>3</weight></li>
+      <li><kind>VFEC_TownGuard</kind><weight>2</weight></li>
+      <li><kind>VFEC_RepublicAuxilia</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_Garrison_Gate</defName>
+    <label>gate garrison</label>
+    <role>Guard</role>
+    <radius>4</radius>
+    <members>
+      <li><kind>VFEC_Legionnaire</kind><weight>3</weight></li>
+      <li><kind>VFEC_TownGuard</kind><weight>2</weight></li>
+      <li><kind>VFEC_Centurion</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_Garrison_Inside</defName>
+    <label>town garrison</label>
+    <role>Guard</role>
+    <radius>4</radius>
+    <members>
+      <li><kind>VFEC_TownGuard</kind><weight>3</weight></li>
+      <li><kind>VFEC_Legionnaire</kind><weight>2</weight></li>
+      <li><kind>VFEC_Praetorian</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+</Defs>

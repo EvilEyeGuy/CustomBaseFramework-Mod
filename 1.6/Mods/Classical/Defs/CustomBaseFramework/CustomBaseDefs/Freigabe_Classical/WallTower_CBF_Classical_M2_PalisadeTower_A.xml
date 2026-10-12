@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical,OskarPotocki.VFE.Medieval2">
+    <defName>CBF_Classical_M2_PalisadeTower_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallTower</li>
+      <li>CBF_Classical_PalisadeTower</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>ArmsShelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf_Small</objects><lootTable>CBF_Classical_Loot_Arms</lootTable></li>
+      <li><symbol>8</symbol><anchor>WallGuard</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Classical_Garrison_Inside</pawnList><chance>0.9</chance><pawnCount>1~2</pawnCount></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>I</symbol><thing>VFEM2_Palisade</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>K</symbol><anchor>Wall</anchor></li>
+      <li MayRequire="OskarPotocki.VFE.Classical"><symbol>X</symbol><thing>VFEC_Turret_Scorpion</thing><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>o</symbol><thing>TorchLamp</thing></li>
+    </legend>
+    <mask>
+      <li>.#####.</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>.#####.</li>
+    </mask>
+    <terrain>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </terrain>
+    <things>
+      <li>.IIIII.</li>
+      <li>II...II</li>
+      <li>I..X..I</li>
+      <li>I.....I</li>
+      <li>I.o.a.I</li>
+      <li>II...II</li>
+      <li>.IIIII.</li>
+    </things>
+    <roof>
+      <li>.^^^^^.</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>.^^^^^.</li>
+    </roof>
+    <anchors>
+      <li>...K...</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>K.8...K</li>
+      <li>....1..</li>
+      <li>.......</li>
+      <li>...K...</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

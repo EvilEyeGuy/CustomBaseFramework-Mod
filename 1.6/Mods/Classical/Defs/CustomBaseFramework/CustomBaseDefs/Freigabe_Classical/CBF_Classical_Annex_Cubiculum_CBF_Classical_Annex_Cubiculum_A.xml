@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_Annex_Cubiculum_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_Annex_Cubiculum</li>
+    </categories>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>1</symbol><anchor>CubiculumBox</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf_Small</objects><lootTable>CBF_Classical_Loot_Home</lootTable></li>
+      <li><symbol>D</symbol><thing>Door</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>E</symbol><thing>EndTable</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>b</symbol><thing>Bed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>g</symbol><terrain>VFEC_MosaicsGranite</terrain></li>
+      <li><symbol>~</symbol><terrain>TileMarble</terrain></li>
+    </legend>
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+    <terrain>
+      <li>~~~~~</li>
+      <li>~ggg~</li>
+      <li>~ggg~</li>
+      <li>~ggg~</li>
+      <li>~~~~~</li>
+    </terrain>
+    <things>
+      <li>IIIII</li>
+      <li>I..aI</li>
+      <li>I...I</li>
+      <li>Ib.EI</li>
+      <li>IIDII</li>
+    </things>
+    <roof>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+    </roof>
+    <anchors>
+      <li>..+..</li>
+      <li>...1.</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

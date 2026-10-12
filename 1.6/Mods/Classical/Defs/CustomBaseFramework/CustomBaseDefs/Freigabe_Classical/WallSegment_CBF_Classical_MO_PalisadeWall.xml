@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical,DankPyon.Medieval.Overhaul">
+    <defName>CBF_Classical_MO_PalisadeWall</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallSegment</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_Palisade</thing><stuff>DankPyon_RawWood</stuff></li>
+    </legend>
+    <mask>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+    </mask>
+    <terrain>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+    </terrain>
+    <things>
+      <li>I</li>
+      <li>.</li>
+      <li>I</li>
+    </things>
+    <roof>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

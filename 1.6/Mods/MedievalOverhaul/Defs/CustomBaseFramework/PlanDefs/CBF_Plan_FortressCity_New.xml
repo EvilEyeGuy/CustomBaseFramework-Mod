@@ -65,6 +65,7 @@
               <li><tag>CBF_MO_Barracks</tag><count>2~2</count></li>
               <li><tag>CBF_MO_Armory</tag><count>1~3</count></li>
               <li><tag>CBF_MO_Armoury</tag><count>1~1</count></li>
+              <li><tag>CBF_MO_Treasury</tag><count>1~1</count><priority>Critical</priority></li>
               <li><piece>CBF_MO_Dungeon</piece><count>1~2</count></li>
             </entries>
           </li>
@@ -72,7 +73,7 @@
             <name>Center</name>
             <entries>
               <li><tag>CBF_MO_NobleHouse</tag><count>1~3</count></li>
-              <li><tag>CBF_MO_Guild</tag><count>0~1</count></li>
+              <li><tag>CBF_MO_GuildFortress</tag><count>1~1</count><priority>Critical</priority></li>
               <li><tag>CBF_MO_Tavern</tag><count>1~1</count></li>
               <li><tag>CBF_MO_CatapultEmplacement</tag><count>3~5</count></li>
               <li><tag>CBF_MO_Workshop</tag><count>1~3</count></li>
@@ -257,6 +258,16 @@
     <worldTexture>World/WorldObjects/CBF/CBF_FortressTown</worldTexture>
   
     <forAllFactions>true</forAllFactions>
+  
+    <coreShapes>
+      <li>Grown</li>
+      <li>Rectangle</li>
+      <li>LShape</li>
+      <li>TShape</li>
+      <li>Cross</li>
+      <li>Step</li>
+      <li>Octagon</li>
+    </coreShapes>
   </CustomBaseFramework.SettlementPlanDef>
 
 </Defs>

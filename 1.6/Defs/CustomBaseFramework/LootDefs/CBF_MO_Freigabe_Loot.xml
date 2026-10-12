@@ -277,4 +277,109 @@
     </entries>
   </CustomBaseFramework.LootTableDef>
 
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_BonusTreasure</defName>
+    <label>BonusTreasure</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>20</weight><table>CBF_MO_Goods_Treasure</table></li>
+      <li><weight>15</weight><table>CBF_MO_Goods_Gems</table></li>
+      <li><weight>10</weight><table>CBF_MO_Goods_Dishes</table></li>
+      <li><weight>12</weight><table>CBF_MO_Goods_Rings</table></li>
+      <li><weight>6</weight><table>CBF_MO_Goods_BonusRegalia</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_TrophyParts</defName>
+    <label>TrophyParts</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>12</weight><table>CBF_MO_Goods_MonsterParts</table></li>
+      <li><weight>2</weight><table>CBF_MO_Goods_Rings</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_TrophySet</defName>
+    <label>TrophySet</label>
+    <rolls>1~1</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_MO_Goods_MonsterSet</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Goods_MonsterSet</defName>
+    <label>monster gear</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Apparel_Lindwurm</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_Headgear_Lindwurm</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_Apparel_LindwurmCloak</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_ShieldLindwurm</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_Apparel_BonePlating</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_Apparel_DirewolfPelt</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_Apparel_HyenaPelt</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_Headgear_BearGrizzly</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Headgear_BearPolar</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_Headgear_WolfTimber</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Headgear_WolfArctic</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Goods_MonsterParts</defName>
+    <label>monster parts</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>6</weight><thing>DankPyon_LindwurmScales</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_LindwurmBlood</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_LindwurmBones</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_Leather_Lindwurm</thing><count>20~50</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>2</weight><thing>DankPyon_UnholdHeart</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_UnholdBones</thing><count>2~4</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>4</weight><thing>DankPyon_UnholdHide</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Goods_Rings</defName>
+    <label>rings</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_Ring_Haste</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_Ring_Holding</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>5</weight><thing>DankPyon_Ring_Tending</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Ring_Research</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>2</weight><thing>DankPyon_Ring_StunImmunity</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Ring_Emerald</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Ring_Ruby</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>3</weight><thing>DankPyon_Ring_Sapphire</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>2</weight><thing>DankPyon_Necklace_Emerald</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>2</weight><thing>DankPyon_Necklace_Ruby</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>2</weight><thing>DankPyon_Necklace_Sapphire</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><weight>2</weight><thing>DankPyon_Necklace_Jade</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Goods_BonusRegalia</defName>
+    <label>regalia</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>4</weight><thing>Apparel_Crown</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>4</weight><thing>Apparel_Coronet</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>2</weight><thing>Apparel_CrownStellic</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>5</weight><thing>Apparel_RobeRoyal</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="Ludeon.RimWorld.Royalty"><weight>4</weight><thing>Apparel_VestRoyal</thing><count>1~1</count><quality>Good~Legendary</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
 </Defs>

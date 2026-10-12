@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_Annex_Culina_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_Annex_Culina</li>
+    </categories>
+    <style>CBF_Classical</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li><symbol>1</symbol><anchor>Larder</anchor><anchorKind>Fill</anchorKind><objects>CBF_Classical_Shelf</objects><lootTable>CBF_Classical_Loot_Store</lootTable></li>
+      <li><symbol>D</symbol><thing>Door</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksMarble</stuff></li>
+      <li MayRequire="OskarPotocki.VFE.Classical"><symbol>R</symbol><thing>VFEC_MeatDryingRack</thing></li>
+      <li><symbol>S</symbol><thing>FueledStove</thing><rotation>North</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>a</symbol><thing>Shelf</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>f</symbol><terrain>FlagstoneMarble</terrain></li>
+      <li><symbol>o</symbol><thing>TorchLamp</thing></li>
+    </legend>
+    <mask>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+    </mask>
+    <terrain>
+      <li>ffffff</li>
+      <li>ffffff</li>
+      <li>ffffff</li>
+      <li>ffffff</li>
+      <li>ffffff</li>
+    </terrain>
+    <things>
+      <li>IIIIII</li>
+      <li>IS..RI</li>
+      <li>D....I</li>
+      <li>Io.a.I</li>
+      <li>IIIIII</li>
+    </things>
+    <roof>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>...11.</li>
+      <li>..+...</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

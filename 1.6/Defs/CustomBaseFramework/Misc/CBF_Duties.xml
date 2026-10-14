@@ -130,4 +130,44 @@
     </thinkNode>
   </DutyDef>
 
+  <DutyDef>
+    <defName>CBF_HoldAlarm</defName>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="JobGiver_TakeCombatEnhancingDrug">
+          <onlyIfInDanger>true</onlyIfInDanger>
+        </li>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Abilities_Aggressive</treeDef>
+        </li>
+        <li Class="CustomBaseFramework.JobGiver_CBFGefecht">
+          <targetAcquireRadius>50</targetAcquireRadius>
+          <targetKeepRadius>60</targetKeepRadius>
+          <maxDistFromSelf>25</maxDistFromSelf>
+        </li>
+        <li Class="JobGiver_ManTurretsNearSelf">
+          <maxDistFromPoint>25</maxDistFromPoint>
+        </li>
+        <li Class="JobGiver_AIDefendPoint">
+          <targetAcquireRadius>50</targetAcquireRadius>
+          <targetKeepRadius>60</targetKeepRadius>
+        </li>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>SatisfyBasicNeeds</treeDef>
+        </li>
+        <li Class="JobGiver_SeekSafeTemperature" />
+        <li Class="ThinkNode_ConditionalCloseToDutyTarget">
+          <maxDistToDutyTarget>12</maxDistToDutyTarget>
+          <subNodes>
+            <li Class="JobGiver_WanderAnywhere">
+              <wanderRadius>12</wanderRadius>
+            </li>
+          </subNodes>
+        </li>
+        <li Class="JobGiver_WanderNearDutyLocation" />
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
 </Defs>

@@ -91,7 +91,7 @@
   <CBF_Lo_AtAnchors>Highlighted: {0}</CBF_Lo_AtAnchors>
   <CBF_PawnKindFilter>Show</CBF_PawnKindFilter>
   <CBF_PawnKindPeople>People</CBF_PawnKindPeople>
-  <CBF_PawnKindAnimals>Animals</CBF_PawnKindAnimals>
+  <CBF_PawnKindAnimals>Animals and creatures</CBF_PawnKindAnimals>
   <CBF_EditPawnListTip>Edit this pawn list</CBF_EditPawnListTip>
   <CBF_Lo_MaterialLists>Material lists</CBF_Lo_MaterialLists>
   <CBF_Lo_MaterialListsShort>Materials</CBF_Lo_MaterialListsShort>
@@ -212,4 +212,27 @@
   <CBF_Lo_FloorRightHint>In the Piece tab you pick the list for each floor symbol under Floors. Without a list, the floor drawn in the piece is laid.</CBF_Lo_FloorRightHint>
   <CBF_Lo_FloorSaved>{0} saved, {1} floors.</CBF_Lo_FloorSaved>
   <CBF_Lo_FloorNone>No floor list given.</CBF_Lo_FloorNone>
+  <CBF_Lo_Ruins>Ruins</CBF_Lo_Ruins>
+  <CBF_Lo_RuinsShort>Ruins</CBF_Lo_RuinsShort>
+  <CBF_Ru_NoNew>New ruins are set up in XML for now.</CBF_Ru_NoNew>
+  <CBF_Ru_Hint>Who holds a quest ruin. The other ruin fields stay in the XML file.</CBF_Ru_Hint>
+  <CBF_Ru_Occupation>Occupation</CBF_Ru_Occupation>
+  <CBF_Ru_Occ_None>Nobody</CBF_Ru_Occ_None>
+  <CBF_Ru_Occ_NoneTip>The ruin stays empty.</CBF_Ru_Occ_NoneTip>
+  <CBF_Ru_Occ_Builder>Original owners</CBF_Ru_Occ_Builder>
+  <CBF_Ru_Occ_BuilderTip>The faction that built the place still holds it.</CBF_Ru_Occ_BuilderTip>
+  <CBF_Ru_Occ_Occupier>Occupiers</CBF_Ru_Occ_Occupier>
+  <CBF_Ru_Occ_OccupierTip>The conquering faction holds the ruin, drawn from raid points.</CBF_Ru_Occ_OccupierTip>
+  <CBF_Ru_Occ_Animals>Wild animals</CBF_Ru_Occ_Animals>
+  <CBF_Ru_Occ_AnimalsTip>Aggressive animals of the biome hold the ruin as manhunters, scaled by the threat points of the site.</CBF_Ru_Occ_AnimalsTip>
+  <CBF_Ru_Creatures>Creatures</CBF_Ru_Creatures>
+  <CBF_Ru_CreaturesTip>A pawn list. Each entry spawns exactly one pawn, weights do not count. Animals come as manhunters.</CBF_Ru_CreaturesTip>
+  <CBF_Ru_OpenNone>Pick a pawn list first.</CBF_Ru_OpenNone>
+  <CBF_Ru_OpenTip>Open the pawn list in the Pawn tab.</CBF_Ru_OpenTip>
+  <CBF_Ru_NoCreatures>No creatures. The occupation above decides who holds the ruin.</CBF_Ru_NoCreatures>
+  <CBF_Ru_EachOne>Each entry of the list is one pawn. One troll is a list with one entry, three wolves are three entries.</CBF_Ru_EachOne>
+  <CBF_Ru_Replaces>The creatures replace the occupation above.</CBF_Ru_Replaces>
+  <CBF_Ru_Spawns>Spawns</CBF_Ru_Spawns>
+  <CBF_Ru_ListEmpty>The pawn list is empty, nothing spawns.</CBF_Ru_ListEmpty>
+  <CBF_Ru_RightHint>Saving changes only occupation and creatures in the ruin's file.</CBF_Ru_RightHint>
 </LanguageData>

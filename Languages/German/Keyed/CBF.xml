@@ -255,13 +255,11 @@
   <CBF_MergePatches>Patches zusammenfassen</CBF_MergePatches>
   <CBF_AnchorPawnListNone>keine, einzelne Art unten</CBF_AnchorPawnListNone>
   <CBF_RoleGuard>Wache</CBF_RoleGuard>
-  <CBF_RoleCivilian>Zivil</CBF_RoleCivilian>
   <CBF_RolePost>hält die Stellung</CBF_RolePost>
   <CBF_RoleCrew>bedient Geschütze</CBF_RoleCrew>
   <CBF_RoleGuardDesc>Geht in die Besatzung des Ortes. Flieht nicht einzeln und zieht mit zum Angriff.</CBF_RoleGuardDesc>
   <CBF_RolePostDesc>Hält diese Stelle und verteidigt sie. Zieht nicht mit und räumt sie nicht. Für Türme und Torhäuser.</CBF_RolePostDesc>
   <CBF_RoleCrewDesc>Bedient das nächste bedienbare Geschütz und bleibt dort. Bedürfnisse ziehen ihn nicht weg.</CBF_RoleCrewDesc>
-  <CBF_RoleCivilianDesc>Bleibt in der Nähe und läuft weg, wenn es gefährlich wird. Für Wirte, Marktvolk, Bauern.</CBF_RoleCivilianDesc>
   <CBF_NewPawnList>Neue Einheitenliste</CBF_NewPawnList>
   <CBF_EditPawnList>Einheitenliste bearbeiten</CBF_EditPawnList>
   <CBF_PawnListSaved>Einheitenliste {0} gesichert, {1} Arten.</CBF_PawnListSaved>
@@ -758,10 +756,10 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_GarrisonHead>Garnison und Leistung</CBF_GarrisonHead>
   <CBF_GarrisonIntro>Große Orte erzeugen nicht alle ihre Pawns gleich mit der Karte. Ein Teil wird zurückgehalten und erscheint erst, wenn sein Stadtteil Alarm schlägt. Je weniger Pawns gleichzeitig auf der Karte sind, desto flüssiger läuft das Spiel.</CBF_GarrisonIntro>
   <CBF_GarrisonShare>Garnison auf der Straße zu Beginn: {0} %</CBF_GarrisonShare>
-  <CBF_GarrisonShareHelp>Anteil jedes Stadtteils, der gleich mit der Karte erscheint. Bei den Kämpfern mindestens drei je Stadtteil. Ist das mehr, als die Obergrenze nach den Wachen übrig lässt, wird gekürzt, Kämpfer bleiben zuerst. Der Rest wird zurückgehalten und erscheint, sobald der Stadtteil Alarm schlägt: Schüsse in der Nähe, Treffer auf seine Mauern oder Häuser oder ein Feind wird gesehen. Zuerst erscheinen die Kämpfer, dann die Zivilisten, beide im Rahmen der Obergrenze. Mauern, Tore, Geschütze und Posten sind immer voll besetzt. Gilt für neu erzeugte Orte.</CBF_GarrisonShareHelp>
+  <CBF_GarrisonShareHelp>Anteil jedes Stadtteils, der gleich mit der Karte erscheint, mindestens drei je Stadtteil. Ist das mehr, als die Obergrenze nach den Wachen übrig lässt, wird gekürzt. Der Rest wird zurückgehalten und erscheint, sobald der Stadtteil Alarm schlägt: Schüsse in der Nähe, Treffer auf seine Mauern oder Häuser oder ein Feind wird gesehen. Er erscheint im Rahmen der Obergrenze. Mauern, Tore, Geschütze und Posten sind immer voll besetzt. Gilt für neu erzeugte Orte.</CBF_GarrisonShareHelp>
   <CBF_GarrisonCap>Höchstens gleichzeitig auf der Karte: {0}</CBF_GarrisonCap>
   <CBF_GarrisonCapNone>Höchstens gleichzeitig auf der Karte: ohne Grenze</CBF_GarrisonCapNone>
-  <CBF_GarrisonCapHelp>Obergrenze für die kampffähigen Pawns eines Ortes, die gleichzeitig auf der Karte sind: Wachen auf Mauern, Toren, Geschützen und Posten, die Garnison der Stadtteile und Zivilisten. Wer am Boden liegt, Gefangene und noch nicht erschienene Pawns zählen nicht. Die Wachen sind immer voll besetzt. Die Stadtteile bekommen den Rest, nach Größe verteilt, aber mindestens drei Kämpfer je Stadtteil. Liegen die Wachen allein schon über der Grenze, kann die Karte daher etwas darüber liegen. Fällt jemand aus, erscheint der Nächste. Höhere Werte für schnelle Rechner, niedrigere für langsame. Eine geänderte Grenze gilt sofort für alle weiteren Nachrücker. Wer schon auf der Karte ist, bleibt; Senken entfernt niemanden. Orte, die ohne Reserve erzeugt wurden, sind nicht betroffen.</CBF_GarrisonCapHelp>
+  <CBF_GarrisonCapHelp>Obergrenze für die kampffähigen Pawns eines Ortes, die gleichzeitig auf der Karte sind: Wachen auf Mauern, Toren, Geschützen und Posten und die Garnison der Stadtteile. Wer am Boden liegt, Gefangene und noch nicht erschienene Pawns zählen nicht. Die Wachen sind immer voll besetzt. Die Stadtteile bekommen den Rest, nach Größe verteilt, aber mindestens drei je Stadtteil. Liegen die Wachen allein schon über der Grenze, kann die Karte daher etwas darüber liegen. Fällt jemand aus, erscheint der Nächste. Höhere Werte für schnelle Rechner, niedrigere für langsame. Eine geänderte Grenze gilt sofort für alle weiteren Nachrücker. Wer schon auf der Karte ist, bleibt; Senken entfernt niemanden. Orte, die ohne Reserve erzeugt wurden, sind nicht betroffen.</CBF_GarrisonCapHelp>
   <CBF_GarrisonBatch>Nachschub je Schub: {0}</CBF_GarrisonBatch>
   <CBF_GarrisonBatchHelp>Wie viele Pawns höchstens auf einmal erscheinen.</CBF_GarrisonBatchHelp>
   <CBF_GarrisonInterval>Schübe je Spielstunde: {0}</CBF_GarrisonInterval>
@@ -793,7 +791,11 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_Cfg_DungeonNoStairs>Ebene {0} hat keine stairsDown, darunter folgen aber weitere Ebenen. Ohne Treppe sind sie nicht erreichbar.</CBF_Cfg_DungeonNoStairs>
   <CBF_Cfg_SpreadLevels>Der spread-Eintrag {0} nennt Ebenen außerhalb von 1 bis {1}.</CBF_Cfg_SpreadLevels>
   <CBF_Cfg_DungeonLastStairs>Ebene {0} ist die unterste und hat trotzdem stairsDown. Die Treppe wird nicht gebaut.</CBF_Cfg_DungeonLastStairs>
-  <CBF_Cfg_DungeonFirstSize>Ebene {0} liegt auf der Oberflächenkarte, ihr mapSize wird nicht beachtet.</CBF_Cfg_DungeonFirstSize>
+  <CBF_Cfg_DungeonFirstSize>Ebene {0} liegt auf der Oberflächenkarte, ihr mapSize zählt nur, wenn man den Plan über einen Abstieg (descentPlans) erreicht.</CBF_Cfg_DungeonFirstSize>
+  <CBF_Cfg_DescentNoTarget>Legendeneintrag '{0}' hat descentPlans, ist aber weder ein StairsDown-Anker noch ein Anker mit Objektliste. Der Abstieg wirkt nicht.</CBF_Cfg_DescentNoTarget>
+  <CBF_Cfg_DescentNoDungeon>Legendeneintrag '{0}' nennt {1} in descentPlans. Das ist kein Verliesplan mit Ebenen, er wird übersprungen.</CBF_Cfg_DescentNoDungeon>
+  <CBF_Abstieg_Label>{0} (Abstieg)</CBF_Abstieg_Label>
+  <CBF_Abstieg_Gefunden>{0}: Darunter führt ein Weg in die Tiefe.</CBF_Abstieg_Gefunden>
   <CBF_S_CoreShapes>Altstadtformen</CBF_S_CoreShapes>
   <CBF_S_CoreShapesAll>Alle Formen erlaubt. Ein Klick auf eine Form schließt sie aus.</CBF_S_CoreShapesAll>
   <CBF_S_CoreShapeLast>Mindestens eine Form bleibt gewählt.</CBF_S_CoreShapeLast>
@@ -821,15 +823,15 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_GarrisonBoxCollapse>Einklappen</CBF_GarrisonBoxCollapse>
   <CBF_GarrisonBoxExpand>Ausklappen</CBF_GarrisonBoxExpand>
   <CBF_GarrisonBoxOut>Auf der Karte</CBF_GarrisonBoxOut>
-  <CBF_GarrisonBoxOutTip>Kampffähige Pawns dieses Orts auf der Karte: Garnison und Zivilisten in den Stadtteilen und Wachen. Nach dem Schrägstrich: die Obergrenze aus den Mod-Einstellungen.</CBF_GarrisonBoxOutTip>
+  <CBF_GarrisonBoxOutTip>Kampffähige Pawns dieses Orts auf der Karte: Garnison in den Stadtteilen und Wachen. Nach dem Schrägstrich: die Obergrenze aus den Mod-Einstellungen.</CBF_GarrisonBoxOutTip>
   <CBF_GarrisonBoxReady>Bereit zum Nachrücken</CBF_GarrisonBoxReady>
-  <CBF_GarrisonBoxReadyTip>Zurückgehaltene Pawns, die noch nicht erschienen sind, Kämpfer und Zivilisten. Sie erscheinen in Schüben, sobald ihr Stadtteil Alarm schlägt.</CBF_GarrisonBoxReadyTip>
+  <CBF_GarrisonBoxReadyTip>Zurückgehaltene Pawns, die noch nicht erschienen sind. Sie erscheinen in Schüben, sobald ihr Stadtteil Alarm schlägt.</CBF_GarrisonBoxReadyTip>
   <CBF_GarrisonBoxWards>Stadtteil</CBF_GarrisonBoxWards>
   <CBF_GarrisonBoxCols>unterwegs | bereit</CBF_GarrisonBoxCols>
   <CBF_GarrisonBoxWard>Stadtteil {0}</CBF_GarrisonBoxWard>
   <CBF_GarrisonBoxAlarmTip>Alarm: Dieser Stadtteil schickt seine Leute heraus.</CBF_GarrisonBoxAlarmTip>
   <CBF_GarrisonBoxDistricts>In den Stadtteilen</CBF_GarrisonBoxDistricts>
-  <CBF_GarrisonBoxDistrictsTip>Garnison und Zivilisten, die in den Stadtteilen unterwegs sind.</CBF_GarrisonBoxDistrictsTip>
+  <CBF_GarrisonBoxDistrictsTip>Garnison, die in den Stadtteilen unterwegs ist.</CBF_GarrisonBoxDistrictsTip>
   <CBF_GarrisonBoxGuards>Wachen</CBF_GarrisonBoxGuards>
   <CBF_GarrisonBoxGuardsTip>Leute auf Mauern, Toren, Geschützen und Posten. Sie sind immer voll besetzt und werden nie zurückgehalten.</CBF_GarrisonBoxGuardsTip>
   <CBF_GarrisonSize>Größe der Reserve: {0} %</CBF_GarrisonSize>

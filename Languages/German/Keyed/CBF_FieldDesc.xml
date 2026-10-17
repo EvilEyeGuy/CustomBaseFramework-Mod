@@ -12,7 +12,7 @@
   <CBF_FieldDesc_anchorsOver>Eine zweite Ankerebene über der ersten. Ihre Anker dürfen andere überlappen und räumen darunter nichts weg, etwa ein Zelt über einem Marktstand.</CBF_FieldDesc_anchorsOver>
   <CBF_FieldDesc_attackSide>Seite, von der die Angreifer kamen: North, East, South oder West. Breschen und die schwersten Schäden sammeln sich dort. Leer wählt eine Seite zufällig.</CBF_FieldDesc_attackSide>
   <CBF_FieldDesc_maxSoldiers>Obergrenze für Kämpfer. Hat die Siedlung so viele, bleiben weitere Spawnanker für Kämpfer leer; Geschützanker werden trotzdem besetzt. 0 heißt keine Grenze.</CBF_FieldDesc_maxSoldiers>
-  <CBF_FieldDesc_maxCivilians>Obergrenze für Zivilisten. Hat die Siedlung so viele Einheiten, die keine Kämpfer sind, bleiben weitere zivile Spawnanker leer. 0 heißt keine Grenze.</CBF_FieldDesc_maxCivilians>
+  <CBF_FieldDesc_maxCivilians>Nur für ältere Pawnlisten mit role Civilian, die jetzt als Guard zählen: begrenzt, wie viele Anker mit solchen Listen Pawns bekommen. 0 heißt ohne Grenze. Neue Listen brauchen es nicht.</CBF_FieldDesc_maxCivilians>
   <CBF_FieldDesc_share>Gewicht dieses Ortstyps gegen die anderen Typen, die dieselbe Fraktion bekommen kann. 0 zählt als 1.</CBF_FieldDesc_share>
   <CBF_FieldDesc_occupation>Wer die Ruine hält. None lässt sie leer, Builder behält die ursprünglichen Besitzer, Occupier setzt die Eroberer hinein, nur aus Überfallpunkten, ohne Garnisonen der Stadtteile und ohne die Einheiten der Anker.</CBF_FieldDesc_occupation>
   <CBF_FieldDesc_occupationChance>Skaliert, wie viele Verteidiger die Ruine bekommt. 1 ist die volle Zahl, 0.5 die Hälfte.</CBF_FieldDesc_occupationChance>
@@ -101,7 +101,7 @@
   <CBF_FieldDesc_requiredMods>Mods, die dieser Ortstyp über die vom Editor erkannten hinaus braucht. Der Editor trägt sie beim Paketbau als Abhängigkeiten ein. Das Spiel liest die Liste nicht.</CBF_FieldDesc_requiredMods>
   <CBF_FieldDesc_requiresAnyMod>Der Eintrag zählt nur, wenn mindestens einer dieser Mods (packageId) aktiv ist.</CBF_FieldDesc_requiresAnyMod>
   <CBF_FieldDesc_roadEdges>Belag der äußersten Felder von Gassen, Plätzen und Tordurchfahrten in diesem Stadtteil. Genommen wird der erste Boden, den es gibt. Leer behält den Wegbelag.</CBF_FieldDesc_roadEdges>
-  <CBF_FieldDesc_role>Name einer Bauteil-Rolle wie Wand, Boden oder Tür. CBF setzt dort das passende Ding aus der Materialliste, wenn kein Ding und kein Boden gesetzt ist. Wie sich die Einheiten verhalten. Guard schließt sich der allgemeinen Verteidigung an, Sentry hält seine Stelle, Gunner bemannt die Geschütze um seine Stelle, Civilian verteidigt seine Stelle, darf aber fliehen und muss nicht kämpfen können.</CBF_FieldDesc_role>
+  <CBF_FieldDesc_role>Name einer Bauteil-Rolle wie Wand, Boden oder Tür. CBF setzt dort das passende Ding aus der Materialliste, wenn kein Ding und kein Boden gesetzt ist. Wie sich die Einheiten verhalten. Guard schließt sich der allgemeinen Verteidigung an, Sentry hält seine Stelle, Gunner bemannt die Geschütze um seine Stelle.</CBF_FieldDesc_role>
   <CBF_FieldDesc_rollChance>Chance, dass die Tabelle überhaupt aus entries zieht, 0 bis 1. always ist davon nicht betroffen.</CBF_FieldDesc_rollChance>
   <CBF_FieldDesc_rolls>Wie oft aus entries gezogen wird, als Spanne. Vorgabe 1~3.</CBF_FieldDesc_rolls>
   <CBF_FieldDesc_rollsOverDepth>Kurve, die rolls nach Tiefe ersetzt. Siedlungen haben keine Tiefe, es zählt also nur der Wert bei 0.</CBF_FieldDesc_rollsOverDepth>

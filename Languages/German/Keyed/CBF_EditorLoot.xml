@@ -91,7 +91,7 @@
   <CBF_Lo_AtAnchors>Hell markiert: {0}</CBF_Lo_AtAnchors>
   <CBF_PawnKindFilter>Zeigen</CBF_PawnKindFilter>
   <CBF_PawnKindPeople>Personen</CBF_PawnKindPeople>
-  <CBF_PawnKindAnimals>Tiere</CBF_PawnKindAnimals>
+  <CBF_PawnKindAnimals>Tiere und Kreaturen</CBF_PawnKindAnimals>
   <CBF_EditPawnListTip>Diese Pawn-Liste bearbeiten</CBF_EditPawnListTip>
   <CBF_Lo_MaterialLists>Materiallisten</CBF_Lo_MaterialLists>
   <CBF_Lo_MaterialListsShort>Material</CBF_Lo_MaterialListsShort>
@@ -212,4 +212,27 @@
   <CBF_Lo_FloorRightHint>Im Reiter Stück wählst du die Liste für jedes Bodenzeichen unter Böden. Ohne Liste wird der gezeichnete Boden gelegt.</CBF_Lo_FloorRightHint>
   <CBF_Lo_FloorSaved>{0} gespeichert, {1} Böden.</CBF_Lo_FloorSaved>
   <CBF_Lo_FloorNone>Keine Bodenliste angegeben.</CBF_Lo_FloorNone>
+  <CBF_Lo_Ruins>Ruinen</CBF_Lo_Ruins>
+  <CBF_Lo_RuinsShort>Ruinen</CBF_Lo_RuinsShort>
+  <CBF_Ru_NoNew>Neue Ruinen entstehen vorerst im XML.</CBF_Ru_NoNew>
+  <CBF_Ru_Hint>Wer eine Quest-Ruine hält. Die übrigen Ruinenfelder bleiben in der XML-Datei.</CBF_Ru_Hint>
+  <CBF_Ru_Occupation>Besatzung</CBF_Ru_Occupation>
+  <CBF_Ru_Occ_None>Niemand</CBF_Ru_Occ_None>
+  <CBF_Ru_Occ_NoneTip>Die Ruine bleibt leer.</CBF_Ru_Occ_NoneTip>
+  <CBF_Ru_Occ_Builder>Ursprüngliche Besitzer</CBF_Ru_Occ_Builder>
+  <CBF_Ru_Occ_BuilderTip>Die Fraktion, die den Ort gebaut hat, hält ihn noch.</CBF_Ru_Occ_BuilderTip>
+  <CBF_Ru_Occ_Occupier>Besatzer</CBF_Ru_Occ_Occupier>
+  <CBF_Ru_Occ_OccupierTip>Die erobernde Fraktion hält die Ruine, bemessen nach Raidpunkten.</CBF_Ru_Occ_OccupierTip>
+  <CBF_Ru_Occ_Animals>Wilde Tiere</CBF_Ru_Occ_Animals>
+  <CBF_Ru_Occ_AnimalsTip>Angriffslustige Tiere des Bioms halten die Ruine als Manhunter, bemessen nach den Bedrohungspunkten des Orts.</CBF_Ru_Occ_AnimalsTip>
+  <CBF_Ru_Creatures>Kreaturen</CBF_Ru_Creatures>
+  <CBF_Ru_CreaturesTip>Eine Pawnliste. Jeder Eintrag ergibt genau einen Pawn, Gewichte zählen nicht. Tiere kommen als Manhunter.</CBF_Ru_CreaturesTip>
+  <CBF_Ru_OpenNone>Erst eine Pawnliste wählen.</CBF_Ru_OpenNone>
+  <CBF_Ru_OpenTip>Die Pawnliste im Pawn-Reiter öffnen.</CBF_Ru_OpenTip>
+  <CBF_Ru_NoCreatures>Keine Kreaturen. Die Besatzung oben bestimmt, wer die Ruine hält.</CBF_Ru_NoCreatures>
+  <CBF_Ru_EachOne>Jeder Eintrag der Liste ist ein Pawn. Ein Troll ist eine Liste mit einem Eintrag, drei Wölfe sind drei Einträge.</CBF_Ru_EachOne>
+  <CBF_Ru_Replaces>Die Kreaturen ersetzen die Besatzung oben.</CBF_Ru_Replaces>
+  <CBF_Ru_Spawns>Erscheinen</CBF_Ru_Spawns>
+  <CBF_Ru_ListEmpty>Die Pawnliste ist leer, es erscheint nichts.</CBF_Ru_ListEmpty>
+  <CBF_Ru_RightHint>Speichern ändert in der Datei der Ruine nur Besatzung und Kreaturen.</CBF_Ru_RightHint>
 </LanguageData>

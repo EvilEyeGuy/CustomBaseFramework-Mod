@@ -341,9 +341,11 @@
   <CBF_D_Layout_Chambers>Chambers</CBF_D_Layout_Chambers>
   <CBF_D_Layout_CorridorsTip>A main corridor network, the rooms dock onto it.</CBF_D_Layout_CorridorsTip>
   <CBF_D_Layout_ChambersTip>Rooms sit directly against each other, without corridors in between.</CBF_D_Layout_ChambersTip>
-  <CBF_FieldDesc_layout>How the level is built. Corridors: a main corridor network with rooms docked onto it. Chambers: rooms directly against each other.</CBF_FieldDesc_layout>
+  <CBF_FieldDesc_layout>How the level is built. Corridors: a main corridor network with rooms docked onto it. Chambers: rooms directly against each other. Rows: a main corridor with bends, rooms in rows along both sides.</CBF_FieldDesc_layout>
   <CBF_D_Layout_Cave>Cave</CBF_D_Layout_Cave>
   <CBF_D_Layout_CaveTip>Natural cave chambers without built walls.</CBF_D_Layout_CaveTip>
+  <CBF_D_Layout_Rows>Rows</CBF_D_Layout_Rows>
+  <CBF_D_Layout_RowsTip>A main corridor with a few bends. The rooms stand in rows along both sides and share their walls, the largest room closes off the end. Now and then a wall with a door cuts the corridor.</CBF_D_Layout_RowsTip>
   <CBF_D_LayoutFromLevel>like the level ({0})</CBF_D_LayoutFromLevel>
   <CBF_FieldDesc_DistrictSpec_layout>Own layout for this area. Empty takes the layout of the level.</CBF_FieldDesc_DistrictSpec_layout>
   <CBF_D_NewPlan>New dungeon</CBF_D_NewPlan>

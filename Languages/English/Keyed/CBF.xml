@@ -255,13 +255,11 @@
   <CBF_MergePatches>Merge patches</CBF_MergePatches>
   <CBF_AnchorPawnListNone>none, single kind below</CBF_AnchorPawnListNone>
   <CBF_RoleGuard>guard</CBF_RoleGuard>
-  <CBF_RoleCivilian>civilian</CBF_RoleCivilian>
   <CBF_RolePost>holds position</CBF_RolePost>
   <CBF_RoleCrew>mans artillery</CBF_RoleCrew>
   <CBF_RoleGuardDesc>Joins the settlement garrison. Does not flee alone and moves out with the assault.</CBF_RoleGuardDesc>
   <CBF_RolePostDesc>Holds this spot and defends it. Does not move out, does not fall back. For towers and gatehouses.</CBF_RolePostDesc>
   <CBF_RoleCrewDesc>Mans the nearest mannable artillery piece and stays there. Needs are ignored.</CBF_RoleCrewDesc>
-  <CBF_RoleCivilianDesc>Stays nearby and runs away when it gets dangerous. For innkeepers, market folk, farmers.</CBF_RoleCivilianDesc>
   <CBF_NewPawnList>New pawn list</CBF_NewPawnList>
   <CBF_EditPawnList>Edit pawn list</CBF_EditPawnList>
   <CBF_PawnListSaved>Pawn list {0} saved, {1} kinds.</CBF_PawnListSaved>
@@ -758,10 +756,10 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_GarrisonHead>Garrisons and performance</CBF_GarrisonHead>
   <CBF_GarrisonIntro>Large settlements do not spawn all their pawns with the map. Part of them is held back unspawned and only spawns when their district is alarmed. Fewer pawns on the map at once means a smoother game.</CBF_GarrisonIntro>
   <CBF_GarrisonShare>Garrison in the streets at the start: {0}%</CBF_GarrisonShare>
-  <CBF_GarrisonShareHelp>Share of each district that spawns with the map. For fighters at least three per district. If this is more than the limit leaves after the guards, it is cut down, keeping fighters first. The rest is held back unspawned and spawns as soon as the district is alarmed: shots nearby, hits on its walls or houses, or an enemy is spotted. Fighters spawn first, then civilians, both within the limit. Walls, gates, guns and posts are always fully manned. Applies to newly generated settlements.</CBF_GarrisonShareHelp>
+  <CBF_GarrisonShareHelp>Share of each district that spawns with the map, at least three per district. If this is more than the limit leaves after the guards, it is cut down. The rest is held back unspawned and spawns as soon as the district is alarmed: shots nearby, hits on its walls or houses, or an enemy is spotted. It spawns within the limit. Walls, gates, guns and posts are always fully manned. Applies to newly generated settlements.</CBF_GarrisonShareHelp>
   <CBF_GarrisonCap>At most on the map at once: {0}</CBF_GarrisonCap>
   <CBF_GarrisonCapNone>At most on the map at once: no limit</CBF_GarrisonCapNone>
-  <CBF_GarrisonCapHelp>Upper limit for the pawns of a settlement who are on the map and able to fight at the same time: guards on walls, gates, guns and posts, the garrison of the districts and civilians. Downed pawns, prisoners and pawns not yet spawned do not count. Guards are always fully manned. The districts get the rest, shared by their size, but at least three fighters per district. If the guards alone are above the limit, the map can therefore be slightly above it. When someone falls, the next one spawns. Higher values suit fast computers, lower values slow ones. A changed limit applies at once to all further reinforcements. Pawns already on the map stay; lowering the limit removes nobody. Settlements generated without a reserve are not affected.</CBF_GarrisonCapHelp>
+  <CBF_GarrisonCapHelp>Upper limit for the pawns of a settlement who are on the map and able to fight at the same time: guards on walls, gates, guns and posts and the garrison of the districts. Downed pawns, prisoners and pawns not yet spawned do not count. Guards are always fully manned. The districts get the rest, shared by their size, but at least three per district. If the guards alone are above the limit, the map can therefore be slightly above it. When someone falls, the next one spawns. Higher values suit fast computers, lower values slow ones. A changed limit applies at once to all further reinforcements. Pawns already on the map stay; lowering the limit removes nobody. Settlements generated without a reserve are not affected.</CBF_GarrisonCapHelp>
   <CBF_GarrisonBatch>Reinforcements per wave: {0}</CBF_GarrisonBatch>
   <CBF_GarrisonBatchHelp>How many pawns spawn at most in one wave.</CBF_GarrisonBatchHelp>
   <CBF_GarrisonInterval>Waves per in-game hour: {0}</CBF_GarrisonInterval>
@@ -793,7 +791,11 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_Cfg_DungeonNoStairs>Level {0} has no stairsDown, but levels follow below it. Without stairs the levels below cannot be reached.</CBF_Cfg_DungeonNoStairs>
   <CBF_Cfg_SpreadLevels>spread entry {0} names levels outside 1 to {1}.</CBF_Cfg_SpreadLevels>
   <CBF_Cfg_DungeonLastStairs>Level {0} is the last level and still has stairsDown. The stairs are not built.</CBF_Cfg_DungeonLastStairs>
-  <CBF_Cfg_DungeonFirstSize>Level {0} lies on the surface map, its mapSize is ignored.</CBF_Cfg_DungeonFirstSize>
+  <CBF_Cfg_DungeonFirstSize>Level {0} lies on the surface map, its mapSize only counts when the plan is reached through a descent (descentPlans).</CBF_Cfg_DungeonFirstSize>
+  <CBF_Cfg_DescentNoTarget>Legend entry '{0}' has descentPlans, but it is neither a StairsDown anchor nor an anchor with objects. The descent has no effect.</CBF_Cfg_DescentNoTarget>
+  <CBF_Cfg_DescentNoDungeon>Legend entry '{0}' names {1} in descentPlans. That is not a dungeon plan with levels, it is skipped.</CBF_Cfg_DescentNoDungeon>
+  <CBF_Abstieg_Label>{0} (way down)</CBF_Abstieg_Label>
+  <CBF_Abstieg_Gefunden>{0}: a way leads down beneath it.</CBF_Abstieg_Gefunden>
   <CBF_S_CoreShapes>Old town shapes</CBF_S_CoreShapes>
   <CBF_S_CoreShapesAll>All shapes allowed. Click a shape to exclude it.</CBF_S_CoreShapesAll>
   <CBF_S_CoreShapeLast>At least one shape stays selected.</CBF_S_CoreShapeLast>
@@ -821,15 +823,15 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_GarrisonBoxCollapse>Collapse</CBF_GarrisonBoxCollapse>
   <CBF_GarrisonBoxExpand>Expand</CBF_GarrisonBoxExpand>
   <CBF_GarrisonBoxOut>On the map</CBF_GarrisonBoxOut>
-  <CBF_GarrisonBoxOutTip>Pawns of this settlement on the map and able to fight: garrison and civilians in the districts plus guards. After the slash: the limit from the mod settings.</CBF_GarrisonBoxOutTip>
+  <CBF_GarrisonBoxOutTip>Pawns of this settlement on the map and able to fight: garrison in the districts plus guards. After the slash: the limit from the mod settings.</CBF_GarrisonBoxOutTip>
   <CBF_GarrisonBoxReady>Ready to spawn</CBF_GarrisonBoxReady>
-  <CBF_GarrisonBoxReadyTip>Pawns held back unspawned, fighters and civilians. They spawn in waves once their district is alarmed.</CBF_GarrisonBoxReadyTip>
+  <CBF_GarrisonBoxReadyTip>Pawns held back, not spawned yet. They spawn in waves once their district is alarmed.</CBF_GarrisonBoxReadyTip>
   <CBF_GarrisonBoxWards>District</CBF_GarrisonBoxWards>
   <CBF_GarrisonBoxCols>on map | ready</CBF_GarrisonBoxCols>
   <CBF_GarrisonBoxWard>District {0}</CBF_GarrisonBoxWard>
   <CBF_GarrisonBoxAlarmTip>Alarm: this district sends its people out.</CBF_GarrisonBoxAlarmTip>
   <CBF_GarrisonBoxDistricts>In the districts</CBF_GarrisonBoxDistricts>
-  <CBF_GarrisonBoxDistrictsTip>Garrison and civilians who are out in the districts.</CBF_GarrisonBoxDistrictsTip>
+  <CBF_GarrisonBoxDistrictsTip>Garrison out in the districts.</CBF_GarrisonBoxDistrictsTip>
   <CBF_GarrisonBoxGuards>Guards</CBF_GarrisonBoxGuards>
   <CBF_GarrisonBoxGuardsTip>People on walls, gates, guns and posts. They are always fully manned and never held back.</CBF_GarrisonBoxGuardsTip>
   <CBF_GarrisonSize>Size of the reserve: {0}%</CBF_GarrisonSize>

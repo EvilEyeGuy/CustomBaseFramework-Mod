@@ -346,9 +346,11 @@
   <CBF_D_Layout_Chambers>Kammern</CBF_D_Layout_Chambers>
   <CBF_D_Layout_CorridorsTip>Ein Hauptgangnetz, an das die Räume andocken.</CBF_D_Layout_CorridorsTip>
   <CBF_D_Layout_ChambersTip>Die Räume liegen direkt aneinander, ohne Gänge dazwischen.</CBF_D_Layout_ChambersTip>
-  <CBF_FieldDesc_layout>Wie die Ebene gebaut wird. Gänge: ein Hauptgangnetz mit angedockten Räumen. Kammern: Räume direkt aneinander.</CBF_FieldDesc_layout>
+  <CBF_FieldDesc_layout>Wie die Ebene gebaut wird. Gänge: ein Hauptgangnetz mit angedockten Räumen. Kammern: Räume direkt aneinander. Reihen: ein Hauptgang mit Knicken, die Räume in Reihen an beiden Seiten.</CBF_FieldDesc_layout>
   <CBF_D_Layout_Cave>Höhle</CBF_D_Layout_Cave>
   <CBF_D_Layout_CaveTip>Natürliche Höhlenkammern ohne gemauerte Wände.</CBF_D_Layout_CaveTip>
+  <CBF_D_Layout_Rows>Reihen</CBF_D_Layout_Rows>
+  <CBF_D_Layout_RowsTip>Ein Hauptgang mit wenigen Knicken. Die Räume stehen in Reihen an beiden Seiten und teilen sich die Wände, der größte Raum schließt das Ende ab. Ab und zu unterbricht eine Mauer mit Tür den Gang.</CBF_D_Layout_RowsTip>
   <CBF_D_LayoutFromLevel>wie die Ebene ({0})</CBF_D_LayoutFromLevel>
   <CBF_FieldDesc_DistrictSpec_layout>Eigene Bauweise für diesen Bereich. Leer übernimmt die Bauweise der Ebene.</CBF_FieldDesc_DistrictSpec_layout>
   <CBF_D_NewPlan>Neuer Dungeon</CBF_D_NewPlan>

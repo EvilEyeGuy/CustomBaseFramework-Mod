@@ -12,7 +12,7 @@
   <CBF_FieldDesc_anchorsOver>A second anchor layer above the first. Its anchors may overlap others and clear nothing underneath, for example a tent over a market stall.</CBF_FieldDesc_anchorsOver>
   <CBF_FieldDesc_attackSide>Side the attackers came from: North, East, South or West. Breaches and the worst damage gather there. Empty picks a side at random.</CBF_FieldDesc_attackSide>
   <CBF_FieldDesc_maxSoldiers>Upper limit on fighters. Once the settlement has this many, further spawn anchors for fighters stay empty; gunner anchors still get theirs. 0 means no limit.</CBF_FieldDesc_maxSoldiers>
-  <CBF_FieldDesc_maxCivilians>Upper limit on civilians. Once the settlement has this many pawns that are not fighters, further civilian spawn anchors stay empty. 0 means no limit.</CBF_FieldDesc_maxCivilians>
+  <CBF_FieldDesc_maxCivilians>Only for older pawn lists with role Civilian, which now count as Guard: limits how many anchors with such lists get pawns. 0 means no limit. New lists do not need it.</CBF_FieldDesc_maxCivilians>
   <CBF_FieldDesc_share>Weight of this settlement type against the other types the same faction may get. 0 counts as 1.</CBF_FieldDesc_share>
   <CBF_FieldDesc_occupation>Who holds the ruin. None leaves it empty, Builder keeps the original owners, Occupier puts the conquering faction in, drawn from raid points only, without ward garrisons or the units set on anchors.</CBF_FieldDesc_occupation>
   <CBF_FieldDesc_occupationChance>Scales how many defenders the ruin gets. 1 is the full number, 0.5 half of it.</CBF_FieldDesc_occupationChance>
@@ -101,7 +101,7 @@
   <CBF_FieldDesc_requiredMods>Mods this settlement type needs beyond those the editor detects. The editor adds them to the dependencies when packaging. The game does not read the list.</CBF_FieldDesc_requiredMods>
   <CBF_FieldDesc_requiresAnyMod>The entry only counts if at least one of these mods (packageId) is active.</CBF_FieldDesc_requiresAnyMod>
   <CBF_FieldDesc_roadEdges>Surface of the outermost cells of lanes, squares and gate passages in this ward. The first terrain that exists is used. Empty keeps the road surface.</CBF_FieldDesc_roadEdges>
-  <CBF_FieldDesc_role>Name of a building role, such as wall, floor or door. CBF puts the matching thing from the material list there when no thing or terrain is set. How the pawns behave. Guard joins the general defence, Sentry holds its spot, Gunner mans the guns around its spot, Civilian defends its spot but may flee and need not be able to fight.</CBF_FieldDesc_role>
+  <CBF_FieldDesc_role>Name of a building role, such as wall, floor or door. CBF puts the matching thing from the material list there when no thing or terrain is set. How the pawns behave. Guard joins the general defence, Sentry holds its spot, Gunner mans the guns around its spot.</CBF_FieldDesc_role>
   <CBF_FieldDesc_rollChance>Chance that the table draws from entries at all, 0 to 1. always is not affected.</CBF_FieldDesc_rollChance>
   <CBF_FieldDesc_rolls>How many times entries is drawn from, as a range. Default 1~3.</CBF_FieldDesc_rolls>
   <CBF_FieldDesc_rollsOverDepth>Curve that replaces rolls by depth. Settlements have no depth, so only the value at 0 counts.</CBF_FieldDesc_rollsOverDepth>

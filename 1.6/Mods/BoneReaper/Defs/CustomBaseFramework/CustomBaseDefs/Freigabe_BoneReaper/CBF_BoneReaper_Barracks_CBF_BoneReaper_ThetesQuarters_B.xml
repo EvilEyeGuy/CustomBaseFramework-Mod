@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_ThetesQuarters_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_BoneReaper_Barracks</li>
+    </categories>
+    <style>CBF_BoneReaper</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY,pphhyy.LightlessEmpyrean"><symbol>0</symbol><thing>pphhyy_OsseousBanner</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>1</symbol><anchor>Arms</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Chest</objects><lootTable>CBF_BoneReaper_Loot_Armory</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>2</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>8</symbol><anchor>Phalangites</anchor><anchorKind>Spawn</anchorKind><pawnCount>2~3</pawnCount><chance>0.9</chance></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>k</symbol><thing>pphhyy_OsseousKurasi</thing><stuff>pphhyy_BoneMoldSteel</stuff><rotation>North</rotation></li>
+      <li><symbol>p</symbol><terrain>pphhyy_OsseousTiledFloor</terrain></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>Ķ</symbol><thing>pphhyy_OsseousSkamni</thing><stuff>pphhyy_BoneMoldSteel</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>σ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>φ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li><symbol>Ⓐ</symbol><anchor>Banner1</anchor><anchorKind>Object</anchorKind><objects>CBF_BoneReaper_Banner</objects></li>
+      <li><symbol>Ⓑ</symbol><anchor>Banner2</anchor><anchorKind>Object</anchorKind><objects>CBF_BoneReaper_Banner</objects></li>
+    </legend>
+    <mask>
+      <li>#######....</li>
+      <li>#######....</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+    </mask>
+    <terrain>
+      <li>ppppppp....</li>
+      <li>ppppppp....</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+    </terrain>
+    <things>
+      <li>IIIIIII....</li>
+      <li>I0...2I....</li>
+      <li>I.....IIIII</li>
+      <li>IĶ.k.....0I</li>
+      <li>I.........I</li>
+      <li>Iφ.Ķ..Ķ..σI</li>
+      <li>I.........I</li>
+      <li>IIIIDIIIIII</li>
+    </things>
+    <roof>
+      <li>^^^^^^^....</li>
+      <li>^^^^^^^....</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>.Ⓐ...1.....</li>
+      <li>...........</li>
+      <li>.........Ⓑ.</li>
+      <li>.....8.....</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

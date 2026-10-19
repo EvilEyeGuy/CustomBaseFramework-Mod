@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Dungeon_CryptChapel_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_CryptChapel</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_Medieval</style>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_Ancient_Column</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>J</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>c</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_RuinedCandles</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>¤</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>θ</symbol><thing>DankPyon_AncientReliquaryEmpty</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>В</symbol><thing>DankPyon_LogBench1x2c</thing><stuff>DankPyon_RawWood</stuff><rotation>East</rotation></li>
+    </legend>
+    <mask>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>ccccc¤c</li>
+      <li>c¤cccc¤</li>
+      <li>cccc¤c¤</li>
+      <li>c¤ccccc</li>
+      <li>c¤¤cccc</li>
+      <li>¤ccccc¤</li>
+      <li>¤cccccc</li>
+      <li>ccccc¤¤</li>
+      <li>cccccc¤</li>
+      <li>ccccccc</li>
+    </terrain>
+    <things>
+      <li>SSSSSSS</li>
+      <li>SA...AS</li>
+      <li>S.θ...S</li>
+      <li>Sf....S</li>
+      <li>S.....S</li>
+      <li>SВ..В.S</li>
+      <li>S.....S</li>
+      <li>SВ..В.S</li>
+      <li>S.....S</li>
+      <li>SSSJSSS</li>
+    </things>
+    <roof>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

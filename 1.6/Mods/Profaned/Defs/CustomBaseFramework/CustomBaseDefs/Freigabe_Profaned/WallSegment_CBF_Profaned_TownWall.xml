@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_TownWall</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallSegment</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>f</symbol><terrain>FlagstoneSlate</terrain></li>
+    </legend>
+    <mask>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+    </mask>
+    <terrain>
+      <li>f</li>
+      <li>f</li>
+      <li>f</li>
+    </terrain>
+    <things>
+      <li>I</li>
+      <li>.</li>
+      <li>I</li>
+    </things>
+    <roof>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+    </roof>
+    <anchors>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

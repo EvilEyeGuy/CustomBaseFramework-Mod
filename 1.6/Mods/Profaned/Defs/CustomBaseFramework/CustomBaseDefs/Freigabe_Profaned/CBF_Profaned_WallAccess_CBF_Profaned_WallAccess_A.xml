@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_WallAccess_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Profaned_WallAccess</li>
+    </categories>
+    <placement><atWall>Required</atWall></placement>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>0</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>1</symbol><anchor>Arms</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Shelf</objects><lootTable>CBF_Profaned_Loot_Armory</lootTable></li>
+      <li><symbol>8</symbol><anchor>Guards</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount><chance>0.9</chance></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>D</symbol><thing>BotchJob_ProfanedSingleDoor</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>L</symbol><thing>BotchJob_ProfanedLantern</thing></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+    </legend>
+    <mask>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+    </mask>
+    <terrain>
+      <li>ppppp</li>
+      <li>ppppp</li>
+      <li>ppppp</li>
+      <li>ppppp</li>
+    </terrain>
+    <things>
+      <li>I...I</li>
+      <li>I0.LI</li>
+      <li>I...I</li>
+      <li>IIDII</li>
+    </things>
+    <roof>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+      <li>^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.....</li>
+      <li>.1...</li>
+      <li>..8..</li>
+      <li>.....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.StyleDef>
+    <defName>CBF_Profaned</defName>
+    <label>Profaned</label>
+  </CustomBaseFramework.StyleDef>
+
+  <CustomBaseFramework.MaterialListDef>
+    <defName>CBF_Profaned_MaterialList</defName>
+    <label>The Profaned</label>
+    <parent>CBF_MaterialList_Base</parent>
+  </CustomBaseFramework.MaterialListDef>
+
+  <CustomBaseFramework.WallProfileDef>
+    <defName>WallProfile_Profaned_3</defName>
+    <label>profaned town wall</label>
+    <style>CBF_Profaned</style>
+    <depth>3</depth>
+    <segments>
+      <li>CBF_Profaned_TownWall</li>
+    </segments>
+    <tower>CBF_Profaned_TownTower_A</tower>
+    <gatehouse>CBF_Profaned_Gatehouse_A</gatehouse>
+    <gatehouseOutward>West</gatehouseOutward>
+  </CustomBaseFramework.WallProfileDef>
+
+</Defs>

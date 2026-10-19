@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GenStepDef>
+    <defName>CBF_Terrain_Cultists_1Tier</defName>
+    <linkWithSite>Cultists_1Tier</linkWithSite>
+    <order>100</order>
+    <genStep Class="CustomBaseFramework.GenStep_CBFTerrain"/>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>CBF_Terrain_Cultists_2Tier</defName>
+    <linkWithSite>Cultists_2Tier</linkWithSite>
+    <order>100</order>
+    <genStep Class="CustomBaseFramework.GenStep_CBFTerrain"/>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>CBF_Terrain_Cultists_3Tier</defName>
+    <linkWithSite>Cultists_3Tier</linkWithSite>
+    <order>100</order>
+    <genStep Class="CustomBaseFramework.GenStep_CBFTerrain"/>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>CBF_Terrain_DankPyon_Small_Ruin</defName>
+    <linkWithSite>DankPyon_Small_Ruin</linkWithSite>
+    <order>100</order>
+    <genStep Class="CustomBaseFramework.GenStep_CBFTerrain"/>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>CBF_Terrain_DankPyon_Medium_Ruin</defName>
+    <linkWithSite>DankPyon_Medium_Ruin</linkWithSite>
+    <order>100</order>
+    <genStep Class="CustomBaseFramework.GenStep_CBFTerrain"/>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>CBF_Terrain_DankPyon_Big_Snake_Ruin</defName>
+    <linkWithSite>DankPyon_Big_Snake_Ruin</linkWithSite>
+    <order>100</order>
+    <genStep Class="CustomBaseFramework.GenStep_CBFTerrain"/>
+  </GenStepDef>
+
+</Defs>

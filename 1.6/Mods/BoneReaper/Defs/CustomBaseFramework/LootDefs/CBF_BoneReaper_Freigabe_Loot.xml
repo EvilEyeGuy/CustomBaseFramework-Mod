@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_BoneReaper_Loot_Minimal</defName>
+    <label>bone scraps</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>8</weight><thing>pphhyy_HumanBones</thing><count>5~15</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>8</weight><thing>pphhyy_AnimalBones</thing><count>5~15</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Silver</thing><count>10~30</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_BoneReaper_Goods_Bones</defName>
+    <label>bones</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>10</weight><thing>pphhyy_HumanBones</thing><count>10~30</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>8</weight><thing>pphhyy_AnimalBones</thing><count>10~30</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>4</weight><thing>pphhyy_BoneMoldSteel</thing><count>10~25</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_BoneReaper_Goods_Souls</defName>
+    <label>souls</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>10</weight><thing>pphhyy_LesserSoul</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>3</weight><thing>pphhyy_GreaterSoul</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>3</weight><thing>pphhyy_EtherealSteel</thing><count>5~15</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>4</weight><thing>pphhyy_SoulWine</thing><count>2~5</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>3</weight><thing>pphhyy_SoulBerries</thing><count>5~15</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_BoneReaper_Goods_Arms</defName>
+    <label>thetes arms</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>6</weight><thing>pphhyy_BoneReapers_ThetesSword</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>6</weight><thing>pphhyy_BoneReapers_ThetesMace</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>6</weight><thing>pphhyy_BoneReapers_ThetesSpear</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>4</weight><thing>pphhyy_BoneReapers_ThetesBow</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>2</weight><thing>pphhyy_BoneReapers_ThetesStaff</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>2</weight><thing>pphhyy_BoneReapers_ThetesGreatMace</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>2</weight><thing>pphhyy_BoneReapers_ThetesScythe</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>2</weight><thing>pphhyy_BoneReapers_ThetesPolearm</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>2</weight><thing>pphhyy_BoneReapers_ThetesGreatSword</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>3</weight><thing>pphhyy_BoneReapers_ThetesShieldI</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>2</weight><thing>pphhyy_BoneReapers_ThetesShieldII</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_BoneReaper_Goods_Armor</defName>
+    <label>thetes armor</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>6</weight><thing>Apparel_ThetesCuirass</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>5</weight><thing>Apparel_ThetesArmor</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>3</weight><thing>Apparel_ThetesPlate</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>1</weight><thing>Apparel_ThetesGrandPlate</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>6</weight><thing>Apparel_ThetesHelm</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>3</weight><thing>Apparel_ThetesPlateHelm</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>1</weight><thing>Apparel_ThetesGrandPlateHelm</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_BoneReaper_Goods_Treasure</defName>
+    <label>archon treasure</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>6</weight><thing>Gold</thing><count>10~40</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>Silver</thing><count>40~150</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>3</weight><thing>pphhyy_GreaterSoul</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>4</weight><thing>pphhyy_EtherealSteel</thing><count>10~25</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>1</weight><thing>pphhyy_BoneReapers_SoulThetesSword</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>1</weight><thing>pphhyy_BoneReapers_SoulThetesScythe</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>1</weight><thing>pphhyy_BoneReapers_SoulArchonSword</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>1</weight><thing>pphhyy_BoneReapers_SoulArchonPolearm</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>1</weight><thing>Apparel_ArchonArmor</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>1</weight><thing>Apparel_ArchonHelm</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><weight>1</weight><thing>pphhyy_BoneReapers_ArchonShieldI</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_BoneReaper_Loot_Home</defName>
+    <label>Home</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_BoneReaper_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_BoneReaper_Goods_Bones</table></li>
+      <li><weight>3</weight><table>CBF_BoneReaper_Goods_Souls</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_BoneReaper_Loot_Armory</defName>
+    <label>Armory</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_BoneReaper_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_BoneReaper_Goods_Arms</table></li>
+      <li><weight>8</weight><table>CBF_BoneReaper_Goods_Armor</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_BoneReaper_Loot_Tithe</defName>
+    <label>Tithe</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_BoneReaper_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_BoneReaper_Goods_Bones</table></li>
+      <li><weight>6</weight><table>CBF_BoneReaper_Goods_Souls</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_BoneReaper_Loot_Crypt</defName>
+    <label>Crypt</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_BoneReaper_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>8</weight><table>CBF_BoneReaper_Goods_Souls</table></li>
+      <li><weight>5</weight><table>CBF_BoneReaper_Goods_Treasure</table></li>
+      <li><weight>3</weight><table>CBF_BoneReaper_Goods_Armor</table></li>
+      <li><weight>4</weight><table>CBF_BoneReaper_Goods_Bones</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_BoneReaper_Loot_Hoard</defName>
+    <label>Hoard</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_BoneReaper_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_BoneReaper_Goods_Treasure</table></li>
+      <li><weight>6</weight><table>CBF_BoneReaper_Goods_Souls</table></li>
+      <li><weight>2</weight><table>CBF_BoneReaper_Goods_Arms</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+</Defs>

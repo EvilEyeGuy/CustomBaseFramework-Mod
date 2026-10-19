@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Dark Ages : Crypts and Tombs</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>Defs/CustomBaseFramework.PieceDef[starts-with(defName,"CBF_BoneReaper_")]/legend/li/thing[text()="DankPyon_CastleWall"]</xpath>
+      <value>
+        <thing>DA_OssuaryWall</thing>
+      </value>
+    </match>
+  </Operation>
+</Patch>

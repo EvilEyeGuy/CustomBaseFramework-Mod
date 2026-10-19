@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_Dungeon_Corridor_3</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_Corridor</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_BoneReaper</style>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>pphhyy_OsseousTiledFloor</terrain></li>
+    </legend>
+    <mask>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+    </mask>
+    <terrain>
+      <li>p</li>
+      <li>p</li>
+      <li>p</li>
+      <li>p</li>
+      <li>p</li>
+    </terrain>
+    <things>
+      <li>S</li>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+      <li>S</li>
+    </things>
+    <roof>
+      <li>^</li>
+      <li>^</li>
+      <li>^</li>
+      <li>^</li>
+      <li>^</li>
+    </roof>
+    <anchors>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

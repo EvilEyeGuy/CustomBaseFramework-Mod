@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_RitualYard_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Profaned_Ritual</li>
+    </categories>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Ideology"><symbol>0</symbol><thing>BotchJob_ProfanedBrazierDarklight</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>8</symbol><anchor>Cultists</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount><chance>0.7</chance></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>R</symbol><thing>BotchJob_ProfaneRitualCircle</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>f</symbol><terrain>FlagstoneSlate</terrain></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>o</symbol><thing>BotchJob_WraithOrbPedestal</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>|</symbol><thing>Column</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>Ⓐ</symbol><anchor>Brazier1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierDark</objects></li>
+      <li><symbol>Ⓑ</symbol><anchor>Brazier2</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierDark</objects></li>
+      <li><symbol>Ⓒ</symbol><anchor>Brazier3</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierDark</objects></li>
+      <li><symbol>Ⓓ</symbol><anchor>Brazier4</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierDark</objects></li>
+    </legend>
+    <mask>
+      <li>..#########..</li>
+      <li>.###########.</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>.###########.</li>
+      <li>..#########..</li>
+      <li>....#####....</li>
+    </mask>
+    <terrain>
+      <li>..fffffffff..</li>
+      <li>.fffffffffff.</li>
+      <li>fffffffffffff</li>
+      <li>fffffffffffff</li>
+      <li>fffffffffffff</li>
+      <li>fffffffffffff</li>
+      <li>.fffffffffff.</li>
+      <li>..fffffffff..</li>
+      <li>....fffff....</li>
+    </terrain>
+    <things>
+      <li>..|.......|..</li>
+      <li>...0.....0...</li>
+      <li>.............</li>
+      <li>.o.........o.</li>
+      <li>.............</li>
+      <li>.....R.......</li>
+      <li>...0.....0...</li>
+      <li>..|.......|..</li>
+      <li>.............</li>
+    </things>
+    <roof>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+    </roof>
+    <anchors>
+      <li>.............</li>
+      <li>...Ⓐ.....Ⓑ...</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>...8.....8...</li>
+      <li>.............</li>
+      <li>...Ⓒ.....Ⓓ...</li>
+      <li>.............</li>
+      <li>.............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

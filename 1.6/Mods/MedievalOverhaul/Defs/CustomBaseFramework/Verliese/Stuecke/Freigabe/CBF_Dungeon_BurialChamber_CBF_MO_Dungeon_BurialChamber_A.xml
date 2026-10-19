@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Dungeon_BurialChamber_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_BurialChamber</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_Medieval</style>
+    <legend>
+      <li><symbol>E</symbol><thing>Sarcophagus</thing><stuff>BlocksMarble</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>c</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_Candles</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>y</symbol><thing>DankPyon_RuinedBonePile1x1c</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>¤</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Ĵ</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ε</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+    </legend>
+    <mask>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>cc¤c¤cc</li>
+      <li>cccc¤c¤</li>
+      <li>cccccc¤</li>
+      <li>cccccc¤</li>
+      <li>c¤c¤ccc</li>
+      <li>cc¤cccc</li>
+      <li>c¤¤c¤¤c</li>
+    </terrain>
+    <things>
+      <li>SSSSSSS</li>
+      <li>SE...yS</li>
+      <li>S.....S</li>
+      <li>Ĵ....nS</li>
+      <li>SE....S</li>
+      <li>Sy..ε.S</li>
+      <li>SSSSSSS</li>
+    </things>
+    <roof>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.①①....</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.②②....</li>
+      <li>.......</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

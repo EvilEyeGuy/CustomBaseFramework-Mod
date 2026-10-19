@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Mausoleum_C</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Profaned_Mausoleum</li>
+    </categories>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>0</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Ideology"><symbol>1</symbol><thing>BotchJob_ProfanedLanternDarklight</thing><rotation>North</rotation></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>D</symbol><thing>BotchJob_ProfanedSingleDoor</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>Z</symbol><thing>SculptureSmall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>f</symbol><terrain>FlagstoneSlate</terrain></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+      <li><symbol>|</symbol><thing>Column</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>0</descentChance><descentPlans><li>CBF_Plan_Dungeon_ProfanedCatacomb</li></descentPlans></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>Ⓐ</symbol><anchor>Lantern1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+      <li><symbol>Ⓑ</symbol><anchor>Lantern2</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+    </legend>
+    <mask>
+      <li>.#####.</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>.#####.</li>
+      <li>.#####.</li>
+      <li>.#####.</li>
+    </mask>
+    <terrain>
+      <li>.ppppp.</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>.ppppp.</li>
+      <li>.pfffp.</li>
+      <li>.pfffp.</li>
+    </terrain>
+    <things>
+      <li>.IIIII.</li>
+      <li>IIZ.ZII</li>
+      <li>I.....I</li>
+      <li>I0...0I</li>
+      <li>I1...1I</li>
+      <li>II...II</li>
+      <li>.IIDII.</li>
+      <li>.|...|.</li>
+      <li>.|...|.</li>
+    </things>
+    <roof>
+      <li>.^^^^^.</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>.^^^^^.</li>
+      <li>.^^^^^.</li>
+      <li>.^^^^^.</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.①↓↓.②.</li>
+      <li>.①↓↓.②.</li>
+      <li>.Ⓐ...Ⓑ.</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

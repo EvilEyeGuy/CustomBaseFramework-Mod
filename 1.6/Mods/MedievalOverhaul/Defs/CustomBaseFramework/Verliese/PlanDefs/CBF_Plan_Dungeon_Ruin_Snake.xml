@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Plan_Dungeon_Ruin_Snake</defName>
+    <label>snake infested ruin</label>
+    <kind>Dungeon</kind>
+    <materialList>CBF_MO_MaterialList</materialList>
+    <styles>
+      <li>Rustical</li>
+      <li>Standard</li>
+    </styles>
+    <mapSize>180</mapSize>
+    <techLevels>
+      <li>Medieval</li>
+    </techLevels>
+    <levels>
+      <li>
+        <name>Ruin</name>
+        <label>ruin</label>
+        <caveWidth>1~3</caveWidth>
+        <caveShare>0.5</caveShare>
+        <secretChance>0.05</secretChance>
+        <sections>
+          <li>
+            <name>Front</name>
+            <label>overgrown halls</label>
+            <corridors>
+              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3</piece><weight>4</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3_Rubble</piece><weight>3</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3_Beams</piece><weight>1</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3_Torch</piece><weight>1</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_1</piece><weight>1</weight></li>
+            </corridors>
+            <districts>
+              <li>
+                <name>Halls</name>
+                <layout>Rows</layout>
+                <entries>
+                  <li><tag>CBF_Dungeon_Storeroom</tag><count>2~3</count></li>
+                  <li><tag>CBF_Dungeon_Bunkroom</tag><count>1~2</count></li>
+                  <li><tag>CBF_Dungeon_Mess</tag><count>0~1</count></li>
+                  <li><tag>CBF_Dungeon_WellRoom</tag><count>0~1</count></li>
+                  <li><tag>CBF_Dungeon_Ossuary</tag><count>0~1</count></li>
+                  <li><tag>CBF_Dungeon_Cells</tag><count>0~1</count></li>
+                </entries>
+              </li>
+              <li>
+                <name>Nests</name>
+                <layout>Cave</layout>
+                <entries>
+                  <li><tag>CBF_Dungeon_Nest</tag><count>2~3</count></li>
+                  <li><tag>CBF_Dungeon_TreasureHeap</tag><count>0~1</count></li>
+                </entries>
+              </li>
+            </districts>
+          </li>
+          <li>
+            <name>Back</name>
+            <label>old halls</label>
+            <corridors>
+              <li><piece>CBF_MO_Dungeon_Corridor_Masonry_3</piece><weight>4</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Masonry_3_Bones</piece><weight>2</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Masonry_3_Torch</piece><weight>1</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Masonry_1</piece><weight>1</weight></li>
+            </corridors>
+            <districts>
+              <li>
+                <name>Halls</name>
+                <layout>Rows</layout>
+                <entries>
+                  <li><tag>CBF_Dungeon_StatueHall</tag><count>1~1</count></li>
+                  <li><tag>CBF_Dungeon_Tomb</tag><count>1~2</count></li>
+                  <li><tag>CBF_Dungeon_BurialChamber</tag><count>1~1</count></li>
+                  <li><tag>CBF_Dungeon_Crypt</tag><count>0~1</count></li>
+                  <li><tag>CBF_Dungeon_Archive</tag><count>0~1</count></li>
+                  <li><tag>CBF_Dungeon_Vault</tag><count>0~1</count></li>
+                </entries>
+              </li>
+              <li>
+                <name>Nests</name>
+                <layout>Cave</layout>
+                <entries>
+                  <li><tag>CBF_Dungeon_Nest</tag><count>2~3</count></li>
+                  <li><tag>CBF_Dungeon_TreasureHeap</tag><count>1~1</count></li>
+                </entries>
+              </li>
+            </districts>
+          </li>
+        </sections>
+      </li>
+    </levels>
+
+    <ideoStyle>true</ideoStyle>
+  </CustomBaseFramework.SettlementPlanDef>
+
+</Defs>

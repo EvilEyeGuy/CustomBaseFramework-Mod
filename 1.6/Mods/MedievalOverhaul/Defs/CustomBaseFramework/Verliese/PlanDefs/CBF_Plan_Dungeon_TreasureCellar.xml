@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Plan_Dungeon_TreasureCellar</defName>
+    <label>treasure cellar</label>
+    <kind>Dungeon</kind>
+    <materialList>CBF_MO_MaterialList</materialList>
+    <styles>
+      <li>Rustical</li>
+      <li>Standard</li>
+    </styles>
+    <techLevels>
+      <li>Medieval</li>
+    </techLevels>
+    <levels>
+      <li>
+        <name>Vault</name>
+        <label>vault</label>
+        <layout>Rows</layout>
+        <mapSize>60</mapSize>
+        <entrance>
+          <li><tag>CBF_Dungeon_CellarStairs</tag></li>
+        </entrance>
+        <corridors>
+          <li><piece>CBF_MO_Dungeon_Corridor_Masonry_1</piece></li>
+          <li><piece>CBF_MO_Dungeon_Corridor_Masonry_3</piece></li>
+        </corridors>
+        <districts>
+          <li>
+            <name>Treasury</name>
+            <entries>
+              <li><tag>CBF_Dungeon_Guardroom</tag><count>1~1</count></li>
+              <li><tag>CBF_Dungeon_Vault</tag><count>1~1</count></li>
+              <li><tag>CBF_Dungeon_TreasureHeap</tag><count>0~1</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </levels>
+
+    <ideoStyle>true</ideoStyle>
+  </CustomBaseFramework.SettlementPlanDef>
+
+</Defs>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <DesignationDef>
+    <defName>CBF_ClaimAnimal</defName>
+    <texturePath>UI/Designators/Tame</texturePath>
+    <targetType>Thing</targetType>
+  </DesignationDef>
+
+  <JobDef>
+    <defName>CBF_ClaimAnimal_Job</defName>
+    <driverClass>CustomBaseFramework.JobDriver_CBFClaimAnimal</driverClass>
+    <reportString>claiming TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+  <WorkGiverDef>
+    <defName>CBF_ClaimAnimal</defName>
+    <label>claim animals of foreign settlements</label>
+    <giverClass>CustomBaseFramework.WorkGiver_CBFClaimAnimal</giverClass>
+    <workType>Handling</workType>
+    <verb>claim</verb>
+    <gerund>claiming</gerund>
+    <priorityInType>60</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <HistoryEventDef>
+    <defName>CBF_AnimalClaimed</defName>
+    <label>took animals from their settlement</label>
+  </HistoryEventDef>
+
+</Defs>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Annex_SideCrypt_C</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Profaned_Annex_Crypt</li>
+    </categories>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Biotech"><symbol>0</symbol><thing>BotchJob_ProfanedLanternBlood</thing><rotation>South</rotation></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>D</symbol><thing>BotchJob_ProfanedSingleDoor</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>0</descentChance><descentPlans><li>CBF_Plan_Dungeon_ProfanedCatacomb</li></descentPlans></li>
+      <li><symbol>Ⓐ</symbol><anchor>Lantern1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternBlood</objects></li>
+      <li><symbol>Ⓑ</symbol><anchor>Lantern2</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternBlood</objects></li>
+    </legend>
+    <mask>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+    </mask>
+    <terrain>
+      <li>pppppp</li>
+      <li>pppppp</li>
+      <li>pppppp</li>
+      <li>pppppp</li>
+      <li>pppppp</li>
+      <li>pppppp</li>
+    </terrain>
+    <things>
+      <li>IIIIII</li>
+      <li>I0..0I</li>
+      <li>I....I</li>
+      <li>I....D</li>
+      <li>I....I</li>
+      <li>IIIIII</li>
+    </things>
+    <roof>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>......</li>
+      <li>.Ⓐ..Ⓑ.</li>
+      <li>.↓↓...</li>
+      <li>+↓↓...</li>
+      <li>......</li>
+      <li>......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

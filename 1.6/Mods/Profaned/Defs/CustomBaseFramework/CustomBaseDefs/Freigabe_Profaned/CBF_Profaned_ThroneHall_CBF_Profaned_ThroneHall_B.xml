@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_ThroneHall_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Profaned_ThroneHall</li>
+    </categories>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Biotech"><symbol>0</symbol><thing>BotchJob_ProfanedBrazierBlood</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>1</symbol><anchor>Hoard</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Chest</objects><lootTable>CBF_Profaned_Loot_Hoard</lootTable></li>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Biotech"><symbol>2</symbol><thing>BotchJob_ProfanedLanternBlood</thing><rotation>North</rotation></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>3</symbol><thing>BotchJob_ProfanedChest</thing><rotation>North</rotation></li>
+      <li><symbol>8</symbol><anchor>Lord</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~1</pawnCount><chance>1</chance></li>
+      <li><symbol>9</symbol><anchor>Bodyguard</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount><chance>0.9</chance></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>D</symbol><thing>BotchJob_ProfanedSingleDoor</thing><stuff>BlocksSlate</stuff></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>F</symbol><thing>BotchJob_ProfanedBanner</thing><stuff>Steel</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>T</symbol><thing>BotchJob_ProfanedThrone</thing><stuff>BlocksSlate</stuff><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+      <li><symbol>|</symbol><thing>Column</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>Ⓐ</symbol><anchor>Brazier1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierBlood</objects></li>
+      <li><symbol>Ⓑ</symbol><anchor>Brazier2</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierBlood</objects></li>
+      <li><symbol>Ⓒ</symbol><anchor>Lantern3</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternBlood</objects></li>
+      <li><symbol>Ⓓ</symbol><anchor>Lantern4</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternBlood</objects></li>
+    </legend>
+    <mask>
+      <li>...###...</li>
+      <li>..#####..</li>
+      <li>.#######.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.#######.</li>
+    </mask>
+    <terrain>
+      <li>...ppp...</li>
+      <li>..ppppp..</li>
+      <li>.ppppppp.</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>.ppppppp.</li>
+    </terrain>
+    <things>
+      <li>...III...</li>
+      <li>..IIFII..</li>
+      <li>.II...II.</li>
+      <li>II.T...II</li>
+      <li>I0.....0I</li>
+      <li>I.|...|.I</li>
+      <li>I.......I</li>
+      <li>I2.....2I</li>
+      <li>II....3II</li>
+      <li>.IIIDIII.</li>
+    </things>
+    <roof>
+      <li>...^^^...</li>
+      <li>..^^^^^..</li>
+      <li>.^^^^^^^.</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>.^^^^^^^.</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.Ⓐ.....Ⓑ.</li>
+      <li>....8....</li>
+      <li>..9...9..</li>
+      <li>.Ⓒ.....Ⓓ.</li>
+      <li>......1..</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Dungeon_StairsDown_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_ProfanedStairsDown</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_Profaned</style>
+    <legend>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Biotech"><symbol>0</symbol><thing>BotchJob_ProfanedLanternBlood</thing><rotation>South</rotation></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>J</symbol><thing>BotchJob_ProfanedSingleDoor</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>V</symbol><anchor>StairsDown</anchor></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+      <li><symbol>Ⓐ</symbol><anchor>Lantern1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternBlood</objects></li>
+      <li><symbol>Ⓑ</symbol><anchor>Lantern2</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternBlood</objects></li>
+    </legend>
+    <mask>
+      <li>.#####.</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>.ppppp.</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+    </terrain>
+    <things>
+      <li>.SSJSS.</li>
+      <li>SS...SS</li>
+      <li>S0...0S</li>
+      <li>S.....S</li>
+      <li>S.....S</li>
+      <li>S.....S</li>
+      <li>SSSSSSS</li>
+    </things>
+    <roof>
+      <li>.^^^^^.</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.Ⓐ...Ⓑ.</li>
+      <li>..VVV..</li>
+      <li>..VVV..</li>
+      <li>..VVV..</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

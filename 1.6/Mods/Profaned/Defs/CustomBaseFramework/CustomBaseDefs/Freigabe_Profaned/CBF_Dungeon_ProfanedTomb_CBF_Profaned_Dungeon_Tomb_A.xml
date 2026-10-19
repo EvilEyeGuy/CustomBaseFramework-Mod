@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Dungeon_Tomb_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_ProfanedTomb</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_Profaned</style>
+    <legend>
+      <li><symbol>0</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>1</symbol><anchor>GraveGoods</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Chest</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>2</symbol><thing>BotchJob_ProfanedChest</thing><rotation>South</rotation></li>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Ideology"><symbol>3</symbol><thing>BotchJob_ProfanedLanternDarklight</thing><rotation>South</rotation></li>
+      <li><symbol>4</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>J</symbol><thing>BotchJob_ProfanedSingleDoor</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>③</symbol><anchor>Sarcophagus3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>④</symbol><anchor>Sarcophagus4</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>⑤</symbol><anchor>Sarcophagus5</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>⑥</symbol><anchor>Sarcophagus6</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>⑦</symbol><anchor>Sarcophagus7</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>⑧</symbol><anchor>Sarcophagus8</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>Ⓐ</symbol><anchor>Lantern1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+    </legend>
+    <mask>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+    </mask>
+    <terrain>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+    </terrain>
+    <things>
+      <li>SSSSSJSSSSS</li>
+      <li>S.S.S.S.S.S</li>
+      <li>S0S0S.S0S0S</li>
+      <li>S.2.......S</li>
+      <li>J....3....J</li>
+      <li>S.........S</li>
+      <li>S.S.S.S.S.S</li>
+      <li>S4S4S.S4S4S</li>
+      <li>SSSSSJSSSSS</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>.①.②...③.④.</li>
+      <li>.①.②...③.④.</li>
+      <li>..1........</li>
+      <li>.....Ⓐ.....</li>
+      <li>...........</li>
+      <li>.⑤.⑥...⑦.⑧.</li>
+      <li>.⑤.⑥...⑦.⑧.</li>
+      <li>...........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

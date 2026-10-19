@@ -46,7 +46,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
       <li><symbol>x</symbol><anchor>BarrelA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Storage</lootTable></li>
       <li><symbol>y</symbol><anchor>BarrelB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Storage</lootTable></li>
-      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
+      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>0</descentChance><descentPlans><li>CBF_Plan_Dungeon_WineCellar</li><li>CBF_Plan_Dungeon_StoreCellar</li></descentPlans></li>
     </legend>
     <mask>
       <li>........####</li>
@@ -106,8 +107,8 @@
     <anchors>
       <li>............</li>
       <li>....+.......</li>
-      <li>...Ç.fff...+</li>
-      <li>......8...1.</li>
+      <li>..↓Ç.fff...+</li>
+      <li>..↓...8...1.</li>
       <li>+...........</li>
       <li>.....9......</li>
       <li>.......Ç....</li>

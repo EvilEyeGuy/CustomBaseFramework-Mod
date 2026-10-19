@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_MO_Dwarf_FloorList_Hall</defName>
+    <label>dwarf halls and rooms</label>
+    <floors>
+      <li>
+        <terrain>DankPyon_Floor_Herringbone_Granite</terrain>
+        <weight>3</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>DankPyon_Floor_Versailles_Granite</terrain>
+        <weight>2</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>DankPyon_Floor_Cobblestone_Granite</terrain>
+        <weight>2</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>FlagstoneGranite</terrain>
+        <weight>1</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>DankPyon_Floor_Herringbone_Marble</terrain>
+        <weight>1</weight>
+        <materials>
+          <li>DankPyon_Floor_Herringbone_Marble</li>
+          <li>DankPyon_Floor_Herringbone_Slate</li>
+          <li>DankPyon_Floor_Herringbone_Sandstone</li>
+          <li>DankPyon_Floor_Herringbone_Limestone</li>
+        </materials>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_MO_Dwarf_FloorList_Work</defName>
+    <label>dwarf workshops and towers</label>
+    <floors>
+      <li>
+        <terrain>DankPyon_Floor_Cobblestone_Granite</terrain>
+        <weight>3</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>FlagstoneGranite</terrain>
+        <weight>2</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain>
+        <weight>1</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>DankPyon_Floor_Herringbone_Granite</terrain>
+        <weight>1</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+</Defs>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_MO_Dungeon_FloorList_Cobble</defName>
+    <label>dungeon cobblestone, worn</label>
+    <floors>
+      <li>
+        <terrain>DankPyon_Floor_Cobblestone_Granite</terrain>
+        <weight>80</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain>
+        <weight>20</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_MO_Dungeon_FloorList_Ruined</defName>
+    <label>dungeon ruined tiles</label>
+    <floors>
+      <li>
+        <terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain>
+        <weight>70</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+      <li>
+        <terrain>DankPyon_Floor_Cobblestone_Granite</terrain>
+        <weight>30</weight>
+        <materialFromMap>true</materialFromMap>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+  <CustomBaseFramework.FloorListDef>
+    <defName>CBF_MO_Dungeon_FloorList_Wood</defName>
+    <label>dungeon wood floor</label>
+    <floors>
+      <li>
+        <terrain>WoodPlankFloor</terrain>
+        <weight>3</weight>
+      </li>
+      <li>
+        <terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain>
+        <weight>2</weight>
+      </li>
+      <li>
+        <terrain>DankPyon_Floor_RusticWoodFloor_DarkWood</terrain>
+        <weight>1</weight>
+      </li>
+    </floors>
+  </CustomBaseFramework.FloorListDef>
+
+</Defs>

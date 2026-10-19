@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_Dungeon_Guard_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_BoneReaperGuard</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_BoneReaper</style>
+    <legend>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY,pphhyy.LightlessEmpyrean"><symbol>0</symbol><thing>pphhyy_OsseousBanner</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>1</symbol><anchor>Arms</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Chest</objects><lootTable>CBF_BoneReaper_Loot_Armory</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>2</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>8</symbol><anchor>Guards</anchor><anchorKind>Spawn</anchorKind><pawnCount>2~3</pawnCount></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>J</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>k</symbol><thing>pphhyy_OsseousKurasi</thing><stuff>pphhyy_BoneMoldSteel</stuff><rotation>North</rotation></li>
+      <li><symbol>p</symbol><terrain>pphhyy_OsseousTiledFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Ð</symbol><thing>DankPyon_RusticTable2x2c</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>τ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>Ⓐ</symbol><anchor>Banner1</anchor><anchorKind>Object</anchorKind><objects>CBF_BoneReaper_Banner</objects></li>
+    </legend>
+    <mask>
+      <li>########.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#######..</li>
+    </mask>
+    <terrain>
+      <li>pppppppp.</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppp..</li>
+    </terrain>
+    <things>
+      <li>SSSSSSSS.</li>
+      <li>S0.....SS</li>
+      <li>S.k.....S</li>
+      <li>S..Ð....J</li>
+      <li>S.k.....S</li>
+      <li>Sτ...2SSS</li>
+      <li>SSSSJSS..</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^.</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^..</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>.Ⓐ.......</li>
+      <li>......8..</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.....1...</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

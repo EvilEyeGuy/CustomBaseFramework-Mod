@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Classical</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RulePackDef[defName="VFEC_NamerPersonClassicalUtility"]/rulePack/rulesFiles</xpath>
+      <value>
+        <li>Classical_First_Male->Names/CBF_Classical_First_Male</li>
+        <li>Classical_First_Female->Names/CBF_Classical_First_Female</li>
+        <li>Classical_Last->Names/CBF_Classical_Last</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

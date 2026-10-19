@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>{{NAME}}</defName>
+    <rootSelectionWeight>{{SELECTION_WEIGHT}}</rootSelectionWeight>
+    <rootMinPoints>{{THREAT_MIN}}</rootMinPoints>
+    <expireDaysRange>{{EXPIRE_DAYS}}</expireDaysRange>
+    <canGiveRoyalFavor>true</canGiveRoyalFavor>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->{{QUEST_NAME}}</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->{{QUEST_DESCRIPTION}}</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_SubScript">
+          <def>Util_RandomizePointsChallengeRating</def>
+          <parms>
+            <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
+            <pointsFactorThreeStar>2</pointsFactorThreeStar>
+          </parms>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_AdjustPointsForDistantFight</def>
+        </li>
+
+        <li Class="QuestNode_GetMap" />
+
+        <li Class="CustomBaseFramework.QuestNode_CBFClient">
+          <storeAs>asker</storeAs>
+          <storeFactionAs>askerFaction</storeFactionAs>
+          <sitePart>{{NAME}}</sitePart>
+        </li>
+
+        <li Class="QuestNode_GetSiteTile">
+          <storeAs>siteTile</storeAs>
+          <preferCloserTiles>true</preferCloserTiles>
+        </li>
+
+        <li Class="CustomBaseFramework.QuestNode_CBFOccupier">
+          <storeAs>angreiferFaction</storeAs>
+          <storeSitePartDefsAs>sitePartDefs</storeSitePartDefsAs>
+          <sitePart>{{NAME}}</sitePart>
+          <enemyOf>$askerFaction</enemyOf>
+        </li>
+
+        <li Class="QuestNode_GetDefaultSitePartsParams">
+          <tile>$siteTile</tile>
+          <faction>$askerFaction</faction>
+          <sitePartDefs>$sitePartDefs</sitePartDefs>
+          <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+        </li>
+
+        <li Class="QuestNode_GetSiteThreatPoints">
+          <storeAs>sitePoints</storeAs>
+          <sitePartsParams>$sitePartsParams</sitePartsParams>
+        </li>
+
+        <li Class="QuestNode_Multiply">
+          <value1>$sitePoints</value1>
+          <value2>{{POINTS_FACTOR}}</value2>
+          <storeAs>angreiferPunkte</storeAs>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_GetDefaultRewardValueFromPoints</def>
+          <parms>
+            <points>$sitePoints</points>
+          </parms>
+        </li>
+
+        <li Class="QuestNode_Multiply">
+          <value1>$rewardValue</value1>
+          <value2>{{REWARD}}</value2>
+          <storeAs>rewardValue</storeAs>
+        </li>
+
+        <li Class="QuestNode_GenerateSite">
+          <sitePartsParams>$sitePartsParams</sitePartsParams>
+          <faction>$askerFaction</faction>
+          <tile>$siteTile</tile>
+          <worldObjectDef>{{NAME}}</worldObjectDef>
+          <storeAs>site</storeAs>
+        </li>
+
+        <li Class="CustomBaseFramework.QuestNode_CBFSite">
+          <site>$site</site>
+          <builder>$askerFaction</builder>
+          <points>$sitePoints</points>
+        </li>
+
+        <li Class="CustomBaseFramework.QuestNode_CBFAttack">
+          <site>$site</site>
+          <attacker>$angreiferFaction</attacker>
+          <points>$angreiferPunkte</points>
+        </li>
+
+        <li Class="QuestNode_SpawnWorldObjects">
+          <worldObjects>$site</worldObjects>
+        </li>
+
+        <li Class="QuestNode_WorldObjectTimeout">
+          <worldObject>$site</worldObject>
+          <isQuestTimeout>true</isQuestTimeout>
+          <delayTicks>$(randInt({{TIMEOUT_DAYS_MIN}},{{TIMEOUT_DAYS_MAX}})*60000)</delayTicks>
+          <inSignalDisable>site.MapGenerated</inSignalDisable>
+          <destroyOnCleanup>true</destroyOnCleanup>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelExpired">{{LETTER_EXPIRED_LABEL}}</label>
+                <text TKey="LetterTextExpired">{{LETTER_EXPIRED_TEXT}}</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Fail</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+
+        <li Class="QuestNode_Signal">
+          <inSignal>site.VerteidigerGefallen</inSignal>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelFallen">{{LETTER_FALLEN_LABEL}}</label>
+                <text TKey="LetterTextFallen">{{LETTER_FALLEN_TEXT}}</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Fail</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+
+        <li Class="QuestNode_SignalActivable">
+          <inSignal>site.Destroyed</inSignal>
+          <inSignalDisable>site.AllEnemiesDefeated</inSignalDisable>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelFailed">{{LETTER_FAILED_LABEL}}</label>
+                <text TKey="LetterTextFailed">{{LETTER_FAILED_TEXT}}</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Fail</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+
+        <li Class="QuestNode_Signal">
+          <inSignal>site.AllEnemiesDefeated</inSignal>
+          <node Class="QuestNode_GiveRewards">
+            <parms>
+              <allowGoodwill>true</allowGoodwill>
+              <allowRoyalFavor>true</allowRoyalFavor>
+              <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
+            </parms>
+            <customLetterLabel TKey="LetterLabelSuccess">{{LETTER_SUCCESS_LABEL}}</customLetterLabel>
+            <customLetterText TKey="LetterTextSuccess">{{LETTER_SUCCESS_TEXT}}</customLetterText>
+            <nodeIfChosenPawnSignalUsed Class="QuestNode_Letter">
+              <letterDef>ChoosePawn</letterDef>
+              <label TKey="LetterLabelFavor">[asker_faction_royalFavorLabel]</label>
+              <text TKey="LetterTextFavor">These colonists took part in [resolvedQuestName]. [asker_definite] wants to know who should receive the [royalFavorReward_amount] [asker_faction_royalFavorLabel] for this service.</text>
+              <useColonistsOnMap>$site</useColonistsOnMap>
+              <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
+            </nodeIfChosenPawnSignalUsed>
+          </node>
+        </li>
+
+        <li Class="QuestNode_End">
+          <inSignal>site.AllEnemiesDefeated</inSignal>
+          <outcome>Success</outcome>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+  <SitePartDef>
+    <defName>{{NAME}}</defName>
+    <label>{{LABEL}}</label>
+    <description>{{DESCRIPTION}}</description>
+    <siteTexture>{{SITE_TEXTURE}}</siteTexture>
+    <expandingIconTexture>{{EXPANDING_TEXTURE}}</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>true</showFactionInInspectString>
+    <requiresFaction>true</requiresFaction>
+    <considerEnteringAsAttack>false</considerEnteringAsAttack>
+    <arrivedLetter>{{ARRIVED_LETTER}}</arrivedLetter>
+    <arrivedLetterDef>{{ARRIVED_LETTER_DEF}}</arrivedLetterDef>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <minThreatPoints>{{THREAT_MIN}}</minThreatPoints>
+    <forceExitAndRemoveMapCountdownDurationDays>{{EXIT_DAYS}}</forceExitAndRemoveMapCountdownDurationDays>
+    <tags>
+      <li>{{NAME}}</li>
+    </tags>
+    <modExtensions>
+      <li Class="CustomBaseFramework.CBFSiteExtension">
+        <ruin>{{RUIN}}</ruin>
+        {{SITE_PLAN}}
+      </li>
+      <li Class="CustomBaseFramework.CBFOccupierExtension">
+        <occupiers>
+          {{OCCUPIERS}}
+        </occupiers>
+      </li>
+    </modExtensions>
+  </SitePartDef>
+
+  <WorldObjectDef ParentName="Site">
+    <defName>{{NAME}}</defName>
+    <label>{{LABEL}}</label>
+    <mapGenerator>CBF_Base_Faction</mapGenerator>
+    <comps>
+      <li Class="CustomBaseFramework.WorldObjectCompProperties_CBFSiteGoods">
+        <goodwillPer1000Silver>{{GOODWILL_PER_1000_SILVER}}</goodwillPer1000Silver>
+        <ownedFromStart>true</ownedFromStart>
+      </li>
+      <li Class="CustomBaseFramework.WorldObjectCompProperties_CBFAttack" />
+    </comps>
+  </WorldObjectDef>
+
+</Defs>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Dungeon_Stairs_Down_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_Stairs</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_Medieval</style>
+    <legend>
+      <li><symbol>7</symbol><anchor>StairsDown</anchor></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_RuinedBonePile1x2c</thing></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>c</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>r</symbol><thing>DankPyon_StoneDebrisSmall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>y</symbol><thing>DankPyon_RuinedBonePile1x1c</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>¤</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ρ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+    </legend>
+    <mask>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>ccccccc</li>
+      <li>¤¤c¤ccc</li>
+      <li>ccccc¤c</li>
+      <li>¤cc¤ccc</li>
+      <li>¤cccccc</li>
+      <li>cc¤cccc</li>
+      <li>¤cc¤ccc</li>
+    </terrain>
+    <things>
+      <li>SSSSSSS</li>
+      <li>Sr...ρS</li>
+      <li>S.....S</li>
+      <li>F.....F</li>
+      <li>S.....S</li>
+      <li>SY...yS</li>
+      <li>SSSSSSS</li>
+    </things>
+    <roof>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>...7...</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

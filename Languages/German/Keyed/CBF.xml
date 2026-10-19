@@ -796,6 +796,11 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_Cfg_DescentNoDungeon>Legendeneintrag '{0}' nennt {1} in descentPlans. Das ist kein Verliesplan mit Ebenen, er wird übersprungen.</CBF_Cfg_DescentNoDungeon>
   <CBF_Abstieg_Label>{0} (Abstieg)</CBF_Abstieg_Label>
   <CBF_Abstieg_Gefunden>{0}: Darunter führt ein Weg in die Tiefe.</CBF_Abstieg_Gefunden>
+  <CBF_Descent_Seal>Abstieg verschließen</CBF_Descent_Seal>
+  <CBF_Descent_SealDesc>Verschließt diesen Weg in die Tiefe endgültig. Die Ebene darunter und alle tieferen Ebenen werden entfernt, auch alles, was dort liegt. Der Abstieg lässt sich nicht wieder öffnen.</CBF_Descent_SealDesc>
+  <CBF_Descent_SealConfirm>Die Ebene darunter wird dauerhaft entfernt, auch alles, was dort liegt. Abstieg verschließen?</CBF_Descent_SealConfirm>
+  <CBF_Descent_SealOccupied>Unten ist noch jemand aus deiner Kolonie: Kolonisten, Gefangene oder Tiere.</CBF_Descent_SealOccupied>
+  <CBF_Descent_Sealed>{0}: Der Weg in die Tiefe ist verschlossen.</CBF_Descent_Sealed>
   <CBF_S_CoreShapes>Altstadtformen</CBF_S_CoreShapes>
   <CBF_S_CoreShapesAll>Alle Formen erlaubt. Ein Klick auf eine Form schließt sie aus.</CBF_S_CoreShapesAll>
   <CBF_S_CoreShapeLast>Mindestens eine Form bleibt gewählt.</CBF_S_CoreShapeLast>
@@ -843,4 +848,10 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_Au_FloorListEmpty>Bodenzeichen {0} nennt die Bodenliste {1}, die keinen brauchbaren Boden enthält. Es wird der gezeichnete Boden gelegt.</CBF_Au_FloorListEmpty>
   <CBF_GarrisonDowned>Liegende Verteidiger zählen zur Obergrenze</CBF_GarrisonDowned>
   <CBF_GarrisonDownedHelp>Verwundete, die am Boden liegen, belegen ihren Platz, bis sie sterben oder gefangen werden. Es rückt weniger nach, das spart Leistung im Gefecht, vor allem auf langsamen Rechnern. Gemessen: 11 bis 33 % mehr TPS, sobald 10 oder mehr Verteidiger liegen. Der letzte Aufstand (weniger als drei stehende Verteidiger) wird trotzdem ausgelöst, ab dann zählen Liegende nicht mehr mit. Gilt sofort, auch in bestehenden Orten mit Reserve.</CBF_GarrisonDownedHelp>
+  <CBF_ClaimAnimal>Tier beanspruchen</CBF_ClaimAnimal>
+  <CBF_ClaimAnimalDesc>Übernimm ein Tier eines fremden Ortes für deine Kolonie. Ein Tierpfleger geht hin und beansprucht es. Jedes Tier kostet Wohlwollen bei seiner Fraktion, wertvolle Tiere mehr (Marktwert geteilt durch 150, mindestens 1, höchstens 10). Feindliche Fraktionen und besiegte Orte verlieren kein Wohlwollen.</CBF_ClaimAnimalDesc>
+  <CBF_ClaimAnimalNoAnimal>Muss ein lebendes Tier sein.</CBF_ClaimAnimalNoAnimal>
+  <CBF_ClaimAnimalNotForeign>Muss ein Tier einer anderen Fraktion sein.</CBF_ClaimAnimalNotForeign>
+  <CBF_ClaimAnimalNoSite>Geht nur auf der Karte eines CBF-Ortes.</CBF_ClaimAnimalNoSite>
+  <CBF_WorldHidden>(versteckt)</CBF_WorldHidden>
 </LanguageData>

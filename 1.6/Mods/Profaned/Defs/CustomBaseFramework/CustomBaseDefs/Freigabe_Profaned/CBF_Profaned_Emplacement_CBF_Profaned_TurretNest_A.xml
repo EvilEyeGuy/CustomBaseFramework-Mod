@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_TurretNest_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Profaned_Emplacement</li>
+    </categories>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Biotech"><symbol>0</symbol><thing>BotchJob_ProfanedBrazierBlood</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Biotech"><symbol>1</symbol><thing>BotchJob_ProfanedBrazierBlood</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
+      <li><symbol>8</symbol><anchor>Guards</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount><chance>0.9</chance></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>X</symbol><thing>BotchJob_BloodStoneTurret</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>f</symbol><terrain>FlagstoneSlate</terrain></li>
+      <li><symbol>Ⓐ</symbol><anchor>Brazier1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierBlood</objects></li>
+      <li><symbol>Ⓑ</symbol><anchor>Brazier2</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierBlood</objects></li>
+      <li><symbol>Ⓒ</symbol><anchor>Brazier3</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierBlood</objects></li>
+      <li><symbol>Ⓓ</symbol><anchor>Brazier4</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierBlood</objects></li>
+    </legend>
+    <mask>
+      <li>..###..</li>
+      <li>.#####.</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>.#####.</li>
+      <li>..###..</li>
+    </mask>
+    <terrain>
+      <li>..fff..</li>
+      <li>.fffff.</li>
+      <li>fffffff</li>
+      <li>fffffff</li>
+      <li>fffffff</li>
+      <li>.fffff.</li>
+      <li>..fff..</li>
+    </terrain>
+    <things>
+      <li>.......</li>
+      <li>.0...0.</li>
+      <li>.......</li>
+      <li>...X...</li>
+      <li>.......</li>
+      <li>.1...1.</li>
+      <li>.......</li>
+    </things>
+    <roof>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.Ⓐ...Ⓑ.</li>
+      <li>.......</li>
+      <li>.8.....</li>
+      <li>.......</li>
+      <li>.Ⓒ...Ⓓ.</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

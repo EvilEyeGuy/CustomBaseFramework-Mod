@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Hovel_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Profaned_House</li>
+    </categories>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Ideology"><symbol>0</symbol><thing>BotchJob_ProfanedLanternDarklight</thing><rotation>South</rotation></li>
+      <li><symbol>1</symbol><anchor>Belongings</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Chest</objects><lootTable>CBF_Profaned_Loot_Home</lootTable></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>2</symbol><thing>BotchJob_ProfanedChest</thing><rotation>North</rotation></li>
+      <li><symbol>8</symbol><anchor>Residents</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~1</pawnCount><chance>0.6</chance></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>D</symbol><thing>BotchJob_ProfanedSingleDoor</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>b</symbol><thing>BotchJob_ProfanedBed</thing><stuff>BlocksSlate</stuff><rotation>South</rotation></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+      <li><symbol>Ⓐ</symbol><anchor>Lantern1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+    </legend>
+    <mask>
+      <li>#####..</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>ppppp..</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+    </terrain>
+    <things>
+      <li>IIIII..</li>
+      <li>I...III</li>
+      <li>Ib...0I</li>
+      <li>I...2.I</li>
+      <li>IIIDIII</li>
+    </things>
+    <roof>
+      <li>^^^^^..</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.....Ⓐ.</li>
+      <li>..8.1..</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_Dungeon_Stairs_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_BoneReaperStairs</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_BoneReaper</style>
+    <legend>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY,pphhyy.LightlessEmpyrean"><symbol>0</symbol><thing>pphhyy_OsseousBanner</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>J</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>V</symbol><anchor>StairsUp</anchor></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>pphhyy_OsseousTiledFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ρ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>Ⓐ</symbol><anchor>Banner1</anchor><anchorKind>Object</anchorKind><objects>CBF_BoneReaper_Banner</objects></li>
+      <li><symbol>Ⓑ</symbol><anchor>Banner2</anchor><anchorKind>Object</anchorKind><objects>CBF_BoneReaper_Banner</objects></li>
+    </legend>
+    <mask>
+      <li>..#####..</li>
+      <li>.#######.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.#######.</li>
+    </mask>
+    <terrain>
+      <li>..ppppp..</li>
+      <li>.ppppppp.</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>.ppppppp.</li>
+    </terrain>
+    <things>
+      <li>..SSSSS..</li>
+      <li>.SS0.0SS.</li>
+      <li>SS.....SS</li>
+      <li>Sρ.....ρS</li>
+      <li>S.......S</li>
+      <li>SS.....SS</li>
+      <li>.SSSJSSS.</li>
+    </things>
+    <roof>
+      <li>..^^^^^..</li>
+      <li>.^^^^^^^.</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>.^^^^^^^.</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>...Ⓐ.Ⓑ...</li>
+      <li>...VVV...</li>
+      <li>...VVV...</li>
+      <li>...VVV...</li>
+      <li>.........</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

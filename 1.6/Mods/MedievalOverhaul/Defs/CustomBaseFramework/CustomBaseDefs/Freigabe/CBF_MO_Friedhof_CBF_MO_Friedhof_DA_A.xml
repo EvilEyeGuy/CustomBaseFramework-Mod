@@ -27,6 +27,8 @@
       <li MayRequire="Van.DACrypts"><symbol>o</symbol><thing>DA_BurialUrn</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="Van.DACrypts"><symbol>y</symbol><thing>DA_Candles</thing></li>
       <li><symbol>z</symbol><thing>FenceGate</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>0.5</descentChance><descentPlans><li>CBF_Plan_Dungeon_SmallCrypt</li></descentPlans></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable><descentChance>0.15</descentChance><descentPlans><li>CBF_Plan_Dungeon_SmallCrypt</li></descentPlans></li>
     </legend>
     <mask>
       <li>.....#######.....</li>
@@ -92,6 +94,22 @@
       <li>.................</li>
       <li>.................</li>
     </roof>
+    <anchors>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>....↓↓↓..........</li>
+      <li>....↓↓↓..........</li>
+      <li>....↓↓↓..........</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>...........①.....</li>
+      <li>...........①.....</li>
+      <li>.................</li>
+      <li>.................</li>
+      <li>.................</li>
+    </anchors>
   </CustomBaseFramework.PieceDef>
 
 </Defs>

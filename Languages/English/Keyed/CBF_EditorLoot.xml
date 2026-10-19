@@ -235,4 +235,156 @@
   <CBF_Ru_Spawns>Spawns</CBF_Ru_Spawns>
   <CBF_Ru_ListEmpty>The pawn list is empty, nothing spawns.</CBF_Ru_ListEmpty>
   <CBF_Ru_RightHint>Saving changes only occupation and creatures in the ruin's file.</CBF_Ru_RightHint>
+  <CBF_Lo_Sites>Quest sites</CBF_Lo_Sites>
+  <CBF_Lo_SitesShort>Sites</CBF_Lo_SitesShort>
+  <CBF_Si_NoNew>Sites come from quests and mods, they cannot be created here.</CBF_Si_NoNew>
+  <CBF_Si_Hint>Which CBF settlement type a quest site builds when it is entered.</CBF_Si_Hint>
+  <CBF_Si_ByCamp>Already built by CBF through the camp plan {0} (camp types). Change it there.</CBF_Si_ByCamp>
+  <CBF_Si_ByOther>Already built by CBF with {0}, set by another file. Change it there.</CBF_Si_ByOther>
+  <CBF_Si_Plan>Settlement type</CBF_Si_Plan>
+  <CBF_Si_PlanTip>The settlement type the site builds. None leaves the site as it is.</CBF_Si_PlanTip>
+  <CBF_Si_NoPlan>None</CBF_Si_NoPlan>
+  <CBF_Si_OpenNone>Pick one first.</CBF_Si_OpenNone>
+  <CBF_Si_Ruin>Ruin state</CBF_Si_Ruin>
+  <CBF_Si_RuinTip>Optional damage and occupation from a ruin. Opens in Lists, Ruins.</CBF_Si_RuinTip>
+  <CBF_Si_NoRuin>Intact</CBF_Si_NoRuin>
+  <CBF_Si_NeedPlan>Pick a settlement type first.</CBF_Si_NeedPlan>
+  <CBF_Si_Steps>Map steps of this site</CBF_Si_Steps>
+  <CBF_Si_NoSteps>This site has no map steps of its own. CBF adds its own step.</CBF_Si_NoSteps>
+  <CBF_Si_ReplaceTip>Ticked: CBF replaces this step, so it no longer builds. Unticked steps keep running next to the CBF settlement.</CBF_Si_ReplaceTip>
+  <CBF_Si_NothingReplaced>No step replaced: CBF adds its own step, and the existing steps build as well.</CBF_Si_NothingReplaced>
+  <CBF_Si_GoalStepTip>This step probably builds the quest goal, such as loot, a prisoner or a special building. If it is replaced, the goal is missing and the quest may not be completable.</CBF_Si_GoalStepTip>
+  <CBF_Si_GoalReplaced>A replaced step probably builds the quest goal. Without it, loot, prisoners or buildings the quest needs are missing. Better leave it unchecked; CBF then builds in addition and keeps the goal area free.</CBF_Si_GoalReplaced>
+  <CBF_Si_Occupier>Occupiers cannot be chosen for quests of other mods. The quest picks the faction itself.</CBF_Si_Occupier>
+  <CBF_Si_Spawns>Appears</CBF_Si_Spawns>
+  <CBF_Si_Preview>{0}, intact.</CBF_Si_Preview>
+  <CBF_Si_PreviewRuin>{0}, as ruin: {1}.</CBF_Si_PreviewRuin>
+  <CBF_Si_RightHint>Saving writes CBF_Sites.xml into Defs and Patches of your mod. The editor applies the change at once; replaced steps of other mods only come back after a restart.</CBF_Si_RightHint>
+  <CBF_Lo_Quests>Quests</CBF_Lo_Quests>
+  <CBF_Lo_QuestsShort>Quests</CBF_Lo_QuestsShort>
+  <CBF_Qu_NewTip>Create a new quest from a quest kind.</CBF_Qu_NewTip>
+  <CBF_Qu_PickKind>Quest kind</CBF_Qu_PickKind>
+  <CBF_Qu_Art_Ort_raeumen>Clear a site</CBF_Qu_Art_Ort_raeumen>
+  <CBF_Qu_Art_Ort_raeumenTip>A settlement held by enemies. Drive them out; afterwards the player picks goodwill or the loot.</CBF_Qu_Art_Ort_raeumenTip>
+  <CBF_Qu_Art_Ort_verteidigen>Defend a site</CBF_Qu_Art_Ort_verteidigen>
+  <CBF_Qu_Art_Ort_verteidigenTip>A settlement under attack. Help the defenders; the quest fails if they fall.</CBF_Qu_Art_Ort_verteidigenTip>
+  <CBF_Qu_Art_Verlies_erkunden>Explore a dungeon</CBF_Qu_Art_Verlies_erkunden>
+  <CBF_Qu_Art_Verlies_erkundenTip>A dungeon with levels. Clear it or reach the bottom.</CBF_Qu_Art_Verlies_erkundenTip>
+  <CBF_Qu_Art_Gefangene_befreien>Free prisoners</CBF_Qu_Art_Gefangene_befreien>
+  <CBF_Qu_Art_Gefangene_befreienTip>A site where enemies hold people of the quest giver captive.</CBF_Qu_Art_Gefangene_befreienTip>
+  <CBF_Qu_Art_Monsterjagd>Monster hunt</CBF_Qu_Art_Monsterjagd>
+  <CBF_Qu_Art_MonsterjagdTip>Ruins without a faction, held by creatures from a pawn list, such as a troll.</CBF_Qu_Art_MonsterjagdTip>
+  <CBF_Qu_G_General>General</CBF_Qu_G_General>
+  <CBF_Qu_G_Site>Site</CBF_Qu_G_Site>
+  <CBF_Qu_G_Enemies>Enemies</CBF_Qu_G_Enemies>
+  <CBF_Qu_G_Timing>Timing</CBF_Qu_G_Timing>
+  <CBF_Qu_G_Reward>Reward</CBF_Qu_G_Reward>
+  <CBF_Qu_G_Texts>Texts and letters</CBF_Qu_G_Texts>
+  <CBF_Qu_F_LABEL>Site name</CBF_Qu_F_LABEL>
+  <CBF_Qu_F_LABELTip>Name of the site on the world map.</CBF_Qu_F_LABELTip>
+  <CBF_Qu_F_DESCRIPTION>Site description</CBF_Qu_F_DESCRIPTION>
+  <CBF_Qu_F_DESCRIPTIONTip>Shown when the site is selected on the world map.</CBF_Qu_F_DESCRIPTIONTip>
+  <CBF_Qu_F_QUEST_NAME>Quest name</CBF_Qu_F_QUEST_NAME>
+  <CBF_Qu_F_QUEST_NAMETip>Name in the quest list. Grammar tags such as [asker_nameDef] are allowed.</CBF_Qu_F_QUEST_NAMETip>
+  <CBF_Qu_F_QUEST_DESCRIPTION>Quest text</CBF_Qu_F_QUEST_DESCRIPTION>
+  <CBF_Qu_F_QUEST_DESCRIPTIONTip>Text of the quest offer. Grammar tags such as [asker_nameFull] are allowed.</CBF_Qu_F_QUEST_DESCRIPTIONTip>
+  <CBF_Qu_F_SITE_PLAN>Settlement type</CBF_Qu_F_SITE_PLAN>
+  <CBF_Qu_F_SITE_PLANTip>Which CBF settlement is built: one fixed type, or any type with a matching site tag.</CBF_Qu_F_SITE_PLANTip>
+  <CBF_Qu_F_PLAN>Dungeon</CBF_Qu_F_PLAN>
+  <CBF_Qu_F_PLANTip>The dungeon plan of the site.</CBF_Qu_F_PLANTip>
+  <CBF_Qu_F_GOAL_SIGNAL>Goal</CBF_Qu_F_GOAL_SIGNAL>
+  <CBF_Qu_F_GOAL_SIGNALTip>When the dungeon quest is done. Cleared: no hostile pawn is left standing on the site or any level, sleeping ones included, and no hostile turret remains. Bottom reached: a colonist enters the deepest level.</CBF_Qu_F_GOAL_SIGNALTip>
+  <CBF_Qu_Goal_DungeonCleared>Dungeon cleared</CBF_Qu_Goal_DungeonCleared>
+  <CBF_Qu_Goal_DungeonBottomReached>Bottom level reached</CBF_Qu_Goal_DungeonBottomReached>
+  <CBF_Qu_F_RUIN>Ruin state</CBF_Qu_F_RUIN>
+  <CBF_Qu_F_RUINTip>Damage and occupation of the site, see Quests, Ruins.</CBF_Qu_F_RUINTip>
+  <CBF_Qu_F_RUIN_PARENT>Ruin base</CBF_Qu_F_RUIN_PARENT>
+  <CBF_Qu_F_RUIN_PARENTTip>The ruin rules the own ruin of the quest starts from.</CBF_Qu_F_RUIN_PARENTTip>
+  <CBF_Qu_RP_CBF_Ruin_Basis>Plain (no damage)</CBF_Qu_RP_CBF_Ruin_Basis>
+  <CBF_Qu_RP_CBF_Ruin_Raided>Raided</CBF_Qu_RP_CBF_Ruin_Raided>
+  <CBF_Qu_F_PRISONERS>Prisoners</CBF_Qu_F_PRISONERS>
+  <CBF_Qu_F_PRISONERSTip>Number of prisoners as a range, for example 2~4.</CBF_Qu_F_PRISONERSTip>
+  <CBF_Qu_F_CREATURES>Creatures</CBF_Qu_F_CREATURES>
+  <CBF_Qu_F_CREATURESTip>Pawn list of the creatures. Each entry is one creature.</CBF_Qu_F_CREATURESTip>
+  <CBF_Qu_F_SITE_TEXTURE>Map icon</CBF_Qu_F_SITE_TEXTURE>
+  <CBF_Qu_F_SITE_TEXTURETip>Icon of the site on the world map.</CBF_Qu_F_SITE_TEXTURETip>
+  <CBF_Qu_Pic_Outpost>Outpost</CBF_Qu_Pic_Outpost>
+  <CBF_Qu_Pic_Ruin>Destroyed settlement</CBF_Qu_Pic_Ruin>
+  <CBF_Qu_Pic_Prisoner>Prisoner</CBF_Qu_Pic_Prisoner>
+  <CBF_Qu_Pic_Manhunters>Monsters</CBF_Qu_Pic_Manhunters>
+  <CBF_Qu_Pic_Turrets>Fortified</CBF_Qu_Pic_Turrets>
+  <CBF_Qu_Pic_Camp>Camp</CBF_Qu_Pic_Camp>
+  <CBF_Qu_F_OCCUPIERS>Occupiers</CBF_Qu_F_OCCUPIERS>
+  <CBF_Qu_F_OCCUPIERSTip>Factions that may hold the site. Empty means any hostile human faction.</CBF_Qu_F_OCCUPIERSTip>
+  <CBF_Qu_AnyHostile>Any hostile faction</CBF_Qu_AnyHostile>
+  <CBF_Qu_F_THREAT_MIN>Minimum threat</CBF_Qu_F_THREAT_MIN>
+  <CBF_Qu_F_THREAT_MINTip>The quest only appears from these threat points on.</CBF_Qu_F_THREAT_MINTip>
+  <CBF_Qu_F_POINTS_FACTOR>Enemy strength</CBF_Qu_F_POINTS_FACTOR>
+  <CBF_Qu_F_POINTS_FACTORTip>Factor on the threat points for the enemies on the site.</CBF_Qu_F_POINTS_FACTORTip>
+  <CBF_Qu_F_SELECTION_WEIGHT>Frequency</CBF_Qu_F_SELECTION_WEIGHT>
+  <CBF_Qu_F_SELECTION_WEIGHTTip>How often the storyteller picks this quest. 0 switches it off.</CBF_Qu_F_SELECTION_WEIGHTTip>
+  <CBF_Qu_F_EXPIRE_DAYS>Offer days</CBF_Qu_F_EXPIRE_DAYS>
+  <CBF_Qu_F_EXPIRE_DAYSTip>Days until an offer that was not accepted expires, as a range.</CBF_Qu_F_EXPIRE_DAYSTip>
+  <CBF_Qu_F_TIMEOUT_DAYS_MIN>Site days min</CBF_Qu_F_TIMEOUT_DAYS_MIN>
+  <CBF_Qu_F_TIMEOUT_DAYS_MINTip>Shortest time the site stays on the map without a visit.</CBF_Qu_F_TIMEOUT_DAYS_MINTip>
+  <CBF_Qu_F_TIMEOUT_DAYS_MAX>Site days max</CBF_Qu_F_TIMEOUT_DAYS_MAX>
+  <CBF_Qu_F_TIMEOUT_DAYS_MAXTip>Longest time the site stays on the map without a visit.</CBF_Qu_F_TIMEOUT_DAYS_MAXTip>
+  <CBF_Qu_F_EXIT_DAYS>Days after success</CBF_Qu_F_EXIT_DAYS>
+  <CBF_Qu_F_EXIT_DAYSTip>Days until the map closes after success.</CBF_Qu_F_EXIT_DAYSTip>
+  <CBF_Qu_F_REWARD>Reward</CBF_Qu_F_REWARD>
+  <CBF_Qu_F_REWARDTip>Factor on the usual quest reward.</CBF_Qu_F_REWARDTip>
+  <CBF_Qu_F_GOODWILL_FACTION>Goodwill if returned</CBF_Qu_F_GOODWILL_FACTION>
+  <CBF_Qu_F_GOODWILL_FACTIONTip>Goodwill when the player hands the site back to its owners.</CBF_Qu_F_GOODWILL_FACTIONTip>
+  <CBF_Qu_F_GOODWILL_LOOT>Goodwill if looted</CBF_Qu_F_GOODWILL_LOOT>
+  <CBF_Qu_F_GOODWILL_LOOTTip>Goodwill when the player keeps the loot.</CBF_Qu_F_GOODWILL_LOOTTip>
+  <CBF_Qu_F_GOODWILL_PER_1000_SILVER>Goodwill loss per 1000 silver</CBF_Qu_F_GOODWILL_PER_1000_SILVER>
+  <CBF_Qu_F_GOODWILL_PER_1000_SILVERTip>Goodwill lost for every 1000 silver worth of goods taken.</CBF_Qu_F_GOODWILL_PER_1000_SILVERTip>
+  <CBF_Qu_F_APPROACH_ORDER>Caravan order</CBF_Qu_F_APPROACH_ORDER>
+  <CBF_Qu_F_APPROACH_ORDERTip>Order in the caravan menu. {0} is the site.</CBF_Qu_F_APPROACH_ORDERTip>
+  <CBF_Qu_F_APPROACHING_REPORT>Caravan report</CBF_Qu_F_APPROACHING_REPORT>
+  <CBF_Qu_F_APPROACHING_REPORTTip>Shown while the caravan is on its way. {0} is the site.</CBF_Qu_F_APPROACHING_REPORTTip>
+  <CBF_Qu_F_ARRIVED_LETTER>Arrival letter</CBF_Qu_F_ARRIVED_LETTER>
+  <CBF_Qu_F_ARRIVED_LETTERTip>Letter when the caravan arrives.</CBF_Qu_F_ARRIVED_LETTERTip>
+  <CBF_Qu_F_ARRIVED_LETTER_DEF>Arrival letter type</CBF_Qu_F_ARRIVED_LETTER_DEF>
+  <CBF_Qu_F_ARRIVED_LETTER_DEFTip>Colour and sound of the arrival letter.</CBF_Qu_F_ARRIVED_LETTER_DEFTip>
+  <CBF_Qu_F_LETTER_SUCCESS_LABEL>Success letter title</CBF_Qu_F_LETTER_SUCCESS_LABEL>
+  <CBF_Qu_F_LETTER_SUCCESS_LABELTip>Title of the reward letter.</CBF_Qu_F_LETTER_SUCCESS_LABELTip>
+  <CBF_Qu_F_LETTER_SUCCESS_TEXT>Success letter text</CBF_Qu_F_LETTER_SUCCESS_TEXT>
+  <CBF_Qu_F_LETTER_SUCCESS_TEXTTip>Text of the reward letter.</CBF_Qu_F_LETTER_SUCCESS_TEXTTip>
+  <CBF_Qu_F_LETTER_FAILED_LABEL>Failure letter title</CBF_Qu_F_LETTER_FAILED_LABEL>
+  <CBF_Qu_F_LETTER_FAILED_LABELTip>Title of the letter when the player leaves too early.</CBF_Qu_F_LETTER_FAILED_LABELTip>
+  <CBF_Qu_F_LETTER_FAILED_TEXT>Failure letter text</CBF_Qu_F_LETTER_FAILED_TEXT>
+  <CBF_Qu_F_LETTER_FAILED_TEXTTip>Text of the letter when the player leaves too early.</CBF_Qu_F_LETTER_FAILED_TEXTTip>
+  <CBF_Qu_F_LETTER_EXPIRED_LABEL>Expiry letter title</CBF_Qu_F_LETTER_EXPIRED_LABEL>
+  <CBF_Qu_F_LETTER_EXPIRED_LABELTip>Title of the letter when the site disappears unused.</CBF_Qu_F_LETTER_EXPIRED_LABELTip>
+  <CBF_Qu_F_LETTER_EXPIRED_TEXT>Expiry letter text</CBF_Qu_F_LETTER_EXPIRED_TEXT>
+  <CBF_Qu_F_LETTER_EXPIRED_TEXTTip>Text of the letter when the site disappears unused.</CBF_Qu_F_LETTER_EXPIRED_TEXTTip>
+  <CBF_Qu_F_LETTER_FALLEN_LABEL>Defenders fallen title</CBF_Qu_F_LETTER_FALLEN_LABEL>
+  <CBF_Qu_F_LETTER_FALLEN_LABELTip>Title of the letter when the defenders fall.</CBF_Qu_F_LETTER_FALLEN_LABELTip>
+  <CBF_Qu_F_LETTER_FALLEN_TEXT>Defenders fallen text</CBF_Qu_F_LETTER_FALLEN_TEXT>
+  <CBF_Qu_F_LETTER_FALLEN_TEXTTip>Text of the letter when the defenders fall.</CBF_Qu_F_LETTER_FALLEN_TEXTTip>
+  <CBF_Qu_ByTags>By site tag</CBF_Qu_ByTags>
+  <CBF_Qu_ByPlan>Fixed type</CBF_Qu_ByPlan>
+  <CBF_Qu_Plan>Settlement type</CBF_Qu_Plan>
+  <CBF_Qu_Tags>Site tags</CBF_Qu_Tags>
+  <CBF_Qu_TagsTip>Any settlement type with one of these site tags can be built. The number shows how many types carry the tag.</CBF_Qu_TagsTip>
+  <CBF_Qu_Kind>Quest kind</CBF_Qu_Kind>
+  <CBF_Qu_Trigger>Trigger now</CBF_Qu_Trigger>
+  <CBF_Qu_TriggerTip>Offers this quest in the running game at the current threat points.</CBF_Qu_TriggerTip>
+  <CBF_Qu_SaveFirst>Save the quest first.</CBF_Qu_SaveFirst>
+  <CBF_Qu_NeedGame>Only in a running game.</CBF_Qu_NeedGame>
+  <CBF_Qu_NotLoaded>The quest is not loaded yet. Restart the game.</CBF_Qu_NotLoaded>
+  <CBF_Qu_Triggered>{0} offered.</CBF_Qu_Triggered>
+  <CBF_Qu_GenFailed>The quest could not be created here, for example because no site tile or quest giver was found.</CBF_Qu_GenFailed>
+  <CBF_Qu_CannotRun>The quest cannot start right now. Usually a friendly faction with a leader and a matching settlement type is missing.</CBF_Qu_CannotRun>
+  <CBF_Qu_RightHint>Saving writes the quest, its site and world object into Defs/CustomBaseFramework/Quests of your mod.</CBF_Qu_RightHint>
+  <CBF_Qu_NoTemplate>No template for {0} found.</CBF_Qu_NoTemplate>
+  <CBF_Qu_NeedPlan>Choose a settlement type first.</CBF_Qu_NeedPlan>
+  <CBF_Qu_NeedCreatures>Choose creatures first.</CBF_Qu_NeedCreatures>
+  <CBF_Qu_NeedRuin>Choose a ruin state first.</CBF_Qu_NeedRuin>
+  <CBF_Qu_F_LETTER_LOST_LABEL>Prisoners lost title</CBF_Qu_F_LETTER_LOST_LABEL>
+  <CBF_Qu_F_LETTER_LOST_LABELTip>Title of the letter when all prisoners are dead.</CBF_Qu_F_LETTER_LOST_LABELTip>
+  <CBF_Qu_F_LETTER_LOST_TEXT>Prisoners lost text</CBF_Qu_F_LETTER_LOST_TEXT>
+  <CBF_Qu_F_LETTER_LOST_TEXTTip>Text of the letter when all prisoners are dead.</CBF_Qu_F_LETTER_LOST_TEXTTip>
+  <CBF_Qu_NeedRestart>Saved in this session. Restart the game so the quest loads with all its parts.</CBF_Qu_NeedRestart>
 </LanguageData>

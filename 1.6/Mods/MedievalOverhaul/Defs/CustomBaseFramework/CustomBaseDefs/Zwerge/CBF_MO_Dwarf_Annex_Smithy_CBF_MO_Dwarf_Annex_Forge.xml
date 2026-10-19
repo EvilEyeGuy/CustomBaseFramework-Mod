@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Dwarf_Annex_Forge</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_Dwarf_Annex_Smithy</li>
+    </categories>
+    <placement>
+      <weight>2</weight>
+    </placement>
+    <style>CBF_Medieval</style>
+    <eaves>true</eaves>
+    <legend>
+      <li>
+        <symbol>+</symbol>
+        <anchor>Annex</anchor>
+        <anchorKind>Connect</anchorKind>
+      </li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">
+        <symbol>B</symbol>
+        <thing>DankPyon_Bellows</thing>
+        <stuff>WoodLog</stuff>
+        <rotation>South</rotation>
+      </li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">
+        <symbol>I</symbol>
+        <thing>DankPyon_DividerColumn</thing>
+        <stuff>BlocksGranite</stuff>
+      </li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">
+        <symbol>Q</symbol>
+        <thing>DankPyon_QuenchingBucket</thing>
+        <stuff>WoodLog</stuff>
+      </li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">
+        <symbol>S</symbol>
+        <thing>DankPyon_CastleWall</thing>
+        <stuff>BlocksGranite</stuff>
+      </li>
+      <li>
+        <symbol>^</symbol>
+        <roof>RoofConstructed</roof>
+      </li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">
+        <symbol>a</symbol>
+        <thing>DankPyon_Furnace</thing>
+        <stuff>BlocksGranite</stuff>
+        <rotation>North</rotation>
+      </li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">
+        <symbol>b</symbol>
+        <thing>DankPyon_Anvil</thing>
+        <stuff>Steel</stuff>
+        <rotation>East</rotation>
+      </li>
+    </legend>
+    <mask>
+      <li>.#####</li>
+      <li>.#####</li>
+      <li>.#####</li>
+      <li>.#####</li>
+    </mask>
+    <terrain>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+    </terrain>
+    <things>
+      <li>.SSSSS</li>
+      <li>.....B</li>
+      <li>.a....</li>
+      <li>.I.b.Q</li>
+    </things>
+    <roof>
+      <li>.^^^^^</li>
+      <li>.^^^^^</li>
+      <li>.^^^^^</li>
+      <li>.^^^^^</li>
+    </roof>
+    <anchors>
+      <li>......</li>
+      <li>......</li>
+      <li>+.....</li>
+      <li>......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+</Defs>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_Dungeon_TitheChamber_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_BoneReaperTithe</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_BoneReaper</style>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>0</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>1</symbol><anchor>Tithe</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Chest</objects><lootTable>CBF_BoneReaper_Loot_Tithe</lootTable></li>
+      <li><symbol>8</symbol><anchor>Collector</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~1</pawnCount></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>C</symbol><thing>pphhyy_SoulCask</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>J</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>X</symbol><thing>pphhyy_BoneTitheNexus</thing><stuff>pphhyy_BoneMoldSteel</stuff><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>pphhyy_OsseousTiledFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>σ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>φ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+    </legend>
+    <mask>
+      <li>..#####..</li>
+      <li>.#######.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.#######.</li>
+    </mask>
+    <terrain>
+      <li>..ppppp..</li>
+      <li>.ppppppp.</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>.ppppppp.</li>
+    </terrain>
+    <things>
+      <li>..SSJSS..</li>
+      <li>.SS...SS.</li>
+      <li>SSC...CSS</li>
+      <li>S.....0.S</li>
+      <li>S.......S</li>
+      <li>Sφ.....σS</li>
+      <li>S..X....S</li>
+      <li>SS.....SS</li>
+      <li>.SSSJSSS.</li>
+    </things>
+    <roof>
+      <li>..^^^^^..</li>
+      <li>.^^^^^^^.</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>.^^^^^^^.</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>..8...1..</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/GenStepDef[defName="Cultist_1Tier_Generation"]/genStep</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/GenStepDef[defName="Cultist_1Tier_Generation"]/genStep</xpath>
+      <value>
+        <genStep Class="CustomBaseFramework.GenStep_CBFSettlement">
+          <forcePlan>CBF_Plan_Dungeon_CultHideout_T1</forcePlan>
+          <fallbackToVanilla>false</fallbackToVanilla>
+        </genStep>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/GenStepDef[defName="ShadowSect_2Tier_Generation"]/genStep</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/GenStepDef[defName="ShadowSect_2Tier_Generation"]/genStep</xpath>
+      <value>
+        <genStep Class="CustomBaseFramework.GenStep_CBFSettlement">
+          <forcePlan>CBF_Plan_Dungeon_CultHideout_T2</forcePlan>
+          <fallbackToVanilla>false</fallbackToVanilla>
+        </genStep>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/GenStepDef[defName="ShadowSect_3Tier_Generation"]/genStep</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/GenStepDef[defName="ShadowSect_3Tier_Generation"]/genStep</xpath>
+      <value>
+        <genStep Class="CustomBaseFramework.GenStep_CBFSettlement">
+          <forcePlan>CBF_Plan_Dungeon_CultHideout_T3</forcePlan>
+          <fallbackToVanilla>false</fallbackToVanilla>
+        </genStep>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/GenStepDef[defName="DankPyon_Small_Ruin_Gen"]/genStep</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/GenStepDef[defName="DankPyon_Small_Ruin_Gen"]/genStep</xpath>
+      <value>
+        <genStep Class="CustomBaseFramework.GenStep_CBFSettlement">
+          <forcePlan>CBF_Plan_Dungeon_Ruin_Small</forcePlan>
+          <fallbackToVanilla>false</fallbackToVanilla>
+        </genStep>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/GenStepDef[defName="DankPyon_Medium_Ruin_Gen"]/genStep</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/GenStepDef[defName="DankPyon_Medium_Ruin_Gen"]/genStep</xpath>
+      <value>
+        <genStep Class="CustomBaseFramework.GenStep_CBFSettlement">
+          <forcePlan>CBF_Plan_Dungeon_Ruin_Large</forcePlan>
+          <fallbackToVanilla>false</fallbackToVanilla>
+        </genStep>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/GenStepDef[defName="DankPyon_Big_Snake_Ruin_Gen"]/genStep</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/GenStepDef[defName="DankPyon_Big_Snake_Ruin_Gen"]/genStep</xpath>
+      <value>
+        <genStep Class="CustomBaseFramework.GenStep_CBFSettlement">
+          <forcePlan>CBF_Plan_Dungeon_Ruin_Snake</forcePlan>
+          <fallbackToVanilla>false</fallbackToVanilla>
+        </genStep>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[@Name="DankPyon_ShadowSectBase"]/pawnGroupMakers</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[@Name="DankPyon_ShadowSectBase"]</xpath>
+      <value>
+        <pawnGroupMakers>
+          <li>
+            <kindDef>Combat</kindDef>
+            <commonality>100</commonality>
+            <options>
+              <DankPyon_Cultist_Novice>10</DankPyon_Cultist_Novice>
+              <DanyPyon_Cultist_Acolyte_Melee>8</DanyPyon_Cultist_Acolyte_Melee>
+              <DanyPyon_Cultist_Acolyte_Ranged>8</DanyPyon_Cultist_Acolyte_Ranged>
+              <DanyPyon_Cultist_Adept_Melee>4</DanyPyon_Cultist_Adept_Melee>
+              <DanyPyon_Cultist_Adept_Ranged>4</DanyPyon_Cultist_Adept_Ranged>
+              <DanyPyon_Cultist_HighPriest_Melee>1</DanyPyon_Cultist_HighPriest_Melee>
+              <DanyPyon_Cultist_HighPriest_Ranged>1</DanyPyon_Cultist_HighPriest_Ranged>
+            </options>
+          </li>
+          <li>
+            <kindDef>Settlement</kindDef>
+            <commonality>100</commonality>
+            <options>
+              <DankPyon_Cultist_Novice>10</DankPyon_Cultist_Novice>
+              <DanyPyon_Cultist_Acolyte_Melee>8</DanyPyon_Cultist_Acolyte_Melee>
+              <DanyPyon_Cultist_Acolyte_Ranged>8</DanyPyon_Cultist_Acolyte_Ranged>
+              <DanyPyon_Cultist_Adept_Melee>4</DanyPyon_Cultist_Adept_Melee>
+              <DanyPyon_Cultist_Adept_Ranged>4</DanyPyon_Cultist_Adept_Ranged>
+              <DanyPyon_Cultist_HighPriest_Melee>1</DanyPyon_Cultist_HighPriest_Melee>
+              <DanyPyon_Cultist_HighPriest_Ranged>1</DanyPyon_Cultist_HighPriest_Ranged>
+            </options>
+          </li>
+        </pawnGroupMakers>
+      </value>
+    </nomatch>
+  </Operation>
+
+</Patch>

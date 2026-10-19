@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_TitheHouse_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_BoneReaper_Tithe</li>
+    </categories>
+    <style>CBF_BoneReaper</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>0</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>1</symbol><anchor>TitheA</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Chest</objects><lootTable>CBF_BoneReaper_Loot_Tithe</lootTable></li>
+      <li><symbol>2</symbol><anchor>TitheB</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Barrel</objects><lootTable>CBF_BoneReaper_Loot_Tithe</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>3</symbol><thing>DankPyon_HideoutRusticBarrelClosed</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>8</symbol><anchor>Collector</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~1</pawnCount><chance>0.8</chance></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>C</symbol><thing>pphhyy_SoulCask</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>X</symbol><thing>pphhyy_BoneTitheNexus</thing><stuff>pphhyy_BoneMoldSteel</stuff><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>pphhyy_OsseousTiledFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ç</symbol><thing>DankPyon_Crate2x2_Bones</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>φ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+    </legend>
+    <mask>
+      <li>#######....</li>
+      <li>#######....</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+    </mask>
+    <terrain>
+      <li>ppppppp....</li>
+      <li>ppppppp....</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+      <li>ppppppppppp</li>
+    </terrain>
+    <things>
+      <li>IIIIIII....</li>
+      <li>I0...3I....</li>
+      <li>I.....IIIII</li>
+      <li>I.X...D...I</li>
+      <li>I.....I..CI</li>
+      <li>Iφ....Iç.CI</li>
+      <li>I.....I...I</li>
+      <li>IIDIIIIIIII</li>
+    </things>
+    <roof>
+      <li>^^^^^^^....</li>
+      <li>^^^^^^^....</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>.1...2.....</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>....8......</li>
+      <li>...........</li>
+      <li>...........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

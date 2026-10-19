@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Dungeon_BenchHall_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_BenchHall</li>
+      <li>CBF_Dungeon_Cult</li>
+      <li>CBF_Dungeon_Cult_Rundown</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_Medieval</style>
+    <legend>
+      <li><symbol>8</symbol><anchor>Cultists</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~3</pawnCount></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>J</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ä</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain><floorList>CBF_MO_Dungeon_FloorList_Cobble</floorList><floorPerCell>true</floorPerCell></li>
+      <li><symbol>ř</symbol><terrain>CarpetRed</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ρ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>σ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>τ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>φ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>յ</symbol><thing>DankPyon_LogBench1x3c</thing><stuff>DankPyon_RawWood</stuff><rotation>South</rotation></li>
+    </legend>
+    <mask>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+    </mask>
+    <terrain>
+      <li>äääääääääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääřäääää</li>
+      <li>äääääääääää</li>
+    </terrain>
+    <things>
+      <li>SSSSSJSSSSS</li>
+      <li>S.ρ.....ρ.S</li>
+      <li>S.........S</li>
+      <li>S.........S</li>
+      <li>Sյ.......յS</li>
+      <li>S.........S</li>
+      <li>Sφ.......σS</li>
+      <li>J.........J</li>
+      <li>S.........S</li>
+      <li>S.........S</li>
+      <li>S.........S</li>
+      <li>S.........S</li>
+      <li>Sյ.......յS</li>
+      <li>S.τ.....τ.S</li>
+      <li>SSSSSJSSSSS</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>....8......</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

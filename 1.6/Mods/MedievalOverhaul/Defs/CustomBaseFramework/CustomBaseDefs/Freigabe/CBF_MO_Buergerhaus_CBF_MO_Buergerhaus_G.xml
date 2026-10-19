@@ -39,7 +39,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>o</symbol><thing>DankPyon_HideOutBuildingBase_Cart_RawWood</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>r</symbol><thing>DankPyon_RusticStool</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
-      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
+      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>0</descentChance><descentPlans><li>CBF_Plan_Dungeon_StoreCellar</li><li>CBF_Plan_Dungeon_HideoutCellar</li><li>CBF_Plan_Dungeon_TreasureCellar</li></descentPlans></li>
     </legend>
     <mask>
       <li>..###.......</li>
@@ -101,8 +102,8 @@
       <li>............</li>
       <li>.bb..1......</li>
       <li>+bb.8Ç......</li>
-      <li>.......kk...</li>
-      <li>............</li>
+      <li>.......kk..↓</li>
+      <li>...........↓</li>
       <li>.....2.Ç....</li>
       <li>........JJ..</li>
       <li>........JJ..</li>

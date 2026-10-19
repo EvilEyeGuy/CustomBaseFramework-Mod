@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.SettlementPlanDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_Plan_Dungeon_BoneReaperCrypt</defName>
+    <label>bone reaper crypt</label>
+    <kind>Dungeon</kind>
+    <materialList>CBF_BoneReaper_MaterialList</materialList>
+    <styles>
+      <li>CBF_BoneReaper</li>
+    </styles>
+    <techLevels>
+      <li>Medieval</li>
+    </techLevels>
+    <levels>
+      <li>
+        <name>Crypt</name>
+        <label>crypt</label>
+        <layout>Rows</layout>
+        <mapSize>90</mapSize>
+        <entrance>
+          <li><tag>CBF_Dungeon_BoneReaperStairs</tag></li>
+        </entrance>
+        <stairsDown>
+          <li><tag>CBF_Dungeon_BoneReaperStairsDown</tag></li>
+        </stairsDown>
+        <corridors>
+          <li><piece>CBF_BoneReaper_Dungeon_Corridor_3</piece><weight>5</weight></li>
+          <li><piece>CBF_BoneReaper_Dungeon_Corridor_3_Torch</piece><weight>2</weight></li>
+          <li><piece>CBF_BoneReaper_Dungeon_Corridor_1</piece><weight>1</weight></li>
+        </corridors>
+        <districts>
+          <li>
+            <name>Crypt</name>
+            <entries>
+              <li><tag>CBF_Dungeon_BoneReaperTomb</tag><count>2~3</count></li>
+              <li><tag>CBF_Dungeon_BoneReaperOssuary</tag><count>1~2</count></li>
+              <li><tag>CBF_Dungeon_BoneReaperCatacomb</tag><count>1~2</count></li>
+              <li><tag>CBF_Dungeon_BoneReaperHall</tag><count>1~1</count></li>
+              <li><tag>CBF_Dungeon_BoneReaperGuard</tag><count>1~2</count></li>
+              <li><tag>CBF_Dungeon_BoneReaperTithe</tag><count>0~1</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <name>Deep</name>
+        <label>deep crypt</label>
+        <layout>Rows</layout>
+        <mapSize>70</mapSize>
+        <entrance>
+          <li><tag>CBF_Dungeon_BoneReaperStairs</tag></li>
+        </entrance>
+        <corridors>
+          <li><piece>CBF_BoneReaper_Dungeon_Corridor_3</piece><weight>5</weight></li>
+          <li><piece>CBF_BoneReaper_Dungeon_Corridor_3_Torch</piece><weight>2</weight></li>
+          <li><piece>CBF_BoneReaper_Dungeon_Corridor_1</piece><weight>1</weight></li>
+        </corridors>
+        <districts>
+          <li>
+            <name>Deep</name>
+            <entries>
+              <li><tag>CBF_Dungeon_BoneReaperThrone</tag><count>1~1</count><priority>Critical</priority></li>
+              <li><tag>CBF_Dungeon_BoneReaperVault</tag><count>1~2</count></li>
+              <li><tag>CBF_Dungeon_BoneReaperTomb</tag><count>1~1</count></li>
+              <li><tag>CBF_Dungeon_BoneReaperGuard</tag><count>1~2</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </levels>
+  </CustomBaseFramework.SettlementPlanDef>
+
+</Defs>

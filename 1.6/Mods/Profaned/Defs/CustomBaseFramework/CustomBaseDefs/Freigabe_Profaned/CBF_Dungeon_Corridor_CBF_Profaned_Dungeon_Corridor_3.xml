@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Dungeon_Corridor_3</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_Corridor</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_Profaned</style>
+    <legend>
+      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+    </legend>
+    <mask>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+    </mask>
+    <terrain>
+      <li>p</li>
+      <li>p</li>
+      <li>p</li>
+      <li>p</li>
+      <li>p</li>
+    </terrain>
+    <things>
+      <li>S</li>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+      <li>S</li>
+    </things>
+    <roof>
+      <li>^</li>
+      <li>^</li>
+      <li>^</li>
+      <li>^</li>
+      <li>^</li>
+    </roof>
+    <anchors>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

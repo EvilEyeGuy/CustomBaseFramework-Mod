@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.SettlementPlanDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Plan_Dungeon_ProfanedCatacomb</defName>
+    <label>profaned catacomb</label>
+    <kind>Dungeon</kind>
+    <materialList>CBF_Profaned_MaterialList</materialList>
+    <styles>
+      <li>CBF_Profaned</li>
+    </styles>
+    <techLevels>
+      <li>Medieval</li>
+    </techLevels>
+    <levels>
+      <li>
+        <name>Catacomb</name>
+        <label>catacomb</label>
+        <layout>Rows</layout>
+        <mapSize>70</mapSize>
+        <entrance>
+          <li><tag>CBF_Dungeon_ProfanedStairs</tag></li>
+        </entrance>
+        <corridors>
+          <li><piece>CBF_Profaned_Dungeon_Corridor_3</piece><weight>5</weight></li>
+          <li><piece>CBF_Profaned_Dungeon_Corridor_3_Lantern</piece><weight>2</weight></li>
+          <li><piece>CBF_Profaned_Dungeon_Corridor_1</piece><weight>1</weight></li>
+        </corridors>
+        <districts>
+          <li>
+            <name>Graves</name>
+            <entries>
+              <li><tag>CBF_Dungeon_ProfanedCatacomb</tag><count>1~2</count></li>
+              <li><tag>CBF_Dungeon_ProfanedTomb</tag><count>1~1</count></li>
+              <li><tag>CBF_Dungeon_ProfanedGuard</tag><count>0~1</count></li>
+              <li><tag>CBF_Dungeon_ProfanedVault</tag><count>0~1</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </levels>
+  </CustomBaseFramework.SettlementPlanDef>
+
+</Defs>

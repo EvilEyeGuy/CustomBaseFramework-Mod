@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_Dungeon_Vault_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_BoneReaperVault</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_BoneReaper</style>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>*</symbol><thing>DankPyon_Building_SkullGold</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>0</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>South</rotation></li>
+      <li><symbol>1</symbol><anchor>HoardA</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_NobleChest</objects><lootTable>CBF_BoneReaper_Loot_Hoard</lootTable></li>
+      <li><symbol>2</symbol><anchor>HoardB</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_NobleChest</objects><lootTable>CBF_BoneReaper_Loot_Hoard</lootTable></li>
+      <li><symbol>3</symbol><anchor>HoardC</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_NobleChest</objects><lootTable>CBF_BoneReaper_Loot_Hoard</lootTable></li>
+      <li><symbol>4</symbol><anchor>HoardD</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_NobleChest</objects><lootTable>CBF_BoneReaper_Loot_Hoard</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>5</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>North</rotation></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>C</symbol><thing>pphhyy_SoulCask</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>J</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>pphhyy_OsseousTiledFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>σ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>τ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+    </legend>
+    <mask>
+      <li>..###..</li>
+      <li>.#####.</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>.#####.</li>
+    </mask>
+    <terrain>
+      <li>..ppp..</li>
+      <li>.ppppp.</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>.ppppp.</li>
+    </terrain>
+    <things>
+      <li>..SJS..</li>
+      <li>.SS.SS.</li>
+      <li>SS0.0SS</li>
+      <li>SC...CS</li>
+      <li>Sτ.*.σS</li>
+      <li>SS5.5SS</li>
+      <li>.SSSSS.</li>
+    </things>
+    <roof>
+      <li>..^^^..</li>
+      <li>.^^^^^.</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>.^^^^^.</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.......</li>
+      <li>..1.2..</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>..3.4..</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

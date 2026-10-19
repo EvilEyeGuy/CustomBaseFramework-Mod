@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Connector</defName>
+    <label>dungeon connector</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Corridor</defName>
+    <label>dungeon corridor</label>
+    <parent>CBF_Dungeon_Connector</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+</Defs>

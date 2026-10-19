@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_Dungeon_Vault_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_BoneReaperVault</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_BoneReaper</style>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>0</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>1</symbol><anchor>HoardA</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Chest</objects><lootTable>CBF_BoneReaper_Loot_Hoard</lootTable></li>
+      <li><symbol>2</symbol><anchor>HoardB</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Chest</objects><lootTable>CBF_BoneReaper_Loot_Hoard</lootTable></li>
+      <li><symbol>3</symbol><anchor>HoardC</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Chest</objects><lootTable>CBF_BoneReaper_Loot_Hoard</lootTable></li>
+      <li><symbol>4</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_Gate</thing><stuff>Steel</stuff></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>O</symbol><thing>pphhyy_OsseousObelisk</thing><stuff>pphhyy_BoneMoldSteel</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>pphhyy_OsseousTiledFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>σ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>τ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Sarcophagus</objects><lootTable>CBF_BoneReaper_Loot_Crypt</lootTable></li>
+    </legend>
+    <mask>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+    </mask>
+    <terrain>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+    </terrain>
+    <things>
+      <li>SSSSSSSSS</li>
+      <li>SSO...OSS</li>
+      <li>S.0...0.S</li>
+      <li>G...4...S</li>
+      <li>S.....0.S</li>
+      <li>SSτ...σSS</li>
+      <li>SSSSSSSSS</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>.........</li>
+      <li>..1.①.2..</li>
+      <li>....①....</li>
+      <li>......3..</li>
+      <li>.........</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

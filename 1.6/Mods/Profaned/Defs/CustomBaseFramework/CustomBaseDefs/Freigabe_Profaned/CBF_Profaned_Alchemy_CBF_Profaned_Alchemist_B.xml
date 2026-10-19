@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Alchemist_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Profaned_Alchemy</li>
+    </categories>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="BotchJob.Profaned"><symbol>0</symbol><thing>BotchJob_ProfaneAlchemyBench</thing><stuff>BlocksSlate</stuff><rotation>North</rotation></li>
+      <li><symbol>1</symbol><anchor>ShelfA</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Shelf</objects><lootTable>CBF_Profaned_Loot_Alchemy</lootTable></li>
+      <li><symbol>2</symbol><anchor>ShelfB</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Shelf</objects><lootTable>CBF_Profaned_Loot_Alchemy</lootTable></li>
+      <li><symbol>3</symbol><anchor>Chest</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Chest</objects><lootTable>CBF_Profaned_Loot_Alchemy</lootTable></li>
+      <li><symbol>4</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Ideology"><symbol>5</symbol><thing>BotchJob_ProfanedLanternDarklight</thing><rotation>North</rotation></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>6</symbol><thing>BotchJob_ProfanedChest</thing><rotation>North</rotation></li>
+      <li><symbol>8</symbol><anchor>Alchemist</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~1</pawnCount><chance>0.8</chance></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>D</symbol><thing>BotchJob_ProfanedSingleDoor</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>o</symbol><thing>BotchJob_WraithOrbPedestal</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+      <li><symbol>u</symbol><thing>ShelfSmall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>Ⓐ</symbol><anchor>Lantern1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+    </legend>
+    <mask>
+      <li>..#####..</li>
+      <li>.#######.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.#######.</li>
+      <li>..#####..</li>
+    </mask>
+    <terrain>
+      <li>..ppppp..</li>
+      <li>.ppppppp.</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>.ppppppp.</li>
+      <li>..ppppp..</li>
+    </terrain>
+    <things>
+      <li>..IIIII..</li>
+      <li>.II...II.</li>
+      <li>II40..4II</li>
+      <li>Io.....oI</li>
+      <li>I.......I</li>
+      <li>I5.....uI</li>
+      <li>II6....II</li>
+      <li>.II...II.</li>
+      <li>..IIDII..</li>
+    </things>
+    <roof>
+      <li>..^^^^^..</li>
+      <li>.^^^^^^^.</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>^^^^^^^^^</li>
+      <li>.^^^^^^^.</li>
+      <li>..^^^^^..</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>.........</li>
+      <li>..1...2..</li>
+      <li>.........</li>
+      <li>....8....</li>
+      <li>.Ⓐ.......</li>
+      <li>..3......</li>
+      <li>.........</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

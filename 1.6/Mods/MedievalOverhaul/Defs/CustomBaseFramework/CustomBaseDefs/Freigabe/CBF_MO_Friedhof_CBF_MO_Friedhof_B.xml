@@ -33,6 +33,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_Building_SkullEmerald</thing></li>
       <li><symbol>z</symbol><thing>FenceGate</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable><descentChance>0.15</descentChance><descentPlans><li>CBF_Plan_Dungeon_SmallCrypt</li></descentPlans></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable><descentChance>0.15</descentChance><descentPlans><li>CBF_Plan_Dungeon_SmallCrypt</li></descentPlans></li>
     </legend>
     <mask>
       <li>.......#######...</li>
@@ -96,8 +98,8 @@
     </roof>
     <anchors>
       <li>.................</li>
-      <li>.................</li>
-      <li>.................</li>
+      <li>........①...②....</li>
+      <li>........①...②....</li>
       <li>..........1......</li>
       <li>.................</li>
       <li>.................</li>

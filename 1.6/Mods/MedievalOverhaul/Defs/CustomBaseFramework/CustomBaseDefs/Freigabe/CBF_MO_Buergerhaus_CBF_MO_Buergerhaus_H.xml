@@ -32,7 +32,8 @@
       <li><symbol>a</symbol><anchor>Dishes</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tableware_Burgher</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li><symbol>b</symbol><anchor>Bed</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_DoubleBed</objects></li>
       <li><symbol>r</symbol><anchor>Shelf</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_HeraldryShelf</objects></li>
-      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
+      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>0</descentChance><descentPlans><li>CBF_Plan_Dungeon_StoreCellar</li><li>CBF_Plan_Dungeon_HideoutCellar</li><li>CBF_Plan_Dungeon_TreasureCellar</li></descentPlans></li>
     </legend>
     <mask>
       <li>######</li>
@@ -92,7 +93,7 @@
     <anchors>
       <li>...+..</li>
       <li>.bb.1.</li>
-      <li>+bb...</li>
+      <li>+bb↓↓.</li>
       <li>...8Ç.</li>
       <li>......</li>
       <li>.rr...</li>

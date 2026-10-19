@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Plan_Dungeon_SmallCrypt</defName>
+    <label>small crypt</label>
+    <kind>Dungeon</kind>
+    <materialList>CBF_MO_MaterialList</materialList>
+    <styles>
+      <li>Rustical</li>
+      <li>Standard</li>
+    </styles>
+    <techLevels>
+      <li>Medieval</li>
+    </techLevels>
+    <levels>
+      <li>
+        <name>Crypt</name>
+        <label>crypt</label>
+        <layout>Rows</layout>
+        <mapSize>70</mapSize>
+        <entrance>
+          <li><tag>CBF_Dungeon_SmallCryptStairs</tag></li>
+        </entrance>
+        <corridors>
+          <li><piece>CBF_MO_Dungeon_Catacomb_Hewn_3_Bones</piece></li>
+          <li><piece>CBF_MO_Dungeon_Catacomb_Masonry_3</piece></li>
+        </corridors>
+        <districts>
+          <li>
+            <name>Tombs</name>
+            <entries>
+              <li><tag>CBF_Dungeon_Tomb</tag><count>1~1</count></li>
+              <li><tag>CBF_Dungeon_BurialChamber</tag><count>0~1</count></li>
+              <li><tag>CBF_Dungeon_Ossuary</tag><count>0~1</count></li>
+              <li><tag>CBF_Dungeon_SmallCryptChamber</tag><count>1~2</count></li>
+              <li><tag>CBF_Dungeon_NicheChamber</tag><count>0~1</count></li>
+              <li><tag>CBF_Dungeon_SarcophagusHall</tag><count>0~1</count></li>
+              <li><tag>CBF_Dungeon_FamilyCrypt</tag><count>0~1</count></li>
+              <li><tag>CBF_Dungeon_CryptWarden</tag><count>0~1</count></li>
+              <li><tag>CBF_Dungeon_SmallCryptVault</tag><count>0~1</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </levels>
+
+    <ideoStyle>true</ideoStyle>
+  </CustomBaseFramework.SettlementPlanDef>
+
+</Defs>

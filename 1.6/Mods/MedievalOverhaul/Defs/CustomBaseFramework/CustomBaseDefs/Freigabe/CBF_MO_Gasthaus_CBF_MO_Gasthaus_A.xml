@@ -69,7 +69,8 @@
       <li><symbol>x</symbol><anchor>DishesF</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tableware_Tavern</objects><chance>0.8</chance><onTop>true</onTop></li>
       <li><symbol>y</symbol><anchor>RugB</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Patch_1x2</objects></li>
       <li><symbol>z</symbol><anchor>DishesE</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Tableware_Tavern</objects><chance>0.8</chance><onTop>true</onTop></li>
-      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
+      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>0</descentChance><descentPlans><li>CBF_Plan_Dungeon_WineCellar</li><li>CBF_Plan_Dungeon_StoreCellar</li></descentPlans></li>
     </legend>
     <mask>
       <li>#############....</li>
@@ -156,8 +157,8 @@
       <li>...1.7......+....</li>
       <li>.................</li>
       <li>.uuÇ..yy.........</li>
-      <li>.................</li>
-      <li>.Ç.....6..3......</li>
+      <li>................↓</li>
+      <li>.Ç.....6..3.....↓</li>
       <li>..gg......22.....</li>
       <li>+.gg......22...5.</li>
       <li>.................</li>

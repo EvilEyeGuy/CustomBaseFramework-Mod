@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Profaned_Loot_Minimal</defName>
+    <label>scraps</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="BotchJob.Profaned"><weight>8</weight><thing>BotchJob_TaintedBone</thing><count>3~8</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Silver</thing><count>10~30</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>3</weight><thing>BotchJob_TatteredUndershirt</thing><count>1~1</count><quality>Awful~Poor</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Profaned_Goods_Relics</defName>
+    <label>relics</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="BotchJob.Profaned"><weight>6</weight><thing>BotchJob_LuminousDust</thing><count>3~10</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>6</weight><thing>BotchJob_CorruptedBlood</thing><count>2~6</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>6</weight><thing>BotchJob_TaintedBone</thing><count>5~15</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>3</weight><thing>BotchJob_WraithOrb</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>4</weight><thing>BotchJob_Bloodstone</thing><count>2~6</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>2</weight><thing>BotchJob_SoulGem</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_SoulGemGreater</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_ColossusHeart</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Profaned_Goods_Potions</defName>
+    <label>potions</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="BotchJob.Profaned"><weight>4</weight><thing>BotchJob_ProfaneFuryPotion</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>6</weight><thing>BotchJob_ProfaneHealingPotion</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>4</weight><thing>BotchJob_ProfaneHastePotion</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>2</weight><thing>BotchJob_ProfaneCharismaPotion</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Profaned_Goods_Arms</defName>
+    <label>profaned arms</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="BotchJob.Profaned"><weight>6</weight><thing>BotchJob_ProfanedWarAxe</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>6</weight><thing>BotchJob_ProfanedScimitar</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>4</weight><thing>BotchJob_ProfanedShotel</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>6</weight><thing>BotchJob_ProfanedClub</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>5</weight><thing>BotchJob_WeatheredShortbow</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>3</weight><thing>BotchJob_ProfanedScythe</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>3</weight><thing>BotchJob_ProfanedGlaive</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>2</weight><thing>BotchJob_ProfanedStaff</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>2</weight><thing>BotchJob_ProfanedGreatbow</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_ScourgeknightGreatsword</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_ScourgeknightGreataxe</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Profaned_Goods_Armor</defName>
+    <label>profaned armor</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="BotchJob.Profaned"><weight>6</weight><thing>BotchJob_WeatheredKettleHelmet</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>5</weight><thing>BotchJob_WeatheredChainmailCoif</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>5</weight><thing>BotchJob_WeatheredChainmail</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>4</weight><thing>BotchJob_WeatheredPauldron</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>3</weight><thing>BotchJob_HeadhunterPauldron</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>2</weight><thing>BotchJob_ProfanedCloak</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>2</weight><thing>BotchJob_GravetenderRobes</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_ScourgeknightHelmet</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_ScourgeknightArmor</thing><count>1~1</count><quality>Poor~Good</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Profaned_Goods_Treasure</defName>
+    <label>grave treasure</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>6</weight><thing>Gold</thing><count>10~40</count><onMissing>Skip</onMissing></li>
+      <li><weight>8</weight><thing>Silver</thing><count>40~150</count><onMissing>Skip</onMissing></li>
+      <li><weight>3</weight><thing>Jade</thing><count>5~20</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_BoneCrown</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>2</weight><thing>BotchJob_SoulGem</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_FadingSoulScythe</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_AbyssalGlaive</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_SpectralGreatbow</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_BloodflameStaff</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_GraspingDeadGreatsword</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>1</weight><thing>BotchJob_FrostboundGreataxe</thing><count>1~1</count><quality>Good~Masterwork</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Profaned_Goods_Rags</defName>
+    <label>rags</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="BotchJob.Profaned"><weight>6</weight><thing>BotchJob_TatteredUndershirt</thing><count>1~1</count><quality>Awful~Normal</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>6</weight><thing>BotchJob_RaggedLegwraps</thing><count>1~1</count><quality>Awful~Normal</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>4</weight><thing>BotchJob_TatteredCowl</thing><count>1~1</count><quality>Awful~Normal</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li MayRequire="BotchJob.Profaned"><weight>3</weight><thing>BotchJob_HeadhunterBandages</thing><count>1~1</count><quality>Awful~Normal</quality><hitPoints>0.6~1.0</hitPoints><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>Cloth</thing><count>5~15</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Profaned_Loot_Home</defName>
+    <label>Home</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Profaned_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Profaned_Goods_Rags</table></li>
+      <li><weight>4</weight><table>CBF_Profaned_Goods_Relics</table></li>
+      <li><weight>2</weight><table>CBF_Profaned_Goods_Potions</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Profaned_Loot_Armory</defName>
+    <label>Armory</label>
+    <rolls>1~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Profaned_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Profaned_Goods_Arms</table></li>
+      <li><weight>8</weight><table>CBF_Profaned_Goods_Armor</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Profaned_Loot_Alchemy</defName>
+    <label>Alchemy</label>
+    <rolls>2~3</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Profaned_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Profaned_Goods_Relics</table></li>
+      <li><weight>8</weight><table>CBF_Profaned_Goods_Potions</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Profaned_Loot_Crypt</defName>
+    <label>Crypt</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Profaned_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>8</weight><table>CBF_Profaned_Goods_Relics</table></li>
+      <li><weight>5</weight><table>CBF_Profaned_Goods_Treasure</table></li>
+      <li><weight>3</weight><table>CBF_Profaned_Goods_Armor</table></li>
+      <li><weight>3</weight><table>CBF_Profaned_Goods_Arms</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Profaned_Loot_Hoard</defName>
+    <label>Hoard</label>
+    <rolls>2~4</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Profaned_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Profaned_Goods_Treasure</table></li>
+      <li><weight>6</weight><table>CBF_Profaned_Goods_Relics</table></li>
+      <li><weight>2</weight><table>CBF_Profaned_Goods_Arms</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+</Defs>

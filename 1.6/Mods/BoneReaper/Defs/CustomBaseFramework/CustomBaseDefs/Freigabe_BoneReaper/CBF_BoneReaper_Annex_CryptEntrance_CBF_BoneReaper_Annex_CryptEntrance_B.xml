@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_Annex_CryptEntrance_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_BoneReaper_Annex_CryptEntrance</li>
+    </categories>
+    <style>CBF_BoneReaper</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>pphhyy_OsseousTiledFloor</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ρ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>1</descentChance><descentPlans><li>CBF_Plan_Dungeon_BoneReaperCrypt</li></descentPlans></li>
+    </legend>
+    <mask>
+      <li>######.</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>######.</li>
+    </mask>
+    <terrain>
+      <li>pppppp.</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>pppppp.</li>
+    </terrain>
+    <things>
+      <li>IIIIII.</li>
+      <li>I....II</li>
+      <li>I....ρI</li>
+      <li>I.....I</li>
+      <li>I....II</li>
+      <li>IIIDII.</li>
+    </things>
+    <roof>
+      <li>^^^^^^.</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^.</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.↓↓↓...</li>
+      <li>+↓↓↓...</li>
+      <li>.↓↓↓...</li>
+      <li>.......</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

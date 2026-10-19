@@ -40,4 +40,45 @@
 
 
 
+  <ThingDef ParentName="CBF_BeutebehaelterBase">
+    <defName>CBF_Sarcophagus</defName>
+    <label>sarcophagus</label>
+    <description>An ornamented burial receptacle from a forgotten age.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/SarcophagusFull</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <size>(1,2)</size>
+    <pathCost>42</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>2400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+    <modExtensions>
+      <li Class="CustomBaseFramework.LootContainerExtension">
+        <emptyGraphic>
+          <texPath>Things/Building/Misc/Sarcophagus</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(3,4)</drawSize>
+        </emptyGraphic>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
 </Defs>

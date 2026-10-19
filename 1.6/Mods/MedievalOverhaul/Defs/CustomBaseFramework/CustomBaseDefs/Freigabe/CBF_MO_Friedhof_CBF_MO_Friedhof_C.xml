@@ -42,6 +42,9 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_Building_SkullEmerald</thing></li>
       <li><symbol>q</symbol><thing>SculptureSmall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>z</symbol><thing>FenceGate</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>0</descentChance><descentPlans><li>CBF_Plan_Dungeon_SmallCrypt</li></descentPlans></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable><descentChance>0.15</descentChance><descentPlans><li>CBF_Plan_Dungeon_SmallCrypt</li></descentPlans></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable><descentChance>0.15</descentChance><descentPlans><li>CBF_Plan_Dungeon_SmallCrypt</li></descentPlans></li>
     </legend>
     <mask>
       <li>...#########............</li>
@@ -133,9 +136,9 @@
     </roof>
     <anchors>
       <li>........................</li>
-      <li>......1.2...............</li>
-      <li>........................</li>
-      <li>........................</li>
+      <li>....①.1.2.②.............</li>
+      <li>....①.....②.....↓↓......</li>
+      <li>................↓↓......</li>
       <li>........................</li>
       <li>........................</li>
       <li>........................</li>

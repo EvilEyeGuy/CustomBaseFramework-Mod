@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>CBF_Descent_1x2_Stairs</defName>
+    <label>way down</label>
+    <description>A narrow way down into the dark below.</description>
+    <thingClass>CustomBaseFramework.Verliestreppe</thingClass>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <useHitPoints>false</useHitPoints>
+    <destroyable>false</destroyable>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <graphicData>
+      <texPath>Stairs/Stair_Down_Spiral_Stone_2x2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <deconstructible>false</deconstructible>
+      <isTargetable>false</isTargetable>
+      <isInert>true</isInert>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+      <isEdifice>false</isEdifice>
+    </building>
+    <portal>
+      <pocketMapGenerator>CBF_DungeonLevel</pocketMapGenerator>
+      <exitDef>CBF_DungeonStairsUp</exitDef>
+      <pocketMapSize>60</pocketMapSize>
+    </portal>
+    <inspectorTabs>
+      <li>ITab_ContentsMapPortal</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>CBF_Descent_2x2_Stairs</defName>
+    <label>stairs down</label>
+    <description>Worn stone steps that spiral down into the darkness below.</description>
+    <thingClass>CustomBaseFramework.Verliestreppe</thingClass>
+    <size>(2,2)</size>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <useHitPoints>false</useHitPoints>
+    <destroyable>false</destroyable>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <graphicData>
+      <texPath>Stairs/Stair_Down_Spiral_Stone_2x2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <deconstructible>false</deconstructible>
+      <isTargetable>false</isTargetable>
+      <isInert>true</isInert>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+      <isEdifice>false</isEdifice>
+    </building>
+    <portal>
+      <pocketMapGenerator>CBF_DungeonLevel</pocketMapGenerator>
+      <exitDef>CBF_DungeonStairsUp</exitDef>
+      <pocketMapSize>60</pocketMapSize>
+    </portal>
+    <inspectorTabs>
+      <li>ITab_ContentsMapPortal</li>
+    </inspectorTabs>
+  </ThingDef>
+
+</Defs>

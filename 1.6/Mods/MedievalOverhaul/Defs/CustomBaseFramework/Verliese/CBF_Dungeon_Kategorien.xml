@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Connector</defName>
+    <label>dungeon connector</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Corridor</defName>
+    <label>dungeon corridor</label>
+    <parent>CBF_Dungeon_Connector</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Room</defName>
+    <label>dungeon room</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Guardroom</defName>
+    <label>guardroom</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Bunkroom</defName>
+    <label>bunk room</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Cells</defName>
+    <label>cells</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Storeroom</defName>
+    <label>storeroom</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Vault</defName>
+    <label>vault</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Crypt</defName>
+    <label>crypt</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Chapel</defName>
+    <label>cult chapel</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Mess</defName>
+    <label>mess hall</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Entrance</defName>
+    <label>dungeon entrance</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Stairs</defName>
+    <label>dungeon stairs</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_SecretPassage</defName>
+    <label>secret passage</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_CatacombCorridor</defName>
+    <label>catacomb corridor</label>
+    <parent>CBF_Dungeon_Connector</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_BurialChamber</defName>
+    <label>burial chamber</label>
+    <parent>CBF_Dungeon_Crypt</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Ossuary</defName>
+    <label>ossuary</label>
+    <parent>CBF_Dungeon_Crypt</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_CatacombHall</defName>
+    <label>catacomb hall</label>
+    <parent>CBF_Dungeon_Crypt</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Tomb</defName>
+    <label>tomb</label>
+    <parent>CBF_Dungeon_Crypt</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_CryptChapel</defName>
+    <label>crypt chapel</label>
+    <parent>CBF_Dungeon_Crypt</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_CryptEntrance</defName>
+    <label>crypt entrance</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_CryptStairs</defName>
+    <label>crypt stairs</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_CaveFeature</defName>
+    <label>dungeon cave feature</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_CaveShrine</defName>
+    <label>dungeon cave shrine</label>
+    <parent>CBF_Dungeon_CaveFeature</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_GuardPost</defName>
+    <label>dungeon guard post</label>
+    <parent>CBF_Dungeon_CaveFeature</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_TreasureHeap</defName>
+    <label>dungeon treasure heap</label>
+    <parent>CBF_Dungeon_CaveFeature</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Hub</defName>
+    <label>dungeon crossroads room</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Nest</defName>
+    <label>dungeon nest</label>
+    <parent>CBF_Dungeon_CaveFeature</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Cult_Upscale</defName>
+    <label>dungeon cult upscale</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Cult_Rundown</defName>
+    <label>dungeon cult rundown</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_RitualCircle</defName>
+    <label>dungeon ritual circle</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_SacrificeChamber</defName>
+    <label>dungeon sacrifice chamber</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_HighPriestQuarters</defName>
+    <label>dungeon high priest quarters</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Library</defName>
+    <label>dungeon library</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Refectory</defName>
+    <label>dungeon refectory</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_CultistDormitory</defName>
+    <label>dungeon cultist dormitory</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_TortureChamber</defName>
+    <label>dungeon torture chamber</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_WellRoom</defName>
+    <label>dungeon well room</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_NicheChamber</defName>
+    <label>dungeon niche chamber</label>
+    <parent>CBF_Dungeon_Crypt</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_SarcophagusHall</defName>
+    <label>dungeon sarcophagus hall</label>
+    <parent>CBF_Dungeon_Crypt</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_FamilyCrypt</defName>
+    <label>dungeon family crypt</label>
+    <parent>CBF_Dungeon_Crypt</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_CryptWarden</defName>
+    <label>dungeon crypt warden</label>
+    <parent>CBF_Dungeon_Crypt</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_SmallCrypt</defName>
+    <label>dungeon small crypt</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_SmallCryptStairs</defName>
+    <label>dungeon small crypt stairs</label>
+    <parent>CBF_Dungeon_SmallCrypt</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_SmallCryptChamber</defName>
+    <label>dungeon small crypt chamber</label>
+    <parent>CBF_Dungeon_SmallCrypt</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_SmallCryptVault</defName>
+    <label>dungeon small crypt vault</label>
+    <parent>CBF_Dungeon_SmallCrypt</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Hideout</defName>
+    <label>dungeon hideout tier</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_HideoutT1</defName>
+    <label>dungeon hideout tier 1</label>
+    <parent>CBF_Dungeon_Hideout</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_HideoutT2</defName>
+    <label>dungeon hideout tier 2</label>
+    <parent>CBF_Dungeon_Hideout</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_HideoutT3</defName>
+    <label>dungeon hideout tier 3</label>
+    <parent>CBF_Dungeon_Hideout</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_RelicShrine</defName>
+    <label>dungeon relic shrine</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_SchematicArchive</defName>
+    <label>dungeon schematic archive</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_EliteQuarters</defName>
+    <label>elite quarters</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_TrophyHall</defName>
+    <label>trophy hall</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Cult</defName>
+    <label>dungeon cult theme</label>
+    <parent>DungeonRoom</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Pantry</defName>
+    <label>pantry</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Scriptorium</defName>
+    <label>scriptorium</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_Archive</defName>
+    <label>archive</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_StatueHall</defName>
+    <label>statue hall</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_BenchHall</defName>
+    <label>bench hall</label>
+    <parent>CBF_Dungeon_Room</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_Dungeon_CellarStairs</defName>
+    <label>dungeon cellar stairs</label>
+    <parent>CBF_Dungeon_Stairs</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+</Defs>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_CryptChapel_C</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Profaned_Chapel</li>
+    </categories>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>0</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Ideology"><symbol>1</symbol><thing>BotchJob_ProfanedBrazierDarklight</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Ideology"><symbol>2</symbol><thing>BotchJob_ProfanedLanternDarklight</thing><rotation>North</rotation></li>
+      <li><symbol>8</symbol><anchor>Priests</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~1</pawnCount><chance>0.6</chance></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>D</symbol><thing>BotchJob_ProfanedSingleDoor</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>Z</symbol><thing>SculptureSmall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>h</symbol><thing>BotchJob_ProfanedChair</thing><stuff>BlocksSlate</stuff><rotation>North</rotation></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+      <li><symbol>Ω</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind><annexRequired>true</annexRequired><annexCategories><li>CBF_Profaned_Annex_CryptEntrance</li></annexCategories></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>Ⓐ</symbol><anchor>Brazier1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierDark</objects></li>
+      <li><symbol>Ⓑ</symbol><anchor>Brazier2</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierDark</objects></li>
+      <li><symbol>Ⓒ</symbol><anchor>Lantern3</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+      <li><symbol>Ⓓ</symbol><anchor>Lantern4</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+    </legend>
+    <mask>
+      <li>..###..</li>
+      <li>.#####.</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>..ppp..</li>
+      <li>.ppppp.</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+    </terrain>
+    <things>
+      <li>..III..</li>
+      <li>.IIZII.</li>
+      <li>II...II</li>
+      <li>I1.0.1I</li>
+      <li>I.....I</li>
+      <li>Ihh.hhI</li>
+      <li>I.....I</li>
+      <li>Ihh.hhI</li>
+      <li>I2...2I</li>
+      <li>IIIDIII</li>
+    </things>
+    <roof>
+      <li>..^^^..</li>
+      <li>.^^^^^.</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.......</li>
+      <li>...①...</li>
+      <li>.Ⓐ.①.Ⓑ.</li>
+      <li>.8.....</li>
+      <li>.......</li>
+      <li>Ω......</li>
+      <li>.......</li>
+      <li>.Ⓒ...Ⓓ.</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

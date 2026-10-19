@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Dungeon_SarcophagusHall_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_SarcophagusHall</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_Medieval</style>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>0</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>1</symbol><anchor>GraveGoodsA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_ChurchTreasure</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_Ancient_Column</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>E</symbol><thing>Sarcophagus</thing><stuff>BlocksMarble</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_RuinedCandleStand</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>c</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_RuinedCandles</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>y</symbol><thing>DankPyon_RuinedBonePile1x1c</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>¤</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Ĵ</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>③</symbol><anchor>Sarcophagus3</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>④</symbol><anchor>Sarcophagus4</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+    </legend>
+    <mask>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+    </mask>
+    <terrain>
+      <li>ccccccc¤ccc</li>
+      <li>c¤cccc¤cccc</li>
+      <li>¤ccc¤cc¤ccc</li>
+      <li>cc¤ccc¤¤¤cc</li>
+      <li>¤ccc¤ccc¤¤c</li>
+      <li>cccccc¤cccc</li>
+      <li>¤cc¤¤cccccc</li>
+      <li>cccc¤c¤¤ccc</li>
+      <li>ccccc¤ccc¤¤</li>
+      <li>ccc¤cccc¤¤c</li>
+      <li>ccccc¤¤cccc</li>
+    </terrain>
+    <things>
+      <li>SSSSSĴSSSSS</li>
+      <li>SN.......NS</li>
+      <li>S.A.....A.S</li>
+      <li>S..E...E..S</li>
+      <li>S.A.....A.S</li>
+      <li>Ĵ..E...E..Ĵ</li>
+      <li>S.A.....A.S</li>
+      <li>S..E...E..S</li>
+      <li>S.A.....A.S</li>
+      <li>SK..0..f.yS</li>
+      <li>SSSSSĴSSSSS</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...①①......</li>
+      <li>...........</li>
+      <li>...②②..③③..</li>
+      <li>...........</li>
+      <li>.......④④..</li>
+      <li>...........</li>
+      <li>....1......</li>
+      <li>...........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -27,4 +27,38 @@
     <livestockGone>0.6</livestockGone>
   </CustomBaseFramework.RuinDef>
 
+  <CustomBaseFramework.RuinDef>
+    <defName>CBF_Ruin_Plundered</defName>
+    <label>plundered</label>
+    <occupation>Builder</occupation>
+    <wallDemolition>0.25</wallDemolition>
+    <clustering>0.6</clustering>
+    <buildingDamage>0.2~0.6</buildingDamage>
+    <burnMarks>0.3</burnMarks>
+    <rubble>0.45</rubble>
+    <roofCollapse>0.4</roofCollapse>
+    <overgrowth>0.35</overgrowth>
+    <overgrowthTrees>0.2</overgrowthTrees>
+    <lootFactor>0.35</lootFactor>
+    <lootWithOccupiers>0</lootWithOccupiers>
+    <residentCorpses>1~4</residentCorpses>
+    <rotDays>20~60</rotDays>
+  </CustomBaseFramework.RuinDef>
+
+  <CustomBaseFramework.RuinDef>
+    <defName>CBF_Ruin_Unplundered</defName>
+    <label>not plundered</label>
+    <occupation>Builder</occupation>
+    <wallDemolition>0.25</wallDemolition>
+    <clustering>0.6</clustering>
+    <buildingDamage>0.2~0.6</buildingDamage>
+    <burnMarks>0.25</burnMarks>
+    <rubble>0.45</rubble>
+    <roofCollapse>0.4</roofCollapse>
+    <overgrowth>0.35</overgrowth>
+    <overgrowthTrees>0.2</overgrowthTrees>
+    <lootFactor>1</lootFactor>
+    <lootWithOccupiers>0</lootWithOccupiers>
+  </CustomBaseFramework.RuinDef>
+
 </Defs>

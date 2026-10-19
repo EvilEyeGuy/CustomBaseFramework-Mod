@@ -25,7 +25,8 @@
       <li><symbol>2</symbol><anchor>Barrel</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Barrel</objects><lootTable>CBF_MO_Loot_Larder</lootTable></li>
       <li><symbol>8</symbol><anchor>Residents</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
       <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
-      <li><symbol>A</symbol><anchor>Object</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Bed_Single</objects></li>
+      <li><symbol>A</symbol><anchor>Object</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Bed_Single</objects></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>0</descentChance><descentPlans><li>CBF_Plan_Dungeon_StoreCellar</li><li>CBF_Plan_Dungeon_HideoutCellar</li><li>CBF_Plan_Dungeon_TreasureCellar</li></descentPlans></li>
     </legend>
     <mask>
       <li>#####</li>
@@ -62,7 +63,7 @@
     <anchors>
       <li>..+..</li>
       <li>.....</li>
-      <li>...A+</li>
+      <li>.↓↓A+</li>
       <li>+28A.</li>
       <li>.1.Ç.</li>
       <li>.....</li>

@@ -382,4 +382,21 @@
     </entries>
   </CustomBaseFramework.LootTableDef>
 
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_MO_Loot_Sarcophagus</defName>
+    <label>Sarcophagus</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_MO_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>8</weight><table>CBF_MO_Goods_Rings</table></li>
+      <li><weight>6</weight><table>CBF_MO_Goods_Treasure</table></li>
+      <li><weight>5</weight><table>CBF_MO_Goods_Gems</table></li>
+      <li><weight>3</weight><table>CBF_MO_Goods_Dishes</table></li>
+      <li><weight>3</weight><table>CBF_MO_Goods_Melee</table></li>
+      <li><weight>3</weight><table>CBF_MO_Goods_Armor</table></li>
+      <li><weight>1</weight><table>CBF_MO_Goods_BonusRegalia</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
 </Defs>

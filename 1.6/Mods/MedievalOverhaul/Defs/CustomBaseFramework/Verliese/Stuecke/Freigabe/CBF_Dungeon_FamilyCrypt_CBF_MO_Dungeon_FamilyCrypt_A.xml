@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Dungeon_FamilyCrypt_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_FamilyCrypt</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_Medieval</style>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>0</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>North</rotation></li>
+      <li><symbol>1</symbol><anchor>GraveGoodsA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_Treasury</lootTable></li>
+      <li><symbol>2</symbol><anchor>GraveGoodsB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_Treasury</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>:</symbol><terrain>DankPyon_Floor_Lys_Red</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>U</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>X</symbol><thing>Sarcophagus</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>c</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>¤</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Ĵ</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>κ</symbol><thing>DankPyon_Lootable_ArmorStatueNamed</thing><rotation>North</rotation></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>③</symbol><anchor>Sarcophagus3</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>④</symbol><anchor>Sarcophagus4</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+    </legend>
+    <mask>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+    </mask>
+    <terrain>
+      <li>¤¤¤cc¤¤cccc</li>
+      <li>ccccc:cccc¤</li>
+      <li>¤cccc:ccc¤c</li>
+      <li>c¤ccc:c¤¤cc</li>
+      <li>¤c¤cc:¤¤¤cc</li>
+      <li>¤c¤cc:¤cccc</li>
+      <li>ccccc:ccccc</li>
+      <li>ccccc:c¤ccc</li>
+      <li>cccc¤cc¤ccc</li>
+    </terrain>
+    <things>
+      <li>SSSSSĴSSSSS</li>
+      <li>SU.......US</li>
+      <li>S..X...X..S</li>
+      <li>S.........S</li>
+      <li>SN..X.X..NS</li>
+      <li>S.........S</li>
+      <li>S.κ.....κ.S</li>
+      <li>S0.......0S</li>
+      <li>SSSSSĴSSSSS</li>
+    </things>
+    <roof>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>...①...②...</li>
+      <li>...①...②...</li>
+      <li>....③.④....</li>
+      <li>....③.④....</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>.1.......2.</li>
+      <li>...........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -235,4 +235,156 @@
   <CBF_Ru_Spawns>Erscheinen</CBF_Ru_Spawns>
   <CBF_Ru_ListEmpty>Die Pawnliste ist leer, es erscheint nichts.</CBF_Ru_ListEmpty>
   <CBF_Ru_RightHint>Speichern ändert in der Datei der Ruine nur Besatzung und Kreaturen.</CBF_Ru_RightHint>
+  <CBF_Lo_Sites>Quest-Orte</CBF_Lo_Sites>
+  <CBF_Lo_SitesShort>Sites</CBF_Lo_SitesShort>
+  <CBF_Si_NoNew>Sites kommen aus Quests und Mods, hier lassen sie sich nicht anlegen.</CBF_Si_NoNew>
+  <CBF_Si_Hint>Welchen CBF-Ortstyp eine Quest-Site baut, wenn man sie betritt.</CBF_Si_Hint>
+  <CBF_Si_ByCamp>Wird schon über den Lager-Plan {0} von CBF gebaut (Lagertypen). Dort ändern.</CBF_Si_ByCamp>
+  <CBF_Si_ByOther>Wird schon von CBF mit {0} gebaut, festgelegt in einer anderen Datei. Dort ändern.</CBF_Si_ByOther>
+  <CBF_Si_Plan>Ortstyp</CBF_Si_Plan>
+  <CBF_Si_PlanTip>Der Ortstyp, den die Site baut. Keiner lässt die Site, wie sie ist.</CBF_Si_PlanTip>
+  <CBF_Si_NoPlan>Keiner</CBF_Si_NoPlan>
+  <CBF_Si_OpenNone>Erst einen wählen.</CBF_Si_OpenNone>
+  <CBF_Si_Ruin>Ruinenzustand</CBF_Si_Ruin>
+  <CBF_Si_RuinTip>Optionale Schäden und Besatzung aus einer Ruine. Öffnen springt nach Lists, Ruins.</CBF_Si_RuinTip>
+  <CBF_Si_NoRuin>Unversehrt</CBF_Si_NoRuin>
+  <CBF_Si_NeedPlan>Erst einen Ortstyp wählen.</CBF_Si_NeedPlan>
+  <CBF_Si_Steps>Kartenschritte dieser Site</CBF_Si_Steps>
+  <CBF_Si_NoSteps>Diese Site hat keine eigenen Kartenschritte. CBF legt einen eigenen Schritt an.</CBF_Si_NoSteps>
+  <CBF_Si_ReplaceTip>Angehakt: CBF ersetzt diesen Schritt, er baut dann nichts mehr. Nicht angehakte Schritte laufen neben dem CBF-Ort weiter.</CBF_Si_ReplaceTip>
+  <CBF_Si_NothingReplaced>Kein Schritt ersetzt: CBF legt einen eigenen Schritt an, die vorhandenen bauen zusätzlich.</CBF_Si_NothingReplaced>
+  <CBF_Si_GoalStepTip>Dieser Schritt baut vermutlich das Ziel der Quest, etwa Beute, einen Gefangenen oder ein besonderes Gebäude. Ersetzt man ihn, fehlt das Ziel und die Quest lässt sich womöglich nicht abschließen.</CBF_Si_GoalStepTip>
+  <CBF_Si_GoalReplaced>Ein ersetzter Schritt baut vermutlich das Ziel der Quest. Ohne ihn fehlen Beute, Gefangene oder Gebäude, die die Quest braucht. Besser nicht anhaken, dann baut CBF zusätzlich und lässt die Fläche des Ziels frei.</CBF_Si_GoalReplaced>
+  <CBF_Si_Occupier>Besatzer lassen sich bei Quests anderer Mods nicht wählen. Die Quest bestimmt die Fraktion selbst.</CBF_Si_Occupier>
+  <CBF_Si_Spawns>Erscheint</CBF_Si_Spawns>
+  <CBF_Si_Preview>{0}, unversehrt.</CBF_Si_Preview>
+  <CBF_Si_PreviewRuin>{0}, als Ruine: {1}.</CBF_Si_PreviewRuin>
+  <CBF_Si_RightHint>Speichern schreibt CBF_Sites.xml in Defs und Patches deines Mods. Der Editor wendet die Änderung sofort an; ersetzte Schritte anderer Mods kommen erst nach einem Neustart zurück.</CBF_Si_RightHint>
+  <CBF_Lo_Quests>Quests</CBF_Lo_Quests>
+  <CBF_Lo_QuestsShort>Quests</CBF_Lo_QuestsShort>
+  <CBF_Qu_NewTip>Neue Quest aus einer Quest-Art anlegen.</CBF_Qu_NewTip>
+  <CBF_Qu_PickKind>Quest-Art</CBF_Qu_PickKind>
+  <CBF_Qu_Art_Ort_raeumen>Ort räumen</CBF_Qu_Art_Ort_raeumen>
+  <CBF_Qu_Art_Ort_raeumenTip>Ein Ort in Feindeshand. Die Gegner vertreiben; danach wählt der Spieler zwischen Wohlwollen und Beute.</CBF_Qu_Art_Ort_raeumenTip>
+  <CBF_Qu_Art_Ort_verteidigen>Ort verteidigen</CBF_Qu_Art_Ort_verteidigen>
+  <CBF_Qu_Art_Ort_verteidigenTip>Ein Ort wird angegriffen. Den Verteidigern helfen; fallen sie, scheitert die Quest.</CBF_Qu_Art_Ort_verteidigenTip>
+  <CBF_Qu_Art_Verlies_erkunden>Verlies erkunden</CBF_Qu_Art_Verlies_erkunden>
+  <CBF_Qu_Art_Verlies_erkundenTip>Ein Verlies mit Ebenen. Räumen oder die unterste Ebene erreichen.</CBF_Qu_Art_Verlies_erkundenTip>
+  <CBF_Qu_Art_Gefangene_befreien>Gefangene befreien</CBF_Qu_Art_Gefangene_befreien>
+  <CBF_Qu_Art_Gefangene_befreienTip>Ein Ort, an dem Gegner Leute des Auftraggebers gefangen halten.</CBF_Qu_Art_Gefangene_befreienTip>
+  <CBF_Qu_Art_Monsterjagd>Monsterjagd</CBF_Qu_Art_Monsterjagd>
+  <CBF_Qu_Art_MonsterjagdTip>Ruinen ohne Fraktion, gehalten von Kreaturen aus einer Pawnliste, etwa einem Troll.</CBF_Qu_Art_MonsterjagdTip>
+  <CBF_Qu_G_General>Allgemein</CBF_Qu_G_General>
+  <CBF_Qu_G_Site>Ort</CBF_Qu_G_Site>
+  <CBF_Qu_G_Enemies>Gegner</CBF_Qu_G_Enemies>
+  <CBF_Qu_G_Timing>Ablauf</CBF_Qu_G_Timing>
+  <CBF_Qu_G_Reward>Lohn</CBF_Qu_G_Reward>
+  <CBF_Qu_G_Texts>Texte und Briefe</CBF_Qu_G_Texts>
+  <CBF_Qu_F_LABEL>Ortsname</CBF_Qu_F_LABEL>
+  <CBF_Qu_F_LABELTip>Name des Orts auf der Weltkarte.</CBF_Qu_F_LABELTip>
+  <CBF_Qu_F_DESCRIPTION>Ortsbeschreibung</CBF_Qu_F_DESCRIPTION>
+  <CBF_Qu_F_DESCRIPTIONTip>Erscheint, wenn der Ort auf der Weltkarte gewählt ist.</CBF_Qu_F_DESCRIPTIONTip>
+  <CBF_Qu_F_QUEST_NAME>Questname</CBF_Qu_F_QUEST_NAME>
+  <CBF_Qu_F_QUEST_NAMETip>Name in der Questliste. Grammatik-Platzhalter wie [asker_nameDef] sind erlaubt.</CBF_Qu_F_QUEST_NAMETip>
+  <CBF_Qu_F_QUEST_DESCRIPTION>Questtext</CBF_Qu_F_QUEST_DESCRIPTION>
+  <CBF_Qu_F_QUEST_DESCRIPTIONTip>Text des Questangebots. Grammatik-Platzhalter wie [asker_nameFull] sind erlaubt.</CBF_Qu_F_QUEST_DESCRIPTIONTip>
+  <CBF_Qu_F_SITE_PLAN>Ortstyp</CBF_Qu_F_SITE_PLAN>
+  <CBF_Qu_F_SITE_PLANTip>Welcher CBF-Ort entsteht: ein fester Ortstyp oder jeder mit passendem Site-Tag.</CBF_Qu_F_SITE_PLANTip>
+  <CBF_Qu_F_PLAN>Verlies</CBF_Qu_F_PLAN>
+  <CBF_Qu_F_PLANTip>Der Verliesplan des Orts.</CBF_Qu_F_PLANTip>
+  <CBF_Qu_F_GOAL_SIGNAL>Ziel</CBF_Qu_F_GOAL_SIGNAL>
+  <CBF_Qu_F_GOAL_SIGNALTip>Wann die Verlies-Quest erfüllt ist. Geräumt: Auf dem Ort und allen Ebenen steht kein feindlicher Pawn mehr, auch keine schlafenden, und kein feindliches Geschütz ist übrig. Unterste Ebene erreicht: Ein Siedler betritt die tiefste Ebene.</CBF_Qu_F_GOAL_SIGNALTip>
+  <CBF_Qu_Goal_DungeonCleared>Verlies geräumt</CBF_Qu_Goal_DungeonCleared>
+  <CBF_Qu_Goal_DungeonBottomReached>Unterste Ebene erreicht</CBF_Qu_Goal_DungeonBottomReached>
+  <CBF_Qu_F_RUIN>Ruinenzustand</CBF_Qu_F_RUIN>
+  <CBF_Qu_F_RUINTip>Schäden und Besatzung des Orts, siehe Quests, Ruins.</CBF_Qu_F_RUINTip>
+  <CBF_Qu_F_RUIN_PARENT>Ruinen-Grundlage</CBF_Qu_F_RUIN_PARENT>
+  <CBF_Qu_F_RUIN_PARENTTip>Die Ruinenregeln, auf denen die eigene Ruine der Quest aufbaut.</CBF_Qu_F_RUIN_PARENTTip>
+  <CBF_Qu_RP_CBF_Ruin_Basis>Schlicht (ohne Schäden)</CBF_Qu_RP_CBF_Ruin_Basis>
+  <CBF_Qu_RP_CBF_Ruin_Raided>Geplündert</CBF_Qu_RP_CBF_Ruin_Raided>
+  <CBF_Qu_F_PRISONERS>Gefangene</CBF_Qu_F_PRISONERS>
+  <CBF_Qu_F_PRISONERSTip>Zahl der Gefangenen als Spanne, etwa 2~4.</CBF_Qu_F_PRISONERSTip>
+  <CBF_Qu_F_CREATURES>Kreaturen</CBF_Qu_F_CREATURES>
+  <CBF_Qu_F_CREATURESTip>Pawnliste der Kreaturen. Jeder Eintrag ist eine Kreatur.</CBF_Qu_F_CREATURESTip>
+  <CBF_Qu_F_SITE_TEXTURE>Kartensymbol</CBF_Qu_F_SITE_TEXTURE>
+  <CBF_Qu_F_SITE_TEXTURETip>Symbol des Orts auf der Weltkarte.</CBF_Qu_F_SITE_TEXTURETip>
+  <CBF_Qu_Pic_Outpost>Außenposten</CBF_Qu_Pic_Outpost>
+  <CBF_Qu_Pic_Ruin>Zerstörter Ort</CBF_Qu_Pic_Ruin>
+  <CBF_Qu_Pic_Prisoner>Gefangener</CBF_Qu_Pic_Prisoner>
+  <CBF_Qu_Pic_Manhunters>Monster</CBF_Qu_Pic_Manhunters>
+  <CBF_Qu_Pic_Turrets>Befestigt</CBF_Qu_Pic_Turrets>
+  <CBF_Qu_Pic_Camp>Lager</CBF_Qu_Pic_Camp>
+  <CBF_Qu_F_OCCUPIERS>Besatzer</CBF_Qu_F_OCCUPIERS>
+  <CBF_Qu_F_OCCUPIERSTip>Fraktionen, die den Ort halten dürfen. Leer heißt jede feindliche Menschenfraktion.</CBF_Qu_F_OCCUPIERSTip>
+  <CBF_Qu_AnyHostile>Jede feindliche Fraktion</CBF_Qu_AnyHostile>
+  <CBF_Qu_F_THREAT_MIN>Mindestbedrohung</CBF_Qu_F_THREAT_MIN>
+  <CBF_Qu_F_THREAT_MINTip>Die Quest erscheint erst ab diesen Bedrohungspunkten.</CBF_Qu_F_THREAT_MINTip>
+  <CBF_Qu_F_POINTS_FACTOR>Gegnerstärke</CBF_Qu_F_POINTS_FACTOR>
+  <CBF_Qu_F_POINTS_FACTORTip>Faktor auf die Bedrohungspunkte für die Gegner am Ort.</CBF_Qu_F_POINTS_FACTORTip>
+  <CBF_Qu_F_SELECTION_WEIGHT>Häufigkeit</CBF_Qu_F_SELECTION_WEIGHT>
+  <CBF_Qu_F_SELECTION_WEIGHTTip>Wie oft der Erzähler diese Quest wählt. 0 schaltet sie ab.</CBF_Qu_F_SELECTION_WEIGHTTip>
+  <CBF_Qu_F_EXPIRE_DAYS>Angebotstage</CBF_Qu_F_EXPIRE_DAYS>
+  <CBF_Qu_F_EXPIRE_DAYSTip>Tage, bis ein nicht angenommenes Angebot verfällt, als Spanne.</CBF_Qu_F_EXPIRE_DAYSTip>
+  <CBF_Qu_F_TIMEOUT_DAYS_MIN>Ortstage min</CBF_Qu_F_TIMEOUT_DAYS_MIN>
+  <CBF_Qu_F_TIMEOUT_DAYS_MINTip>Kürzeste Zeit, die der Ort ohne Besuch auf der Karte bleibt.</CBF_Qu_F_TIMEOUT_DAYS_MINTip>
+  <CBF_Qu_F_TIMEOUT_DAYS_MAX>Ortstage max</CBF_Qu_F_TIMEOUT_DAYS_MAX>
+  <CBF_Qu_F_TIMEOUT_DAYS_MAXTip>Längste Zeit, die der Ort ohne Besuch auf der Karte bleibt.</CBF_Qu_F_TIMEOUT_DAYS_MAXTip>
+  <CBF_Qu_F_EXIT_DAYS>Tage nach Erfolg</CBF_Qu_F_EXIT_DAYS>
+  <CBF_Qu_F_EXIT_DAYSTip>Tage, bis die Karte nach dem Erfolg schließt.</CBF_Qu_F_EXIT_DAYSTip>
+  <CBF_Qu_F_REWARD>Lohn</CBF_Qu_F_REWARD>
+  <CBF_Qu_F_REWARDTip>Faktor auf den üblichen Questlohn.</CBF_Qu_F_REWARDTip>
+  <CBF_Qu_F_GOODWILL_FACTION>Wohlwollen bei Rückgabe</CBF_Qu_F_GOODWILL_FACTION>
+  <CBF_Qu_F_GOODWILL_FACTIONTip>Wohlwollen, wenn der Spieler den Ort den Besitzern zurückgibt.</CBF_Qu_F_GOODWILL_FACTIONTip>
+  <CBF_Qu_F_GOODWILL_LOOT>Wohlwollen bei Beute</CBF_Qu_F_GOODWILL_LOOT>
+  <CBF_Qu_F_GOODWILL_LOOTTip>Wohlwollen, wenn der Spieler die Beute behält.</CBF_Qu_F_GOODWILL_LOOTTip>
+  <CBF_Qu_F_GOODWILL_PER_1000_SILVER>Wohlwollensabzug je 1000 Silber</CBF_Qu_F_GOODWILL_PER_1000_SILVER>
+  <CBF_Qu_F_GOODWILL_PER_1000_SILVERTip>Wohlwollen, das je 1000 Silber genommener Waren verloren geht.</CBF_Qu_F_GOODWILL_PER_1000_SILVERTip>
+  <CBF_Qu_F_APPROACH_ORDER>Karawanenbefehl</CBF_Qu_F_APPROACH_ORDER>
+  <CBF_Qu_F_APPROACH_ORDERTip>Befehl im Karawanenmenü. {0} ist der Ort.</CBF_Qu_F_APPROACH_ORDERTip>
+  <CBF_Qu_F_APPROACHING_REPORT>Karawanenmeldung</CBF_Qu_F_APPROACHING_REPORT>
+  <CBF_Qu_F_APPROACHING_REPORTTip>Erscheint, solange die Karawane unterwegs ist. {0} ist der Ort.</CBF_Qu_F_APPROACHING_REPORTTip>
+  <CBF_Qu_F_ARRIVED_LETTER>Ankunftsbrief</CBF_Qu_F_ARRIVED_LETTER>
+  <CBF_Qu_F_ARRIVED_LETTERTip>Brief, wenn die Karawane ankommt.</CBF_Qu_F_ARRIVED_LETTERTip>
+  <CBF_Qu_F_ARRIVED_LETTER_DEF>Art des Ankunftsbriefs</CBF_Qu_F_ARRIVED_LETTER_DEF>
+  <CBF_Qu_F_ARRIVED_LETTER_DEFTip>Farbe und Klang des Ankunftsbriefs.</CBF_Qu_F_ARRIVED_LETTER_DEFTip>
+  <CBF_Qu_F_LETTER_SUCCESS_LABEL>Titel Erfolgsbrief</CBF_Qu_F_LETTER_SUCCESS_LABEL>
+  <CBF_Qu_F_LETTER_SUCCESS_LABELTip>Titel des Lohnbriefs.</CBF_Qu_F_LETTER_SUCCESS_LABELTip>
+  <CBF_Qu_F_LETTER_SUCCESS_TEXT>Text Erfolgsbrief</CBF_Qu_F_LETTER_SUCCESS_TEXT>
+  <CBF_Qu_F_LETTER_SUCCESS_TEXTTip>Text des Lohnbriefs.</CBF_Qu_F_LETTER_SUCCESS_TEXTTip>
+  <CBF_Qu_F_LETTER_FAILED_LABEL>Titel Fehlschlag</CBF_Qu_F_LETTER_FAILED_LABEL>
+  <CBF_Qu_F_LETTER_FAILED_LABELTip>Titel des Briefs, wenn der Spieler zu früh abzieht.</CBF_Qu_F_LETTER_FAILED_LABELTip>
+  <CBF_Qu_F_LETTER_FAILED_TEXT>Text Fehlschlag</CBF_Qu_F_LETTER_FAILED_TEXT>
+  <CBF_Qu_F_LETTER_FAILED_TEXTTip>Text des Briefs, wenn der Spieler zu früh abzieht.</CBF_Qu_F_LETTER_FAILED_TEXTTip>
+  <CBF_Qu_F_LETTER_EXPIRED_LABEL>Titel Ablauf</CBF_Qu_F_LETTER_EXPIRED_LABEL>
+  <CBF_Qu_F_LETTER_EXPIRED_LABELTip>Titel des Briefs, wenn der Ort ungenutzt verschwindet.</CBF_Qu_F_LETTER_EXPIRED_LABELTip>
+  <CBF_Qu_F_LETTER_EXPIRED_TEXT>Text Ablauf</CBF_Qu_F_LETTER_EXPIRED_TEXT>
+  <CBF_Qu_F_LETTER_EXPIRED_TEXTTip>Text des Briefs, wenn der Ort ungenutzt verschwindet.</CBF_Qu_F_LETTER_EXPIRED_TEXTTip>
+  <CBF_Qu_F_LETTER_FALLEN_LABEL>Titel Verteidiger gefallen</CBF_Qu_F_LETTER_FALLEN_LABEL>
+  <CBF_Qu_F_LETTER_FALLEN_LABELTip>Titel des Briefs, wenn die Verteidiger fallen.</CBF_Qu_F_LETTER_FALLEN_LABELTip>
+  <CBF_Qu_F_LETTER_FALLEN_TEXT>Text Verteidiger gefallen</CBF_Qu_F_LETTER_FALLEN_TEXT>
+  <CBF_Qu_F_LETTER_FALLEN_TEXTTip>Text des Briefs, wenn die Verteidiger fallen.</CBF_Qu_F_LETTER_FALLEN_TEXTTip>
+  <CBF_Qu_ByTags>Nach Site-Tag</CBF_Qu_ByTags>
+  <CBF_Qu_ByPlan>Fester Ortstyp</CBF_Qu_ByPlan>
+  <CBF_Qu_Plan>Ortstyp</CBF_Qu_Plan>
+  <CBF_Qu_Tags>Site-Tags</CBF_Qu_Tags>
+  <CBF_Qu_TagsTip>Jeder Ortstyp mit einem dieser Site-Tags kann entstehen. Die Zahl zeigt, wie viele Ortstypen den Tag tragen.</CBF_Qu_TagsTip>
+  <CBF_Qu_Kind>Quest-Art</CBF_Qu_Kind>
+  <CBF_Qu_Trigger>Jetzt auslösen</CBF_Qu_Trigger>
+  <CBF_Qu_TriggerTip>Bietet diese Quest im laufenden Spiel zu den aktuellen Bedrohungspunkten an.</CBF_Qu_TriggerTip>
+  <CBF_Qu_SaveFirst>Erst die Quest speichern.</CBF_Qu_SaveFirst>
+  <CBF_Qu_NeedGame>Nur in einem laufenden Spiel.</CBF_Qu_NeedGame>
+  <CBF_Qu_NotLoaded>Die Quest ist noch nicht geladen. Spiel neu starten.</CBF_Qu_NotLoaded>
+  <CBF_Qu_Triggered>{0} angeboten.</CBF_Qu_Triggered>
+  <CBF_Qu_GenFailed>Die Quest ließ sich hier nicht erzeugen, etwa weil kein Ort oder Auftraggeber gefunden wurde.</CBF_Qu_GenFailed>
+  <CBF_Qu_CannotRun>Die Quest kann gerade nicht entstehen. Meist fehlt eine befreundete Fraktion mit Anführer und passendem Ortstyp.</CBF_Qu_CannotRun>
+  <CBF_Qu_RightHint>Speichern schreibt Quest, Ort und Weltobjekt nach Defs/CustomBaseFramework/Quests deines Mods.</CBF_Qu_RightHint>
+  <CBF_Qu_NoTemplate>Keine Vorlage für {0} gefunden.</CBF_Qu_NoTemplate>
+  <CBF_Qu_NeedPlan>Erst einen Ortstyp wählen.</CBF_Qu_NeedPlan>
+  <CBF_Qu_NeedCreatures>Erst Kreaturen wählen.</CBF_Qu_NeedCreatures>
+  <CBF_Qu_NeedRuin>Erst einen Ruinenzustand wählen.</CBF_Qu_NeedRuin>
+  <CBF_Qu_F_LETTER_LOST_LABEL>Titel Gefangene verloren</CBF_Qu_F_LETTER_LOST_LABEL>
+  <CBF_Qu_F_LETTER_LOST_LABELTip>Titel des Briefs, wenn alle Gefangenen tot sind.</CBF_Qu_F_LETTER_LOST_LABELTip>
+  <CBF_Qu_F_LETTER_LOST_TEXT>Text Gefangene verloren</CBF_Qu_F_LETTER_LOST_TEXT>
+  <CBF_Qu_F_LETTER_LOST_TEXTTip>Text des Briefs, wenn alle Gefangenen tot sind.</CBF_Qu_F_LETTER_LOST_TEXTTip>
+  <CBF_Qu_NeedRestart>In dieser Sitzung gespeichert. Spiel neu starten, damit die Quest mit allen Teilen geladen wird.</CBF_Qu_NeedRestart>
 </LanguageData>

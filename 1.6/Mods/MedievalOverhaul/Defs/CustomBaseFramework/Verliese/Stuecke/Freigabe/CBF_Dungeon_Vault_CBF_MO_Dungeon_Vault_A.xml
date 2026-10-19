@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Dungeon_Vault_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_Vault</li>
+      <li>CBF_Dungeon_Cult</li>
+      <li>CBF_Dungeon_Cult_Upscale</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_Medieval</style>
+    <legend>
+      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Ĵ</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>ń</symbol><terrain>Granite_RoughHewn</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>п</symbol><thing>DankPyon_HideoutShelfFilledRuby</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>р</symbol><thing>DankPyon_HideoutShelfFilledSapphire</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>т</symbol><thing>DankPyon_HideoutShelfFilledSilverware</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ф</symbol><thing>DankPyon_HideoutShelfFilledGoldware</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+    </legend>
+    <mask>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+    </mask>
+    <terrain>
+      <li>ńńńńńń</li>
+      <li>ńńńńńń</li>
+      <li>ńńńńńń</li>
+      <li>ńńńńńń</li>
+      <li>ńńńńńń</li>
+    </terrain>
+    <things>
+      <li>SSSSSS</li>
+      <li>Sп.р.S</li>
+      <li>Ĵ....S</li>
+      <li>Sт.ф.S</li>
+      <li>SSSSSS</li>
+    </things>
+    <roof>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+      <li>^^^^^^</li>
+    </roof>
+    <anchors>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

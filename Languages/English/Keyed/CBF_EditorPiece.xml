@@ -8,6 +8,8 @@
   <CBF_P_SizeTipMedium>Longest side 9 to 14 cells</CBF_P_SizeTipMedium>
   <CBF_P_SizeTipLarge>Longest side 15 cells or more</CBF_P_SizeTipLarge>
   <CBF_P_TemplatesTip>Show templates only</CBF_P_TemplatesTip>
+  <CBF_P_Unsaved>unsaved</CBF_P_Unsaved>
+  <CBF_P_UnsavedTip>Show only pieces imported from KCSG that are not kept yet.</CBF_P_UnsavedTip>
   <CBF_P_ListHint>Right-click: rename, duplicate, mark as template, delete</CBF_P_ListHint>
   <CBF_P_NotOnMap>not on the map</CBF_P_NotOnMap>
   <CBF_P_OnMap>placed on the map for editing</CBF_P_OnMap>
@@ -15,7 +17,7 @@
   <CBF_P_ImageHintMap>The piece is on the map. Change the structure there and set anchors here in the image. After the export the image shows the new shape.</CBF_P_ImageHintMap>
   <CBF_P_Outline>Outline</CBF_P_Outline>
   <CBF_P_PaintAnchors>Paint anchors</CBF_P_PaintAnchors>
-  <CBF_P_PaintTip>Drag a rectangle in the image. It becomes the area of the selected anchor. Right-click or Escape puts the tool away.</CBF_P_PaintTip>
+  <CBF_P_PaintTip>Drag a rectangle in the image. It becomes the area of the selected anchor. Right-click or Escape puts the tool away. Connect anchors such as Annex may also go in the one-cell border around the piece; the piece then grows by an empty row or column when saved.</CBF_P_PaintTip>
   <CBF_P_EraseTip>Drag a rectangle in the image. All anchor cells inside it are removed.</CBF_P_EraseTip>
   <CBF_P_PlaceEditTip>Puts the piece on the map so its structure can be changed. The window folds away and the toolbox appears on the right. If it is already there, the camera jumps to it.</CBF_P_PlaceEditTip>
   <CBF_P_NewNeedsMap>A new piece needs an open map.</CBF_P_NewNeedsMap>

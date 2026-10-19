@@ -354,4 +354,32 @@
   <CBF_D_LayoutFromLevel>wie die Ebene ({0})</CBF_D_LayoutFromLevel>
   <CBF_FieldDesc_DistrictSpec_layout>Eigene Bauweise für diesen Bereich. Leer übernimmt die Bauweise der Ebene.</CBF_FieldDesc_DistrictSpec_layout>
   <CBF_D_NewPlan>Neuer Dungeon</CBF_D_NewPlan>
+  <CBF_S_MountainMantle>Felsmantel</CBF_S_MountainMantle>
+  <CBF_S_MountainMantleDefault>0 = Standard {0} bei Bergstadt</CBF_S_MountainMantleDefault>
+  <CBF_S_MountainMantleNone>0 = kein Berg</CBF_S_MountainMantleNone>
+  <CBF_S_MountainMantleTip>Mindestdicke des Felses um Alt- und Vorstadt, 0 bis {0}. Eine Bergstadt nimmt {1}, wenn hier 0 steht. Andere Typen bekommen nur einen Berg, wenn hier etwas steht.</CBF_S_MountainMantleTip>
+  <CBF_S_DarkPlants>Felder im Berg liegen im Dunkeln. Diese Pflanzen wachsen dort nicht: {0}. Besser Pflanzen wählen, die im Dunkeln wachsen, etwa Pilze.</CBF_S_DarkPlants>
+  <CBF_S_WeightFromCategory>Kategorie-Einträge haben hier kein eigenes Gewicht. Die Stücke der Kategorie werden nach ihren eigenen Gewichten gezogen.</CBF_S_WeightFromCategory>
+  <CBF_S_PlanRuin>Als Ruine bauen</CBF_S_PlanRuin>
+  <CBF_S_PlanRuinNone>keine Ruine</CBF_S_PlanRuinNone>
+  <CBF_S_PlanRuinTip>Baut jeden Ort dieses Typs als Ruine: Wände eingerissen, Räume ausgebrannt, Dächer teils eingestürzt, Bewuchs. Die Fraktion lebt weiter dort. Geplündert heißt wenig Beute, nicht geplündert heißt, die Beute bleibt. Eine Ruine aus einer Quest oder Site hat Vorrang.</CBF_S_PlanRuinTip>
+  <CBF_S_PlanWhere>Erscheint nur, wenn</CBF_S_PlanWhere>
+  <CBF_S_PlanWhereTip>Bedingungen für diesen Ortstyp. Leere Zeilen schränken nichts ein.</CBF_S_PlanWhereTip>
+  <CBF_S_PlanIdeoWith>Ideologie hat</CBF_S_PlanIdeoWith>
+  <CBF_S_PlanIdeoWithout>Ideologie hat nicht</CBF_S_PlanIdeoWithout>
+  <CBF_S_PlanIdeoAny>beliebig</CBF_S_PlanIdeoAny>
+  <CBF_S_PlanIdeoNoDlc>Braucht Ideology. Ohne das DLC gilt diese Bedingung nicht.</CBF_S_PlanIdeoNoDlc>
+  <CBF_S_PlanIdeoWithTip>Nur Fraktionen, deren Hauptideologie mindestens eines dieser Meme oder Präzepte hat, bekommen diesen Ortstyp. Beispiel: Tunnelgräber für eine Bergstadt. Leer heißt alle Fraktionen.</CBF_S_PlanIdeoWithTip>
+  <CBF_S_PlanIdeoWithoutTip>Fraktionen, deren Hauptideologie eines dieser Meme oder Präzepte hat, bekommen diesen Ortstyp nie. Leer heißt keine Einschränkung.</CBF_S_PlanIdeoWithoutTip>
+  <CBF_S_PlanBiomes>Biome</CBF_S_PlanBiomes>
+  <CBF_S_PlanBiomesTip>Der Ortstyp erscheint nur auf Kacheln dieser Biome, etwa nur in der Wüste. Leer heißt in allen Biomen.</CBF_S_PlanBiomesTip>
+  <CBF_S_PlanNotBiomes>Nicht in Biomen</CBF_S_PlanNotBiomes>
+  <CBF_S_PlanNotBiomesTip>Der Ortstyp erscheint nie auf Kacheln dieser Biome.</CBF_S_PlanNotBiomesTip>
+  <CBF_S_PlanHilliness>Hügeligkeit</CBF_S_PlanHilliness>
+  <CBF_S_PlanHillinessTip>Wie hügelig die Kachel auf der Weltkarte ist: flach, kleine Hügel, große Hügel oder bergig. Der Ortstyp erscheint nur bei den gewählten Stufen. Leer heißt alle.</CBF_S_PlanHillinessTip>
+  <CBF_S_PlanLandforms>Landformen</CBF_S_PlanLandforms>
+  <CBF_S_PlanLandformsTip>Besonderheiten der Kachel wie Küste, Fluss, See, Tal oder Canyon. Der Ortstyp erscheint nur, wenn die Kachel mindestens eine davon hat. Leer heißt egal.</CBF_S_PlanLandformsTip>
+  <CBF_S_PlanNotLandforms>Nicht bei Landform</CBF_S_PlanNotLandforms>
+  <CBF_S_PlanNotLandformsTip>Der Ortstyp erscheint nie auf Kacheln mit einer dieser Landformen.</CBF_S_PlanNotLandformsTip>
+  <CBF_S_PlanLoosen>Der Ortstyp erscheint nur, wo alle Bedingungen zutreffen. Ohne Ideology-DLC zählt die Ideologie nicht.</CBF_S_PlanLoosen>
 </LanguageData>

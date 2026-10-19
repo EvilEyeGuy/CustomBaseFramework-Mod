@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_OssuaryTemple_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_BoneReaper_Temple</li>
+    </categories>
+    <style>CBF_BoneReaper</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY,Ludeon.RimWorld.Ideology"><symbol>0</symbol><thing>pphhyy_OsseousShrine</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>8</symbol><anchor>Priests</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount><chance>0.7</chance></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>P</symbol><thing>pphhyy_OsseousPillar</thing><stuff>pphhyy_BoneMoldSteel</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>pphhyy_OsseousTiledFloor</terrain></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>|</symbol><thing>pphhyy_OsseousColumn</thing><stuff>pphhyy_BoneMoldSteel</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ĉ</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li><symbol>Ω</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind><annexRequired>true</annexRequired><annexCategories><li>CBF_BoneReaper_Annex_CryptEntrance</li></annexCategories></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ρ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>σ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>τ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>Ⓐ</symbol><anchor>Shrine1</anchor><anchorKind>Object</anchorKind><objects>CBF_BoneReaper_Shrine</objects></li>
+    </legend>
+    <mask>
+      <li>....#####....</li>
+      <li>...#######...</li>
+      <li>..#########..</li>
+      <li>.###########.</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>.###########.</li>
+      <li>..#########..</li>
+      <li>...#######...</li>
+      <li>....#####....</li>
+      <li>....#####....</li>
+    </mask>
+    <terrain>
+      <li>....ppppp....</li>
+      <li>...ppppppp...</li>
+      <li>..ppppppppp..</li>
+      <li>.ppppppppppp.</li>
+      <li>ppppppppppppp</li>
+      <li>ppppppppppppp</li>
+      <li>ppppppppppppp</li>
+      <li>ppppppppppppp</li>
+      <li>ppppppppppppp</li>
+      <li>.ppppppppppp.</li>
+      <li>..ppppppppp..</li>
+      <li>...ppppppp...</li>
+      <li>....ppppp....</li>
+      <li>....pĉĉĉp....</li>
+    </terrain>
+    <things>
+      <li>....IIIII....</li>
+      <li>...II...II...</li>
+      <li>..II.P.P.II..</li>
+      <li>.II.......II.</li>
+      <li>II.P.....P.II</li>
+      <li>Iρ....0....ρI</li>
+      <li>I...........I</li>
+      <li>Iτ.........σI</li>
+      <li>II.P.....P.II</li>
+      <li>.II.......II.</li>
+      <li>..II.P.P.II..</li>
+      <li>...II...II...</li>
+      <li>....IIDII....</li>
+      <li>....|...|....</li>
+    </things>
+    <roof>
+      <li>....^^^^^....</li>
+      <li>...^^^^^^^...</li>
+      <li>..^^^^^^^^^..</li>
+      <li>.^^^^^^^^^^^.</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^</li>
+      <li>.^^^^^^^^^^^.</li>
+      <li>..^^^^^^^^^..</li>
+      <li>...^^^^^^^...</li>
+      <li>....^^^^^....</li>
+      <li>....^^^^^....</li>
+    </roof>
+    <anchors>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>......ⒶⒶ.....</li>
+      <li>......ⒶⒶ.....</li>
+      <li>............Ω</li>
+      <li>......8......</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

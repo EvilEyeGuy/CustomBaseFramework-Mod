@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GenStepDef>
+    <defName>CBF_DungeonRock</defName>
+    <order>200</order>
+    <genStep Class="CustomBaseFramework.GenStep_CBFVerliesFels"/>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>CBF_DungeonBuild</defName>
+    <order>400</order>
+    <genStep Class="CustomBaseFramework.GenStep_CBFSettlement">
+      <fallbackToVanilla>false</fallbackToVanilla>
+    </genStep>
+  </GenStepDef>
+
+  <MapGeneratorDef>
+    <defName>CBF_DungeonLevel</defName>
+    <label>dungeon level</label>
+    <isUnderground>true</isUnderground>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableCallAid>true</disableCallAid>
+    <pocketMapProperties>
+      <biome>Underground</biome>
+      <temperature>12</temperature>
+    </pocketMapProperties>
+    <genSteps>
+      <li>CBF_DungeonRock</li>
+      <li>CBF_DungeonBuild</li>
+      <li>Fog</li>
+    </genSteps>
+  </MapGeneratorDef>
+
+</Defs>

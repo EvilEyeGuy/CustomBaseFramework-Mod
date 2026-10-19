@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_Mausoleum_B</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_BoneReaper_Mausoleum</li>
+    </categories>
+    <style>CBF_BoneReaper</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind><annexCategories><li>CBF_BoneReaper_Annex_Crypt</li></annexCategories></li>
+      <li><symbol>0</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>1</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>D</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>O</symbol><thing>pphhyy_OsseousObelisk</thing><stuff>pphhyy_BoneMoldSteel</stuff></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>P</symbol><thing>pphhyy_OsseousPillar</thing><stuff>pphhyy_BoneMoldSteel</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>pphhyy_OsseousTiledFloor</terrain></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>|</symbol><thing>pphhyy_OsseousColumn</thing><stuff>pphhyy_BoneMoldSteel</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ĉ</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ρ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>σ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>τ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>1</descentChance><descentPlans><li>CBF_Plan_Dungeon_BoneReaperCrypt</li></descentPlans></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Sarcophagus</objects><lootTable>CBF_BoneReaper_Loot_Crypt</lootTable></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Sarcophagus</objects><lootTable>CBF_BoneReaper_Loot_Crypt</lootTable></li>
+      <li><symbol>③</symbol><anchor>Sarcophagus3</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Sarcophagus</objects><lootTable>CBF_BoneReaper_Loot_Crypt</lootTable></li>
+      <li><symbol>④</symbol><anchor>Sarcophagus4</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Sarcophagus</objects><lootTable>CBF_BoneReaper_Loot_Crypt</lootTable></li>
+    </legend>
+    <mask>
+      <li>......###......</li>
+      <li>.....#####.....</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>....#########..</li>
+    </mask>
+    <terrain>
+      <li>......ppp......</li>
+      <li>.....ppppp.....</li>
+      <li>ppppppppppppppp</li>
+      <li>ppppppppppppppp</li>
+      <li>ppppppppppppppp</li>
+      <li>ppppppppppppppp</li>
+      <li>ppppppppppppppp</li>
+      <li>ppppppppppppppp</li>
+      <li>ppppppppppppppp</li>
+      <li>....pĉĉĉĉĉĉĉp..</li>
+    </terrain>
+    <things>
+      <li>......III......</li>
+      <li>.....IIOII.....</li>
+      <li>IIIIII...IIIIII</li>
+      <li>Iρ.P.......P.ρI</li>
+      <li>I0..........1.I</li>
+      <li>I..P.......P..I</li>
+      <li>I0..........1.I</li>
+      <li>Iτ.P.......P.σI</li>
+      <li>IIIIIIIDIIIIIII</li>
+      <li>....|.......|..</li>
+    </things>
+    <roof>
+      <li>......^^^......</li>
+      <li>.....^^^^^.....</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>....^^^^^^^^^..</li>
+    </roof>
+    <anchors>
+      <li>...............</li>
+      <li>...............</li>
+      <li>..+.........+..</li>
+      <li>...............</li>
+      <li>.①①...↓↓↓...②②.</li>
+      <li>+.....↓↓↓.....+</li>
+      <li>.③③...↓↓↓...④④.</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

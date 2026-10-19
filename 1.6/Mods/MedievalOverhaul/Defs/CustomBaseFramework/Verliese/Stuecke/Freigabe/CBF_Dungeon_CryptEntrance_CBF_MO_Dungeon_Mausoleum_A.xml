@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Dungeon_Mausoleum_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_CryptEntrance</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_Medieval</style>
+
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>W</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li><symbol>D</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>T</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>B</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>C</symbol><terrain>Granite_Smooth</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_Ancient_Column</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
+      <li><symbol>R</symbol><thing>Sarcophagus</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_Candles</thing></li>
+      <li><symbol>S</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_RuinedCandleStand</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>0</symbol><anchor>Outside</anchor></li>
+      <li><symbol>8</symbol><anchor>Keeper</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+    </legend>
+
+    <mask>
+      <li>.#########.</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>.#########.</li>
+    </mask>
+
+    <terrain>
+      <li>.WWWWWWWWW.</li>
+      <li>CWWPWWWWWWC</li>
+      <li>CWWPPWWPWWC</li>
+      <li>CWWWWWPWPWC</li>
+      <li>CWWWWWPWWWC</li>
+      <li>CWWPPWWPWWC</li>
+      <li>CWWWWWWWWPC</li>
+      <li>CWWWPWWPWWC</li>
+      <li>.WWWWWWWWW.</li>
+    </terrain>
+
+    <things>
+      <li>.TTTTBTTTT.</li>
+      <li>TTF.....FTT</li>
+      <li>T...L.L...T</li>
+      <li>TR.......RT</li>
+      <li>TT...S...TT</li>
+      <li>T.........T</li>
+      <li>TR.......RT</li>
+      <li>TTF.G.G.FTT</li>
+      <li>.TTTTBTTTT.</li>
+    </things>
+
+    <roof>
+      <li>.DDDDDDDDD.</li>
+      <li>DDDDDDDDDDD</li>
+      <li>DDDDDDDDDDD</li>
+      <li>DDDDDDDDDDD</li>
+      <li>DDDDDDDDDDD</li>
+      <li>DDDDDDDDDDD</li>
+      <li>DDDDDDDDDDD</li>
+      <li>DDDDDDDDDDD</li>
+      <li>.DDDDDDDDD.</li>
+    </roof>
+
+    <anchors>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...8.......</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>.....0.....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

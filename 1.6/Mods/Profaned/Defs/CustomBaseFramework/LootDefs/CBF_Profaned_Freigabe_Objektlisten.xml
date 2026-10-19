@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Profaned_Chest</defName>
+    <members>
+      <li MayRequire="BotchJob.Profaned">BotchJob_ProfanedChest</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Profaned_Shelf</defName>
+    <members>
+      <li>ShelfSmall</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Profaned_Sarcophagus</defName>
+    <members>
+      <li>CBF_Sarcophagus</li>
+    </members>
+    <pawnList>CBF_Pawns_SarcophagusDead</pawnList>
+    <pawnChance>0.1</pawnChance>
+    <pawnHostile>true</pawnHostile>
+    <pawnCount>1~1</pawnCount>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Profaned_Grave</defName>
+    <members>
+      <li>Grave</li>
+    </members>
+    <pawnList>CBF_Pawns_SarcophagusDead</pawnList>
+    <pawnChance>0.1</pawnChance>
+    <pawnHostile>true</pawnHostile>
+    <pawnCount>1~1</pawnCount>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Profaned_LanternDark</defName>
+    <members>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Ideology">BotchJob_ProfanedLanternDarklight</li>
+      <li MayRequire="BotchJob.Profaned">BotchJob_ProfanedLantern</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Profaned_LanternBlood</defName>
+    <members>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Biotech">BotchJob_ProfanedLanternBlood</li>
+      <li MayRequire="BotchJob.Profaned">BotchJob_ProfanedLantern</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Profaned_BrazierDark</defName>
+    <members>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Ideology">BotchJob_ProfanedBrazierDarklight</li>
+      <li MayRequire="BotchJob.Profaned">BotchJob_ProfanedBrazier</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Profaned_BrazierBlood</defName>
+    <members>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Biotech">BotchJob_ProfanedBrazierBlood</li>
+      <li MayRequire="BotchJob.Profaned">BotchJob_ProfanedBrazier</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+</Defs>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_Graveyard_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_BoneReaper_Graveyard</li>
+    </categories>
+    <style>CBF_BoneReaper</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>0</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>O</symbol><thing>pphhyy_OsseousObelisk</thing><stuff>pphhyy_BoneMoldSteel</stuff></li>
+      <li><symbol>g</symbol><thing>Grave</thing><rotation>South</rotation></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>u</symbol><thing>pphhyy_OsseousUrnI</thing><stuff>pphhyy_BoneMoldSteel</stuff></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>|</symbol><thing>pphhyy_OsseousColumn</thing><stuff>pphhyy_BoneMoldSteel</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ĉ</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Sarcophagus</objects><lootTable>CBF_BoneReaper_Loot_Crypt</lootTable></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_BoneReaper_Sarcophagus</objects><lootTable>CBF_BoneReaper_Loot_Crypt</lootTable></li>
+    </legend>
+    <mask>
+      <li>....#####....</li>
+      <li>..#########..</li>
+      <li>.###########.</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>#############</li>
+      <li>.###########.</li>
+      <li>..#########..</li>
+      <li>....#####....</li>
+    </mask>
+    <terrain>
+      <li>....ĉĉĉĉĉ....</li>
+      <li>..ĉĉĉĉĉĉĉĉĉ..</li>
+      <li>.ĉĉĉĉĉĉĉĉĉĉĉ.</li>
+      <li>ĉĉĉĉĉĉĉĉĉĉĉĉĉ</li>
+      <li>ĉĉĉĉĉĉĉĉĉĉĉĉĉ</li>
+      <li>ĉĉĉĉĉĉĉĉĉĉĉĉĉ</li>
+      <li>ĉĉĉĉĉĉĉĉĉĉĉĉĉ</li>
+      <li>ĉĉĉĉĉĉĉĉĉĉĉĉĉ</li>
+      <li>.ĉĉĉĉĉĉĉĉĉĉĉ.</li>
+      <li>..ĉĉĉĉĉĉĉĉĉ..</li>
+      <li>....ĉĉĉĉĉ....</li>
+    </terrain>
+    <things>
+      <li>....|...|....</li>
+      <li>......u......</li>
+      <li>...O.........</li>
+      <li>|.......0..g|</li>
+      <li>...g.........</li>
+      <li>.............</li>
+      <li>..u.0.....g..</li>
+      <li>|...........|</li>
+      <li>.........O...</li>
+      <li>.....u.g.....</li>
+      <li>....|...|....</li>
+    </things>
+    <roof>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+    </roof>
+    <anchors>
+      <li>.............</li>
+      <li>.............</li>
+      <li>........①....</li>
+      <li>........①....</li>
+      <li>.............</li>
+      <li>....②........</li>
+      <li>....②........</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+      <li>.............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -41,7 +41,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>m</symbol><thing>DankPyon_HideoutSackFlour</thing><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_HideoutWoodLogs1x2c</thing><stuff>DankPyon_RawWood</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
-      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
+      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>0</descentChance><descentPlans><li>CBF_Plan_Dungeon_StoreCellar</li><li>CBF_Plan_Dungeon_HideoutCellar</li><li>CBF_Plan_Dungeon_TreasureCellar</li></descentPlans></li>
     </legend>
     <mask>
       <li>########...</li>
@@ -107,7 +108,7 @@
       <li>......3.4..</li>
       <li>...........</li>
       <li>...........</li>
-      <li>.........gg</li>
+      <li>.....↓↓..gg</li>
     </anchors>
     <anchorsOver>
       <li>...........</li>

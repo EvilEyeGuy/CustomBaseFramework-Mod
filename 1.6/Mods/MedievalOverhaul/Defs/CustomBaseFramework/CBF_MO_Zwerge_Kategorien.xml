@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Dwarf_Annex_Mining</defName>
+    <label>dwarf annex mining</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Dwarf_Annex_Rural</defName>
+    <label>dwarf annex rural</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Dwarf_Annex_Smithy</defName>
+    <label>dwarf annex smithy</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Dwarf_Annex_Tavern</defName>
+    <label>dwarf annex tavern</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Dwarf_Annex_Town</defName>
+    <label>dwarf annex town</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Dwarf_Hut</defName>
+    <label>dwarf hut</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess><weight>2</weight>
+    <annexes>
+      <li>CBF_MO_Dwarf_Annex_Rural</li>
+      <li>CBF_MO_Dwarf_Annex_Mining</li>
+    </annexes>
+    <annexChance>0.7</annexChance>
+    <annexMax>2</annexMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Dwarf_Smithy</defName>
+    <label>dwarf smithy</label><parent>CBF_MO_Workshop</parent>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <annexes>
+      <li>CBF_MO_Dwarf_Annex_Smithy</li>
+      <li>CBF_MO_Dwarf_Annex_Town</li>
+    </annexes>
+    <annexChance>0.7</annexChance>
+    <annexMax>2</annexMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Dwarf_Tavern</defName>
+    <label>dwarf tavern</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <annexes>
+      <li>CBF_MO_Dwarf_Annex_Tavern</li>
+      <li>CBF_MO_Dwarf_Annex_Town</li>
+    </annexes>
+    <annexChance>0.7</annexChance>
+    <annexMax>2</annexMax>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Dwarf_TownTower</defName>
+    <label>dwarf tower</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+</Defs>

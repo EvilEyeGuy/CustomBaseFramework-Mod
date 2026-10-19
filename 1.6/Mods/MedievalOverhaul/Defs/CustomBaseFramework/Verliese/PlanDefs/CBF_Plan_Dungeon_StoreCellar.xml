@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.SettlementPlanDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_Plan_Dungeon_StoreCellar</defName>
+    <label>store cellar</label>
+    <kind>Dungeon</kind>
+    <materialList>CBF_MO_MaterialList</materialList>
+    <styles>
+      <li>Rustical</li>
+      <li>Standard</li>
+    </styles>
+    <techLevels>
+      <li>Medieval</li>
+    </techLevels>
+    <levels>
+      <li>
+        <name>Cellar</name>
+        <label>cellar</label>
+        <layout>Rows</layout>
+        <mapSize>60</mapSize>
+        <entrance>
+          <li><tag>CBF_Dungeon_CellarStairs</tag></li>
+        </entrance>
+        <corridors>
+          <li><piece>CBF_MO_Dungeon_Corridor_Hewn_1</piece></li>
+          <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3_Beams</piece></li>
+        </corridors>
+        <districts>
+          <li>
+            <name>Stores</name>
+            <entries>
+              <li><tag>CBF_Dungeon_Pantry</tag><count>1~2</count></li>
+              <li><tag>CBF_Dungeon_Storeroom</tag><count>1~2</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </levels>
+
+    <ideoStyle>true</ideoStyle>
+  </CustomBaseFramework.SettlementPlanDef>
+
+</Defs>

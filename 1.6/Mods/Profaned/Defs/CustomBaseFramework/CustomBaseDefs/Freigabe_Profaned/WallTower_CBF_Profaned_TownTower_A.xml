@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_TownTower_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>WallTower</li>
+      <li>CBF_Profaned_TownTower</li>
+    </categories>
+    <type>WallPart</type>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Biotech"><symbol>0</symbol><thing>BotchJob_ProfanedBrazierBlood</thing><stuff>BlocksGranite</stuff><rotation>North</rotation></li>
+      <li><symbol>8</symbol><anchor>Guards</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount><chance>0.9</chance></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>K</symbol><anchor>Wall</anchor></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>X</symbol><thing>BotchJob_BloodStoneTurret</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+      <li><symbol>Ⓐ</symbol><anchor>Brazier1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_BrazierBlood</objects></li>
+    </legend>
+    <mask>
+      <li>.#####.</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>.#####.</li>
+    </mask>
+    <terrain>
+      <li>.ppppp.</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>.ppppp.</li>
+    </terrain>
+    <things>
+      <li>.IIIII.</li>
+      <li>II...II</li>
+      <li>I.....I</li>
+      <li>I..X..I</li>
+      <li>I.....I</li>
+      <li>II.0.II</li>
+      <li>.IIIII.</li>
+    </things>
+    <roof>
+      <li>.^^^^^.</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>.^^^^^.</li>
+    </roof>
+    <anchors>
+      <li>...K...</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>K.....K</li>
+      <li>..8....</li>
+      <li>...Ⓐ...</li>
+      <li>...K...</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

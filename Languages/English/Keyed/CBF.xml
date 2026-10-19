@@ -796,6 +796,11 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_Cfg_DescentNoDungeon>Legend entry '{0}' names {1} in descentPlans. That is not a dungeon plan with levels, it is skipped.</CBF_Cfg_DescentNoDungeon>
   <CBF_Abstieg_Label>{0} (way down)</CBF_Abstieg_Label>
   <CBF_Abstieg_Gefunden>{0}: a way leads down beneath it.</CBF_Abstieg_Gefunden>
+  <CBF_Descent_Seal>Seal descent</CBF_Descent_Seal>
+  <CBF_Descent_SealDesc>Seal this way down for good. The level below and every level beneath it are removed, including everything left there. The descent cannot be opened again.</CBF_Descent_SealDesc>
+  <CBF_Descent_SealConfirm>The level below is removed for good, including everything left there. Seal the descent?</CBF_Descent_SealConfirm>
+  <CBF_Descent_SealOccupied>Someone of your colony is still below: colonists, prisoners or animals.</CBF_Descent_SealOccupied>
+  <CBF_Descent_Sealed>{0}: the way down is sealed.</CBF_Descent_Sealed>
   <CBF_S_CoreShapes>Old town shapes</CBF_S_CoreShapes>
   <CBF_S_CoreShapesAll>All shapes allowed. Click a shape to exclude it.</CBF_S_CoreShapesAll>
   <CBF_S_CoreShapeLast>At least one shape stays selected.</CBF_S_CoreShapeLast>
@@ -843,4 +848,10 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_Au_FloorListEmpty>Floor symbol {0} names the floor list {1}, which has no usable floor. The drawn floor is laid.</CBF_Au_FloorListEmpty>
   <CBF_GarrisonDowned>Downed defenders count towards the limit</CBF_GarrisonDowned>
   <CBF_GarrisonDownedHelp>Wounded defenders lying on the ground keep their place until they die or are captured. Fewer reinforcements spawn, which saves performance in a fight, above all on slow computers. Measured: 11 to 33 % more TPS once 10 or more defenders are down. The last stand (fewer than three defenders on their feet) is still triggered, and from then on downed defenders no longer count. Applies at once, also in existing settlements with a reserve.</CBF_GarrisonDownedHelp>
+  <CBF_ClaimAnimal>Claim animal</CBF_ClaimAnimal>
+  <CBF_ClaimAnimalDesc>Take an animal of a foreign settlement for your colony. A handler goes there and claims it. Each animal costs goodwill with its faction, more for valuable animals (market value divided by 150, at least 1, at most 10). Hostile factions and defeated settlements lose no goodwill.</CBF_ClaimAnimalDesc>
+  <CBF_ClaimAnimalNoAnimal>Must target a living animal.</CBF_ClaimAnimalNoAnimal>
+  <CBF_ClaimAnimalNotForeign>Must target an animal that belongs to another faction.</CBF_ClaimAnimalNotForeign>
+  <CBF_ClaimAnimalNoSite>Only works on the map of a CBF settlement.</CBF_ClaimAnimalNoSite>
+  <CBF_WorldHidden>(hidden)</CBF_WorldHidden>
 </LanguageData>

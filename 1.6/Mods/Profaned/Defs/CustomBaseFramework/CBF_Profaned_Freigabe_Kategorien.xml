@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned</defName>
+    <label>Profaned</label>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_TownTower</defName>
+    <label>Profaned: wall tower</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Gatehouse</defName>
+    <label>Profaned: gate</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_WallAccess</defName>
+    <label>Profaned: wall access</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Mausoleum</defName>
+    <label>Profaned: mausoleum</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Chapel</defName>
+    <label>Profaned: crypt chapel</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_ThroneHall</defName>
+    <label>Profaned: throne hall</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Ritual</defName>
+    <label>Profaned: ritual yard</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Alchemy</defName>
+    <label>Profaned: alchemy</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Barracks</defName>
+    <label>Profaned: barracks</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_House</defName>
+    <label>Profaned: hovel</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Graveyard</defName>
+    <label>Profaned: graveyard</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Emplacement</defName>
+    <label>Profaned: emplacement</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Shrine</defName>
+    <label>Profaned: wraith shrine</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Dungeon_Profaned</defName>
+    <label>dungeon: profaned crypt</label>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Dungeon_ProfanedStairs</defName>
+    <label>dungeon: profaned crypt, stairs up</label>
+    <parent>CBF_Dungeon_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Dungeon_ProfanedStairsDown</defName>
+    <label>dungeon: profaned crypt, stairs down</label>
+    <parent>CBF_Dungeon_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Dungeon_ProfanedTomb</defName>
+    <label>dungeon: profaned crypt, tomb</label>
+    <parent>CBF_Dungeon_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Dungeon_ProfanedCatacomb</defName>
+    <label>dungeon: profaned crypt, catacomb</label>
+    <parent>CBF_Dungeon_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Dungeon_ProfanedHall</defName>
+    <label>dungeon: profaned crypt, sarcophagus hall</label>
+    <parent>CBF_Dungeon_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Dungeon_ProfanedWarden</defName>
+    <label>dungeon: profaned crypt, grave warden</label>
+    <parent>CBF_Dungeon_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Dungeon_ProfanedThrone</defName>
+    <label>dungeon: profaned crypt, throne crypt</label>
+    <parent>CBF_Dungeon_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Dungeon_ProfanedVault</defName>
+    <label>dungeon: profaned crypt, treasure vault</label>
+    <parent>CBF_Dungeon_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Dungeon_ProfanedGuard</defName>
+    <label>dungeon: profaned crypt, guard room</label>
+    <parent>CBF_Dungeon_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Dungeon_ProfanedRitual</defName>
+    <label>dungeon: profaned crypt, ritual chamber</label>
+    <parent>CBF_Dungeon_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Annex_Crypt</defName>
+    <label>Profaned: side crypt (annex)</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Annex_CryptEntrance</defName>
+    <label>Profaned: crypt entrance (annex)</label>
+    <parent>CBF_Profaned</parent>
+  </CustomBaseFramework.PieceCategoryDef>
+
+</Defs>

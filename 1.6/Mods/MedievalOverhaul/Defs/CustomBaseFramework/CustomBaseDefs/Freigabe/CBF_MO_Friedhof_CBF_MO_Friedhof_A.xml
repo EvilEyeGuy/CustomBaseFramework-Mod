@@ -22,6 +22,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>Y</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>Z</symbol><thing>Fence</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>z</symbol><thing>FenceGate</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>0</descentChance><descentPlans><li>CBF_Plan_Dungeon_SmallCrypt</li></descentPlans></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable><descentChance>0.15</descentChance><descentPlans><li>CBF_Plan_Dungeon_SmallCrypt</li></descentPlans></li>
     </legend>
     <mask>
       <li>....#######....</li>
@@ -79,6 +81,20 @@
       <li>...............</li>
       <li>...............</li>
     </roof>
+    <anchors>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>......↓↓...①...</li>
+      <li>......↓↓...①...</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>...............</li>
+    </anchors>
   </CustomBaseFramework.PieceDef>
 
 </Defs>

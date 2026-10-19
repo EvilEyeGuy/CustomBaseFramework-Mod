@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_MO_Dungeon_CultistDormitory_Rundown_E</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_CultistDormitory</li>
+      <li>CBF_Dungeon_Cult</li>
+      <li>CBF_Dungeon_Cult_Rundown</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_Medieval</style>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>J</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>y</symbol><thing>DankPyon_RuinedBonePile1x1c</thing></li>
+      <li><symbol>ń</symbol><terrain>Granite_RoughHewn</terrain></li>
+    </legend>
+    <mask>
+      <li>####</li>
+      <li>####</li>
+      <li>####</li>
+      <li>####</li>
+    </mask>
+    <terrain>
+      <li>ńńńń</li>
+      <li>ńńńń</li>
+      <li>ńńńń</li>
+      <li>ńńńń</li>
+    </terrain>
+    <things>
+      <li>SSSS</li>
+      <li>Sy.S</li>
+      <li>S..J</li>
+      <li>SSSS</li>
+    </things>
+    <roof>
+      <li>^^^^</li>
+      <li>^^^^</li>
+      <li>^^^^</li>
+      <li>^^^^</li>
+    </roof>
+    <anchors>
+      <li>....</li>
+      <li>....</li>
+      <li>....</li>
+      <li>....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

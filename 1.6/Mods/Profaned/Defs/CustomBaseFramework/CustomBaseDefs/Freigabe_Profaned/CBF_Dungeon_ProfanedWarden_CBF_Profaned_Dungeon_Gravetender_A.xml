@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Dungeon_Gravetender_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Dungeon_ProfanedWarden</li>
+    </categories>
+    <type>DungeonRoom</type>
+    <style>CBF_Profaned</style>
+    <legend>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Ideology"><symbol>0</symbol><thing>BotchJob_ProfanedLanternDarklight</thing><rotation>South</rotation></li>
+      <li><symbol>1</symbol><anchor>Belongings</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Chest</objects><lootTable>CBF_Profaned_Loot_Home</lootTable></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>2</symbol><thing>BotchJob_ProfanedChest</thing><rotation>North</rotation></li>
+      <li><symbol>8</symbol><anchor>Gravetender</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~1</pawnCount></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>J</symbol><thing>BotchJob_ProfanedSingleDoor</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>b</symbol><thing>BotchJob_ProfanedBed</thing><stuff>BlocksSlate</stuff><rotation>South</rotation></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>l</symbol><thing>BotchJob_ProfanedChair</thing><stuff>BlocksSlate</stuff><rotation>West</rotation></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+      <li><symbol>u</symbol><thing>ShelfSmall</thing><stuff>BlocksSlate</stuff></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>Ţ</symbol><thing>BotchJob_ProfanedTable</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>Ⓐ</symbol><anchor>Lantern1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+    </legend>
+    <mask>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#####..</li>
+    </mask>
+    <terrain>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppppp</li>
+      <li>ppppp..</li>
+    </terrain>
+    <things>
+      <li>SSSJSSS</li>
+      <li>S....0S</li>
+      <li>Sb....S</li>
+      <li>S..Ţ.lS</li>
+      <li>S.....S</li>
+      <li>Su.2SSS</li>
+      <li>SSSSS..</li>
+    </things>
+    <roof>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^^^</li>
+      <li>^^^^^..</li>
+    </roof>
+    <anchors>
+      <li>.......</li>
+      <li>.....Ⓐ.</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>..8....</li>
+      <li>...1...</li>
+      <li>.......</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

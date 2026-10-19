@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Mausoleum_Hall_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Profaned_Mausoleum</li>
+    </categories>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind><annexCategories><li>CBF_Profaned_Annex_Crypt</li></annexCategories></li>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Ideology"><symbol>0</symbol><thing>BotchJob_ProfanedLanternDarklight</thing><rotation>South</rotation></li>
+      <li><symbol>1</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li><symbol>2</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
+      <li MayRequire="BotchJob.Profaned,Ludeon.RimWorld.Ideology"><symbol>3</symbol><thing>BotchJob_ProfanedLanternDarklight</thing><rotation>North</rotation></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>D</symbol><thing>BotchJob_ProfanedSingleDoor</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>I</symbol><thing>Wall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li><symbol>f</symbol><terrain>FlagstoneSlate</terrain></li>
+      <li><symbol>p</symbol><terrain>ProfanedTileSlate</terrain></li>
+      <li><symbol>|</symbol><thing>Column</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>1</descentChance><descentPlans><li>CBF_Plan_Dungeon_ProfanedCrypt</li></descentPlans></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>③</symbol><anchor>Sarcophagus3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>④</symbol><anchor>Sarcophagus4</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Sarcophagus</objects><lootTable>CBF_Profaned_Loot_Crypt</lootTable></li>
+      <li><symbol>Ⓐ</symbol><anchor>Lantern1</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+      <li><symbol>Ⓑ</symbol><anchor>Lantern2</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+      <li><symbol>Ⓒ</symbol><anchor>Lantern3</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+      <li><symbol>Ⓓ</symbol><anchor>Lantern4</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+      <li><symbol>Ⓔ</symbol><anchor>Lantern5</anchor><anchorKind>Object</anchorKind><objects>CBF_Profaned_LanternDark</objects></li>
+    </legend>
+    <mask>
+      <li>......###......</li>
+      <li>.....#####.....</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>....#########..</li>
+    </mask>
+    <terrain>
+      <li>......ppp......</li>
+      <li>.....ppppp.....</li>
+      <li>ppppppppppppppp</li>
+      <li>ppppppppppppppp</li>
+      <li>ppppppppppppppp</li>
+      <li>ppppppppppppppp</li>
+      <li>ppppppppppppppp</li>
+      <li>ppppppppppppppp</li>
+      <li>ppppppppppppppp</li>
+      <li>....pfffffffp..</li>
+    </terrain>
+    <things>
+      <li>......III......</li>
+      <li>.....II0II.....</li>
+      <li>IIIIII...IIIIII</li>
+      <li>I..|.0...0.|..I</li>
+      <li>I1..........2.I</li>
+      <li>I..|.......|..I</li>
+      <li>I1..........2.I</li>
+      <li>I..|.3...3.|..I</li>
+      <li>IIIIIIIDIIIIIII</li>
+      <li>....|.......|..</li>
+    </things>
+    <roof>
+      <li>......^^^......</li>
+      <li>.....^^^^^.....</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>....^^^^^^^^^..</li>
+    </roof>
+    <anchors>
+      <li>...............</li>
+      <li>.......Ⓐ.......</li>
+      <li>..+.........+..</li>
+      <li>.....Ⓑ...Ⓒ.....</li>
+      <li>.①①...↓↓↓...②②.</li>
+      <li>+.....↓↓↓.....+</li>
+      <li>.③③...↓↓↓...④④.</li>
+      <li>.....Ⓓ...Ⓔ.....</li>
+      <li>...............</li>
+      <li>...............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

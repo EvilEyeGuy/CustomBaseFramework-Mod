@@ -34,7 +34,8 @@
       <li><symbol>j</symbol><thing>CBF_MO_PorcelainVase</thing><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_OnTop_Kitchen_Plate</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>w</symbol><terrain>DankPyon_Floor_RusticWoodFloor_Wood</terrain></li>
-      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
+      <li><symbol>Ç</symbol><anchor>Vase</anchor><anchorKind>Object</anchorKind><objects>CBF_MO_Vase</objects></li>
+      <li><symbol>↓</symbol><anchor>StairsDown</anchor><descentChance>0</descentChance><descentPlans><li>CBF_Plan_Dungeon_StoreCellar</li><li>CBF_Plan_Dungeon_HideoutCellar</li><li>CBF_Plan_Dungeon_TreasureCellar</li></descentPlans></li>
     </legend>
     <mask>
       <li>#########</li>
@@ -90,8 +91,8 @@
       <li>...+.....</li>
       <li>.11.2....</li>
       <li>.11......</li>
-      <li>.........</li>
-      <li>+33.....+</li>
+      <li>....↓....</li>
+      <li>+33.↓...+</li>
       <li>.Ç....4..</li>
       <li>.......Ç.</li>
       <li>..+......</li>

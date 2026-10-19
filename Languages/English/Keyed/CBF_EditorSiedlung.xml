@@ -349,4 +349,32 @@
   <CBF_D_LayoutFromLevel>like the level ({0})</CBF_D_LayoutFromLevel>
   <CBF_FieldDesc_DistrictSpec_layout>Own layout for this area. Empty takes the layout of the level.</CBF_FieldDesc_DistrictSpec_layout>
   <CBF_D_NewPlan>New dungeon</CBF_D_NewPlan>
+  <CBF_S_MountainMantle>Rock mantle</CBF_S_MountainMantle>
+  <CBF_S_MountainMantleDefault>0 = standard {0} for a mountain city</CBF_S_MountainMantleDefault>
+  <CBF_S_MountainMantleNone>0 = no mountain</CBF_S_MountainMantleNone>
+  <CBF_S_MountainMantleTip>Minimum rock thickness around old town and suburb, 0 to {0}. A mountain city uses {1} when this is 0. Other types only get a mountain when this is set.</CBF_S_MountainMantleTip>
+  <CBF_S_DarkPlants>Fields inside the mountain are dark. These plants do not grow there: {0}. Choose plants that grow in the dark, such as mushrooms.</CBF_S_DarkPlants>
+  <CBF_S_WeightFromCategory>Category entries have no weight of their own here. The pieces of the category are drawn by their own weights.</CBF_S_WeightFromCategory>
+  <CBF_S_PlanRuin>Build as ruin</CBF_S_PlanRuin>
+  <CBF_S_PlanRuinNone>no ruin</CBF_S_PlanRuinNone>
+  <CBF_S_PlanRuinTip>Builds every place of this type as a ruin: walls torn down, rooms burnt out, roofs partly collapsed, overgrown. The faction still lives there. Plundered means little loot, not plundered means the loot stays. A ruin from a quest or site takes precedence.</CBF_S_PlanRuinTip>
+  <CBF_S_PlanWhere>Appears only if</CBF_S_PlanWhere>
+  <CBF_S_PlanWhereTip>Conditions for this settlement type. Empty rows restrict nothing.</CBF_S_PlanWhereTip>
+  <CBF_S_PlanIdeoWith>Ideoligion has</CBF_S_PlanIdeoWith>
+  <CBF_S_PlanIdeoWithout>Ideoligion lacks</CBF_S_PlanIdeoWithout>
+  <CBF_S_PlanIdeoAny>any</CBF_S_PlanIdeoAny>
+  <CBF_S_PlanIdeoNoDlc>Needs Ideology. Without the DLC this condition is ignored.</CBF_S_PlanIdeoNoDlc>
+  <CBF_S_PlanIdeoWithTip>Only factions whose main ideoligion has at least one of these memes or precepts get this settlement type. Example: tunneler for a mountain city. Empty means all factions.</CBF_S_PlanIdeoWithTip>
+  <CBF_S_PlanIdeoWithoutTip>Factions whose main ideoligion has one of these memes or precepts never get this settlement type. Empty means no restriction.</CBF_S_PlanIdeoWithoutTip>
+  <CBF_S_PlanBiomes>Biomes</CBF_S_PlanBiomes>
+  <CBF_S_PlanBiomesTip>The settlement type only appears on tiles of these biomes, for example only in deserts. Empty means all biomes.</CBF_S_PlanBiomesTip>
+  <CBF_S_PlanNotBiomes>Not in biomes</CBF_S_PlanNotBiomes>
+  <CBF_S_PlanNotBiomesTip>The settlement type never appears on tiles of these biomes.</CBF_S_PlanNotBiomesTip>
+  <CBF_S_PlanHilliness>Hilliness</CBF_S_PlanHilliness>
+  <CBF_S_PlanHillinessTip>How hilly the tile is on the world map: flat, small hills, large hills or mountainous. The settlement type only appears at the chosen levels. Empty means all.</CBF_S_PlanHillinessTip>
+  <CBF_S_PlanLandforms>Landforms</CBF_S_PlanLandforms>
+  <CBF_S_PlanLandformsTip>Features of the tile such as coast, river, lake, valley or canyon. The settlement type only appears if the tile has at least one of them. Empty means any.</CBF_S_PlanLandformsTip>
+  <CBF_S_PlanNotLandforms>Not with landform</CBF_S_PlanNotLandforms>
+  <CBF_S_PlanNotLandformsTip>The settlement type never appears on tiles with one of these landforms.</CBF_S_PlanNotLandformsTip>
+  <CBF_S_PlanLoosen>The type only appears where all conditions apply. Without the Ideology DLC, ideoligion conditions are ignored.</CBF_S_PlanLoosen>
 </LanguageData>

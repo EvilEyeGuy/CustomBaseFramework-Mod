@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Profaned_Graveyard_C</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Profaned_Graveyard</li>
+    </categories>
+    <style>CBF_Profaned</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>0</symbol><thing>Grave</thing><rotation>South</rotation></li>
+      <li><symbol>1</symbol><thing>Grave</thing><rotation>North</rotation></li>
+      <li MayRequire="BotchJob.Profaned"><symbol>L</symbol><thing>BotchJob_ProfanedLantern</thing></li>
+      <li><symbol>Z</symbol><thing>SculptureSmall</thing><stuff>BlocksSlate</stuff></li>
+      <li><symbol>f</symbol><terrain>FlagstoneSlate</terrain></li>
+      <li><symbol>g</symbol><thing>Grave</thing><rotation>South</rotation></li>
+      <li><symbol>①</symbol><anchor>Grave1</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Grave</objects><lootTable>CBF_Profaned_Loot_Home</lootTable></li>
+      <li><symbol>②</symbol><anchor>Grave2</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Grave</objects><lootTable>CBF_Profaned_Loot_Home</lootTable></li>
+      <li><symbol>③</symbol><anchor>Grave3</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Grave</objects><lootTable>CBF_Profaned_Loot_Home</lootTable></li>
+      <li><symbol>④</symbol><anchor>Grave4</anchor><anchorKind>Fill</anchorKind><objects>CBF_Profaned_Grave</objects><lootTable>CBF_Profaned_Loot_Home</lootTable></li>
+    </legend>
+    <mask>
+      <li>..#####..</li>
+      <li>.#######.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.#######.</li>
+      <li>..#####..</li>
+    </mask>
+    <terrain>
+      <li>..fffff..</li>
+      <li>.fffffff.</li>
+      <li>fffffffff</li>
+      <li>fffffffff</li>
+      <li>fffffffff</li>
+      <li>fffffffff</li>
+      <li>.fffffff.</li>
+      <li>..fffff..</li>
+    </terrain>
+    <things>
+      <li>.........</li>
+      <li>..L......</li>
+      <li>......0..</li>
+      <li>..0......</li>
+      <li>....Z....</li>
+      <li>.........</li>
+      <li>.g.....1.</li>
+      <li>....1.L..</li>
+    </things>
+    <roof>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>......①..</li>
+      <li>..②...①..</li>
+      <li>..②......</li>
+      <li>.........</li>
+      <li>.......③.</li>
+      <li>....④..③.</li>
+      <li>....④....</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

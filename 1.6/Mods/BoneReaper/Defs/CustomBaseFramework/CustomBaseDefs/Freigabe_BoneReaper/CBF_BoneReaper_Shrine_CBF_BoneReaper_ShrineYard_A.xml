@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="JTCsBonereapers.FormerlyPPHHYY,DankPyon.Medieval.Overhaul">
+    <defName>CBF_BoneReaper_ShrineYard_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_BoneReaper_Shrine</li>
+    </categories>
+    <style>CBF_BoneReaper</style>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY,Ludeon.RimWorld.Ideology"><symbol>0</symbol><thing>pphhyy_OsseousShrine</thing><stuff>BlocksGranite</stuff><rotation>South</rotation></li>
+      <li><symbol>8</symbol><anchor>Priests</anchor><anchorKind>Spawn</anchorKind><pawnCount>1~2</pawnCount><chance>0.6</chance></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>O</symbol><thing>pphhyy_OsseousObelisk</thing><stuff>pphhyy_BoneMoldSteel</stuff></li>
+      <li><symbol>o</symbol><terrain>pphhyy_OsseousFloor</terrain></li>
+      <li MayRequire="JTCsBonereapers.FormerlyPPHHYY"><symbol>q</symbol><thing>pphhyy_OsseousBrazier</thing><stuff>pphhyy_BoneMoldSteel</stuff></li>
+      <li><symbol>Ⓐ</symbol><anchor>Shrine1</anchor><anchorKind>Object</anchorKind><objects>CBF_BoneReaper_Shrine</objects></li>
+    </legend>
+    <mask>
+      <li>...#####...</li>
+      <li>..#######..</li>
+      <li>.#########.</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>###########</li>
+      <li>.#########.</li>
+      <li>..#######..</li>
+      <li>...#####...</li>
+    </mask>
+    <terrain>
+      <li>...ooooo...</li>
+      <li>..ooooooo..</li>
+      <li>.ooooooooo.</li>
+      <li>ooooooooooo</li>
+      <li>ooooooooooo</li>
+      <li>ooooooooooo</li>
+      <li>ooooooooooo</li>
+      <li>ooooooooooo</li>
+      <li>.ooooooooo.</li>
+      <li>..ooooooo..</li>
+      <li>...ooooo...</li>
+    </terrain>
+    <things>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...O...O...</li>
+      <li>...........</li>
+      <li>.q.......q.</li>
+      <li>.....0.....</li>
+      <li>...O...O...</li>
+      <li>...........</li>
+      <li>....q.q....</li>
+      <li>...........</li>
+    </things>
+    <roof>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </roof>
+    <anchors>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>..8........</li>
+      <li>.....ⒶⒶ....</li>
+      <li>.....ⒶⒶ....</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+      <li>...........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

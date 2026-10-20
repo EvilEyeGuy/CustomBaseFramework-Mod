@@ -45,7 +45,7 @@ Next: settlement garrisons based on raid points, and a quest editor for modders.
 
 ![GitHub](https://raw.githubusercontent.com/EvilEyeGuy/CustomBaseFramework-Mod/workshop/h10_github.png?v=1)
 
-[![Report a bug](https://raw.githubusercontent.com/EvilEyeGuy/CustomBaseFramework-Mod/workshop/knopf_bug.png?v=1)](https://github.com/EvilEyeGuy/CustomBaseFramework-Mod/issues)
+[![Report a bug](https://raw.githubusercontent.com/EvilEyeGuy/CustomBaseFramework-Mod/workshop/knopf_bug.png?v=2)](https://github.com/EvilEyeGuy/CustomBaseFramework-Mod/issues)
 
 Report problems as an [issue](https://github.com/EvilEyeGuy/CustomBaseFramework-Mod/issues) or in the Workshop comments, with a log and a short note on what happened. If settlement generation fails, please add the CBF report from:
 

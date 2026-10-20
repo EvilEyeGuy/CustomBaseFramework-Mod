@@ -755,8 +755,6 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_OtherModsHead>Other mods</CBF_OtherModsHead>
   <CBF_GarrisonHead>Garrisons and performance</CBF_GarrisonHead>
   <CBF_GarrisonIntro>Large settlements do not spawn all their pawns with the map. Part of them is held back unspawned and only spawns when their district is alarmed. Fewer pawns on the map at once means a smoother game.</CBF_GarrisonIntro>
-  <CBF_GarrisonShare>Garrison in the streets at the start: {0}%</CBF_GarrisonShare>
-  <CBF_GarrisonShareHelp>Share of each district that spawns with the map, at least three per district. If this is more than the limit leaves after the guards, it is cut down. The rest is held back unspawned and spawns as soon as the district is alarmed: shots nearby, hits on its walls or houses, or an enemy is spotted. It spawns within the limit. Walls, gates, guns and posts are always fully manned. Applies to newly generated settlements.</CBF_GarrisonShareHelp>
   <CBF_GarrisonCap>At most on the map at once: {0}</CBF_GarrisonCap>
   <CBF_GarrisonCapNone>At most on the map at once: no limit</CBF_GarrisonCapNone>
   <CBF_GarrisonCapHelp>Upper limit for the pawns of a settlement who are on the map and able to fight at the same time: guards on walls, gates, guns and posts and the garrison of the districts. Downed pawns, prisoners and pawns not yet spawned do not count. Guards are always fully manned. The districts get the rest, shared by their size, but at least three per district. If the guards alone are above the limit, the map can therefore be slightly above it. When someone falls, the next one spawns. Higher values suit fast computers, lower values slow ones. A changed limit applies at once to all further reinforcements. Pawns already on the map stay; lowering the limit removes nobody. Settlements generated without a reserve are not affected.</CBF_GarrisonCapHelp>
@@ -801,6 +799,9 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_Descent_SealConfirm>The level below is removed for good, including everything left there. Seal the descent?</CBF_Descent_SealConfirm>
   <CBF_Descent_SealOccupied>Someone of your colony is still below: colonists, prisoners or animals.</CBF_Descent_SealOccupied>
   <CBF_Descent_Sealed>{0}: the way down is sealed.</CBF_Descent_Sealed>
+  <CBF_Defeat_StillBelow>The surface is cleared, but {0} defender(s) still hold the levels below.</CBF_Defeat_StillBelow>
+  <CBF_Defeat_StairsBelow>Defenders below: {0}</CBF_Defeat_StairsBelow>
+  <CBF_Defeat_UndeadLeft>{0} undead still walk this place.</CBF_Defeat_UndeadLeft>
   <CBF_S_CoreShapes>Old town shapes</CBF_S_CoreShapes>
   <CBF_S_CoreShapesAll>All shapes allowed. Click a shape to exclude it.</CBF_S_CoreShapesAll>
   <CBF_S_CoreShapeLast>At least one shape stays selected.</CBF_S_CoreShapeLast>
@@ -839,8 +840,8 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_GarrisonBoxDistrictsTip>Garrison out in the districts.</CBF_GarrisonBoxDistrictsTip>
   <CBF_GarrisonBoxGuards>Guards</CBF_GarrisonBoxGuards>
   <CBF_GarrisonBoxGuardsTip>People on walls, gates, guns and posts. They are always fully manned and never held back.</CBF_GarrisonBoxGuardsTip>
-  <CBF_GarrisonSize>Size of the reserve: {0}%</CBF_GarrisonSize>
-  <CBF_GarrisonSizeHelp>Scales the pawns held back unspawned, compared to what the settlement has by its plan. Guards and the pawns that spawn with the map are not changed. A larger reserve means longer fights, not more pawns on the map at once; that is set by the limit. Applies to newly generated settlements.</CBF_GarrisonSizeHelp>
+  <CBF_GarrisonStrength>Garrison size: {0}%</CBF_GarrisonStrength>
+  <CBF_GarrisonStrengthHelp>How many defenders a settlement fields, relative to its plans. 100% is the full garrison and the default. At 100% a village has about 30 defenders and a fortress city about 90, at 200% about twice as many. Applies with or without the reserve. The garrison size sets how many residents there are; the reserve size sets how many of them are held back and only appear on alarm. Ruins and World Domination scale on top of this. Applies to newly generated settlements.</CBF_GarrisonStrengthHelp>
   <CBF_GarrisonDefaultsTip>Sets all garrison sliders back to their defaults, including "Downed defenders count towards the limit". The display switch below stays as it is.</CBF_GarrisonDefaultsTip>
   <CBF_GarrisonReserve>Enable CBF spawn mechanics</CBF_GarrisonReserve>
   <CBF_GarrisonReserveHelp>Off: every pawn of a settlement spawns with the map, with no reserve and no reinforcements. The sliders below are hidden. Applies to newly generated settlements. Settlements that already have a reserve keep it and still spawn their pawns on alarm, using the hidden slider values (limit, batch, interval) as last set.</CBF_GarrisonReserveHelp>

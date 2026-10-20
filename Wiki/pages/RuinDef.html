@@ -166,6 +166,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How strongly the damage gathers around the breaches and points of attack, 0 to 1. 0 spreads it evenly.</td>
 </tr>
 <tr>
+<td><code>creatures</code></td>
+<td><a href="PawnListDef.html">PawnListDef</a></td>
+<td>none</td>
+<td>A PawnListDef whose creatures occupy the ruin instead of the usual defenders, for example insects or undead. Pawns of a faction defend a point together, animals without a faction turn manhunter. Empty uses the occupation setting.</td>
+</tr>
+<tr>
 <td><code>fieldsRavaged</code></td>
 <td>number</td>
 <td><code>0</code></td>
@@ -223,7 +229,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>overgrowth</code></td>
 <td>number</td>
 <td><code>0</code></td>
-<td>Chance per open cell of the settlement that a wild plant of the biome grows there, 0 to 1. Makes a settlement look long abandoned.</td>
+<td>Chance per open cell of the settlement that a wild plant of the biome grows there, 0 to 1, scaled by the plant density of the biome (deserts get little, extreme deserts none). Makes a settlement look long abandoned.</td>
 </tr>
 <tr>
 <td><code>overgrowthTrees</code></td>

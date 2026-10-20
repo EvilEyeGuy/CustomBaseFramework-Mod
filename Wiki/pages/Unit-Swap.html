@@ -124,7 +124,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><strong>Factions</strong> on the left. Below each name: which mods have swap rules for it. <strong>With swap</strong> shows only those factions.</li>
 <li><strong>Units</strong> or <strong>Things</strong>: every unit from pawn lists and pieces, every thing from pieces and object lists. <strong>Animals</strong> also shows animals from pens and vermin.</li>
 <li><strong>Becomes for this faction</strong>: the targets. <strong>+</strong> adds a target from the faction's own units. Several targets are drawn by weight. For things, <strong>...</strong> picks one target of the same kind and size.</li>
-<li><strong>Without rule</strong>: what the faction gets when no rule covers the row. For people, CBF takes the faction's own unit that fights the same way (ranged, melee or not at all) and has the closest combat power. If none fights the same way, the closest combat power decides. Things and animals stay as they are.</li>
+<li><strong>Without rule</strong>: what the faction gets when no rule covers the row. For people, CBF draws from the faction's own units at random, weighted like its groups: fighters from its raid group, residents from its settlement and trader groups. Ranged and melee fighters stay apart, and combat power only filters roughly. Things and animals stay as they are.</li>
 <li><strong>Your rule</strong>: name, <strong>Priority</strong> and the mod it is saved in (<strong>Saved in</strong>).</li>
 <li><strong>Rules of other mods</strong>: shown, never changed.</li>
 </ol>

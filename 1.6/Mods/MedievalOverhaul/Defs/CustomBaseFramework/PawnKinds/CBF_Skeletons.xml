@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef>
+    <defName>CBF_Undead</defName>
+    <label>undead</label>
+    <description>Bones held together by something that should have stayed buried. It feels no pain, needs no food or sleep and falls apart when it is struck down.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.75, 0.72, 0.6)</defaultLabelColor>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <stages>
+      <li>
+        <painFactor>0</painFactor>
+        <totalBleedFactor>0</totalBleedFactor>
+        <disablesNeeds>
+          <li>Food</li>
+          <li>Rest</li>
+          <li>Joy</li>
+          <li>Mood</li>
+          <li>Comfort</li>
+          <li>Beauty</li>
+          <li>RoomSize</li>
+          <li>Outdoors</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">Indoors</li>
+          <li>DrugDesire</li>
+        </disablesNeeds>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_DissolveGearOnDeath">
+        <filth>Filth_RubbleRock</filth>
+        <filthCount>2</filthCount>
+      </li>
+      <li Class="CustomBaseFramework.HediffCompProperties_Undead">
+        <bones>DankPyon_Bone</bones>
+        <boneCount>2~5</boneCount>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <PawnKindDef Name="CBF_SkeletonBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>AncientsHostile</defaultFactionDef>
+    <isFighter>true</isFighter>
+    <itemQuality>Awful</itemQuality>
+    <gearHealthRange>0.15~0.45</gearHealthRange>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <biocodeWeaponChance>0</biocodeWeaponChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+    <techHediffsChance>0</techHediffsChance>
+    <invNutrition>0</invNutrition>
+    <fixedGender>Male</fixedGender>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <initialWillRange>0</initialWillRange>
+    <initialResistanceRange>99</initialResistanceRange>
+    <modExtensions>
+      <li Class="CustomBaseFramework.UndeadExtension" />
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_SkeletonBase">
+    <defName>CBF_SkeletonWarrior</defName>
+    <label>skeleton warrior</label>
+    <combatPower>45</combatPower>
+    <apparelMoney>200~400</apparelMoney>
+    <apparelTags>
+      <li>DankPyon_BrigandThug</li>
+      <li>DankPyon_PeasantHelmet</li>
+    </apparelTags>
+    <weaponMoney>150~300</weaponMoney>
+    <weaponTags>
+      <li>DankPyon_Hatchet</li>
+      <li>DankPyon_WoodcuttersAxe</li>
+      <li>DankPyon_HookedBlade</li>
+      <li>DankPyon_Bludgeon</li>
+      <li>DankPyon_Falchion</li>
+      <li>DankPyon_Handaxe</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>6~10</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_SkeletonBase">
+    <defName>CBF_SkeletonGuard</defName>
+    <label>skeleton guard</label>
+    <combatPower>60</combatPower>
+    <apparelMoney>500~800</apparelMoney>
+    <apparelTags>
+      <li>DankPyon_BrigandRaider</li>
+    </apparelTags>
+    <weaponMoney>250~400</weaponMoney>
+    <weaponTags>
+      <li>DankPyon_MilitiaSpear</li>
+      <li>DankPyon_BoarSpear</li>
+      <li>DankPyon_ArmingSword</li>
+      <li>DankPyon_MorningStar</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>8~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CBF_SkeletonBase">
+    <defName>CBF_SkeletonArcher</defName>
+    <label>skeleton archer</label>
+    <combatPower>40</combatPower>
+    <apparelMoney>0~150</apparelMoney>
+    <apparelTags>
+      <li>DankPyon_BrigandThug</li>
+    </apparelTags>
+    <weaponMoney>100~250</weaponMoney>
+    <weaponTags>
+      <li>DankPyon_HuntingBow</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~9</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_Skeletons</defName>
+    <label>skeletons</label>
+    <role>Guard</role>
+    <radius>0</radius>
+    <members>
+      <li><kind>CBF_SkeletonWarrior</kind><weight>10</weight></li>
+      <li><kind>CBF_SkeletonGuard</kind><weight>4</weight></li>
+      <li><kind>CBF_SkeletonArcher</kind><weight>5</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+</Defs>

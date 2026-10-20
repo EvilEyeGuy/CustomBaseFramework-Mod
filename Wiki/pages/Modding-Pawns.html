@@ -173,7 +173,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><code>weight</code>: how often this kind is drawn compared to the others. Default <code>1</code>. A weight of <code>0</code> is never drawn.</li>
 <li><code>ideoRole</code>: optional, needs Ideology. Pawns of this entry get a role of their faction's ideoligion. <code>Kampf</code> gives the shooting specialist or the melee specialist, depending on the pawn's weapon. Any other value is the <code>defName</code> of a role precept. An unknown role logs a warning and the entry gets no role.</li>
 </ul>
-<p><code>role</code> decides how pawns from this list behave when they come from a pawn anchor. Default <code>Civilian</code>. The editor label is shown in the second column.</p>
+<p><code>role</code> decides how pawns from this list behave when they come from a pawn anchor. Default <code>Guard</code>. The editor label is shown in the second column.</p>
 <table>
 <thead>
 <tr>
@@ -200,12 +200,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>Civilian</code></td>
-<td>Civilian</td>
-<td>Defends the area within <code>radius</code>, but may flee on its own. Need not be capable of violence.</td>
+<td>not offered</td>
+<td>Older files only. Counts as <code>Guard</code>.</td>
 </tr>
 </tbody>
 </table>
-<p>In a garrison the role only decides one thing: pawns of every role except <code>Civilian</code> are generated capable of violence. Where garrison pawns stand is decided by the post of the garrison entry.</p>
+<p>In a garrison all pawns are generated capable of violence. Where garrison pawns stand is decided by the post of the garrison entry.</p>
 <p><code>radius</code>: how far, in cells, pawns from an anchor spread around it. Default <code>4</code>. Values below <code>1</code> count as <code>1</code>. <code>Guard</code> pawns ignore it because they join the ward's defense.</p>
 <h3 id="tech-level-of-the-settlement">Tech level of the settlement</h3>
 <p>One list can hold soldiers of several ages, for example industrial and spacer troops. CBF then picks the members that fit the settlement.</p>
@@ -228,7 +228,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>A list without members is a config error.</li>
 <li>A negative <code>weight</code> or <code>radius</code> is a config error.</li>
 <li>A list whose members are all missing logs a warning. Anchors that name it stay empty.</li>
-<li>A <code>Civilian</code> list that contains a humanlike kind with a combat power of 80 or more logs a warning. Fighters belong in <code>Guard</code>, <code>Sentry</code> or <code>Gunner</code>.</li>
 </ul>
 <h2 id="garrisons">Garrisons</h2>
 <p>A garrison is a fixed set of soldiers for one ward. It is written in the ward entry inside <code>wards</code> of a SettlementPlanDef. Use a garrison when you want to control exactly who defends a ward and where they stand.</p>
@@ -310,12 +309,23 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </table>
 <p>If a ward has no wall walk at an open embrasure, <code>Walkway</code> pawns stand inside instead. The same applies to <code>Gate</code> when the ward has no gate cells.</p>
 <h3 id="garrison-and-defender-points">Garrison and defender points</h3>
+<p>A settlement type works in one of two modes.</p>
+<p><strong>With a garrison factor</strong> (<code>wealthFactor</code> above 0) it uses garrison points:</p>
+<ul>
+<li>The budget is your raid points times <code>wealthFactor</code> times the Garrison size setting, but never less than <code>defenderPoints</code>. It is taken when you enter the map; a dungeon fixes it once for all its levels.</li>
+<li>Garrison entries with <code>fixed</code> place their pawns first, min first, then extras up to max by <code>weight</code> while the budget lasts. Entries without <code>fixed</code> are not used.</li>
+<li>Pawns from pawn anchors count against the budget by <code>anchorPointShare</code> (default 0.5).</li>
+<li>The rest buys pawns from the faction and is split by <code>garrisonShare</code>: automatically by size for wards, rising towards the bottom for dungeon levels (weight level + 1). The last ward or level gets the rest.</li>
+<li>A settlement takes at most 30,000 points and 200 pawns; what does not fit on the map waits in the reserve.</li>
+</ul>
+<p><strong>Without a garrison factor</strong> it works as before:</p>
 <ul>
 <li>A ward with at least one garrison entry gets no pawns from the defender points. Its garrison and its anchor pawns defend it.</li>
-<li>The pawns bought with <code>defenderPoints</code> are split among the wards without a garrison, weighted by their size. Of each share, the fraction <code>defendersOnWall</code> goes onto the wall walk, if the ward has open embrasures.</li>
-<li>The defender pawns come from the faction's pawn group maker named in <code>defenderGroupKind</code>. If that is empty or the faction has none of that kind, CBF tries <code>Settlement</code>, then <code>Combat</code>.</li>
-<li>Pawns from anchors that name their own list or kind come on top. They are not counted against the defender points.</li>
+<li>The pawns bought with <code>defenderPoints</code> are split among the wards without a garrison, weighted by their size.</li>
 </ul>
+<p>In both modes the fraction <code>defendersOnWall</code> of each ward's bought pawns goes onto the wall walk, if the ward has open embrasures.
+- The defender pawns come from the faction's pawn group maker named in <code>defenderGroupKind</code>. If that is empty or the faction has none of that kind, CBF tries <code>Settlement</code>, then <code>Combat</code>.
+- Without a garrison factor, pawns from anchors that name their own list or kind come on top and are not counted against the defender points.</p>
 <p>The editor shows a point value for each garrison entry: the weighted average combat power of the list, times the middle of <code>count</code>. This value is for orientation only.</p>
 <p>On a quest site whose <a href="RuinDef.html">ruin</a> uses <code>occupation</code> <code>Occupier</code>, garrisons and anchors with their own list or kind are skipped. Only defender points are used there. See <a href="Modding-Quests.html#ruindef-and-garrison">Modding-Quests</a>.</p>
 <h3 id="lords">Lords</h3>
@@ -346,7 +356,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h3 id="anchor-limits">Anchor limits</h3>
 <p>Big settlements can contain many pieces with anchors. Two fields of the SettlementPlanDef cap the pawns from anchors:</p>
 <ul>
-<li><code>maxCivilians</code>: default <code>30</code>. Once this many non-fighters are placed, further civilian anchors are skipped.</li>
+<li><code>maxCivilians</code>: default <code>30</code>. Only for older lists with role <code>Civilian</code>: once this many anchors with such lists are filled, further ones are skipped.</li>
 <li><code>maxSoldiers</code>: default <code>40</code>. Once this many fighters are placed, further fighting anchors are skipped. Gunner anchors are never skipped.</li>
 </ul>
 <p>Garrison pawns placed before count toward these limits. When a limit is active, anchors are handled in random order, gunner anchors first. <code>0</code> removes a limit.</p>
@@ -399,7 +409,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><code>priority</code>: a whole number. Default <code>0</code>. See below.</li>
 <li><code>units</code>: swaps for pawn kinds.</li>
 <li><code>things</code>: swaps for things placed by pieces.</li>
-<li><code>neutral</code>: pawn kinds that the automatic fallback must not replace. See below.</li>
+<li><code>neutral</code>: older field, still loaded but no longer read. It does not protect pawn kinds from the swap.</li>
 </ul>
 <p>Each <code>li</code> in <code>units</code> and <code>things</code> has:</p>
 <ul>
@@ -415,26 +425,14 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h3 id="without-a-rule">Without a rule</h3>
 <p>When a faction has no rule for a humanlike unit, CBF picks a replacement itself:</p>
 <ol>
-<li>The candidates are the faction's own humanlike kinds: every kind in its pawn group makers (options, guards, traders, carriers) and its <code>basicMemberKind</code>.</li>
+<li>Fighters (garrison, guards, walkway) come from the faction's combat group, the units it also sends on raids. Residents and traders come from its settlement and trader groups. A faction without a combat group uses all its humanlike kinds.</li>
 <li>If the unit is already one of them, it stays.</li>
-<li>Only candidates with the same <code>isFighter</code> value as the unit are used.</li>
-<li>Candidates with the same way of fighting are preferred: ranged, melee or unarmed, judged by the weapons the kind can carry.</li>
-<li>Of those, the one with the closest combat power wins.</li>
+<li>Candidates with the same way of fighting are kept apart: ranged, melee or unarmed, judged by the weapons the kind can carry.</li>
+<li>Combat power filters out kinds that are far too weak or too strong.</li>
+<li>Of the rest, one is drawn at random, weighted like in the faction's groups.</li>
 </ol>
+<p>CBF's own units are placeholders for roles. They are swapped like this in every settlement, also for vanilla factions, so gear mods such as Combat Extended apply automatically. Factions from mods with their own gear keep their units; the pawn lists then only set count and role. Units edited in Total Control are used as they are.</p>
 <p>Animals and things are never swapped without a rule. The log notes each fallback swap once.</p>
-<h3 id="neutral-units">Neutral units</h3>
-<p>Units listed in <code>neutral</code> are never replaced by the fallback. Explicit rules for them still apply. CBF uses this for its own modern soldiers, so that every faction that owns a modern settlement keeps them. Shortened from <code>CBF_Modern_Neutral_Units.xml</code>:</p>
-<pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.UnitSwapDef</span>&gt;
-  &lt;<span class="xt">defName</span>&gt;CBF_Modern_Neutral_Units&lt;/<span class="xt">defName</span>&gt;
-  &lt;<span class="xt">label</span>&gt;neutral modern soldiers&lt;/<span class="xt">label</span>&gt;
-  &lt;<span class="xt">neutral</span>&gt;
-    &lt;<span class="xt">li</span>&gt;CBF_Modern_Rifleman&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;CBF_Modern_Sniper&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;CBF_Modern_Stormer&lt;/<span class="xt">li</span>&gt;
-    &lt;<span class="xt">li</span>&gt;CBF_Modern_Spacer_Rifleman&lt;/<span class="xt">li</span>&gt;
-  &lt;/<span class="xt">neutral</span>&gt;
-&lt;/<span class="xt">CustomBaseFramework.UnitSwapDef</span>&gt;
-</code></pre>
 <h3 id="where-swap-applies">Where swap applies</h3>
 <ul>
 <li>Garrison pawns.</li>
@@ -446,7 +444,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="tips">Tips</h2>
 <ul>
 <li>Put all ages into one list and let the tech filter choose. A kind without required gear and without weapons has no tech level and is drawn at every level.</li>
-<li>Use <code>Civilian</code> only for people who should run. Fighters in a civilian list trigger a warning.</li>
 <li>Give each ward of a big settlement its own garrison. A ward with a garrison is fully under your control. A ward without one depends on the faction's group makers.</li>
 <li>Wall posts need open embrasures. Without them the wall garrison stands inside.</li>
 <li>Name general units in lists and pieces and write one swap rule per faction, instead of copying lists.</li>
@@ -461,4 +458,4 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><a href="LootBuildingCategoryDef.html">LootBuildingCategoryDef</a></li>
 <li><a href="UnitSwapDef.html">UnitSwapDef</a>, <a href="Tauscheintrag.html">Tauscheintrag</a></li>
 <li><a href="MapStepsDef.html">MapStepsDef</a>, <a href="Techschritt.html">Techschritt</a></li>
-</ul><div class="schritte"><a href="Modding-Loot.html"><span>Previous</span>Loot in XML</a><a class="weiter" href="Modding-Quests.html"><span>Next</span>Quests in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#who-lives-in-a-settlement">Who lives in a settlement</a><a class="t2" href="#pawn-lists">Pawn lists</a><a class="t3" href="#example">Example</a><a class="t3" href="#nodes">Nodes</a><a class="t3" href="#tech-level-of-the-settlement">Tech level of the settlement</a><a class="t3" href="#checks">Checks</a><a class="t2" href="#garrisons">Garrisons</a><a class="t3" href="#example_1">Example</a><a class="t3" href="#nodes_1">Nodes</a><a class="t3" href="#garrison-and-defender-points">Garrison and defender points</a><a class="t3" href="#lords">Lords</a><a class="t2" href="#pawn-anchors-in-pieces">Pawn anchors in pieces</a><a class="t3" href="#example_2">Example</a><a class="t3" href="#nodes_2">Nodes</a><a class="t3" href="#anchor-limits">Anchor limits</a><a class="t3" href="#single-pawns-in-the-legend">Single pawns in the legend</a><a class="t3" href="#pawns-in-containers">Pawns in containers</a><a class="t2" href="#pen-animals">Pen animals</a><a class="t2" href="#unit-swap">Unit swap</a><a class="t3" href="#example_3">Example</a><a class="t3" href="#nodes_3">Nodes</a><a class="t3" href="#priority">Priority</a><a class="t3" href="#without-a-rule">Without a rule</a><a class="t3" href="#neutral-units">Neutral units</a><a class="t3" href="#where-swap-applies">Where swap applies</a><a class="t2" href="#tips">Tips</a><a class="t2" href="#field-reference">Field reference</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+</ul><div class="schritte"><a href="Modding-Loot.html"><span>Previous</span>Loot in XML</a><a class="weiter" href="Modding-Quests.html"><span>Next</span>Quests in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#who-lives-in-a-settlement">Who lives in a settlement</a><a class="t2" href="#pawn-lists">Pawn lists</a><a class="t3" href="#example">Example</a><a class="t3" href="#nodes">Nodes</a><a class="t3" href="#tech-level-of-the-settlement">Tech level of the settlement</a><a class="t3" href="#checks">Checks</a><a class="t2" href="#garrisons">Garrisons</a><a class="t3" href="#example_1">Example</a><a class="t3" href="#nodes_1">Nodes</a><a class="t3" href="#garrison-and-defender-points">Garrison and defender points</a><a class="t3" href="#lords">Lords</a><a class="t2" href="#pawn-anchors-in-pieces">Pawn anchors in pieces</a><a class="t3" href="#example_2">Example</a><a class="t3" href="#nodes_2">Nodes</a><a class="t3" href="#anchor-limits">Anchor limits</a><a class="t3" href="#single-pawns-in-the-legend">Single pawns in the legend</a><a class="t3" href="#pawns-in-containers">Pawns in containers</a><a class="t2" href="#pen-animals">Pen animals</a><a class="t2" href="#unit-swap">Unit swap</a><a class="t3" href="#example_3">Example</a><a class="t3" href="#nodes_3">Nodes</a><a class="t3" href="#priority">Priority</a><a class="t3" href="#without-a-rule">Without a rule</a><a class="t3" href="#where-swap-applies">Where swap applies</a><a class="t2" href="#tips">Tips</a><a class="t2" href="#field-reference">Field reference</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

@@ -130,17 +130,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h3 id="garrisons-and-performance">Garrisons and performance</h3>
 <p>Large settlements do not spawn all their pawns with the map. Part of them is held back unspawned and only spawns when their district is alarmed, in a house near the fighting and out of sight of your pawns. Fewer pawns on the map at once means a smoother game. <strong>Reset to defaults</strong> next to the heading sets all sliders of this section back.</p>
 <ul>
+<li><strong>Garrison size</strong>, 25% to 200%, 100% by default. How many defenders a settlement fields, relative to its plans; 100% is the full garrison. For settlement types with a garrison factor it scales the point budget: the place spends your raid points times its factor times this slider, but never less than its minimum points. Raid points count past the usual 10,000 and are taken when you enter the map. At 100% and 11,200 raid points a village has about 30 defenders and a fortress city about 100; at 200% about twice as many. A settlement takes at most 30,000 points and 200 pawns; what is above the limit on the map waits in the reserve. Settlement types without a garrison factor keep their fixed garrisons and only scale with this slider. Applies with or without the reserve. Ruins and World Domination scale on top of this. Only newly generated settlements are affected.</li>
 <li><strong>Enable CBF spawn mechanics</strong>, on by default. Off: every pawn of a new settlement spawns with the map, with no reserve and no reinforcements, and the sliders below are hidden. Settlements that already have a reserve keep it.</li>
-<li><strong>Garrison in the streets at the start</strong>, 35% by default. Share of each district that is on the map from the start. For fighters at least three per district. If this is more than the limit leaves after the guards, it is cut down, keeping fighters first.</li>
-<li><strong>Size of the reserve</strong>, 75% to 200%, 100% by default. Scales the pawns held back unspawned. Below 100% the settlement has fewer people. Above 100% extra people of the same kinds are created in the same district. Guards and the people on the map at the start do not change.</li>
-<li><strong>At most on the map at once</strong>, 30 to no limit, 60 by default. Counts the pawns of a settlement on the map who are able to fight: guards on walls, gates, guns and posts, the garrison of the districts and civilians. Downed pawns, prisoners and pawns not yet spawned do not count. Guards are always fully manned; the districts get the rest, shared by size, but at least three fighters each. If the guards alone are above the limit, the map can be slightly above it.</li>
+<li><strong>At most on the map at once</strong>, 30 to no limit, 60 by default. Counts the pawns of a settlement on the map who are able to fight: guards on walls, gates, guns and posts, and the garrison of the districts. Downed pawns, prisoners and pawns not yet spawned do not count. Guards are always fully manned; the districts get the rest, shared by size, but at least three fighters each. If the guards alone are above the limit, the map can be slightly above it.</li>
 <li><strong>Reinforcements per wave</strong>, how many pawns spawn at most at once.</li>
 <li><strong>Waves per in-game hour</strong>, how often reinforcements spawn. Alarms are checked at the same rate.</li>
 <li><strong>Minimum distance to your people</strong>, reinforcements only appear at least this far from your people and where none of them can see.</li>
 <li><strong>Downed defenders count towards the limit</strong>. Wounded defenders lying on the ground keep their place until they die or are captured, so fewer reinforcements spawn. Measured: 11 to 33 % more TPS once 10 or more defenders are down. The last stand is still triggered. Applies at once.</li>
 <li><strong>Show the garrison on the map</strong>, off by default. See <a href="#garrison-box">below</a>.</li>
 </ul>
-<p>A district is alarmed by shots nearby, hits on its walls or houses, or when one of your people is spotted. Fighters spawn first, then civilians, both within the limit. Fighters who spawn go to their own district if it is alarmed, otherwise to where the fighting in the settlement is. Civilians go back to their houses. When fewer than three defenders are left able to fight, the district nearest to your people wakes up by itself, so the settlement can always be defeated.</p>
+<p>A district is alarmed by shots nearby, hits on its walls or houses, or when one of your people is spotted. They spawn within the limit and go to their own district if it is alarmed, otherwise to where the fighting in the settlement is. When fewer than three defenders are left able to fight, the district nearest to your people wakes up by itself, so the settlement can always be defeated.</p>
 <p>The share and the size apply when a settlement is generated. The limit, waves, rate and distance apply at once to all further reinforcements. People already out stay out; lowering the limit sends nobody back into the houses.</p>
 <p>Example: a village with 20 people, 6 of them guards, share 30%, limit 40. The 6 guards are always there. Of the other 14, about a third per district starts on the map, at least three fighters per district. The limit is never reached, so after the alarm all 20 spawn.</p>
 <h4 id="garrison-box">Garrison box</h4>
@@ -159,7 +158,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td>In the districts</td>
-<td>Garrison and civilians out in the districts</td>
+<td>Garrison out in the districts</td>
 </tr>
 <tr>
 <td>Guards</td>
@@ -167,7 +166,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td>Ready to spawn</td>
-<td>People not on the map yet, fighters and civilians</td>
+<td>People not on the map yet</td>
 </tr>
 <tr>
 <td>District rows</td>

@@ -185,6 +185,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Thick town wall, suburb with town wall</td>
 </tr>
 <tr>
+<td>Mountain city</td>
+<td>Medieval Overhaul</td>
+<td>Medieval</td>
+<td>3</td>
+<td>38 to 51</td>
+<td>166 to 177</td>
+<td>250</td>
+<td>Old town and suburb inside a mountain, old walls turned to rock, towers as bastions on the flank</td>
+</tr>
+<tr>
 <td>Village</td>
 <td>VFE Medieval 2</td>
 <td>Medieval</td>
@@ -334,10 +344,41 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>200</td>
 <td>Palisade</td>
 </tr>
+<tr>
+<td>Modern mountain city</td>
+<td>base game</td>
+<td>Industrial to Ultra</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Inside a mountain; preferred by ideoligions with Tunneler</td>
+</tr>
+<tr>
+<td>Necropolis</td>
+<td>The Profaned</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Ruin without town wall; crypt and catacombs below</td>
+</tr>
+<tr>
+<td>Necropolis</td>
+<td>BoneReapers ReMarrowed and Medieval Overhaul</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Ruin without town wall; crypts below</td>
+</tr>
 </tbody>
 </table>
 <ul>
 <li><strong>Content</strong> is the mod whose things the settlement is built from. Types of a mod only load when that mod is active.</li>
+<li>With Medieval Overhaul, the cultist hideouts and the ruins of opportunity quests are built as <a href="Dungeons.html">dungeons</a>.</li>
 <li><strong>Garrison</strong> is the number of defenders the settlement type sets, summed over all wards (the rings of a settlement: town, suburb, countryside). Pawns placed by the buildings themselves, for example guards in towers, come on top: in tests a modern town had about 40 soldiers in total, a metropolis about 100.</li>
 <li><strong>Buildings</strong> records earlier test results for comparison, not a guaranteed count. Later content changes, terrain and placement can change these numbers. Empty cells mean no measurement was recorded.</li>
 <li><strong>Map</strong> is the edge length in cells that the settlement asks for. The larger of this and the map size set for the world is used.</li>
@@ -460,6 +501,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><strong>Modern:</strong> riflemen, snipers, assaulters, machine gunners, grenadiers, police and officers. Spacer and ultra factions field the spacer versions of the same roles, for example charge riflemen and marine assaulters.</li>
 </ul>
 <p>The large town and the metropolis have sandbag positions with a mini turret or an autocannon along their sandbag and barricade line. In tests the metropolis had 42 to 59 of them. Neither has gatehouses: roads run through gaps in the line.</p>
+<h2 id="claiming-animals">Claiming animals</h2>
+<p><strong>Claim animal</strong> on an animal of a foreign CBF settlement, also under Orders, sends a handler to take it for your colony. While the settlement is inhabited, each animal costs goodwill with its faction, more for valuable ones (market value divided by 150, at least 1, at most 10). Hostile factions and destroyed settlements lose no goodwill. After a settlement is destroyed, you can also form a caravan with the animals from its pens.</p>
 <h2 id="searching-a-settlement">Searching a settlement</h2>
 <p>After a fight, opening every container by hand takes many clicks. <strong>Search site</strong> under Orders marks every closed container on the map for opening in one click, without dragging an area. Your colonists then open them with the normal open job.</p>
 <ul>
@@ -606,4 +649,4 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><strong>On a fortress city with 121 defenders:</strong> CBF's own code takes 0.05 to 0.09 % of the tick time.</li>
 <li><strong>World map:</strong> +0.1 ms per frame.</li>
 <li><strong>Game start:</strong> about +20 MB memory.</li>
-</ul><div class="schritte"><a href="Unit-Swap.html"><span>Previous</span>Unit swap</a><a class="weiter" href="Loot-Medieval-Overhaul.html"><span>Next</span>Loot: Medieval Overhaul</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#overview">Overview</a><a class="t2" href="#world-domination-outposts">World Domination outposts</a><a class="t2" href="#camps-for-quest-sites">Camps for quest sites</a><a class="t2" href="#defenders">Defenders</a><a class="t2" href="#searching-a-settlement">Searching a settlement</a><a class="t2" href="#medieval-overhaul">Medieval Overhaul</a><a class="t2" href="#vfe-medieval-2">VFE Medieval 2</a><a class="t2" href="#modern">Modern</a><a class="t2" href="#performance">Performance</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+</ul><div class="schritte"><a href="Unit-Swap.html"><span>Previous</span>Unit swap</a><a class="weiter" href="Loot-Medieval-Overhaul.html"><span>Next</span>Loot: Medieval Overhaul</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#overview">Overview</a><a class="t2" href="#world-domination-outposts">World Domination outposts</a><a class="t2" href="#camps-for-quest-sites">Camps for quest sites</a><a class="t2" href="#defenders">Defenders</a><a class="t2" href="#claiming-animals">Claiming animals</a><a class="t2" href="#searching-a-settlement">Searching a settlement</a><a class="t2" href="#medieval-overhaul">Medieval Overhaul</a><a class="t2" href="#vfe-medieval-2">VFE Medieval 2</a><a class="t2" href="#modern">Modern</a><a class="t2" href="#performance">Performance</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

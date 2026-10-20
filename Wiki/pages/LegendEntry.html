@@ -137,13 +137,31 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>anchor</code></td>
 <td>text</td>
 <td>none</td>
-<td>Anchor name. Wall, Outside, Annex, NoShare (no shared wall on these wall cells) and Water have settlement connection meanings. Development stairs use StairsUp and StairsDown. Other names identify furniture, loot or pawn areas, for example Kitchen. Draw the entry symbol in anchors or anchorsOver.</td>
+<td>Anchor name. Wall, Outside, Annex, NoShare (no shared wall on these wall cells) and Water have settlement connection meanings. Dungeon stairs use StairsUp and StairsDown. Other names identify furniture, loot or pawn areas, for example Kitchen. Draw the entry symbol in anchors or anchorsOver.</td>
 </tr>
 <tr>
 <td><code>anchorKind</code><br>Kind</td>
 <td>AnchorKind (Connect, Fill, Spawn, Object)</td>
 <td><code>Connect</code></td>
 <td>What the anchor does. Connect only marks cells, see anchor. Fill places a container from objects and fills it from lootTable. Object places something from objects without the anchor's loot table. Spawn places pawns.</td>
+</tr>
+<tr>
+<td><code>annexCategories</code></td>
+<td>list of PieceCategoryDef</td>
+<td>none</td>
+<td>Only on an Annex anchor. The annex at this anchor is taken from these categories. Empty means the annexes set at the category of the piece.</td>
+</tr>
+<tr>
+<td><code>annexPriority</code></td>
+<td>Low, Normal, Preferred, Important, Critical</td>
+<td><code>Normal</code></td>
+<td>Only on an Annex anchor. Anchors with a higher priority get their annex first. Critical and Important ignore annexChance, Preferred raises it, Low halves it. Low anchors are filled last, after all other annexes of the settlement. annexRequired is independent and stronger.</td>
+</tr>
+<tr>
+<td><code>annexRequired</code></td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td>Only on an Annex anchor. The piece is only placed if an annex fits at this anchor.</td>
 </tr>
 <tr>
 <td><code>biomeLeather</code></td>
@@ -164,10 +182,34 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Stack size of the thing placed at this cell, for items. Buildings ignore it.</td>
 </tr>
 <tr>
+<td><code>descentChance</code></td>
+<td>number 0 to 1</td>
+<td><code>1</code></td>
+<td>Only with descentPlans. Chance that the descent exists. On a StairsDown anchor it is rolled when the settlement is built, on an object anchor when the container is opened.</td>
+</tr>
+<tr>
+<td><code>descentPlans</code></td>
+<td>list of SettlementPlanDef names</td>
+<td>none</td>
+<td>Dungeon plans this anchor may lead into, one is picked at random. On a StairsDown anchor in a settlement piece (cellar, graveyard entrance) a descent stairs is placed that leads into the first level of the picked plan. On an object anchor (sarcophagus, coffin) the opened container turns into a descent of the same size and keeps its empty look. The map below is only made when a pawn goes down. Without descentPlans, StairsDown keeps leading to the next level of the dungeon.</td>
+</tr>
+<tr>
 <td><code>factionFlag</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
 <td>On an Object anchor: true places the flag or banner that a FactionFlagDef assigns to the faction of the settlement. Factions without one get the objects of the anchor.</td>
+</tr>
+<tr>
+<td><code>floorList</code></td>
+<td>text</td>
+<td>none</td>
+<td>A FloorListDef (defName) for this floor symbol. Instead of the entry's own terrain, a floor is drawn from the list. If the list has no usable floor, the own terrain is used.</td>
+</tr>
+<tr>
+<td><code>floorPerCell</code></td>
+<td>true/false</td>
+<td><code>false</code></td>
+<td>Only with floorList. true: every cell of this symbol draws its own floor, giving a mixed floor. false: one floor is drawn for the whole piece.</td>
 </tr>
 <tr>
 <td><code>ideoBuilding</code></td>
@@ -248,34 +290,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Facing of the thing as drawn: North, East, South or West. It turns with the piece. Default North.</td>
 </tr>
 <tr>
-<td><code>annexRequired</code></td>
-<td>true/false</td>
-<td><code>false</code></td>
-<td>Only on an Annex anchor. The piece is only placed if an annex fits at this anchor.</td>
-</tr>
-<tr>
-<td><code>annexPriority</code></td>
-<td>Low, Normal, Preferred, Important, Critical</td>
-<td><code>Normal</code></td>
-<td>Only on an Annex anchor. Anchors with a higher priority get their annex first. Critical and Important ignore annexChance, Preferred raises it, Low halves it. Low anchors are filled last, after all other annexes of the settlement. annexRequired is independent and stronger.</td>
-</tr>
-<tr>
-<td><code>annexCategories</code></td>
-<td>list of PieceCategoryDef</td>
-<td>none</td>
-<td>Only on an Annex anchor. The annex at this anchor is taken from these categories. Empty means the annexes set at the category of the piece.</td>
-</tr>
-<tr>
 <td><code>socketType</code></td>
 <td>SocketArt (Door, Arch, Cave, Secret)</td>
 <td><code>Door</code></td>
-<td>Development Socket connector kind: Door, Arch, Cave or Secret. Stored by the editor but not passed to the current planner; it does not create a working connection by itself.</td>
+<td>Socket connector kind: Door, Arch, Cave or Secret. Stored by the editor but not used by the generator yet; it does not create a working connection by itself.</td>
 </tr>
 <tr>
 <td><code>socketWidth</code></td>
 <td>whole number</td>
 <td><code>1</code></td>
-<td>Development Socket width, default 1. Stored by the editor but not passed to the current planner.</td>
+<td>Socket width, default 1. Stored by the editor but not used by the generator yet.</td>
 </tr>
 <tr>
 <td><code>stuff</code><br>Material</td>

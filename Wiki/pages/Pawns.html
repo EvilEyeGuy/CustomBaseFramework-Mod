@@ -124,7 +124,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </ul>
 <p>The chips at the top switch between <strong>Mod</strong> (only what your mod contains) and <strong>All mods</strong>. Pawn kinds from other mods can be viewed but not changed in place. <strong>Copy it to edit</strong> at the bottom right copies one into your mod. <strong>Pawn kind from selection</strong> copies the kind of the pawn selected on the map into your mod.</p>
 <h2 id="add-a-resident-or-a-defender">Add a resident or a defender</h2>
-<p>For an innkeeper, first choose a suitable pawn kind and put it in a list with role <strong>Civilian</strong>. Add a <strong>Pawn</strong> anchor inside the inn, select the list and set the count to one. A chance below 1 allows some copies of the inn to be unoccupied.</p>
+<p>For an innkeeper, first choose a suitable pawn kind and put it in a list with role <strong>Guard</strong>. Add a <strong>Pawn</strong> anchor inside the inn, select the list and set the count to one. A chance below 1 allows some copies of the inn to be unoccupied.</p>
 <p>For a town guard force, assign a list to the ward's <strong>Garrison</strong> instead. Its count and post control that ward's defenders. Keep named posts and building residents on anchors when their position matters. Anchor pawns are added to the garrison, so check the total on a generated map before increasing both.</p>
 <p>Faction unit swaps can replace a selected pawn kind. If the generated soldier differs from the portrait, check <a href="Unit-Swap.html">Unit swap</a> as well as the list's tech-level filter.</p>
 <h2 id="pawn-kinds">Pawn kinds</h2>
@@ -146,10 +146,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><strong>Guard</strong>: joins the garrison of the settlement, does not flee alone and moves out against attackers.</li>
 <li><strong>Post</strong>: holds its spot and defends it. Does not move out and does not fall back. For towers and gatehouses.</li>
 <li><strong>Gunner</strong>: mans the nearest artillery piece and stays there.</li>
-<li><strong>Civilian</strong>: stays nearby and runs away when it gets dangerous. For innkeepers, market folk and farmers.</li>
 </ul>
 </li>
-<li><strong>Radius</strong>: the area around a pawn anchor for Post, Gunner and Civilian behaviour. Guard pawns join the ward defence instead.</li>
+<li><strong>Radius</strong>: the area around a pawn anchor for Post and Gunner behaviour. Guard pawns join the ward defence instead.</li>
 <li><strong>Used by</strong>: everything that names this list, such as settlement types, pieces and object lists. Click one to open it.</li>
 </ol>
 <p><strong>Tech level</strong> on the right decides which members a settlement uses. With <strong>from gear</strong>, each member counts at the tech level of its weapons and apparel. A settlement then uses the members with the highest tech level at or below its own. Members without a tech level always count. One list of guards can therefore serve every age: a medieval town gets the crossbowmen, an industrial town the riflemen.</p>

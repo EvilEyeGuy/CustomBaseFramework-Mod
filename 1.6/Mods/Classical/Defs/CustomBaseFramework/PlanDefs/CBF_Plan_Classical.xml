@@ -16,7 +16,8 @@
     <minBuildingGap>1</minBuildingGap>
     <maxBuildingGap>3</maxBuildingGap>
     <targetBuilt>0.5</targetBuilt>
-    <defenderPoints>120~240</defenderPoints>
+    <defenderPoints>300</defenderPoints>
+    <wealthFactor>0.12</wealthFactor>
     <defendersOnWall>0</defendersOnWall>
     <wards>
       <li>
@@ -148,7 +149,8 @@
     <minBuildingGap>1</minBuildingGap>
     <maxBuildingGap>3</maxBuildingGap>
     <targetBuilt>0.62</targetBuilt>
-    <defenderPoints>300~550</defenderPoints>
+    <defenderPoints>1800</defenderPoints>
+    <wealthFactor>0.25</wealthFactor>
     <defendersOnWall>0.28</defendersOnWall>
     <wards>
       <li>
@@ -174,7 +176,7 @@
             <list>CBF_Classical_Garrison_Gate</list>
             <count>2~4</count>
             <post>Gate</post>
-          </li>
+          <fixed>true</fixed></li>
           <li>
             <list>CBF_Classical_Garrison_Inside</list>
             <count>3~5</count>

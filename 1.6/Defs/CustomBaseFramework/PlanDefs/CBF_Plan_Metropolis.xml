@@ -18,7 +18,8 @@
     <maxBuildingGap>2</maxBuildingGap>
     <targetBuilt>0.64</targetBuilt>
     <openTerrain>true</openTerrain>
-    <defenderPoints>500~800</defenderPoints>
+    <defenderPoints>3000</defenderPoints>
+    <wealthFactor>0.42</wealthFactor>
     <defendersOnWall>0.28</defendersOnWall>
 
     <wards>
@@ -50,7 +51,7 @@
             <list>CBF_Modern_Garrison_Gate</list>
             <count>5~8</count>
             <post>Gate</post>
-          </li>
+          <fixed>true</fixed></li>
           <li>
             <list>CBF_Modern_Garrison_Inside</list>
             <count>8~11</count>
@@ -122,7 +123,7 @@
             <list>CBF_Modern_Garrison_Gate</list>
             <count>3~4</count>
             <post>Gate</post>
-          </li>
+          <fixed>true</fixed></li>
           <li>
             <list>CBF_Modern_Garrison_Inside</list>
             <count>5~7</count>

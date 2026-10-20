@@ -213,4 +213,8 @@
   <CBF_FieldDesc_coreShapes>Allowed shapes of the old town: Grown, Rectangle, LShape, TShape, UShape, Cross, Step, Octagon. Each settlement picks one of them at random. Empty means Grown only. Grown only forms its own outline when the settlement has suburb islands or a wall deeper than 3 cells; otherwise the old town stays a rectangle.</CBF_FieldDesc_coreShapes>
   <CBF_FieldDesc_netShapes>Allowed outlines of modern settlements: Polygon, Square, Hexagon, Round. Each settlement picks one, fixed by its ID. Empty means all.</CBF_FieldDesc_netShapes>
   <CBF_FieldDesc_netRoads>Allowed street networks of modern settlements: Ring (ring road with spokes) and MainRoad (one main road straight through, narrow lanes otherwise). If both are allowed, each settlement picks one, fixed by its ID. Empty means both.</CBF_FieldDesc_netRoads>
+  <CBF_FieldDesc_wealthFactor>Garrison factor, 0 to 5. With a value above 0 the place spends your raid points times this factor on defenders, but never less than defenderPoints. 0 keeps fixed garrisons.</CBF_FieldDesc_wealthFactor>
+  <CBF_FieldDesc_anchorPointShare>How much of the points of pawns from pawn anchors is taken from the garrison budget, 0 to 1. Default 0.5.</CBF_FieldDesc_anchorPointShare>
+  <CBF_FieldDesc_garrisonShare>Share of the bought defenders for this ward or dungeon level in percent. -1 means automatic: by size for wards, rising towards the bottom for dungeon levels. The last one gets the rest.</CBF_FieldDesc_garrisonShare>
+  <CBF_FieldDesc_fixed>Only with a garrison factor: places the pawns of this entry as fixed garrison, min first, then extras up to max by weight while the budget lasts.</CBF_FieldDesc_fixed>
 </LanguageData>

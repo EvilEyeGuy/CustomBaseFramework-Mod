@@ -25,6 +25,15 @@
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Annex_CryptEntrance</defName>
+    <label>crypt entrance</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>false</needsRoadAccess>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_Annex_Tavern</defName>
     <label>tavern annex</label>
     <zones>
@@ -277,6 +286,11 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
+    <annexes>
+      <li>CBF_MO_Annex_CryptEntrance</li>
+    </annexes>
+    <annexChance>0.4</annexChance>
+    <annexMax>1</annexMax>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>

@@ -145,7 +145,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="what-the-annex-needs">What the annex needs</h2>
 <ul>
 <li>A <strong>Connect</strong> anchor named <strong>Annex</strong> on the side that faces the house. There are two ways to set it:<ul>
-<li><strong>Shared wall:</strong> the anchor lies on a wall cell of the annex. The annex then uses the house wall as its own. Both cells must be walls.</li>
+<li><strong>Shared wall:</strong> the anchor lies on a wall cell of the annex. The annex then uses the house wall as its own. Both cells must be walls. A fence is not a wall, so an annex cannot dock on a fenced yard. Where the annex lies along the house, every overlapping cell of the house must be a wall too. The anchor cell of the annex may hold a door instead of a wall. The door then sits in the house wall and the annex is entered from inside the house.</li>
 <li><strong>Touching only:</strong> the anchor lies one cell outside the annex's shape. The annex then stands right next to the house with its own wall.</li>
 </ul>
 </li>

@@ -3,6 +3,8 @@
 
   <CustomBaseFramework.SettlementPlanDef>
     <defName>CBF_Plan_City</defName>
+    <defenderPoints>1800</defenderPoints>
+    <wealthFactor>0.25</wealthFactor>
     <materialList>CBF_Modern_MaterialList</materialList>
     <label>large town (industrial)</label>
     <kind>ModernTown</kind>
@@ -46,7 +48,7 @@
             <list>CBF_Modern_Garrison_Gate</list>
             <count>3~5</count>
             <post>Gate</post>
-          </li>
+          <fixed>true</fixed></li>
           <li>
             <list>CBF_Modern_Garrison_Inside</list>
             <count>8~12</count>

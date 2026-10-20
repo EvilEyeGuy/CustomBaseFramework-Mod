@@ -755,8 +755,6 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_OtherModsHead>Andere Mods</CBF_OtherModsHead>
   <CBF_GarrisonHead>Garnison und Leistung</CBF_GarrisonHead>
   <CBF_GarrisonIntro>Große Orte erzeugen nicht alle ihre Pawns gleich mit der Karte. Ein Teil wird zurückgehalten und erscheint erst, wenn sein Stadtteil Alarm schlägt. Je weniger Pawns gleichzeitig auf der Karte sind, desto flüssiger läuft das Spiel.</CBF_GarrisonIntro>
-  <CBF_GarrisonShare>Garnison auf der Straße zu Beginn: {0} %</CBF_GarrisonShare>
-  <CBF_GarrisonShareHelp>Anteil jedes Stadtteils, der gleich mit der Karte erscheint, mindestens drei je Stadtteil. Ist das mehr, als die Obergrenze nach den Wachen übrig lässt, wird gekürzt. Der Rest wird zurückgehalten und erscheint, sobald der Stadtteil Alarm schlägt: Schüsse in der Nähe, Treffer auf seine Mauern oder Häuser oder ein Feind wird gesehen. Er erscheint im Rahmen der Obergrenze. Mauern, Tore, Geschütze und Posten sind immer voll besetzt. Gilt für neu erzeugte Orte.</CBF_GarrisonShareHelp>
   <CBF_GarrisonCap>Höchstens gleichzeitig auf der Karte: {0}</CBF_GarrisonCap>
   <CBF_GarrisonCapNone>Höchstens gleichzeitig auf der Karte: ohne Grenze</CBF_GarrisonCapNone>
   <CBF_GarrisonCapHelp>Obergrenze für die kampffähigen Pawns eines Ortes, die gleichzeitig auf der Karte sind: Wachen auf Mauern, Toren, Geschützen und Posten und die Garnison der Stadtteile. Wer am Boden liegt, Gefangene und noch nicht erschienene Pawns zählen nicht. Die Wachen sind immer voll besetzt. Die Stadtteile bekommen den Rest, nach Größe verteilt, aber mindestens drei je Stadtteil. Liegen die Wachen allein schon über der Grenze, kann die Karte daher etwas darüber liegen. Fällt jemand aus, erscheint der Nächste. Höhere Werte für schnelle Rechner, niedrigere für langsame. Eine geänderte Grenze gilt sofort für alle weiteren Nachrücker. Wer schon auf der Karte ist, bleibt; Senken entfernt niemanden. Orte, die ohne Reserve erzeugt wurden, sind nicht betroffen.</CBF_GarrisonCapHelp>
@@ -801,6 +799,9 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_Descent_SealConfirm>Die Ebene darunter wird dauerhaft entfernt, auch alles, was dort liegt. Abstieg verschließen?</CBF_Descent_SealConfirm>
   <CBF_Descent_SealOccupied>Unten ist noch jemand aus deiner Kolonie: Kolonisten, Gefangene oder Tiere.</CBF_Descent_SealOccupied>
   <CBF_Descent_Sealed>{0}: Der Weg in die Tiefe ist verschlossen.</CBF_Descent_Sealed>
+  <CBF_Defeat_StillBelow>Oben ist alles besiegt, aber unten halten noch {0} Verteidiger die Ebenen.</CBF_Defeat_StillBelow>
+  <CBF_Defeat_StairsBelow>Verteidiger unten: {0}</CBF_Defeat_StairsBelow>
+  <CBF_Defeat_UndeadLeft>Hier gehen noch {0} Untote um.</CBF_Defeat_UndeadLeft>
   <CBF_S_CoreShapes>Altstadtformen</CBF_S_CoreShapes>
   <CBF_S_CoreShapesAll>Alle Formen erlaubt. Ein Klick auf eine Form schließt sie aus.</CBF_S_CoreShapesAll>
   <CBF_S_CoreShapeLast>Mindestens eine Form bleibt gewählt.</CBF_S_CoreShapeLast>
@@ -839,8 +840,8 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_GarrisonBoxDistrictsTip>Garnison, die in den Stadtteilen unterwegs ist.</CBF_GarrisonBoxDistrictsTip>
   <CBF_GarrisonBoxGuards>Wachen</CBF_GarrisonBoxGuards>
   <CBF_GarrisonBoxGuardsTip>Leute auf Mauern, Toren, Geschützen und Posten. Sie sind immer voll besetzt und werden nie zurückgehalten.</CBF_GarrisonBoxGuardsTip>
-  <CBF_GarrisonSize>Größe der Reserve: {0} %</CBF_GarrisonSize>
-  <CBF_GarrisonSizeHelp>Skaliert die zurückgehaltenen Pawns, gemessen an dem, was der Ort laut Plan hat. Wachen und die Pawns, die gleich mit der Karte erscheinen, ändern sich nicht. Eine größere Reserve heißt längere Kämpfe, aber nicht mehr Pawns gleichzeitig auf der Karte, das regelt die Obergrenze. Gilt für neu erzeugte Orte.</CBF_GarrisonSizeHelp>
+  <CBF_GarrisonStrength>Garnisonsgröße: {0} %</CBF_GarrisonStrength>
+  <CBF_GarrisonStrengthHelp>Wie viele Verteidiger ein Ort aufstellt, gemessen an seinen Plänen. 100 % ist die volle Garnison und der Standard. Bei 100 % hat ein Dorf etwa 30 Verteidiger und eine Festungsstadt etwa 90, bei 200 % etwa doppelt so viele. Gilt auch ohne Reserve. Die Garnisonsgröße bestimmt, wie viele Bewohner es gibt; die Reservegröße bestimmt, wie viele davon zurückgehalten werden und erst bei Alarm erscheinen. Ruinen und World Domination wirken zusätzlich. Gilt für neu erzeugte Orte.</CBF_GarrisonStrengthHelp>
   <CBF_GarrisonDefaultsTip>Setzt alle Garnisonsregler auf ihre Standardwerte zurück, auch „Liegende Verteidiger zählen zur Obergrenze“. Der Anzeigeschalter darunter bleibt, wie er ist.</CBF_GarrisonDefaultsTip>
   <CBF_GarrisonReserve>CBF-Spawn-Mechanik aktivieren</CBF_GarrisonReserve>
   <CBF_GarrisonReserveHelp>Aus: Alle Pawns eines Orts erscheinen gleich mit der Karte, ohne Reserve und ohne Nachrücker. Die Regler darunter werden ausgeblendet. Gilt für neu erzeugte Orte. Orte, die schon eine Reserve haben, behalten sie und lassen ihre Pawns weiter bei Alarm erscheinen, mit den zuletzt eingestellten, jetzt ausgeblendeten Reglerwerten (Obergrenze, Schub, Abstand).</CBF_GarrisonReserveHelp>

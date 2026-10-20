@@ -141,12 +141,6 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Requested number of buildings, sampled from the range. Placement depends on available space. During reference resolution, counts above 150 are capped at 150.</td>
 </tr>
 <tr>
-<td><code>priority</code></td>
-<td>Low, Normal, Preferred, Important, Critical</td>
-<td><code>Normal</code></td>
-<td>Which entry gets space first. With equal priority the previous order applies (minimum count, size). Low entries may stay below their minimum when space runs out. Not used in dungeon areas.</td>
-</tr>
-<tr>
 <td><code>filler</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
@@ -163,6 +157,24 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><a href="PieceDef.html">PieceDef</a></td>
 <td>none</td>
 <td>Specific PieceDef to request. Takes precedence when tag is also supplied.</td>
+</tr>
+<tr>
+<td><code>priority</code></td>
+<td>Low, Normal, Preferred, Important, Critical</td>
+<td><code>Normal</code></td>
+<td>Which entry gets space first. With equal priority the previous order applies (minimum count, size). Low entries may stay below their minimum when space runs out. Not used in dungeon areas.</td>
+</tr>
+<tr>
+<td><code>requires</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>Piece or category defNames. The entry is only planned once at least <code>requiresCount</code> of them stand somewhere in the settlement (all districts, town, suburb and countryside). Each name counts once, however many buildings match it. Conditional entries are planned after the others; if the condition is never met, for example because a name does not exist or two entries require each other, the entry is left out without an error and the reason is written to the detail log. Count, minimum and priority only apply once the condition is met. In dungeon levels such an entry is left out.</td>
+</tr>
+<tr>
+<td><code>requiresCount</code></td>
+<td>integer</td>
+<td><code>1</code></td>
+<td>How many of the names in <code>requires</code> must be present. 1 means any one of them, the number of names means all of them.</td>
 </tr>
 <tr>
 <td><code>tag</code><br>Category</td>

@@ -598,7 +598,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>The loot table comes from the anchor or the member, never from the container def. A container placed by hand stays empty. In dev mode with god mode, a button on the container lets you fill it from any table for testing.</li>
 <li>The contents are rolled once, when the container spawns.</li>
 <li>A shell takes its empty picture from the member's <code>empty</code> building, or else from an empty graphic declared in the original building's own mod extension. A shell never turns into another building.</li>
-<li>A container of your own takes its empty picture from <code>emptyGraphic</code>.</li>
+<li>A container of your own takes its empty picture from <code>emptyGraphic</code>. CBF's own sarcophagus <code>CBF_Sarcophagus</code> is a good example: full it shows the closed sarcophagus, after opening the open one.</li>
 </ul>
 <h3 id="shelves-with-visible-loot">Shelves with visible loot</h3>
 <p>To show loot lying on a vanilla or modded shelf, do not use a CBF container. Put the shelf in an object list. CBF places the shelf itself and lays the items on its cells. When the items are gone, the shelf stays, or turns into the member's <code>empty</code> building.</p>

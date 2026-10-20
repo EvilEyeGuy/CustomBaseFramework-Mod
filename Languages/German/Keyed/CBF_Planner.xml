@@ -20,6 +20,7 @@
   <CBF_Cfg_NoMaterialList>Der Ortstyp nennt keine Materialliste. Ohne sie baut RimWorld an seiner Stelle eine gewöhnliche Siedlung.</CBF_Cfg_NoMaterialList>
   <CBF_Cfg_NoBudget>Der Ortstyp hat kein Bauprogramm.</CBF_Cfg_NoBudget>
   <CBF_Cfg_Range>{0} muss zwischen {1} und {2} liegen.</CBF_Cfg_Range>
+  <CBF_Cfg_RequiresCount>{0}: requiresCount {1} muss zwischen 1 und der Zahl der Voraussetzungen ({2}) liegen.</CBF_Cfg_RequiresCount>
   <CBF_Cfg_RangeOrder>{0}: der kleinste Wert {1} ist größer als der größte Wert {2}.</CBF_Cfg_RangeOrder>
   <CBF_Cfg_RiafHolding>riafHolding „{0}“ ist unbekannt. Erlaubt sind {1}. Der Ortstyp wird für RIAF-Holdings nie gewählt.</CBF_Cfg_RiafHolding>
   <CBF_Cfg_MineRange>Mine {0}: {1} muss zwischen {2} und {3} liegen, der Planer begrenzt den Wert.</CBF_Cfg_MineRange>
@@ -369,6 +370,8 @@
   <CBF_Planner_MaengelWeitere>Dazu {0} weitere Mängel.</CBF_Planner_MaengelWeitere>
   <CBF_Planner_Marge>{0} in Ebene {1}: {2} von {3} gesetzt. Der Rest liegt in der Toleranz.</CBF_Planner_Marge>
   <CBF_Planner_Mauerversatz>Ebene {0}: Mauerlinie abschnittsweise versetzt, {1} Felder zurückgenommen.</CBF_Planner_Mauerversatz>
+  <CBF_Planner_RequiresMet>{0}: die Voraussetzungen sind erfüllt ({1} von {2}), jetzt wird er geplant.</CBF_Planner_RequiresMet>
+  <CBF_Planner_RequiresUnmet>{0} entfällt: nur {1} von {2} verlangten Bauteilen oder Kategorien stehen im Ort ({3}).</CBF_Planner_RequiresUnmet>
   <CBF_Planner_Nachschlag>{0} lag unter der Mindestzahl. Mit Geländeeingriffen kamen weitere dazu, {1} Felder verändert.</CBF_Planner_Nachschlag>
   <CBF_Planner_NoSpot>Kein Platz für {0}. Geprüft: {1} Stellen mit genug Baufläche, davon {2} mit Wegzugang, davon {3} ganz passend.</CBF_Planner_NoSpot>
   <CBF_Planner_Repariert>Reparatur: {0} Bau(ten) mit Überschneidung oder ohne Weganschluss entfernt: {1}. Sie fehlen jetzt in der Stückliste.</CBF_Planner_Repariert>

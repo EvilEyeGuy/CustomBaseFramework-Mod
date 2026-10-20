@@ -130,7 +130,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td>Medieval Overhaul</td>
-<td>Own medieval settlement types, buildings, quest camps, units and quests. Controls the self-filling and enemy spawning of MO containers on CBF maps.</td>
+<td>Own medieval settlement types, buildings, quest camps, units and quests. Builds the cultist hideouts (tiers 1 to 3) and the small, large and snake-infested ruins as <a href="Dungeons.html">dungeons</a> instead of MO's KCSG layouts; the Shadow sect gets pawn groups from MO's cultists. Controls the self-filling and enemy spawning of MO containers on CBF maps.</td>
 </tr>
 <tr>
 <td>Vanilla Factions Expanded - Medieval 2</td>
@@ -142,11 +142,27 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td>Vanilla Factions Expanded - Classical</td>
-<td>Roman settlement types (vicus and urbs) for the three republics, with Roman residents and guards.</td>
+<td>Roman settlement types (vicus and urbs) for the three republics, with Roman residents and guards, and about 1,300 extra Latin names so large Roman towns do not run out of names.</td>
+</tr>
+<tr>
+<td>The Profaned</td>
+<td>A ruined necropolis for the Profaned Legion. A crypt chapel in the old town always leads down into a two-level crypt; mausoleums, chapels and graveyards lead into catacombs.</td>
+</tr>
+<tr>
+<td>BoneReapers ReMarrowed</td>
+<td>Needs Medieval Overhaul. A ruined necropolis for the Bone Reapers. The ossuary temple in the old town always leads down into a two-level crypt; mausoleums have descents and side crypts. With Dark Ages: Crypts and Tombs the castle walls become ossuary walls.</td>
 </tr>
 <tr>
 <td>Vanilla Furniture Expanded - Security</td>
 <td>Its turrets join the turret pool of CBF settlements.</td>
+</tr>
+<tr>
+<td>Giant Imperial Turret</td>
+<td>The metropolis gets 1 to 2 giant turret positions in its countryside, with steel or uranium ammo. Not with Combat Extended. With VFE Deserters, the positions also get its ammo boxes.</td>
+</tr>
+<tr>
+<td>Lightless Empyrean Reborn, Anomaly</td>
+<td>Their undead can rise from sarcophagi in crypts and cemeteries, see <a href="Dungeons.html#fighting-in-a-dungeon">Dungeons</a>.</td>
 </tr>
 <tr>
 <td>Dark Ages: Crypts and Tombs</td>
@@ -154,7 +170,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td>Combat Extended</td>
-<td>Siege ammo in Medieval Overhaul buildings becomes CE ammo. CE sidearms count for a unit's tech level.</td>
+<td>Siege ammo in Medieval Overhaul buildings becomes CE ammo. Modern towns field fewer heavy turrets.</td>
 </tr>
 <tr>
 <td>World Domination 2.0</td>
@@ -173,6 +189,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Unit swap rules for its factions.</td>
 </tr>
 <tr>
+<td>Total Control (Faction Loadout)</td>
+<td>Settlements use the units and gear you edited in Total Control, like raids do.</td>
+</tr>
+<tr>
 <td>World Tech Level, Rimedieval</td>
 <td>CBF uses the adjusted tech level and re-picks settlement types that no longer fit.</td>
 </tr>
@@ -185,8 +205,24 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Landmarks and extra rivers stay out of the town core.</td>
 </tr>
 <tr>
+<td>Real Ruins</td>
+<td>No foreign player-base ruins on CBF settlement maps; other maps keep them.</td>
+</tr>
+<tr>
+<td>As Above So Below 2</td>
+<td>Only splits player colonies into levels. CBF settlements, sites and dungeons are not affected. Starting in a ruin together with it is untested.</td>
+</tr>
+<tr>
 <td>Multiplayer</td>
 <td>Deterministic planning, see <a href="#multiplayer">below</a>.</td>
+</tr>
+<tr>
+<td>Custom Quest Framework</td>
+<td>Every CBF settlement type can be placed in its custom maps as a map step, see <a href="#custom-quest-framework">below</a>.</td>
+</tr>
+<tr>
+<td>KCSG (Vanilla Expanded Framework)</td>
+<td>Bases that other mods build with KCSG stay theirs. Modders can import KCSG buildings as CBF pieces, see <a href="Pieces.html#import-buildings-from-kcsg">Pieces</a>.</td>
 </tr>
 <tr>
 <td>Empire</td>
@@ -246,6 +282,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Vicus and urbs for the Central, Western and Eastern Republic, with temple, basilica, theatre, arena, baths, tavern, market square and Roman houses with annexes such as peristyle, triclinium and balneum. Residents and guards are Roman units of the republic.</td>
 </tr>
 <tr>
+<td>The Profaned</td>
+<td><code>1.6/Mods/Profaned</code></td>
+<td>Ruined necropolis for the Profaned Legion, built as a ruin (<code>ruin</code> CBF_Ruin_Unplundered) without a town wall: throne hall, crypt chapel with a crypt entrance annex, mausoleums with side crypts, ritual yards, wraith shrine, alchemists, barracks and hovels, graveyards outside. The chapel's entrance leads into a two-level crypt, mausoleums, chapels and graveyards have descents into a catacomb. Loot stays, sarcophagi sometimes hold a hostile undead. Without Medieval Overhaul <code>1.6/Mods/Profaned_NoMO</code> adds the stairs, the dungeon level generator and the corridor categories the crypts need.</td>
+</tr>
+<tr>
+<td>BoneReapers ReMarrowed</td>
+<td><code>1.6/Mods/BoneReaper</code></td>
+<td>Loads only with BoneReapers ReMarrowed and Medieval Overhaul. Ruined necropolis for the Bone Reapers, built as a ruin (<code>ruin</code> CBF_Ruin_Unplundered) without a town wall: ossuary temple with a crypt entrance annex, archon halls, tithe houses, soulforge, smithies, Thetes quarters and servants' hovels, mausoleums with side crypts, graveyards and a charnel yard outside. The temple leads into a two-level crypt with the archon tomb at the bottom. Loot stays, sarcophagi sometimes hold a hostile undead or an osseous beast. A patch replaces DankPyon_CastleWall with DA_OssuaryWall in all Bone Reaper pieces when Dark Ages: Crypts and Tombs is active.</td>
+</tr>
+<tr>
 <td>Vanilla Furniture Expanded - Security</td>
 <td><code>1.6/Mods/VFESecurity</code></td>
 <td>Its turrets (1x1 and 2x2) are added to the turret categories of CBF settlements. The base game turrets stay in the pool.</td>
@@ -263,7 +309,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="combat-extended">Combat Extended</h2>
 <ul>
 <li>With Medieval Overhaul and Combat Extended active, the siege ammo in CBF buildings is swapped for CE ammo: ballista bolts become pila, scorpio bolts iron crossbow bolts, boulders and tarred boulders CE catapult boulders.</li>
-<li>Sidearms that Combat Extended gives a unit count for its tech level. A unit carrying a weapon above the settlement's tech level is swapped for a fitting one, see <a href="Unit-Swap.html">Unit swap</a>.</li>
+<li>Modern towns field fewer heavy turrets: no heavy positions in the countryside (only 1 to 2 with mini-turrets), only 1x1 turrets on the outer ring and a few heavy positions in the centre. The giant turrets of Giant Imperial Turret are left out.</li>
+<li>Tribal warriors get at least 50 silver for their weapon so they are not left unarmed.</li>
+<li>Residents carry the gear of their faction. To limit weapons by tech level, use mods such as World Tech Level or Rimedieval.</li>
 </ul>
 <h2 id="factions-from-other-mods">Factions from other mods</h2>
 <p>Any faction gets CBF settlements when a settlement type fits its tech level and rules, see <a href="Factions.html">Factions</a>. For some faction mods CBF ships extra rules:</p>
@@ -282,9 +330,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>All DLCs are optional.</p>
 <ul>
 <li><strong>Royalty:</strong> some loot and the Van Illa banner. Raid source camps of quests are built by CBF.</li>
-<li><strong>Ideology:</strong> settlement types can use the ideoligion style of their faction, place ideoligion buildings on anchors and give pawns ideoligion roles. Work site camps of quests are built by CBF.</li>
+<li><strong>Ideology:</strong> all shipped settlement types and dungeons build furniture in the style of their faction's ideoligion, place ideoligion buildings on anchors and give pawns ideoligion roles. Work site camps of quests are built by CBF.</li>
 <li><strong>Biotech, Anomaly:</strong> some loot and map steps.</li>
-<li><strong>Odyssey:</strong> simple rivers and landmark protection as described above. Gravship landings work with settlements generated in the background.</li>
+<li><strong>Odyssey:</strong> simple rivers and landmark protection as described above. Gravship landings work with settlements generated in the background. Old containers, vehicles and ruin landmarks of Odyssey do not appear on CBF settlement maps.</li>
+<li><strong>Biotech:</strong> exostrider wrecks do not appear on CBF settlement maps.</li>
 </ul>
 <h2 id="mods-with-settlements-of-their-own">Mods with settlements of their own</h2>
 <h3 id="world-domination-20">World Domination 2.0</h3>
@@ -389,5 +438,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>Switch it off with <strong>Build A Rim of Ice and Fire holdings with CBF</strong> in the mod settings.</p>
 <h3 id="other-mods-with-their-own-map-generator">Other mods with their own map generator</h3>
 <p>Settlements that another mod builds with its own map generator keep it. CBF then also leaves their map size and world map icon alone. This needs no setting.</p>
+<h3 id="factions-with-hand-made-bases-encounter-framework">Factions with hand-made bases (Encounter Framework)</h3>
+<p>Factions that bring their own hand-made bases through Encounter Framework, such as V.O.I.D., are switched off in the faction switch the first time CBF sees them. They keep their own bases. If CBF has settlement types meant for that faction, it stays on. You can switch such a faction on in the mod settings; it then gets CBF settlements by its tech level and stays on. Encounter Framework then adds no base of its own on top of the CBF settlement.</p>
+<h2 id="custom-quest-framework">Custom Quest Framework</h2>
+<p>When Custom Quest Framework is active, CBF adds one generation step per settlement type. They are named <code>CBF_Build_&lt;settlement type&gt;</code> and show the type's label followed by "(CBF)". Dungeon types are left out.</p>
+<p>In the map editor of Custom Quest Framework, add the map step <strong>GenStepDef</strong> and pick the CBF step. The custom map then gets the whole CBF settlement with buildings, loot and residents. The map needs to be at least 60 cells wide; a full-size map works best. CBF keeps the areas other steps have already used free, like on quest sites.</p>
+<p>New settlement types get their step after a restart.</p>
+<p>CBF steps only work during map generation. Calling them from map parts, structure fallers or other steps that build on a finished map is not supported.</p>
 <h2 id="credits">Credits</h2>
-<p>Thanks to Fabricator General (Blackrussian) for testing the mod and for many compatibility hints from his large mod list.</p><div class="schritte"><a href="Mod-Settings.html"><span>Previous</span>Mod settings</a><a class="weiter" href="Modding-Overview.html"><span>Next</span>Your own content mod</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#at-a-glance">At a glance</a><a class="t2" href="#content-for-other-mods">Content for other mods</a><a class="t2" href="#medieval-overhaul-containers">Medieval Overhaul containers</a><a class="t2" href="#combat-extended">Combat Extended</a><a class="t2" href="#factions-from-other-mods">Factions from other mods</a><a class="t2" href="#tech-level-mods">Tech level mods</a><a class="t2" href="#multiplayer">Multiplayer</a><a class="t2" href="#mods-that-reshape-the-map">Mods that reshape the map</a><a class="t2" href="#dlcs">DLCs</a><a class="t2" href="#mods-with-settlements-of-their-own">Mods with settlements of their own</a><a class="t3" href="#world-domination-20">World Domination 2.0</a><a class="t3" href="#empire">Empire</a><a class="t3" href="#a-rim-of-ice-and-fire">A Rim of Ice and Fire</a><a class="t3" href="#other-mods-with-their-own-map-generator">Other mods with their own map generator</a><a class="t2" href="#credits">Credits</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+<p>Thanks to Fabricator General (Blackrussian) for testing the mod and for many compatibility hints from his large mod list.</p><div class="schritte"><a href="Mod-Settings.html"><span>Previous</span>Mod settings</a><a class="weiter" href="Modding-Overview.html"><span>Next</span>Your own content mod</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#at-a-glance">At a glance</a><a class="t2" href="#content-for-other-mods">Content for other mods</a><a class="t2" href="#medieval-overhaul-containers">Medieval Overhaul containers</a><a class="t2" href="#combat-extended">Combat Extended</a><a class="t2" href="#factions-from-other-mods">Factions from other mods</a><a class="t2" href="#tech-level-mods">Tech level mods</a><a class="t2" href="#multiplayer">Multiplayer</a><a class="t2" href="#mods-that-reshape-the-map">Mods that reshape the map</a><a class="t2" href="#dlcs">DLCs</a><a class="t2" href="#mods-with-settlements-of-their-own">Mods with settlements of their own</a><a class="t3" href="#world-domination-20">World Domination 2.0</a><a class="t3" href="#empire">Empire</a><a class="t3" href="#a-rim-of-ice-and-fire">A Rim of Ice and Fire</a><a class="t3" href="#other-mods-with-their-own-map-generator">Other mods with their own map generator</a><a class="t3" href="#factions-with-hand-made-bases-encounter-framework">Factions with hand-made bases (Encounter Framework)</a><a class="t2" href="#custom-quest-framework">Custom Quest Framework</a><a class="t2" href="#credits">Credits</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

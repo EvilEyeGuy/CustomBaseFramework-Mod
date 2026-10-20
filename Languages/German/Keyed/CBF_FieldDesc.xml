@@ -213,4 +213,8 @@
   <CBF_FieldDesc_coreShapes>Erlaubte Formen der Altstadt: Grown, Rectangle, LShape, TShape, UShape, Cross, Step, Octagon. Jeder Ort würfelt eine davon. Leer heißt nur Gewachsen. Gewachsen bildet nur dann einen eigenen Umriss, wenn der Ort Vorstadtinseln hat oder die Mauer tiefer als 3 Felder ist. Sonst bleibt die Altstadt ein Rechteck.</CBF_FieldDesc_coreShapes>
   <CBF_FieldDesc_netShapes>Erlaubte Umrisse moderner Orte: Polygon, Square, Hexagon, Round. Jeder Ort würfelt fest nach seiner ID eine davon. Leer heißt alle.</CBF_FieldDesc_netShapes>
   <CBF_FieldDesc_netRoads>Erlaubte Straßennetze moderner Orte: Ring (Ringstraße mit Speichen) und MainRoad (eine Hauptstraße quer durch, sonst schmale Gassen). Sind beide erlaubt, würfelt jeder Ort fest nach seiner ID. Leer heißt beide.</CBF_FieldDesc_netRoads>
+  <CBF_FieldDesc_wealthFactor>Garnisonsfaktor, 0 bis 5. Über 0 gibt der Ort deine Raid-Punkte mal diesen Faktor für Verteidiger aus, aber nie weniger als defenderPoints. 0 behält feste Garnisonen.</CBF_FieldDesc_wealthFactor>
+  <CBF_FieldDesc_anchorPointShare>Wie viel der Punkte von Pawns aus Pawn-Ankern vom Garnisonsbudget abgezogen wird, 0 bis 1. Standard 0,5.</CBF_FieldDesc_anchorPointShare>
+  <CBF_FieldDesc_garrisonShare>Anteil der gekauften Verteidiger für diesen Stadtteil oder diese Verliesebene in Prozent. -1 heißt automatisch: bei Stadtteilen nach Größe, bei Verliesebenen nach unten steigend. Der letzte bekommt den Rest.</CBF_FieldDesc_garrisonShare>
+  <CBF_FieldDesc_fixed>Nur mit Garnisonsfaktor: setzt die Pawns dieses Eintrags als feste Garnison, zuerst Min, dann weitere bis Max nach Gewicht, solange das Budget reicht.</CBF_FieldDesc_fixed>
 </LanguageData>

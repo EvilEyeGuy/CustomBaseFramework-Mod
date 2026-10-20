@@ -130,6 +130,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </thead>
 <tbody>
 <tr>
+<td><code>biomes</code><br>Only on biomes</td>
+<td>list of text</td>
+<td>none</td>
+<td>BiomeDef defNames. The type is only used on tiles with one of these biomes. Unknown names, for example from mods that are not loaded, are ignored.</td>
+</tr>
+<tr>
 <td><code>budget</code></td>
 <td>list of <a href="BudgetEntry.html">BudgetEntry</a></td>
 <td>none</td>
@@ -214,6 +220,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Harbor at the coast or on a wide river: which harbor buildings the settlement gets. Only for medieval settlements.</td>
 </tr>
 <tr>
+<td><code>hilliness</code><br>Only on terrain</td>
+<td>list of Hilliness (Flat, SmallHills, LargeHills, Mountainous, Impassable)</td>
+<td>none</td>
+<td>The type is only used on tiles with one of these hilliness values. Empty means any.</td>
+</tr>
+<tr>
 <td><code>ideoStyle</code></td>
 <td>true/false</td>
 <td><code>false</code></td>
@@ -221,9 +233,15 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>kind</code></td>
-<td>Ortsart (MedievalTown, ModernTown, Camp, Dungeon)</td>
+<td>Ortsart (MedievalTown, ModernTown, Camp, Dungeon, MountainCity)</td>
 <td><code>MedievalTown</code></td>
-<td>Layout family: MedievalTown, ModernTown, Camp or Dungeon. Dungeon uses the development levels workflow; see <a href="Modding-Dungeons.html">Dungeon levels</a>.</td>
+<td>Layout family: MedievalTown, ModernTown, Camp, Dungeon or MountainCity. MountainCity uses the medieval layout and puts old town and suburb inside a mountain; without its own mountainMantle it uses a rock mantle of 4. Dungeon uses the development levels workflow; see <a href="Modding-Dungeons.html">Dungeon levels</a>.</td>
+</tr>
+<tr>
+<td><code>landforms</code><br>Only with landforms</td>
+<td>list of text</td>
+<td>none</td>
+<td>TileMutatorDef defNames, for example River, Coast, Lake or Odyssey landforms. The type is only used on tiles that have at least one of them.</td>
 </tr>
 <tr>
 <td><code>levels</code></td>
@@ -253,7 +271,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>maxCivilians</code></td>
 <td>whole number</td>
 <td><code>30</code></td>
-<td>Upper limit on civilians. Once the settlement has this many pawns that are not fighters, further civilian spawn anchors stay empty. 0 means no limit.</td>
+<td>Only for older pawn lists with role Civilian, which now count as Guard: limits how many anchors with such lists get pawns. 0 means no limit.</td>
 </tr>
 <tr>
 <td><code>maxSoldiers</code></td>
@@ -266,6 +284,36 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>whole number</td>
 <td><code>0</code></td>
 <td>Legacy minimum-gap input. Zero uses the compatibility default. Prefer buildingGap on the ward.</td>
+</tr>
+<tr>
+<td><code>mountainMantle</code><br>Rock mantle</td>
+<td>whole number</td>
+<td><code>0</code></td>
+<td>Minimum rock thickness of the mountain over old town and suburb, 0 to 16. 0 means no mountain, except for MountainCity, which then uses 4. Fields inside the mountain are dark; the plan check names plants that do not grow there.</td>
+</tr>
+<tr>
+<td><code>netRoads</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>Allowed street networks of modern settlements: Ring (ring road with spokes) and MainRoad (one main road straight through, narrow lanes otherwise). If both are allowed, each settlement picks one, fixed by its ID. Empty means both.</td>
+</tr>
+<tr>
+<td><code>netShapes</code></td>
+<td>list of text</td>
+<td>none</td>
+<td>Allowed outlines of modern settlements: Polygon, Square, Hexagon, Round. Each settlement picks one, fixed by its ID. Empty means all.</td>
+</tr>
+<tr>
+<td><code>notBiomes</code><br>Never on biomes</td>
+<td>list of text</td>
+<td>none</td>
+<td>BiomeDef defNames. The type is never used on tiles with one of these biomes.</td>
+</tr>
+<tr>
+<td><code>notLandforms</code><br>Never with landforms</td>
+<td>list of text</td>
+<td>none</td>
+<td>TileMutatorDef defNames. The type is never used on tiles that have one of them.</td>
 </tr>
 <tr>
 <td><code>noWdLoot</code></td>
@@ -304,6 +352,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Main road width in cells. Maximum 6 for ModernTown and 2 for other supported kinds.</td>
 </tr>
 <tr>
+<td><code>ruin</code></td>
+<td><a href="RuinDef.html">RuinDef</a></td>
+<td>none</td>
+<td>Builds every settlement of this type as a ruin, with the damage, overgrowth, corpses and loot rules of the RuinDef. With <code>occupation</code> Builder the owning faction still lives there. A ruin set by a quest or site takes precedence. CBF ships <code>CBF_Ruin_Plundered</code> (little loot) and <code>CBF_Ruin_Unplundered</code> (loot stays), both with the owners still living there.</td>
+</tr>
+<tr>
 <td><code>share</code><br>Weight</td>
 <td>number</td>
 <td><code>0</code></td>
@@ -319,7 +373,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>spread</code><br>Spread over levels</td>
 <td>list of <a href="SpreadEntry.html">SpreadEntry</a></td>
 <td>none</td>
-<td>Stored development requests intended to span several levels. The current planner conversion does not consume this list. Put room requests in levels/li/districts instead.</td>
+<td>Stored requests intended to span several levels. The current planner conversion does not consume this list. Put room requests in levels/li/districts instead.</td>
 </tr>
 <tr>
 <td><code>style</code></td>
@@ -394,6 +448,18 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>World Domination settlement types this plan stands for, such as Mining or Slavery. Empty means any type. Only used with World Domination 2.0.</td>
 </tr>
 <tr>
+<td><code>withIdeo</code><br>Only with ideoligion</td>
+<td>list of text</td>
+<td>none</td>
+<td>Meme or precept defNames, for example <code>Tunneler</code>. The type is only used for a faction whose primary ideoligion has at least one of them. Without the Ideology DLC the condition is ignored and only tags and tech levels decide.</td>
+</tr>
+<tr>
+<td><code>withoutIdeo</code><br>Never with ideoligion</td>
+<td>list of text</td>
+<td>none</td>
+<td>Meme or precept defNames. The type is never used for a faction whose primary ideoligion has one of them. Ignored without the Ideology DLC.</td>
+</tr>
+<tr>
 <td><code>worldTexture</code><br>World map icon</td>
 <td>text</td>
 <td>none</td>
@@ -401,4 +467,5 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
+<p>Tile and ideoligion conditions (<code>biomes</code>, <code>notBiomes</code>, <code>hilliness</code>, <code>landforms</code>, <code>notLandforms</code>, <code>withIdeo</code>, <code>withoutIdeo</code>) are strict. A type with such conditions is only used where they all apply. If no type of the faction is left for a tile, the settlement is handled as if the faction had no settlement type there. Without the Ideology DLC the ideoligion conditions are ignored.</p>
 <p><a href="Field-Reference.html">Back to the field reference</a> · <a href="Modding-Overview.html#read-the-field-tables">XML values and types</a> · <a href="Modding-Patches.html">Writing patches</a></p></div></main><aside class="rechts"></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

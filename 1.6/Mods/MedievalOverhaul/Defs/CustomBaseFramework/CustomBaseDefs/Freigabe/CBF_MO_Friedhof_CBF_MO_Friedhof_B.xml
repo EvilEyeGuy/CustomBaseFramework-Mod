@@ -11,6 +11,7 @@
     <style>CBF_Medieval</style>
     <eaves>true</eaves>
     <legend>
+      <li><symbol>+</symbol><anchor>Annex</anchor><anchorKind>Connect</anchorKind></li>
       <li><symbol>1</symbol><anchor>GraveGoods</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_ChurchTreasure</lootTable></li>
       <li><symbol>B</symbol><thing>Plant_TreeOak</thing></li>
       <li><symbol>C</symbol><thing>Plant_TreeCypress</thing></li>
@@ -33,8 +34,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>h</symbol><terrain>DankPyon_Floor_Herringbone_Granite</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>k</symbol><thing>DankPyon_Building_SkullEmerald</thing></li>
       <li><symbol>z</symbol><thing>FenceGate</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable><descentChance>0.15</descentChance><descentPlans><li>CBF_Plan_Dungeon_SmallCrypt</li></descentPlans></li>
-      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable><descentChance>0.15</descentChance><descentPlans><li>CBF_Plan_Dungeon_SmallCrypt</li></descentPlans></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
     </legend>
     <mask>
       <li>.......#######...</li>
@@ -97,8 +98,8 @@
       <li>.................</li>
     </roof>
     <anchors>
-      <li>.................</li>
-      <li>........①...②....</li>
+      <li>..........+......</li>
+      <li>........①...②+...</li>
       <li>........①...②....</li>
       <li>..........1......</li>
       <li>.................</li>

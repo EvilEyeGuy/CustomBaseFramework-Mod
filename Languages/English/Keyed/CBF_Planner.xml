@@ -34,6 +34,7 @@
   <CBF_Cfg_OutworkRange>Outworks {0}: {1} needs a minimum of at least 1 that does not exceed the maximum, the planner adjusts the values.</CBF_Cfg_OutworkRange>
   <CBF_Cfg_OutworkGate>Outworks {0}: gateClearance must not be negative, the planner uses 0.</CBF_Cfg_OutworkGate>
   <CBF_Cfg_Range>{0} must be between {1} and {2}.</CBF_Cfg_Range>
+  <CBF_Cfg_RequiresCount>{0}: requiresCount {1} must be between 1 and the number of requirements ({2}).</CBF_Cfg_RequiresCount>
   <CBF_Cfg_RangeOrder>{0}: the minimum {1} is larger than the maximum {2}.</CBF_Cfg_RangeOrder>
   <CBF_Cfg_NoPlants>The crop list contains no plants.</CBF_Cfg_NoPlants>
   <CBF_Cfg_EntryNoPlant>An entry has no plant.</CBF_Cfg_EntryNoPlant>
@@ -375,6 +376,8 @@
   <CBF_Planner_MaengelWeitere>Plus {0} more flaws.</CBF_Planner_MaengelWeitere>
   <CBF_Planner_Marge>{0} in layer {1}: {2} of {3} placed. The shortfall is within tolerance.</CBF_Planner_Marge>
   <CBF_Planner_Mauerversatz>Layer {0}: wall line staggered in sections, {1} cells taken back.</CBF_Planner_Mauerversatz>
+  <CBF_Planner_RequiresMet>{0}: its requirements are met ({1} of {2}), it is planned now.</CBF_Planner_RequiresMet>
+  <CBF_Planner_RequiresUnmet>{0} was left out: only {1} of {2} required pieces or categories are in the settlement ({3}).</CBF_Planner_RequiresUnmet>
   <CBF_Planner_Nachschlag>{0} was below its minimum. More were placed using terrain changes, {1} cells changed.</CBF_Planner_Nachschlag>
   <CBF_Planner_NoSpot>No room for {0}. Checked: {1} spots with enough ground, {2} of them with road access, {3} of them fully fitting.</CBF_Planner_NoSpot>
   <CBF_Planner_Repariert>Repair: removed {0} building(s) that overlapped or had no road access: {1}. They are now missing from the parts list.</CBF_Planner_Repariert>

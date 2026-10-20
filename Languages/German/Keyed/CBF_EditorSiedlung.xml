@@ -216,7 +216,6 @@
   <CBF_D_LastLevel>Ein Dungeon braucht mindestens eine Ebene.</CBF_D_LastLevel>
   <CBF_D_DeleteLevelAsk>Ebene {0} entfernen? Ihre Bereiche enthalten {1} Einträge.</CBF_D_DeleteLevelAsk>
   <CBF_D_RenameLevel>Name der Ebene</CBF_D_RenameLevel>
-  <CBF_D_Rename>Umbenennen</CBF_D_Rename>
   <CBF_D_RemoveLevel>Ebene entfernen</CBF_D_RemoveLevel>
   <CBF_D_MoveUpTip>Diese Ebene eine Stufe nach oben schieben.</CBF_D_MoveUpTip>
   <CBF_D_MoveDownTip>Diese Ebene eine Stufe nach unten schieben.</CBF_D_MoveDownTip>
@@ -224,21 +223,16 @@
   <CBF_D_OnSurface>im Berg der Oberflächenkarte</CBF_D_OnSurface>
   <CBF_D_Submap>eigene Karte darunter</CBF_D_Submap>
   <CBF_D_Access>Eingang und Treppe</CBF_D_Access>
-  <CBF_D_Entrance>Eingang</CBF_D_Entrance>
   <CBF_D_AddEntrance>+ Eingang</CBF_D_AddEntrance>
   <CBF_D_EntranceNone>Leer heißt, der Generator öffnet einen einfachen Stollen in den Berg.</CBF_D_EntranceNone>
   <CBF_D_StairsUpHint>Die Treppe hinauf kommt genau dorthin, wo auf der Ebene darüber die Treppe hinab steht.</CBF_D_StairsUpHint>
-  <CBF_D_StairsDown>Treppe hinab</CBF_D_StairsDown>
   <CBF_D_AddStairs>+ Treppe</CBF_D_AddStairs>
   <CBF_D_LowestHint>Das ist die unterste Ebene. Sie braucht keine Treppe hinab.</CBF_D_LowestHint>
   <CBF_D_Passages>Gänge</CBF_D_Passages>
-  <CBF_D_Corridors>Gangsegmente</CBF_D_Corridors>
   <CBF_D_AddCorridor>+ Segment</CBF_D_AddCorridor>
   <CBF_D_CorridorsNone>Leer heißt einfache Gangfelder. Ecken, Abzweigungen und Enden baut der Generator selbst.</CBF_D_CorridorsNone>
-  <CBF_D_CaveWidth>Höhlenbreite</CBF_D_CaveWidth>
   <CBF_D_CaveShare>Höhlenanteil</CBF_D_CaveShare>
   <CBF_D_SecretChance>Geheimgänge</CBF_D_SecretChance>
-  <CBF_D_MapSize>Kartengröße</CBF_D_MapSize>
   <CBF_D_MapSizeAuto>0 = aus dem Grundriss</CBF_D_MapSizeAuto>
   <CBF_D_MapSizeFixed>Felder je Seite</CBF_D_MapSizeFixed>
   <CBF_D_Areas>Bereiche</CBF_D_Areas>
@@ -321,12 +315,9 @@
   <CBF_D_AreaDefault>Bereich</CBF_D_AreaDefault>
   <CBF_D_OrphanAreas>Die Ebene hat noch {0} eigene(n) Bereich(e). Mit Abschnitten gelten sie nicht.</CBF_D_OrphanAreas>
   <CBF_D_OrphanAreasTake>In den ersten Abschnitt übernehmen</CBF_D_OrphanAreasTake>
-  <CBF_D_Spread>Über Ebenen verteilt</CBF_D_Spread>
   <CBF_D_SpreadNone>Noch nichts. Einträge hier landen auf beliebigen Ebenen in ihrem Bereich, zusätzlich zu den Bereichen der Ebenen.</CBF_D_SpreadNone>
-  <CBF_D_AddSpread>+ Gebäude</CBF_D_AddSpread>
   <CBF_D_Levels>Ebenen</CBF_D_Levels>
   <CBF_D_InArea>Im Bereich</CBF_D_InArea>
-  <CBF_D_AnyArea>beliebig</CBF_D_AnyArea>
   <CBF_D_SpreadDistrictGone>{0} soll in den Bereich {1}, aber keine Ebene hat diesen Bereich.</CBF_D_SpreadDistrictGone>
   <CBF_Field_entrance>Eingang</CBF_Field_entrance>
   <CBF_Field_stairsDown>Treppe hinab</CBF_Field_stairsDown>
@@ -365,6 +356,16 @@
   <CBF_S_PlanRuinTip>Baut jeden Ort dieses Typs als Ruine: Wände eingerissen, Räume ausgebrannt, Dächer teils eingestürzt, Bewuchs. Die Fraktion lebt weiter dort. Geplündert heißt wenig Beute, nicht geplündert heißt, die Beute bleibt. Eine Ruine aus einer Quest oder Site hat Vorrang.</CBF_S_PlanRuinTip>
   <CBF_S_PlanWhere>Erscheint nur, wenn</CBF_S_PlanWhere>
   <CBF_S_PlanWhereTip>Bedingungen für diesen Ortstyp. Leere Zeilen schränken nichts ein.</CBF_S_PlanWhereTip>
+  <CBF_S_RequiresUnknown>Unbekannter Name: {0}. Diese Bedingung ist nie erfüllt.</CBF_S_RequiresUnknown>
+  <CBF_S_RequiresCycle>Kreis: Die Einträge brauchen sich gegenseitig und werden nie gebaut.</CBF_S_RequiresCycle>
+  <CBF_S_RequiresChip>{0} von {1}</CBF_S_RequiresChip>
+  <CBF_S_RequiredFor>für {0}</CBF_S_RequiredFor>
+  <CBF_S_RequiresTip>Bedingung: Dieser Eintrag wird nur gebaut, wenn im ganzen Ort genug der gewählten Stücke oder Kategorien stehen. Jeder Name zählt einmal. Bedingte Einträge werden nach den anderen geplant. Ist die Bedingung nicht erfüllt, entfällt der Eintrag, auch bei Priorität Kritisch. In Verliesen gibt es keine Bedingungen.</CBF_S_RequiresTip>
+  <CBF_S_RequiresCountText>Mindestens {0} von {1}</CBF_S_RequiresCountText>
+  <CBF_S_RequiresCountWrong>Die Anzahl {0} passt nicht zu {1} gewählten Namen. Sie muss zwischen 1 und {1} liegen.</CBF_S_RequiresCountWrong>
+  <CBF_S_RequiresPick>Stücke oder Kategorien wählen</CBF_S_RequiresPick>
+  <CBF_S_RequiresClear>Bedingung entfernen</CBF_S_RequiresClear>
+  <CBF_S_RequiresNone>keine Bedingung</CBF_S_RequiresNone>
   <CBF_S_PlanIdeoWith>Ideologie hat</CBF_S_PlanIdeoWith>
   <CBF_S_PlanIdeoWithout>Ideologie hat nicht</CBF_S_PlanIdeoWithout>
   <CBF_S_PlanIdeoAny>beliebig</CBF_S_PlanIdeoAny>
@@ -382,4 +383,85 @@
   <CBF_S_PlanNotLandforms>Nicht bei Landform</CBF_S_PlanNotLandforms>
   <CBF_S_PlanNotLandformsTip>Der Ortstyp erscheint nie auf Kacheln mit einer dieser Landformen.</CBF_S_PlanNotLandformsTip>
   <CBF_S_PlanLoosen>Der Ortstyp erscheint nur, wo alle Bedingungen zutreffen. Ohne Ideology-DLC zählt die Ideologie nicht.</CBF_S_PlanLoosen>
+  <CBF_S_TabBasics>Grundlagen</CBF_S_TabBasics>
+  <CBF_S_TabBasicsTip>Wie der Ort aussieht: Name, Ortsart, Materialliste, Größen, Vorstadt, Ruine, Kartensymbol.</CBF_S_TabBasicsTip>
+  <CBF_S_TabPlacement>Verbreitung</CBF_S_TabPlacement>
+  <CBF_S_TabPlacementTip>Wer den Ort bekommt und wo er erscheint: Techstufen, Fraktionen, Gewicht und Bedingungen.</CBF_S_TabPlacementTip>
+  <CBF_S_TabGarrison>Garnison</CBF_S_TabGarrison>
+  <CBF_S_TabGarrisonTip>Wie viele Verteidiger der Ort hat: Mindestpunkte, Reichtumsfaktor und Anteil je Stadtteil.</CBF_S_TabGarrisonTip>
+  <CBF_S_TabMods>Mods</CBF_S_TabMods>
+  <CBF_S_TabModsTip>Benötigte Mods, Übernahme, World Domination, A Rim of Ice and Fire und Lagertypen.</CBF_S_TabModsTip>
+  <CBF_S_GarrisonMinPoints>Mindestpunkte</CBF_S_GarrisonMinPoints>
+  <CBF_S_GarrisonMinPointsTip>So viele Punkte gibt der Ort mindestens für seine Verteidiger aus, egal wie arm die Kolonie ist.</CBF_S_GarrisonMinPointsTip>
+  <CBF_S_GarrisonFactor>Garnisonsfaktor</CBF_S_GarrisonFactor>
+  <CBF_S_GarrisonFactorHint>× Raid-Punkte (0 bis 5), 0 = nur Mindestpunkte</CBF_S_GarrisonFactorHint>
+  <CBF_S_GarrisonFactorTip>Faktor auf die Raid-Punkte deiner Kolonie, also die Punkte, die der Erzähler gerade für einen Raid ausgeben würde. Der Ort kauft damit seine Verteidiger, aber nie für weniger als die Mindestpunkte. Kommazahlen sind erlaubt, etwa 0,5 für ein Dorf, 1,5 für eine große Stadt. Gilt beim Betreten der Karte.</CBF_S_GarrisonFactorTip>
+  <CBF_S_GarrisonExample>Raid {0}: {1} Punkte</CBF_S_GarrisonExample>
+  <CBF_S_GarrisonOff>Garnisonsfaktor 0: Die Garnisonseinträge gelten als feste Anzahl wie bisher.</CBF_S_GarrisonOff>
+  <CBF_S_GarrisonAnchors>Pawn-Anker zählen ins Budget</CBF_S_GarrisonAnchors>
+  <CBF_S_GarrisonAnchorsTip>Wie viel der Punkte von Pawns aus Pawn-Ankern der Stücke vom Budget abgezogen wird. Bei 100 % ersetzt jeder Anker-Pawn einen gekauften, bei 0 % kommen Anker-Pawns obendrauf.</CBF_S_GarrisonAnchorsTip>
+  <CBF_S_GarrisonShare>Anteil je Stadtteil</CBF_S_GarrisonShare>
+  <CBF_S_GarrisonShareTip>Wie sich die gekauften Verteidiger auf die Stadtteile verteilen. Der letzte Stadtteil bekommt immer den Rest auf 100 %. Wird ein Stadtteil erhöht, wird zuerst beim letzten abgezogen, dann bei den anderen von oben.</CBF_S_GarrisonShareTip>
+  <CBF_S_GarrisonShareAuto>Anteil automatisch nach Größe</CBF_S_GarrisonShareAuto>
+  <CBF_S_GarrisonShareBySize>nach Größe</CBF_S_GarrisonShareBySize>
+  <CBF_S_GarrisonShareAutoTip>Häkchen entfernen, um die Anteile selbst festzulegen.</CBF_S_GarrisonShareAutoTip>
+  <CBF_S_GarrisonEntriesHint>Feste Pawns setzt du in den Garnisonseinträgen der Stadtteile: Häkchen aktiv, dann Min, Max und Gewicht.</CBF_S_GarrisonEntriesHint>
+  <CBF_GarrisonActive>aktiv</CBF_GarrisonActive>
+  <CBF_GarrisonActiveTip>Nur aktive Einträge laden Pawns aus ihrer Liste. Zuerst kommt Min, dann Extras bis Max nach Gewicht, solange das Budget reicht. Sie zählen gegen das Budget.</CBF_GarrisonActiveTip>
+  <CBF_GarrisonWeightTip>Gewicht: wie wahrscheinlich dieser Eintrag Extras bis Max bekommt.</CBF_GarrisonWeightTip>
+  <CBF_GarrisonNeedsActive>Erst das Häkchen aktiv setzen.</CBF_GarrisonNeedsActive>
+  <CBF_GarrisonPointsHint>Dieser Ortstyp nutzt Punkte. Nur aktive Einträge setzen feste Pawns, der Rest kommt aus der Siedlungsgruppe der Fraktion.</CBF_GarrisonPointsHint>
+  <CBF_S_GarrisonExampleNow>jetzt ({0}): {1} Punkte</CBF_S_GarrisonExampleNow>
+  <CBF_S_GarrisonShareRest>Der letzte Stadtteil bekommt den Rest auf 100 %.</CBF_S_GarrisonShareRest>
+  <CBF_GP_Budget>Mindestpunkte {0}, Raid-Punkte {1} × Faktor {2} × Garnisonsgröße {3} = {4}, Budget {5} (der höhere Wert)</CBF_GP_Budget>
+  <CBF_GP_NoPoints>Ohne Punktesystem: Mindestpunkte {0} × Garnisonsgröße {1}</CBF_GP_NoPoints>
+  <CBF_GP_NoFaction>Ohne Fraktion: {0} Punkte je Pawn angenommen.</CBF_GP_NoFaction>
+  <CBF_GP_NoGroupMaker>Die Fraktion hat keinen Gruppenmacher: {0} Punkte je Pawn angenommen.</CBF_GP_NoGroupMaker>
+  <CBF_GP_NoLayout>Ohne Grundriss: Pawn-Anker nicht gezählt.</CBF_GP_NoLayout>
+  <CBF_GP_Capped>Obergrenze von {0} Pawns je Ort erreicht.</CBF_GP_Capped>
+  <CBF_GR_Open>Garnison berechnen</CBF_GR_Open>
+  <CBF_GR_OpenTip>Zeigt, wie viele Verteidiger dieser Ortstyp für eine Fraktion und eine Zahl an Raid-Punkten aufstellt, je Stadtteil.</CBF_GR_OpenTip>
+  <CBF_GR_Title>Garnisonsrechner: {0}</CBF_GR_Title>
+  <CBF_GR_Faction>Fraktion</CBF_GR_Faction>
+  <CBF_GR_FactionTip>Die Fraktion bestimmt, welche Pawns aus ihrer Siedlungsgruppe gekauft werden und was sie kosten.</CBF_GR_FactionTip>
+  <CBF_GR_NoFaction>keine Fraktion (65 Punkte je Pawn)</CBF_GR_NoFaction>
+  <CBF_GR_Raid>Raid-Punkte</CBF_GR_Raid>
+  <CBF_GR_Now>jetzt: {0}</CBF_GR_Now>
+  <CBF_GR_NowNone>Nur in einem laufenden Spiel.</CBF_GR_NowNone>
+  <CBF_GR_Layout>Grundriss planen, damit Pawn-Anker mitzählen</CBF_GR_Layout>
+  <CBF_GR_LayoutRunning>Grundriss wird geplant …</CBF_GR_LayoutRunning>
+  <CBF_GR_LayoutTip>Plant den Ort einmal ohne Karte wie in der Vorschau und zählt die Pawn-Anker der gesetzten Stücke. Ohne Grundriss zählen die Anker nicht.</CBF_GR_LayoutTip>
+  <CBF_GR_Sum>Gesamt {0} Pawns: {1} sichtbar, {2} in Reserve, Kampfkraft {3}</CBF_GR_Sum>
+  <CBF_GR_ColWard>Stadtteil</CBF_GR_ColWard>
+  <CBF_GR_ColWardTip>Stadtteil des Ortstyps.</CBF_GR_ColWardTip>
+  <CBF_GR_ColShare>Anteil</CBF_GR_ColShare>
+  <CBF_GR_ColShareTip>Anteil der Pawns aus Punkten, die dieser Stadtteil bekommt.</CBF_GR_ColShareTip>
+  <CBF_GR_ColFixed>Fest</CBF_GR_ColFixed>
+  <CBF_GR_ColFixedTip>Pawns aus aktiven Garnisonseinträgen, als Erwartungswert.</CBF_GR_ColFixedTip>
+  <CBF_GR_ColAnchors>Anker</CBF_GR_ColAnchors>
+  <CBF_GR_ColAnchorsTip>Pawns aus Pawn-Ankern der Stücke. Nur mit Grundriss.</CBF_GR_ColAnchorsTip>
+  <CBF_GR_ColPoints>Punkte</CBF_GR_ColPoints>
+  <CBF_GR_ColPointsTip>Pawns, die die Fraktion mit dem Budget kauft.</CBF_GR_ColPointsTip>
+  <CBF_GR_ColTotal>Gesamt</CBF_GR_ColTotal>
+  <CBF_GR_ColTotalTip>Fest, Anker und Punkte zusammen.</CBF_GR_ColTotalTip>
+  <CBF_GR_ColVisible>Sichtbar</CBF_GR_ColVisible>
+  <CBF_GR_ColVisibleTip>Pawns, die gleich auf der Karte stehen.</CBF_GR_ColVisibleTip>
+  <CBF_GR_ColReserve>Reserve</CBF_GR_ColReserve>
+  <CBF_GR_ColReserveTip>Zurückgehalten, erscheinen bei Alarm.</CBF_GR_ColReserveTip>
+  <CBF_GR_ColPower>Kampfkraft</CBF_GR_ColPower>
+  <CBF_GR_ColPowerTip>Summe der Kampfkraft der Pawns.</CBF_GR_ColPowerTip>
+  <CBF_GP_OverBudget>Warnung: Feste Pawns und Anker kosten {0} Punkte und sprengen das Budget von {1}. Mit diesen Einstellungen gibt es keine mobile Garnison aus Punkten.</CBF_GP_OverBudget>
+  <CBF_S_GarrisonShareDungeon>Anteil je Ebene</CBF_S_GarrisonShareDungeon>
+  <CBF_S_GarrisonShareTipDungeon>Wie sich die gekauften Verteidiger des ganzen Verlieses auf seine Ebenen verteilen. Das Budget wird einmal beim Betreten der ersten Ebene festgelegt. Die letzte Ebene bekommt immer den Rest auf 100 %. Wird eine Ebene erhöht, wird zuerst bei der letzten abgezogen, dann bei den anderen von oben. Eine Ebene mit Wiederholung ×n bekommt ihren Anteil je Wiederholung, danach wird auf 100 % umgerechnet.</CBF_S_GarrisonShareTipDungeon>
+  <CBF_S_GarrisonShareAutoDungeon>Anteil automatisch, nach unten steigend</CBF_S_GarrisonShareAutoDungeon>
+  <CBF_S_GarrisonShareAutoTipDungeon>Mit Häkchen bekommen tiefere Ebenen mehr Verteidiger, die tiefste die meisten. Häkchen entfernen, um die Anteile selbst festzulegen.</CBF_S_GarrisonShareAutoTipDungeon>
+  <CBF_S_GarrisonEntriesHintDungeon>Feste Pawns setzt du in den Garnisonseinträgen der Ebenen: Häkchen aktiv, dann Min, Max und Gewicht.</CBF_S_GarrisonEntriesHintDungeon>
+  <CBF_S_GarrisonShareRestDungeon>Die letzte Ebene bekommt den Rest auf 100 %.</CBF_S_GarrisonShareRestDungeon>
+  <CBF_GR_ColLevel>Ebene</CBF_GR_ColLevel>
+  <CBF_GR_ColLevelTip>Ebene des Verlieses, von oben gezählt.</CBF_GR_ColLevelTip>
+  <CBF_GR_LayoutDungeon>Pawn-Anker von Verliesen zählt der Rechner nicht</CBF_GR_LayoutDungeon>
+  <CBF_GR_LayoutDungeonTip>Verliesebenen werden erst beim Betreten geplant. Der Rechner zeigt das Verlies ohne seine Pawn-Anker.</CBF_GR_LayoutDungeonTip>
+  <CBF_GR_AnchorsLayout>Gezählt am geplanten Grundriss (≈). Ein Ort schwankt von Karte zu Karte um einige Pawns, im Spiel können es etwas mehr sein.</CBF_GR_AnchorsLayout>
+  <CBF_GR_AnchorsEstimated>Pawns aus Ankern sind grob aus den Bezirken geschätzt und nur eine Untergrenze (≥). Der Grundriss wird für eine genauere Zahl geplant.</CBF_GR_AnchorsEstimated>
+  <CBF_GR_SmallVaries>Kleine Orte wie Dörfer schwanken im Spiel stark, von Karte zu Karte um etwa ein Viertel nach oben oder unten.</CBF_GR_SmallVaries>
 </LanguageData>

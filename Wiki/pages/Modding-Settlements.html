@@ -774,12 +774,40 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Meme or precept defNames. The entry is only built when the owning faction's ideoligion has (or lacks) one of them. See <a href="Settlements.html#ideoligion-conditions-on-entries">Settlements</a>.</td>
 <td>none</td>
 </tr>
+<tr>
+<td><code>requires</code>, <code>requiresCount</code></td>
+<td></td>
+<td>Piece or category defNames. The entry is only planned once at least <code>requiresCount</code> of them stand anywhere in the settlement. See below.</td>
+<td>none, <code>1</code></td>
+</tr>
 </tbody>
 </table>
 <ul>
 <li>Name either <code>tag</code> or <code>piece</code>. With both, the piece wins and a warning is logged. With neither, the entry is skipped.</li>
 <li>Use <code>tag</code> for anything that should vary. Use <code>piece</code> for one building that must appear as drawn, such as a keep or a dungeon.</li>
 <li>The minimum of an entry is a wish, not a guarantee. If the space runs out, the planner reports what it could not place.</li>
+</ul>
+<h3 id="conditional-entries">Conditional entries</h3>
+<p>An entry with <code>requires</code> only appears when other buildings are already in the settlement. The planner first places everything else, then checks the condition and plans the entry. The whole settlement counts, not only the entry's own district. Each listed name counts once.</p>
+<pre><code class="language-xml">&lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Mill&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">requires</span>&gt;&lt;<span class="xt">li</span>&gt;CBF_MO_GrainFarm&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">requires</span>&gt;&lt;/<span class="xt">li</span>&gt;
+&lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_Smelter&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">count</span>&gt;1~1&lt;/<span class="xt">count</span>&gt;&lt;<span class="xt">requiresCount</span>&gt;2&lt;/<span class="xt">requiresCount</span>&gt;
+  &lt;<span class="xt">requires</span>&gt;&lt;<span class="xt">li</span>&gt;CBF_MO_CoalMine&lt;/<span class="xt">li</span>&gt;&lt;<span class="xt">li</span>&gt;CBF_MO_IronMine&lt;/<span class="xt">li</span>&gt;&lt;<span class="xt">li</span>&gt;CBF_MO_GoldMine&lt;/<span class="xt">li</span>&gt;&lt;/<span class="xt">requires</span>&gt;&lt;/<span class="xt">li</span>&gt;
+</code></pre>
+<p>The smelter appears with coal and iron, or coal and gold, but not with coal alone. If the condition is not met, the entry is left out without an error, also with <code>priority</code> Critical. The detail log says which names were missing. Entries that require each other are never planned. In dungeon levels conditional entries are left out.</p>
+<h4 id="how-the-condition-is-checked">How the condition is checked</h4>
+<ol>
+<li>At the start of every layout attempt all conditional entries are held back, as if their count were 0.</li>
+<li>The planner checks the conditions three times: after the minimum buildings of all wards, after the countryside buildings and after the filler pass. An entry whose condition is met at one of these points gets its normal count, minimum and priority back and is planned from there on.</li>
+<li>A building released in one check can release further entries in the next one. A town building can therefore depend on a countryside building, although the countryside is planned later.</li>
+<li>Counted are the pieces that stand in the settlement at that moment, in all wards. A name in <code>requires</code> matches a piece defName or any category of a piece. Each name counts once, however many buildings match it.</li>
+<li>If the planner starts a new attempt, everything is checked again. The detail log names the result with "Condition met" or "Condition not met" and the missing names.</li>
+</ol>
+<h4 id="limits">Limits</h4>
+<ul>
+<li>Fields, crops, pens and annexes do not count. They are laid out after the buildings, so they do not exist yet when the condition is checked.</li>
+<li>To tie a building to a field, give the building its own fields instead of a condition. The district lists the building and a field node with the building's category in <code>tags</code>, as the mill and the winery in <code>CBF_Plan_Village_New</code> do. The field then only exists where the building stands.</li>
+<li>No space is kept free for a conditional entry. If the settlement is already full when the condition is met, the entry can still be missing.</li>
+<li>A minimum on a conditional entry only applies once the condition is met. It never makes a layout invalid while the condition is open.</li>
 </ul>
 <h2 id="fields-and-pens">Fields and pens</h2>
 <p>Fields and pens belong to a district in the suburb or countryside ward. A field is a crop area laid out next to a building of the district. A pen is a fenced area with animals. From <code>CBF_Plan_Village_New</code>:</p>
@@ -875,6 +903,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tbody>
 </table>
 <p>A field needs a building from <code>tags</code> to lie next to. List that category in the district's entries, or the field has no farmhouse.</p>
+<h4 id="crops-on-trellises">Crops on trellises</h4>
+<p>Some crops do not grow on the ground, for example Medieval Overhaul's grapes. CBF recognises them because their <code>sowTags</code> lack <code>Ground</code>. For such a crop the field is not sown. CBF looks for a plant grower building whose <code>sowTag</code> matches the crop and that is one cell deep, and takes the longest one. It places these trellises on every second row of the field, with a free row between them for walking, and plants the crop on them. A trellis is only placed where the ground can carry it. If no matching building exists, the crop is sown on the ground like any other. The fence works as on every other field.</p>
 <h3 id="pen-nodes">Pen nodes</h3>
 <p>Pens are read from the <code>Rural</code> ward only. They are placed near the buildings of their district.</p>
 <table>
@@ -1080,4 +1110,4 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><a href="Dekospec.html">Dekospec</a> (decor and defenses)</li>
 <li><a href="HafenSpec.html">HafenSpec</a> (harbor)</li>
 <li><a href="Field-Reference.html">Field reference</a> (all pages)</li>
-</ul><div class="schritte"><a href="Modding-Patches.html"><span>Previous</span>XML patches</a><a class="weiter" href="Modding-Pieces.html"><span>Next</span>Pieces and categories in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#what-a-settlement-type-is">What a settlement type is</a><a class="t2" href="#minimal-example">Minimal example</a><a class="t2" href="#tune-the-example">Tune the example</a><a class="t2" href="#header-fields">Header fields</a><a class="t3" href="#mayrequire">MayRequire</a><a class="t2" href="#wards">Wards</a><a class="t3" href="#walls-emplacements-and-gatehouses">Walls, emplacements and gatehouses</a><a class="t3" href="#outworks">Outworks</a><a class="t3" href="#garrison">Garrison</a><a class="t2" href="#districts-and-building-entries">Districts and building entries</a><a class="t3" href="#district-nodes">District nodes</a><a class="t3" href="#building-entries">Building entries</a><a class="t2" href="#fields-and-pens">Fields and pens</a><a class="t3" href="#field-nodes">Field nodes</a><a class="t3" href="#pen-nodes">Pen nodes</a><a class="t2" href="#harbors">Harbors</a><a class="t2" href="#tuning-fields">Tuning fields</a><a class="t2" href="#how-cbf-picks-a-plan-for-a-faction">How CBF picks a plan for a faction</a><a class="t2" href="#tips">Tips</a><a class="t2" href="#field-reference">Field reference</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+</ul><div class="schritte"><a href="Modding-Patches.html"><span>Previous</span>XML patches</a><a class="weiter" href="Modding-Pieces.html"><span>Next</span>Pieces and categories in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#what-a-settlement-type-is">What a settlement type is</a><a class="t2" href="#minimal-example">Minimal example</a><a class="t2" href="#tune-the-example">Tune the example</a><a class="t2" href="#header-fields">Header fields</a><a class="t3" href="#mayrequire">MayRequire</a><a class="t2" href="#wards">Wards</a><a class="t3" href="#walls-emplacements-and-gatehouses">Walls, emplacements and gatehouses</a><a class="t3" href="#outworks">Outworks</a><a class="t3" href="#garrison">Garrison</a><a class="t2" href="#districts-and-building-entries">Districts and building entries</a><a class="t3" href="#district-nodes">District nodes</a><a class="t3" href="#building-entries">Building entries</a><a class="t3" href="#conditional-entries">Conditional entries</a><a class="t2" href="#fields-and-pens">Fields and pens</a><a class="t3" href="#field-nodes">Field nodes</a><a class="t3" href="#pen-nodes">Pen nodes</a><a class="t2" href="#harbors">Harbors</a><a class="t2" href="#tuning-fields">Tuning fields</a><a class="t2" href="#how-cbf-picks-a-plan-for-a-faction">How CBF picks a plan for a faction</a><a class="t2" href="#tips">Tips</a><a class="t2" href="#field-reference">Field reference</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

@@ -169,6 +169,11 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Unit swap</td>
 <td>Which units and things a faction uses instead of the general ones</td>
 </tr>
+<tr>
+<td>Dungeon</td>
+<td>Dungeons</td>
+<td>Levels with rooms, layout, stairs and garrison</td>
+</tr>
 </tbody>
 </table>
 <p>Labels, counts, weights, chances, distances and radii are ordinary tuning values. Keep them within the documented ranges and check the editor’s validation messages. Large counts, sizes or spacing requirements can still prevent a plan from fitting, so preview the result after substantial changes.</p>
@@ -243,7 +248,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p><code>Dungeon</code> uses the development levels workflow. Its example content is a separate development mod; see <a href="Modding-Dungeons.html">Dungeon levels</a>.</p>
+<p><code>Dungeon</code> builds a dungeon with levels and stairs; see <a href="Modding-Dungeons.html">Dungeon levels</a> and, for players, <a href="Dungeons.html">Dungeons</a>.</p>
 <h3 id="garrison-post-post">Garrison post (<code>post</code>)</h3>
 <p>Where the pawns of a garrison entry stand.</p>
 <table>
@@ -301,8 +306,8 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>Civilian</code></td>
-<td><strong>Civilian</strong></td>
-<td>May flee and does not need to be able to fight. The default. The log warns when a civilian list contains fighters.</td>
+<td>not offered</td>
+<td>Older files only. Counts as <code>Guard</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -372,7 +377,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tbody>
 <tr>
 <td><code>type</code></td>
-<td><code>Building</code>, <code>WallPart</code> (drawn as wall), <code>DungeonRoom</code> (development dungeon content)</td>
+<td><code>Building</code>, <code>WallPart</code> (drawn as wall), <code>DungeonRoom</code> (rooms of dungeons)</td>
 </tr>
 <tr>
 <td><code>rotation</code></td>

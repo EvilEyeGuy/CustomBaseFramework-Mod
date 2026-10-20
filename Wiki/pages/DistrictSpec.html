@@ -121,6 +121,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <h2 id="where-this-record-goes">Where this record goes</h2>
 <ul>
 <li><a href="DungeonLevel.html">DungeonLevel</a> → <code>districts</code>: put these fields inside each <code>&lt;li&gt;</code> in the list.</li>
+<li><a href="DungeonSection.html">DungeonSection</a> → <code>districts</code>: put these fields inside each <code>&lt;li&gt;</code> in the list.</li>
 <li><a href="SettlementPlanDef.html">SettlementPlanDef</a> → <code>districts</code>: put these fields inside each <code>&lt;li&gt;</code> in the list.</li>
 <li><a href="Stadtteil.html">Stadtteil</a> → <code>districts</code>: put these fields inside each <code>&lt;li&gt;</code> in the list.</li>
 </ul>
@@ -155,9 +156,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>layout</code></td>
-<td>DungeonBauweise (Corridors, Chambers, Cave), optional</td>
+<td>DungeonBauweise (Corridors, Chambers, Cave, Rows), optional</td>
 <td>none</td>
-<td>Optional dungeon layout override for this district: Corridors, Chambers or Cave. Without it, use the level layout. It is not a town district location preference.</td>
+<td>Optional dungeon layout override for this district: Corridors, Chambers, Cave or Rows. Without it, use the level layout. It is not a town district location preference.</td>
 </tr>
 <tr>
 <td><code>mines</code></td>

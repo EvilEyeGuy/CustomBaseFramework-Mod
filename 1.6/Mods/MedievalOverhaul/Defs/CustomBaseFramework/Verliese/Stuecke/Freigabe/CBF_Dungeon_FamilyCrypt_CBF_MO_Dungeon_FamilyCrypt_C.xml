@@ -10,12 +10,12 @@
     <type>DungeonRoom</type>
     <style>CBF_Medieval</style>
     <legend>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>0</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>East</rotation></li>
+      <li><symbol>0</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>1</symbol><anchor>GraveGoodsA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_Treasury</lootTable></li>
       <li><symbol>2</symbol><anchor>GraveGoodsB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_Treasury</lootTable></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>3</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>West</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>3</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>4</symbol><thing>DankPyon_Hideout_RoyalChest</thing><rotation>West</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>:</symbol><terrain>DankPyon_Floor_Lys_Red</terrain></li>
-      <li><symbol>E</symbol><thing>Sarcophagus</thing><stuff>BlocksMarble</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>U</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
@@ -52,9 +52,9 @@
     <things>
       <li>SSSSSĴSSSSS</li>
       <li>Sa.......aS</li>
-      <li>S..E...E..S</li>
-      <li>S0.......3S</li>
-      <li>S..E...E..S</li>
+      <li>S..0...0..S</li>
+      <li>S3.......4S</li>
+      <li>S..0...0..S</li>
       <li>S.........S</li>
       <li>SN.U...U.NS</li>
       <li>SSSSSĴSSSSS</li>

@@ -725,7 +725,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </table>
 <p>A content mod does not need these. A new HelpDef with a defName no button asks for is never shown. Translations go through <code>DefInjected</code> as usual.</p>
 <h2 id="dungeon-profiles">Dungeon profiles</h2>
-<p><code>DungeonProfileDef</code> is an older profile type. The current development workflow uses a <code>SettlementPlanDef</code> with <code>kind</code> set to <code>Dungeon</code> and an ordered <code>levels</code> list. See <a href="Modding-Dungeons.html">Dungeon levels</a> for the implemented structure, the separate development content and fields that are not yet connected to generation.</p>
+<p><code>DungeonProfileDef</code> is an older profile type. Dungeons now use a <code>SettlementPlanDef</code> with <code>kind</code> set to <code>Dungeon</code> and an ordered <code>levels</code> list. See <a href="Modding-Dungeons.html">Dungeon levels</a> for the structure, the shipped examples and fields that are not yet connected to generation.</p>
 <h2 id="how-cbf-takes-over-faction-bases">How CBF takes over faction bases</h2>
 <p>No patch is needed to make CBF build bases for a faction. CBF patches RimWorld so that a non-player faction settlement uses CBF's map generator <code>CBF_Base_Faction</code> when all of these hold:</p>
 <ul>

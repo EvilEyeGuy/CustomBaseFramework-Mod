@@ -211,7 +211,6 @@
   <CBF_D_LastLevel>A dungeon needs at least one level.</CBF_D_LastLevel>
   <CBF_D_DeleteLevelAsk>Remove level {0}? Its areas hold {1} entries.</CBF_D_DeleteLevelAsk>
   <CBF_D_RenameLevel>Name of the level</CBF_D_RenameLevel>
-  <CBF_D_Rename>Rename</CBF_D_Rename>
   <CBF_D_RemoveLevel>Remove level</CBF_D_RemoveLevel>
   <CBF_D_MoveUpTip>Move this level one up.</CBF_D_MoveUpTip>
   <CBF_D_MoveDownTip>Move this level one down.</CBF_D_MoveDownTip>
@@ -219,21 +218,16 @@
   <CBF_D_OnSurface>in the mountain of the surface map</CBF_D_OnSurface>
   <CBF_D_Submap>own map below</CBF_D_Submap>
   <CBF_D_Access>Entrance and stairs</CBF_D_Access>
-  <CBF_D_Entrance>Entrance</CBF_D_Entrance>
   <CBF_D_AddEntrance>+ Entrance</CBF_D_AddEntrance>
   <CBF_D_EntranceNone>Empty means the generator opens a plain tunnel into the mountain.</CBF_D_EntranceNone>
   <CBF_D_StairsUpHint>The stairs up are placed where the stairs down of the level above stand.</CBF_D_StairsUpHint>
-  <CBF_D_StairsDown>Stairs down</CBF_D_StairsDown>
   <CBF_D_AddStairs>+ Stairs</CBF_D_AddStairs>
   <CBF_D_LowestHint>This is the lowest level. It needs no stairs down.</CBF_D_LowestHint>
   <CBF_D_Passages>Passages</CBF_D_Passages>
-  <CBF_D_Corridors>Corridor segments</CBF_D_Corridors>
   <CBF_D_AddCorridor>+ Segment</CBF_D_AddCorridor>
   <CBF_D_CorridorsNone>Empty means plain corridor cells. Corners, junctions and ends are built by the generator.</CBF_D_CorridorsNone>
-  <CBF_D_CaveWidth>Cave width</CBF_D_CaveWidth>
   <CBF_D_CaveShare>Cave share</CBF_D_CaveShare>
   <CBF_D_SecretChance>Secret passages</CBF_D_SecretChance>
-  <CBF_D_MapSize>Map size</CBF_D_MapSize>
   <CBF_D_MapSizeAuto>0 = from the layout</CBF_D_MapSizeAuto>
   <CBF_D_MapSizeFixed>cells per side</CBF_D_MapSizeFixed>
   <CBF_D_Areas>Areas</CBF_D_Areas>
@@ -316,12 +310,9 @@
   <CBF_D_AreaDefault>area</CBF_D_AreaDefault>
   <CBF_D_OrphanAreas>The level still has {0} area(s) of its own. With sections they do not apply.</CBF_D_OrphanAreas>
   <CBF_D_OrphanAreasTake>Move them into the first section</CBF_D_OrphanAreasTake>
-  <CBF_D_Spread>Spread over levels</CBF_D_Spread>
   <CBF_D_SpreadNone>Nothing yet. Entries here are placed on any level within their range, in addition to the areas.</CBF_D_SpreadNone>
-  <CBF_D_AddSpread>+ Building</CBF_D_AddSpread>
   <CBF_D_Levels>Levels</CBF_D_Levels>
   <CBF_D_InArea>In area</CBF_D_InArea>
-  <CBF_D_AnyArea>any</CBF_D_AnyArea>
   <CBF_D_SpreadDistrictGone>{0} should go into area {1}, but no level has that area.</CBF_D_SpreadDistrictGone>
   <CBF_Field_entrance>Entrance</CBF_Field_entrance>
   <CBF_Field_stairsDown>Stairs down</CBF_Field_stairsDown>
@@ -360,6 +351,16 @@
   <CBF_S_PlanRuinTip>Builds every place of this type as a ruin: walls torn down, rooms burnt out, roofs partly collapsed, overgrown. The faction still lives there. Plundered means little loot, not plundered means the loot stays. A ruin from a quest or site takes precedence.</CBF_S_PlanRuinTip>
   <CBF_S_PlanWhere>Appears only if</CBF_S_PlanWhere>
   <CBF_S_PlanWhereTip>Conditions for this settlement type. Empty rows restrict nothing.</CBF_S_PlanWhereTip>
+  <CBF_S_RequiresUnknown>Unknown name: {0}. This condition is never met.</CBF_S_RequiresUnknown>
+  <CBF_S_RequiresCycle>Cycle: these entries need each other and are never built.</CBF_S_RequiresCycle>
+  <CBF_S_RequiresChip>{0} of {1}</CBF_S_RequiresChip>
+  <CBF_S_RequiredFor>for {0}</CBF_S_RequiredFor>
+  <CBF_S_RequiresTip>Condition: this entry is only built if enough of the chosen pieces or categories stand in the whole settlement. Each name counts once. Conditional entries are planned after the others. If the condition is not met, the entry is dropped, even with priority Critical. Dungeons have no conditions.</CBF_S_RequiresTip>
+  <CBF_S_RequiresCountText>At least {0} of {1}</CBF_S_RequiresCountText>
+  <CBF_S_RequiresCountWrong>The count {0} does not fit {1} chosen names. It must be between 1 and {1}.</CBF_S_RequiresCountWrong>
+  <CBF_S_RequiresPick>Pick pieces or categories</CBF_S_RequiresPick>
+  <CBF_S_RequiresClear>Remove condition</CBF_S_RequiresClear>
+  <CBF_S_RequiresNone>no condition</CBF_S_RequiresNone>
   <CBF_S_PlanIdeoWith>Ideoligion has</CBF_S_PlanIdeoWith>
   <CBF_S_PlanIdeoWithout>Ideoligion lacks</CBF_S_PlanIdeoWithout>
   <CBF_S_PlanIdeoAny>any</CBF_S_PlanIdeoAny>
@@ -377,4 +378,85 @@
   <CBF_S_PlanNotLandforms>Not with landform</CBF_S_PlanNotLandforms>
   <CBF_S_PlanNotLandformsTip>The settlement type never appears on tiles with one of these landforms.</CBF_S_PlanNotLandformsTip>
   <CBF_S_PlanLoosen>The type only appears where all conditions apply. Without the Ideology DLC, ideoligion conditions are ignored.</CBF_S_PlanLoosen>
+  <CBF_S_TabBasics>Basics</CBF_S_TabBasics>
+  <CBF_S_TabBasicsTip>What the place looks like: name, kind, material list, sizes, suburb, ruin, map icon.</CBF_S_TabBasicsTip>
+  <CBF_S_TabPlacement>Placement</CBF_S_TabPlacement>
+  <CBF_S_TabPlacementTip>Who gets the place and where it appears: tech levels, factions, weight and conditions.</CBF_S_TabPlacementTip>
+  <CBF_S_TabGarrison>Garrison</CBF_S_TabGarrison>
+  <CBF_S_TabGarrisonTip>How many defenders the place has: minimum points, wealth factor and share per ward.</CBF_S_TabGarrisonTip>
+  <CBF_S_TabMods>Mods</CBF_S_TabMods>
+  <CBF_S_TabModsTip>Required mods, takeover, World Domination, A Rim of Ice and Fire and camp types.</CBF_S_TabModsTip>
+  <CBF_S_GarrisonMinPoints>Minimum points</CBF_S_GarrisonMinPoints>
+  <CBF_S_GarrisonMinPointsTip>The place always spends at least this many points on defenders, however poor the colony is.</CBF_S_GarrisonMinPointsTip>
+  <CBF_S_GarrisonFactor>Garrison factor</CBF_S_GarrisonFactor>
+  <CBF_S_GarrisonFactorHint>× raid points (0 to 5), 0 = minimum only</CBF_S_GarrisonFactorHint>
+  <CBF_S_GarrisonFactorTip>Factor on your colony's raid points, the points the storyteller would spend on a raid right now. The place buys its defenders with them, but never for less than the minimum points. Decimals are allowed, such as 0.5 for a village or 1.5 for a large city. Applies when you enter the map.</CBF_S_GarrisonFactorTip>
+  <CBF_S_GarrisonExample>Raid {0}: {1} points</CBF_S_GarrisonExample>
+  <CBF_S_GarrisonOff>Garrison factor 0: garrison entries are fixed counts as before.</CBF_S_GarrisonOff>
+  <CBF_S_GarrisonAnchors>Pawn anchors count against the budget</CBF_S_GarrisonAnchors>
+  <CBF_S_GarrisonAnchorsTip>How much of the points of pawns from pawn anchors in the pieces is taken from the budget. At 100 % every anchored pawn replaces a bought one, at 0 % anchored pawns come on top.</CBF_S_GarrisonAnchorsTip>
+  <CBF_S_GarrisonShare>Share per ward</CBF_S_GarrisonShare>
+  <CBF_S_GarrisonShareTip>How the bought defenders are spread over the wards. The last ward always gets the rest up to 100%. Raising a ward takes from the last ward first, then from the others from the top.</CBF_S_GarrisonShareTip>
+  <CBF_S_GarrisonShareAuto>Share automatically by size</CBF_S_GarrisonShareAuto>
+  <CBF_S_GarrisonShareBySize>by size</CBF_S_GarrisonShareBySize>
+  <CBF_S_GarrisonShareAutoTip>Untick to set the shares yourself.</CBF_S_GarrisonShareAutoTip>
+  <CBF_S_GarrisonEntriesHint>Set fixed pawns in the garrison entries of the wards: tick active, then min, max and weight.</CBF_S_GarrisonEntriesHint>
+  <CBF_GarrisonActive>active</CBF_GarrisonActive>
+  <CBF_GarrisonActiveTip>Only active entries load pawns from their list. Min comes first, then extras up to max by weight while the budget lasts. They count against the budget.</CBF_GarrisonActiveTip>
+  <CBF_GarrisonWeightTip>Weight: how likely this entry gets extras up to max.</CBF_GarrisonWeightTip>
+  <CBF_GarrisonNeedsActive>Tick active first.</CBF_GarrisonNeedsActive>
+  <CBF_GarrisonPointsHint>This settlement type uses points. Only active entries place fixed pawns; the rest comes from the faction's settlement group.</CBF_GarrisonPointsHint>
+  <CBF_S_GarrisonExampleNow>now ({0}): {1} points</CBF_S_GarrisonExampleNow>
+  <CBF_S_GarrisonShareRest>The last ward gets the rest up to 100%.</CBF_S_GarrisonShareRest>
+  <CBF_GP_Budget>Minimum points {0}, raid points {1} × factor {2} × garrison size {3} = {4}, budget {5} (the higher value)</CBF_GP_Budget>
+  <CBF_GP_NoPoints>Without point system: minimum points {0} × garrison size {1}</CBF_GP_NoPoints>
+  <CBF_GP_NoFaction>No faction: {0} points per pawn assumed.</CBF_GP_NoFaction>
+  <CBF_GP_NoGroupMaker>The faction has no pawn group maker: {0} points per pawn assumed.</CBF_GP_NoGroupMaker>
+  <CBF_GP_NoLayout>No layout: pawn anchors not counted.</CBF_GP_NoLayout>
+  <CBF_GP_Capped>Limit of {0} pawns per settlement reached.</CBF_GP_Capped>
+  <CBF_GR_Open>Calculate garrison</CBF_GR_Open>
+  <CBF_GR_OpenTip>Shows how many defenders this settlement type fields for a faction and a number of raid points, per ward.</CBF_GR_OpenTip>
+  <CBF_GR_Title>Garrison calculator: {0}</CBF_GR_Title>
+  <CBF_GR_Faction>Faction</CBF_GR_Faction>
+  <CBF_GR_FactionTip>The faction decides which pawns are bought from its settlement group and what they cost.</CBF_GR_FactionTip>
+  <CBF_GR_NoFaction>no faction (65 points per pawn)</CBF_GR_NoFaction>
+  <CBF_GR_Raid>Raid points</CBF_GR_Raid>
+  <CBF_GR_Now>now: {0}</CBF_GR_Now>
+  <CBF_GR_NowNone>Only in a running game.</CBF_GR_NowNone>
+  <CBF_GR_Layout>Plan the layout so pawn anchors count</CBF_GR_Layout>
+  <CBF_GR_LayoutRunning>Planning the layout …</CBF_GR_LayoutRunning>
+  <CBF_GR_LayoutTip>Plans the place once without a map, like the preview, and counts the pawn anchors of the placed pieces. Without a layout anchors do not count.</CBF_GR_LayoutTip>
+  <CBF_GR_Sum>Total {0} pawns: {1} visible, {2} in reserve, combat power {3}</CBF_GR_Sum>
+  <CBF_GR_ColWard>Ward</CBF_GR_ColWard>
+  <CBF_GR_ColWardTip>Ward of the settlement type.</CBF_GR_ColWardTip>
+  <CBF_GR_ColShare>Share</CBF_GR_ColShare>
+  <CBF_GR_ColShareTip>Share of the bought pawns this ward gets.</CBF_GR_ColShareTip>
+  <CBF_GR_ColFixed>Fixed</CBF_GR_ColFixed>
+  <CBF_GR_ColFixedTip>Pawns from active garrison entries, as expected value.</CBF_GR_ColFixedTip>
+  <CBF_GR_ColAnchors>Anchors</CBF_GR_ColAnchors>
+  <CBF_GR_ColAnchorsTip>Pawns from pawn anchors in pieces. Only with a layout.</CBF_GR_ColAnchorsTip>
+  <CBF_GR_ColPoints>Points</CBF_GR_ColPoints>
+  <CBF_GR_ColPointsTip>Pawns the faction buys with the budget.</CBF_GR_ColPointsTip>
+  <CBF_GR_ColTotal>Total</CBF_GR_ColTotal>
+  <CBF_GR_ColTotalTip>Fixed, anchors and points together.</CBF_GR_ColTotalTip>
+  <CBF_GR_ColVisible>Visible</CBF_GR_ColVisible>
+  <CBF_GR_ColVisibleTip>Pawns standing on the map at once.</CBF_GR_ColVisibleTip>
+  <CBF_GR_ColReserve>Reserve</CBF_GR_ColReserve>
+  <CBF_GR_ColReserveTip>Held back, appear on alarm.</CBF_GR_ColReserveTip>
+  <CBF_GR_ColPower>Combat power</CBF_GR_ColPower>
+  <CBF_GR_ColPowerTip>Sum of the pawns' combat power.</CBF_GR_ColPowerTip>
+  <CBF_GP_OverBudget>Warning: fixed pawns and anchors cost {0} points and exceed the budget of {1}. With these settings there is no mobile garrison from points.</CBF_GP_OverBudget>
+  <CBF_S_GarrisonShareDungeon>Share per level</CBF_S_GarrisonShareDungeon>
+  <CBF_S_GarrisonShareTipDungeon>How the bought defenders of the whole dungeon are spread over its levels. The budget is set once when the first level is entered. The last level always gets the rest up to 100%. Raising a level takes from the last level first, then from the others from the top. A level repeated ×n gets its share once per repetition; the shares are then scaled to 100%.</CBF_S_GarrisonShareTipDungeon>
+  <CBF_S_GarrisonShareAutoDungeon>Share automatically, rising towards the bottom</CBF_S_GarrisonShareAutoDungeon>
+  <CBF_S_GarrisonShareAutoTipDungeon>Ticked, deeper levels get more defenders, the deepest the most. Untick to set the shares yourself.</CBF_S_GarrisonShareAutoTipDungeon>
+  <CBF_S_GarrisonEntriesHintDungeon>Set fixed pawns in the garrison entries of the levels: tick active, then min, max and weight.</CBF_S_GarrisonEntriesHintDungeon>
+  <CBF_S_GarrisonShareRestDungeon>The last level gets the rest up to 100%.</CBF_S_GarrisonShareRestDungeon>
+  <CBF_GR_ColLevel>Level</CBF_GR_ColLevel>
+  <CBF_GR_ColLevelTip>Level of the dungeon, counted from the top.</CBF_GR_ColLevelTip>
+  <CBF_GR_LayoutDungeon>Pawn anchors of dungeons are not counted here</CBF_GR_LayoutDungeon>
+  <CBF_GR_LayoutDungeonTip>Dungeon levels are planned only when they are entered. The calculator shows the dungeon without its pawn anchors.</CBF_GR_LayoutDungeonTip>
+  <CBF_GR_AnchorsLayout>Counted on the planned layout (≈). A settlement varies by a few pawns from map to map, the game can field somewhat more.</CBF_GR_AnchorsLayout>
+  <CBF_GR_AnchorsEstimated>Pawns from anchors are a rough estimate from the districts and only a lower bound (≥). The layout is being planned for a closer count.</CBF_GR_AnchorsEstimated>
+  <CBF_GR_SmallVaries>Small places such as villages vary a lot in the game, by about a quarter up or down from map to map.</CBF_GR_SmallVaries>
 </LanguageData>

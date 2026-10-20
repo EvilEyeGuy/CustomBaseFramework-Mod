@@ -19,7 +19,8 @@
     <minBuildingGap>1</minBuildingGap>
     <maxBuildingGap>2</maxBuildingGap>
     <targetBuilt>0.68</targetBuilt>
-    <defenderPoints>260~480</defenderPoints>
+    <defenderPoints>900</defenderPoints>
+    <wealthFactor>0.17</wealthFactor>
     <defendersOnWall>0.28</defendersOnWall>
 
     <wards>
@@ -50,7 +51,7 @@
             <list>CBF_MO_Garrison_Gate</list>
             <count>3~4</count>
             <post>Gate</post>
-          </li>
+          <fixed>true</fixed></li>
           <li>
             <list>CBF_MO_Garrison_Inside</list>
             <count>4~5</count>
@@ -112,7 +113,7 @@
             <list>CBF_MO_Garrison_Gate</list>
             <count>1~3</count>
             <post>Gate</post>
-          </li>
+          <fixed>true</fixed></li>
           <li>
             <list>CBF_MO_Garrison_Inside</list>
             <count>3~4</count>
@@ -163,6 +164,7 @@
               <fence>true</fence>
               <weight>1</weight><plants>
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Carrots</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Grape</li>
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Garlic</li>
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Onions</li>
                 <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Pumpkins</li>
@@ -188,6 +190,20 @@
               </tags></li></fields>
             <entries>
               <li><tag>CBF_MO_Mill</tag><count>1~1</count></li>
+            </entries>
+          </li>
+          <li>
+            <name>Vineyard</name><fields><li>
+              <count>1~2</count>
+              <fence>true</fence>
+              <weight>1</weight><plants>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Plant_Grape</li>
+               </plants>
+              <tags>
+                <li>CBF_MO_Winery</li>
+              </tags></li></fields>
+            <entries>
+              <li><tag>CBF_MO_Winery</tag><count>1~1</count></li>
             </entries>
           </li>
           <li>
@@ -222,7 +238,6 @@
             <entries>
               <li><tag>CBF_MO_Hut</tag><count>2~4</count><filler>true</filler></li>
               <li><tag>CBF_MO_HuntingLodge</tag><count>0~1</count></li>
-              <li><tag>CBF_MO_Winery</tag><count>0~1</count></li>
             </entries>
           </li>
         </districts>

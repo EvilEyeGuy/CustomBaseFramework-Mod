@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PawnListDef>
+    <defName>CBF_Pawns_CryptSkeletons</defName>
+    <label>crypt skeletons</label>
+    <role>Guard</role>
+    <radius>0</radius>
+    <members>
+      <li><kind>CBF_SkeletonWarrior</kind><weight>1</weight></li>
+      <li><kind>CBF_SkeletonWarrior</kind><weight>1</weight></li>
+      <li><kind>CBF_SkeletonWarrior</kind><weight>1</weight></li>
+      <li><kind>CBF_SkeletonGuard</kind><weight>1</weight></li>
+      <li><kind>CBF_SkeletonArcher</kind><weight>1</weight></li>
+      <li><kind>CBF_SkeletonArcher</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.RuinDef>
+    <defName>CBF_MO_Ruin_Crypt</defName>
+    <label>crypt with skeletons</label>
+    <occupation>Builder</occupation>
+    <lootFactor>1</lootFactor>
+    <lootWithOccupiers>0</lootWithOccupiers>
+    <creatures>CBF_Pawns_CryptSkeletons</creatures>
+  </CustomBaseFramework.RuinDef>
+
+</Defs>

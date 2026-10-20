@@ -45,7 +45,7 @@ Next: settlement garrisons based on raid points, and a quest editor for modders.
 
 ![GitHub](https://raw.githubusercontent.com/EvilEyeGuy/CustomBaseFramework-Mod/workshop/h10_github.png?v=1)
 
-[![Wiki & Guide](https://raw.githubusercontent.com/EvilEyeGuy/CustomBaseFramework-Mod/workshop/knopf_wiki.png?v=1)](https://github.com/EvilEyeGuy/CustomBaseFramework-Mod/wiki) [![Report a bug](https://raw.githubusercontent.com/EvilEyeGuy/CustomBaseFramework-Mod/workshop/knopf_bugs.png?v=1)](https://github.com/EvilEyeGuy/CustomBaseFramework-Mod/issues) [![Change notes](https://raw.githubusercontent.com/EvilEyeGuy/CustomBaseFramework-Mod/workshop/knopf_changes.png?v=1)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3813689040)
+[![Report a bug](https://raw.githubusercontent.com/EvilEyeGuy/CustomBaseFramework-Mod/workshop/knopf_bugs.png?v=1)](https://github.com/EvilEyeGuy/CustomBaseFramework-Mod/issues) [![Change notes](https://raw.githubusercontent.com/EvilEyeGuy/CustomBaseFramework-Mod/workshop/knopf_changes.png?v=1)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3813689040)
 
 Report problems as an [issue](https://github.com/EvilEyeGuy/CustomBaseFramework-Mod/issues) or in the Workshop comments, with a log and a short note on what happened. If settlement generation fails, please add the CBF report from:
 

@@ -18,9 +18,7 @@ It ships with ready-made settlements for the base game, Medieval Overhaul, Vanil
 
 ![Landmarks](https://raw.githubusercontent.com/EvilEyeGuy/CustomBaseFramework-Mod/workshop/Landmarken.jpg?v=1)
 
-## Garrisons and performance
-
-![Spawn mechanic](https://raw.githubusercontent.com/EvilEyeGuy/CustomBaseFramework-Mod/workshop/spawn_mechanic.png?v=1)
+## Performance
 
 ![Performance](https://raw.githubusercontent.com/EvilEyeGuy/CustomBaseFramework-Mod/workshop/performance.png?v=12)
 

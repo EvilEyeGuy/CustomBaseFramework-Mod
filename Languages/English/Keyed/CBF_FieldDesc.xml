@@ -149,6 +149,8 @@
   <CBF_FieldDesc_weightOverDepth>Curve that replaces weight by depth. Settlements have no depth, so only the value at 0 counts.</CBF_FieldDesc_weightOverDepth>
   <CBF_FieldDesc_weightOverWealth>Curve over the wealth of the player's home map. Its value multiplies weight.</CBF_FieldDesc_weightOverWealth>
   <CBF_FieldDesc_to>defName of the replacement. Targets that do not exist are skipped.</CBF_FieldDesc_to>
+  <CBF_FieldDesc_LegendEntry_crops>On a plant vessel (pot, hydroponics and similar): name of a crop list (CropListDef). Each vessel draws one plant by weight, sets it as the plant to grow and places it on every cell of the vessel. Plants that cannot grow in the vessel are skipped.</CBF_FieldDesc_LegendEntry_crops>
+  <CBF_FieldDesc_LegendEntry_plants>On a plant vessel: single plants (defName), equally weighted. Only used when crops is empty or yields nothing. Export writes the plants standing in the vessel here.</CBF_FieldDesc_LegendEntry_plants>
   <CBF_FieldDesc_LegendEntry_count>Stack size of the thing placed at this cell, for items. Buildings ignore it.</CBF_FieldDesc_LegendEntry_count>
   <CBF_FieldDesc_minRiverWidth>Smallest river width in cells that counts for a harbor. The sea always counts.</CBF_FieldDesc_minRiverWidth>
   <CBF_FieldDesc_range>How far from the settlement harbor pieces may stand, in cells.</CBF_FieldDesc_range>
@@ -217,4 +219,6 @@
   <CBF_FieldDesc_anchorPointShare>How much of the points of pawns from pawn anchors is taken from the garrison budget, 0 to 1. Default 0.5.</CBF_FieldDesc_anchorPointShare>
   <CBF_FieldDesc_garrisonShare>Share of the bought defenders for this ward or dungeon level in percent. -1 means automatic: by size for wards, rising towards the bottom for dungeon levels. The last one gets the rest.</CBF_FieldDesc_garrisonShare>
   <CBF_FieldDesc_fixed>Only with a garrison factor: places the pawns of this entry as fixed garrison, min first, then extras up to max by weight while the budget lasts.</CBF_FieldDesc_fixed>
+  <CBF_FieldDesc_Dekospec_placement>Street decor: Edge beside the road (default) or Road on the road itself.</CBF_FieldDesc_Dekospec_placement>
+  <CBF_FieldDesc_Dekospec_facing>Street decor: Road (towards the road), Along, None or Auto (default: towards the road at the edge, along the road on the road).</CBF_FieldDesc_Dekospec_facing>
 </LanguageData>

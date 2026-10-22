@@ -133,13 +133,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>faction</code></td>
 <td>text</td>
 <td>none</td>
-<td>The faction (FactionDef defName) these rules apply to. It may stay empty when the def only lists neutral pawn kinds.</td>
+<td>The faction (FactionDef defName) these rules apply to. A def without faction does nothing.</td>
 </tr>
 <tr>
 <td><code>neutral</code></td>
 <td>list of text</td>
 <td>none</td>
-<td>Older field. It is still loaded but no longer protects pawn kinds from the swap.</td>
+<td>Obsolete and ignored. It stays loadable so older mods do not break.</td>
 </tr>
 <tr>
 <td><code>priority</code></td>

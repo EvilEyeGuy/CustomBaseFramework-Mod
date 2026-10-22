@@ -332,7 +332,13 @@
   <CBF_D_Layout_Chambers>Chambers</CBF_D_Layout_Chambers>
   <CBF_D_Layout_CorridorsTip>A main corridor network, the rooms dock onto it.</CBF_D_Layout_CorridorsTip>
   <CBF_D_Layout_ChambersTip>Rooms sit directly against each other, without corridors in between.</CBF_D_Layout_ChambersTip>
-  <CBF_FieldDesc_layout>How the level is built. Corridors: a main corridor network with rooms docked onto it. Chambers: rooms directly against each other. Rows: a main corridor with bends, rooms in rows along both sides.</CBF_FieldDesc_layout>
+  <CBF_D_Layout_Grid>Grid</CBF_D_Layout_Grid>
+  <CBF_D_Layout_GridTip>Rooms on a loose grid with thick rock between them, joined by short straight passages and many loops.</CBF_D_Layout_GridTip>
+  <CBF_D_Layout_Temple>Temple</CBF_D_Layout_Temple>
+  <CBF_D_Layout_TempleTip>A large central hall with wings laid out in pairs along its axes, side chambers and a winding cave passage.</CBF_D_Layout_TempleTip>
+  <CBF_D_Layout_Warren>Warren</CBF_D_Layout_Warren>
+  <CBF_D_Layout_WarrenTip>Rooms grow against each other, share their walls and open into each other through doors in the wall.</CBF_D_Layout_WarrenTip>
+  <CBF_FieldDesc_layout>How the level is built. Corridors: a main corridor network with rooms docked onto it. Chambers: rooms directly against each other. Rows: a main corridor with bends, rooms in rows along both sides. Grid: rooms on a loose grid with short passages and many loops. Temple: a central hall with paired wings. Warren: rooms sharing their walls.</CBF_FieldDesc_layout>
   <CBF_D_Layout_Cave>Cave</CBF_D_Layout_Cave>
   <CBF_D_Layout_CaveTip>Natural cave chambers without built walls.</CBF_D_Layout_CaveTip>
   <CBF_D_Layout_Rows>Rows</CBF_D_Layout_Rows>
@@ -459,4 +465,47 @@
   <CBF_GR_AnchorsLayout>Counted on the planned layout (≈). A settlement varies by a few pawns from map to map, the game can field somewhat more.</CBF_GR_AnchorsLayout>
   <CBF_GR_AnchorsEstimated>Pawns from anchors are a rough estimate from the districts and only a lower bound (≥). The layout is being planned for a closer count.</CBF_GR_AnchorsEstimated>
   <CBF_GR_SmallVaries>Small places such as villages vary a lot in the game, by about a quarter up or down from map to map.</CBF_GR_SmallVaries>
+  <CBF_S_Deco>Street decor</CBF_S_Deco>
+  <CBF_S_DecoNone>none</CBF_S_DecoNone>
+  <CBF_S_DecoCount>{0} entries</CBF_S_DecoCount>
+  <CBF_S_DecoSketchTip>Sketch of a stretch of road with the entries below in their colours. Spacing and max are shown roughly.</CBF_S_DecoSketchTip>
+  <CBF_S_DecoSketchEmpty>No street decor yet. Add a template below.</CBF_S_DecoSketchEmpty>
+  <CBF_S_DecoPlaceTip>Edge: beside the road. Road: on the road itself.</CBF_S_DecoPlaceTip>
+  <CBF_S_DecoWhatTip>A piece, a piece category or an object list. Single things go into an object list.</CBF_S_DecoWhatTip>
+  <CBF_S_DecoSpacing>Spacing</CBF_S_DecoSpacing>
+  <CBF_S_DecoSpacingTip>Cells between two placements, as a range. Smaller means denser.</CBF_S_DecoSpacingTip>
+  <CBF_S_DecoMax>Max</CBF_S_DecoMax>
+  <CBF_S_DecoMaxTip>At most this many per ward. 0 means no limit.</CBF_S_DecoMaxTip>
+  <CBF_S_WeightShortTip>Weight against the other entries of this ward.</CBF_S_WeightShortTip>
+  <CBF_S_DecoFacingTip>Which way the things face.</CBF_S_DecoFacingTip>
+  <CBF_S_DecoEdge>Edge</CBF_S_DecoEdge>
+  <CBF_S_DecoRoad>Road</CBF_S_DecoRoad>
+  <CBF_S_DecoPick>pick …</CBF_S_DecoPick>
+  <CBF_S_DecoPickPiece>Piece or category …</CBF_S_DecoPickPiece>
+  <CBF_S_DecoPickList>Object list …</CBF_S_DecoPickList>
+  <CBF_S_DecoF_Auto>automatic</CBF_S_DecoF_Auto>
+  <CBF_S_DecoF_Road>towards the road</CBF_S_DecoF_Road>
+  <CBF_S_DecoF_Along>along the road</CBF_S_DecoF_Along>
+  <CBF_S_DecoF_None>any</CBF_S_DecoF_None>
+  <CBF_S_DecoTemplates>Template:</CBF_S_DecoTemplates>
+  <CBF_S_DecoT_Light>Light</CBF_S_DecoT_Light>
+  <CBF_S_DecoT_LightTip>Adds a street light entry at the edge with matching spacing, then lets you pick or create the object list.</CBF_S_DecoT_LightTip>
+  <CBF_S_DecoT_Side>Edge</CBF_S_DecoT_Side>
+  <CBF_S_DecoT_SideTip>Adds an entry for benches, barrels and crates at the edge, then lets you pick or create the object list.</CBF_S_DecoT_SideTip>
+  <CBF_S_DecoT_Sign>Sign</CBF_S_DecoT_Sign>
+  <CBF_S_DecoT_SignTip>Adds a sign entry at the edge with wide spacing, then lets you pick or create the object list.</CBF_S_DecoT_SignTip>
+  <CBF_S_DecoT_Road>Road</CBF_S_DecoT_Road>
+  <CBF_S_DecoT_RoadTip>Adds an entry on the road, at most 3, then lets you pick or create the object list.</CBF_S_DecoT_RoadTip>
+  <CBF_S_DecoT_Piece>Piece</CBF_S_DecoT_Piece>
+  <CBF_S_DecoT_PieceTip>Adds an entry for small street pieces, at most 2, then lets you pick a piece or category.</CBF_S_DecoT_PieceTip>
+  <CBF_S_DecoOwn>Own entry</CBF_S_DecoOwn>
+  <CBF_S_DecoOwnTip>Pick a piece, a category or an object list yourself.</CBF_S_DecoOwnTip>
+  <CBF_S_DecoAdded>Street decor added</CBF_S_DecoAdded>
+  <CBF_S_DecoChanged>Street decor changed</CBF_S_DecoChanged>
+  <CBF_S_DecoEditList>Open the object list and see or change what it places.</CBF_S_DecoEditList>
+  <CBF_S_DecoEmptyList>empty, nothing is placed</CBF_S_DecoEmptyList>
+  <CBF_S_DecoSpawns>places: {0}</CBF_S_DecoSpawns>
+  <CBF_S_DecoSpawnsMore>places: {0} and more ({1})</CBF_S_DecoSpawnsMore>
+  <CBF_D_LayoutsTip>Tick one or more layouts. With several, each generated level rolls one of them.</CBF_D_LayoutsTip>
+  <CBF_D_LayoutsRandom>Each generated level rolls one of the ticked layouts.</CBF_D_LayoutsRandom>
 </LanguageData>

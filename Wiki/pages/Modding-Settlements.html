@@ -501,7 +501,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td><code>decor</code>, <code>defenses</code></td>
 <td></td>
-<td>Pieces spread along the lanes and squares of this ward, see <a href="Dekospec.html">Dekospec</a>.</td>
+<td>Street decoration and defensive positions along the lanes and squares of this ward: small pieces, or single things from an object list, next to the lane or on it, turned to the street. See <a href="Dekospec.html">Dekospec</a> and <a href="#street-decoration">Street decoration</a>.</td>
 <td>none</td>
 </tr>
 <tr>
@@ -621,7 +621,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 </tbody>
 </table>
-<p>A ward with a garrison uses only its own entries. A ward without one takes its share of the settlement type's <code>defenderPoints</code>. <code>defendersOnWall</code> (default 0.25) sets how many of those point-based defenders stand on the wall.</p>
+<p>Without a garrison factor (<code>wealthFactor</code> 0) a ward with a garrison uses only its own entries, and a ward without one takes its share of the settlement type's <code>defenderPoints</code>. With a garrison factor above 0 the settlement works on a shared point budget: fixed garrison entries are placed first, and the rest of the budget buys pawns for all wards, including wards with their own garrison. See <a href="Modding-Pawns.html#garrisons">Garrison points</a> for both modes. <code>defendersOnWall</code> (default 0.25) sets how many of those point-based defenders stand on the wall.</p>
 <h2 id="districts-and-building-entries">Districts and building entries</h2>
 <p>A district is a group of buildings that stay together. Each ward has one or more districts. A building entry asks for a number of buildings from a category, or for one specific piece.</p>
 <p>From <code>CBF_Plan_FortressCity_New</code>, town ward:</p>
@@ -808,6 +808,24 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>To tie a building to a field, give the building its own fields instead of a condition. The district lists the building and a field node with the building's category in <code>tags</code>, as the mill and the winery in <code>CBF_Plan_Village_New</code> do. The field then only exists where the building stands.</li>
 <li>No space is kept free for a conditional entry. If the settlement is already full when the condition is met, the entry can still be missing.</li>
 <li>A minimum on a conditional entry only applies once the condition is met. It never makes a layout invalid while the condition is open.</li>
+</ul>
+<h3 id="street-decoration">Street decoration</h3>
+<p>The <code>decor</code> list of a ward places street decoration after the buildings. Each entry names a small piece (<code>piece</code> or <code>tag</code>) or an object list (<code>objects</code>), where it goes (<code>placement</code>) and how it is turned (<code>facing</code>). From <code>CBF_Plan_MarketTown_New</code>:</p>
+<pre><code class="language-xml">&lt;<span class="xt">decor</span>&gt;
+  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_MO_Street_Light&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">spacing</span>&gt;8~12&lt;/<span class="xt">spacing</span>&gt;&lt;/<span class="xt">li</span>&gt;
+  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_MO_Street_Side&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">spacing</span>&gt;5~9&lt;/<span class="xt">spacing</span>&gt;&lt;/<span class="xt">li</span>&gt;
+  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">objects</span>&gt;CBF_MO_Street_Road&lt;/<span class="xt">objects</span>&gt;&lt;<span class="xt">placement</span>&gt;Road&lt;/<span class="xt">placement</span>&gt;&lt;<span class="xt">spacing</span>&gt;25~40&lt;/<span class="xt">spacing</span>&gt;&lt;<span class="xt">max</span>&gt;3&lt;/<span class="xt">max</span>&gt;&lt;/<span class="xt">li</span>&gt;
+  &lt;<span class="xt">li</span>&gt;&lt;<span class="xt">tag</span>&gt;CBF_MO_StreetDeco&lt;/<span class="xt">tag</span>&gt;&lt;<span class="xt">max</span>&gt;2&lt;/<span class="xt">max</span>&gt;&lt;<span class="xt">weight</span>&gt;0.3&lt;/<span class="xt">weight</span>&gt;&lt;/<span class="xt">li</span>&gt;
+&lt;/<span class="xt">decor</span>&gt;
+</code></pre>
+<ul>
+<li>Entries with the same placement share the lanes. At every spot one of them is picked by <code>weight</code>, and its <code>spacing</code> sets the gap to the next spot.</li>
+<li><code>Edge</code> needs free ground with one free cell all around. Decoration never stands against a wall, a door, a gate or a fence.</li>
+<li><code>Road</code> keeps at least 2 cells of the lane free and stays 3 cells away from gates, doors, towers and crossings. It is never placed on bridges. Squares are allowed.</li>
+<li>The south side of a decoration piece is its front. With <code>facing</code> Road it is turned to the lane. Lamps and other things that can be rotated face the lane as well.</li>
+<li>Single things next to the lane get the material list's <code>FLOOR_ROAD_EDGE</code> floor if it has one. Pieces bring their own floor.</li>
+<li>CBF ships object lists <code>CBF_&lt;set&gt;_Street_Light</code>, <code>_Side</code>, <code>_Road</code> (and <code>CBF_MO_Street_Sign</code>) and the categories <code>CBF_&lt;set&gt;_StreetDeco</code> for the sets MO, Modern, VFEM2, Classical, Western and Tribal. Lists whose mod is missing stay empty, and the ward keeps its lanes clear. These names are only the shipped examples: any object list, piece or category can be used, and the templates in the editor do not look for names.</li>
+<li><code>lanterns</code> and <code>lanternGap</code> still work for older plans.</li>
 </ul>
 <h2 id="fields-and-pens">Fields and pens</h2>
 <p>Fields and pens belong to a district in the suburb or countryside ward. A field is a crop area laid out next to a building of the district. A pen is a fenced area with animals. From <code>CBF_Plan_Village_New</code>:</p>
@@ -1052,8 +1070,20 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <tr>
 <td><code>defenderPoints</code></td>
 <td></td>
-<td>Points for defenders of wards without a garrison.</td>
+<td>Without a garrison factor: points for defenders of wards without a garrison. With <code>wealthFactor</code> above 0: the minimum garrison budget.</td>
 <td><code>180~420</code></td>
+</tr>
+<tr>
+<td><code>wealthFactor</code></td>
+<td></td>
+<td>Garrison factor, 0 to 5. Above 0 the settlement spends your raid points times this factor on defenders, but never less than <code>defenderPoints</code>. 0 keeps the fixed garrison mode.</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>anchorPointShare</code></td>
+<td></td>
+<td>Share of the points of pawns from pawn anchors that counts against the garrison budget, 0 to 1.</td>
+<td><code>0.5</code></td>
 </tr>
 <tr>
 <td><code>defendersOnWall</code></td>
@@ -1110,4 +1140,4 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><a href="Dekospec.html">Dekospec</a> (decor and defenses)</li>
 <li><a href="HafenSpec.html">HafenSpec</a> (harbor)</li>
 <li><a href="Field-Reference.html">Field reference</a> (all pages)</li>
-</ul><div class="schritte"><a href="Modding-Patches.html"><span>Previous</span>XML patches</a><a class="weiter" href="Modding-Pieces.html"><span>Next</span>Pieces and categories in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#what-a-settlement-type-is">What a settlement type is</a><a class="t2" href="#minimal-example">Minimal example</a><a class="t2" href="#tune-the-example">Tune the example</a><a class="t2" href="#header-fields">Header fields</a><a class="t3" href="#mayrequire">MayRequire</a><a class="t2" href="#wards">Wards</a><a class="t3" href="#walls-emplacements-and-gatehouses">Walls, emplacements and gatehouses</a><a class="t3" href="#outworks">Outworks</a><a class="t3" href="#garrison">Garrison</a><a class="t2" href="#districts-and-building-entries">Districts and building entries</a><a class="t3" href="#district-nodes">District nodes</a><a class="t3" href="#building-entries">Building entries</a><a class="t3" href="#conditional-entries">Conditional entries</a><a class="t2" href="#fields-and-pens">Fields and pens</a><a class="t3" href="#field-nodes">Field nodes</a><a class="t3" href="#pen-nodes">Pen nodes</a><a class="t2" href="#harbors">Harbors</a><a class="t2" href="#tuning-fields">Tuning fields</a><a class="t2" href="#how-cbf-picks-a-plan-for-a-faction">How CBF picks a plan for a faction</a><a class="t2" href="#tips">Tips</a><a class="t2" href="#field-reference">Field reference</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+</ul><div class="schritte"><a href="Modding-Patches.html"><span>Previous</span>XML patches</a><a class="weiter" href="Modding-Pieces.html"><span>Next</span>Pieces and categories in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#what-a-settlement-type-is">What a settlement type is</a><a class="t2" href="#minimal-example">Minimal example</a><a class="t2" href="#tune-the-example">Tune the example</a><a class="t2" href="#header-fields">Header fields</a><a class="t3" href="#mayrequire">MayRequire</a><a class="t2" href="#wards">Wards</a><a class="t3" href="#walls-emplacements-and-gatehouses">Walls, emplacements and gatehouses</a><a class="t3" href="#outworks">Outworks</a><a class="t3" href="#garrison">Garrison</a><a class="t2" href="#districts-and-building-entries">Districts and building entries</a><a class="t3" href="#district-nodes">District nodes</a><a class="t3" href="#building-entries">Building entries</a><a class="t3" href="#conditional-entries">Conditional entries</a><a class="t3" href="#street-decoration">Street decoration</a><a class="t2" href="#fields-and-pens">Fields and pens</a><a class="t3" href="#field-nodes">Field nodes</a><a class="t3" href="#pen-nodes">Pen nodes</a><a class="t2" href="#harbors">Harbors</a><a class="t2" href="#tuning-fields">Tuning fields</a><a class="t2" href="#how-cbf-picks-a-plan-for-a-faction">How CBF picks a plan for a faction</a><a class="t2" href="#tips">Tips</a><a class="t2" href="#field-reference">Field reference</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

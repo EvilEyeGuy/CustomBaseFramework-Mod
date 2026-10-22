@@ -20,6 +20,11 @@
       <li>
         <name>Upper</name>
         <label>upper level</label>
+        <layouts>
+          <li>Corridors</li>
+          <li>Rows</li>
+          <li>Warren</li>
+        </layouts>
         <caveWidth>1~3</caveWidth>
         <caveShare>0.3</caveShare>
         <secretChance>0.1</secretChance>
@@ -36,7 +41,6 @@
             <districts>
               <li>
                 <name>Lair</name>
-                <layout>Rows</layout>
                 <entries>
                   <li><piece>CBF_MO_Dungeon_CultistDormitory_Rundown_A</piece><count>1~1</count></li>
                   <li><tag>CBF_Dungeon_CultistDormitory</tag><count>3~4</count></li>
@@ -64,7 +68,6 @@
             <districts>
               <li>
                 <name>Hideout</name>
-                <layout>Rows</layout>
                 <entries>
                   <li><piece>CBF_MO_Dungeon_HideoutT1_Chapel_A</piece><count>1~1</count><priority>Critical</priority></li>
                   <li><tag>CBF_Dungeon_HideoutT1</tag><count>2~3</count></li>

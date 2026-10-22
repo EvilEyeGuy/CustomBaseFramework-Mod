@@ -28,15 +28,24 @@
     <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
-<CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_MO_MilitaryWallAttachment</defName>
-    <label>military wall attachment</label>
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_Military</defName>
+    <label>military</label>
     <zones>
       <li>Inside</li>
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_MO_MilitaryWallAttachment</defName>
+    <label>military wall attachment</label>
+    <zones>
+      <li>Inside</li>
+    </zones>
+    <needsRoadAccess>true</needsRoadAccess>
+    <wallPart>Attachment</wallPart>
+  </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_MO_WallGateHouse</defName>
@@ -182,6 +191,7 @@
       <li>Inside</li>
     </zones>
     <needsRoadAccess>false</needsRoadAccess>
+    <pieceType>DungeonRoom</pieceType>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -192,6 +202,8 @@
     </zones>
     <needsRoadAccess>false</needsRoadAccess>
     <blockMax>1</blockMax>
+    <openAccess>true</openAccess>
+    <farmhouse>true</farmhouse>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -212,6 +224,7 @@
     </zones>
     <needsRoadAccess>true</needsRoadAccess>
     <blockMax>3</blockMax>
+    <farmhouse>true</farmhouse>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -240,6 +253,7 @@
       <li>Center</li>
     </zones>
     <blockMax>1</blockMax>
+    <openAccess>true</openAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -249,6 +263,7 @@
       <li>Center</li>
     </zones>
     <blockMax>2</blockMax>
+    <openAccess>true</openAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -315,18 +330,21 @@
     <defName>WallGateHouse</defName>
     <label>gatehouse</label>
     <needsRoadAccess>false</needsRoadAccess>
+    <wallPart>Gatehouse</wallPart>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>WallSegment</defName>
     <label>wall segment</label>
     <needsRoadAccess>false</needsRoadAccess>
+    <wallPart>Segment</wallPart>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>WallTower</defName>
     <label>wall tower</label>
     <needsRoadAccess>false</needsRoadAccess>
+    <wallPart>Tower</wallPart>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -336,15 +354,6 @@
       <li>Inside</li>
     </zones>
     <blockMax>2</blockMax>
-  </CustomBaseFramework.PieceCategoryDef>
-
-  <CustomBaseFramework.PieceCategoryDef>
-    <defName>CBF_MO_Military</defName>
-    <label>military</label>
-    <zones>
-      <li>Inside</li>
-    </zones>
-    <needsRoadAccess>true</needsRoadAccess>
   </CustomBaseFramework.PieceCategoryDef>
 
 </Defs>

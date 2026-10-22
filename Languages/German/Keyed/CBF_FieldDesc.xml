@@ -149,6 +149,8 @@
   <CBF_FieldDesc_weightOverDepth>Kurve, die weight nach Tiefe ersetzt. Siedlungen haben keine Tiefe, es zählt also nur der Wert bei 0.</CBF_FieldDesc_weightOverDepth>
   <CBF_FieldDesc_weightOverWealth>Kurve über den Wohlstand der Heimatkarte des Spielers. Ihr Wert vervielfacht weight.</CBF_FieldDesc_weightOverWealth>
   <CBF_FieldDesc_to>defName des Ersatzes. Ziele, die es nicht gibt, werden übergangen.</CBF_FieldDesc_to>
+  <CBF_FieldDesc_LegendEntry_crops>An einem Pflanzgefäß (Topf, Hydrokultur und Ähnliches): Name einer Pflanzenliste (CropListDef). Je Gefäß wird eine Pflanze nach Gewicht gezogen, als Anbaupflanze eingestellt und auf alle Felder des Gefäßes gesetzt. Pflanzen, die im Gefäß nicht wachsen, werden übergangen.</CBF_FieldDesc_LegendEntry_crops>
+  <CBF_FieldDesc_LegendEntry_plants>An einem Pflanzgefäß: einzelne Pflanzen (defName), gleich gewichtet. Gilt nur, wenn crops leer ist oder nichts liefert. Der Export schreibt hier die Pflanzen, die im Gefäß stehen.</CBF_FieldDesc_LegendEntry_plants>
   <CBF_FieldDesc_LegendEntry_count>Stapelgröße des Dings auf diesem Feld, für Gegenstände. Gebäude beachten den Wert nicht.</CBF_FieldDesc_LegendEntry_count>
   <CBF_FieldDesc_minRiverWidth>Kleinste Flussbreite in Feldern, die für einen Hafen zählt. Das Meer zählt immer.</CBF_FieldDesc_minRiverWidth>
   <CBF_FieldDesc_range>Wie weit vom Ort entfernt Hafenstücke stehen dürfen, in Feldern.</CBF_FieldDesc_range>
@@ -217,4 +219,6 @@
   <CBF_FieldDesc_anchorPointShare>Wie viel der Punkte von Pawns aus Pawn-Ankern vom Garnisonsbudget abgezogen wird, 0 bis 1. Standard 0,5.</CBF_FieldDesc_anchorPointShare>
   <CBF_FieldDesc_garrisonShare>Anteil der gekauften Verteidiger für diesen Stadtteil oder diese Verliesebene in Prozent. -1 heißt automatisch: bei Stadtteilen nach Größe, bei Verliesebenen nach unten steigend. Der letzte bekommt den Rest.</CBF_FieldDesc_garrisonShare>
   <CBF_FieldDesc_fixed>Nur mit Garnisonsfaktor: setzt die Pawns dieses Eintrags als feste Garnison, zuerst Min, dann weitere bis Max nach Gewicht, solange das Budget reicht.</CBF_FieldDesc_fixed>
+  <CBF_FieldDesc_Dekospec_placement>Straßendeko: Edge neben der Straße (Standard) oder Road auf der Straße selbst.</CBF_FieldDesc_Dekospec_placement>
+  <CBF_FieldDesc_Dekospec_facing>Straßendeko: Road (zur Straße), Along (längs), None (beliebig) oder Auto (Standard: am Rand zur Straße, auf der Straße längs).</CBF_FieldDesc_Dekospec_facing>
 </LanguageData>

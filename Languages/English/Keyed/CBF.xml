@@ -164,7 +164,7 @@
   <CBF_Field_gatehouses>Gatehouses</CBF_Field_gatehouses>
   <CBF_FieldDesc_gatehouses>Which pieces may serve as gatehouses.</CBF_FieldDesc_gatehouses>
   <CBF_Field_defenderPoints>Defender strength</CBF_Field_defenderPoints>
-  <CBF_FieldDesc_defenderPoints>How strong the defenders are, as a point range.</CBF_FieldDesc_defenderPoints>
+  <CBF_FieldDesc_defenderPoints>Without a garrison factor: how strong the point-based defenders are, as a point range. With wealthFactor above 0: the minimum garrison budget.</CBF_FieldDesc_defenderPoints>
   <CBF_Field_factionTags>Factions</CBF_Field_factionTags>
   <CBF_FieldDesc_factionTags>Which factions may use this settlement type.</CBF_FieldDesc_factionTags>
   <CBF_Field_count>Count</CBF_Field_count>
@@ -280,7 +280,13 @@ The originals are deleted afterwards. Files from other mods and hand written one
   <CBF_EmptyPainted>{0} cells marked as empty.</CBF_EmptyPainted>
   <CBF_Field_tower>tower</CBF_Field_tower>
   <CBF_Field_gatehouse>gatehouse</CBF_Field_gatehouse>
-  <CBF_NoWallPieces>No piece in category {0}. Draw one first.</CBF_NoWallPieces>
+  <CBF_NoWallPieces>No piece of kind {0}. Draw one first.</CBF_NoWallPieces>
+  <CBF_DungeonPart_Corridor>corridor piece</CBF_DungeonPart_Corridor>
+  <CBF_DungeonPart_Entrance>entrance</CBF_DungeonPart_Entrance>
+  <CBF_DungeonPart_Stairs>stairs</CBF_DungeonPart_Stairs>
+  <CBF_WallPart_Segment>wall segment</CBF_WallPart_Segment>
+  <CBF_WallPart_Tower>tower</CBF_WallPart_Tower>
+  <CBF_WallPart_Gatehouse>gatehouse</CBF_WallPart_Gatehouse>
   <CBF_WallsFromProfile>Empty, so the wall profile {0} decides: {1}</CBF_WallsFromProfile>
   <CBF_WallsNoProfile>Empty, and there is no wall profile for this style and thickness. The settlement gets the generic wall.</CBF_WallsNoProfile>
   <CBF_MenuExportAll>Export all areas ({0})</CBF_MenuExportAll>
@@ -625,10 +631,14 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_PawnPlaceFailed>{0} could not be placed. Details are in the log.</CBF_PawnPlaceFailed>
   <CBF_GelaendeProbeAbgelegt>Terrain sample in {0} (image, list and .gel)</CBF_GelaendeProbeAbgelegt>
   <CBF_NothingSelected>Nothing selected.</CBF_NothingSelected>
+  <CBF_DefNotInFile>{0} is not in {1}.</CBF_DefNotInFile>
   <CBF_WriteFailedReason>Writing failed: {0}</CBF_WriteFailedReason>
   <CBF_FileNoRoot>The file {0} has no root node.</CBF_FileNoRoot>
   <CBF_ProjectFolderMissing>The project folder was not found.</CBF_ProjectFolderMissing>
   <CBF_ReplaceSameAsTarget>Replacement and target are the same.</CBF_ReplaceSameAsTarget>
+  <CBF_RenameFailed>{0} could not be renamed because a file involved could not be written. Everything is back as before, details in the log.</CBF_RenameFailed>
+  <CBF_DeleteFailed>{0} could not be deleted because a file involved could not be written. Everything is back as before, details in the log.</CBF_DeleteFailed>
+  <CBF_UndoDefDeleted>{0} has been deleted since. This step can no longer be undone or redone.</CBF_UndoDefDeleted>
   <CBF_DeleteSourceStuck>The source file of {0} could not be removed. Nothing was deleted.</CBF_DeleteSourceStuck>
   <CBF_NameTableLocked>The name table could not be changed. Nothing was changed.</CBF_NameTableLocked>
   <CBF_PlanFileMissing>The file for {0} was not found.</CBF_PlanFileMissing>

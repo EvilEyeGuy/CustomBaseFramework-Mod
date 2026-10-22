@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[defName="PColony"]</xpath>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/FactionDef[defName="PColony"]</xpath>
+      <value>
+        <li Class="CustomBaseFramework.CBFForeignFactionExtension" />
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/MapGeneratorDef[defName="KCSG_Base_Faction"]</xpath>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/MapGeneratorDef[defName="KCSG_Base_Faction"]</xpath>
+      <value>
+        <li Class="CustomBaseFramework.CBFTakeoverGeneratorExtension" />
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

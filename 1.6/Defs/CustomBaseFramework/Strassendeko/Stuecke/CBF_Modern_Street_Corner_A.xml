@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="BotchJob.Profaned">
+    <defName>CBF_Modern_Street_Corner_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Modern_StreetDeco</li>
+    </categories>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>B</symbol><thing>AncientPostbox</thing></li>
+      <li><symbol>L</symbol><thing>AncientLamppost</thing></li>
+      <li><symbol>p</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>u</symbol><thing>AncientBarrel</thing></li>
+      <li><symbol>Ø</symbol><terrain>PavedTile</terrain></li>
+    </legend>
+    <mask>
+      <li>.####.</li>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+    </mask>
+    <terrain>
+      <li>.ØØØØ.</li>
+      <li>ØØØØØØ</li>
+      <li>ØØØØØØ</li>
+      <li>ØØØØØØ</li>
+    </terrain>
+    <things>
+      <li>......</li>
+      <li>p.B.u.</li>
+      <li>......</li>
+      <li>L....p</li>
+    </things>
+    <roof>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

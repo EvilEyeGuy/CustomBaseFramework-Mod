@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+    <defName>CBF_Western_Street_HitchingPost_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Western_StreetDeco</li>
+    </categories>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>L</symbol><thing>ChemlampPost</thing><stuff>Steel</stuff><rotation>South</rotation></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>P</symbol><thing>Post</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule"><symbol>b</symbol><thing>Building_ChemshineBarrel</thing><rotation>South</rotation></li>
+      <li><symbol>Ŵ</symbol><terrain>WoodPlankFloor</terrain></li>
+    </legend>
+    <mask>
+      <li>######</li>
+      <li>######</li>
+      <li>######</li>
+    </mask>
+    <terrain>
+      <li>ŴŴŴŴŴŴ</li>
+      <li>ŴŴŴŴŴŴ</li>
+      <li>ŴŴŴŴŴŴ</li>
+    </terrain>
+    <things>
+      <li>b..b..</li>
+      <li>......</li>
+      <li>L.P.P.</li>
+    </things>
+    <roof>
+      <li>......</li>
+      <li>......</li>
+      <li>......</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

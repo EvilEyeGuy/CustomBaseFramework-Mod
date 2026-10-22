@@ -156,9 +156,15 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>layout</code></td>
-<td>DungeonBauweise (Corridors, Chambers, Cave, Rows), optional</td>
+<td>DungeonBauweise (Corridors, Chambers, Cave, Rows, Grid, Temple, Warren), optional</td>
 <td>none</td>
-<td>Optional dungeon layout override for this district: Corridors, Chambers, Cave or Rows. Without it, use the level layout. It is not a town district location preference.</td>
+<td>Optional dungeon layout override for this district: Corridors, Chambers, Cave, Rows, Grid, Temple or Warren. Without it, use the level layout. It is not a town district location preference.</td>
+</tr>
+<tr>
+<td><code>layouts</code></td>
+<td>list of DungeonBauweise, optional</td>
+<td>empty</td>
+<td>Optional list of layouts for this district. The district picks one of them from the seed. When the list is set, it replaces layout. Prefer the list on the level so that a level keeps one look.</td>
 </tr>
 <tr>
 <td><code>mines</code></td>

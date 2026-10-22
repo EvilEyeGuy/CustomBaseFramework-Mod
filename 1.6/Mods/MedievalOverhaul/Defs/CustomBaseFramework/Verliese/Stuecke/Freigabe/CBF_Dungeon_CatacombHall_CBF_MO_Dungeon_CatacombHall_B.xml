@@ -12,7 +12,6 @@
     <legend>
       <li><symbol>0</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
       <li><symbol>1</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>West</rotation></li>
-      <li><symbol>E</symbol><thing>Sarcophagus</thing><stuff>BlocksMarble</stuff><rotation>East</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>J</symbol><thing>DankPyon_RusticDoor</thing><stuff>WoodLog</stuff></li>
       <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
@@ -23,6 +22,10 @@
       <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
       <li><symbol>③</symbol><anchor>Sarcophagus3</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
       <li><symbol>④</symbol><anchor>Sarcophagus4</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑤</symbol><anchor>Sarcophagus5</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑥</symbol><anchor>Sarcophagus6</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑦</symbol><anchor>Sarcophagus7</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑧</symbol><anchor>Sarcophagus8</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
     </legend>
     <mask>
       <li>#############</li>
@@ -44,11 +47,11 @@
     </terrain>
     <things>
       <li>SSSSSSSSSSSSS</li>
-      <li>S0..E..0..E.S</li>
+      <li>S0..0..0..1.S</li>
       <li>S...........S</li>
       <li>J..n.....n..J</li>
       <li>S...........S</li>
-      <li>SE..0..E..1.S</li>
+      <li>S0..0..0..1.S</li>
       <li>SSSSSSSSSSSSS</li>
     </things>
     <roof>
@@ -62,11 +65,11 @@
     </roof>
     <anchors>
       <li>.............</li>
-      <li>.①①....②②....</li>
+      <li>.①①.②②.③③.④④.</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>
-      <li>....③③....④④.</li>
+      <li>.⑤⑤.⑥⑥.⑦⑦.⑧⑧.</li>
       <li>.............</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

@@ -18,12 +18,20 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>C</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff></li>
-      <li><symbol>R</symbol><thing>Sarcophagus</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
-      <li><symbol>L</symbol><thing>Sarcophagus</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
-      <li><symbol>S</symbol><thing>Sarcophagus</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>R</symbol><thing>CBF_Sarcophagus</thing><stuff>BlocksGranite</stuff><rotation>East</rotation></li>
+      <li><symbol>L</symbol><thing>CBF_Sarcophagus</thing><stuff>BlocksGranite</stuff><rotation>West</rotation></li>
+      <li><symbol>S</symbol><thing>CBF_Sarcophagus</thing><stuff>BlocksGranite</stuff></li>
       <li><symbol>G</symbol><thing>CBF_DungeonStairsDown</thing></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>H</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>U</symbol><anchor>StairsDown</anchor></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>③</symbol><anchor>Sarcophagus3</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>④</symbol><anchor>Sarcophagus4</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑤</symbol><anchor>Sarcophagus5</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑥</symbol><anchor>Sarcophagus6</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑦</symbol><anchor>Sarcophagus7</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑧</symbol><anchor>Sarcophagus8</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
     </legend>
 
     <mask>
@@ -76,13 +84,13 @@
 
     <anchors>
       <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>....U....</li>
-      <li>.........</li>
-      <li>.........</li>
-      <li>.........</li>
+      <li>..①①.②②..</li>
+      <li>.③.....④.</li>
+      <li>.③.UUU.④.</li>
+      <li>...UUU...</li>
+      <li>.⑤.UUU.⑥.</li>
+      <li>.⑤.....⑥.</li>
+      <li>..⑦⑦.⑧⑧..</li>
       <li>.........</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

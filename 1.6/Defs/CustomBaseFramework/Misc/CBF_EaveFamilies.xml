@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.EaveFamilyDef>
+    <defName>CBF_Eaves_Stony</defName>
+    <straight>AR_EaveStony</straight>
+    <outerCorner>AR_StonyEaveOuterCornerSmall</outerCorner>
+    <innerCorner>AR_StonyEaveInnerCornerSmall</innerCorner>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+  </CustomBaseFramework.EaveFamilyDef>
+
+  <CustomBaseFramework.EaveFamilyDef>
+    <defName>CBF_Eaves_Woody</defName>
+    <straight>AR_EaveWoody</straight>
+    <outerCorner>AR_WoodyEaveOuterCornerSmall</outerCorner>
+    <innerCorner>AR_WoodyEaveInnerCornerSmall</innerCorner>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+  </CustomBaseFramework.EaveFamilyDef>
+
+  <CustomBaseFramework.EaveFamilyDef>
+    <defName>CBF_Eaves_Metal</defName>
+    <straight>AR_Eave</straight>
+    <outerCorner>AR_EaveCorner</outerCorner>
+    <innerCorner>AR_EaveInnerCorner</innerCorner>
+    <fallback>true</fallback>
+  </CustomBaseFramework.EaveFamilyDef>
+
+</Defs>

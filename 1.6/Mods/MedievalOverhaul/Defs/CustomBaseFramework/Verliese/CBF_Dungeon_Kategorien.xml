@@ -11,6 +11,7 @@
     <defName>CBF_Dungeon_Corridor</defName>
     <label>dungeon corridor</label>
     <parent>CBF_Dungeon_Connector</parent>
+    <dungeonPart>Corridor</dungeonPart>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
@@ -71,12 +72,14 @@
     <defName>CBF_Dungeon_Entrance</defName>
     <label>dungeon entrance</label>
     <parent>DungeonRoom</parent>
+    <dungeonPart>Entrance</dungeonPart>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>
     <defName>CBF_Dungeon_Stairs</defName>
     <label>dungeon stairs</label>
     <parent>DungeonRoom</parent>
+    <dungeonPart>Stairs</dungeonPart>
   </CustomBaseFramework.PieceCategoryDef>
 
   <CustomBaseFramework.PieceCategoryDef>

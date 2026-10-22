@@ -183,9 +183,15 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </tr>
 <tr>
 <td><code>layout</code></td>
-<td>DungeonBauweise (Corridors, Chambers, Cave, Rows)</td>
+<td>DungeonBauweise (Corridors, Chambers, Cave, Rows, Grid, Temple, Warren)</td>
 <td><code>Corridors</code></td>
-<td>Level layout: Corridors, Chambers, Cave or Rows. Rows lays a main corridor with a few bends and puts the rooms in rows along both sides. A district can override it with its own layout field.</td>
+<td>Level layout: Corridors, Chambers, Cave, Rows, Grid, Temple or Warren. Rows lays a main corridor with a few bends and puts the rooms in rows along both sides. Grid sets the rooms on a loose grid with thick rock between them, joined by straight passages and cross links. Temple puts the largest room in the middle with long axis passages, rooms in pairs and side niches. Warren lets the rooms share their walls. A district can override it with its own layout field.</td>
+</tr>
+<tr>
+<td><code>layouts</code></td>
+<td>list of DungeonBauweise</td>
+<td>empty</td>
+<td>List of layouts the level may use, for example Chambers, Temple and Grid. Each generated level picks one of them from its seed, so the same plan looks different from site to site, like coreShapes for an old town. When the list is set, it replaces layout. Districts without their own layout follow the picked one.</td>
 </tr>
 <tr>
 <td><code>mapSize</code><br>Map size</td>

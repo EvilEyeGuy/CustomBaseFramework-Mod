@@ -18,7 +18,6 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_RuinedCandleStand</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>X</symbol><thing>Sarcophagus</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>a</symbol><thing>DankPyon_ArmorStatue</thing><stuff>Steel</stuff><rotation>South</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>c</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
@@ -26,6 +25,8 @@
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>¤</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
       <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
       <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>③</symbol><anchor>Sarcophagus3</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>④</symbol><anchor>Sarcophagus4</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
     </legend>
     <mask>
       <li>#############</li>
@@ -52,7 +53,7 @@
     <things>
       <li>SSSSSSSSSSSSS</li>
       <li>S...........S</li>
-      <li>S0...X.X...0S</li>
+      <li>S0...0.0...0S</li>
       <li>S.....N.....S</li>
       <li>J...........J</li>
       <li>S...........S</li>
@@ -73,11 +74,11 @@
     </roof>
     <anchors>
       <li>.............</li>
-      <li>.①.........②.</li>
-      <li>.①.........②.</li>
-      <li>.............</li>
-      <li>...6.....7...</li>
-      <li>......8......</li>
+      <li>.①...②.③...④.</li>
+      <li>.①...②.③...④.</li>
+      <li>..666...777..</li>
+      <li>..666...777..</li>
+      <li>..666.8.777..</li>
       <li>.............</li>
       <li>.............</li>
       <li>.............</li>

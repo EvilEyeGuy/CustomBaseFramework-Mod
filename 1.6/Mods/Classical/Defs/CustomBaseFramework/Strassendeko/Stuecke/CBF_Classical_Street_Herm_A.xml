@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Classical">
+    <defName>CBF_Classical_Street_Herm_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Classical_StreetDeco</li>
+    </categories>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>Z</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>f</symbol><terrain>FlagstoneMarble</terrain></li>
+      <li><symbol>p</symbol><thing>PlantPot</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>t</symbol><thing>TorchLamp</thing></li>
+    </legend>
+    <mask>
+      <li>.###.</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>.###.</li>
+    </mask>
+    <terrain>
+      <li>.fff.</li>
+      <li>fffff</li>
+      <li>fffff</li>
+      <li>fffff</li>
+      <li>.fff.</li>
+    </terrain>
+    <things>
+      <li>.....</li>
+      <li>.t.t.</li>
+      <li>.p.p.</li>
+      <li>..Z..</li>
+      <li>.....</li>
+    </things>
+    <roof>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

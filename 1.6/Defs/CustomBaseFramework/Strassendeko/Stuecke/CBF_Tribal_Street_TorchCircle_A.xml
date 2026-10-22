@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef>
+    <defName>CBF_Tribal_Street_TorchCircle_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Tribal_StreetDeco</li>
+    </categories>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>f</symbol><terrain>FlagstoneSandstone</terrain></li>
+      <li><symbol>p</symbol><thing>PlantPot</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>t</symbol><thing>TorchLamp</thing></li>
+    </legend>
+    <mask>
+      <li>..###..</li>
+      <li>.#####.</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>.#####.</li>
+      <li>..###..</li>
+    </mask>
+    <terrain>
+      <li>..fff..</li>
+      <li>.fffff.</li>
+      <li>fffffff</li>
+      <li>fffffff</li>
+      <li>fffffff</li>
+      <li>.fffff.</li>
+      <li>..fff..</li>
+    </terrain>
+    <things>
+      <li>...t...</li>
+      <li>.t...t.</li>
+      <li>.......</li>
+      <li>..p.p..</li>
+      <li>.......</li>
+      <li>.t...t.</li>
+      <li>...t...</li>
+    </things>
+    <roof>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

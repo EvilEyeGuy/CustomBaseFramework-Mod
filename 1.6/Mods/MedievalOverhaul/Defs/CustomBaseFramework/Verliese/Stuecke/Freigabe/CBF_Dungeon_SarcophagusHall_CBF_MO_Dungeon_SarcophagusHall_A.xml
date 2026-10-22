@@ -13,10 +13,10 @@
       <li><symbol>0</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
       <li><symbol>1</symbol><anchor>GraveGoodsA</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_ChurchTreasure</lootTable></li>
       <li><symbol>2</symbol><anchor>GraveGoodsB</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Chest</objects><lootTable>CBF_MO_Loot_ChurchTreasure</lootTable></li>
-      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>3</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>3</symbol><thing>DankPyon_Hideout_RusticChest</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>4</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>A</symbol><thing>DankPyon_Ancient_Column</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>S</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
-      <li><symbol>X</symbol><thing>Sarcophagus</thing><stuff>BlocksMarble</stuff><rotation>South</rotation></li>
       <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>c</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>¤</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
@@ -26,6 +26,14 @@
       <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
       <li><symbol>③</symbol><anchor>Sarcophagus3</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
       <li><symbol>④</symbol><anchor>Sarcophagus4</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑤</symbol><anchor>Sarcophagus5</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑥</symbol><anchor>Sarcophagus6</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑦</symbol><anchor>Sarcophagus7</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑧</symbol><anchor>Sarcophagus8</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑨</symbol><anchor>Sarcophagus9</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑩</symbol><anchor>Sarcophagus10</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑪</symbol><anchor>Sarcophagus11</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>⑫</symbol><anchor>Sarcophagus12</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
     </legend>
     <mask>
       <li>#############</li>
@@ -52,12 +60,12 @@
     <things>
       <li>SSSSSSĴSSSSSS</li>
       <li>S.ρ.......ρ.S</li>
-      <li>S0.X.X.X.0.XS</li>
+      <li>S0.0.0.0.0.0S</li>
       <li>S...........S</li>
       <li>Ĵ.A.......A.Ĵ</li>
-      <li>S...........S</li>
-      <li>SX.0.X.X.X.0S</li>
       <li>S...3...3...S</li>
+      <li>S...........S</li>
+      <li>S4.4.4.4.4.4S</li>
       <li>SSSSSSĴSSSSSS</li>
     </things>
     <roof>
@@ -73,13 +81,13 @@
     </roof>
     <anchors>
       <li>.............</li>
-      <li>.①.......②...</li>
-      <li>.①.......②...</li>
+      <li>.①.②.③.④.⑤.⑥.</li>
+      <li>.①.②.③.④.⑤.⑥.</li>
       <li>.............</li>
       <li>.............</li>
-      <li>...③.......④.</li>
-      <li>...③.......④.</li>
       <li>....1...2....</li>
+      <li>.⑦.⑧.⑨.⑩.⑪.⑫.</li>
+      <li>.⑦.⑧.⑨.⑩.⑪.⑫.</li>
       <li>.............</li>
     </anchors>
   </CustomBaseFramework.PieceDef>

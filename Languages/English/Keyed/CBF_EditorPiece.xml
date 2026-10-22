@@ -179,6 +179,10 @@
   <CBF_P_FloorListTip>Floor list for this symbol. Lists are made in the Lists tab under Floors.</CBF_P_FloorListTip>
   <CBF_P_FloorPerCell>Roll for each cell</CBF_P_FloorPerCell>
   <CBF_P_FloorPerCellTip>Off: one floor is rolled per placed piece and covers the whole symbol. On: every cell gets its own floor.</CBF_P_FloorPerCellTip>
+  <CBF_P_Vessels>Plant vessels</CBF_P_Vessels>
+  <CBF_P_VesselsHint>Pots, hydroponics and other vessels get their plants like a field: from a crop list or from single plants.</CBF_P_VesselsHint>
+  <CBF_P_VesselPlantsTip>Single plants for this vessel. One is drawn per vessel. With a crop list they only serve as a fallback. Only plants that grow in the vessel are offered.</CBF_P_VesselPlantsTip>
+  <CBF_P_VesselCropListTip>Picks a crop list from the Lists tab. The vessel then draws its plant from it by weight, the single plants only serve as a fallback.</CBF_P_VesselCropListTip>
   <CBF_P_Descent>Descent</CBF_P_Descent>
   <CBF_P_DescentPlans>Dungeons</CBF_P_DescentPlans>
   <CBF_P_DescentPlansTip>Dungeon plans this anchor may lead into. One of them is picked at random.</CBF_P_DescentPlansTip>
@@ -190,4 +194,5 @@
   <CBF_P_DescentOpenTip>Open the first chosen dungeon in the Settlement tab.</CBF_P_DescentOpenTip>
   <CBF_P_DescentStairsPlain>Without dungeons the stairs lead to the next level, as before.</CBF_P_DescentStairsPlain>
   <CBF_P_DescentObjectPlain>Without dungeons the container stays a container.</CBF_P_DescentObjectPlain>
+  <CBF_OtherProjectDraft>{0} belongs to project {1} and has not been saved yet. Switch back to {1} as the target mod to save it.</CBF_OtherProjectDraft>
 </LanguageData>

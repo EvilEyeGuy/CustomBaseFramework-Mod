@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Western_Street_Light</defName>
+    <label>street lights</label>
+    <members>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">ChemlampPost</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Western_Street_Side</defName>
+    <label>street side objects</label>
+    <members>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">Post</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">Building_ChemshineBarrel</li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">AncientWoodenCrate</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+</Defs>

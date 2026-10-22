@@ -18,7 +18,11 @@
       <li>
         <name>Crypt</name>
         <label>crypt</label>
-        <layout>Rows</layout>
+        <layouts>
+          <li>Chambers</li>
+          <li>Temple</li>
+          <li>Grid</li>
+        </layouts>
         <mapSize>70</mapSize>
         <entrance>
           <li><tag>CBF_Dungeon_SmallCryptStairs</tag></li>

@@ -20,6 +20,11 @@
       <li>
         <name>Ruin</name>
         <label>ruin</label>
+        <layouts>
+          <li>Rows</li>
+          <li>Grid</li>
+          <li>Temple</li>
+        </layouts>
         <caveWidth>1~3</caveWidth>
         <caveShare>0.5</caveShare>
         <secretChance>0.05</secretChance>
@@ -37,7 +42,6 @@
             <districts>
               <li>
                 <name>Halls</name>
-                <layout>Rows</layout>
                 <entries>
                   <li><tag>CBF_Dungeon_Storeroom</tag><count>2~3</count></li>
                   <li><tag>CBF_Dungeon_Bunkroom</tag><count>1~2</count></li>
@@ -69,7 +73,6 @@
             <districts>
               <li>
                 <name>Halls</name>
-                <layout>Rows</layout>
                 <entries>
                   <li><tag>CBF_Dungeon_StatueHall</tag><count>1~1</count></li>
                   <li><tag>CBF_Dungeon_Tomb</tag><count>1~2</count></li>

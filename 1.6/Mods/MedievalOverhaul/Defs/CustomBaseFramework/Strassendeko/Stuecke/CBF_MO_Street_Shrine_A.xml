@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Street_Shrine_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_MO_StreetDeco</li>
+    </categories>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>N</symbol><thing>DankPyon_CandleStand</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>Z</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>n</symbol><thing>DankPyon_Candles</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ĉ</symbol><terrain>DankPyon_Floor_Cobblestone_Granite</terrain></li>
+    </legend>
+    <mask>
+      <li>.###.</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>#####</li>
+      <li>.###.</li>
+    </mask>
+    <terrain>
+      <li>.ĉĉĉ.</li>
+      <li>ĉĉĉĉĉ</li>
+      <li>ĉĉĉĉĉ</li>
+      <li>ĉĉĉĉĉ</li>
+      <li>.ĉĉĉ.</li>
+    </terrain>
+    <things>
+      <li>.....</li>
+      <li>.N.N.</li>
+      <li>..Z..</li>
+      <li>.n.n.</li>
+      <li>.....</li>
+    </things>
+    <roof>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+      <li>.....</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

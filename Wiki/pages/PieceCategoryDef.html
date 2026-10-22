@@ -178,6 +178,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>How many buildings of this category may stand wall to wall in one block. Empty takes the planner default of 3, 0 means no limit, 1 keeps them apart.</td>
 </tr>
 <tr>
+<td><code>dungeonPart</code></td>
+<td>DungeonPartKind (Corridor, Entrance, Stairs), optional</td>
+<td>none</td>
+<td>Marks the category as a dungeon part: Corridor, Entrance or Stairs. The dungeon editor offers its pieces in the matching lists. Inherits through parent categories.</td>
+</tr>
+<tr>
 <td><code>excludeFactions</code><br>Excluded factions</td>
 <td>list of text</td>
 <td>none</td>
@@ -188,6 +194,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>list of text</td>
 <td>none</td>
 <td>FactionDef names allowed to use pieces of this category. An unset list can inherit from parent categories.</td>
+</tr>
+<tr>
+<td><code>farmhouse</code></td>
+<td>true/false</td>
+<td><code>False</code></td>
+<td>True lets pieces of this category stand on farm plots when the settlement type names no farm categories of its own. Set on HouseSmall and Farm.</td>
 </tr>
 <tr>
 <td><code>merge</code></td>
@@ -202,10 +214,22 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Set false together with zones containing Outside to enable open access. That combination is checked on categories directly assigned to the piece. District preferences determine location.</td>
 </tr>
 <tr>
+<td><code>openAccess</code></td>
+<td>true/false, optional</td>
+<td>none</td>
+<td>True makes pieces of this category enterable from every side, like markets, farms, landmarks and defensive positions. Inherits through parent categories; defaults to false.</td>
+</tr>
+<tr>
 <td><code>parent</code></td>
 <td><a href="PieceCategoryDef.html">PieceCategoryDef</a></td>
 <td>none</td>
 <td>Another PieceCategoryDef whose members include this category's pieces. Unset inheritable rules are read along this chain. This runtime link uses a defName and is separate from RimWorld XML ParentName inheritance.</td>
+</tr>
+<tr>
+<td><code>pieceType</code></td>
+<td>PieceType (Building, WallPart, DungeonRoom), optional</td>
+<td>none</td>
+<td>Piece type the editor gives new pieces of this category: Building, WallPart or DungeonRoom.</td>
 </tr>
 <tr>
 <td><code>wallAccess</code></td>
@@ -218,6 +242,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>true/false, optional</td>
 <td>none</td>
 <td>Prefers to stand against the town wall. The piece field At the wall controls this more finely and wins.</td>
+</tr>
+<tr>
+<td><code>wallPart</code></td>
+<td>WallPartKind (Segment, Tower, Gatehouse, Attachment), optional</td>
+<td>none</td>
+<td>Marks the category as part of the town wall: Segment, Tower or Gatehouse, or Attachment for pieces built onto the wall such as stairs to the walkway. The planner places Segment, Tower and Gatehouse with the fortification; the settlement check does not treat any of them as ordinary buildings. Inherits through parent categories; empty means not a wall part.</td>
 </tr>
 <tr>
 <td><code>weight</code></td>

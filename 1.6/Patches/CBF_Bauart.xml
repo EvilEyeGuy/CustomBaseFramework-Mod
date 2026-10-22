@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="DankPyon_CastleWallEmbrasures"]</xpath>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/ThingDef[defName="DankPyon_CastleWallEmbrasures"]</xpath>
+      <value>
+        <li Class="CustomBaseFramework.CBFStructureExtension">
+          <structure>Window</structure>
+        </li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VFEM2_TimberedWall" or defName="VFEM2_ClothWall" or defName="VFEM2_CastleWall" or defName="VFEM2_LowCastleWall" or defName="VFEM2_Palisade"]</xpath>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/ThingDef[defName="VFEM2_TimberedWall" or defName="VFEM2_ClothWall" or defName="VFEM2_CastleWall" or defName="VFEM2_LowCastleWall" or defName="VFEM2_Palisade"]</xpath>
+      <value>
+        <li Class="CustomBaseFramework.CBFStructureExtension">
+          <structure>Wall</structure>
+        </li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VFEM2_3x1CastleGate"]</xpath>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/ThingDef[defName="VFEM2_3x1CastleGate"]</xpath>
+      <value>
+        <li Class="CustomBaseFramework.CBFStructureExtension">
+          <structure>Door</structure>
+        </li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="DA_OssuaryWall" or defName="DA_WallTomb"]</xpath>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/ThingDef[defName="DA_OssuaryWall" or defName="DA_WallTomb"]</xpath>
+      <value>
+        <li Class="CustomBaseFramework.CBFStructureExtension">
+          <structure>Wall</structure>
+        </li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

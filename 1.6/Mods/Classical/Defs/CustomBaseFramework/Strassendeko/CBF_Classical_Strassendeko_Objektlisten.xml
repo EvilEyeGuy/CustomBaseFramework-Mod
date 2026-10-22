@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Classical_Street_Light</defName>
+    <label>street lights</label>
+    <members>
+      <li>TorchLamp</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Classical_Street_Side</defName>
+    <label>street side objects</label>
+    <members>
+      <li>PlantPot</li>
+      <li>SculptureSmall</li>
+      <li MayRequire="OskarPotocki.VFE.Classical">VFEC_MeatDryingRack</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+</Defs>

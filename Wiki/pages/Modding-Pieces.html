@@ -578,6 +578,21 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li>Stone walls and floors take the stone of the map.</li>
 </ul>
 <p>So one piece drawn with roles can be built in stone in one settlement type and in wood in another. The pieces shipped with CBF draw their things directly.</p>
+<h3 id="walls-doors-and-windows">Walls, doors and windows</h3>
+<p>The generator needs to know which drawn things are walls, doors or windows: doors decide where a building is entered, walls may be shared with a neighbour, and a window on a shared wall is replaced by the wall next to it. A role decides first. For a fixed thing CBF then reads <code>CustomBaseFramework.CBFStructureExtension</code> on the ThingDef (<code>structure</code>: <code>Wall</code>, <code>Door</code>, <code>Window</code> or <code>Furniture</code>), and without it the game data: door classes count as doors, things with <code>building/isWall</code> as walls, everything else as furniture. Mods whose walls do not set <code>isWall</code> need the extension, added with a patch:</p>
+<pre><code class="language-xml">&lt;<span class="xt">Operation</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationConditional&quot;</span>&gt;
+  &lt;<span class="xt">xpath</span>&gt;Defs/ThingDef[defName=&quot;MyMod_StoneWall&quot;]&lt;/<span class="xt">xpath</span>&gt;
+  &lt;<span class="xt">match</span> <span class="xa">Class</span>=<span class="xw">&quot;PatchOperationAddModExtension&quot;</span>&gt;
+    &lt;<span class="xt">xpath</span>&gt;Defs/ThingDef[defName=&quot;MyMod_StoneWall&quot;]&lt;/<span class="xt">xpath</span>&gt;
+    &lt;<span class="xt">value</span>&gt;
+      &lt;<span class="xt">li</span> <span class="xa">Class</span>=<span class="xw">&quot;CustomBaseFramework.CBFStructureExtension&quot;</span>&gt;
+        &lt;<span class="xt">structure</span>&gt;Wall&lt;/<span class="xt">structure</span>&gt;
+      &lt;/<span class="xt">li</span>&gt;
+    &lt;/<span class="xt">value</span>&gt;
+  &lt;/<span class="xt">match</span>&gt;
+&lt;/<span class="xt">Operation</span>&gt;
+</code></pre>
+<p>CBF ships this patch for the walls and gate of VFE Medieval 2, the Dungeon Additions walls and the Medieval Overhaul embrasure (a window).</p>
 <h2 id="things-from-other-mods">Things from other mods</h2>
 <p>Legend entries for things from another mod carry <code>MayRequire</code>, as in this shipped annex for Medieval Overhaul (shown without its <code>style</code> and <code>eaves</code> lines):</p>
 <pre><code class="language-xml">&lt;<span class="xt">CustomBaseFramework.PieceDef</span>&gt;
@@ -705,6 +720,14 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td>Only with, or never with, these memes or precepts in the owning faction's ideoligion.</td>
 </tr>
 <tr>
+<td><code>wallPart</code></td>
+<td>Marks wall parts: <code>Segment</code>, <code>Tower</code> or <code>Gatehouse</code>. The planner places them with the fortification.</td>
+</tr>
+<tr>
+<td><code>openAccess</code></td>
+<td>Pieces of this category can be entered from every side, like markets, farms and landmarks.</td>
+</tr>
+<tr>
 <td><code>wallAccess</code></td>
 <td>The pieces give access to the town wall, like a barracks built against it. The generator closes their open sides and counts their cells when it places wall doors.</td>
 </tr>
@@ -787,4 +810,4 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><a href="PieceCategoryDef.html">PieceCategoryDef</a></li>
 <li><a href="StyleDef.html">StyleDef</a>, <a href="TerrainWeight.html">TerrainWeight</a></li>
 <li><a href="Field-Reference.html">All fields</a></li>
-</ul><div class="schritte"><a href="Modding-Settlements.html"><span>Previous</span>Settlement types in XML</a><a class="weiter" href="Modding-Loot.html"><span>Next</span>Loot in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#a-small-house">A small house</a><a class="t2" href="#the-grids">The grids</a><a class="t2" href="#the-legend">The legend</a><a class="t3" href="#variants">Variants</a><a class="t2" href="#piece-fields">Piece fields</a><a class="t3" href="#placement">placement</a><a class="t2" href="#anchors">Anchors</a><a class="t3" href="#connect">Connect</a><a class="t3" href="#fill">Fill</a><a class="t3" href="#object">Object</a><a class="t3" href="#spawn">Spawn</a><a class="t2" href="#roles">Roles</a><a class="t2" href="#things-from-other-mods">Things from other mods</a><a class="t2" href="#categories">Categories</a><a class="t3" href="#inheritance">Inheritance</a><a class="t3" href="#placement-rules">Placement rules</a><a class="t3" href="#blocks">Blocks</a><a class="t3" href="#annexes">Annexes</a><a class="t2" href="#additional-category-options">Additional category options</a><a class="t2" href="#tips">Tips</a><a class="t2" href="#field-reference">Field reference</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>
+</ul><div class="schritte"><a href="Modding-Settlements.html"><span>Previous</span>Settlement types in XML</a><a class="weiter" href="Modding-Loot.html"><span>Next</span>Loot in XML</a></div></div></main><aside class="rechts"><div class="aufseite"><b>On this page</b><a class="t2" href="#a-small-house">A small house</a><a class="t2" href="#the-grids">The grids</a><a class="t2" href="#the-legend">The legend</a><a class="t3" href="#variants">Variants</a><a class="t2" href="#piece-fields">Piece fields</a><a class="t3" href="#placement">placement</a><a class="t2" href="#anchors">Anchors</a><a class="t3" href="#connect">Connect</a><a class="t3" href="#fill">Fill</a><a class="t3" href="#object">Object</a><a class="t3" href="#spawn">Spawn</a><a class="t2" href="#roles">Roles</a><a class="t3" href="#walls-doors-and-windows">Walls, doors and windows</a><a class="t2" href="#things-from-other-mods">Things from other mods</a><a class="t2" href="#categories">Categories</a><a class="t3" href="#inheritance">Inheritance</a><a class="t3" href="#placement-rules">Placement rules</a><a class="t3" href="#blocks">Blocks</a><a class="t3" href="#annexes">Annexes</a><a class="t2" href="#additional-category-options">Additional category options</a><a class="t2" href="#tips">Tips</a><a class="t2" href="#field-reference">Field reference</a></div></aside></div><div class="fund" id="fund"><div class="fundbox"><input id="fundein" type="search" placeholder="Page or term" autocomplete="off"><ul class="fundliste" id="fundliste"></ul></div></div></body></html>

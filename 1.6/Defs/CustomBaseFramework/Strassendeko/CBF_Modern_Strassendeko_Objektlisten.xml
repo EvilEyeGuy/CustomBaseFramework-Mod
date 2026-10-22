@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Modern_Street_Light</defName>
+    <label>street lights</label>
+    <members>
+      <li>AncientLamppost</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Modern_Street_Side</defName>
+    <label>street side objects</label>
+    <members>
+      <li>AncientBarrel</li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">AncientWoodenCrate</li>
+      <li>AncientPostbox</li>
+      <li>PlantPot</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_Modern_Street_Road</defName>
+    <label>objects on the road</label>
+    <members>
+      <li>AncientShoppingCart</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+</Defs>

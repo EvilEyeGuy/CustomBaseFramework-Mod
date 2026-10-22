@@ -164,7 +164,7 @@
   <CBF_Field_gatehouses>Torhäuser</CBF_Field_gatehouses>
   <CBF_FieldDesc_gatehouses>Welche Stücke als Torhäuser dienen dürfen.</CBF_FieldDesc_gatehouses>
   <CBF_Field_defenderPoints>Verteidigerstärke</CBF_Field_defenderPoints>
-  <CBF_FieldDesc_defenderPoints>Wie stark die Verteidiger sind, als Punktespanne.</CBF_FieldDesc_defenderPoints>
+  <CBF_FieldDesc_defenderPoints>Ohne Garnisonsfaktor: wie stark die Verteidiger nach Punkten sind, als Punktespanne. Mit wealthFactor über 0: das Mindestbudget der Garnison.</CBF_FieldDesc_defenderPoints>
   <CBF_Field_factionTags>Fraktionen</CBF_Field_factionTags>
   <CBF_FieldDesc_factionTags>Welche Fraktionen diesen Ortstyp benutzen dürfen.</CBF_FieldDesc_factionTags>
   <CBF_Field_count>Anzahl</CBF_Field_count>
@@ -280,7 +280,13 @@ Die Einzeldateien werden danach gelöscht. Dateien anderer Mods und handgeschrie
   <CBF_EmptyPainted>{0} Felder als leer markiert.</CBF_EmptyPainted>
   <CBF_Field_tower>Turm</CBF_Field_tower>
   <CBF_Field_gatehouse>Torhaus</CBF_Field_gatehouse>
-  <CBF_NoWallPieces>Kein Stück in der Kategorie {0}. Erst eines zeichnen.</CBF_NoWallPieces>
+  <CBF_NoWallPieces>Kein Stück der Art {0}. Erst eines zeichnen.</CBF_NoWallPieces>
+  <CBF_DungeonPart_Corridor>Gangstück</CBF_DungeonPart_Corridor>
+  <CBF_DungeonPart_Entrance>Eingang</CBF_DungeonPart_Entrance>
+  <CBF_DungeonPart_Stairs>Treppe</CBF_DungeonPart_Stairs>
+  <CBF_WallPart_Segment>Mauerstück</CBF_WallPart_Segment>
+  <CBF_WallPart_Tower>Turm</CBF_WallPart_Tower>
+  <CBF_WallPart_Gatehouse>Torhaus</CBF_WallPart_Gatehouse>
   <CBF_WallsFromProfile>Leer, also entscheidet das Mauerprofil {0}: {1}</CBF_WallsFromProfile>
   <CBF_WallsNoProfile>Leer, und es gibt kein Mauerprofil für diesen Stil und diese Tiefe. Die Siedlung bekommt die allgemeine Mauer.</CBF_WallsNoProfile>
   <CBF_MenuExportAll>Alle Flächen ausgeben ({0})</CBF_MenuExportAll>
@@ -625,10 +631,14 @@ Zur Wahl stehen alle Bilder unter Textures/World/WorldObjects/CBF, auch die ande
   <CBF_PawnPlaceFailed>{0} ließ sich nicht setzen. Details stehen im Log.</CBF_PawnPlaceFailed>
   <CBF_GelaendeProbeAbgelegt>Geländeprobe in {0} (Bild, Liste und .gel)</CBF_GelaendeProbeAbgelegt>
   <CBF_NothingSelected>Nichts ausgewählt.</CBF_NothingSelected>
+  <CBF_DefNotInFile>{0} steht nicht in {1}.</CBF_DefNotInFile>
   <CBF_WriteFailedReason>Schreiben fehlgeschlagen: {0}</CBF_WriteFailedReason>
   <CBF_FileNoRoot>Die Datei {0} hat keinen Wurzelknoten.</CBF_FileNoRoot>
   <CBF_ProjectFolderMissing>Der Projektordner wurde nicht gefunden.</CBF_ProjectFolderMissing>
   <CBF_ReplaceSameAsTarget>Ersatz und Ziel sind dasselbe.</CBF_ReplaceSameAsTarget>
+  <CBF_RenameFailed>{0} ließ sich nicht umbenennen, weil eine beteiligte Datei nicht geschrieben werden konnte. Alles steht wieder wie vorher, Einzelheiten im Log.</CBF_RenameFailed>
+  <CBF_DeleteFailed>{0} ließ sich nicht löschen, weil eine beteiligte Datei nicht geschrieben werden konnte. Alles steht wieder wie vorher, Einzelheiten im Log.</CBF_DeleteFailed>
+  <CBF_UndoDefDeleted>{0} wurde inzwischen gelöscht. Dieser Schritt lässt sich nicht mehr zurücknehmen oder wiederholen.</CBF_UndoDefDeleted>
   <CBF_DeleteSourceStuck>Die Quelldatei von {0} ließ sich nicht entfernen. Es wurde nichts gelöscht.</CBF_DeleteSourceStuck>
   <CBF_NameTableLocked>Die Namenstabelle ließ sich nicht ändern. Es wurde nichts geändert.</CBF_NameTableLocked>
   <CBF_PlanFileMissing>Die Datei zu {0} wurde nicht gefunden.</CBF_PlanFileMissing>

@@ -409,7 +409,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><code>priority</code>: a whole number. Default <code>0</code>. See below.</li>
 <li><code>units</code>: swaps for pawn kinds.</li>
 <li><code>things</code>: swaps for things placed by pieces.</li>
-<li><code>neutral</code>: older field, still loaded but no longer read. It does not protect pawn kinds from the swap.</li>
+<li><code>neutral</code>: obsolete and ignored. It stays loadable so older mods do not break.</li>
 </ul>
 <p>Each <code>li</code> in <code>units</code> and <code>things</code> has:</p>
 <ul>
@@ -417,7 +417,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <li><code>to</code>: <code>defName</code> of what the faction uses instead.</li>
 <li><code>weight</code>: weight when one <code>from</code> has several targets. Default <code>1</code>. Entries with <code>0</code> or less are ignored.</li>
 </ul>
-<p>A def needs <code>faction</code> or <code>neutral</code>, otherwise it is a config error.</p>
+<p>A def without <code>faction</code> does nothing. Without <code>faction</code> and <code>neutral</code> it is a config error.</p>
 <h3 id="priority">Priority</h3>
 <p>Several defs can bring rules for the same faction, also from different mods. For each <code>from</code>, only the entries with the highest <code>priority</code> count. Entries of equal priority from different defs are merged and drawn together by weight. To override the rule of another mod, give yours a higher priority.</p>
 <p>A target that is not loaded is skipped. If no target of a rule is loaded, a unit is handled as if there were no rule, and a thing stays as it is.</p>

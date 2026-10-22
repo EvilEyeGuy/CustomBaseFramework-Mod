@@ -18,12 +18,16 @@
       <li><symbol>C</symbol><terrain>Granite_Smooth</terrain></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>F</symbol><thing>DankPyon_Ancient_Column</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>P</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
-      <li><symbol>R</symbol><thing>Sarcophagus</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>R</symbol><thing>CBF_Sarcophagus</thing><stuff>BlocksGranite</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>L</symbol><thing>DankPyon_Candles</thing></li>
       <li><symbol>S</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
       <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>G</symbol><thing>DankPyon_RuinedCandleStand</thing><stuff>WoodLog</stuff></li>
       <li><symbol>0</symbol><anchor>Outside</anchor></li>
       <li><symbol>8</symbol><anchor>Keeper</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Residents</pawnList><chance>0.3</chance></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>③</symbol><anchor>Sarcophagus3</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>④</symbol><anchor>Sarcophagus4</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
     </legend>
 
     <mask>
@@ -77,11 +81,11 @@
     <anchors>
       <li>...........</li>
       <li>...........</li>
-      <li>...........</li>
-      <li>...........</li>
+      <li>.①.......②.</li>
+      <li>.①.......②.</li>
       <li>...8.......</li>
-      <li>...........</li>
-      <li>...........</li>
+      <li>.③.......④.</li>
+      <li>.③.......④.</li>
       <li>...........</li>
       <li>.....0.....</li>
     </anchors>

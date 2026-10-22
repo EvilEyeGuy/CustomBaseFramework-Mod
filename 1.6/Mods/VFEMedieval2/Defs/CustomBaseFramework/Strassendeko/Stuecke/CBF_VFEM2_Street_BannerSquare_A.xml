@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VFE.Medieval2">
+    <defName>CBF_VFEM2_Street_BannerSquare_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_VFEM2_StreetDeco</li>
+    </categories>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>F</symbol><thing>VFEM2_StandingBanner</thing></li>
+      <li><symbol>f</symbol><terrain>FlagstoneGranite</terrain></li>
+      <li><symbol>t</symbol><thing>TorchLamp</thing></li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2"><symbol>w</symbol><thing>VFEM2_WineBarrel</thing><rotation>South</rotation></li>
+    </legend>
+    <mask>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+      <li>#######</li>
+    </mask>
+    <terrain>
+      <li>fffffff</li>
+      <li>fffffff</li>
+      <li>fffffff</li>
+      <li>fffffff</li>
+      <li>fffffff</li>
+    </terrain>
+    <things>
+      <li>F.....F</li>
+      <li>.t...t.</li>
+      <li>.......</li>
+      <li>.w...w.</li>
+      <li>F.....F</li>
+    </things>
+    <roof>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+      <li>.......</li>
+    </roof>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

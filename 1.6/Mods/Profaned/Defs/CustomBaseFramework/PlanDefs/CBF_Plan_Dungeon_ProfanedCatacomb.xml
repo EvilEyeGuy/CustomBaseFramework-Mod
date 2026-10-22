@@ -18,7 +18,11 @@
       <li>
         <name>Catacomb</name>
         <label>catacomb</label>
-        <layout>Rows</layout>
+        <layouts>
+          <li>Chambers</li>
+          <li>Temple</li>
+          <li>Grid</li>
+        </layouts>
         <mapSize>70</mapSize>
         <entrance>
           <li><tag>CBF_Dungeon_ProfanedStairs</tag></li>

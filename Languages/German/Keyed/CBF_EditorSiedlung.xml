@@ -337,7 +337,13 @@
   <CBF_D_Layout_Chambers>Kammern</CBF_D_Layout_Chambers>
   <CBF_D_Layout_CorridorsTip>Ein Hauptgangnetz, an das die Räume andocken.</CBF_D_Layout_CorridorsTip>
   <CBF_D_Layout_ChambersTip>Die Räume liegen direkt aneinander, ohne Gänge dazwischen.</CBF_D_Layout_ChambersTip>
-  <CBF_FieldDesc_layout>Wie die Ebene gebaut wird. Gänge: ein Hauptgangnetz mit angedockten Räumen. Kammern: Räume direkt aneinander. Reihen: ein Hauptgang mit Knicken, die Räume in Reihen an beiden Seiten.</CBF_FieldDesc_layout>
+  <CBF_D_Layout_Grid>Raster</CBF_D_Layout_Grid>
+  <CBF_D_Layout_GridTip>Räume auf einem lockeren Raster mit dickem Fels dazwischen, verbunden durch kurze gerade Durchgänge und viele Rundwege.</CBF_D_Layout_GridTip>
+  <CBF_D_Layout_Temple>Tempel</CBF_D_Layout_Temple>
+  <CBF_D_Layout_TempleTip>Eine große Mittelhalle mit paarweise gelegten Flügeln entlang ihrer Achsen, Seitenkammern und einem gewundenen Höhlengang.</CBF_D_Layout_TempleTip>
+  <CBF_D_Layout_Warren>Bau</CBF_D_Layout_Warren>
+  <CBF_D_Layout_WarrenTip>Die Räume wachsen aneinander, teilen sich die Wände und öffnen sich durch Türen in der Wand.</CBF_D_Layout_WarrenTip>
+  <CBF_FieldDesc_layout>Wie die Ebene gebaut wird. Gänge: ein Hauptgangnetz mit angedockten Räumen. Kammern: Räume direkt aneinander. Reihen: ein Hauptgang mit Knicken, die Räume in Reihen an beiden Seiten. Raster: Räume auf einem lockeren Raster mit kurzen Durchgängen und vielen Rundwegen. Tempel: eine Mittelhalle mit paarweisen Flügeln. Bau: Räume mit gemeinsamen Wänden.</CBF_FieldDesc_layout>
   <CBF_D_Layout_Cave>Höhle</CBF_D_Layout_Cave>
   <CBF_D_Layout_CaveTip>Natürliche Höhlenkammern ohne gemauerte Wände.</CBF_D_Layout_CaveTip>
   <CBF_D_Layout_Rows>Reihen</CBF_D_Layout_Rows>
@@ -464,4 +470,47 @@
   <CBF_GR_AnchorsLayout>Gezählt am geplanten Grundriss (≈). Ein Ort schwankt von Karte zu Karte um einige Pawns, im Spiel können es etwas mehr sein.</CBF_GR_AnchorsLayout>
   <CBF_GR_AnchorsEstimated>Pawns aus Ankern sind grob aus den Bezirken geschätzt und nur eine Untergrenze (≥). Der Grundriss wird für eine genauere Zahl geplant.</CBF_GR_AnchorsEstimated>
   <CBF_GR_SmallVaries>Kleine Orte wie Dörfer schwanken im Spiel stark, von Karte zu Karte um etwa ein Viertel nach oben oder unten.</CBF_GR_SmallVaries>
+  <CBF_S_Deco>Straßendeko</CBF_S_Deco>
+  <CBF_S_DecoNone>keine</CBF_S_DecoNone>
+  <CBF_S_DecoCount>{0} Einträge</CBF_S_DecoCount>
+  <CBF_S_DecoSketchTip>Skizze eines Straßenstücks mit den Einträgen unten in ihren Farben. Abstand und Höchstzahl sind grob dargestellt.</CBF_S_DecoSketchTip>
+  <CBF_S_DecoSketchEmpty>Noch keine Straßendeko. Unten eine Vorlage anlegen.</CBF_S_DecoSketchEmpty>
+  <CBF_S_DecoPlaceTip>Rand: neben der Straße. Straße: auf der Straße selbst.</CBF_S_DecoPlaceTip>
+  <CBF_S_DecoWhatTip>Ein Stück, eine Stückkategorie oder eine Objektliste. Einzelne Dinge kommen in eine Objektliste.</CBF_S_DecoWhatTip>
+  <CBF_S_DecoSpacing>Abstand</CBF_S_DecoSpacing>
+  <CBF_S_DecoSpacingTip>Felder zwischen zwei Platzierungen, als Spanne. Kleiner heißt dichter.</CBF_S_DecoSpacingTip>
+  <CBF_S_DecoMax>Max</CBF_S_DecoMax>
+  <CBF_S_DecoMaxTip>Höchstens so viele je Stadtteil. 0 heißt ohne Grenze.</CBF_S_DecoMaxTip>
+  <CBF_S_WeightShortTip>Gewicht gegenüber den anderen Einträgen dieses Stadtteils.</CBF_S_WeightShortTip>
+  <CBF_S_DecoFacingTip>In welche Richtung die Dinge schauen.</CBF_S_DecoFacingTip>
+  <CBF_S_DecoEdge>Rand</CBF_S_DecoEdge>
+  <CBF_S_DecoRoad>Straße</CBF_S_DecoRoad>
+  <CBF_S_DecoPick>wählen …</CBF_S_DecoPick>
+  <CBF_S_DecoPickPiece>Stück oder Kategorie …</CBF_S_DecoPickPiece>
+  <CBF_S_DecoPickList>Objektliste …</CBF_S_DecoPickList>
+  <CBF_S_DecoF_Auto>automatisch</CBF_S_DecoF_Auto>
+  <CBF_S_DecoF_Road>zur Straße</CBF_S_DecoF_Road>
+  <CBF_S_DecoF_Along>längs</CBF_S_DecoF_Along>
+  <CBF_S_DecoF_None>beliebig</CBF_S_DecoF_None>
+  <CBF_S_DecoTemplates>Vorlage:</CBF_S_DecoTemplates>
+  <CBF_S_DecoT_Light>Licht</CBF_S_DecoT_Light>
+  <CBF_S_DecoT_LightTip>Legt einen Eintrag für Straßenlichter am Rand mit passendem Abstand an. Danach wählst du die Objektliste oder legst eine neue an.</CBF_S_DecoT_LightTip>
+  <CBF_S_DecoT_Side>Rand</CBF_S_DecoT_Side>
+  <CBF_S_DecoT_SideTip>Legt einen Eintrag für Bänke, Fässer und Kisten am Rand an. Danach wählst du die Objektliste oder legst eine neue an.</CBF_S_DecoT_SideTip>
+  <CBF_S_DecoT_Sign>Schild</CBF_S_DecoT_Sign>
+  <CBF_S_DecoT_SignTip>Legt einen Eintrag für Schilder am Rand mit großem Abstand an. Danach wählst du die Objektliste oder legst eine neue an.</CBF_S_DecoT_SignTip>
+  <CBF_S_DecoT_Road>Straße</CBF_S_DecoT_Road>
+  <CBF_S_DecoT_RoadTip>Legt einen Eintrag auf der Straße an, höchstens 3. Danach wählst du die Objektliste oder legst eine neue an.</CBF_S_DecoT_RoadTip>
+  <CBF_S_DecoT_Piece>Stück</CBF_S_DecoT_Piece>
+  <CBF_S_DecoT_PieceTip>Legt einen Eintrag für kleine Straßenstücke an, höchstens 2. Danach wählst du ein Stück oder eine Kategorie.</CBF_S_DecoT_PieceTip>
+  <CBF_S_DecoOwn>Eigener Eintrag</CBF_S_DecoOwn>
+  <CBF_S_DecoOwnTip>Stück, Kategorie oder Objektliste selbst wählen.</CBF_S_DecoOwnTip>
+  <CBF_S_DecoAdded>Straßendeko hinzugefügt</CBF_S_DecoAdded>
+  <CBF_S_DecoChanged>Straßendeko geändert</CBF_S_DecoChanged>
+  <CBF_S_DecoEditList>Objektliste öffnen und sehen oder ändern, was sie setzt.</CBF_S_DecoEditList>
+  <CBF_S_DecoEmptyList>leer, es wird nichts gesetzt</CBF_S_DecoEmptyList>
+  <CBF_S_DecoSpawns>setzt: {0}</CBF_S_DecoSpawns>
+  <CBF_S_DecoSpawnsMore>setzt: {0} und mehr ({1})</CBF_S_DecoSpawnsMore>
+  <CBF_D_LayoutsTip>Eine oder mehrere Bauweisen ankreuzen. Bei mehreren würfelt jede erzeugte Ebene eine davon aus.</CBF_D_LayoutsTip>
+  <CBF_D_LayoutsRandom>Jede erzeugte Ebene würfelt eine der gewählten Bauweisen aus.</CBF_D_LayoutsRandom>
 </LanguageData>

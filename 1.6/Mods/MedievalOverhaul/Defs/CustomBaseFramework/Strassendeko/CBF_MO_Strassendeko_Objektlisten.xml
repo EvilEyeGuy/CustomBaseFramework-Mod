@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Street_Light</defName>
+    <label>street lights</label>
+    <members>
+        <li>DankPyon_LampPost</li>
+      </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_MO_Street_Side</defName>
+    <label>street side objects</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_RusticBarrelClosed</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_BarrelWater</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_RusticBarrelStack</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Crate1x1c</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Crate1x2c</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_SackClosed</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_SackWheat</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HayPile1x2c</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_HayBale2x2c</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LogBench1x2c</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LogBench1x3c</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_WoodLogs1x2c</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_BirdPost</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_MO_Street_Sign</defName>
+    <label>shop signs</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Sign_Tavern</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Sign_Smith</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Sign_Bread</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Sign_Butcher</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Sign_Tailor</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Sign_Barn</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_MO_Street_Road</defName>
+    <label>objects on the road</label>
+    <members>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Storage_Cart_Empty</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Storage_Cart_Assorted</li>
+      <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_BrokenCart</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+</Defs>

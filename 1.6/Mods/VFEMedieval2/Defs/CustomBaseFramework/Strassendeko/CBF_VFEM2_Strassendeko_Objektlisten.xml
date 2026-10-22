@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_VFEM2_Street_Light</defName>
+    <label>street lights</label>
+    <members>
+      <li>TorchLamp</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef>
+    <defName>CBF_VFEM2_Street_Side</defName>
+    <label>street side objects</label>
+    <members>
+      <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_StandingBanner</li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_WineBarrel</li>
+      <li>PlantPot</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+</Defs>

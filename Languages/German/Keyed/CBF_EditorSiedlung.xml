@@ -29,6 +29,13 @@
   <CBF_S_AddFaction>+ Fraktion oder Kategorie</CBF_S_AddFaction>
   <CBF_S_Excluded>Ausgeschlossen</CBF_S_Excluded>
   <CBF_S_FitsFactions>Passt auf {0} Fraktionen</CBF_S_FitsFactions>
+  <CBF_S_OwnerAlle>Für alle Fraktionen dieser Stufen</CBF_S_OwnerAlle>
+  <CBF_S_OwnerAlleTip>Der Plan gilt für jede Fraktion, deren Techstufe angekreuzt ist, außer sie hat über Fraktionsmarken eigene Pläne. Eigene Pläne gehen immer vor.</CBF_S_OwnerAlleTip>
+  <CBF_S_OwnerFraktionen>Fraktionen</CBF_S_OwnerFraktionen>
+  <CBF_S_OwnerFraktionenTip>Nur die unten eingetragenen Fraktionen oder Fraktionskategorien bekommen diese Siedlung.</CBF_S_OwnerFraktionenTip>
+  <CBF_S_OwnerKeine>keine</CBF_S_OwnerKeine>
+  <CBF_S_OwnerKeineTip>Keine Fraktion bekommt diese Siedlung. Nur Quests und Orte können sie verwenden.</CBF_S_OwnerKeineTip>
+  <CBF_S_OwnerKeineInfo>Nur Quests und Orte können diese Siedlung verwenden.</CBF_S_OwnerKeineInfo>
   <CBF_S_NoFactionFits>Keine Fraktion bekommt diese Siedlung. Wähle eine Techstufe mit Für alle Fraktionen oder trag eine Fraktion ein.</CBF_S_NoFactionFits>
   <CBF_S_TakeoverOn>An</CBF_S_TakeoverOn>
   <CBF_S_TakeoverOff>Aus</CBF_S_TakeoverOff>
@@ -62,6 +69,12 @@
   <CBF_S_RemoveDistrict>Bezirk entfernen</CBF_S_RemoveDistrict>
   <CBF_S_NFields>{0} Acker</CBF_S_NFields>
   <CBF_S_NPens>{0} Gehege</CBF_S_NPens>
+  <CBF_S_EntryType>Art</CBF_S_EntryType>
+  <CBF_S_EntryIdeo>Ideologie</CBF_S_EntryIdeo>
+  <CBF_S_EntryIdeoCount>{0} Bedingungen</CBF_S_EntryIdeoCount>
+  <CBF_S_EntryCondition>Braucht</CBF_S_EntryCondition>
+  <CBF_S_AddCondition>+ Voraussetzung</CBF_S_AddCondition>
+  <CBF_S_ShowPieces>Stücke zeigen</CBF_S_ShowPieces>
   <CBF_S_PieceOrCategory>Stück oder Kategorie</CBF_S_PieceOrCategory>
   <CBF_S_WeightShort>Gew.</CBF_S_WeightShort>
   <CBF_S_CatShort>Kat.</CBF_S_CatShort>
@@ -228,6 +241,9 @@
   <CBF_D_StairsUpHint>Die Treppe hinauf kommt genau dorthin, wo auf der Ebene darüber die Treppe hinab steht.</CBF_D_StairsUpHint>
   <CBF_D_AddStairs>+ Treppe</CBF_D_AddStairs>
   <CBF_D_LowestHint>Das ist die unterste Ebene. Sie braucht keine Treppe hinab.</CBF_D_LowestHint>
+  <CBF_D_Deco>Gangdeko</CBF_D_Deco>
+  <CBF_D_DecoTip>Steht auf dem Gangboden an der Wand, zufällig auf beiden Seiten. Wandanbauten wie Fackeln zeigen zur Wand, alles andere in den Gang. Rand und Straße machen hier keinen Unterschied.</CBF_D_DecoTip>
+  <CBF_D_SectionDecoInherit>Leer heißt, hier gilt die Gangdeko der Ebene.</CBF_D_SectionDecoInherit>
   <CBF_D_Passages>Gänge</CBF_D_Passages>
   <CBF_D_AddCorridor>+ Segment</CBF_D_AddCorridor>
   <CBF_D_CorridorsNone>Leer heißt einfache Gangfelder. Ecken, Abzweigungen und Enden baut der Generator selbst.</CBF_D_CorridorsNone>
@@ -327,7 +343,7 @@
   <CBF_Field_caveWidth>Höhlenbreite</CBF_Field_caveWidth>
   <CBF_FieldDesc_caveWidth>Breite der Höhlengänge zwischen den Bereichen, 1 bis 5 Felder. Jeder Gang wählt eine Breite aus der Spanne.</CBF_FieldDesc_caveWidth>
   <CBF_FieldDesc_caveShare>Anteil der Verbindungen, die natürliche Höhle statt gebauter Gang werden.</CBF_FieldDesc_caveShare>
-  <CBF_FieldDesc_secretChance>Wahrscheinlichkeit für Geheimgänge und versteckte Räume an Sackgassen und freien Andockstellen.</CBF_FieldDesc_secretChance>
+  <CBF_FieldDesc_secretChance>Wahrscheinlichkeit, dass eine Raumtür, die sonst zugemauert würde, einen schmalen Geheimgang durch den Fels zum nächsten Gang oder zur Tür eines anderen Raums bekommt. Die Tür wird zur Geheimtür (Rolle DOOR_SECRET der Materialliste). Höchstens dieser Anteil der Räume bekommt einen.</CBF_FieldDesc_secretChance>
   <CBF_FieldDesc_levelMapSize>Größe der Karte dieser Ebene. 0 nimmt die Größe aus dem Grundriss. Auf der ersten Ebene ohne Wirkung, die liegt auf der Oberflächenkarte.</CBF_FieldDesc_levelMapSize>
   <CBF_FieldDesc_spread>Gebäude, die der Generator über mehrere Ebenen verteilt: eine Gesamtzahl über einen Bereich von Ebenen.</CBF_FieldDesc_spread>
   <CBF_FieldDesc_SpreadEntry_levels>Von welcher bis zu welcher Ebene, von oben gezählt. Ebene 1 liegt im Berg der Oberflächenkarte.</CBF_FieldDesc_SpreadEntry_levels>
@@ -513,4 +529,7 @@
   <CBF_S_DecoSpawnsMore>setzt: {0} und mehr ({1})</CBF_S_DecoSpawnsMore>
   <CBF_D_LayoutsTip>Eine oder mehrere Bauweisen ankreuzen. Bei mehreren würfelt jede erzeugte Ebene eine davon aus.</CBF_D_LayoutsTip>
   <CBF_D_LayoutsRandom>Jede erzeugte Ebene würfelt eine der gewählten Bauweisen aus.</CBF_D_LayoutsRandom>
+  <CBF_RimdexDefTip>In Rimdex zeigen</CBF_RimdexDefTip>
+  <CBF_D_CorridorStripTip>Der Gang, wie er gebaut wird: die Segmente in ihrer Reihenfolge, darauf die Gangdeko. Ein Abschnitt ohne eigene Deko zeigt die Deko der Ebene.</CBF_D_CorridorStripTip>
+  <CBF_D_SectionRolesTip>Eingang: In diesem Abschnitt liegt der Weg hinein. Auf der ersten Ebene ist das der Eingang von der Oberfläche, auf tieferen Ebenen die Treppe hinauf.\nTreppe hinab: In diesem Abschnitt entsteht die Treppe zur nächsten Ebene.\nDer erste Abschnitt hat immer den Eingang, der letzte die Treppe hinab. Die Pfeile ändern die Reihenfolge.</CBF_D_SectionRolesTip>
 </LanguageData>

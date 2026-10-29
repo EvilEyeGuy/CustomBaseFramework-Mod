@@ -137,13 +137,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>caveShare</code></td>
 <td>number</td>
 <td><code>0.3</code></td>
-<td>Stored and validated from 0 to 1, but not used by the generator yet.</td>
+<td>Share of the connections between districts that are dug as winding cave paths instead of straight masoned corridors, 0 to 1. At 0 a cave path is only made when a district finds no other connection. Cave-to-cave links always stay cave paths.</td>
 </tr>
 <tr>
 <td><code>caveWidth</code><br>Cave width</td>
 <td>IntRange</td>
 <td><code>1~3</code></td>
-<td>Stored and validated from 1 to 5 cells, but not used by the generator yet.</td>
+<td>Width of the cave paths in cells, rolled per cell from this range, 1 to 5.</td>
 </tr>
 <tr>
 <td><code>corridors</code><br>Corridor segments</td>
@@ -209,7 +209,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <td><code>secretChance</code></td>
 <td>number</td>
 <td><code>0.1</code></td>
-<td>Stored and validated from 0 to 1, but not used by the generator yet.</td>
+<td>Chance that a room door, which would otherwise be bricked up, gets a narrow secret passage through the rock to the nearest corridor or to the door of another room. The door becomes a secret door (material list role DOOR_SECRET). At most this share of the rooms gets one. 0 turns secret passages off.</td>
 </tr>
 <tr>
 <td><code>sections</code></td>

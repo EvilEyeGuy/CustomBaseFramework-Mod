@@ -14,13 +14,13 @@ The order in the list is the order from the middle outwards. The innermost ward 
   <CustomBaseFramework.HelpDef>
     <defName>CBF_Help_Districts</defName>
     <label>Districts</label>
-    <description>A district is a building programme. It says what the generator should put into this ward and how much of it.
+    <description>A district is a group of buildings inside a ward, for example a market quarter or a row of farmsteads.
 
-Each line is either a category (Workshop, HouseSmall) or one specific piece (Workshop_Baker). Min and max bound how many of them are built. Weight decides how often a piece is drawn when several fit the same category.
+Each row is either a category or one specific piece, with a count. Priority decides which row gets room first; Low rows may stay below their minimum when the space runs out. A Filler row fills the room left at the end. Weight only counts for a single piece, against the other pieces of its category.
 
-A piece listed under a category counts towards that category's limit. That is why the Baker sits indented under Workshop instead of standing next to it.
+Fields and pens belong to a district too. That is how the generator knows a farmstead gets fields and a tavern does not.
 
-Crop plots and animal pens belong to a district too. That is how the generator knows a farmstead gets fields and a tavern does not.</description>
+Location of the district sets where it starts: near the center, near the gate, near the wall or on the main road. Nothing ticked means a random spot away from the other districts.</description>
   </CustomBaseFramework.HelpDef>
 
   <CustomBaseFramework.HelpDef>
@@ -134,6 +134,300 @@ A piece without a value of its own takes the wall contact of its category. Yes t
     <description>The door that closes the passages through this ward's wall, for example a wooden door for a palisade.
 
 Empty uses the door of the material list of the settlement type, which is what most wards want. The gatehouse is something else, it is set under Fortification.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_Placement</defName>
+    <label>Placement</label>
+    <description>Where buildings of this category may stand. Every value is inherited from the parent category until set here.
+
+Road access: buildings of this category must be reachable from the road network.
+
+Needs no road only takes effect when Road access is No. Buildings of this category then need no road and may be entered from every side, like a farm or a market.
+
+Wall contact: pieces of this category prefer to stand against the town wall. The piece field At the wall controls this more finely and wins.
+
+Weight: how often pieces of this category are drawn when several fit. 1 is normal. For annexes, a value below 1 is also the chance that the annex is tried at all.
+
+How many buildings of a category a settlement gets is set by its entries in the Settlement tab.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_Blocks</defName>
+    <label>Blocks</label>
+    <description>A block is a row of buildings that stand wall to wall.
+
+Block limit: how many buildings of this category at most form one block. Empty means 3.
+
+Merge: whether buildings of this category join their neighbours into one block. Yes forces it, No forbids it.
+
+The generator reads both values only from the building's own first category, not from its parents.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_CategoryUsedIn</defName>
+    <label>Used in</label>
+    <description>Every settlement type and dungeon that names this category somewhere in its plan.
+
+A line says where: in a district of a ward, in the fortification, on a dungeon level or in one of its sections, corridors, stairs or decoration. Districts also show the count they ask for.
+
+Click a line to open that plan. A category that no plan names can still be built through a child category or a parent category that a plan asks for.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_LootAffects</defName>
+    <label>Affects</label>
+    <description>Where this loot table ends up in the game.
+
+Directly part of: the tables that draw this one, with the weight they give it, or always when it sits under Always included. Click one to open it.
+
+Through pieces in settlements: the settlement types that reach this table through their pieces, with those pieces named.
+
+The tiles below show every piece that uses the table, directly at an anchor or through an object list. The anchors that use it are highlighted. Click a tile to open the piece.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PawnGear</defName>
+    <label>Gear</label>
+    <description>The apparel this pawn kind always wears.
+
+The grid shows the apparel layers in rows, from outside in, and the body parts in columns. Click a free cell to pick only what fits there. Hatched cells are blocked by the gear of the same colour. Hide empty hides rows and columns nobody uses.
+
+The list below the grid shows each piece with layer, material, quality and colour. Swap replaces a piece with another one that fits the same layers and keeps material, quality and colour where possible.
+
+The most advanced piece of gear sets the tech level of the pawn kind, and that decides in which settlements it appears.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PawnWeapon</defName>
+    <label>Weapon</label>
+    <description>Which weapon the pawn gets.
+
+Tags are the weapon tags RimWorld draws from, for example a group of bows. Budget is the silver value the weapon may cost, as a range. Quality and Weapon material narrow the result further. Empty means any.
+
+The weapon also counts towards the tech level of the pawn kind.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PawnSkills</defName>
+    <label>Skills</label>
+    <description>Skill levels the pawn starts with.
+
+Each row sets a range for one skill. Min. best: the best skill reaches at least this level. Min. total: all skill levels together reach at least this value. Extra levels are spread at random on top.
+
+Skills not named here are rolled by RimWorld as usual.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PawnNature</defName>
+    <label>Nature</label>
+    <description>Traits the pawn may not have and traits it always gets.
+
+Forbidden traits are never rolled. Forced traits are always given, with their degree where the trait has one. Everything else is rolled by RimWorld as usual.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PawnImplants</defName>
+    <label>Implants</label>
+    <description>Bionics and other implants the pawn spawns with.
+
+Fixed implants are always installed. Tags and Budget let RimWorld pick further implants with those tags up to that silver value, with the chance and at most the count set here.
+
+An implant shown in red cannot be installed in this race and is skipped at spawn.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PawnAllFields</defName>
+    <label>All fields</label>
+    <description>Every field of the pawn kind that the sections above do not cover, sorted into groups.
+
+Changes here go into the same file as the rest. An empty field keeps the value RimWorld or the parent pawn kind gives it.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PieceCheck</defName>
+    <label>Check results</label>
+    <description>What the last check found wrong with this piece.
+
+Red lines are errors. While there are errors, the piece cannot be exported. The other lines are notes and block nothing, for example a gatehouse that still lacks its Wall anchor.
+
+Check at the bottom runs the check again. While the piece is on the map it checks what is built there, otherwise the saved file.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PieceBasics</defName>
+    <label>Basics</label>
+    <description>What the piece is and where it may be used.
+
+Size and Categories: the first category is the main one. Settlements ask for categories, so a piece without one is never built.
+
+Rotation allowed lets the generator turn the piece. Clear footprint removes whatever stands under the piece before it is built. At the wall and Weight only apply to buildings: how much the piece wants to stand against the town wall, and how often it is drawn among the pieces of its category.
+
+Only with mod and Off with mod tie the piece to other mods. Only for factions and Not for factions do the same for factions.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PieceDerived</defName>
+    <label>Derived</label>
+    <description>Values the editor works out by itself. They cannot be set here.
+
+Type is Building, WallPart or DungeonRoom. It follows from the main category when the piece is exported. Buildings go into districts, wall parts into the wall ring, dungeon rooms into dungeon levels.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_Fortification</defName>
+    <label>Fortification</label>
+    <description>The ring around this ward.
+
+Walls: the wall pieces of the ring. Several entries give a wall that varies along its length; the slider sets each entry's share.
+
+Emplacements: towers and other works in the ring. The generator spaces them by itself, corners first.
+
+Gatehouses: built wherever a road crosses the wall.
+
+Door: closes the passages through the wall. Empty uses the door of the material list.
+
+The countryside has no ring. Modern towns use sandbags or barricades and never get gatehouses.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_WardGarrison</defName>
+    <label>Garrison</label>
+    <description>The defenders of this ward or dungeon level.
+
+Each row names a pawn list with a min and max count and a post: Inside, Wall or Gate. The header shows the points of the whole garrison.
+
+With a garrison factor set under General, each row gets an active tick and a weight. Only active rows place fixed pawns: min first, then more up to max by weight while the budget lasts. The rest comes from the faction.
+
+A ward without rows takes its share of the settlement's points. Pawns from Pawn anchors in the pieces come on top.
+
+Every ward defends itself. Guards on the wall and at the gates hold their spot, gun crews stay at their gun.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_RoadsGround</defName>
+    <label>Roads and ground</label>
+    <description>The surfaces of this ward.
+
+Ground: the ground between the houses. Empty keeps the map's own ground.
+
+Paths: the surface of lanes, squares and gate passages. Empty uses the road of the material list.
+
+Kerb: the surface of the outermost cells of lanes, squares and gate passages. Empty uses the path surface for the whole width.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_SwapOtherRules</defName>
+    <label>Rules of other mods</label>
+    <description>Swap rules that other mods bring for this faction. They are shown here and never changed.
+
+For each unit or thing, the rule with the highest priority wins. Rules with the same priority are combined and drawn by weight.
+
+To override another mod for one unit, give your own rule a higher priority.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PlanBasics</defName>
+    <label>Basics</label>
+    <description>What the place looks like.
+
+Label is the name players see. Kind of place switches between medieval town, modern town, camp and mountain city. Material list sets the walls, doors, gates, fences and roads the generator builds by itself; without one the type is switched off.
+
+Map size, Core size and Tree share set how much room the place takes and how many wild trees stay. Rock mantle is the mountain around a mountain city.
+
+Build as ruin, Ideoligion style, the suburb settings and the world map icon finish the look.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PlanPlacement</defName>
+    <label>Placement</label>
+    <description>Who gets this settlement type and where it appears.
+
+Tech levels: which ages the plan fits. For all factions of these levels serves every faction of a ticked level that has no plan of its own. Factions adds factions by name, Excluded keeps factions away.
+
+Weight: how often this type is picked among all types a faction can get.
+
+Ideoligion has and lacks, Biomes, Hilliness and Landforms limit the type to factions and tiles where all set conditions apply. Empty means anywhere.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PlanGarrison</defName>
+    <label>Garrison</label>
+    <description>How many defenders the whole place has.
+
+Minimum points are always spent on defenders. The garrison factor multiplies the raid points of your colony; the place spends that, but never less than the minimum. With 0, the garrison rows of the wards work as fixed counts.
+
+Pawn anchors count against the budget: how much of the points of anchored pawns is taken from it. Share per ward spreads the bought defenders over the wards, by size or by hand.
+
+Calculate garrison shows per ward what a chosen faction gets at chosen raid points.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_PlanMods</defName>
+    <label>Mods</label>
+    <description>Settings that tie the settlement type to other mods.
+
+WD tier, WD type and RIAF holding only appear when World Domination or A Rim of Ice and Fire are active. They make this type the plan for their settlements. Camp types only appear for camps and name the quest sites this plan builds.
+
+Takeover hands faction bases to CBF. Mods lists the mods the plan needs. Most are found by themselves, + by hand adds more.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_DungeonSections</defName>
+    <label>Sections</label>
+    <description>A level can be split into sections that lie one behind the other, for example a front part and a back part. The generator builds them in this order.
+
+The first section is marked entrance: the way in lies there. On the first level that is the entrance from the surface, on lower levels the stairs up. The last section is marked stairs down: the stairs to the next level are built there. Which pieces they are is set under Entrance and stairs. The arrows change the order, and with it which section holds the entrance and which the stairs.
+
+Each section has its own areas. It can also have its own corridor segments and corridor decor; empty means it uses those of the level.
+
+A level without sections uses its own areas.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_DungeonAccess</defName>
+    <label>Entrance and stairs</label>
+    <description>The rooms that connect this level to the outside and to the next level.
+
+Entrance, only on the first level: the room with the way in from the surface. Empty means the generator opens a plain tunnel into the mountain. On lower levels the stairs up are placed exactly where the stairs down of the level above stand.
+
+Stairs down: the room with the stairs to the next level. Every level except the lowest needs one. A stair piece needs a Connect anchor named StairsDown, the way up one named StairsUp; it marks where the passage between the maps lies.
+
+With sections, the entrance lies in the first section and the stairs down in the last.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_DungeonPassages</defName>
+    <label>Passages</label>
+    <description>How the rooms of this level are connected.
+
+Layout decides the arrangement, for example corridors, chambers, a cave or a temple. With several ticked, each generated level rolls one of them.
+
+Corridor segments: the pieces the corridors are built from, by share. The strip shows the corridor in order, with the corridor decor on top.
+
+Cave width and Cave share set how wide the cave passages are and how many connections become natural cave instead of built corridor. Secret passages is the chance that a door that would be bricked up gets a hidden passage instead.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_DungeonDeco</defName>
+    <label>Corridor decor</label>
+    <description>Things placed along the corridors: torches, candles, bones, runners.
+
+They stand on the corridor floor against the wall, on both sides at random. Wall fixtures such as torches face the wall, everything else faces into the corridor. Edge and Road make no difference here.
+
+Each row names an object list, a piece or a category, with the spacing between two placements and at most how many per level. The templates add a row with fitting values. The strip above, at the corridor segments, shows the result.
+
+A section without decor of its own uses the decor of the level.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_DungeonAreas</defName>
+    <label>Areas</label>
+    <description>The rooms of this level, grouped like the districts of a ward.
+
+Each row is a category or one specific piece, with a count. Priority decides which row gets room first; Low rows may stay below their minimum when the space runs out. An area can bring its own layout.
+
+With sections, every section has its own areas.</description>
   </CustomBaseFramework.HelpDef>
 
 </Defs>

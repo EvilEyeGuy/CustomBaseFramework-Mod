@@ -24,6 +24,13 @@
   <CBF_S_AddFaction>+ Faction or category</CBF_S_AddFaction>
   <CBF_S_Excluded>Excluded</CBF_S_Excluded>
   <CBF_S_FitsFactions>Fits {0} factions</CBF_S_FitsFactions>
+  <CBF_S_OwnerAlle>For all factions of these levels</CBF_S_OwnerAlle>
+  <CBF_S_OwnerAlleTip>This plan applies to every faction whose tech level is ticked, unless that faction has plans of its own through faction tags. Its own plans always win.</CBF_S_OwnerAlleTip>
+  <CBF_S_OwnerFraktionen>Factions</CBF_S_OwnerFraktionen>
+  <CBF_S_OwnerFraktionenTip>Only the factions or faction categories listed below get this settlement.</CBF_S_OwnerFraktionenTip>
+  <CBF_S_OwnerKeine>none</CBF_S_OwnerKeine>
+  <CBF_S_OwnerKeineTip>No faction gets this settlement. Only quests and sites can use it.</CBF_S_OwnerKeineTip>
+  <CBF_S_OwnerKeineInfo>Only quests and sites can use this settlement.</CBF_S_OwnerKeineInfo>
   <CBF_S_NoFactionFits>No faction gets this settlement. Pick a tech level with For all factions or add a faction.</CBF_S_NoFactionFits>
   <CBF_S_TakeoverOn>On</CBF_S_TakeoverOn>
   <CBF_S_TakeoverOff>Off</CBF_S_TakeoverOff>
@@ -57,6 +64,12 @@
   <CBF_S_RemoveDistrict>Remove district</CBF_S_RemoveDistrict>
   <CBF_S_NFields>{0} fields</CBF_S_NFields>
   <CBF_S_NPens>{0} pens</CBF_S_NPens>
+  <CBF_S_EntryType>Type</CBF_S_EntryType>
+  <CBF_S_EntryIdeo>Ideoligion</CBF_S_EntryIdeo>
+  <CBF_S_EntryIdeoCount>{0} conditions</CBF_S_EntryIdeoCount>
+  <CBF_S_EntryCondition>Requires</CBF_S_EntryCondition>
+  <CBF_S_AddCondition>+ Requirement</CBF_S_AddCondition>
+  <CBF_S_ShowPieces>Show pieces</CBF_S_ShowPieces>
   <CBF_S_PieceOrCategory>Piece or category</CBF_S_PieceOrCategory>
   <CBF_S_WeightShort>Wt.</CBF_S_WeightShort>
   <CBF_S_CatShort>Cat.</CBF_S_CatShort>
@@ -223,6 +236,9 @@
   <CBF_D_StairsUpHint>The stairs up are placed where the stairs down of the level above stand.</CBF_D_StairsUpHint>
   <CBF_D_AddStairs>+ Stairs</CBF_D_AddStairs>
   <CBF_D_LowestHint>This is the lowest level. It needs no stairs down.</CBF_D_LowestHint>
+  <CBF_D_Deco>Corridor decor</CBF_D_Deco>
+  <CBF_D_DecoTip>Placed on the corridor floor against the wall, on both sides at random. Wall fixtures such as torches face the wall, everything else faces into the corridor. Edge and Road make no difference here.</CBF_D_DecoTip>
+  <CBF_D_SectionDecoInherit>Empty means the level's corridor decor applies here.</CBF_D_SectionDecoInherit>
   <CBF_D_Passages>Passages</CBF_D_Passages>
   <CBF_D_AddCorridor>+ Segment</CBF_D_AddCorridor>
   <CBF_D_CorridorsNone>Empty means plain corridor cells. Corners, junctions and ends are built by the generator.</CBF_D_CorridorsNone>
@@ -322,7 +338,7 @@
   <CBF_Field_caveWidth>Cave width</CBF_Field_caveWidth>
   <CBF_FieldDesc_caveWidth>Width of the cave passages between the areas, 1 to 5 cells. Each passage picks a width within the range.</CBF_FieldDesc_caveWidth>
   <CBF_FieldDesc_caveShare>Share of the connections that become natural caves instead of built corridors.</CBF_FieldDesc_caveShare>
-  <CBF_FieldDesc_secretChance>Chance for secret passages and hidden rooms at dead ends and free sockets.</CBF_FieldDesc_secretChance>
+  <CBF_FieldDesc_secretChance>Chance that a room door, which would otherwise be bricked up, gets a narrow secret passage through the rock to the nearest corridor or to the door of another room. The door becomes a secret door (material list role DOOR_SECRET). At most this share of the rooms gets one.</CBF_FieldDesc_secretChance>
   <CBF_FieldDesc_levelMapSize>Size of the map of this level. 0 takes the size from the layout. Ignored on the first level, it lies on the surface map.</CBF_FieldDesc_levelMapSize>
   <CBF_FieldDesc_spread>Buildings the generator spreads over several levels: a total count over a range of levels.</CBF_FieldDesc_spread>
   <CBF_FieldDesc_SpreadEntry_levels>From which to which level, counted from the top. Level 1 lies in the mountain of the surface map.</CBF_FieldDesc_SpreadEntry_levels>
@@ -508,4 +524,7 @@
   <CBF_S_DecoSpawnsMore>places: {0} and more ({1})</CBF_S_DecoSpawnsMore>
   <CBF_D_LayoutsTip>Tick one or more layouts. With several, each generated level rolls one of them.</CBF_D_LayoutsTip>
   <CBF_D_LayoutsRandom>Each generated level rolls one of the ticked layouts.</CBF_D_LayoutsRandom>
+  <CBF_RimdexDefTip>Show in Rimdex</CBF_RimdexDefTip>
+  <CBF_D_CorridorStripTip>The corridor as it is built: the segments in their order, with the corridor decor on top. A section without decor of its own shows the decor of the level.</CBF_D_CorridorStripTip>
+  <CBF_D_SectionRolesTip>Entrance: the way in lies in this section. On the first level that is the entrance from the surface, on lower levels the stairs up.\nStairs down: the stairs to the next level are built in this section.\nThe first section always holds the entrance, the last one the stairs down. The arrows change the order.</CBF_D_SectionRolesTip>
 </LanguageData>

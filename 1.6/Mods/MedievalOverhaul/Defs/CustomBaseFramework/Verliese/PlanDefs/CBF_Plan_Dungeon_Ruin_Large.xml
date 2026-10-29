@@ -33,12 +33,26 @@
             <name>Front</name>
             <label>camp</label>
             <corridors>
-              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3</piece><weight>4</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3_Rubble</piece><weight>3</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3_Beams</piece><weight>1</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3_Torch</piece><weight>1</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3</piece><weight>9</weight></li>
               <li><piece>CBF_MO_Dungeon_Corridor_Hewn_1</piece><weight>1</weight></li>
             </corridors>
+            <decor>
+              <li>
+                <objects>CBF_MO_Dungeon_Rubble</objects>
+                <spacing>3~5</spacing>
+                <weight>3</weight>
+              </li>
+              <li>
+                <objects>CBF_MO_Dungeon_Beams</objects>
+                <spacing>3~5</spacing>
+                <weight>1</weight>
+              </li>
+              <li>
+                <objects>CBF_MO_Mine_Light</objects>
+                <spacing>3~5</spacing>
+                <weight>1</weight>
+              </li>
+            </decor>
             <districts>
               <li>
                 <name>Camp</name>
@@ -66,11 +80,21 @@
             <name>Back</name>
             <label>old halls</label>
             <corridors>
-              <li><piece>CBF_MO_Dungeon_Corridor_Masonry_3</piece><weight>4</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Masonry_3_Bones</piece><weight>2</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Masonry_3_Torch</piece><weight>1</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Masonry_3</piece><weight>7</weight></li>
               <li><piece>CBF_MO_Dungeon_Corridor_Masonry_1</piece><weight>1</weight></li>
             </corridors>
+            <decor>
+              <li>
+                <objects>CBF_MO_Dungeon_Bones</objects>
+                <spacing>4~7</spacing>
+                <weight>2.5</weight>
+              </li>
+              <li>
+                <objects>CBF_MO_Dungeon_WallTorch</objects>
+                <spacing>4~7</spacing>
+                <weight>1.2</weight>
+              </li>
+            </decor>
             <districts>
               <li>
                 <name>Halls</name>

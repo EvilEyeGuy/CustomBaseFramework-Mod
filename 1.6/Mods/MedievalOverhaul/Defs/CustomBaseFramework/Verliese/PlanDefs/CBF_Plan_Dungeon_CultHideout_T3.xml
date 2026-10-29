@@ -34,13 +34,28 @@
         <sections>
           <li>
             <name>Front</name>
-            <label>entrance</label>
+            <label>front</label>
             <corridors>
-              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3</piece><weight>6</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3_Torch</piece><weight>2</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3_Rubble</piece><weight>1</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Hewn_3</piece><weight>9</weight></li>
               <li><piece>CBF_MO_Dungeon_Corridor_Hewn_1</piece><weight>1</weight></li>
             </corridors>
+            <decor>
+              <li>
+                <objects>CBF_MO_Mine_Light</objects>
+                <spacing>5~8</spacing>
+                <weight>2</weight>
+              </li>
+              <li>
+                <objects>CBF_MO_Dungeon_Rubble</objects>
+                <spacing>5~8</spacing>
+                <weight>1</weight>
+              </li>
+              <li>
+                <objects>CBF_MO_Dungeon_Bones</objects>
+                <spacing>5~8</spacing>
+                <weight>1</weight>
+              </li>
+            </decor>
             <districts>
               <li>
                 <name>Quarters</name>
@@ -65,12 +80,26 @@
             <name>Back</name>
             <label>back</label>
             <corridors>
-              <li><piece>CBF_MO_Dungeon_Corridor_Stone_3</piece><weight>6</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Stone_3_Torch</piece><weight>2</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Stone_3_Candle</piece><weight>1</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Stone_3_Bones</piece><weight>1</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Stone_3</piece><weight>10</weight></li>
               <li><piece>CBF_MO_Dungeon_Corridor_Stone_1</piece><weight>1</weight></li>
             </corridors>
+            <decor>
+              <li>
+                <objects>CBF_MO_Dungeon_WallTorch</objects>
+                <spacing>4~7</spacing>
+                <weight>1.8</weight>
+              </li>
+              <li>
+                <objects>CBF_MO_Dungeon_Candles</objects>
+                <spacing>4~7</spacing>
+                <weight>0.9</weight>
+              </li>
+              <li>
+                <objects>CBF_MO_Dungeon_Bones</objects>
+                <spacing>4~7</spacing>
+                <weight>0.9</weight>
+              </li>
+            </decor>
             <districts>
               <li>
                 <name>Cave</name>
@@ -104,14 +133,28 @@
         <sections>
           <li>
             <name>Front</name>
-            <label>entrance</label>
+            <label>front</label>
             <corridors>
-              <li><piece>CBF_MO_Dungeon_Corridor_Stone_3</piece><weight>6</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Stone_3_Torch</piece><weight>2</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Stone_3_Candle</piece><weight>1</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Stone_3_Bones</piece><weight>1</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Stone_3</piece><weight>10</weight></li>
               <li><piece>CBF_MO_Dungeon_Corridor_Stone_1</piece><weight>1</weight></li>
             </corridors>
+            <decor>
+              <li>
+                <objects>CBF_MO_Dungeon_WallTorch</objects>
+                <spacing>4~7</spacing>
+                <weight>1.8</weight>
+              </li>
+              <li>
+                <objects>CBF_MO_Dungeon_Candles</objects>
+                <spacing>4~7</spacing>
+                <weight>0.9</weight>
+              </li>
+              <li>
+                <objects>CBF_MO_Dungeon_Bones</objects>
+                <spacing>4~7</spacing>
+                <weight>0.9</weight>
+              </li>
+            </decor>
             <districts>
               <li>
                 <name>Barracks</name>
@@ -128,10 +171,20 @@
             <name>Back</name>
             <label>sanctum</label>
             <corridors>
-              <li><piece>CBF_MO_Dungeon_Corridor_Grand_Burgundy</piece><weight>4</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Grand_Burgundy_Torch</piece><weight>1</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Grand_Burgundy</piece><weight>5</weight></li>
               <li><piece>CBF_MO_Dungeon_Corridor_Stone_1</piece><weight>1</weight></li>
             </corridors>
+            <decor>
+              <li>
+                <objects>CBF_MO_Dungeon_WallTorch</objects>
+                <spacing>9~15</spacing>
+              </li>
+              <li>
+                <objects>CBF_MO_Dungeon_Bones</objects>
+                <spacing>9~15</spacing>
+                <weight>0.5</weight>
+              </li>
+            </decor>
             <districts>
               <li>
                 <name>Sanctum</name>
@@ -174,10 +227,20 @@
             <name>Front</name>
             <label>elite</label>
             <corridors>
-              <li><piece>CBF_MO_Dungeon_Corridor_Grand_Slate</piece><weight>4</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Grand_Slate_Torch</piece><weight>1</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Grand_Slate</piece><weight>5</weight></li>
               <li><piece>CBF_MO_Dungeon_Corridor_Stone_1</piece><weight>1</weight></li>
             </corridors>
+            <decor>
+              <li>
+                <objects>CBF_MO_Dungeon_WallTorch</objects>
+                <spacing>9~15</spacing>
+              </li>
+              <li>
+                <objects>CBF_MO_Dungeon_Bones</objects>
+                <spacing>9~15</spacing>
+                <weight>0.5</weight>
+              </li>
+            </decor>
             <districts>
               <li>
                 <name>Elite</name>
@@ -194,10 +257,20 @@
             <name>Back</name>
             <label>inner sanctum</label>
             <corridors>
-              <li><piece>CBF_MO_Dungeon_Corridor_Grand_Burgundy</piece><weight>4</weight></li>
-              <li><piece>CBF_MO_Dungeon_Corridor_Grand_Burgundy_Torch</piece><weight>1</weight></li>
+              <li><piece>CBF_MO_Dungeon_Corridor_Grand_Burgundy</piece><weight>5</weight></li>
               <li><piece>CBF_MO_Dungeon_Corridor_Stone_1</piece><weight>1</weight></li>
             </corridors>
+            <decor>
+              <li>
+                <objects>CBF_MO_Dungeon_WallTorch</objects>
+                <spacing>9~15</spacing>
+              </li>
+              <li>
+                <objects>CBF_MO_Dungeon_Bones</objects>
+                <spacing>9~15</spacing>
+                <weight>0.5</weight>
+              </li>
+            </decor>
             <districts>
               <li>
                 <name>Inner</name>

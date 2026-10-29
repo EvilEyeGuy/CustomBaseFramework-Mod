@@ -121,9 +121,10 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <a class="bild" href="images/categories-tab.png" target="_blank"><img alt="The Categories tab" src="images/categories-tab.png" loading="lazy"></a>
 <ol>
 <li><strong>List</strong> of categories with the number of pieces in each. The chips show <strong>All</strong>, only <strong>Used</strong> categories (those with at least one piece) or only <strong>Empty</strong> ones.</li>
-<li><strong>Tiles</strong> of every piece in the category. Click one to open it in the Piece tab.</li>
-<li><strong>Rules</strong> on the right, in sections. <strong>Save</strong> at the bottom writes them into the category's file.</li>
-<li><strong>Used in</strong> lists every settlement that names this category in a district or in its fortification. Click a line to open the settlement.</li>
+<li><strong>Parent</strong>: the category this one inherits its rules from. <strong>...</strong> shows the chain, <strong>?</strong> opens it in Rimdex.</li>
+<li><strong>Tiles</strong> of every piece in the category. Click one to open it in the Piece tab. The last tile, <strong>Add piece</strong>, opens the piece picker; the picked piece gets this category on top of its other ones. A changed piece is marked like an unsaved entry, and <strong>Save</strong> writes it together with the category, for a piece of another mod as a patch in your mod. In the Piece tab the same works through the piece's own <strong>Categories</strong> field.</li>
+<li><strong>Used in</strong> lists every settlement and dungeon that names this category: in a district, the fortification, a dungeon level or section, corridors, stairs or decoration. Click a line to open the plan.</li>
+<li><strong>Rules</strong> beside the tiles, in sections. <strong>Yes</strong>, <strong>No</strong> or <strong>inherits</strong> shows the value of the parent next to it. The <strong>?</strong> next to each section title explains that section. <strong>Save</strong> at the bottom writes them into the category's file.</li>
 </ol>
 <h2 id="use-a-category-in-a-plan">Use a category in a plan</h2>
 <p>For three alternative cottage designs, give all three the same category and request that category in a settlement district. The district's count controls how many cottages are requested; the pieces' weights affect which designs are chosen. Changing the category weight does not directly add more houses.</p>

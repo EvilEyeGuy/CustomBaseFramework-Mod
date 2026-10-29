@@ -122,11 +122,12 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <a class="bild" href="images/swap-tab.png" target="_blank"><img alt="The Unit swap tab" src="images/swap-tab.png" loading="lazy"></a>
 <ol>
 <li><strong>Factions</strong> on the left. Below each name: which mods have swap rules for it. <strong>With swap</strong> shows only those factions.</li>
-<li><strong>Units</strong> or <strong>Things</strong>: every unit from pawn lists and pieces, every thing from pieces and object lists. <strong>Animals</strong> also shows animals from pens and vermin.</li>
-<li><strong>Becomes for this faction</strong>: the targets. <strong>+</strong> adds a target from the faction's own units. Several targets are drawn by weight. For things, <strong>...</strong> picks one target of the same kind and size.</li>
+<li><strong>Your rule</strong>: name, <strong>Priority</strong>, the mod it is saved in and the number of rules.</li>
+<li><strong>Faction flag</strong> and <strong>Rules of other mods</strong> as rows to fold open. Rules of other mods are shown, never changed. See <a href="#faction-flags">Faction flags</a>.</li>
+<li><strong>Units</strong> or <strong>Things</strong>: every unit from pawn lists and pieces, every thing from pieces and object lists. <strong>Animals</strong> also shows animals from pens and vermin. <strong>Only with rule</strong>, the search and the mod filter narrow the list.</li>
+<li><strong>Becomes for this faction</strong>: the targets. Several targets are drawn by weight.</li>
+<li><strong>+</strong> adds a target from the faction's own units. For things, <strong>...</strong> picks one target of the same kind and size.</li>
 <li><strong>Without rule</strong>: what the faction gets when no rule covers the row. For people, CBF draws from the faction's own units at random, weighted like its groups: fighters from its raid group, residents from its settlement and trader groups. Ranged and melee fighters stay apart, and combat power only filters roughly. Things and animals stay as they are.</li>
-<li><strong>Your rule</strong>: name, <strong>Priority</strong> and the mod it is saved in (<strong>Saved in</strong>).</li>
-<li><strong>Rules of other mods</strong>: shown, never changed.</li>
 </ol>
 <a class="bild" href="images/swap-pick.png" target="_blank"><img alt="Picking a target" src="images/swap-pick.png" loading="lazy"></a>
 <ol>
@@ -142,7 +143,7 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>When several mods bring rules for the same faction, the rule with the highest priority applies, separately for each unit or thing. Entries with equal priority are combined and selected by weight. To override another mod’s entries for a source, give yours a higher priority.</p>
 <p>Saving writes a file of its own into your mod, under <code>Defs/CustomBaseFramework/Einheitentausch</code> in the version folder. Files of other mods are never touched.</p>
 <h2 id="faction-flags">Faction flags</h2>
-<p>Pieces can have flag anchors (<code>factionFlag</code>). There CBF places the flag of the faction that builds the settlement. The section <strong>Faction flag</strong> in the right column sets which object lists count as the flag of the selected faction.</p>
+<p>Pieces can have flag anchors (<code>factionFlag</code>). There CBF places the flag of the faction that builds the settlement. The row <strong>Faction flag</strong> above the table sets which object lists count as the flag of the selected faction.</p>
 <ul>
 <li>Each settlement of the faction shows one of these lists. All its settlements show the same one.</li>
 <li><strong>+ Object list</strong> adds a list, <strong>×</strong> removes one.</li>

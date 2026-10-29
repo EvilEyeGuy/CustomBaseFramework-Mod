@@ -25,9 +25,15 @@
           <li><tag>CBF_Dungeon_CellarStairs</tag></li>
         </entrance>
         <corridors>
-          <li><piece>CBF_MO_Dungeon_Corridor_Masonry_1</piece></li>
-          <li><piece>CBF_MO_Dungeon_Corridor_Masonry_3_Torch</piece></li>
+          <li><piece>CBF_MO_Dungeon_Corridor_Masonry_1</piece><weight>1</weight></li>
+          <li><piece>CBF_MO_Dungeon_Corridor_Masonry_3</piece><weight>1</weight></li>
         </corridors>
+        <decor>
+          <li>
+            <objects>CBF_MO_Dungeon_WallTorch</objects>
+            <spacing>3~5</spacing>
+          </li>
+        </decor>
         <districts>
           <li>
             <name>Cellar</name>

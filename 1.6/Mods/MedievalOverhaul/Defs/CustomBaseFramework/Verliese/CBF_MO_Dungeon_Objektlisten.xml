@@ -10,4 +10,45 @@
     </members>
   </CustomBaseFramework.LootBuildingCategoryDef>
 
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Dungeon_Bones</defName>
+    <label>bone piles</label>
+    <members>
+      <li>DankPyon_RuinedBonePile1x1c</li>
+      <li>DankPyon_RuinedBonePile1x2c</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Dungeon_WallTorch</defName>
+    <label>wall torches</label>
+    <members>
+      <li>DankPyon_WallTorch</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Dungeon_Candles</defName>
+    <label>candle stands</label>
+    <members>
+      <li>DankPyon_CandleStand</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Dungeon_Rubble</defName>
+    <label>rubble</label>
+    <members>
+      <li>DankPyon_StoneDebrisSmall</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Dungeon_Beams</defName>
+    <label>support beams</label>
+    <members>
+      <li>DankPyon_LogColumn</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
 </Defs>

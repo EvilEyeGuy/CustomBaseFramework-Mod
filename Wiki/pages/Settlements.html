@@ -127,9 +127,9 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <a class="bild" href="images/settlement-tab.png" target="_blank"><img alt="The Settlement tab" src="images/settlement-tab.png" loading="lazy"></a>
 <ol>
 <li><strong>List</strong> of settlement types, grouped by their lowest tech level. The number on the right is the weight. A red row has errors that stop the type from being built; it shows the number of errors instead of the weight.</li>
-<li><strong>Preview.</strong> Off by default, because planning a large town takes a few seconds. <strong>Show preview</strong> draws the plan on a flat map, <strong>Reroll</strong> plans it again with a new seed, <strong>Wards</strong> colours the rings.</li>
-<li><strong>General</strong>: name, kind of place, tech levels, factions and more. See <a href="#general">General</a>.</li>
-<li><strong>Wards</strong> on the right: one tab per ring of the settlement. See <a href="#wards">Wards</a>.</li>
+<li><strong>Show preview</strong> at the top right. Off by default, because planning a large town takes a few seconds. It draws the plan on a flat map, <strong>Reroll</strong> plans it again with a new seed, <strong>Wards</strong> colours the rings.</li>
+<li><strong>Tabs</strong> above the content: <strong>General</strong> and one tab per ward, for a dungeon one tab per level. <strong>+</strong> adds a ward the type does not have yet. See <a href="#wards">Wards</a>.</li>
+<li><strong>General</strong>: <strong>Basics</strong> on the left, <strong>Placement</strong>, <strong>Garrison</strong> and <strong>Mods</strong> on the right. See <a href="#general">General</a>.</li>
 <li><strong>Faction overview</strong> below the list shows which faction gets which settlement, see <a href="Factions.html">Factions</a>.</li>
 </ol>
 <p>The buttons at the bottom right:</p>
@@ -173,7 +173,13 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 </ul>
 <h2 id="general">General</h2>
 <a class="bild" href="images/settlement-general.png" target="_blank"><img alt="The General section" src="images/settlement-general.png" loading="lazy"></a>
-<p>The section has four sub-tabs. <strong>Basics</strong>: what the place looks like (label, kind, material list, sizes, suburb, ideoligion style, build as ruin, world map icon). <strong>Placement</strong>: who gets it and where it appears (tech levels, weight, factions, excluded, conditions). <strong>Garrison</strong>: how many defenders it has. <strong>Mods</strong>: required mods, takeover, World Domination, A Rim of Ice and Fire and camp types. Errors and the space check stay above the sub-tabs.</p>
+<ol>
+<li><strong>Space check</strong>: whether the minimum counts of all districts fit on the map. Errors stand here too.</li>
+<li><strong>Basics</strong>: what the place looks like (label, kind, material list, sizes, rock mantle, trees, ideoligion style, build as ruin, suburb, world map icon).</li>
+<li><strong>Placement</strong>: who gets it and where it appears (tech levels, factions, excluded, weight, ideoligion, biomes, hilliness and landform conditions).</li>
+<li><strong>Garrison</strong>: how many defenders it has, see below.</li>
+<li><strong>Mods</strong>: takeover and required mods.</li>
+</ol>
 <h3 id="garrison">Garrison</h3>
 <ul>
 <li><strong>Minimum points</strong>: one value. The place always spends at least this many points on defenders, however poor your colony is.</li>
@@ -216,8 +222,20 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>A ward is one ring of the settlement: the old town behind the high wall, the suburb behind a lighter one, the countryside around them. The innermost ward is protected best and filled first.</p>
 <a class="bild" href="images/settlement-wards.png" target="_blank"><img alt="The wards of a large market town: old town red, suburb ochre, countryside green" src="images/settlement-wards.png" loading="lazy"></a>
 <p>In the preview, <strong>Wards</strong> colours the three rings: the old town red, the suburb ochre and the countryside green. Each settlement type has at most one ward of each kind, and the kind of a ward cannot be changed, see <a href="Settings-Overview.html#ward-kind-kind">What you can change</a>. The <strong>+</strong> next to the ward tabs adds a ward the type does not have yet.</p>
-<p>Each ward tab has the sections <strong>Fortification</strong>, <strong>Garrison</strong>, <strong>Districts</strong>, <strong>Street decor</strong> and <strong>Roads and ground</strong>.</p>
-<a class="bild" href="images/settlement-ward.png" target="_blank"><img alt="A ward with fortification, garrison and districts" src="images/settlement-ward.png" loading="lazy"></a>
+<p>Each ward tab shows the districts on the left and the ward settings on the right.</p>
+<a class="bild" href="images/settlement-ward.png" target="_blank"><img alt="A ward with districts, fortification and garrison" src="images/settlement-ward.png" loading="lazy"></a>
+<ol>
+<li><strong>Districts</strong> of the ward. See <a href="#districts">Districts</a>.</li>
+<li><strong>Location of the district</strong>, one row per district.</li>
+<li><strong>Entries</strong> of the district as a table. Click a row to open it.</li>
+<li><strong>+ Building</strong>, <strong>+ Field</strong>, <strong>+ Pen</strong> and <strong>+ Mine</strong> add rows to the district.</li>
+<li><strong>+ District</strong> adds a new district.</li>
+<li><strong>Old town shapes</strong>, only in the old town of a medieval type.</li>
+<li><strong>Fortification</strong>: walls, emplacements, gatehouses and the door.</li>
+<li><strong>Outworks</strong>: obstacles in front of the ward.</li>
+<li><strong>Garrison</strong> of the ward.</li>
+<li><strong>Street decor</strong> and <strong>Roads and ground</strong>, folded, with a short summary.</li>
+</ol>
 <h3 id="old-town-shapes">Old town shapes</h3>
 <p>Only in the old town of a medieval settlement type. Each picture shows one outline the old town can take, for example rectangle, L-shape, cross or the grown form. By default only the grown form is selected. Click a shape to allow it, click again to exclude it. At least one shape stays selected. In XML this is the field <code>coreShapes</code> of the settlement type; a list of the values <code>Grown</code>, <code>Rectangle</code>, <code>LShape</code>, <code>TShape</code>, <code>UShape</code>, <code>Cross</code>, <code>Step</code> and <code>Octagon</code>. Empty means Grown only, and a name that is not in this list is reported as a config error.</p>
 <h3 id="fortification">Fortification</h3>
@@ -247,14 +265,16 @@ else if(e.key==='/'&&!tippt){e.preventDefault();auf();}else if(e.key==='Escape')
 <p>Use a district to keep related buildings together, such as workshops around a market or a farmhouse beside its fields. Districts without a name of their own are numbered, District 1, District 2 and so on.</p>
 <a class="bild" href="images/settlement-district.png" target="_blank"><img alt="A district with buildings, a field and a pen" src="images/settlement-district.png" loading="lazy"></a>
 <ol>
-<li><strong>Buildings</strong>: each entry is a category (marked <strong>Cat.</strong>) or one specific piece, with <strong>min</strong> and <strong>max</strong> for how many. A single piece also has a weight (<strong>Wt.</strong>) against the other pieces of its category; for a category entry the pieces' own weights decide. An entry marked <strong>Filler</strong> may be built beyond its max to fill the space left at the end, and only half of its min is required. <strong>Priority</strong> (Low to Critical, default Normal) decides which entry gets space first; with equal priority the previous order applies. Low entries may stay below their min when space runs out.</li>
-<li><strong>Field</strong>: a crop plot laid out around the buildings named under <strong>Farmsteads</strong>. The plants come from single plants or from a <strong>Crop list</strong>, see <a href="Loot.html#crop-lists">Loot</a>. Fields only work in the suburb and the countryside.</li>
-<li><strong>Pen</strong>: animals from a pawn list, the <strong>Herd</strong> size, and what grows inside (<strong>Growth</strong>, <strong>Soil</strong>). Pens only work in the countryside.</li>
-<li><strong>Mine</strong>: a tunnel with chambers dug into the rock from a building of the district. You set the ore and its share, length and width of the tunnel, number and size of the chambers, rock chunks, the buildings it may start at (<strong>Starts at</strong>), and the things inside. <strong>Things</strong> opens a window with a sketch of the mine and one column per place: <strong>Entrance</strong> (the first cells of the tunnel, right behind the entrance at the hut), <strong>Tunnel</strong> (along the tunnels, only where there is room to pass) and <strong>Chamber</strong> (in a chamber at the end of a tunnel, small things by the wall). Each entry is a thing or an object list, with material (empty takes stone or wood of the map), count, and optional content with an amount, for example iron on a shelf. Things that stack, such as steel or wood, are placed as one stack of that count. ⇄ moves an entry to another place.</li>
-<li><strong>Location of the district</strong>: tick where the district should start: <strong>Near the center</strong>, <strong>Near the gate</strong>, <strong>Near the wall</strong> or <strong>Main road</strong>. Several ticks count equally; the district looks for a spot that suits all of them. Nothing ticked means a random spot away from the other districts. In XML the fields are numbers; only their ratio counts, so <code>1</code> and <code>0</code> cover every normal case.</li>
+<li><strong>Entries</strong>: each row is a category or one specific piece, with its <strong>Type</strong>, <strong>Priority</strong>, <strong>Filler</strong>, weight (<strong>Wt.</strong>) and <strong>Count</strong>. A click on a row opens it:</li>
 </ol>
-<a class="bild" href="images/settlement-district-location.png" target="_blank"><img alt="Location of the district" src="images/settlement-district-location.png" loading="lazy"></a>
-<p><strong>+ Building</strong>, <strong>+ Field</strong>, <strong>+ Pen</strong> and <strong>+ Mine</strong> add rows. <strong>+ District</strong> below the last district adds a new one. The <strong>…</strong> button next to a category shows the pieces it covers.</p>
+<a class="bild" href="images/settlement-entry.png" target="_blank"><img alt="An opened entry" src="images/settlement-entry.png" loading="lazy"></a>
+<p><strong>Count</strong> is the range of how many to build. <strong>Priority</strong> (Low to Critical, default Normal) decides which entry gets space first; with equal priority the previous order applies. Low entries may stay below their minimum when space runs out. An entry marked <strong>Filler</strong> may be built beyond its maximum to fill the space left at the end, and only half of its minimum is required. <strong>Weight</strong> is only used for a single piece, against the other pieces of its category; for a category the pieces' own weights decide. <strong>Ideoligion</strong> and <strong>Requires</strong> set conditions, see <a href="#conditions-on-entries">Conditions on entries</a>. <strong>Show pieces</strong> lists the pieces the entry covers.
+2. <strong>Field</strong>: a crop plot laid out around the buildings named under <strong>Farmsteads</strong>. The plants come from single plants or from a <strong>Crop list</strong>, see <a href="Loot.html#crop-lists">Loot</a>. Fields only work in the suburb and the countryside.
+3. <strong>Pen</strong>: animals from a pawn list, the <strong>Herd</strong> size, and what grows inside (<strong>Growth</strong>, <strong>Soil</strong>). Pens only work in the countryside.
+4. <strong>+ Building</strong>, <strong>+ Field</strong>, <strong>+ Pen</strong> and <strong>+ Mine</strong> add rows.
+5. <strong>Location of the district</strong>: tick where the district should start: <strong>Near the center</strong>, <strong>Near the gate</strong>, <strong>Near the wall</strong> or <strong>Main road</strong>. Several ticks count equally; the district looks for a spot that suits all of them. Nothing ticked means a random spot away from the other districts. In XML the fields are numbers; only their ratio counts, so <code>1</code> and <code>0</code> cover every normal case.</p>
+<p>A <strong>Mine</strong> is a tunnel with chambers dug into the rock from a building of the district. You set the ore and its share, length and width of the tunnel, number and size of the chambers, rock chunks, the buildings it may start at (<strong>Starts at</strong>), and the things inside. <strong>Things</strong> opens a window with a sketch of the mine and one column per place: <strong>Entrance</strong> (the first cells of the tunnel, right behind the entrance at the hut), <strong>Tunnel</strong> (along the tunnels, only where there is room to pass) and <strong>Chamber</strong> (in a chamber at the end of a tunnel, small things by the wall). Each entry is a thing or an object list, with material (empty takes stone or wood of the map), count, and optional content with an amount, for example iron on a shelf. Things that stack, such as steel or wood, are placed as one stack of that count. ⇄ moves an entry to another place.</p>
+<p><strong>+ District</strong> below the last district adds a new one. <strong>Show pieces</strong> in an opened entry lists the pieces a category covers.</p>
 <h3 id="street-decor">Street decor</h3>
 <p>Things along and on the roads of this ward: street lights, benches, barrels, signs, carts or small street pieces. A sketch of a stretch of road at the top shows all entries in their colours.</p>
 <ul>

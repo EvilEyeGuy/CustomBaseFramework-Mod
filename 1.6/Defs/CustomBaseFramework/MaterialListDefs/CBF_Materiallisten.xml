@@ -37,6 +37,11 @@
         <tagSearch>AnyDoor</tagSearch>
       </li>
       <li>
+        <role>DOOR_SECRET</role>
+        <chain><li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_SlabDoor</li><li>Door</li></chain>
+        <stuffChain><li>MapStone</li><li>BlocksGranite</li></stuffChain>
+      </li>
+      <li>
         <role>GATE</role>
         <chain>
           <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Gate</li>

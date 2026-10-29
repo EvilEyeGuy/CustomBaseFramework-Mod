@@ -28,9 +28,14 @@
           <li><tag>CBF_Dungeon_SmallCryptStairs</tag></li>
         </entrance>
         <corridors>
-          <li><piece>CBF_MO_Dungeon_Catacomb_Hewn_3_Bones</piece></li>
           <li><piece>CBF_MO_Dungeon_Catacomb_Masonry_3</piece></li>
         </corridors>
+        <decor>
+          <li>
+            <objects>CBF_MO_Dungeon_Bones</objects>
+            <spacing>3~6</spacing>
+          </li>
+        </decor>
         <districts>
           <li>
             <name>Tombs</name>

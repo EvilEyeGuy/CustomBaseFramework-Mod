@@ -852,6 +852,8 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_GarrisonBoxGuardsTip>People on walls, gates, guns and posts. They are always fully manned and never held back.</CBF_GarrisonBoxGuardsTip>
   <CBF_BuildWorksites>CBF builds worksites</CBF_BuildWorksites>
   <CBF_BuildWorksitesHelp>Worksites are temporary sites with a resource (logging, mining, hunting and farming camps). When checked, CBF builds them from its own plans. When unchecked, the game or another mod builds them again, for all factions. Maps that already exist stay as they are.</CBF_BuildWorksitesHelp>
+  <CBF_BuildVehicleGarages>Garages with vehicles (Vanilla Vehicles Expanded)</CBF_BuildVehicleGarages>
+  <CBF_BuildVehicleGaragesHelp>Industrial and later settlements get garages and motor pools with vehicles of the settlement's faction, more in large cities than in villages, plus a manned tank post in some cities. Armed vehicles are manned and fire from where they stand. Their points come out of the garrison. When unchecked, CBF builds no garages with vehicles. Maps that already exist stay as they are.</CBF_BuildVehicleGaragesHelp>
   <CBF_GarrisonStrength>Garrison size: {0}%</CBF_GarrisonStrength>
   <CBF_GarrisonStrengthHelp>How many defenders a settlement fields, relative to its plans. 100% is the full garrison and the default. At 100% a village has about 30 defenders and a fortress city about 90, at 200% about twice as many. Applies with or without the reserve. The garrison size sets how many residents there are; the reserve size sets how many of them are held back and only appear on alarm. Ruins and World Domination scale on top of this. Applies to newly generated settlements.</CBF_GarrisonStrengthHelp>
   <CBF_GarrisonDefaultsTip>Sets all garrison sliders back to their defaults, including "Downed defenders count towards the limit". The display switch below stays as it is.</CBF_GarrisonDefaultsTip>
@@ -867,4 +869,8 @@ All images in Textures/World/WorldObjects/CBF can be chosen, including those of 
   <CBF_ClaimAnimalNotForeign>Must target an animal that belongs to another faction.</CBF_ClaimAnimalNotForeign>
   <CBF_ClaimAnimalNoSite>Only works on the map of a CBF settlement.</CBF_ClaimAnimalNoSite>
   <CBF_WorldHidden>(hidden)</CBF_WorldHidden>
+  <CBF_RoleSleeper>sleeps</CBF_RoleSleeper>
+  <CBF_RoleSleeperDesc>Lies asleep at the spawn anchor and wakes when the colony comes close or makes noise, then attacks. For ancient dangers.</CBF_RoleSleeperDesc>
+  <CBF_Au_DangerTooBig>is an ancient danger larger than {0} × {0} and is never placed.</CBF_Au_DangerTooBig>
+  <CBF_Au_DangerSometimes>is an ancient danger larger than {0} × {0} and only fits {1} % of the sites.</CBF_Au_DangerSometimes>
 </LanguageData>

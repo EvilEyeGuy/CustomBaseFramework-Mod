@@ -430,4 +430,40 @@ Each row is a category or one specific piece, with a count. Priority decides whi
 With sections, every section has its own areas.</description>
   </CustomBaseFramework.HelpDef>
 
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_AncientDangerSite</defName>
+    <label>Ancient danger site</label>
+    <description>RimWorld scatters ancient dangers when it builds a map you settle on: a sealed structure next to rock, with ancient caskets and sometimes sleeping mechs or insects. CBF can put its own pieces in that place.
+
+An ancient danger is a normal piece in a category under CBF_AncientDanger (every scenario) or under CBF_AncientDangerScenario (only scenarios that name that category). There is no plan; the piece is stamped as it is.
+
+For each site RimWorld rolls a size of 15 to 20 cells per side. The piece is set in the middle. A piece of at most 15 × 15 fits every site, a larger one only the sites that are big enough, and a piece larger than 20 × 20 is never used. If the piece may turn, the better direction counts.
+
+Ancient cryptosleep caskets in the piece are filled like RimWorld does it. Spawn anchors bring their pawn list; give that list the role Sleeper so the pawns sleep until the colony comes close. Fill anchors bring loot as usual. The warning letter is RimWorld's own.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_SleeperRole</defName>
+    <label>Sleeper role</label>
+    <description>A pawn list with the role Sleeper spawns its pawns asleep at the spawn anchor. They wake when a colonist comes close or when there is noise nearby, and then attack the colony together.
+
+This is the same behaviour as the sleepers of the ruin start. Mechs get the mechanoid faction, insects the insect faction, people a hostile faction of the matching tech level.
+
+In settlements a Sleeper list also sleeps. For guards that stay awake, use Guard, Post or Gunner.</description>
+  </CustomBaseFramework.HelpDef>
+
+  <CustomBaseFramework.HelpDef>
+    <defName>CBF_Help_ScenarioDangers</defName>
+    <label>Ancient dangers per scenario</label>
+    <description>Each scenario decides what happens at the ancient danger sites of its maps.
+
+Vanilla + own: RimWorld's ancient danger and the CBF pieces are rolled together. Vanilla weight sets how often RimWorld's own comes up against the weight of each piece.
+Own only: only CBF pieces. If nothing fits the rolled site, the setting If nothing fits decides: on builds RimWorld's ancient danger, off leaves the site empty.
+None: no ancient dangers at all.
+
+Pieces under CBF_AncientDanger count in every scenario. Extra categories add categories under CBF_AncientDangerScenario for this scenario only.
+
+A scenario without this part behaves like Vanilla + own with weight 1. For scenarios of RimWorld and other mods, Save writes a patch into your mod. Scenarios made in game are set in RimWorld's scenario editor with the part Ancient dangers (CBF).</description>
+  </CustomBaseFramework.HelpDef>
+
 </Defs>

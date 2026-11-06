@@ -3,6 +3,7 @@
 
   <CustomBaseFramework.SettlementPlanDef>
     <defName>CBF_Plan_Vanilla_MountainCity</defName>
+    <vehicles>2~3</vehicles>
     <materialList>CBF_Modern_MaterialList</materialList>
     <label>mountain city</label>
     <kind>MountainCity</kind>
@@ -79,6 +80,8 @@
           <li>
             <name>Center</name>
             <entries>
+              <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><tag>CBF_Vanilla_Garage</tag><count>1~2</count></li>
+              <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><tag>CBF_Vanilla_MotorPool</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_ResearchCenter</tag><count>1~2</count></li>
               <li><tag>CBF_Vanilla_Hospital</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_Tavern</tag><count>0~1</count></li>

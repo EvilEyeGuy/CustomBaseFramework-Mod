@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Pawns_AncientCrypt</defName>
+    <label>sleeping dead</label>
+    <role>Sleeper</role>
+    <members>
+      <li><kind>CBF_SkeletonWarrior</kind><weight>10</weight></li>
+      <li><kind>CBF_SkeletonGuard</kind><weight>4</weight></li>
+      <li><kind>CBF_SkeletonArcher</kind><weight>5</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_Pawns_CryptAlps</defName>
+    <label>alps</label>
+    <role>Guard</role>
+    <members>
+      <li><kind>DankPyon_Alp</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+</Defs>

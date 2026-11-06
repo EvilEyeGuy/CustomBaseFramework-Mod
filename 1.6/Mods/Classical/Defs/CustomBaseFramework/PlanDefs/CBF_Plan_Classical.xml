@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <CustomBaseFramework.SettlementPlanDef MayRequire="OskarPotocki.VFE.Classical,DankPyon.Medieval.Overhaul,Ludeon.RimWorld.Ideology">
+  <CustomBaseFramework.SettlementPlanDef MayRequire="OskarPotocki.VFE.Classical">
     <defName>CBF_Plan_Classical_Vicus</defName>
     <label>vicus (VFE Classical)</label>
     <materialList>CBF_Classical_MaterialList</materialList>
@@ -134,7 +134,7 @@
     <ideoStyle>true</ideoStyle>
   </CustomBaseFramework.SettlementPlanDef>
 
-  <CustomBaseFramework.SettlementPlanDef MayRequire="OskarPotocki.VFE.Classical,DankPyon.Medieval.Overhaul,Ludeon.RimWorld.Ideology,Ludeon.RimWorld.Royalty">
+  <CustomBaseFramework.SettlementPlanDef MayRequire="OskarPotocki.VFE.Classical,Ludeon.RimWorld.Ideology">
     <defName>CBF_Plan_Classical_Urbs</defName>
     <label>urbs (VFE Classical)</label>
     <materialList>CBF_Classical_MaterialList</materialList>
@@ -158,13 +158,13 @@
         <name>OldTown</name>
         <supply>1.2</supply>
         <walls>
-          <li MayRequire="DankPyon.Medieval.Overhaul">CBF_Classical_MO_PalisadeWall</li>
+          <li>CBF_Classical_TownWall</li>
         </walls>
         <emplacements>
-          <li><tag>CBF_Classical_PalisadeTower</tag><count>4~6</count></li>
+          <li><tag>CBF_Classical_TownTower</tag><count>4~6</count></li>
         </emplacements>
         <gatehouses>
-          <li><tag>CBF_Classical_PalisadeGate</tag><count>1~2</count></li>
+          <li><tag>CBF_Classical_Gatehouse</tag><count>1~2</count></li>
         </gatehouses>
         <garrison>
           <li>
@@ -203,7 +203,7 @@
               <li><tag>CBF_Classical_Barracks</tag><count>3~6</count></li>
               <li><tag>CBF_Classical_Armory</tag><count>1~1</count></li>
               <li><tag>CBF_Classical_GuardPost</tag><count>0~1</count></li>
-              <li><tag>CBF_Classical_PalisadeAccess</tag><count>1~2</count></li>
+              <li><tag>CBF_Classical_WallAccess</tag><count>1~2</count></li>
             </entries>
           </li>
         </districts>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="DankPyon.Medieval.Overhaul">
+    <defName>CBF_MO_AncientDanger_Crypt_A</defName>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_AncientDanger</li>
+    </categories>
+    <eaves>true</eaves>
+    <legend>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>*</symbol><thing>DankPyon_Building_SkullGold</thing></li>
+      <li><symbol>0</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>1</symbol><thing>CBF_Sarcophagus</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li><symbol>7</symbol><anchor>StairsDown</anchor><descentChance>1</descentChance><descentPlans><li>CBF_Plan_Dungeon_AncientCrypt</li></descentPlans></li>
+      <li><symbol>8</symbol><anchor>Sleepers</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_MO_Pawns_AncientCrypt</pawnList><pawnCount>2~4</pawnCount><chance>1</chance></li>
+      <li><symbol>9</symbol><anchor>GraveGoods</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_NobleChest</objects><lootTable>CBF_MO_Loot_Crypt</lootTable></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>I</symbol><thing>DankPyon_CastleWall</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>J</symbol><thing>DankPyon_SlabDoor</thing><stuff>BlocksGranite</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>K</symbol><thing>DankPyon_RuinedCandleStand</thing><stuff>WoodLog</stuff></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>R</symbol><thing>DankPyon_Ruined_AncientColumn</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>U</symbol><thing>SculptureSmall</thing><stuff>BlocksMarble</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>f</symbol><thing>DankPyon_RuinedCandles</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>y</symbol><thing>DankPyon_RuinedBonePile1x1c</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ö</symbol><terrain>DankPyon_Floor_RuinedStoneTile_Granite</terrain></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ζ</symbol><thing>DankPyon_Hideout_RoyalChest</thing></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>ρ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>σ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>East</rotation></li>
+      <li MayRequire="DankPyon.Medieval.Overhaul"><symbol>τ</symbol><thing>DankPyon_WallTorch</thing><stuff>WoodLog</stuff><rotation>South</rotation></li>
+      <li><symbol>①</symbol><anchor>Sarcophagus1</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>②</symbol><anchor>Sarcophagus2</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>③</symbol><anchor>Sarcophagus3</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+      <li><symbol>④</symbol><anchor>Sarcophagus4</anchor><anchorKind>Fill</anchorKind><objects>CBF_MO_Sarcophagus</objects><lootTable>CBF_MO_Loot_Sarcophagus</lootTable></li>
+    </legend>
+    <mask>
+      <li>....#######....</li>
+      <li>...#########...</li>
+      <li>...#########...</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>###############</li>
+      <li>...#########...</li>
+      <li>...#########...</li>
+      <li>...#########...</li>
+      <li>....#######....</li>
+      <li>.....#####.....</li>
+    </mask>
+    <terrain>
+      <li>....ööööööö....</li>
+      <li>...ööööööööö...</li>
+      <li>...ööööööööö...</li>
+      <li>ööööööööööööööö</li>
+      <li>ööööööööööööööö</li>
+      <li>ööööööööööööööö</li>
+      <li>ööööööööööööööö</li>
+      <li>ööööööööööööööö</li>
+      <li>...ööööööööö...</li>
+      <li>...ööööööööö...</li>
+      <li>...ööööööööö...</li>
+      <li>....ööööööö....</li>
+      <li>.....ööööö.....</li>
+    </terrain>
+    <things>
+      <li>....IIIIIII....</li>
+      <li>...II.ζU..II...</li>
+      <li>...Iρ.*.*.ρI...</li>
+      <li>IIII.......IIII</li>
+      <li>I...IR...RI..yI</li>
+      <li>I.0.J.....J.0.I</li>
+      <li>Iτ.yI.....I..σI</li>
+      <li>IIII.......IIII</li>
+      <li>...I.......I...</li>
+      <li>...I1.....1I...</li>
+      <li>...IIf...KII...</li>
+      <li>....II...II....</li>
+      <li>.....IIJII.....</li>
+    </things>
+    <roof>
+      <li>....^^^^^^^....</li>
+      <li>...^^^^^^^^^...</li>
+      <li>...^^^^^^^^^...</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>^^^^^^^^^^^^^^^</li>
+      <li>...^^^^^^^^^...</li>
+      <li>...^^^^^^^^^...</li>
+      <li>...^^^^^^^^^...</li>
+      <li>....^^^^^^^....</li>
+      <li>.....^^^^^.....</li>
+    </roof>
+    <anchors>
+      <li>...............</li>
+      <li>......9........</li>
+      <li>...............</li>
+      <li>...............</li>
+      <li>..①.........②..</li>
+      <li>..①.........②..</li>
+      <li>.......8.......</li>
+      <li>...............</li>
+      <li>....③.777.④....</li>
+      <li>....③.777.④....</li>
+      <li>......777......</li>
+      <li>...............</li>
+      <li>...............</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

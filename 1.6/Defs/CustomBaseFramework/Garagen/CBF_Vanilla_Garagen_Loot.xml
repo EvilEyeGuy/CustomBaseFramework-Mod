@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Goods_CarParts</defName>
+    <label>car parts</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><weight>8</weight><thing>VVE_CarWheel</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><weight>5</weight><thing>VVE_CarBattery</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><weight>4</weight><thing>VVE_CarSuspension</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><weight>4</weight><thing>VVE_CarExhaust</thing><count>1~2</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><weight>3</weight><thing>VVE_CarRadiator</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><weight>3</weight><thing>VVE_CarAlternator</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><weight>4</weight><thing>VVE_CarWiring</thing><count>1~3</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><weight>2</weight><thing>VVE_CarFuelTank</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><weight>2</weight><thing>VVE_CarTransmission</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><weight>1</weight><thing>VVE_EngineBlock</thing><count>1~1</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Goods_Fuel</defName>
+    <label>fuel and steel</label>
+    <rolls>1~1</rolls>
+    <entries>
+      <li><weight>10</weight><thing>Chemfuel</thing><count>20~60</count><onMissing>Skip</onMissing></li>
+      <li><weight>6</weight><thing>Steel</thing><count>20~50</count><onMissing>Skip</onMissing></li>
+      <li><weight>4</weight><thing>ComponentIndustrial</thing><count>1~4</count><onMissing>Skip</onMissing></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+  <CustomBaseFramework.LootTableDef>
+    <defName>CBF_Vanilla_Loot_Garage</defName>
+    <label>Garage</label>
+    <rolls>1~2</rolls>
+    <uniqueEntries>true</uniqueEntries>
+    <emptyFallback>CBF_Vanilla_Loot_Minimal</emptyFallback>
+    <entries>
+      <li><weight>10</weight><table>CBF_Vanilla_Goods_CarParts</table></li>
+      <li><weight>8</weight><table>CBF_Vanilla_Goods_Fuel</table></li>
+    </entries>
+  </CustomBaseFramework.LootTableDef>
+
+</Defs>

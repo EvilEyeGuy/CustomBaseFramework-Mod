@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VanillaVehiclesExpanded">
+    <defName>CBF_Vanilla_Garage_Single_A</defName>
+    <onlyWithMod>oskarpotocki.vanillavehiclesexpanded</onlyWithMod>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_Garage</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>1</symbol><anchor>Vehicle</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Vehicle_Civil</objects></li>
+      <li><symbol>5</symbol><anchor>Parts</anchor><anchorKind>Fill</anchorKind><objects>CBF_Vanilla_Shelf_Small</objects><lootTable>CBF_Vanilla_Loot_Garage</lootTable></li>
+      <li><symbol>7</symbol><anchor>Crew</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Modern_Garrison_Inside</pawnList><pawnCount>1~2</pawnCount><chance>1</chance></li>
+      <li><symbol>8</symbol><anchor>Mechanic</anchor><anchorKind>Spawn</anchorKind><pawnList>CBF_Vanilla_Villager</pawnList><chance>0.3</chance></li>
+      <li><symbol>E</symbol><thing>ToolCabinet</thing><rotation>South</rotation></li>
+      <li><symbol>F</symbol><thing>Door</thing><stuff>Steel</stuff></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><symbol>G</symbol><thing>VVE_GarageDoor</thing><role>DOOR</role></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><symbol>K</symbol><thing>VVE_GarageCabinet</thing><rotation>South</rotation></li>
+      <li><symbol>L</symbol><thing>StandingLamp</thing></li>
+      <li><symbol>S</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>^</symbol><roof>RoofConstructed</roof></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><symbol>a</symbol><thing>VVE_Traveller</thing><rotation>South</rotation></li>
+      <li><symbol>c</symbol><terrain>Concrete</terrain></li>
+      <li><symbol>f</symbol><thing>ShelfSmall</thing><stuff>WoodLog</stuff><rotation>North</rotation></li>
+    </legend>
+    <mask>
+      <li>######....</li>
+      <li>######....</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>##########</li>
+      <li>######....</li>
+    </mask>
+    <terrain>
+      <li>cccccc....</li>
+      <li>cccccc....</li>
+      <li>cccccccccc</li>
+      <li>cccccccccc</li>
+      <li>cccccccccc</li>
+      <li>cccccccccc</li>
+      <li>cccccccccc</li>
+      <li>cccccc....</li>
+    </terrain>
+    <things>
+      <li>SSSSSS....</li>
+      <li>SK...S....</li>
+      <li>S....SSSSS</li>
+      <li>S....F.E.S</li>
+      <li>S....S..LS</li>
+      <li>S.a..S..fS</li>
+      <li>S....SSSSS</li>
+      <li>SG...S....</li>
+    </things>
+    <roof>
+      <li>^^^^^^....</li>
+      <li>^^^^^^....</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^^^^^</li>
+      <li>^^^^^^....</li>
+    </roof>
+    <anchors>
+      <li>..........</li>
+      <li>..........</li>
+      <li>..11......</li>
+      <li>.711......</li>
+      <li>..11..8...</li>
+      <li>..11....5.</li>
+      <li>..........</li>
+      <li>..........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="OskarPotocki.VanillaVehiclesExpanded">
+    <defName>CBF_Vanilla_Vehicle_Civil</defName>
+    <members>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Traveller</li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Mule</li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_BangBus</li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Wagon</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="OskarPotocki.VanillaVehiclesExpanded">
+    <defName>CBF_Vanilla_Vehicle_Military</defName>
+    <members>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Highwayman</li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Prowler</li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Scytheman</li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Bunsen</li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Tango</li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Bulldog</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+  <CustomBaseFramework.LootBuildingCategoryDef MayRequire="OskarPotocki.VanillaVehiclesExpanded">
+    <defName>CBF_Vanilla_Vehicle_Tank</defName>
+    <members>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Highwayman</li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Scytheman</li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Bunsen</li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Tango</li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_Bulldog</li>
+    </members>
+  </CustomBaseFramework.LootBuildingCategoryDef>
+
+</Defs>

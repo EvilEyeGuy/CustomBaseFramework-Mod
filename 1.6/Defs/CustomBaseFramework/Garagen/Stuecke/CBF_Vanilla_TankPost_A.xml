@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CustomBaseFramework.PieceDef MayRequire="OskarPotocki.VanillaVehiclesExpanded">
+    <defName>CBF_Vanilla_TankPost_A</defName>
+    <onlyWithMod>oskarpotocki.vanillavehiclesexpanded</onlyWithMod>
+    <schemaVersion>2</schemaVersion>
+    <categories>
+      <li>CBF_Vanilla_TankPost</li>
+    </categories>
+    <style>CBF_ModernVanilla</style>
+    <eaves>true</eaves>
+    <legend>
+      <li><symbol>6</symbol><anchor>Tank</anchor><anchorKind>Object</anchorKind><objects>CBF_Vanilla_Vehicle_Tank</objects></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><symbol>a</symbol><thing>VVE_Tango</thing><rotation>South</rotation></li>
+      <li><symbol>b</symbol><thing>Barricade</thing><stuff>Steel</stuff></li>
+      <li><symbol>p</symbol><terrain>PavedTile</terrain></li>
+      <li><symbol>s</symbol><thing>Sandbags</thing><stuff>Cloth</stuff></li>
+    </legend>
+    <mask>
+      <li>..#####..</li>
+      <li>.#######.</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>#########</li>
+      <li>.#######.</li>
+      <li>#########</li>
+    </mask>
+    <terrain>
+      <li>..ppppp..</li>
+      <li>.ppppppp.</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>ppppppppp</li>
+      <li>.ppppppp.</li>
+      <li>ppppppppp</li>
+    </terrain>
+    <things>
+      <li>..sssss..</li>
+      <li>.s.....s.</li>
+      <li>s.......s</li>
+      <li>s.......s</li>
+      <li>s.......s</li>
+      <li>s.......s</li>
+      <li>s..a....s</li>
+      <li>.b.....b.</li>
+      <li>.........</li>
+    </things>
+    <roof>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+      <li>.........</li>
+    </roof>
+    <anchors>
+      <li>.........</li>
+      <li>.........</li>
+      <li>...666...</li>
+      <li>...666...</li>
+      <li>...666...</li>
+      <li>...666...</li>
+      <li>...666...</li>
+      <li>.........</li>
+      <li>.........</li>
+    </anchors>
+  </CustomBaseFramework.PieceDef>
+
+</Defs>

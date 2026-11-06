@@ -3,6 +3,7 @@
 
   <CustomBaseFramework.SettlementPlanDef>
     <defName>CBF_Plan_Metropolis</defName>
+    <vehicles>2~3</vehicles>
     <materialList>CBF_Modern_MaterialList</materialList>
     <label>metropolis (industrial)</label>
     <kind>ModernTown</kind>
@@ -73,6 +74,7 @@
           <li>
             <name>Government</name>
             <entries>
+              <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><tag>CBF_Vanilla_TankPost</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_Parliament</tag><count>1~1</count><unique>true</unique></li>
               <li><tag>CBF_Vanilla_CommandCenter</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_Vault</tag><count>1~1</count></li>
@@ -88,6 +90,8 @@
           <li>
             <name>Center</name>
             <entries>
+              <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><tag>CBF_Vanilla_Garage</tag><count>1~2</count></li>
+              <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><tag>CBF_Vanilla_MotorPool</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_ResearchCenter</tag><count>1~2</count></li>
               <li><tag>CBF_Vanilla_Hospital</tag><count>1~1</count></li>
               <li><tag>CBF_Vanilla_Clinic</tag><count>1~1</count><priority>Important</priority></li>

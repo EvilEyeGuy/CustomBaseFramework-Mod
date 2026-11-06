@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ScenPartDef>
+    <defName>CBF_AncientDangers</defName>
+    <label>ancient dangers</label>
+    <category>Misc</category>
+    <scenPartClass>CustomBaseFramework.ScenPart_CBFAncientDangers</scenPartClass>
+    <summaryPriority>490</summaryPriority>
+    <maxUses>1</maxUses>
+    <canBeRandomlyAdded>false</canBeRandomlyAdded>
+  </ScenPartDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_AncientDanger</defName>
+    <label>ancient danger</label>
+  </CustomBaseFramework.PieceCategoryDef>
+
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>CBF_AncientDangerScenario</defName>
+    <label>ancient danger (scenario only)</label>
+  </CustomBaseFramework.PieceCategoryDef>
+
+</Defs>

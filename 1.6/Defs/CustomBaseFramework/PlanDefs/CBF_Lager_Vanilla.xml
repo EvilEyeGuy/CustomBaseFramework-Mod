@@ -73,6 +73,7 @@
 
   <CustomBaseFramework.SettlementPlanDef>
     <defName>CBF_Plan_Camp_Vanilla_Outpost</defName>
+    <vehicles>0~1</vehicles>
     <label>outpost</label>
     <materialList>CBF_Modern_MaterialList</materialList>
     <kind>Camp</kind>
@@ -105,6 +106,7 @@
           <li>
             <name>Camp</name>
             <entries>
+              <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><tag>CBF_Vanilla_MotorPool</tag><count>0~1</count></li>
               <li><tag>CBF_Vanilla_Outpost_Bunkhouse</tag><count>1~2</count></li>
               <li><tag>CBF_Vanilla_Outpost_GunEmplacement</tag><count>1~2</count></li>
               <li><tag>CBF_Vanilla_Outpost_PowerPlant</tag><count>1~1</count></li>

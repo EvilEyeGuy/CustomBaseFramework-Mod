@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CBF_AD_FitsAlways>fits every site</CBF_AD_FitsAlways>
+  <CBF_AD_FitsNever>too big for any site</CBF_AD_FitsNever>
+  <CBF_AD_FitsShare>fits {0} % of sites</CBF_AD_FitsShare>
+  <CBF_AD_GroupAll>All scenarios · {0}</CBF_AD_GroupAll>
+  <CBF_AD_GroupScenario>Scenario only · {0}</CBF_AD_GroupScenario>
+  <CBF_AD_GroupEmpty>No piece yet</CBF_AD_GroupEmpty>
+  <CBF_AD_NewTip>Add an existing piece as an ancient danger. It goes into CBF_AncientDanger and can be moved to another category afterwards. New pieces are drawn in the Piece tab.</CBF_AD_NewTip>
+  <CBF_AD_AddPiece>Add ancient danger</CBF_AD_AddPiece>
+  <CBF_AD_PickOne>Pick an ancient danger on the left.</CBF_AD_PickOne>
+  <CBF_AD_EveryScenario>every scenario</CBF_AD_EveryScenario>
+  <CBF_AD_OnlyScenarios>only in scenarios that name {0}</CBF_AD_OnlyScenarios>
+  <CBF_AD_Head>Piece · {0} × {1} · {2}</CBF_AD_Head>
+  <CBF_AD_Category>Category</CBF_AD_Category>
+  <CBF_AD_CategoryTip>Categories under CBF_AncientDanger count in every scenario. Categories under CBF_AncientDangerScenario only count in scenarios that name them.</CBF_AD_CategoryTip>
+  <CBF_AD_Weight>Weight {0}, from {1}</CBF_AD_Weight>
+  <CBF_AD_WeightTip>How often this piece is rolled against the others. The weight comes from the category and is set in the Categories tab.</CBF_AD_WeightTip>
+  <CBF_AD_OpenPiece>Open in Piece</CBF_AD_OpenPiece>
+  <CBF_AD_Site>Site</CBF_AD_Site>
+  <CBF_AD_SiteText>RimWorld rolls a site of 15 to 20 cells per side next to rock. The piece is stamped in the middle.</CBF_AD_SiteText>
+  <CBF_AD_SiteFrame>outer frame 20 × 20, dashed 15 × 15</CBF_AD_SiteFrame>
+  <CBF_AD_SiteAlways>At most 15 × 15: fits every site.</CBF_AD_SiteAlways>
+  <CBF_AD_SiteSometimes>Larger than 15 cells: only chosen when the rolled site is big enough. Turning counts if the piece may turn.</CBF_AD_SiteSometimes>
+  <CBF_AD_SiteNever>Larger than 20 cells: never chosen. The check shows this as an error.</CBF_AD_SiteNever>
+  <CBF_AD_Contents>Contents</CBF_AD_Contents>
+  <CBF_AD_Caskets>Ancient caskets</CBF_AD_Caskets>
+  <CBF_AD_CasketsN>{0}, filled like RimWorld does</CBF_AD_CasketsN>
+  <CBF_AD_None>none</CBF_AD_None>
+  <CBF_AD_Guards>Sleeping guards</CBF_AD_Guards>
+  <CBF_AD_GuardAwakeTip>This list does not have the role Sleeper. Its pawns stand guard awake.</CBF_AD_GuardAwakeTip>
+  <CBF_AD_Loot>Loot</CBF_AD_Loot>
+  <CBF_AD_UsedIn>Used in</CBF_AD_UsedIn>
+  <CBF_AD_NScenarios>{0} scenarios</CBF_AD_NScenarios>
+  <CBF_AD_UsedEverywhere>Every scenario that does not set ancient dangers to None.</CBF_AD_UsedEverywhere>
+  <CBF_AD_UsedNowhere>No scenario names {0} yet. Add it in the Scenarios tab.</CBF_AD_UsedNowhere>
+  <CBF_AD_Letter>Warning letter</CBF_AD_Letter>
+  <CBF_AD_LetterNote>RimWorld's own letter, the same for CBF pieces.</CBF_AD_LetterNote>
+  <CBF_AD_SleeperHead>Sleeper role</CBF_AD_SleeperHead>
+  <CBF_AD_SleeperText>Pawns of a list with the role Sleeper lie asleep at their spawn anchor. They wake when the colony comes close or makes noise, then attack. Mechs and insects get their own faction, people a hostile one.</CBF_AD_SleeperText>
+  <CBF_AD_CheckOk>Check: no findings</CBF_AD_CheckOk>
+  <CBF_AD_CheckSometimes>Check: {0} is larger than 15 × 15 and only fits some sites.</CBF_AD_CheckSometimes>
+  <CBF_AD_CheckNever>Check: {0} is larger than 20 × 20 and can never be placed.</CBF_AD_CheckNever>
+  <CBF_Sz_Mode_VanillaAndOwn>Vanilla + own</CBF_Sz_Mode_VanillaAndOwn>
+  <CBF_Sz_Mode_OwnOnly>Own only</CBF_Sz_Mode_OwnOnly>
+  <CBF_Sz_Mode_None>None</CBF_Sz_Mode_None>
+  <CBF_Sz_UnknownMod>Unknown mod</CBF_Sz_UnknownMod>
+  <CBF_Sz_Yours>Your scenarios</CBF_Sz_Yours>
+  <CBF_Sz_YoursNone>None saved</CBF_Sz_YoursNone>
+  <CBF_Sz_InGame>scenario editor</CBF_Sz_InGame>
+  <CBF_Sz_PickOne>Pick a scenario on the left.</CBF_Sz_PickOne>
+  <CBF_Sz_Head>Scenario · {0} · {1}</CBF_Sz_Head>
+  <CBF_Sz_HeadYours>Your scenario · set in RimWorld's scenario editor</CBF_Sz_HeadYours>
+  <CBF_Sz_StateDefault>no CBF part, defaults apply</CBF_Sz_StateDefault>
+  <CBF_Sz_StateSet>CBF part set</CBF_Sz_StateSet>
+  <CBF_Sz_StateChanged>changed, saved as a patch</CBF_Sz_StateChanged>
+  <CBF_Sz_YoursText>Scenarios you made in game are files, not defs. Set the ancient dangers there, in RimWorld's scenario editor, with the part Ancient dangers (CBF). Here you only see the result.</CBF_Sz_YoursText>
+  <CBF_Sz_Dangers>Ancient dangers</CBF_Sz_Dangers>
+  <CBF_Sz_Mode>Mode</CBF_Sz_Mode>
+  <CBF_Sz_ModeText_VanillaAndOwn>RimWorld's ancient dangers and the CBF pieces are rolled together.</CBF_Sz_ModeText_VanillaAndOwn>
+  <CBF_Sz_ModeText_OwnOnly>Only CBF pieces. RimWorld's own ancient danger is only built as a fallback.</CBF_Sz_ModeText_OwnOnly>
+  <CBF_Sz_ModeText_None>No ancient dangers on any map of this scenario.</CBF_Sz_ModeText_None>
+  <CBF_Sz_VanillaWeight>Vanilla weight</CBF_Sz_VanillaWeight>
+  <CBF_Sz_VanillaWeightNote>against the weight of each CBF piece</CBF_Sz_VanillaWeightNote>
+  <CBF_Sz_VanillaWeightOff>Only with Vanilla + own.</CBF_Sz_VanillaWeightOff>
+  <CBF_Sz_VanillaWeightTip>How often RimWorld's own ancient danger is rolled against the CBF pieces.</CBF_Sz_VanillaWeightTip>
+  <CBF_Sz_ExtraCategories>Extra categories</CBF_Sz_ExtraCategories>
+  <CBF_Sz_ExtraCategoriesTip>Categories under CBF_AncientDangerScenario whose pieces also count in this scenario. Pieces under CBF_AncientDanger always count.</CBF_Sz_ExtraCategoriesTip>
+  <CBF_Sz_CategoryRemoveTip>Click to remove.</CBF_Sz_CategoryRemoveTip>
+  <CBF_Sz_CategoryAddTip>Add a category.</CBF_Sz_CategoryAddTip>
+  <CBF_Sz_NoScenarioCategories>There is no further category under CBF_AncientDangerScenario. Create one in the Categories tab with that parent.</CBF_Sz_NoScenarioCategories>
+  <CBF_Sz_OnlyUnder>only categories under {0}</CBF_Sz_OnlyUnder>
+  <CBF_Sz_Fallback>If nothing fits</CBF_Sz_Fallback>
+  <CBF_Sz_FallbackText>Build RimWorld's ancient danger when no own piece fits the site</CBF_Sz_FallbackText>
+  <CBF_Sz_FallbackOff>Build RimWorld's ancient danger when no own piece fits the site (only with Own only)</CBF_Sz_FallbackOff>
+  <CBF_Sz_FallbackTip>On: the site gets RimWorld's ancient danger. Off: the site stays empty.</CBF_Sz_FallbackTip>
+  <CBF_Sz_Pool>What a site can become</CBF_Sz_Pool>
+  <CBF_Sz_PoolRight>share per site</CBF_Sz_PoolRight>
+  <CBF_Sz_PoolNone>Nothing. The step is skipped on every map of this scenario.</CBF_Sz_PoolNone>
+  <CBF_Sz_PoolWeight>Weight</CBF_Sz_PoolWeight>
+  <CBF_Sz_PoolShare>Share</CBF_Sz_PoolShare>
+  <CBF_Sz_PoolSite>Site size</CBF_Sz_PoolSite>
+  <CBF_Sz_PoolVanilla>RimWorld ancient danger</CBF_Sz_PoolVanilla>
+  <CBF_Sz_PoolEmpty>No CBF piece yet. Add pieces in the Dangers tab.</CBF_Sz_PoolEmpty>
+  <CBF_Sz_PoolJumpTip>Open this ancient danger.</CBF_Sz_PoolJumpTip>
+  <CBF_Sz_PoolNote>Only pieces that fit the rolled site take part in the roll. RimWorld's own fits every site.</CBF_Sz_PoolNote>
+  <CBF_Sz_PoolFallbackOn>When the rolled site is too small for every own piece, RimWorld's own ancient danger is built instead.</CBF_Sz_PoolFallbackOn>
+  <CBF_Sz_PoolFallbackOff>When the rolled site is too small for every own piece, the site stays empty.</CBF_Sz_PoolFallbackOff>
+  <CBF_Sz_VanillaEditor>Same setting in RimWorld's scenario editor</CBF_Sz_VanillaEditor>
+  <CBF_Sz_VanillaEditorText>Players set it there for their own scenarios. For scenarios of other mods, Save here writes a patch into your mod that only applies when that mod is loaded.</CBF_Sz_VanillaEditorText>
+  <CBF_Sz_FootYours>Change it in RimWorld's scenario editor.</CBF_Sz_FootYours>
+  <CBF_Sz_FootPatch>Saves as a patch for {0}.</CBF_Sz_FootPatch>
+  <CBF_Sz_FootSaved>No unsaved change.</CBF_Sz_FootSaved>
+  <CBF_Sz_NoProject>Open a project first. The patch goes into its mod folder.</CBF_Sz_NoProject>
+  <CBF_Sz_SaveFailed>Patch for {0} not written: {1}</CBF_Sz_SaveFailed>
+</LanguageData>

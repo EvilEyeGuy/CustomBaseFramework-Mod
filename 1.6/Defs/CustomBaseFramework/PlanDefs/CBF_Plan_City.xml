@@ -3,6 +3,7 @@
 
   <CustomBaseFramework.SettlementPlanDef>
     <defName>CBF_Plan_City</defName>
+    <vehicles>1~2</vehicles>
     <defenderPoints>1800</defenderPoints>
     <wealthFactor>0.25</wealthFactor>
     <materialList>CBF_Modern_MaterialList</materialList>
@@ -64,6 +65,8 @@
           <li>
             <name>Center</name>
             <entries>
+              <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><tag>CBF_Vanilla_Garage</tag><count>1~2</count></li>
+              <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><tag>CBF_Vanilla_TankPost</tag><count>0~1</count></li>
               <li><tag>CBF_Vanilla_HouseSmall</tag><count>12~44</count><filler>true</filler></li>
               <li><tag>CBF_Vanilla_GrandBank</tag><count>1~1</count><priority>Important</priority></li>
               <li><tag>CBF_Vanilla_Clinic</tag><count>1~1</count><priority>Important</priority></li>

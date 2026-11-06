@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <DutyDef MayRequire="SmashPhil.VehicleFramework">
+    <defName>CBF_VehiclePatrol</defName>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="Vehicles.ThinkNode_ConditionalVehicle">
+          <subNodes>
+            <li Class="Vehicles.ThinkNode_ConditionalVehicleState">
+              <canMove>true</canMove>
+              <subNodes>
+                <li Class="CustomBaseFramework.JobGiver_CBFFahrzeugStreife">
+                  <radius>18</radius>
+                  <pause>2500~6000</pause>
+                </li>
+              </subNodes>
+            </li>
+            <li Class="Vehicles.JobGiver_AwaitOrders"/>
+          </subNodes>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+  <DutyDef MayRequire="SmashPhil.VehicleFramework">
+    <defName>CBF_VehicleHold</defName>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="Vehicles.ThinkNode_ConditionalVehicle">
+          <subNodes>
+            <li Class="Vehicles.JobGiver_AwaitOrders"/>
+          </subNodes>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+  <DutyDef MayRequire="SmashPhil.VehicleFramework">
+    <defName>CBF_VehicleAssault</defName>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="Vehicles.ThinkNode_ConditionalVehicle">
+          <subNodes>
+            <li Class="Vehicles.ThinkNode_ConditionalVehicleState">
+              <canMove>true</canMove>
+              <subNodes>
+                <li Class="Vehicles.ThinkNode_ConditionalHasTurret">
+                  <subNodes>
+                    <li Class="Vehicles.JobGiver_RangedSupport"/>
+                  </subNodes>
+                </li>
+                <li Class="CustomBaseFramework.JobGiver_CBFFahrzeugAngriff">
+                  <leine>60</leine>
+                </li>
+              </subNodes>
+            </li>
+            <li Class="Vehicles.JobGiver_AwaitOrders"/>
+          </subNodes>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+</Defs>

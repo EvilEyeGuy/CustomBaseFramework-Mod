@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Medieval Overhaul</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ScenarioDef[defName="DankPyon_MercenaryStart"]/scenario/parts/li[@Class="CustomBaseFramework.ScenPart_CBFAncientDangers"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>/Defs/ScenarioDef[defName="DankPyon_MercenaryStart"]/scenario/parts/li[@Class="CustomBaseFramework.ScenPart_CBFAncientDangers"]</xpath>
+            <value>
+              <li Class="CustomBaseFramework.ScenPart_CBFAncientDangers">
+                <def>CBF_AncientDangers</def>
+                <mode>OwnOnly</mode>
+                <vanillaWeight>0</vanillaWeight>
+                <categories>
+                  <li>CBF_MO_AncientDangerMedieval</li>
+                </categories>
+                <fallbackVanilla>false</fallbackVanilla>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ScenarioDef[defName="DankPyon_MercenaryStart"]/scenario/parts</xpath>
+            <value>
+              <li Class="CustomBaseFramework.ScenPart_CBFAncientDangers">
+                <def>CBF_AncientDangers</def>
+                <mode>OwnOnly</mode>
+                <vanillaWeight>0</vanillaWeight>
+                <categories>
+                  <li>CBF_MO_AncientDangerMedieval</li>
+                </categories>
+                <fallbackVanilla>false</fallbackVanilla>
+              </li>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ScenarioDef[defName="DankPyon_LoneWolfStart"]/scenario/parts/li[@Class="CustomBaseFramework.ScenPart_CBFAncientDangers"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>/Defs/ScenarioDef[defName="DankPyon_LoneWolfStart"]/scenario/parts/li[@Class="CustomBaseFramework.ScenPart_CBFAncientDangers"]</xpath>
+            <value>
+              <li Class="CustomBaseFramework.ScenPart_CBFAncientDangers">
+                <def>CBF_AncientDangers</def>
+                <mode>OwnOnly</mode>
+                <vanillaWeight>0</vanillaWeight>
+                <categories>
+                  <li>CBF_MO_AncientDangerMedieval</li>
+                </categories>
+                <fallbackVanilla>false</fallbackVanilla>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ScenarioDef[defName="DankPyon_LoneWolfStart"]/scenario/parts</xpath>
+            <value>
+              <li Class="CustomBaseFramework.ScenPart_CBFAncientDangers">
+                <def>CBF_AncientDangers</def>
+                <mode>OwnOnly</mode>
+                <vanillaWeight>0</vanillaWeight>
+                <categories>
+                  <li>CBF_MO_AncientDangerMedieval</li>
+                </categories>
+                <fallbackVanilla>false</fallbackVanilla>
+              </li>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ScenarioDef[defName="DankPyon_TavernOwnerStart"]/scenario/parts/li[@Class="CustomBaseFramework.ScenPart_CBFAncientDangers"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>/Defs/ScenarioDef[defName="DankPyon_TavernOwnerStart"]/scenario/parts/li[@Class="CustomBaseFramework.ScenPart_CBFAncientDangers"]</xpath>
+            <value>
+              <li Class="CustomBaseFramework.ScenPart_CBFAncientDangers">
+                <def>CBF_AncientDangers</def>
+                <mode>OwnOnly</mode>
+                <vanillaWeight>0</vanillaWeight>
+                <categories>
+                  <li>CBF_MO_AncientDangerMedieval</li>
+                </categories>
+                <fallbackVanilla>false</fallbackVanilla>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ScenarioDef[defName="DankPyon_TavernOwnerStart"]/scenario/parts</xpath>
+            <value>
+              <li Class="CustomBaseFramework.ScenPart_CBFAncientDangers">
+                <def>CBF_AncientDangers</def>
+                <mode>OwnOnly</mode>
+                <vanillaWeight>0</vanillaWeight>
+                <categories>
+                  <li>CBF_MO_AncientDangerMedieval</li>
+                </categories>
+                <fallbackVanilla>false</fallbackVanilla>
+              </li>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

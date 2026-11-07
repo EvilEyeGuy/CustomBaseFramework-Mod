@@ -532,4 +532,37 @@
   <CBF_RimdexDefTip>In Rimdex zeigen</CBF_RimdexDefTip>
   <CBF_D_CorridorStripTip>Der Gang, wie er gebaut wird: die Segmente in ihrer Reihenfolge, darauf die Gangdeko. Ein Abschnitt ohne eigene Deko zeigt die Deko der Ebene.</CBF_D_CorridorStripTip>
   <CBF_D_SectionRolesTip>Eingang: In diesem Abschnitt liegt der Weg hinein. Auf der ersten Ebene ist das der Eingang von der Oberfläche, auf tieferen Ebenen die Treppe hinauf.\nTreppe hinab: In diesem Abschnitt entsteht die Treppe zur nächsten Ebene.\nDer erste Abschnitt hat immer den Eingang, der letzte die Treppe hinab. Die Pfeile ändern die Reihenfolge.</CBF_D_SectionRolesTip>
+  <CBF_S_TabPower>Strom</CBF_S_TabPower>
+  <CBF_S_TabPowerTip>Strombilanz des Plans für die Verteidigung mit Strom: Turmlast, sichere Erzeugung, Speicher. Minimum: jeder Platz mit dem sparsamsten Stück bei Mindestanzahl. Maximum: jeder Platz mit dem stromhungrigsten Stück bei Höchstanzahl.</CBF_S_TabPowerTip>
+  <CBF_S_PowerLoad>Turmlast</CBF_S_PowerLoad>
+  <CBF_S_PowerLoadTip>Summe aller Verteidigungsbauten mit Strom: Geschütze, Bauten der Kategorie Sicherheit und Schildgeneratoren.</CBF_S_PowerLoadTip>
+  <CBF_S_PowerTowers>Türme geschätzt: {0} bis {1}</CBF_S_PowerTowers>
+  <CBF_S_PowerTowersTip>Türme ohne feste Anzahl setzt der Planer entlang der Mauer. Ihre Zahl ist aus der Kerngröße geschätzt: {0} bis {1}.</CBF_S_PowerTowersTip>
+  <CBF_S_PowerSafe>Sichere Erzeugung</CBF_S_PowerSafe>
+  <CBF_S_PowerSafeTip>Generatoren, die Tag und Nacht laufen: Brennstoffgeneratoren und feste Kraftwerke. Solar und Wind zählen nicht.</CBF_S_PowerSafeTip>
+  <CBF_S_PowerSolarWind>Solar und Wind</CBF_S_PowerSolarWind>
+  <CBF_S_PowerSolarWindTip>Zählt nicht als sichere Erzeugung. Solar liefert nachts nichts, Wind hängt vom Wetter ab.</CBF_S_PowerSolarWindTip>
+  <CBF_S_PowerSolarWindValue>Solar bis {0} W am Tag, nachts 0 W; Wind 0 bis {1} W</CBF_S_PowerSolarWindValue>
+  <CBF_S_PowerStorage>Speicher</CBF_S_PowerStorage>
+  <CBF_S_PowerStorageTip>Summe der Batteriekapazität.</CBF_S_PowerStorageTip>
+  <CBF_S_PowerRuntime>Speicherlaufzeit</CBF_S_PowerRuntime>
+  <CBF_S_PowerRuntimeTip>Wie lange die Batterien die Turmlast allein tragen. Bester Fall: größter Speicher, kleinste Last. Schlechtester Fall: kleinster Speicher, größte Last.</CBF_S_PowerRuntimeTip>
+  <CBF_S_PowerRuntimeValue>{0} Tage im besten, {1} Tage im schlechtesten Fall</CBF_S_PowerRuntimeValue>
+  <CBF_S_PowerRuntimeNoLoadValue>im besten Fall keine Last, {0} Tage im schlechtesten Fall</CBF_S_PowerRuntimeNoLoadValue>
+  <CBF_S_PowerRangeW>{0} bis {1} W</CBF_S_PowerRangeW>
+  <CBF_S_PowerRangeWOne>{0} W</CBF_S_PowerRangeWOne>
+  <CBF_S_PowerRangeWd>{0} bis {1} Wd</CBF_S_PowerRangeWd>
+  <CBF_S_PowerRangeWdOne>{0} Wd</CBF_S_PowerRangeWdOne>
+  <CBF_S_PowerAuto>Automatisch ergänzt</CBF_S_PowerAuto>
+  <CBF_S_PowerAutoTip>Nach dem Bau setzt der Planer Generatoren nach, bis die sichere Erzeugung das {0}-Fache der Turmlast erreicht, und ab {3} W Last bis zu {2} Batterielager, bis der Speicher {1} Tage hält. Die Zahlen hier sind eine Schätzung: Sie rechnen mit dem kleinsten Generator- und Lagerstück, der Planer nimmt beim Bau bei Platzmangel auch andere Stücke.</CBF_S_PowerAutoTip>
+  <CBF_S_PowerAutoNone>nichts, der Plan reicht selbst</CBF_S_PowerAutoNone>
+  <CBF_S_PowerAutoUnavailable>nichts, es gibt kein passendes Generator- oder Lagerstück</CBF_S_PowerAutoUnavailable>
+  <CBF_S_PowerAutoValue>geschätzt, im schlechtesten Fall fehlen {0} W: Generatorstücke: {1}, Einzelgeneratoren: {2}, Batterielager: {3}</CBF_S_PowerAutoValue>
+  <CBF_S_PowerWarnGen>Auch mit dem automatischen Nachsetzen reicht der Strom im schlechtesten Fall nicht, mehr Generatoren einplanen.</CBF_S_PowerWarnGen>
+  <CBF_S_PowerWarnBattery>Auch mit dem automatischen Nachsetzen hält der Speicher im schlechtesten Fall unter {0} Tage, Batterien einplanen.</CBF_S_PowerWarnBattery>
+  <CBF_S_PowerNone>Keine Verteidigung mit Strombedarf im Plan.</CBF_S_PowerNone>
+  <CBF_S_PowerPreview>Vorschau</CBF_S_PowerPreview>
+  <CBF_S_PowerPreviewTip>In der Kartenvorschau oben gezählt, vor dem automatischen Nachsetzen.</CBF_S_PowerPreviewTip>
+  <CBF_S_PowerPreviewValue>Türme: {0}, Turmlast: {1} W, sicher: {2} W, Speicher: {3} Wd</CBF_S_PowerPreviewValue>
+  <CBF_S_PowerFailed>Strombilanz ließ sich nicht berechnen: {0}</CBF_S_PowerFailed>
 </LanguageData>

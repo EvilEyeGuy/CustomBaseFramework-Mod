@@ -527,4 +527,37 @@
   <CBF_RimdexDefTip>Show in Rimdex</CBF_RimdexDefTip>
   <CBF_D_CorridorStripTip>The corridor as it is built: the segments in their order, with the corridor decor on top. A section without decor of its own shows the decor of the level.</CBF_D_CorridorStripTip>
   <CBF_D_SectionRolesTip>Entrance: the way in lies in this section. On the first level that is the entrance from the surface, on lower levels the stairs up.\nStairs down: the stairs to the next level are built in this section.\nThe first section always holds the entrance, the last one the stairs down. The arrows change the order.</CBF_D_SectionRolesTip>
+  <CBF_S_TabPower>Power</CBF_S_TabPower>
+  <CBF_S_TabPowerTip>Power balance of the plan for powered defences: turret load, safe generation, storage. Minimum: every slot with the most frugal piece at its minimum count. Maximum: every slot with the hungriest piece at its maximum count.</CBF_S_TabPowerTip>
+  <CBF_S_PowerLoad>Turret load</CBF_S_PowerLoad>
+  <CBF_S_PowerLoadTip>Sum of all powered defences: turrets, buildings in the Security category and shield generators.</CBF_S_PowerLoadTip>
+  <CBF_S_PowerTowers>towers estimated: {0} to {1}</CBF_S_PowerTowers>
+  <CBF_S_PowerTowersTip>Towers without a fixed count are placed by the planner along the wall. Their number is estimated from the core size: {0} to {1}.</CBF_S_PowerTowersTip>
+  <CBF_S_PowerSafe>Safe generation</CBF_S_PowerSafe>
+  <CBF_S_PowerSafeTip>Generators that run day and night: fuel generators and fixed plants. Solar and wind do not count.</CBF_S_PowerSafeTip>
+  <CBF_S_PowerSolarWind>Solar and wind</CBF_S_PowerSolarWind>
+  <CBF_S_PowerSolarWindTip>Not counted as safe generation. Solar delivers nothing at night, wind depends on the weather.</CBF_S_PowerSolarWindTip>
+  <CBF_S_PowerSolarWindValue>solar up to {0} W by day, 0 W at night; wind 0 to {1} W</CBF_S_PowerSolarWindValue>
+  <CBF_S_PowerStorage>Storage</CBF_S_PowerStorage>
+  <CBF_S_PowerStorageTip>Sum of the battery capacity.</CBF_S_PowerStorageTip>
+  <CBF_S_PowerRuntime>Battery runtime</CBF_S_PowerRuntime>
+  <CBF_S_PowerRuntimeTip>How long the batteries carry the turret load on their own. Best case: most storage, lowest load. Worst case: least storage, highest load.</CBF_S_PowerRuntimeTip>
+  <CBF_S_PowerRuntimeValue>{0} days best case, {1} days worst case</CBF_S_PowerRuntimeValue>
+  <CBF_S_PowerRuntimeNoLoadValue>no load in the best case, {0} days worst case</CBF_S_PowerRuntimeNoLoadValue>
+  <CBF_S_PowerRangeW>{0} to {1} W</CBF_S_PowerRangeW>
+  <CBF_S_PowerRangeWOne>{0} W</CBF_S_PowerRangeWOne>
+  <CBF_S_PowerRangeWd>{0} to {1} Wd</CBF_S_PowerRangeWd>
+  <CBF_S_PowerRangeWdOne>{0} Wd</CBF_S_PowerRangeWdOne>
+  <CBF_S_PowerAuto>Added automatically</CBF_S_PowerAuto>
+  <CBF_S_PowerAutoTip>After building, the planner adds generators until safe generation reaches {0} times the turret load, and above {3} W of load up to {2} battery stores until the storage lasts {1} days. The figures here are an estimate: it counts the smallest generator and battery store piece, while the planner may use other pieces at build time if space is short.</CBF_S_PowerAutoTip>
+  <CBF_S_PowerAutoNone>nothing, the plan covers itself</CBF_S_PowerAutoNone>
+  <CBF_S_PowerAutoUnavailable>nothing, no suitable generator or battery store piece is available</CBF_S_PowerAutoUnavailable>
+  <CBF_S_PowerAutoValue>estimate, worst case {0} W missing: generator pieces: {1}, single generators: {2}, battery stores: {3}</CBF_S_PowerAutoValue>
+  <CBF_S_PowerWarnGen>Even with the automatic additions the power is not enough in the worst case, plan more generators.</CBF_S_PowerWarnGen>
+  <CBF_S_PowerWarnBattery>Even with the automatic additions the storage lasts less than {0} days in the worst case, plan batteries.</CBF_S_PowerWarnBattery>
+  <CBF_S_PowerNone>No powered defences in the plan.</CBF_S_PowerNone>
+  <CBF_S_PowerPreview>Preview</CBF_S_PowerPreview>
+  <CBF_S_PowerPreviewTip>Counted in the map preview above, before the automatic additions.</CBF_S_PowerPreviewTip>
+  <CBF_S_PowerPreviewValue>towers: {0}, turret load: {1} W, safe: {2} W, storage: {3} Wd</CBF_S_PowerPreviewValue>
+  <CBF_S_PowerFailed>Power balance could not be calculated: {0}</CBF_S_PowerFailed>
 </LanguageData>
